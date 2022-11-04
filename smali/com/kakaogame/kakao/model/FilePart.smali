@@ -187,7 +187,7 @@
 .end method
 
 .method public sendData(Ljava/io/OutputStream;)V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -201,9 +201,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     return-void
 
@@ -225,7 +225,7 @@
 
     invoke-direct {v1, v3}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    invoke-static {v1, v3}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+    invoke-static {v1, v3}, Lre/h$a;->a(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
     move-result-object v1
 
@@ -266,13 +266,7 @@
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
 
     .line 6
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public sendDispositionHeader(Ljava/io/OutputStream;)V

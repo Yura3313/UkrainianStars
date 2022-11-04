@@ -3,7 +3,7 @@
 .source "Struct.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Struct;",
         "Lcom/google/protobuf/Struct$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
-.super Lse/i;
+.super Lif/i;
 .source "RegisterFlow.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Ltd/a;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lsd/a;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
+.field public static final f:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/register/RegisterFlowFragment$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/register/RegisterFlowFragment$d;->g:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
+    sput-object v0, Lcom/supercell/id/ui/register/RegisterFlowFragment$d;->f:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,9 +58,9 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Ltd/a;
+    new-instance v0, Lsd/a;
 
-    invoke-direct {v0}, Ltd/a;-><init>()V
+    invoke-direct {v0}, Lsd/a;-><init>()V
 
     return-object v0
 .end method

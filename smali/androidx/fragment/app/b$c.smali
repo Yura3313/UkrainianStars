@@ -80,10 +80,10 @@
     iget-object v0, v0, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 3
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     .line 4
-    invoke-static {v0}, Landroidx/fragment/app/j0$d$c;->f(Landroid/view/View;)Landroidx/fragment/app/j0$d$c;
+    invoke-static {v0}, Landroidx/fragment/app/j0$d$c;->e(Landroid/view/View;)Landroidx/fragment/app/j0$d$c;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
     if-eq v0, v1, :cond_1
 
     .line 7
-    sget-object v2, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
+    sget-object v2, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
 
     if-eq v0, v2, :cond_0
 

@@ -48,9 +48,12 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Lf0/r;->w(Landroid/view/View;I)V
+    sget-object v2, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
+    invoke-virtual {v0, v1}, Landroid/view/View;->offsetTopAndBottom(I)V
+
+    .line 3
     iget-object v0, p0, Lcom/google/android/material/appbar/f;->a:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/appbar/f;->e:I
@@ -65,7 +68,8 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Lf0/r;->v(Landroid/view/View;I)V
+    .line 4
+    invoke-virtual {v0, v1}, Landroid/view/View;->offsetLeftAndRight(I)V
 
     return-void
 .end method

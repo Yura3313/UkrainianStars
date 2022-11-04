@@ -378,24 +378,24 @@
 
     add-long/2addr v4, v6
 
-    long-to-int v5, v4
+    long-to-int v4, v4
 
-    const-string v4, "Content-Type"
+    const-string v5, "Content-Type"
 
     .line 29
     invoke-virtual {v3}, Lcom/kakaogame/kakao/model/MultipartRequestEntity;->getContentType()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v1, v4, v6}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-lez v5, :cond_2
+    if-lez v4, :cond_2
 
     .line 30
-    invoke-virtual {v1, v5}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+    invoke-virtual {v1, v4}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
     .line 31
-    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -604,11 +604,5 @@
 
     .line 51
     :cond_6
-    goto :goto_5
-
-    :goto_4
     throw p0
-
-    :goto_5
-    goto :goto_4
 .end method

@@ -10,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/metadata/internal/ParentDriveIdSet;",
+        "Lcom/google/android/gms/drive/query/internal/zzx;",
         ">;"
     }
 .end annotation
@@ -31,7 +31,7 @@
     .locals 5
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -54,34 +54,31 @@
 
     and-int/2addr v3, v2
 
-    const/4 v4, 0x2
+    const/4 v4, 0x1
 
     if-eq v3, v4, :cond_0
 
     .line 4
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v2}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    sget-object v1, Lcom/google/android/gms/drive/metadata/internal/zzq;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 6
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+    invoke-static {p1, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 7
+    .line 6
     :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
-    .line 8
-    new-instance p1, Lcom/google/android/gms/drive/metadata/internal/ParentDriveIdSet;
+    .line 7
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzx;
 
-    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/metadata/internal/ParentDriveIdSet;-><init>(Ljava/util/List;)V
+    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzx;-><init>(Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -89,7 +86,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/drive/metadata/internal/ParentDriveIdSet;
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzx;
 
     return-object p1
 .end method

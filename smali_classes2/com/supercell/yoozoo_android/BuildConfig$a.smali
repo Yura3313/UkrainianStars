@@ -24,41 +24,35 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    const-string v0, "Unbotify"
+    const-string v0, "Kakao"
 
     invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "Kakao"
+    const-string v0, "SentryCrashes"
 
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "SentryCrashes"
+    const-string v0, "Line"
 
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "Line"
+    const-string v0, "Multidex"
 
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "Multidex"
+    const-string v0, "Yoozoo"
 
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "Yoozoo"
+    const-string v0, "Msdk"
 
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "Msdk"
-
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    const-string v1, "Midas"
-
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    const-string v0, "Midas"
 
     invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 

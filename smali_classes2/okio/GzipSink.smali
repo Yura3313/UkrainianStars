@@ -84,9 +84,9 @@
     :goto_0
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-lez v2, :cond_0
+    if-lez v0, :cond_0
 
     .line 2
     iget v0, p1, Lokio/Segment;->limit:I
@@ -101,18 +101,18 @@
 
     move-result-wide v0
 
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 3
-    iget-object v0, p0, Lokio/GzipSink;->crc:Ljava/util/zip/CRC32;
+    iget-object v1, p0, Lokio/GzipSink;->crc:Ljava/util/zip/CRC32;
 
     iget-object v2, p1, Lokio/Segment;->data:[B
 
     iget v3, p1, Lokio/Segment;->pos:I
 
-    invoke-virtual {v0, v2, v3, v1}, Ljava/util/zip/CRC32;->update([BII)V
+    invoke-virtual {v1, v2, v3, v0}, Ljava/util/zip/CRC32;->update([BII)V
 
-    int-to-long v0, v1
+    int-to-long v0, v0
 
     sub-long/2addr p2, v0
 
@@ -142,9 +142,9 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    invoke-interface {v0, v2}, Lokio/BufferedSink;->writeIntLe(I)Lokio/BufferedSink;
+    invoke-interface {v0, v1}, Lokio/BufferedSink;->writeIntLe(I)Lokio/BufferedSink;
 
     .line 2
     iget-object v0, p0, Lokio/GzipSink;->sink:Lokio/BufferedSink;
@@ -155,9 +155,9 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    invoke-interface {v0, v2}, Lokio/BufferedSink;->writeIntLe(I)Lokio/BufferedSink;
+    invoke-interface {v0, v1}, Lokio/BufferedSink;->writeIntLe(I)Lokio/BufferedSink;
 
     return-void
 .end method
@@ -324,7 +324,7 @@
 .end method
 
 .method public write(Lokio/Buffer;J)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -333,13 +333,11 @@
 
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-ltz v2, :cond_1
+    if-ltz v0, :cond_1
 
-    cmp-long v2, p2, v0
-
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     return-void
 

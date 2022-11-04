@@ -1,72 +1,27 @@
 .class public final Lid/g;
 .super Ljava/lang/Object;
-.source "DonationReceivedDialog.kt"
-
-# interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.source "EmbeddedIngameChatDialog.kt"
 
 
-# instance fields
-.field public g:Z
-
-.field public final synthetic h:Landroid/animation/AnimatorSet;
+# static fields
+.field public static final a:Lzd/i;
 
 
 # direct methods
-.method public constructor <init>(Landroid/animation/AnimatorSet;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 4
 
-    iput-object p1, p0, Lid/g;->h:Landroid/animation/AnimatorSet;
+    new-instance v0, Lzd/i;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
 
-    return-void
-.end method
+    const/4 v2, 0x1
 
+    const/4 v3, 0x0
 
-# virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
+    invoke-direct {v0, v1, v2, v3}, Lzd/i;-><init>(IILif/e;)V
 
-    const/4 p1, 0x1
-
-    iput-boolean p1, p0, Lid/g;->g:Z
-
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-
-    .line 1
-    iget-object p1, p0, Lid/g;->h:Landroid/animation/AnimatorSet;
-
-    const-wide/16 v0, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/animation/AnimatorSet;->setStartDelay(J)V
-
-    .line 2
-    iget-boolean p1, p0, Lid/g;->g:Z
-
-    if-nez p1, :cond_0
-
-    .line 3
-    iget-object p1, p0, Lid/g;->h:Landroid/animation/AnimatorSet;
-
-    invoke-virtual {p1}, Landroid/animation/AnimatorSet;->start()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 0
+    sput-object v0, Lid/g;->a:Lzd/i;
 
     return-void
 .end method

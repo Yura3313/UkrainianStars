@@ -1,73 +1,40 @@
 .class public final Lwc/p;
-.super Lse/i;
-.source "BaseFragment.kt"
+.super Ljava/lang/Object;
+.source "ChangeEmailFutureEmailEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lcom/supercell/id/ui/BaseFragment;",
-        "Ljava/lang/Object;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment$b;
-
-.field public final synthetic h:Z
+.field public final synthetic f:Lhf/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/BaseFragment$b;Z)V
+.method public constructor <init>(Lhf/a;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/p;->g:Lcom/supercell/id/ui/BaseFragment$b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Lwc/p;->h:Z
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    iput-object p1, p0, Lwc/p;->f:Lhf/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final synthetic run()V
     .locals 2
 
-    .line 1
-    check-cast p1, Lcom/supercell/id/ui/BaseFragment;
+    iget-object v0, p0, Lwc/p;->f:Lhf/a;
 
-    const-string p2, "$receiver"
+    invoke-interface {v0}, Lhf/a;->invoke()Ljava/lang/Object;
 
-    .line 2
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
-    .line 3
-    iget-object p2, p1, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    const-string v1, "invoke(...)"
 
-    if-eqz p2, :cond_0
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 4
-    iget-object v0, p0, Lwc/p;->g:Lcom/supercell/id/ui/BaseFragment$b;
-
-    iget-boolean v1, p0, Lwc/p;->h:Z
-
-    invoke-virtual {p1, p2, v0, v1}, Lcom/supercell/id/ui/BaseFragment;->P0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return-void
 .end method

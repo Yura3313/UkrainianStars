@@ -1,268 +1,112 @@
 .class public final Lz3/d;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:J
-
-.field public final d:J
-
-.field public final e:J
-
-.field public final f:J
-
-.field public final g:Ljava/lang/Long;
-
-.field public final h:Ljava/lang/Long;
-
-.field public final i:Ljava/lang/Long;
-
-.field public final j:Ljava/lang/Boolean;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/signin/internal/zaj;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JJJJLjava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;)V
-    .locals 12
+.method public constructor <init>()V
+    .locals 0
 
-    move-object v0, p0
-
-    move-wide v1, p3
-
-    move-wide/from16 v3, p5
-
-    move-wide/from16 v5, p9
-
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 3
-    invoke-static {p2}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
-
-    const/4 v7, 0x1
-
-    const/4 v8, 0x0
-
-    const-wide/16 v9, 0x0
-
-    cmp-long v11, v1, v9
-
-    if-ltz v11, :cond_0
-
-    const/4 v11, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v11, 0x0
-
-    .line 4
-    :goto_0
-    invoke-static {v11}, Ld2/h;->a(Z)V
-
-    cmp-long v11, v3, v9
-
-    if-ltz v11, :cond_1
-
-    const/4 v11, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v11, 0x0
-
-    .line 5
-    :goto_1
-    invoke-static {v11}, Ld2/h;->a(Z)V
-
-    cmp-long v11, v5, v9
-
-    if-ltz v11, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v7, 0x0
-
-    .line 6
-    :goto_2
-    invoke-static {v7}, Ld2/h;->a(Z)V
-
-    move-object v7, p1
-
-    .line 7
-    iput-object v7, v0, Lz3/d;->a:Ljava/lang/String;
-
-    move-object v7, p2
-
-    .line 8
-    iput-object v7, v0, Lz3/d;->b:Ljava/lang/String;
-
-    .line 9
-    iput-wide v1, v0, Lz3/d;->c:J
-
-    .line 10
-    iput-wide v3, v0, Lz3/d;->d:J
-
-    move-wide/from16 v1, p7
-
-    .line 11
-    iput-wide v1, v0, Lz3/d;->e:J
-
-    .line 12
-    iput-wide v5, v0, Lz3/d;->f:J
-
-    move-object/from16 v1, p11
-
-    .line 13
-    iput-object v1, v0, Lz3/d;->g:Ljava/lang/Long;
-
-    move-object/from16 v1, p12
-
-    .line 14
-    iput-object v1, v0, Lz3/d;->h:Ljava/lang/Long;
-
-    move-object/from16 v1, p13
-
-    .line 15
-    iput-object v1, v0, Lz3/d;->i:Ljava/lang/Long;
-
-    move-object/from16 v1, p14
-
-    .line 16
-    iput-object v1, v0, Lz3/d;->j:Ljava/lang/Boolean;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(JJ)Lz3/d;
-    .locals 17
-
-    move-object/from16 v0, p0
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    new-instance v16, Lz3/d;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    iget-object v2, v0, Lz3/d;->a:Ljava/lang/String;
-
-    iget-object v3, v0, Lz3/d;->b:Ljava/lang/String;
-
-    iget-wide v4, v0, Lz3/d;->c:J
-
-    iget-wide v6, v0, Lz3/d;->d:J
-
-    iget-wide v8, v0, Lz3/d;->e:J
-
-    .line 2
-    invoke-static/range {p3 .. p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v12
-
-    iget-object v13, v0, Lz3/d;->h:Ljava/lang/Long;
-
-    iget-object v14, v0, Lz3/d;->i:Ljava/lang/Long;
-
-    iget-object v15, v0, Lz3/d;->j:Ljava/lang/Boolean;
-
-    move-object/from16 v1, v16
-
-    move-wide/from16 v10, p1
-
-    invoke-direct/range {v1 .. v15}, Lz3/d;-><init>(Ljava/lang/String;Ljava/lang/String;JJJJLjava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;)V
-
-    return-object v16
-.end method
-
-.method public final b(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;)Lz3/d;
-    .locals 17
-
-    move-object/from16 v0, p0
-
-    if-eqz p3, :cond_0
-
-    .line 1
-    invoke-virtual/range {p3 .. p3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
+    move-result v0
 
     const/4 v1, 0x0
 
-    move-object/from16 v16, v1
-
-    goto :goto_0
-
-    :cond_0
-    move-object/from16 v16, p3
+    const/4 v2, 0x0
 
     .line 2
     :goto_0
-    new-instance v1, Lz3/d;
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    iget-object v3, v0, Lz3/d;->a:Ljava/lang/String;
+    move-result v3
 
-    iget-object v4, v0, Lz3/d;->b:Ljava/lang/String;
+    if-ge v3, v0, :cond_2
 
-    iget-wide v5, v0, Lz3/d;->c:J
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    iget-wide v7, v0, Lz3/d;->d:J
+    move-result v3
 
-    iget-wide v9, v0, Lz3/d;->e:J
+    const v4, 0xffff
 
-    iget-wide v11, v0, Lz3/d;->f:J
+    and-int/2addr v4, v3
 
-    iget-object v13, v0, Lz3/d;->g:Ljava/lang/Long;
+    const/4 v5, 0x1
 
-    move-object v2, v1
+    if-eq v4, v5, :cond_1
 
-    move-object/from16 v14, p1
+    const/4 v5, 0x2
 
-    move-object/from16 v15, p2
+    if-eq v4, v5, :cond_0
 
-    invoke-direct/range {v2 .. v16}, Lz3/d;-><init>(Ljava/lang/String;Ljava/lang/String;JJJJLjava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;)V
+    .line 4
+    invoke-static {p1, v3}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    return-object v1
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object v2, Lcom/google/android/gms/common/internal/zat;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    invoke-static {p1, v3, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/common/internal/zat;
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {p1, v3}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v1
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 9
+    new-instance p1, Lcom/google/android/gms/signin/internal/zaj;
+
+    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/signin/internal/zaj;-><init>(ILcom/google/android/gms/common/internal/zat;)V
+
+    return-object p1
 .end method
 
-.method public final c(J)Lz3/d;
-    .locals 17
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    move-object/from16 v0, p0
+    new-array p1, p1, [Lcom/google/android/gms/signin/internal/zaj;
 
-    new-instance v16, Lz3/d;
-
-    iget-object v2, v0, Lz3/d;->a:Ljava/lang/String;
-
-    iget-object v3, v0, Lz3/d;->b:Ljava/lang/String;
-
-    iget-wide v4, v0, Lz3/d;->c:J
-
-    iget-wide v6, v0, Lz3/d;->d:J
-
-    iget-wide v10, v0, Lz3/d;->f:J
-
-    iget-object v12, v0, Lz3/d;->g:Ljava/lang/Long;
-
-    iget-object v13, v0, Lz3/d;->h:Ljava/lang/Long;
-
-    iget-object v14, v0, Lz3/d;->i:Ljava/lang/Long;
-
-    iget-object v15, v0, Lz3/d;->j:Ljava/lang/Boolean;
-
-    move-object/from16 v1, v16
-
-    move-wide/from16 v8, p1
-
-    invoke-direct/range {v1 .. v15}, Lz3/d;-><init>(Ljava/lang/String;Ljava/lang/String;JJJJLjava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;)V
-
-    return-object v16
+    return-object p1
 .end method

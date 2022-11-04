@@ -1,36 +1,25 @@
 .class public final Lbd/f;
 .super Ljava/lang/Object;
-.source "DonateFragment.kt"
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Ljava/util/Comparator;
 
 
-# static fields
-.field public static final a:I
-
-.field public static final b:Lbd/f;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lbd/f;
-
-    invoke-direct {v0}, Lbd/f;-><init>()V
-
-    sput-object v0, Lbd/f;->b:Lbd/f;
-
-    .line 2
-    sget v0, Lcom/supercell/id/R$layout;->fragment_donate_list_header:I
-
-    sput v0, Lbd/f;->a:I
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -41,40 +30,34 @@
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
-    .locals 1
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
-    const-string v0, "other"
+    .line 1
+    check-cast p2, Lbd/a;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    iget-object p2, p2, Lbd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
-    sget-object v0, Lbd/f;->b:Lbd/f;
+    .line 3
+    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
 
-    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 4
+    check-cast p1, Lbd/a;
 
-    move-result p1
+    .line 5
+    iget-object p1, p1, Lbd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
-    return p1
-.end method
+    .line 6
+    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
 
-.method public final c()I
-    .locals 1
-
-    sget v0, Lbd/f;->a:I
-
-    return v0
-.end method
-
-.method public final d(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object v0, Lbd/f;->b:Lbd/f;
-
-    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 7
+    invoke-static {p2, p1}, Lj3/xi;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

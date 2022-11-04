@@ -106,7 +106,7 @@
     const-string v1, "startTimer: "
 
     .line 1
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -157,9 +157,9 @@
 
     const-wide/16 v3, 0x0
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-gez v5, :cond_2
+    if-gez v1, :cond_2
 
     .line 9
     monitor-exit v0

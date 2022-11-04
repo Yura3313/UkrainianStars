@@ -259,7 +259,7 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    move v6, v5
 
     :goto_0
     if-ge v6, v0, :cond_7
@@ -275,9 +275,9 @@
     :cond_0
     invoke-virtual {v2, v7}, Lcom/google/gson/internal/LinkedHashTreeMap$AvlIterator;->reset(Lcom/google/gson/internal/LinkedHashTreeMap$Node;)V
 
-    const/4 v8, 0x0
+    move v8, v5
 
-    const/4 v9, 0x0
+    move v9, v8
 
     .line 10
     :goto_1
@@ -435,7 +435,7 @@
     goto :goto_1
 
     :cond_0
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_1
     if-eqz v1, :cond_1
@@ -446,7 +446,7 @@
     goto :goto_2
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_2
     sub-int v5, v3, v4
@@ -469,7 +469,7 @@
     goto :goto_3
 
     :cond_2
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_3
     if-eqz v0, :cond_3
@@ -530,7 +530,7 @@
     goto :goto_6
 
     :cond_7
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_6
     if-eqz v1, :cond_8
@@ -718,7 +718,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v4
 
     :goto_0
     if-eqz v2, :cond_2
@@ -729,7 +729,7 @@
     goto :goto_1
 
     :cond_2
-    const/4 v2, 0x0
+    move v2, v4
 
     .line 12
     :goto_1
@@ -809,7 +809,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_0
     if-eqz v3, :cond_2
@@ -820,7 +820,7 @@
     goto :goto_1
 
     :cond_2
-    const/4 v3, 0x0
+    move v3, v4
 
     .line 12
     :goto_1
@@ -1086,10 +1086,6 @@
     :goto_2
     if-nez v8, :cond_4
 
-    move-object v10, v3
-
-    move v11, v7
-
     goto :goto_3
 
     :cond_4
@@ -1100,11 +1096,11 @@
     :cond_5
     const/4 v7, 0x0
 
+    :goto_3
     move-object v10, v3
 
-    const/4 v11, 0x0
+    move v11, v7
 
-    :goto_3
     if-nez p2, :cond_6
 
     return-object v4
@@ -1384,32 +1380,25 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "key == null"
+
+    .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/LinkedHashTreeMap;->find(Ljava/lang/Object;Z)Lcom/google/gson/internal/LinkedHashTreeMap$Node;
 
     move-result-object p1
 
-    .line 2
+    .line 3
     iget-object v0, p1, Lcom/google/gson/internal/LinkedHashTreeMap$Node;->value:Ljava/lang/Object;
 
-    .line 3
+    .line 4
     iput-object p2, p1, Lcom/google/gson/internal/LinkedHashTreeMap$Node;->value:Ljava/lang/Object;
 
     return-object v0
-
-    .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "key == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1530,7 +1519,7 @@
     goto :goto_1
 
     :cond_2
-    const/4 v2, 0x0
+    move v2, v3
 
     .line 14
     :goto_1

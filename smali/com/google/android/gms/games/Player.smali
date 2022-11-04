@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/Player;",
         ">;"
     }
@@ -20,41 +20,38 @@
 
 
 # virtual methods
-.method public abstract A()Ljava/lang/String;
+.method public abstract G()Lcom/google/android/gms/games/internal/player/zza;
 .end method
 
-.method public abstract F0()Lcom/google/android/gms/games/CurrentPlayerInfo;
+.method public abstract G0()J
 .end method
 
-.method public abstract N0()J
+.method public abstract H()Ljava/lang/String;
+.end method
+
+.method public abstract J0()Z
+.end method
+
+.method public abstract J1()Lcom/google/android/gms/games/CurrentPlayerInfo;
+.end method
+
+.method public abstract R0()I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract Q0()Z
-.end method
-
-.method public abstract Q1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
-.end method
-
-.method public abstract R0()Lcom/google/android/gms/games/PlayerLevelInfo;
-.end method
-
-.method public abstract S()Z
-.end method
-
-.method public abstract V()Lcom/google/android/gms/games/internal/player/zza;
-.end method
-
-.method public abstract V0()I
+.method public abstract V1()J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract W()Landroid/net/Uri;
+.method public abstract c()Ljava/lang/String;
 .end method
 
-.method public abstract c()Landroid/net/Uri;
+.method public abstract d()Landroid/net/Uri;
+.end method
+
+.method public abstract g0()Landroid/net/Uri;
 .end method
 
 .method public abstract getBannerImageLandscapeUrl()Ljava/lang/String;
@@ -92,23 +89,26 @@
     .end annotation
 .end method
 
-.method public abstract getName()Ljava/lang/String;
-.end method
-
 .method public abstract getTitle()Ljava/lang/String;
 .end method
 
-.method public abstract i()Landroid/net/Uri;
+.method public abstract h()Landroid/net/Uri;
 .end method
 
-.method public abstract u0()J
+.method public abstract m2()Lcom/google/android/gms/games/PlayerLevelInfo;
 .end method
 
-.method public abstract w0()J
+.method public abstract q1()J
 .end method
 
-.method public abstract w2()Ljava/lang/String;
+.method public abstract t1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
 .end method
 
-.method public abstract x0()Landroid/net/Uri;
+.method public abstract u1()Landroid/net/Uri;
+.end method
+
+.method public abstract y2()Ljava/lang/String;
+.end method
+
+.method public abstract z()Z
 .end method

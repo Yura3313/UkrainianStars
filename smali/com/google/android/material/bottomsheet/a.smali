@@ -1,10 +1,10 @@
 .class public final Lcom/google/android/material/bottomsheet/a;
-.super Landroidx/appcompat/app/p;
+.super Landroidx/appcompat/app/k;
 .source "BottomSheetDialog.java"
 
 
 # instance fields
-.field public i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+.field public h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/material/bottomsheet/BottomSheetBehavior<",
@@ -14,15 +14,15 @@
     .end annotation
 .end field
 
-.field public j:Landroid/widget/FrameLayout;
+.field public i:Landroid/widget/FrameLayout;
+
+.field public j:Z
 
 .field public k:Z
 
 .field public l:Z
 
-.field public m:Z
-
-.field public n:Lcom/google/android/material/bottomsheet/a$d;
+.field public m:Lcom/google/android/material/bottomsheet/a$d;
 
 
 # direct methods
@@ -63,23 +63,23 @@
     .line 5
     :cond_1
     :goto_0
-    invoke-direct {p0, p1, p2}, Landroidx/appcompat/app/p;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, p2}, Landroidx/appcompat/app/k;-><init>(Landroid/content/Context;I)V
 
     .line 6
-    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     .line 7
-    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->l:Z
+    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
 
     .line 8
     new-instance p1, Lcom/google/android/material/bottomsheet/a$d;
 
     invoke-direct {p1, p0}, Lcom/google/android/material/bottomsheet/a$d;-><init>(Lcom/google/android/material/bottomsheet/a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/bottomsheet/a;->n:Lcom/google/android/material/bottomsheet/a$d;
+    iput-object p1, p0, Lcom/google/android/material/bottomsheet/a;->m:Lcom/google/android/material/bottomsheet/a$d;
 
     .line 9
-    invoke-virtual {p0, v0}, Landroidx/appcompat/app/p;->c(I)Z
+    invoke-virtual {p0, v0}, Landroidx/appcompat/app/k;->c(I)Z
 
     return-void
 .end method
@@ -102,7 +102,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     if-nez v0, :cond_1
 
@@ -121,7 +121,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     .line 3
     sget v1, Lcom/google/android/material/R$id;->design_bottom_sheet:I
@@ -137,10 +137,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iput-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/bottomsheet/a;->n:Lcom/google/android/material/bottomsheet/a$d;
+    iget-object v1, p0, Lcom/google/android/material/bottomsheet/a;->m:Lcom/google/android/material/bottomsheet/a$d;
 
     .line 6
     iget-object v2, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->I:Ljava/util/ArrayList;
@@ -158,15 +158,15 @@
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
-    iget-boolean v1, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iget-boolean v1, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->C(Z)V
 
     .line 9
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     return-object v0
 .end method
@@ -183,7 +183,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     if-nez v0, :cond_0
 
@@ -192,7 +192,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     return-object v0
 .end method
@@ -204,7 +204,7 @@
     invoke-virtual {p0}, Lcom/google/android/material/bottomsheet/a;->d()Landroid/widget/FrameLayout;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     sget v1, Lcom/google/android/material/R$id;->coordinator:I
 
@@ -231,7 +231,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     sget v1, Lcom/google/android/material/R$id;->design_bottom_sheet:I
 
@@ -276,7 +276,7 @@
 
     invoke-direct {p2, p0}, Lcom/google/android/material/bottomsheet/a$b;-><init>(Lcom/google/android/material/bottomsheet/a;)V
 
-    invoke-static {p1, p2}, Lf0/r;->D(Landroid/view/View;Lf0/a;)V
+    invoke-static {p1, p2}, Lf0/o;->p(Landroid/view/View;Lf0/a;)V
 
     .line 12
     new-instance p2, Lcom/google/android/material/bottomsheet/a$c;
@@ -286,48 +286,40 @@
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 13
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a;->j:Landroid/widget/FrameLayout;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a;->i:Landroid/widget/FrameLayout;
 
     return-object p1
 .end method
 
 .method public final onCreate(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/appcompat/app/p;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/appcompat/app/k;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
-
-    .line 3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
+    if-eqz p1, :cond_0
 
     const/high16 v0, 0x4000000
 
-    .line 4
+    .line 3
     invoke-virtual {p1, v0}, Landroid/view/Window;->clearFlags(I)V
 
     const/high16 v0, -0x80000000
 
-    .line 5
+    .line 4
     invoke-virtual {p1, v0}, Landroid/view/Window;->addFlags(I)V
 
-    :cond_0
     const/4 v0, -0x1
 
-    .line 6
+    .line 5
     invoke-virtual {p1, v0, v0}, Landroid/view/Window;->setLayout(II)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
@@ -338,7 +330,7 @@
     invoke-super {p0}, Landroid/app/Dialog;->onStart()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     if-eqz v0, :cond_0
 
@@ -365,15 +357,15 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->setCancelable(Z)V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iget-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     if-eq v0, p1, :cond_0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->i:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/a;->h:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     if-eqz v0, :cond_0
 
@@ -395,19 +387,19 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iget-boolean v1, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     if-nez v1, :cond_0
 
     .line 3
-    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->j:Z
 
     .line 4
     :cond_0
-    iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/a;->l:Z
+    iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/a;->k:Z
 
     .line 5
-    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->m:Z
+    iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/a;->l:Z
 
     return-void
 .end method
@@ -422,7 +414,7 @@
 
     move-result-object p1
 
-    invoke-super {p0, p1}, Landroidx/appcompat/app/p;->setContentView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Landroidx/appcompat/app/k;->setContentView(Landroid/view/View;)V
 
     return-void
 .end method
@@ -439,7 +431,7 @@
 
     move-result-object p1
 
-    invoke-super {p0, p1}, Landroidx/appcompat/app/p;->setContentView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Landroidx/appcompat/app/k;->setContentView(Landroid/view/View;)V
 
     return-void
 .end method
@@ -454,7 +446,7 @@
 
     move-result-object p1
 
-    invoke-super {p0, p1}, Landroidx/appcompat/app/p;->setContentView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Landroidx/appcompat/app/k;->setContentView(Landroid/view/View;)V
 
     return-void
 .end method

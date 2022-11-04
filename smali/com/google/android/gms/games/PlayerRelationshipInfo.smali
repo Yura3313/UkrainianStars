@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/PlayerRelationshipInfo;",
         ">;"
     }
@@ -20,14 +20,14 @@
 
 
 # virtual methods
-.method public abstract I()Ljava/lang/String;
+.method public abstract V()Ljava/lang/String;
 .end method
 
-.method public abstract d0()Ljava/lang/String;
+.method public abstract f0()Ljava/lang/String;
 .end method
 
-.method public abstract l0()Ljava/lang/String;
+.method public abstract o1()I
 .end method
 
-.method public abstract s0()I
+.method public abstract r0()Ljava/lang/String;
 .end method

@@ -36,7 +36,7 @@
 
     const-string v0, "mListener"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
@@ -62,7 +62,7 @@
     .line 2
     iget-object v1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
-    invoke-static {v1}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
+    invoke-static {v1}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Lw0/b;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
     if-eqz v1, :cond_1
 
     .line 5
-    invoke-virtual {v1}, Ly0/b;->e()I
+    invoke-virtual {v1}, Lw0/b;->e()I
 
     move-result p2
 
@@ -90,13 +90,13 @@
     int-to-float v3, v2
 
     .line 6
-    invoke-virtual {v1, p1}, Ly0/b;->h(I)F
+    invoke-virtual {v1, p1}, Lw0/b;->h(I)F
 
     move-result v4
 
     sub-float/2addr v3, v4
 
-    mul-float v3, v3, v0
+    mul-float/2addr v3, v0
 
     float-to-int v3, v3
 
@@ -110,11 +110,11 @@
     add-int/lit8 p1, p1, 0x1
 
     .line 7
-    invoke-virtual {v1, p1}, Ly0/b;->h(I)F
+    invoke-virtual {v1, p1}, Lw0/b;->h(I)F
 
     move-result p3
 
-    mul-float p3, p3, v0
+    mul-float/2addr p3, v0
 
     float-to-int p3, p3
 
@@ -132,11 +132,11 @@
     int-to-float p2, p3
 
     .line 8
-    invoke-virtual {v1, p1}, Ly0/b;->h(I)F
+    invoke-virtual {v1, p1}, Lw0/b;->h(I)F
 
     move-result v1
 
-    mul-float v1, v1, v0
+    mul-float/2addr v1, v0
 
     div-float/2addr p2, v1
 
@@ -149,23 +149,23 @@
     return-void
 .end method
 
-.method public final c(I)V
+.method public final b(I)V
     .locals 1
 
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->a:Landroidx/viewpager/widget/ViewPager$h;
 
-    invoke-interface {v0, p1}, Landroidx/viewpager/widget/ViewPager$h;->c(I)V
+    invoke-interface {v0, p1}, Landroidx/viewpager/widget/ViewPager$h;->b(I)V
 
     return-void
 .end method
 
-.method public final d(I)V
+.method public final c(I)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
-    invoke-static {v0}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
+    invoke-static {v0}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Lw0/b;
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-virtual {v0}, Ly0/b;->e()I
+    invoke-virtual {v0}, Lw0/b;->e()I
 
     move-result v0
 
@@ -194,7 +194,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->a:Landroidx/viewpager/widget/ViewPager$h;
 
-    invoke-interface {v0, p1}, Landroidx/viewpager/widget/ViewPager$h;->d(I)V
+    invoke-interface {v0, p1}, Landroidx/viewpager/widget/ViewPager$h;->c(I)V
 
     return-void
 .end method

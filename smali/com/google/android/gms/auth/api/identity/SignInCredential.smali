@@ -16,28 +16,28 @@
 
 
 # instance fields
+.field public final f:Ljava/lang/String;
+
 .field public final g:Ljava/lang/String;
 
 .field public final h:Ljava/lang/String;
 
 .field public final i:Ljava/lang/String;
 
-.field public final j:Ljava/lang/String;
+.field public final j:Landroid/net/Uri;
 
-.field public final k:Landroid/net/Uri;
+.field public final k:Ljava/lang/String;
 
 .field public final l:Ljava/lang/String;
-
-.field public final m:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lv1/e;
+    new-instance v0, Lt1/e;
 
-    invoke-direct {v0}, Lv1/e;-><init>()V
+    invoke-direct {v0}, Lt1/e;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -51,27 +51,27 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->f:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Landroid/net/Uri;
+    iput-object p5, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Landroid/net/Uri;
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
+    iput-object p6, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Ljava/lang/String;
 
     .line 8
-    iput-object p7, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->m:Ljava/lang/String;
+    iput-object p7, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
 
     return-void
 .end method
@@ -95,11 +95,22 @@
     check-cast p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;
 
     .line 3
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->f:Ljava/lang/String;
+
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->f:Ljava/lang/String;
+
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
     iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
 
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 4
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -109,8 +120,8 @@
 
     iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
 
-    .line 4
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -120,30 +131,30 @@
 
     iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
 
-    .line 5
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Ljava/lang/String;
-
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Ljava/lang/String;
-
     .line 6
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Landroid/net/Uri;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Landroid/net/Uri;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Landroid/net/Uri;
 
     .line 7
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Ljava/lang/String;
+
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Ljava/lang/String;
+
+    .line 8
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -151,21 +162,10 @@
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
-
-    .line 8
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->m:Ljava/lang/String;
-
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->m:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
 
     .line 9
-    invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -187,43 +187,43 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->f:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
 
     const/4 v2, 0x3
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Landroid/net/Uri;
 
     const/4 v2, 0x4
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Ljava/lang/String;
 
     const/4 v2, 0x5
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
 
     const/4 v2, 0x6
 
@@ -243,70 +243,70 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->f:Ljava/lang/String;
 
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->g:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x3
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->h:Ljava/lang/String;
 
     .line 7
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x4
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->i:Ljava/lang/String;
 
     .line 9
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x5
 
     .line 10
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->j:Landroid/net/Uri;
 
     .line 11
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 p2, 0x6
 
     .line 12
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->k:Ljava/lang/String;
 
     .line 13
-    invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, p2, v1, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 p2, 0x7
 
     .line 14
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SignInCredential;->l:Ljava/lang/String;
 
     .line 15
-    invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, p2, v1, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 16
-    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

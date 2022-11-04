@@ -82,7 +82,7 @@
     const-string v0, "sink("
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 .end method
 
 .method public write(Lokio/Buffer;J)V
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -123,9 +123,9 @@
     :goto_0
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-lez v2, :cond_1
+    if-lez v0, :cond_1
 
     .line 2
     iget-object v0, p0, Lokio/Okio$1;->val$timeout:Lokio/Timeout;
@@ -148,39 +148,39 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
     .line 5
-    iget-object v1, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
+    iget-object v2, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
 
     iget-object v3, v0, Lokio/Segment;->data:[B
 
     iget v4, v0, Lokio/Segment;->pos:I
 
-    invoke-virtual {v1, v3, v4, v2}, Ljava/io/OutputStream;->write([BII)V
+    invoke-virtual {v2, v3, v4, v1}, Ljava/io/OutputStream;->write([BII)V
 
     .line 6
-    iget v1, v0, Lokio/Segment;->pos:I
+    iget v2, v0, Lokio/Segment;->pos:I
 
-    add-int/2addr v1, v2
+    add-int/2addr v2, v1
 
-    iput v1, v0, Lokio/Segment;->pos:I
+    iput v2, v0, Lokio/Segment;->pos:I
 
-    int-to-long v2, v2
+    int-to-long v3, v1
 
-    sub-long/2addr p2, v2
+    sub-long/2addr p2, v3
 
     .line 7
-    iget-wide v4, p1, Lokio/Buffer;->size:J
+    iget-wide v5, p1, Lokio/Buffer;->size:J
 
-    sub-long/2addr v4, v2
+    sub-long/2addr v5, v3
 
-    iput-wide v4, p1, Lokio/Buffer;->size:J
+    iput-wide v5, p1, Lokio/Buffer;->size:J
 
     .line 8
-    iget v2, v0, Lokio/Segment;->limit:I
+    iget v1, v0, Lokio/Segment;->limit:I
 
-    if-ne v1, v2, :cond_0
+    if-ne v2, v1, :cond_0
 
     .line 9
     invoke-virtual {v0}, Lokio/Segment;->pop()Lokio/Segment;

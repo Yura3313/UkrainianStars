@@ -43,7 +43,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    const/4 p2, 0x0
+    move p2, p1
 
     .line 2
     :goto_0

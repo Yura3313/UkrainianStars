@@ -19,20 +19,20 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:[B
+.field public final g:[B
 
-.field public final i:I
+.field public final h:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Le3/a;
+    new-instance v0, Ld3/a;
 
-    invoke-direct {v0}, Le3/a;-><init>()V
+    invoke-direct {v0}, Ld3/a;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -40,7 +40,7 @@
 .end method
 
 .method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 2
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -58,24 +58,28 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
-    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v2, "null reference"
 
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {v1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->f:Ljava/lang/String;
 
+    .line 5
+    invoke-static {v1, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 6
     invoke-virtual {v1}, [B->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [B
 
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:[B
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:[B
 
-    .line 5
-    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->i:I
+    .line 7
+    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:I
 
     return-void
 .end method
@@ -94,17 +98,17 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:[B
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:[B
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByteArray([B)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->i:I
+    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

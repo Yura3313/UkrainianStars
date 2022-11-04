@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final b:Lxb/a;
+.field private final b:Lvb/a;
 
 .field private final c:Lcom/linecorp/linesdk/a/a/a/d;
 
@@ -34,23 +34,23 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lxb/a;
+    new-instance v0, Lvb/a;
 
-    invoke-direct {v0, p1, p2}, Lxb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lvb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Lxb/a;)V
+    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Lvb/a;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Lxb/a;)V
+.method private constructor <init>(Lvb/a;)V
     .locals 1
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
+    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
 
     .line 4
     new-instance p1, Lcom/linecorp/linesdk/a/a/a/d;
@@ -90,7 +90,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 37
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v0
@@ -99,20 +99,20 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 43
+    .line 38
     invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 44
+    .line 39
     :cond_0
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v0
 
-    .line 45
+    .line 40
     :goto_0
     invoke-virtual {p0}, Ljava/net/URLConnection;->getHeaderFields()Ljava/util/Map;
 
@@ -130,7 +130,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 46
+    .line 41
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v3
@@ -140,9 +140,9 @@
     goto :goto_2
 
     :cond_1
-    const/4 v3, 0x0
+    move v3, v2
 
-    .line 47
+    .line 42
     :goto_1
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -150,7 +150,7 @@
 
     if-ge v3, v4, :cond_3
 
-    .line 48
+    .line 43
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -159,7 +159,7 @@
 
     const-string v5, "gzip"
 
-    .line 49
+    .line 44
     invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v4
@@ -179,14 +179,14 @@
     :goto_2
     if-eqz v2, :cond_4
 
-    .line 50
+    .line 45
     new-instance v1, Ljava/util/zip/GZIPInputStream;
 
     invoke-direct {v1, v0}, Ljava/util/zip/GZIPInputStream;-><init>(Ljava/io/InputStream;)V
 
     move-object v0, v1
 
-    .line 51
+    .line 46
     :cond_4
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -196,13 +196,13 @@
 
     if-eq p0, v1, :cond_5
 
-    .line 52
+    .line 47
     :try_start_0
     sget-object p1, Lcom/linecorp/linesdk/LineApiResponseCode;->SERVER_ERROR:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     new-instance v1, Lcom/linecorp/linesdk/LineApiError;
 
-    .line 53
+    .line 48
     invoke-interface {p2, v0}, Lcom/linecorp/linesdk/a/a/a/c;->a(Ljava/io/InputStream;)Ljava/lang/Object;
 
     move-result-object p2
@@ -211,14 +211,14 @@
 
     invoke-direct {v1, p0, p2}, Lcom/linecorp/linesdk/LineApiError;-><init>(ILjava/lang/String;)V
 
-    .line 54
+    .line 49
     invoke-static {p1, v1}, Lcom/linecorp/linesdk/LineApiResponse;->createAsError(Lcom/linecorp/linesdk/LineApiResponseCode;Lcom/linecorp/linesdk/LineApiError;)Lcom/linecorp/linesdk/LineApiResponse;
 
     move-result-object p0
 
     return-object p0
 
-    .line 55
+    .line 50
     :cond_5
     invoke-interface {p1, v0}, Lcom/linecorp/linesdk/a/a/a/c;->a(Ljava/io/InputStream;)Ljava/lang/Object;
 
@@ -235,7 +235,7 @@
     :catch_0
     move-exception p1
 
-    .line 56
+    .line 51
     sget-object p2, Lcom/linecorp/linesdk/LineApiResponseCode;->INTERNAL_ERROR:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     new-instance v0, Lcom/linecorp/linesdk/LineApiError;
@@ -268,41 +268,15 @@
     .line 24
     instance-of v1, v0, Ljavax/net/ssl/HttpsURLConnection;
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     .line 25
-    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt p0, v1, :cond_0
-
-    .line 26
     check-cast v0, Ljava/net/HttpURLConnection;
 
     return-object v0
 
-    .line 27
+    .line 26
     :cond_0
-    check-cast v0, Ljavax/net/ssl/HttpsURLConnection;
-
-    .line 28
-    new-instance p0, Lvb/a;
-
-    .line 29
-    invoke-virtual {v0}, Ljavax/net/ssl/HttpsURLConnection;->getSSLSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
-
-    move-result-object v1
-
-    invoke-direct {p0, v1}, Lvb/a;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
-
-    .line 30
-    invoke-virtual {v0, p0}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
-
-    return-object v0
-
-    .line 31
-    :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -335,7 +309,7 @@
         }
     .end annotation
 
-    .line 32
+    .line 27
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -357,7 +331,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 33
+    .line 28
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -390,25 +364,25 @@
         }
     .end annotation
 
-    .line 34
+    .line 29
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 35
+    .line 30
     sget-object p0, Lcom/linecorp/linesdk/a/a/a/a;->a:[B
 
     return-object p0
 
-    .line 36
+    .line 31
     :cond_0
     new-instance v0, Landroid/net/Uri$Builder;
 
     invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
 
-    .line 37
+    .line 32
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -430,7 +404,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 38
+    .line 33
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -443,12 +417,12 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 39
+    .line 34
     invoke-virtual {v0, v2, v1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     goto :goto_0
 
-    .line 40
+    .line 35
     :cond_1
     :try_start_0
     invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
@@ -472,18 +446,12 @@
     :catch_0
     move-exception p0
 
-    .line 41
+    .line 36
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-    goto :goto_2
-
-    :goto_1
     throw v0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 
@@ -535,9 +503,9 @@
     const-string v3, "User-Agent"
 
     .line 5
-    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
+    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
 
-    invoke-virtual {v4}, Lxb/a;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Lvb/a;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -764,9 +732,9 @@
     const-string v0, "User-Agent"
 
     .line 7
-    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
+    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
 
-    invoke-virtual {v1}, Lxb/a;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lvb/a;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -871,11 +839,5 @@
     invoke-virtual {p3}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_2
-    goto :goto_4
-
-    :goto_3
     throw p2
-
-    :goto_4
-    goto :goto_3
 .end method

@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final a:Le0/d;
+.field public final a:Le0/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Le0/d;"
+            "Le0/b;"
         }
     .end annotation
 .end field
 
-.field public final b:Lm/g;
+.field public final b:Lm/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/g<",
+            "Lm/h<",
             "TT;",
             "Ljava/util/ArrayList<",
             "TT;>;>;"
@@ -61,20 +61,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Le0/d;
+    new-instance v0, Le0/b;
 
     const/16 v1, 0xa
 
-    invoke-direct {v0, v1}, Le0/d;-><init>(I)V
+    invoke-direct {v0, v1}, Le0/b;-><init>(I)V
 
-    iput-object v0, p0, Lt/a;->a:Le0/d;
+    iput-object v0, p0, Lt/a;->a:Le0/b;
 
     .line 3
-    new-instance v0, Lm/g;
+    new-instance v0, Lm/h;
 
-    invoke-direct {v0}, Lm/g;-><init>()V
+    invoke-direct {v0}, Lm/h;-><init>()V
 
-    iput-object v0, p0, Lt/a;->b:Lm/g;
+    iput-object v0, p0, Lt/a;->b:Lm/h;
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
@@ -128,12 +128,12 @@
     invoke-virtual {p3, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v0, p0, Lt/a;->b:Lm/g;
+    iget-object v0, p0, Lt/a;->b:Lm/h;
 
     const/4 v1, 0x0
 
     .line 5
-    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -180,11 +180,5 @@
 
     invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method

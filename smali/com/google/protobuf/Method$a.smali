@@ -3,7 +3,7 @@
 .source "Method.java"
 
 # interfaces
-.implements Lcom/google/protobuf/v0;
+.implements Lcom/google/protobuf/x0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Method;",
         "Lcom/google/protobuf/Method$a;",
         ">;",
-        "Lcom/google/protobuf/v0;"
+        "Lcom/google/protobuf/x0;"
     }
 .end annotation
 

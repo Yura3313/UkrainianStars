@@ -51,7 +51,7 @@
     if-eqz v1, :cond_0
 
     .line 5
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->W()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->V()Z
 
     goto :goto_0
 

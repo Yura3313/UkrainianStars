@@ -1,31 +1,28 @@
 .class public final Lcom/android/billingclient/api/p;
 .super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
+.source "com.android.billingclient:billing@@5.0.0"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/concurrent/Callable<",
-        "Ljava/lang/Void;",
-        ">;"
-    }
-.end annotation
-
-
 # instance fields
-.field public final synthetic a:Lcom/android/billingclient/api/r;
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Lcom/supercell/titan/l;
+
+.field public final synthetic c:Lcom/android/billingclient/api/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/billingclient/api/r;)V
+.method public constructor <init>(Lcom/android/billingclient/api/a;Ljava/lang/String;Lcom/supercell/titan/l;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    iput-object p1, p0, Lcom/android/billingclient/api/p;->c:Lcom/android/billingclient/api/a;
+
+    iput-object p2, p0, Lcom/android/billingclient/api/p;->a:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/android/billingclient/api/p;->b:Lcom/supercell/titan/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,348 +31,520 @@
 
 
 # virtual methods
-.method public final synthetic call()Ljava/lang/Object;
-    .locals 10
+.method public final call()Ljava/lang/Object;
+    .locals 16
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    move-object/from16 v0, p0
 
     .line 1
-    iget-object v0, v0, Lcom/android/billingclient/api/r;->a:Ljava/lang/Object;
+    iget-object v1, v0, Lcom/android/billingclient/api/p;->c:Lcom/android/billingclient/api/a;
+
+    iget-object v2, v0, Lcom/android/billingclient/api/p;->a:Ljava/lang/String;
 
     .line 2
-    monitor-enter v0
-
-    :try_start_0
-    iget-object v1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
-
-    .line 3
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x3
-
-    const/4 v2, 0x0
-
-    :try_start_1
-    iget-object v3, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
-
-    iget-object v3, v3, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
-
-    .line 5
-    iget-object v3, v3, Lcom/android/billingclient/api/b;->e:Landroid/content/Context;
-
-    .line 6
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    const/16 v4, 0x10
+    const-string v4, "Querying owned items, item type: "
 
-    const/16 v5, 0x10
+    invoke-virtual {v4, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    const/4 v6, 0x3
+    move-result-object v3
 
-    :goto_0
-    if-lt v5, v1, :cond_1
+    const-string v4, "BillingClient"
 
-    :try_start_2
-    iget-object v7, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    invoke-static {v4, v3}, Lv3/i;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v7, v7, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
+    new-instance v3, Ljava/util/ArrayList;
+
+    .line 3
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iget-boolean v5, v1, Lcom/android/billingclient/api/a;->p:Z
+
+    iget-boolean v6, v1, Lcom/android/billingclient/api/a;->u:Z
+
+    iget-object v7, v1, Lcom/android/billingclient/api/a;->g:Ljava/lang/String;
+
+    .line 4
+    new-instance v8, Landroid/os/Bundle;
+
+    invoke-direct {v8}, Landroid/os/Bundle;-><init>()V
+
+    const-string v9, "playBillingLibraryVersion"
+
+    .line 5
+    invoke-virtual {v8, v9, v7}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 v7, 0x1
+
+    if-eqz v5, :cond_0
+
+    if-eqz v6, :cond_0
+
+    const-string v5, "enablePendingPurchases"
+
+    .line 6
+    invoke-virtual {v8, v5, v7}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
+
+    :cond_0
+    const/4 v6, 0x0
 
     .line 7
-    iget-object v7, v7, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
+    :goto_0
+    :try_start_0
+    iget-boolean v9, v1, Lcom/android/billingclient/api/a;->p:Z
 
-    const-string v8, "subs"
+    if-eqz v9, :cond_1
+
+    iget-object v9, v1, Lcom/android/billingclient/api/a;->k:Lcom/google/android/gms/internal/play_billing/zze;
+
+    iget-object v10, v1, Lcom/android/billingclient/api/a;->j:Landroid/content/Context;
 
     .line 8
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->A1(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v10}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result v6
+    move-result-object v10
 
-    if-nez v6, :cond_0
+    .line 9
+    invoke-interface {v9, v10, v2, v6, v8}, Lcom/google/android/gms/internal/play_billing/zze;->R5(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v6
 
     goto :goto_1
 
-    :cond_0
-    add-int/lit8 v5, v5, -0x1
-
-    goto :goto_0
-
-    :catch_0
-    move v1, v6
-
-    goto/16 :goto_c
-
+    .line 10
     :cond_1
-    const/4 v5, 0x0
+    iget-object v9, v1, Lcom/android/billingclient/api/a;->k:Lcom/google/android/gms/internal/play_billing/zze;
+
+    iget-object v10, v1, Lcom/android/billingclient/api/a;->j:Landroid/content/Context;
+
+    .line 11
+    invoke-virtual {v10}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 12
+    invoke-interface {v9, v10, v2, v6}, Lcom/google/android/gms/internal/play_billing/zze;->j7(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object v6
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     :goto_1
-    iget-object v7, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    const-string v9, "getPurchase()"
 
-    iget-object v7, v7, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
+    .line 13
+    sget-object v10, Lcom/android/billingclient/api/y;->f:Lcom/android/billingclient/api/d;
 
-    const/4 v8, 0x5
+    const-string v11, "INAPP_DATA_SIGNATURE_LIST"
 
-    const/4 v9, 0x1
+    const-string v12, "INAPP_PURCHASE_DATA_LIST"
 
-    if-lt v5, v8, :cond_2
+    const-string v13, "INAPP_PURCHASE_ITEM_LIST"
 
-    const/4 v8, 0x1
+    const/4 v14, 0x0
 
-    goto :goto_2
+    if-nez v6, :cond_2
 
+    new-array v15, v7, [Ljava/lang/Object;
+
+    aput-object v9, v15, v14
+
+    const-string v9, "%s got null owned items list"
+
+    .line 14
+    invoke-static {v9, v15}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    sget v9, Lv3/i;->a:I
+
+    move v5, v7
+
+    goto/16 :goto_3
+
+    .line 15
     :cond_2
-    const/4 v8, 0x0
+    invoke-static {v6, v4}, Lv3/i;->a(Landroid/os/Bundle;Ljava/lang/String;)I
 
-    .line 9
-    :goto_2
-    iput-boolean v8, v7, Lcom/android/billingclient/api/b;->i:Z
+    move-result v15
 
-    if-lt v5, v1, :cond_3
+    .line 16
+    invoke-static {v6, v4}, Lv3/i;->d(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
 
-    const/4 v8, 0x1
+    move-result-object v5
+
+    .line 17
+    new-instance v7, Lcom/android/billingclient/api/d;
+
+    invoke-direct {v7}, Lcom/android/billingclient/api/d;-><init>()V
+
+    .line 18
+    iput v15, v7, Lcom/android/billingclient/api/d;->a:I
+
+    .line 19
+    iput-object v5, v7, Lcom/android/billingclient/api/d;->b:Ljava/lang/String;
+
+    if-eqz v15, :cond_3
+
+    const/4 v5, 0x2
+
+    new-array v5, v5, [Ljava/lang/Object;
+
+    aput-object v9, v5, v14
+
+    .line 20
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    const/4 v10, 0x1
+
+    aput-object v9, v5, v10
+
+    const-string v9, "%s failed. Response code: %s"
+
+    invoke-static {v9, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 21
+    sget v5, Lv3/i;->a:I
+
+    move-object v10, v7
+
+    const/4 v5, 0x1
 
     goto :goto_3
 
+    .line 22
     :cond_3
-    const/4 v8, 0x0
+    invoke-virtual {v6, v13}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    .line 10
-    :goto_3
-    iput-boolean v8, v7, Lcom/android/billingclient/api/b;->h:Z
+    move-result v5
 
-    if-ge v5, v1, :cond_4
+    if-eqz v5, :cond_8
 
-    .line 11
-    sget v5, Lw3/a;->a:I
+    .line 23
+    invoke-virtual {v6, v12}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
+    move-result v5
+
+    if-eqz v5, :cond_8
+
+    .line 24
+    invoke-virtual {v6, v11}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_4
+
+    goto :goto_2
+
+    .line 25
     :cond_4
-    const/16 v5, 0x10
+    invoke-virtual {v6, v13}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
-    :goto_4
-    if-lt v5, v1, :cond_6
+    move-result-object v5
 
-    iget-object v7, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    .line 26
+    invoke-virtual {v6, v12}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
-    iget-object v7, v7, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
+    move-result-object v7
 
-    .line 12
-    iget-object v7, v7, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
+    .line 27
+    invoke-virtual {v6, v11}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
-    const-string v8, "inapp"
+    move-result-object v15
 
-    .line 13
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->A1(ILjava/lang/String;Ljava/lang/String;)I
+    if-nez v5, :cond_5
 
-    move-result v6
+    const/4 v5, 0x1
 
-    if-nez v6, :cond_5
+    new-array v7, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    aput-object v9, v7, v14
 
-    iget-object v3, v3, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
+    const-string v9, "Bundle returned from %s contains null SKUs list."
 
-    .line 14
-    iput v5, v3, Lcom/android/billingclient/api/b;->j:I
+    .line 28
+    invoke-static {v9, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    goto :goto_5
+    .line 29
+    sget v7, Lv3/i;->a:I
+
+    goto :goto_3
 
     :cond_5
-    add-int/lit8 v5, v5, -0x1
+    const/4 v5, 0x1
+
+    if-nez v7, :cond_6
+
+    new-array v7, v5, [Ljava/lang/Object;
+
+    aput-object v9, v7, v14
+
+    const-string v9, "Bundle returned from %s contains null purchases list."
+
+    .line 30
+    invoke-static {v9, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 31
+    sget v7, Lv3/i;->a:I
+
+    goto :goto_3
+
+    :cond_6
+    if-nez v15, :cond_7
+
+    new-array v7, v5, [Ljava/lang/Object;
+
+    aput-object v9, v7, v14
+
+    const-string v9, "Bundle returned from %s contains null signatures list."
+
+    .line 32
+    invoke-static {v9, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 33
+    sget v7, Lv3/i;->a:I
+
+    goto :goto_3
+
+    :cond_7
+    sget-object v10, Lcom/android/billingclient/api/y;->g:Lcom/android/billingclient/api/d;
+
+    goto :goto_3
+
+    :cond_8
+    :goto_2
+    const/4 v5, 0x1
+
+    new-array v7, v5, [Ljava/lang/Object;
+
+    aput-object v9, v7, v14
+
+    const-string v9, "Bundle returned from %s doesn\'t contain required fields."
+
+    .line 34
+    invoke-static {v9, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 35
+    sget v7, Lv3/i;->a:I
+
+    .line 36
+    :goto_3
+    sget-object v7, Lcom/android/billingclient/api/y;->g:Lcom/android/billingclient/api/d;
+
+    if-eq v10, v7, :cond_9
+
+    new-instance v1, Lcom/android/billingclient/api/z;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v10, v2}, Lcom/android/billingclient/api/z;-><init>(Lcom/android/billingclient/api/d;Ljava/util/List;)V
+
+    goto/16 :goto_5
+
+    .line 37
+    :cond_9
+    invoke-virtual {v6, v13}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v7
+
+    .line 38
+    invoke-virtual {v6, v12}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v9
+
+    .line 39
+    invoke-virtual {v6, v11}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v10
+
+    .line 40
+    :goto_4
+    invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
+
+    move-result v11
+
+    if-ge v14, v11, :cond_b
+
+    .line 41
+    invoke-virtual {v9, v14}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Ljava/lang/String;
+
+    .line 42
+    invoke-virtual {v10, v14}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v12
+
+    check-cast v12, Ljava/lang/String;
+
+    .line 43
+    invoke-virtual {v7, v14}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v13
+
+    check-cast v13, Ljava/lang/String;
+
+    invoke-static {v13}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v13
+
+    const-string v15, "Sku is owned: "
+
+    invoke-virtual {v15, v13}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    .line 44
+    invoke-static {v4, v13}, Lv3/i;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    :try_start_1
+    new-instance v13, Lcom/android/billingclient/api/Purchase;
+
+    .line 45
+    invoke-direct {v13, v11, v12}, Lcom/android/billingclient/api/Purchase;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 46
+    invoke-virtual {v13}, Lcom/android/billingclient/api/Purchase;->b()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v11}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_a
+
+    .line 47
+    sget v11, Lv3/i;->a:I
+
+    .line 48
+    :cond_a
+    invoke-virtual {v3, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v14, v14, 0x1
 
     goto :goto_4
 
-    .line 15
-    :cond_6
+    .line 49
+    :catch_0
+    sget v1, Lv3/i;->a:I
+
+    new-instance v1, Lcom/android/billingclient/api/z;
+
+    sget-object v2, Lcom/android/billingclient/api/y;->f:Lcom/android/billingclient/api/d;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v3}, Lcom/android/billingclient/api/z;-><init>(Lcom/android/billingclient/api/d;Ljava/util/List;)V
+
+    goto :goto_5
+
+    :cond_b
+    const-string v7, "INAPP_CONTINUATION_TOKEN"
+
+    .line 50
+    invoke-virtual {v6, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v9, "Continuation token: "
+
+    invoke-virtual {v9, v7}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 51
+    invoke-static {v4, v7}, Lv3/i;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 52
+    invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_c
+
+    new-instance v1, Lcom/android/billingclient/api/z;
+
+    sget-object v2, Lcom/android/billingclient/api/y;->g:Lcom/android/billingclient/api/d;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/billingclient/api/z;-><init>(Lcom/android/billingclient/api/d;Ljava/util/List;)V
+
+    goto :goto_5
+
+    :cond_c
+    move v7, v5
+
+    goto/16 :goto_0
+
+    .line 53
+    :catch_1
+    sget v1, Lv3/i;->a:I
+
+    new-instance v1, Lcom/android/billingclient/api/z;
+
+    .line 54
+    sget-object v2, Lcom/android/billingclient/api/y;->h:Lcom/android/billingclient/api/d;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v3}, Lcom/android/billingclient/api/z;-><init>(Lcom/android/billingclient/api/d;Ljava/util/List;)V
+
+    .line 55
     :goto_5
-    iget-object v3, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
+    iget-object v2, v1, Lcom/android/billingclient/api/z;->f:Ljava/lang/Object;
 
-    iget-object v3, v3, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
+    check-cast v2, Ljava/util/List;
 
-    .line 16
-    iget v5, v3, Lcom/android/billingclient/api/b;->j:I
+    if-eqz v2, :cond_d
 
-    if-lt v5, v4, :cond_7
+    .line 56
+    iget-object v3, v0, Lcom/android/billingclient/api/p;->b:Lcom/supercell/titan/l;
 
-    const/4 v4, 0x1
+    .line 57
+    iget-object v1, v1, Lcom/android/billingclient/api/z;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/android/billingclient/api/d;
+
+    .line 58
+    invoke-virtual {v3, v1, v2}, Lcom/supercell/titan/l;->b(Lcom/android/billingclient/api/d;Ljava/util/List;)V
 
     goto :goto_6
 
-    :cond_7
-    const/4 v4, 0x0
-
-    .line 17
-    :goto_6
-    iput-boolean v4, v3, Lcom/android/billingclient/api/b;->p:Z
-
-    const/16 v4, 0xf
-
-    if-lt v5, v4, :cond_8
-
-    const/4 v4, 0x1
-
-    goto :goto_7
-
-    :cond_8
-    const/4 v4, 0x0
-
-    .line 18
-    :goto_7
-    iput-boolean v4, v3, Lcom/android/billingclient/api/b;->o:Z
-
-    const/16 v4, 0xe
-
-    if-lt v5, v4, :cond_9
-
-    const/4 v4, 0x1
-
-    goto :goto_8
-
-    :cond_9
-    const/4 v4, 0x0
-
-    .line 19
-    :goto_8
-    iput-boolean v4, v3, Lcom/android/billingclient/api/b;->n:Z
-
-    const/16 v4, 0xa
-
-    if-lt v5, v4, :cond_a
-
-    const/4 v4, 0x1
-
-    goto :goto_9
-
-    :cond_a
-    const/4 v4, 0x0
-
-    .line 20
-    :goto_9
-    iput-boolean v4, v3, Lcom/android/billingclient/api/b;->m:Z
-
-    const/16 v4, 0x9
-
-    if-lt v5, v4, :cond_b
-
-    const/4 v4, 0x1
-
-    goto :goto_a
-
-    :cond_b
-    const/4 v4, 0x0
-
-    .line 21
-    :goto_a
-    iput-boolean v4, v3, Lcom/android/billingclient/api/b;->l:Z
-
-    const/4 v4, 0x6
-
-    if-lt v5, v4, :cond_c
-
-    goto :goto_b
-
-    :cond_c
-    const/4 v9, 0x0
-
-    .line 22
-    :goto_b
-    iput-boolean v9, v3, Lcom/android/billingclient/api/b;->k:Z
-
-    if-ge v5, v1, :cond_d
-
-    .line 23
-    sget v1, Lw3/a;->a:I
-
     :cond_d
-    if-nez v6, :cond_e
+    iget-object v2, v0, Lcom/android/billingclient/api/p;->b:Lcom/supercell/titan/l;
 
-    const/4 v1, 0x2
+    .line 59
+    iget-object v1, v1, Lcom/android/billingclient/api/z;->g:Ljava/lang/Object;
 
-    .line 24
-    iput v1, v3, Lcom/android/billingclient/api/b;->a:I
+    check-cast v1, Lcom/android/billingclient/api/d;
 
-    goto :goto_d
+    .line 60
+    sget-object v3, Lv3/p;->g:Lv3/n;
 
-    .line 25
-    :cond_e
-    iput v2, v3, Lcom/android/billingclient/api/b;->a:I
+    .line 61
+    sget-object v3, Lv3/b;->j:Lv3/b;
 
-    .line 26
-    iput-object v0, v3, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .line 62
+    invoke-virtual {v2, v1, v3}, Lcom/supercell/titan/l;->b(Lcom/android/billingclient/api/d;Ljava/util/List;)V
 
-    goto :goto_d
+    :goto_6
+    const/4 v1, 0x0
 
-    .line 27
-    :catch_1
-    :goto_c
-    sget v3, Lw3/a;->a:I
-
-    iget-object v3, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
-
-    iget-object v3, v3, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
-
-    .line 28
-    iput v2, v3, Lcom/android/billingclient/api/b;->a:I
-
-    .line 29
-    iput-object v0, v3, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
-
-    move v6, v1
-
-    :goto_d
-    if-nez v6, :cond_f
-
-    .line 30
-    iget-object v1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
-
-    .line 31
-    sget-object v2, Lcom/android/billingclient/api/t;->i:Lcom/android/billingclient/api/e;
-
-    invoke-static {v1, v2}, Lcom/android/billingclient/api/r;->a(Lcom/android/billingclient/api/r;Lcom/android/billingclient/api/e;)V
-
-    goto :goto_e
-
-    :cond_f
-    iget-object v1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
-
-    .line 32
-    sget-object v2, Lcom/android/billingclient/api/t;->a:Lcom/android/billingclient/api/e;
-
-    invoke-static {v1, v2}, Lcom/android/billingclient/api/r;->a(Lcom/android/billingclient/api/r;Lcom/android/billingclient/api/e;)V
-
-    :goto_e
-    return-object v0
-
-    :catchall_0
-    move-exception v1
-
-    .line 33
-    :try_start_3
-    monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    goto :goto_10
-
-    :goto_f
-    throw v1
-
-    :goto_10
-    goto :goto_f
+    return-object v1
 .end method

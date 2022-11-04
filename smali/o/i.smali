@@ -290,13 +290,13 @@
 
 
 # virtual methods
-.method public final a(Lo/p;)V
+.method public final a(Lo/o;)V
     .locals 4
 
     .line 1
     iget-object v0, p0, Lo/i;->a:Ljava/util/HashMap;
 
-    iget v1, p1, Lo/p;->b:I
+    iget v1, p1, Lo/o;->b:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -311,7 +311,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p1, Lo/p;->u:Ljava/util/ArrayList;
+    iget-object v1, p1, Lo/o;->u:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -353,7 +353,7 @@
     check-cast v1, Lo/c;
 
     .line 5
-    iget-object v2, p1, Lo/p;->a:Landroid/view/View;
+    iget-object v2, p1, Lo/o;->a:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -388,7 +388,7 @@
     if-eqz v2, :cond_1
 
     .line 8
-    iget-object v2, p1, Lo/p;->u:Ljava/util/ArrayList;
+    iget-object v2, p1, Lo/o;->u:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

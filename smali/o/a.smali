@@ -23,7 +23,7 @@
     const-string v1, ".("
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -85,7 +85,7 @@
     const-string p0, "?"
 
     .line 2
-    invoke-static {p0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p0, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

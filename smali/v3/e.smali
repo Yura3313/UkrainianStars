@@ -1,53 +1,112 @@
 .class public final Lv3/e;
-.super Lv3/s4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+.super Lv3/s;
+.source "com.android.billingclient:billing@@5.0.0"
 
 
 # instance fields
-.field public final synthetic k:Ljava/lang/String;
+.field public final transient h:Lv3/r;
 
-.field public final synthetic l:Lv3/s4;
+.field public final transient i:Lv3/p;
 
 
 # direct methods
-.method public constructor <init>(Lv3/s4;Ljava/lang/String;)V
+.method public constructor <init>(Lv3/r;Lv3/p;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lv3/e;->l:Lv3/s4;
+    invoke-direct {p0}, Lv3/s;-><init>()V
 
-    iput-object p2, p0, Lv3/e;->k:Ljava/lang/String;
+    iput-object p1, p0, Lv3/e;->h:Lv3/r;
 
-    const/4 p2, 0x1
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
+    iput-object p2, p0, Lv3/e;->i:Lv3/p;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final b([Ljava/lang/Object;)I
+    .locals 1
+
+    iget-object v0, p0, Lv3/e;->i:Lv3/p;
+
+    invoke-virtual {v0, p1}, Lv3/p;->b([Ljava/lang/Object;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+
+    iget-object v0, p0, Lv3/e;->h:Lv3/r;
+
+    invoke-virtual {v0, p1}, Lv3/r;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final e()Lv3/p;
+    .locals 1
+
+    iget-object v0, p0, Lv3/e;->i:Lv3/p;
+
+    return-object v0
+.end method
+
+.method public final f()Lv3/h;
+    .locals 2
+
+    iget-object v0, p0, Lv3/e;->i:Lv3/p;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lv3/p;->l(I)Lv3/h;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic iterator()Ljava/util/Iterator;
+    .locals 2
+
+    iget-object v0, p0, Lv3/e;->i:Lv3/p;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lv3/p;->l(I)Lv3/h;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lv3/e;->l:Lv3/s4;
+    iget-object v0, p0, Lv3/e;->h:Lv3/r;
+
+    check-cast v0, Lv3/g;
 
     .line 2
-    iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    iget v0, v0, Lv3/g;->k:I
 
-    .line 3
-    iget-object v1, p0, Lv3/e;->k:Ljava/lang/String;
-
-    iget-wide v2, p0, Lv3/s4$a;->h:J
-
-    invoke-interface {v0, v1, v2, v3}, Lcom/google/android/gms/internal/measurement/zzm;->endAdUnitExposure(Ljava/lang/String;J)V
-
-    return-void
+    return v0
 .end method

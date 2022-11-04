@@ -20,7 +20,13 @@
 
 
 # virtual methods
-.method public J0(ILandroid/os/Parcel;)Z
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public n0(ILandroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,12 +37,6 @@
     const/4 p1, 0x0
 
     return p1
-.end method
-
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 0
-
-    return-object p0
 .end method
 
 .method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
@@ -74,7 +74,7 @@
     return p1
 
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/auth-api-phone/zzb;->J0(ILandroid/os/Parcel;)Z
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/auth-api-phone/zzb;->n0(ILandroid/os/Parcel;)Z
 
     move-result p1
 

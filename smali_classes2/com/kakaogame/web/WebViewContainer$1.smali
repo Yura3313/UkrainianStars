@@ -78,7 +78,7 @@
     const-string v0, "[onHandle] javascript: "
 
     .line 3
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 

@@ -1,65 +1,73 @@
 .class public final Lf0/p;
-.super Ljava/lang/Object;
-.source "PointerIconCompat.java"
+.super Lf0/o$b;
+.source "ViewCompat.java"
 
 
-# instance fields
-.field public a:Ljava/lang/Object;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lf0/o$b<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(I)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lf0/p;->a:Ljava/lang/Object;
+    invoke-direct {p0, p1}, Lf0/o$b;-><init>(I)V
 
     return-void
 .end method
 
-.method public static b(Landroid/content/Context;)Lf0/p;
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    new-instance v0, Lf0/p;
-
-    const/16 v1, 0x3ea
-
-    invoke-static {p0, v1}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Lf0/p;-><init>(Ljava/lang/Object;)V
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p0, Lf0/p;
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lf0/p;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
+.method public final b(Landroid/view/View;)Ljava/lang/Object;
+    .locals 0
 
-    iget-object v0, p0, Lf0/p;->a:Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityHeading()Z
 
-    return-object v0
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final d(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/Boolean;
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setAccessibilityHeading(Z)V
+
+    return-void
+.end method
+
+.method public final e(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/Boolean;
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lf0/o$b;->a(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    return p1
 .end method

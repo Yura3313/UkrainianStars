@@ -3,7 +3,7 @@
 .source "BottomAppBar.java"
 
 # interfaces
-.implements Ld4/j;
+.implements Lb4/j;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ld4/j<",
+        "Lb4/j<",
         "Lcom/google/android/material/floatingactionbutton/FloatingActionButton;",
         ">;"
     }

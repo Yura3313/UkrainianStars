@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$c;
-.super Lse/i;
+.super Lif/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Ljava/util/Set<",
         "+",
         "Ljava/lang/String;",
@@ -29,18 +29,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$c;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -51,25 +51,28 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$c;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i0:Ltc/c;
 
     .line 3
-    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    iget-object v0, v0, Ltc/c;->a:Ljava/lang/String;
+
+    .line 4
+    invoke-static {v0}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lae/i;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lzd/u1;
 
     move-result-object v1
 
-    const/16 v2, 0x11
+    const/16 v2, 0x10
 
-    invoke-virtual {v1, v2}, Lae/i;->d(I)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lzd/u1;->d(I)Ljava/util/List;
 
     move-result-object v1
 
@@ -78,14 +81,14 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lje/l;->g:Lje/l;
+    sget-object v1, Lze/l;->f:Lze/l;
 
     :goto_0
-    invoke-static {v0, v1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v0, v1}, Lze/j;->L(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v0}, Lze/j;->Y(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object v0
 

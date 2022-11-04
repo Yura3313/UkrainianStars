@@ -1,267 +1,104 @@
 .class public final Lcom/google/android/play/core/appupdate/j;
-.super Lcom/google/android/play/core/appupdate/h;
+.super Lcom/google/android/play/core/appupdate/i;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/android/play/core/appupdate/h<",
-        "Lcom/google/android/play/core/appupdate/a;",
+        "Lcom/google/android/play/core/appupdate/i<",
+        "Ljava/lang/Void;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final j:Ljava/lang/String;
-
-.field public final synthetic k:Lcom/google/android/play/core/appupdate/k;
-
-
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/appupdate/k;Lcom/google/android/play/core/tasks/i;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/google/android/play/core/appupdate/l;Lcom/google/android/play/core/tasks/i;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/android/play/core/tasks/i<",
-            "Lcom/google/android/play/core/appupdate/a;",
-            ">;",
-            "Ljava/lang/String;",
-            ")V"
+            "Ljava/lang/Void;",
+            ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/appupdate/j;->k:Lcom/google/android/play/core/appupdate/k;
+    new-instance v0, Lx3/g3;
 
-    new-instance v0, La5/b;
+    const-string v1, "OnCompleteUpdateCallback"
 
-    const-string v1, "OnRequestInstallCallback"
+    invoke-direct {v0, v1}, Lx3/g3;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
-
-    invoke-direct {p0, p1, v0, p2}, Lcom/google/android/play/core/appupdate/h;-><init>(Lcom/google/android/play/core/appupdate/k;La5/b;Lcom/google/android/play/core/tasks/i;)V
-
-    iput-object p3, p0, Lcom/google/android/play/core/appupdate/j;->j:Ljava/lang/String;
+    invoke-direct {p0, p1, v0, p2}, Lcom/google/android/play/core/appupdate/i;-><init>(Lcom/google/android/play/core/appupdate/l;Lx3/g3;Lcom/google/android/play/core/tasks/i;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroid/os/Bundle;)V
-    .locals 24
+.method public final Z(Landroid/os/Bundle;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
     .line 1
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/k;
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/i;->h:Lcom/google/android/play/core/appupdate/l;
 
-    iget-object v2, v2, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
+    iget-object v0, v0, Lcom/google/android/play/core/appupdate/l;->a:Ly4/k;
 
-    invoke-virtual {v2}, La5/l;->a()V
+    invoke-virtual {v0}, Ly4/k;->a()V
 
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/h;->g:La5/b;
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/i;->f:Lx3/g3;
 
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
-    new-array v4, v3, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
-    const/4 v5, 0x4
+    const/4 v2, 0x4
 
-    const-string v6, "onRequestInfo"
+    const-string v3, "onCompleteUpdate"
 
     .line 2
-    invoke-virtual {v2, v5, v6, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    const-string v2, "error.code"
+    const-string v0, "error.code"
 
-    const/4 v4, -0x2
+    const/4 v1, -0x2
 
     .line 3
-    invoke-virtual {v1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v5
+    move-result v2
 
-    if-eqz v5, :cond_0
-
-    invoke-virtual {v1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
-
-    move-result v5
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_0
+    if-eqz v2, :cond_0
 
     .line 4
-    iget-object v3, v0, Lcom/google/android/play/core/appupdate/h;->h:Lcom/google/android/play/core/tasks/i;
+    iget-object v2, p0, Lcom/google/android/play/core/appupdate/i;->g:Lcom/google/android/play/core/tasks/i;
 
-    new-instance v5, Lcom/google/android/play/core/install/InstallException;
+    new-instance v3, Lw4/a;
 
     .line 5
-    invoke-virtual {v1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v1
+    move-result p1
 
     .line 6
-    invoke-direct {v5, v1}, Lcom/google/android/play/core/install/InstallException;-><init>(I)V
+    invoke-direct {v3, p1}, Lw4/a;-><init>(I)V
 
-    invoke-virtual {v3, v5}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Exception;)V
+    invoke-virtual {v2, v3}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Exception;)V
 
     return-void
 
     :cond_0
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/h;->h:Lcom/google/android/play/core/tasks/i;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/i;->g:Lcom/google/android/play/core/tasks/i;
 
-    iget-object v4, v0, Lcom/google/android/play/core/appupdate/j;->k:Lcom/google/android/play/core/appupdate/k;
+    const/4 v0, 0x0
 
-    iget-object v5, v0, Lcom/google/android/play/core/appupdate/j;->j:Ljava/lang/String;
-
-    const/4 v6, -0x1
-
-    const-string v7, "version.code"
-
-    .line 7
-    invoke-virtual {v1, v7, v6}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
-
-    move-result v7
-
-    const-string v8, "update.availability"
-
-    invoke-virtual {v1, v8}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result v8
-
-    const-string v9, "install.status"
-
-    invoke-virtual {v1, v9, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
-
-    move-result v9
-
-    const-string v10, "client.version.staleness"
-
-    invoke-virtual {v1, v10, v6}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
-
-    move-result v11
-
-    if-eq v11, v6, :cond_1
-
-    invoke-virtual {v1, v10}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v6, 0x0
-
-    :goto_0
-    move-object/from16 v23, v6
-
-    const-string v6, "in.app.update.priority"
-
-    invoke-virtual {v1, v6, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
-
-    move-result v10
-
-    const-string v3, "bytes.downloaded"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
-
-    move-result-wide v11
-
-    const-string v3, "total.bytes.to.download"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
-
-    move-result-wide v13
-
-    const-string v3, "additional.size.required"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
-
-    move-result-wide v15
-
-    iget-object v3, v4, Lcom/google/android/play/core/appupdate/k;->d:Lcom/google/android/play/core/assetpacks/z;
-
-    .line 8
-    iget-object v3, v3, Lcom/google/android/play/core/assetpacks/z;->a:Lcom/google/android/play/core/assetpacks/y;
-
-    .line 9
-    invoke-virtual {v3}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/y;->k(Ljava/io/File;)J
-
-    move-result-wide v17
-
-    const-string v3, "blocking.intent"
-
-    .line 10
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v3
-
-    move-object/from16 v19, v3
-
-    check-cast v19, Landroid/app/PendingIntent;
-
-    const-string v3, "nonblocking.intent"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v3
-
-    move-object/from16 v20, v3
-
-    check-cast v20, Landroid/app/PendingIntent;
-
-    const-string v3, "blocking.destructive.intent"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v3
-
-    move-object/from16 v21, v3
-
-    check-cast v21, Landroid/app/PendingIntent;
-
-    const-string v3, "nonblocking.destructive.intent"
-
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object/from16 v22, v1
-
-    check-cast v22, Landroid/app/PendingIntent;
-
-    move v6, v7
-
-    move v7, v8
-
-    move v8, v9
-
-    move-object/from16 v9, v23
-
-    invoke-static/range {v5 .. v22}, Lcom/google/android/play/core/appupdate/a;->c(Ljava/lang/String;IIILjava/lang/Integer;IJJJJLandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Lcom/google/android/play/core/appupdate/a;
-
-    move-result-object v1
-
-    .line 11
-    invoke-virtual {v2, v1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 
     return-void
 .end method

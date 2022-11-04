@@ -3,7 +3,7 @@
 .source "StartingPromotionManager.java"
 
 # interfaces
-.implements Lkc/a;
+.implements Ljc/a;
 
 
 # annotations
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Ldc/b;)V
     .locals 0
 
     new-instance p2, Ljava/lang/StringBuilder;

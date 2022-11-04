@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/AvatarEditView;
+.field public final synthetic f:Lcom/supercell/id/view/AvatarEditView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/AvatarEditView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->g:Lcom/supercell/id/view/AvatarEditView;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,14 +38,14 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->g:Lcom/supercell/id/view/AvatarEditView;
+    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->f:Lcom/supercell/id/view/AvatarEditView;
 
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
 
     invoke-static {p1, v0}, Lcom/supercell/id/view/AvatarEditView;->access$setBgAnimationState$p(Lcom/supercell/id/view/AvatarEditView;Lcom/supercell/id/view/AvatarEditView$b;)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->g:Lcom/supercell/id/view/AvatarEditView;
+    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-static {p1}, Lcom/supercell/id/view/AvatarEditView;->access$getCurrentBackground$p(Lcom/supercell/id/view/AvatarEditView;)Landroid/graphics/drawable/GradientDrawable;
 
@@ -65,14 +65,14 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->g:Lcom/supercell/id/view/AvatarEditView;
+    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->f:Lcom/supercell/id/view/AvatarEditView;
 
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
 
     invoke-static {p1, v0}, Lcom/supercell/id/view/AvatarEditView;->access$setBgAnimationState$p(Lcom/supercell/id/view/AvatarEditView;Lcom/supercell/id/view/AvatarEditView$b;)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->g:Lcom/supercell/id/view/AvatarEditView;
+    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$g;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-static {p1}, Lcom/supercell/id/view/AvatarEditView;->access$getCurrentBackground$p(Lcom/supercell/id/view/AvatarEditView;)Landroid/graphics/drawable/GradientDrawable;
 

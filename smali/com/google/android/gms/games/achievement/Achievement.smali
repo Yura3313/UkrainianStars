@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/achievement/Achievement;",
         ">;"
     }
@@ -20,28 +20,31 @@
 
 
 # virtual methods
-.method public abstract D()J
+.method public abstract A0()F
 .end method
 
-.method public abstract D1()I
+.method public abstract B()J
 .end method
 
-.method public abstract K0()J
+.method public abstract I0()I
 .end method
 
-.method public abstract U()Landroid/net/Uri;
+.method public abstract T1()I
+.end method
+
+.method public abstract U1()J
 .end method
 
 .method public abstract Z()Ljava/lang/String;
 .end method
 
-.method public abstract e2()I
+.method public abstract c()Ljava/lang/String;
+.end method
+
+.method public abstract d0()Landroid/net/Uri;
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
-.end method
-
-.method public abstract getName()Ljava/lang/String;
 .end method
 
 .method public abstract getRevealedImageUrl()Ljava/lang/String;
@@ -66,20 +69,17 @@
     .end annotation
 .end method
 
-.method public abstract i1()Ljava/lang/String;
+.method public abstract h1()Ljava/lang/String;
 .end method
 
-.method public abstract n()Ljava/lang/String;
+.method public abstract j0()Landroid/net/Uri;
 .end method
 
-.method public abstract n0()Ljava/lang/String;
+.method public abstract q0()Ljava/lang/String;
 .end method
 
-.method public abstract o1()Landroid/net/Uri;
+.method public abstract r()Ljava/lang/String;
 .end method
 
-.method public abstract u2()Lcom/google/android/gms/games/Player;
-.end method
-
-.method public abstract y1()F
+.method public abstract s2()Lcom/google/android/gms/games/Player;
 .end method

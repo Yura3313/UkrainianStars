@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static final zxing_barcode_scanner:I = 0x7f0d019e
+.field public static final zxing_barcode_scanner:I = 0x7f0d01a2
 
-.field public static final zxing_capture:I = 0x7f0d019f
+.field public static final zxing_capture:I = 0x7f0d01a3
 
 
 # direct methods

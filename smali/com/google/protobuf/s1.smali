@@ -1,148 +1,340 @@
-.class public final Lcom/google/protobuf/s1;
-.super Ljava/util/AbstractList;
-.source "UnmodifiableLazyStringList.java"
-
-# interfaces
-.implements Lcom/google/protobuf/f0;
-.implements Ljava/util/RandomAccess;
+.class public abstract Lcom/google/protobuf/s1;
+.super Ljava/lang/Object;
+.source "UnknownFieldSchema.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/util/AbstractList<",
-        "Ljava/lang/String;",
-        ">;",
-        "Lcom/google/protobuf/f0;",
-        "Ljava/util/RandomAccess;"
+        "<T:",
+        "Ljava/lang/Object;",
+        "B:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# instance fields
-.field public final g:Lcom/google/protobuf/f0;
-
-
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/f0;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G()Lcom/google/protobuf/f0;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method public final K(I)Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
-
-    invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->K(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final get(I)Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
+.method public abstract a(Ljava/lang/Object;II)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/lang/String;",
-            ">;"
+            "(TB;II)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract b(Ljava/lang/Object;IJ)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;IJ)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract c(Ljava/lang/Object;ILjava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;ITT;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract d(Ljava/lang/Object;ILcom/google/protobuf/i;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;I",
+            "Lcom/google/protobuf/i;",
+            ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract e(Ljava/lang/Object;IJ)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;IJ)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract f(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")TB;"
+        }
+    .end annotation
+.end method
+
+.method public abstract g(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract h(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract i(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract j(Ljava/lang/Object;)V
+.end method
+
+.method public abstract k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)TT;"
+        }
+    .end annotation
+.end method
+
+.method public final l(Ljava/lang/Object;Lcom/google/protobuf/j1;)Z
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;",
+            "Lcom/google/protobuf/j1;",
+            ")Z"
         }
     .end annotation
 
-    new-instance v0, Lcom/google/protobuf/s1$b;
-
-    invoke-direct {v0, p0}, Lcom/google/protobuf/s1$b;-><init>(Lcom/google/protobuf/s1;)V
-
-    return-object v0
-.end method
-
-.method public final k0(Lcom/google/protobuf/i;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final listIterator(I)Ljava/util/ListIterator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(I)",
-            "Ljava/util/ListIterator<",
-            "Ljava/lang/String;",
-            ">;"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    new-instance v0, Lcom/google/protobuf/s1$a;
-
-    invoke-direct {v0, p0, p1}, Lcom/google/protobuf/s1$a;-><init>(Lcom/google/protobuf/s1;I)V
-
-    return-object v0
-.end method
-
-.method public final q()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "*>;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
-
-    invoke-interface {v0}, Lcom/google/protobuf/f0;->q()Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final size()I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    .line 1
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->getTag()I
 
     move-result v0
 
-    return v0
+    ushr-int/lit8 v1, v0, 0x3
+
+    and-int/lit8 v0, v0, 0x7
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_8
+
+    if-eq v0, v2, :cond_7
+
+    const/4 v3, 0x2
+
+    if-eq v0, v3, :cond_6
+
+    const/4 v3, 0x4
+
+    const/4 v4, 0x3
+
+    if-eq v0, v4, :cond_2
+
+    if-eq v0, v3, :cond_1
+
+    const/4 v3, 0x5
+
+    if-ne v0, v3, :cond_0
+
+    .line 2
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->m()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lcom/google/protobuf/s1;->a(Ljava/lang/Object;II)V
+
+    return v2
+
+    .line 3
+    :cond_0
+    invoke-static {}, Lcom/google/protobuf/c0;->d()Lcom/google/protobuf/c0$a;
+
+    move-result-object p1
+
+    throw p1
+
+    :cond_1
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 4
+    :cond_2
+    invoke-virtual {p0}, Lcom/google/protobuf/s1;->m()Ljava/lang/Object;
+
+    move-result-object v0
+
+    shl-int/lit8 v4, v1, 0x3
+
+    or-int/2addr v3, v4
+
+    .line 5
+    :cond_3
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->o()I
+
+    move-result v4
+
+    const v5, 0x7fffffff
+
+    if-eq v4, v5, :cond_4
+
+    .line 6
+    invoke-virtual {p0, v0, p2}, Lcom/google/protobuf/s1;->l(Ljava/lang/Object;Lcom/google/protobuf/j1;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    .line 7
+    :cond_4
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->getTag()I
+
+    move-result p2
+
+    if-ne v3, p2, :cond_5
+
+    .line 8
+    invoke-virtual {p0, v0}, Lcom/google/protobuf/s1;->q(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lcom/google/protobuf/s1;->c(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    return v2
+
+    .line 9
+    :cond_5
+    invoke-static {}, Lcom/google/protobuf/c0;->a()Lcom/google/protobuf/c0;
+
+    move-result-object p1
+
+    throw p1
+
+    .line 10
+    :cond_6
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->t()Lcom/google/protobuf/i;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lcom/google/protobuf/s1;->d(Ljava/lang/Object;ILcom/google/protobuf/i;)V
+
+    return v2
+
+    .line 11
+    :cond_7
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->e()J
+
+    move-result-wide v3
+
+    invoke-virtual {p0, p1, v1, v3, v4}, Lcom/google/protobuf/s1;->b(Ljava/lang/Object;IJ)V
+
+    return v2
+
+    .line 12
+    :cond_8
+    invoke-interface {p2}, Lcom/google/protobuf/j1;->D()J
+
+    move-result-wide v3
+
+    invoke-virtual {p0, p1, v1, v3, v4}, Lcom/google/protobuf/s1;->e(Ljava/lang/Object;IJ)V
+
+    return v2
+.end method
+
+.method public abstract m()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TB;"
+        }
+    .end annotation
+.end method
+
+.method public abstract n(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "TB;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract o(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "TT;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract p()V
+.end method
+
+.method public abstract q(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;)TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract r(Ljava/lang/Object;Lcom/google/protobuf/a2;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/google/protobuf/a2;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract s(Ljava/lang/Object;Lcom/google/protobuf/a2;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/google/protobuf/a2;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method

@@ -1,28 +1,25 @@
 .class public final La1/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "Codecs.java"
 
 
-# annotations
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, La1/a;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Date;",
-            "Lcom/google/ads/AdRequest$Gender;",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;Z",
-            "Landroid/location/Location;",
-            ")V"
-        }
-    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

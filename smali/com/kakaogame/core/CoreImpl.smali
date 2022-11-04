@@ -927,12 +927,12 @@
 
     if-ne p1, v3, :cond_b
 
-    const/4 p1, 0x1
+    move p1, v0
 
     goto :goto_2
 
     :cond_b
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 51
     :goto_2
@@ -999,7 +999,7 @@
     const/16 p1, 0xfa1
 
     .line 58
-    invoke-static {p0, v1, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v1, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1394,7 +1394,7 @@
     const/16 v2, 0xfa1
 
     .line 7
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -1447,7 +1447,7 @@
     const-string v0, "InstallReferrer Failed:"
 
     .line 5
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2181,9 +2181,9 @@
 
     const-wide/16 v4, -0x1
 
-    cmp-long v6, v1, v4
+    cmp-long v4, v1, v4
 
-    if-lez v6, :cond_3
+    if-lez v4, :cond_3
 
     const-string v4, "The current KakaoGameSDK version is dangerous.\nPlease update the SDK to the latest version."
 
@@ -2192,9 +2192,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v1, v4
+    cmp-long v1, v1, v4
 
-    if-nez v6, :cond_3
+    if-nez v1, :cond_3
 
     .line 16
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;

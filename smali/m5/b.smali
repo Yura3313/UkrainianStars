@@ -1,56 +1,37 @@
-.class public final Lm5/b;
-.super Lm5/e;
-.source "HkdfPrfKeyManager.java"
+.class public abstract Lm5/b;
+.super Ljava/lang/Object;
+.source "AbstractParser.java"
+
+# interfaces
+.implements Lm5/y0;
 
 
-# instance fields
-.field public final synthetic a:Lm5/c;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType::",
+        "Lm5/q0;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lm5/y0<",
+        "TMessageType;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lm5/c;)V
+.method public static constructor <clinit>()V
     .locals 0
 
-    iput-object p1, p0, Lm5/b;->a:Lm5/c;
-
-    invoke-direct {p0}, Lm5/e;-><init>()V
+    invoke-static {}, Lm5/p;->a()Lm5/p;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public final a()Ljava/util/Map;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/Integer;",
-            "Lm5/c;",
-            ">;"
-        }
-    .end annotation
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lm5/b;->a:Lm5/c;
-
-    invoke-static {v0, v1}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
+    return-void
 .end method

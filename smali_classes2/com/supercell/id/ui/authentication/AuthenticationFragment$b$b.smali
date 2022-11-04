@@ -1,14 +1,14 @@
 .class public final synthetic Lcom/supercell/id/ui/authentication/AuthenticationFragment$b$b;
-.super Lse/h;
+.super Lif/g;
 .source "AuthenticationFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,10 +18,10 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
+        "Lif/g;",
+        "Lhf/l<",
         "Landroid/view/View;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
@@ -33,7 +33,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lse/h;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lif/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -48,12 +48,12 @@
     return-object v0
 .end method
 
-.method public final getOwner()Lwe/d;
+.method public final getOwner()Lmf/d;
     .locals 1
 
     const-class v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;
 
-    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lif/s;->a(Ljava/lang/Class;)Lmf/c;
 
     move-result-object v0
 
@@ -77,17 +77,17 @@
     const-string v0, "p1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lse/c;->receiver:Ljava/lang/Object;
+    iget-object p1, p0, Lif/b;->receiver:Ljava/lang/Object;
 
     check-cast p1, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -97,7 +97,7 @@
 
     .line 5
     :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

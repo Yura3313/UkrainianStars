@@ -1,72 +1,80 @@
 .class public final Lpd/e;
-.super Ljava/lang/Object;
-.source "_Collections.kt"
+.super Lif/i;
+.source "ProfileImageEditorFragment.kt"
 
 # interfaces
-.implements Lje/o;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "Lif/i;",
+        "Lhf/p<",
+        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
         "Ljava/lang/Object;",
-        "Lje/o<",
-        "Ljava/lang/String;",
-        "Ljava/lang/String;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Ljava/lang/Iterable;
+# static fields
+.field public static final f:Lpd/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Iterable;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lpd/e;->a:Ljava/lang/Iterable;
+    new-instance v0, Lpd/e;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Lpd/e;-><init>()V
+
+    sput-object v0, Lpd/e;->f:Lpd/e;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Ljava/lang/String;"
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    check-cast p1, Ljava/lang/String;
+    .line 1
+    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+
+    const-string v0, "$receiver"
+
+    .line 2
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
+
+    .line 4
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
-.end method
-
-.method public final b()Ljava/util/Iterator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lpd/e;->a:Ljava/lang/Iterable;
-
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    return-object v0
 .end method

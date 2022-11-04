@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic k:Lcom/google/android/material/floatingactionbutton/d;
+.field public final synthetic j:Lcom/google/android/material/floatingactionbutton/d;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/floatingactionbutton/d;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$g;->k:Lcom/google/android/material/floatingactionbutton/d;
+    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$g;->j:Lcom/google/android/material/floatingactionbutton/d;
 
     invoke-direct {p0, p1}, Lcom/google/android/material/floatingactionbutton/d$h;-><init>(Lcom/google/android/material/floatingactionbutton/d;)V
 
@@ -34,7 +34,7 @@
 .method public final a()F
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$g;->k:Lcom/google/android/material/floatingactionbutton/d;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$g;->j:Lcom/google/android/material/floatingactionbutton/d;
 
     iget v0, v0, Lcom/google/android/material/floatingactionbutton/d;->h:F
 

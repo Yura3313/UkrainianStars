@@ -79,7 +79,7 @@
     :try_start_0
     iget-object v3, v1, Landroidx/lifecycle/w;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3}, Ljava/util/Map;->values()Ljava/util/Collection;
+    invoke-virtual {v3}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object v3
 

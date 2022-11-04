@@ -14,21 +14,23 @@
 
 
 # instance fields
-.field public final a:Lz3/p0;
+.field public final a:Lx3/p0;
 
 
 # direct methods
-.method public constructor <init>(Lz3/p0;)V
-    .locals 0
+.method public constructor <init>(Lx3/p0;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const-string v0, "null reference"
+
     .line 2
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iput-object p1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     return-void
 .end method
@@ -44,12 +46,12 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-static {p0, v0}, Lz3/p0;->f(Landroid/content/Context;Lz3/j;)Lz3/p0;
+    invoke-static {p0, v0}, Lx3/p0;->f(Landroid/content/Context;Lx3/j;)Lx3/p0;
 
     move-result-object p0
 
     .line 2
-    iget-object p0, p0, Lz3/p0;->r:Lcom/google/android/gms/measurement/AppMeasurement;
+    iget-object p0, p0, Lx3/p0;->q:Lcom/google/android/gms/measurement/AppMeasurement;
 
     return-object p0
 .end method
@@ -62,19 +64,19 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->k()Lz3/a;
+    invoke-virtual {v0}, Lx3/p0;->k()Lx3/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    iget-object v1, v1, Lz3/p0;->u:Ll2/e;
+    iget-object v1, v1, Lx3/p0;->t:Lj2/f;
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -94,33 +96,33 @@
 
     .line 6
     :cond_0
-    invoke-virtual {v0}, Ly3/a;->b()Lz3/l0;
+    invoke-virtual {v0}, Lx3/h1;->b()Lx3/l0;
 
     move-result-object v3
 
-    new-instance v4, Lz3/v;
+    new-instance v4, Lx3/v;
 
-    invoke-direct {v4, v0, p1, v1, v2}, Lz3/v;-><init>(Lz3/a;Ljava/lang/String;J)V
+    invoke-direct {v4, v0, p1, v1, v2}, Lx3/v;-><init>(Lx3/a;Ljava/lang/String;J)V
 
     .line 7
-    invoke-virtual {v3, v4}, Lz3/l0;->D(Ljava/lang/Runnable;)V
+    invoke-virtual {v3, v4}, Lx3/l0;->w(Ljava/lang/Runnable;)V
 
     goto :goto_1
 
     .line 8
     :cond_1
     :goto_0
-    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+    invoke-virtual {v0}, Lx3/h1;->d()Lx3/o;
 
     move-result-object p1
 
     .line 9
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lx3/o;->k:Lx3/q;
 
     const-string v0, "Ad unit id must be a non-empty string"
 
     .line 10
-    invoke-virtual {p1, v0}, Lz3/q;->a(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lx3/q;->a(Ljava/lang/String;)V
 
     :goto_1
     return-void
@@ -132,18 +134,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 4
-    invoke-virtual {v0, p1, p2, p3}, Lz3/l1;->I(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1, p2, p3}, Lx3/n1;->C(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -154,21 +156,21 @@
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    invoke-virtual {p2}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {p2}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object p2
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 5
-    invoke-virtual {p2}, Lz3/x1;->v()V
+    invoke-virtual {p2}, Lx3/z1;->o()V
 
     const/4 p1, 0x0
 
@@ -181,19 +183,19 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->k()Lz3/a;
+    invoke-virtual {v0}, Lx3/p0;->k()Lx3/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v1, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    iget-object v1, v1, Lz3/p0;->u:Ll2/e;
+    iget-object v1, v1, Lx3/p0;->t:Lj2/f;
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -213,33 +215,33 @@
 
     .line 6
     :cond_0
-    invoke-virtual {v0}, Ly3/a;->b()Lz3/l0;
+    invoke-virtual {v0}, Lx3/h1;->b()Lx3/l0;
 
     move-result-object v3
 
-    new-instance v4, Lz3/q0;
+    new-instance v4, Lx3/r0;
 
-    invoke-direct {v4, v0, p1, v1, v2}, Lz3/q0;-><init>(Lz3/a;Ljava/lang/String;J)V
+    invoke-direct {v4, v0, p1, v1, v2}, Lx3/r0;-><init>(Lx3/a;Ljava/lang/String;J)V
 
     .line 7
-    invoke-virtual {v3, v4}, Lz3/l0;->D(Ljava/lang/Runnable;)V
+    invoke-virtual {v3, v4}, Lx3/l0;->w(Ljava/lang/Runnable;)V
 
     goto :goto_1
 
     .line 8
     :cond_1
     :goto_0
-    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+    invoke-virtual {v0}, Lx3/h1;->d()Lx3/o;
 
     move-result-object p1
 
     .line 9
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lx3/o;->k:Lx3/q;
 
     const-string v0, "Ad unit id must be a non-empty string"
 
     .line 10
-    invoke-virtual {p1, v0}, Lz3/q;->a(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lx3/q;->a(Ljava/lang/String;)V
 
     :goto_1
     return-void
@@ -250,13 +252,13 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->r()Lz3/g3;
+    invoke-virtual {v0}, Lx3/p0;->r()Lx3/k3;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lz3/g3;->i0()J
+    invoke-virtual {v0}, Lx3/k3;->b0()J
 
     move-result-wide v0
 
@@ -269,17 +271,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 3
-    iget-object v0, v0, Lz3/l1;->l:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, v0, Lx3/n1;->k:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -308,17 +310,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 3
-    invoke-virtual {v0, p1, p2}, Lz3/l1;->M(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v0, p1, p2}, Lx3/n1;->G(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p1
 
@@ -344,21 +346,21 @@
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    invoke-virtual {p2}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {p2}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object p2
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 5
-    invoke-virtual {p2}, Lz3/x1;->v()V
+    invoke-virtual {p2}, Lx3/z1;->o()V
 
     const/4 p1, 0x0
 
@@ -371,31 +373,31 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Ly3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lx3/h1;->f:Ljava/lang/Object;
 
-    check-cast v0, Lz3/p0;
+    check-cast v0, Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->o()Lz3/v1;
+    invoke-virtual {v0}, Lx3/p0;->o()Lx3/x1;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 4
-    iget-object v0, v0, Lz3/v1;->j:Lz3/u1;
+    iget-object v0, v0, Lx3/x1;->i:Lx3/w1;
 
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object v0, v0, Lz3/u1;->b:Ljava/lang/String;
+    iget-object v0, v0, Lx3/w1;->b:Ljava/lang/String;
 
     goto :goto_0
 
@@ -412,31 +414,31 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Ly3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lx3/h1;->f:Ljava/lang/Object;
 
-    check-cast v0, Lz3/p0;
+    check-cast v0, Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->o()Lz3/v1;
+    invoke-virtual {v0}, Lx3/p0;->o()Lx3/x1;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 4
-    iget-object v0, v0, Lz3/v1;->j:Lz3/u1;
+    iget-object v0, v0, Lx3/x1;->i:Lx3/w1;
 
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object v0, v0, Lz3/u1;->a:Ljava/lang/String;
+    iget-object v0, v0, Lx3/w1;->a:Ljava/lang/String;
 
     goto :goto_0
 
@@ -448,21 +450,64 @@
 .end method
 
 .method public getGmpAppId()Ljava/lang/String;
-    .locals 1
+    .locals 3
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lz3/l1;->j()Ljava/lang/String;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
-    return-object v0
+    .line 2
+    iget-object v1, v0, Lx3/h1;->f:Ljava/lang/Object;
+
+    check-cast v1, Lx3/p0;
+
+    .line 3
+    iget-object v1, v1, Lx3/p0;->g:Ljava/lang/String;
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    :try_start_0
+    invoke-static {}, Lz1/f;->b()Ljava/lang/String;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    .line 5
+    iget-object v0, v0, Lx3/h1;->f:Ljava/lang/Object;
+
+    check-cast v0, Lx3/p0;
+
+    invoke-virtual {v0}, Lx3/p0;->d()Lx3/o;
+
+    move-result-object v0
+
+    .line 6
+    iget-object v0, v0, Lx3/o;->k:Lx3/q;
+
+    const-string v2, "getGoogleAppId failed with exception"
+
+    .line 7
+    invoke-virtual {v0, v2, v1}, Lx3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    return-object v1
 .end method
 
 .method public getMaxUserProperties(Ljava/lang/String;)I
@@ -471,12 +516,12 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     .line 2
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     const/16 p1, 0x19
 
@@ -502,17 +547,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 3
-    invoke-virtual {v0, p1, p2, p3}, Lz3/l1;->K(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
+    invoke-virtual {v0, p1, p2, p3}, Lx3/n1;->E(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
 
     move-result-object p1
 
@@ -539,21 +584,21 @@
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object p2, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
     .line 2
-    invoke-virtual {p2}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {p2}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object p2
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 5
-    invoke-virtual {p2}, Lz3/x1;->v()V
+    invoke-virtual {p2}, Lx3/z1;->o()V
 
     const/4 p1, 0x0
 
@@ -565,13 +610,13 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lz3/l1;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1, p2, p3}, Lx3/n1;->z(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -582,19 +627,21 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "null reference"
 
     .line 2
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {v0}, Lz3/x1;->o()V
+    invoke-virtual {v0}, Lx3/z1;->h()V
 
     .line 4
     new-instance v1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;
@@ -611,17 +658,17 @@
     if-nez p1, :cond_0
 
     .line 6
-    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+    invoke-virtual {v0}, Lx3/h1;->d()Lx3/o;
 
     move-result-object p1
 
     .line 7
-    iget-object p1, p1, Lz3/o;->o:Lz3/q;
+    iget-object p1, p1, Lx3/o;->n:Lx3/q;
 
     const-string v2, "Package name should be null when calling setConditionalUserProperty"
 
     .line 8
-    invoke-virtual {p1, v2}, Lz3/q;->a(Ljava/lang/String;)V
+    invoke-virtual {p1, v2}, Lx3/q;->a(Ljava/lang/String;)V
 
     :cond_0
     const/4 p1, 0x0
@@ -630,35 +677,37 @@
     iput-object p1, v1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mAppId:Ljava/lang/String;
 
     .line 10
-    invoke-virtual {v0, v1}, Lz3/l1;->G(Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;)V
+    invoke-virtual {v0, v1}, Lx3/n1;->A(Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;)V
 
     return-void
 .end method
 
 .method public setConditionalUserPropertyAs(Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;)V
-    .locals 1
+    .locals 2
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lz3/p0;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement;->a:Lx3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+    invoke-virtual {v0}, Lx3/p0;->l()Lx3/n1;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "null reference"
 
     .line 2
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 3
     iget-object p1, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mAppId:Ljava/lang/String;
 
-    invoke-static {p1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
-    invoke-virtual {v0}, Lz3/x1;->v()V
+    invoke-virtual {v0}, Lx3/z1;->o()V
 
     const/4 p1, 0x0
 

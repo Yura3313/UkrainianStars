@@ -3,7 +3,7 @@
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Lzd/v1;
 
 
 # annotations
@@ -35,7 +35,7 @@
     sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;
 
     .line 2
-    sget v0, Lcom/supercell/id/R$layout;->fragment_profile_selector_login_flow_row_view:I
+    sget v0, Lcom/supercell/id/R$layout;->fragment_profile_selector_list_playing_without_supercell_id_footer:I
 
     sput v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;->a:I
 
@@ -52,19 +52,19 @@
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
+.method public final b(Lzd/v1;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public final c()I
+.method public final d()I
     .locals 1
 
     sget v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;->a:I
@@ -72,12 +72,12 @@
     return v0
 .end method
 
-.method public final d(Lae/a2;)Z
+.method public final e(Lzd/v1;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-ne p1, p0, :cond_0
 

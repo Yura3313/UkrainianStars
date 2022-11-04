@@ -126,7 +126,7 @@
     const-string p1, "getSessionResponse(timeout): "
 
     .line 6
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 

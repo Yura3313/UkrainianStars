@@ -67,8 +67,6 @@
 
     if-ltz v2, :cond_3
 
-    cmp-long v2, p2, v0
-
     if-nez v2, :cond_0
 
     return-wide v0
@@ -98,16 +96,16 @@
 
     move-result-wide p2
 
-    long-to-int p3, p2
+    long-to-int p2, p2
 
     .line 4
-    iget-object p2, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
+    iget-object p3, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
 
     iget-object v1, v0, Lokio/Segment;->data:[B
 
     iget v2, v0, Lokio/Segment;->limit:I
 
-    invoke-virtual {p2, v1, v2, p3}, Ljava/io/InputStream;->read([BII)I
+    invoke-virtual {p3, v1, v2, p2}, Ljava/io/InputStream;->read([BII)I
 
     move-result p2
 
@@ -191,7 +189,7 @@
     const-string v0, "source("
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

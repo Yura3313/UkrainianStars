@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/MyAvatarView$a;
-.super Lse/i;
+.super Lif/i;
 .source "MyAvatarView.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Lcom/google/android/material/imageview/ShapeableImageView;",
         ">;"
     }
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/MyAvatarView;
+.field public final synthetic f:Lcom/supercell/id/view/MyAvatarView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/MyAvatarView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$a;->g:Lcom/supercell/id/view/MyAvatarView;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$a;->f:Lcom/supercell/id/view/MyAvatarView;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$a;->g:Lcom/supercell/id/view/MyAvatarView;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$a;->f:Lcom/supercell/id/view/MyAvatarView;
 
     sget v1, Lcom/supercell/id/R$id;->image:I
 

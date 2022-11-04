@@ -18,13 +18,16 @@
 
 # virtual methods
 .method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
     .line 2
-    invoke-static {p1}, Lf0/r;->B(Landroid/view/View;)V
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->requestApplyInsets()V
 
     return-void
 .end method

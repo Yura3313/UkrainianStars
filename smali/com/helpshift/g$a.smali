@@ -39,9 +39,9 @@
     .line 3
     iput-object v0, p0, Lcom/helpshift/g$a;->b:Ljava/lang/String;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     if-eqz p1, :cond_3
 
@@ -87,13 +87,13 @@
 
     :cond_2
     :goto_0
-    const/4 v2, 0x0
+    move v2, v0
 
     goto :goto_2
 
     :cond_3
     :goto_1
-    const/4 v2, 0x1
+    move v2, v1
 
     :goto_2
     if-eqz v2, :cond_9
@@ -107,27 +107,24 @@
 
     if-nez v2, :cond_4
 
-    goto :goto_4
+    goto :goto_3
 
     .line 9
     :cond_4
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 10
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    move-result v0
+    move-result v1
 
-    if-eq v2, v0, :cond_5
-
-    :goto_3
-    const/4 v0, 0x0
+    if-eq v2, v1, :cond_5
 
     goto :goto_4
 
@@ -135,17 +132,17 @@
     :cond_5
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
-    move-result v0
+    move-result v1
 
     const/16 v2, 0x100
 
-    if-le v0, v2, :cond_6
+    if-le v1, v2, :cond_6
 
-    goto :goto_3
+    goto :goto_4
 
     .line 12
     :cond_6
-    sget-object v0, La5/u;->g:Ljava/util/regex/Pattern;
+    sget-object v0, Landroidx/lifecycle/a0;->b:Ljava/util/regex/Pattern;
 
     if-nez v0, :cond_7
 
@@ -156,11 +153,11 @@
 
     move-result-object v0
 
-    sput-object v0, La5/u;->g:Ljava/util/regex/Pattern;
+    sput-object v0, Landroidx/lifecycle/a0;->b:Ljava/util/regex/Pattern;
 
     .line 14
     :cond_7
-    sget-object v0, La5/u;->g:Ljava/util/regex/Pattern;
+    sget-object v0, Landroidx/lifecycle/a0;->b:Ljava/util/regex/Pattern;
 
     .line 15
     invoke-virtual {v0, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -172,7 +169,12 @@
 
     move-result v0
 
+    goto :goto_4
+
     :cond_8
+    :goto_3
+    move v0, v1
+
     :goto_4
     if-eqz v0, :cond_9
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/MaintenanceModeFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/MaintenanceModeFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
+.field public static final f:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/MaintenanceModeFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->g:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->f:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
 
     return-void
 .end method

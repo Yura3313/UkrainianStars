@@ -1,75 +1,73 @@
-.class public final Ly1/d;
-.super Lo0/a;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
+.class public abstract Ly1/d;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Lo0/a<",
-        "Ljava/lang/Void;",
-        ">;"
+        Ly1/d$b;,
+        Ly1/d$a;
     }
 .end annotation
 
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
 
-# instance fields
-.field public j:Ljava/util/concurrent/Semaphore;
 
-.field public k:Ljava/util/Set;
+# static fields
+.field public static final a:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lcom/google/android/gms/common/api/c;",
+            "Ly1/d;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "sAllClients"
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/util/Set;)V
+.method public static constructor <clinit>()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Ljava/util/Set<",
-            "Lcom/google/android/gms/common/api/c;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lo0/a;-><init>(Landroid/content/Context;)V
+    new-instance v0, Ljava/util/WeakHashMap;
+
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
     .line 2
-    new-instance p1, Ljava/util/concurrent/Semaphore;
+    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    invoke-direct {p1, v0}, Ljava/util/concurrent/Semaphore;-><init>(I)V
+    sput-object v0, Ly1/d;->a:Ljava/util/Set;
 
-    iput-object p1, p0, Ly1/d;->j:Ljava/util/concurrent/Semaphore;
+    return-void
+.end method
 
-    .line 3
-    iput-object p2, p0, Ly1/d;->k:Ljava/util/Set;
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d()V
+.method public a()Landroid/os/Looper;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Ly1/d;->j:Ljava/util/concurrent/Semaphore;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/Semaphore;->drainPermits()I
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 2
-    invoke-virtual {p0}, Lo0/a;->g()V
-
-    return-void
+    throw v0
 .end method

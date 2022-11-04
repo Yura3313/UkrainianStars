@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final w6(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+.method public final i5(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -28,17 +28,17 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lk3/gw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lj3/gz0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     const/4 p1, 0x2
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->S0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->L0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object p1
 

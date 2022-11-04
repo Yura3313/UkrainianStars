@@ -1,106 +1,71 @@
-.class public abstract Lcc/a;
+.class public final Lcc/a;
 .super Ljava/lang/Object;
-.source "LimitedMemoryCache.java"
-
-# interfaces
-.implements Lcc/b;
+.source "DefaultConfigurationFactory.java"
 
 
-# instance fields
-.field public final g:Ljava/util/Map;
-
-.field public final h:I
-
-.field public final i:Ljava/util/concurrent/atomic/AtomicInteger;
-
-.field public final j:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcc/a$a;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public static a(III)Ljava/util/concurrent/Executor;
+    .locals 8
+
+    const/4 v0, 0x2
+
+    if-ne p2, v0, :cond_0
+
+    const/4 p2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p2, 0x0
+
+    :goto_0
+    if-eqz p2, :cond_1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance p2, Lec/a;
+
+    invoke-direct {p2}, Lec/a;-><init>()V
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p2, Ljava/util/concurrent/LinkedBlockingQueue;
+
+    invoke-direct {p2}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
+
+    :goto_1
+    move-object v6, p2
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
+    new-instance p2, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const-wide/16 v3, 0x0
 
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcc/a;->g:Ljava/util/Map;
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 3
-    new-instance v0, Ljava/util/LinkedList;
+    new-instance v7, Lcc/a$a;
 
-    invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
+    const-string v0, "uil-pool-"
 
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedList(Ljava/util/List;)Ljava/util/List;
+    invoke-direct {v7, p1, v0}, Lcc/a$a;-><init>(ILjava/lang/String;)V
 
-    move-result-object v0
+    move-object v0, p2
 
-    iput-object v0, p0, Lcc/a;->j:Ljava/util/List;
+    move v1, p0
 
-    const/high16 v0, 0x100000
+    move v2, p0
 
     .line 4
-    iput v0, p0, Lcc/a;->h:I
+    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    .line 5
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
-
-    iput-object v0, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c()Ljava/util/Collection;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lcc/a;->g:Ljava/util/Map;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    new-instance v1, Ljava/util/HashSet;
-
-    iget-object v2, p0, Lcc/a;->g:Ljava/util/Map;
-
-    invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 3
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
+    return-object p2
 .end method

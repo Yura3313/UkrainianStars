@@ -59,7 +59,7 @@
     check-cast p1, Ljava/lang/Long;
 
     .line 3
-    iput-object p1, v0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    iput-object p1, v0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
     return-object v0
 .end method

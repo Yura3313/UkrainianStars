@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final g:Ljava/lang/Object;
+.field public static final f:Ljava/lang/Object;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
+    sput-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
 
     return-void
 .end method
@@ -31,11 +31,11 @@
     return-void
 .end method
 
-.method public static D2()V
+.method public static K2()V
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
+    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -56,13 +56,13 @@
     throw v1
 .end method
 
-.method public static E2()V
+.method public static L2()V
     .locals 2
     .annotation build Landroidx/annotation/RecentlyNullable;
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
+    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
 
     monitor-enter v0
 

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/settings/SettingsFragment;
-.super Lcom/supercell/id/ui/BaseFragment;
+.super Luc/j;
 .source "SettingsFragment.kt"
 
 
@@ -12,15 +12,15 @@
 
 
 # static fields
-.field public static final k0:Lae/k2;
+.field public static final j0:Lzd/g2;
 
-.field public static final l0:Lae/k2;
+.field public static final k0:Lzd/g2;
 
 
 # instance fields
-.field public i0:Landroidx/core/widget/NestedScrollView;
+.field public h0:Landroidx/core/widget/NestedScrollView;
 
-.field public j0:Ljava/util/HashMap;
+.field public i0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -28,26 +28,26 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lae/k2;
+    new-instance v0, Lzd/g2;
 
-    const-class v1, Lvd/b;
+    const-class v1, Lud/b;
 
     const-string v2, "account_settings_heading"
 
-    invoke-direct {v0, v2, v1}, Lae/k2;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct {v0, v2, v1}, Lzd/g2;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->k0:Lae/k2;
+    sput-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Lzd/g2;
 
     .line 2
-    new-instance v0, Lae/k2;
+    new-instance v0, Lzd/g2;
 
-    const-class v1, Lvd/l;
+    const-class v1, Lud/l;
 
     const-string v2, "account_settings_subscriptions_heading"
 
-    invoke-direct {v0, v2, v1}, Lae/k2;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct {v0, v2, v1}, Lzd/g2;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->l0:Lae/k2;
+    sput-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->k0:Lzd/g2;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Luc/j;-><init>()V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -75,20 +75,20 @@
     return-void
 .end method
 
-.method public final U0()Landroidx/core/widget/NestedScrollView;
+.method public final T0()Landroidx/core/widget/NestedScrollView;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Landroidx/core/widget/NestedScrollView;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->h0:Landroidx/core/widget/NestedScrollView;
 
     return-object v0
 .end method
 
-.method public final W0()Landroid/view/View;
+.method public final V0()Landroid/view/View;
     .locals 1
 
     sget v0, Lcom/supercell/id/R$id;->toolbar_wrapper:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/settings/SettingsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/settings/SettingsFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -97,12 +97,12 @@
     return-object v0
 .end method
 
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_body_tabs:I
 
@@ -115,12 +115,12 @@
     return-object p1
 .end method
 
-.method public final a0()V
+.method public final Z()V
     .locals 1
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Luc/j;->Z()V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -130,10 +130,10 @@
     return-void
 .end method
 
-.method public final f1(I)Landroid/view/View;
+.method public final e1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -141,10 +141,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -159,7 +159,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -185,16 +185,16 @@
     return-object v0
 .end method
 
-.method public final i0()V
+.method public final h0()V
     .locals 6
 
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
 
     if-eqz v1, :cond_5
 
@@ -234,17 +234,17 @@
     const-string v5, "it"
 
     .line 6
-    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget v4, v4, Landroidx/fragment/app/Fragment;->C:I
+    iget v4, v4, Landroidx/fragment/app/Fragment;->B:I
 
     .line 8
     sget v5, Lcom/supercell/id/R$id;->head:I
 
     if-ne v4, v5, :cond_1
 
-    const/4 v4, 0x1
+    move v4, v0
 
     goto :goto_1
 
@@ -281,7 +281,7 @@
 
     move-result-object v2
 
-    instance-of v3, v2, Lwc/h1;
+    instance-of v3, v2, Luc/k1;
 
     if-eqz v3, :cond_3
 
@@ -291,11 +291,11 @@
 
     .line 11
     :cond_4
-    invoke-static {v0}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lze/j;->D(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/supercell/id/ui/BaseFragment;
+    check-cast v0, Luc/j;
 
     goto :goto_3
 
@@ -303,186 +303,140 @@
     const/4 v0, 0x0
 
     :goto_3
-    check-cast v0, Lwc/h1;
+    check-cast v0, Luc/k1;
 
     if-eqz v0, :cond_6
 
     const/4 v1, -0x1
 
     .line 12
-    invoke-virtual {v0, v1}, Lwc/h1;->i1(I)V
+    invoke-virtual {v0, v1}, Luc/k1;->h1(I)V
 
     :cond_6
     return-void
 .end method
 
-.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Luc/j;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    new-instance p1, Lae/l2;
+    new-instance p1, Lzd/h2;
 
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroidx/fragment/app/FragmentManager;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->w()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p2
 
     const-string v0, "childFragmentManager"
 
-    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object v1
-
-    .line 4
-    iget-object v1, v1, Lae/u;->l:Lcom/supercell/id/IdAccount;
-
-    if-eqz v1, :cond_0
-
-    .line 5
-    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    if-eqz v1, :cond_2
-
-    invoke-static {v1}, Lye/n;->j(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v1, 0x0
-
-    goto :goto_2
-
-    :cond_2
-    :goto_1
-    const/4 v1, 0x1
-
-    :goto_2
-    if-nez v1, :cond_4
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
-    .line 6
-    iget-object v0, v0, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    .line 4
+    iget-object v0, v0, Lzd/q;->j:Lcom/supercell/id/IdConfiguration;
 
-    .line 7
+    .line 5
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->isYoungPlayer()Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    const/4 v1, 0x0
 
-    goto :goto_3
+    if-eqz v0, :cond_0
 
-    :cond_3
+    .line 6
+    sget-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Lzd/g2;
+
+    .line 7
+    invoke-static {v0}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
     const/4 v0, 0x2
 
-    new-array v0, v0, [Lae/k2;
+    new-array v0, v0, [Lzd/g2;
 
     .line 8
-    sget-object v1, Lcom/supercell/id/ui/settings/SettingsFragment;->k0:Lae/k2;
+    sget-object v2, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Lzd/g2;
 
-    aput-object v1, v0, v3
+    aput-object v2, v0, v1
+
+    const/4 v2, 0x1
 
     .line 9
-    sget-object v1, Lcom/supercell/id/ui/settings/SettingsFragment;->l0:Lae/k2;
+    sget-object v3, Lcom/supercell/id/ui/settings/SettingsFragment;->k0:Lzd/g2;
 
-    aput-object v1, v0, v2
+    aput-object v3, v0, v2
 
     .line 10
-    invoke-static {v0}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb2/e0;->l([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
-
-    goto :goto_4
 
     .line 11
-    :cond_4
-    :goto_3
-    sget-object v0, Lcom/supercell/id/ui/settings/SettingsFragment;->k0:Lae/k2;
+    :goto_0
+    new-instance v2, Lcom/supercell/id/ui/settings/SettingsFragment$b;
+
+    invoke-direct {v2, p0}, Lcom/supercell/id/ui/settings/SettingsFragment$b;-><init>(Lcom/supercell/id/ui/settings/SettingsFragment;)V
+
+    invoke-direct {p1, p2, v0, v2}, Lzd/h2;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;Lhf/l;)V
 
     .line 12
-    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    .line 13
-    :goto_4
-    new-instance v1, Lcom/supercell/id/ui/settings/SettingsFragment$b;
-
-    invoke-direct {v1, p0}, Lcom/supercell/id/ui/settings/SettingsFragment$b;-><init>(Lcom/supercell/id/ui/settings/SettingsFragment;)V
-
-    invoke-direct {p1, p2, v0, v1}, Lae/l2;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;Lre/l;)V
-
-    .line 14
     sget p2, Lcom/supercell/id/R$id;->tab_pager:I
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/settings/SettingsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/settings/SettingsFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroidx/viewpager/widget/FlowPager;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v0, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
+    invoke-virtual {v0, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Lw0/b;)V
 
-    .line 15
-    :cond_5
+    .line 13
+    :cond_1
     sget v0, Lcom/supercell/id/R$id;->toolbar_tabs:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/settings/SettingsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/settings/SettingsFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lcom/supercell/id/view/SubPageTabLayout;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_2
 
-    .line 16
-    new-instance v1, Lcom/supercell/id/ui/settings/SettingsFragment$a;
+    .line 14
+    new-instance v2, Lcom/supercell/id/ui/settings/SettingsFragment$a;
 
-    invoke-direct {v1, p1}, Lcom/supercell/id/ui/settings/SettingsFragment$a;-><init>(Lae/l2;)V
+    invoke-direct {v2, p1}, Lcom/supercell/id/ui/settings/SettingsFragment$a;-><init>(Lzd/h2;)V
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/view/SubPageTabLayout;->setGetTitleKey(Lre/l;)V
+    invoke-virtual {v0, v2}, Lcom/supercell/id/view/SubPageTabLayout;->setGetTitleKey(Lhf/l;)V
 
-    .line 17
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/settings/SettingsFragment;->f1(I)Landroid/view/View;
+    .line 15
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/settings/SettingsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-virtual {v0, p1, v3}, Lcom/supercell/id/view/SubPageTabLayout;->n(Landroidx/viewpager/widget/ViewPager;Z)V
+    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->n(Landroidx/viewpager/widget/ViewPager;Z)V
 
-    :cond_6
+    :cond_2
     return-void
 .end method

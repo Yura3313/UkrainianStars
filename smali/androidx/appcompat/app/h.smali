@@ -1,14 +1,22 @@
-.class public interface abstract Landroidx/appcompat/app/h;
+.class public final Landroidx/appcompat/app/h;
 .super Ljava/lang/Object;
-.source "AppCompatCallback.java"
+.source "AppCompatDelegateImpl.java"
+
+# interfaces
+.implements Landroidx/appcompat/widget/ContentFrameLayout$a;
 
 
-# virtual methods
-.method public abstract onSupportActionModeFinished(Lf/b;)V
-.end method
+# instance fields
+.field public final synthetic a:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-.method public abstract onSupportActionModeStarted(Lf/b;)V
-.end method
 
-.method public abstract onWindowStartingSupportActionMode(Lf/b$a;)Lf/b;
+# direct methods
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/appcompat/app/h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method

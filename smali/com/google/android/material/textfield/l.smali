@@ -168,13 +168,13 @@
     goto :goto_0
 
     :cond_1
-    const/4 p2, 0x0
+    move p2, v2
 
     goto :goto_1
 
     :cond_2
     :goto_0
-    const/4 p2, 0x1
+    move p2, v0
 
     :goto_1
     if-eqz p2, :cond_3
@@ -248,7 +248,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_0
     if-eqz v0, :cond_1
@@ -263,7 +263,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {v2}, Landroid/view/View;->getPaddingStart()I
@@ -330,18 +330,18 @@
     if-ne p4, p5, :cond_4
 
     :cond_1
-    const/4 p2, 0x0
+    const/4 p2, 0x1
 
-    const/4 p5, 0x1
+    const/4 p5, 0x0
 
     if-ne p6, p4, :cond_2
 
-    const/4 v0, 0x1
+    move v0, p2
 
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, p5
 
     :goto_0
     const/4 v1, 0x0
@@ -353,15 +353,15 @@
     goto :goto_1
 
     :cond_3
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 1
     :goto_1
     sget-object v2, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
-    new-array v3, p5, [F
+    new-array v3, p2, [F
 
-    aput v0, v3, p2
+    aput v0, v3, p5
 
     invoke-static {p3, v2, v3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
@@ -373,7 +373,7 @@
     invoke-virtual {v0, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 3
-    sget-object v2, Ld4/a;->a:Landroid/view/animation/LinearInterpolator;
+    sget-object v2, Lb4/a;->a:Landroid/view/animation/LinearInterpolator;
 
     invoke-virtual {v0, v2}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -393,9 +393,9 @@
 
     neg-float v0, v0
 
-    aput v0, p6, p2
+    aput v0, p6, p5
 
-    aput v1, p6, p5
+    aput v1, p6, p2
 
     .line 6
     invoke-static {p3, p4, p6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
@@ -408,7 +408,7 @@
     invoke-virtual {p2, p3, p4}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 8
-    sget-object p3, Ld4/a;->d:Lm0/c;
+    sget-object p3, Lb4/a;->d:Ll0/c;
 
     invoke-virtual {p2, p3}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -591,7 +591,7 @@
 
     :cond_2
     :goto_0
-    const/4 p2, 0x1
+    move p2, v1
 
     :goto_1
     const/16 v2, 0x8
@@ -653,15 +653,19 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/l;->b:Lcom/google/android/material/textfield/TextInputLayout;
 
-    invoke-static {v0}, Lf0/r;->s(Landroid/view/View;)Z
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 2
+    invoke-virtual {v0}, Landroid/view/View;->isLaidOut()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 3
     iget-object v0, p0, Lcom/google/android/material/textfield/l;->b:Lcom/google/android/material/textfield/TextInputLayout;
 
-    .line 2
+    .line 4
     invoke-virtual {v0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
@@ -676,7 +680,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
+    .line 5
     invoke-virtual {p1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -759,7 +763,7 @@
     invoke-virtual/range {v0 .. v6}, Lcom/google/android/material/textfield/l;->d(Ljava/util/List;ZLandroid/widget/TextView;III)V
 
     .line 6
-    invoke-static {v12, v13}, Lcom/google/android/gms/ads/i;->d(Landroid/animation/AnimatorSet;Ljava/util/List;)V
+    invoke-static {v12, v13}, Lcom/android/billingclient/api/x;->e(Landroid/animation/AnimatorSet;Ljava/util/List;)V
 
     .line 7
     invoke-virtual {p0, p1}, Lcom/google/android/material/textfield/l;->f(I)Landroid/widget/TextView;

@@ -17,13 +17,13 @@
     .locals 5
 
     .line 1
-    iget-object v0, p1, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
+    iget-object v0, p1, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    const/4 v0, 0x0
+    move v0, v1
 
     goto :goto_0
 
@@ -37,7 +37,7 @@
     if-eqz p2, :cond_1
 
     .line 3
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->F()I
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->E()I
 
     move-result p3
 
@@ -45,7 +45,7 @@
 
     .line 4
     :cond_1
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->G()I
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->F()I
 
     move-result p3
 
@@ -55,7 +55,7 @@
     if-eqz p2, :cond_3
 
     .line 5
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->z()I
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->y()I
 
     move-result p3
 
@@ -63,7 +63,7 @@
 
     .line 6
     :cond_3
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->A()I
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->z()I
 
     move-result p3
 
@@ -72,7 +72,7 @@
     invoke-virtual {p1, v1, v1, v1, v1}, Landroidx/fragment/app/Fragment;->C0(IIII)V
 
     .line 8
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -88,13 +88,13 @@
     if-eqz v2, :cond_4
 
     .line 10
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
 
     invoke-virtual {v2, v4, v3}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 11
     :cond_4
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
 
     if-eqz v2, :cond_5
 
@@ -108,7 +108,7 @@
 
     .line 12
     :cond_5
-    invoke-virtual {p1, p2}, Landroidx/fragment/app/Fragment;->W(Z)Landroid/view/animation/Animation;
+    invoke-virtual {p1, p2}, Landroidx/fragment/app/Fragment;->V(Z)Landroid/view/animation/Animation;
 
     move-result-object p1
 
@@ -138,9 +138,9 @@
 
     if-eq v0, p1, :cond_7
 
-    const/4 p3, -0x1
+    const/4 p1, -0x1
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_7
     if-eqz p2, :cond_8
@@ -183,7 +183,6 @@
     move p3, p1
 
     :cond_d
-    :goto_3
     if-eqz p3, :cond_11
 
     .line 17
@@ -217,29 +216,25 @@
 
     invoke-direct {v0, p2}, Landroidx/fragment/app/o$a;-><init>(Landroid/view/animation/Animation;)V
     :try_end_0
-    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_1
 
     return-object v0
 
     :cond_e
     const/4 v1, 0x1
 
-    goto :goto_4
+    goto :goto_3
 
     :catch_0
-    nop
-
-    goto :goto_4
-
-    :catch_1
     move-exception p0
 
     .line 21
     throw p0
 
+    :catch_1
     :cond_f
-    :goto_4
+    :goto_3
     if-nez v1, :cond_11
 
     .line 22

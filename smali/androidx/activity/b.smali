@@ -7,22 +7,22 @@
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final synthetic f:I
 
-.field public final synthetic h:Lb/a$a;
+.field public final synthetic g:Lb/a$a;
 
-.field public final synthetic i:Landroidx/activity/ComponentActivity$b;
+.field public final synthetic h:Landroidx/activity/ComponentActivity$b;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/activity/ComponentActivity$b;ILb/a$a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/activity/b;->i:Landroidx/activity/ComponentActivity$b;
+    iput-object p1, p0, Landroidx/activity/b;->h:Landroidx/activity/ComponentActivity$b;
 
-    iput p2, p0, Landroidx/activity/b;->g:I
+    iput p2, p0, Landroidx/activity/b;->f:I
 
-    iput-object p3, p0, Landroidx/activity/b;->h:Lb/a$a;
+    iput-object p3, p0, Landroidx/activity/b;->g:Lb/a$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +35,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/activity/b;->i:Landroidx/activity/ComponentActivity$b;
+    iget-object v0, p0, Landroidx/activity/b;->h:Landroidx/activity/ComponentActivity$b;
 
-    iget v1, p0, Landroidx/activity/b;->g:I
+    iget v1, p0, Landroidx/activity/b;->f:I
 
-    iget-object v2, p0, Landroidx/activity/b;->h:Lb/a$a;
+    iget-object v2, p0, Landroidx/activity/b;->g:Lb/a$a;
 
     .line 2
     iget-object v2, v2, Lb/a$a;->a:Ljava/lang/Object;

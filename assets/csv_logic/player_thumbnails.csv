@@ -105,7 +105,7 @@ player_icon_villains,0,0,,,sc/ui.sc,player_icon_villains,3001,,true
 player_icon_stuntshow,0,0,,,sc/ui.sc,player_icon_stuntshow,3002,,true
 player_icon_lantern,0,0,,,sc/ui.sc,player_icon_lantern,3003,,true
 player_icon_goldenweek,0,0,,,sc/ui.sc,player_icon_goldenweek,3004,,true
-hero58,0,0,,Silencer,sc/ui.sc,player_icon_otis,712,,
+hero58,0,0,,Silencer,sc/ui.sc,player_icon_otis,713,,
 rank17,0,0,,,sc/ui.sc,player_icon_deepsea_01,1016,true,
 rank18,0,0,,,sc/ui.sc,player_icon_deepsea_02,1017,true,
 player_icon_ruffs_bt21,0,0,,,sc/ui.sc,player_icon_ruffs_bt21,4001,,true
@@ -149,6 +149,16 @@ player_icon_robots_3,0,0,,,sc/ui.sc,player_icon_robots_3,3013,,true
 player_icon_robots_4,0,0,,,sc/ui.sc,player_icon_robots_4,3014,,true
 player_icon_claw,0,0,,,sc/ui.sc,player_icon_claw,3015,,true
 player_icon_defeat_them_all,0,0,,,sc/ui.sc,player_icon_defeat_them_all,3016,,true
-hero59,0,0,,WeaponThrower,sc/ui.sc,player_icon_bronson,713,,
+hero59,0,0,,WeaponThrower,sc/ui.sc,player_icon_bronson,714,,
 hero60,0,0,,SoulCollector,sc/ui.sc,player_icon_gus,411,,
 player_icon_leon_ghost,0,0,,,sc/ui.sc,player_icon_leon_ghost,4009,,true
+player_icon_squeak_veteran1,0,0,,,sc/ui.sc,player_icon_squeak_veteran1,4010,,true
+player_icon_squeak_veteran2,0,0,,,sc/ui.sc,player_icon_squeak_veteran2,4011,,true
+rank21,0,0,,,sc/ui.sc,player_icon_colette_ghost1,1020,true,
+rank22,0,0,,,sc/ui.sc,player_icon_colette_ghost2,1021,true,
+player_icon_bscwf,0,0,,,sc/ui.sc,player_icon_bscwf,5000,,true
+player_icon_lastbox,0,0,,,sc/ui.sc,player_icon_lastbox,3017,,true
+player_icon_ghosttrain,0,0,,,sc/ui.sc,player_icon_ghosttrain,3018,,true
+player_icon_action,0,0,,,sc/ui.sc,player_icon_action,3019,,true
+hero61,0,0,,ShieldTank,sc/ui.sc,player_icon_buster,715,,
+player_icon_brawlball,0,0,,,sc/ui.sc,player_icon_brawlball,3020,,true

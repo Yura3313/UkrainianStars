@@ -36,22 +36,22 @@
 
     const p3, 0x3ee66666
 
-    mul-float p3, p3, p1
+    mul-float/2addr p3, p1
 
     const/16 v0, 0xb4
 
     int-to-float v0, v0
 
     .line 1
-    sget v1, La5/e0;->g:F
+    sget v1, Lb2/t;->g:F
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     const/16 v2, 0x12c
 
     int-to-float v2, v2
 
-    mul-float v2, v2, v1
+    mul-float/2addr v2, v1
 
     sub-float/2addr p1, v2
 
@@ -78,7 +78,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p3}, Lcom/android/billingclient/api/y;->i(F)I
+    invoke-static {p3}, Le0/d;->e(F)I
 
     move-result p1
 

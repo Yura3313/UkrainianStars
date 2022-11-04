@@ -4,10 +4,10 @@
 
 
 # instance fields
-.field public g:Lre/p;
+.field public f:Lhf/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/p<",
+            "Lhf/p<",
             "-",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "-",
@@ -28,7 +28,7 @@
     const-string v1, "context"
 
     .line 1
-    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -42,7 +42,7 @@
     const-string v0, "context"
 
     .line 3
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -52,12 +52,12 @@
 
 
 # virtual methods
-.method public final getTouchInterceptor()Lre/p;
+.method public final getTouchInterceptor()Lhf/p;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lre/p<",
+            "Lhf/p<",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "Landroid/view/MotionEvent;",
             "Ljava/lang/Boolean;",
@@ -65,7 +65,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lhf/p;
 
     return-object v0
 .end method
@@ -74,11 +74,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lhf/p;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0, p0, p1}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0, p1}, Lhf/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -103,12 +103,12 @@
     return p1
 .end method
 
-.method public final setTouchInterceptor(Lre/p;)V
+.method public final setTouchInterceptor(Lhf/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lre/p<",
+            "Lhf/p<",
             "-",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "-",
@@ -118,7 +118,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
+    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lhf/p;
 
     return-void
 .end method

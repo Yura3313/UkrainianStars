@@ -88,7 +88,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez v2, :cond_0
 
@@ -98,7 +98,7 @@
     :cond_0
     sget-object v4, Landroidx/lifecycle/t;->e:[Ljava/lang/Class;
 
-    array-length v5, v4
+    const/16 v5, 0x1d
 
     const/4 v6, 0x0
 
@@ -122,12 +122,12 @@
 
     move-result-object v4
 
-    check-cast v4, Landroidx/lifecycle/n;
+    check-cast v4, Landroidx/lifecycle/o;
 
     if-eqz v4, :cond_1
 
     .line 8
-    invoke-virtual {v4, v2}, Landroidx/lifecycle/n;->i(Ljava/lang/Object;)V
+    invoke-virtual {v4, v2}, Landroidx/lifecycle/o;->i(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -151,7 +151,7 @@
     const-string v1, "Can\'t put value with type "
 
     .line 11
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

@@ -1,80 +1,97 @@
-.class public final Ltd/i$c;
-.super Ljava/lang/Object;
-.source "RegisterEnterEmailTabPageFragment.kt"
+.class public final synthetic Ltd/i$c;
+.super Lif/g;
+.source "LocalAssets.kt"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ltd/i;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Ltd/i;->h(Lorg/json/JSONObject;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x1019
     name = null
 .end annotation
 
-
-# instance fields
-.field public final synthetic g:Ltd/i;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/g;",
+        "Lhf/l<",
+        "Ljava/lang/String;",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>(Ltd/i;)V
-    .locals 0
+    .locals 1
 
-    iput-object p1, p0, Ltd/i$c;->g:Ltd/i;
+    const/4 v0, 0x1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, v0, p1}, Lif/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onFocusChange(Landroid/view/View;Z)V
+.method public final getName()Ljava/lang/String;
     .locals 1
 
-    if-eqz p2, :cond_0
+    const-string v0, "validateImageAssetName"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lmf/d;
+    .locals 1
+
+    const-class v0, Ltd/i;
+
+    invoke-static {v0}, Lif/s;->a(Ljava/lang/Class;)Lmf/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "validateImageAssetName(Ljava/lang/String;)Z"
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget-object p2, p0, Ltd/i$c;->g:Ltd/i;
+    check-cast p1, Ljava/lang/String;
 
-    sget v0, Ltd/i;->g0:I
+    const-string v0, "p1"
 
     .line 2
-    invoke-virtual {p2}, Ltd/i;->Y0()Ltd/b;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p2
+    iget-object v0, p0, Lif/b;->receiver:Ljava/lang/Object;
 
-    if-eqz p2, :cond_1
+    check-cast v0, Ltd/i;
 
     .line 3
-    invoke-virtual {p2}, Ltd/b;->Y0()Landroidx/core/widget/NestedScrollView;
+    invoke-virtual {v0, p1}, Ltd/i;->k(Ljava/lang/String;)Z
 
-    move-result-object p2
-
-    if-eqz p2, :cond_1
-
-    const-string v0, "v"
-
-    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p2, p1}, Lae/z2;->u(Landroidx/core/widget/NestedScrollView;Landroid/view/View;)V
-
-    goto :goto_0
+    move-result p1
 
     .line 4
-    :cond_0
-    new-instance p2, Ltd/i$c$a;
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-direct {p2, p0}, Ltd/i$c$a;-><init>(Ltd/i$c;)V
+    move-result-object p1
 
-    invoke-virtual {p1, p2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    :cond_1
-    :goto_0
-    return-void
+    return-object p1
 .end method

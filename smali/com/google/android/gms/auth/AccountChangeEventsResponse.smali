@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
-.field public final h:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -32,9 +32,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr1/c;
+    new-instance v0, Lp1/c;
 
-    invoke-direct {v0}, Lr1/c;-><init>()V
+    invoke-direct {v0}, Lp1/c;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -56,12 +56,15 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:I
+    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->f:I
+
+    const-string p1, "null reference"
 
     .line 3
-    invoke-static {p2}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    iput-object p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->h:Ljava/util/List;
+    .line 4
+    iput-object p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:Ljava/util/List;
 
     return-void
 .end method
@@ -74,34 +77,34 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:I
+    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->f:I
 
     const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 4
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:Ljava/util/List;
 
     const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v1, v0, v2}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Lc2/c;->l(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 6
-    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

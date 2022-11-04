@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final J0(ILandroid/os/Parcel;)Z
+.method public final n0(ILandroid/os/Parcel;)Z
     .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -46,7 +46,7 @@
     :pswitch_1
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -57,23 +57,23 @@
     check-cast p1, Lcom/google/android/play/core/assetpacks/j;
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 3
-    invoke-virtual {p1}, La5/l;->a()V
+    invoke-virtual {p1}, Ly4/k;->a()V
 
     .line 4
-    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array p2, v5, [Ljava/lang/Object;
 
     const-string v0, "onCancelDownloads()"
 
     .line 5
-    invoke-virtual {p1, v4, v0, p2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p1, v4, v0, p2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -81,13 +81,13 @@
     :pswitch_2
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -98,23 +98,23 @@
     check-cast p1, Lcom/google/android/play/core/assetpacks/j;
 
     .line 7
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 8
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 9
-    invoke-virtual {p1}, La5/l;->a()V
+    invoke-virtual {p1}, Ly4/k;->a()V
 
     .line 10
-    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array p2, v5, [Ljava/lang/Object;
 
     const-string v0, "onRemoveModule()"
 
     .line 11
-    invoke-virtual {p1, v4, v0, p2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p1, v4, v0, p2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -122,13 +122,13 @@
     :pswitch_3
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -139,23 +139,23 @@
     check-cast p1, Lcom/google/android/play/core/assetpacks/j;
 
     .line 13
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 14
-    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 15
-    invoke-virtual {p1}, La5/l;->a()V
+    invoke-virtual {p1}, Ly4/k;->a()V
 
     .line 16
-    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array p2, v5, [Ljava/lang/Object;
 
     const-string v0, "onRequestDownloadInfo()"
 
     .line 17
-    invoke-virtual {p1, v4, v0, p2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p1, v4, v0, p2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -163,51 +163,51 @@
     :pswitch_4
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
     check-cast p2, Landroid/os/Bundle;
 
-    invoke-interface {p0, p1}, Lcom/google/android/play/core/internal/u;->c7(Landroid/os/Bundle;)V
+    invoke-interface {p0, p1}, Lcom/google/android/play/core/internal/u;->C6(Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
     :pswitch_5
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
     check-cast p2, Landroid/os/Bundle;
 
-    invoke-interface {p0, p1, p2}, Lcom/google/android/play/core/internal/u;->z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+    invoke-interface {p0, p1, p2}, Lcom/google/android/play/core/internal/u;->M0(Landroid/os/Bundle;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
     :pswitch_6
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -218,21 +218,21 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 19
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 20
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 21
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 22
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v0, v3, [Ljava/lang/Object;
 
     .line 23
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
@@ -245,7 +245,7 @@
     const-string p1, "onNotifySessionFailed(%d)"
 
     .line 24
-    invoke-virtual {p2, v4, p1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v0}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -253,13 +253,13 @@
     :pswitch_7
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -270,27 +270,27 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 26
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 27
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 28
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 29
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 30
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v0, v5
 
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
@@ -303,7 +303,7 @@
     const-string p1, "onNotifyModuleCompleted(%s, sessionId=%d)"
 
     .line 31
-    invoke-virtual {p2, v4, p1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v0}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -311,7 +311,7 @@
     :pswitch_8
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -324,13 +324,13 @@
     :pswitch_9
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -341,21 +341,21 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 33
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 34
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 35
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 36
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v6, v4, [Ljava/lang/Object;
 
     .line 37
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -363,7 +363,7 @@
 
     const-string v1, "slice_id"
 
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -371,7 +371,7 @@
 
     const-string v1, "chunk_number"
 
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result v1
 
@@ -383,7 +383,7 @@
 
     const/4 v0, 0x3
 
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
@@ -396,7 +396,7 @@
     const-string p1, "onNotifyChunkTransferred(%s, %s, %d, session=%d)"
 
     .line 38
-    invoke-virtual {p2, v4, p1, v6}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v6}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto/16 :goto_0
 
@@ -408,7 +408,7 @@
 
     move-result-object p1
 
-    invoke-interface {p0, p1}, Lcom/google/android/play/core/internal/u;->w(Ljava/util/List;)V
+    invoke-interface {p0, p1}, Lcom/google/android/play/core/internal/u;->A(Ljava/util/List;)V
 
     goto :goto_0
 
@@ -419,7 +419,7 @@
 
     sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -430,16 +430,16 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 40
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 41
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 42
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 43
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v0, v3, [Ljava/lang/Object;
 
@@ -453,7 +453,7 @@
     const-string p1, "onGetSession(%d)"
 
     .line 45
-    invoke-virtual {p2, v4, p1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v0}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto :goto_0
 
@@ -465,7 +465,7 @@
 
     sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -476,16 +476,16 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 47
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 48
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 49
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 50
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v0, v3, [Ljava/lang/Object;
 
@@ -499,7 +499,7 @@
     const-string p1, "onCancelDownload(%d)"
 
     .line 52
-    invoke-virtual {p2, v4, p1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v0}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto :goto_0
 
@@ -511,7 +511,7 @@
 
     sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2}, La5/y0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    invoke-static {p2}, Ly4/q0;->a(Landroid/os/Parcel;)Landroid/os/Parcelable;
 
     move-result-object p2
 
@@ -522,16 +522,16 @@
     check-cast p2, Lcom/google/android/play/core/assetpacks/j;
 
     .line 54
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 55
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 56
-    invoke-virtual {p2}, La5/l;->a()V
+    invoke-virtual {p2}, Ly4/k;->a()V
 
     .line 57
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-array v0, v3, [Ljava/lang/Object;
 
@@ -545,7 +545,7 @@
     const-string p1, "onStartDownload(%d)"
 
     .line 59
-    invoke-virtual {p2, v4, p1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v4, p1, v0}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     :goto_0
     return v3

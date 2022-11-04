@@ -91,7 +91,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/Object;Landroid/support/v4/media/MediaDescriptionCompat;J)V
-    .locals 3
+    .locals 2
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -100,9 +100,9 @@
 
     const-wide/16 v0, -0x1
 
-    cmp-long v2, p3, v0
+    cmp-long v0, p3, v0
 
-    if-eqz v2, :cond_0
+    if-eqz v0, :cond_0
 
     .line 3
     iput-object p2, p0, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;->mDescription:Landroid/support/v4/media/MediaDescriptionCompat;
@@ -139,42 +139,31 @@
 .method public static fromQueueItem(Ljava/lang/Object;)Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;
     .locals 4
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
     invoke-static {p0}, Landroid/support/v4/media/session/MediaSessionCompatApi21$QueueItem;->getDescription(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
+    .line 2
     invoke-static {v0}, Landroid/support/v4/media/MediaDescriptionCompat;->fromMediaDescription(Ljava/lang/Object;)Landroid/support/v4/media/MediaDescriptionCompat;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     invoke-static {p0}, Landroid/support/v4/media/session/MediaSessionCompatApi21$QueueItem;->getQueueId(Ljava/lang/Object;)J
 
     move-result-wide v1
 
-    .line 5
+    .line 4
     new-instance v3, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;
 
     invoke-direct {v3, p0, v0, v1, v2}, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;-><init>(Ljava/lang/Object;Landroid/support/v4/media/MediaDescriptionCompat;J)V
 
     return-object v3
 
-    :cond_1
-    :goto_0
+    :cond_0
     const/4 p0, 0x0
 
     return-object p0
@@ -193,24 +182,14 @@
         }
     .end annotation
 
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    goto :goto_1
-
-    .line 2
-    :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
+    .line 2
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -220,13 +199,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 4
+    .line 3
     invoke-static {v1}, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;->fromQueueItem(Ljava/lang/Object;)Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;
 
     move-result-object v1
@@ -235,11 +214,10 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     return-object v0
 
-    :cond_2
-    :goto_1
+    :cond_1
     const/4 p0, 0x0
 
     return-object p0
@@ -277,18 +255,9 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;->mItem:Ljava/lang/Object;
 
-    if-nez v0, :cond_1
-
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    if-ge v1, v2, :cond_0
-
-    goto :goto_0
+    if-nez v0, :cond_0
 
     .line 2
-    :cond_0
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;->mDescription:Landroid/support/v4/media/MediaDescriptionCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/media/MediaDescriptionCompat;->getMediaDescription()Ljava/lang/Object;
@@ -303,8 +272,7 @@
 
     iput-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;->mItem:Ljava/lang/Object;
 
-    :cond_1
-    :goto_0
+    :cond_0
     return-object v0
 .end method
 
@@ -314,7 +282,7 @@
     const-string v0, "MediaSession.QueueItem {Description="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

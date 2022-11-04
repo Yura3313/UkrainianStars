@@ -191,13 +191,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw v1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method private notifyMessage(Ljava/util/Map;)V
@@ -337,13 +331,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 

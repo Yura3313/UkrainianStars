@@ -3,7 +3,7 @@
 .source "NotificationPurchasesReceived.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/NotificationPurchasesReceived;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/NotificationPurchasesReceived$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

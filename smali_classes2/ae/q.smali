@@ -1,168 +1,112 @@
 .class public final Lae/q;
-.super Ljava/lang/Object;
-.source "RecyclerViewUtil.kt"
+.super Lif/i;
+.source "GlobalStateStorage.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Lhf/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/a<",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:Lcom/supercell/id/util/NormalizedError;
+.field public final synthetic f:Lae/o;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/util/NormalizedError;)V
-    .locals 1
+.method public constructor <init>(Lae/o;)V
+    .locals 0
 
-    const-string v0, "error"
+    iput-object p1, p0, Lae/q;->f:Lae/o;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 p1, 0x0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->list_item_error:I
-
-    iput p1, p0, Lae/q;->a:I
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    instance-of v0, p1, Lae/q;
-
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
+    iget-object v0, p0, Lae/q;->f:Lae/o;
 
     .line 2
-    :cond_0
-    iget-object v0, p0, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
+    iget-object v0, v0, Lae/o;->d:Landroid/content/Context;
 
-    check-cast p1, Lae/q;
+    const/4 v1, 0x0
 
-    iget-object p1, p1, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
+    const-string v2, "GlobalState"
 
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c()I
-    .locals 1
-
-    iget v0, p0, Lae/q;->a:I
-
-    return v0
-.end method
-
-.method public final d(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    instance-of p1, p1, Lae/q;
-
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lae/q;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lae/q;
-
-    iget-object v0, p0, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    iget-object p1, p1, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lcom/supercell/id/util/NormalizedError;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "ErrorRow(error="
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 3
+    invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 2
-    iget-object v1, p0, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const/4 v1, 0x0
 
-    const-string v1, ")"
+    const-string v2, "data"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 4
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 5
+    :try_start_0
+    new-instance v2, Lorg/json/JSONObject;
+
+    invoke-direct {v2, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    new-instance v0, Ltc/b;
+
+    invoke-direct {v0, v2}, Ltc/b;-><init>(Lorg/json/JSONObject;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v1, v0
+
+    :catch_0
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    new-instance v1, Ltc/b;
+
+    .line 7
+    sget-object v0, Lze/n;->f:Lze/n;
+
+    invoke-direct {v1, v0}, Ltc/b;-><init>(Ljava/util/Set;)V
+
+    .line 8
+    :goto_0
+    iget-object v0, p0, Lae/q;->f:Lae/o;
+
+    new-instance v2, Lae/o$a$b;
+
+    invoke-direct {v2, v1}, Lae/o$a$b;-><init>(Ltc/b;)V
+
+    invoke-virtual {v0, v2}, Lae/b1;->a(Lae/a;)V
+
+    .line 9
+    sget-object v0, Lye/m;->a:Lye/m;
 
     return-object v0
 .end method

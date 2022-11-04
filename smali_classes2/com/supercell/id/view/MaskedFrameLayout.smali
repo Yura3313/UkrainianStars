@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public g:Landroid/graphics/drawable/Drawable;
+.field public f:Landroid/graphics/drawable/Drawable;
 
-.field public h:Landroid/graphics/Bitmap;
+.field public g:Landroid/graphics/Bitmap;
 
-.field public final i:Landroid/graphics/Paint;
+.field public final h:Landroid/graphics/Paint;
 
-.field public final j:Landroid/graphics/PorterDuffXfermode;
+.field public final i:Landroid/graphics/PorterDuffXfermode;
 
 
 # direct methods
@@ -54,13 +54,13 @@
 
     if-eqz p4, :cond_1
 
-    const/4 p3, 0x0
+    move p3, v0
 
     :cond_1
     const-string p4, "context"
 
     .line 1
-    invoke-static {p1, p4}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -76,12 +76,12 @@
     invoke-virtual {p4, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 5
-    iget-object v3, p0, Lcom/supercell/id/view/MaskedFrameLayout;->j:Landroid/graphics/PorterDuffXfermode;
+    iget-object v3, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/PorterDuffXfermode;
 
     invoke-virtual {p4, v3}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
     .line 6
-    iput-object p4, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/Paint;
+    iput-object p4, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Paint;
 
     .line 7
     new-instance p4, Landroid/graphics/PorterDuffXfermode;
@@ -90,7 +90,7 @@
 
     invoke-direct {p4, v3}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
 
-    iput-object p4, p0, Lcom/supercell/id/view/MaskedFrameLayout;->j:Landroid/graphics/PorterDuffXfermode;
+    iput-object p4, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/PorterDuffXfermode;
 
     .line 8
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -185,7 +185,7 @@
 
     const-string v1, "Bitmap.createBitmap(meas\u2026 Bitmap.Config.ARGB_8888)"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
     new-instance v1, Landroid/graphics/Canvas;
@@ -221,32 +221,32 @@
 
     const-string v0, "canvas"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Paint;
 
-    iget-object v2, p0, Lcom/supercell/id/view/MaskedFrameLayout;->j:Landroid/graphics/PorterDuffXfermode;
+    iget-object v2, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/PorterDuffXfermode;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Paint;
 
     const/4 v2, 0x0
 
     invoke-virtual {p1, v0, v2, v2, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->i:Landroid/graphics/Paint;
+    iget-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -267,14 +267,14 @@
     if-lez p2, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->f:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/supercell/id/view/MaskedFrameLayout;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Bitmap;
+    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/Bitmap;
 
     if-eqz p2, :cond_0
 
@@ -290,7 +290,7 @@
 
     .line 6
     :cond_0
-    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/Bitmap;
 
     :cond_1
     return-void
@@ -318,7 +318,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->f:Landroid/graphics/drawable/Drawable;
 
     .line 2
     invoke-virtual {p0, p1}, Lcom/supercell/id/view/MaskedFrameLayout;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
@@ -326,7 +326,7 @@
     move-result-object p1
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_1
 
@@ -342,7 +342,7 @@
 
     .line 6
     :cond_1
-    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->h:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout;->g:Landroid/graphics/Bitmap;
 
     .line 7
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
@@ -355,7 +355,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
@@ -370,15 +370,15 @@
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->s:Lud/i;
+    iget-object v0, v0, Lzd/q;->u:Ltd/i;
 
     .line 5
-    invoke-virtual {v0, p1, v1}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v0, p1, v1}, Ltd/i;->b(Ljava/lang/String;Lhf/p;)V
 
     return-void
 .end method

@@ -1,194 +1,187 @@
 .class public final Ll4/a;
 .super Ljava/lang/Object;
-.source "ElevationOverlayProvider.java"
+.source "NavigationView.java"
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # instance fields
-.field public final a:Z
-
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:F
+.field public final synthetic f:Lcom/google/android/material/navigation/NavigationView;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 3
+.method public constructor <init>(Lcom/google/android/material/navigation/NavigationView;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    sget v0, Lcom/google/android/material/R$attr;->elevationOverlayEnabled:I
-
-    .line 3
-    invoke-static {p1, v0}, Lp4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 4
-    iget v1, v0, Landroid/util/TypedValue;->type:I
-
-    const/16 v2, 0x12
-
-    if-ne v1, v2, :cond_0
-
-    iget v0, v0, Landroid/util/TypedValue;->data:I
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 5
-    :goto_0
-    iput-boolean v0, p0, Ll4/a;->a:Z
-
-    .line 6
-    sget v0, Lcom/google/android/material/R$attr;->elevationOverlayColor:I
-
-    .line 7
-    invoke-static {p1, v0}, Lk3/a00;->a(Landroid/content/Context;I)I
-
-    move-result v0
-
-    iput v0, p0, Ll4/a;->b:I
-
-    .line 8
-    sget v0, Lcom/google/android/material/R$attr;->colorSurface:I
-
-    invoke-static {p1, v0}, Lk3/a00;->a(Landroid/content/Context;I)I
-
-    move-result v0
-
-    iput v0, p0, Ll4/a;->c:I
-
-    .line 9
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object p1
-
-    iget p1, p1, Landroid/util/DisplayMetrics;->density:F
-
-    iput p1, p0, Ll4/a;->d:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(IF)I
-    .locals 4
+.method public final onGlobalLayout()V
+    .locals 5
 
     .line 1
-    iget-boolean v0, p0, Ll4/a;->a:Z
-
-    if-eqz v0, :cond_3
-
-    const/16 v0, 0xff
+    iget-object v0, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
 
     .line 2
-    invoke-static {p1, v0}, Lx/b;->d(II)I
+    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->o:[I
 
-    move-result v1
+    .line 3
+    invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    iget v2, p0, Ll4/a;->c:I
+    .line 4
+    iget-object v0, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
 
-    if-ne v1, v2, :cond_0
+    .line 5
+    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->o:[I
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
+
+    .line 6
+    aget v1, v1, v2
+
+    const/4 v3, 0x0
+
+    if-nez v1, :cond_0
+
+    move v1, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v3
 
+    .line 7
     :goto_0
+    iget-object v0, v0, Lcom/google/android/material/navigation/NavigationView;->l:Lcom/google/android/material/internal/d;
+
+    .line 8
+    iget-boolean v4, v0, Lcom/google/android/material/internal/d;->u:Z
+
+    if-eq v4, v1, :cond_1
+
+    .line 9
+    iput-boolean v1, v0, Lcom/google/android/material/internal/d;->u:Z
+
+    .line 10
+    invoke-virtual {v0}, Lcom/google/android/material/internal/d;->n()V
+
+    .line 11
+    :cond_1
+    iget-object v0, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->setDrawTopInsetForeground(Z)V
+
+    .line 12
+    iget-object v0, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
+
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 13
+    :goto_1
+    instance-of v1, v0, Landroid/content/ContextWrapper;
+
     if-eqz v1, :cond_3
 
-    .line 3
-    iget v1, p0, Ll4/a;->d:F
+    .line 14
+    instance-of v1, v0, Landroid/app/Activity;
 
-    const/4 v2, 0x0
+    if-eqz v1, :cond_2
 
-    cmpg-float v3, v1, v2
+    .line 15
+    check-cast v0, Landroid/app/Activity;
 
-    if-lez v3, :cond_2
+    goto :goto_2
 
-    cmpg-float v3, p2, v2
+    .line 16
+    :cond_2
+    check-cast v0, Landroid/content/ContextWrapper;
 
-    if-gtz v3, :cond_1
+    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v0
 
     goto :goto_1
 
-    :cond_1
-    div-float/2addr p2, v1
-
-    const/high16 v1, 0x40900000    # 4.5f
-
-    float-to-double v2, p2
-
-    .line 4
-    invoke-static {v2, v3}, Ljava/lang/Math;->log1p(D)D
-
-    move-result-wide v2
-
-    double-to-float p2, v2
-
-    mul-float p2, p2, v1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    add-float/2addr p2, v1
-
-    const/high16 v1, 0x42c80000    # 100.0f
-
-    div-float/2addr p2, v1
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 5
-    invoke-static {p2, v1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    .line 6
-    :cond_2
-    :goto_1
-    invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result p2
-
-    .line 7
-    invoke-static {p1, v0}, Lx/b;->d(II)I
-
-    move-result p1
-
-    .line 8
-    iget v0, p0, Ll4/a;->b:I
-
-    .line 9
-    invoke-static {p1, v0, v2}, Lk3/a00;->c(IIF)I
-
-    move-result p1
-
-    .line 10
-    invoke-static {p1, p2}, Lx/b;->d(II)I
-
-    move-result p1
-
     :cond_3
-    return p1
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_7
+
+    const v1, 0x1020002
+
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
+
+    move-result v1
+
+    iget-object v4, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
+
+    invoke-virtual {v4}, Landroid/view/View;->getHeight()I
+
+    move-result v4
+
+    if-ne v1, v4, :cond_4
+
+    move v1, v2
+
+    goto :goto_3
+
+    :cond_4
+    move v1, v3
+
+    .line 18
+    :goto_3
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getNavigationBarColor()I
+
+    move-result v0
+
+    invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    move v0, v2
+
+    goto :goto_4
+
+    :cond_5
+    move v0, v3
+
+    .line 19
+    :goto_4
+    iget-object v4, p0, Ll4/a;->f:Lcom/google/android/material/navigation/NavigationView;
+
+    if-eqz v1, :cond_6
+
+    if-eqz v0, :cond_6
+
+    goto :goto_5
+
+    :cond_6
+    move v2, v3
+
+    :goto_5
+    invoke-virtual {v4, v2}, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->setDrawBottomInsetForeground(Z)V
+
+    :cond_7
+    return-void
 .end method

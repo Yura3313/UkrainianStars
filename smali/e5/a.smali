@@ -1,67 +1,152 @@
-.class public abstract Le5/a;
+.class public final Le5/a;
 .super Ljava/lang/Object;
+.source "AeadConfig.java"
+
+
+# static fields
+.field public static final a:Ljava/lang/String;
+
+.field public static final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    new-instance v0, Le5/c;
+
+    invoke-direct {v0}, Le5/c;-><init>()V
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey"
+
+    .line 2
+    sput-object v0, Le5/a;->a:Ljava/lang/String;
+
+    .line 3
+    new-instance v0, Le5/f;
+
+    invoke-direct {v0}, Le5/f;-><init>()V
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesGcmKey"
+
+    sput-object v0, Le5/a;->b:Ljava/lang/String;
+
+    .line 4
+    new-instance v0, Le5/e;
+
+    invoke-direct {v0}, Le5/e;-><init>()V
+
+    .line 5
+    new-instance v0, Le5/h;
+
+    invoke-direct {v0}, Le5/h;-><init>()V
+
+    .line 6
+    new-instance v0, Le5/j;
+
+    invoke-direct {v0}, Le5/j;-><init>()V
+
+    .line 7
+    new-instance v0, Le5/g;
+
+    invoke-direct {v0}, Le5/g;-><init>()V
+
+    .line 8
+    new-instance v0, Le5/k;
+
+    invoke-direct {v0}, Le5/k;-><init>()V
+
+    .line 9
+    sget v0, Ll5/g1;->CONFIG_NAME_FIELD_NUMBER:I
+
+    .line 10
+    :try_start_0
+    invoke-static {}, Le5/a;->a()V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 11
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-
-# virtual methods
-.method public abstract a()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
+.method public static a()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
+            Ljava/security/GeneralSecurityException;
         }
     .end annotation
-.end method
 
-.method public abstract b()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
+    .line 1
+    invoke-static {}, Lj5/c;->a()V
 
-.method public abstract c()J
-.end method
+    .line 2
+    new-instance v0, Le5/c;
 
-.method public abstract d()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Landroid/content/Intent;",
-            ">;"
-        }
-    .end annotation
-.end method
+    invoke-direct {v0}, Le5/c;-><init>()V
 
-.method public abstract e()I
-.end method
+    const/4 v1, 0x1
 
-.method public abstract f()Landroid/app/PendingIntent;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end method
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
 
-.method public abstract g()I
-.end method
+    .line 3
+    new-instance v0, Le5/e;
 
-.method public abstract h()I
-.end method
+    invoke-direct {v0}, Le5/e;-><init>()V
 
-.method public abstract i()J
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 4
+    new-instance v0, Le5/f;
+
+    invoke-direct {v0}, Le5/f;-><init>()V
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 5
+    new-instance v0, Le5/g;
+
+    invoke-direct {v0}, Le5/g;-><init>()V
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 6
+    new-instance v0, Le5/h;
+
+    invoke-direct {v0}, Le5/h;-><init>()V
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 7
+    new-instance v0, Le5/j;
+
+    invoke-direct {v0}, Le5/j;-><init>()V
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 8
+    new-instance v0, Le5/k;
+
+    invoke-direct {v0}, Le5/k;-><init>()V
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 9
+    new-instance v0, Le5/b;
+
+    invoke-direct {v0}, Le5/b;-><init>()V
+
+    invoke-static {v0}, Ld5/x;->i(Ld5/p;)V
+
+    return-void
 .end method

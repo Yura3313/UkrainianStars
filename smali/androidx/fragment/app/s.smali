@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final g:Landroid/app/Activity;
+.field public final f:Landroid/app/Activity;
 
-.field public final h:Landroid/content/Context;
+.field public final g:Landroid/content/Context;
 
-.field public final i:Landroid/os/Handler;
+.field public final h:Landroid/os/Handler;
 
-.field public final j:Landroidx/fragment/app/v;
+.field public final i:Landroidx/fragment/app/v;
 
 
 # direct methods
@@ -41,30 +41,36 @@
 
     invoke-direct {v1}, Landroidx/fragment/app/v;-><init>()V
 
-    iput-object v1, p0, Landroidx/fragment/app/s;->j:Landroidx/fragment/app/v;
+    iput-object v1, p0, Landroidx/fragment/app/s;->i:Landroidx/fragment/app/v;
 
     .line 4
-    iput-object p1, p0, Landroidx/fragment/app/s;->g:Landroid/app/Activity;
+    iput-object p1, p0, Landroidx/fragment/app/s;->f:Landroid/app/Activity;
 
     const-string v1, "context == null"
 
     .line 5
-    invoke-static {p1, v1}, Le0/f;->d(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v1}, Le0/d;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p1, p0, Landroidx/fragment/app/s;->h:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/fragment/app/s;->g:Landroid/content/Context;
 
     .line 6
-    iput-object v0, p0, Landroidx/fragment/app/s;->i:Landroid/os/Handler;
+    iput-object v0, p0, Landroidx/fragment/app/s;->h:Landroid/os/Handler;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract j(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.method public abstract B0(Ljava/lang/String;)Z
 .end method
 
-.method public abstract k()Ljava/lang/Object;
+.method public abstract C0()V
+.end method
+
+.method public abstract u0(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.end method
+
+.method public abstract w0()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
@@ -72,11 +78,5 @@
     .end annotation
 .end method
 
-.method public abstract l()Landroid/view/LayoutInflater;
-.end method
-
-.method public abstract m(Ljava/lang/String;)Z
-.end method
-
-.method public abstract n()V
+.method public abstract y0()Landroid/view/LayoutInflater;
 .end method

@@ -52,9 +52,9 @@
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast p1, Lp0/d;
+    check-cast p1, Lo0/d;
 
-    invoke-virtual {v0, p1}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lp0/d;)V
+    invoke-virtual {v0, p1}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lo0/d;)V
 
     :cond_0
     return-void

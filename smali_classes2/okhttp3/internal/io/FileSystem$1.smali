@@ -204,13 +204,7 @@
 
     invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw v0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public exists(Ljava/io/File;)Z

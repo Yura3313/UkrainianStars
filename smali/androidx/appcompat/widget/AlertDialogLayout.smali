@@ -16,7 +16,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
@@ -164,7 +164,7 @@
 
     if-nez p5, :cond_2
 
-    const/4 p5, 0x0
+    move p5, v0
 
     goto :goto_1
 
@@ -219,7 +219,7 @@
 
     .line 18
     :cond_3
-    sget-object v8, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v8, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 19
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -334,7 +334,7 @@
 
     move-object v3, v2
 
-    const/4 v4, 0x0
+    move v4, v1
 
     :goto_0
     const/16 v9, 0x8
@@ -457,7 +457,7 @@
     goto :goto_2
 
     :cond_7
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_2
     if-eqz v2, :cond_8
@@ -491,16 +491,16 @@
     goto :goto_3
 
     :cond_8
-    const/4 v11, 0x0
+    move v11, v1
 
-    const/4 v13, 0x0
+    move v13, v11
 
     :goto_3
     if-eqz v3, :cond_a
 
     if-nez v4, :cond_9
 
-    const/4 v14, 0x0
+    move v14, v1
 
     goto :goto_4
 
@@ -540,7 +540,7 @@
     goto :goto_5
 
     :cond_a
-    const/4 v14, 0x0
+    move v14, v1
 
     :goto_5
     sub-int/2addr v5, v12
@@ -621,9 +621,9 @@
     move-result v0
 
     :cond_d
-    const/4 v2, 0x0
+    move v2, v1
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_6
     if-ge v2, v8, :cond_f
@@ -695,7 +695,7 @@
 
     move-result v10
 
-    const/4 v12, 0x0
+    move v12, v1
 
     :goto_7
     if-ge v12, v8, :cond_11

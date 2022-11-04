@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/snackbar/h;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/h;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
@@ -42,7 +42,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
@@ -57,10 +57,10 @@
     if-ne v0, v3, :cond_1
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     new-array v4, v2, [F
 
@@ -73,7 +73,7 @@
     move-result-object v4
 
     .line 8
-    sget-object v5, Ld4/a;->a:Landroid/view/animation/LinearInterpolator;
+    sget-object v5, Lb4/a;->a:Landroid/view/animation/LinearInterpolator;
 
     invoke-virtual {v4, v5}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -95,7 +95,7 @@
     move-result-object v5
 
     .line 12
-    sget-object v6, Ld4/a;->d:Lm0/c;
+    sget-object v6, Lb4/a;->d:Ll0/c;
 
     invoke-virtual {v5, v6}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -126,20 +126,20 @@
     invoke-virtual {v6, v1, v2}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
     .line 17
-    new-instance v1, Lt4/a;
+    new-instance v1, Lq4/a;
 
-    invoke-direct {v1, v0}, Lt4/a;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
+    invoke-direct {v1, v0}, Lq4/a;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
 
     invoke-virtual {v6, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 18
     invoke-virtual {v6}, Landroid/animation/AnimatorSet;->start()V
 
-    goto :goto_1
+    goto :goto_0
 
     .line 19
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/h;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     .line 20
     invoke-virtual {v0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c()I
@@ -147,27 +147,13 @@
     move-result v4
 
     .line 21
-    sget-boolean v5, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->o:Z
-
-    if-eqz v5, :cond_2
-
-    .line 22
-    iget-object v5, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
-
-    invoke-static {v5, v4}, Lf0/r;->w(Landroid/view/View;I)V
-
-    goto :goto_0
-
-    .line 23
-    :cond_2
     iget-object v5, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
     int-to-float v6, v4
 
     invoke-virtual {v5, v6}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 24
-    :goto_0
+    .line 22
     new-instance v5, Landroid/animation/ValueAnimator;
 
     invoke-direct {v5}, Landroid/animation/ValueAnimator;-><init>()V
@@ -178,37 +164,37 @@
 
     aput v1, v2, v3
 
-    .line 25
+    .line 23
     invoke-virtual {v5, v2}, Landroid/animation/ValueAnimator;->setIntValues([I)V
 
-    .line 26
-    sget-object v1, Ld4/a;->b:Lm0/b;
+    .line 24
+    sget-object v1, Lb4/a;->b:Ll0/b;
 
     invoke-virtual {v5, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     const-wide/16 v1, 0xfa
 
-    .line 27
+    .line 25
     invoke-virtual {v5, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 28
-    new-instance v1, Lt4/c;
+    .line 26
+    new-instance v1, Lq4/c;
 
-    invoke-direct {v1, v0}, Lt4/c;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
+    invoke-direct {v1, v0}, Lq4/c;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
 
     invoke-virtual {v5, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 29
+    .line 27
     new-instance v1, Lcom/google/android/material/snackbar/c;
 
     invoke-direct {v1, v0, v4}, Lcom/google/android/material/snackbar/c;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;I)V
 
     invoke-virtual {v5, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 30
+    .line 28
     invoke-virtual {v5}, Landroid/animation/ValueAnimator;->start()V
 
-    :goto_1
+    :goto_0
     return-void
 
     nop

@@ -199,7 +199,7 @@
     const-string v1, "No route to "
 
     .line 5
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -300,7 +300,7 @@
     const-string v1, "Proxy.address() is not an InetSocketAddress: "
 
     .line 9
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -499,13 +499,7 @@
 
     invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_5
-
-    :goto_4
     throw p1
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private resetNextProxy(Lokhttp3/HttpUrl;Ljava/net/Proxy;)V
@@ -801,11 +795,5 @@
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
 
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method

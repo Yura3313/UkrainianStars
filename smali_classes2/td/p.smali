@@ -1,87 +1,82 @@
 .class public final Ltd/p;
-.super Lse/i;
-.source "RegisterEnterPinPageFragment.kt"
+.super Lif/i;
+.source "AssetCache.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Ltd/q;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Ljava/io/FileInputStream;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Ltd/p;
+# instance fields
+.field public final synthetic f:Ltd/n$c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ltd/n$c;)V
+    .locals 0
 
-    new-instance v0, Ltd/p;
+    iput-object p1, p0, Ltd/p;->f:Ltd/n$c;
 
-    invoke-direct {v0}, Ltd/p;-><init>()V
+    const/4 p1, 0x0
 
-    sput-object v0, Ltd/p;->g:Ltd/p;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    check-cast p1, Ltd/q;
+    iget-object v0, p0, Ltd/p;->f:Ltd/n$c;
 
-    check-cast p2, Ljava/lang/Exception;
+    iget-object v1, v0, Ltd/n$c;->f:Ltd/n;
 
-    const-string v0, "$receiver"
+    iget-object v0, v0, Ltd/n$c;->h:Ljava/lang/String;
+
+    sget-object v2, Ltd/n;->g:Lof/e;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Ltd/n;->a(Ljava/lang/String;)Ljava/io/File;
 
-    const-string v0, "it"
+    move-result-object v0
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
 
-    move-result-object p1
+    move-result v2
 
-    if-eqz p1, :cond_0
+    if-nez v2, :cond_0
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
+    goto :goto_0
 
     .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
     :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    new-instance v1, Ljava/io/FileInputStream;
 
-    return-object p1
+    invoke-direct {v1, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v1, v0}, Lre/h$a;->a(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v1
+
+    :cond_1
+    :goto_0
+    return-object v1
 .end method

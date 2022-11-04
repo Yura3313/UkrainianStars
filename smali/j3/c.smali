@@ -1,56 +1,54 @@
 .class public final Lj3/c;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
 
-# static fields
-.field public static final a:Lcom/google/android/gms/common/Feature;
-
-.field public static final b:Lcom/google/android/gms/common/Feature;
-
-.field public static final c:Lcom/google/android/gms/common/Feature;
-
-.field public static final d:Lcom/google/android/gms/common/Feature;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    new-instance v0, Lcom/google/android/gms/common/Feature;
-
-    const-string v1, "device_enabled_api"
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/Feature;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lj3/c;->a:Lcom/google/android/gms/common/Feature;
-
-    .line 2
-    new-instance v0, Lcom/google/android/gms/common/Feature;
-
-    const-string v1, "instant_app_removed_api"
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/Feature;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lj3/c;->b:Lcom/google/android/gms/common/Feature;
-
-    .line 3
-    new-instance v0, Lcom/google/android/gms/common/Feature;
-
-    const-string v1, "instant_app_installed_api"
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/Feature;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lj3/c;->c:Lcom/google/android/gms/common/Feature;
-
-    .line 4
-    new-instance v0, Lcom/google/android/gms/common/Feature;
-
-    const-string v1, "instant_app_uninstalled_api"
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/Feature;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lj3/c;->d:Lcom/google/android/gms/common/Feature;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic call()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mounted"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method

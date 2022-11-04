@@ -722,7 +722,7 @@
     const-string v0, "onConfigurationChanged!! : "
 
     .line 6
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -753,7 +753,7 @@
 .end method
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
-    .locals 4
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Lcom/kakaogame/auth/view/DatePickerFragment;->getLayoutView()Landroid/view/View;
@@ -766,39 +766,6 @@
     iput v0, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->preOrientation:I
 
     .line 3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x17
-
-    if-ge v0, v1, :cond_0
-
-    .line 4
-    new-instance v0, Landroid/app/AlertDialog$Builder;
-
-    new-instance v1, Landroid/view/ContextThemeWrapper;
-
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
-
-    move-result-object v2
-
-    sget v3, Lcom/kakaogame/R$style;->Theme_AppCompat_Dialog:I
-
-    invoke-direct {v1, v2, v3}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
-
-    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 5
-    :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;

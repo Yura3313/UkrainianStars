@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Verzamel krachtpunten via knokdozen en winkelaanbiedingen om de volgende upgrade te ontgrendelen.
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Je kunt deze sterrenkracht nu in knokdozen vinden.
-TID_HERO_INFO_STAR_POWER_BLOCKED,Upgrade <HERONAME> met een selecteerbare sterrenkracht! Je vindt ze in knokdozen nadat je KRACHTLEVEL <LEVEL> bereikt.
+TID_HERO_INFO_STAR_POWER_BLOCKED,Versterk <HERONAME> met een speciale sterrenkracht! Verkrijgbaar nadat je KRACHTLEVEL <LEVEL> bereikt.
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Je kunt deze gadget nu in knokdozen vinden.
-TID_HERO_INFO_ACCESSORIES_BLOCKED,Upgrade <HERONAME> met een speciale gadget! Je vindt ze in knokdozen nadat je KRACHTLEVEL <LEVEL> bereikt.
+TID_HERO_INFO_ACCESSORIES_BLOCKED,Versterk <HERONAME> met een unieke gadget! Verkrijgbaar nadat je KRACHTLEVEL <LEVEL> bereikt.
 TID_HERO_INFO_STAR_POWER_LABEL,STERRENKRACHT: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,GADGET: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\nDit seizoen heeft <BRAWLER> de zeldzaamheid <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\nJe moet drempel <TIER> van seizoen <SEASON> bereiken om <BRAWLER> in dozen te kunnen vinden."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\n<BRAWLER> kan ontgrendeld worden in seizoen <SEASON>."
+TID_HERO_INFO_BUY_ITEM,KOPEN
+TID_HERO_INFO_BUY_ITEM_FREE,GRATIS
+TID_HERO_INFO_BUY_MISSING1,JE HEBT NOG <MISSINGCOINS> MUNTEN NODIG!
+TID_HERO_INFO_BUY_MISSING2,Wil je de ontbrekende munten nu kopen?
+TID_HERO_INFO_BUY_MISSING_GEMS1,JE HEBT NOG <MISSINGCOINS> MUNTEN NODIG!
+TID_HERO_INFO_BUY_MISSING_GEMS2,Bemachtig nog <MISSINGGEMS> edelstenen om de ontbrekende munten te kopen.
+TID_HERO_INFO_SEE_OFFERS,EDELSTENEN KOPEN
+TID_HERO_INFO_UNLOCK_GADGETS,GADGETS ONTGRENDELEN
+TID_HERO_INFO_UNLOCK_STARPOWERS,STERRENKRACHTEN ONTGRENDELEN
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,AANKOOP BEVESTIGEN
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,AANKOOP BEVESTIGEN
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,AANKOOP BEVESTIGEN
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,MEER EDELSTENEN KOPEN
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,Bemachtig nog <cC5F724><REQUIREDGEMS> edelstenen</c> om de ontbrekende munten te kopen.
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,ALLE EDELSTEENPAKKETTEN
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,AANBEVOLEN
 TID_MATCHMAKE_FAILED_5,Koppelen mislukt: het evenement is verlopen.
 TID_MATCHMAKE_FAILED_7,Koppelen mislukt: de verbinding van een teamlid werd verbroken.
 TID_MATCHMAKE_FAILED_9,Koppelen mislukt: er begint onderhoud.
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,GEEN CLUBBESCHRIJVING
 TID_EVENT_POPUP_TITLE,TIJD OM TE VECHTEN
 TID_GOLDRUSH_8,Saffiervelden
 TID_USE_AUTOFIRE_TUTORIAL,Tik op de <ccc0033>rode joystick</c> om op de dichtstbijzijnde vijand te schieten!
-TID_BRAWL_BOX_INFO_1,Een grote doos bevat evenveel beloningen als drie knokdozen. De krachtpunten zijn echter verdeeld over minder knokkers. De doos kan enkel uitrustingstokens van één soort bevatten.\n\nEr worden drie trekkingen gehouden en de waarschijnlijkheden voor de beloningen in elke trekking zijn:
-TID_BRAWL_BOX_INFO_2,"Elke knokdoos bevat een van de volgende beloningen: een nieuwe knokker, krachtpunten en munten, uitrustingstokens en schroot, een gadget, of een sterrenkracht. Je kunt ook tokenverdubbelaars als bonus krijgen.\n\nDe waarschijnlijkheden voor de beloningen zijn:"
-TID_BRAWL_BOX_INFO_3,Een megadoos bevat evenveel beloningen als tien knokdozen. De krachtpunten zijn echter verdeeld over minder knokkers. De doos kan enkel uitrustingstokens van één soort bevatten.\n\nEr worden tien trekkingen gehouden en de waarschijnlijkheden voor de beloningen in elke trekking zijn:
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nZeldzame knokker: <NUM2>%<GAR_HERO_1>\nSuperzeldzame knokker: <NUM3>%<GAR_HERO_2>\nEpische knokker: <NUM4>%<GAR_HERO_3>\nMythische knokker: <NUM5>%<GAR_HERO_4>\nLegendarische knokker: <NUM6>%<GAR_HERO_5>\nSterrenkracht: <NUM7>%<GAR_STAR_POWER>\nGadget: <NUM8>%<GAR_ACCESSORY>\nUitrustingstokens: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nElke trekking geeft je ook <TOKEN_DOUBLER>% kans op een tokenverdubbelaar. Gadgets zijn alleen beschikbaar voor knokkers van krachtlevel 7 of hoger en sterrenkrachten zijn alleen beschikbaar voor knokkers van level 9 of hoger. Je kunt pas schroot en uitrustingstokens vinden wanneer een knokker krachtlevel 10 heeft bereikt. Nadat je <WCPP_BRAWLERS> knokkers hebt ontgrendeld, is er een kans van <WCPP_CHANCE>% dat je krachtpunten aan om het even welke knokker kunt toewijzen. Als je alle beloningen van een bepaald type hebt ontgrendeld, bijvoorbeeld zeldzame knokkers, dan neemt de kans op de andere beloningen toe. Geluk: om het openen van knokdozen eerlijker te maken, is er een gelukssysteem dat de kans op legendarische knokkers beïnvloedt. Voor elke trekking die je geen nieuwe knokker oplevert, neemt je geluksfactor toe. Elke keer dat je een nieuwe knokker krijgt, neemt je geluksfactor af gebaseerd op de zeldzaamheid van de knokker. Als je geluksfactor hoog genoeg is, maak je meer kans op een legendarische knokker met een maximaal kanspercentage van <MAX_LEGENDARY>%. Als je geluksfactor laag is, betekent dit dat het lastiger is om een nieuwe legendarische knokker te krijgen. De inhoud van knokdozen in het begin van het spel zijn vooraf bepaald om te zorgen dat het spel eerlijk is voor nieuwe spelers."
+TID_BRAWL_BOX_INFO_1,Een grote doos bevat evenveel beloningen als 3 knokdozen. De krachtpunten zijn echter verdeeld over minder knokkers.\n\nDe doos bevat 3 trekkingen en de waarschijnlijkheden voor de beloningen in elke trekking zijn:
+TID_BRAWL_BOX_INFO_2,"Elke knokdoos bevat een van de volgende beloningen: een nieuwe knokker, krachtpunten en munten, een gadget, of een sterrenkracht. Je kunt ook tokenverdubbelaars als bonus krijgen.\n\nDe waarschijnlijkheden voor de beloningen zijn:"
+TID_BRAWL_BOX_INFO_3,Een megadoos bevat evenveel beloningen als 10 knokdozen. De krachtpunten zijn echter verdeeld over minder knokkers.\n\nDe doos bevat 10 trekkingen en de waarschijnlijkheden voor de beloningen in elke trekking zijn:
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nZeldzame knokker: <NUM2>%<GAR_HERO_1>\nSuperzeldzame knokker: <NUM3>%<GAR_HERO_2>\nEpische knokker: <NUM4>%<GAR_HERO_3>\nMythische knokker: <NUM5>%<GAR_HERO_4>\nLegendarische knokker: <NUM6>%<GAR_HERO_5>\nSterrenkracht: <NUM7>%<GAR_STAR_POWER>\nGadget: <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nElke trekking geeft je ook <TOKEN_DOUBLER>% kans op een tokenverdubbelaar. Gadgets zijn alleen beschikbaar voor knokkers van krachtlevel 7 of hoger en sterrenkrachten zijn alleen beschikbaar voor knokkers van level 9 of hoger. Nadat je <WCPP_BRAWLERS> knokkers hebt ontgrendeld, is er een kans van <WCPP_CHANCE>% dat je krachtpunten aan om het even welke knokker kunt toewijzen. Als je alle beloningen van een bepaald type hebt ontgrendeld, bijvoorbeeld zeldzame knokkers, dan neemt de kans op de andere beloningen toe. Geluk: om het openen van knokdozen eerlijker te maken, is er een gelukssysteem dat de kans op legendarische knokkers beïnvloedt. Voor elke trekking die je geen nieuwe knokker oplevert, neemt je geluksfactor toe. Elke keer dat je een nieuwe knokker krijgt, neemt je geluksfactor af gebaseerd op de zeldzaamheid van de knokker. Als je geluksfactor hoog genoeg is, maak je meer kans op een legendarische knokker met een maximaal kanspercentage van <MAX_LEGENDARY>%. Als je geluksfactor laag is, betekent dit dat het lastiger is om een nieuwe legendarische knokker te krijgen. De inhoud van knokdozen in het begin van het spel zijn vooraf bepaald om te zorgen dat het spel eerlijk is voor nieuwe spelers."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Krachtpunten + munten
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Krachtpunten + munten + schroot
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Munten + schroot
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Als Brock zijn super volledig heeft opgeladen (zonder
 TID_SPEC_ABI_PET,VOGELVRIJ
 TID_SPEC_ABI_PET_DESC,De vogel van Dynamike stort zich in de strijd!
 TID_SPEC_ABI_DAMAGE_ULTI,GEESTELIJKE STOOT
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Als Gene's super volledig is opgeladen, richt hij <c00cc00>+<VALUE1></c> schade aan met zijn aanval."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,8-Bit sloft als een arcadekast met benen. Hij schiet laserstralen en zijn super verhoogt de schade van zijn teamgenoten.
 TID_ARCADE_SHORT_DESC,BESCHADIGER
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Bedankt voor het gebruiken van de kaartenmake
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Bedankt voor het gebruiken van de kaartenmaker. Zorg ervoor dat je je bij het gebruik van de kaartenmaker aan de gebruikersovereenkomst en andere gerelateerde voorschriften houdt. Maak of verspreid geen ongepaste content die erotisch of obsceen is, een gevaar vormt voor nationale eenheid, soevereiniteit en territoriale integriteit, of wetten en andere voorschriften schendt."
 TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,HELPER
-TID_RUFFS_DESC,"Ook al blaft hij vaak naar zijn ondergeschikten, Kolonel Ruffs is een brave jongen.\n\nRuffs verbergt zijn hondenkenmerken achter zijn serieuze en kalme gedrag, tenzij er een potje apporteren van start gaat!"
+TID_RUFFS_DESC,"Hoewel hij vaak naar zijn ondergeschikten blaft, is Kolonel Ruffs een brave jongen.\n\nHij staat bekend om zijn kalme houding, maar gaat door het dolle heen als er een potje apporteren van start gaat."
 TID_RUFFS_WEAPON,DUBBELLOOPSE LASER
 TID_RUFFS_WEAPON_DESC,De dubbele laserstralen van Ruffs kaatsen meerdere keren tegen muren en kunnen tegenstanders achter obstakels raken.
 TID_RUFFS_ULTI,LUCHTBEVOORRADING
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Spetterplezier
 TID_KO_JUNE21_2,In het diepe
 TID_QUALIFIED_INFO_PARAM,"Gefeliciteerd, je hebt de <CHALLENGE> gewonnen! Dit is je overwinningsbeloning: <REWARD>."
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Beloning voor overwinning <WIN> in de <CHALLENGE>: <REWARD>.
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"Gefeliciteerd, je hebt de <CHALLENGE> gewonnen! Dit is je overwinningsbeloning: <REWARD>.\nDeze beloning vervangt de oorspronkelijke beloning die je al had."
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Beloning voor overwinning <WIN> in de <CHALLENGE>: <REWARD>.\nDeze beloning vervangt de oorspronkelijke beloning die je al had.
 TID_CHALLENGE_TEASER_INFO_PARAM,De <CHALLENGE> komt eraan!\n\nWin <WIN> wedstrijden om het volgende te verdienen: <REWARD>! Speel met vrienden of gebruik de functie 'Een team zoeken' om je kansen te verhogen.\n\nDe uitdaging duurt slechts <DURATION> uur. Veel succes en plezier!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Voltooi de uitdaging om het volgende te winnen: <REWARD>!
 TID_GEN_JUNE21_1,Kikkerbadje
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Behaal <NUM> trofeeën om uitdagingen te o
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Alleen de geselecteerde skin wordt gebruikt.
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,Er wordt willekeurig een skin gekozen uit alle geselecteerde skins.
 TID_GEAR_TOKEN_DROP_TITLE,UITRUSTINGSTOKENS
-TID_GEAR_TOKEN_DAMAGE,Schadetokens
-TID_GEAR_TOKEN_HEAL,Genezingstokens
-TID_GEAR_TOKEN_RESISTANCE,Weerstandstokens
-TID_GEAR_TOKEN_SHIELD,Schildtokens
-TID_GEAR_TOKEN_SPEED,Snelheidstokens
-TID_GEAR_TOKEN_TYPE_DAMAGE,SCHADE
-TID_GEAR_TOKEN_TYPE_HEAL,GEZONDHEID
-TID_GEAR_TOKEN_TYPE_VISION,ZICHT
-TID_GEAR_TOKEN_TYPE_SHIELD,SCHILD
-TID_GEAR_TOKEN_TYPE_SPEED,SNELHEID
-TID_GEAR_TOKEN,Uitrustingstoken
 TID_GEAR_SCRAP_DROP_TITLE,SCHROOT
 TID_GEAR_SCRAP,Schroot
 TID_GEAR_UNLOCK_SLOT,ONTGRENDEL UITRUSTINGS-\nVAK <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,GEZONDHEID
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,SCHADE
 TID_GEAR_VISION_TITLE,ZICHT
 TID_GEAR_SHIELD_TITLE,SCHILD
+TID_GEAR_RELOAD_SPEED_TITLE,HERLAADSNELHEID
+TID_GEAR_SUPER_CHARGE_TITLE,SUPEROPLADING
 TID_GEAR_FOREST_SPEED_INFO,Verhoog je bewegingssnelheid met <NUM>% wanneer je je in een bosje bevindt.
 TID_GEAR_STANDING_HEAL_INFO,HERSTEL GEZONDHEID <NUM>% effectiever.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Richt <NUM>% EXTRA SCHADE aan wanneer je minder dan 50% gezondheid hebt.
 TID_GEAR_VISION_INFO,ONTHUL tegenstanders gedurende <NUM> seconden nadat je ze schade hebt toegebracht.
 TID_GEAR_SHIELD_INFO,Krijg <NUM> extra levenspunten in de vorm van een SCHILD. Het schild herstelt zich in 10 seconden wanneer je gezondheidsbalk vol is.
+TID_GEAR_RELOAD_SPEED_INFO,HERLAAD <NUM>% sneller.
+TID_GEAR_SUPER_CHARGE_INFO,De super wordt <NUM>% SNELLER OPGELADEN.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,VERHOOGDE BEWEGINGSSNELHEID in bosjes.
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,HERSTEL GEZONDHEID effectiever.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Richt extra SCHADE aan wanneer je minder dan 50% gezondheid hebt.
 TID_GEAR_VISION_UPGRADE_INFO,ONTHUL tegenstanders nadat je ze schade hebt toegebracht.
 TID_GEAR_SHIELD_UPGRADE_INFO,Krijg extra LEVENSPUNTEN in de vorm van een SCHILD.
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Snellere herlaadsnelheid
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Snellere oplaadsnelheid van super
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,VERHOOGDE SNELHEID
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,HERSTELBONUS
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,EXTRA SCHADE
 TID_GEAR_VISION_UPGRADE_TARGET,DUUR VAN ONTHULLING
 TID_GEAR_SHIELD_UPGRADE_TARGET,SCHILD
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,HERLAADSNELHEID
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,OPLAADSNELHEID SUPER
+TID_GEAR_SUPER_HEALTH_TITLE,HOOFDGEZONDHEID
+TID_GEAR_SUPER_HEALTH_INFO,Het hoofd krijgt <NUM> EXTRA LEVENSPUNTEN.
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Hoofd krijgt extra levenspunten
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,HOOFDGEZONDHEID
+TID_GEAR_SUPER_RANGE_TITLE,HANDBEREIK
+TID_GEAR_SUPER_RANGE_INFO,Het handbereik wordt vergroot met één tegel.
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Vergroot handbereik
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,HANDBEREIK
 TID_GEAR_UPGRADED,UITRUSTING GEÜPGRADED!
 TID_GEAR_TITLE,UITRUSTING
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> VAN LEVEL <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Uitrusting: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,UITRUSTING: <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Deze uitrusting wordt al gebruikt voor een ander vak.
 TID_ITEMS_TITLE,ITEMS
 TID_TEAMUP_YOUR_SETTINGS_TITLE,PERSOONLIJKE INSTELLINGEN
 TID_TRUE_SILVER_BROCK_SKIN,MASSIEF ZILVEREN BROCK
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>KRACHTWEDSTRIJD</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,KRACHTWEDSTRIJD
 TID_CLUB_INFO_COLUMN_TROPHIES,TROFEEËN
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,RANG IN KRACHTDIVISIE
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,VOOR HET LAATST ONLINE
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,STATUS
 TID_CLUB_INFO_COLUMN_NAME,NAAM
 TID_CLUB_INFO_COLUMN_TICKETS_USED,TICKETS GEBRUIKT
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,CLUBTROFEEËN
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,NEDERLAAG
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,In een team met willekeurige spelers
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,In een team met clubgenoten
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,CLUBTROFEEËN
-TID_REWARD_DESC_GEAR_TOKENS,UITRUSTINGSTOKENS
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,UITRUSTINGSTOKEN
-TID_REWARD_DESC_GEAR_SCRAP,SCHROOT
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hoi! Het lijkt erop dat je te laat bent om deze week te spelen.\n\nJe kunt toekijken hoe je club het ervan afbrengt voordat de volgende week begint!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Ontdek wat er verkrijgbaar is in de clubwinkel!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Eindresultaten:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,X-FACTOR
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,De scherven van Groms hoofdaanval richten <c00cc00><VALUE1>%</c> extra schade aan op maximaal bereik.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,UITKIJKTOREN
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,Grom zet een uitkijktoren neer waardoor al zijn bondgenoten over een groot gebied in bosjes kunnen kijken. De gezondheid van de toren gaat geleidelijk aan omlaag.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Maak je eerste uitrusting!
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,Verzamel meer schroot en uitrustingstokens via knokdozen of de clubwinkel om uitrustingen te maken of te upgraden.
-TID_FIRST_GEAR_TUTORIAL_TITLE,UITRUSTINGSVAK
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Uitrustingsvak ontgrendeld!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Kies GRATIS je eerste uitrusting!
+TID_ITEMS_HUB_GUIDE_GADGET,Je kunt hier unieke gadgets voor <BRAWLER> kiezen en kopen.
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Gadgets zijn nu vanaf hier beschikbaar.
+TID_ITEMS_HUB_GUIDE_STARPOWER,Je kunt hier unieke sterrenkrachten voor <BRAWLER> kiezen en kopen.
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Sterrenkrachten zijn nu hier beschikbaar.
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Gadgets zijn nu hier beschikbaar.
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Sterrenkrachten zijn nu hier beschikbaar.
+TID_FIRST_GEAR_TUTORIAL_TITLE,UITRUSTINGEN
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,ontgrendeld!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Uitrusting
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Verbeter knokkers van jouw keuze met extra vaardigheden.
@@ -6625,19 +6652,19 @@ TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Knokbeugels zijn te ver weg!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Knokbeugels vereist!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,HELPER
-TID_SOUL_COLLECTOR_DESC,In een lang vergeten en verlaten treinstel vindt Gus gezelschap in zijn ballonnen. Hij is beste vrienden met de ballondieren die hij maakt om de tijd mee te doden.
+TID_SOUL_COLLECTOR_DESC,"Gus houdt van ballonnen. Er wordt gezegd dat hij op een dag een ballonhond volgde, verdwaald raakte en in een verlaten treinstel terechtkwam, waar hij tot op heden verblijft."
 TID_SOUL_COLLECTOR_WEAPON,GEESTIGE BALLONNEN
 TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus bekogelt zijn vijanden met ballonnen. Na enkele succesvolle treffers verschijnt er een geest, die door Gus of een teamgenoot kan worden verzameld om te genezen."
 TID_SOUL_COLLECTOR_ULTI,BESCHERMSPOOK
 TID_SOUL_COLLECTOR_ULTI_DESC,Gus gebruikt zijn zelfgemaakte ballon en beste vriend Spookje om een schild rond zichzelf of een teamgenoot te vormen.
-TID_SPEC_ABI_SOUL_COLLECTOR_1,GEZONDE ZIEL
+TID_SPEC_ABI_SOUL_COLLECTOR_1,GOEDE GEZONDHEID
 TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,De geesten uit de ballonnen van Gus geven <c00cc00><VALUE1>%</c> meer gezondheid.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,GEESTKRACHT
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spookje verhoogt gedurende <c00cc00><VALUE2></c> seconden de aanvalsschade van een teamgenoot met <c00cc00><VALUE1>%</c>.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,FANTOOMPIJN
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Gus laat alle niet-verzamelde geesten ontploffen, waarmee hij <c00cc00><VALUE1></c> schade aanricht aan nabije vijanden."
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,CONVERSIE
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus verliest <ccc0000><VALUE1>%</c> van zijn gezondheid en krijgt er <c00cc00><VALUE2>%</c> geestdrift voor terug.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,"Gus verliest <ccc0000><VALUE1>%</c> van zijn gezondheid, maar krijgt er <c00cc00><VALUE2>%</c> geestdrift voor terug."
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,Geen geesten!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Geestdrift is al vol!
 TID_SKIN_INFO_OUTLAW,Skin van de onheilsbende
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-Bit is uitgeschakeld!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Reactiepakket van de onheilsbende
 TID_SHOP_OUTLAW_SKINS,Skin van de onheilsbende
 TID_SHOP_OUTLAW_TITLE,ONHEILSBENDE
+TID_GEAR_RARITY_RARE,Zeldzaam
+TID_GEAR_RARITY_SUPER_RARE,Superzeldzaam
+TID_GEAR_RARITY_EPIC,Episch
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - zeldzame uitrusting
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - superzeldzame uitrusting
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - epische uitrusting
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Geesten zijn te ver weg!
+TID_TRY_BRAWLER_TITLE,Knokker uitproberen
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,OEFENPOTJE
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,OEFENTERREIN
+TID_FIRST_GADGET_TUTORIAL_HEADER,GADGETS
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Een extra vaardigheid voor je knokker.
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Alle knokkers ontgrendelen hun vak voor gadgets op krachtlevel 7.
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Unieke gadgets voor elke knokker.
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Je kunt je gekozen gadget maximaal 3 keer per gevecht gebruiken.
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,STERRENKRACHTEN
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Unieke passieve vaardigheden voor je knokker.
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Alle knokkers ontgrendelen hun vak voor sterrenkrachten op krachtlevel 9.
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Unieke sterrenkrachten voor elke knokker.
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Je gekozen sterrenkracht zal de hele tijd actief zijn.
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Alle knokkers ontgrendelen hun eerste uitrustingsvak op krachtlevel 10.
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Er zijn meerdere uitrustingen beschikbaar voor elke knokker.
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Je gekozen uitrusting zal de hele tijd actief zijn.
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Oefenpotje wordt geselecteerd
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,TANK
+TID_SHIELD_TANK_DESC,Als filmoperateur kent Buster al zijn favoriete actiefilms van begin tot eind. Hij droomt ervan om een actieheld te worden en de hoofdrol te spelen in een kaskraker.
+TID_SHIELD_TANK_WEAPON,LICHTFLITS
+TID_SHIELD_TANK_WEAPON_DESC,"Buster vuurt lichtstralen af met zijn projector, waarmee hij schade toebrengt aan alle vijanden binnen bereik."
+TID_SHIELD_TANK_ULTI,PROJECTIESCHILD
+TID_SHIELD_TANK_ULTI_DESC,Buster projecteert een schild om vijandelijke projectielen te blokkeren en de energie ervan naar tegenstanders te weerkaatsen.
+TID_SPEC_ABI_SHIELD_TANK_1,DIRECTOR'S CUT
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Busters hoofdaanval brengt <c00cc00><VALUE1>%</c> meer schade toe voor elke teamgenoot die zich in het oplaadgebied van zijn super bevindt.
+TID_SPEC_ABI_SHIELD_TANK_2,KOGELWEREND VEST
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Terwijl zijn super actief is, loopt Buster <c00cc00><VALUE1>%</c> minder schade op en kan hij niet worden teruggeslagen, verdoofd of vertraagd."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,GEREEDSCHAPSGORDEL
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Buster geneest alle nabije teamgenoten met <c00cc00><VALUE1></c> levenspunten voor elke bondgenoot die zich in het oplaadgebied van zijn super bevindt.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRAILER
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Met zijn volgende superaanval trekt Buster vijanden naar zich toe en vertraagt hij ze gedurende <c00cc00><VALUE1></c> seconden.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> UITRUSTINGSTOKENS\n<SCRAP> SCHROOT
+TID_GEAR_COMPENSATION_CLAIM,OPHALEN
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Rust je knokker uit met een passieve vaardigheid.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,GAAN!
+TID_INBOX_CAPTION_52,Donatie van uitrusting '<TYPE>' voor <NAME>.
+TID_GEAR_COMPENSATION_INFO,"Hier heb je <COINS> munten voor je uitrustingen, uitrustingstokens en schroot!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,"De uitrustingen zijn gereset, waardoor je <COINS> munten hebt ontvangen ter compensatie."
+TID_RECRUIT_TOKEN,Rekruteringstoken
+TID_CHROMATIC_TOKEN,Chromatische token
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,STERRENKRACHTEN
+TID_FIRST_GADGET_TUTORIAL_TITLE,GADGETS
+TID_GEAR_TO_COINS_POPUP_TITLE,UITRUSTING HERWERKT!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Nieuwe uitrusting beschikbaar!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Ga naar je knokkers voor nieuwe uitrustingsopties.
+TID_GEAR_TO_COINS_POPUP_INFO,"Al je bestaande uitrustingen zijn gereset. Het is niet langer mogelijk om uitrustingen te maken of te upgraden. Uitrustingen kunnen nu zeldzaam, superzeldzaam of episch zijn.\n\nOm je te compenseren voor deze wijziging, ontvang je een vergoeding in de vorm van munten voor alle uitrustingstokens en schroot die je hebt verzameld. KOOP NIEUWE UITRUSTINGEN MET JE MUNTEN!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,VERGOEDING:
+TID_REPORT_PLAYER_REPORT,RAPPORTEREN
+TID_REPORT_PLAYER_REPORTED,GERAPPORTEERD
+TID_REPORT_PLAYER_POPUP_TITLE,<PLAYER_NAME> RAPPORTEREN?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Je staat op het punt <PLAYER_NAME> te rapporteren wegens griefing.\n\nGriefing is het opzettelijk dwarsbomen van het doel van het evenement. Dit negatieve gedrag beïnvloedt zowel het team als het resultaat van de wedstrijd.\n\nBekende voorbeelden van griefing zijn:\nOPZETTELIJKE NALATIGHEID, MATCHFIXING en INACTIVITEIT."
+TID_REPORT_PLAYER_BUTTON_REPORT,RAPPORTEREN
+TID_REPORT_PLAYER_BUTTON_CANCEL,ANNULEREN
+TID_QUEST_FALLBACK_REWARD_DESC,"Aangezien je de opdrachtbeloning al in je bezit hebt, ontvang je: <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,OPDRACHTBELONING
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,OPHALEN
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,REKRUTERINGSPAD
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,CHROMATISCHE WINKEL
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Ontgrendel nog <NUM> chromatische knokkers.
+TID_BUTTON_NAVI_RECRUIT_ROAD,Rekruteringspad
+TID_SKIN_INFO_GHOST_TRAIN,Spookstation-skin
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Er is een fout opgetreden bij het verifiëren van je aankoop.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,De super van deze knokker wordt opgeladen door in de buurt van teamgenoten te blijven.
+TID_SKIN_INFO_ACTION,Actieheldenskin
+TID_SKIN_INFO_WF_2022,Wereldfinaleskin van 2022
+TID_BRAWL_PASS_SEASON_14,SPOOKSTATION
+TID_CHAINSAW_BUSTER_SKIN,KETTINGZAAG-BUSTER
+TID_CHAINSAW_BUSTER_SKIN_SHOP,KETTINGZAAG-\nBUSTER
+TID_GHOST_TRAIN_GROM_SKIN,FRANKENGROM
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,FRANKENGROM
+TID_GHOST_TRAIN_COLETTE_SKIN,CONDUCTEUR-COLETTE
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,CONDUCTEUR-\nCOLETTE
+TID_BRICK_OVEN_ASH_SKIN,PIZZAOVEN-ASH
+TID_BRICK_OVEN_ASH_SKIN_SHOP,PIZZAOVEN-\nASH
+TID_VETERAN_SQUEAK_SKIN,COMMANDO-SQUEAK
+TID_VETERAN_SQUEAK_SKIN_SHOP,COMMANDO-\nSQUEAK
+TID_ZOMBIE_BROCK_SKIN,ZOMBIE-BROCK
+TID_ZOMBIE_BROCK_SKIN_SHOP,ZOMBIE-\nBROCK
+TID_MEGA_MEGABOX_DARRYL_SKIN,OMEGADOOS-DARRYL
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,OMEGADOOS-\nDARRYL
+TID_GHOST_METRO_PENNY_SKIN,WASBEER-PENNY
+TID_GHOST_METRO_PENNY_SKIN_SHOP,WASBEER-\nPENNY
+TID_BSWF22_TARA_SKIN,SPELVERLATER-TARA
+TID_BSWF22_TARA_SKIN_SHOP,SPELVERLATER-\nTARA
+TID_TOPGUN_JANET_SKIN,G-KRACHT-JANET
+TID_TOPGUN_JANET_SKIN_SHOP,G-KRACHT-\nJANET
+TID_SHOP_OFFER_TITLE_40,OMEGADOOS
+TID_PIN_OFFER_TITLE,Reactieaanbiedingen
+TID_THUMBNAILS_OFFER_TITLE,Pictogramaanbiedingen
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Ontgrendel Brawl Pass-beloningen, extra opdrachten en <NUM> opdrachtwissels per week."
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,INWISSELEN
+TID_BRAWL_PASS_REDEEM,INWISSELEN
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Er zijn <NUMBER> Brawl Pass(es) beschikbaar op je Supercell ID. Wil je er een gebruiken om de Brawl Pass van dit seizoen te activeren?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,Een ogenblik geduld. Er wordt een Brawl Pass van je Supercell ID ingewisseld.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Je hebt niet genoeg Brawl Passes op je Supercell ID om in te wisselen. Ga naar de Supercell Store om er meer te kopen.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Vuistvol edelstenen
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Buidel edelstenen
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Tas edelstenen
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Emmer edelstenen
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Kist edelstenen
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Kluis edelstenen
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Brawl Pass-bundel
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

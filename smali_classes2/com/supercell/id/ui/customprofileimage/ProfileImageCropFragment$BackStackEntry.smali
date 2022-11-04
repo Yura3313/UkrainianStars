@@ -30,22 +30,22 @@
 
 
 # instance fields
+.field public final g:Z
+
 .field public final h:Z
 
-.field public final i:Z
-
-.field public final j:Ljava/lang/Class;
+.field public final i:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final k:Landroid/net/Uri;
+.field public final j:Landroid/net/Uri;
 
 
 # direct methods
@@ -69,20 +69,20 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->k:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Landroid/net/Uri;
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->g:Z
 
     .line 3
-    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
 
     .line 4
     const-class p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
     sget-object v0, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
@@ -106,59 +106,27 @@
     .line 6
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->k:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Landroid/net/Uri;
 
     const/4 p1, 0x1
 
     .line 7
-    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->g:Z
 
     .line 8
-    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
 
     .line 9
     const-class p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
-
-    const-string p2, "mainActivity"
-
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public final K(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
-
-    const-string p2, "mainActivity"
-
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public final N()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
-
-    return v0
-.end method
-
-.method public final Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public final D(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -167,16 +135,71 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/b1;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class p1, Lwc/f1;
+    const-class p1, Luc/h1;
+
+    return-object p1
+.end method
+
+.method public final N(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 0
+
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final O(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 0
+
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final S()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->g:Z
+
+    return v0
+.end method
+
+.method public final W(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Luc/e1;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-class p1, Luc/i1;
 
     return-object p1
 .end method
@@ -188,12 +211,12 @@
             "()",
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -206,15 +229,15 @@
     return v0
 .end method
 
-.method public final l()Z
+.method public final p()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->h:Z
 
     return v0
 .end method
 
-.method public final r0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public final u0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 2
 
     const-string v0, "mainActivity"
@@ -222,14 +245,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Luc/y0;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->i(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -251,34 +274,11 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->k:Landroid/net/Uri;
+    iget-object p2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Landroid/net/Uri;
 
     invoke-static {p1, p2}, Landroid/net/Uri;->writeToParcel(Landroid/os/Parcel;Landroid/net/Uri;)V
 
     return-void
-.end method
-
-.method public final x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-
-    const-string v0, "mainActivity"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-class p1, Lwc/e1;
-
-    return-object p1
 .end method

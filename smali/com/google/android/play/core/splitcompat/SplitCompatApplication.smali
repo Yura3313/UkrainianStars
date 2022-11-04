@@ -20,7 +20,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p0, p1}, Ld5/a;->a(Landroid/content/Context;Z)Z
+    invoke-static {p0, p1}, Lb5/a;->a(Landroid/content/Context;Z)Z
 
     return-void
 .end method

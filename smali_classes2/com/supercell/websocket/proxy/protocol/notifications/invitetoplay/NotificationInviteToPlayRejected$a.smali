@@ -3,7 +3,7 @@
 .source "NotificationInviteToPlayRejected.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/invitetoplay/NotificationInviteToPlayRejected;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/invitetoplay/NotificationInviteToPlayRejected$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

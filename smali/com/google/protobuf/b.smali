@@ -3,17 +3,17 @@
 .source "AbstractParser.java"
 
 # interfaces
-.implements Lcom/google/protobuf/c1;
+.implements Lcom/google/protobuf/e1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<MessageType::",
-        "Lcom/google/protobuf/q0;",
+        "Lcom/google/protobuf/s0;",
         ">",
         "Ljava/lang/Object;",
-        "Lcom/google/protobuf/c1<",
+        "Lcom/google/protobuf/e1<",
         "TMessageType;>;"
     }
 .end annotation
@@ -23,7 +23,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
-    invoke-static {}, Lcom/google/protobuf/q;->b()Lcom/google/protobuf/q;
+    invoke-static {}, Lcom/google/protobuf/r;->b()Lcom/google/protobuf/r;
 
     return-void
 .end method

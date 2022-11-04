@@ -3,7 +3,7 @@
 .source "Mixin.java"
 
 # interfaces
-.implements Lcom/google/protobuf/w0;
+.implements Lcom/google/protobuf/y0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Mixin;",
         "Lcom/google/protobuf/Mixin$a;",
         ">;",
-        "Lcom/google/protobuf/w0;"
+        "Lcom/google/protobuf/y0;"
     }
 .end annotation
 

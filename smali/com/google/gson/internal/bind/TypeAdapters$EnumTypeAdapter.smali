@@ -87,7 +87,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_1
@@ -126,7 +126,7 @@
 
     array-length v7, v6
 
-    const/4 v8, 0x0
+    move v8, v2
 
     :goto_1
     if-ge v8, v7, :cond_0
@@ -170,13 +170,7 @@
 
     invoke-direct {v0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 

@@ -270,7 +270,7 @@ TID_ARMOR_DESC,Mewakili jumlah kerusakan yang bisa ditanggung Jagoan sebelum tum
 TID_SHOTGUN_GIRL,SHELLY
 TID_SHOTGUN_GIRL_DESC,Peluru sebar dari senapan Shelly siap menumbangkan lawan. Serangan Supernya dapat menghancurkan halangan dan menghantam mundur lawan!
 TID_LONG_RANGE_SHOTGUN,PELURU SEBAR
-TID_LONG_RANGE_SHOTGUN_DESC,"Senapan Shelly menembakkan peluru sebar dengan jangkauan menengah. Semakin banyak peluru yang mengenai target, semakin dahsyat dampaknya."
+TID_LONG_RANGE_SHOTGUN_DESC,"Senapan Shelly menembakkan peluru sebar dengan jangkauan menengah. Makin banyak peluru yang mengenai target, makin dahsyat kerusakan yang diberikan."
 TID_MEGA_BLASH_ULTI,SELONGSONG SUPER
 TID_MEGA_BLASH_ULTI_DESC,Selongsong Super milik Shelly melibas halangan dan lawan. Lawan yang masih berdiri akan terhantam mundur.
 TID_GUNSLINGER,COLT
@@ -318,7 +318,7 @@ TID_CACTUS_ULTI_DESC,Spike melemparkan granat berduri. Lawan yang terjebak di ar
 TID_BARKEEP,BARLEY
 TID_BARKEEP_DESC,"Minuman buatan Barley adalah yang paling enak di Starr Park. Tapi, kalau kamu sampai mengotori bar miliknya, dia akan sangat marah dan botol-botol akan mulai beterbangan."
 TID_BARKEEP_WEAPON,RACIKAN PEKAT
-TID_BARKEEP_WEAPON_DESC,"Barley melemparkan botol yang pecah saat mendarat. Percikannya memberi kerusakan pada lawan. Semakin lama lawan berdiri dalam genangan, semakin besar kerusakannya."
+TID_BARKEEP_WEAPON_DESC,"Barley melemparkan botol yang pecah saat mendarat. Percikannya memberi kerusakan pada lawan. Makin lama lawan berdiri dalam genangan, makin besar kerusakannya."
 TID_BARKEEP_ULTI,PESANAN TERAKHIR
 TID_BARKEEP_ULTI_DESC,Barley melemparkan botol-botol membara yang akan menyelimuti area luas dengan api. Kali ini minumannya gratis!
 TID_MECHANIC,JESSIE
@@ -358,9 +358,9 @@ TID_BOW_DUDE_WEAPON_DESC,Bo melepaskan tiga anak panah berhulu ledak yang dapat 
 TID_BOW_DUDE_ULTI,PERANGKAP RUBAH
 TID_BOW_DUDE_ULTI_DESC,"Bo menyembunyikan ranjau di bawah tanah. Saat lawan memicunya, ranjau akan meledak setelah jeda sejenak, menghantam mundur dan memberi kerusakan pada lawan."
 TID_SNIPER,PIPER
-TID_SNIPER_DESC,"Semakin jauh tembakan jitu Piper, semakin besar kerusakan yang diberikan. Serangan Supernya adalah terbang melayang sambil menjatuhkan granat berbahaya!"
+TID_SNIPER_DESC,"Makin jauh tembakan jitu Piper, makin besar kerusakan yang diberikan. Serangan Supernya adalah terbang melayang sambil menjatuhkan granat berbahaya!"
 TID_SNIPER_WEAPON,SENAPAN PAYUNG
-TID_SNIPER_WEAPON_DESC,"Piper menembakkan peluru jitu dari ujung payungnya. Semakin jauh jarak tembakannya, semakin mematikan!"
+TID_SNIPER_WEAPON_DESC,"Piper menembakkan peluru jitu dari ujung payungnya. Makin jauh jarak tembakan, makin mematikan!"
 TID_SNIPER_ULTI,TERJUN PAYUNG
 TID_SNIPER_ULTI_DESC,Piper melompat tinggi untuk menghindari lawan yang menyudutkannya. Dia pergi dengan meninggalkan hadiah berupa granat aktif!
 TID_MINIGUN_DUDE,PAM
@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Kumpulkan Poin Kekuatan dari Kotak Jagoan dan penawaran toko untuk peningkatan berikutnya
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Kekuatan Bintang kini dapat ditemukan di Kotak Jagoan
-TID_HERO_INFO_STAR_POWER_BLOCKED,Perkuat <HERONAME> dengan Kekuatan Bintang yang bisa dipilih! Tersedia di Kotak Jagoan setelah LEVEL KEKUATAN <LEVEL>.
+TID_HERO_INFO_STAR_POWER_BLOCKED,Perkuat <HERONAME> dengan Kekuatan Bintang spesial! Tersedia untuk dibeli setelah mencapai LEVEL <LEVEL>.
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Gadget kini dapat ditemukan di Kotak Jagoan
-TID_HERO_INFO_ACCESSORIES_BLOCKED,Perkuat <HERONAME> dengan Gadget spesial! Tersedia di Kotak Jagoan setelah LEVEL KEKUATAN <LEVEL>.
+TID_HERO_INFO_ACCESSORIES_BLOCKED,Perkuat <HERONAME> dengan Gadget unik! Tersedia untuk dibeli setelah mencapai LEVEL <LEVEL>.
 TID_HERO_INFO_STAR_POWER_LABEL,KEKUATAN BINTANG: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,GADGET: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\nUntuk Musim ini, kelangkaan <BRAWLER> adalah <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\n<BRAWLER> akan tersedia untuk dibuka melalui kotak begitu kamu mencapai Tingkat <TIER> dari Musim <SEASON>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\n<BRAWLER> akan hadir di Musim <SEASON>."
+TID_HERO_INFO_BUY_ITEM,BELI
+TID_HERO_INFO_BUY_ITEM_FREE,GRATIS
+TID_HERO_INFO_BUY_MISSING1,KAMU PERLU <MISSINGCOINS> KOIN LAGI
+TID_HERO_INFO_BUY_MISSING2,Beli Koin yang kurang sekarang?
+TID_HERO_INFO_BUY_MISSING_GEMS1,KAMU PERLU <MISSINGCOINS> KOIN LAGI
+TID_HERO_INFO_BUY_MISSING_GEMS2,Dapatkan <MISSINGGEMS> Permata lagi untuk membeli Koin yang kurang
+TID_HERO_INFO_SEE_OFFERS,DAPATKAN PERMATA
+TID_HERO_INFO_UNLOCK_GADGETS,BUKA GADGET
+TID_HERO_INFO_UNLOCK_STARPOWERS,BUKA KEKUATAN BINTANG
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,KONFIRMASI PEMBELIAN
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,KONFIRMASI PEMBELIAN
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,KONFIRMASI PEMBELIAN
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,DAPATKAN PERMATA LEBIH
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,Dapatkan <cC5F724><REQUIREDGEMS> Permata lagi</c> untuk membeli Koin yang kurang.
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,SEMUA PAKET PERMATA
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,DIREKOMENDASIKAN
 TID_MATCHMAKE_FAILED_5,Pencarian lawan gagal: acara telah berakhir
 TID_MATCHMAKE_FAILED_7,Pencarian lawan gagal: sambungan anggota tim terputus
 TID_MATCHMAKE_FAILED_9,Pencarian lawan gagal: pemeliharaan akan segera dimulai
@@ -850,7 +866,7 @@ TID_GAME_MODE_5_DESC,Cetak skor dengan memasukkan bola ke gawang lawan! Pertempu
 TID_GAME_MODE_3_OG,SIKAT HABIS
 TID_GAME_MODE_3_OG_DESC,"Kumpulkan Bintang untuk tim dengan menumbangkan Jagoan tim lawan. Setiap kali kamu menumbangkan lawan, nilai buronan di kepalamu bertambah satu Bintang hingga maksimal tujuh. Jangan sampai tumbang!\n\nTim dengan Bintang paling banyak saat waktu habis akan menang."
 TID_GAME_MODE_11,PENGEPUNGAN
-TID_GAME_MODE_11_DESC,"Kepung dan hancurkan Turet Perakit IKE milik lawan! Timmu juga memiliki Turet IKE: Rebut baut yang muncul secara acak di tengah arena dan pertahankan selama beberapa detik untuk dikirimkan ke Turet IKE. Robot Pengepungan yang tangguh lantas akan dirakit dan siap bertempur untukmu!\n\nAda tiga ronde Pengepungan selama laga. Tim yang memiliki paling banyak baut di tiap ronde akan merakit Robot Pengepungan. Semakin banyak baut yang dikumpulkan, robot yang dirakit akan semakin kuat.\nHati-hati, Turet IKE punya pertahanan balistik yang tangguh - jangan berada terlalu dekat dengan markas lawan tanpa dukungan Robot Pengepungan!"
+TID_GAME_MODE_11_DESC,"Kepung dan hancurkan Turet Perakit IKE milik lawan! Timmu juga memiliki Turet IKE: Rebut baut yang muncul secara acak di tengah arena dan pertahankan selama beberapa detik untuk dikirimkan ke Turet IKE. Robot Pengepungan yang tangguh lantas akan dirakit dan siap bertempur untukmu!\n\nAda tiga ronde Pengepungan selama laga. Tim yang memiliki paling banyak baut di tiap ronde akan merakit Robot Pengepungan. Makin banyak baut yang dikumpulkan, robot yang dirakit akan makin kuat.\nHati-hati, Turet IKE punya pertahanan balistik yang tangguh - jangan berada terlalu dekat dengan markas lawan tanpa dukungan Robot Pengepungan!"
 TID_BATTLE_END_GAIN_LABEL_FIRST_WIN,Token Bintang
 TID_BATTLE_END_GAIN_LABEL_RANK_UP,Naik Kelas
 TID_BATTLE_END_GAIN_LABEL_LEVEL_UP,Naik Level
@@ -1615,7 +1631,7 @@ TID_GOLD_CAP_HIT,Batas token tercapai.
 TID_GATCHA_BUTTON_BOX_STACK_FULL,Tumpukan kotak penuh
 TID_COOP_1,Taman Pachinko
 TID_GAME_MODE_8,PERANG ROBOT
-TID_GAME_MODE_8_DESC,"Pertahankan brankas dari Bandit Robot yang tamak!\n\nPara Robot akan datang menyerbu brankas dari semua penjuru dan jumlahnya akan semakin bertambah. Berikan perlawanan terbaikmu hingga waktu habis!\n\nKesulitan Perang Robot akan meningkat di setiap babak, mulai dari NORMAL hingga GILA."
+TID_GAME_MODE_8_DESC,"Pertahankan brankas dari Bandit Robot yang tamak!\n\nPara Robot akan datang menyerbu brankas dari semua penjuru dan jumlahnya akan makin bertambah. Berikan perlawanan terbaikmu hingga waktu habis!\n\nKesulitan Perang Robot akan meningkat di setiap babak, mulai dari NORMAL hingga GILA."
 TID_COOP_INTRO_TEXT,Lindungi brankas!
 TID_SELECT_EVENT_POPUP_TITLE,Pilih acara
 TID_BARREL_BOT,DARRYL
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,TIDAK ADA DESKRIPSI GENG
 TID_EVENT_POPUP_TITLE,AYO BERLAGA!
 TID_GOLDRUSH_8,Dataran Safir
 TID_USE_AUTOFIRE_TUTORIAL,KETUK <ccc0033>KONTROL MERAH</c> untuk menembak lawan terdekat!
-TID_BRAWL_BOX_INFO_1,"Hadiah satu Kotak Besar setara dengan tiga Kotak Jagoan. Tetapi, Poin Kekuatan akan dibagikan ke lebih sedikit Jagoan.\n\nToken Buster yang diterima hanya akan dari satu jenis Token. Kamu akan mendapatkan tiga undian acak, masing-masing dengan peluang hadiah sebagai berikut:"
-TID_BRAWL_BOX_INFO_2,"Masing-masing Kotak Jagoan berisi salah satu dari barang berikut: Jagoan baru, Poin Kekuatan, Koin, Gadget, Token Buster serta Fragmen, atau Kekuatan Bintang. Selain itu, kamu juga bisa mendapatkan bonus Pengganda Token.\n\nPeluang hadiah antara lain:"
-TID_BRAWL_BOX_INFO_3,"Hadiah satu Kotak Mega setara dengan sepuluh Kotak Jagoan. Tetapi, Poin Kekuatan akan dibagikan ke lebih sedikit Jagoan.\n\nToken Buster yang diterima hanya akan dari satu jenis Token. Kamu akan mendapatkan sepuluh undian acak, masing-masing dengan peluang hadiah sebagai berikut:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nJagoan Langka: <NUM2>%<GAR_HERO_1>\nJagoan Super Langka: <NUM3>%<GAR_HERO_2>\nJagoan Epik: <NUM4>%<GAR_HERO_3>\nJagoan Mistis: <NUM5>%<GAR_HERO_4>\nJagoan Legendaris: <NUM6>%<GAR_HERO_5>\nKekuatan Bintang: <NUM7>%<GAR_STAR_POWER>\nGadget: <NUM8>%<GAR_ACCESSORY>\nToken Buster: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nSelain itu, setiap undian memberikan <TOKEN_DOUBLER>% peluang untuk meraih Pengganda Token. Gadget hanya tersedia untuk Jagoan Level 7 ke atas, sementara Kekuatan Bintang tersedia untuk Jagoan level 9 ke atas. Fragmen dan Token Buster hanya akan tersedia setelah Jagoan mencapai Level Kekuatan 10. Setelah membuka <WCPP_BRAWLERS> Jagoan, peluang Poin Kekuatan untuk diberikan ke Jagoan acak adalah <WCPP_CHANCE>%. Setelah mendapatkan semua hadiah dengan jenis tertentu, misalnya Jagoan Langka, peluang meraih semua hadiah lain akan bertambah. Keberuntungan: Agar pengalaman membuka Kotak Jagoan lebih adil untuk semua orang, ada sistem keberuntungan yang memengaruhi peluang mendapatkan Jagoan Legendaris. Untuk setiap undian yang tidak memberimu Jagoan baru, nilai keberuntungan akan naik. Setiap kali mendapatkan Jagoan baru, nilai keberuntungan akan turun mengikuti kelangkaan Jagoan yang didapat. Saat nilai keberuntungan cukup tinggi, peluang meraih Jagoan Legendaris akan jadi makin besar (peluang akan dibatasi pada <MAX_LEGENDARY>%). Sebaliknya, saat nilai keberuntungan rendah, peluang untuk meraih Jagoan Legendaris baru juga akan makin rendah. Isi Kotak Jagoan di awal game telah ditentukan sebelumnya untuk memastikan awal yang adil bagi semua orang."
+TID_BRAWL_BOX_INFO_1,"Hadiah satu Kotak Besar setara dengan 3 Kotak Jagoan. Tetapi, Poin Kekuatan akan dibagikan ke lebih sedikit Jagoan.\n\nKamu akan mendapatkan 3 undian acak, masing-masing dengan peluang hadiah sebagai berikut:"
+TID_BRAWL_BOX_INFO_2,"Masing-masing Kotak Jagoan berisi salah satu dari barang berikut: Jagoan baru, Poin Kekuatan, Koin, Gadget, atau Kekuatan Bintang. Selain itu, kamu juga bisa mendapatkan bonus Pengganda Token.\n\nPeluang hadiah antara lain:"
+TID_BRAWL_BOX_INFO_3,"Hadiah satu Kotak Mega setara dengan 10 Kotak Jagoan. Tetapi, Poin Kekuatan akan dibagikan ke lebih sedikit Jagoan.\n\nKamu mendapat 10 undian acak, masing-masing dengan peluang hadiah sebagai berikut:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nJagoan Langka: <NUM2>%<GAR_HERO_1>\nJagoan Super Langka: <NUM3>%<GAR_HERO_2>\nJagoan Epik: <NUM4>%<GAR_HERO_3>\nJagoan Mistis: <NUM5>%<GAR_HERO_4>\nJagoan Legendaris: <NUM6>%<GAR_HERO_5>\nKekuatan Bintang: <NUM7>%<GAR_STAR_POWER>\nGadget: <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nSelain itu, setiap undian memberikan <TOKEN_DOUBLER>% peluang untuk meraih Pengganda Token. Gadget hanya tersedia untuk Jagoan Level 7 ke atas, sementara Kekuatan Bintang tersedia untuk Jagoan level 9 ke atas. Setelah membuka <WCPP_BRAWLERS> Jagoan, peluang Poin Kekuatan untuk diberikan ke Jagoan acak adalah <WCPP_CHANCE>%. Setelah mendapatkan semua hadiah dengan jenis tertentu, misalnya Jagoan Langka, peluang meraih semua hadiah lain akan bertambah. Keberuntungan: Agar pengalaman membuka Kotak Jagoan lebih adil untuk semua orang, ada sistem keberuntungan yang memengaruhi peluang mendapatkan Jagoan Legendaris. Untuk setiap undian yang tidak memberimu Jagoan baru, nilai keberuntungan akan naik. Setiap kali mendapatkan Jagoan baru, nilai keberuntungan akan turun mengikuti kelangkaan Jagoan yang didapat. Saat nilai keberuntungan cukup tinggi, peluang meraih Jagoan Legendaris akan jadi makin besar (peluang akan dibatasi pada <MAX_LEGENDARY>%). Sebaliknya, saat nilai keberuntungan rendah, peluang untuk meraih Jagoan Legendaris baru juga akan makin rendah. Isi Kotak Jagoan di awal game telah ditentukan sebelumnya untuk memastikan awal yang adil bagi semua orang."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Poin Kekuatan + Koin
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Poin Kekuatan + Koin + Fragmen
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Koin + Fragmen
@@ -1794,9 +1810,9 @@ TID_HINT_3,Kamu bisa MENYERET <cff9900>KONTROL KUNING</c> untuk MEMBIDIK Super.
 TID_HINT_4,Kamu bisa membatalkan bidikan dengan mengembalikan kontrol ke tengah.
 TID_HINT_5,"Pencarian lawan dilakukan berdasarkan jumlah Trofi Jagoan yang dimainkan. Oleh karena itu, Trofi bisa didapatkan lebih mudah dengan Jagoan yang baru didapatkan."
 TID_HINT_6,Mendapatkan lebih banyak Jagoan akan memudahkanmu meraih lebih banyak total Trofi dan Hadiah.
-TID_HINT_7,"Semakin jauh jarak tembakan Piper, kerusakan jadi semakin besar."
-TID_HINT_8,Serangan Super Barley semakin kuat pada jarak dekat karena botol jatuh di area yang lebih kecil.
-TID_HINT_9,Peluru Rico melesat semakin jauh saat dipantulkan.
+TID_HINT_7,"Makin jauh jarak tembakan Piper, kerusakan jadi makin besar."
+TID_HINT_8,Serangan Super Barley makin kuat pada jarak dekat karena botol jatuh di area yang lebih kecil.
+TID_HINT_9,Peluru Rico melesat makin jauh saat dipantulkan.
 TID_HINT_10,Kamu bisa mengaktifkan <ccc0033>KONTROL MERAH</c> di bagian mana saja pada sisi kanan layar untuk menembak.
 TID_HINT_11,Serangan reguler dan super memiliki dua mode menembak: KETUK untuk TEMBAK CEPAT dan SERET untuk MEMBIDIK.
 TID_HINT_12,Membidik tembakan sangat bagus untuk melumpuhkan target yang bergerak.
@@ -2099,7 +2115,7 @@ TID_EVENT_MODIFIER_DESC_5,Jamur penyembuh muncul secara acak! Jamur ini akan men
 TID_EVENT_MODIFIER_DESC_5_SD,Jamur penyembuh muncul secara acak! Bergerombol dekat rekanmu akan mencegah pertumbuhan jamur.
 TID_NINJA,LEON
 TID_ROSA,ROSA
-TID_HINT_42,"Saat tidak menyerang atau menerima kerusakan untuk sesaat, Jagoan akan mulai menyembuhkan diri."
+TID_HINT_42,"Saat tidak menyerang atau tidak menerima kerusakan untuk sesaat, Jagoan akan mulai menyembuhkan diri."
 TID_HOOK_SHORT_DESC,PENDUKUNG
 TID_HOOK_DESC,Gene menembakkan proyektil sebar dari lampu ajaib miliknya. Kekuatan super miliknya mengerahkan tangan ajaib yang mencengkeram dan menarik lawan mendekat!
 TID_SPEC_ABI_HOOK,AWAN AJAIB
@@ -2114,7 +2130,7 @@ TID_SPEC_ABI_SPEED_INVISIBLE,JEJAK ASAP
 TID_SPEC_ABI_SPEED_INVISIBLE_DESC,"Saat Leon menggunakan kemampuan super, pergerakannya jadi lebih cepat <c00cc00><VALUE1>%</c> selama tak terlihat."
 TID_NINJA_WEAPON,BELATI BERPUTAR
 TID_NINJA_ULTI,BOM ASAP
-TID_NINJA_WEAPON_DESC,"Leon melemparkan empat belati berputar. Semakin jauh jaraknya, semakin kecil kerusakan yang diberikan."
+TID_NINJA_WEAPON_DESC,"Leon melemparkan empat belati berputar. Makin jauh, makin kecil kerusakan yang diberikan."
 TID_NINJA_ULTI_DESC,Leon menjadi tak terlihat selama <time> detik. Kemampuan ini akan berakhir saat dia menyerang. Lawan yang ada di dekat Leon masih bisa mendeteksi keberadaannya.
 TID_ROSA_SHORT_DESC,TANK
 TID_ROSA_DESC,Ahli botani petinju ini akan menginjakkan kakinya dan berhadapan langsung! Kekuatan Supernya adalah perlengkapan pelindung vegan yang kuat.
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Saat Serangan Super Brock terisi penuh (dan tidak dig
 TID_SPEC_ABI_PET,SERBUAN BURUNG
 TID_SPEC_ABI_PET_DESC,Burung kenari peliharaan Dynamike ikut bertempur!
 TID_SPEC_ABI_DAMAGE_ULTI,TAMPARAN GAIB
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Saat kekuatan Super Gene terisi penuh, serangannya menimbulkan <c00cc00>+<VALUE1></c> kerusakan."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,"Karena dia adalah mesin arkade berkaki, tak ada yang kaget kalau 8-BIT tak bisa berjalan cepat. Dia menembakkan Sinar Peledak dan kemampuan Super miliknya akan meningkatkan kerusakan semua rekan!"
 TID_ARCADE_SHORT_DESC,PENYERANG
@@ -2817,7 +2832,7 @@ TID_BALL_20A,Tendangan Kilat
 TID_IAP_INFO_MORE_INFO_BTN,자세히보기
 TID_SANDSTORM,SANDY
 TID_GAME_MODE_14,ADU SERANGAN
-TID_GAME_MODE_14_DESC,"Bersainglah dengan pemain lain untuk memberikan kerusakan terbanyak pada Bos. Semakin banyak kerusakan yang diberikan, semakin tinggi peringkatmu dalam laga.\n\nKumpulkan Kubus Kekuatan untuk meningkatkan Kesehatan serta kerusakan Serangan. Kubus Kekuatan akan muncul secara acak di peta saat laga berlangsung!"
+TID_GAME_MODE_14_DESC,"Ayo bersaing dengan pemain lain untuk memberikan kerusakan terbanyak pada Bos. Makin banyak kerusakan yang diberikan, makin tinggi peringkatmu dalam laga.\n\nKumpulkan Kubus Kekuatan untuk meningkatkan Kesehatan serta kerusakan Serangan. Kubus Kekuatan akan muncul secara acak di peta saat laga berlangsung!"
 TID_BOSS_RACE_INTRO_TEXT,Beri kerusakan sebanyak mungkin pada Bos!
 TID_EVENT_POPUP_GMV_LABEL_ALL_VS_ALL,Semua vs Semua
 TID_BOSS_RACE_1,Perlawanan Terakhir
@@ -2996,7 +3011,7 @@ TID_SPEC_ABI_BEE_SNIPER_2,SARANG LEBAH
 TID_SPEC_ABI_BEE_SNIPER_2_DESC,Bea mengerahkan perisai <c00cc00><VALUE1>%</c> saat kerusakan ekstra Sengatan Pedih aktif.
 TID_SPEEDY,MAX
 TID_SPEEDY_SHORT_DESC,PENDUKUNG
-TID_SPEEDY_DESC,"Max bergerak cepat dan menyerang dengan rentetan ledakan! Dengan kemampuan Super, pergerakan Max dan rekan jagoan akan jadi semakin cepat!"
+TID_SPEEDY_DESC,"Max bergerak cepat dan menyerang dengan rentetan tembakan! Dengan kemampuan Super, pergerakan Max dan rekan jagoan akan jadi makin cepat!"
 TID_SPEEDY_WEAPON,LEDAKAN CEPAT
 TID_SPEEDY_WEAPON_DESC,Max menembakkan sejumlah proyektil dengan kecepatan tinggi! Dia punya banyak amunisi dan bisa mengisi ulang dengan cepat.
 TID_SPEEDY_ULTI,SERBUAN KILAT!
@@ -3736,7 +3751,7 @@ TID_PRO_LEAGUE_INFO_POPUP_RANK_INFO_CN,跻身排行榜前列\n可获得的额外
 TID_PRO_LEAGUE_POPUP_INFO_CN,在星徽竞技场中证明自己的实力！每天可参加3场星徽竞技场对战，在赛季排行榜上冲击更高排名。赛季结束后，您将根据自己的积分和在排行榜上的排名获得星光点数奖励。
 TID_QUALIFIED_INFO_CN,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
 TID_GAME_MODE_18,PERTARUNGAN SUPER
-TID_GAME_MODE_18_DESC,"Bisakah kamu mengalahkan Monster Mega dan menyelamatkan Kota? Berjuanglah bersama dua rekan untuk mengalahkan Monster Mega. Selama masih ada satu rekan tim yang bertahan, kamu masih bisa kembali untuk bertempur. Laga berakhir saat semua Jagoan tumbang ATAU saat semua bangunan hancur!\n\nSaat berhasil mengalahkan Monster Mega, Pertarungan Super akan jadi semakin menantang dengan level kesulitan mulai dari Normal hingga Gila!"
+TID_GAME_MODE_18_DESC,"Bisakah kamu mengalahkan Monster Mega dan menyelamatkan Kota? Berjuanglah bersama dua rekan untuk mengalahkan Monster Mega. Selama masih ada satu rekan tim yang bertahan, kamu masih bisa kembali untuk bertempur. Laga berakhir saat semua Jagoan tumbang ATAU saat semua bangunan hancur!\n\nSaat berhasil mengalahkan Monster Mega, Pertarungan Super akan jadi makin menantang dengan level kesulitan mulai dari Normal hingga Gila!"
 TID_TENCENT_TEAM_INVITED_FAILED_901203,Gagal mengundang. Batas undangan tercapai!
 TID_TENCENT_TEAM_INVITED_FAILED_901204,Gagal mengundang. Batas undangan yang diterima tercapai!
 TID_TENCENT_TEAM_INVITED_FAILED_901205,Gagal mengundang. Kamu hanya bisa mengirimkan satu pesan ke teman setiap hari!
@@ -3976,7 +3991,7 @@ TID_PERCENTER,COLETTE
 TID_PERCENTER_SHORT_DESC,PENYERANG
 TID_PERCENTER_DESC,"Berkat gerakannya yang lincah, tidak ada lawan yang bisa kabur begitu saja tanpa membayar! Beranikah kamu menghadapi Colette?"
 TID_PERCENTER_WEAPON,TEMBAKAN TAGIHAN
-TID_PERCENTER_WEAPON_DESC,"Kerusakan dari tembakan Colette akan dikalkulasi dengan persentase. Semakin besar kesehatan lawan, semakin besar juga kesehatan yang harus dibayar!"
+TID_PERCENTER_WEAPON_DESC,"Kerusakan dari tembakan Colette akan dikalkulasi dengan persentase. Makin besar kesehatan lawan, makin besar juga kesehatan yang harus dibayar!"
 TID_PERCENTER_ULTI,KEJAR TARGET
 TID_PERCENTER_ULTI_DESC,Colette akan melesat maju-mundur dan menghantam siapa pun di hadapannya. Kerusakan yang diberikan akan dihitung berdasarkan kesehatan maksimum lawan.
 TID_SPEC_ABI_PERCENTER_1,DORONGAN PROMOSI
@@ -4072,7 +4087,7 @@ TID_ACCESSORY_BULL_STOMP_DESC,"Dengan entakan kaki yang dahsyat, Bull mampu meng
 TID_ACCESSORY_REWIND,SEPATU BAYANGAN
 TID_ACCESSORY_REWIND_DESC,Max dapat berpindah ke mana saja dalam sekejap mata setelah jeda <c00cc00><VALUE1></c> detik. Dia akan pulih dari semua kerusakan yang diterima dalam jeda waktu tersebut.
 TID_ACCESSORY_EXTRA_BEE,LEBAH GANAS
-TID_ACCESSORY_EXTRA_BEE_DESC,"Bea mengerahkan <c00cc00><VALUE1></c> lebah ganas yang berputar menjauh darinya. Semakin jauh mereka terbang, semakin besar kerusakan yang diberikan (hingga <c00cc00><VALUE2></c> kerusakan)."
+TID_ACCESSORY_EXTRA_BEE_DESC,"Bea mengerahkan <c00cc00><VALUE1></c> lebah ganas yang berputar menjauh. Makin jauh mereka terbang, makin besar kerusakan yang diberikan (hingga <c00cc00><VALUE2></c> kerusakan)."
 TID_ACCESSORY_BARREL_SLOW,TONG ASPAL
 TID_ACCESSORY_BARREL_SLOW_DESC,Darryl menciptakan area yang dapat memperlambat lawan di dekatnya selama <c00cc00><VALUE1></c> detik.
 TID_ACCESSORY_SHAMAN_SHIELD,PERISAI BULU
@@ -4523,7 +4538,7 @@ TID_ACCESSORY_ROLLER_MEGA_STUNT_DESC,"Saat mengaktifkan kekuatan Super berikutny
 TID_ACCESSORY_RUFFS_AIR_STRIKE,SUPREMASI UDARA
 TID_ACCESSORY_RUFFS_AIR_STRIKE_DESC,Ruffs membombardir lawan terdekat dan memberikan <c00cc00><VALUE1></c> kerusakan dengan setiap bom.
 TID_ACCESSORY_ENRAGER_PROTECTION,MENTAL BAJA
-TID_ACCESSORY_ENRAGER_PROTECTION_DESC,Edgar mengerahkan perisai yang melindunginya dari <c00cc00><VALUE1></c> kerusakan. Perisai ini akan semakin lemah seiring waktu.
+TID_ACCESSORY_ENRAGER_PROTECTION_DESC,Edgar mengerahkan perisai yang melindunginya dari <c00cc00><VALUE1></c> kerusakan. Perisai ini akan melemah seiring waktu.
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,PENGOLEKSI AMUNISI
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,"Amunisi maksimum lawan akan berkurang <c00cc00><VALUE1>%</c> untuk tiap proyektil serangan Pam berikutnya yang mengenainya. Sementara itu, Pam akan menerima <c00cc00><VALUE2>%</c> amunisi untuk dirinya sendiri."
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,MIMPI INDAH
@@ -4941,7 +4956,7 @@ TID_ASSAULT_SHOTGUN_DESC,"Griff adalah pemilik toko oleh-oleh di Starr Park. Fru
 TID_ASSAULT_SHOTGUN_WEAPON,LEMPARAN KOIN
 TID_ASSAULT_SHOTGUN_WEAPON_DESC,Griff yang murka akan melempari lawan dengan tiga ronde tembakan koin yang menyebar dalam pola kerucut.
 TID_ASSAULT_SHOTGUN_ULTI,UANG KEMBALIAN TAJAM
-TID_ASSAULT_SHOTGUN_ULTI_DESC,"Griff melemparkan sejumlah uang kertas tajam yang menyebar dengan pola kerucut. Karena tidak mau membuang uangnya begitu saja, Griff akan menarik kembali uang-uang tersebut hingga berpotensi menyayat lawan yang sama dua kali. Semakin jauh lawan, kerusakan yang diterima akan semakin besar."
+TID_ASSAULT_SHOTGUN_ULTI_DESC,"Griff melemparkan sejumlah uang kertas tajam yang menyebar dengan pola kerucut. Karena tidak mau membuang uangnya begitu saja, Griff akan menarik kembali uang-uang tersebut hingga berpotensi menyayat lawan yang sama dua kali. Makin jauh lawan, kerusakan yang diterima akan makin besar."
 TID_SPEC_ABI_ASSAULT_SHOTGUN_1,AMBIL KEMBALIANNYA
 TID_SPEC_ABI_ASSAULT_SHOTGUN_1_DESC,"Griff akan mengamuk dan melemparkan koin jauh lebih cepat, mengurangi <c00cc00><VALUE1>%</c> waktu yang diperlukan untuk menembakkan satu ronde penuh."
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2,ANTI GULUNG TIKAR
@@ -4960,7 +4975,7 @@ TID_SPEC_ABI_KNIGHT_1_DESC,"Saat menyerang lawan dengan bilah serangan yang teri
 TID_SPEC_ABI_KNIGHT_2,NAIK PITAM
 TID_SPEC_ABI_KNIGHT_2_DESC,"Secara progresif, kecepatan isi ulang Ash meningkat <c00cc00><VALUE1>%</c> mengikuti tingkat amarah."
 TID_ACCESSORY_KNIGHT_HEAL,PIL ANTISTRES
-TID_ACCESSORY_KNIGHT_HEAL_DESC,"Saat gadget diaktifkan, Bilah Amarah yang penuh akan memulihkan <c00cc00><VALUE1></c> kesehatan. Semakin rendah bilah Amarah, tingkat pemulihan akan lebih rendah."
+TID_ACCESSORY_KNIGHT_HEAL_DESC,"Saat gadget diaktifkan, Bilah Amarah yang penuh akan memulihkan <c00cc00><VALUE1></c> kesehatan. Makin rendah bilah Amarah, makin rendah tingkat pemulihan."
 TID_MECHA_DUDE,MEG
 TID_MECHA_DUDE_SHORT_DESC,PENYERANG
 TID_MECHA_DUDE_DESC,Meg dapat bergabung dengan Mecha kesayangannya. Kesehatan Mecha berkurang seiring waktu dan Meg akan kembali ke wujud asalnya saat Mecha hancur.
@@ -5012,7 +5027,7 @@ TID_GAME_MODE_22,BASKET JAGOAN
 TID_GAME_MODE_22_DESC,Masukkan bola ke ring tim lawan! Kamu akan meraih 2 poin jika bola dimasukkan dari dekat ring dan 3 poin jika bola dimasukkan dari luar garis. Laga berakhir saat waktu habis atau saat salah satu tim berhasil mencetak 5 poin.
 TID_BASKET_BRAWL_INTRO_TEXT,Ayo masukkan bola!
 TID_GAME_MODE_23,VOLI JAGOAN
-TID_GAME_MODE_23_DESC,"Cetak poin dengan mendaratkan bola di sisi arena lawan. Tim pertama yang mencetak 2 poin akan menang! Semakin lama bola dimainkan, semakin cepat bola akan melesat!"
+TID_GAME_MODE_23_DESC,"Cetak poin dengan mendaratkan bola di sisi arena lawan. Tim pertama yang mencetak 2 poin akan menang! Makin lama bola dimainkan, makin cepat bola akan melesat!"
 TID_VOLLEY_BRAWL_INTRO_TEXT,Daratkan bola di sisi lawan!
 TID_AVOID_POISON_PRC,请寻找安全去！
 TID_EVENT_POPUP_GAME_MODE_6_SOLO_DUO_PRC,独自作战
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Pundi-pundi Kosong
 TID_KO_JUNE21_2,Tak Berujung
 TID_QUALIFIED_INFO_PARAM,"Selamat, kamu memenangkan <CHALLENGE>! Hadiah kemenangan: <REWARD>"
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,HADIAH KEMENANGAN KE-<WIN> dalam <CHALLENGE>: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"Selamat, kamu memenangkan <CHALLENGE>! Hadiah kemenangan tantangan: <REWARD>\nHadiah ini akan menggantikan hadiah yang sudah dimiliki sebelumnya."
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Hadiah untuk kemenangan ke-<WIN> di <CHALLENGE>: <REWARD>\nHadiah ini akan menggantikan hadiah yang sudah dimiliki sebelumnya.
 TID_CHALLENGE_TEASER_INFO_PARAM,<CHALLENGE> segera hadir!\n\nMenangkan <WIN> pertandingan dan <REWARD> akan menjadi milikmu! Buat tim bersama teman atau \qCARI TIM\q untuk memaksimalkan peluang menang.\n\nTantangan hanya akan berlangsung selama <DURATION> jam. Selamat bersenang-senang dan semoga berhasil!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Selesaikan tantangan untuk memenangkan <REWARD>!
 TID_GEN_JUNE21_1,Papan Renang
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Capai <NUM> Trofi untuk membuka Tantangan
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Satu kostum dicentang
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,Satu kostum akan digunakan dari semua kostum yang dipilih
 TID_GEAR_TOKEN_DROP_TITLE,TOKEN BUSTER
-TID_GEAR_TOKEN_DAMAGE,Token Kerusakan
-TID_GEAR_TOKEN_HEAL,Token Pemulihan
-TID_GEAR_TOKEN_RESISTANCE,Token Pertahanan
-TID_GEAR_TOKEN_SHIELD,Token Perisai
-TID_GEAR_TOKEN_SPEED,Token Kecepatan
-TID_GEAR_TOKEN_TYPE_DAMAGE,KERUSAKAN
-TID_GEAR_TOKEN_TYPE_HEAL,KESEHATAN
-TID_GEAR_TOKEN_TYPE_VISION,PENGLIHATAN
-TID_GEAR_TOKEN_TYPE_SHIELD,PERISAI
-TID_GEAR_TOKEN_TYPE_SPEED,KECEPATAN
-TID_GEAR_TOKEN,Token Buster
 TID_GEAR_SCRAP_DROP_TITLE,FRAGMEN
 TID_GEAR_SCRAP,Fragmen
 TID_GEAR_UNLOCK_SLOT,BUKA SLOT BUSTER <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,KESEHATAN
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,KERUSAKAN
 TID_GEAR_VISION_TITLE,PENGLIHATAN
 TID_GEAR_SHIELD_TITLE,PERISAI
+TID_GEAR_RELOAD_SPEED_TITLE,KECEPATAN ISI ULANG
+TID_GEAR_SUPER_CHARGE_TITLE,ISI CEPAT SUPER
 TID_GEAR_FOREST_SPEED_INFO,MENINGKATKAN KECEPATAN sebesar <NUM>% saat bergerak di semak.
 TID_GEAR_STANDING_HEAL_INFO,MEMULIHKAN KESEHATAN <NUM>% lebih efektif.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Memberikan <NUM>% KERUSAKAN EKSTRA saat kesehatan di bawah 50%.
 TID_GEAR_VISION_INFO,Membuat posisi lawan TERLIHAT selama <NUM> detik setelah menerima kerusakan.
 TID_GEAR_SHIELD_INFO,Memberikan <NUM> KESEHATAN ekstra sebagai PERISAI habis pakai. Perisai akan terisi kembali setiap 10 detik saat kesehatan Jagoan penuh.
+TID_GEAR_RELOAD_SPEED_INFO,ISI ULANG <NUM>% lebih cepat
+TID_GEAR_SUPER_CHARGE_INFO,ISI ULANG Kekuatan Super <NUM>% lebih cepat
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,MENINGKATKAN KECEPATAN gerak di semak
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,MEMULIHKAN KESEHATAN lebih efektif
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Memberikan KERUSAKAN ekstra saat kesehatan di bawah 50%
 TID_GEAR_VISION_UPGRADE_INFO,LIHAT POSISI lawan setelah memberi kerusakan pada mereka
 TID_GEAR_SHIELD_UPGRADE_INFO,Memberikan PERISAI yang meningkatkan KESEHATAN
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Isi ulang lebih cepat
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Isi ulang Kekuatan Super lebih cepat
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,KECEPATAN DITINGKATKAN
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,BONUS PEMULIHAN
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,KERUSAKAN EKSTRA
 TID_GEAR_VISION_UPGRADE_TARGET,DURASI PENGLIHATAN
 TID_GEAR_SHIELD_UPGRADE_TARGET,KESEHATAN PERISAI
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,KECEPATAN ISI ULANG
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,LAJU ISI CEPAT SUPER
+TID_GEAR_SUPER_HEALTH_TITLE,KESEHATAN KEPALA
+TID_GEAR_SUPER_HEALTH_INFO,Kepala mendapatkan <NUM> KESEHATAN EKSTRA
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Kepala mendapatkan kesehatan ekstra
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,KESEHATAN KEPALA
+TID_GEAR_SUPER_RANGE_TITLE,JANGKAUAN TANGAN
+TID_GEAR_SUPER_RANGE_INFO,Tangan menjangkau satu ubin lebih jauh
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Tangan menjangkau lebih jauh
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,JANGKAUAN TANGAN
 TID_GEAR_UPGRADED,BUSTER DITINGKATKAN!
 TID_GEAR_TITLE,BUSTER
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> LEVEL <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Buster: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,BUSTER <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Buster ini sudah dipilih di slot lain
 TID_ITEMS_TITLE,ITEM
 TID_TEAMUP_YOUR_SETTINGS_TITLE,SETELAN PERSONAL
 TID_TRUE_SILVER_BROCK_SKIN,BROCK PERAK
@@ -5541,13 +5565,13 @@ TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Tampilkan jumlah Trofi Geng <cFFDA14>maks</c
 TID_CLUB_LEAGUE_INFO_TITLE,INFO LIGA GENG
 TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Selamat Datang
 TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>SELAMAT DATANG DI PERMAINAN GENG</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Main dengan rekan Geng dan raih hadiah <cFCBC22>Toko Geng</c> setiap minggu!\n\nSatu Permainan Geng akan aktif setiap minggu:\n<cFCBC22>MINGGU LIGA GENG</c> - Ayo bersaing dengan Geng lain di Liga Geng untuk meraih hadiah di peringkat tertinggi dan mendaki liga.\n<cFCBC22>MINGGU TUGAS GENG</c> - Selesaikan tiga tugas Geng demi meraih poin untuk Geng. Makin banyak tugas yang diselesaikan oleh seluruh anggota Geng selama Minggu Tugas, makin tinggi hadiah yang akan diraih semua anggota."
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Main dengan rekan Geng dan raih hadiah <cFCBC22>Toko Geng</c> setiap minggu!\n\nSatu Permainan Geng akan aktif setiap minggu:\n<cFCBC22>MINGGU LIGA GENG</c> - Ayo bersaing dengan Geng lain di Liga Geng untuk meraih hadiah di peringkat tertinggi dan mendaki liga.\n<cFCBC22>MINGGU TUGAS GENG</c> - Selesaikan tiga tugas Geng dan raih poin untuk Geng. Makin banyak tugas yang diselesaikan oleh seluruh anggota Geng selama Minggu Tugas, makin tinggi hadiah yang akan diraih."
 TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Liga Geng
 TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>MINGGU LIGA GENG</c>
 TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Dalam Liga Geng, 7 Geng dari liga yang sama akan bersaing selama seminggu. Mainkan acara Liga Geng dalam <cFCBC22>3 hari terpisah</c> dan raih <cFCBC22>Trofi Geng</c> tertinggi. <cFCBC22>Tiket</c> diperlukan untuk bermain di Liga Geng.\n\nGeng dengan performa terbaik sepanjang minggu akan meraih hadiah terbaik. Geng bisa mendapatkan <cFCBC22>promosi</c> atau <cFCBC22>demosi</c> di akhir minggu.\n\nBonus: Main dengan rekan Geng untuk mendapatkan <cFCBC22>Trofi Geng Ekstra</c> dari laga."
 TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Tugas Geng
 TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>MINGGU TUGAS GENG</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Selama Minggu Tugas Geng, akan ada <cFCBC22>3 Tugas</c> untuk diselesaikan.\n\nKamu bisa menyumbang <cFCBC22>poin</c> kepada Geng dengan menyelesaikan Tugas Geng. Semakin banyak poin yang diraih di akhir minggu, semakin tinggi hadiah yang akan diterima semua anggota.\n\nBonus: Main dengan rekan Geng untuk <cFCBC22>menggandakan progres tugas</c>."
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Selama Minggu Tugas Geng, akan ada <cFCBC22>3 Tugas</c> untuk diselesaikan.\n\nKamu bisa menyumbang <cFCBC22>poin</c> kepada Geng dengan menyelesaikan Tugas Geng. Makin banyak poin yang diraih di akhir minggu, makin tinggi hadiah yang akan diterima semua anggota.\n\nBonus: Main dengan rekan Geng untuk <cFCBC22>menggandakan progres tugas</c>."
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Toko Geng
 TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>APA ITU TOKO GENG?</c>
 TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Mainkan Liga Geng & Tugas Geng untuk mendapatkan <cFCBC22>Koin Geng</c>. Belanjakan Koin Geng di Toko Geng!\n\nDi Toko Geng, kamu bisa <cFCBC22>mempercepat progres</c> hingga 50% dan menemukan <cFCBC22>Kostum Eksklusif</c>!"
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>LAGA BINTANG</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,LAGA BINTANG
 TID_CLUB_INFO_COLUMN_TROPHIES,TROFI
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,PERINGKAT LAGA BINTANG
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,TERAKHIR ONLINE
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,STATUS
 TID_CLUB_INFO_COLUMN_NAME,NAMA
 TID_CLUB_INFO_COLUMN_TICKETS_USED,TIKET DIGUNAKAN
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,TROFI GENG
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,KALAH LAGA
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,Buat tim acak
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,Buat tim dengan Anggota Geng
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,HADIAH TROFI GENG
-TID_REWARD_DESC_GEAR_TOKENS,TOKEN BUSTER
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,TOKEN BUSTER
-TID_REWARD_DESC_GEAR_SCRAP,FRAGMEN BUSTER
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hai! Sepertinya kamu sudah terlambat untuk ikut bermain di minggu ini.\n\nSilakan melihat-lihat dan tonton laga Geng sebelum musim berikutnya dimulai!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Ayo lihat ada apa di Toko Geng!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Hasil Akhir:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,FAKTOR X
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,Serpihan serangan utama Grom menimbulkan hingga <c00cc00>+<VALUE1>%</c> kerusakan ekstra pada jarak maksimal.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,TURET PENGINTAI
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,Grom akan mengerahkan Turet Pengintai dari Bom Grom. Turet ini memiliki jangkauan area luas yang akan membuat semua rekan dapat melihat di area semak. Kesehatan Turet Pengintai akan berkurang seiring waktu.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Buat Buster pertama
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,Kumpulkan Fragmen dan Token Buster dari Kotak Jagoan atau Toko Geng untuk membuat dan meningkatkan Buster
-TID_FIRST_GEAR_TUTORIAL_TITLE,SLOT BUSTER
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Slot Buster terbuka!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Pilih Buster pertama GRATIS
+TID_ITEMS_HUB_GUIDE_GADGET,Kamu bisa memilih dan membeli Gadget unik untuk <BRAWLER> di sini
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Gadget sekarang tersedia di sini
+TID_ITEMS_HUB_GUIDE_STARPOWER,Kamu bisa memilih dan membeli Kekuatan Bintang unik untuk <BRAWLER> di sini
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Kekuatan Bintang sekarang tersedia di sini
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Gadget sekarang tersedia di sini
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Kekuatan Bintang sekarang tersedia di sini
+TID_FIRST_GEAR_TUTORIAL_TITLE,BUSTER
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,Terbuka!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Buster
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Buat kemampuan ekstra untuk Jagoan pilihanmu
@@ -6151,7 +6178,7 @@ TID_JETPACK_GIRL,JANET
 TID_JETPACK_GIRL_SHORT_DESC,PENYERANG
 TID_JETPACK_GIRL_DESC,"Janet adalah bintang pertunjukan kesayangan semua orang yang sangat terkenal!\n\nAdiknya, Bonnie, juga sangat terkenal ... Sayangnya, terkenal karena selalu menyebabkan masalah."
 TID_JETPACK_GIRL_WEAPON,NADA TINGGI
-TID_JETPACK_GIRL_WEAPON_DESC,"Janet menyanyikan nada tinggi. Semakin lama dia menahan nada ini, gelombang suara akan semakin memusat dengan jangkauan yang lebih jauh."
+TID_JETPACK_GIRL_WEAPON_DESC,"Janet menyanyikan nada tinggi. Makin lama dia menahan nada ini, gelombang suara akan makin memusat dengan jangkauan yang lebih jauh."
 TID_JETPACK_GIRL_ULTI,CRESCENDO
 TID_JETPACK_GIRL_ULTI_DESC,"Janet menggunakan ransel jet miliknya untuk terbang dalam waktu singkat. Selama terbang, dia dapat menyerang lawan dari atas!"
 TID_SPEC_ABI_JETPACK_GIRL_1,PENGLIHATAN PANGGUNG
@@ -6161,7 +6188,7 @@ TID_SPEC_ABI_JETPACK_GIRL_2_DESC,Serangan Janet terfokus <c00cc00><VALUE1>%</c> 
 TID_ACCESSORY_JETPACK_GIRL_GADGET_1,DENTUMAN BAS
 TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,Janet mengerahkan speaker yang memberikan <c00cc00><VALUE1></c> kerusakan per detik pada semua lawan terdekat hingga dihancurkan.
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2,AKSES CEPAT PANGGUNG
-TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Serangan Nada Tinggi berikutnya akan mendorong mundur Janet (bahkan melintasi tembok!). Semakin terfokus serangannya, semakin jauh dia akan terdorong mundur."
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Serangan Nada Tinggi berikutnya akan mendorong mundur Janet (bahkan melintasi tembok!). Makin terfokus serangan, makin jauh dia akan terdorong mundur."
 TID_CANNON_GIRL,BONNIE
 TID_CANNON_GIRL_SHORT_DESC,SERBA BISA
 TID_CANNON_GIRL_DESC,"Bonnie dan meriam kesayangannya, \qClyde\q, hadir untuk membuat masalah. Siapa sangka gadis kecil ini bisa membawa kekacauan yang besar?"
@@ -6345,7 +6372,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Selama <c00cc00><VALUE2></c> detik, A
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,KOTAK PERKAKAS
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak perkakas yang akan mempercepat isi ulang untuk rekan terdekat sebesar <c00cc00><VALUE1>%</c> hingga dihancurkan.
 TID_ACCESSORY_ROPE_DUDE_VISION,KACAMATA X-RAY
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz dapat melihat menembus semak di area pengisian Kekuatan Super miliknya selama <c00cc00><VALUE1> detik.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz dapat melihat menembus semak di area pengisian Kekuatan Super miliknya selama <c00cc00><VALUE1></c> detik.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Kamu sudah memiliki Jagoan ini
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Kamu sudah memiliki Gadget ini
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Kamu sudah memiliki Kekuatan Bintang ini
@@ -6609,7 +6636,7 @@ TID_WEAPON_THROWER,SAM
 TID_WEAPON_THROWER_SHORT_DESC,PENYERANG
 TID_WEAPON_THROWER_DESC,Si mantan pekerja pabrik Sam Bronson punya dendam kepada SEMUA robot.\n\nDia adalah pendiri dan otak di balik Geng Senjata Emas yang akan merampok dan menghancurkan para robot!
 TID_WEAPON_THROWER_WEAPON,TINJU BERAT
-TID_WEAPON_THROWER_WEAPON_DESC,"Sam mengerahkan tinju keras. Dengan sarung tangan keling, kerusakan yang diberikan akan semakin besar."
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam mengerahkan tinju keras. Dengan sarung tangan keling, kerusakan yang diberikan akan makin besar."
 TID_WEAPON_THROWER_ULTI,KELING SAKTI
 TID_WEAPON_THROWER_ULTI_DESC,Sam melemparkan Keling Sakti miliknya yang akan memberikan kerusakan pada semua lawan sebelum akhirnya jatuh. Kekuatan Super berikutnya akan mengembalikan Keling Sakti ke tangannya sembari memberi kerusakan.
 TID_SPEC_ABI_WEAPON_THROWER_1,PEMULIHAN BESAR
@@ -6617,22 +6644,22 @@ TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Saat Keling Sakti kembali, Sam akan langsung
 TID_SPEC_ABI_WEAPON_THROWER_2,ISI ULANG JARAK JAUH
 TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Saat berada di tanah dan berada di dekat lawan, Keling Sakti akan mengisi Kekuatan Super Sam."
 TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MEDAN MAGNET
-TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Saat berada id tanah, Sam dapat mengaktifkan Keling Sakti untuk menarik lawan mendekat."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Saat berada di tanah, Sam dapat mengaktifkan Keling Sakti untuk menarik lawan mendekat."
 TID_ACCESSORY_WEAPON_THROWER_GADGET_2,GELOMBANG PENDORONG
-TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Saat jatuh, pengerahan Keling Sakti berikutnya akan mengeluarkan gelombang listrik yang bisa memukul mundur lawan."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Saat berada di tanah, pengerahan Keling Sakti berikutnya akan mengeluarkan gelombang listrik yang bisa memukul mundur lawan."
 TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Keling Sakti tidak sedang jatuh!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Keling Sakti terlalu jauh!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Keling Sakti diperlukan!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,PENDUKUNG
-TID_SOUL_COLLECTOR_DESC,"Suka menghabiskan waktu di wahana kereta yang terabaikan, Gus tergila-gila dengan balon. Dia bisa menciptakan berbagai makhluk dari balon. Sepertinya keahlian ini dia pelajari karena dia kesepian dan perlu teman."
+TID_SOUL_COLLECTOR_DESC,"Tergila-gila dengan balon, Gus suka menghabiskan waktu di wahana kereta yang terabaikan. Konon, dia mengejar balon anjing terlalu jauh sampai tersesat dan tidak pernah kembali ke rumah."
 TID_SOUL_COLLECTOR_WEAPON,BALON SERAM
-TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembakkan balon ke lawan. Setelah mengenai lawan beberapa kali, roh akan jatuh. Mengumpulkan roh akan memulihkan kesehatan Gus serta rekan Jagoan."
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembakkan balon ke lawan. Setelah mengenai lawan beberapa kali, roh akan jatuh. Mengambil roh akan memulihkan kesehatan Gus atau rekan tim."
 TID_SOUL_COLLECTOR_ULTI,SI SPOOKY
-TID_SOUL_COLLECTOR_ULTI_DESC,Gus menggunakan Spooky (sahabat balon ciptaannya) untuk menjadi perisai yang melindungi Gus serta salah satu rekan Jagoan.
+TID_SOUL_COLLECTOR_ULTI_DESC,Gus menggunakan Spooky (sahabat balon ciptaannya) untuk menjadi perisai yang melindungi Gus atau salah satu rekan tim.
 TID_SPEC_ABI_SOUL_COLLECTOR_1,KESEHATAN UNTUK SEMUA
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Kesehatan yang dipulihkan dari BALON SERAM akan meningkat sebesar <c00cc00><VALUE1>%</c>.
-TID_SPEC_ABI_SOUL_COLLECTOR_2,ROH HEWAN
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Kesehatan yang dipulihkan oleh roh meningkat <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,DUKUNGAN SPIRITUAL
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky meningkatkan kerusakan rekan tim sebesar <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> detik.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,LEDAKAN ROH
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,Semua roh yang belum diambil akan meledak dan memberikan <c00cc00><VALUE1></c> kerusakan ke lawan yang berada di dekatnya.
@@ -6729,9 +6756,9 @@ TID_HINT_55,Gunakan Laga Persahabatan untuk berlatih dan mengasah kemampuan!
 TID_HINT_56,Beberapa Jagoan punya Atribut spesial! Temukan detail lengkap di layar statistik.
 TID_HINT_57,"Di Showdown Duo, pastikan rekan tim masih bertahan sebelum mengambil Kubus Kekuatan."
 TID_HINT_58,Manfaatkan fitur \qCari Tim\q saat bermain Tantangan!!
-TID_HINT_59,Berhati-hatilah dengan ranjau milik Bo karena dia sendiri tak ingat di mana bom berada!
-TID_HINT_60,Kemampuan Super Lou sangat berguna untuk menguasai area. Gunakan dengan cermat di titik-titik kunci peta!
-TID_HINT_61,Kerusakan yang diberikan Jessie semakin meningkat setiap kali memantul dari lawan.
+TID_HINT_59,Ranjau milik Bo bisa berada di mana-mana! Berhati-hatilah!
+TID_HINT_60,Kemampuan Super Lou sangat berguna untuk menguasai area. Gunakan dengan cermat di titik-titik strategis pada peta!
+TID_HINT_61,Kerusakan yang diberikan Jessie akan meningkat setiap kali memantul dari lawan.
 TID_HINT_62,Colette bisa memberikan kerusakan yang besar saat menghadapi Jagoan dengan kesehatan tinggi!
 TID_HINT_63,Edgar menyembuhkan diri setiap kali mendaratkan pukulan!
 TID_HINT_64,Jangkauan tembakan Janet jadi makin jauh mengikuti lama waktu membidik.
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-Bit menyerah!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Paket Pin Geng Mara Bahaya
 TID_SHOP_OUTLAW_SKINS,Kostum Geng Mara Bahaya
 TID_SHOP_OUTLAW_TITLE,GENG MARA BAHAYA
+TID_GEAR_RARITY_RARE,Langka
+TID_GEAR_RARITY_SUPER_RARE,Super Langka
+TID_GEAR_RARITY_EPIC,Epik
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - Buster Langka
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - Buster Super Langka
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - Buster Epik
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Roh terlalu jauh!
+TID_TRY_BRAWLER_TITLE,Coba Jagoan
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,LAGA LATIHAN
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,TEMPAT LATIHAN
+TID_FIRST_GADGET_TUTORIAL_HEADER,GADGET
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Kemampuan ekstra untuk Jagoan
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Slot Gadget Jagoan terbuka di Level Kekuatan 7
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Gadget unik untuk setiap jagoan
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Gunakan Gadget yang dipilih hingga 3 kali per laga
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,KEKUATAN BINTANG
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Kemampuan pasif unik untuk Jagoan
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Slot Kekuatan Bintang Jagoan terbuka di Level Kekuatan 9
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Kekuatan Bintang unik untuk setiap jagoan
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Kekuatan Bintang yang dipilih akan selalu aktif
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Slot Buster pertama Jagoan akan terbuka di Level Kekuatan 10
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Beberapa Buster tersedia untuk setiap jagoan
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Buster yang dipilih akan selalu aktif
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Memilih Laga Latihan
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,TANK
+TID_SHIELD_TANK_DESC,Buster adalah operator proyektor di bioskop yang sangat menggemari film laga. Dia bermimpi suatu saat bisa menjadi pahlawan dalam film laga yang dia bintangi sendiri.
+TID_SHIELD_TANK_WEAPON,SUAR LENSA
+TID_SHIELD_TANK_WEAPON_DESC,Buster menembakkan sinar berpola kerucut dari proyektornya dan memberi kerusakan pada semua musuh yang berada dalam jangkauan.
+TID_SHIELD_TANK_ULTI,MONTASE
+TID_SHIELD_TANK_ULTI_DESC,Buster memproyeksikan perisai di hadapannya untuk memblokir semua proyektil dan memantulkan energi kembali ke lawan.
+TID_SPEC_ABI_SHIELD_TANK_1,POTONGAN SUTRADARA
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Suar Lensa Buster menimbulkan kerusakan <c00cc00><VALUE1>%</c> lebih banyak untuk setiap rekan Jagoan yang berada di area pengisian Supernya.
+TID_SPEC_ABI_SHIELD_TANK_2,ROMPI KEVLAR
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Saat Montase aktif, Buster menerima kerusakan <c00cc00><VALUE1>%</c> lebih sedikit dan kebal terhadap hantaman mundur, efek lambat, dan efek kejut."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,SABUK PERLENGKAPAN
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Buster memulihkan kesehatan semua rekan Jagoan sebesar <c00cc00><VALUE1></c> untuk tiap rekan yang berada di area pengisian kekuatan Supernya.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRAILER
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Suar Lensa Buster berikutnya akan menarik lawan mendekatinya dan melambatkan mereka selama <c00cc00><VALUE1></c> detik.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS>TOKEN BUSTER\n<SCRAP> FRAGMEN
+TID_GEAR_COMPENSATION_CLAIM,KLAIM
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Kustomisasi Jagoan dengan kemampuan pasif baru.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,AYO!
+TID_INBOX_CAPTION_52,Pemberian Buster <TYPE> untuk <NAME>
+TID_GEAR_COMPENSATION_INFO,"Terimalah <COINS> Koin untuk membeli Buster, Token Buster, dan Fragmen!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,Buster telah direset dan kamu menerima <COINS> Koin sebagai kompensasi.
+TID_RECRUIT_TOKEN,Token Rekrut
+TID_CHROMATIC_TOKEN,Token Kromatik
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,KEKUATAN BINTANG
+TID_FIRST_GADGET_TUTORIAL_TITLE,GADGET
+TID_GEAR_TO_COINS_POPUP_TITLE,BUSTER DIROMBAK ULANG!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Tersedia Buster Baru!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Lihat opsi Buster baru untuk Jagoan.
+TID_GEAR_TO_COINS_POPUP_INFO,"Semua Buster yang ada telah direset. Buster tidak lagi dirakit dan tidak lagi memiliki peningkatan level. Kini hanya ada Buster Langka, Super Langka, atau Epik.\n\nSebagai kompensasi atas perubahan ini, setiap Token dan Fragmen Buster yang telah terkumpul telah diganti dengan Koin. AYO GUNAKAN KOIN UNTUK MEMBELI BUSTER BARU!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,PENGGANTIAN:
+TID_REPORT_PLAYER_REPORT,LAPORKAN
+TID_REPORT_PLAYER_REPORTED,DILAPORKAN
+TID_REPORT_PLAYER_POPUP_TITLE,LAPORKAN <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Kamu melaporkan <PLAYER_NAME> atas griefing.\n\nGriefing adalah perilaku di mana pemain sengaja tidak memenuhi misi Acara dan bersikap mengganggu. Perilaku negatif ini dapat memengaruhi tim dan hasil laga.\n\nContoh dari griefing di antaranya:\nsengaja kalah untuk membantu lawan, bersekongkol mengatur hasil laga, dan tidak aktif dalam laga."
+TID_REPORT_PLAYER_BUTTON_REPORT,LAPORKAN
+TID_REPORT_PLAYER_BUTTON_CANCEL,BATAL
+TID_QUEST_FALLBACK_REWARD_DESC,"Karena hadiah Tugas ini sudah dimiliki, kamu mendapatkan <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,HADIAH TUGAS
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,KLAIM
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,JALAN REKRUT
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,TOKO KROMATIK
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Buka <NUM> Jagoan Kromatik lagi
+TID_BUTTON_NAVI_RECRUIT_ROAD,Jalan Rekrut
+TID_SKIN_INFO_GHOST_TRAIN,Kostum Stasiun Hantu
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Terjadi kesalahan saat memvalidasi pembelian.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Kekuatan Super Jagoan ini akan terisi ulang saat berada di dekat rekan tim
+TID_SKIN_INFO_ACTION,Kostum Pahlawan Aksi
+TID_SKIN_INFO_WF_2022,Kostum Final Dunia 2022
+TID_BRAWL_PASS_SEASON_14,STASIUN HANTU
+TID_CHAINSAW_BUSTER_SKIN,BUSTER GERGAJI MESIN
+TID_CHAINSAW_BUSTER_SKIN_SHOP,BUSTER\nGERGAJI MESIN
+TID_GHOST_TRAIN_GROM_SKIN,FRANKENGROM
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,FRANKENGROM
+TID_GHOST_TRAIN_COLETTE_SKIN,INSPEKTUR COLETTE
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,INSPEKTUR\nCOLETTE
+TID_BRICK_OVEN_ASH_SKIN,ASH OVEN PIZA
+TID_BRICK_OVEN_ASH_SKIN_SHOP,ASH\nOVEN PIZA
+TID_VETERAN_SQUEAK_SKIN,KOMANDAN SQUEAK
+TID_VETERAN_SQUEAK_SKIN_SHOP,KOMANDAN\nSQUEAK
+TID_ZOMBIE_BROCK_SKIN,BROCK ZOMBIE
+TID_ZOMBIE_BROCK_SKIN_SHOP,BROCK\nZOMBIE
+TID_MEGA_MEGABOX_DARRYL_SKIN,DARRYL KOTAK OMEGA
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,DARRYL\nKOTAK OMEGA
+TID_GHOST_METRO_PENNY_SKIN,PENNY RAKUN
+TID_GHOST_METRO_PENNY_SKIN_SHOP,PENNY\nRAKUN
+TID_BSWF22_TARA_SKIN,TARA MENGGILA
+TID_BSWF22_TARA_SKIN_SHOP,TARA\nMENGGILA
+TID_TOPGUN_JANET_SKIN,JANET GAYA G
+TID_TOPGUN_JANET_SKIN_SHOP,JANET\nGAYA G
+TID_SHOP_OFFER_TITLE_40,KOTAK OMEGA
+TID_PIN_OFFER_TITLE,Penawaran Pin
+TID_THUMBNAILS_OFFER_TITLE,Penawaran Ikon
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Buka hadiah Brawl Pass, Tugas ekstra, dan <NUM> Acak Ulang Tugas per minggu"
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,TUKARKAN
+TID_BRAWL_PASS_REDEEM,TUKARKAN
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Terdapat <NUMBER> Brawl Pass di Supercell ID milikmu. Gunakan satu untuk mengaktifkan Brawl Pas Musim ini?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,Mohon tunggu. Brawl Pass dari Supercell ID milikmu sedang ditukarkan.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Brawl Pass di Supercell ID milikmu tidak cukup untuk ditukarkan. Kunjungi Toko Supercell untuk membeli Brawl Pass.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Segenggam Permata
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Kantung Permata
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Tas Permata
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Ember Permata
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Peti Permata
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Kontainer Permata
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Paket Brawl Pass
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/k;->s()Landroidx/fragment/app/p;
+    value = Landroidx/fragment/app/k;->r()Landroidx/fragment/app/p;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/fragment/app/p;
+.field public final synthetic f:Landroidx/fragment/app/p;
 
-.field public final synthetic h:Landroidx/fragment/app/k;
+.field public final synthetic g:Landroidx/fragment/app/k;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/k;Landroidx/fragment/app/p;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/k$e;->h:Landroidx/fragment/app/k;
+    iput-object p1, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/k;
 
-    iput-object p2, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/p;
+    iput-object p2, p0, Landroidx/fragment/app/k$e;->f:Landroidx/fragment/app/p;
 
     invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
@@ -35,14 +35,14 @@
 
 
 # virtual methods
-.method public final h(I)Landroid/view/View;
+.method public final N(I)Landroid/view/View;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/k$e;->h:Landroidx/fragment/app/k;
+    iget-object v0, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/k;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
 
     const/4 v1, 0x0
 
@@ -65,18 +65,18 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/fragment/app/k$e;->f:Landroidx/fragment/app/p;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/p;->i()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/p;->T()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 5
-    iget-object v0, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/fragment/app/k$e;->f:Landroidx/fragment/app/p;
 
-    invoke-virtual {v0, p1}, Landroidx/fragment/app/p;->h(I)Landroid/view/View;
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/p;->N(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -86,21 +86,21 @@
     return-object v1
 .end method
 
-.method public final i()Z
+.method public final T()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/k$e;->h:Landroidx/fragment/app/k;
+    iget-object v0, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/k;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/k;->q0:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/k;->p0:Z
 
     if-nez v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/k$e;->g:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/fragment/app/k$e;->f:Landroidx/fragment/app/p;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/p;->i()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/p;->T()Z
 
     move-result v0
 

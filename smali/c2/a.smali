@@ -1,90 +1,158 @@
-.class public abstract Lc2/a;
+.class public final synthetic Lc2/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
-
-# interfaces
-.implements Lc2/b;
+.source "R8$$SyntheticClass"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lc2/b<",
-        "TT;>;"
-    }
-.end annotation
+# direct methods
+.method public static synthetic a(I)I
+    .locals 1
 
+    const/4 v0, 0x1
 
-# instance fields
-.field public final g:Lcom/google/android/gms/common/data/DataHolder;
-    .annotation build Landroidx/annotation/RecentlyNullable;
-    .end annotation
-.end field
+    if-ne p0, v0, :cond_0
 
+    const/16 p0, 0x78
 
-# virtual methods
-.method public final close()V
-    .locals 0
+    return p0
 
-    invoke-virtual {p0}, Lc2/a;->release()V
+    :cond_0
+    const/4 v0, 0x2
 
-    return-void
+    if-ne p0, v0, :cond_1
+
+    const/16 p0, 0xa0
+
+    return p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const/16 p0, 0xf0
+
+    return p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const/16 p0, 0x140
+
+    return p0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const/16 p0, 0x1e0
+
+    return p0
+
+    :cond_4
+    const/4 v0, 0x6
+
+    if-ne p0, v0, :cond_5
+
+    const/16 p0, 0x280
+
+    return p0
+
+    :cond_5
+    const/4 p0, 0x0
+
+    throw p0
 .end method
 
-.method public final getCount()I
+.method public static synthetic b(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "ldpi"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "mdpi"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "hdpi"
+
+    return-object p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "xhdpi"
+
+    return-object p0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const-string p0, "xxhdpi"
+
+    return-object p0
+
+    :cond_4
+    const/4 v0, 0x6
+
+    if-ne p0, v0, :cond_5
+
+    const-string p0, "xxxhdpi"
+
+    return-object p0
+
+    :cond_5
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static c(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lc2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
-    :cond_0
-    iget v0, v0, Lcom/google/android/gms/common/data/DataHolder;->n:I
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    return v0
-.end method
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
+    .line 4
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "TT;>;"
-        }
-    .end annotation
+    .line 5
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v0, Lc2/c;
+    .line 6
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, p0}, Lc2/c;-><init>(Lc2/b;)V
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return-object v0
-.end method
+    move-result-object p0
 
-.method public release()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lc2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {v0}, Lcom/google/android/gms/common/data/DataHolder;->close()V
-
-    :cond_0
-    return-void
+    return-object p0
 .end method

@@ -148,7 +148,7 @@
 
     move-result p0
 
-    mul-int p0, p0, v0
+    mul-int/2addr p0, v0
 
     return p0
 .end method

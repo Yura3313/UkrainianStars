@@ -14,19 +14,19 @@
 
 
 # virtual methods
-.method public final l7(Landroid/os/Bundle;)V
+.method public final e7(Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
+    invoke-static {}, Lj2/h;->i()Z
 
     const/4 p1, 0x3
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->t:I
+    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->s:I
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->h:Landroid/app/Activity;
+    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->g:Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 

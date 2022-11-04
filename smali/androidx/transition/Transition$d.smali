@@ -21,11 +21,11 @@
 .method public abstract b()V
 .end method
 
-.method public abstract c(Landroidx/transition/Transition;)V
+.method public abstract c()V
 .end method
 
 .method public abstract d()V
 .end method
 
-.method public abstract e()V
+.method public abstract e(Landroidx/transition/Transition;)V
 .end method

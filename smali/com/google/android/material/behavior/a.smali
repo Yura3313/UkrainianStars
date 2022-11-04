@@ -3,7 +3,7 @@
 .source "SwipeDismissBehavior.java"
 
 # interfaces
-.implements Lg0/e;
+.implements Lg0/d;
 
 
 # instance fields
@@ -38,7 +38,7 @@
     if-eqz v0, :cond_6
 
     .line 2
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -49,12 +49,12 @@
 
     if-ne v0, v2, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 4
     :goto_0
@@ -72,7 +72,7 @@
     if-nez v0, :cond_3
 
     :cond_2
-    const/4 v1, 0x1
+    move v1, v2
 
     .line 5
     :cond_3
@@ -86,7 +86,7 @@
 
     .line 6
     :cond_4
-    invoke-static {p1, v0}, Lf0/r;->v(Landroid/view/View;I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->offsetLeftAndRight(I)V
 
     const/4 v0, 0x0
 

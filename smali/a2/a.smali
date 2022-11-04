@@ -1,151 +1,90 @@
-.class public La2/a;
+.class public abstract La2/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+# interfaces
+.implements La2/b;
 
 
-# direct methods
-.method public static a(I)Ljava/lang/String;
-    .locals 2
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "La2/b<",
+        "TT;>;"
+    }
+.end annotation
 
-    packed-switch p0, :pswitch_data_0
 
-    :pswitch_0
-    const/16 v0, 0x20
+# instance fields
+.field public final f:Lcom/google/android/gms/common/data/DataHolder;
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
+.end field
 
-    const-string v1, "unknown status code: "
+
+# virtual methods
+.method public final close()V
+    .locals 0
+
+    invoke-virtual {p0}, La2/a;->release()V
+
+    return-void
+.end method
+
+.method public final getCount()I
+    .locals 1
 
     .line 1
-    invoke-static {v0, v1, p0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
+    iget-object v0, p0, La2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
 
-    move-result-object p0
+    if-nez v0, :cond_0
 
-    return-object p0
+    const/4 v0, 0x0
 
-    :pswitch_1
-    const-string p0, "RECONNECTION_TIMED_OUT"
+    return v0
 
-    return-object p0
+    .line 2
+    :cond_0
+    iget v0, v0, Lcom/google/android/gms/common/data/DataHolder;->m:I
 
-    :pswitch_2
-    const-string p0, "RECONNECTION_TIMED_OUT_DURING_UPDATE"
+    return v0
+.end method
 
-    return-object p0
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    :pswitch_3
-    const-string p0, "CONNECTION_SUSPENDED_DURING_CALL"
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "TT;>;"
+        }
+    .end annotation
 
-    return-object p0
+    new-instance v0, La2/c;
 
-    :pswitch_4
-    const-string p0, "REMOTE_EXCEPTION"
+    invoke-direct {v0, p0}, La2/c;-><init>(La2/b;)V
 
-    return-object p0
+    return-object v0
+.end method
 
-    :pswitch_5
-    const-string p0, "DEAD_CLIENT"
+.method public release()V
+    .locals 1
 
-    return-object p0
+    .line 1
+    iget-object v0, p0, La2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
 
-    :pswitch_6
-    const-string p0, "API_NOT_CONNECTED"
+    if-eqz v0, :cond_0
 
-    return-object p0
+    .line 2
+    invoke-virtual {v0}, Lcom/google/android/gms/common/data/DataHolder;->close()V
 
-    :pswitch_7
-    const-string p0, "CANCELED"
-
-    return-object p0
-
-    :pswitch_8
-    const-string p0, "TIMEOUT"
-
-    return-object p0
-
-    :pswitch_9
-    const-string p0, "INTERRUPTED"
-
-    return-object p0
-
-    :pswitch_a
-    const-string p0, "ERROR"
-
-    return-object p0
-
-    :pswitch_b
-    const-string p0, "DEVELOPER_ERROR"
-
-    return-object p0
-
-    :pswitch_c
-    const-string p0, "INTERNAL_ERROR"
-
-    return-object p0
-
-    :pswitch_d
-    const-string p0, "NETWORK_ERROR"
-
-    return-object p0
-
-    :pswitch_e
-    const-string p0, "RESOLUTION_REQUIRED"
-
-    return-object p0
-
-    :pswitch_f
-    const-string p0, "INVALID_ACCOUNT"
-
-    return-object p0
-
-    :pswitch_10
-    const-string p0, "SIGN_IN_REQUIRED"
-
-    return-object p0
-
-    :pswitch_11
-    const-string p0, "SERVICE_DISABLED"
-
-    return-object p0
-
-    :pswitch_12
-    const-string p0, "SERVICE_VERSION_UPDATE_REQUIRED"
-
-    return-object p0
-
-    :pswitch_13
-    const-string p0, "SUCCESS"
-
-    return-object p0
-
-    :pswitch_14
-    const-string p0, "SUCCESS_CACHE"
-
-    return-object p0
-
-    :pswitch_data_0
-    .packed-switch -0x1
-        :pswitch_14
-        :pswitch_13
-        :pswitch_0
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_0
-        :pswitch_b
-        :pswitch_0
-        :pswitch_0
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
+    :cond_0
+    return-void
 .end method

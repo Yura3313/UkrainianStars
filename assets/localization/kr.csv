@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,브롤 상자와 특별 상품에서 PP를 모아 다음 업그레이드를 잠금 해제하세요!
 TID_HERO_INFO_STAR_POWER_CAN_DROP,이제 브롤 상자에서 스타 파워를 획득할 수 있습니다!
-TID_HERO_INFO_STAR_POWER_BLOCKED,<HERONAME>의 스타 파워를 선택해 파워업! 파워 레벨 <LEVEL> 달성 후 브롤 상자에서 획득!
+TID_HERO_INFO_STAR_POWER_BLOCKED,<HERONAME>의 특별한 스타 파워를 사용해 파워업! 파워 레벨 <LEVEL> 달성 후 구매 가능!
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,이제 브롤 상자에서 가젯을 획득할 수 있습니다!
-TID_HERO_INFO_ACCESSORIES_BLOCKED,<HERONAME>의 특별한 가젯과 함께 파워업! 파워 레벨 <LEVEL> 달성 후 브롤 상자에서 획득!
+TID_HERO_INFO_ACCESSORIES_BLOCKED,<HERONAME>의 특별한 가젯을 사용해 파워업! 파워 레벨 <LEVEL> 달성 후 구매 가능!
 TID_HERO_INFO_STAR_POWER_LABEL,스타 파워: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,가젯: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n이번 시즌 <BRAWLER>의 획득 확률은 <RARITY> 획득 확률과 동일합니다."
-TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n시즌 <SEASON>의 티어 <TIER>에 도달해야 상자에서 <BRAWLER> 브롤러를 획득할 수 있습니다."
+TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n시즌 <SEASON>의 티어 <TIER>에 도달해야 상자에서 브롤러 (<BRAWLER>)를 획득할 수 있습니다."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n해당 브롤러(<BRAWLER>)는 시즌 <SEASON>에 공개됩니다!"
+TID_HERO_INFO_BUY_ITEM,구매
+TID_HERO_INFO_BUY_ITEM_FREE,무료
+TID_HERO_INFO_BUY_MISSING1,코인이 <MISSINGCOINS>개 더 필요합니다!
+TID_HERO_INFO_BUY_MISSING2,부족한 코인을 구매할까요?
+TID_HERO_INFO_BUY_MISSING_GEMS1,코인이 <MISSINGCOINS>개 더 필요합니다!
+TID_HERO_INFO_BUY_MISSING_GEMS2,부족한 코인 구매를 위해 필요한 보석 <MISSINGGEMS>개를 구매하세요.
+TID_HERO_INFO_SEE_OFFERS,보석 구매
+TID_HERO_INFO_UNLOCK_GADGETS,가젯 잠금 해제
+TID_HERO_INFO_UNLOCK_STARPOWERS,스타 파워 잠금 해제
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,구매 확인
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,구매 확인
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,구매 확인
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,보석 더 구매
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,부족한 코인 구매를 위해 필요한 <cC5F724>보석 <REQUIREDGEMS>개를</c> 구매하세요.
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,모든 보석 팩
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,추천
 TID_MATCHMAKE_FAILED_5,매치메이킹 실패: 이벤트가 만료되었습니다
 TID_MATCHMAKE_FAILED_7,매치메이킹 실패: 팀원의 연결이 끊어졌습니다
 TID_MATCHMAKE_FAILED_9,매치메이킹 실패: 곧 점검이 시작됩니다
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,클럽 설명이 없습니다.
 TID_EVENT_POPUP_TITLE,전투에 참가하세요!
 TID_GOLDRUSH_8,사파이어 대지
 TID_USE_AUTOFIRE_TUTORIAL,<ccc0033>빨간색 조이스틱</c>을 탭해서\n가장 가까운 거리에 있는 적을\n공격하세요!
-TID_BRAWL_BOX_INFO_1,"대형 상자 1개에서 얻을 수 있는 보상은 브롤 상자 3개를 열었을 때와 비슷하지만, PP는 더 적은 수의 브롤러에게 분배됩니다. 기어 토큰은 한 가지 종류만 제공됩니다.\n\n무작위로 3번 보상을 뽑을 수 있고, 각 뽑기의 보상 획득 확률은 다음과 같습니다."
-TID_BRAWL_BOX_INFO_2,"각 브롤 상자에는 신규 브롤러, PP 및 코인, 기어 토큰 및 스크랩, 가젯, 스타 파워 중 하나가 들어있습니다. 또한 추가로 보너스 토큰 더블러를 획득할 수 있습니다.\n\n보상 확률:"
-TID_BRAWL_BOX_INFO_3,"메가 상자 1개에서 얻을 수 있는 보상은 브롤 상자 10개를 열었을 때와 비슷하지만, PP는 더 적은 수의 브롤러에게 분배됩니다. 기어 토큰은 한 가지 종류가 제공됩니다.\n\n무작위로 10번 보상을 뽑을 수 있고, 각 뽑기의 보상 획득 확률은 다음과 같습니다."
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\n희귀 브롤러 : <NUM2>%<GAR_HERO_1>\n초희귀 브롤러 : <NUM3>%<GAR_HERO_2>\n영웅 브롤러 : <NUM4>%<GAR_HERO_3>\n신화 브롤러 : <NUM5>%<GAR_HERO_4>\n전설 브롤러 : <NUM6>%<GAR_HERO_5>\n스타 파워 : <NUM7>%<GAR_STAR_POWER>\n가젯 : <NUM8>%<GAR_ACCESSORY>\n기어 토큰: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\n보상을 뽑을 때마다, <TOKEN_DOUBLER>% 확률로 토큰 더블러를 획득할 수 있습니다. 가젯은 브롤러가 파워 레벨 7, 스타 파워는 브롤러가 파워 레벨 9, 기어 토큰과 스크랩은 브롤러가 파워 레벨 10에 도달한 경우에만 이용 가능합니다. <WCPP_BRAWLERS> 브롤러를 잠금 해제하면 <WCPP_CHANCE>%의 확률로 PP를 원하는 브롤러에게 할당할 수 있습니다. 특정 유형(예: 희귀 브롤러)의 모든 보상을 잠금 해제하면 다른 모든 보상의 획득 확률이 증가합니다. 브롤 상자의 공평성을 위해, 전설 브롤러 획득 확률에 영향을 주는 행운 시스템이 존재합니다. 상자에서 신규 브롤러를 획득하지 못했다면 행운 수치가 증가합니다. 반대로 상자에서 신규 브롤러를 획득할 때마다 획득한 브롤러의 희귀도에 따라 행운 수치가 감소합니다. 행운 수치가 높다면 전설 브롤러를 획득할 확률이 최대 <MAX_LEGENDARY>%까지 높아지고, 행운 수치가 낮다면 전설 브롤러를 획득할 확률이 낮아집니다. 모든 플레이어가 공평하게 시작할 수 있도록 초반 브롤 상자의 내용물은 미리 결정되어 있습니다."
+TID_BRAWL_BOX_INFO_1,"대형 상자 1개에서 얻을 수 있는 보상은 브롤 상자 3개를 열었을 때와 비슷하지만, PP는 더 적은 수의 브롤러에게 분배됩니다.\n\n3개 분의 보상은 무작위로 등장하며, 각 보상의 등장 확률은 다음과 같습니다."
+TID_BRAWL_BOX_INFO_2,"각 브롤 상자에는 신규 브롤러, PP 및 코인, 가젯, 스타 파워 중 하나가 들어있습니다. 또한 추가로 보너스 토큰 더블러를 획득할 수 있습니다.\n\n각 보상의 등장 확률은 다음과 같습니다."
+TID_BRAWL_BOX_INFO_3,"메가 상자 1개에서 얻을 수 있는 보상은 브롤 상자 10개를 열었을 때와 비슷하지만, PP는 더 적은 수의 브롤러에게 분배됩니다.\n\n10개 분의 보상은 무작위로 등장하며, 각 보상의 등장 확률은 다음과 같습니다."
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\n희귀 브롤러 : <NUM2>%<GAR_HERO_1>\n초희귀 브롤러 : <NUM3>%<GAR_HERO_2>\n영웅 브롤러 : <NUM4>%<GAR_HERO_3>\n신화 브롤러 : <NUM5>%<GAR_HERO_4>\n전설 브롤러 : <NUM6>%<GAR_HERO_5>\n스타 파워 : <NUM7>%<GAR_STAR_POWER>\n가젯 : <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\n보상을 뽑을 때마다 <TOKEN_DOUBLER>% 확률로 토큰 더블러를 획득할 수 있습니다. 가젯은 브롤러가 파워 레벨 7, 스타 파워는 브롤러가 파워 레벨 9에 도달한 경우에만 이용 가능합니다. <WCPP_BRAWLERS> 브롤러를 잠금 해제하면 <WCPP_CHANCE>%의 확률로 원하는 브롤러에게 PP를 할당할 수 있습니다. 특정 유형(예: 희귀 브롤러)의 모든 보상을 잠금 해제하면 다른 모든 보상의 획득 확률이 증가합니다. 브롤 상자의 공평성을 위해, 전설 브롤러 획득 확률에 영향을 주는 행운 시스템이 존재합니다. 상자에서 신규 브롤러를 획득하지 못했다면 행운 수치가 증가합니다. 반대로 상자에서 신규 브롤러를 획득할 때마다 획득한 브롤러의 희귀도에 따라 행운 수치가 감소합니다. 행운 수치가 높다면 전설 브롤러를 획득할 확률이 최대 <MAX_LEGENDARY>%까지 높아지고, 행운 수치가 낮다면 전설 브롤러를 획득할 확률이 낮아집니다. 모든 플레이어가 공평하게 시작할 수 있도록 초반 브롤 상자의 내용물은 미리 결정되어 있습니다."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,PP + 코인
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,PP + 코인 + 스크랩
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,코인 + 스크랩
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"완전히 충전된 특수 공격을 사용하지 않
 TID_SPEC_ABI_PET,새 풀기
 TID_SPEC_ABI_PET_DESC,다이너마이크의 애완 새가 참전합니다!
 TID_SPEC_ABI_DAMAGE_ULTI,영혼 따귀
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"진의 특수 공격이 완전히 충전되면, 공격 시 <c00cc00>+<VALUE1></c> 피해를 입힙니다."
 TID_ARCADE,8비트
 TID_ARCADE_DESC,아케이드 게임기에 다리가 달렸네?! 블래스터 빔으로 공격하는 8비트는 특수 공격으로 아군의 공격 피해량을 늘려줄 수 있습니다!
 TID_ARCADE_SHORT_DESC,대미지 딜러
@@ -4055,7 +4070,7 @@ TID_FRIENDLY_MIN_TEAMS,최소 2개 팀이 필요합니다.
 TID_FRIENDLY_MIN_PLAYERS,최소 플레이어 2명이 필요합니다.
 TID_GOLDRUSH_32T,코너 케이스
 TID_GOLDRUSH_33T,최단거리
-TID_GOLDRUSH_34T,사방에 포탈
+TID_GOLDRUSH_34T,사방에 포털
 TID_CC_POPUP_TITLE_BRAWLOWEEN,브롤로윈 챌린지
 TID_CC_POPUP_TITLE_BRAWLIDAYS,듀오 챌린지
 TID_CC_POPUP_TITLE_SOLO,솔로 챌린지
@@ -4426,7 +4441,7 @@ TID_ACCESSORY_SNAKE_OIL_HEAL,활력소
 TID_ACCESSORY_SNAKE_OIL_HEAL_DESC,자신의 탄환 중 하나를 사용해 <c00cc00><VALUE2></c>초 동안 초당 <c00cc00><VALUE1></c>만큼 자기 자신을 치유합니다.
 TID_ENRAGER,에드거
 TID_ENRAGER_SHORT_DESC,어쌔신
-TID_ENRAGER_DESC,웬지 다가가기 어려운 까칠한 성격의 소유자입니다. 목도리를 사용해 재빠르게 펀치를 날립니다. 특수 공격을 사용하면 누구보다 빠르게 목표로 뛰어들 수 있어요.
+TID_ENRAGER_DESC,왠지 다가가기 어려운 까칠한 성격의 소유자입니다. 목도리를 사용해 재빠르게 펀치를 날립니다. 특수 공격을 사용하면 누구보다 빠르게 목표로 뛰어들 수 있어요.
 TID_ENRAGER_WEAPON,파이트 클럽
 TID_ENRAGER_WEAPON_DESC,"적에게 재빠른 펀치를 날려 피해를 주고, 펀치가 적중할 때마다 자기 자신을 치유합니다."
 TID_ENRAGER_ULTI,스피드 볼트
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"맵 메이커를 이용해주셔서 감사합
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"맵 메이커를 이용해주셔서 감사합니다. 맵 메이커 기능 이용 시 이용 약관 및 기타 관련 규정을 준수해 주시길 바랍니다. 선정적, 외설적, 또는 국가 통합, 주권 및 영토 무결성을 위협하거나 법률 및 기타 규정을 위반하는 부적절한 콘텐츠를 제작하거나 유포하지 마십시오."
 TID_RUFFS,러프스
 TID_RUFFS_SHORT_DESC,서포터
-TID_RUFFS_DESC,"부하에게 명령을 내릴 땐 매섭게 짖기도 하지만 사실은 착한 친구입니다!\n\n진지하고 근엄한 러프스는 좀처럼 개의 습성을 드러내지 않지만, 만약 누군가 나무 막대기나 원반을 던지면..."
+TID_RUFFS_DESC,부하에게 명령을 내릴 땐 매섭게 짖기도 하지만 사실은 착한 친구입니다!\n\n평소엔 차분한 러프스 대령이지만 누군가 나무 막대기나 원반을 던지면 개의 습성을 드러냅니다.
 TID_RUFFS_WEAPON,트윈 레이저
 TID_RUFFS_WEAPON_DESC,트윈 레이저가 장벽에 여러 번 튕겨 나옵니다. 장애물 뒤도 안전하지 않습니다!
 TID_RUFFS_ULTI,보급품 투하
@@ -4923,7 +4938,7 @@ TID_QUALIFIED_INFO_GENERIC_NOUNIQUE,<CHALLENGE> 완료!\n무료 메가 상자를
 TID_INBOX_CAPTION_65,선물:스킨 구매 옵션
 TID_ROPE_DUDE,버즈
 TID_ROPE_DUDE_SHORT_DESC,어쌔신
-TID_ROPE_DUDE_DESC,벨로시래피드의 라이프가드인 버즈는 위험에 빠진 친구를 보면 레스큐 튜브를 던져 구해내려고 하지만... 너무 세게 던져버린 것 같네요.
+TID_ROPE_DUDE_DESC,벨로시래피드의 안전요원인 버즈는 위험에 빠진 친구를 보면 레스큐 튜브를 던져 구해내려고 하지만... 힘 조절이 잘 안되는 것 같네요.
 TID_ROPE_DUDE_WEAPON,저리 가!
 TID_ROPE_DUDE_WEAPON_DESC,호루라기를 불어 부채꼴 모양으로 빠르게 5번 공격합니다.
 TID_ROPE_DUDE_ULTI,튜브 던지기
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,스플래시 아웃
 TID_KO_JUNE21_2,딥 엔드
 TID_QUALIFIED_INFO_PARAM,<CHALLENGE> 완료!\n챌린지 완료 보상: <REWARD>
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,<CHALLENGE> <WIN>승 보상: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,<CHALLENGE> 완료! 챌린지 완료 보상: <REWARD>\n이미 보유한 보상은 이것으로 대체됩니다.
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,<CHALLENGE> <WIN>승 보상: <REWARD>\n이미 보유한 보상은 이것으로 대체됩니다.
 TID_CHALLENGE_TEASER_INFO_PARAM,<CHALLENGE> 곧 시작!\n\n매치 <WIN>회를 승리해 <REWARD> 보상을 획득하세요! 친구와 함께 또는 \q팀 찾기\q 기능으로 팀을 만들어 승률을 높이세요.\n\n챌린지는 <DURATION>시간 동안만 진행됩니다. 행운을 빕니다!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,챌린지를 완료하고 <REWARD> 보상을 획득하세요!
 TID_GEN_JUNE21_1,스플래시 패드
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,트로피 <NUM>개를 모아 챌린지 잠
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,선택한 스킨 하나가 적용됩니다.
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,선택한 스킨 중에서 무작위로 하나가 적용됩니다.
 TID_GEAR_TOKEN_DROP_TITLE,기어 토큰
-TID_GEAR_TOKEN_DAMAGE,피해 토큰
-TID_GEAR_TOKEN_HEAL,회복 토큰
-TID_GEAR_TOKEN_RESISTANCE,저항 토큰
-TID_GEAR_TOKEN_SHIELD,보호막 토큰
-TID_GEAR_TOKEN_SPEED,속도 토큰
-TID_GEAR_TOKEN_TYPE_DAMAGE,피해
-TID_GEAR_TOKEN_TYPE_HEAL,회복
-TID_GEAR_TOKEN_TYPE_VISION,시야
-TID_GEAR_TOKEN_TYPE_SHIELD,보호막
-TID_GEAR_TOKEN_TYPE_SPEED,속도
-TID_GEAR_TOKEN,기어 토큰
 TID_GEAR_SCRAP_DROP_TITLE,스크랩
 TID_GEAR_SCRAP,스크랩
 TID_GEAR_UNLOCK_SLOT,기어 슬롯 <NUM>\n잠금 해제
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,회복
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,피해
 TID_GEAR_VISION_TITLE,시야
 TID_GEAR_SHIELD_TITLE,보호막
+TID_GEAR_RELOAD_SPEED_TITLE,재장전 속도
+TID_GEAR_SUPER_CHARGE_TITLE,특수 충전
 TID_GEAR_FOREST_SPEED_INFO,덤불 속에서 이동할 때 속도가 <NUM>% 증가합니다.
 TID_GEAR_STANDING_HEAL_INFO,HP를 <NUM>% 더 효과적으로 회복합니다.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,HP가 50% 미만일 때 <NUM>%의 추가 피해를 줍니다.
 TID_GEAR_VISION_INFO,피해를 입힌 적을 <NUM>초 동안 노출시킵니다.
 TID_GEAR_SHIELD_INFO,"소모성 보호막으로서 <NUM>HP를 추가로 얻습니다. 브롤러의 HP가 가득 차면, 10초 후 보호막이 완전히 회복됩니다."
+TID_GEAR_RELOAD_SPEED_INFO,재장전 속도가 <NUM>% 증가합니다.
+TID_GEAR_SUPER_CHARGE_INFO,특수 공격이 <NUM>% 더 빠르게 충전됩니다.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,덤불 내 이동 속도가 증가합니다.
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,HP를 더 효과적으로 회복합니다.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,HP가 50% 미만일 때 추가 피해를 줍니다.
 TID_GEAR_VISION_UPGRADE_INFO,피해를 입힌 적을 노출시킵니다.
 TID_GEAR_SHIELD_UPGRADE_INFO,HP를 올려주는 보호막을 얻습니다.
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,재장전 속도 증가
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,특수 공격 충전 속도 증가
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,이동 속도 증가
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,회복 보너스
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,추가 피해
 TID_GEAR_VISION_UPGRADE_TARGET,노출 시간(초)
 TID_GEAR_SHIELD_UPGRADE_TARGET,보호막 HP
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,재장전 속도
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,특수 충전 속도
+TID_GEAR_SUPER_HEALTH_TITLE,머리 폭탄 HP
+TID_GEAR_SUPER_HEALTH_INFO,머리 폭탄의 HP가 <NUM> 증가합니다.
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,머리 폭탄 HP 증가
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,머리 폭탄 HP
+TID_GEAR_SUPER_RANGE_TITLE,너클 사정거리
+TID_GEAR_SUPER_RANGE_INFO,너클 사정거리 타일 1개 증가
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,너클 사정거리 증가
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,너클 사정거리
 TID_GEAR_UPGRADED,기어가 업그레이드되었습니다!
 TID_GEAR_TITLE,기어
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> <NUM>레벨
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,기어: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,기어 <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,이 기어는 이미 다른 슬롯에서 사용 중입니다
 TID_ITEMS_TITLE,아이템
 TID_TEAMUP_YOUR_SETTINGS_TITLE,개인 설정
 TID_TRUE_SILVER_BROCK_SKIN,트루 실버 브록
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>파워 매치</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,파워 매치
 TID_CLUB_INFO_COLUMN_TROPHIES,트로피
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,파워 리그 랭크
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,마지막 접속
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,상태
 TID_CLUB_INFO_COLUMN_NAME,이름
 TID_CLUB_INFO_COLUMN_TICKETS_USED,사용한 티켓
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,클럽 트로피
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,매치 패배
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,무작위로 팀 구성
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,클럽 멤버들과\n팀 구성
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,클럽 트로피 보상
-TID_REWARD_DESC_GEAR_TOKENS,기어 토큰
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,기어 토큰
-TID_REWARD_DESC_GEAR_SCRAP,기어 스크랩
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,이번 주에 참여하기에는 너무 늦으신 것 같습니다!\n\n다음 주가 시작되기 전까지 부담 없이 둘러보면서 클럽의 대결을 관전해 보세요!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,클럽 상점에 준비된 상품을 확인해 보세요!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,최종 결과:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,X-팩터
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,그롬의 일반 공격에서 갈라져 나온 파편이 최대 거리에서 <c00cc00>+<VALUE1>%</c>의 추가 피해를 줍니다.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,감시 레이더
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,그롬 폭탄에서 감시 레이더를 꺼내 모든 아군이 넓은 범위의 덤불 속을 볼 수 있도록 해줍니다. 감시 레이더는 서서히 HP를 잃습니다.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,첫 번째 기어를 제작하세요.
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,브롤 상자나 클럽 상점을 통해 더 많은 기어 토큰과 스크랩을 모아 기어를 제작하고 업그레이드하세요.
-TID_FIRST_GEAR_TUTORIAL_TITLE,기어 슬롯
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,기어 슬롯 잠금 해제!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,첫 번째 기어를 무료로 선택하세요.
+TID_ITEMS_HUB_GUIDE_GADGET,<BRAWLER> 브롤러를 위한 특별한 가젯을 선택해 구매할 수 있습니다.
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,가젯 여기서 구매 가능
+TID_ITEMS_HUB_GUIDE_STARPOWER,<BRAWLER>브롤러를 위한 특별한 스타 파워를 선택해 구매할 수 있습니다.
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,스타 파워 여기서 구매 가능
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,가젯 여기서 구매 가능
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,스타 파워 여기서 구매 가능
+TID_FIRST_GEAR_TUTORIAL_TITLE,기어
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,잠금 해제!
 TID_FIRST_GEAR_TUTORIAL_HEADER,기어
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,브롤러를 위해 원하는 추가 능력을 제작하세요.
@@ -6345,7 +6372,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,자기 주변을 빙빙 도는 불꽃 
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,공구함
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,공구함을 떨어뜨려 근처 아군의 재장전 속도를 높입니다. 공구함이 파괴될 때까지 아군의 재장전 속도가 <c00cc00><VALUE1>%</c> 증가합니다.
 TID_ACCESSORY_ROPE_DUDE_VISION,엑스레이 고글
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,특수 공격이 충전되는 구역에서 <c00cc00><VALUE1></c>초 동안 모든 덤불 속을 볼 수 있습니다.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,<c00cc00><VALUE1></c>초 동안 특수 공격이 충전되는 영역의 모든 덤불 속을 볼 수 있습니다.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,이미 보유한 브롤러입니다
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,이미 보유한 가젯입니다
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,이미 보유한 스타 파워입니다
@@ -6611,33 +6638,33 @@ TID_WEAPON_THROWER_DESC,"한때 공장 노동자였던 샘 브론슨은 로봇�
 TID_WEAPON_THROWER_WEAPON,원투 펀치
 TID_WEAPON_THROWER_WEAPON_DESC,강력한 2연타를 날립니다. 장갑을 꼈을 땐 훨씬 더 많은 피해를 입힙니다.
 TID_WEAPON_THROWER_ULTI,로켓 너클
-TID_WEAPON_THROWER_ULTI_DESC,로켓 너클을 날려 땅에 떨어질 때까지 적중한 모든 적에게 피해를 줍니다. 다시 사용하면 땅의 핵주먹이 팔로 돌아오면서 관통하는 적에게 피해를 입힙니다.
+TID_WEAPON_THROWER_ULTI_DESC,로켓 너클을 날려 땅에 떨어질 때까지 적중한 모든 적에게 피해를 줍니다. 재사용 시 바닥에 있는 너클이 샘에게 돌아오면서 관통하는 적에게 다시 피해를 입힙니다.
 TID_SPEC_ABI_WEAPON_THROWER_1,원기회복
 TID_SPEC_ABI_WEAPON_THROWER_1_DESC,로켓 너클을 불러올 때 <c00cc00><VALUE1>%</c>의 HP를 바로 회복합니다.
 TID_SPEC_ABI_WEAPON_THROWER_2,원격 충전
 TID_SPEC_ABI_WEAPON_THROWER_2_DESC,땅에 떨어진 로켓 너클 주변에 적이 있으면 샘의 특수 공격이 충전됩니다.
 TID_ACCESSORY_WEAPON_THROWER_GADGET_1,자기장
-TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,땅에 떨어진 로켓 너클 주변의 적을 로켓 너클 쪽으로 끌어당깁니다.
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,땅에 떨어진 로켓 너클 주변의 적을 너클 쪽으로 끌어당깁니다.
 TID_ACCESSORY_WEAPON_THROWER_GADGET_2,전류 분출
-TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,로켓 너클이 땅에 착지한 후 다시 특수 공격을 사용하면 전류가 분출돼 적을 뒤로 밀칩니다.
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,특수 공격 사용 시 로켓 너클이 땅에 착지할 때 전류가 분출돼 적을 뒤로 밀칩니다.
 TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,로켓 너클이 바닥에 있어야 합니다!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,로켓 너클이 너무 멀리 있습니다!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,로켓 너클이 필요합니다!
 TID_SOUL_COLLECTOR,거스
 TID_SOUL_COLLECTOR_SHORT_DESC,서포터
-TID_SOUL_COLLECTOR_DESC,잊혀진 폐허 같은 기차 안에 사는 거스는 언제나 풍선을 들고 다닙니다. 외로움을 달래기 위해 풍선으로 동물 친구들을 만들다 보니 풍선 아트의 마스터가 되었습니다.
+TID_SOUL_COLLECTOR_DESC,"잊혀진 폐허 같은 기차 안에 사는 거스는 언제나 풍선을 들고 다닙니다. 전해지는 이야기에 따르면, 개 모양 풍선을 따라가다 길을 잃어 기차에 머물게 됐답니다."
 TID_SOUL_COLLECTOR_WEAPON,오싹한 풍선
-TID_SOUL_COLLECTOR_WEAPON_DESC,적에게 풍선을 던집니다. 공격이 여러 번 적중하면 유령이 나타납니다. 자신이나 팀원이 유령을 수집하면 약간의 HP를 회복할 수 있습니다.
+TID_SOUL_COLLECTOR_WEAPON_DESC,"적에게 풍선을 던집니다. 이 공격이 여러 번 적중하면 유령이 나타나며, 거스나 팀원이 유령을 수집하면 소량의 HP를 회복합니다."
 TID_SOUL_COLLECTOR_ULTI,스푸키
-TID_SOUL_COLLECTOR_ULTI_DESC,풍선으로 만든 베스트 프렌드 스푸키로 자신이나 팀원 주위에 보호막을 만듭니다.
+TID_SOUL_COLLECTOR_ULTI_DESC,풍선으로 만든 절친 스푸키로 자신이나 팀원 한 명 주위에 보호막을 만듭니다.
 TID_SPEC_ABI_SOUL_COLLECTOR_1,회복 뿜뿜
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,오싹한 풍선의 유령에서 얻는 회복치가 <c00cc00><VALUE1>%</c> 증가합니다.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,유령에서 얻는 회복치가 <c00cc00><VALUE1>%</c> 증가합니다.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,든든한 내 친구
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,스푸키가 팀원이 입히는 피해량을 <c00cc00><VALUE2></c>초 동안 <c00cc00><VALUE1>%</c> 증가시킵니다.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,유령 팡팡
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,수집되지 않은 유령을 모두 터뜨려 주변의 적에게 <c00cc00><VALUE1></c>의 피해를 줍니다.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,영혼 교체
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,HP <ccc0000><VALUE1>%</c>를 잃고 영혼치 <c00cc00><VALUE2>%</c>를 바로 획득합니다.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,HP <ccc0000><VALUE1>%</c>를 소모해 즉시 <c00cc00><VALUE2>%</c>의 영혼치를 얻습니다.
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,유령이 없습니다!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,영혼치가 이미 최대입니다!
 TID_SKIN_INFO_OUTLAW,컬래미티 갱 스킨
@@ -6713,8 +6740,8 @@ TID_BROKER_PAM_SKIN,월 스트리트 팸
 TID_BROKER_PAM_SKIN_SHOP,월 스트리트 팸
 TID_MOON_FESTIVAL_SQUEAK_SKIN,옥토끼 스퀴크
 TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,옥토끼 스퀴크
-TID_BRAWLOWEEN_LEON_SKIN,핼러윈 레온
-TID_BRAWLOWEEN_LEON_SKIN_SHOP,핼러윈 레온
+TID_BRAWLOWEEN_LEON_SKIN,할로윈 레온
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,할로윈 레온
 TID_HINT_45,상점에서 꼭 크리에이터 코드를 사용하세요.
 TID_HINT_46,매일 게임에 로그인해 무료 일일 보상을 받으세요!
 TID_HINT_47,브롤 볼에서 적에게 공을 패스해 탄약을 낭비하도록 유도할 수 있습니다!
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8비트의 작동이 중지됩니다!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,컬래미티 갱 핀 팩
 TID_SHOP_OUTLAW_SKINS,컬래미티 갱 스킨
 TID_SHOP_OUTLAW_TITLE,컬래미티 갱
+TID_GEAR_RARITY_RARE,희귀
+TID_GEAR_RARITY_SUPER_RARE,초희귀
+TID_GEAR_RARITY_EPIC,영웅
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - 희귀 기어
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - 초희귀 기어
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - 영웅 기어
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,유령이 너무 멀리 있습니다!
+TID_TRY_BRAWLER_TITLE,브롤러 체험하기
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,연습 매치
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,훈련장
+TID_FIRST_GADGET_TUTORIAL_HEADER,가젯
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,브롤러의 추가 능력
+TID_FIRST_GADGET_TUTORIAL_1_DESC,모든 브롤러는 파워 레벨 7에 가젯 슬롯을 잠금 해제합니다.
+TID_FIRST_GADGET_TUTORIAL_2_DESC,각 브롤러에게는 고유의 가젯이 있습니다.
+TID_FIRST_GADGET_TUTORIAL_3_DESC,선택한 가젯은 매치당 최대 3번 사용할 수 있습니다.
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,스타 파워
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,브롤러를 위한 특별한 패시브 능력입니다.
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,모든 브롤러는 파워 레벨 9에 스타 파워 슬롯을 잠금 해제합니다.
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,각 브롤러에게는 고유의 스타 파워가 있습니다.
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,선택한 스타 파워는 항상 활성화됩니다.
+TID_FIRST_GEAR_TUTORIAL_1_DESC,모든 브롤러는 파워 레벨 10에 첫 번째 기어 슬롯을 잠금 해제합니다.
+TID_FIRST_GEAR_TUTORIAL_2_DESC,각 브롤러가 사용할 수 있는 기어는 여러 종류가 있습니다.
+TID_FIRST_GEAR_TUTORIAL_3_DESC,선택한 기어는 항상 활성화됩니다.
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,연습 매치 선택 중
+TID_SHIELD_TANK,버스터
+TID_SHIELD_TANK_SHORT_DESC,탱커
+TID_SHIELD_TANK_DESC,영화관에서 영사기를 담당하는 버스터는 액션 영화 마니아입니다. 좋아하는 액션 영화에 관한 이모저모를 두루 꿰고 있죠. 언젠가는 블록버스터 영화의 액션 히어로가 될 거라는 꿈을 품고 있답니다.
+TID_SHIELD_TANK_WEAPON,렌즈 섬광탄
+TID_SHIELD_TANK_WEAPON_DESC,영사기 렌즈로 범위 내 적에게 빛을 쏴 피해를 줍니다.
+TID_SHIELD_TANK_ULTI,몽타주
+TID_SHIELD_TANK_ULTI_DESC,자신 앞에 보호막을 비춰 적의 공격을 막고 반사시킵니다.
+TID_SPEC_ABI_SHIELD_TANK_1,감독판
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,버스터의 렌즈 섬광탄이 특수 공격이 충전되는 영역 내의 팀원 한 명마다 <c00cc00><VALUE1>%</c>의 추가 피해를 줍니다.
+TID_SPEC_ABI_SHIELD_TANK_2,방탄 조끼
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"몽타주가 활성화되어 있는 동안 버스터가 입는 피해량이 <c00cc00><VALUE1>%</c> 감소하며, 넉백, 감속 및 마비 효과에 면역 상태가 됩니다."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,유틸리티 벨트
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,버스터의 특수 공격 충전 영역 내에 있는 각 팀원의 HP가 <c00cc00><VALUE1></c>만큼 회복됩니다.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,예고편
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,다음 렌즈 섬광탄 공격이 적을 자신 쪽으로 끌어오고 <c00cc00><VALUE1></c>초간 느리게 만듭니다.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> 기어 토큰\n<SCRAP> 스크랩
+TID_GEAR_COMPENSATION_CLAIM,받기
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,브롤러에게 신규 패시브 능력을 장착시켜보세요.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,확인!
+TID_INBOX_CAPTION_52,<NAME>에게 <TYPE> 기어 선물
+TID_GEAR_COMPENSATION_INFO,"여기 <COINS> 코인을 받으시고 기어와 기어 토큰, 스크랩을 사용해보세요!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,"기어가 초기화되었으며, 이에 대한 보상으로 <COINS> 코인을 드립니다."
+TID_RECRUIT_TOKEN,리크루트 토큰
+TID_CHROMATIC_TOKEN,크로마틱 토큰
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,스타 파워
+TID_FIRST_GADGET_TUTORIAL_TITLE,가젯
+TID_GEAR_TO_COINS_POPUP_TITLE,기어가 새로워졌습니다!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,신규 기어 사용 가능!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,브롤러 화면에서 신규 기어를 확인해보세요.
+TID_GEAR_TO_COINS_POPUP_INFO,"보유한 모든 기어가 초기화되었습니다. 더 이상 기어는 제작되거나 업그레이드 되지 않습니다. 이제 기어에 희귀, 초희귀, 또는 영웅 등급의 희귀도가 있습니다.\n\n지금까지 모은 기어 토큰과 스크랩은 이제 코인으로 환급됩니다. 코인으로 신규 기어를 구매하세요!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,환급:
+TID_REPORT_PLAYER_REPORT,신고
+TID_REPORT_PLAYER_REPORTED,신고 완료
+TID_REPORT_PLAYER_POPUP_TITLE,<PLAYER_NAME> 님을 신고하시겠습니까?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"<PLAYER_NAME> 님을 그리핑으로 신고하고 있습니다.\n\n그리핑이란 고의로 이벤트 목표를 완료하지 않고 방해하는 부정 행위로, 팀과 매치 결과 모두에 영향을 미칩니다.\n\n흔한 예로는 자폭과 승부 조작, 잠수 행위 등이 있습니다."
+TID_REPORT_PLAYER_BUTTON_REPORT,신고
+TID_REPORT_PLAYER_BUTTON_CANCEL,취소
+TID_QUEST_FALLBACK_REWARD_DESC,해당 퀘스트 보상을 이미 보유하여 <REWARD>이 지급됩니다!
+TID_QUEST_FALLBACK_REWARD_TITLE,퀘스트 보상
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,받기
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,리크루트 진척도
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,크로마틱 상점
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,<NUM>명의 크로마틱 브롤러를 더 잠금 해제하세요
+TID_BUTTON_NAVI_RECRUIT_ROAD,리크루트 진척도
+TID_SKIN_INFO_GHOST_TRAIN,고스트 스테이션 스킨
+TID_SCID_PURCHASE_VERIFICATION_ERROR,구매를 승인하는 데 오류가 발생했습니다.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,팀원 근처에 있으면 특수 공격을 충전합니다.
+TID_SKIN_INFO_ACTION,액션 히어로 스킨
+TID_SKIN_INFO_WF_2022,2022 월드 파이널 스킨
+TID_BRAWL_PASS_SEASON_14,고스트 스테이션
+TID_CHAINSAW_BUSTER_SKIN,전기톱 버스터
+TID_CHAINSAW_BUSTER_SKIN_SHOP,전기톱 버스터
+TID_GHOST_TRAIN_GROM_SKIN,프랑켄그롬
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,프랑켄그롬
+TID_GHOST_TRAIN_COLETTE_SKIN,검표원 콜레트
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,검표원 콜레트
+TID_BRICK_OVEN_ASH_SKIN,피자 화덕 애쉬
+TID_BRICK_OVEN_ASH_SKIN_SHOP,피자 화덕 애쉬
+TID_VETERAN_SQUEAK_SKIN,코만도 스퀴크
+TID_VETERAN_SQUEAK_SKIN_SHOP,코만도 스퀴크
+TID_ZOMBIE_BROCK_SKIN,좀비 브록
+TID_ZOMBIE_BROCK_SKIN_SHOP,좀비 브록
+TID_MEGA_MEGABOX_DARRYL_SKIN,오메가 상자 대릴
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,오메가 상자 대릴
+TID_GHOST_METRO_PENNY_SKIN,펑크 판다 페니
+TID_GHOST_METRO_PENNY_SKIN_SHOP,펑크 판다 페니
+TID_BSWF22_TARA_SKIN,노발대발 타라
+TID_BSWF22_TARA_SKIN_SHOP,노발대발 타라
+TID_TOPGUN_JANET_SKIN,G-포스 자넷
+TID_TOPGUN_JANET_SKIN_SHOP,G-포스 자넷
+TID_SHOP_OFFER_TITLE_40,오메가 상자
+TID_PIN_OFFER_TITLE,핀 특별 상품
+TID_THUMBNAILS_OFFER_TITLE,아이콘 특별 상품
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,브롤 패스
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"전용 보상과 추가 퀘스트, 그리고 매주 <NUM>번의 추가 리롤 기회 획득"
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,사용하기
+TID_BRAWL_PASS_REDEEM,사용하기
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Supercell ID에 사용 가능한 브롤 패스가 <NUMBER>개 있습니다. 하나를 사용해 이번 시즌 브롤 패스를 활성화할까요?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,잠시만 기다려주세요. Supercell ID의 브롤 패스 사용을 처리하는 중입니다.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Supercell ID에 사용 가능한 브롤 패스가 충분치 않습니다. Supercell 스토어에서 더 구입하세요.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,보석 한 줌
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,보석 주머니
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,보석 가방
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,보석 통
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,보석 상자
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,보석 금고
+TID_SUPERCELL_STORE_BRAWL_PASS,브롤 패스
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,브롤 패스 번들
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -98,7 +98,7 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p0, v1, p1, v1}, Lcom/supercell/titan/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p0, v1, p1, v1}, Lcom/android/billingclient/api/f;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -784,13 +784,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 26
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static loadMyRanking(Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
@@ -1136,13 +1130,7 @@
     invoke-static {p1, p4, p2, p3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 28
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static loadRankings(Ljava/lang/String;IILcom/kakaogame/KGResultCallback;)V
@@ -1225,7 +1213,7 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p0, v1, p1, v1}, Lcom/supercell/titan/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p0, v1, p1, v1}, Lcom/android/billingclient/api/f;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1670,13 +1658,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 22
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static saveRankingProperties(Ljava/lang/String;Ljava/util/Map;Lcom/kakaogame/KGResultCallback;)V

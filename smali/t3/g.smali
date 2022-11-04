@@ -1,73 +1,176 @@
-.class public final synthetic Lt3/g;
+.class public final Lt3/g;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/instantapps/zzap;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static synthetic a(ILjava/lang/String;)V
-    .locals 5
+.method public constructor <init>()V
+    .locals 0
 
-    if-eqz p0, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    :cond_0
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    move-result-object p0
+    move-result v0
 
-    invoke-virtual {p0}, Ljava/lang/Thread;->getStackTrace()[Ljava/lang/StackTraceElement;
+    const/4 v1, 0x0
 
-    move-result-object p0
+    const/4 v2, 0x0
 
-    const/4 v0, 0x3
+    move-object v4, v1
+
+    move-object v6, v4
+
+    move-object v7, v6
+
+    move-object v8, v7
+
+    move-object v9, v8
+
+    move-object v10, v9
+
+    move v5, v2
 
     .line 2
-    aget-object p0, p0, v0
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, v0, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v0
+    move-result v1
+
+    const v2, 0xffff
+
+    and-int/2addr v2, v1
+
+    packed-switch v2, :pswitch_data_0
 
     .line 4
-    invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    move-result-object p0
+    goto :goto_0
 
     .line 5
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    :pswitch_0
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    const-string v2, "Parameter specified as non-null is null: method "
-
-    const-string v3, "."
-
-    const-string v4, ", parameter "
+    goto :goto_0
 
     .line 6
-    invoke-static {v2, v0, v3, p0, v4}, Lcom/supercell/titan/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_1
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v10
+
+    goto :goto_0
 
     .line 7
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_2
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object p0
-
-    invoke-direct {v1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    goto :goto_0
 
     .line 8
-    const-class p0, Lt3/h;
+    :pswitch_3
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object p0
-
-    invoke-static {v1, p0}, Lt3/h;->i(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
+    goto :goto_0
 
     .line 9
-    throw v1
+    :pswitch_4
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v7
+
+    goto :goto_0
+
+    .line 10
+    :pswitch_5
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_0
+
+    .line 11
+    :pswitch_6
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v5
+
+    goto :goto_0
+
+    .line 12
+    :pswitch_7
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 14
+    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzap;
+
+    move-object v3, p1
+
+    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/internal/instantapps/zzap;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzap;
+
+    return-object p1
 .end method

@@ -1,86 +1,159 @@
 .class public final Lp4/b;
 .super Ljava/lang/Object;
-.source "MaterialAttributes.java"
+.source "AdjustedCornerSize.java"
+
+# interfaces
+.implements Lp4/c;
+
+
+# instance fields
+.field public final a:Lp4/c;
+
+.field public final b:F
 
 
 # direct methods
-.method public static a(Landroid/content/Context;I)Landroid/util/TypedValue;
-    .locals 2
+.method public constructor <init>(FLp4/c;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Landroid/util/TypedValue;
-
-    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object p0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method public static b(Landroid/content/Context;ILjava/lang/String;)I
-    .locals 3
-
-    .line 1
-    invoke-static {p0, p1}, Lp4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
-
-    move-result-object v0
+    :goto_0
+    instance-of v0, p2, Lp4/b;
 
     if-eqz v0, :cond_0
 
-    .line 2
-    iget p0, v0, Landroid/util/TypedValue;->data:I
-
-    return p0
-
     .line 3
+    check-cast p2, Lp4/b;
+
+    iget-object p2, p2, Lp4/b;->a:Lp4/c;
+
+    .line 4
+    move-object v0, p2
+
+    check-cast v0, Lp4/b;
+
+    iget v0, v0, Lp4/b;->b:F
+
+    add-float/2addr p1, v0
+
+    goto :goto_0
+
+    .line 5
     :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    iput-object p2, p0, Lp4/b;->a:Lp4/c;
 
-    const/4 v1, 0x2
+    .line 6
+    iput p1, p0, Lp4/b;->b:F
 
-    new-array v1, v1, [Ljava/lang/Object;
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/graphics/RectF;)F
+    .locals 1
+
+    iget-object v0, p0, Lp4/b;->a:Lp4/c;
+
+    invoke-interface {v0, p1}, Lp4/c;->a(Landroid/graphics/RectF;)F
+
+    move-result p1
+
+    iget v0, p0, Lp4/b;->b:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    instance-of v1, p1, Lp4/b;
 
     const/4 v2, 0x0
 
-    aput-object p2, v1, v2
+    if-nez v1, :cond_1
 
-    const/4 p2, 0x1
+    return v2
 
-    .line 4
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    .line 2
+    :cond_1
+    check-cast p1, Lp4/b;
 
-    move-result-object p0
+    .line 3
+    iget-object v1, p0, Lp4/b;->a:Lp4/c;
 
-    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    iget-object v3, p1, Lp4/b;->a:Lp4/c;
 
-    move-result-object p0
+    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    aput-object p0, v1, p2
+    move-result v1
 
-    const-string p0, "%1$s requires a value for the %2$s attribute to be set in your app theme. You can either set the attribute in your theme or update your theme to inherit from Theme.MaterialComponents (or a descendant)."
+    if-eqz v1, :cond_2
 
-    .line 5
-    invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    iget v1, p0, Lp4/b;->b:F
 
-    move-result-object p0
+    iget p1, p1, Lp4/b;->b:F
 
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    cmpl-float p1, v1, p1
 
-    throw v0
+    if-nez p1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v2
+
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    iget-object v1, p0, Lp4/b;->a:Lp4/c;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    iget v1, p0, Lp4/b;->b:F
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    return v0
 .end method

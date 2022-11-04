@@ -54,41 +54,45 @@
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->b:F
 
     .line 4
-    invoke-static {p1}, Lf0/r;->p(Landroid/view/View;)F
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationZ()F
 
     move-result v0
 
+    .line 6
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->c:F
 
-    .line 5
+    .line 7
     invoke-virtual {p1}, Landroid/view/View;->getScaleX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->d:F
 
-    .line 6
+    .line 8
     invoke-virtual {p1}, Landroid/view/View;->getScaleY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
-    .line 7
+    .line 9
     invoke-virtual {p1}, Landroid/view/View;->getRotationX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->f:F
 
-    .line 8
+    .line 10
     invoke-virtual {p1}, Landroid/view/View;->getRotationY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->g:F
 
-    .line 9
+    .line 11
     invoke-virtual {p1}, Landroid/view/View;->getRotation()F
 
     move-result p1
@@ -121,7 +125,7 @@
 
     move-object v0, p1
 
-    invoke-static/range {v0 .. v8}, Landroidx/transition/ChangeTransform;->M(Landroid/view/View;FFFFFFFF)V
+    invoke-static/range {v0 .. v8}, Landroidx/transition/ChangeTransform;->L(Landroid/view/View;FFFFFFFF)V
 
     return-void
 .end method
@@ -221,11 +225,11 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    cmpl-float v2, v0, v1
 
-    cmpl-float v3, v0, v2
+    const/4 v3, 0x0
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
@@ -234,150 +238,150 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->b:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->b:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_1
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_1
 
     :cond_1
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_1
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->c:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->c:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_2
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_2
 
     :cond_2
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_2
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 4
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->d:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->d:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_3
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_3
 
     :cond_3
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_3
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 5
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->e:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_4
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_4
 
     :cond_4
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_4
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 6
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->f:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->f:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_5
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_5
 
     :cond_5
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_5
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 7
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->g:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->g:F
 
-    cmpl-float v4, v3, v2
+    cmpl-float v4, v2, v1
 
     if-eqz v4, :cond_6
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_6
 
     :cond_6
-    const/4 v3, 0x0
+    move v2, v3
 
     :goto_6
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 8
-    iget v3, p0, Landroidx/transition/ChangeTransform$e;->h:F
+    iget v2, p0, Landroidx/transition/ChangeTransform$e;->h:F
 
-    cmpl-float v2, v3, v2
+    cmpl-float v1, v2, v1
 
-    if-eqz v2, :cond_7
+    if-eqz v1, :cond_7
 
-    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
 
-    move-result v1
+    move-result v3
 
     :cond_7
-    add-int/2addr v0, v1
+    add-int/2addr v0, v3
 
     return v0
 .end method

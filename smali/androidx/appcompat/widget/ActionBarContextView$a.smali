@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/ActionBarContextView;->f(Lf/b;)V
+    value = Landroidx/appcompat/widget/ActionBarContextView;->f(Lf/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lf/b;
+.field public final synthetic f:Lf/a;
 
 
 # direct methods
-.method public constructor <init>(Lf/b;)V
+.method public constructor <init>(Lf/a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->f:Lf/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->f:Lf/a;
 
-    invoke-virtual {p1}, Lf/b;->c()V
+    invoke-virtual {p1}, Lf/a;->c()V
 
     return-void
 .end method

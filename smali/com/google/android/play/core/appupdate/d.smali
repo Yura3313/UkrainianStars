@@ -1,12 +1,12 @@
 .class public final Lcom/google/android/play/core/appupdate/d;
-.super Lb5/c;
+.super Lz4/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lb5/c<",
-        "Ly4/a;",
+        "Lz4/c<",
+        "Lw4/b;",
         ">;"
     }
 .end annotation
@@ -16,11 +16,11 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    new-instance v0, La5/b;
+    new-instance v0, Lx3/g3;
 
     const-string v1, "AppUpdateListenerRegistry"
 
-    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lx3/g3;-><init>(Ljava/lang/String;)V
 
     new-instance v1, Landroid/content/IntentFilter;
 
@@ -28,7 +28,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0, v1, p1}, Lb5/c;-><init>(La5/b;Landroid/content/IntentFilter;Landroid/content/Context;)V
+    invoke-direct {p0, v0, v1, p1}, Lz4/c;-><init>(Lx3/g3;Landroid/content/IntentFilter;Landroid/content/Context;)V
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
 # virtual methods
 .method public final a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 19
+    .locals 20
 
     move-object/from16 v0, p0
 
@@ -64,21 +64,21 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v2, v0, Lb5/c;->a:La5/b;
+    iget-object v2, v0, Lz4/c;->a:Lx3/g3;
 
     new-array v7, v6, [Ljava/lang/Object;
 
     const-string v8, "List of extras in received intent:"
 
     .line 1
-    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v2, v5, v8, v7}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v2}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
@@ -103,7 +103,7 @@
 
     check-cast v7, Ljava/lang/String;
 
-    iget-object v10, v0, Lb5/c;->a:La5/b;
+    iget-object v10, v0, Lz4/c;->a:Lx3/g3;
 
     new-array v9, v9, [Ljava/lang/Object;
 
@@ -113,27 +113,27 @@
 
     move-result-object v11
 
-    invoke-virtual {v11, v7}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v11, v7}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v7
 
     aput-object v7, v9, v4
 
     .line 3
-    invoke-virtual {v10, v5, v8, v9}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v10, v5, v8, v9}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto :goto_0
 
     .line 4
     :cond_0
-    iget-object v2, v0, Lb5/c;->a:La5/b;
+    iget-object v2, v0, Lz4/c;->a:Lx3/g3;
 
     new-array v7, v6, [Ljava/lang/Object;
 
     const-string v10, "List of extras in received intent needed by fromUpdateIntent:"
 
     .line 5
-    invoke-virtual {v2, v5, v10, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v2, v5, v10, v7}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     new-array v7, v9, [Ljava/lang/Object;
 
@@ -153,7 +153,7 @@
     aput-object v11, v7, v4
 
     .line 7
-    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v2, v5, v8, v7}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     new-array v7, v9, [Ljava/lang/Object;
 
@@ -173,12 +173,12 @@
     aput-object v11, v7, v4
 
     .line 9
-    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v2, v5, v8, v7}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 10
     invoke-virtual {v1, v10, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v12
+    move-result v13
 
     const-wide/16 v7, 0x0
 
@@ -186,27 +186,31 @@
 
     invoke-virtual {v1, v2, v7, v8}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
 
-    move-result-wide v13
+    move-result-wide v14
 
     const-string v2, "total.bytes.to.download"
 
     invoke-virtual {v1, v2, v7, v8}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
 
-    move-result-wide v15
+    move-result-wide v16
 
     invoke-virtual {v1, v9, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v17
+    move-result v18
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v18
+    move-result-object v19
 
-    invoke-static/range {v12 .. v18}, Ly4/a;->a(IJJILjava/lang/String;)Ly4/a;
+    .line 11
+    new-instance v1, Lw4/d;
 
-    move-result-object v1
+    move-object v12, v1
 
-    iget-object v2, v0, Lb5/c;->a:La5/b;
+    invoke-direct/range {v12 .. v19}, Lw4/d;-><init>(IJJILjava/lang/String;)V
+
+    .line 12
+    iget-object v2, v0, Lz4/c;->a:Lx3/g3;
 
     new-array v3, v4, [Ljava/lang/Object;
 
@@ -214,16 +218,16 @@
 
     const-string v4, "ListenerRegistryBroadcastReceiver.onReceive: %s"
 
-    .line 11
-    invoke-virtual {v2, v5, v4, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    .line 13
+    invoke-virtual {v2, v5, v4, v3}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    .line 12
-    invoke-virtual {v0, v1}, Lb5/c;->b(Ljava/lang/Object;)V
+    .line 14
+    invoke-virtual {v0, v1}, Lz4/c;->b(Ljava/lang/Object;)V
 
     return-void
 
     :cond_1
-    iget-object v2, v0, Lb5/c;->a:La5/b;
+    iget-object v2, v0, Lz4/c;->a:Lx3/g3;
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -235,8 +239,8 @@
 
     const-string v1, "ListenerRegistryBroadcastReceiver received broadcast for third party app: %s"
 
-    .line 13
-    invoke-virtual {v2, v5, v1, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    .line 15
+    invoke-virtual {v2, v5, v1, v4}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     return-void
 .end method

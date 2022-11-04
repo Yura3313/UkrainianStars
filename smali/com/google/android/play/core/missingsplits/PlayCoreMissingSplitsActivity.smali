@@ -95,7 +95,6 @@
 
     move-result-object p2
 
-    .line 2
     invoke-static {}, Landroid/os/Process;->myUid()I
 
     move-result v0
@@ -164,7 +163,7 @@
 
     const-string v1, "PlayCore"
 
-    .line 3
+    .line 2
     invoke-static {v1, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result p1
@@ -173,9 +172,9 @@
 
     const-string p1, "Couldn\'t start missing splits activity for %s"
 
-    invoke-static {p2, p1, v0}, La5/b;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2, p1, v0}, Lx3/g3;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 4
+    .line 3
     :cond_2
     :goto_1
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -210,7 +209,7 @@
 
     move-result-object p1
 
-    invoke-static {p0}, La5/h0;->a(Landroid/content/Context;)Z
+    invoke-static {p0}, Ly4/x;->a(Landroid/content/Context;)Z
 
     move-result v0
 

@@ -41,7 +41,7 @@
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView$a;->a:Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->m:Landroid/widget/ImageView;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->l:Landroid/widget/ImageView;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
@@ -54,7 +54,7 @@
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView$a;->a:Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     .line 5
-    iget-object p2, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->m:Landroid/widget/ImageView;
+    iget-object p2, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->l:Landroid/widget/ImageView;
 
     .line 6
     invoke-virtual {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->b()Z
@@ -67,7 +67,7 @@
 
     .line 7
     :cond_0
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->u:Lcom/google/android/material/badge/BadgeDrawable;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->t:Lcom/google/android/material/badge/BadgeDrawable;
 
     invoke-static {p1, p2}, Lcom/google/android/material/badge/a;->a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;)V
 

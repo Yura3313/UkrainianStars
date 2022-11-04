@@ -1,6 +1,6 @@
 .class public final Lcom/google/android/material/internal/h$a;
-.super Ljava/lang/Exception;
-.source "StaticLayoutBuilderCompat.java"
+.super Landroidx/fragment/app/p;
+.source "TextDrawableHelper.java"
 
 
 # annotations
@@ -9,34 +9,89 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
-    name = "a"
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
-# direct methods
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 2
+# instance fields
+.field public final synthetic f:Lcom/google/android/material/internal/h;
 
-    const-string v0, "Error thrown initializing StaticLayout "
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/material/internal/h;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/material/internal/h$a;->f:Lcom/google/android/material/internal/h;
+
+    invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final O(I)V
+    .locals 1
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p1, p0, Lcom/google/android/material/internal/h$a;->f:Lcom/google/android/material/internal/h;
 
-    move-result-object v0
+    const/4 v0, 0x1
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    iput-boolean v0, p1, Lcom/google/android/material/internal/h;->d:Z
 
-    move-result-object v1
+    .line 3
+    iget-object p1, p1, Lcom/google/android/material/internal/h;->e:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v0
+    check-cast p1, Lcom/google/android/material/internal/h$b;
 
-    invoke-direct {p0, v0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    if-eqz p1, :cond_0
 
+    .line 5
+    invoke-interface {p1}, Lcom/google/android/material/internal/h$b;->a()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final S(Landroid/graphics/Typeface;Z)V
+    .locals 0
+
+    if-eqz p2, :cond_0
+
+    return-void
+
+    .line 1
+    :cond_0
+    iget-object p1, p0, Lcom/google/android/material/internal/h$a;->f:Lcom/google/android/material/internal/h;
+
+    const/4 p2, 0x1
+
+    .line 2
+    iput-boolean p2, p1, Lcom/google/android/material/internal/h;->d:Z
+
+    .line 3
+    iget-object p1, p1, Lcom/google/android/material/internal/h;->e:Ljava/lang/ref/WeakReference;
+
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/material/internal/h$b;
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    invoke-interface {p1}, Lcom/google/android/material/internal/h$b;->a()V
+
+    :cond_1
     return-void
 .end method

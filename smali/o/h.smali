@@ -139,7 +139,7 @@
 
     aget-wide v0, p1, v2
 
-    mul-double v5, v5, v0
+    mul-double/2addr v5, v0
 
     add-double/2addr v5, v3
 
@@ -223,13 +223,13 @@
 
     move-result-wide v6
 
-    mul-double v6, v6, v12
+    mul-double/2addr v6, v12
 
     invoke-virtual {v1, v8, v9}, Ln/f;->c(D)D
 
     move-result-wide v8
 
-    mul-double v8, v8, v12
+    mul-double/2addr v8, v12
 
     invoke-static {v8, v9}, Ljava/lang/Math;->cos(D)D
 
@@ -267,13 +267,13 @@
 
     move-result-wide v14
 
-    mul-double v14, v14, v6
+    mul-double/2addr v14, v6
 
     invoke-virtual {v1, v8, v9}, Ln/f;->c(D)D
 
     move-result-wide v6
 
-    mul-double v6, v6, v12
+    mul-double/2addr v6, v12
 
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
@@ -298,7 +298,7 @@
     move-result-wide v6
 
     :goto_1
-    mul-double v6, v6, v14
+    mul-double/2addr v6, v14
 
     goto :goto_3
 
@@ -329,7 +329,7 @@
     move-result-wide v8
 
     :goto_2
-    mul-double v6, v6, v8
+    mul-double/2addr v6, v8
 
     .line 16
     :goto_3
@@ -340,7 +340,7 @@
 
     aget-wide v8, v1, v5
 
-    mul-double v10, v10, v8
+    mul-double/2addr v10, v8
 
     add-double/2addr v10, v3
 
@@ -348,7 +348,7 @@
 
     aget-wide v2, v1, v5
 
-    mul-double v6, v6, v2
+    mul-double/2addr v6, v2
 
     add-double/2addr v6, v10
 
@@ -439,7 +439,7 @@
 
     move-result-object v2
 
-    const/4 v8, 0x0
+    move v8, v7
 
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
@@ -461,11 +461,7 @@
 
     const-wide v13, 0x3f847ae147ae147bL    # 0.01
 
-    invoke-static {v11, v12}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v11, v12}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v11, v11, v13
+    mul-double/2addr v11, v13
 
     aput-wide v11, v3, v8
 
@@ -500,12 +496,6 @@
     int-to-double v4, v9
 
     const-wide/high16 v17, 0x4059000000000000L    # 100.0
-
-    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double v4, v4, v17
 
@@ -586,9 +576,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmpl-double v10, v8, v4
+    cmpl-double v8, v8, v4
 
-    if-lez v10, :cond_2
+    if-lez v8, :cond_2
 
     .line 20
     iget-object v8, v2, Lo/h$c;->a:Ln/f;
@@ -626,7 +616,7 @@
     invoke-virtual {v8, v12, v13, v9}, Ln/f;->a(DF)V
 
     :cond_3
-    const/4 v8, 0x0
+    move v8, v7
 
     .line 24
     :goto_1
@@ -645,7 +635,7 @@
 
     aput-wide v10, v9, v7
 
-    const/4 v9, 0x0
+    move v9, v7
 
     .line 26
     :goto_2
@@ -692,7 +682,7 @@
 
     move-wide v10, v4
 
-    const/4 v9, 0x0
+    move v9, v7
 
     .line 30
     :goto_3
@@ -707,14 +697,6 @@
 
     float-to-double v12, v12
 
-    invoke-static {v12, v13}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v12, v13}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v12, v13}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v12, v13}, Ljava/lang/Double;->isNaN(D)Z
-
     add-double/2addr v10, v12
 
     add-int/lit8 v9, v9, 0x1
@@ -724,7 +706,7 @@
     :cond_6
     move-wide v12, v4
 
-    const/4 v9, 0x1
+    move v9, v6
 
     .line 32
     :goto_4
@@ -758,15 +740,6 @@
 
     float-to-double v14, v14
 
-    .line 35
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
     mul-double v19, v19, v14
 
     add-double v12, v19, v12
@@ -778,9 +751,9 @@
     goto :goto_4
 
     :cond_7
-    const/4 v6, 0x0
+    move v6, v7
 
-    .line 36
+    .line 35
     :goto_5
     iget-object v9, v8, Ln/f;->a:[F
 
@@ -788,20 +761,12 @@
 
     if-ge v6, v14, :cond_8
 
-    .line 37
+    .line 36
     aget v14, v9, v6
 
     float-to-double v14, v14
 
     div-double v19, v10, v12
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
 
     mul-double v14, v14, v19
 
@@ -813,7 +778,7 @@
 
     goto :goto_5
 
-    .line 38
+    .line 37
     :cond_8
     iget-object v6, v8, Ln/f;->c:[D
 
@@ -821,7 +786,7 @@
 
     const/4 v4, 0x1
 
-    .line 39
+    .line 38
     :goto_6
     iget-object v5, v8, Ln/f;->a:[F
 
@@ -831,7 +796,7 @@
 
     add-int/lit8 v6, v4, -0x1
 
-    .line 40
+    .line 39
     aget v9, v5, v6
 
     aget v5, v5, v4
@@ -840,7 +805,7 @@
 
     div-float v9, v9, v17
 
-    .line 41
+    .line 40
     iget-object v5, v8, Ln/f;->b:[D
 
     aget-wide v10, v5, v4
@@ -849,22 +814,14 @@
 
     sub-double/2addr v10, v12
 
-    .line 42
+    .line 41
     iget-object v5, v8, Ln/f;->c:[D
 
     aget-wide v12, v5, v6
 
     float-to-double v14, v9
 
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v10, v10, v14
+    mul-double/2addr v10, v14
 
     add-double/2addr v10, v12
 
@@ -874,7 +831,7 @@
 
     goto :goto_6
 
-    .line 43
+    .line 42
     :cond_9
     iget-object v4, v2, Lo/h$c;->c:[D
 
@@ -884,7 +841,7 @@
 
     if-le v5, v6, :cond_a
 
-    .line 44
+    .line 43
     invoke-static {v7, v4, v1}, Ln/b;->a(I[D[[D)Ln/b;
 
     move-result-object v1
@@ -896,13 +853,13 @@
     :cond_a
     const/4 v1, 0x0
 
-    .line 45
+    .line 44
     iput-object v1, v2, Lo/h$c;->f:Ln/b;
 
     :goto_7
     move-object/from16 v5, v16
 
-    .line 46
+    .line 45
     invoke-static {v7, v3, v5}, Ln/b;->a(I[D[[D)Ln/b;
 
     return-void
@@ -944,7 +901,7 @@
     const-string v4, "["
 
     .line 4
-    invoke-static {v0, v4}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v4}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

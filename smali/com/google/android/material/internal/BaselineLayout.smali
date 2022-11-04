@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     const/4 p1, -0x1
 
     .line 4
-    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 .method public getBaseline()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v0, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return v0
 .end method
@@ -117,7 +117,7 @@
     add-int/2addr v3, p3
 
     .line 10
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     const/4 v5, -0x1
 
@@ -130,7 +130,7 @@
     if-eq v4, v5, :cond_1
 
     .line 11
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     add-int/2addr v4, p2
 
@@ -174,15 +174,15 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v6, v1
 
-    const/4 v4, 0x0
+    move v7, v6
 
-    const/4 v5, 0x0
+    move v3, v2
 
-    const/4 v6, -0x1
+    move v4, v3
 
-    const/4 v7, -0x1
+    move v5, v4
 
     :goto_0
     if-ge v2, v0, :cond_2
@@ -283,7 +283,7 @@
     move-result v3
 
     .line 13
-    iput v6, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput v6, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     .line 14
     :cond_3

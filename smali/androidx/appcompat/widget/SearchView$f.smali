@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic f:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$f;->g:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$f;->f:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$f;->g:Landroidx/appcompat/widget/SearchView;
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$f;->f:Landroidx/appcompat/widget/SearchView;
 
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->z:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->y:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_0
 
@@ -51,7 +51,7 @@
 
     .line 3
     :cond_0
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->B:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->A:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_1
 
@@ -62,7 +62,7 @@
 
     .line 5
     :cond_1
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->A:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->z:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_2
 
@@ -73,12 +73,12 @@
 
     .line 7
     :cond_2
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->C:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->B:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_6
 
     .line 8
-    iget-object p1, v0, Landroidx/appcompat/widget/SearchView;->l0:Landroid/app/SearchableInfo;
+    iget-object p1, v0, Landroidx/appcompat/widget/SearchView;->k0:Landroid/app/SearchableInfo;
 
     if-nez p1, :cond_3
 
@@ -94,7 +94,7 @@
     if-eqz v1, :cond_5
 
     .line 10
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->N:Landroid/content/Intent;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->M:Landroid/content/Intent;
 
     .line 11
     new-instance v2, Landroid/content/Intent;
@@ -142,7 +142,7 @@
     if-eqz v1, :cond_7
 
     .line 17
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->O:Landroid/content/Intent;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->N:Landroid/content/Intent;
 
     invoke-virtual {v0, v1, p1}, Landroidx/appcompat/widget/SearchView;->m(Landroid/content/Intent;Landroid/app/SearchableInfo;)Landroid/content/Intent;
 
@@ -161,7 +161,7 @@
 
     .line 19
     :cond_6
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->v:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->u:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     if-ne p1, v1, :cond_7
 

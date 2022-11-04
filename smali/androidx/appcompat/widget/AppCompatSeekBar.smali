@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/j;
+.field public final f:Landroidx/appcompat/widget/j;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/j;-><init>(Landroid/widget/SeekBar;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/j;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/j;->a(Landroid/util/AttributeSet;I)V
@@ -54,7 +54,7 @@
     invoke-super {p0}, Landroid/widget/AbsSeekBar;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/j;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 3
     iget-object v1, v0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
@@ -97,7 +97,7 @@
     invoke-super {p0}, Landroid/widget/AbsSeekBar;->jumpDrawablesToCurrentState()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/j;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 3
     iget-object v0, v0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
@@ -121,7 +121,7 @@
     invoke-super {p0, p1}, Landroid/widget/AbsSeekBar;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/j;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/j;->d(Landroid/graphics/Canvas;)V
     :try_end_0

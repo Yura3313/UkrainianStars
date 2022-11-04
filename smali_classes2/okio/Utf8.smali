@@ -154,7 +154,7 @@
     const-string v1, " > "
 
     .line 6
-    invoke-static {v0, p2, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p2, v1}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -208,7 +208,7 @@
     const-string p2, "beginIndex < 0: "
 
     .line 10
-    invoke-static {p2, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p2, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -225,11 +225,5 @@
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_7
-
-    :goto_6
     throw p0
-
-    :goto_7
-    goto :goto_6
 .end method

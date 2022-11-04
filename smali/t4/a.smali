@@ -1,17 +1,17 @@
 .class public final Lt4/a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "BaseTransientBottomBar.java"
+.source "ExpandableTransformationBehavior.java"
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
+.method public constructor <init>(Lcom/google/android/material/transformation/ExpandableTransformationBehavior;)V
     .locals 0
 
-    iput-object p1, p0, Lt4/a;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Lt4/a;->f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -21,11 +21,15 @@
 
 # virtual methods
 .method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 0
+    .locals 1
 
-    iget-object p1, p0, Lt4/a;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    .line 1
+    iget-object p1, p0, Lt4/a;->f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
-    invoke-virtual {p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->e()V
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p1, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->b:Landroid/animation/AnimatorSet;
 
     return-void
 .end method

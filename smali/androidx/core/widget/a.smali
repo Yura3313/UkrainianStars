@@ -16,31 +16,33 @@
 
 
 # static fields
-.field public static final w:I
+.field public static final v:I
 
 
 # instance fields
-.field public final g:Landroidx/core/widget/a$a;
+.field public final f:Landroidx/core/widget/a$a;
 
-.field public final h:Landroid/view/animation/AccelerateInterpolator;
+.field public final g:Landroid/view/animation/AccelerateInterpolator;
 
-.field public final i:Landroid/view/View;
+.field public final h:Landroid/view/View;
 
-.field public j:Landroidx/core/widget/a$b;
+.field public i:Landroidx/core/widget/a$b;
+
+.field public j:[F
 
 .field public k:[F
 
-.field public l:[F
+.field public l:I
 
 .field public m:I
 
-.field public n:I
+.field public n:[F
 
 .field public o:[F
 
 .field public p:[F
 
-.field public q:[F
+.field public q:Z
 
 .field public r:Z
 
@@ -49,8 +51,6 @@
 .field public t:Z
 
 .field public u:Z
-
-.field public v:Z
 
 
 # direct methods
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    sput v0, Landroidx/core/widget/a;->w:I
+    sput v0, Landroidx/core/widget/a;->v:I
 
     return-void
 .end method
@@ -77,14 +77,14 @@
 
     invoke-direct {v0}, Landroidx/core/widget/a$a;-><init>()V
 
-    iput-object v0, p0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
+    iput-object v0, p0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
     .line 3
     new-instance v1, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
-    iput-object v1, p0, Landroidx/core/widget/a;->h:Landroid/view/animation/AccelerateInterpolator;
+    iput-object v1, p0, Landroidx/core/widget/a;->g:Landroid/view/animation/AccelerateInterpolator;
 
     const/4 v1, 0x2
 
@@ -93,38 +93,38 @@
     .line 4
     fill-array-data v2, :array_0
 
-    iput-object v2, p0, Landroidx/core/widget/a;->k:[F
+    iput-object v2, p0, Landroidx/core/widget/a;->j:[F
 
     new-array v2, v1, [F
 
     .line 5
     fill-array-data v2, :array_1
 
-    iput-object v2, p0, Landroidx/core/widget/a;->l:[F
+    iput-object v2, p0, Landroidx/core/widget/a;->k:[F
 
     new-array v2, v1, [F
 
     .line 6
     fill-array-data v2, :array_2
 
-    iput-object v2, p0, Landroidx/core/widget/a;->o:[F
+    iput-object v2, p0, Landroidx/core/widget/a;->n:[F
 
     new-array v2, v1, [F
 
     .line 7
     fill-array-data v2, :array_3
 
-    iput-object v2, p0, Landroidx/core/widget/a;->p:[F
+    iput-object v2, p0, Landroidx/core/widget/a;->o:[F
 
     new-array v1, v1, [F
 
     .line 8
     fill-array-data v1, :array_4
 
-    iput-object v1, p0, Landroidx/core/widget/a;->q:[F
+    iput-object v1, p0, Landroidx/core/widget/a;->p:[F
 
     .line 9
-    iput-object p1, p0, Landroidx/core/widget/a;->i:Landroid/view/View;
+    iput-object p1, p0, Landroidx/core/widget/a;->h:Landroid/view/View;
 
     .line 10
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
@@ -140,7 +140,7 @@
 
     const v1, 0x44c4e000    # 1575.0f
 
-    mul-float v1, v1, p1
+    mul-float/2addr v1, p1
 
     const/high16 v2, 0x3f000000    # 0.5f
 
@@ -150,7 +150,7 @@
 
     const v3, 0x439d8000    # 315.0f
 
-    mul-float p1, p1, v3
+    mul-float/2addr p1, v3
 
     add-float/2addr p1, v2
 
@@ -159,7 +159,7 @@
     int-to-float v1, v1
 
     .line 12
-    iget-object v2, p0, Landroidx/core/widget/a;->q:[F
+    iget-object v2, p0, Landroidx/core/widget/a;->p:[F
 
     const/high16 v3, 0x447a0000    # 1000.0f
 
@@ -177,7 +177,7 @@
     int-to-float p1, p1
 
     .line 14
-    iget-object v1, p0, Landroidx/core/widget/a;->p:[F
+    iget-object v1, p0, Landroidx/core/widget/a;->o:[F
 
     div-float/2addr p1, v3
 
@@ -187,10 +187,10 @@
     aput p1, v1, v5
 
     .line 16
-    iput v5, p0, Landroidx/core/widget/a;->m:I
+    iput v5, p0, Landroidx/core/widget/a;->l:I
 
     .line 17
-    iget-object p1, p0, Landroidx/core/widget/a;->l:[F
+    iget-object p1, p0, Landroidx/core/widget/a;->k:[F
 
     const v1, 0x7f7fffff    # Float.MAX_VALUE
 
@@ -200,7 +200,7 @@
     aput v1, p1, v5
 
     .line 19
-    iget-object p1, p0, Landroidx/core/widget/a;->k:[F
+    iget-object p1, p0, Landroidx/core/widget/a;->j:[F
 
     const v1, 0x3e4ccccd
 
@@ -210,7 +210,7 @@
     aput v1, p1, v5
 
     .line 21
-    iget-object p1, p0, Landroidx/core/widget/a;->o:[F
+    iget-object p1, p0, Landroidx/core/widget/a;->n:[F
 
     const v1, 0x3a83126f
 
@@ -220,10 +220,10 @@
     aput v1, p1, v5
 
     .line 23
-    sget p1, Landroidx/core/widget/a;->w:I
+    sget p1, Landroidx/core/widget/a;->v:I
 
     .line 24
-    iput p1, p0, Landroidx/core/widget/a;->n:I
+    iput p1, p0, Landroidx/core/widget/a;->m:I
 
     const/16 p1, 0x1f4
 
@@ -294,16 +294,16 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/core/widget/a;->k:[F
+    iget-object v0, p0, Landroidx/core/widget/a;->j:[F
 
     aget v0, v0, p1
 
     .line 2
-    iget-object v1, p0, Landroidx/core/widget/a;->l:[F
+    iget-object v1, p0, Landroidx/core/widget/a;->k:[F
 
     aget v1, v1, p1
 
-    mul-float v0, v0, p3
+    mul-float/2addr v0, p3
 
     const/4 v2, 0x0
 
@@ -331,7 +331,7 @@
     if-gez p3, :cond_0
 
     .line 6
-    iget-object p3, p0, Landroidx/core/widget/a;->h:Landroid/view/animation/AccelerateInterpolator;
+    iget-object p3, p0, Landroidx/core/widget/a;->g:Landroid/view/animation/AccelerateInterpolator;
 
     neg-float p2, p2
 
@@ -349,7 +349,7 @@
     if-lez p3, :cond_1
 
     .line 7
-    iget-object p3, p0, Landroidx/core/widget/a;->h:Landroid/view/animation/AccelerateInterpolator;
+    iget-object p3, p0, Landroidx/core/widget/a;->g:Landroid/view/animation/AccelerateInterpolator;
 
     invoke-virtual {p3, p2}, Landroid/view/animation/AccelerateInterpolator;->getInterpolation(F)F
 
@@ -368,7 +368,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 p2, 0x0
+    move p2, v2
 
     :goto_1
     cmpl-float p3, p2, v2
@@ -379,30 +379,28 @@
 
     .line 9
     :cond_2
-    iget-object p3, p0, Landroidx/core/widget/a;->o:[F
-
-    aget p3, p3, p1
-
-    .line 10
-    iget-object v0, p0, Landroidx/core/widget/a;->p:[F
+    iget-object v0, p0, Landroidx/core/widget/a;->n:[F
 
     aget v0, v0, p1
 
+    .line 10
+    iget-object v1, p0, Landroidx/core/widget/a;->o:[F
+
+    aget v1, v1, p1
+
     .line 11
-    iget-object v1, p0, Landroidx/core/widget/a;->q:[F
+    iget-object v2, p0, Landroidx/core/widget/a;->p:[F
 
-    aget p1, v1, p1
+    aget p1, v2, p1
 
-    mul-float p3, p3, p4
+    mul-float/2addr v0, p4
 
-    cmpl-float p4, p2, v2
+    if-lez p3, :cond_3
 
-    if-lez p4, :cond_3
-
-    mul-float p2, p2, p3
+    mul-float/2addr p2, v0
 
     .line 12
-    invoke-static {p2, v0, p1}, Landroidx/core/widget/a;->b(FFF)F
+    invoke-static {p2, v1, p1}, Landroidx/core/widget/a;->b(FFF)F
 
     move-result p1
 
@@ -411,10 +409,10 @@
     :cond_3
     neg-float p2, p2
 
-    mul-float p2, p2, p3
+    mul-float/2addr p2, v0
 
     .line 13
-    invoke-static {p2, v0, p1}, Landroidx/core/widget/a;->b(FFF)F
+    invoke-static {p2, v1, p1}, Landroidx/core/widget/a;->b(FFF)F
 
     move-result p1
 
@@ -436,7 +434,7 @@
 
     .line 1
     :cond_0
-    iget v1, p0, Landroidx/core/widget/a;->m:I
+    iget v1, p0, Landroidx/core/widget/a;->l:I
 
     const/4 v2, 0x1
 
@@ -466,27 +464,27 @@
 
     if-gez v3, :cond_4
 
-    const/high16 v3, 0x3f800000    # 1.0f
+    cmpl-float v3, p1, v0
 
-    cmpl-float v4, p1, v0
+    const/high16 v4, 0x3f800000    # 1.0f
 
-    if-ltz v4, :cond_3
+    if-ltz v3, :cond_3
 
     div-float/2addr p1, p2
 
-    sub-float/2addr v3, p1
+    sub-float/2addr v4, p1
 
-    return v3
+    return v4
 
     .line 2
     :cond_3
-    iget-boolean p1, p0, Landroidx/core/widget/a;->u:Z
+    iget-boolean p1, p0, Landroidx/core/widget/a;->t:Z
 
     if-eqz p1, :cond_4
 
     if-ne v1, v2, :cond_4
 
-    return v3
+    return v4
 
     :cond_4
     :goto_0
@@ -497,22 +495,22 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Landroidx/core/widget/a;->s:Z
+    iget-boolean v0, p0, Landroidx/core/widget/a;->r:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, p0, Landroidx/core/widget/a;->u:Z
+    iput-boolean v1, p0, Landroidx/core/widget/a;->t:Z
 
     goto :goto_1
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
+    iget-object v0, p0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
@@ -524,23 +522,23 @@
 
     sub-long v4, v2, v4
 
-    long-to-int v5, v4
+    long-to-int v4, v4
 
-    iget v4, v0, Landroidx/core/widget/a$a;->b:I
+    iget v5, v0, Landroidx/core/widget/a$a;->b:I
 
-    if-le v5, v4, :cond_1
+    if-le v4, v5, :cond_1
 
-    move v1, v4
+    move v1, v5
 
     goto :goto_0
 
     :cond_1
-    if-gez v5, :cond_2
+    if-gez v4, :cond_2
 
     goto :goto_0
 
     :cond_2
-    move v1, v5
+    move v1, v4
 
     :goto_0
     iput v1, v0, Landroidx/core/widget/a$a;->i:I
@@ -563,7 +561,7 @@
     .locals 9
 
     .line 1
-    iget-object v0, p0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
+    iget-object v0, p0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
     .line 2
     iget v1, v0, Landroidx/core/widget/a$a;->d:F
@@ -596,10 +594,10 @@
     .line 4
     move-object v4, p0
 
-    check-cast v4, Landroidx/core/widget/f;
+    check-cast v4, Landroidx/core/widget/c;
 
     .line 5
-    iget-object v4, v4, Landroidx/core/widget/f;->x:Landroid/widget/ListView;
+    iget-object v4, v4, Landroidx/core/widget/c;->w:Landroid/widget/ListView;
 
     .line 6
     invoke-virtual {v4}, Landroid/widget/AdapterView;->getCount()I
@@ -610,7 +608,7 @@
 
     :cond_0
     :goto_0
-    const/4 v1, 0x0
+    move v1, v3
 
     goto :goto_1
 
@@ -671,13 +669,13 @@
     goto :goto_0
 
     :cond_3
-    const/4 v1, 0x1
+    move v1, v2
 
     :goto_1
     if-nez v1, :cond_5
 
     :cond_4
-    const/4 v2, 0x0
+    move v2, v3
 
     :cond_5
     return v2
@@ -687,7 +685,7 @@
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Landroidx/core/widget/a;->v:Z
+    iget-boolean v0, p0, Landroidx/core/widget/a;->u:Z
 
     const/4 v1, 0x0
 
@@ -725,10 +723,10 @@
 
     .line 4
     :cond_2
-    iput-boolean v2, p0, Landroidx/core/widget/a;->t:Z
+    iput-boolean v2, p0, Landroidx/core/widget/a;->s:Z
 
     .line 5
-    iput-boolean v1, p0, Landroidx/core/widget/a;->r:Z
+    iput-boolean v1, p0, Landroidx/core/widget/a;->q:Z
 
     .line 6
     :cond_3
@@ -742,7 +740,7 @@
 
     int-to-float v3, v3
 
-    iget-object v4, p0, Landroidx/core/widget/a;->i:Landroid/view/View;
+    iget-object v4, p0, Landroidx/core/widget/a;->h:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getWidth()I
 
@@ -766,7 +764,7 @@
 
     int-to-float p1, p1
 
-    iget-object v3, p0, Landroidx/core/widget/a;->i:Landroid/view/View;
+    iget-object v3, p0, Landroidx/core/widget/a;->h:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getHeight()I
 
@@ -780,7 +778,7 @@
     move-result p1
 
     .line 10
-    iget-object p2, p0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
+    iget-object p2, p0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
     .line 11
     iput v0, p2, Landroidx/core/widget/a$a;->c:F
@@ -789,7 +787,7 @@
     iput p1, p2, Landroidx/core/widget/a$a;->d:F
 
     .line 13
-    iget-boolean p1, p0, Landroidx/core/widget/a;->u:Z
+    iget-boolean p1, p0, Landroidx/core/widget/a;->t:Z
 
     if-nez p1, :cond_6
 
@@ -800,7 +798,7 @@
     if-eqz p1, :cond_6
 
     .line 14
-    iget-object p1, p0, Landroidx/core/widget/a;->j:Landroidx/core/widget/a$b;
+    iget-object p1, p0, Landroidx/core/widget/a;->i:Landroidx/core/widget/a$b;
 
     if-nez p1, :cond_4
 
@@ -809,32 +807,32 @@
 
     invoke-direct {p1, p0}, Landroidx/core/widget/a$b;-><init>(Landroidx/core/widget/a;)V
 
-    iput-object p1, p0, Landroidx/core/widget/a;->j:Landroidx/core/widget/a$b;
+    iput-object p1, p0, Landroidx/core/widget/a;->i:Landroidx/core/widget/a$b;
 
     .line 16
     :cond_4
-    iput-boolean v2, p0, Landroidx/core/widget/a;->u:Z
+    iput-boolean v2, p0, Landroidx/core/widget/a;->t:Z
 
     .line 17
-    iput-boolean v2, p0, Landroidx/core/widget/a;->s:Z
+    iput-boolean v2, p0, Landroidx/core/widget/a;->r:Z
 
     .line 18
-    iget-boolean p1, p0, Landroidx/core/widget/a;->r:Z
+    iget-boolean p1, p0, Landroidx/core/widget/a;->q:Z
 
     if-nez p1, :cond_5
 
-    iget p1, p0, Landroidx/core/widget/a;->n:I
+    iget p1, p0, Landroidx/core/widget/a;->m:I
 
     if-lez p1, :cond_5
 
     .line 19
-    iget-object p2, p0, Landroidx/core/widget/a;->i:Landroid/view/View;
+    iget-object p2, p0, Landroidx/core/widget/a;->h:Landroid/view/View;
 
-    iget-object v0, p0, Landroidx/core/widget/a;->j:Landroidx/core/widget/a$b;
+    iget-object v0, p0, Landroidx/core/widget/a;->i:Landroidx/core/widget/a$b;
 
     int-to-long v3, p1
 
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 20
     invoke-virtual {p2, v0, v3, v4}, Landroid/view/View;->postOnAnimationDelayed(Ljava/lang/Runnable;J)V
@@ -843,13 +841,13 @@
 
     .line 21
     :cond_5
-    iget-object p1, p0, Landroidx/core/widget/a;->j:Landroidx/core/widget/a$b;
+    iget-object p1, p0, Landroidx/core/widget/a;->i:Landroidx/core/widget/a$b;
 
     invoke-virtual {p1}, Landroidx/core/widget/a$b;->run()V
 
     .line 22
     :goto_0
-    iput-boolean v2, p0, Landroidx/core/widget/a;->r:Z
+    iput-boolean v2, p0, Landroidx/core/widget/a;->q:Z
 
     :cond_6
     :goto_1

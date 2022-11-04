@@ -1,36 +1,46 @@
 .class public final Ltd/k;
-.super Lse/i;
-.source "RegisterEnterPhoneTabPageFragment.kt"
+.super Lif/i;
+.source "AssetCache.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Ljava/lang/String;",
+        "Ljava/lang/Boolean;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+# static fields
+.field public static final f:Ltd/k;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Ltd/k;->g:Ljava/lang/ref/WeakReference;
+    new-instance v0, Ltd/k;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Ltd/k;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    sput-object v0, Ltd/k;->f:Ltd/k;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -38,43 +48,27 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Ljava/lang/String;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Ltd/k;->g:Ljava/lang/ref/WeakReference;
+    invoke-static {p1}, Lof/n;->n(Ljava/lang/CharSequence;)Z
 
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    move-result p1
 
-    move-result-object v0
-
-    check-cast v0, Ltd/l;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v1, 0x0
+    xor-int/lit8 p1, p1, 0x1
 
     .line 4
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    move-result-object p1
 
     return-object p1
 .end method

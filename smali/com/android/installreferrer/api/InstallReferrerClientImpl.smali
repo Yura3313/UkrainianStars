@@ -110,7 +110,7 @@
 
     const-string v2, "package_name"
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     new-instance v1, Lcom/android/installreferrer/api/ReferrerDetails;
@@ -322,13 +322,13 @@
 
     if-lt v3, v5, :cond_3
 
-    const/4 v3, 0x1
+    move v3, v4
 
     goto :goto_0
 
     :catch_0
     :cond_3
-    const/4 v3, 0x0
+    move v3, v1
 
     :goto_0
     if-eqz v3, :cond_5

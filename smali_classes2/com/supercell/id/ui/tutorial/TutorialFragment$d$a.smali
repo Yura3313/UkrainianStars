@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
-.super Lse/i;
+.super Lif/i;
 .source "TutorialFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lxd/b;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lwd/b;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+.field public static final f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,15 +59,15 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lxd/b;->g0:Lxd/b$a;
+    sget-object v0, Lwd/b;->f0:Lwd/b$a;
 
     .line 2
-    new-instance v0, Lxd/b;
+    new-instance v0, Lwd/b;
 
-    invoke-direct {v0}, Lxd/b;-><init>()V
+    invoke-direct {v0}, Lwd/b;-><init>()V
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
@@ -85,7 +85,7 @@
     const-string v3, "Intro 1"
 
     .line 5
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V

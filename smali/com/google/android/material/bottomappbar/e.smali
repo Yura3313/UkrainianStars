@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/material/bottomappbar/e;
-.super Ls4/e;
+.super Lp4/e;
 .source "BottomAppBarTopEdgeTreatment.java"
 
 # interfaces
@@ -7,6 +7,8 @@
 
 
 # instance fields
+.field public i:F
+
 .field public j:F
 
 .field public k:F
@@ -15,36 +17,34 @@
 
 .field public m:F
 
-.field public n:F
-
 
 # direct methods
 .method public constructor <init>(FFF)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ls4/e;-><init>()V
+    invoke-direct {p0}, Lp4/e;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->k:F
+    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->j:F
 
     .line 3
-    iput p2, p0, Lcom/google/android/material/bottomappbar/e;->j:F
+    iput p2, p0, Lcom/google/android/material/bottomappbar/e;->i:F
 
     .line 4
-    invoke-virtual {p0, p3}, Lcom/google/android/material/bottomappbar/e;->t(F)V
+    invoke-virtual {p0, p3}, Lcom/google/android/material/bottomappbar/e;->k(F)V
 
     const/4 p1, 0x0
 
     .line 5
-    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->n:F
+    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->m:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e(FFFLs4/n;)V
+.method public final g(FFFLp4/n;)V
     .locals 20
 
     move-object/from16 v0, p0
@@ -56,7 +56,7 @@
     move-object/from16 v9, p4
 
     .line 1
-    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->l:F
+    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->k:F
 
     const/4 v10, 0x0
 
@@ -65,40 +65,40 @@
     if-nez v4, :cond_0
 
     .line 2
-    invoke-virtual {v9, v1, v10}, Ls4/n;->d(FF)V
+    invoke-virtual {v9, v1, v10}, Lp4/n;->d(FF)V
 
     return-void
 
     .line 3
     :cond_0
-    iget v4, v0, Lcom/google/android/material/bottomappbar/e;->k:F
+    iget v4, v0, Lcom/google/android/material/bottomappbar/e;->j:F
 
     const/high16 v11, 0x40000000    # 2.0f
 
-    mul-float v4, v4, v11
+    mul-float/2addr v4, v11
 
     add-float/2addr v4, v3
 
     div-float v12, v4, v11
 
     .line 4
-    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->j:F
+    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->i:F
 
     mul-float v13, v2, v3
 
     .line 5
-    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->n:F
+    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->m:F
 
     add-float v14, p2, v3
 
     .line 6
-    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->m:F
+    iget v3, v0, Lcom/google/android/material/bottomappbar/e;->l:F
 
-    mul-float v3, v3, v2
+    mul-float/2addr v3, v2
 
     const/high16 v4, 0x3f800000    # 1.0f
 
-    invoke-static {v4, v2, v12, v3}, Lo/o;->a(FFFF)F
+    invoke-static {v4, v2, v12, v3}, Lj3/vr0;->c(FFFF)F
 
     move-result v15
 
@@ -109,14 +109,14 @@
     if-ltz v2, :cond_1
 
     .line 7
-    invoke-virtual {v9, v1, v10}, Ls4/n;->d(FF)V
+    invoke-virtual {v9, v1, v10}, Lp4/n;->d(FF)V
 
     return-void
 
     :cond_1
     add-float v2, v12, v13
 
-    mul-float v2, v2, v2
+    mul-float/2addr v2, v2
 
     add-float v3, v15, v13
 
@@ -157,7 +157,7 @@
     sub-float v17, v2, v8
 
     .line 10
-    invoke-virtual {v9, v4, v10}, Ls4/n;->d(FF)V
+    invoke-virtual {v9, v4, v10}, Lp4/n;->d(FF)V
 
     sub-float v3, v4, v13
 
@@ -180,7 +180,7 @@
     move/from16 v19, v8
 
     .line 11
-    invoke-virtual/range {v2 .. v8}, Ls4/n;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lp4/n;->a(FFFFFF)V
 
     sub-float v3, v14, v12
 
@@ -203,7 +203,7 @@
     move-object/from16 v2, p4
 
     .line 12
-    invoke-virtual/range {v2 .. v8}, Ls4/n;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lp4/n;->a(FFFFFF)V
 
     sub-float v3, v16, v13
 
@@ -222,15 +222,15 @@
     move/from16 v8, v19
 
     .line 13
-    invoke-virtual/range {v2 .. v8}, Ls4/n;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lp4/n;->a(FFFFFF)V
 
     .line 14
-    invoke-virtual {v9, v1, v10}, Ls4/n;->d(FF)V
+    invoke-virtual {v9, v1, v10}, Lp4/n;->d(FF)V
 
     return-void
 .end method
 
-.method public final t(F)V
+.method public final k(F)V
     .locals 1
 
     const/4 v0, 0x0
@@ -240,7 +240,7 @@
     if-ltz v0, :cond_0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->m:F
+    iput p1, p0, Lcom/google/android/material/bottomappbar/e;->l:F
 
     return-void
 

@@ -1,26 +1,13 @@
 .class public final Lz0/c;
-.super Ljava/lang/Object;
-.source "Property.java"
-
-
-# instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:Ljava/lang/String;
+.super Ly0/e;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lz0/c;->a:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Lz0/c;->b:Ljava/lang/String;
+    invoke-direct {p0}, Ly0/e;-><init>()V
 
     return-void
 .end method

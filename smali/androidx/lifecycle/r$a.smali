@@ -36,9 +36,9 @@
 
     iget-object p1, p0, Landroidx/lifecycle/r$a;->this$1:Landroidx/lifecycle/r;
 
-    iget-object p1, p1, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iget-object p1, p1, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
-    invoke-virtual {p1}, Landroidx/lifecycle/q;->a()V
+    invoke-virtual {p1}, Landroidx/lifecycle/ProcessLifecycleOwner;->a()V
 
     return-void
 .end method
@@ -48,9 +48,9 @@
 
     iget-object p1, p0, Landroidx/lifecycle/r$a;->this$1:Landroidx/lifecycle/r;
 
-    iget-object p1, p1, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iget-object p1, p1, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
-    invoke-virtual {p1}, Landroidx/lifecycle/q;->b()V
+    invoke-virtual {p1}, Landroidx/lifecycle/ProcessLifecycleOwner;->b()V
 
     return-void
 .end method

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+.field public final synthetic f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ActionBarOverlayLayout;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,14 +38,14 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionBarOverlayLayout;->q()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
-    iget-object v1, v0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->j:Landroidx/appcompat/widget/ActionBarContainer;
+    iget-object v1, v0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->i:Landroidx/appcompat/widget/ActionBarContainer;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -57,16 +57,16 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iget-object v2, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$b;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
-    iget-object v2, v2, Landroidx/appcompat/widget/ActionBarOverlayLayout;->H:Landroidx/appcompat/widget/ActionBarOverlayLayout$a;
+    iget-object v2, v2, Landroidx/appcompat/widget/ActionBarOverlayLayout;->C:Landroidx/appcompat/widget/ActionBarOverlayLayout$a;
 
     .line 3
     invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
-    iput-object v1, v0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->G:Landroid/view/ViewPropertyAnimator;
+    iput-object v1, v0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->B:Landroid/view/ViewPropertyAnimator;
 
     return-void
 .end method

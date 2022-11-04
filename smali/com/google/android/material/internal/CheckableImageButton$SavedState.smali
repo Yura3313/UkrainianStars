@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public i:Z
+.field public h:Z
 
 
 # direct methods
@@ -64,7 +64,7 @@
     const/4 p2, 0x0
 
     :goto_0
-    iput-boolean p2, p0, Lcom/google/android/material/internal/CheckableImageButton$SavedState;->i:Z
+    iput-boolean p2, p0, Lcom/google/android/material/internal/CheckableImageButton$SavedState;->h:Z
 
     return-void
 .end method
@@ -84,12 +84,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-boolean p2, p0, Lcom/google/android/material/internal/CheckableImageButton$SavedState;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/material/internal/CheckableImageButton$SavedState;->h:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

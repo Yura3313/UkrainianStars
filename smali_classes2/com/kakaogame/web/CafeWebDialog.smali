@@ -19,7 +19,7 @@
 
 # virtual methods
 .method public initViews()V
-    .locals 10
+    .locals 9
 
     .line 1
     sget v0, Lcom/kakaogame/R$layout;->zinny_sdk_cafe_dialog_web_kakao:I
@@ -66,15 +66,6 @@
     iput-object v0, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
 
     .line 6
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    const/4 v3, 0x1
-
-    if-lt v1, v2, :cond_1
-
-    .line 7
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
@@ -83,21 +74,22 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V
 
-    .line 8
+    .line 7
     invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object v0
 
+    const/4 v1, 0x1
+
+    .line 8
+    invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
+
     .line 9
-    invoke-virtual {v0, v3}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
+    iget-object v2, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
+
+    invoke-virtual {v0, v2, v1}, Landroid/webkit/CookieManager;->setAcceptThirdPartyCookies(Landroid/webkit/WebView;Z)V
 
     .line 10
-    iget-object v1, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
-
-    invoke-virtual {v0, v1, v3}, Landroid/webkit/CookieManager;->setAcceptThirdPartyCookies(Landroid/webkit/WebView;Z)V
-
-    .line 11
-    :cond_1
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_dialog_web_layout:I
 
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -108,78 +100,78 @@
 
     iput-object v0, p0, Lcom/kakaogame/web/WebDialog;->webLayout:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    .line 12
-    invoke-virtual {v0, v3}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->setEnabled(Z)V
+    .line 11
+    invoke-virtual {v0, v1}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->setEnabled(Z)V
 
-    .line 13
+    .line 12
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog;->webLayout:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    new-instance v1, Lcom/kakaogame/web/CafeWebDialog$1;
+    new-instance v2, Lcom/kakaogame/web/CafeWebDialog$1;
 
-    invoke-direct {v1, p0}, Lcom/kakaogame/web/CafeWebDialog$1;-><init>(Lcom/kakaogame/web/CafeWebDialog;)V
+    invoke-direct {v2, p0}, Lcom/kakaogame/web/CafeWebDialog$1;-><init>(Lcom/kakaogame/web/CafeWebDialog;)V
 
-    invoke-virtual {v0, v1}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->setOnRefreshListener(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$h;)V
+    invoke-virtual {v0, v2}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->setOnRefreshListener(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$h;)V
 
-    .line 14
+    .line 13
     new-instance v0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;
 
-    iget-object v6, p0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    iget-object v7, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
 
-    iget-object v1, p0, Lcom/kakaogame/web/WebDialog;->settings:Lcom/kakaogame/web/WebDialog$Settings;
+    iget-object v2, p0, Lcom/kakaogame/web/WebDialog;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
-    invoke-virtual {v1}, Lcom/kakaogame/web/WebDialog$Settings;->getCustomCookie()Ljava/util/Map;
+    invoke-virtual {v2}, Lcom/kakaogame/web/WebDialog$Settings;->getCustomCookie()Ljava/util/Map;
 
-    move-result-object v8
+    move-result-object v7
 
-    iget-object v1, p0, Lcom/kakaogame/web/WebDialog;->settings:Lcom/kakaogame/web/WebDialog$Settings;
+    iget-object v2, p0, Lcom/kakaogame/web/WebDialog;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
-    invoke-virtual {v1}, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTextFontSize()Z
+    invoke-virtual {v2}, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTextFontSize()Z
 
-    move-result v9
+    move-result v8
 
-    move-object v4, v0
+    move-object v3, v0
 
-    move-object v5, p0
+    move-object v4, p0
 
-    invoke-direct/range {v4 .. v9}, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;-><init>(Lcom/kakaogame/web/WebDialog;Landroid/app/Activity;Landroid/webkit/WebView;Ljava/util/Map;Z)V
+    invoke-direct/range {v3 .. v8}, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;-><init>(Lcom/kakaogame/web/WebDialog;Landroid/app/Activity;Landroid/webkit/WebView;Ljava/util/Map;Z)V
 
     iput-object v0, p0, Lcom/kakaogame/web/WebDialog;->container:Lcom/kakaogame/web/WebViewContainer;
 
-    .line 15
+    .line 14
     invoke-static {}, Lcom/kakaogame/infodesk/InfodeskHelper;->offWebViewPopupUI()Z
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_1
 
-    .line 16
+    .line 15
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog;->webUrl:Ljava/lang/String;
 
-    const-string v1, "cafe.daum.net"
+    const-string v2, "cafe.daum.net"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    .line 17
+    .line 16
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
 
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
+
     .line 18
-    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
 
     .line 19
-    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
-
-    .line 20
-    :cond_2
+    :cond_1
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_dialog_cafe_logo:I
 
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -188,7 +180,7 @@
 
     iput-object v0, p0, Lcom/kakaogame/web/WebDialog;->logoView:Landroid/view/View;
 
-    .line 21
+    .line 20
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_dialog_web_topbar_back:I
 
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -197,21 +189,21 @@
 
     iput-object v0, p0, Lcom/kakaogame/web/WebDialog;->backView:Landroid/view/View;
 
-    .line 22
+    .line 21
     new-instance v1, Lcom/kakaogame/web/CafeWebDialog$2;
 
     invoke-direct {v1, p0}, Lcom/kakaogame/web/CafeWebDialog$2;-><init>(Lcom/kakaogame/web/CafeWebDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 23
+    .line 22
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_dialog_web_topbar_close:I
 
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 24
+    .line 23
     new-instance v1, Lcom/kakaogame/web/CafeWebDialog$3;
 
     invoke-direct {v1, p0}, Lcom/kakaogame/web/CafeWebDialog$3;-><init>(Lcom/kakaogame/web/CafeWebDialog;)V

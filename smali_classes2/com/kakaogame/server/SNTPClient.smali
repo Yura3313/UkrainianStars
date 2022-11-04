@@ -151,9 +151,9 @@
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
-    mul-long p1, p1, v2
+    mul-long/2addr p1, v2
 
     const-wide v2, 0x100000000L
 
@@ -187,9 +187,9 @@
 
     shr-long v6, v2, v5
 
-    long-to-int v7, v6
+    long-to-int v6, v6
 
-    int-to-byte v6, v7
+    int-to-byte v6, v6
 
     .line 2
     aput-byte v6, p1, p2
@@ -200,9 +200,9 @@
 
     shr-long v7, v2, v6
 
-    long-to-int v8, v7
+    long-to-int v7, v7
 
-    int-to-byte v7, v8
+    int-to-byte v7, v7
 
     .line 3
     aput-byte v7, p1, v4
@@ -213,9 +213,9 @@
 
     shr-long v8, v2, v7
 
-    long-to-int v9, v8
+    long-to-int v8, v8
 
-    int-to-byte v8, v9
+    int-to-byte v8, v8
 
     .line 4
     aput-byte v8, p1, p2
@@ -226,16 +226,16 @@
 
     shr-long/2addr v2, v8
 
-    long-to-int v3, v2
+    long-to-int v2, v2
 
-    int-to-byte v2, v3
+    int-to-byte v2, v2
 
     .line 5
     aput-byte v2, p1, v4
 
     const-wide v2, 0x100000000L
 
-    mul-long p3, p3, v2
+    mul-long/2addr p3, v2
 
     .line 6
     div-long/2addr p3, v0
@@ -244,9 +244,9 @@
 
     shr-long v1, p3, v5
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    int-to-byte v1, v2
+    int-to-byte v1, v1
 
     .line 7
     aput-byte v1, p1, p2
@@ -255,9 +255,9 @@
 
     shr-long v1, p3, v6
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    int-to-byte v1, v2
+    int-to-byte v1, v1
 
     .line 8
     aput-byte v1, p1, v0
@@ -266,9 +266,9 @@
 
     shr-long/2addr p3, v7
 
-    long-to-int p4, p3
+    long-to-int p3, p3
 
-    int-to-byte p3, p4
+    int-to-byte p3, p3
 
     .line 9
     aput-byte p3, p1, p2
@@ -280,7 +280,7 @@
 
     const-wide v1, 0x406fe00000000000L    # 255.0
 
-    mul-double p2, p2, v1
+    mul-double/2addr p2, v1
 
     double-to-int p2, p2
 
@@ -476,8 +476,6 @@
     throw v0
 
     :catch_1
-    nop
-
     :goto_1
     if-eqz v2, :cond_1
 

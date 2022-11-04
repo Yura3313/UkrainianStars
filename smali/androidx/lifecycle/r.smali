@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/lifecycle/q;
+.field public final synthetic this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/q;)V
+.method public constructor <init>(Landroidx/lifecycle/ProcessLifecycleOwner;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iput-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
     invoke-direct {p0}, Landroidx/lifecycle/c;-><init>()V
 
@@ -31,7 +31,7 @@
     if-ge p2, v0, :cond_0
 
     .line 2
-    sget p2, Landroidx/lifecycle/s;->h:I
+    sget p2, Landroidx/lifecycle/s;->g:I
 
     .line 3
     invoke-virtual {p1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
@@ -47,12 +47,12 @@
     check-cast p1, Landroidx/lifecycle/s;
 
     .line 4
-    iget-object p2, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iget-object p2, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
-    iget-object p2, p2, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q$b;
+    iget-object p2, p2, Landroidx/lifecycle/ProcessLifecycleOwner;->m:Landroidx/lifecycle/ProcessLifecycleOwner$b;
 
     .line 5
-    iput-object p2, p1, Landroidx/lifecycle/s;->g:Landroidx/lifecycle/s$a;
+    iput-object p2, p1, Landroidx/lifecycle/s;->f:Landroidx/lifecycle/s$a;
 
     :cond_0
     return-void
@@ -62,21 +62,21 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iget-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
     .line 2
-    iget v0, p1, Landroidx/lifecycle/q;->h:I
+    iget v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->g:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p1, Landroidx/lifecycle/q;->h:I
+    iput v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->g:I
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p1, Landroidx/lifecycle/q;->k:Landroid/os/Handler;
+    iget-object v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->j:Landroid/os/Handler;
 
-    iget-object p1, p1, Landroidx/lifecycle/q;->m:Landroidx/lifecycle/q$a;
+    iget-object p1, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->l:Landroidx/lifecycle/ProcessLifecycleOwner$a;
 
     const-wide/16 v1, 0x2bc
 
@@ -102,33 +102,33 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/q;
+    iget-object p1, p0, Landroidx/lifecycle/r;->this$0:Landroidx/lifecycle/ProcessLifecycleOwner;
 
     .line 2
-    iget v0, p1, Landroidx/lifecycle/q;->g:I
+    iget v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->f:I
 
     const/4 v1, 0x1
 
     sub-int/2addr v0, v1
 
-    iput v0, p1, Landroidx/lifecycle/q;->g:I
+    iput v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->f:I
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-boolean v0, p1, Landroidx/lifecycle/q;->i:Z
+    iget-boolean v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->h:Z
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, p1, Landroidx/lifecycle/q;->l:Landroidx/lifecycle/k;
+    iget-object v0, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->k:Landroidx/lifecycle/k;
 
     sget-object v2, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
 
     invoke-virtual {v0, v2}, Landroidx/lifecycle/k;->e(Landroidx/lifecycle/f$b;)V
 
     .line 5
-    iput-boolean v1, p1, Landroidx/lifecycle/q;->j:Z
+    iput-boolean v1, p1, Landroidx/lifecycle/ProcessLifecycleOwner;->i:Z
 
     :cond_0
     return-void

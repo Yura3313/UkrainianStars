@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/ExpandableFrameLayout;
+.field public final synthetic f:Lcom/supercell/id/view/ExpandableFrameLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/ExpandableFrameLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->g:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->f:Lcom/supercell/id/view/ExpandableFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,11 +37,11 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->g:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->f:Lcom/supercell/id/view/ExpandableFrameLayout;
 
     const-string v1, "valueAnimator"
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -60,11 +60,11 @@
     return-void
 
     :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
+    new-instance p1, Lye/j;
 
     const-string v0, "null cannot be cast to non-null type kotlin.Float"
 
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lye/j;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method

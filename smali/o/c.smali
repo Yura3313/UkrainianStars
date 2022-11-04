@@ -53,7 +53,7 @@
             "(",
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Lo/s;",
+            "Lo/r;",
             ">;)V"
         }
     .end annotation

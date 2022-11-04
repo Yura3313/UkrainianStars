@@ -113,7 +113,7 @@
     .line 4
     iget-object v0, v0, Landroidx/lifecycle/b$a;->b:Ljava/util/Map;
 
-    invoke-interface {v1, v0}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     .line 5
     :cond_0
@@ -126,7 +126,7 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_0
     if-ge v4, v2, :cond_2
@@ -203,9 +203,9 @@
     :goto_2
     array-length v0, p2
 
-    const/4 v2, 0x0
+    move v2, v3
 
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_3
     if-ge v2, v0, :cond_b
@@ -213,13 +213,13 @@
     aget-object v5, p2, v2
 
     .line 13
-    const-class v6, Landroidx/lifecycle/p;
+    const-class v6, Landroidx/lifecycle/q;
 
     invoke-virtual {v5, v6}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object v6
 
-    check-cast v6, Landroidx/lifecycle/p;
+    check-cast v6, Landroidx/lifecycle/q;
 
     const/4 v7, 0x1
 
@@ -249,7 +249,7 @@
 
     if-eqz v8, :cond_5
 
-    const/4 v8, 0x1
+    move v8, v7
 
     goto :goto_4
 
@@ -264,11 +264,11 @@
     throw p1
 
     :cond_6
-    const/4 v8, 0x0
+    move v8, v3
 
     .line 18
     :goto_4
-    invoke-interface {v6}, Landroidx/lifecycle/p;->value()Landroidx/lifecycle/f$b;
+    invoke-interface {v6}, Landroidx/lifecycle/q;->value()Landroidx/lifecycle/f$b;
 
     move-result-object v6
 
@@ -295,7 +295,7 @@
 
     if-ne v6, v8, :cond_7
 
-    const/4 v8, 0x2
+    move v8, v10
 
     goto :goto_5
 
@@ -334,7 +334,7 @@
     .line 26
     invoke-virtual {p0, v1, v4, v6, p1}, Landroidx/lifecycle/b;->c(Ljava/util/Map;Landroidx/lifecycle/b$b;Landroidx/lifecycle/f$b;Ljava/lang/Class;)V
 
-    const/4 v4, 0x1
+    move v4, v7
 
     :goto_6
     add-int/lit8 v2, v2, 0x1
@@ -360,7 +360,7 @@
     .line 29
     iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/HashMap;
 
-    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
     iget-object v0, p0, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
@@ -369,7 +369,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p2
 
@@ -383,13 +383,7 @@
 
     invoke-direct {p2, v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_8
-
-    :goto_7
     throw p2
-
-    :goto_8
-    goto :goto_7
 .end method
 
 .method public final b(Ljava/lang/Class;)Landroidx/lifecycle/b$a;
@@ -406,7 +400,7 @@
     .line 1
     iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/HashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -466,7 +460,7 @@
     const-string v1, "Method "
 
     .line 4
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

@@ -1,6 +1,6 @@
-.class public abstract enum Lcom/google/protobuf/w1$d;
-.super Ljava/lang/Enum;
-.source "WireFormat.java"
+.class public final Lcom/google/protobuf/w1$d;
+.super Lcom/google/protobuf/w1$e;
+.source "UnsafeUtil.java"
 
 
 # annotations
@@ -9,118 +9,499 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4409
+    accessFlags = 0x19
     name = "d"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lcom/google/protobuf/w1$d;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum g:Lcom/google/protobuf/w1$d$a;
-
-.field public static final enum h:Lcom/google/protobuf/w1$d$b;
-
-.field public static final enum i:Lcom/google/protobuf/w1$d$c;
-
-.field public static final synthetic j:[Lcom/google/protobuf/w1$d;
-
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 7
-
-    .line 1
-    new-instance v0, Lcom/google/protobuf/w1$d$a;
-
-    invoke-direct {v0}, Lcom/google/protobuf/w1$d$a;-><init>()V
-
-    sput-object v0, Lcom/google/protobuf/w1$d;->g:Lcom/google/protobuf/w1$d$a;
-
-    .line 2
-    new-instance v1, Lcom/google/protobuf/w1$d$b;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1}, Lcom/google/protobuf/w1$d$b;-><init>()V
-
-    sput-object v1, Lcom/google/protobuf/w1$d;->h:Lcom/google/protobuf/w1$d$b;
-
-    .line 3
-    new-instance v3, Lcom/google/protobuf/w1$d$c;
-
-    const/4 v4, 0x2
-
-    invoke-direct {v3}, Lcom/google/protobuf/w1$d$c;-><init>()V
-
-    sput-object v3, Lcom/google/protobuf/w1$d;->i:Lcom/google/protobuf/w1$d$c;
-
-    const/4 v5, 0x3
-
-    new-array v5, v5, [Lcom/google/protobuf/w1$d;
-
-    const/4 v6, 0x0
-
-    aput-object v0, v5, v6
-
-    aput-object v1, v5, v2
-
-    aput-object v3, v5, v4
-
-    .line 4
-    sput-object v5, Lcom/google/protobuf/w1$d;->j:[Lcom/google/protobuf/w1$d;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILcom/google/protobuf/w1$a;)V
+.method public constructor <init>(Lsun/misc/Unsafe;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0, p1}, Lcom/google/protobuf/w1$e;-><init>(Lsun/misc/Unsafe;)V
 
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lcom/google/protobuf/w1$d;
-    .locals 1
-
-    const-class v0, Lcom/google/protobuf/w1$d;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/google/protobuf/w1$d;
-
-    return-object p0
-.end method
-
-.method public static values()[Lcom/google/protobuf/w1$d;
-    .locals 1
-
-    sget-object v0, Lcom/google/protobuf/w1$d;->j:[Lcom/google/protobuf/w1$d;
-
-    invoke-virtual {v0}, [Lcom/google/protobuf/w1$d;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lcom/google/protobuf/w1$d;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public abstract c(Lcom/google/protobuf/j;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final c(J[BJJ)V
+    .locals 10
+
+    move-object v0, p0
+
+    iget-object v1, v0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    sget-wide v2, Lcom/google/protobuf/w1;->f:J
+
+    add-long v6, v2, p4
+
+    const/4 v2, 0x0
+
+    move-wide v3, p1
+
+    move-object v5, p3
+
+    move-wide/from16 v8, p6
+
+    invoke-virtual/range {v1 .. v9}, Lsun/misc/Unsafe;->copyMemory(Ljava/lang/Object;JLjava/lang/Object;JJ)V
+
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Object;J)Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3}, Lsun/misc/Unsafe;->getBoolean(Ljava/lang/Object;J)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final e(J)B
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2}, Lsun/misc/Unsafe;->getByte(J)B
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final f(Ljava/lang/Object;J)B
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3}, Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final g(Ljava/lang/Object;J)D
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3}, Lsun/misc/Unsafe;->getDouble(Ljava/lang/Object;J)D
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public final h(Ljava/lang/Object;J)F
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3}, Lsun/misc/Unsafe;->getFloat(Ljava/lang/Object;J)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final m(Ljava/lang/Object;JZ)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lsun/misc/Unsafe;->putBoolean(Ljava/lang/Object;JZ)V
+
+    return-void
+.end method
+
+.method public final n(Ljava/lang/Object;JB)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V
+
+    return-void
+.end method
+
+.method public final o(Ljava/lang/Object;JD)V
+    .locals 6
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    move-wide v4, p4
+
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putDouble(Ljava/lang/Object;JD)V
+
+    return-void
+.end method
+
+.method public final p(Ljava/lang/Object;JF)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lsun/misc/Unsafe;->putFloat(Ljava/lang/Object;JF)V
+
+    return-void
+.end method
+
+.method public final t()Z
+    .locals 10
+
+    .line 1
+    const-class v0, Ljava/lang/Object;
+
+    invoke-super {p0}, Lcom/google/protobuf/w1$e;->t()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_0
+
+    return v2
+
+    .line 2
+    :cond_0
+    :try_start_0
+    iget-object v1, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    const-string v3, "getByte"
+
+    const/4 v4, 0x2
+
+    new-array v5, v4, [Ljava/lang/Class;
+
+    aput-object v0, v5, v2
+
+    .line 3
+    sget-object v6, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    const/4 v7, 0x1
+
+    aput-object v6, v5, v7
+
+    invoke-virtual {v1, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "putByte"
+
+    const/4 v5, 0x3
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 4
+    sget-object v9, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
+
+    aput-object v9, v8, v4
+
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "getBoolean"
+
+    new-array v8, v4, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 5
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "putBoolean"
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 6
+    sget-object v9, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    aput-object v9, v8, v4
+
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "getFloat"
+
+    new-array v8, v4, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 7
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "putFloat"
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 8
+    sget-object v9, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+
+    aput-object v9, v8, v4
+
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "getDouble"
+
+    new-array v8, v4, [Ljava/lang/Class;
+
+    aput-object v0, v8, v2
+
+    aput-object v6, v8, v7
+
+    .line 9
+    invoke-virtual {v1, v3, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "putDouble"
+
+    new-array v5, v5, [Ljava/lang/Class;
+
+    aput-object v0, v5, v2
+
+    aput-object v6, v5, v7
+
+    .line 10
+    sget-object v0, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    aput-object v0, v5, v4
+
+    invoke-virtual {v1, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return v7
+
+    :catchall_0
+    move-exception v0
+
+    .line 11
+    invoke-static {v0}, Lcom/google/protobuf/w1;->a(Ljava/lang/Throwable;)V
+
+    return v2
+.end method
+
+.method public final u()Z
+    .locals 11
+
+    const-string v0, "copyMemory"
+
+    .line 1
+    const-class v1, Ljava/lang/Object;
+
+    iget-object v2, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    const-string v3, "getLong"
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    if-nez v2, :cond_0
+
+    :goto_0
+    move v2, v6
+
+    goto :goto_1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    const-string v7, "objectFieldOffset"
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    .line 3
+    const-class v9, Ljava/lang/reflect/Field;
+
+    aput-object v9, v8, v6
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    new-array v7, v4, [Ljava/lang/Class;
+
+    aput-object v1, v7, v6
+
+    .line 4
+    sget-object v8, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    aput-object v8, v7, v5
+
+    invoke-virtual {v2, v3, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/w1;->h()Ljava/lang/reflect/Field;
+
+    move-result-object v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v2, v5
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception v2
+
+    .line 6
+    invoke-static {v2}, Lcom/google/protobuf/w1;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    :goto_1
+    if-nez v2, :cond_2
+
+    return v6
+
+    .line 7
+    :cond_2
+    :try_start_1
+    iget-object v2, p0, Lcom/google/protobuf/w1$e;->a:Lsun/misc/Unsafe;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    const-string v7, "getByte"
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    .line 8
+    sget-object v9, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    aput-object v9, v8, v6
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v7, "putByte"
+
+    new-array v8, v4, [Ljava/lang/Class;
+
+    aput-object v9, v8, v6
+
+    .line 9
+    sget-object v10, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
+
+    aput-object v10, v8, v5
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v7, "getInt"
+
+    new-array v8, v5, [Ljava/lang/Class;
+
+    aput-object v9, v8, v6
+
+    .line 10
+    invoke-virtual {v2, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v7, "putInt"
+
+    new-array v8, v4, [Ljava/lang/Class;
+
+    aput-object v9, v8, v6
+
+    .line 11
+    sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v10, v8, v5
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    new-array v7, v5, [Ljava/lang/Class;
+
+    aput-object v9, v7, v6
+
+    .line 12
+    invoke-virtual {v2, v3, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const-string v3, "putLong"
+
+    new-array v7, v4, [Ljava/lang/Class;
+
+    aput-object v9, v7, v6
+
+    aput-object v9, v7, v5
+
+    .line 13
+    invoke-virtual {v2, v3, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const/4 v3, 0x3
+
+    new-array v7, v3, [Ljava/lang/Class;
+
+    aput-object v9, v7, v6
+
+    aput-object v9, v7, v5
+
+    aput-object v9, v7, v4
+
+    .line 14
+    invoke-virtual {v2, v0, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    const/4 v7, 0x5
+
+    new-array v7, v7, [Ljava/lang/Class;
+
+    aput-object v1, v7, v6
+
+    aput-object v9, v7, v5
+
+    aput-object v1, v7, v4
+
+    aput-object v9, v7, v3
+
+    const/4 v1, 0x4
+
+    aput-object v9, v7, v1
+
+    .line 15
+    invoke-virtual {v2, v0, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    return v5
+
+    :catchall_1
+    move-exception v0
+
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/w1;->a(Ljava/lang/Throwable;)V
+
+    return v6
 .end method

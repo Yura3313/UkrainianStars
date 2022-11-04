@@ -55,7 +55,7 @@
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 6
+    .locals 5
 
     if-ne p0, p1, :cond_0
 
@@ -102,9 +102,9 @@
 
     iget-wide v3, p1, Lcom/linecorp/linesdk/a/b;->a:J
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-eqz v5, :cond_3
+    if-eqz v1, :cond_3
 
     return v0
 
@@ -150,9 +150,9 @@
 
     xor-long/2addr v1, v3
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 

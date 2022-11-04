@@ -1,78 +1,87 @@
 .class public final Lld/b;
-.super Ljava/lang/Object;
-.source "IngameFriendsFragment.kt"
+.super Lif/i;
+.source "LoginConfirmPageFragment.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Lhf/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/p<",
+        "Lld/e;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
 
 
 # static fields
-.field public static final a:I
-
-.field public static final b:Lld/b;
+.field public static final f:Lld/b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lld/b;
 
     invoke-direct {v0}, Lld/b;-><init>()V
 
-    sput-object v0, Lld/b;->b:Lld/b;
-
-    .line 2
-    sget v0, Lcom/supercell/id/R$layout;->fragment_ingame_friends_list_item_fb_warning:I
-
-    sput v0, Lld/b;->a:I
+    sput-object v0, Lld/b;->f:Lld/b;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    const-string v0, "other"
+    .line 1
+    check-cast p1, Lld/e;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast p2, Ljava/lang/Exception;
 
-    invoke-static {p1, p0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const-string v0, "$receiver"
 
-    move-result p1
+    .line 2
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return p1
-.end method
+    const-string v0, "it"
 
-.method public final c()I
-    .locals 1
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget v0, Lld/b;->a:I
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    return v0
-.end method
+    move-result-object p1
 
-.method public final d(Lae/a2;)Z
-    .locals 1
+    if-eqz p1, :cond_0
 
-    const-string v0, "other"
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v0, 0x0
 
-    invoke-static {p1, p0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 4
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
 
-    move-result p1
+    .line 5
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
 
-    return p1
+    return-object p1
 .end method

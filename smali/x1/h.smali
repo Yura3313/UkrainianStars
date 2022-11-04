@@ -1,128 +1,256 @@
-.class public final Lx1/h;
+.class public Lx1/h;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/signin/SignInAccount;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static a:Z
+
+.field public static b:Z
+
+.field public static final c:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public static final d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    sput-object v0, Lx1/h;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    sput-object v0, Lx1/h;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-void
 .end method
 
+.method public static a(Landroid/content/Context;)Landroid/content/Context;
+    .locals 2
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
 
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+    :try_start_0
+    const-string v0, "com.google.android.gms"
+
+    const/4 v1, 0x3
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->createPackageContext(Ljava/lang/String;I)Landroid/content/Context;
+
+    move-result-object p0
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public static b(Landroid/content/Context;)Z
+    .locals 5
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    sget-boolean v0, Lx1/h;->b:Z
 
-    move-result v0
+    const/4 v1, 0x0
 
-    const-string v1, ""
+    const/4 v2, 0x1
 
-    const/4 v2, 0x0
-
-    move-object v3, v2
-
-    move-object v2, v1
+    if-nez v0, :cond_1
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    :try_start_0
+    invoke-static {p0}, Ll2/c;->a(Landroid/content/Context;)Ll2/b;
 
-    move-result v4
+    move-result-object v0
 
-    if-ge v4, v0, :cond_3
+    const-string v3, "com.google.android.gms"
+
+    const/16 v4, 0x40
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    invoke-virtual {v0, v3, v4}, Ll2/b;->c(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    move-result v4
-
-    const v5, 0xffff
-
-    and-int/2addr v5, v4
-
-    const/4 v6, 0x4
-
-    if-eq v5, v6, :cond_2
-
-    const/4 v6, 0x7
-
-    if-eq v5, v6, :cond_1
-
-    const/16 v6, 0x8
-
-    if-eq v5, v6, :cond_0
+    move-result-object v0
 
     .line 4
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p0}, Lx1/i;->a(Landroid/content/Context;)Lx1/i;
 
-    goto :goto_0
+    if-eqz v0, :cond_0
 
     .line 5
-    :cond_0
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lx1/i;->e(Landroid/content/pm/PackageInfo;Z)Z
 
-    move-result-object v2
+    move-result p0
 
-    goto :goto_0
+    if-nez p0, :cond_0
 
     .line 6
-    :cond_1
-    sget-object v3, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-static {v0, v2}, Lx1/i;->e(Landroid/content/pm/PackageInfo;Z)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
 
     .line 7
-    invoke-static {p1, v4, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    sput-boolean v2, Lx1/h;->a:Z
 
     goto :goto_0
 
     .line 8
+    :cond_0
+    sput-boolean v1, Lx1/h;->a:Z
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 9
+    :goto_0
+    sput-boolean v2, Lx1/h;->b:Z
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p0
+
+    .line 10
+    sput-boolean v2, Lx1/h;->b:Z
+
+    .line 11
+    throw p0
+
+    .line 12
+    :catch_0
+    sput-boolean v2, Lx1/h;->b:Z
+
+    .line 13
+    :cond_1
+    :goto_1
+    sget-boolean p0, Lx1/h;->a:Z
+
+    if-nez p0, :cond_3
+
+    .line 14
+    sget-object p0, Landroid/os/Build;->TYPE:Ljava/lang/String;
+
+    const-string v0, "user"
+
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    goto :goto_2
+
     :cond_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    return v1
+
+    :cond_3
+    :goto_2
+    return v2
+.end method
+
+.method public static c(Landroid/content/Context;)Z
+    .locals 4
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0x15
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/pm/PackageManager;->getPackageInstaller()Landroid/content/pm/PackageInstaller;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/pm/PackageInstaller;->getAllSessions()Ljava/util/List;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 2
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    const-string v3, "com.google.android.gms"
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    goto :goto_0
+    check-cast v1, Landroid/content/pm/PackageInstaller$SessionInfo;
 
-    .line 9
-    :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    .line 3
+    invoke-virtual {v1}, Landroid/content/pm/PackageInstaller$SessionInfo;->getAppPackageName()Ljava/lang/String;
 
-    .line 10
-    new-instance p1, Lcom/google/android/gms/auth/api/signin/SignInAccount;
+    move-result-object v1
 
-    invoke-direct {p1, v1, v3, v2}, Lcom/google/android/gms/auth/api/signin/SignInAccount;-><init>(Ljava/lang/String;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Ljava/lang/String;)V
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    return-object p1
-.end method
+    move-result v1
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    if-eqz v1, :cond_0
 
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/signin/SignInAccount;
+    return v2
 
-    return-object p1
+    .line 4
+    :cond_1
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p0
+
+    const/16 v0, 0x2000
+
+    .line 5
+    :try_start_1
+    invoke-virtual {p0, v3, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+
+    move-result-object p0
+
+    .line 6
+    iget-boolean p0, p0, Landroid/content/pm/ApplicationInfo;->enabled:Z
+    :try_end_1
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+
+    return p0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return p0
 .end method

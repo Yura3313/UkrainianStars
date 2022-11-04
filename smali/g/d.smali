@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field public g:Landroid/graphics/Rect;
+.field public f:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -43,13 +43,13 @@
 
     const/4 v4, 0x0
 
+    move v5, v0
+
+    move v6, v5
+
     move-object v7, v4
 
     move-object v8, v7
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
 
     :goto_0
     if-ge v0, v3, :cond_4
@@ -115,7 +115,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_1
@@ -154,7 +154,7 @@
 
 
 # virtual methods
-.method public final f(Landroidx/appcompat/view/menu/g;)Z
+.method public final c(Landroidx/appcompat/view/menu/g;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -162,7 +162,7 @@
     return p1
 .end method
 
-.method public final g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
+.method public final d(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     return-void
@@ -235,7 +235,7 @@
 
     .line 5
     :goto_0
-    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->f:Landroidx/appcompat/view/menu/e;
 
     .line 6
     invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;

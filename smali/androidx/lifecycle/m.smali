@@ -150,7 +150,7 @@
 .end method
 
 .method public static c(Ljava/lang/Class;)I
-    .locals 10
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -162,7 +162,7 @@
     .line 1
     sget-object v0, Landroidx/lifecycle/m;->a:Ljava/util/HashMap;
 
-    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -318,6 +318,8 @@
 
     :cond_5
     :goto_3
+    const/4 v5, 0x2
+
     if-eqz v4, :cond_6
 
     .line 16
@@ -329,7 +331,7 @@
     move-result-object v1
 
     .line 18
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_a
 
@@ -338,18 +340,18 @@
     sget-object v4, Landroidx/lifecycle/b;->c:Landroidx/lifecycle/b;
 
     .line 20
-    iget-object v5, v4, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
+    iget-object v6, v4, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
 
-    invoke-interface {v5, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v6
 
-    check-cast v5, Ljava/lang/Boolean;
+    check-cast v6, Ljava/lang/Boolean;
 
-    if-eqz v5, :cond_7
+    if-eqz v6, :cond_7
 
     .line 21
-    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v4
 
@@ -360,40 +362,40 @@
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
 
-    move-result-object v5
+    move-result-object v6
     :try_end_1
     .catch Ljava/lang/NoClassDefFoundError; {:try_start_1 .. :try_end_1} :catch_2
 
     .line 23
-    array-length v6, v5
+    array-length v7, v6
 
-    const/4 v7, 0x0
+    move v8, v3
 
     :goto_4
-    if-ge v7, v6, :cond_9
+    if-ge v8, v7, :cond_9
 
-    aget-object v8, v5, v7
+    aget-object v9, v6, v8
 
     .line 24
-    const-class v9, Landroidx/lifecycle/p;
+    const-class v10, Landroidx/lifecycle/q;
 
-    invoke-virtual {v8, v9}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+    invoke-virtual {v9, v10}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
-    move-result-object v8
+    move-result-object v9
 
-    check-cast v8, Landroidx/lifecycle/p;
+    check-cast v9, Landroidx/lifecycle/q;
 
-    if-eqz v8, :cond_8
+    if-eqz v9, :cond_8
 
     .line 25
-    invoke-virtual {v4, p0, v5}, Landroidx/lifecycle/b;->a(Ljava/lang/Class;[Ljava/lang/reflect/Method;)Landroidx/lifecycle/b$a;
+    invoke-virtual {v4, p0, v6}, Landroidx/lifecycle/b;->a(Ljava/lang/Class;[Ljava/lang/reflect/Method;)Landroidx/lifecycle/b$a;
 
-    const/4 v4, 0x1
+    move v4, v2
 
     goto :goto_5
 
     :cond_8
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_4
 
@@ -401,16 +403,16 @@
     :cond_9
     iget-object v4, v4, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
 
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v6, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-interface {v4, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, p0, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_5
     if-eqz v4, :cond_a
 
-    goto :goto_b
+    goto/16 :goto_b
 
     .line 27
     :cond_a
@@ -423,19 +425,19 @@
     .line 28
     invoke-virtual {v0, v4}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
-    move-result v5
+    move-result v6
 
-    if-eqz v5, :cond_b
+    if-eqz v6, :cond_b
 
-    const/4 v5, 0x1
+    move v6, v2
 
     goto :goto_6
 
     :cond_b
-    const/4 v5, 0x0
+    move v6, v3
 
     :goto_6
-    if-eqz v5, :cond_d
+    if-eqz v6, :cond_d
 
     .line 29
     invoke-static {v4}, Landroidx/lifecycle/m;->c(Ljava/lang/Class;)I
@@ -450,9 +452,9 @@
     :cond_c
     new-instance v1, Ljava/util/ArrayList;
 
-    sget-object v5, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
+    sget-object v6, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
 
-    invoke-interface {v5, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -466,43 +468,43 @@
 
     move-result-object v4
 
-    array-length v5, v4
+    array-length v6, v4
 
-    const/4 v6, 0x0
+    move v7, v3
 
     :goto_7
-    if-ge v6, v5, :cond_12
+    if-ge v7, v6, :cond_12
 
-    aget-object v7, v4, v6
-
-    if-eqz v7, :cond_e
-
-    .line 32
-    invoke-virtual {v0, v7}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result v8
+    aget-object v8, v4, v7
 
     if-eqz v8, :cond_e
 
-    const/4 v8, 0x1
+    .line 32
+    invoke-virtual {v0, v8}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_e
+
+    move v9, v2
 
     goto :goto_8
 
     :cond_e
-    const/4 v8, 0x0
+    move v9, v3
 
     :goto_8
-    if-nez v8, :cond_f
+    if-nez v9, :cond_f
 
     goto :goto_9
 
     .line 33
     :cond_f
-    invoke-static {v7}, Landroidx/lifecycle/m;->c(Ljava/lang/Class;)I
+    invoke-static {v8}, Landroidx/lifecycle/m;->c(Ljava/lang/Class;)I
 
-    move-result v8
+    move-result v9
 
-    if-ne v8, v2, :cond_10
+    if-ne v9, v2, :cond_10
 
     goto :goto_b
 
@@ -516,18 +518,18 @@
 
     .line 35
     :cond_11
-    sget-object v8, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
+    sget-object v9, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
 
-    invoke-interface {v8, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v9, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
-    check-cast v7, Ljava/util/Collection;
+    check-cast v8, Ljava/util/Collection;
 
-    invoke-interface {v1, v7}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-interface {v1, v8}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     :goto_9
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_7
 
@@ -537,10 +539,10 @@
     .line 36
     sget-object v0, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
 
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_a
-    const/4 v2, 0x2
+    move v2, v5
 
     .line 37
     :cond_13
@@ -551,7 +553,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return v2
 
@@ -565,11 +567,5 @@
 
     invoke-direct {v0, v1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_d
-
-    :goto_c
     throw v0
-
-    :goto_d
-    goto :goto_c
 .end method

@@ -64,71 +64,31 @@
 
     sput-object v0, Lokhttp3/internal/http2/Http2;->CONNECTION_PREFACE:Lokio/ByteString;
 
-    const/16 v0, 0xa
-
-    new-array v0, v0, [Ljava/lang/String;
-
     const-string v1, "DATA"
 
-    const/4 v2, 0x0
+    const-string v2, "HEADERS"
 
-    aput-object v1, v0, v2
+    const-string v3, "PRIORITY"
 
-    const-string v1, "HEADERS"
+    const-string v4, "RST_STREAM"
 
-    const/4 v3, 0x1
+    const-string v5, "SETTINGS"
 
-    aput-object v1, v0, v3
-
-    const/4 v1, 0x2
-
-    const-string v4, "PRIORITY"
-
-    aput-object v4, v0, v1
-
-    const-string v1, "RST_STREAM"
-
-    const/4 v5, 0x3
-
-    aput-object v1, v0, v5
-
-    const-string v1, "SETTINGS"
-
-    const/4 v6, 0x4
-
-    aput-object v1, v0, v6
-
-    const/4 v1, 0x5
-
-    const-string v7, "PUSH_PROMISE"
-
-    aput-object v7, v0, v1
-
-    const/4 v1, 0x6
+    const-string v6, "PUSH_PROMISE"
 
     const-string v7, "PING"
 
-    aput-object v7, v0, v1
+    const-string v8, "GOAWAY"
 
-    const/4 v1, 0x7
+    const-string v9, "WINDOW_UPDATE"
 
-    const-string v7, "GOAWAY"
-
-    aput-object v7, v0, v1
-
-    const-string v1, "WINDOW_UPDATE"
-
-    const/16 v7, 0x8
-
-    aput-object v1, v0, v7
-
-    const/16 v1, 0x9
-
-    const-string v8, "CONTINUATION"
-
-    aput-object v8, v0, v1
+    const-string v10, "CONTINUATION"
 
     .line 2
+    filled-new-array/range {v1 .. v10}, [Ljava/lang/String;
+
+    move-result-object v0
+
     sput-object v0, Lokhttp3/internal/http2/Http2;->FRAME_NAMES:[Ljava/lang/String;
 
     const/16 v0, 0x40
@@ -147,141 +107,153 @@
 
     const/4 v0, 0x0
 
+    move v1, v0
+
     .line 5
     :goto_0
-    sget-object v1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
+    sget-object v2, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
-    array-length v8, v1
+    array-length v3, v2
 
-    const/16 v9, 0x20
+    const/16 v4, 0x20
 
-    if-ge v0, v8, :cond_0
+    const/4 v5, 0x1
 
-    new-array v8, v3, [Ljava/lang/Object;
+    if-ge v1, v3, :cond_0
+
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 6
-    invoke-static {v0}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v5
 
-    aput-object v10, v8, v2
+    aput-object v5, v3, v0
 
-    const-string v10, "%8s"
+    const-string v5, "%8s"
 
-    invoke-static {v10, v8}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v5, v3}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v3
 
-    const/16 v10, 0x30
+    const/16 v5, 0x30
 
-    invoke-virtual {v8, v9, v10}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v3
 
-    aput-object v8, v1, v0
+    aput-object v3, v2, v1
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     .line 7
     :cond_0
-    sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    sget-object v1, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
-    const-string v1, ""
+    const-string v2, ""
 
-    aput-object v1, v0, v2
+    aput-object v2, v1, v0
 
-    const-string v1, "END_STREAM"
+    const-string v2, "END_STREAM"
 
     .line 8
-    aput-object v1, v0, v3
+    aput-object v2, v1, v5
 
-    new-array v1, v3, [I
+    new-array v2, v5, [I
 
-    aput v3, v1, v2
+    aput v5, v2, v0
 
-    const-string v8, "PADDED"
+    const-string v3, "PADDED"
+
+    const/16 v6, 0x8
 
     .line 9
-    aput-object v8, v0, v7
+    aput-object v3, v1, v6
 
-    const/4 v0, 0x0
+    move v1, v0
 
     :goto_1
-    const-string v8, "|PADDED"
+    const-string v3, "|PADDED"
 
-    if-ge v0, v3, :cond_1
+    if-ge v1, v5, :cond_1
 
     .line 10
-    aget v10, v1, v0
+    aget v7, v2, v1
 
     .line 11
-    sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    sget-object v8, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
-    or-int/lit8 v12, v10, 0x8
+    or-int/lit8 v9, v7, 0x8
 
-    new-instance v13, Ljava/lang/StringBuilder;
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    aget-object v10, v11, v10
+    aget-object v7, v8, v7
 
     .line 12
-    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v7, v3}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v3
 
     .line 13
-    aput-object v8, v11, v12
+    aput-object v3, v8, v9
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
     .line 14
     :cond_1
-    sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    sget-object v1, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
-    const-string v10, "END_HEADERS"
+    const/4 v7, 0x4
 
-    aput-object v10, v0, v6
+    const-string v8, "END_HEADERS"
+
+    aput-object v8, v1, v7
+
+    const-string v7, "PRIORITY"
 
     .line 15
-    aput-object v4, v0, v9
+    aput-object v7, v1, v4
 
     const/16 v4, 0x24
 
-    const-string v6, "END_HEADERS|PRIORITY"
+    const-string v7, "END_HEADERS|PRIORITY"
 
     .line 16
-    aput-object v6, v0, v4
+    aput-object v7, v1, v4
 
-    new-array v0, v5, [I
+    const/4 v1, 0x3
+
+    new-array v4, v1, [I
 
     .line 17
-    fill-array-data v0, :array_0
+    fill-array-data v4, :array_0
 
-    const/4 v4, 0x0
+    move v7, v0
 
     :goto_2
-    if-ge v4, v5, :cond_3
+    if-ge v7, v1, :cond_3
 
     .line 18
-    aget v6, v0, v4
+    aget v8, v4, v7
 
-    const/4 v9, 0x0
+    move v9, v0
 
     :goto_3
-    if-ge v9, v3, :cond_2
+    if-ge v9, v5, :cond_2
 
     .line 19
-    aget v10, v1, v9
+    aget v10, v2, v9
 
     .line 20
     sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
-    or-int v12, v10, v6
+    or-int v12, v10, v8
 
     new-instance v13, Ljava/lang/StringBuilder;
 
@@ -295,7 +267,7 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    aget-object v15, v11, v6
+    aget-object v15, v11, v8
 
     invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -305,7 +277,7 @@
 
     aput-object v13, v11, v12
 
-    or-int/2addr v12, v7
+    or-int/2addr v12, v6
 
     .line 21
     new-instance v13, Ljava/lang/StringBuilder;
@@ -318,10 +290,10 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    aget-object v10, v11, v6
+    aget-object v10, v11, v8
 
     .line 22
-    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v13, v10, v3}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -333,32 +305,32 @@
     goto :goto_3
 
     :cond_2
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_2
 
     .line 24
     :cond_3
     :goto_4
-    sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    sget-object v1, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
-    array-length v1, v0
+    array-length v2, v1
 
-    if-ge v2, v1, :cond_5
+    if-ge v0, v2, :cond_5
 
     .line 25
-    aget-object v1, v0, v2
+    aget-object v2, v1, v0
 
-    if-nez v1, :cond_4
+    if-nez v2, :cond_4
 
-    sget-object v1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
+    sget-object v2, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
-    aget-object v1, v1, v2
+    aget-object v2, v2, v0
 
-    aput-object v1, v0, v2
+    aput-object v2, v1, v0
 
     :cond_4
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_4
 

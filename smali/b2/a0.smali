@@ -1,36 +1,47 @@
 .class public final Lb2/a0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# instance fields
-.field public final a:Lcom/google/android/gms/common/internal/zao;
-
-.field public final b:I
-
-.field public final c:J
-
-.field public final d:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/BinderWrapper;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/internal/zao;IJI)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lb2/a0;->a:Lcom/google/android/gms/common/internal/zao;
-
-    .line 3
-    iput p2, p0, Lb2/a0;->b:I
-
-    .line 4
-    iput-wide p3, p0, Lb2/a0;->c:J
-
-    .line 5
-    iput p5, p0, Lb2/a0;->d:I
-
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/common/internal/BinderWrapper;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/common/internal/BinderWrapper;-><init>(Landroid/os/Parcel;)V
+
+    return-object v0
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/BinderWrapper;
+
+    return-object p1
 .end method

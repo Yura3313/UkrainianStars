@@ -50,7 +50,7 @@
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 3
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->p:Landroidx/viewpager2/widget/ViewPager2$k;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->o:Landroidx/viewpager2/widget/ViewPager2$k;
 
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->c:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -84,37 +84,37 @@
     .line 1
     iget p1, p0, Landroidx/viewpager2/widget/f;->e:I
 
-    const/4 v0, 0x1
+    const/4 v0, -0x1
 
     const/4 v1, 0x0
 
-    const/4 v2, -0x1
+    const/4 v2, 0x1
 
-    if-ne p1, v0, :cond_0
+    if-ne p1, v2, :cond_0
 
     iget v3, p0, Landroidx/viewpager2/widget/f;->f:I
 
-    if-eq v3, v0, :cond_3
+    if-eq v3, v2, :cond_3
 
     :cond_0
-    if-ne p2, v0, :cond_3
+    if-ne p2, v2, :cond_3
 
     .line 2
     iput-boolean v1, p0, Landroidx/viewpager2/widget/f;->m:Z
 
     .line 3
-    iput v0, p0, Landroidx/viewpager2/widget/f;->e:I
+    iput v2, p0, Landroidx/viewpager2/widget/f;->e:I
 
     .line 4
     iget p1, p0, Landroidx/viewpager2/widget/f;->i:I
 
-    if-eq p1, v2, :cond_1
+    if-eq p1, v0, :cond_1
 
     .line 5
     iput p1, p0, Landroidx/viewpager2/widget/f;->h:I
 
     .line 6
-    iput v2, p0, Landroidx/viewpager2/widget/f;->i:I
+    iput v0, p0, Landroidx/viewpager2/widget/f;->i:I
 
     goto :goto_0
 
@@ -122,7 +122,7 @@
     :cond_1
     iget p1, p0, Landroidx/viewpager2/widget/f;->h:I
 
-    if-ne p1, v2, :cond_2
+    if-ne p1, v0, :cond_2
 
     .line 8
     iget-object p1, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -137,27 +137,27 @@
     .line 10
     :cond_2
     :goto_0
-    invoke-virtual {p0, v0}, Landroidx/viewpager2/widget/f;->d(I)V
+    invoke-virtual {p0, v2}, Landroidx/viewpager2/widget/f;->d(I)V
 
     return-void
 
     :cond_3
     const/4 v3, 0x4
 
-    if-eq p1, v0, :cond_5
+    if-eq p1, v2, :cond_5
 
     if-ne p1, v3, :cond_4
 
     goto :goto_1
 
     :cond_4
-    const/4 v4, 0x0
+    move v4, v1
 
     goto :goto_2
 
     :cond_5
     :goto_1
-    const/4 v4, 0x1
+    move v4, v2
 
     :goto_2
     const/4 v5, 0x2
@@ -175,26 +175,26 @@
     invoke-virtual {p0, v5}, Landroidx/viewpager2/widget/f;->d(I)V
 
     .line 13
-    iput-boolean v0, p0, Landroidx/viewpager2/widget/f;->j:Z
+    iput-boolean v2, p0, Landroidx/viewpager2/widget/f;->j:Z
 
     :cond_6
     return-void
 
     :cond_7
-    if-eq p1, v0, :cond_9
+    if-eq p1, v2, :cond_9
 
     if-ne p1, v3, :cond_8
 
     goto :goto_3
 
     :cond_8
-    const/4 p1, 0x0
+    move p1, v1
 
     goto :goto_4
 
     :cond_9
     :goto_3
-    const/4 p1, 0x1
+    move p1, v2
 
     :goto_4
     if-eqz p1, :cond_d
@@ -214,7 +214,7 @@
 
     iget p1, p1, Landroidx/viewpager2/widget/f$a;->a:I
 
-    if-eq p1, v2, :cond_c
+    if-eq p1, v0, :cond_c
 
     const/4 v3, 0x0
 
@@ -249,11 +249,11 @@
     goto :goto_5
 
     :cond_b
-    const/4 v0, 0x0
+    move v2, v1
 
     :cond_c
     :goto_5
-    if-eqz v0, :cond_d
+    if-eqz v2, :cond_d
 
     .line 22
     invoke-virtual {p0, v1}, Landroidx/viewpager2/widget/f;->d(I)V
@@ -290,9 +290,9 @@
 
     if-eq p2, p1, :cond_f
 
-    if-ne p1, v2, :cond_e
+    if-ne p1, v0, :cond_e
 
-    const/4 p1, 0x0
+    move p1, v1
 
     .line 28
     :cond_e
@@ -323,14 +323,14 @@
     .line 3
     iget-boolean v0, p0, Landroidx/viewpager2/widget/f;->j:Z
 
-    const/4 v1, 0x0
+    const/4 v1, -0x1
 
-    const/4 v2, -0x1
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_4
 
     .line 4
-    iput-boolean v1, p0, Landroidx/viewpager2/widget/f;->j:Z
+    iput-boolean v2, p0, Landroidx/viewpager2/widget/f;->j:Z
 
     if-gtz p3, :cond_2
 
@@ -338,12 +338,12 @@
 
     if-gez p2, :cond_0
 
-    const/4 p2, 0x1
+    move p2, p1
 
     goto :goto_0
 
     :cond_0
-    const/4 p2, 0x0
+    move p2, v2
 
     .line 5
     :goto_0
@@ -358,13 +358,13 @@
     goto :goto_1
 
     :cond_1
-    const/4 p2, 0x0
+    move p2, v2
 
     goto :goto_2
 
     :cond_2
     :goto_1
-    const/4 p2, 0x1
+    move p2, p1
 
     :goto_2
     if-eqz p2, :cond_3
@@ -411,9 +411,9 @@
 
     iget p2, p2, Landroidx/viewpager2/widget/f$a;->a:I
 
-    if-ne p2, v2, :cond_5
+    if-ne p2, v1, :cond_5
 
-    const/4 p2, 0x0
+    move p2, v2
 
     .line 11
     :cond_5
@@ -426,9 +426,9 @@
 
     iget p3, p2, Landroidx/viewpager2/widget/f$a;->a:I
 
-    if-ne p3, v2, :cond_7
+    if-ne p3, v1, :cond_7
 
-    const/4 p3, 0x0
+    move p3, v2
 
     :cond_7
     iget v0, p2, Landroidx/viewpager2/widget/f$a;->b:F
@@ -453,7 +453,7 @@
 
     if-eq p3, v0, :cond_9
 
-    if-ne v0, v2, :cond_a
+    if-ne v0, v1, :cond_a
 
     :cond_9
     iget p2, p2, Landroidx/viewpager2/widget/f$a;->c:I
@@ -465,7 +465,7 @@
     if-eq p2, p1, :cond_a
 
     .line 16
-    invoke-virtual {p0, v1}, Landroidx/viewpager2/widget/f;->d(I)V
+    invoke-virtual {p0, v2}, Landroidx/viewpager2/widget/f;->d(I)V
 
     .line 17
     invoke-virtual {p0}, Landroidx/viewpager2/widget/f;->e()V
@@ -611,7 +611,7 @@
     :cond_1
     iget-object v2, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -627,7 +627,7 @@
     .line 8
     iget-object v3, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -643,7 +643,7 @@
     .line 10
     iget-object v4, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -659,7 +659,7 @@
     .line 12
     iget-object v5, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -736,12 +736,12 @@
 
     if-nez v3, :cond_3
 
-    const/4 v3, 0x1
+    move v3, v8
 
     goto :goto_0
 
     :cond_3
-    const/4 v3, 0x0
+    move v3, v7
 
     :goto_0
     if-eqz v3, :cond_5
@@ -826,12 +826,12 @@
 
     if-nez v3, :cond_7
 
-    const/4 v3, 0x1
+    move v3, v8
 
     goto :goto_2
 
     :cond_7
-    const/4 v3, 0x0
+    move v3, v7
 
     :goto_2
     const/4 v4, 0x2
@@ -851,7 +851,7 @@
 
     check-cast v4, [[I
 
-    const/4 v5, 0x0
+    move v5, v7
 
     :goto_3
     if-ge v5, v2, :cond_c
@@ -961,7 +961,7 @@
 
     invoke-static {v4, v3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    const/4 v3, 0x1
+    move v3, v8
 
     :goto_7
     if-ge v3, v2, :cond_e
@@ -1017,13 +1017,13 @@
 
     :cond_f
     :goto_8
-    const/4 v2, 0x1
+    move v2, v8
 
     goto :goto_a
 
     :cond_10
     :goto_9
-    const/4 v2, 0x0
+    move v2, v7
 
     :goto_a
     if-eqz v2, :cond_11
@@ -1045,7 +1045,7 @@
 
     move-result v2
 
-    const/4 v3, 0x0
+    move v3, v7
 
     :goto_b
     if-ge v3, v2, :cond_13
@@ -1063,7 +1063,7 @@
 
     if-eqz v4, :cond_12
 
-    const/4 v1, 0x1
+    move v1, v8
 
     goto :goto_c
 
@@ -1073,17 +1073,17 @@
     goto :goto_b
 
     :cond_13
-    const/4 v1, 0x0
+    move v1, v7
 
     :goto_c
     if-eqz v1, :cond_14
 
-    const/4 v1, 0x1
+    move v1, v8
 
     goto :goto_d
 
     :cond_14
-    const/4 v1, 0x0
+    move v1, v7
 
     :goto_d
     if-eqz v1, :cond_15

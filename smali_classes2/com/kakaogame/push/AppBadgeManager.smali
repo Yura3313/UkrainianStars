@@ -126,13 +126,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method private static removeAppBadgeChangeListener(Lcom/kakaogame/push/AppBadgeManager$AppBadgeChangeListener;)V
@@ -206,7 +200,7 @@
 
     if-gez p1, :cond_1
 
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 3
     :cond_1
@@ -234,18 +228,18 @@
     if-lez p1, :cond_2
 
     .line 5
-    sget-object v3, Lcf/b;->a:Ljava/util/LinkedList;
+    sget-object v3, Lsf/c;->a:Ljava/util/LinkedList;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 6
     :try_start_2
-    invoke-static {p0, p1}, Lcf/b;->a(Landroid/content/Context;I)V
+    invoke-static {p0, p1}, Lsf/c;->a(Landroid/content/Context;I)V
     :try_end_2
-    .catch Lme/leolin/shortcutbadger/ShortcutBadgeException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Lsf/b; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_1
 
@@ -278,18 +272,18 @@
 
     .line 9
     :cond_2
-    sget-object v3, Lcf/b;->a:Ljava/util/LinkedList;
+    sget-object v3, Lsf/c;->a:Ljava/util/LinkedList;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 10
     :try_start_4
-    invoke-static {p0, v0}, Lcf/b;->a(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lsf/c;->a(Landroid/content/Context;I)V
     :try_end_4
-    .catch Lme/leolin/shortcutbadger/ShortcutBadgeException; {:try_start_4 .. :try_end_4} :catch_2
+    .catch Lsf/b; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_2
 

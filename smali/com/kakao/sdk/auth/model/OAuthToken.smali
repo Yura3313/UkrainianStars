@@ -49,7 +49,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;-><init>(Lse/f;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;-><init>(Lif/e;)V
 
     sput-object v0, Lcom/kakao/sdk/auth/model/OAuthToken;->Companion:Lcom/kakao/sdk/auth/model/OAuthToken$Companion;
 
@@ -79,15 +79,15 @@
 
     const-string v0, "accessToken"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "accessTokenExpiresAt"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "refreshToken"
 
-    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -105,7 +105,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;ILse/f;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;ILif/e;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x8
@@ -281,15 +281,15 @@
 
     const-string v0, "accessToken"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "accessTokenExpiresAt"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "refreshToken"
 
-    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/auth/model/OAuthToken;
 
@@ -333,7 +333,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/auth/model/OAuthToken;->accessToken:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -343,7 +343,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/auth/model/OAuthToken;->accessTokenExpiresAt:Ljava/util/Date;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -353,7 +353,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/auth/model/OAuthToken;->refreshToken:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -363,7 +363,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/auth/model/OAuthToken;->refreshTokenExpiresAt:Ljava/util/Date;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -373,7 +373,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/auth/model/OAuthToken;->scopes:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -457,7 +457,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
@@ -473,7 +473,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_1
     add-int/2addr v0, v2
@@ -491,7 +491,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_2
     add-int/2addr v0, v2
@@ -509,7 +509,7 @@
     goto :goto_3
 
     :cond_3
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_3
     add-int/2addr v0, v2
@@ -536,7 +536,7 @@
     const-string v0, "OAuthToken(accessToken="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -578,7 +578,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lsb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -590,7 +590,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/auth/model/OAuthToken;->accessToken:Ljava/lang/String;
 

@@ -179,7 +179,7 @@
     iput v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->c:I
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -215,7 +215,7 @@
     iput v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->b:I
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -361,12 +361,12 @@
 
     if-le p2, p1, :cond_0
 
-    const/4 v4, 0x1
+    move v4, v3
 
     goto :goto_0
 
     :cond_0
-    const/4 v4, -0x1
+    move v4, v2
 
     :goto_0
     if-eq p1, p2, :cond_5
@@ -402,17 +402,17 @@
 
     if-gt v6, v1, :cond_1
 
-    const/4 v9, 0x1
+    move v9, v3
 
     goto :goto_1
 
     :cond_1
-    const/4 v9, 0x0
+    move v9, v8
 
     :goto_1
     if-lt v7, v0, :cond_2
 
-    const/4 v8, 0x1
+    move v8, v3
 
     :cond_2
     if-eqz v9, :cond_4

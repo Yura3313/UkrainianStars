@@ -1,66 +1,116 @@
-.class public Lr2/b;
-.super Lq2/b;
+.class public final Lr2/b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq2/b<",
-        "Ljava/lang/Boolean;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/query/internal/zzb;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Lq2/b;-><init>(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/Collection;Ljava/util/Collection;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;I)V"
-        }
-    .end annotation
-
-    const-string v0, "isExplicitlyTrashed"
-
-    .line 2
-    invoke-direct {p0, v0, p1, p2}, Lq2/b;-><init>(Ljava/lang/String;Ljava/util/Collection;Ljava/util/Collection;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/os/Bundle;)Ljava/lang/Object;
-    .locals 1
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move-object v2, v1
 
     .line 2
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result p1
+    move-result v3
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    if-ge v3, v0, :cond_2
 
-    move-result-object p1
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v3
+
+    const v4, 0xffff
+
+    and-int/2addr v4, v3
+
+    const/4 v5, 0x1
+
+    if-eq v4, v5, :cond_1
+
+    const/4 v5, 0x2
+
+    if-eq v4, v5, :cond_0
+
+    .line 4
+    invoke-static {p1, v3}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object v2, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    invoke-static {p1, v3, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    sget-object v1, Lcom/google/android/gms/drive/query/internal/zzx;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 8
+    invoke-static {p1, v3, v1}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/gms/drive/query/internal/zzx;
+
+    goto :goto_0
+
+    .line 9
+    :cond_2
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzb;
+
+    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/drive/query/internal/zzb;-><init>(Lcom/google/android/gms/drive/query/internal/zzx;Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzb;
 
     return-object p1
 .end method

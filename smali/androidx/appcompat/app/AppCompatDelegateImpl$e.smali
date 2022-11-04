@@ -1,9 +1,6 @@
 .class public final Landroidx/appcompat/app/AppCompatDelegateImpl$e;
-.super Ljava/lang/Object;
+.super Lf/i;
 .source "AppCompatDelegateImpl.java"
-
-# interfaces
-.implements Lf/b$a;
 
 
 # annotations
@@ -18,162 +15,437 @@
 
 
 # instance fields
-.field public a:Lf/b$a;
-
-.field public final synthetic b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public final synthetic g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Lf/b$a;)V
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Landroid/view/Window$Callback;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     .line 2
-    iput-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a:Lf/b$a;
+    invoke-direct {p0, p2}, Lf/i;-><init>(Landroid/view/Window$Callback;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lf/b;Landroid/view/Menu;)Z
-    .locals 1
-
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a:Lf/b$a;
-
-    invoke-interface {v0, p1, p2}, Lf/b$a;->a(Lf/b;Landroid/view/Menu;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final b(Lf/b;Landroid/view/Menu;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->z:Landroid/view/ViewGroup;
-
-    invoke-static {v0}, Lf0/r;->B(Landroid/view/View;)V
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a:Lf/b$a;
-
-    invoke-interface {v0, p1, p2}, Lf/b$a;->b(Lf/b;Landroid/view/Menu;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c(Lf/b;Landroid/view/MenuItem;)Z
-    .locals 1
-
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a:Lf/b$a;
-
-    invoke-interface {v0, p1, p2}, Lf/b$a;->c(Lf/b;Landroid/view/MenuItem;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final d(Lf/b;)V
+.method public final a(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a:Lf/b$a;
+    new-instance v0, Lf/e$a;
 
-    invoke-interface {v0, p1}, Lf/b$a;->d(Lf/b;)V
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
+
+    invoke-direct {v0, v1, p1}, Lf/e$a;-><init>(Landroid/content/Context;Landroid/view/ActionMode$Callback;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->v:Landroid/widget/PopupWindow;
+    .line 3
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->B(Lf/a$a;)Lf/a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    invoke-virtual {v0, p1}, Lf/e$a;->e(Lf/a;)Landroid/view/ActionMode;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->J(Landroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 2
+    invoke-super {p0, p1}, Lf/i;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    return p1
+.end method
+
+.method public final dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+    .locals 5
+
+    .line 1
+    invoke-super {p0, p1}, Lf/i;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-nez v0, :cond_4
+
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    .line 2
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v3
+
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->S()V
+
+    .line 4
+    iget-object v4, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->m:Landroidx/appcompat/app/ActionBar;
+
+    if-eqz v4, :cond_0
+
+    .line 5
+    invoke-virtual {v4, v3, p1}, Landroidx/appcompat/app/ActionBar;->i(ILandroid/view/KeyEvent;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    iget-object v3, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->K:Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    if-eqz v3, :cond_1
+
+    .line 7
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v4
+
+    invoke-virtual {v0, v3, v4, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->W(Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;ILandroid/view/KeyEvent;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 8
+    iget-object p1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->K:Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    if-eqz p1, :cond_2
+
+    .line 9
+    iput-boolean v2, p1, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->l:Z
+
+    goto :goto_0
+
+    .line 10
+    :cond_1
+    iget-object v3, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->K:Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    if-nez v3, :cond_3
+
+    .line 11
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Q(I)Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    move-result-object v3
+
+    .line 12
+    invoke-virtual {v0, v3, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->X(Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;Landroid/view/KeyEvent;)Z
+
+    .line 13
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v4
+
+    invoke-virtual {v0, v3, v4, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->W(Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    .line 14
+    iput-boolean v1, v3, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->k:Z
+
+    if-eqz p1, :cond_3
+
+    :cond_2
+    :goto_0
+    move p1, v2
+
+    goto :goto_1
+
+    :cond_3
+    move p1, v1
+
+    :goto_1
+    if-eqz p1, :cond_5
+
+    :cond_4
+    move v1, v2
+
+    :cond_5
+    return v1
+.end method
+
+.method public final onContentChanged()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onCreatePanelMenu(ILandroid/view/Menu;)Z
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    .line 1
+    instance-of v0, p2, Landroidx/appcompat/view/menu/e;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 2
+    :cond_0
+    invoke-super {p0, p1, p2}, Lf/i;->onCreatePanelMenu(ILandroid/view/Menu;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final onMenuOpened(ILandroid/view/Menu;)Z
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lf/i;->onMenuOpened(ILandroid/view/Menu;)Z
+
+    .line 2
+    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 v0, 0x6c
+
+    const/4 v1, 0x1
+
+    if-ne p1, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p2}, Landroidx/appcompat/app/AppCompatDelegateImpl;->S()V
+
+    .line 4
+    iget-object p1, p2, Landroidx/appcompat/app/AppCompatDelegateImpl;->m:Landroidx/appcompat/app/ActionBar;
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    invoke-virtual {p1, v1}, Landroidx/appcompat/app/ActionBar;->c(Z)V
+
+    :cond_0
+    return v1
+.end method
+
+.method public final onPanelClosed(ILandroid/view/Menu;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lf/i;->onPanelClosed(ILandroid/view/Menu;)V
+
+    .line 2
+    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0x6c
+
+    if-ne p1, v1, :cond_0
+
+    .line 3
+    invoke-virtual {p2}, Landroidx/appcompat/app/AppCompatDelegateImpl;->S()V
+
+    .line 4
+    iget-object p1, p2, Landroidx/appcompat/app/AppCompatDelegateImpl;->m:Landroidx/appcompat/app/ActionBar;
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/ActionBar;->c(Z)V
+
+    goto :goto_0
+
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 6
+    invoke-virtual {p2, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Q(I)Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    move-result-object p1
+
+    .line 7
+    iget-boolean v1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->m:Z
+
+    if-eqz v1, :cond_1
+
+    .line 8
+    invoke-virtual {p2, p1, v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->H(Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;Z)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public final onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+    .locals 3
+
+    .line 1
+    instance-of v0, p3, Landroidx/appcompat/view/menu/e;
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p3
+
+    check-cast v0, Landroidx/appcompat/view/menu/e;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    const/4 v1, 0x0
+
+    if-nez p1, :cond_1
+
+    if-nez v0, :cond_1
+
+    return v1
+
+    :cond_1
+    if-eqz v0, :cond_2
+
+    const/4 v2, 0x1
+
+    .line 2
+    iput-boolean v2, v0, Landroidx/appcompat/view/menu/e;->x:Z
+
+    .line 3
+    :cond_2
+    invoke-super {p0, p1, p2, p3}, Lf/i;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+
+    move-result p1
+
+    if-eqz v0, :cond_3
+
+    .line 4
+    iput-boolean v1, v0, Landroidx/appcompat/view/menu/e;->x:Z
+
+    :cond_3
+    return p1
+.end method
+
+.method public final onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/KeyboardShortcutGroup;",
+            ">;",
+            "Landroid/view/Menu;",
+            "I)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Q(I)Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->h:Landroidx/appcompat/view/menu/e;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->k:Landroid/view/Window;
+    invoke-super {p0, p1, v0, p3}, Lf/i;->onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
 
-    invoke-virtual {p1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object p1
-
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->w:Landroidx/appcompat/app/n;
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+    goto :goto_0
 
     .line 4
     :cond_0
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-super {p0, p1, p2, p3}, Lf/i;->onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
 
-    iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->L()V
-
-    .line 6
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
-
-    invoke-static {v0}, Lf0/r;->a(Landroid/view/View;)Lf0/x;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lf0/x;->a(F)Lf0/x;
-
-    iput-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->x:Lf0/x;
-
-    .line 7
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->x:Lf0/x;
-
-    new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl$e$a;
-
-    invoke-direct {v0, p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$e$a;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl$e;)V
-
-    invoke-virtual {p1, v0}, Lf0/x;->d(Lf0/y;)Lf0/x;
-
-    .line 8
-    :cond_1
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->m:Landroidx/appcompat/app/h;
-
-    if-eqz v0, :cond_2
-
-    .line 9
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->t:Lf/b;
-
-    invoke-interface {v0, p1}, Landroidx/appcompat/app/h;->onSupportActionModeFinished(Lf/b;)V
-
-    .line 10
-    :cond_2
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    const/4 v0, 0x0
-
-    iput-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->t:Lf/b;
-
-    .line 11
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->z:Landroid/view/ViewGroup;
-
-    invoke-static {p1}, Lf0/r;->B(Landroid/view/View;)V
-
+    :goto_0
     return-void
+.end method
+
+.method public final onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public final onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-super {p0, p1, p2}, Lf/i;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 4
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$e;->a(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+
+    move-result-object p1
+
+    return-object p1
 .end method

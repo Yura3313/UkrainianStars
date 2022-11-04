@@ -45,7 +45,7 @@
 
 # virtual methods
 .method public final a()V
-    .locals 5
+    .locals 6
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
@@ -54,174 +54,163 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     .line 2
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    if-le v1, v2, :cond_1
-
-    .line 3
     iget-object v1, p0, Landroidx/appcompat/widget/d;->d:Landroidx/appcompat/widget/f0;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
 
     if-eqz v1, :cond_0
 
-    :goto_0
-    const/4 v1, 0x1
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    if-ne v1, v2, :cond_0
+    move v1, v2
 
     goto :goto_0
 
-    :goto_1
-    if-eqz v1, :cond_7
+    :cond_0
+    move v1, v3
 
-    .line 4
+    :goto_0
+    if-eqz v1, :cond_6
+
+    .line 3
     iget-object v1, p0, Landroidx/appcompat/widget/d;->f:Landroidx/appcompat/widget/f0;
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_1
 
-    .line 5
+    .line 4
     new-instance v1, Landroidx/appcompat/widget/f0;
 
     invoke-direct {v1}, Landroidx/appcompat/widget/f0;-><init>()V
 
     iput-object v1, p0, Landroidx/appcompat/widget/d;->f:Landroidx/appcompat/widget/f0;
 
-    .line 6
-    :cond_2
+    .line 5
+    :cond_1
     iget-object v1, p0, Landroidx/appcompat/widget/d;->f:Landroidx/appcompat/widget/f0;
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
+
+    .line 6
+    iput-object v4, v1, Landroidx/appcompat/widget/f0;->a:Landroid/content/res/ColorStateList;
 
     .line 7
-    iput-object v2, v1, Landroidx/appcompat/widget/f0;->a:Landroid/content/res/ColorStateList;
-
-    .line 8
-    iput-boolean v4, v1, Landroidx/appcompat/widget/f0;->d:Z
-
-    .line 9
-    iput-object v2, v1, Landroidx/appcompat/widget/f0;->b:Landroid/graphics/PorterDuff$Mode;
-
-    .line 10
-    iput-boolean v4, v1, Landroidx/appcompat/widget/f0;->c:Z
-
-    .line 11
-    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
-
-    invoke-static {v2}, Lf0/r;->i(Landroid/view/View;)Landroid/content/res/ColorStateList;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_3
-
-    .line 12
     iput-boolean v3, v1, Landroidx/appcompat/widget/f0;->d:Z
 
-    .line 13
-    iput-object v2, v1, Landroidx/appcompat/widget/f0;->a:Landroid/content/res/ColorStateList;
+    .line 8
+    iput-object v4, v1, Landroidx/appcompat/widget/f0;->b:Landroid/graphics/PorterDuff$Mode;
 
-    .line 14
-    :cond_3
-    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
-
-    invoke-static {v2}, Lf0/r;->j(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_4
-
-    .line 15
+    .line 9
     iput-boolean v3, v1, Landroidx/appcompat/widget/f0;->c:Z
 
+    .line 10
+    iget-object v4, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
+
+    sget-object v5, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 11
+    invoke-virtual {v4}, Landroid/view/View;->getBackgroundTintList()Landroid/content/res/ColorStateList;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    .line 12
+    iput-boolean v2, v1, Landroidx/appcompat/widget/f0;->d:Z
+
+    .line 13
+    iput-object v4, v1, Landroidx/appcompat/widget/f0;->a:Landroid/content/res/ColorStateList;
+
+    .line 14
+    :cond_2
+    iget-object v4, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
+
+    .line 15
+    invoke-virtual {v4}, Landroid/view/View;->getBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
     .line 16
-    iput-object v2, v1, Landroidx/appcompat/widget/f0;->b:Landroid/graphics/PorterDuff$Mode;
+    iput-boolean v2, v1, Landroidx/appcompat/widget/f0;->c:Z
 
     .line 17
+    iput-object v4, v1, Landroidx/appcompat/widget/f0;->b:Landroid/graphics/PorterDuff$Mode;
+
+    .line 18
+    :cond_3
+    iget-boolean v4, v1, Landroidx/appcompat/widget/f0;->d:Z
+
+    if-nez v4, :cond_5
+
+    iget-boolean v4, v1, Landroidx/appcompat/widget/f0;->c:Z
+
+    if-eqz v4, :cond_4
+
+    goto :goto_1
+
     :cond_4
-    iget-boolean v2, v1, Landroidx/appcompat/widget/f0;->d:Z
-
-    if-nez v2, :cond_6
-
-    iget-boolean v2, v1, Landroidx/appcompat/widget/f0;->c:Z
-
-    if-eqz v2, :cond_5
+    move v2, v3
 
     goto :goto_2
 
+    .line 19
     :cond_5
-    const/4 v3, 0x0
+    :goto_1
+    iget-object v3, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
 
-    goto :goto_3
+    invoke-virtual {v3}, Landroid/view/View;->getDrawableState()[I
 
-    .line 18
-    :cond_6
+    move-result-object v3
+
+    invoke-static {v0, v1, v3}, Landroidx/appcompat/widget/f;->f(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/f0;[I)V
+
     :goto_2
-    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
-
-    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
-
-    move-result-object v2
-
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/widget/f;->f(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/f0;[I)V
-
-    :goto_3
-    if-eqz v3, :cond_7
+    if-eqz v2, :cond_6
 
     return-void
 
-    .line 19
-    :cond_7
+    .line 20
+    :cond_6
     iget-object v1, p0, Landroidx/appcompat/widget/d;->e:Landroidx/appcompat/widget/f0;
+
+    if-eqz v1, :cond_7
+
+    .line 21
+    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
+
+    .line 22
+    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v2
+
+    .line 23
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/widget/f;->f(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/f0;[I)V
+
+    goto :goto_3
+
+    .line 24
+    :cond_7
+    iget-object v1, p0, Landroidx/appcompat/widget/d;->d:Landroidx/appcompat/widget/f0;
 
     if-eqz v1, :cond_8
 
-    .line 20
-    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
-
-    .line 21
-    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
-
-    move-result-object v2
-
-    .line 22
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/widget/f;->f(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/f0;[I)V
-
-    goto :goto_4
-
-    .line 23
-    :cond_8
-    iget-object v1, p0, Landroidx/appcompat/widget/d;->d:Landroidx/appcompat/widget/f0;
-
-    if-eqz v1, :cond_9
-
-    .line 24
-    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
-
     .line 25
-    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
-
-    move-result-object v2
+    iget-object v2, p0, Landroidx/appcompat/widget/d;->a:Landroid/view/View;
 
     .line 26
+    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v2
+
+    .line 27
     invoke-static {v0, v1, v2}, Landroidx/appcompat/widget/f;->f(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/f0;[I)V
 
-    :cond_9
-    :goto_4
+    :cond_8
+    :goto_3
     return-void
 .end method
 
@@ -292,7 +281,7 @@
     move v6, p2
 
     .line 4
-    invoke-static/range {v1 .. v6}, Lf0/r;->C(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Lf0/o;->o(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 5
     :try_start_0
@@ -353,7 +342,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {p2, p1}, Lf0/r;->F(Landroid/view/View;Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p2, p1}, Landroid/view/View;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
 
     .line 14
     :cond_1
@@ -376,12 +365,12 @@
     const/4 v1, 0x0
 
     .line 17
-    invoke-static {p1, v1}, Landroidx/appcompat/widget/q;->d(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {p1, v1}, Landroidx/appcompat/widget/q;->c(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object p1
 
     .line 18
-    invoke-static {p2, p1}, Lf0/r;->G(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
+    invoke-virtual {p2, p1}, Landroid/view/View;->setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

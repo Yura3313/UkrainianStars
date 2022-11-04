@@ -72,15 +72,15 @@
 
     const-string v0, "title"
 
-    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "displayMemberImages"
 
-    invoke-static {p6, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "chatType"
 
-    invoke-static {p7, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p7, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -274,19 +274,19 @@
 
     move-object v4, p3
 
-    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "displayMemberImages"
 
     move-object v7, p6
 
-    invoke-static {p6, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "chatType"
 
     move-object/from16 v8, p7
 
-    invoke-static {v8, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/Chat;
 
@@ -334,12 +334,12 @@
 
     if-nez v1, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_0
     if-eqz v1, :cond_2
@@ -348,7 +348,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->title:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -358,7 +358,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->imageUrl:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -370,12 +370,12 @@
 
     if-ne v1, v3, :cond_1
 
-    const/4 v1, 0x1
+    move v1, v0
 
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     if-eqz v1, :cond_2
@@ -384,7 +384,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->displayMemberImages:Ljava/util/List;
 
-    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -394,7 +394,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->chatType:Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
-    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -467,59 +467,59 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
     iget-wide v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
 
-    const/16 v2, 0x20
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
-    ushr-long v2, v0, v2
+    move-result v0
 
-    xor-long/2addr v0, v2
+    mul-int/lit8 v0, v0, 0x1f
 
-    long-to-int v1, v0
-
-    mul-int/lit8 v1, v1, 0x1f
-
-    iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->title:Ljava/lang/String;
+    iget-object v1, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->title:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
-    move-result v0
+    move-result v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v1, v2
 
     :goto_0
-    add-int/2addr v1, v0
+    add-int/2addr v0, v1
 
-    mul-int/lit8 v1, v1, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->imageUrl:Ljava/lang/String;
+    iget-object v1, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->imageUrl:Ljava/lang/String;
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
-    move-result v0
+    move-result v1
 
     goto :goto_1
 
     :cond_1
-    const/4 v0, 0x0
+    move v1, v2
 
     :goto_1
-    add-int/2addr v1, v0
+    add-int/2addr v0, v1
 
-    mul-int/lit8 v1, v1, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
-    iget v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->memberCount:I
+    iget v1, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->memberCount:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->hashCode(I)I
+
+    move-result v1
 
     add-int/2addr v1, v0
 
@@ -536,7 +536,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_2
     add-int/2addr v1, v0
@@ -563,7 +563,7 @@
     const-string v0, "Chat(id="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -628,7 +628,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
 

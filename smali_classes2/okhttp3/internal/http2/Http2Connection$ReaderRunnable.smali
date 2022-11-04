@@ -216,7 +216,7 @@
     .line 13
     array-length v1, v3
 
-    const/4 v2, 0x0
+    move v2, v0
 
     :goto_2
     if-ge v2, v1, :cond_3
@@ -292,13 +292,7 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    goto :goto_4
-
-    :goto_3
     throw p1
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public data(ZILokio/BufferedSource;I)V
@@ -469,13 +463,7 @@
 
     invoke-static {v0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
 
-    goto :goto_4
-
-    :goto_3
     throw v2
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public goAway(ILokhttp3/internal/http2/ErrorCode;Lokio/ByteString;)V
@@ -581,13 +569,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public headers(ZIILjava/util/List;)V

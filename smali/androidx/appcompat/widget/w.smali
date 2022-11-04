@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static J:Ljava/lang/reflect/Method;
+.field public static H:Ljava/lang/reflect/Method;
 
 
 # instance fields
-.field public I:Landroidx/appcompat/widget/v;
+.field public G:Landroidx/appcompat/widget/v;
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroidx/appcompat/widget/w;->J:Ljava/lang/reflect/Method;
+    sput-object v0, Landroidx/appcompat/widget/w;->H:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -74,31 +74,31 @@
 
 
 # virtual methods
-.method public final c(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+.method public final a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/w;->I:Landroidx/appcompat/widget/v;
+    iget-object v0, p0, Landroidx/appcompat/widget/w;->G:Landroidx/appcompat/widget/v;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/v;->c(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/v;->a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
 
     :cond_0
     return-void
 .end method
 
-.method public final f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+.method public final d(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/w;->I:Landroidx/appcompat/widget/v;
+    iget-object v0, p0, Landroidx/appcompat/widget/w;->G:Landroidx/appcompat/widget/v;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/v;->f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/v;->d(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
 
     :cond_0
     return-void
@@ -119,48 +119,6 @@
 .end method
 
 .method public final u()V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x17
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setEnterTransition(Landroid/transition/Transition;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final v()V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x17
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setExitTransition(Landroid/transition/Transition;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final w()V
     .locals 5
 
     .line 1
@@ -173,13 +131,13 @@
     if-gt v0, v2, :cond_0
 
     .line 2
-    sget-object v0, Landroidx/appcompat/widget/w;->J:Ljava/lang/reflect/Method;
+    sget-object v0, Landroidx/appcompat/widget/w;->H:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_1
 
     .line 3
     :try_start_0
-    iget-object v2, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
+    iget-object v2, p0, Landroidx/appcompat/widget/ListPopupWindow;->D:Landroid/widget/PopupWindow;
 
     const/4 v3, 0x1
 
@@ -197,7 +155,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->D:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setTouchModal(Z)V
 

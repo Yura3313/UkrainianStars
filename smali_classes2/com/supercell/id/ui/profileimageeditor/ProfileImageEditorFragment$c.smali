@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;
-.super Lwc/a;
+.super Luc/a;
 .source "ProfileImageEditorFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public p0:Ljava/util/HashMap;
+.field public o0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, La5/u;->g([Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/j2;->f([Ljava/lang/Object;)Ljava/util/Set;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lwc/a;-><init>()V
+    invoke-direct {p0}, Luc/a;-><init>()V
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->p0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->o0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -74,29 +74,27 @@
     return-void
 .end method
 
-.method public final synthetic a0()V
+.method public final synthetic Z()V
     .locals 0
 
-    invoke-super {p0}, Lwc/a;->a0()V
+    invoke-super {p0}, Luc/a;->Z()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->N0()V
 
     return-void
 .end method
 
-.method public final j1(Landroid/view/View;)V
-    .locals 6
+.method public final i1(Landroid/view/View;)V
+    .locals 5
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
 
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     if-eqz p1, :cond_5
 
@@ -108,9 +106,9 @@
     if-eqz p1, :cond_5
 
     .line 3
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -121,42 +119,42 @@
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    move-object v4, v3
+    move-object v3, v2
 
-    check-cast v4, Landroidx/fragment/app/Fragment;
+    check-cast v3, Landroidx/fragment/app/Fragment;
 
-    const-string v5, "it"
+    const-string v4, "it"
 
     .line 5
-    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
-    iget v4, v4, Landroidx/fragment/app/Fragment;->C:I
+    iget v3, v3, Landroidx/fragment/app/Fragment;->B:I
 
     .line 7
-    sget v5, Lcom/supercell/id/R$id;->body:I
+    sget v4, Lcom/supercell/id/R$id;->body:I
 
-    if-ne v4, v5, :cond_1
+    if-ne v3, v4, :cond_1
 
-    const/4 v4, 0x1
+    move v3, v0
 
     goto :goto_1
 
     :cond_1
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     :goto_1
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -167,37 +165,37 @@
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 9
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v2
+    move-result-object v1
 
     :cond_3
     :goto_2
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    instance-of v4, v3, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    instance-of v3, v2, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
-    invoke-virtual {p1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
     .line 10
     :cond_4
-    invoke-static {p1}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p1}, Lze/j;->D(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/supercell/id/ui/BaseFragment;
+    check-cast p1, Luc/j;
 
     goto :goto_3
 
@@ -207,103 +205,82 @@
     :goto_3
     check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    if-eqz p1, :cond_9
+    if-eqz p1, :cond_8
 
     .line 11
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 12
-    iget-object v2, v2, Lae/u;->m:Lpe/a;
+    iget-object v1, v1, Lzd/q;->m:Lgc/a;
 
     .line 13
-    iget-object v3, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0:Lcom/supercell/id/model/MyProfileImage;
-
-    if-eqz v3, :cond_6
-
-    .line 14
-    iget-object v4, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
-
-    .line 15
-    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    xor-int/2addr v3, v1
-
-    if-eqz v3, :cond_6
-
-    const/4 v0, 0x1
-
-    :cond_6
-    if-eqz v0, :cond_7
-
-    const-wide/16 v3, 0x1
-
-    goto :goto_4
-
-    :cond_7
-    const-wide/16 v3, 0x0
-
-    .line 16
-    :goto_4
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v0
-
-    const/16 v3, 0x10
-
-    const-string v4, "Profile Picture Editor"
-
-    const-string v5, "click"
-
-    .line 17
-    invoke-static {v2, v4, v5, v0, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
-
-    .line 18
-    iget-object v0, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0:Lcom/supercell/id/model/MyProfileImage;
-
-    if-eqz v0, :cond_8
-
-    .line 19
     iget-object v2, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
 
-    .line 20
-    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eqz v2, :cond_6
 
-    move-result v0
+    .line 14
+    iget-object v3, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->h0:Lcom/supercell/id/model/MyProfileImage;
+
+    .line 15
+    invoke-static {v2, v3}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    xor-int/2addr v2, v0
+
+    :cond_6
+    const-string v2, "Profile Picture Editor"
+
+    const-string v3, "click"
+
+    .line 16
+    invoke-static {v1, v2, v3}, Lgc/a;->b(Lgc/a;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 17
+    iget-object v1, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
+
+    if-eqz v1, :cond_7
+
+    .line 18
+    iget-object v2, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->h0:Lcom/supercell/id/model/MyProfileImage;
+
+    .line 19
+    invoke-static {v1, v2}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
 
     xor-int/2addr v0, v1
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
+
+    .line 20
+    invoke-virtual {p1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->o1()V
+
+    goto :goto_4
 
     .line 21
-    invoke-virtual {p1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->p1()V
-
-    goto :goto_5
-
-    .line 22
-    :cond_8
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    :cond_7
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    if-eqz p1, :cond_9
+    if-eqz p1, :cond_8
 
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
 
-    :cond_9
-    :goto_5
+    :cond_8
+    :goto_4
     return-void
 .end method
 
-.method public final l1(I)Landroid/view/View;
+.method public final k1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->p0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->o0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -311,10 +288,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->p0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->o0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->p0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -329,7 +306,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -343,7 +320,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->p0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$c;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

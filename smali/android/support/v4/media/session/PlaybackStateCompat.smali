@@ -380,38 +380,31 @@
 .end method
 
 .method public static fromPlaybackState(Ljava/lang/Object;)Landroid/support/v4/media/session/PlaybackStateCompat;
-    .locals 22
+    .locals 21
 
     move-object/from16 v0, p0
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_1
 
     .line 1
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x15
-
-    if-lt v2, v3, :cond_3
-
-    .line 2
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getCustomActions(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_0
 
-    .line 3
-    new-instance v3, Ljava/util/ArrayList;
+    .line 2
+    new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
-    move-result v4
+    move-result v3
 
-    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 4
+    .line 3
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -419,111 +412,95 @@
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 5
-    invoke-static {v4}, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->fromCustomAction(Ljava/lang/Object;)Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
+    .line 4
+    invoke-static {v3}, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->fromCustomAction(Ljava/lang/Object;)Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_0
-    move-object/from16 v18, v3
+    move-object/from16 v17, v1
 
-    goto :goto_1
-
-    :cond_1
-    move-object/from16 v18, v1
-
-    .line 6
-    :goto_1
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x16
-
-    if-lt v2, v3, :cond_2
-
-    .line 7
+    .line 5
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi22;->getExtras(Ljava/lang/Object;)Landroid/os/Bundle;
 
-    move-result-object v1
+    move-result-object v20
 
-    :cond_2
-    move-object/from16 v21, v1
-
-    .line 8
+    .line 6
     new-instance v1, Landroid/support/v4/media/session/PlaybackStateCompat;
 
-    move-object v5, v1
+    move-object v4, v1
 
-    .line 9
+    .line 7
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getState(Ljava/lang/Object;)I
 
-    move-result v6
+    move-result v5
 
-    .line 10
+    .line 8
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getPosition(Ljava/lang/Object;)J
 
-    move-result-wide v7
+    move-result-wide v6
 
-    .line 11
+    .line 9
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getBufferedPosition(Ljava/lang/Object;)J
 
-    move-result-wide v9
+    move-result-wide v8
 
-    .line 12
+    .line 10
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getPlaybackSpeed(Ljava/lang/Object;)F
 
-    move-result v11
+    move-result v10
 
-    .line 13
+    .line 11
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getActions(Ljava/lang/Object;)J
 
-    move-result-wide v12
+    move-result-wide v11
 
-    const/4 v14, 0x0
+    const/4 v13, 0x0
 
-    .line 14
+    .line 12
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getErrorMessage(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
-    move-result-object v15
+    move-result-object v14
 
-    .line 15
+    .line 13
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getLastPositionUpdateTime(Ljava/lang/Object;)J
 
-    move-result-wide v16
+    move-result-wide v15
 
-    .line 16
+    .line 14
     invoke-static/range {p0 .. p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->getActiveQueueItemId(Ljava/lang/Object;)J
 
-    move-result-wide v19
+    move-result-wide v18
 
-    invoke-direct/range {v5 .. v21}, Landroid/support/v4/media/session/PlaybackStateCompat;-><init>(IJJFJILjava/lang/CharSequence;JLjava/util/List;JLandroid/os/Bundle;)V
+    invoke-direct/range {v4 .. v20}, Landroid/support/v4/media/session/PlaybackStateCompat;-><init>(IJJFJILjava/lang/CharSequence;JLjava/util/List;JLandroid/os/Bundle;)V
 
-    .line 17
+    .line 15
     iput-object v0, v1, Landroid/support/v4/media/session/PlaybackStateCompat;->mStateObj:Ljava/lang/Object;
 
-    :cond_3
+    :cond_1
     return-object v1
 .end method
 
 .method public static toKeyCode(J)I
-    .locals 3
+    .locals 2
 
     const-wide/16 v0, 0x4
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     const/16 p0, 0x7e
 
@@ -532,9 +509,9 @@
     :cond_0
     const-wide/16 v0, 0x2
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_1
+    if-nez v0, :cond_1
 
     const/16 p0, 0x7f
 
@@ -543,9 +520,9 @@
     :cond_1
     const-wide/16 v0, 0x20
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_2
+    if-nez v0, :cond_2
 
     const/16 p0, 0x57
 
@@ -554,9 +531,9 @@
     :cond_2
     const-wide/16 v0, 0x10
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_3
+    if-nez v0, :cond_3
 
     const/16 p0, 0x58
 
@@ -565,9 +542,9 @@
     :cond_3
     const-wide/16 v0, 0x1
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_4
+    if-nez v0, :cond_4
 
     const/16 p0, 0x56
 
@@ -576,9 +553,9 @@
     :cond_4
     const-wide/16 v0, 0x40
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_5
+    if-nez v0, :cond_5
 
     const/16 p0, 0x5a
 
@@ -587,9 +564,9 @@
     :cond_5
     const-wide/16 v0, 0x8
 
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
-    if-nez v2, :cond_6
+    if-nez v0, :cond_6
 
     const/16 p0, 0x59
 
@@ -598,9 +575,9 @@
     :cond_6
     const-wide/16 v0, 0x200
 
-    cmp-long v2, p0, v0
+    cmp-long p0, p0, v0
 
-    if-nez v2, :cond_7
+    if-nez p0, :cond_7
 
     const/16 p0, 0x55
 
@@ -675,7 +652,7 @@
     :goto_0
     long-to-float p1, v3
 
-    mul-float v2, v2, p1
+    mul-float/2addr v2, p1
 
     float-to-long v2, v2
 
@@ -755,13 +732,7 @@
     .line 1
     iget-object v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mStateObj:Ljava/lang/Object;
 
-    if-nez v1, :cond_2
-
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    if-lt v1, v2, :cond_2
+    if-nez v1, :cond_1
 
     const/4 v1, 0x0
 
@@ -814,13 +785,6 @@
     move-object v15, v1
 
     .line 6
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x16
-
-    if-lt v1, v2, :cond_1
-
-    .line 7
     iget v4, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mState:I
 
     iget-wide v5, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mPosition:J
@@ -849,37 +813,8 @@
 
     iput-object v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mStateObj:Ljava/lang/Object;
 
-    goto :goto_1
-
-    .line 8
+    .line 7
     :cond_1
-    iget v4, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mState:I
-
-    iget-wide v5, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mPosition:J
-
-    iget-wide v7, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mBufferedPosition:J
-
-    iget v9, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mSpeed:F
-
-    iget-wide v10, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mActions:J
-
-    iget-object v12, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mErrorMessage:Ljava/lang/CharSequence;
-
-    iget-wide v13, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mUpdateTime:J
-
-    iget-wide v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mActiveItemId:J
-
-    move-wide/from16 v16, v1
-
-    invoke-static/range {v4 .. v17}, Landroid/support/v4/media/session/PlaybackStateCompatApi21;->newInstance(IJJFJLjava/lang/CharSequence;JLjava/util/List;J)Ljava/lang/Object;
-
-    move-result-object v1
-
-    iput-object v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mStateObj:Ljava/lang/Object;
-
-    .line 9
-    :cond_2
-    :goto_1
     iget-object v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat;->mStateObj:Ljava/lang/Object;
 
     return-object v1

@@ -44,11 +44,11 @@
 
     const/4 v2, 0x0
 
-    const/4 v4, 0x0
+    move v4, v2
 
-    const/4 v5, 0x1
+    move v5, v3
 
-    const/4 v6, 0x1
+    move v6, v5
 
     .line 4
     :goto_0
@@ -56,7 +56,7 @@
 
     array-length v8, v7
 
-    if-ge v4, v8, :cond_5
+    if-ge v4, v8, :cond_4
 
     .line 5
     aget v8, p1, v4
@@ -65,47 +65,34 @@
 
     const/4 v10, 0x2
 
-    if-eqz v8, :cond_4
+    if-eqz v8, :cond_3
 
-    if-eq v8, v3, :cond_3
+    if-eq v8, v3, :cond_2
 
-    if-eq v8, v10, :cond_2
+    if-eq v8, v10, :cond_1
 
     if-eq v8, v9, :cond_0
 
     goto :goto_2
 
     :cond_0
-    if-ne v5, v3, :cond_1
+    if-ne v5, v3, :cond_2
 
-    const/4 v5, 0x2
+    :cond_1
+    move v5, v10
 
     goto :goto_1
 
-    :cond_1
-    const/4 v5, 0x1
+    :cond_2
+    move v5, v3
 
     :goto_1
     move v6, v5
 
     goto :goto_2
 
-    :cond_2
-    const/4 v5, 0x2
-
-    const/4 v6, 0x2
-
-    goto :goto_2
-
     :cond_3
-    const/4 v5, 0x1
-
-    const/4 v6, 0x1
-
-    goto :goto_2
-
-    :cond_4
-    const/4 v6, 0x3
+    move v6, v9
 
     .line 6
     :goto_2
@@ -145,14 +132,14 @@
 
     goto :goto_0
 
-    :cond_5
+    :cond_4
     return-void
 .end method
 
 
 # virtual methods
 .method public final b(D)D
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Ln/a;->b:[Ln/a$a;
@@ -163,9 +150,9 @@
 
     iget-wide v2, v2, Ln/a$a;->c:D
 
-    cmpg-double v4, p1, v2
+    cmpg-double v2, p1, v2
 
-    if-gez v4, :cond_0
+    if-gez v2, :cond_0
 
     .line 2
     aget-object p1, v0, v1
@@ -184,9 +171,9 @@
 
     iget-wide v2, v2, Ln/a$a;->d:D
 
-    cmpl-double v4, p1, v2
+    cmpl-double v2, p1, v2
 
-    if-lez v4, :cond_1
+    if-lez v2, :cond_1
 
     .line 4
     array-length p1, v0
@@ -211,9 +198,9 @@
 
     iget-wide v2, v2, Ln/a$a;->d:D
 
-    cmpg-double v4, p1, v2
+    cmpg-double v2, p1, v2
 
-    if-gtz v4, :cond_3
+    if-gtz v2, :cond_3
 
     .line 7
     aget-object v2, v0, v1
@@ -260,7 +247,7 @@
 .end method
 
 .method public final c(D[D)V
-    .locals 7
+    .locals 6
 
     .line 1
     iget-object v0, p0, Ln/a;->b:[Ln/a$a;
@@ -271,9 +258,9 @@
 
     iget-wide v2, v2, Ln/a$a;->c:D
 
-    cmpg-double v4, p1, v2
+    cmpg-double v2, p1, v2
 
-    if-gez v4, :cond_0
+    if-gez v2, :cond_0
 
     .line 2
     aget-object p1, v0, v1
@@ -306,7 +293,7 @@
     iget-wide p1, p1, Ln/a$a;->d:D
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 5
     :goto_0
@@ -321,9 +308,9 @@
 
     iget-wide v4, v4, Ln/a$a;->d:D
 
-    cmpg-double v6, p1, v4
+    cmpg-double v4, p1, v4
 
-    if-gtz v6, :cond_3
+    if-gtz v4, :cond_3
 
     .line 7
     aget-object v4, v2, v0
@@ -394,7 +381,7 @@
 .end method
 
 .method public final d(D[F)V
-    .locals 7
+    .locals 6
 
     .line 1
     iget-object v0, p0, Ln/a;->b:[Ln/a$a;
@@ -405,11 +392,11 @@
 
     iget-wide v2, v2, Ln/a$a;->c:D
 
-    const/4 v4, 0x1
+    cmpg-double v2, p1, v2
 
-    cmpg-double v5, p1, v2
+    const/4 v3, 0x1
 
-    if-gez v5, :cond_0
+    if-gez v2, :cond_0
 
     .line 2
     aget-object p1, v0, v1
@@ -422,20 +409,20 @@
     :cond_0
     array-length v2, v0
 
-    sub-int/2addr v2, v4
+    sub-int/2addr v2, v3
 
     aget-object v2, v0, v2
 
-    iget-wide v2, v2, Ln/a$a;->d:D
+    iget-wide v4, v2, Ln/a$a;->d:D
 
-    cmpl-double v5, p1, v2
+    cmpl-double v2, p1, v4
 
-    if-lez v5, :cond_1
+    if-lez v2, :cond_1
 
     .line 4
     array-length p1, v0
 
-    sub-int/2addr p1, v4
+    sub-int/2addr p1, v3
 
     aget-object p1, v0, p1
 
@@ -443,40 +430,40 @@
 
     :cond_1
     :goto_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 5
     :goto_1
     iget-object v2, p0, Ln/a;->b:[Ln/a$a;
 
-    array-length v3, v2
+    array-length v4, v2
 
-    if-ge v0, v3, :cond_4
+    if-ge v0, v4, :cond_4
 
     .line 6
-    aget-object v3, v2, v0
+    aget-object v4, v2, v0
 
-    iget-wide v5, v3, Ln/a$a;->d:D
+    iget-wide v4, v4, Ln/a$a;->d:D
 
-    cmpg-double v3, p1, v5
+    cmpg-double v4, p1, v4
 
-    if-gtz v3, :cond_3
+    if-gtz v4, :cond_3
 
     .line 7
-    aget-object v3, v2, v0
+    aget-object v4, v2, v0
 
-    iget-boolean v3, v3, Ln/a$a;->r:Z
+    iget-boolean v4, v4, Ln/a$a;->r:Z
 
-    if-eqz v3, :cond_2
+    if-eqz v4, :cond_2
 
     .line 8
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, Ln/a$a;->c(D)D
 
-    move-result-wide v2
+    move-result-wide v4
 
-    double-to-float v2, v2
+    double-to-float v2, v4
 
     aput v2, p3, v1
 
@@ -491,7 +478,7 @@
 
     double-to-float p1, p1
 
-    aput p1, p3, v4
+    aput p1, p3, v3
 
     return-void
 
@@ -525,7 +512,7 @@
 
     double-to-float p1, p1
 
-    aput p1, p3, v4
+    aput p1, p3, v3
 
     return-void
 
@@ -539,7 +526,7 @@
 .end method
 
 .method public final e(D)D
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Ln/a;->b:[Ln/a$a;
@@ -550,9 +537,9 @@
 
     iget-wide v2, v2, Ln/a$a;->c:D
 
-    cmpg-double v4, p1, v2
+    cmpg-double v2, p1, v2
 
-    if-gez v4, :cond_0
+    if-gez v2, :cond_0
 
     .line 2
     aget-object p1, v0, v1
@@ -569,9 +556,9 @@
 
     iget-wide v2, v2, Ln/a$a;->d:D
 
-    cmpl-double v4, p1, v2
+    cmpl-double v2, p1, v2
 
-    if-lez v4, :cond_1
+    if-lez v2, :cond_1
 
     .line 4
     array-length p1, v0
@@ -596,9 +583,9 @@
 
     iget-wide v2, v2, Ln/a$a;->d:D
 
-    cmpg-double v4, p1, v2
+    cmpg-double v2, p1, v2
 
-    if-gtz v4, :cond_3
+    if-gtz v2, :cond_3
 
     .line 7
     aget-object v2, v0, v1
@@ -644,7 +631,7 @@
 .end method
 
 .method public final f(D[D)V
-    .locals 7
+    .locals 6
 
     .line 1
     iget-object v0, p0, Ln/a;->b:[Ln/a$a;
@@ -655,11 +642,11 @@
 
     iget-wide v2, v2, Ln/a$a;->c:D
 
-    const/4 v4, 0x1
+    cmpg-double v2, p1, v2
 
-    cmpg-double v5, p1, v2
+    const/4 v3, 0x1
 
-    if-gez v5, :cond_0
+    if-gez v2, :cond_0
 
     .line 2
     aget-object p1, v0, v1
@@ -672,20 +659,20 @@
     :cond_0
     array-length v2, v0
 
-    sub-int/2addr v2, v4
+    sub-int/2addr v2, v3
 
     aget-object v2, v0, v2
 
-    iget-wide v2, v2, Ln/a$a;->d:D
+    iget-wide v4, v2, Ln/a$a;->d:D
 
-    cmpl-double v5, p1, v2
+    cmpl-double v2, p1, v4
 
-    if-lez v5, :cond_1
+    if-lez v2, :cond_1
 
     .line 4
     array-length p1, v0
 
-    sub-int/2addr p1, v4
+    sub-int/2addr p1, v3
 
     aget-object p1, v0, p1
 
@@ -693,31 +680,31 @@
 
     :cond_1
     :goto_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 5
     :goto_1
     iget-object v2, p0, Ln/a;->b:[Ln/a$a;
 
-    array-length v3, v2
+    array-length v4, v2
 
-    if-ge v0, v3, :cond_4
+    if-ge v0, v4, :cond_4
 
     .line 6
-    aget-object v3, v2, v0
+    aget-object v4, v2, v0
 
-    iget-wide v5, v3, Ln/a$a;->d:D
+    iget-wide v4, v4, Ln/a$a;->d:D
 
-    cmpg-double v3, p1, v5
+    cmpg-double v4, p1, v4
 
-    if-gtz v3, :cond_3
+    if-gtz v4, :cond_3
 
     .line 7
-    aget-object v3, v2, v0
+    aget-object v4, v2, v0
 
-    iget-boolean v3, v3, Ln/a$a;->r:Z
+    iget-boolean v4, v4, Ln/a$a;->r:Z
 
-    if-eqz v3, :cond_2
+    if-eqz v4, :cond_2
 
     .line 8
     aget-object p1, v2, v0
@@ -735,7 +722,7 @@
     iget-wide p1, p1, Ln/a$a;->m:D
 
     .line 13
-    aput-wide p1, p3, v4
+    aput-wide p1, p3, v3
 
     return-void
 
@@ -765,7 +752,7 @@
 
     move-result-wide p1
 
-    aput-wide p1, p3, v4
+    aput-wide p1, p3, v3
 
     return-void
 

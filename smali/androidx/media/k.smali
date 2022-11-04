@@ -26,7 +26,7 @@
         }
     .end annotation
 
-    iget-object p1, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
+    iget-object p1, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
 
     check-cast p1, Landroidx/media/l;
 
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, p2}, Landroidx/media/j$b;-><init>(Landroid/service/media/MediaBrowserService$Result;)V
 
-    invoke-interface {p1, v0}, Landroidx/media/l;->f(Landroidx/media/j$b;)V
+    invoke-interface {p1, v0}, Landroidx/media/l;->e(Landroidx/media/j$b;)V
 
     return-void
 .end method

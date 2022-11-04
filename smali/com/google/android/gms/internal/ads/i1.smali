@@ -35,8 +35,8 @@
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
-            Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException;,
-            Lcom/google/android/gms/common/GooglePlayServicesRepairableException;
+            Lx1/e;,
+            Lx1/f;
         }
     .end annotation
 
@@ -126,7 +126,7 @@
     if-eqz v1, :cond_3
 
     .line 13
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->p(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->o(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 14
     invoke-virtual {p1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->isLimitAdTrackingEnabled()Z
@@ -134,40 +134,40 @@
     move-result p1
 
     .line 15
-    iget-boolean v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
     .line 16
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->m()V
 
     .line 17
-    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 18
     :cond_1
-    iget-object v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v1, Lcom/google/android/gms/internal/ads/a0;
 
     invoke-static {v1, p1}, Lcom/google/android/gms/internal/ads/a0;->D(Lcom/google/android/gms/internal/ads/a0;Z)V
 
     .line 19
-    iget-boolean p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz p1, :cond_2
 
     .line 20
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->m()V
 
     .line 21
-    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 22
     :cond_2
-    iget-object p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast p1, Lcom/google/android/gms/internal/ads/a0;
 
@@ -175,7 +175,7 @@
 
     .line 23
     :cond_3
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->i()Lk3/at0;
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/zv0;
 
     move-result-object p1
 

@@ -1,48 +1,89 @@
-.class public final enum Le6/d;
-.super Ljava/lang/Enum;
-.source "DecodeHintType.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Le6/d;",
-        ">;"
-    }
-.end annotation
+.class public final Le6/d;
+.super Ljava/lang/Object;
+.source "DecodeFormatManager.java"
 
 
 # static fields
-.field public static final enum h:Le6/d;
+.field public static final a:Ljava/util/regex/Pattern;
 
-.field public static final enum i:Le6/d;
-
-.field public static final enum j:Le6/d;
-
-.field public static final enum k:Le6/d;
-
-.field public static final enum l:Le6/d;
-
-.field public static final enum m:Le6/d;
-
-.field public static final enum n:Le6/d;
-
-.field public static final enum o:Le6/d;
-
-.field public static final enum p:Le6/d;
-
-.field public static final enum q:Le6/d;
-
-.field public static final synthetic r:[Le6/d;
-
-
-# instance fields
-.field public final g:Ljava/lang/Class;
+.field public static final b:Ljava/util/EnumSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/lang/Class<",
-            "*>;"
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final c:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final d:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final e:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final f:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final g:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final h:Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final i:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/Set<",
+            "La6/a;",
+            ">;>;"
         }
     .end annotation
 .end field
@@ -50,238 +91,159 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 16
+    .locals 10
+
+    const-string v0, ","
 
     .line 1
-    const-class v0, [I
-
-    new-instance v1, Le6/d;
-
-    const-class v2, Ljava/lang/Object;
-
-    const-string v3, "OTHER"
-
-    const/4 v4, 0x0
-
-    invoke-direct {v1, v3, v4, v2}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    .line 2
-    new-instance v2, Le6/d;
-
-    const-class v3, Ljava/lang/Void;
-
-    const-string v5, "PURE_BARCODE"
-
-    const/4 v6, 0x1
-
-    invoke-direct {v2, v5, v6, v3}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v2, Le6/d;->h:Le6/d;
-
-    .line 3
-    new-instance v3, Le6/d;
-
-    const-class v5, Ljava/util/List;
-
-    const-string v7, "POSSIBLE_FORMATS"
-
-    const/4 v8, 0x2
-
-    invoke-direct {v3, v7, v8, v5}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v3, Le6/d;->i:Le6/d;
-
-    .line 4
-    new-instance v5, Le6/d;
-
-    const-class v7, Ljava/lang/Void;
-
-    const-string v9, "TRY_HARDER"
-
-    const/4 v10, 0x3
-
-    invoke-direct {v5, v9, v10, v7}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v5, Le6/d;->j:Le6/d;
-
-    .line 5
-    new-instance v7, Le6/d;
-
-    const-class v9, Ljava/lang/String;
-
-    const-string v11, "CHARACTER_SET"
-
-    const/4 v12, 0x4
-
-    invoke-direct {v7, v11, v12, v9}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v7, Le6/d;->k:Le6/d;
-
-    .line 6
-    new-instance v9, Le6/d;
-
-    const-string v11, "ALLOWED_LENGTHS"
-
-    const/4 v13, 0x5
-
-    invoke-direct {v9, v11, v13, v0}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v9, Le6/d;->l:Le6/d;
-
-    .line 7
-    new-instance v11, Le6/d;
-
-    const-class v14, Ljava/lang/Void;
-
-    const-string v15, "ASSUME_CODE_39_CHECK_DIGIT"
-
-    const/4 v13, 0x6
-
-    invoke-direct {v11, v15, v13, v14}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v11, Le6/d;->m:Le6/d;
-
-    .line 8
-    new-instance v14, Le6/d;
-
-    const-class v15, Ljava/lang/Void;
-
-    const-string v13, "ASSUME_GS1"
-
-    const/4 v12, 0x7
-
-    invoke-direct {v14, v13, v12, v15}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v14, Le6/d;->n:Le6/d;
-
-    .line 9
-    new-instance v13, Le6/d;
-
-    const-class v15, Ljava/lang/Void;
-
-    const-string v12, "RETURN_CODABAR_START_END"
-
-    const/16 v10, 0x8
-
-    invoke-direct {v13, v12, v10, v15}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v13, Le6/d;->o:Le6/d;
-
-    .line 10
-    new-instance v12, Le6/d;
-
-    const-class v15, Le6/m;
-
-    const-string v10, "NEED_RESULT_POINT_CALLBACK"
-
-    const/16 v8, 0x9
-
-    invoke-direct {v12, v10, v8, v15}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v12, Le6/d;->p:Le6/d;
-
-    .line 11
-    new-instance v10, Le6/d;
-
-    const-string v15, "ALLOWED_EAN_EXTENSIONS"
-
-    const/16 v8, 0xa
-
-    invoke-direct {v10, v15, v8, v0}, Le6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
-
-    sput-object v10, Le6/d;->q:Le6/d;
-
-    const/16 v0, 0xb
-
-    new-array v0, v0, [Le6/d;
-
-    aput-object v1, v0, v4
-
-    aput-object v2, v0, v6
-
-    const/4 v1, 0x2
-
-    aput-object v3, v0, v1
-
-    const/4 v1, 0x3
-
-    aput-object v5, v0, v1
-
-    const/4 v1, 0x4
-
-    aput-object v7, v0, v1
-
-    const/4 v1, 0x5
-
-    aput-object v9, v0, v1
-
-    const/4 v1, 0x6
-
-    aput-object v11, v0, v1
-
-    const/4 v1, 0x7
-
-    aput-object v14, v0, v1
-
-    const/16 v1, 0x8
-
-    aput-object v13, v0, v1
-
-    const/16 v1, 0x9
-
-    aput-object v12, v0, v1
-
-    aput-object v10, v0, v8
-
-    .line 12
-    sput-object v0, Le6/d;->r:[Le6/d;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    iput-object p3, p0, Le6/d;->g:Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Le6/d;
-    .locals 1
-
-    const-class v0, Le6/d;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Le6/d;
-
-    return-object p0
-.end method
-
-.method public static values()[Le6/d;
-    .locals 1
-
-    sget-object v0, Le6/d;->r:[Le6/d;
-
-    invoke-virtual {v0}, [Le6/d;->clone()Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
 
-    check-cast v0, [Le6/d;
+    sput-object v0, Le6/d;->a:Ljava/util/regex/Pattern;
 
-    return-object v0
+    .line 2
+    sget-object v0, La6/a;->q:La6/a;
+
+    invoke-static {v0}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v0
+
+    sput-object v0, Le6/d;->e:Ljava/util/EnumSet;
+
+    .line 3
+    sget-object v1, La6/a;->k:La6/a;
+
+    invoke-static {v1}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v1
+
+    sput-object v1, Le6/d;->f:Ljava/util/EnumSet;
+
+    .line 4
+    sget-object v2, La6/a;->f:La6/a;
+
+    invoke-static {v2}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v2
+
+    sput-object v2, Le6/d;->g:Ljava/util/EnumSet;
+
+    .line 5
+    sget-object v3, La6/a;->p:La6/a;
+
+    invoke-static {v3}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v3
+
+    sput-object v3, Le6/d;->h:Ljava/util/EnumSet;
+
+    .line 6
+    sget-object v4, La6/a;->t:La6/a;
+
+    const/4 v5, 0x5
+
+    new-array v5, v5, [La6/a;
+
+    sget-object v6, La6/a;->u:La6/a;
+
+    const/4 v7, 0x0
+
+    aput-object v6, v5, v7
+
+    sget-object v6, La6/a;->m:La6/a;
+
+    const/4 v7, 0x1
+
+    aput-object v6, v5, v7
+
+    sget-object v6, La6/a;->l:La6/a;
+
+    const/4 v7, 0x2
+
+    aput-object v6, v5, v7
+
+    sget-object v6, La6/a;->r:La6/a;
+
+    const/4 v7, 0x3
+
+    aput-object v6, v5, v7
+
+    sget-object v6, La6/a;->s:La6/a;
+
+    const/4 v7, 0x4
+
+    aput-object v6, v5, v7
+
+    invoke-static {v4, v5}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;[Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v4
+
+    sput-object v4, Le6/d;->b:Ljava/util/EnumSet;
+
+    .line 7
+    sget-object v5, La6/a;->h:La6/a;
+
+    sget-object v6, La6/a;->i:La6/a;
+
+    sget-object v7, La6/a;->j:La6/a;
+
+    sget-object v8, La6/a;->n:La6/a;
+
+    sget-object v9, La6/a;->g:La6/a;
+
+    invoke-static {v5, v6, v7, v8, v9}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;Ljava/lang/Enum;Ljava/lang/Enum;Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;
+
+    move-result-object v5
+
+    sput-object v5, Le6/d;->c:Ljava/util/EnumSet;
+
+    .line 8
+    invoke-static {v4}, Ljava/util/EnumSet;->copyOf(Ljava/util/Collection;)Ljava/util/EnumSet;
+
+    move-result-object v6
+
+    sput-object v6, Le6/d;->d:Ljava/util/EnumSet;
+
+    .line 9
+    invoke-interface {v6, v5}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
+
+    .line 10
+    new-instance v5, Ljava/util/HashMap;
+
+    invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v5, Le6/d;->i:Ljava/util/HashMap;
+
+    const-string v7, "ONE_D_MODE"
+
+    .line 11
+    invoke-virtual {v5, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v6, "PRODUCT_MODE"
+
+    .line 12
+    invoke-virtual {v5, v6, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v4, "QR_CODE_MODE"
+
+    .line 13
+    invoke-virtual {v5, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "DATA_MATRIX_MODE"
+
+    .line 14
+    invoke-virtual {v5, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "AZTEC_MODE"
+
+    .line 15
+    invoke-virtual {v5, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "PDF417_MODE"
+
+    .line 16
+    invoke-virtual {v5, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
 .end method

@@ -3,7 +3,7 @@
 .source "Value.java"
 
 # interfaces
-.implements Lcom/google/protobuf/v1;
+.implements Lcom/google/protobuf/y1;
 
 
 # annotations
@@ -20,7 +20,7 @@
         "Lcom/google/protobuf/Value;",
         "Lcom/google/protobuf/Value$a;",
         ">;",
-        "Lcom/google/protobuf/v1;"
+        "Lcom/google/protobuf/y1;"
     }
 .end annotation
 
@@ -36,10 +36,10 @@
 
 .field public static final NUMBER_VALUE_FIELD_NUMBER:I = 0x2
 
-.field private static volatile PARSER:Lcom/google/protobuf/c1; = null
+.field private static volatile PARSER:Lcom/google/protobuf/e1; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Value;",
             ">;"
         }
@@ -179,10 +179,10 @@
     return-void
 .end method
 
-.method public static synthetic access$300(Lcom/google/protobuf/Value;Lcom/google/protobuf/a1;)V
+.method public static synthetic access$300(Lcom/google/protobuf/Value;Lcom/google/protobuf/c1;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/google/protobuf/Value;->setNullValue(Lcom/google/protobuf/a1;)V
+    invoke-direct {p0, p1}, Lcom/google/protobuf/Value;->setNullValue(Lcom/google/protobuf/c1;)V
 
     return-void
 .end method
@@ -407,7 +407,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget v0, p0, Lcom/google/protobuf/Value;->kindCase_:I
@@ -464,7 +464,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget v0, p0, Lcom/google/protobuf/Value;->kindCase_:I
@@ -567,7 +567,7 @@
     return-object p0
 .end method
 
-.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -578,7 +578,7 @@
     .line 2
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -591,7 +591,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -607,18 +607,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 4
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -647,7 +647,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -658,7 +658,7 @@
     .line 10
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -687,7 +687,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -698,7 +698,7 @@
     .line 8
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -711,7 +711,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -727,18 +727,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -751,7 +751,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -767,18 +767,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom([BLcom/google/protobuf/q;)Lcom/google/protobuf/Value;
+.method public static parseFrom([BLcom/google/protobuf/r;)Lcom/google/protobuf/Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 6
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -787,12 +787,12 @@
     return-object p0
 .end method
 
-.method public static parser()Lcom/google/protobuf/c1;
+.method public static parser()Lcom/google/protobuf/e1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Value;",
             ">;"
         }
@@ -800,7 +800,7 @@
 
     sget-object v0, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/e1;
 
     move-result-object v0
 
@@ -829,7 +829,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iput-object p1, p0, Lcom/google/protobuf/Value;->kind_:Ljava/lang/Object;
@@ -842,11 +842,11 @@
     return-void
 .end method
 
-.method private setNullValue(Lcom/google/protobuf/a1;)V
+.method private setNullValue(Lcom/google/protobuf/c1;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/protobuf/a1;->d()I
+    invoke-virtual {p1}, Lcom/google/protobuf/c1;->f()I
 
     move-result p1
 
@@ -904,7 +904,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x3
 
@@ -924,7 +924,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->q()Ljava/lang/String;
 
     move-result-object p1
 
@@ -942,7 +942,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iput-object p1, p0, Lcom/google/protobuf/Value;->kind_:Ljava/lang/Object;
@@ -991,7 +991,7 @@
 
     .line 4
     :pswitch_2
-    sget-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_1
 
@@ -1002,7 +1002,7 @@
 
     .line 6
     :try_start_0
-    sget-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_0
 
@@ -1014,7 +1014,7 @@
     invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
-    sput-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/c1;
+    sput-object p1, Lcom/google/protobuf/Value;->PARSER:Lcom/google/protobuf/e1;
 
     .line 9
     :cond_0
@@ -1074,7 +1074,7 @@
     .line 12
     sget-object p3, Lcom/google/protobuf/Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Value;
 
-    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/q0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/s0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1152,43 +1152,43 @@
 
     .line 2
     :pswitch_0
-    sget-object v0, Lcom/google/protobuf/Value$b;->l:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->k:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 3
     :pswitch_1
-    sget-object v0, Lcom/google/protobuf/Value$b;->k:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->j:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 4
     :pswitch_2
-    sget-object v0, Lcom/google/protobuf/Value$b;->j:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->i:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 5
     :pswitch_3
-    sget-object v0, Lcom/google/protobuf/Value$b;->i:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->h:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 6
     :pswitch_4
-    sget-object v0, Lcom/google/protobuf/Value$b;->h:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->g:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 7
     :pswitch_5
-    sget-object v0, Lcom/google/protobuf/Value$b;->g:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->f:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 8
     :pswitch_6
-    sget-object v0, Lcom/google/protobuf/Value$b;->m:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->l:Lcom/google/protobuf/Value$b;
 
     :goto_0
     return-object v0
@@ -1231,11 +1231,11 @@
     return-object v0
 .end method
 
-.method public getNullValue()Lcom/google/protobuf/a1;
+.method public getNullValue()Lcom/google/protobuf/c1;
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/a1;->h:Lcom/google/protobuf/a1;
+    sget-object v0, Lcom/google/protobuf/c1;->g:Lcom/google/protobuf/c1;
 
     iget v1, p0, Lcom/google/protobuf/Value;->kindCase_:I
 
@@ -1260,7 +1260,7 @@
     if-nez v0, :cond_1
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/a1;->i:Lcom/google/protobuf/a1;
+    sget-object v0, Lcom/google/protobuf/c1;->h:Lcom/google/protobuf/c1;
 
     :cond_1
     return-object v0
@@ -1366,7 +1366,7 @@
 
     .line 3
     :goto_0
-    invoke-static {v0}, Lcom/google/protobuf/i;->g(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 

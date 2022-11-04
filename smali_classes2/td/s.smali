@@ -1,94 +1,60 @@
-.class public abstract Ltd/s;
-.super Lwc/w;
-.source "RegisterFlow.kt"
+.class public final Ltd/s;
+.super Lif/i;
+.source "RemoteAssetClient.kt"
+
+# interfaces
+.implements Lhf/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/l<",
+        "[B",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic f:Lhf/l;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lhf/l;)V
     .locals 0
 
-    invoke-direct {p0}, Lwc/w;-><init>()V
+    iput-object p1, p0, Ltd/s;->f:Lhf/l;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public N0()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final U0()Ljava/lang/String;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ltd/s;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    check-cast p1, [B
 
-    move-result-object v0
-
-    if-eqz v0, :cond_0
+    const-string v0, "it"
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    goto :goto_0
+    .line 3
+    iget-object v0, p0, Ltd/s;->f:Lhf/l;
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-interface {v0, p1}, Lhf/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    :goto_0
-    return-object v0
-.end method
+    .line 4
+    sget-object p1, Lye/m;->a:Lye/m;
 
-.method public final V0()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ltd/s;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Ljava/lang/String;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
-
-    .line 2
-    instance-of v1, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x0
-
-    :cond_0
-    check-cast v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    return-object v0
-.end method
-
-.method public synthetic a0()V
-    .locals 0
-
-    invoke-super {p0}, Lwc/w;->a0()V
-
-    invoke-virtual {p0}, Ltd/s;->N0()V
-
-    return-void
+    return-object p1
 .end method

@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/stats/PlayerStats;",
         ">;"
     }
@@ -20,43 +20,43 @@
 
 
 # virtual methods
-.method public abstract B2()F
+.method public abstract F()Landroid/os/Bundle;
 .end method
 
-.method public abstract D0()F
+.method public abstract G1()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract H()Landroid/os/Bundle;
+.method public abstract I2()F
 .end method
 
-.method public abstract R()F
+.method public abstract O0()I
+.end method
+
+.method public abstract Y()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract g0()I
+.method public abstract h0()F
 .end method
 
-.method public abstract m1()F
-.end method
-
-.method public abstract n2()F
+.method public abstract h2()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract p0()F
+.method public abstract k1()F
 .end method
 
-.method public abstract p1()F
+.method public abstract l0()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract r1()I
+.method public abstract n2()I
 .end method
 
-.method public abstract r2()I
+.method public abstract o0()I
 .end method

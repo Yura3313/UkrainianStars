@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I

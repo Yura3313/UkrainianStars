@@ -1,9 +1,9 @@
 .class public final Ln5/e$a;
-.super Lcom/google/crypto/tink/shaded/protobuf/n$a;
-.source "AesCtrHmacAeadKeyFormat.java"
+.super Ljava/lang/Object;
+.source "PublicKeySignWrapper.java"
 
 # interfaces
-.implements Lo5/r;
+.implements Ld5/s;
 
 
 # annotations
@@ -12,30 +12,24 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x9
     name = "a"
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/crypto/tink/shaded/protobuf/n$a<",
-        "Ln5/e;",
-        "Ln5/e$a;",
-        ">;",
-        "Lo5/r;"
-    }
 .end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ld5/o<",
+            "Ld5/s;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-static {}, Ln5/e;->q()Ln5/e;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;-><init>(Lcom/google/crypto/tink/shaded/protobuf/n;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

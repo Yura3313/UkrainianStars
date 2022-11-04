@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/ListPopupWindow;
+.field public final synthetic f:Landroidx/appcompat/widget/ListPopupWindow;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/u;->g:Landroidx/appcompat/widget/ListPopupWindow;
+    iput-object p1, p0, Landroidx/appcompat/widget/u;->f:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,9 +40,9 @@
     if-eq p3, p1, :cond_0
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/u;->g:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object p1, p0, Landroidx/appcompat/widget/u;->f:Landroidx/appcompat/widget/ListPopupWindow;
 
-    iget-object p1, p1, Landroidx/appcompat/widget/ListPopupWindow;->i:Landroidx/appcompat/widget/r;
+    iget-object p1, p1, Landroidx/appcompat/widget/ListPopupWindow;->h:Landroidx/appcompat/widget/r;
 
     if-eqz p1, :cond_0
 

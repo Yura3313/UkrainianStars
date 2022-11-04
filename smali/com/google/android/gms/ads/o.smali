@@ -4,18 +4,34 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzyf;
+.field public final a:Z
+
+.field public final b:Z
+
+.field public final c:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzyf;)V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzaac;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/ads/o;->a:Lcom/google/android/gms/internal/ads/zzyf;
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->f:Z
+
+    iput-boolean v0, p0, Lcom/google/android/gms/ads/o;->a:Z
+
+    .line 3
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->g:Z
+
+    iput-boolean v0, p0, Lcom/google/android/gms/ads/o;->b:Z
+
+    .line 4
+    iget-boolean p1, p1, Lcom/google/android/gms/internal/ads/zzaac;->h:Z
+
+    iput-boolean p1, p0, Lcom/google/android/gms/ads/o;->c:Z
 
     return-void
 .end method

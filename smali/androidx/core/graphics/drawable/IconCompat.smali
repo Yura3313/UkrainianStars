@@ -142,7 +142,7 @@
 
     const v1, 0x3f2aaaab
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     float-to-int v0, v0
 
@@ -169,11 +169,11 @@
 
     const/high16 v5, 0x3f000000    # 0.5f
 
-    mul-float v4, v4, v5
+    mul-float/2addr v4, v5
 
     const v5, 0x3f6aaaab
 
-    mul-float v5, v5, v4
+    mul-float/2addr v5, v4
 
     const/high16 v6, -0x1000000
 
@@ -283,54 +283,50 @@
 
     if-ne v0, v1, :cond_1
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-lt v1, v2, :cond_1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
-    iget-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
 
-    check-cast v0, Landroid/graphics/drawable/Icon;
+    check-cast v1, Landroid/graphics/drawable/Icon;
 
     const/16 v2, 0x1c
 
-    if-lt v1, v2, :cond_0
+    if-lt v0, v2, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/drawable/Icon;->getResId()I
+    invoke-virtual {v1}, Landroid/graphics/drawable/Icon;->getResId()I
 
     move-result v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
     :try_start_0
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 
     const-string v3, "getResId"
 
-    new-array v4, v1, [Ljava/lang/Class;
+    new-array v4, v0, [Ljava/lang/Class;
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
-    new-array v3, v1, [Ljava/lang/Object;
+    new-array v3, v0, [Ljava/lang/Object;
 
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/Integer;
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
     :try_end_0
@@ -338,11 +334,7 @@
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
     :catch_0
-    const/4 v0, 0x0
-
     :goto_0
     return v0
 
@@ -391,34 +383,30 @@
 
     if-ne v0, v2, :cond_1
 
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x17
-
-    if-lt v3, v4, :cond_1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
-    iget-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
 
-    check-cast v0, Landroid/graphics/drawable/Icon;
+    check-cast v2, Landroid/graphics/drawable/Icon;
 
-    const/16 v2, 0x1c
+    const/16 v3, 0x1c
 
-    if-lt v3, v2, :cond_0
+    if-lt v0, v3, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/drawable/Icon;->getResPackage()Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/graphics/drawable/Icon;->getResPackage()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
     .line 4
     :try_start_0
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 
@@ -432,21 +420,19 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v3, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    move-object v0, v1
 
     :catch_0
-    move-object v0, v2
-
     :goto_0
     return-object v0
 
@@ -503,23 +489,19 @@
 
     if-ne v0, v1, :cond_1
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x17
-
-    if-lt v2, v3, :cond_1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
-    iget-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
 
-    check-cast v0, Landroid/graphics/drawable/Icon;
+    check-cast v2, Landroid/graphics/drawable/Icon;
 
     const/16 v3, 0x1c
 
-    if-lt v2, v3, :cond_0
+    if-lt v0, v3, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/drawable/Icon;->getType()I
+    invoke-virtual {v2}, Landroid/graphics/drawable/Icon;->getType()I
 
     move-result v1
 
@@ -528,9 +510,9 @@
     .line 4
     :cond_0
     :try_start_0
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v2
+    move-result-object v0
 
     const-string v3, "getType"
 
@@ -538,19 +520,19 @@
 
     new-array v5, v4, [Ljava/lang/Class;
 
-    invoke-virtual {v2, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result-object v2
+    move-result-object v0
 
     new-array v3, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v0
 
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v0, Ljava/lang/Integer;
 
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
     :try_end_0
@@ -562,19 +544,19 @@
 
     .line 5
     :catch_0
-    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     goto :goto_0
 
     .line 6
     :catch_1
-    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     goto :goto_0
 
     .line 7
     :catch_2
-    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     :goto_0
     return v1
@@ -593,34 +575,30 @@
 
     if-ne v0, v1, :cond_1
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-lt v1, v2, :cond_1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
-    iget-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
 
-    check-cast v0, Landroid/graphics/drawable/Icon;
+    check-cast v1, Landroid/graphics/drawable/Icon;
 
     const/16 v2, 0x1c
 
-    if-lt v1, v2, :cond_0
+    if-lt v0, v2, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/drawable/Icon;->getUri()Landroid/net/Uri;
+    invoke-virtual {v1}, Landroid/graphics/drawable/Icon;->getUri()Landroid/net/Uri;
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
     :try_start_0
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -636,21 +614,19 @@
 
     new-array v3, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Landroid/net/Uri;
+    check-cast v1, Landroid/net/Uri;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
-    :catch_0
     move-object v0, v1
 
+    :catch_0
     :goto_0
     return-object v0
 
@@ -728,7 +704,7 @@
     const-string v1, "Context is required to resolve the file uri of the icon: "
 
     .line 4
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field public final g:Landroid/os/IBinder;
+.field public final f:Landroid/os/IBinder;
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -17,30 +17,16 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/internal/i;->g:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/play/core/internal/i;->f:Landroid/os/IBinder;
 
-    iput-object p2, p0, Lcom/google/android/play/core/internal/i;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/play/core/internal/i;->g:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final J0()Landroid/os/Parcel;
-    .locals 2
-
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/google/android/play/core/internal/i;->h:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public final S0(ILandroid/os/Parcel;)V
+.method public final L0(ILandroid/os/Parcel;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -49,7 +35,7 @@
     .end annotation
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/internal/i;->g:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/play/core/internal/i;->f:Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -74,7 +60,21 @@
 .method public final asBinder()Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/play/core/internal/i;->g:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/play/core/internal/i;->f:Landroid/os/IBinder;
+
+    return-object v0
+.end method
+
+.method public final n0()Landroid/os/Parcel;
+    .locals 2
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/play/core/internal/i;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     return-object v0
 .end method

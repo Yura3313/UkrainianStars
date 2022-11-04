@@ -1,87 +1,139 @@
 .class public final Lwd/b;
-.super Lse/i;
-.source "TokenLoginConfirmPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.super Lwd/d;
+.source "TutorialPageFragment.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lwd/e;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
+        Lwd/b$a;
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lwd/b;
+.field public static final f0:Lwd/b$a;
+
+
+# instance fields
+.field public e0:Ljava/util/HashMap;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lwd/b;
+    new-instance v0, Lwd/b$a;
 
-    invoke-direct {v0}, Lwd/b;-><init>()V
+    invoke-direct {v0}, Lwd/b$a;-><init>()V
 
-    sput-object v0, Lwd/b;->g:Lwd/b;
+    sput-object v0, Lwd/b;->f0:Lwd/b$a;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Lwd/d;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final N0()V
     .locals 1
 
+    iget-object v0, p0, Lwd/b;->e0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final R0(I)Landroid/view/View;
+    .locals 2
+
+    iget-object v0, p0, Lwd/b;->e0:Ljava/util/HashMap;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lwd/b;->e0:Ljava/util/HashMap;
+
+    :cond_0
+    iget-object v0, p0, Lwd/b;->e0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    if-nez v0, :cond_2
+
     .line 1
-    check-cast p1, Lwd/e;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
-    check-cast p2, Ljava/lang/Exception;
+    if-nez v0, :cond_1
 
-    const-string v0, "$receiver"
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    :cond_1
+    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const-string v0, "it"
+    move-result-object v0
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v1, p0, Lwd/b;->e0:Ljava/util/HashMap;
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    :cond_2
+    return-object v0
+.end method
+
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_cover_page:I
 
     const/4 v0, 0x0
 
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    move-result-object p1
 
     return-object p1
+.end method
+
+.method public final synthetic Z()V
+    .locals 0
+
+    invoke-super {p0}, Lwd/d;->Z()V
+
+    invoke-virtual {p0}, Lwd/b;->N0()V
+
+    return-void
 .end method

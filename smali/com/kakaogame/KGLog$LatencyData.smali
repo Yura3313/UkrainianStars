@@ -242,13 +242,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_1
-
-    :goto_0
     throw p0
-
-    :goto_1
-    goto :goto_0
 .end method
 
 .method private remove()V

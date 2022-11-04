@@ -62,7 +62,7 @@
     move-object/from16 v1, p2
 
     .line 1
-    invoke-static/range {p1 .. p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 2
     :try_start_0
@@ -101,7 +101,7 @@
     move-result-object v8
 
     .line 9
-    invoke-static {v8}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {v8}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 10
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/push/PushMessage;->getSoundUri()Landroid/net/Uri;
@@ -336,16 +336,9 @@
     :goto_1
     sget-object v4, Lcom/kakaogame/push/PushMessage$PushTheme;->DEFAULT:Lcom/kakaogame/push/PushMessage$PushTheme;
 
-    const/16 v7, 0x18
-
     if-eq v3, v4, :cond_6
 
     .line 46
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-lt v1, v7, :cond_7
-
-    .line 47
     invoke-virtual {v13, v14}, Landroid/app/Notification$Builder;->setCustomContentView(Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;
 
     goto :goto_2
@@ -353,7 +346,7 @@
     :cond_6
     if-nez v1, :cond_7
 
-    .line 48
+    .line 47
     new-instance v1, Landroid/app/Notification$BigTextStyle;
 
     invoke-direct {v1}, Landroid/app/Notification$BigTextStyle;-><init>()V
@@ -366,10 +359,10 @@
 
     move-result-object v1
 
-    .line 49
+    .line 48
     invoke-virtual {v13, v1}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
 
-    .line 50
+    .line 49
     :cond_7
     :goto_2
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -382,87 +375,79 @@
 
     if-lt v1, v5, :cond_8
 
-    .line 51
+    .line 50
     :try_start_2
     invoke-virtual {v13, v6}, Landroid/app/Notification$Builder;->setChannelId(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
-    .line 52
+    .line 51
     :cond_8
     invoke-static/range {p0 .. p0}, Lcom/kakaogame/util/AppUtil;->isAppForeground(Landroid/content/Context;)Z
 
-    move-result v8
+    move-result v7
 
-    const/4 v11, 0x2
+    const/4 v8, 0x2
 
-    if-nez v8, :cond_9
+    if-nez v7, :cond_9
+
+    .line 52
+    invoke-virtual {v13, v8}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
 
     .line 53
-    invoke-virtual {v13, v11}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
-
-    .line 54
     :cond_9
     invoke-virtual {v13}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
-    move-result-object v8
+    move-result-object v7
 
-    if-eq v3, v4, :cond_a
-
-    if-ge v1, v7, :cond_a
-
-    .line 55
-    iput-object v14, v8, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
-
-    .line 56
-    :cond_a
+    .line 54
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/push/PushMessage;->isMuteMode()Z
 
     move-result v3
 
     const/4 v4, 0x1
 
-    if-nez v3, :cond_c
+    if-nez v3, :cond_b
 
-    if-eqz v9, :cond_b
+    if-eqz v9, :cond_a
+
+    .line 55
+    iput-object v9, v7, Landroid/app/Notification;->sound:Landroid/net/Uri;
+
+    .line 56
+    :cond_a
+    array-length v3, v10
+
+    if-lt v3, v4, :cond_b
 
     .line 57
-    iput-object v9, v8, Landroid/app/Notification;->sound:Landroid/net/Uri;
+    iput-object v10, v7, Landroid/app/Notification;->vibrate:[J
 
     .line 58
     :cond_b
-    array-length v3, v10
-
-    if-lt v3, v4, :cond_c
-
-    .line 59
-    iput-object v10, v8, Landroid/app/Notification;->vibrate:[J
-
-    .line 60
-    :cond_c
-    iget v3, v8, Landroid/app/Notification;->flags:I
+    iget v3, v7, Landroid/app/Notification;->flags:I
 
     or-int/lit8 v3, v3, 0x11
 
-    iput v3, v8, Landroid/app/Notification;->flags:I
+    iput v3, v7, Landroid/app/Notification;->flags:I
 
     const-string v3, "notification"
 
-    .line 61
+    .line 59
     invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    if-lt v1, v5, :cond_d
+    if-lt v1, v5, :cond_c
 
-    .line 62
+    .line 60
     new-instance v1, Landroid/app/NotificationChannel;
 
     const/4 v3, 0x3
 
     invoke-direct {v1, v6, v6, v3}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    .line 63
+    .line 61
     invoke-virtual {v1, v4}, Landroid/app/NotificationChannel;->enableVibration(Z)V
 
     const/4 v3, 0x4
@@ -471,29 +456,29 @@
 
     const/4 v5, 0x0
 
-    const-wide/16 v6, 0x64
+    const-wide/16 v9, 0x64
 
-    aput-wide v6, v3, v5
+    aput-wide v9, v3, v5
 
-    const-wide/16 v9, 0xc8
+    const-wide/16 v5, 0xc8
 
-    aput-wide v9, v3, v4
+    aput-wide v5, v3, v4
 
-    aput-wide v6, v3, v11
+    aput-wide v9, v3, v8
 
     const/4 v4, 0x3
 
-    aput-wide v9, v3, v4
+    aput-wide v5, v3, v4
 
-    .line 64
+    .line 62
     invoke-virtual {v1, v3}, Landroid/app/NotificationChannel;->setVibrationPattern([J)V
 
-    .line 65
+    .line 63
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
-    .line 66
-    :cond_d
-    invoke-virtual {v0, v2, v8}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+    .line 64
+    :cond_c
+    invoke-virtual {v0, v2, v7}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -502,7 +487,7 @@
     :catch_0
     move-exception v0
 
-    .line 67
+    .line 65
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     :goto_3
@@ -513,7 +498,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -566,7 +551,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/kakaogame/push/PushNotificationHandler$1;-><init>(Landroid/content/Context;Lcom/kakaogame/push/PushMessage;)V
 
-    invoke-static {v0, v1}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lkc/a;)V
+    invoke-static {v0, v1}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Ljc/a;)V
 
     goto :goto_0
 

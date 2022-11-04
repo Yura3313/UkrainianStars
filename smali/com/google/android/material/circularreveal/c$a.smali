@@ -91,7 +91,7 @@
     iget v2, p3, Lcom/google/android/material/circularreveal/c$d;->a:F
 
     .line 3
-    invoke-static {v1, v2, p1}, Lk3/gj;->e(FFF)F
+    invoke-static {v1, v2, p1}, Lcom/android/billingclient/api/j0;->h(FFF)F
 
     move-result v1
 
@@ -100,7 +100,7 @@
     iget v3, p3, Lcom/google/android/material/circularreveal/c$d;->b:F
 
     .line 4
-    invoke-static {v2, v3, p1}, Lk3/gj;->e(FFF)F
+    invoke-static {v2, v3, p1}, Lcom/android/billingclient/api/j0;->h(FFF)F
 
     move-result v2
 
@@ -109,7 +109,7 @@
     iget p3, p3, Lcom/google/android/material/circularreveal/c$d;->c:F
 
     .line 5
-    invoke-static {p2, p3, p1}, Lk3/gj;->e(FFF)F
+    invoke-static {p2, p3, p1}, Lcom/android/billingclient/api/j0;->h(FFF)F
 
     move-result p1
 

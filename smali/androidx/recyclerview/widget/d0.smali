@@ -46,14 +46,14 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v0}, Landroidx/recyclerview/widget/d0$b;->b()I
+    invoke-interface {v0}, Landroidx/recyclerview/widget/d0$b;->d()I
 
     move-result v0
 
     .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v1}, Landroidx/recyclerview/widget/d0$b;->c()I
+    invoke-interface {v1}, Landroidx/recyclerview/widget/d0$b;->a()I
 
     move-result v1
 
@@ -75,14 +75,14 @@
     .line 3
     iget-object v4, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v4, p1}, Landroidx/recyclerview/widget/d0$b;->d(I)Landroid/view/View;
+    invoke-interface {v4, p1}, Landroidx/recyclerview/widget/d0$b;->c(I)Landroid/view/View;
 
     move-result-object v4
 
     .line 4
     iget-object v5, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v5, v4}, Landroidx/recyclerview/widget/d0$b;->a(Landroid/view/View;)I
+    invoke-interface {v5, v4}, Landroidx/recyclerview/widget/d0$b;->b(Landroid/view/View;)I
 
     move-result v5
 
@@ -169,20 +169,20 @@
 
     iget-object v1, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v1}, Landroidx/recyclerview/widget/d0$b;->b()I
+    invoke-interface {v1}, Landroidx/recyclerview/widget/d0$b;->d()I
 
     move-result v1
 
     iget-object v2, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
-    invoke-interface {v2}, Landroidx/recyclerview/widget/d0$b;->c()I
+    invoke-interface {v2}, Landroidx/recyclerview/widget/d0$b;->a()I
 
     move-result v2
 
     iget-object v3, p0, Landroidx/recyclerview/widget/d0;->a:Landroidx/recyclerview/widget/d0$b;
 
     .line 2
-    invoke-interface {v3, p1}, Landroidx/recyclerview/widget/d0$b;->a(Landroid/view/View;)I
+    invoke-interface {v3, p1}, Landroidx/recyclerview/widget/d0$b;->b(Landroid/view/View;)I
 
     move-result v3
 

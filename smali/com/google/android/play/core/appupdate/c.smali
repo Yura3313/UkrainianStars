@@ -82,13 +82,13 @@
     throw v0
 
     :cond_3
-    new-instance v2, Lcom/google/android/play/core/appupdate/m;
+    new-instance v2, Lcom/google/android/play/core/appupdate/n;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
-    invoke-direct {v2, v1, v0}, Lcom/google/android/play/core/appupdate/m;-><init>(IZ)V
+    invoke-direct {v2, v1, v0}, Lcom/google/android/play/core/appupdate/n;-><init>(IZ)V
 
     return-object v2
 .end method

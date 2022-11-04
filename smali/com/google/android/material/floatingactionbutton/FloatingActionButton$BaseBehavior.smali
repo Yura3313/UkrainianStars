@@ -86,7 +86,7 @@
     check-cast p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     .line 2
-    iget-object v0, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
+    iget-object v0, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
@@ -192,7 +192,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 p1, 0x0
+    move p1, v1
 
     :goto_0
     if-eqz p1, :cond_2
@@ -212,7 +212,7 @@
     check-cast p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     .line 2
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i(Landroid/view/View;)Ljava/util/List;
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/view/View;)Ljava/util/List;
 
     move-result-object v0
 
@@ -225,7 +225,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_3
@@ -276,7 +276,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v5, 0x0
+    move v5, v2
 
     :goto_1
     if-eqz v5, :cond_2
@@ -298,10 +298,10 @@
     .line 13
     :cond_3
     :goto_2
-    invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v(Landroid/view/View;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;I)V
 
     .line 14
-    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
+    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
 
     if-eqz p3, :cond_9
 
@@ -363,7 +363,7 @@
     goto :goto_3
 
     :cond_5
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 21
     :goto_3
@@ -406,13 +406,19 @@
     if-eqz v2, :cond_8
 
     .line 25
-    invoke-static {p2, v2}, Lf0/r;->w(Landroid/view/View;I)V
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 26
+    invoke-virtual {p2, v2}, Landroid/view/View;->offsetTopAndBottom(I)V
 
     :cond_8
     if-eqz v1, :cond_9
 
-    .line 26
-    invoke-static {p2, v1}, Lf0/r;->v(Landroid/view/View;I)V
+    .line 27
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 28
+    invoke-virtual {p2, v1}, Landroid/view/View;->offsetLeftAndRight(I)V
 
     :cond_9
     const/4 p1, 0x1

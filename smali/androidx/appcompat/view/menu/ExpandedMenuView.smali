@@ -9,11 +9,11 @@
 
 
 # static fields
-.field public static final h:[I
+.field public static final g:[I
 
 
 # instance fields
-.field public g:Landroidx/appcompat/view/menu/e;
+.field public f:Landroidx/appcompat/view/menu/e;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
+    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:[I
 
     return-void
 
@@ -60,7 +60,7 @@
     invoke-virtual {p0, p0}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 4
-    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
+    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:[I
 
     const/4 v1, 0x0
 
@@ -91,7 +91,7 @@
     if-eqz p3, :cond_0
 
     .line 9
-    invoke-static {p1, p3}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, p3}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
@@ -132,7 +132,7 @@
     if-eqz v0, :cond_2
 
     .line 15
-    invoke-static {p1, v0}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v0}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -161,7 +161,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->f:Landroidx/appcompat/view/menu/e;
 
     const/4 v1, 0x0
 
@@ -178,7 +178,7 @@
 .method public final b(Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->f:Landroidx/appcompat/view/menu/e;
 
     return-void
 .end method

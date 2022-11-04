@@ -1,259 +1,336 @@
-.class public final Lf7/a;
+.class public final synthetic Lf7/a;
 .super Ljava/lang/Object;
-.source "AuthenticationFailureDM.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lf7/a$a;
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lf7/a$a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public b:La8/f;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(La8/f;)V
+.method public static synthetic a(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    new-instance v0, Ljava/util/ArrayList;
+    if-ne p0, v0, :cond_0
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const-string p0, "a"
 
-    iput-object v0, p0, Lf7/a;->a:Ljava/util/ArrayList;
-
-    .line 3
-    iput-object p1, p0, Lf7/a;->b:La8/f;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Li7/c;Ld8/a;)V
-    .locals 4
-
-    .line 1
-    iget-boolean v0, p1, Li7/c;->l:Z
-
-    if-nez v0, :cond_0
-
-    return-void
+    return-object p0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v0, 0x2
 
-    .line 2
-    sget-object v1, Ld8/b;->z:Ld8/b;
+    if-ne p0, v0, :cond_1
 
-    if-ne p2, v1, :cond_1
+    const-string p0, "o"
 
-    .line 3
-    sget-object v0, Ls9/a;->g:Ls9/a;
+    return-object p0
 
-    goto :goto_0
-
-    .line 4
     :cond_1
-    sget-object v1, Ld8/b;->y:Ld8/b;
+    const/4 v0, 0x3
 
-    if-ne p2, v1, :cond_2
+    if-ne p0, v0, :cond_2
 
-    .line 5
-    sget-object v0, Ls9/a;->h:Ls9/a;
+    const-string p0, "d"
+
+    return-object p0
 
     :cond_2
-    :goto_0
-    if-nez v0, :cond_3
+    const/4 v0, 0x4
 
-    return-void
+    if-ne p0, v0, :cond_3
 
-    .line 6
+    const-string p0, "l"
+
+    return-object p0
+
     :cond_3
-    iget-object p2, p0, Lf7/a;->a:Ljava/util/ArrayList;
+    const/4 v0, 0x5
 
-    invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    if-ne p0, v0, :cond_4
 
-    move-result-object p2
+    const-string p0, "s"
+
+    return-object p0
 
     :cond_4
-    :goto_1
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v0, 0x6
 
-    move-result v1
+    if-ne p0, v0, :cond_5
 
-    if-eqz v1, :cond_5
+    const-string p0, "b"
 
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    return-object p0
 
-    move-result-object v1
-
-    check-cast v1, Lf7/a$a;
-
-    if-eqz v1, :cond_4
-
-    .line 7
-    invoke-interface {v1}, Lf7/a$a;->a()V
-
-    goto :goto_1
-
-    .line 8
     :cond_5
-    iget-object p2, p0, Lf7/a;->b:La8/f;
+    const/4 v0, 0x7
 
-    .line 9
-    iget-object p2, p2, La8/f;->j:Ls9/h;
+    if-ne p0, v0, :cond_6
 
-    .line 10
-    iget-object v1, p2, Ls9/h;->b:Ls9/b;
+    const-string p0, "f"
 
-    if-eqz v1, :cond_8
+    return-object p0
 
-    .line 11
-    iget-boolean v1, p1, Li7/c;->l:Z
-
-    if-nez v1, :cond_6
-
-    goto :goto_2
-
-    .line 12
     :cond_6
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/16 v0, 0x8
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    if-ne p0, v0, :cond_7
 
-    .line 13
-    iget-object v2, p1, Li7/c;->g:Ljava/lang/Long;
+    const-string p0, "h"
 
-    .line 14
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    return-object p0
 
-    const-string v2, "_"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 15
-    iget-object v2, p1, Li7/c;->o:Ljava/lang/String;
-
-    .line 16
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 17
-    iget-object v2, p2, Ls9/h;->c:Ljava/util/HashMap;
-
-    invoke-virtual {v2, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_7
-
-    iget-object v2, p2, Ls9/h;->c:Ljava/util/HashMap;
-
-    invoke-virtual {v2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_7
-
-    goto :goto_2
-
-    .line 18
     :cond_7
-    iget-object v2, p2, Ls9/h;->c:Ljava/util/HashMap;
+    const/16 v0, 0x9
 
-    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    if-ne p0, v0, :cond_8
 
-    invoke-virtual {v2, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p0, "u"
 
-    .line 19
-    new-instance v1, Lcom/helpshift/g$a;
-
-    .line 20
-    iget-object v2, p1, Li7/c;->h:Ljava/lang/String;
-
-    .line 21
-    iget-object v3, p1, Li7/c;->i:Ljava/lang/String;
-
-    .line 22
-    invoke-direct {v1, v2, v3}, Lcom/helpshift/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 23
-    iget-object v2, p1, Li7/c;->j:Ljava/lang/String;
-
-    .line 24
-    iput-object v2, v1, Lcom/helpshift/g$a;->c:Ljava/lang/String;
-
-    .line 25
-    iget-object p1, p1, Li7/c;->o:Ljava/lang/String;
-
-    .line 26
-    iput-object p1, v1, Lcom/helpshift/g$a;->d:Ljava/lang/String;
-
-    .line 27
-    new-instance p1, Lcom/helpshift/g;
-
-    invoke-direct {p1, v1}, Lcom/helpshift/g;-><init>(Lcom/helpshift/g$a;)V
-
-    .line 28
-    iget-object v1, p2, Ls9/h;->a:La8/f;
-
-    new-instance v2, Ls9/l;
-
-    invoke-direct {v2, p2, p1, v0}, Ls9/l;-><init>(Ls9/h;Lcom/helpshift/g;Ls9/a;)V
-
-    invoke-virtual {v1, v2}, La8/f;->g(La8/g;)V
+    return-object p0
 
     :cond_8
-    :goto_2
-    return-void
+    const/16 v0, 0xa
+
+    if-ne p0, v0, :cond_9
+
+    const-string p0, "i"
+
+    return-object p0
+
+    :cond_9
+    const/16 v0, 0xb
+
+    if-ne p0, v0, :cond_a
+
+    const-string p0, "p"
+
+    return-object p0
+
+    :cond_a
+    const/16 v0, 0xc
+
+    if-ne p0, v0, :cond_b
+
+    const-string p0, "r"
+
+    return-object p0
+
+    :cond_b
+    const/16 v0, 0xd
+
+    if-ne p0, v0, :cond_c
+
+    const-string p0, "c"
+
+    return-object p0
+
+    :cond_c
+    const/16 v0, 0xe
+
+    if-ne p0, v0, :cond_d
+
+    const-string p0, "x"
+
+    return-object p0
+
+    :cond_d
+    const/16 v0, 0xf
+
+    if-ne p0, v0, :cond_e
+
+    const-string p0, "q"
+
+    return-object p0
+
+    :cond_e
+    const/16 v0, 0x10
+
+    if-ne p0, v0, :cond_f
+
+    const-string p0, "m"
+
+    return-object p0
+
+    :cond_f
+    const/16 v0, 0x11
+
+    if-ne p0, v0, :cond_10
+
+    const-string p0, "y"
+
+    return-object p0
+
+    :cond_10
+    const/16 v0, 0x12
+
+    if-ne p0, v0, :cond_11
+
+    const-string p0, "n"
+
+    return-object p0
+
+    :cond_11
+    const/16 v0, 0x13
+
+    if-ne p0, v0, :cond_12
+
+    const-string p0, "sr"
+
+    return-object p0
+
+    :cond_12
+    const/16 v0, 0x14
+
+    if-ne p0, v0, :cond_13
+
+    const-string p0, "cr"
+
+    return-object p0
+
+    :cond_13
+    const/16 v0, 0x15
+
+    if-ne p0, v0, :cond_14
+
+    const-string p0, "fl"
+
+    return-object p0
+
+    :cond_14
+    const/16 v0, 0x16
+
+    if-ne p0, v0, :cond_15
+
+    const-string p0, "ta"
+
+    return-object p0
+
+    :cond_15
+    const/16 v0, 0x17
+
+    if-ne p0, v0, :cond_16
+
+    const-string p0, "taf"
+
+    return-object p0
+
+    :cond_16
+    const/16 v0, 0x18
+
+    if-ne p0, v0, :cond_17
+
+    const-string p0, "dfo"
+
+    return-object p0
+
+    :cond_17
+    const/16 v0, 0x19
+
+    if-ne p0, v0, :cond_18
+
+    const-string p0, "ml"
+
+    return-object p0
+
+    :cond_18
+    const/16 v0, 0x1a
+
+    if-ne p0, v0, :cond_19
+
+    const-string p0, "dfc"
+
+    return-object p0
+
+    :cond_19
+    const/16 v0, 0x1b
+
+    if-ne p0, v0, :cond_1a
+
+    const-string p0, "its"
+
+    return-object p0
+
+    :cond_1a
+    const/16 v0, 0x1c
+
+    if-ne p0, v0, :cond_1b
+
+    const-string p0, "sis"
+
+    return-object p0
+
+    :cond_1b
+    const/16 v0, 0x1d
+
+    if-ne p0, v0, :cond_1c
+
+    const-string p0, "sid"
+
+    return-object p0
+
+    :cond_1c
+    const/16 v0, 0x1e
+
+    if-ne p0, v0, :cond_1d
+
+    const-string p0, "sisr"
+
+    return-object p0
+
+    :cond_1d
+    const/16 v0, 0x1f
+
+    if-ne p0, v0, :cond_1e
+
+    const-string p0, "acl"
+
+    return-object p0
+
+    :cond_1e
+    const/16 v0, 0x20
+
+    if-ne p0, v0, :cond_1f
+
+    const-string p0, "te"
+
+    return-object p0
+
+    :cond_1f
+    const/16 v0, 0x21
+
+    if-ne p0, v0, :cond_20
+
+    const-string p0, "cbc"
+
+    return-object p0
+
+    :cond_20
+    const/16 v0, 0x22
+
+    if-ne p0, v0, :cond_21
+
+    const-string p0, "cbr"
+
+    return-object p0
+
+    :cond_21
+    const/4 p0, 0x0
+
+    throw p0
 .end method
 
-.method public final b(Lf7/a$a;)V
-    .locals 1
+.method public static b(Ljava/util/Map;Ljava/lang/String;Lhe/s0;Ljava/lang/String;Lhe/b0;)V
+    .locals 0
 
-    if-eqz p1, :cond_0
+    .line 1
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lf7/a;->a:Ljava/util/ArrayList;
+    move-result-object p0
 
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 2
+    invoke-virtual {p2, p3}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
 
-    :cond_0
-    return-void
-.end method
-
-.method public final c(Lf7/a$a;)V
-    .locals 1
-
-    iget-object v0, p0, Lf7/a;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    .line 3
+    invoke-virtual {p2, p4, p0}, Lhe/s0;->q(Lhe/b0;Ljava/lang/Object;)Lhe/s0;
 
     return-void
 .end method

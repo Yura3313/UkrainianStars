@@ -48,6 +48,22 @@
 .method public final b(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 3
 
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$d;->a:Lcom/supercell/id/view/SubPageTabLayout;
+
+    const/4 v1, 0x0
+
+    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->c0:I
+
+    .line 2
+    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->t(Lcom/google/android/material/tabs/TabLayout$g;Z)V
+
+    return-void
+.end method
+
+.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
+    .locals 3
+
     if-eqz p1, :cond_0
 
     .line 1
@@ -55,27 +71,11 @@
 
     const/4 v1, 0x1
 
-    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->d0:I
+    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->c0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->t(Lcom/google/android/material/tabs/TabLayout$g;Z)V
 
     :cond_0
-    return-void
-.end method
-
-.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$d;->a:Lcom/supercell/id/view/SubPageTabLayout;
-
-    const/4 v1, 0x0
-
-    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->d0:I
-
-    .line 2
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->t(Lcom/google/android/material/tabs/TabLayout$g;Z)V
-
     return-void
 .end method

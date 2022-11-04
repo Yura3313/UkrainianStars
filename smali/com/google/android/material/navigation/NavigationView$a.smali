@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/navigation/NavigationView;
+.field public final synthetic f:Lcom/google/android/material/navigation/NavigationView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/navigation/NavigationView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationView$a;->g:Lcom/google/android/material/navigation/NavigationView;
+    iput-object p1, p0, Lcom/google/android/material/navigation/NavigationView$a;->f:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
     .locals 0
 
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationView$a;->g:Lcom/google/android/material/navigation/NavigationView;
+    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationView$a;->f:Lcom/google/android/material/navigation/NavigationView;
 
-    iget-object p1, p1, Lcom/google/android/material/navigation/NavigationView;->n:Lcom/google/android/material/navigation/NavigationView$b;
+    iget-object p1, p1, Lcom/google/android/material/navigation/NavigationView;->m:Lcom/google/android/material/navigation/NavigationView$b;
 
     if-eqz p1, :cond_0
 

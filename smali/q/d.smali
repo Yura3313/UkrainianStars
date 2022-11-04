@@ -158,15 +158,15 @@
     return v0
 .end method
 
-.method public final c(ILjava/util/ArrayList;Lr/p;)V
+.method public final c(ILjava/util/ArrayList;Lr/o;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
             "Ljava/util/ArrayList<",
-            "Lr/p;",
+            "Lr/o;",
             ">;",
-            "Lr/p;",
+            "Lr/o;",
             ")V"
         }
     .end annotation
@@ -197,7 +197,7 @@
     .line 3
     iget-object v1, v1, Lq/d;->d:Lq/e;
 
-    invoke-static {v1, p1, p2, p3}, Lr/j;->a(Lq/e;ILjava/util/ArrayList;Lr/p;)Lr/p;
+    invoke-static {v1, p1, p2, p3}, Lr/i;->a(Lq/e;ILjava/util/ArrayList;Lr/o;)Lr/o;
 
     goto :goto_0
 
@@ -446,11 +446,11 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lq/d$a;->n:Lq/d$a;
+    sget-object v0, Lq/d$a;->m:Lq/d$a;
 
-    sget-object v1, Lq/d$a;->m:Lq/d$a;
+    sget-object v1, Lq/d$a;->l:Lq/d$a;
 
-    sget-object v2, Lq/d$a;->k:Lq/d$a;
+    sget-object v2, Lq/d$a;->j:Lq/d$a;
 
     const/4 v3, 0x0
 
@@ -521,31 +521,31 @@
 
     if-eq v4, v0, :cond_4
 
-    const/4 v3, 0x1
+    move v3, v6
 
     :cond_4
     return v3
 
     .line 10
     :pswitch_1
-    sget-object v1, Lq/d$a;->h:Lq/d$a;
+    sget-object v1, Lq/d$a;->g:Lq/d$a;
 
     if-eq v4, v1, :cond_6
 
-    sget-object v1, Lq/d$a;->j:Lq/d$a;
+    sget-object v1, Lq/d$a;->i:Lq/d$a;
 
     if-ne v4, v1, :cond_5
 
     goto :goto_0
 
     :cond_5
-    const/4 v1, 0x0
+    move v1, v3
 
     goto :goto_1
 
     :cond_6
     :goto_0
-    const/4 v1, 0x1
+    move v1, v6
 
     .line 11
     :goto_1
@@ -561,7 +561,7 @@
     if-ne v4, v0, :cond_8
 
     :cond_7
-    const/4 v3, 0x1
+    move v3, v6
 
     :cond_8
     move v1, v3
@@ -571,24 +571,24 @@
 
     .line 13
     :pswitch_2
-    sget-object v0, Lq/d$a;->g:Lq/d$a;
+    sget-object v0, Lq/d$a;->f:Lq/d$a;
 
     if-eq v4, v0, :cond_b
 
-    sget-object v0, Lq/d$a;->i:Lq/d$a;
+    sget-object v0, Lq/d$a;->h:Lq/d$a;
 
     if-ne v4, v0, :cond_a
 
     goto :goto_2
 
     :cond_a
-    const/4 v0, 0x0
+    move v0, v3
 
     goto :goto_3
 
     :cond_b
     :goto_2
-    const/4 v0, 0x1
+    move v0, v6
 
     .line 14
     :goto_3
@@ -604,7 +604,7 @@
     if-ne v4, v1, :cond_d
 
     :cond_c
-    const/4 v3, 0x1
+    move v3, v6
 
     :cond_d
     move v0, v3

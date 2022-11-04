@@ -44,7 +44,7 @@
     invoke-static {p3}, Landroid/support/v4/media/session/MediaSessionCompat;->ensureClassLoader(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p3, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
+    iget-object p3, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
 
     check-cast p3, Landroidx/media/m$c;
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, p2}, Landroidx/media/m$b;-><init>(Landroid/service/media/MediaBrowserService$Result;)V
 
-    invoke-interface {p3, p1, v0}, Landroidx/media/m$c;->b(Ljava/lang/String;Landroidx/media/m$b;)V
+    invoke-interface {p3, p1, v0}, Landroidx/media/m$c;->a(Ljava/lang/String;Landroidx/media/m$b;)V
 
     return-void
 .end method

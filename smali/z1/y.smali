@@ -1,63 +1,63 @@
 .class public final Lz1/y;
-.super Lz1/x;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.super Lz1/p;
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<O::",
+        "Ly1/a$d;",
+        ">",
+        "Lz1/p;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final e:Ljava/util/concurrent/Callable;
+.field public final b:Ly1/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/concurrent/Callable<",
-            "Ljava/lang/String;",
-            ">;"
+            "Ly1/c<",
+            "TO;>;"
         }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/initialization/qual/NotOnlyInitialized;
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Callable;Lk3/q5;)V
-    .locals 1
-
-    const/4 p2, 0x0
-
-    const/4 v0, 0x0
+.method public constructor <init>(Ly1/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ly1/c<",
+            "TO;>;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0, p2, v0, v0}, Lz1/x;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p0}, Lz1/p;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lz1/y;->e:Ljava/util/concurrent/Callable;
+    iput-object p1, p0, Lz1/y;->b:Ly1/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e()Ljava/lang/String;
-    .locals 2
+.method public final a()Landroid/os/Looper;
+    .locals 1
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lz1/y;->e:Ljava/util/concurrent/Callable;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
+    iget-object v0, p0, Lz1/y;->b:Ly1/c;
 
     .line 2
-    new-instance v1, Ljava/lang/RuntimeException;
+    iget-object v0, v0, Ly1/c;->f:Landroid/os/Looper;
 
-    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw v1
+    return-object v0
 .end method

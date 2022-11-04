@@ -260,7 +260,7 @@
     const/16 v0, 0xfa1
 
     .line 24
-    invoke-static {p0, v1, p0, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v1, p0, v0}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -459,7 +459,7 @@
     const-string p0, "kakaogame"
 
     .line 1
-    invoke-static {p0, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -469,7 +469,7 @@
     const-string p0, "Url Scheme: "
 
     .line 3
-    invoke-static {p0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

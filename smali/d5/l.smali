@@ -1,22 +1,16 @@
-.class public final Ld5/l;
+.class public interface abstract Ld5/l;
 .super Ljava/lang/Object;
+.source "KmsClient.java"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
+# virtual methods
+.method public abstract a(Ljava/lang/String;)Ld5/a;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+.end method
 
-.field public final b:Ljava/util/zip/ZipEntry;
-
-
-# direct methods
-.method public constructor <init>(Ljava/util/zip/ZipEntry;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ld5/l;->b:Ljava/util/zip/ZipEntry;
-
-    iput-object p2, p0, Ld5/l;->a:Ljava/lang/String;
-
-    return-void
+.method public abstract b(Ljava/lang/String;)Z
 .end method

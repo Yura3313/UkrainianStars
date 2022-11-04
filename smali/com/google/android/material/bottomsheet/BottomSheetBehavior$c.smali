@@ -3,12 +3,12 @@
 .source "BottomSheetBehavior.java"
 
 # interfaces
-.implements Lg0/e;
+.implements Lg0/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t(Landroid/view/View;Lg0/c$a;I)V
+    value = Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t(Landroid/view/View;Lg0/b$a;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

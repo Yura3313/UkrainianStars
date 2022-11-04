@@ -214,14 +214,14 @@
 
     int-to-float p1, p1
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     .line 11
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
 
-    invoke-static {p0, p1}, Lx/b;->d(II)I
+    invoke-static {p0, p1}, Lx/a;->d(II)I
 
     move-result p0
 
@@ -268,7 +268,7 @@
 .end method
 
 .method public static d(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
-    .locals 2
+    .locals 3
 
     .line 1
     sget-object v0, Landroidx/appcompat/widget/c0;->g:[I
@@ -300,7 +300,10 @@
     if-eqz v0, :cond_0
 
     .line 5
-    invoke-static {p0, v0}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v2, Lc/a;->a:Ljava/lang/Object;
+
+    .line 6
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p0
 
@@ -313,7 +316,7 @@
 
     goto :goto_1
 
-    .line 6
+    .line 7
     :cond_0
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -321,7 +324,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
+    .line 8
     :goto_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -330,6 +333,6 @@
     :goto_1
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 8
+    .line 9
     throw p0
 .end method

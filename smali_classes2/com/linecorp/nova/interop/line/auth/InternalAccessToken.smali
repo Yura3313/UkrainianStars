@@ -38,7 +38,7 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 6
+    .locals 5
 
     if-ne p0, p1, :cond_0
 
@@ -73,9 +73,9 @@
 
     iget-wide v3, p1, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->expiresInMillis:J
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-eqz v5, :cond_2
+    if-eqz v1, :cond_2
 
     return v0
 
@@ -85,9 +85,9 @@
 
     iget-wide v3, p1, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->issuedClientTimeMillis:J
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-eqz v5, :cond_3
+    if-eqz v1, :cond_3
 
     return v0
 
@@ -175,9 +175,9 @@
 
     xor-long/2addr v1, v4
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -188,9 +188,9 @@
 
     xor-long/2addr v1, v3
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -212,7 +212,7 @@
     const-string v0, "InternalAccessToken{accessToken=\'"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

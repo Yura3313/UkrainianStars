@@ -9,9 +9,9 @@
         "<PrimitiveT:",
         "Ljava/lang/Object;",
         "KeyProtoT::",
-        "Lk3/at0;",
+        "Lj3/zv0;",
         "PublicKeyProtoT::",
-        "Lk3/at0;",
+        "Lj3/zv0;",
         ">",
         "Lcom/google/android/gms/internal/ads/t1<",
         "TPrimitiveT;TKeyProtoT;>;"
@@ -20,21 +20,21 @@
 
 
 # direct methods
-.method public constructor <init>(Lk3/mn0;Ljava/lang/Class;)V
+.method public constructor <init>(Lj3/mq0;Ljava/lang/Class;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lk3/mn0<",
+            "Lj3/mq0<",
             "TKeyProtoT;TPublicKeyProtoT;>;",
-            "Lk3/en0<",
+            "Lj3/dq0<",
             "TPublicKeyProtoT;>;",
             "Ljava/lang/Class<",
             "TPrimitiveT;>;)V"
         }
     .end annotation
 
-    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/ads/t1;-><init>(Lk3/en0;Ljava/lang/Class;)V
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/ads/t1;-><init>(Lj3/dq0;Ljava/lang/Class;)V
 
     return-void
 .end method

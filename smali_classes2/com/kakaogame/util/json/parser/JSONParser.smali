@@ -822,13 +822,7 @@
     move-exception p1
 
     .line 87
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public parse(Ljava/lang/String;)Ljava/lang/Object;
@@ -1539,13 +1533,7 @@
     iput p3, p0, Lcom/kakaogame/util/json/parser/JSONParser;->status:I
 
     .line 181
-    goto :goto_6
-
-    :goto_5
     throw p1
-
-    :goto_6
-    goto :goto_5
 
     :pswitch_data_0
     .packed-switch -0x1

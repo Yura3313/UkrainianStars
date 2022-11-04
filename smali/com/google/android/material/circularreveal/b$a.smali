@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract c(Landroid/graphics/Canvas;)V
+.method public abstract b(Landroid/graphics/Canvas;)V
 .end method
 
 .method public abstract d()Z

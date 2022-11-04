@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lk3/ft0;
+.implements Lj3/ew0;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/internal/ads/v5;->p(ILjava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/internal/ads/v5;->q(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

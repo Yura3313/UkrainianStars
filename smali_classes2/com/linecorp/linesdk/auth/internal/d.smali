@@ -27,13 +27,13 @@
 
 
 # instance fields
-.field public g:Lcom/linecorp/linesdk/a/f;
+.field public f:Lcom/linecorp/linesdk/a/f;
+
+.field public g:Ljava/lang/String;
 
 .field public h:Ljava/lang/String;
 
-.field public i:Ljava/lang/String;
-
-.field public j:I
+.field public i:I
 
 
 # direct methods
@@ -58,7 +58,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     const/4 v0, 0x1
 
     .line 4
-    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -111,17 +111,17 @@
     const/4 v2, 0x0
 
     :goto_1
-    iput-object v2, p0, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
+    iput-object v2, p0, Lcom/linecorp/linesdk/auth/internal/d;->f:Lcom/linecorp/linesdk/a/f;
 
     .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->g:Ljava/lang/String;
 
     .line 9
-    sget-object v0, Lcom/linecorp/linesdk/auth/internal/d$b;->g:[I
+    sget-object v0, Lcom/linecorp/linesdk/auth/internal/d$b;->f:[I
 
     invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 
@@ -136,14 +136,14 @@
 
     aget v0, v0, v1
 
-    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iput v0, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -162,7 +162,7 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
+    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->f:Lcom/linecorp/linesdk/a/f;
 
     const/4 v0, 0x0
 
@@ -181,7 +181,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 4
-    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
+    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->f:Lcom/linecorp/linesdk/a/f;
 
     if-nez p2, :cond_1
 
@@ -196,12 +196,12 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 7
-    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 8
-    iget p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iget p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     add-int/lit8 p2, p2, -0x1
 
@@ -210,7 +210,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
 
     .line 9
-    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->i:Ljava/lang/String;
+    iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

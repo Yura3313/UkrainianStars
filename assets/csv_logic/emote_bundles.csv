@@ -2,7 +2,7 @@
 "string","boolean","string","string","string","boolean","string"
 "RosalloweenChallenge",,"sc/ui.sc","pin_pack_rosalloween","TID_EMOTE_BUNDLE_ROSALLOWEEN","false",
 "WorldFinals",,"sc/ui.sc","pin_pack_wf","TID_EMOTE_BUNDLE_WF","true",
-"Rosalloween",,"sc/ui.sc","pin_pack_rosalloween","TID_EMOTE_BUNDLE_ROSALLOWEEN","true",
+"Rosalloween",,"sc/ui.sc","pin_pack_rosalloween","TID_EMOTE_BUNDLE_ROSALLOWEEN","false",
 "BrawlMasPack",,"sc/ui.sc","pin_pack_rosalloween","TID_EMOTE_BUNDLE_BRALWMAS_PACK","true",
 "BrawlMasGift",,"sc/ui.sc","pin_pack_rosalloween","TID_EMOTE_BUNDLE_BRALWMAS_GIFT","true",
 "LunarBrawl21",,"sc/ui.sc","pin_pack_lunarbrawl21","TID_EMOTE_BUNDLE_LUNARBRAWL21_GIFT","true",

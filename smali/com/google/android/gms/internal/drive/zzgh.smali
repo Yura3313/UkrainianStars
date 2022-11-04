@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final f:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr3/b0;
+    new-instance v0, Lq3/b0;
 
-    invoke-direct {v0}, Lr3/b0;-><init>()V
+    invoke-direct {v0}, Lq3/b0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzgh;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/drive/zzgh;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/drive/zzgh;->f:Z
 
     return-void
 .end method
@@ -51,12 +51,12 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v5
 
     .line 2
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzgh;->g:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzgh;->f:Z
 
     const/4 v1, 0x2
 
@@ -67,7 +67,7 @@
     move-object v4, p1
 
     .line 3
-    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Lg1/i;->a(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

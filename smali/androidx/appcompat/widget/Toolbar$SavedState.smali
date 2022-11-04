@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public i:I
+.field public h:I
 
-.field public j:Z
+.field public i:Z
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result p2
 
-    iput p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->i:I
+    iput p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->h:I
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -73,7 +73,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->j:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->i:Z
 
     return-void
 .end method
@@ -93,17 +93,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->i:I
+    iget p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget-boolean p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->j:Z
+    iget-boolean p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->i:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

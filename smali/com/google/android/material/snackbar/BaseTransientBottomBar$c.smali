@@ -3,12 +3,12 @@
 .source "BaseTransientBottomBar.java"
 
 # interfaces
-.implements Lf0/n;
+.implements Lf0/m;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Lt4/f;)V
+    value = Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Lq4/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,13 +34,13 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+.method public final a(Landroid/view/View;Lf0/v;)Lf0/v;
     .locals 1
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->d()I
+    invoke-virtual {p2}, Lf0/v;->b()I
 
     move-result v0
 
@@ -50,7 +50,7 @@
     .line 3
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/v;->c()I
 
     move-result v0
 
@@ -60,7 +60,7 @@
     .line 5
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/v;->d()I
 
     move-result v0
 

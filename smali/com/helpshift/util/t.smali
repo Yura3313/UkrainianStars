@@ -8,9 +8,9 @@
 
 .field public static b:Landroid/content/Context;
 
-.field public static c:Le7/g;
+.field public static c:La7/g;
 
-.field public static d:Le8/j;
+.field public static d:Lb8/l;
 
 .field public static e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -47,15 +47,7 @@
     return-void
 .end method
 
-.method public static a()Le8/s;
-    .locals 1
-
-    sget-object v0, Lcom/helpshift/util/t;->d:Le8/j;
-
-    return-object v0
-.end method
-
-.method public static b()Z
+.method public static a()Z
     .locals 3
 
     .line 1
@@ -86,7 +78,7 @@
     :cond_0
     sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/b0;->i(Landroid/content/Context;)Z
+    invoke-static {v0}, Lk/c;->e(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -96,11 +88,11 @@
 
     .line 4
     :cond_1
-    new-instance v0, Lcom/helpshift/exceptions/HelpshiftInitializationException;
+    new-instance v0, Lt9/a;
 
     const-string v1, "com.helpshift.Core.install() method not called with valid arguments"
 
-    invoke-direct {v0, v1}, Lcom/helpshift/exceptions/HelpshiftInitializationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lt9/a;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -110,27 +102,19 @@
 
     .line 5
     :cond_3
-    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:La7/g;
 
     const/4 v2, 0x1
 
     if-eqz v0, :cond_4
 
-    invoke-interface {v0}, Le7/a;->b()La8/f;
-
-    move-result-object v0
+    .line 6
+    iget-object v0, v0, La7/g;->f:Lx7/g;
 
     if-eqz v0, :cond_4
 
-    .line 6
-    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
-
-    invoke-interface {v0}, Le7/a;->b()La8/f;
-
-    move-result-object v0
-
     .line 7
-    iget v0, v0, La8/f;->w:I
+    iget v0, v0, Lx7/g;->w:I
 
     if-ne v0, v2, :cond_4
 

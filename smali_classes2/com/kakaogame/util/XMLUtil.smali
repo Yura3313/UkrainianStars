@@ -103,7 +103,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 3
     :goto_0
@@ -125,7 +125,7 @@
 
     if-eqz v5, :cond_0
 
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 6
     :goto_1

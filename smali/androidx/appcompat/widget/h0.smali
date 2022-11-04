@@ -88,7 +88,7 @@
 .end method
 
 .method public final c(I)Landroid/content/res/ColorStateList;
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/h0;->b:Landroid/content/res/TypedArray;
@@ -114,7 +114,10 @@
     iget-object v1, p0, Landroidx/appcompat/widget/h0;->a:Landroid/content/Context;
 
     .line 4
-    invoke-static {v1, v0}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v2, Lc/a;->a:Ljava/lang/Object;
+
+    .line 5
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -122,7 +125,7 @@
 
     return-object v0
 
-    .line 5
+    .line 6
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/h0;->b:Landroid/content/res/TypedArray;
 
@@ -197,7 +200,7 @@
     .line 3
     iget-object p1, p0, Landroidx/appcompat/widget/h0;->a:Landroid/content/Context;
 
-    invoke-static {p1, v0}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v0}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -253,7 +256,7 @@
     :try_start_0
     iget-object v3, v0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/x;
 
-    invoke-virtual {v3, v1, p1, v2}, Landroidx/appcompat/widget/x;->g(Landroid/content/Context;IZ)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v3, v1, p1, v2}, Landroidx/appcompat/widget/x;->f(Landroid/content/Context;IZ)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
     :try_end_0
@@ -276,7 +279,7 @@
     return-object p1
 .end method
 
-.method public final i(IILw/e$a;)Landroid/graphics/Typeface;
+.method public final i(IILw/b$a;)Landroid/graphics/Typeface;
     .locals 8
 
     .line 1
@@ -330,7 +333,7 @@
     move-object v6, p3
 
     .line 6
-    invoke-static/range {v2 .. v7}, Lw/e;->d(Landroid/content/Context;ILandroid/util/TypedValue;ILw/e$a;Z)Landroid/graphics/Typeface;
+    invoke-static/range {v2 .. v7}, Lw/b;->b(Landroid/content/Context;ILandroid/util/TypedValue;ILw/b$a;Z)Landroid/graphics/Typeface;
 
     move-result-object p1
 

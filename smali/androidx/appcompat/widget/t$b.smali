@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/t;
+.field public final synthetic f:Landroidx/appcompat/widget/t;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/t;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/t$b;->g:Landroidx/appcompat/widget/t;
+    iput-object p1, p0, Landroidx/appcompat/widget/t$b;->f:Landroidx/appcompat/widget/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,13 +38,13 @@
     .locals 12
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/t$b;->g:Landroidx/appcompat/widget/t;
+    iget-object v0, p0, Landroidx/appcompat/widget/t$b;->f:Landroidx/appcompat/widget/t;
 
     .line 2
     invoke-virtual {v0}, Landroidx/appcompat/widget/t;->a()V
 
     .line 3
-    iget-object v1, v0, Landroidx/appcompat/widget/t;->j:Landroid/view/View;
+    iget-object v1, v0, Landroidx/appcompat/widget/t;->i:Landroid/view/View;
 
     .line 4
     invoke-virtual {v1}, Landroid/view/View;->isEnabled()Z
@@ -108,7 +108,7 @@
     invoke-virtual {v2}, Landroid/view/MotionEvent;->recycle()V
 
     .line 11
-    iput-boolean v3, v0, Landroidx/appcompat/widget/t;->m:Z
+    iput-boolean v3, v0, Landroidx/appcompat/widget/t;->l:Z
 
     :cond_2
     :goto_0

@@ -3,7 +3,7 @@
 .source "AbstractMessageLite.java"
 
 # interfaces
-.implements Lcom/google/protobuf/q0$a;
+.implements Lcom/google/protobuf/s0$a;
 
 
 # annotations
@@ -30,7 +30,7 @@
         "Lcom/google/protobuf/a$a<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lcom/google/protobuf/q0$a;"
+        "Lcom/google/protobuf/s0$a;"
     }
 .end annotation
 
@@ -59,13 +59,13 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/a0;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/google/protobuf/b0;->a:Ljava/nio/charset/Charset;
 
     .line 2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    instance-of v0, p0, Lcom/google/protobuf/f0;
+    instance-of v0, p0, Lcom/google/protobuf/h0;
 
     const-string v1, " is null."
 
@@ -74,16 +74,16 @@
     if-eqz v0, :cond_3
 
     .line 4
-    check-cast p0, Lcom/google/protobuf/f0;
+    check-cast p0, Lcom/google/protobuf/h0;
 
-    invoke-interface {p0}, Lcom/google/protobuf/f0;->q()Ljava/util/List;
+    invoke-interface {p0}, Lcom/google/protobuf/h0;->O()Ljava/util/List;
 
     move-result-object p0
 
     .line 5
     move-object v0, p1
 
-    check-cast v0, Lcom/google/protobuf/f0;
+    check-cast v0, Lcom/google/protobuf/h0;
 
     .line 6
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -109,7 +109,7 @@
     if-nez v3, :cond_1
 
     .line 8
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -160,7 +160,7 @@
     .line 14
     check-cast v3, Lcom/google/protobuf/i;
 
-    invoke-interface {v0, v3}, Lcom/google/protobuf/f0;->k0(Lcom/google/protobuf/i;)V
+    invoke-interface {v0, v3}, Lcom/google/protobuf/h0;->g1(Lcom/google/protobuf/i;)V
 
     goto :goto_0
 
@@ -174,7 +174,7 @@
 
     .line 16
     :cond_3
-    instance-of v0, p0, Lcom/google/protobuf/d1;
+    instance-of v0, p0, Lcom/google/protobuf/f1;
 
     if-eqz v0, :cond_4
 
@@ -241,7 +241,7 @@
     if-nez v3, :cond_7
 
     .line 22
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

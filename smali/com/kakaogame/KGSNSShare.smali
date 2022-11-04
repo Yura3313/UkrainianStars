@@ -389,7 +389,7 @@
     .line 8
     array-length v0, v1
 
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_0
     if-ge v4, v0, :cond_2
@@ -569,35 +569,35 @@
 
     invoke-static {v0, v7}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v0, 0x1
-
-    const/4 v7, 0x0
-
-    cmp-long v8, v5, v3
-
-    if-eqz v8, :cond_2
+    cmp-long v0, v5, v3
 
     const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    if-eqz v0, :cond_2
+
+    move v0, v3
 
     goto :goto_0
 
     :cond_2
-    const/4 v3, 0x0
+    move v0, v4
 
     :goto_0
-    if-nez v3, :cond_4
+    if-nez v0, :cond_4
 
     if-eqz v2, :cond_3
 
     goto :goto_1
 
     :cond_3
-    const/4 v0, 0x0
+    move v3, v4
 
     .line 14
     :cond_4
     :goto_1
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -2487,7 +2487,7 @@
     const/16 p2, 0xfa1
 
     .line 16
-    invoke-static {p0, p1, p0, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, p1, p0, p2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/PinEntryView$c;
+.field public final synthetic f:Lcom/supercell/id/view/PinEntryView$c;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/PinEntryView$c;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$c$a;->g:Lcom/supercell/id/view/PinEntryView$c;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$c$a;->f:Lcom/supercell/id/view/PinEntryView$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,12 +38,12 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$c$a;->g:Lcom/supercell/id/view/PinEntryView$c;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$c$a;->f:Lcom/supercell/id/view/PinEntryView$c;
 
-    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView$c;->g:Lcom/supercell/id/view/PinEntryView;
+    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView$c;->f:Lcom/supercell/id/view/PinEntryView;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
 
     const/4 v1, 0x1
 
@@ -51,12 +51,12 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$c$a;->g:Lcom/supercell/id/view/PinEntryView$c;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$c$a;->f:Lcom/supercell/id/view/PinEntryView$c;
 
-    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView$c;->g:Lcom/supercell/id/view/PinEntryView;
+    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView$c;->f:Lcom/supercell/id/view/PinEntryView;
 
     .line 5
-    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
 
     .line 6
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V

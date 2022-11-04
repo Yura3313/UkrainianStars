@@ -41,13 +41,13 @@
 
 
 # virtual methods
-.method public final e(Lcom/google/android/gms/common/ConnectionResult;)V
+.method public final d(Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$k;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$k;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
@@ -64,14 +64,14 @@
     return-void
 .end method
 
-.method public final f()Z
+.method public final e()Z
     .locals 2
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$k;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     iget-object v0, v0, Lcom/google/android/gms/common/internal/BaseGmsClient;->j:Lcom/google/android/gms/common/internal/BaseGmsClient$c;
 
-    sget-object v1, Lcom/google/android/gms/common/ConnectionResult;->k:Lcom/google/android/gms/common/ConnectionResult;
+    sget-object v1, Lcom/google/android/gms/common/ConnectionResult;->j:Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-interface {v0, v1}, Lcom/google/android/gms/common/internal/BaseGmsClient$c;->a(Lcom/google/android/gms/common/ConnectionResult;)V
 

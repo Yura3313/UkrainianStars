@@ -1,58 +1,61 @@
-.class public Landroidx/lifecycle/n;
-.super Landroidx/lifecycle/LiveData;
-.source "MutableLiveData.java"
+.class public final Landroidx/lifecycle/n;
+.super Ljava/lang/Object;
+.source "MethodCallsLogger.java"
+
+# interfaces
+.implements Ly4/l0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Landroidx/lifecycle/LiveData<",
-        "TT;>;"
-    }
-.end annotation
+# instance fields
+.field public f:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/n;->f:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    invoke-direct {p0}, Landroidx/lifecycle/LiveData;-><init>()V
+    .line 1
+    iput-object p1, p0, Landroidx/lifecycle/n;->f:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public i(Ljava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 2
 
-    const-string v0, "setValue"
+    iget-object v0, p0, Landroidx/lifecycle/n;->f:Ljava/lang/Object;
 
-    .line 1
-    invoke-static {v0}, Landroidx/lifecycle/LiveData;->a(Ljava/lang/String;)V
+    check-cast v0, Ly4/l0;
 
-    .line 2
-    iget v0, p0, Landroidx/lifecycle/LiveData;->g:I
+    invoke-interface {v0}, Ly4/l0;->e()Ljava/lang/Object;
 
-    add-int/lit8 v0, v0, 0x1
+    move-result-object v0
 
-    iput v0, p0, Landroidx/lifecycle/LiveData;->g:I
+    new-instance v1, Lcom/google/android/play/core/assetpacks/x1;
 
-    .line 3
-    iput-object p1, p0, Landroidx/lifecycle/LiveData;->e:Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/v;
 
-    const/4 p1, 0x0
+    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/x1;-><init>(Lcom/google/android/play/core/assetpacks/v;)V
 
-    .line 4
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/LiveData;->c(Landroidx/lifecycle/LiveData$c;)V
-
-    return-void
+    return-object v1
 .end method

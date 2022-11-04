@@ -90,7 +90,7 @@
 
 .field public final mRcc:Landroid/media/RemoteControlClient;
 
-.field private mRemoteUserInfo:Lp0/d;
+.field private mRemoteUserInfo:Lo0/d;
 
 .field public mRepeatMode:I
 
@@ -106,9 +106,9 @@
 
 .field private final mToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
-.field private mVolumeCallback:Lp0/h$a;
+.field private mVolumeCallback:Lo0/h$a;
 
-.field public mVolumeProvider:Lp0/h;
+.field public mVolumeProvider:Lo0/h;
 
 .field public mVolumeType:I
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$1;-><init>(Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;)V
 
-    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lp0/h$a;
+    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lo0/h$a;
 
     if-eqz p3, :cond_0
 
@@ -733,7 +733,7 @@
     const-string v2, "android.media.metadata.ART"
 
     .line 2
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -771,7 +771,7 @@
     const-string v2, "android.media.metadata.ALBUM_ART"
 
     .line 6
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -804,14 +804,14 @@
     const-string v2, "android.media.metadata.ALBUM"
 
     .line 10
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_5
 
     .line 11
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -822,7 +822,7 @@
     const-string v1, "android.media.metadata.ALBUM_ARTIST"
 
     .line 13
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -831,7 +831,7 @@
     const/16 v2, 0xd
 
     .line 14
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -842,7 +842,7 @@
     const-string v1, "android.media.metadata.ARTIST"
 
     .line 16
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -851,7 +851,7 @@
     const/4 v2, 0x2
 
     .line 17
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -862,7 +862,7 @@
     const-string v1, "android.media.metadata.AUTHOR"
 
     .line 19
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -871,7 +871,7 @@
     const/4 v2, 0x3
 
     .line 20
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -882,7 +882,7 @@
     const-string v1, "android.media.metadata.COMPILATION"
 
     .line 22
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -891,7 +891,7 @@
     const/16 v2, 0xf
 
     .line 23
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -902,7 +902,7 @@
     const-string v1, "android.media.metadata.COMPOSER"
 
     .line 25
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -911,7 +911,7 @@
     const/4 v2, 0x4
 
     .line 26
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -922,7 +922,7 @@
     const-string v1, "android.media.metadata.DATE"
 
     .line 28
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -931,7 +931,7 @@
     const/4 v2, 0x5
 
     .line 29
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -942,7 +942,7 @@
     const-string v1, "android.media.metadata.DISC_NUMBER"
 
     .line 31
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -951,7 +951,7 @@
     const/16 v2, 0xe
 
     .line 32
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v3
 
@@ -962,7 +962,7 @@
     const-string v1, "android.media.metadata.DURATION"
 
     .line 34
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -971,7 +971,7 @@
     const/16 v2, 0x9
 
     .line 35
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v3
 
@@ -982,7 +982,7 @@
     const-string v1, "android.media.metadata.GENRE"
 
     .line 37
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -991,7 +991,7 @@
     const/4 v2, 0x6
 
     .line 38
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1002,7 +1002,7 @@
     const-string v1, "android.media.metadata.TITLE"
 
     .line 40
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1011,7 +1011,7 @@
     const/4 v2, 0x7
 
     .line 41
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1022,14 +1022,14 @@
     const-string v1, "android.media.metadata.TRACK_NUMBER"
 
     .line 43
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_10
 
     .line 44
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v1
 
@@ -1040,7 +1040,7 @@
     const-string v1, "android.media.metadata.WRITER"
 
     .line 46
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1049,7 +1049,7 @@
     const/16 v2, 0xb
 
     .line 47
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1068,7 +1068,7 @@
     return-object v0
 .end method
 
-.method public getCurrentControllerInfo()Lp0/d;
+.method public getCurrentControllerInfo()Lo0/d;
     .locals 2
 
     .line 1
@@ -1078,7 +1078,7 @@
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/d;
+    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lo0/d;
 
     monitor-exit v0
 
@@ -1217,9 +1217,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     const/16 v0, 0x20
 
@@ -1299,9 +1299,9 @@
 
     and-long/2addr p1, v4
 
-    cmp-long v1, p1, v2
+    cmp-long p1, p1, v2
 
-    if-eqz v1, :cond_7
+    if-eqz p1, :cond_7
 
     or-int/lit8 v0, v0, 0x8
 
@@ -1362,7 +1362,7 @@
     const-string p4, "android.media.session.MediaController"
 
     .line 5
-    invoke-virtual {p2, p3, p4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p2, p3, p4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p3, "data_calling_pid"
 
@@ -1371,7 +1371,7 @@
 
     move-result p4
 
-    invoke-virtual {p2, p3, p4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p2, p3, p4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     const-string p3, "data_calling_uid"
 
@@ -1380,7 +1380,7 @@
 
     move-result p4
 
-    invoke-virtual {p2, p3, p4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p2, p3, p4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     if-eqz p5, :cond_0
 
@@ -1617,7 +1617,7 @@
     return-void
 .end method
 
-.method public setCurrentControllerInfo(Lp0/d;)V
+.method public setCurrentControllerInfo(Lo0/d;)V
     .locals 1
 
     .line 1
@@ -1627,7 +1627,7 @@
 
     .line 2
     :try_start_0
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/d;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lo0/d;
 
     .line 3
     monitor-exit v0
@@ -1897,7 +1897,7 @@
     return-void
 .end method
 
-.method public setPlaybackToRemote(Lp0/h;)V
+.method public setPlaybackToRemote(Lo0/h;)V
     .locals 1
 
     new-instance p1, Ljava/lang/IllegalArgumentException;
@@ -2210,7 +2210,7 @@
 
     :cond_5
     :goto_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_2
     return v1

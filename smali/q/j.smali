@@ -36,6 +36,64 @@
 
 
 # virtual methods
+.method public final U(Ljava/util/ArrayList;ILr/o;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Lr/o;",
+            ">;I",
+            "Lr/o;",
+            ")V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    .line 1
+    :goto_0
+    iget v2, p0, Lq/j;->p0:I
+
+    if-ge v1, v2, :cond_0
+
+    .line 2
+    iget-object v2, p0, Lq/j;->o0:[Lq/e;
+
+    aget-object v2, v2, v1
+
+    .line 3
+    invoke-virtual {p3, v2}, Lr/o;->a(Lq/e;)Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    :goto_1
+    iget v1, p0, Lq/j;->p0:I
+
+    if-ge v0, v1, :cond_1
+
+    .line 5
+    iget-object v1, p0, Lq/j;->o0:[Lq/e;
+
+    aget-object v1, v1, v0
+
+    .line 6
+    invoke-static {v1, p2, p1, p3}, Lr/i;->a(Lq/e;ILjava/util/ArrayList;Lr/o;)Lr/o;
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    return-void
+.end method
+
 .method public final a(Lq/e;)V
     .locals 3
 
@@ -112,7 +170,7 @@
     return-void
 .end method
 
-.method public l(Lq/e;Ljava/util/HashMap;)V
+.method public k(Lq/e;Ljava/util/HashMap;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -126,7 +184,7 @@
     .end annotation
 
     .line 1
-    invoke-super {p0, p1, p2}, Lq/e;->l(Lq/e;Ljava/util/HashMap;)V
+    invoke-super {p0, p1, p2}, Lq/e;->k(Lq/e;Ljava/util/HashMap;)V
 
     .line 2
     check-cast p1, Lq/j;
@@ -160,63 +218,5 @@
     goto :goto_0
 
     :cond_0
-    return-void
-.end method
-
-.method public final o0(Ljava/util/ArrayList;ILr/p;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList<",
-            "Lr/p;",
-            ">;I",
-            "Lr/p;",
-            ")V"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    .line 1
-    :goto_0
-    iget v2, p0, Lq/j;->p0:I
-
-    if-ge v1, v2, :cond_0
-
-    .line 2
-    iget-object v2, p0, Lq/j;->o0:[Lq/e;
-
-    aget-object v2, v2, v1
-
-    .line 3
-    invoke-virtual {p3, v2}, Lr/p;->a(Lq/e;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    :goto_1
-    iget v1, p0, Lq/j;->p0:I
-
-    if-ge v0, v1, :cond_1
-
-    .line 5
-    iget-object v1, p0, Lq/j;->o0:[Lq/e;
-
-    aget-object v1, v1, v0
-
-    .line 6
-    invoke-static {v1, p2, p1, p3}, Lr/j;->a(Lq/e;ILjava/util/ArrayList;Lr/p;)Lr/p;
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
-
-    :cond_1
     return-void
 .end method

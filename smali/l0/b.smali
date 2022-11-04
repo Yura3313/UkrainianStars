@@ -1,701 +1,238 @@
-.class public abstract Ll0/b;
-.super Ljava/lang/Object;
-.source "DynamicAnimation.java"
-
-# interfaces
-.implements Ll0/a$b;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ll0/b$i;,
-        Ll0/b$h;,
-        Ll0/b$g;,
-        Ll0/b$j;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ll0/b<",
-        "TT;>;>",
-        "Ljava/lang/Object;",
-        "Ll0/a$b;"
-    }
-.end annotation
+.class public final Ll0/b;
+.super Ll0/d;
+.source "FastOutSlowInInterpolator.java"
 
 
 # static fields
-.field public static final k:Ll0/b$b;
-
-.field public static final l:Ll0/b$c;
-
-.field public static final m:Ll0/b$d;
-
-.field public static final n:Ll0/b$e;
-
-.field public static final o:Ll0/b$f;
-
-.field public static final p:Ll0/b$a;
-
-
-# instance fields
-.field public a:F
-
-.field public b:F
-
-.field public final c:Ljava/lang/Object;
-
-.field public final d:Ll0/c;
-
-.field public e:Z
-
-.field public f:F
-
-.field public g:J
-
-.field public h:F
-
-.field public final i:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ll0/b$h;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final j:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ll0/b$i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final c:[F
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ll0/b$b;
+    const/16 v0, 0xc9
 
-    invoke-direct {v0}, Ll0/b$b;-><init>()V
+    new-array v0, v0, [F
 
-    sput-object v0, Ll0/b;->k:Ll0/b$b;
+    fill-array-data v0, :array_0
 
-    .line 2
-    new-instance v0, Ll0/b$c;
-
-    invoke-direct {v0}, Ll0/b$c;-><init>()V
-
-    sput-object v0, Ll0/b;->l:Ll0/b$c;
-
-    .line 3
-    new-instance v0, Ll0/b$d;
-
-    invoke-direct {v0}, Ll0/b$d;-><init>()V
-
-    sput-object v0, Ll0/b;->m:Ll0/b$d;
-
-    .line 4
-    new-instance v0, Ll0/b$e;
-
-    invoke-direct {v0}, Ll0/b$e;-><init>()V
-
-    sput-object v0, Ll0/b;->n:Ll0/b$e;
-
-    .line 5
-    new-instance v0, Ll0/b$f;
-
-    invoke-direct {v0}, Ll0/b$f;-><init>()V
-
-    sput-object v0, Ll0/b;->o:Ll0/b$f;
-
-    .line 6
-    new-instance v0, Ll0/b$a;
-
-    invoke-direct {v0}, Ll0/b$a;-><init>()V
-
-    sput-object v0, Ll0/b;->p:Ll0/b$a;
+    sput-object v0, Ll0/b;->c:[F
 
     return-void
+
+    :array_0
+    .array-data 4
+        0x0
+        0x38d1b717
+        0x3951b717
+        0x3a03126f
+        0x3a6bedfa
+        0x3ab78034
+        0x3b03126f
+        0x3b30f27c
+        0x3b6bedfa
+        0x3b96bb99
+        0x3bbe0ded
+        0x3be8a71e
+        0x3c0b4396
+        0x3c257a78
+        0x3c4154ca
+        0x3c6075f7
+        0x3c816f00
+        0x3c9374bc
+        0x3ca7ef9e
+        0x3cbd3c36
+        0x3cd42c3d
+        0x3cecbfb1
+        0x3d037b4a
+        0x3d116873
+        0x3d202752
+        0x3d3020c5
+        0x3d40ebee
+        0x3d5288ce
+        0x3d656042
+        0x3d79096c
+        0x3d872b02
+        0x3d923a2a
+        0x3d9de69b
+        0x3da9fbe7
+        0x3db6e2eb
+        0x3dc46738
+        0x3dd2bd3c
+        0x3de17c1c
+        0x3df10cb3
+        0x3e00b780
+        0x3e091d15
+        0x3e1205bc
+        0x3e1b3d08
+        0x3e24dd2f
+        0x3e2ecbfb
+        0x3e3923a3
+        0x3e43e426
+        0x3e4ef34d
+        0x3e5a6b51
+        0x3e6631f9
+        0x3e724745
+        0x3e7eab36
+        0x3e85aee6
+        0x3e8c2f83
+        0x3e92ca58
+        0x3e997f63
+        0x3ea04ea5
+        0x3ea72b02
+        0x3eae147b
+        0x3eb50b0f
+        0x3ebc0ebf
+        0x3ec3126f
+        0x3eca0903
+        0x3ed0ff97
+        0x3ed7e910
+        0x3eded289
+        0x3ee5a1cb
+        0x3eec56d6
+        0x3ef2fec5
+        0x3ef98c7e
+        0x3f000000    # 0.5f
+        0x3f032ca5
+        0x3f064c30
+        0x3f095810
+        0x3f0c56d6
+        0x3f0f4880
+        0x3f122d0e
+        0x3f14fdf4
+        0x3f17c1be
+        0x3f1a71de
+        0x3f1d14e4
+        0x3f1faace
+        0x3f222d0e
+        0x3f24a234
+        0x3f270a3d
+        0x3f295e9e
+        0x3f2bac71
+        0x3f2de69b
+        0x3f3013a9
+        0x3f32339c
+        0x3f344d01
+        0x3f3652bd
+        0x3f384b5e
+        0x3f3a3d71
+        0x3f3c2268
+        0x3f3dfa44
+        0x3f3fc505
+        0x3f4182aa
+        0x3f4339c1
+        0x3f44ea4b
+        0x3f468db9
+        0x3f48240b
+        0x3f49b3d0
+        0x3f4b367a
+        0x3f4cb296
+        0x3f4e2824
+        0x3f4f9097
+        0x3f50f27c
+        0x3f524dd3
+        0x3f539c0f
+        0x3f54ea4b
+        0x3f562b6b
+        0x3f5765fe
+        0x3f589a02
+        0x3f59c77a
+        0x3f5ae7d5
+        0x3f5c0831
+        0x3f5d21ff
+        0x3f5e2eb2
+        0x3f5f3b64
+        0x3f604189
+        0x3f613a93
+        0x3f62339c
+        0x3f632618
+        0x3f641206
+        0x3f64fdf4
+        0x3f65dcc6
+        0x3f66bb99
+        0x3f6793de
+        0x3f686595
+        0x3f6930be
+        0x3f69f55a
+        0x3f6ab9f5
+        0x3f6b7803
+        0x3f6c3611
+        0x3f6ce704
+        0x3f6d97f6
+        0x3f6e425b
+        0x3f6eecc0
+        0x3f6f9097
+        0x3f702de0
+        0x3f70cb29
+        0x3f7161e5
+        0x3f71f8a1
+        0x3f7288ce
+        0x3f73126f
+        0x3f739c0f
+        0x3f741f21
+        0x3f74a234
+        0x3f751eb8
+        0x3f759b3d
+        0x3f761134
+        0x3f76809d
+        0x3f76f007
+        0x3f775f70
+        0x3f77c84b
+        0x3f783127
+        0x3f789375
+        0x3f78f5c3
+        0x3f795183
+        0x3f79ad43
+        0x3f7a0275
+        0x3f7a57a8
+        0x3f7aa64c
+        0x3f7af4f1
+        0x3f7b4396
+        0x3f7b8bac
+        0x3f7bd3c3
+        0x3f7c1bda
+        0x3f7c5d64
+        0x3f7c985f
+        0x3f7cd9e8
+        0x3f7d0e56
+        0x3f7d4952
+        0x3f7d7dbf
+        0x3f7db22d
+        0x3f7de00d
+        0x3f7e0ded
+        0x3f7e3bcd
+        0x3f7e6320
+        0x3f7e9100
+        0x3f7eb1c4
+        0x3f7ed917
+        0x3f7ef9db
+        0x3f7f1412
+        0x3f7f34d7
+        0x3f7f4f0e
+        0x3f7f6944
+        0x3f7f7cee
+        0x3f7f9724
+        0x3f7fa440
+        0x3f7fb7e9
+        0x3f7fc505
+        0x3f7fd220
+        0x3f7fdf3b
+        0x3f7fec57
+        0x3f7ff2e5
+        0x3f7ff972
+        0x3f7ff972
+        0x3f800000    # 1.0f
+        0x3f800000    # 1.0f
+    .end array-data
 .end method
 
-.method public constructor <init>(Ljava/lang/Object;Ll0/c;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<K:",
-            "Ljava/lang/Object;",
-            ">(TK;",
-            "Ll0/c<",
-            "TK;>;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Ll0/b;->c:[F
 
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Ll0/b;->a:F
-
-    const v0, 0x7f7fffff    # Float.MAX_VALUE
-
-    .line 3
-    iput v0, p0, Ll0/b;->b:F
-
-    const/4 v0, 0x0
-
-    .line 4
-    iput-boolean v0, p0, Ll0/b;->e:Z
-
-    const v0, -0x800001
-
-    .line 5
-    iput v0, p0, Ll0/b;->f:F
-
-    const-wide/16 v0, 0x0
-
-    .line 6
-    iput-wide v0, p0, Ll0/b;->g:J
-
-    .line 7
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ll0/b;->i:Ljava/util/ArrayList;
-
-    .line 8
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ll0/b;->j:Ljava/util/ArrayList;
-
-    .line 9
-    iput-object p1, p0, Ll0/b;->c:Ljava/lang/Object;
-
-    .line 10
-    iput-object p2, p0, Ll0/b;->d:Ll0/c;
-
-    .line 11
-    sget-object p1, Ll0/b;->m:Ll0/b$d;
-
-    if-eq p2, p1, :cond_4
-
-    sget-object p1, Ll0/b;->n:Ll0/b$e;
-
-    if-eq p2, p1, :cond_4
-
-    sget-object p1, Ll0/b;->o:Ll0/b$f;
-
-    if-ne p2, p1, :cond_0
-
-    goto :goto_1
-
-    .line 12
-    :cond_0
-    sget-object p1, Ll0/b;->p:Ll0/b$a;
-
-    const/high16 v0, 0x3b800000    # 0.00390625f
-
-    if-ne p2, p1, :cond_1
-
-    .line 13
-    iput v0, p0, Ll0/b;->h:F
-
-    goto :goto_2
-
-    .line 14
-    :cond_1
-    sget-object p1, Ll0/b;->k:Ll0/b$b;
-
-    if-eq p2, p1, :cond_3
-
-    sget-object p1, Ll0/b;->l:Ll0/b$c;
-
-    if-ne p2, p1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/high16 p1, 0x3f800000    # 1.0f
-
-    .line 15
-    iput p1, p0, Ll0/b;->h:F
-
-    goto :goto_2
-
-    .line 16
-    :cond_3
-    :goto_0
-    iput v0, p0, Ll0/b;->h:F
-
-    goto :goto_2
-
-    :cond_4
-    :goto_1
-    const p1, 0x3dcccccd
-
-    .line 17
-    iput p1, p0, Ll0/b;->h:F
-
-    :goto_2
-    return-void
-.end method
-
-.method public static b(Ljava/util/ArrayList;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/ArrayList<",
-            "TT;>;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x1
-
-    :goto_0
-    if-ltz v0, :cond_1
-
-    .line 2
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    :cond_0
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(J)Z
-    .locals 25
-
-    move-object/from16 v0, p0
-
-    move-wide/from16 v1, p1
-
-    .line 1
-    iget-wide v3, v0, Ll0/b;->g:J
-
-    const/4 v5, 0x0
-
-    const-wide/16 v6, 0x0
-
-    cmp-long v8, v3, v6
-
-    if-nez v8, :cond_0
-
-    .line 2
-    iput-wide v1, v0, Ll0/b;->g:J
-
-    .line 3
-    iget v1, v0, Ll0/b;->b:F
-
-    invoke-virtual {v0, v1}, Ll0/b;->c(F)V
-
-    return v5
-
-    :cond_0
-    sub-long v13, v1, v3
-
-    .line 4
-    iput-wide v1, v0, Ll0/b;->g:J
-
-    .line 5
-    move-object v1, v0
-
-    check-cast v1, Ll0/d;
-
-    const/4 v2, 0x0
-
-    .line 6
-    iget v3, v1, Ll0/d;->r:F
-
-    const v4, 0x7f7fffff    # Float.MAX_VALUE
-
-    cmpl-float v3, v3, v4
-
-    if-eqz v3, :cond_1
-
-    .line 7
-    iget-object v15, v1, Ll0/d;->q:Ll0/e;
-
-    .line 8
-    iget-wide v8, v15, Ll0/e;->i:D
-
-    .line 9
-    iget v3, v1, Ll0/b;->b:F
-
-    float-to-double v8, v3
-
-    iget v3, v1, Ll0/b;->a:F
-
-    float-to-double v10, v3
-
-    const-wide/16 v16, 0x2
-
-    div-long v23, v13, v16
-
-    move-wide/from16 v16, v8
-
-    move-wide/from16 v18, v10
-
-    move-wide/from16 v20, v23
-
-    invoke-virtual/range {v15 .. v21}, Ll0/e;->c(DDJ)Ll0/b$g;
-
-    move-result-object v3
-
-    .line 10
-    iget-object v8, v1, Ll0/d;->q:Ll0/e;
-
-    iget v9, v1, Ll0/d;->r:F
-
-    float-to-double v9, v9
-
-    .line 11
-    iput-wide v9, v8, Ll0/e;->i:D
-
-    .line 12
-    iput v4, v1, Ll0/d;->r:F
-
-    .line 13
-    iget v9, v3, Ll0/b$g;->a:F
-
-    float-to-double v9, v9
-
-    iget v3, v3, Ll0/b$g;->b:F
-
-    float-to-double v11, v3
-
-    move-object/from16 v18, v8
-
-    move-wide/from16 v19, v9
-
-    move-wide/from16 v21, v11
-
-    invoke-virtual/range {v18 .. v24}, Ll0/e;->c(DDJ)Ll0/b$g;
-
-    move-result-object v3
-
-    .line 14
-    iget v8, v3, Ll0/b$g;->a:F
-
-    iput v8, v1, Ll0/b;->b:F
-
-    .line 15
-    iget v3, v3, Ll0/b$g;->b:F
-
-    iput v3, v1, Ll0/b;->a:F
-
-    goto :goto_0
-
-    .line 16
-    :cond_1
-    iget-object v8, v1, Ll0/d;->q:Ll0/e;
-
-    iget v3, v1, Ll0/b;->b:F
-
-    float-to-double v9, v3
-
-    iget v3, v1, Ll0/b;->a:F
-
-    float-to-double v11, v3
-
-    invoke-virtual/range {v8 .. v14}, Ll0/e;->c(DDJ)Ll0/b$g;
-
-    move-result-object v3
-
-    .line 17
-    iget v8, v3, Ll0/b$g;->a:F
-
-    iput v8, v1, Ll0/b;->b:F
-
-    .line 18
-    iget v3, v3, Ll0/b$g;->b:F
-
-    iput v3, v1, Ll0/b;->a:F
-
-    .line 19
-    :goto_0
-    iget v3, v1, Ll0/b;->b:F
-
-    iget v8, v1, Ll0/b;->f:F
-
-    invoke-static {v3, v8}, Ljava/lang/Math;->max(FF)F
-
-    move-result v3
-
-    iput v3, v1, Ll0/b;->b:F
-
-    .line 20
-    invoke-static {v3, v4}, Ljava/lang/Math;->min(FF)F
-
-    move-result v3
-
-    iput v3, v1, Ll0/b;->b:F
-
-    .line 21
-    iget v8, v1, Ll0/b;->a:F
-
-    .line 22
-    iget-object v9, v1, Ll0/d;->q:Ll0/e;
-
-    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 23
-    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
-
-    move-result v8
-
-    float-to-double v10, v8
-
-    iget-wide v12, v9, Ll0/e;->e:D
-
-    const/4 v8, 0x1
-
-    cmpg-double v14, v10, v12
-
-    if-gez v14, :cond_2
-
-    .line 24
-    iget-wide v10, v9, Ll0/e;->i:D
-
-    double-to-float v10, v10
-
-    sub-float/2addr v3, v10
-
-    .line 25
-    invoke-static {v3}, Ljava/lang/Math;->abs(F)F
-
-    move-result v3
-
-    float-to-double v10, v3
-
-    iget-wide v12, v9, Ll0/e;->d:D
-
-    cmpg-double v3, v10, v12
-
-    if-gez v3, :cond_2
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v3, 0x0
-
-    :goto_1
-    if-eqz v3, :cond_3
-
-    .line 26
-    iget-object v3, v1, Ll0/d;->q:Ll0/e;
-
-    .line 27
-    iget-wide v9, v3, Ll0/e;->i:D
-
-    double-to-float v3, v9
-
-    .line 28
-    iput v3, v1, Ll0/b;->b:F
-
-    .line 29
-    iput v2, v1, Ll0/b;->a:F
-
-    const/4 v1, 0x1
-
-    goto :goto_2
-
-    :cond_3
-    const/4 v1, 0x0
-
-    .line 30
-    :goto_2
-    iget v2, v0, Ll0/b;->b:F
-
-    invoke-static {v2, v4}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
-
-    iput v2, v0, Ll0/b;->b:F
-
-    .line 31
-    iget v3, v0, Ll0/b;->f:F
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->max(FF)F
-
-    move-result v2
-
-    iput v2, v0, Ll0/b;->b:F
-
-    .line 32
-    invoke-virtual {v0, v2}, Ll0/b;->c(F)V
-
-    if-eqz v1, :cond_7
-
-    .line 33
-    iput-boolean v5, v0, Ll0/b;->e:Z
-
-    .line 34
-    invoke-static {}, Ll0/a;->a()Ll0/a;
-
-    move-result-object v2
-
-    .line 35
-    iget-object v3, v2, Ll0/a;->a:Lm/g;
-
-    invoke-virtual {v3, v0}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 36
-    iget-object v3, v2, Ll0/a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v0}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
-
-    move-result v3
-
-    if-ltz v3, :cond_4
-
-    .line 37
-    iget-object v4, v2, Ll0/a;->b:Ljava/util/ArrayList;
-
-    const/4 v9, 0x0
-
-    invoke-virtual {v4, v3, v9}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    .line 38
-    iput-boolean v8, v2, Ll0/a;->f:Z
-
-    .line 39
-    :cond_4
-    iput-wide v6, v0, Ll0/b;->g:J
-
-    .line 40
-    :goto_3
-    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    if-ge v5, v2, :cond_6
-
-    .line 41
-    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_5
-
-    .line 42
-    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ll0/b$h;
-
-    invoke-interface {v2}, Ll0/b$h;->a()V
-
-    :cond_5
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_3
-
-    .line 43
-    :cond_6
-    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
-
-    invoke-static {v2}, Ll0/b;->b(Ljava/util/ArrayList;)V
-
-    :cond_7
-    return v1
-.end method
-
-.method public final c(F)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ll0/b;->d:Ll0/c;
-
-    iget-object v1, p0, Ll0/b;->c:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, p1}, Ll0/c;->b(Ljava/lang/Object;F)V
-
-    const/4 p1, 0x0
-
-    .line 2
-    :goto_0
-    iget-object v0, p0, Ll0/b;->j:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-ge p1, v0, :cond_1
-
-    .line 3
-    iget-object v0, p0, Ll0/b;->j:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 4
-    iget-object v0, p0, Ll0/b;->j:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ll0/b$i;
-
-    invoke-interface {v0}, Ll0/b$i;->a()V
-
-    :cond_0
-    add-int/lit8 p1, p1, 0x1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    iget-object p1, p0, Ll0/b;->j:Ljava/util/ArrayList;
-
-    invoke-static {p1}, Ll0/b;->b(Ljava/util/ArrayList;)V
+    invoke-direct {p0, v0}, Ll0/d;-><init>([F)V
 
     return-void
 .end method

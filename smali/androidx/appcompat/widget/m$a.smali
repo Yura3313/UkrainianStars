@@ -1,5 +1,5 @@
 .class public final Landroidx/appcompat/widget/m$a;
-.super Lw/e$a;
+.super Lw/b$a;
 .source "AppCompatTextHelper.java"
 
 
@@ -36,7 +36,7 @@
 
     iput-object p4, p0, Landroidx/appcompat/widget/m$a;->c:Ljava/lang/ref/WeakReference;
 
-    invoke-direct {p0}, Lw/e$a;-><init>()V
+    invoke-direct {p0}, Lw/b$a;-><init>()V
 
     return-void
 .end method

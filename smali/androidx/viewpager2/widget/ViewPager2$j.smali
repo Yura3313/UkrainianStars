@@ -38,7 +38,7 @@
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$j;->f:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 2
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/d;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->s:Landroidx/viewpager2/widget/d;
 
     .line 3
     iget-object v0, v0, Landroidx/viewpager2/widget/d;->b:Ljava/lang/Object;

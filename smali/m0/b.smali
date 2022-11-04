@@ -1,238 +1,502 @@
 .class public final Lm0/b;
-.super Lm0/d;
-.source "FastOutSlowInInterpolator.java"
+.super Lm0/a;
+.source "LoaderManagerImpl.java"
 
 
-# static fields
-.field public static final c:[F
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lm0/b$c;,
+        Lm0/b$b;,
+        Lm0/b$a;
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Landroidx/lifecycle/j;
+
+.field public final b:Lm0/b$c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Landroidx/lifecycle/j;Landroidx/lifecycle/y;)V
     .locals 1
 
-    const/16 v0, 0xc9
+    .line 1
+    invoke-direct {p0}, Lm0/a;-><init>()V
 
-    new-array v0, v0, [F
+    .line 2
+    iput-object p1, p0, Lm0/b;->a:Landroidx/lifecycle/j;
 
-    fill-array-data v0, :array_0
+    .line 3
+    new-instance p1, Landroidx/lifecycle/x;
 
-    sput-object v0, Lm0/b;->c:[F
+    sget-object v0, Lm0/b$c;->e:Lm0/b$c$a;
+
+    invoke-direct {p1, p2, v0}, Landroidx/lifecycle/x;-><init>(Landroidx/lifecycle/y;Landroidx/lifecycle/x$b;)V
+
+    const-class p2, Lm0/b$c;
+
+    invoke-virtual {p1, p2}, Landroidx/lifecycle/x;->a(Ljava/lang/Class;)Landroidx/lifecycle/w;
+
+    move-result-object p1
+
+    check-cast p1, Lm0/b$c;
+
+    .line 4
+    iput-object p1, p0, Lm0/b;->b:Lm0/b$c;
 
     return-void
-
-    :array_0
-    .array-data 4
-        0x0
-        0x38d1b717
-        0x3951b717
-        0x3a03126f
-        0x3a6bedfa
-        0x3ab78034
-        0x3b03126f
-        0x3b30f27c
-        0x3b6bedfa
-        0x3b96bb99
-        0x3bbe0ded
-        0x3be8a71e
-        0x3c0b4396
-        0x3c257a78
-        0x3c4154ca
-        0x3c6075f7
-        0x3c816f00
-        0x3c9374bc
-        0x3ca7ef9e
-        0x3cbd3c36
-        0x3cd42c3d
-        0x3cecbfb1
-        0x3d037b4a
-        0x3d116873
-        0x3d202752
-        0x3d3020c5
-        0x3d40ebee
-        0x3d5288ce
-        0x3d656042
-        0x3d79096c
-        0x3d872b02
-        0x3d923a2a
-        0x3d9de69b
-        0x3da9fbe7
-        0x3db6e2eb
-        0x3dc46738
-        0x3dd2bd3c
-        0x3de17c1c
-        0x3df10cb3
-        0x3e00b780
-        0x3e091d15
-        0x3e1205bc
-        0x3e1b3d08
-        0x3e24dd2f
-        0x3e2ecbfb
-        0x3e3923a3
-        0x3e43e426
-        0x3e4ef34d
-        0x3e5a6b51
-        0x3e6631f9
-        0x3e724745
-        0x3e7eab36
-        0x3e85aee6
-        0x3e8c2f83
-        0x3e92ca58
-        0x3e997f63
-        0x3ea04ea5
-        0x3ea72b02
-        0x3eae147b
-        0x3eb50b0f
-        0x3ebc0ebf
-        0x3ec3126f
-        0x3eca0903
-        0x3ed0ff97
-        0x3ed7e910
-        0x3eded289
-        0x3ee5a1cb
-        0x3eec56d6
-        0x3ef2fec5
-        0x3ef98c7e
-        0x3f000000    # 0.5f
-        0x3f032ca5
-        0x3f064c30
-        0x3f095810
-        0x3f0c56d6
-        0x3f0f4880
-        0x3f122d0e
-        0x3f14fdf4
-        0x3f17c1be
-        0x3f1a71de
-        0x3f1d14e4
-        0x3f1faace
-        0x3f222d0e
-        0x3f24a234
-        0x3f270a3d
-        0x3f295e9e
-        0x3f2bac71
-        0x3f2de69b
-        0x3f3013a9
-        0x3f32339c
-        0x3f344d01
-        0x3f3652bd
-        0x3f384b5e
-        0x3f3a3d71
-        0x3f3c2268
-        0x3f3dfa44
-        0x3f3fc505
-        0x3f4182aa
-        0x3f4339c1
-        0x3f44ea4b
-        0x3f468db9
-        0x3f48240b
-        0x3f49b3d0
-        0x3f4b367a
-        0x3f4cb296
-        0x3f4e2824
-        0x3f4f9097
-        0x3f50f27c
-        0x3f524dd3
-        0x3f539c0f
-        0x3f54ea4b
-        0x3f562b6b
-        0x3f5765fe
-        0x3f589a02
-        0x3f59c77a
-        0x3f5ae7d5
-        0x3f5c0831
-        0x3f5d21ff
-        0x3f5e2eb2
-        0x3f5f3b64
-        0x3f604189
-        0x3f613a93
-        0x3f62339c
-        0x3f632618
-        0x3f641206
-        0x3f64fdf4
-        0x3f65dcc6
-        0x3f66bb99
-        0x3f6793de
-        0x3f686595
-        0x3f6930be
-        0x3f69f55a
-        0x3f6ab9f5
-        0x3f6b7803
-        0x3f6c3611
-        0x3f6ce704
-        0x3f6d97f6
-        0x3f6e425b
-        0x3f6eecc0
-        0x3f6f9097
-        0x3f702de0
-        0x3f70cb29
-        0x3f7161e5
-        0x3f71f8a1
-        0x3f7288ce
-        0x3f73126f
-        0x3f739c0f
-        0x3f741f21
-        0x3f74a234
-        0x3f751eb8
-        0x3f759b3d
-        0x3f761134
-        0x3f76809d
-        0x3f76f007
-        0x3f775f70
-        0x3f77c84b
-        0x3f783127
-        0x3f789375
-        0x3f78f5c3
-        0x3f795183
-        0x3f79ad43
-        0x3f7a0275
-        0x3f7a57a8
-        0x3f7aa64c
-        0x3f7af4f1
-        0x3f7b4396
-        0x3f7b8bac
-        0x3f7bd3c3
-        0x3f7c1bda
-        0x3f7c5d64
-        0x3f7c985f
-        0x3f7cd9e8
-        0x3f7d0e56
-        0x3f7d4952
-        0x3f7d7dbf
-        0x3f7db22d
-        0x3f7de00d
-        0x3f7e0ded
-        0x3f7e3bcd
-        0x3f7e6320
-        0x3f7e9100
-        0x3f7eb1c4
-        0x3f7ed917
-        0x3f7ef9db
-        0x3f7f1412
-        0x3f7f34d7
-        0x3f7f4f0e
-        0x3f7f6944
-        0x3f7f7cee
-        0x3f7f9724
-        0x3f7fa440
-        0x3f7fb7e9
-        0x3f7fc505
-        0x3f7fd220
-        0x3f7fdf3b
-        0x3f7fec57
-        0x3f7ff2e5
-        0x3f7ff972
-        0x3f7ff972
-        0x3f800000    # 1.0f
-        0x3f800000    # 1.0f
-    .end array-data
 .end method
 
-.method public constructor <init>()V
-    .locals 1
 
-    sget-object v0, Lm0/b;->c:[F
+# virtual methods
+.method public final a(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    .locals 11
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    invoke-direct {p0, v0}, Lm0/d;-><init>([F)V
+    .line 1
+    iget-object v0, p0, Lm0/b;->b:Lm0/b$c;
 
+    .line 2
+    iget-object v1, v0, Lm0/b$c;->c:Lm/i;
+
+    .line 3
+    iget v1, v1, Lm/i;->h:I
+
+    if-lez v1, :cond_8
+
+    .line 4
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v1, "Loaders:"
+
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    .line 5
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "    "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    .line 6
+    :goto_0
+    iget-object v4, v0, Lm0/b$c;->c:Lm/i;
+
+    .line 7
+    iget v5, v4, Lm/i;->h:I
+
+    if-ge v3, v5, :cond_8
+
+    .line 8
+    iget-object v4, v4, Lm/i;->g:[Ljava/lang/Object;
+
+    aget-object v4, v4, v3
+
+    .line 9
+    check-cast v4, Lm0/b$a;
+
+    .line 10
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "  #"
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v0, Lm0/b$c;->c:Lm/i;
+
+    .line 11
+    iget-object v5, v5, Lm/i;->f:[I
+
+    aget v5, v5, v3
+
+    .line 12
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(I)V
+
+    const-string v5, ": "
+
+    .line 13
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    invoke-virtual {v4}, Lm0/b$a;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    .line 14
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mId="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget v6, v4, Lm0/b$a;->l:I
+
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->print(I)V
+
+    const-string v6, " mArgs="
+
+    .line 15
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v6, v4, Lm0/b$a;->m:Landroid/os/Bundle;
+
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
+
+    .line 16
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v6, "mLoader="
+
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v6, v4, Lm0/b$a;->n:Ln0/b;
+
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
+
+    .line 17
+    iget-object v6, v4, Lm0/b$a;->n:Ln0/b;
+
+    const-string v7, "  "
+
+    .line 18
+    invoke-static {v1, v7}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 19
+    check-cast v6, Ln0/a;
+
+    invoke-static {v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    invoke-virtual {p2, v8}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget v5, v6, Ln0/b;->a:I
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(I)V
+
+    const-string v5, " mListener="
+
+    .line 21
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v6, Ln0/b;->b:Ln0/b$a;
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
+
+    .line 22
+    iget-boolean v5, v6, Ln0/b;->c:Z
+
+    const-string v9, "mStarted="
+
+    if-nez v5, :cond_0
+
+    iget-boolean v5, v6, Ln0/b;->f:Z
+
+    if-nez v5, :cond_0
+
+    goto :goto_1
+
+    .line 23
+    :cond_0
+    invoke-virtual {p2, v8}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    invoke-virtual {p2, v9}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-boolean v5, v6, Ln0/b;->c:Z
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Z)V
+
+    const-string v5, " mContentChanged="
+
+    .line 24
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-boolean v5, v6, Ln0/b;->f:Z
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Z)V
+
+    const-string v5, " mProcessingChange="
+
+    .line 25
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    invoke-virtual {p2, v2}, Ljava/io/PrintWriter;->println(Z)V
+
+    .line 26
+    :goto_1
+    iget-boolean v5, v6, Ln0/b;->d:Z
+
+    if-nez v5, :cond_1
+
+    iget-boolean v5, v6, Ln0/b;->e:Z
+
+    if-eqz v5, :cond_2
+
+    .line 27
+    :cond_1
+    invoke-virtual {p2, v8}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mAbandoned="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-boolean v5, v6, Ln0/b;->d:Z
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Z)V
+
+    const-string v5, " mReset="
+
+    .line 28
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-boolean v5, v6, Ln0/b;->e:Z
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Z)V
+
+    .line 29
+    :cond_2
+    iget-object v5, v6, Ln0/a;->h:Ln0/a$a;
+
+    const-string v10, " waiting="
+
+    if-eqz v5, :cond_3
+
+    .line 30
+    invoke-virtual {p2, v8}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mTask="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v6, Ln0/a;->h:Ln0/a$a;
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/Object;)V
+
+    .line 31
+    invoke-virtual {p2, v10}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v6, Ln0/a;->h:Ln0/a$a;
+
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p2, v2}, Ljava/io/PrintWriter;->println(Z)V
+
+    .line 32
+    :cond_3
+    iget-object v5, v6, Ln0/a;->i:Ln0/a$a;
+
+    if-eqz v5, :cond_4
+
+    .line 33
+    invoke-virtual {p2, v8}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mCancellingTask="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v6, Ln0/a;->i:Ln0/a$a;
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/Object;)V
+
+    .line 34
+    invoke-virtual {p2, v10}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v6, Ln0/a;->i:Ln0/a$a;
+
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p2, v2}, Ljava/io/PrintWriter;->println(Z)V
+
+    .line 35
+    :cond_4
+    iget-object v5, v4, Lm0/b$a;->p:Lm0/b$b;
+
+    if-eqz v5, :cond_5
+
+    .line 36
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mCallbacks="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-object v5, v4, Lm0/b$a;->p:Lm0/b$b;
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
+
+    .line 37
+    iget-object v5, v4, Lm0/b$a;->p:Lm0/b$b;
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 38
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v6, "mDeliveredData="
+
+    invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    iget-boolean v5, v5, Lm0/b$b;->b:Z
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Z)V
+
+    .line 39
+    :cond_5
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    const-string v5, "mData="
+
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 40
+    iget-object v5, v4, Lm0/b$a;->n:Ln0/b;
+
+    .line 41
+    iget-object v6, v4, Landroidx/lifecycle/LiveData;->e:Ljava/lang/Object;
+
+    .line 42
+    sget-object v7, Landroidx/lifecycle/LiveData;->k:Ljava/lang/Object;
+
+    if-eq v6, v7, :cond_6
+
+    goto :goto_2
+
+    :cond_6
+    const/4 v6, 0x0
+
+    .line 43
+    :goto_2
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 44
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const/16 v7, 0x40
+
+    invoke-direct {v5, v7}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 45
+    invoke-static {v6, v5}, La4/b0;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
+
+    const-string v6, "}"
+
+    .line 46
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 47
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 48
+    invoke-virtual {p2, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    .line 49
+    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    invoke-virtual {p2, v9}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 50
+    iget v4, v4, Landroidx/lifecycle/LiveData;->c:I
+
+    if-lez v4, :cond_7
+
+    const/4 v4, 0x1
+
+    goto :goto_3
+
+    :cond_7
+    move v4, v2
+
+    .line 51
+    :goto_3
+    invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(Z)V
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto/16 :goto_0
+
+    :cond_8
     return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x80
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v1, "LoaderManager{"
+
+    .line 2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3
+    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " in "
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 5
+    iget-object v1, p0, Lm0/b;->a:Landroidx/lifecycle/j;
+
+    invoke-static {v1, v0}, La4/b0;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
+
+    const-string v1, "}}"
+
+    .line 6
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

@@ -735,9 +735,9 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 3
     :goto_0
@@ -868,7 +868,7 @@
 
     move-wide v2, v1
 
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 1
     :goto_0
@@ -914,10 +914,10 @@
 
     shr-long v4, v2, v1
 
-    long-to-int v5, v4
+    long-to-int v4, v4
 
     .line 5
-    invoke-interface {p2, v5}, Lokio/BufferedSink;->writeByte(I)Lokio/BufferedSink;
+    invoke-interface {p2, v4}, Lokio/BufferedSink;->writeByte(I)Lokio/BufferedSink;
 
     goto :goto_1
 

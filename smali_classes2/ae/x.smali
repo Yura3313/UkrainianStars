@@ -1,161 +1,95 @@
 .class public final Lae/x;
-.super Ljava/lang/Object;
-.source "RecyclerViewUtil.kt"
-
-# interfaces
-.implements Lae/a2;
+.super Lae/b1;
+.source "PresenceStorage.kt"
 
 
-# instance fields
-.field public final a:I
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lae/x$a;
+    }
+.end annotation
 
-.field public final b:Ljava/lang/String;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lae/b1<",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Ljava/util/Map<",
+        "Ltc/c;",
+        "+",
+        "Ltc/o;",
+        ">;>;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lae/x;->b:Ljava/lang/String;
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->list_item_message:I
-
-    iput p1, p0, Lae/x;->a:I
+    invoke-direct {p0}, Lae/b1;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
+.method public final f(Lcom/supercell/id/model/IdSocialAccount;Ljava/util/Map;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/model/IdSocialAccount;",
+            "Ljava/util/Map<",
+            "Ltc/c;",
+            "Ltc/o;",
+            ">;)V"
+        }
+    .end annotation
 
-    const-string v0, "other"
+    const-string v0, "account"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p2, :cond_0
 
     .line 1
-    instance-of v0, p1, Lae/x;
+    new-instance v0, Lye/f;
 
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
+    invoke-direct {v0, p1, p2}, Lye/f;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 2
-    :cond_0
-    iget-object v0, p0, Lae/x;->b:Ljava/lang/String;
-
-    check-cast p1, Lae/x;
-
-    iget-object p1, p1, Lae/x;->b:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c()I
-    .locals 1
-
-    iget v0, p0, Lae/x;->a:I
-
-    return v0
-.end method
-
-.method public final d(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    instance-of p1, p1, Lae/x;
-
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lae/x;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lae/x;
-
-    iget-object v0, p0, Lae/x;->b:Ljava/lang/String;
-
-    iget-object p1, p1, Lae/x;->b:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Lae/x;->b:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "MessageRow(messageKey="
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lj3/xs0;->h(Lye/f;)Ljava/util/Map;
 
     move-result-object v0
 
-    .line 2
-    iget-object v1, p0, Lae/x;->b:Ljava/lang/String;
+    goto :goto_0
 
-    const-string v2, ")"
+    :cond_0
+    sget-object v0, Lze/m;->f:Lze/m;
+
+    :goto_0
+    if-nez p2, :cond_1
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p1
 
-    return-object v0
+    goto :goto_1
+
+    :cond_1
+    sget-object p1, Lze/l;->f:Lze/l;
+
+    .line 4
+    :goto_1
+    new-instance p2, Lae/x$a$b;
+
+    invoke-direct {p2, v0, p1}, Lae/x$a$b;-><init>(Ljava/util/Map;Ljava/util/List;)V
+
+    invoke-virtual {p0, p2}, Lae/b1;->a(Lae/a;)V
+
+    return-void
 .end method

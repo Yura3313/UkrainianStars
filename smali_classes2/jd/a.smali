@@ -1,308 +1,86 @@
 .class public final Ljd/a;
-.super Ljava/lang/Object;
-.source "IngameChatFragment.kt"
+.super Lif/i;
+.source "InviteFriendsFragment.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Lhf/p;
 
 
-# instance fields
-.field public final a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/p<",
+        "Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;",
+        "Landroid/graphics/Bitmap;",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
 
-.field public final b:Lvc/f;
 
-.field public final c:Lvc/e;
+# static fields
+.field public static final f:Ljd/a;
 
 
 # direct methods
-.method public constructor <init>(Lvc/f;Lvc/e;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "chatMessage"
+    new-instance v0, Ljd/a;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Ljd/a;-><init>()V
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput-object v0, Ljd/a;->f:Ljd/a;
 
-    iput-object p1, p0, Ljd/a;->b:Lvc/f;
+    return-void
+.end method
 
-    iput-object p2, p0, Ljd/a;->c:Lvc/e;
+.method public constructor <init>()V
+    .locals 1
 
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->fragment_chat_messages_chat_message:I
+    const/4 v0, 0x2
 
-    iput p1, p0, Ljd/a;->a:I
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
-    .locals 3
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    instance-of v0, p1, Ljd/a;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Ljd/a;->c:Lvc/e;
-
-    .line 3
-    iget-object v0, v0, Lvc/e;->c:Ljava/lang/String;
-
-    .line 4
-    check-cast p1, Ljd/a;
-
-    .line 5
-    iget-object v2, p1, Ljd/a;->c:Lvc/e;
-
-    .line 6
-    iget-object v2, v2, Lvc/e;->c:Ljava/lang/String;
-
-    .line 7
-    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 8
-    iget-object v0, p0, Ljd/a;->c:Lvc/e;
-
-    .line 9
-    iget-object v0, v0, Lvc/e;->d:Ljava/lang/String;
-
-    .line 10
-    iget-object v2, p1, Ljd/a;->c:Lvc/e;
-
-    .line 11
-    iget-object v2, v2, Lvc/e;->d:Ljava/lang/String;
-
-    .line 12
-    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 13
-    iget-object v0, p0, Ljd/a;->c:Lvc/e;
-
-    .line 14
-    iget-object v0, v0, Lvc/e;->e:Ljava/lang/String;
-
-    .line 15
-    iget-object v2, p1, Ljd/a;->c:Lvc/e;
-
-    .line 16
-    iget-object v2, v2, Lvc/e;->e:Ljava/lang/String;
-
-    .line 17
-    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 18
-    iget-object v0, p0, Ljd/a;->b:Lvc/f;
-
-    .line 19
-    iget-object v0, v0, Lvc/f;->d:Ljava/lang/String;
-
-    .line 20
-    iget-object p1, p1, Ljd/a;->b:Lvc/f;
-
-    .line 21
-    iget-object p1, p1, Lvc/f;->d:Ljava/lang/String;
-
-    .line 22
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
-.end method
-
-.method public final c()I
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget v0, p0, Ljd/a;->a:I
-
-    return v0
-.end method
-
-.method public final d(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    instance-of v0, p1, Ljd/a;
+    check-cast p1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    if-eqz v0, :cond_0
+    check-cast p2, Landroid/graphics/Bitmap;
 
-    check-cast p1, Ljd/a;
+    const-string v0, "$receiver"
 
     .line 2
-    iget-object p1, p1, Ljd/a;->b:Lvc/f;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p1, Lvc/f;->b:Ljava/lang/String;
+    sget v0, Lcom/supercell/id/R$id;->qr_code:I
 
-    .line 4
-    iget-object v0, p0, Ljd/a;->b:Lvc/f;
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
-    .line 5
-    iget-object v0, v0, Lvc/f;->b:Ljava/lang/String;
+    move-result-object p1
 
-    .line 6
-    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
+    check-cast p1, Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
-    const/4 p1, 0x1
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    goto :goto_0
-
+    .line 4
     :cond_0
-    const/4 p1, 0x0
+    sget-object p1, Lye/m;->a:Lye/m;
 
-    :goto_0
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Ljd/a;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Ljd/a;
-
-    iget-object v0, p0, Ljd/a;->b:Lvc/f;
-
-    iget-object v1, p1, Ljd/a;->b:Lvc/f;
-
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Ljd/a;->c:Lvc/e;
-
-    iget-object p1, p1, Ljd/a;->c:Lvc/e;
-
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    iget-object v0, p0, Ljd/a;->b:Lvc/f;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lvc/f;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Ljd/a;->c:Lvc/e;
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Lvc/e;->hashCode()I
-
-    move-result v1
-
-    :cond_1
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "ChatMessageRow(chatMessage="
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 2
-    iget-object v1, p0, Ljd/a;->b:Lvc/f;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", chatSender="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Ljd/a;->c:Lvc/e;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

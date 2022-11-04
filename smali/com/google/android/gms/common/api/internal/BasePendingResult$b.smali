@@ -43,10 +43,10 @@
     iget-object v0, p0, Lcom/google/android/gms/common/api/internal/BasePendingResult$b;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f:La2/g;
+    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f:Ly1/k;
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->h(La2/g;)V
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->h(Ly1/k;)V
 
     .line 4
     invoke-super {p0}, Ljava/lang/Object;->finalize()V

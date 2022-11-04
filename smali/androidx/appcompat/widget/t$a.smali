@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/t;
+.field public final synthetic f:Landroidx/appcompat/widget/t;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/t;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/t$a;->g:Landroidx/appcompat/widget/t;
+    iput-object p1, p0, Landroidx/appcompat/widget/t$a;->f:Landroidx/appcompat/widget/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/t$a;->g:Landroidx/appcompat/widget/t;
+    iget-object v0, p0, Landroidx/appcompat/widget/t$a;->f:Landroidx/appcompat/widget/t;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/t;->j:Landroid/view/View;
+    iget-object v0, v0, Landroidx/appcompat/widget/t;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 

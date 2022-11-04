@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Ljava/text/DateFormat;
+.field public final g:Ljava/text/DateFormat;
 
-.field public final i:Lcom/google/android/material/textfield/TextInputLayout;
+.field public final h:Lcom/google/android/material/textfield/TextInputLayout;
 
-.field public final j:Lcom/google/android/material/datepicker/CalendarConstraints;
+.field public final i:Lcom/google/android/material/datepicker/CalendarConstraints;
 
-.field public final k:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
 
 # direct methods
@@ -26,16 +26,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/datepicker/c;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/c;->f:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/material/datepicker/c;->h:Ljava/text/DateFormat;
+    iput-object p2, p0, Lcom/google/android/material/datepicker/c;->g:Ljava/text/DateFormat;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iput-object p3, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/material/datepicker/c;->j:Lcom/google/android/material/datepicker/CalendarConstraints;
+    iput-object p4, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     .line 6
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/c;->k:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/c;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {p1, p3}, Lcom/google/android/material/textfield/TextInputLayout;->setError(Ljava/lang/CharSequence;)V
 
@@ -96,13 +96,13 @@
     return-void
 
     :cond_0
-    const/4 p2, 0x1
+    const/4 p2, 0x0
 
-    const/4 p4, 0x0
+    const/4 p4, 0x1
 
     .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->h:Ljava/text/DateFormat;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->g:Ljava/text/DateFormat;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -113,7 +113,7 @@
     move-result-object p1
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {v0, p3}, Lcom/google/android/material/textfield/TextInputLayout;->setError(Ljava/lang/CharSequence;)V
 
@@ -123,36 +123,36 @@
     move-result-wide v0
 
     .line 7
-    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->j:Lcom/google/android/material/datepicker/CalendarConstraints;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     .line 8
-    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     .line 9
-    invoke-interface {p3, v0, v1}, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;->J1(J)Z
+    invoke-interface {p3, v0, v1}, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;->P0(J)Z
 
     move-result p3
 
     if-eqz p3, :cond_2
 
-    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->j:Lcom/google/android/material/datepicker/CalendarConstraints;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     .line 10
-    iget-object v2, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
+    iget-object v2, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
 
-    invoke-virtual {v2, p2}, Lcom/google/android/material/datepicker/Month;->g1(I)J
+    invoke-virtual {v2, p4}, Lcom/google/android/material/datepicker/Month;->n1(I)J
 
     move-result-wide v2
 
-    cmp-long v4, v2, v0
+    cmp-long v2, v2, v0
 
-    if-gtz v4, :cond_1
+    if-gtz v2, :cond_1
 
-    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
+    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
-    iget v2, p3, Lcom/google/android/material/datepicker/Month;->l:I
+    iget v2, p3, Lcom/google/android/material/datepicker/Month;->k:I
 
-    invoke-virtual {p3, v2}, Lcom/google/android/material/datepicker/Month;->g1(I)J
+    invoke-virtual {p3, v2}, Lcom/google/android/material/datepicker/Month;->n1(I)J
 
     move-result-wide v2
 
@@ -160,12 +160,12 @@
 
     if-gtz p3, :cond_1
 
-    const/4 p3, 0x1
+    move p3, p4
 
     goto :goto_0
 
     :cond_1
-    const/4 p3, 0x0
+    move p3, p2
 
     :goto_0
     if-eqz p3, :cond_2
@@ -185,18 +185,18 @@
 
     .line 12
     :cond_2
-    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
-    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->k:Ljava/lang/String;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->j:Ljava/lang/String;
 
-    new-array v2, p2, [Ljava/lang/Object;
+    new-array v2, p4, [Ljava/lang/Object;
 
     .line 13
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/d;->a(J)Ljava/lang/String;
 
     move-result-object v0
 
-    aput-object v0, v2, p4
+    aput-object v0, v2, p2
 
     .line 14
     invoke-static {p3, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -215,7 +215,7 @@
 
     .line 17
     :catch_0
-    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 18
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -229,7 +229,7 @@
     move-result-object p1
 
     .line 19
-    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 20
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -242,11 +242,11 @@
 
     move-result-object p3
 
-    new-array v0, p2, [Ljava/lang/Object;
+    new-array v0, p4, [Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/c;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/c;->f:Ljava/lang/String;
 
-    aput-object v1, v0, p4
+    aput-object v1, v0, p2
 
     .line 21
     invoke-static {p3, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -254,7 +254,7 @@
     move-result-object p3
 
     .line 22
-    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 23
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -267,14 +267,14 @@
 
     move-result-object v0
 
-    new-array p2, p2, [Ljava/lang/Object;
+    new-array p4, p4, [Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/c;->h:Ljava/text/DateFormat;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/c;->g:Ljava/text/DateFormat;
 
     new-instance v2, Ljava/util/Date;
 
     .line 24
-    invoke-static {}, Lcom/google/android/material/datepicker/b0;->h()Ljava/util/Calendar;
+    invoke-static {}, Lcom/google/android/material/datepicker/b0;->g()Ljava/util/Calendar;
 
     move-result-object v3
 
@@ -288,15 +288,15 @@
 
     move-result-object v1
 
-    aput-object v1, p2, p4
+    aput-object v1, p4, p2
 
     .line 25
-    invoke-static {v0, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0, p4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
     .line 26
-    iget-object p4, p0, Lcom/google/android/material/datepicker/c;->i:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p4, p0, Lcom/google/android/material/datepicker/c;->h:Lcom/google/android/material/textfield/TextInputLayout;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

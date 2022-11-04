@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,21 +38,21 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    new-instance v0, Lwc/t;
+    new-instance v0, Luc/w;
 
-    invoke-direct {v0}, Lwc/t;-><init>()V
+    invoke-direct {v0}, Luc/w;-><init>()V
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
@@ -70,28 +70,28 @@
     const-string v3, "account_profile_wizard_cancel_review_heading"
 
     .line 5
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "textKey"
 
     const-string v3, "account_profile_wizard_cancel_review_description"
 
     .line 6
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "okButtonKey"
 
     const-string v3, "account_profile_wizard_cancel_review_btn_ok"
 
     .line 7
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "cancelButtonKey"
 
     const-string v3, "account_profile_wizard_cancel_review_btn_cancel"
 
     .line 8
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -114,15 +114,15 @@
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;-><init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;)V
 
     .line 13
-    iput-object v1, v0, Lwc/t;->x0:Lre/p;
+    iput-object v1, v0, Luc/w;->w0:Lhf/p;
 
     .line 14
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 
     .line 15
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->K(Luc/g;Ljava/lang/String;)V
 
     :cond_1
     return-void

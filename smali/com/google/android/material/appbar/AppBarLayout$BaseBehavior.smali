@@ -113,7 +113,7 @@
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     .line 3
-    iget-boolean v0, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean v0, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz v0, :cond_0
 
@@ -152,14 +152,14 @@
     if-gt v0, p5, :cond_6
 
     .line 3
-    invoke-static {p3, p4, p5}, La0/a;->b(III)I
+    invoke-static {p3, p4, p5}, La0/b;->c(III)I
 
     move-result v3
 
     if-eq v0, v3, :cond_7
 
     .line 4
-    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
+    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
 
     if-eqz p3, :cond_3
 
@@ -173,7 +173,7 @@
 
     move-result p4
 
-    const/4 p5, 0x0
+    move p5, v1
 
     :goto_0
     if-ge p5, p4, :cond_3
@@ -235,7 +235,7 @@
     if-eqz p4, :cond_0
 
     .line 13
-    sget-object p4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {v2}, Landroid/view/View;->getMinimumHeight()I
@@ -246,7 +246,7 @@
 
     .line 15
     :cond_0
-    sget-object p4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 16
     invoke-virtual {v2}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -283,7 +283,7 @@
 
     move-result p3
 
-    mul-float p3, p3, p4
+    mul-float/2addr p3, p4
 
     .line 20
     invoke-static {p3}, Ljava/lang/Math;->round(F)I
@@ -301,7 +301,7 @@
 
     add-int/2addr p5, p3
 
-    mul-int p5, p5, p4
+    mul-int/2addr p5, p4
 
     goto :goto_1
 
@@ -329,7 +329,7 @@
     if-nez p3, :cond_4
 
     .line 24
-    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
+    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
 
     if-eqz p3, :cond_4
 
@@ -348,16 +348,14 @@
 
     const/4 p3, -0x1
 
-    const/4 v4, -0x1
-
     goto :goto_2
 
     :cond_5
     const/4 p3, 0x1
 
-    const/4 v4, 0x1
-
     :goto_2
+    move v4, p3
+
     const/4 v5, 0x0
 
     move-object v0, p0
@@ -423,7 +421,7 @@
 
     div-float/2addr v0, v2
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     .line 3
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
@@ -452,7 +450,7 @@
 
     const/high16 v1, 0x43160000    # 150.0f
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     float-to-int v0, v0
 
@@ -496,7 +494,7 @@
     iput-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->l:Landroid/animation/ValueAnimator;
 
     .line 10
-    sget-object v3, Ld4/a;->e:Landroid/view/animation/DecelerateInterpolator;
+    sget-object v3, Lb4/a;->e:Landroid/view/animation/DecelerateInterpolator;
 
     invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -634,10 +632,6 @@
 
     add-int/2addr v1, v0
 
-    move v6, v0
-
-    move v7, v1
-
     goto :goto_0
 
     .line 3
@@ -650,11 +644,11 @@
 
     const/4 v1, 0x0
 
+    :goto_0
     move v6, v0
 
-    const/4 v7, 0x0
+    move v7, v1
 
-    :goto_0
     if-eq v6, v7, :cond_1
 
     const/4 v0, 0x1
@@ -676,7 +670,7 @@
 
     .line 5
     :cond_1
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz p1, :cond_2
 
@@ -713,7 +707,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     const/16 v4, 0x20
@@ -779,7 +773,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v3, -0x1
+    move v3, v5
 
     :goto_1
     if-ltz v3, :cond_9
@@ -846,7 +840,7 @@
     if-eqz v5, :cond_4
 
     .line 19
-    sget-object v5, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v5, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 20
     invoke-virtual {v1}, Landroid/view/View;->getMinimumHeight()I
@@ -868,7 +862,7 @@
     if-eqz v5, :cond_6
 
     .line 22
-    sget-object v5, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v5, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 23
     invoke-virtual {v1}, Landroid/view/View;->getMinimumHeight()I
@@ -923,7 +917,7 @@
 
     neg-int v0, v0
 
-    invoke-static {v8, v0, v2}, La0/a;->b(III)I
+    invoke-static {v8, v0, v2}, La0/b;->c(III)I
 
     move-result v0
 
@@ -935,7 +929,7 @@
 .end method
 
 .method public final J(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
-    .locals 9
+    .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -945,90 +939,98 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lg0/c$a;->h:Lg0/c$a;
+    sget-object v0, Lg0/b$a;->h:Lg0/b$a;
 
-    invoke-virtual {v0}, Lg0/c$a;->b()I
+    invoke-virtual {v0}, Lg0/b$a;->a()I
 
     move-result v1
 
-    invoke-static {p1, v1}, Lf0/r;->y(Landroid/view/View;I)V
-
     .line 2
-    sget-object v1, Lg0/c$a;->i:Lg0/c$a;
+    invoke-static {v1, p1}, Lf0/o;->m(ILandroid/view/View;)V
 
-    invoke-virtual {v1}, Lg0/c$a;->b()I
-
-    move-result v2
-
-    invoke-static {p1, v2}, Lf0/r;->y(Landroid/view/View;I)V
+    const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)Landroid/view/View;
-
-    move-result-object v7
-
-    if-eqz v7, :cond_4
+    invoke-static {p1, v1}, Lf0/o;->j(Landroid/view/View;I)V
 
     .line 4
-    invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getTotalScrollRange()I
+    sget-object v2, Lg0/b$a;->i:Lg0/b$a;
 
-    move-result v2
+    invoke-virtual {v2}, Lg0/b$a;->a()I
 
-    if-nez v2, :cond_0
-
-    goto :goto_0
+    move-result v3
 
     .line 5
-    :cond_0
-    invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
+    invoke-static {v3, p1}, Lf0/o;->m(ILandroid/view/View;)V
 
     .line 6
-    iget-object v2, v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
+    invoke-static {p1, v1}, Lf0/o;->j(Landroid/view/View;I)V
 
     .line 7
-    instance-of v2, v2, Lcom/google/android/material/appbar/AppBarLayout$ScrollingViewBehavior;
+    invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)Landroid/view/View;
 
-    if-nez v2, :cond_1
+    move-result-object v8
 
-    return-void
+    if-eqz v8, :cond_4
 
     .line 8
-    :cond_1
-    invoke-virtual {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->z()I
-
-    move-result v2
-
     invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getTotalScrollRange()I
 
     move-result v3
 
-    neg-int v3, v3
+    if-nez v3, :cond_0
 
-    const/4 v4, 0x1
-
-    if-eq v2, v3, :cond_2
+    goto :goto_0
 
     .line 9
-    invoke-virtual {v7, v4}, Landroid/view/View;->canScrollVertically(I)Z
+    :cond_0
+    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result v2
+    move-result-object v3
 
-    if-eqz v2, :cond_2
-
-    const/4 v2, 0x0
+    check-cast v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 
     .line 10
-    new-instance v3, Lcom/google/android/material/appbar/d;
-
-    invoke-direct {v3, p2, v2}, Lcom/google/android/material/appbar/d;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
-
-    invoke-static {p1, v0, v3}, Lf0/r;->A(Landroid/view/View;Lg0/c$a;Lg0/e;)V
+    iget-object v3, v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
 
     .line 11
+    instance-of v3, v3, Lcom/google/android/material/appbar/AppBarLayout$ScrollingViewBehavior;
+
+    if-nez v3, :cond_1
+
+    return-void
+
+    .line 12
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->z()I
+
+    move-result v3
+
+    invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getTotalScrollRange()I
+
+    move-result v4
+
+    neg-int v4, v4
+
+    const/4 v5, 0x1
+
+    if-eq v3, v4, :cond_2
+
+    .line 13
+    invoke-virtual {v8, v5}, Landroid/view/View;->canScrollVertically(I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 14
+    new-instance v3, Lcom/google/android/material/appbar/d;
+
+    invoke-direct {v3, p2, v1}, Lcom/google/android/material/appbar/d;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
+
+    invoke-static {p1, v0, v3}, Lf0/o;->n(Landroid/view/View;Lg0/b$a;Lg0/d;)V
+
+    .line 15
     :cond_2
     invoke-virtual {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->z()I
 
@@ -1038,46 +1040,46 @@
 
     const/4 v0, -0x1
 
-    .line 12
-    invoke-virtual {v7, v0}, Landroid/view/View;->canScrollVertically(I)Z
+    .line 16
+    invoke-virtual {v8, v0}, Landroid/view/View;->canScrollVertically(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 13
+    .line 17
     invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getDownNestedPreScrollRange()I
 
     move-result v0
 
-    neg-int v8, v0
+    neg-int v9, v0
 
-    if-eqz v8, :cond_4
+    if-eqz v9, :cond_4
 
-    .line 14
+    .line 18
     new-instance v0, Lcom/google/android/material/appbar/c;
 
-    move-object v3, v0
+    move-object v4, v0
 
-    move-object v4, p0
+    move-object v5, p0
 
-    move-object v5, p1
+    move-object v6, p1
 
-    move-object v6, p2
+    move-object v7, p2
 
-    invoke-direct/range {v3 .. v8}, Lcom/google/android/material/appbar/c;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
+    invoke-direct/range {v4 .. v9}, Lcom/google/android/material/appbar/c;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
 
-    invoke-static {p1, v1, v0}, Lf0/r;->A(Landroid/view/View;Lg0/c$a;Lg0/e;)V
+    invoke-static {p1, v2, v0}, Lf0/o;->n(Landroid/view/View;Lg0/b$a;Lg0/d;)V
 
     goto :goto_0
 
-    .line 15
+    .line 19
     :cond_3
     new-instance v0, Lcom/google/android/material/appbar/d;
 
-    invoke-direct {v0, p2, v4}, Lcom/google/android/material/appbar/d;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
+    invoke-direct {v0, p2, v5}, Lcom/google/android/material/appbar/d;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
 
-    invoke-static {p1, v1, v0}, Lf0/r;->A(Landroid/view/View;Lg0/c$a;Lg0/e;)V
+    invoke-static {p1, v2, v0}, Lf0/o;->n(Landroid/view/View;Lg0/b$a;Lg0/d;)V
 
     :cond_4
     :goto_0
@@ -1106,7 +1108,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_1
@@ -1159,7 +1161,7 @@
     if-eqz v1, :cond_2
 
     .line 7
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 8
     invoke-virtual {v4}, Landroid/view/View;->getMinimumHeight()I
@@ -1190,12 +1192,12 @@
     if-lt p3, p4, :cond_2
 
     :goto_2
-    const/4 p3, 0x1
+    move p3, v3
 
     goto :goto_3
 
     :cond_2
-    const/4 p3, 0x0
+    move p3, v2
 
     goto :goto_3
 
@@ -1225,7 +1227,7 @@
 
     .line 11
     :goto_3
-    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz p4, :cond_4
 
@@ -1260,7 +1262,7 @@
 
     move-result p3
 
-    const/4 p4, 0x0
+    move p4, v2
 
     :goto_4
     if-ge p4, p3, :cond_6
@@ -1295,7 +1297,7 @@
 
     if-eqz p1, :cond_6
 
-    const/4 v2, 0x1
+    move v2, v3
 
     goto :goto_5
 
@@ -1333,9 +1335,9 @@
     .line 4
     iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->m:I
 
-    const/4 v6, 0x1
-
     const/4 v1, 0x0
+
+    const/4 v6, 0x1
 
     if-ltz v0, :cond_1
 
@@ -1361,11 +1363,14 @@
     if-eqz v2, :cond_0
 
     .line 8
+    sget-object v2, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 9
     invoke-virtual {p3}, Landroid/view/View;->getMinimumHeight()I
 
     move-result p3
 
-    .line 9
+    .line 10
     invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getTopInset()I
 
     move-result v2
@@ -1376,7 +1381,7 @@
 
     goto :goto_0
 
-    .line 10
+    .line 11
     :cond_0
     invoke-virtual {p3}, Landroid/view/View;->getHeight()I
 
@@ -1386,7 +1391,7 @@
 
     iget v2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->o:F
 
-    mul-float p3, p3, v2
+    mul-float/2addr p3, v2
 
     invoke-static {p3}, Ljava/lang/Math;->round(F)I
 
@@ -1394,7 +1399,7 @@
 
     add-int v2, p3, v0
 
-    .line 11
+    .line 12
     :goto_0
     invoke-virtual {p0, p1, p2, v2}, Lcom/google/android/material/appbar/HeaderBehavior;->C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)I
 
@@ -1407,19 +1412,19 @@
 
     if-eqz v0, :cond_2
 
-    const/4 v0, 0x1
+    move v0, v6
 
     goto :goto_1
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_1
     and-int/lit8 v2, p3, 0x2
 
     if-eqz v2, :cond_4
 
-    .line 12
+    .line 13
     invoke-virtual {p2}, Lcom/google/android/material/appbar/AppBarLayout;->getUpNestedPreScrollRange()I
 
     move-result p3
@@ -1428,12 +1433,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 13
+    .line 14
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;I)V
 
     goto :goto_2
 
-    .line 14
+    .line 15
     :cond_3
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/appbar/HeaderBehavior;->C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)I
 
@@ -1446,26 +1451,26 @@
 
     if-eqz v0, :cond_5
 
-    .line 15
+    .line 16
     invoke-virtual {p0, p1, p2, v1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;I)V
 
     goto :goto_2
 
-    .line 16
+    .line 17
     :cond_5
     invoke-virtual {p0, p1, p2, v1}, Lcom/google/android/material/appbar/HeaderBehavior;->C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)I
 
-    .line 17
+    .line 18
     :cond_6
     :goto_2
-    iput v1, p2, Lcom/google/android/material/appbar/AppBarLayout;->l:I
+    iput v1, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:I
 
     const/4 p3, -0x1
 
-    .line 18
+    .line 19
     iput p3, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->m:I
 
-    .line 19
+    .line 20
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->t()I
 
     move-result p3
@@ -1476,14 +1481,14 @@
 
     neg-int v0, v0
 
-    invoke-static {p3, v0, v1}, La0/a;->b(III)I
+    invoke-static {p3, v0, v1}, La0/b;->c(III)I
 
     move-result p3
 
-    .line 20
+    .line 21
     invoke-virtual {p0, p3}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->v(I)Z
 
-    .line 21
+    .line 22
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->t()I
 
     move-result v3
@@ -1498,17 +1503,17 @@
 
     move-object v2, p2
 
-    .line 22
+    .line 23
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->K(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;IIZ)V
 
-    .line 23
+    .line 24
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->t()I
 
     move-result p3
 
     invoke-virtual {p2, p3}, Lcom/google/android/material/appbar/AppBarLayout;->b(I)V
 
-    .line 24
+    .line 25
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->J(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     return v6
@@ -1542,7 +1547,7 @@
     move-result p5
 
     .line 5
-    invoke-virtual {p1, p2, p3, p4, p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;III)V
+    invoke-virtual {p1, p2, p3, p4, p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Landroid/view/View;III)V
 
     const/4 v0, 0x1
 
@@ -1630,17 +1635,17 @@
     check-cast p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;
 
     .line 4
-    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
+    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
 
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->m:I
 
     .line 5
-    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
+    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
 
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->o:F
 
     .line 6
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
 
     iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->n:Z
 
@@ -1677,7 +1682,7 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_0
     if-ge v4, v2, :cond_2
@@ -1711,10 +1716,10 @@
     invoke-direct {v1, v0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 9
-    iput v4, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
+    iput v4, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
 
     .line 10
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 11
     invoke-virtual {v5}, Landroid/view/View;->getMinimumHeight()I
@@ -1733,7 +1738,7 @@
     const/4 v3, 0x1
 
     :cond_0
-    iput-boolean v3, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
+    iput-boolean v3, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
 
     int-to-float p1, v6
 
@@ -1746,7 +1751,7 @@
 
     div-float/2addr p1, v0
 
-    iput p1, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
+    iput p1, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
 
     move-object v0, v1
 
@@ -1777,7 +1782,7 @@
     if-eqz p4, :cond_2
 
     .line 2
-    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-nez p4, :cond_3
 
@@ -1788,12 +1793,12 @@
 
     if-eqz p4, :cond_0
 
-    const/4 p4, 0x1
+    move p4, v0
 
     goto :goto_0
 
     :cond_0
-    const/4 p4, 0x0
+    move p4, v1
 
     :goto_0
     if-eqz p4, :cond_1
@@ -1815,12 +1820,12 @@
 
     if-gt p1, p2, :cond_1
 
-    const/4 p1, 0x1
+    move p1, v0
 
     goto :goto_1
 
     :cond_1
-    const/4 p1, 0x0
+    move p1, v1
 
     :goto_1
     if-eqz p1, :cond_2
@@ -1828,7 +1833,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, v1
 
     :cond_3
     :goto_2
@@ -1874,7 +1879,7 @@
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     .line 4
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz p1, :cond_1
 

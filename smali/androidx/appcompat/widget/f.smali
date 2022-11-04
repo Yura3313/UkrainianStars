@@ -74,7 +74,7 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/x;->h(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/x;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
     move-result-object p0
     :try_end_0
@@ -113,7 +113,7 @@
     sput-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
 
     .line 3
-    invoke-static {}, Landroidx/appcompat/widget/x;->d()Landroidx/appcompat/widget/x;
+    invoke-static {}, Landroidx/appcompat/widget/x;->c()Landroidx/appcompat/widget/x;
 
     move-result-object v2
 
@@ -135,7 +135,7 @@
 
     .line 6
     :try_start_1
-    iput-object v2, v1, Landroidx/appcompat/widget/x;->g:Landroidx/appcompat/widget/x$e;
+    iput-object v2, v1, Landroidx/appcompat/widget/x;->g:Landroidx/appcompat/widget/x$c;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -189,7 +189,7 @@
 
     if-eq v0, p0, :cond_0
 
-    goto :goto_5
+    goto :goto_4
 
     .line 4
     :cond_0
@@ -252,7 +252,7 @@
     move-result p2
 
     .line 9
-    invoke-static {p2, p1}, Landroidx/appcompat/widget/x;->h(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+    invoke-static {p2, p1}, Landroidx/appcompat/widget/x;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
     move-result-object v1
 
@@ -261,19 +261,7 @@
     :goto_3
     invoke-virtual {p0, v1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    .line 11
     :goto_4
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 p2, 0x17
-
-    if-gt p1, p2, :cond_7
-
-    .line 12
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
-
-    :cond_7
-    :goto_5
     return-void
 .end method
 
@@ -287,7 +275,7 @@
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/x;
 
-    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/widget/x;->f(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/widget/x;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
     :try_end_0
@@ -313,7 +301,7 @@
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/x;
 
-    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/widget/x;->i(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/widget/x;->h(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
     :try_end_0

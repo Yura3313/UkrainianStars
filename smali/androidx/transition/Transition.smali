@@ -17,11 +17,11 @@
 
 
 # static fields
-.field public static final B:[I
+.field public static final A:[I
 
-.field public static final C:Landroidx/transition/Transition$a;
+.field public static final B:Landroidx/transition/Transition$a;
 
-.field public static D:Ljava/lang/ThreadLocal;
+.field public static C:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal<",
@@ -35,17 +35,15 @@
 
 
 # instance fields
-.field public A:Landroidx/transition/PathMotion;
+.field public f:Ljava/lang/String;
 
-.field public g:Ljava/lang/String;
+.field public g:J
 
 .field public h:J
 
-.field public i:J
+.field public i:Landroid/animation/TimeInterpolator;
 
-.field public j:Landroid/animation/TimeInterpolator;
-
-.field public k:Ljava/util/ArrayList;
+.field public j:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -55,7 +53,7 @@
     .end annotation
 .end field
 
-.field public l:Ljava/util/ArrayList;
+.field public k:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -65,19 +63,29 @@
     .end annotation
 .end field
 
-.field public m:Lv0/t;
+.field public l:Lt0/q;
 
-.field public n:Lv0/t;
+.field public m:Lt0/q;
 
-.field public o:Landroidx/transition/TransitionSet;
+.field public n:Landroidx/transition/TransitionSet;
 
-.field public p:[I
+.field public o:[I
+
+.field public p:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lt0/p;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field public q:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lv0/s;",
+            "Lt0/p;",
             ">;"
         }
     .end annotation
@@ -87,29 +95,19 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lv0/s;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public s:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
             "Landroid/animation/Animator;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public t:I
+.field public s:I
+
+.field public t:Z
 
 .field public u:Z
 
-.field public v:Z
-
-.field public w:Ljava/util/ArrayList;
+.field public v:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -119,7 +117,7 @@
     .end annotation
 .end field
 
-.field public x:Ljava/util/ArrayList;
+.field public w:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -129,9 +127,11 @@
     .end annotation
 .end field
 
-.field public y:Landroidx/fragment/app/p;
+.field public x:Landroidx/fragment/app/p;
 
-.field public z:Landroidx/transition/Transition$c;
+.field public y:Landroidx/transition/Transition$c;
+
+.field public z:Landroidx/transition/PathMotion;
 
 
 # direct methods
@@ -145,21 +145,21 @@
     .line 1
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroidx/transition/Transition;->B:[I
+    sput-object v0, Landroidx/transition/Transition;->A:[I
 
     .line 2
     new-instance v0, Landroidx/transition/Transition$a;
 
     invoke-direct {v0}, Landroidx/transition/Transition$a;-><init>()V
 
-    sput-object v0, Landroidx/transition/Transition;->C:Landroidx/transition/Transition$a;
+    sput-object v0, Landroidx/transition/Transition;->B:Landroidx/transition/Transition$a;
 
     .line 3
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Landroidx/transition/Transition;->D:Ljava/lang/ThreadLocal;
+    sput-object v0, Landroidx/transition/Transition;->C:Ljava/lang/ThreadLocal;
 
     return-void
 
@@ -189,89 +189,89 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/transition/Transition;->g:Ljava/lang/String;
+    iput-object v0, p0, Landroidx/transition/Transition;->f:Ljava/lang/String;
 
     const-wide/16 v0, -0x1
 
     .line 3
-    iput-wide v0, p0, Landroidx/transition/Transition;->h:J
+    iput-wide v0, p0, Landroidx/transition/Transition;->g:J
 
     .line 4
-    iput-wide v0, p0, Landroidx/transition/Transition;->i:J
+    iput-wide v0, p0, Landroidx/transition/Transition;->h:J
 
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
+    iput-object v0, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
 
     .line 6
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     .line 7
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     .line 8
-    new-instance v1, Lv0/t;
+    new-instance v1, Lt0/q;
 
-    invoke-direct {v1}, Lv0/t;-><init>()V
+    invoke-direct {v1}, Lt0/q;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iput-object v1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
     .line 9
-    new-instance v1, Lv0/t;
+    new-instance v1, Lt0/q;
 
-    invoke-direct {v1}, Lv0/t;-><init>()V
+    invoke-direct {v1}, Lt0/q;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iput-object v1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
     .line 10
-    iput-object v0, p0, Landroidx/transition/Transition;->o:Landroidx/transition/TransitionSet;
+    iput-object v0, p0, Landroidx/transition/Transition;->n:Landroidx/transition/TransitionSet;
 
     .line 11
-    sget-object v1, Landroidx/transition/Transition;->B:[I
+    sget-object v1, Landroidx/transition/Transition;->A:[I
 
-    iput-object v1, p0, Landroidx/transition/Transition;->p:[I
+    iput-object v1, p0, Landroidx/transition/Transition;->o:[I
 
     .line 12
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->s:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     .line 13
-    iput v1, p0, Landroidx/transition/Transition;->t:I
+    iput v1, p0, Landroidx/transition/Transition;->s:I
 
     .line 14
-    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->t:Z
 
     .line 15
-    iput-boolean v1, p0, Landroidx/transition/Transition;->v:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
 
     .line 16
-    iput-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 17
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     .line 18
-    sget-object v0, Landroidx/transition/Transition;->C:Landroidx/transition/Transition$a;
+    sget-object v0, Landroidx/transition/Transition;->B:Landroidx/transition/Transition$a;
 
-    iput-object v0, p0, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
+    iput-object v0, p0, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
 
     return-void
 .end method
@@ -296,92 +296,92 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/transition/Transition;->g:Ljava/lang/String;
+    iput-object v0, p0, Landroidx/transition/Transition;->f:Ljava/lang/String;
 
     const-wide/16 v0, -0x1
 
     .line 21
-    iput-wide v0, p0, Landroidx/transition/Transition;->h:J
+    iput-wide v0, p0, Landroidx/transition/Transition;->g:J
 
     .line 22
-    iput-wide v0, p0, Landroidx/transition/Transition;->i:J
+    iput-wide v0, p0, Landroidx/transition/Transition;->h:J
 
     const/4 v0, 0x0
 
     .line 23
-    iput-object v0, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
+    iput-object v0, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
 
     .line 24
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     .line 25
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     .line 26
-    new-instance v1, Lv0/t;
+    new-instance v1, Lt0/q;
 
-    invoke-direct {v1}, Lv0/t;-><init>()V
+    invoke-direct {v1}, Lt0/q;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iput-object v1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
     .line 27
-    new-instance v1, Lv0/t;
+    new-instance v1, Lt0/q;
 
-    invoke-direct {v1}, Lv0/t;-><init>()V
+    invoke-direct {v1}, Lt0/q;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iput-object v1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
     .line 28
-    iput-object v0, p0, Landroidx/transition/Transition;->o:Landroidx/transition/TransitionSet;
+    iput-object v0, p0, Landroidx/transition/Transition;->n:Landroidx/transition/TransitionSet;
 
     .line 29
-    sget-object v1, Landroidx/transition/Transition;->B:[I
+    sget-object v1, Landroidx/transition/Transition;->A:[I
 
-    iput-object v1, p0, Landroidx/transition/Transition;->p:[I
+    iput-object v1, p0, Landroidx/transition/Transition;->o:[I
 
     .line 30
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/Transition;->s:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     .line 31
-    iput v1, p0, Landroidx/transition/Transition;->t:I
+    iput v1, p0, Landroidx/transition/Transition;->s:I
 
     .line 32
-    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->t:Z
 
     .line 33
-    iput-boolean v1, p0, Landroidx/transition/Transition;->v:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
 
     .line 34
-    iput-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 35
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     .line 36
-    sget-object v0, Landroidx/transition/Transition;->C:Landroidx/transition/Transition$a;
+    sget-object v0, Landroidx/transition/Transition;->B:Landroidx/transition/Transition$a;
 
-    iput-object v0, p0, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
+    iput-object v0, p0, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
 
     .line 37
-    sget-object v0, Lv0/p;->a:[I
+    sget-object v0, Lt0/m;->a:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -397,7 +397,7 @@
     const/4 v4, -0x1
 
     .line 39
-    invoke-static {v0, p2, v2, v3, v4}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {v0, p2, v2, v3, v4}, Lw/e;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result v2
 
@@ -410,7 +410,7 @@
     if-ltz v2, :cond_0
 
     .line 40
-    invoke-virtual {p0, v5, v6}, Landroidx/transition/Transition;->D(J)Landroidx/transition/Transition;
+    invoke-virtual {p0, v5, v6}, Landroidx/transition/Transition;->B(J)Landroidx/transition/Transition;
 
     :cond_0
     const/4 v2, 0x2
@@ -418,7 +418,7 @@
     const-string v5, "startDelay"
 
     .line 41
-    invoke-static {v0, p2, v5, v2, v4}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {v0, p2, v5, v2, v4}, Lw/e;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result v4
 
@@ -429,11 +429,11 @@
     if-lez v6, :cond_1
 
     .line 42
-    invoke-virtual {p0, v4, v5}, Landroidx/transition/Transition;->I(J)Landroidx/transition/Transition;
+    invoke-virtual {p0, v4, v5}, Landroidx/transition/Transition;->G(J)Landroidx/transition/Transition;
 
     .line 43
     :cond_1
-    invoke-static {v0, p2, v1}, Lw/f;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;I)I
+    invoke-static {v0, p2, v1}, Lw/e;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;I)I
 
     move-result v4
 
@@ -444,7 +444,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Landroidx/transition/Transition;->F(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
+    invoke-virtual {p0, p1}, Landroidx/transition/Transition;->D(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
 
     :cond_2
     const/4 p1, 0x3
@@ -452,7 +452,7 @@
     const-string v4, "matchOrder"
 
     .line 45
-    invoke-static {v0, p2, v4, p1}, Lw/f;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p2, v4, p1}, Lw/e;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
@@ -472,7 +472,7 @@
 
     new-array p2, p2, [I
 
-    const/4 v5, 0x0
+    move v5, v1
 
     .line 48
     :goto_0
@@ -588,7 +588,7 @@
     const-string v0, "\'"
 
     .line 62
-    invoke-static {p2, v6, v0}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v6, v0}, La0/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -604,65 +604,65 @@
     if-nez p1, :cond_9
 
     .line 65
-    sget-object p1, Landroidx/transition/Transition;->B:[I
+    sget-object p1, Landroidx/transition/Transition;->A:[I
 
-    iput-object p1, p0, Landroidx/transition/Transition;->p:[I
+    iput-object p1, p0, Landroidx/transition/Transition;->o:[I
 
     goto :goto_6
 
     :cond_9
-    const/4 p1, 0x0
+    move p1, v1
 
     .line 66
     :goto_2
-    array-length v1, p2
+    array-length v2, p2
 
-    if-ge p1, v1, :cond_f
+    if-ge p1, v2, :cond_f
 
     .line 67
-    aget v1, p2, p1
+    aget v2, p2, p1
 
-    if-lt v1, v3, :cond_a
+    if-lt v2, v3, :cond_a
 
-    if-gt v1, v7, :cond_a
+    if-gt v2, v7, :cond_a
 
-    const/4 v1, 0x1
+    move v2, v3
 
     goto :goto_3
 
     :cond_a
-    const/4 v1, 0x0
+    move v2, v1
 
     :goto_3
-    if-eqz v1, :cond_e
+    if-eqz v2, :cond_e
 
     .line 68
-    aget v1, p2, p1
+    aget v2, p2, p1
 
-    const/4 v2, 0x0
+    move v4, v1
 
     :goto_4
-    if-ge v2, p1, :cond_c
+    if-ge v4, p1, :cond_c
 
     .line 69
-    aget v4, p2, v2
+    aget v5, p2, v4
 
-    if-ne v4, v1, :cond_b
+    if-ne v5, v2, :cond_b
 
-    const/4 v1, 0x1
+    move v2, v3
 
     goto :goto_5
 
     :cond_b
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_4
 
     :cond_c
-    const/4 v1, 0x0
+    move v2, v1
 
     :goto_5
-    if-nez v1, :cond_d
+    if-nez v2, :cond_d
 
     add-int/lit8 p1, p1, 0x1
 
@@ -696,7 +696,7 @@
 
     check-cast p1, [I
 
-    iput-object p1, p0, Landroidx/transition/Transition;->p:[I
+    iput-object p1, p0, Landroidx/transition/Transition;->o:[I
 
     .line 73
     :cond_10
@@ -706,13 +706,13 @@
     return-void
 .end method
 
-.method public static c(Lv0/t;Landroid/view/View;Lv0/s;)V
+.method public static c(Lt0/q;Landroid/view/View;Lt0/p;)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lv0/t;->a:Lm/a;
+    iget-object v0, p0, Lt0/q;->a:Lm/a;
 
-    invoke-virtual {v0, p1, p2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getId()I
@@ -724,7 +724,7 @@
     if-ltz p2, :cond_1
 
     .line 3
-    iget-object v1, p0, Lv0/t;->b:Landroid/util/SparseArray;
+    iget-object v1, p0, Lt0/q;->b:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p2}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -733,7 +733,7 @@
     if-ltz v1, :cond_0
 
     .line 4
-    iget-object v1, p0, Lv0/t;->b:Landroid/util/SparseArray;
+    iget-object v1, p0, Lt0/q;->b:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -741,42 +741,45 @@
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lv0/t;->b:Landroid/util/SparseArray;
+    iget-object v1, p0, Lt0/q;->b:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p2, p1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 6
     :cond_1
     :goto_0
-    invoke-static {p1}, Lf0/r;->o(Landroid/view/View;)Ljava/lang/String;
+    sget-object p2, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 7
+    invoke-virtual {p1}, Landroid/view/View;->getTransitionName()Ljava/lang/String;
 
     move-result-object p2
 
     if-eqz p2, :cond_3
 
-    .line 7
-    iget-object v1, p0, Lv0/t;->d:Lm/a;
+    .line 8
+    iget-object v1, p0, Lt0/q;->d:Lm/a;
 
-    invoke-virtual {v1, p2}, Lm/g;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p2}, Lm/h;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 8
-    iget-object v1, p0, Lv0/t;->d:Lm/a;
+    .line 9
+    iget-object v1, p0, Lt0/q;->d:Lm/a;
 
-    invoke-virtual {v1, p2, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p2, v0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
-    .line 9
-    :cond_2
-    iget-object v1, p0, Lv0/t;->d:Lm/a;
-
-    invoke-virtual {v1, p2, p1}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 10
+    :cond_2
+    iget-object v1, p0, Lt0/q;->d:Lm/a;
+
+    invoke-virtual {v1, p2, p1}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
     :cond_3
     :goto_1
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -787,14 +790,14 @@
 
     if-eqz p2, :cond_6
 
-    .line 11
+    .line 12
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p2
 
     check-cast p2, Landroid/widget/ListView;
 
-    .line 12
+    .line 13
     invoke-virtual {p2}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v1
@@ -805,74 +808,74 @@
 
     if-eqz v1, :cond_6
 
-    .line 13
+    .line 14
     invoke-virtual {p2, p1}, Landroid/widget/AdapterView;->getPositionForView(Landroid/view/View;)I
 
     move-result v1
 
-    .line 14
+    .line 15
     invoke-virtual {p2, v1}, Landroid/widget/AdapterView;->getItemIdAtPosition(I)J
 
     move-result-wide v1
 
-    .line 15
-    iget-object p2, p0, Lv0/t;->c:Lm/d;
-
     .line 16
-    iget-boolean v3, p2, Lm/d;->g:Z
+    iget-object p2, p0, Lt0/q;->c:Lm/e;
+
+    .line 17
+    iget-boolean v3, p2, Lm/e;->f:Z
 
     if-eqz v3, :cond_4
 
-    .line 17
-    invoke-virtual {p2}, Lm/d;->d()V
-
     .line 18
+    invoke-virtual {p2}, Lm/e;->c()V
+
+    .line 19
     :cond_4
-    iget-object v3, p2, Lm/d;->h:[J
+    iget-object v3, p2, Lm/e;->g:[J
 
-    iget p2, p2, Lm/d;->j:I
+    iget p2, p2, Lm/e;->i:I
 
-    invoke-static {v3, p2, v1, v2}, Ll2/p;->b([JIJ)I
+    invoke-static {v3, p2, v1, v2}, Lm/d;->c([JIJ)I
 
     move-result p2
 
     if-ltz p2, :cond_5
 
-    .line 19
-    iget-object p1, p0, Lv0/t;->c:Lm/d;
-
     .line 20
-    invoke-virtual {p1, v1, v2, v0}, Lm/d;->e(JLjava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p0, Lt0/q;->c:Lm/e;
+
+    .line 21
+    invoke-virtual {p1, v1, v2, v0}, Lm/e;->d(JLjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 21
+    .line 22
     check-cast p1, Landroid/view/View;
 
     if-eqz p1, :cond_6
 
     const/4 p2, 0x0
 
-    .line 22
+    .line 23
     invoke-virtual {p1, p2}, Landroid/view/View;->setHasTransientState(Z)V
 
-    .line 23
-    iget-object p0, p0, Lv0/t;->c:Lm/d;
+    .line 24
+    iget-object p0, p0, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {p0, v1, v2, v0}, Lm/d;->f(JLjava/lang/Object;)V
+    invoke-virtual {p0, v1, v2, v0}, Lm/e;->e(JLjava/lang/Object;)V
 
     goto :goto_2
 
     :cond_5
     const/4 p2, 0x1
 
-    .line 24
+    .line 25
     invoke-virtual {p1, p2}, Landroid/view/View;->setHasTransientState(Z)V
 
-    .line 25
-    iget-object p0, p0, Lv0/t;->c:Lm/d;
+    .line 26
+    iget-object p0, p0, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {p0, v1, v2, p1}, Lm/d;->f(JLjava/lang/Object;)V
+    invoke-virtual {p0, v1, v2, p1}, Lm/e;->e(JLjava/lang/Object;)V
 
     :cond_6
     :goto_2
@@ -892,7 +895,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Landroidx/transition/Transition;->D:Ljava/lang/ThreadLocal;
+    sget-object v0, Landroidx/transition/Transition;->C:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -908,7 +911,7 @@
     invoke-direct {v0}, Lm/a;-><init>()V
 
     .line 3
-    sget-object v1, Landroidx/transition/Transition;->D:Ljava/lang/ThreadLocal;
+    sget-object v1, Landroidx/transition/Transition;->C:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -916,20 +919,20 @@
     return-object v0
 .end method
 
-.method public static v(Lv0/s;Lv0/s;Ljava/lang/String;)Z
+.method public static v(Lt0/p;Lt0/p;Ljava/lang/String;)Z
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object p0, p0, Lt0/p;->a:Ljava/util/HashMap;
 
-    invoke-interface {p0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     .line 2
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object p1, p1, Lt0/p;->a:Ljava/util/HashMap;
 
-    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -965,156 +968,11 @@
 
 
 # virtual methods
-.method public A(Landroid/view/View;)V
-    .locals 6
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/transition/Transition;->u:Z
-
-    if-eqz v0, :cond_4
-
-    .line 2
-    iget-boolean v0, p0, Landroidx/transition/Transition;->v:Z
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_3
-
-    .line 3
-    invoke-static {}, Landroidx/transition/Transition;->q()Lm/a;
-
-    move-result-object v0
-
-    .line 4
-    iget v2, v0, Lm/g;->i:I
-
-    .line 5
-    sget-object v3, Lv0/x;->a:Lv0/d0;
-
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getWindowId()Landroid/view/WindowId;
-
-    move-result-object p1
-
-    const/4 v3, 0x1
-
-    sub-int/2addr v2, v3
-
-    :goto_0
-    if-ltz v2, :cond_2
-
-    .line 7
-    invoke-virtual {v0, v2}, Lm/g;->k(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroidx/transition/Transition$b;
-
-    .line 8
-    iget-object v5, v4, Landroidx/transition/Transition$b;->a:Landroid/view/View;
-
-    if-eqz v5, :cond_1
-
-    iget-object v4, v4, Landroidx/transition/Transition$b;->d:Lv0/g0;
-
-    .line 9
-    instance-of v5, v4, Lv0/f0;
-
-    if-eqz v5, :cond_0
-
-    check-cast v4, Lv0/f0;
-
-    iget-object v4, v4, Lv0/f0;->a:Landroid/view/WindowId;
-
-    invoke-virtual {v4, p1}, Landroid/view/WindowId;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    const/4 v4, 0x1
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v4, 0x0
-
-    :goto_1
-    if-eqz v4, :cond_1
-
-    .line 10
-    invoke-virtual {v0, v2}, Lm/g;->h(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/animation/Animator;
-
-    .line 11
-    invoke-static {v4}, Landroidx/transition/a;->c(Landroid/animation/Animator;)V
-
-    :cond_1
-    add-int/lit8 v2, v2, -0x1
-
-    goto :goto_0
-
-    .line 12
-    :cond_2
-    iget-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    move-result p1
-
-    if-lez p1, :cond_3
-
-    .line 13
-    iget-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
-
-    .line 14
-    invoke-virtual {p1}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/util/ArrayList;
-
-    .line 15
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/4 v2, 0x0
-
-    :goto_2
-    if-ge v2, v0, :cond_3
-
-    .line 16
-    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroidx/transition/Transition$d;
-
-    invoke-interface {v3}, Landroidx/transition/Transition$d;->e()V
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_2
-
-    .line 17
-    :cond_3
-    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
-
-    :cond_4
-    return-void
-.end method
-
-.method public C()V
+.method public A()V
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Landroidx/transition/Transition;->J()V
+    invoke-virtual {p0}, Landroidx/transition/Transition;->H()V
 
     .line 2
     invoke-static {}, Landroidx/transition/Transition;->q()Lm/a;
@@ -1122,7 +980,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1143,26 +1001,26 @@
     check-cast v2, Landroid/animation/Animator;
 
     .line 4
-    invoke-virtual {v0, v2}, Lm/g;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Lm/h;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 5
-    invoke-virtual {p0}, Landroidx/transition/Transition;->J()V
+    invoke-virtual {p0}, Landroidx/transition/Transition;->H()V
 
     if-eqz v2, :cond_0
 
     .line 6
-    new-instance v3, Lv0/q;
+    new-instance v3, Lt0/n;
 
-    invoke-direct {v3, p0, v0}, Lv0/q;-><init>(Landroidx/transition/Transition;Lm/a;)V
+    invoke-direct {v3, p0, v0}, Lt0/n;-><init>(Landroidx/transition/Transition;Lm/a;)V
 
     invoke-virtual {v2, v3}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 7
-    iget-wide v3, p0, Landroidx/transition/Transition;->i:J
+    iget-wide v3, p0, Landroidx/transition/Transition;->h:J
 
     const-wide/16 v5, 0x0
 
@@ -1175,11 +1033,11 @@
 
     .line 9
     :cond_1
-    iget-wide v3, p0, Landroidx/transition/Transition;->h:J
+    iget-wide v3, p0, Landroidx/transition/Transition;->g:J
 
-    cmp-long v7, v3, v5
+    cmp-long v5, v3, v5
 
-    if-ltz v7, :cond_2
+    if-ltz v5, :cond_2
 
     .line 10
     invoke-virtual {v2}, Landroid/animation/Animator;->getStartDelay()J
@@ -1192,7 +1050,7 @@
 
     .line 11
     :cond_2
-    iget-object v3, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
+    iget-object v3, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
 
     if-eqz v3, :cond_3
 
@@ -1201,9 +1059,9 @@
 
     .line 13
     :cond_3
-    new-instance v3, Lv0/r;
+    new-instance v3, Lt0/o;
 
-    invoke-direct {v3, p0}, Lv0/r;-><init>(Landroidx/transition/Transition;)V
+    invoke-direct {v3, p0}, Lt0/o;-><init>(Landroidx/transition/Transition;)V
 
     invoke-virtual {v2, v3}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -1214,7 +1072,7 @@
 
     .line 15
     :cond_4
-    iget-object v0, p0, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1224,59 +1082,7 @@
     return-void
 .end method
 
-.method public D(J)Landroidx/transition/Transition;
-    .locals 0
-
-    iput-wide p1, p0, Landroidx/transition/Transition;->i:J
-
-    return-object p0
-.end method
-
-.method public E(Landroidx/transition/Transition$c;)V
-    .locals 0
-
-    iput-object p1, p0, Landroidx/transition/Transition;->z:Landroidx/transition/Transition$c;
-
-    return-void
-.end method
-
-.method public F(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
-    .locals 0
-
-    iput-object p1, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
-
-    return-object p0
-.end method
-
-.method public G(Landroidx/transition/PathMotion;)V
-    .locals 0
-
-    if-nez p1, :cond_0
-
-    .line 1
-    sget-object p1, Landroidx/transition/Transition;->C:Landroidx/transition/Transition$a;
-
-    iput-object p1, p0, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    iput-object p1, p0, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
-
-    :goto_0
-    return-void
-.end method
-
-.method public H(Landroidx/fragment/app/p;)V
-    .locals 0
-
-    iput-object p1, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
-
-    return-void
-.end method
-
-.method public I(J)Landroidx/transition/Transition;
+.method public B(J)Landroidx/transition/Transition;
     .locals 0
 
     iput-wide p1, p0, Landroidx/transition/Transition;->h:J
@@ -1284,16 +1090,68 @@
     return-object p0
 .end method
 
-.method public final J()V
+.method public C(Landroidx/transition/Transition$c;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/transition/Transition;->y:Landroidx/transition/Transition$c;
+
+    return-void
+.end method
+
+.method public D(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
+    .locals 0
+
+    iput-object p1, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
+
+    return-object p0
+.end method
+
+.method public E(Landroidx/transition/PathMotion;)V
+    .locals 0
+
+    if-nez p1, :cond_0
+
+    .line 1
+    sget-object p1, Landroidx/transition/Transition;->B:Landroidx/transition/Transition$a;
+
+    iput-object p1, p0, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iput-object p1, p0, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+
+    :goto_0
+    return-void
+.end method
+
+.method public F(Landroidx/fragment/app/p;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
+
+    return-void
+.end method
+
+.method public G(J)Landroidx/transition/Transition;
+    .locals 0
+
+    iput-wide p1, p0, Landroidx/transition/Transition;->g:J
+
+    return-object p0
+.end method
+
+.method public final H()V
     .locals 5
 
     .line 1
-    iget v0, p0, Landroidx/transition/Transition;->t:I
+    iget v0, p0, Landroidx/transition/Transition;->s:I
 
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
@@ -1306,7 +1164,7 @@
     if-lez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 4
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
@@ -1320,7 +1178,7 @@
 
     move-result v2
 
-    const/4 v3, 0x0
+    move v3, v1
 
     :goto_0
     if-ge v3, v2, :cond_0
@@ -1332,7 +1190,7 @@
 
     check-cast v4, Landroidx/transition/Transition$d;
 
-    invoke-interface {v4}, Landroidx/transition/Transition$d;->d()V
+    invoke-interface {v4}, Landroidx/transition/Transition$d;->a()V
 
     add-int/lit8 v3, v3, 0x1
 
@@ -1340,24 +1198,24 @@
 
     .line 7
     :cond_0
-    iput-boolean v1, p0, Landroidx/transition/Transition;->v:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
 
     .line 8
     :cond_1
-    iget v0, p0, Landroidx/transition/Transition;->t:I
+    iget v0, p0, Landroidx/transition/Transition;->s:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Landroidx/transition/Transition;->t:I
+    iput v0, p0, Landroidx/transition/Transition;->s:I
 
     return-void
 .end method
 
-.method public K(Ljava/lang/String;)Ljava/lang/String;
+.method public I(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1396,29 +1254,29 @@
     move-result-object p1
 
     .line 4
-    iget-wide v0, p0, Landroidx/transition/Transition;->i:J
+    iget-wide v0, p0, Landroidx/transition/Transition;->h:J
 
     const-wide/16 v2, -0x1
 
-    const-string v4, ") "
+    cmp-long v0, v0, v2
 
-    cmp-long v5, v0, v2
+    const-string v1, ") "
 
-    if-eqz v5, :cond_0
+    if-eqz v0, :cond_0
 
     const-string v0, "dur("
 
     .line 5
-    invoke-static {p1, v0}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v0}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 6
-    iget-wide v0, p0, Landroidx/transition/Transition;->i:J
+    iget-wide v4, p0, Landroidx/transition/Transition;->h:J
 
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1426,25 +1284,25 @@
 
     .line 7
     :cond_0
-    iget-wide v0, p0, Landroidx/transition/Transition;->h:J
+    iget-wide v4, p0, Landroidx/transition/Transition;->g:J
 
-    cmp-long v5, v0, v2
+    cmp-long v0, v4, v2
 
-    if-eqz v5, :cond_1
+    if-eqz v0, :cond_1
 
     const-string v0, "dly("
 
     .line 8
-    invoke-static {p1, v0}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v0}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 9
-    iget-wide v0, p0, Landroidx/transition/Transition;->h:J
+    iget-wide v2, p0, Landroidx/transition/Transition;->g:J
 
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1452,23 +1310,23 @@
 
     .line 10
     :cond_1
-    iget-object v0, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
+    iget-object v0, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
 
     if-eqz v0, :cond_2
 
     const-string v0, "interp("
 
     .line 11
-    invoke-static {p1, v0}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v0}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 12
-    iget-object v0, p0, Landroidx/transition/Transition;->j:Landroid/animation/TimeInterpolator;
+    iget-object v0, p0, Landroidx/transition/Transition;->i:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1476,7 +1334,7 @@
 
     .line 13
     :cond_2
-    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1484,7 +1342,7 @@
 
     if-gtz v0, :cond_3
 
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1496,12 +1354,12 @@
     const-string v0, "tgts("
 
     .line 14
-    invoke-static {p1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 15
-    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1513,11 +1371,11 @@
 
     if-lez v0, :cond_5
 
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 16
     :goto_0
-    iget-object v3, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -1528,18 +1386,18 @@
     if-lez v0, :cond_4
 
     .line 17
-    invoke-static {p1, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 18
     :cond_4
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 19
-    iget-object v3, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1557,7 +1415,7 @@
 
     .line 20
     :cond_5
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1567,7 +1425,7 @@
 
     .line 21
     :goto_1
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1578,18 +1436,18 @@
     if-lez v2, :cond_6
 
     .line 22
-    invoke-static {p1, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 23
     :cond_6
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 24
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1609,7 +1467,7 @@
     const-string v0, ")"
 
     .line 25
-    invoke-static {p1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1621,7 +1479,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -1630,11 +1488,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1644,7 +1502,7 @@
 .method public b(Landroid/view/View;)Landroidx/transition/Transition;
     .locals 1
 
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1666,7 +1524,7 @@
     return-object v0
 .end method
 
-.method public abstract d(Lv0/s;)V
+.method public abstract d(Lt0/p;)V
 .end method
 
 .method public final e(Landroid/view/View;Z)V
@@ -1690,44 +1548,44 @@
     if-eqz v0, :cond_3
 
     .line 3
-    new-instance v0, Lv0/s;
+    new-instance v0, Lt0/p;
 
-    invoke-direct {v0, p1}, Lv0/s;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p1}, Lt0/p;-><init>(Landroid/view/View;)V
 
     if-eqz p2, :cond_1
 
     .line 4
-    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->g(Lv0/s;)V
+    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->g(Lt0/p;)V
 
     goto :goto_0
 
     .line 5
     :cond_1
-    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->d(Lv0/s;)V
+    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->d(Lt0/p;)V
 
     .line 6
     :goto_0
-    iget-object v1, v0, Lv0/s;->c:Ljava/util/ArrayList;
+    iget-object v1, v0, Lt0/p;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 7
-    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->f(Lv0/s;)V
+    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->f(Lt0/p;)V
 
     if-eqz p2, :cond_2
 
     .line 8
-    iget-object v1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object v1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    invoke-static {v1, p1, v0}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v1, p1, v0}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     goto :goto_1
 
     .line 9
     :cond_2
-    iget-object v1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object v1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    invoke-static {v1, p1, v0}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v1, p1, v0}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     .line 10
     :cond_3
@@ -1764,32 +1622,32 @@
     return-void
 .end method
 
-.method public f(Lv0/s;)V
+.method public f(Lt0/p;)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p1, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object v0, p1, Lt0/p;->a:Ljava/util/HashMap;
 
-    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/HashMap;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/p;->e()V
+    invoke-virtual {v0}, Landroidx/fragment/app/p;->p()V
 
-    sget-object v0, Lv0/e0;->g:[Ljava/lang/String;
+    sget-object v0, Lt0/a0;->f:[Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     const/4 v3, 0x2
@@ -1797,11 +1655,11 @@
     if-ge v2, v3, :cond_1
 
     .line 3
-    iget-object v3, p1, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object v3, p1, Lt0/p;->a:Ljava/util/HashMap;
 
     aget-object v4, v0, v2
 
-    invoke-interface {v3, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -1821,25 +1679,25 @@
     if-nez v1, :cond_2
 
     .line 4
-    iget-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
+    iget-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
 
-    invoke-virtual {v0, p1}, Landroidx/fragment/app/p;->c(Lv0/s;)V
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/p;->f(Lt0/p;)V
 
     :cond_2
     return-void
 .end method
 
-.method public abstract g(Lv0/s;)V
+.method public abstract g(Lt0/p;)V
 .end method
 
 .method public final h(Landroid/view/ViewGroup;Z)V
     .locals 5
 
     .line 1
-    invoke-virtual {p0, p2}, Landroidx/transition/Transition;->i(Z)V
+    invoke-virtual {p0, p2}, Landroidx/transition/Transition;->j(Z)V
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1847,7 +1705,7 @@
 
     if-gtz v0, :cond_1
 
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1867,11 +1725,11 @@
     :goto_0
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 4
     :goto_1
-    iget-object v2, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1880,7 +1738,7 @@
     if-ge v1, v2, :cond_5
 
     .line 5
-    iget-object v2, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1900,44 +1758,44 @@
     if-eqz v2, :cond_4
 
     .line 7
-    new-instance v3, Lv0/s;
+    new-instance v3, Lt0/p;
 
-    invoke-direct {v3, v2}, Lv0/s;-><init>(Landroid/view/View;)V
+    invoke-direct {v3, v2}, Lt0/p;-><init>(Landroid/view/View;)V
 
     if-eqz p2, :cond_2
 
     .line 8
-    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->g(Lv0/s;)V
+    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->g(Lt0/p;)V
 
     goto :goto_2
 
     .line 9
     :cond_2
-    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->d(Lv0/s;)V
+    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->d(Lt0/p;)V
 
     .line 10
     :goto_2
-    iget-object v4, v3, Lv0/s;->c:Ljava/util/ArrayList;
+    iget-object v4, v3, Lt0/p;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v4, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 11
-    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->f(Lv0/s;)V
+    invoke-virtual {p0, v3}, Landroidx/transition/Transition;->f(Lt0/p;)V
 
     if-eqz p2, :cond_3
 
     .line 12
-    iget-object v4, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object v4, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    invoke-static {v4, v2, v3}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v4, v2, v3}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     goto :goto_3
 
     .line 13
     :cond_3
-    iget-object v4, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object v4, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    invoke-static {v4, v2, v3}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v4, v2, v3}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     :cond_4
     :goto_3
@@ -1948,7 +1806,7 @@
     .line 14
     :cond_5
     :goto_4
-    iget-object p1, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -1957,7 +1815,7 @@
     if-ge v0, p1, :cond_8
 
     .line 15
-    iget-object p1, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1966,44 +1824,44 @@
     check-cast p1, Landroid/view/View;
 
     .line 16
-    new-instance v1, Lv0/s;
+    new-instance v1, Lt0/p;
 
-    invoke-direct {v1, p1}, Lv0/s;-><init>(Landroid/view/View;)V
+    invoke-direct {v1, p1}, Lt0/p;-><init>(Landroid/view/View;)V
 
     if-eqz p2, :cond_6
 
     .line 17
-    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->g(Lv0/s;)V
+    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->g(Lt0/p;)V
 
     goto :goto_5
 
     .line 18
     :cond_6
-    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->d(Lv0/s;)V
+    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->d(Lt0/p;)V
 
     .line 19
     :goto_5
-    iget-object v2, v1, Lv0/s;->c:Ljava/util/ArrayList;
+    iget-object v2, v1, Lt0/p;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 20
-    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->f(Lv0/s;)V
+    invoke-virtual {p0, v1}, Landroidx/transition/Transition;->f(Lt0/p;)V
 
     if-eqz p2, :cond_7
 
     .line 21
-    iget-object v2, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object v2, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    invoke-static {v2, p1, v1}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v2, p1, v1}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     goto :goto_6
 
     .line 22
     :cond_7
-    iget-object v2, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object v2, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    invoke-static {v2, p1, v1}, Landroidx/transition/Transition;->c(Lv0/t;Landroid/view/View;Lv0/s;)V
+    invoke-static {v2, p1, v1}, Landroidx/transition/Transition;->c(Lt0/q;Landroid/view/View;Lt0/p;)V
 
     :goto_6
     add-int/lit8 v0, v0, 0x1
@@ -2015,55 +1873,55 @@
     return-void
 .end method
 
-.method public final i(Z)V
+.method public final j(Z)V
     .locals 0
 
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->a:Lm/a;
+    iget-object p1, p1, Lt0/q;->a:Lm/a;
 
-    invoke-virtual {p1}, Lm/g;->clear()V
+    invoke-virtual {p1}, Lm/h;->clear()V
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->b:Landroid/util/SparseArray;
+    iget-object p1, p1, Lt0/q;->b:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Landroid/util/SparseArray;->clear()V
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->c:Lm/d;
+    iget-object p1, p1, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {p1}, Lm/d;->b()V
+    invoke-virtual {p1}, Lm/e;->a()V
 
     goto :goto_0
 
     .line 4
     :cond_0
-    iget-object p1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->a:Lm/a;
+    iget-object p1, p1, Lt0/q;->a:Lm/a;
 
-    invoke-virtual {p1}, Lm/g;->clear()V
+    invoke-virtual {p1}, Lm/h;->clear()V
 
     .line 5
-    iget-object p1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->b:Landroid/util/SparseArray;
+    iget-object p1, p1, Lt0/q;->b:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Landroid/util/SparseArray;->clear()V
 
     .line 6
-    iget-object p1, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object p1, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    iget-object p1, p1, Lv0/t;->c:Lm/d;
+    iget-object p1, p1, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {p1}, Lm/d;->b()V
+    invoke-virtual {p1}, Lm/e;->a()V
 
     :goto_0
     return-void
@@ -2087,27 +1945,27 @@
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v2, v1, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iput-object v2, v1, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     .line 3
-    new-instance v2, Lv0/t;
+    new-instance v2, Lt0/q;
 
-    invoke-direct {v2}, Lv0/t;-><init>()V
+    invoke-direct {v2}, Lt0/q;-><init>()V
 
-    iput-object v2, v1, Landroidx/transition/Transition;->m:Lv0/t;
+    iput-object v2, v1, Landroidx/transition/Transition;->l:Lt0/q;
 
     .line 4
-    new-instance v2, Lv0/t;
+    new-instance v2, Lt0/q;
 
-    invoke-direct {v2}, Lv0/t;-><init>()V
+    invoke-direct {v2}, Lt0/q;-><init>()V
 
-    iput-object v2, v1, Landroidx/transition/Transition;->n:Lv0/t;
+    iput-object v2, v1, Landroidx/transition/Transition;->m:Lt0/q;
 
     .line 5
-    iput-object v0, v1, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
+    iput-object v0, v1, Landroidx/transition/Transition;->p:Ljava/util/ArrayList;
 
     .line 6
-    iput-object v0, v1, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
+    iput-object v0, v1, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
     :try_end_0
     .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2117,7 +1975,7 @@
     return-object v0
 .end method
 
-.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public l(Landroid/view/ViewGroup;Lt0/p;Lt0/p;)Landroid/animation/Animator;
     .locals 0
 
     const/4 p1, 0x0
@@ -2125,19 +1983,19 @@
     return-object p1
 .end method
 
-.method public m(Landroid/view/ViewGroup;Lv0/t;Lv0/t;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+.method public m(Landroid/view/ViewGroup;Lt0/q;Lt0/q;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/view/ViewGroup;",
-            "Lv0/t;",
-            "Lv0/t;",
+            "Lt0/q;",
+            "Lt0/q;",
             "Ljava/util/ArrayList<",
-            "Lv0/s;",
+            "Lt0/p;",
             ">;",
             "Ljava/util/ArrayList<",
-            "Lv0/s;",
+            "Lt0/p;",
             ">;)V"
         }
     .end annotation
@@ -2175,7 +2033,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lv0/s;
+    check-cast v2, Lt0/p;
 
     move-object/from16 v14, p5
 
@@ -2184,12 +2042,12 @@
 
     move-result-object v3
 
-    check-cast v3, Lv0/s;
+    check-cast v3, Lt0/p;
 
     if-eqz v2, :cond_0
 
     .line 6
-    iget-object v5, v2, Lv0/s;->c:Ljava/util/ArrayList;
+    iget-object v5, v2, Lt0/p;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2203,7 +2061,7 @@
     if-eqz v3, :cond_1
 
     .line 7
-    iget-object v5, v3, Lv0/s;->c:Ljava/util/ArrayList;
+    iget-object v5, v3, Lt0/p;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2231,7 +2089,7 @@
     if-eqz v3, :cond_5
 
     .line 8
-    invoke-virtual {v6, v2, v3}, Landroidx/transition/Transition;->t(Lv0/s;Lv0/s;)Z
+    invoke-virtual {v6, v2, v3}, Landroidx/transition/Transition;->t(Lt0/p;Lt0/p;)Z
 
     move-result v5
 
@@ -2252,7 +2110,7 @@
     if-eqz v5, :cond_2
 
     .line 9
-    invoke-virtual {v6, v7, v2, v3}, Landroidx/transition/Transition;->l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    invoke-virtual {v6, v7, v2, v3}, Landroidx/transition/Transition;->l(Landroid/view/ViewGroup;Lt0/p;Lt0/p;)Landroid/animation/Animator;
 
     move-result-object v5
 
@@ -2261,7 +2119,7 @@
     if-eqz v3, :cond_a
 
     .line 10
-    iget-object v15, v3, Lv0/s;->b:Landroid/view/View;
+    iget-object v15, v3, Lt0/p;->b:Landroid/view/View;
 
     .line 11
     invoke-virtual/range {p0 .. p0}, Landroidx/transition/Transition;->r()[Ljava/lang/String;
@@ -2276,9 +2134,9 @@
     if-lez v4, :cond_8
 
     .line 13
-    new-instance v4, Lv0/s;
+    new-instance v4, Lt0/p;
 
-    invoke-direct {v4, v15}, Lv0/s;-><init>(Landroid/view/View;)V
+    invoke-direct {v4, v15}, Lt0/p;-><init>(Landroid/view/View;)V
 
     move-object/from16 v17, v5
 
@@ -2287,17 +2145,17 @@
     move-object/from16 v10, p3
 
     .line 14
-    iget-object v5, v10, Lv0/t;->a:Lm/a;
+    iget-object v5, v10, Lt0/q;->a:Lm/a;
 
     const/4 v10, 0x0
 
     .line 15
-    invoke-virtual {v5, v15, v10}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v15, v10}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
     .line 16
-    check-cast v5, Lv0/s;
+    check-cast v5, Lt0/p;
 
     if-eqz v5, :cond_6
 
@@ -2310,25 +2168,25 @@
     if-ge v10, v13, :cond_6
 
     .line 18
-    iget-object v13, v4, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object v13, v4, Lt0/p;->a:Ljava/util/HashMap;
 
     aget-object v14, v11, v10
 
     move/from16 v18, v12
 
-    iget-object v12, v5, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object v12, v5, Lt0/p;->a:Ljava/util/HashMap;
 
     move-object/from16 v19, v5
 
     aget-object v5, v11, v10
 
     .line 19
-    invoke-interface {v12, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v12, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
     .line 20
-    invoke-interface {v13, v14, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v13, v14, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v10, v10, 0x1
 
@@ -2344,7 +2202,7 @@
     move/from16 v18, v12
 
     .line 21
-    iget v5, v8, Lm/g;->i:I
+    iget v5, v8, Lm/h;->h:I
 
     const/4 v10, 0x0
 
@@ -2352,7 +2210,7 @@
     if-ge v10, v5, :cond_9
 
     .line 22
-    invoke-virtual {v8, v10}, Lm/g;->h(I)Ljava/lang/Object;
+    invoke-virtual {v8, v10}, Lm/h;->h(I)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -2361,7 +2219,7 @@
     const/4 v12, 0x0
 
     .line 23
-    invoke-virtual {v8, v11, v12}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v11, v12}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -2369,7 +2227,7 @@
     check-cast v11, Landroidx/transition/Transition$b;
 
     .line 25
-    iget-object v13, v11, Landroidx/transition/Transition$b;->c:Lv0/s;
+    iget-object v13, v11, Landroidx/transition/Transition$b;->c:Lt0/p;
 
     if-eqz v13, :cond_7
 
@@ -2380,7 +2238,7 @@
     iget-object v13, v11, Landroidx/transition/Transition$b;->b:Ljava/lang/String;
 
     .line 26
-    iget-object v14, v6, Landroidx/transition/Transition;->g:Ljava/lang/String;
+    iget-object v14, v6, Landroidx/transition/Transition;->f:Ljava/lang/String;
 
     .line 27
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2390,9 +2248,9 @@
     if-eqz v13, :cond_7
 
     .line 28
-    iget-object v11, v11, Landroidx/transition/Transition$b;->c:Lv0/s;
+    iget-object v11, v11, Landroidx/transition/Transition$b;->c:Lt0/p;
 
-    invoke-virtual {v11, v4}, Lv0/s;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v4}, Lt0/p;->equals(Ljava/lang/Object;)Z
 
     move-result v11
 
@@ -2440,7 +2298,7 @@
     const/4 v12, 0x0
 
     .line 29
-    iget-object v4, v2, Lv0/s;->b:Landroid/view/View;
+    iget-object v4, v2, Lt0/p;->b:Landroid/view/View;
 
     move-object v15, v4
 
@@ -2452,17 +2310,17 @@
     if-eqz v10, :cond_c
 
     .line 30
-    iget-object v4, v6, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
+    iget-object v4, v6, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
 
     if-eqz v4, :cond_b
 
     .line 31
-    invoke-virtual {v4, v7, v6, v2, v3}, Landroidx/fragment/app/p;->g(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lv0/s;Lv0/s;)J
+    invoke-virtual {v4, v7, v6, v2, v3}, Landroidx/fragment/app/p;->D(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lt0/p;Lt0/p;)J
 
     move-result-wide v2
 
     .line 32
-    iget-object v4, v6, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iget-object v4, v6, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -2484,15 +2342,15 @@
     new-instance v13, Landroidx/transition/Transition$b;
 
     .line 35
-    iget-object v2, v6, Landroidx/transition/Transition;->g:Ljava/lang/String;
+    iget-object v2, v6, Landroidx/transition/Transition;->f:Ljava/lang/String;
 
     .line 36
-    sget-object v0, Lv0/x;->a:Lv0/d0;
+    sget-object v0, Lt0/u;->a:Lt0/y;
 
     .line 37
-    new-instance v4, Lv0/f0;
+    new-instance v4, Lt0/b0;
 
-    invoke-direct {v4, v7}, Lv0/f0;-><init>(Landroid/view/View;)V
+    invoke-direct {v4, v7}, Lt0/b0;-><init>(Landroid/view/View;)V
 
     move-object v0, v13
 
@@ -2501,13 +2359,13 @@
     move-object/from16 v3, p0
 
     .line 38
-    invoke-direct/range {v0 .. v5}, Landroidx/transition/Transition$b;-><init>(Landroid/view/View;Ljava/lang/String;Landroidx/transition/Transition;Lv0/g0;Lv0/s;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/transition/Transition$b;-><init>(Landroid/view/View;Ljava/lang/String;Landroidx/transition/Transition;Lt0/c0;Lt0/p;)V
 
     .line 39
-    invoke-virtual {v8, v10, v13}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v10, v13}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
-    iget-object v0, v6, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iget-object v0, v6, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -2545,7 +2403,7 @@
     move-result v2
 
     .line 44
-    iget-object v3, v6, Landroidx/transition/Transition;->x:Ljava/util/ArrayList;
+    iget-object v3, v6, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2583,18 +2441,18 @@
     .locals 6
 
     .line 1
-    iget v0, p0, Landroidx/transition/Transition;->t:I
+    iget v0, p0, Landroidx/transition/Transition;->s:I
 
     const/4 v1, 0x1
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Landroidx/transition/Transition;->t:I
+    iput v0, p0, Landroidx/transition/Transition;->s:I
 
     if-nez v0, :cond_5
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -2607,7 +2465,7 @@
     if-lez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 4
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
@@ -2621,7 +2479,7 @@
 
     move-result v3
 
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_0
     if-ge v4, v3, :cond_0
@@ -2633,33 +2491,33 @@
 
     check-cast v5, Landroidx/transition/Transition$d;
 
-    invoke-interface {v5, p0}, Landroidx/transition/Transition$d;->c(Landroidx/transition/Transition;)V
+    invoke-interface {v5, p0}, Landroidx/transition/Transition$d;->e(Landroidx/transition/Transition;)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 7
     :goto_1
-    iget-object v3, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object v3, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    iget-object v3, v3, Lv0/t;->c:Lm/d;
+    iget-object v3, v3, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {v3}, Lm/d;->g()I
+    invoke-virtual {v3}, Lm/e;->f()I
 
     move-result v3
 
     if-ge v0, v3, :cond_2
 
     .line 8
-    iget-object v3, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object v3, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
-    iget-object v3, v3, Lv0/t;->c:Lm/d;
+    iget-object v3, v3, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {v3, v0}, Lm/d;->h(I)Ljava/lang/Object;
+    invoke-virtual {v3, v0}, Lm/e;->g(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -2668,7 +2526,7 @@
     if-eqz v3, :cond_1
 
     .line 9
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 10
     invoke-virtual {v3, v2}, Landroid/view/View;->setHasTransientState(Z)V
@@ -2679,26 +2537,26 @@
     goto :goto_1
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 11
     :goto_2
-    iget-object v3, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object v3, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    iget-object v3, v3, Lv0/t;->c:Lm/d;
+    iget-object v3, v3, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {v3}, Lm/d;->g()I
+    invoke-virtual {v3}, Lm/e;->f()I
 
     move-result v3
 
     if-ge v0, v3, :cond_4
 
     .line 12
-    iget-object v3, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object v3, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
-    iget-object v3, v3, Lv0/t;->c:Lm/d;
+    iget-object v3, v3, Lt0/q;->c:Lm/e;
 
-    invoke-virtual {v3, v0}, Lm/d;->h(I)Ljava/lang/Object;
+    invoke-virtual {v3, v0}, Lm/e;->g(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -2707,7 +2565,7 @@
     if-eqz v3, :cond_3
 
     .line 13
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {v3, v2}, Landroid/view/View;->setHasTransientState(Z)V
@@ -2719,7 +2577,7 @@
 
     .line 15
     :cond_4
-    iput-boolean v1, p0, Landroidx/transition/Transition;->v:Z
+    iput-boolean v1, p0, Landroidx/transition/Transition;->u:Z
 
     :cond_5
     return-void
@@ -2729,7 +2587,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->z:Landroidx/transition/Transition$c;
+    iget-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/transition/Transition$c;
 
     if-nez v0, :cond_0
 
@@ -2746,16 +2604,16 @@
     return-object v0
 .end method
 
-.method public final p(Landroid/view/View;Z)Lv0/s;
+.method public final p(Landroid/view/View;Z)Lt0/p;
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->o:Landroidx/transition/TransitionSet;
+    iget-object v0, p0, Landroidx/transition/Transition;->n:Landroidx/transition/TransitionSet;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1, p2}, Landroidx/transition/Transition;->p(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {v0, p1, p2}, Landroidx/transition/Transition;->p(Landroid/view/View;Z)Lt0/p;
 
     move-result-object p1
 
@@ -2765,12 +2623,12 @@
     if-eqz p2, :cond_1
 
     .line 3
-    iget-object v0, p0, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->p:Ljava/util/ArrayList;
 
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
 
     :goto_0
     const/4 v1, 0x0
@@ -2797,7 +2655,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lv0/s;
+    check-cast v5, Lt0/p;
 
     if-nez v5, :cond_3
 
@@ -2805,7 +2663,7 @@
 
     .line 6
     :cond_3
-    iget-object v5, v5, Lv0/s;->b:Landroid/view/View;
+    iget-object v5, v5, Lt0/p;->b:Landroid/view/View;
 
     if-ne v5, p1, :cond_4
 
@@ -2825,12 +2683,12 @@
     if-eqz p2, :cond_6
 
     .line 7
-    iget-object p1, p0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
 
     goto :goto_3
 
     :cond_6
-    iget-object p1, p0, Landroidx/transition/Transition;->q:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->p:Ljava/util/ArrayList;
 
     .line 8
     :goto_3
@@ -2840,7 +2698,7 @@
 
     move-object v1, p1
 
-    check-cast v1, Lv0/s;
+    check-cast v1, Lt0/p;
 
     :cond_7
     return-object v1
@@ -2854,16 +2712,16 @@
     return-object v0
 .end method
 
-.method public final s(Landroid/view/View;Z)Lv0/s;
+.method public final s(Landroid/view/View;Z)Lt0/p;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->o:Landroidx/transition/TransitionSet;
+    iget-object v0, p0, Landroidx/transition/Transition;->n:Landroidx/transition/TransitionSet;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1, p2}, Landroidx/transition/Transition;->s(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {v0, p1, p2}, Landroidx/transition/Transition;->s(Landroid/view/View;Z)Lt0/p;
 
     move-result-object p1
 
@@ -2873,31 +2731,31 @@
     if-eqz p2, :cond_1
 
     .line 3
-    iget-object p2, p0, Landroidx/transition/Transition;->m:Lv0/t;
+    iget-object p2, p0, Landroidx/transition/Transition;->l:Lt0/q;
 
     goto :goto_0
 
     :cond_1
-    iget-object p2, p0, Landroidx/transition/Transition;->n:Lv0/t;
+    iget-object p2, p0, Landroidx/transition/Transition;->m:Lt0/q;
 
     .line 4
     :goto_0
-    iget-object p2, p2, Lv0/t;->a:Lm/a;
+    iget-object p2, p2, Lt0/q;->a:Lm/a;
 
     const/4 v0, 0x0
 
     .line 5
-    invoke-virtual {p2, p1, v0}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, p1, v0}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 6
-    check-cast p1, Lv0/s;
+    check-cast p1, Lt0/p;
 
     return-object p1
 .end method
 
-.method public t(Lv0/s;Lv0/s;)Z
+.method public t(Lt0/p;Lt0/p;)Z
     .locals 5
 
     const/4 v0, 0x0
@@ -2916,7 +2774,7 @@
     .line 2
     array-length v2, v1
 
-    const/4 v3, 0x0
+    move v3, v0
 
     :goto_0
     if-ge v3, v2, :cond_3
@@ -2924,7 +2782,7 @@
     aget-object v4, v1, v3
 
     .line 3
-    invoke-static {p1, p2, v4}, Landroidx/transition/Transition;->v(Lv0/s;Lv0/s;Ljava/lang/String;)Z
+    invoke-static {p1, p2, v4}, Landroidx/transition/Transition;->v(Lt0/p;Lt0/p;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -2939,9 +2797,9 @@
 
     .line 4
     :cond_1
-    iget-object v1, p1, Lv0/s;->a:Ljava/util/HashMap;
+    iget-object v1, p1, Lt0/p;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -2963,7 +2821,7 @@
     check-cast v2, Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, p2, v2}, Landroidx/transition/Transition;->v(Lv0/s;Lv0/s;Ljava/lang/String;)Z
+    invoke-static {p1, p2, v2}, Landroidx/transition/Transition;->v(Lt0/p;Lt0/p;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -2981,7 +2839,7 @@
 
     const-string v0, ""
 
-    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->K(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Landroidx/transition/Transition;->I(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2997,7 +2855,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -3007,7 +2865,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -3019,7 +2877,7 @@
 
     .line 3
     :cond_0
-    iget-object v1, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3031,7 +2889,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -3055,7 +2913,7 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/Transition;->v:Z
+    iget-boolean v0, p0, Landroidx/transition/Transition;->u:Z
 
     if-nez v0, :cond_4
 
@@ -3065,10 +2923,10 @@
     move-result-object v0
 
     .line 3
-    iget v1, v0, Lm/g;->i:I
+    iget v1, v0, Lm/h;->h:I
 
     .line 4
-    sget-object v2, Lv0/x;->a:Lv0/d0;
+    sget-object v2, Lt0/u;->a:Lt0/y;
 
     .line 5
     invoke-virtual {p1}, Landroid/view/View;->getWindowId()Landroid/view/WindowId;
@@ -3085,7 +2943,7 @@
     if-ltz v1, :cond_2
 
     .line 6
-    invoke-virtual {v0, v1}, Lm/g;->k(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lm/h;->k(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -3096,16 +2954,16 @@
 
     if-eqz v5, :cond_1
 
-    iget-object v4, v4, Landroidx/transition/Transition$b;->d:Lv0/g0;
+    iget-object v4, v4, Landroidx/transition/Transition$b;->d:Lt0/c0;
 
     .line 8
-    instance-of v5, v4, Lv0/f0;
+    instance-of v5, v4, Lt0/b0;
 
     if-eqz v5, :cond_0
 
-    check-cast v4, Lv0/f0;
+    check-cast v4, Lt0/b0;
 
-    iget-object v4, v4, Lv0/f0;->a:Landroid/view/WindowId;
+    iget-object v4, v4, Lt0/b0;->a:Landroid/view/WindowId;
 
     invoke-virtual {v4, p1}, Landroid/view/WindowId;->equals(Ljava/lang/Object;)Z
 
@@ -3113,20 +2971,20 @@
 
     if-eqz v4, :cond_0
 
-    const/4 v3, 0x1
+    move v3, v2
 
     :cond_0
     if-eqz v3, :cond_1
 
     .line 9
-    invoke-virtual {v0, v1}, Lm/g;->h(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lm/h;->h(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/animation/Animator;
 
     .line 10
-    invoke-static {v3}, Landroidx/transition/a;->b(Landroid/animation/Animator;)V
+    invoke-virtual {v3}, Landroid/animation/Animator;->pause()V
 
     :cond_1
     add-int/lit8 v1, v1, -0x1
@@ -3135,7 +2993,7 @@
 
     .line 11
     :cond_2
-    iget-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     if-eqz p1, :cond_3
 
@@ -3146,7 +3004,7 @@
     if-lez p1, :cond_3
 
     .line 12
-    iget-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 13
     invoke-virtual {p1}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
@@ -3170,7 +3028,7 @@
 
     check-cast v1, Landroidx/transition/Transition$d;
 
-    invoke-interface {v1}, Landroidx/transition/Transition$d;->a()V
+    invoke-interface {v1}, Landroidx/transition/Transition$d;->b()V
 
     add-int/lit8 v3, v3, 0x1
 
@@ -3178,17 +3036,17 @@
 
     .line 16
     :cond_3
-    iput-boolean v2, p0, Landroidx/transition/Transition;->u:Z
+    iput-boolean v2, p0, Landroidx/transition/Transition;->t:Z
 
     :cond_4
     return-void
 .end method
 
-.method public y(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+.method public x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -3199,7 +3057,7 @@
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -3210,18 +3068,163 @@
     const/4 p1, 0x0
 
     .line 4
-    iput-object p1, p0, Landroidx/transition/Transition;->w:Ljava/util/ArrayList;
+    iput-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     :cond_1
     return-object p0
 .end method
 
-.method public z(Landroid/view/View;)Landroidx/transition/Transition;
+.method public y(Landroid/view/View;)Landroidx/transition/Transition;
     .locals 1
 
-    iget-object v0, p0, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     return-object p0
+.end method
+
+.method public z(Landroid/view/View;)V
+    .locals 6
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/transition/Transition;->t:Z
+
+    if-eqz v0, :cond_4
+
+    .line 2
+    iget-boolean v0, p0, Landroidx/transition/Transition;->u:Z
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_3
+
+    .line 3
+    invoke-static {}, Landroidx/transition/Transition;->q()Lm/a;
+
+    move-result-object v0
+
+    .line 4
+    iget v2, v0, Lm/h;->h:I
+
+    .line 5
+    sget-object v3, Lt0/u;->a:Lt0/y;
+
+    .line 6
+    invoke-virtual {p1}, Landroid/view/View;->getWindowId()Landroid/view/WindowId;
+
+    move-result-object p1
+
+    const/4 v3, 0x1
+
+    sub-int/2addr v2, v3
+
+    :goto_0
+    if-ltz v2, :cond_2
+
+    .line 7
+    invoke-virtual {v0, v2}, Lm/h;->k(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroidx/transition/Transition$b;
+
+    .line 8
+    iget-object v5, v4, Landroidx/transition/Transition$b;->a:Landroid/view/View;
+
+    if-eqz v5, :cond_1
+
+    iget-object v4, v4, Landroidx/transition/Transition$b;->d:Lt0/c0;
+
+    .line 9
+    instance-of v5, v4, Lt0/b0;
+
+    if-eqz v5, :cond_0
+
+    check-cast v4, Lt0/b0;
+
+    iget-object v4, v4, Lt0/b0;->a:Landroid/view/WindowId;
+
+    invoke-virtual {v4, p1}, Landroid/view/WindowId;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    move v4, v3
+
+    goto :goto_1
+
+    :cond_0
+    move v4, v1
+
+    :goto_1
+    if-eqz v4, :cond_1
+
+    .line 10
+    invoke-virtual {v0, v2}, Lm/h;->h(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/animation/Animator;
+
+    .line 11
+    invoke-virtual {v4}, Landroid/animation/Animator;->resume()V
+
+    :cond_1
+    add-int/lit8 v2, v2, -0x1
+
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    iget-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    if-lez p1, :cond_3
+
+    .line 13
+    iget-object p1, p0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
+
+    .line 14
+    invoke-virtual {p1}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/ArrayList;
+
+    .line 15
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    move v2, v1
+
+    :goto_2
+    if-ge v2, v0, :cond_3
+
+    .line 16
+    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/transition/Transition$d;
+
+    invoke-interface {v3}, Landroidx/transition/Transition$d;->c()V
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_2
+
+    .line 17
+    :cond_3
+    iput-boolean v1, p0, Landroidx/transition/Transition;->t:Z
+
+    :cond_4
+    return-void
 .end method

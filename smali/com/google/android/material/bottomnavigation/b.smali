@@ -17,13 +17,13 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Lf0/a0;Lcom/google/android/material/internal/o$c;)Lf0/a0;
+.method public final a(Landroid/view/View;Lf0/v;Lcom/google/android/material/internal/o$c;)Lf0/v;
     .locals 4
 
     .line 1
     iget v0, p3, Lcom/google/android/material/internal/o$c;->d:I
 
-    invoke-virtual {p2}, Lf0/a0;->d()I
+    invoke-virtual {p2}, Lf0/v;->b()I
 
     move-result v1
 
@@ -38,7 +38,7 @@
 
     iget p3, p3, Lcom/google/android/material/internal/o$c;->c:I
 
-    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1, v0, v2, p3, v1}, Landroid/view/View;->setPaddingRelative(IIII)V

@@ -1,11 +1,14 @@
 .class public final Lcom/google/android/material/internal/i$a;
-.super Lb2/z;
-.source "TextDrawableHelper.java"
+.super Ljava/lang/Object;
+.source "TextScale.java"
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/android/material/internal/i;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/android/material/internal/i;->l(Landroid/view/ViewGroup;Lt0/p;Lt0/p;)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,83 +18,45 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/internal/i;
+.field public final synthetic f:Landroid/widget/TextView;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/internal/i;)V
+.method public constructor <init>(Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
+    iput-object p1, p0, Lcom/google/android/material/internal/i$a;->f:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Lb2/z;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p1, Lcom/google/android/material/internal/i;->d:Z
-
-    .line 3
-    iget-object p1, p1, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
-
-    .line 4
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/google/android/material/internal/i$b;
+    check-cast p1, Ljava/lang/Float;
 
-    if-eqz p1, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
-    .line 5
-    invoke-interface {p1}, Lcom/google/android/material/internal/i$b;->a()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final d(Landroid/graphics/Typeface;Z)V
-    .locals 0
-
-    if-eqz p2, :cond_0
-
-    return-void
-
-    .line 1
-    :cond_0
-    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
-
-    const/4 p2, 0x1
+    move-result p1
 
     .line 2
-    iput-boolean p2, p1, Lcom/google/android/material/internal/i;->d:Z
+    iget-object v0, p0, Lcom/google/android/material/internal/i$a;->f:Landroid/widget/TextView;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleX(F)V
 
     .line 3
-    iget-object p1, p1, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/google/android/material/internal/i$a;->f:Landroid/widget/TextView;
 
-    .line 4
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleY(F)V
 
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/material/internal/i$b;
-
-    if-eqz p1, :cond_1
-
-    .line 5
-    invoke-interface {p1}, Lcom/google/android/material/internal/i$b;->a()V
-
-    :cond_1
     return-void
 .end method

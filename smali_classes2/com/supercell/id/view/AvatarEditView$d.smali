@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/AvatarEditView;
+.field public final synthetic f:Lcom/supercell/id/view/AvatarEditView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/AvatarEditView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$d;->g:Lcom/supercell/id/view/AvatarEditView;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$d;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$d;->g:Lcom/supercell/id/view/AvatarEditView;
+    iget-object p1, p0, Lcom/supercell/id/view/AvatarEditView$d;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 

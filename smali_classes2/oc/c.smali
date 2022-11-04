@@ -1,136 +1,72 @@
 .class public final Loc/c;
-.super Ljava/lang/Object;
-.source "Yytoken.java"
+.super Lif/i;
+.source "SharedDataBroadcastReceiver.kt"
+
+# interfaces
+.implements Lhf/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/a<",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public a:I
-
-.field public b:Ljava/lang/Object;
+.field public final synthetic f:Loc/d;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Object;)V
+.method public constructor <init>(Loc/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Loc/c;->f:Loc/d;
 
-    .line 2
-    iput p1, p0, Loc/c;->a:I
+    const/4 p1, 0x0
 
-    .line 3
-    iput-object p2, p0, Loc/c;->b:Ljava/lang/Object;
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
+.method public final invoke()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuffer;
+    sget-object v0, Loc/a;->b:Loc/a;
 
-    invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
+    iget-object v0, p0, Loc/c;->f:Loc/d;
+
+    iget-object v0, v0, Loc/d;->g:Ljava/lang/String;
+
+    const-string v1, "key"
 
     .line 2
-    iget v1, p0, Loc/c;->a:I
-
-    packed-switch v1, :pswitch_data_0
-
-    goto :goto_0
-
-    :pswitch_0
-    const-string v1, "COLON(:)"
+    invoke-static {v0, v1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+    sget-object v1, Loc/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
-    goto :goto_0
-
-    :pswitch_1
-    const-string v1, "COMMA(,)"
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_2
-    const-string v1, "RIGHT SQUARE(])"
-
-    .line 5
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_3
-    const-string v1, "LEFT SQUARE([)"
-
-    .line 6
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_4
-    const-string v1, "RIGHT BRACE(})"
-
-    .line 7
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_5
-    const-string v1, "LEFT BRACE({)"
-
-    .line 8
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_6
-    const-string v1, "VALUE("
-
-    .line 9
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    iget-object v1, p0, Loc/c;->b:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    :pswitch_7
-    const-string v1, "END OF FILE"
-
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    .line 11
-    :goto_0
-    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
+    check-cast v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
+
+    .line 4
+    :cond_0
+    sget-object v0, Lye/m;->a:Lye/m;
+
     return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch -0x1
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

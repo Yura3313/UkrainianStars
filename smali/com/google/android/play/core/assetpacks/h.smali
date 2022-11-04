@@ -16,11 +16,11 @@
 
     if-eq p1, p2, :cond_0
 
-    new-instance p1, Lcom/google/android/play/core/assetpacks/AssetPackException;
+    new-instance p1, Lcom/google/android/play/core/assetpacks/a;
 
     const/16 p2, -0x64
 
-    invoke-direct {p1, p2}, Lcom/google/android/play/core/assetpacks/AssetPackException;-><init>(I)V
+    invoke-direct {p1, p2}, Lcom/google/android/play/core/assetpacks/a;-><init>(I)V
 
     throw v0
 

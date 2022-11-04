@@ -1,6 +1,6 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;
 .super Ljava/lang/Object;
-.source "ProfileSelectorFragment.kt"
+.source "Comparisons.kt"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,31 +23,20 @@
         ">",
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;",
-        ">;"
+        "TT;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;
+# instance fields
+.field public final synthetic f:Ljava/util/Comparator;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;
-
-    invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;-><init>()V
-
-    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;->f:Ljava/util/Comparator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,20 +46,44 @@
 
 # virtual methods
 .method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$p;->f:Ljava/util/Comparator;
 
-    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->h:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;->f:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->h:Ljava/lang/String;
+    const-string v1, ""
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object p1, v1
 
     .line 3
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
+    :goto_0
+    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
+
+    .line 4
+    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;->f:Ljava/lang/String;
+
+    if-eqz p2, :cond_1
+
+    move-object v1, p2
+
+    .line 5
+    :cond_1
+    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
 

@@ -86,13 +86,6 @@
     invoke-virtual {v0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
     .line 2
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v0, 0x13
-
-    if-lt p2, v0, :cond_0
-
-    .line 3
     iget-object p2, p0, Lcom/kakaogame/web/WebViewContainer$WebViewClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {p1}, Landroid/webkit/WebView;->getTitle()Ljava/lang/String;
@@ -101,7 +94,6 @@
 
     invoke-virtual {p2, p1, v0}, Lcom/kakaogame/web/WebViewContainer;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    :cond_0
     return-void
 .end method
 

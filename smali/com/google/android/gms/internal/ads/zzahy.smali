@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -34,7 +34,7 @@
     .line 1
     sget-object p1, Landroid/os/ParcelFileDescriptor;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -43,12 +43,12 @@
     .line 2
     move-object p2, p0
 
-    check-cast p2, Lk3/n3;
+    check-cast p2, Lj3/n3;
 
     .line 3
-    iget-object p2, p2, Lk3/n3;->g:Lk3/qd;
+    iget-object p2, p2, Lj3/n3;->f:Lj3/wd;
 
-    invoke-virtual {p2, p1}, Lk3/qd;->a(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Lj3/wd;->a(Ljava/lang/Object;)Z
 
     return p3
 

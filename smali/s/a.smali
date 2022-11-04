@@ -65,7 +65,7 @@
 
     shr-int/lit8 v0, p0, 0x1f
 
-    xor-int/lit8 v0, v0, -0x1
+    not-int v0, v0
 
     and-int/2addr p0, v0
 
@@ -115,11 +115,11 @@
 
     const/4 v2, 0x0
 
+    move v4, v1
+
+    move v5, v4
+
     move-object v3, v2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
 
     :goto_0
     if-ge v4, v0, :cond_9
@@ -325,7 +325,7 @@
 
     move-result-object v5
 
-    const/4 v3, 0x1
+    move v3, v8
 
     goto :goto_2
 
@@ -989,7 +989,7 @@
     const-string v1, "set"
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1079,7 +1079,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v8, 0x0
+    move v8, v9
 
     :goto_0
     invoke-static {v8}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1139,7 +1139,7 @@
 
     double-to-float v1, v1
 
-    mul-float v1, v1, v7
+    mul-float/2addr v1, v7
 
     float-to-int v1, v1
 
@@ -1158,7 +1158,7 @@
 
     double-to-float v2, v10
 
-    mul-float v2, v2, v7
+    mul-float/2addr v2, v7
 
     float-to-int v2, v2
 
@@ -1177,7 +1177,7 @@
 
     double-to-float v4, v4
 
-    mul-float v4, v4, v7
+    mul-float/2addr v4, v7
 
     float-to-int v4, v4
 
@@ -1188,7 +1188,7 @@
     .line 14
     aget p2, p2, v3
 
-    mul-float p2, p2, v7
+    mul-float/2addr p2, v7
 
     float-to-int p2, p2
 
@@ -1248,7 +1248,7 @@
 
     double-to-float v1, v1
 
-    mul-float v1, v1, v7
+    mul-float/2addr v1, v7
 
     float-to-int v1, v1
 
@@ -1267,7 +1267,7 @@
 
     double-to-float v2, v10
 
-    mul-float v2, v2, v7
+    mul-float/2addr v2, v7
 
     float-to-int v2, v2
 
@@ -1286,7 +1286,7 @@
 
     double-to-float v4, v4
 
-    mul-float v4, v4, v7
+    mul-float/2addr v4, v7
 
     float-to-int v4, v4
 
@@ -1297,7 +1297,7 @@
     .line 22
     aget p2, p2, v3
 
-    mul-float p2, p2, v7
+    mul-float/2addr p2, v7
 
     float-to-int p2, p2
 

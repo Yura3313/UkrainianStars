@@ -1,12 +1,12 @@
 .class public final Lm/b;
-.super Lm/f;
+.super Lm/g;
 .source "ArraySet.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lm/f<",
+        "Lm/g<",
         "Ljava/lang/Object;",
         "Ljava/lang/Object;",
         ">;"
@@ -24,7 +24,7 @@
 
     iput-object p1, p0, Lm/b;->d:Lm/c;
 
-    invoke-direct {p0}, Lm/f;-><init>()V
+    invoke-direct {p0}, Lm/g;-><init>()V
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     iget-object p2, p0, Lm/b;->d:Lm/c;
 
-    iget-object p2, p2, Lm/c;->h:[Ljava/lang/Object;
+    iget-object p2, p2, Lm/c;->g:[Ljava/lang/Object;
 
     aget-object p1, p2, p1
 
@@ -79,7 +79,7 @@
 
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
-    iget v0, v0, Lm/c;->i:I
+    iget v0, v0, Lm/c;->h:I
 
     return v0
 .end method
@@ -131,7 +131,7 @@
 
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
-    invoke-virtual {v0, p1}, Lm/c;->g(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lm/c;->f(I)Ljava/lang/Object;
 
     return-void
 .end method

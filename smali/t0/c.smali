@@ -1,140 +1,84 @@
 .class public final Lt0/c;
 .super Ljava/lang/Object;
-.source "CircularProgressDrawable.java"
+.source "FloatArrayEvaluator.java"
 
 # interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.implements Landroid/animation/TypeEvaluator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/animation/TypeEvaluator<",
+        "[F>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic g:Lt0/d$a;
-
-.field public final synthetic h:Lt0/d;
+.field public a:[F
 
 
 # direct methods
-.method public constructor <init>(Lt0/d;Lt0/d$a;)V
+.method public constructor <init>([F)V
     .locals 0
 
-    iput-object p1, p0, Lt0/c;->h:Lt0/d;
-
-    iput-object p2, p0, Lt0/c;->g:Lt0/d$a;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lt0/c;->a:[F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lt0/c;->h:Lt0/d;
+    check-cast p2, [F
 
-    iget-object v1, p0, Lt0/c;->g:Lt0/d$a;
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v0, v2, v1, v3}, Lt0/d;->a(FLt0/d$a;Z)V
+    check-cast p3, [F
 
     .line 2
-    iget-object v0, p0, Lt0/c;->g:Lt0/d$a;
+    iget-object v0, p0, Lt0/c;->a:[F
+
+    if-nez v0, :cond_0
 
     .line 3
-    iget v1, v0, Lt0/d$a;->e:F
+    array-length v0, p2
 
-    iput v1, v0, Lt0/d$a;->k:F
+    new-array v0, v0, [F
 
-    .line 4
-    iget v1, v0, Lt0/d$a;->f:F
-
-    iput v1, v0, Lt0/d$a;->l:F
-
-    .line 5
-    iget v1, v0, Lt0/d$a;->g:F
-
-    iput v1, v0, Lt0/d$a;->m:F
-
-    .line 6
-    iget v1, v0, Lt0/d$a;->j:I
-
-    add-int/2addr v1, v3
-
-    iget-object v3, v0, Lt0/d$a;->i:[I
-
-    array-length v3, v3
-
-    rem-int/2addr v1, v3
-
-    .line 7
-    invoke-virtual {v0, v1}, Lt0/d$a;->a(I)V
-
-    .line 8
-    iget-object v0, p0, Lt0/c;->h:Lt0/d;
-
-    iget-boolean v1, v0, Lt0/d;->l:Z
-
-    if-eqz v1, :cond_0
-
+    :cond_0
     const/4 v1, 0x0
 
-    .line 9
-    iput-boolean v1, v0, Lt0/d;->l:Z
+    .line 4
+    :goto_0
+    array-length v2, v0
 
-    .line 10
-    invoke-virtual {p1}, Landroid/animation/Animator;->cancel()V
+    if-ge v1, v2, :cond_1
 
-    const-wide/16 v2, 0x534
+    .line 5
+    aget v2, p2, v1
 
-    .line 11
-    invoke-virtual {p1, v2, v3}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    .line 6
+    aget v3, p3, v1
 
-    .line 12
-    invoke-virtual {p1}, Landroid/animation/Animator;->start()V
+    invoke-static {v3, v2, p1, v2}, Lj3/vr0;->c(FFFF)F
 
-    .line 13
-    iget-object p1, p0, Lt0/c;->g:Lt0/d$a;
+    move-result v2
 
-    invoke-virtual {p1, v1}, Lt0/d$a;->b(Z)V
+    .line 7
+    aput v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 14
-    :cond_0
-    iget p1, v0, Lt0/d;->k:F
-
-    add-float/2addr p1, v2
-
-    iput p1, v0, Lt0/d;->k:F
-
-    :goto_0
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
-
-    iget-object p1, p0, Lt0/c;->h:Lt0/d;
-
-    const/4 v0, 0x0
-
-    iput v0, p1, Lt0/d;->k:F
-
-    return-void
+    :cond_1
+    return-object v0
 .end method

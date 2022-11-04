@@ -3,7 +3,7 @@
 .source "Field.java"
 
 # interfaces
-.implements Lcom/google/protobuf/u;
+.implements Lcom/google/protobuf/v;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Field;",
         "Lcom/google/protobuf/Field$a;",
         ">;",
-        "Lcom/google/protobuf/u;"
+        "Lcom/google/protobuf/v;"
     }
 .end annotation
 

@@ -253,7 +253,7 @@
 
     move-result v6
 
-    mul-int v6, v6, v1
+    mul-int/2addr v6, v1
 
     .line 9
     div-int/2addr v6, v5
@@ -311,7 +311,7 @@
 
     sub-int v4, v2, v4
 
-    mul-int v4, v4, v5
+    mul-int/2addr v4, v5
 
     .line 14
     div-int/2addr v4, v6
@@ -408,7 +408,7 @@
 
     invoke-direct {v2, p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment$6;-><init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)V
 
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lkc/a;)V
+    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Ljc/a;)V
 
     return-void
 .end method
@@ -549,7 +549,7 @@
     const-string v0, "handleClick: "
 
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -645,7 +645,7 @@
     const-string v0, "onConfigurationChanged!! : "
 
     .line 8
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -668,7 +668,7 @@
 .end method
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
-    .locals 4
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->getLayoutView()Landroid/view/View;
@@ -681,39 +681,6 @@
     iput v0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->preOrientation:I
 
     .line 3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x17
-
-    if-ge v0, v1, :cond_0
-
-    .line 4
-    new-instance v0, Landroid/app/AlertDialog$Builder;
-
-    new-instance v1, Landroid/view/ContextThemeWrapper;
-
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
-
-    move-result-object v2
-
-    sget v3, Lcom/kakaogame/R$style;->Theme_AppCompat_Dialog:I
-
-    invoke-direct {v1, v2, v3}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
-
-    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 5
-    :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
@@ -748,7 +715,7 @@
     const-string v1, "promotionData"
 
     .line 2
-    invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p3, v1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -901,7 +868,7 @@
 
     const-string v1, "promotionData"
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

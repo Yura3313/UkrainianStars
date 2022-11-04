@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;
-.super Lse/i;
+.super Lif/i;
 .source "ProfileImageEditorFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,27 +18,27 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lyc/d;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lxc/d;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,11 +48,11 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    new-instance v0, Lyc/d;
+    new-instance v0, Lxc/d;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-direct {v0, v1, v1}, Lyc/d;-><init>(Landroidx/fragment/app/Fragment;Lyc/a;)V
+    invoke-direct {v0, v1, v1}, Lxc/d;-><init>(Landroidx/fragment/app/Fragment;Lxc/a;)V
 
     return-object v0
 .end method

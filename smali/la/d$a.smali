@@ -1,6 +1,6 @@
 .class public final Lla/d$a;
-.super Ljava/lang/Object;
-.source "FaqTagFilter.java"
+.super Landroidx/recyclerview/widget/RecyclerView$z;
+.source "SearchResultAdapter.java"
 
 
 # annotations
@@ -14,44 +14,32 @@
 .end annotation
 
 
-# static fields
-.field public static final a:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+# instance fields
+.field public y:Landroid/widget/LinearLayout;
+
+.field public z:Landroid/widget/Button;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Landroid/widget/LinearLayout;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    const-string v1, "and"
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
     .line 2
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    const-string v1, "or"
+    iput-object p1, p0, Lla/d$a;->y:Landroid/widget/LinearLayout;
 
     .line 3
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    sget v0, Lcom/helpshift/R$id;->send_anyway_button:I
 
-    const-string v1, "not"
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    move-result-object p1
 
-    .line 5
-    sput-object v0, Lla/d$a;->a:Ljava/util/HashSet;
+    check-cast p1, Landroid/widget/Button;
+
+    iput-object p1, p0, Lla/d$a;->z:Landroid/widget/Button;
 
     return-void
 .end method

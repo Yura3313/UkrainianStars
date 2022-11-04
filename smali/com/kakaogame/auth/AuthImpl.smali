@@ -163,7 +163,7 @@
     const/16 p1, 0xfa1
 
     .line 14
-    invoke-static {p0, v0, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -333,7 +333,7 @@
     const/16 p1, 0xfa1
 
     .line 14
-    invoke-static {p0, v1, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v1, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -678,13 +678,7 @@
     sput-boolean v1, Lcom/kakaogame/auth/AuthImpl;->connectProcess:Z
 
     .line 35
-    goto :goto_4
-
-    :goto_3
     throw p0
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static connectWithoutUI(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGResult;
@@ -1019,13 +1013,7 @@
     sput-boolean v2, Lcom/kakaogame/auth/AuthImpl;->connectProcess:Z
 
     .line 33
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method private static getIdpAccount()Lcom/kakaogame/idp/IdpAccount;
@@ -1729,7 +1717,7 @@
     const/16 p1, 0xfa1
 
     .line 20
-    invoke-static {p0, v0, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1954,7 +1942,7 @@
     const/16 p1, 0xfa1
 
     .line 23
-    invoke-static {p0, v1, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v1, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -2103,12 +2091,12 @@
 
     if-ne v1, v2, :cond_5
 
-    const/4 v1, 0x1
+    move v1, v3
 
     goto :goto_0
 
     :cond_5
-    const/4 v1, 0x0
+    move v1, v4
 
     .line 15
     :goto_0
@@ -2339,7 +2327,7 @@
     const-string v1, "AuthImpl"
 
     .line 1
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v0, 0xfa0
 
@@ -2482,12 +2470,12 @@
 
     if-ne p3, v0, :cond_6
 
-    const/4 p3, 0x1
+    move p3, v2
 
     goto :goto_0
 
     :cond_6
-    const/4 p3, 0x0
+    move p3, v3
 
     .line 17
     :goto_0
@@ -2875,13 +2863,7 @@
     invoke-static {v2, v1, v3, v4}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 40
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static logout(Landroid/app/Activity;Z)Lcom/kakaogame/KGResult;
@@ -3104,13 +3086,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 23
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method private static onLogout()V
@@ -3345,11 +3321,5 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 23
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method

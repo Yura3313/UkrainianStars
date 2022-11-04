@@ -51,7 +51,7 @@
     .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/c0$a;
 
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->d0(Landroidx/recyclerview/widget/RecyclerView$q;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->c0(Landroidx/recyclerview/widget/RecyclerView$q;)V
 
     .line 3
     iget-object v0, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
@@ -218,7 +218,7 @@
     aget v0, v0, v3
 
     .line 7
-    invoke-virtual {v2, v4, v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->l0(IIZ)V
+    invoke-virtual {v2, v4, v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->k0(IIZ)V
 
     :cond_4
     return-void

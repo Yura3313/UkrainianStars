@@ -30,20 +30,20 @@
 
 
 # instance fields
-.field public final h:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final i:Lcom/supercell/id/model/IdProfile;
+.field public final h:Lcom/supercell/id/model/IdProfile;
 
-.field public final j:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -53,9 +53,9 @@
     .end annotation
 .end field
 
-.field public final k:Z
+.field public final j:Z
 
-.field public final l:Z
+.field public final k:Z
 
 
 # direct methods
@@ -88,27 +88,27 @@
 
     const-string v0, "profile"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "backStackEntries"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
+    iput-object p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
-    iput-boolean p3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iput-boolean p3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
-    iput-boolean p4, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iput-boolean p4, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     .line 2
     const-class p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-void
 .end method
@@ -122,26 +122,26 @@
             "()",
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public final b0(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public final b0(Lcom/supercell/id/ui/MainActivity;)Luc/j;
     .locals 4
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lcom/supercell/id/ui/FlowFragment$b;->k0:Lcom/supercell/id/ui/FlowFragment$b$a;
+    sget-object p1, Lcom/supercell/id/ui/FlowFragment$b;->j0:Lcom/supercell/id/ui/FlowFragment$b$a;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     if-eqz v0, :cond_0
 
@@ -185,35 +185,35 @@
 
     check-cast p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
-
-    iget-object v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
-
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
-    iget-boolean v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-object v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
+
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
+
+    iget-boolean v1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
     if-ne v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     if-ne v0, p1, :cond_0
 
@@ -234,7 +234,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
     const/4 v1, 0x0
 
@@ -247,12 +247,12 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
+    iget-object v2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
     if-eqz v2, :cond_1
 
@@ -265,20 +265,20 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_2
 
-    const/4 v1, 0x1
+    move v1, v2
 
     :cond_2
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     if-eqz v1, :cond_3
 
@@ -293,7 +293,7 @@
     return v0
 .end method
 
-.method public final l()Z
+.method public final p()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -307,12 +307,12 @@
     const-string v0, "BackStackEntry(profile="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -320,7 +320,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
+    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -328,7 +328,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -336,16 +336,28 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/f;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final w0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    return p1
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -353,39 +365,27 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
+    iget-object p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
     .line 3
-    iget-boolean p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
 
     .line 4
-    iget-boolean p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->l:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
 
     return-void
-.end method
-
-.method public final z0(Lcom/supercell/id/ui/MainActivity;)Z
-    .locals 1
-
-    const-string v0, "mainActivity"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    return p1
 .end method

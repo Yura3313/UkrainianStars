@@ -21,7 +21,7 @@
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
     .line 2
-    sget-boolean p1, Lr0/e;->b:Z
+    sget-boolean p1, Lp0/a;->b:Z
 
     if-eqz p1, :cond_0
 
@@ -67,7 +67,7 @@
 
     invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {p0, v0, v1}, Lr0/e;->c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;)V
+    invoke-static {p0, v0, v1}, Lp0/a;->c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -81,7 +81,7 @@
     const-string v1, "MultiDex installation failed ("
 
     .line 6
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

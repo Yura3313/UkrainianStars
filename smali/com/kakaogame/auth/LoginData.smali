@@ -175,7 +175,7 @@
 
     invoke-direct {v4, v3}, Lcom/kakaogame/KGMarketRefundInfo;-><init>(Ljava/util/Map;)V
 
-    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 

@@ -92,9 +92,9 @@
 
 .field public u:Landroid/graphics/Typeface;
 
-.field public v:Lp4/a;
+.field public v:Lm4/a;
 
-.field public w:Lp4/a;
+.field public w:Lm4/a;
 
 .field public x:Ljava/lang/CharSequence;
 
@@ -188,7 +188,7 @@
 
     int-to-float v1, v1
 
-    mul-float v1, v1, v0
+    mul-float/2addr v1, v0
 
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
@@ -196,7 +196,7 @@
 
     int-to-float v2, v2
 
-    mul-float v2, v2, p2
+    mul-float/2addr v2, p2
 
     add-float/2addr v2, v1
 
@@ -207,7 +207,7 @@
 
     int-to-float v1, v1
 
-    mul-float v1, v1, v0
+    mul-float/2addr v1, v0
 
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
@@ -215,7 +215,7 @@
 
     int-to-float v3, v3
 
-    mul-float v3, v3, p2
+    mul-float/2addr v3, p2
 
     add-float/2addr v3, v1
 
@@ -226,7 +226,7 @@
 
     int-to-float v1, v1
 
-    mul-float v1, v1, v0
+    mul-float/2addr v1, v0
 
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
@@ -234,7 +234,7 @@
 
     int-to-float v4, v4
 
-    mul-float v4, v4, p2
+    mul-float/2addr v4, p2
 
     add-float/2addr v4, v1
 
@@ -245,7 +245,7 @@
 
     int-to-float p0, p0
 
-    mul-float p0, p0, v0
+    mul-float/2addr p0, v0
 
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
@@ -253,7 +253,7 @@
 
     int-to-float p1, p1
 
-    mul-float p1, p1, p2
+    mul-float/2addr p1, p2
 
     add-float/2addr p1, p0
 
@@ -285,9 +285,9 @@
 
     .line 2
     :cond_0
-    sget-object p3, Ld4/a;->a:Landroid/view/animation/LinearInterpolator;
+    sget-object p3, Lb4/a;->a:Landroid/view/animation/LinearInterpolator;
 
-    invoke-static {p1, p0, p2, p0}, Lo/o;->a(FFFF)F
+    invoke-static {p1, p0, p2, p0}, Lj3/vr0;->c(FFFF)F
 
     move-result p0
 
@@ -333,14 +333,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
+    iget-object v0, p0, Lcom/google/android/material/internal/a;->w:Lm4/a;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->i:Z
+    iput-boolean v1, v0, Lm4/a;->h:Z
 
     .line 3
     :cond_0
@@ -353,21 +353,21 @@
     .line 4
     iput-object p1, p0, Lcom/google/android/material/internal/a;->s:Landroid/graphics/Typeface;
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 5
     :goto_0
-    iget-object v3, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
+    iget-object v3, p0, Lcom/google/android/material/internal/a;->v:Lm4/a;
 
     if-eqz v3, :cond_2
 
     .line 6
-    iput-boolean v1, v3, Lp4/a;->i:Z
+    iput-boolean v1, v3, Lm4/a;->h:Z
 
     .line 7
     :cond_2
@@ -381,7 +381,7 @@
     goto :goto_1
 
     :cond_3
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     if-nez v0, :cond_4
@@ -446,7 +446,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I
@@ -622,7 +622,7 @@
     sub-float v1, v0, p1
 
     .line 13
-    sget-object v2, Ld4/a;->b:Lm0/b;
+    sget-object v2, Lb4/a;->b:Ll0/b;
 
     const/4 v3, 0x0
 
@@ -639,7 +639,7 @@
     .line 16
     iget-object v1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 17
     invoke-virtual {v1}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -801,20 +801,20 @@
 
     const v3, 0x3a83126f
 
+    cmpg-float v2, v2, v3
+
     const/4 v4, 0x0
 
     const/4 v5, 0x1
 
-    cmpg-float v2, v2, v3
-
     if-gez v2, :cond_1
 
-    const/4 v2, 0x1
+    move v2, v5
 
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v4
 
     :goto_0
     const/high16 v6, 0x3f800000    # 1.0f
@@ -837,12 +837,12 @@
     .line 9
     iput-object v2, p0, Lcom/google/android/material/internal/a;->u:Landroid/graphics/Typeface;
 
-    const/4 v7, 0x1
+    move v7, v5
 
     goto :goto_5
 
     :cond_2
-    const/4 v7, 0x0
+    move v7, v4
 
     goto :goto_5
 
@@ -860,12 +860,12 @@
     .line 12
     iput-object v8, p0, Lcom/google/android/material/internal/a;->u:Landroid/graphics/Typeface;
 
-    const/4 v7, 0x1
+    move v7, v5
 
     goto :goto_1
 
     :cond_4
-    const/4 v7, 0x0
+    move v7, v4
 
     :goto_1
     sub-float v8, p1, v2
@@ -879,12 +879,12 @@
 
     if-gez v3, :cond_5
 
-    const/4 v3, 0x1
+    move v3, v5
 
     goto :goto_2
 
     :cond_5
-    const/4 v3, 0x0
+    move v3, v4
 
     :goto_2
     if-eqz v3, :cond_6
@@ -956,13 +956,13 @@
     goto :goto_6
 
     :cond_8
-    const/4 v7, 0x0
+    move v7, v4
 
     goto :goto_7
 
     :cond_9
     :goto_6
-    const/4 v7, 0x1
+    move v7, v5
 
     .line 19
     :goto_7
@@ -977,7 +977,7 @@
 
     if-eqz p1, :cond_b
 
-    if-eqz v7, :cond_f
+    if-eqz v7, :cond_13
 
     .line 22
     :cond_b
@@ -1003,12 +1003,12 @@
 
     if-eqz v1, :cond_c
 
-    const/4 v1, 0x1
+    move v1, v5
 
     goto :goto_8
 
     :cond_c
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_8
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setLinearText(Z)V
@@ -1029,66 +1029,121 @@
 
     if-nez p1, :cond_d
 
-    const/4 v2, 0x1
+    move v2, v5
 
     goto :goto_9
 
     :cond_d
-    const/4 v2, 0x0
+    move v2, v4
 
     :goto_9
     if-eqz v2, :cond_e
 
-    move v5, v1
+    goto :goto_a
+
+    :cond_e
+    move v1, v5
 
     .line 27
-    :cond_e
+    :goto_a
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/material/internal/a;->x:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/google/android/material/internal/a;->x:Ljava/lang/CharSequence;
 
-    iget-object v2, p0, Lcom/google/android/material/internal/a;->F:Landroid/text/TextPaint;
+    iget-object v3, p0, Lcom/google/android/material/internal/a;->F:Landroid/text/TextPaint;
 
     float-to-int v0, v0
 
     .line 28
-    new-instance v3, Lcom/google/android/material/internal/h;
+    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
 
-    invoke-direct {v3, v1, v2, v0}, Lcom/google/android/material/internal/h;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
+    move-result v6
 
     .line 29
-    sget-object v0, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
+    sget-object v7, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
     .line 30
-    iput-object v0, v3, Lcom/google/android/material/internal/h;->i:Landroid/text/TextUtils$TruncateAt;
+    sget-object v7, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     .line 31
-    iput-boolean p1, v3, Lcom/google/android/material/internal/h;->h:Z
+    sget-object v8, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
     .line 32
-    sget-object p1, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
+    invoke-static {v4, v0}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    if-ne v1, v5, :cond_f
+
+    int-to-float v5, v0
 
     .line 33
-    iput-object p1, v3, Lcom/google/android/material/internal/h;->e:Landroid/text/Layout$Alignment;
+    invoke-static {v2, v3, v5, v7}, Landroid/text/TextUtils;->ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;
+
+    move-result-object v2
 
     .line 34
-    iput-boolean v4, v3, Lcom/google/android/material/internal/h;->g:Z
+    :cond_f
+    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
+
+    move-result v5
+
+    invoke-static {v5, v6}, Ljava/lang/Math;->min(II)I
+
+    move-result v5
+
+    if-eqz p1, :cond_10
 
     .line 35
-    iput v5, v3, Lcom/google/android/material/internal/h;->f:I
+    sget-object v8, Landroid/text/Layout$Alignment;->ALIGN_OPPOSITE:Landroid/text/Layout$Alignment;
 
     .line 36
-    invoke-virtual {v3}, Lcom/google/android/material/internal/h;->a()Landroid/text/StaticLayout;
+    :cond_10
+    invoke-static {v2, v4, v5, v3, v0}, Landroid/text/StaticLayout$Builder;->obtain(Ljava/lang/CharSequence;IILandroid/text/TextPaint;I)Landroid/text/StaticLayout$Builder;
+
+    move-result-object v0
+
+    .line 37
+    invoke-virtual {v0, v8}, Landroid/text/StaticLayout$Builder;->setAlignment(Landroid/text/Layout$Alignment;)Landroid/text/StaticLayout$Builder;
+
+    .line 38
+    invoke-virtual {v0, v4}, Landroid/text/StaticLayout$Builder;->setIncludePad(Z)Landroid/text/StaticLayout$Builder;
+
+    if-eqz p1, :cond_11
+
+    .line 39
+    sget-object p1, Landroid/text/TextDirectionHeuristics;->RTL:Landroid/text/TextDirectionHeuristic;
+
+    goto :goto_b
+
+    :cond_11
+    sget-object p1, Landroid/text/TextDirectionHeuristics;->LTR:Landroid/text/TextDirectionHeuristic;
+
+    .line 40
+    :goto_b
+    invoke-virtual {v0, p1}, Landroid/text/StaticLayout$Builder;->setTextDirection(Landroid/text/TextDirectionHeuristic;)Landroid/text/StaticLayout$Builder;
+
+    if-eqz v7, :cond_12
+
+    .line 41
+    invoke-virtual {v0, v7}, Landroid/text/StaticLayout$Builder;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)Landroid/text/StaticLayout$Builder;
+
+    .line 42
+    :cond_12
+    invoke-virtual {v0, v1}, Landroid/text/StaticLayout$Builder;->setMaxLines(I)Landroid/text/StaticLayout$Builder;
+
+    .line 43
+    invoke-virtual {v0}, Landroid/text/StaticLayout$Builder;->build()Landroid/text/StaticLayout;
 
     move-result-object p1
     :try_end_0
-    .catch Lcom/google/android/material/internal/h$a; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/android/material/internal/g; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_a
+    goto :goto_c
 
     :catch_0
     move-exception p1
 
-    .line 37
+    .line 44
     invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -1097,21 +1152,21 @@
 
     const/4 p1, 0x0
 
-    .line 38
-    :goto_a
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 45
+    :goto_c
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 39
+    .line 46
     iput-object p1, p0, Lcom/google/android/material/internal/a;->R:Landroid/text/StaticLayout;
 
-    .line 40
+    .line 47
     invoke-virtual {p1}, Landroid/text/Layout;->getText()Ljava/lang/CharSequence;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/android/material/internal/a;->y:Ljava/lang/CharSequence;
 
-    :cond_f
+    :cond_13
     return-void
 .end method
 
@@ -1170,7 +1225,7 @@
 
     const/high16 v2, 0x40000000    # 2.0f
 
-    mul-float v0, v0, v2
+    mul-float/2addr v0, v2
 
     sub-float/2addr v1, v0
 
@@ -1214,7 +1269,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v8
 
     :goto_0
     if-eqz v4, :cond_3
@@ -1236,7 +1291,7 @@
 
     int-to-float v2, v9
 
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
     float-to-int v1, v1
 
@@ -1252,7 +1307,7 @@
 
     iget v1, p0, Lcom/google/android/material/internal/a;->S:F
 
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
     float-to-int v1, v1
 
@@ -1578,7 +1633,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 9
     :goto_0
@@ -1739,7 +1794,7 @@
     goto :goto_3
 
     :cond_6
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 20
     :goto_3
@@ -1761,7 +1816,7 @@
     goto :goto_4
 
     :cond_7
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 22
     :goto_4
@@ -1920,7 +1975,7 @@
     .line 35
     iget-object v0, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 36
     invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -1959,7 +2014,7 @@
 
     if-ne v1, p4, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_0
 
@@ -1986,7 +2041,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lp4/d;
+    new-instance v0, Lm4/d;
 
     iget-object v1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
@@ -1994,10 +2049,10 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Lp4/d;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v1, p1}, Lm4/d;-><init>(Landroid/content/Context;I)V
 
     .line 2
-    iget-object p1, v0, Lp4/d;->b:Landroid/content/res/ColorStateList;
+    iget-object p1, v0, Lm4/d;->b:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_0
 
@@ -2006,7 +2061,7 @@
 
     .line 4
     :cond_0
-    iget p1, v0, Lp4/d;->a:F
+    iget p1, v0, Lm4/d;->a:F
 
     const/4 v1, 0x0
 
@@ -2019,7 +2074,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, v0, Lp4/d;->f:Landroid/content/res/ColorStateList;
+    iget-object p1, v0, Lm4/d;->f:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_2
 
@@ -2028,48 +2083,48 @@
 
     .line 8
     :cond_2
-    iget p1, v0, Lp4/d;->g:F
+    iget p1, v0, Lm4/d;->g:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->K:F
 
     .line 9
-    iget p1, v0, Lp4/d;->h:F
+    iget p1, v0, Lm4/d;->h:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->L:F
 
     .line 10
-    iget p1, v0, Lp4/d;->i:F
+    iget p1, v0, Lm4/d;->i:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->J:F
 
     .line 11
-    iget-object p1, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
+    iget-object p1, p0, Lcom/google/android/material/internal/a;->w:Lm4/a;
 
     if-eqz p1, :cond_3
 
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lp4/a;->i:Z
+    iput-boolean v1, p1, Lm4/a;->h:Z
 
     .line 13
     :cond_3
-    new-instance p1, Lp4/a;
+    new-instance p1, Lm4/a;
 
     new-instance v1, Lcom/google/android/material/internal/a$a;
 
     invoke-direct {v1, p0}, Lcom/google/android/material/internal/a$a;-><init>(Lcom/google/android/material/internal/a;)V
 
     .line 14
-    invoke-virtual {v0}, Lp4/d;->a()V
+    invoke-virtual {v0}, Lm4/d;->a()V
 
     .line 15
-    iget-object v2, v0, Lp4/d;->l:Landroid/graphics/Typeface;
+    iget-object v2, v0, Lm4/d;->l:Landroid/graphics/Typeface;
 
     .line 16
-    invoke-direct {p1, v1, v2}, Lp4/a;-><init>(Lp4/a$a;Landroid/graphics/Typeface;)V
+    invoke-direct {p1, v1, v2}, Lm4/a;-><init>(Lm4/a$a;Landroid/graphics/Typeface;)V
 
-    iput-object p1, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
+    iput-object p1, p0, Lcom/google/android/material/internal/a;->w:Lm4/a;
 
     .line 17
     iget-object p1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
@@ -2078,9 +2133,9 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
+    iget-object v1, p0, Lcom/google/android/material/internal/a;->w:Lm4/a;
 
-    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
+    invoke-virtual {v0, p1, v1}, Lm4/d;->b(Landroid/content/Context;Landroidx/fragment/app/p;)V
 
     .line 18
     invoke-virtual {p0}, Lcom/google/android/material/internal/a;->m()V
@@ -2128,14 +2183,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
+    iget-object v0, p0, Lcom/google/android/material/internal/a;->w:Lm4/a;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->i:Z
+    iput-boolean v1, v0, Lm4/a;->h:Z
 
     .line 3
     :cond_0
@@ -2186,7 +2241,7 @@
 
     if-ne v1, p4, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_0
 
@@ -2213,7 +2268,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lp4/d;
+    new-instance v0, Lm4/d;
 
     iget-object v1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
@@ -2221,10 +2276,10 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Lp4/d;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v1, p1}, Lm4/d;-><init>(Landroid/content/Context;I)V
 
     .line 2
-    iget-object p1, v0, Lp4/d;->b:Landroid/content/res/ColorStateList;
+    iget-object p1, v0, Lm4/d;->b:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_0
 
@@ -2233,7 +2288,7 @@
 
     .line 4
     :cond_0
-    iget p1, v0, Lp4/d;->a:F
+    iget p1, v0, Lm4/d;->a:F
 
     const/4 v1, 0x0
 
@@ -2246,7 +2301,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, v0, Lp4/d;->f:Landroid/content/res/ColorStateList;
+    iget-object p1, v0, Lm4/d;->f:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_2
 
@@ -2255,48 +2310,48 @@
 
     .line 8
     :cond_2
-    iget p1, v0, Lp4/d;->g:F
+    iget p1, v0, Lm4/d;->g:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->O:F
 
     .line 9
-    iget p1, v0, Lp4/d;->h:F
+    iget p1, v0, Lm4/d;->h:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->P:F
 
     .line 10
-    iget p1, v0, Lp4/d;->i:F
+    iget p1, v0, Lm4/d;->i:F
 
     iput p1, p0, Lcom/google/android/material/internal/a;->N:F
 
     .line 11
-    iget-object p1, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
+    iget-object p1, p0, Lcom/google/android/material/internal/a;->v:Lm4/a;
 
     if-eqz p1, :cond_3
 
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lp4/a;->i:Z
+    iput-boolean v1, p1, Lm4/a;->h:Z
 
     .line 13
     :cond_3
-    new-instance p1, Lp4/a;
+    new-instance p1, Lm4/a;
 
     new-instance v1, Lcom/google/android/material/internal/a$b;
 
     invoke-direct {v1, p0}, Lcom/google/android/material/internal/a$b;-><init>(Lcom/google/android/material/internal/a;)V
 
     .line 14
-    invoke-virtual {v0}, Lp4/d;->a()V
+    invoke-virtual {v0}, Lm4/d;->a()V
 
     .line 15
-    iget-object v2, v0, Lp4/d;->l:Landroid/graphics/Typeface;
+    iget-object v2, v0, Lm4/d;->l:Landroid/graphics/Typeface;
 
     .line 16
-    invoke-direct {p1, v1, v2}, Lp4/a;-><init>(Lp4/a$a;Landroid/graphics/Typeface;)V
+    invoke-direct {p1, v1, v2}, Lm4/a;-><init>(Lm4/a$a;Landroid/graphics/Typeface;)V
 
-    iput-object p1, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
+    iput-object p1, p0, Lcom/google/android/material/internal/a;->v:Lm4/a;
 
     .line 17
     iget-object p1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
@@ -2305,9 +2360,9 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
+    iget-object v1, p0, Lcom/google/android/material/internal/a;->v:Lm4/a;
 
-    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
+    invoke-virtual {v0, p1, v1}, Lm4/d;->b(Landroid/content/Context;Landroidx/fragment/app/p;)V
 
     .line 18
     invoke-virtual {p0}, Lcom/google/android/material/internal/a;->m()V
@@ -2355,14 +2410,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
+    iget-object v0, p0, Lcom/google/android/material/internal/a;->v:Lm4/a;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->i:Z
+    iput-boolean v1, v0, Lm4/a;->h:Z
 
     .line 3
     :cond_0
@@ -2396,7 +2451,7 @@
     const/high16 v1, 0x3f800000    # 1.0f
 
     .line 1
-    invoke-static {p1, v0, v1}, La0/a;->a(FFF)F
+    invoke-static {p1, v0, v1}, La0/b;->b(FFF)F
 
     move-result p1
 
@@ -2426,7 +2481,7 @@
     .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -2443,9 +2498,9 @@
     .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/a;->l:Landroid/content/res/ColorStateList;
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     if-eqz p1, :cond_0
 
@@ -2468,12 +2523,12 @@
     if-eqz p1, :cond_2
 
     :cond_1
-    const/4 p1, 0x1
+    move p1, v0
 
     goto :goto_0
 
     :cond_2
-    const/4 p1, 0x0
+    move p1, v1
 
     :goto_0
     if-eqz p1, :cond_3
@@ -2481,8 +2536,8 @@
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/internal/a;->m()V
 
-    return v1
+    return v0
 
     :cond_3
-    return v0
+    return v1
 .end method

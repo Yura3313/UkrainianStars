@@ -131,50 +131,39 @@
 .method public static fromCustomAction(Ljava/lang/Object;)Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
     .locals 5
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
     new-instance v0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
 
-    .line 3
+    .line 2
     invoke-static {p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21$CustomAction;->getAction(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
+    .line 3
     invoke-static {p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21$CustomAction;->getName(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 5
+    .line 4
     invoke-static {p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21$CustomAction;->getIcon(Ljava/lang/Object;)I
 
     move-result v3
 
-    .line 6
+    .line 5
     invoke-static {p0}, Landroid/support/v4/media/session/PlaybackStateCompatApi21$CustomAction;->getExtras(Ljava/lang/Object;)Landroid/os/Bundle;
 
     move-result-object v4
 
     invoke-direct {v0, v1, v2, v3, v4}, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;ILandroid/os/Bundle;)V
 
-    .line 7
+    .line 6
     iput-object p0, v0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->mCustomActionObj:Ljava/lang/Object;
 
     return-object v0
 
-    :cond_1
-    :goto_0
+    :cond_0
     const/4 p0, 0x0
 
     return-object p0
@@ -204,18 +193,9 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->mCustomActionObj:Ljava/lang/Object;
 
-    if-nez v0, :cond_1
-
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    if-ge v1, v2, :cond_0
-
-    goto :goto_0
+    if-nez v0, :cond_0
 
     .line 2
-    :cond_0
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->mAction:Ljava/lang/String;
 
     iget-object v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->mName:Ljava/lang/CharSequence;
@@ -230,8 +210,7 @@
 
     iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;->mCustomActionObj:Ljava/lang/Object;
 
-    :cond_1
-    :goto_0
+    :cond_0
     return-object v0
 .end method
 
@@ -265,7 +244,7 @@
     const-string v0, "Action:mName=\'"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

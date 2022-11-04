@@ -1,128 +1,199 @@
 .class public final Lrd/e;
-.super Lse/i;
-.source "ProfileSelectorFragment.kt"
+.super Ljava/lang/Object;
+.source "GamesFragment.kt"
 
 # interfaces
-.implements Lre/l;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lwc/g0;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
+.implements Lzd/v1;
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/IdAccount;
+.field public final a:I
+
+.field public final b:Lcom/supercell/id/model/IdConnectedSystem;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/IdAccount;)V
-    .locals 0
+.method public constructor <init>(Lcom/supercell/id/model/IdConnectedSystem;)V
+    .locals 1
 
-    iput-object p1, p0, Lrd/e;->g:Lcom/supercell/id/IdAccount;
+    const-string v0, "connected"
 
-    const/4 p1, 0x1
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_public_profile_games_item:I
+
+    iput p1, p0, Lrd/e;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final b(Lzd/v1;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    check-cast p1, Lwc/g0;
+    instance-of v0, p1, Lrd/e;
 
-    const-string v0, "it"
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    :cond_0
+    check-cast p1, Lrd/e;
 
-    .line 3
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object p1, p1, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    iget-object v0, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    move-result-object v0
+    invoke-static {p1, v0}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 4
-    iget-object v0, v0, Lae/u;->m:Lpe/a;
+    move-result p1
 
-    const-string v1, "Saved Credentials"
+    return p1
+.end method
 
-    const-string v2, "click"
+.method public final d()I
+    .locals 1
 
-    const/4 v3, 0x0
+    iget v0, p0, Lrd/e;->a:I
 
-    const/16 v4, 0x8
+    return v0
+.end method
 
-    .line 5
-    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+.method public final e(Lzd/v1;)Z
+    .locals 1
 
-    .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    const-string v0, "other"
 
-    move-result-object v0
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 7
-    iget-object v0, v0, Lae/u;->f:Lbe/n;
+    .line 1
+    instance-of v0, p1, Lrd/e;
 
     if-eqz v0, :cond_0
 
-    .line 8
-    iget-object v1, p0, Lrd/e;->g:Lcom/supercell/id/IdAccount;
+    check-cast p1, Lrd/e;
 
-    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
+    iget-object p1, p1, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    move-result-object v1
+    .line 2
+    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
 
-    const-string v2, "supercellId"
+    .line 3
+    iget-object v0, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    .line 9
-    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 4
+    iget-object v0, v0, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
 
-    .line 10
-    new-instance v2, Lbe/n$a$a;
+    .line 5
+    invoke-static {p1, v0}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-direct {v2, v1}, Lbe/n$a$a;-><init>(Ljava/lang/String;)V
+    move-result p1
 
-    invoke-virtual {v0, v2}, Lbe/x0;->a(Lbe/a;)V
+    if-eqz p1, :cond_0
 
-    .line 11
-    iget-object v0, p0, Lrd/e;->g:Lcom/supercell/id/IdAccount;
+    const/4 p1, 0x1
 
-    invoke-virtual {v0}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lrd/e;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lrd/e;
+
+    iget-object v0, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
+
+    iget-object p1, p1, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
+
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdConnectedSystem;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "GameRow(connected="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lrd/e;->g:Lcom/supercell/id/IdAccount;
+    .line 2
+    iget-object v1, p0, Lrd/e;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v1, ")"
 
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/SupercellId;->forgetAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return-object p1
+    move-result-object v0
 
-    :cond_0
-    const-string p1, "globalState"
-
-    .line 13
-    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
-
-    throw v3
+    return-object v0
 .end method

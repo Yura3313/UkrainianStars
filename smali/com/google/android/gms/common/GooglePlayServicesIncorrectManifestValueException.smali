@@ -12,7 +12,7 @@
 .method public constructor <init>(I)V
     .locals 3
 
-    sget v0, Lz1/d;->a:I
+    sget v0, Lx1/d;->a:I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public s0:Z
+.field public r0:Z
 
 
 # direct methods
@@ -54,13 +54,13 @@
 
     if-eqz p4, :cond_1
 
-    const/4 p3, 0x0
+    move p3, v0
 
     :cond_1
     const-string p4, "context"
 
     .line 1
-    invoke-static {p1, p4}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2}, Landroidx/viewpager/widget/RtlViewPager;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -88,7 +88,7 @@
 
     if-ne p2, p3, :cond_2
 
-    const/4 v0, 0x1
+    move v0, p3
 
     :cond_2
     invoke-virtual {p0, v0}, Landroidx/viewpager/widget/FlowPager;->setVertical(Z)V
@@ -113,7 +113,7 @@
 .method public final canScrollHorizontally(I)Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
 
     if-eqz v0, :cond_0
 
@@ -133,7 +133,7 @@
 .method public final canScrollVertically(I)Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
 
     if-eqz v0, :cond_0
 
@@ -155,7 +155,7 @@
 .method public final getVertical()Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
 
     return v0
 .end method
@@ -165,7 +165,7 @@
 
     const-string v0, "event"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -192,12 +192,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
+    iput-boolean p1, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
 
     if-eqz p1, :cond_0
 

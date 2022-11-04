@@ -1,5 +1,5 @@
 .class public final Landroidx/appcompat/widget/b0;
-.super Li0/c;
+.super Lh0/c;
 .source "SuggestionsAdapter.java"
 
 # interfaces
@@ -21,7 +21,7 @@
 
 
 # static fields
-.field public static final synthetic E:I
+.field public static final synthetic D:I
 
 
 # instance fields
@@ -31,15 +31,13 @@
 
 .field public C:I
 
-.field public D:I
+.field public final q:Landroidx/appcompat/widget/SearchView;
 
-.field public final r:Landroidx/appcompat/widget/SearchView;
+.field public final r:Landroid/app/SearchableInfo;
 
-.field public final s:Landroid/app/SearchableInfo;
+.field public final s:Landroid/content/Context;
 
-.field public final t:Landroid/content/Context;
-
-.field public final u:Ljava/util/WeakHashMap;
+.field public final t:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -50,11 +48,13 @@
     .end annotation
 .end field
 
-.field public final v:I
+.field public final u:I
 
-.field public w:I
+.field public v:I
 
-.field public x:Landroid/content/res/ColorStateList;
+.field public w:Landroid/content/res/ColorStateList;
+
+.field public x:I
 
 .field public y:I
 
@@ -82,51 +82,51 @@
 
     move-result v0
 
-    invoke-direct {p0, p1, v0}, Li0/c;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, v0}, Lh0/c;-><init>(Landroid/content/Context;I)V
 
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Landroidx/appcompat/widget/b0;->w:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->v:I
 
     const/4 v0, -0x1
 
     .line 3
-    iput v0, p0, Landroidx/appcompat/widget/b0;->y:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->x:I
 
     .line 4
-    iput v0, p0, Landroidx/appcompat/widget/b0;->z:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->y:I
 
     .line 5
-    iput v0, p0, Landroidx/appcompat/widget/b0;->A:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->z:I
 
     .line 6
-    iput v0, p0, Landroidx/appcompat/widget/b0;->B:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->A:I
 
     .line 7
-    iput v0, p0, Landroidx/appcompat/widget/b0;->C:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->B:I
 
     .line 8
-    iput v0, p0, Landroidx/appcompat/widget/b0;->D:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->C:I
 
     .line 9
-    iput-object p2, p0, Landroidx/appcompat/widget/b0;->r:Landroidx/appcompat/widget/SearchView;
+    iput-object p2, p0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
 
     .line 10
-    iput-object p3, p0, Landroidx/appcompat/widget/b0;->s:Landroid/app/SearchableInfo;
+    iput-object p3, p0, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
 
     .line 11
     invoke-virtual {p2}, Landroidx/appcompat/widget/SearchView;->getSuggestionCommitIconResId()I
 
     move-result p2
 
-    iput p2, p0, Landroidx/appcompat/widget/b0;->v:I
+    iput p2, p0, Landroidx/appcompat/widget/b0;->u:I
 
     .line 12
-    iput-object p1, p0, Landroidx/appcompat/widget/b0;->t:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/appcompat/widget/b0;->s:Landroid/content/Context;
 
     .line 13
-    iput-object p4, p0, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iput-object p4, p0, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     return-void
 .end method
@@ -175,13 +175,13 @@
     check-cast v3, Landroidx/appcompat/widget/b0$a;
 
     .line 2
-    iget v0, v1, Landroidx/appcompat/widget/b0;->D:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->C:I
 
-    const/4 v4, 0x0
+    const/4 v4, -0x1
 
-    const/4 v5, -0x1
+    const/4 v5, 0x0
 
-    if-eq v0, v5, :cond_0
+    if-eq v0, v4, :cond_0
 
     .line 3
     invoke-interface {v2, v0}, Landroid/database/Cursor;->getInt(I)I
@@ -193,7 +193,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 4
     :goto_0
@@ -204,7 +204,7 @@
     if-eqz v0, :cond_2
 
     .line 5
-    iget v0, v1, Landroidx/appcompat/widget/b0;->y:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->x:I
 
     invoke-static {v2, v0}, Landroidx/appcompat/widget/b0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
 
@@ -230,7 +230,7 @@
 
     .line 10
     :cond_1
-    invoke-virtual {v8, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v8, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 11
     :cond_2
@@ -244,7 +244,7 @@
     if-eqz v0, :cond_8
 
     .line 12
-    iget v0, v1, Landroidx/appcompat/widget/b0;->A:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->z:I
 
     invoke-static {v2, v0}, Landroidx/appcompat/widget/b0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
 
@@ -253,7 +253,7 @@
     if-eqz v0, :cond_4
 
     .line 13
-    iget-object v10, v1, Landroidx/appcompat/widget/b0;->x:Landroid/content/res/ColorStateList;
+    iget-object v10, v1, Landroidx/appcompat/widget/b0;->w:Landroid/content/res/ColorStateList;
 
     if-nez v10, :cond_3
 
@@ -263,7 +263,7 @@
     invoke-direct {v10}, Landroid/util/TypedValue;-><init>()V
 
     .line 15
-    iget-object v11, v1, Li0/a;->j:Landroid/content/Context;
+    iget-object v11, v1, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -274,7 +274,7 @@
     invoke-virtual {v11, v12, v10, v9}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
     .line 16
-    iget-object v11, v1, Li0/a;->j:Landroid/content/Context;
+    iget-object v11, v1, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -286,7 +286,7 @@
 
     move-result-object v10
 
-    iput-object v10, v1, Landroidx/appcompat/widget/b0;->x:Landroid/content/res/ColorStateList;
+    iput-object v10, v1, Landroidx/appcompat/widget/b0;->w:Landroid/content/res/ColorStateList;
 
     .line 17
     :cond_3
@@ -303,7 +303,7 @@
 
     const/4 v14, 0x0
 
-    iget-object v11, v1, Landroidx/appcompat/widget/b0;->x:Landroid/content/res/ColorStateList;
+    iget-object v11, v1, Landroidx/appcompat/widget/b0;->w:Landroid/content/res/ColorStateList;
 
     const/16 v16, 0x0
 
@@ -311,7 +311,7 @@
 
     move-object v11, v15
 
-    move-object v5, v15
+    move-object v4, v15
 
     move-object/from16 v15, v17
 
@@ -325,13 +325,13 @@
     const/16 v11, 0x21
 
     .line 20
-    invoke-virtual {v10, v5, v4, v0, v11}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    invoke-virtual {v10, v4, v5, v0, v11}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     goto :goto_2
 
     .line 21
     :cond_4
-    iget v0, v1, Landroidx/appcompat/widget/b0;->z:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->y:I
 
     invoke-static {v2, v0}, Landroidx/appcompat/widget/b0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
 
@@ -351,7 +351,7 @@
     if-eqz v0, :cond_6
 
     .line 24
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setSingleLine(Z)V
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setSingleLine(Z)V
 
     .line 25
     iget-object v0, v3, Landroidx/appcompat/widget/b0$a;->a:Landroid/widget/TextView;
@@ -385,9 +385,9 @@
     .line 31
     invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_7
+    if-eqz v4, :cond_7
 
     .line 32
     invoke-virtual {v0, v7}, Landroid/view/View;->setVisibility(I)V
@@ -396,19 +396,19 @@
 
     .line 33
     :cond_7
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 34
     :cond_8
     :goto_4
-    iget-object v5, v3, Landroidx/appcompat/widget/b0$a;->c:Landroid/widget/ImageView;
+    iget-object v4, v3, Landroidx/appcompat/widget/b0$a;->c:Landroid/widget/ImageView;
 
     const/4 v10, 0x0
 
-    if-eqz v5, :cond_11
+    if-eqz v4, :cond_11
 
     .line 35
-    iget v0, v1, Landroidx/appcompat/widget/b0;->B:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->A:I
 
     const/4 v11, -0x1
 
@@ -435,7 +435,7 @@
 
     .line 38
     :cond_a
-    iget-object v0, v1, Landroidx/appcompat/widget/b0;->s:Landroid/app/SearchableInfo;
+    iget-object v0, v1, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
 
     invoke-virtual {v0}, Landroid/app/SearchableInfo;->getSearchActivity()Landroid/content/ComponentName;
 
@@ -447,7 +447,7 @@
     move-result-object v11
 
     .line 40
-    iget-object v12, v1, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iget-object v12, v1, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v12, v11}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -456,7 +456,7 @@
     if-eqz v12, :cond_c
 
     .line 41
-    iget-object v0, v1, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iget-object v0, v1, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, v11}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -472,7 +472,7 @@
 
     .line 42
     :cond_b
-    iget-object v11, v1, Landroidx/appcompat/widget/b0;->t:Landroid/content/Context;
+    iget-object v11, v1, Landroidx/appcompat/widget/b0;->s:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -486,7 +486,7 @@
 
     .line 43
     :cond_c
-    iget-object v12, v1, Li0/a;->j:Landroid/content/Context;
+    iget-object v12, v1, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {v12}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -557,7 +557,7 @@
 
     .line 51
     :goto_6
-    iget-object v13, v1, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iget-object v13, v1, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v13, v11, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -570,7 +570,7 @@
 
     .line 52
     :cond_10
-    iget-object v0, v1, Li0/a;->j:Landroid/content/Context;
+    iget-object v0, v1, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -584,7 +584,7 @@
     const/4 v11, 0x4
 
     .line 53
-    invoke-virtual {v1, v5, v0, v11}, Landroidx/appcompat/widget/b0;->j(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
+    invoke-virtual {v1, v4, v0, v11}, Landroidx/appcompat/widget/b0;->j(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
 
     .line 54
     :cond_11
@@ -593,17 +593,17 @@
     if-eqz v0, :cond_13
 
     .line 55
-    iget v5, v1, Landroidx/appcompat/widget/b0;->C:I
+    iget v4, v1, Landroidx/appcompat/widget/b0;->B:I
 
     const/4 v11, -0x1
 
-    if-ne v5, v11, :cond_12
+    if-ne v4, v11, :cond_12
 
     goto :goto_9
 
     .line 56
     :cond_12
-    invoke-interface {v2, v5}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v2, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -618,7 +618,7 @@
 
     .line 59
     :cond_13
-    iget v0, v1, Landroidx/appcompat/widget/b0;->w:I
+    iget v0, v1, Landroidx/appcompat/widget/b0;->v:I
 
     if-eq v0, v8, :cond_15
 
@@ -643,7 +643,7 @@
     :goto_a
     iget-object v0, v3, Landroidx/appcompat/widget/b0$a;->e:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 62
     iget-object v0, v3, Landroidx/appcompat/widget/b0$a;->e:Landroid/widget/ImageView;
@@ -670,7 +670,7 @@
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1}, Li0/a;->c(Landroid/database/Cursor;)V
+    invoke-super {p0, p1}, Lh0/a;->c(Landroid/database/Cursor;)V
 
     if-eqz p1, :cond_0
 
@@ -681,7 +681,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/b0;->y:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->x:I
 
     const-string v0, "suggest_text_2"
 
@@ -690,7 +690,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/b0;->z:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->y:I
 
     const-string v0, "suggest_text_2_url"
 
@@ -699,7 +699,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/b0;->A:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->z:I
 
     const-string v0, "suggest_icon_1"
 
@@ -708,7 +708,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/b0;->B:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->A:I
 
     const-string v0, "suggest_icon_2"
 
@@ -717,7 +717,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/b0;->C:I
+    iput v0, p0, Landroidx/appcompat/widget/b0;->B:I
 
     const-string v0, "suggest_flags"
 
@@ -726,7 +726,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/appcompat/widget/b0;->D:I
+    iput p1, p0, Landroidx/appcompat/widget/b0;->C:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -763,7 +763,7 @@
 
     .line 3
     :cond_1
-    iget-object v1, p0, Landroidx/appcompat/widget/b0;->s:Landroid/app/SearchableInfo;
+    iget-object v1, p0, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
 
     invoke-virtual {v1}, Landroid/app/SearchableInfo;->shouldRewriteQueryFromData()Z
 
@@ -789,7 +789,7 @@
 
     .line 6
     :cond_2
-    iget-object v1, p0, Landroidx/appcompat/widget/b0;->s:Landroid/app/SearchableInfo;
+    iget-object v1, p0, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
 
     invoke-virtual {v1}, Landroid/app/SearchableInfo;->shouldRewriteQueryFromText()Z
 
@@ -821,9 +821,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Li0/c;->q:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lh0/c;->p:Landroid/view/LayoutInflater;
 
-    iget v1, p0, Li0/c;->o:I
+    iget v1, p0, Lh0/c;->n:I
 
     const/4 v2, 0x0
 
@@ -848,7 +848,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 4
-    iget v1, p0, Landroidx/appcompat/widget/b0;->v:I
+    iget v1, p0, Landroidx/appcompat/widget/b0;->u:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -877,7 +877,7 @@
 
     .line 3
     :try_start_0
-    iget-object v1, p0, Li0/a;->j:Landroid/content/Context;
+    iget-object v1, p0, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1128,7 +1128,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Landroidx/appcompat/widget/b0;->t:Landroid/content/Context;
+    iget-object v3, p0, Landroidx/appcompat/widget/b0;->s:Landroid/content/Context;
 
     .line 4
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -1148,7 +1148,7 @@
     move-result-object v2
 
     .line 5
-    iget-object v3, p0, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iget-object v3, p0, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1175,16 +1175,19 @@
 
     .line 7
     :cond_2
-    iget-object v3, p0, Landroidx/appcompat/widget/b0;->t:Landroid/content/Context;
+    iget-object v3, p0, Landroidx/appcompat/widget/b0;->s:Landroid/content/Context;
 
-    invoke-static {v3, v1}, Lv/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    sget-object v4, Lv/a;->a:Ljava/lang/Object;
+
+    .line 8
+    invoke-virtual {v3, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 8
-    iget-object v3, p0, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    .line 9
+    iget-object v3, p0, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -1201,9 +1204,9 @@
     :catch_0
     return-object v0
 
-    .line 9
+    .line 10
     :catch_1
-    iget-object v1, p0, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1217,7 +1220,7 @@
 
     goto :goto_1
 
-    .line 10
+    .line 11
     :cond_4
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -1228,13 +1231,13 @@
 
     return-object v1
 
-    .line 11
+    .line 12
     :cond_5
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 12
+    .line 13
     :try_start_1
     invoke-virtual {v1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
@@ -1242,7 +1245,7 @@
 
     const-string v3, "android.resource"
 
-    .line 13
+    .line 14
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -1251,7 +1254,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 14
+    .line 15
     :try_start_2
     invoke-virtual {p0, v1}, Landroidx/appcompat/widget/b0;->f(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
 
@@ -1262,7 +1265,7 @@
 
     goto :goto_4
 
-    .line 15
+    .line 16
     :catch_2
     :try_start_3
     new-instance v2, Ljava/io/FileNotFoundException;
@@ -1285,9 +1288,9 @@
 
     throw v2
 
-    .line 16
+    .line 17
     :cond_6
-    iget-object v2, p0, Landroidx/appcompat/widget/b0;->t:Landroid/content/Context;
+    iget-object v2, p0, Landroidx/appcompat/widget/b0;->s:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1301,7 +1304,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 17
+    .line 18
     :try_start_4
     invoke-static {v2, v0}, Landroid/graphics/drawable/Drawable;->createFromStream(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
@@ -1309,7 +1312,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 18
+    .line 19
     :try_start_5
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_5
@@ -1317,7 +1320,7 @@
 
     goto :goto_2
 
-    .line 19
+    .line 20
     :catch_3
     :try_start_6
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1332,7 +1335,7 @@
     :catchall_0
     move-exception v3
 
-    .line 20
+    .line 21
     :try_start_7
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_7
@@ -1340,16 +1343,16 @@
 
     goto :goto_3
 
-    .line 21
+    .line 22
     :catch_4
     :try_start_8
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 22
+    .line 23
     :goto_3
     throw v3
 
-    .line 23
+    .line 24
     :cond_7
     new-instance v2, Ljava/io/FileNotFoundException;
 
@@ -1376,16 +1379,16 @@
     :catch_5
     move-exception v2
 
-    .line 24
-    invoke-static {v1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    .line 25
+    invoke-static {v1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     :goto_4
     if-eqz v0, :cond_8
 
-    .line 25
-    iget-object v1, p0, Landroidx/appcompat/widget/b0;->u:Ljava/util/WeakHashMap;
+    .line 26
+    iget-object v1, p0, Landroidx/appcompat/widget/b0;->t:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -1403,7 +1406,7 @@
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1, p2, p3}, Li0/a;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lh0/a;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
     :try_end_0
@@ -1415,9 +1418,9 @@
     move-exception p1
 
     .line 2
-    iget-object p2, p0, Li0/c;->q:Landroid/view/LayoutInflater;
+    iget-object p2, p0, Lh0/c;->p:Landroid/view/LayoutInflater;
 
-    iget v0, p0, Li0/c;->p:I
+    iget v0, p0, Lh0/c;->o:I
 
     const/4 v1, 0x0
 
@@ -1453,7 +1456,7 @@
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1, p2, p3}, Li0/a;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lh0/a;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
     :try_end_0
@@ -1595,7 +1598,7 @@
     move-result-object v4
 
     .line 14
-    iget-object p1, p0, Li0/a;->j:Landroid/content/Context;
+    iget-object p1, p0, Lh0/a;->i:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1658,7 +1661,7 @@
     invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 2
-    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
+    iget-object v0, p0, Lh0/a;->h:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -1678,7 +1681,7 @@
     const-string v1, "in_progress"
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     :cond_1
     return-void
@@ -1691,7 +1694,7 @@
     invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 
     .line 2
-    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
+    iget-object v0, p0, Lh0/a;->h:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -1711,7 +1714,7 @@
     const-string v1, "in_progress"
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     :cond_1
     return-void
@@ -1731,7 +1734,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/b0;->r:Landroidx/appcompat/widget/SearchView;
+    iget-object v0, p0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
 
     check-cast p1, Ljava/lang/CharSequence;
 

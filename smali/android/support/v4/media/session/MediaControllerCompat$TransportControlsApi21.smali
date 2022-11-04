@@ -153,7 +153,7 @@
     const-string v1, "android.support.v4.media.session.action.ARGUMENT_MEDIA_ID"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_EXTRAS"
 
@@ -179,7 +179,7 @@
     const-string v1, "android.support.v4.media.session.action.ARGUMENT_QUERY"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_EXTRAS"
 
@@ -289,7 +289,7 @@
     const-string v1, "android.support.v4.media.session.action.ARGUMENT_CAPTIONING_ENABLED"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     const-string p1, "android.support.v4.media.session.action.SET_CAPTIONING_ENABLED"
 
@@ -361,7 +361,7 @@
     const-string v1, "android.support.v4.media.session.action.ARGUMENT_REPEAT_MODE"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     const-string p1, "android.support.v4.media.session.action.SET_REPEAT_MODE"
 
@@ -382,7 +382,7 @@
     const-string v1, "android.support.v4.media.session.action.ARGUMENT_SHUFFLE_MODE"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     const-string p1, "android.support.v4.media.session.action.SET_SHUFFLE_MODE"
 

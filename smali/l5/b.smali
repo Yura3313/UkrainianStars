@@ -1,277 +1,268 @@
 .class public final Ll5/b;
-.super Lf5/i;
-.source "HmacKeyManager.java"
+.super Lm5/x;
+.source "AesCmacKeyFormat.java"
+
+# interfaces
+.implements Lm5/r0;
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ll5/b$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lf5/i<",
-        "Ln5/s0;",
-        ">;"
+        "Lm5/x<",
+        "Ll5/b;",
+        "Ll5/b$a;",
+        ">;",
+        "Lm5/r0;"
     }
 .end annotation
 
 
+# static fields
+.field private static final DEFAULT_INSTANCE:Ll5/b;
+
+.field public static final KEY_SIZE_FIELD_NUMBER:I = 0x1
+
+.field public static final PARAMS_FIELD_NUMBER:I = 0x2
+
+.field private static volatile PARSER:Lm5/y0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lm5/y0<",
+            "Ll5/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private keySize_:I
+
+.field private params_:Ll5/c;
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 2
 
-    const-class v0, Ln5/s0;
+    .line 1
+    new-instance v0, Ll5/b;
 
-    const/4 v1, 0x1
+    invoke-direct {v0}, Ll5/b;-><init>()V
 
-    new-array v1, v1, [Lf5/i$b;
+    .line 2
+    sput-object v0, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
 
-    new-instance v2, Ll5/b$a;
+    .line 3
+    const-class v1, Ll5/b;
 
-    invoke-direct {v2}, Ll5/b$a;-><init>()V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Lf5/i;-><init>(Ljava/lang/Class;[Lf5/i$b;)V
+    invoke-static {v1, v0}, Lm5/x;->p(Ljava/lang/Class;Lm5/x;)V
 
     return-void
 .end method
 
-.method public static i(Ln5/u0;)V
-    .locals 3
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lm5/x;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic q()Ll5/b;
+    .locals 1
+
+    sget-object v0, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
+
+    return-object v0
+.end method
+
+.method public static t(Lm5/i;Lm5/p;)Ll5/b;
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/security/GeneralSecurityException;
+            Lm5/a0;
         }
     .end annotation
 
-    .line 1
-    invoke-virtual {p0}, Ln5/u0;->t()I
+    sget-object v0, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
 
-    move-result v0
+    invoke-static {v0, p0, p1}, Lm5/x;->m(Lm5/x;Lm5/i;Lm5/p;)Lm5/x;
 
-    const/16 v1, 0xa
+    move-result-object p0
 
-    if-lt v0, v1, :cond_6
+    check-cast p0, Ll5/b;
 
-    .line 2
-    invoke-virtual {p0}, Ln5/u0;->s()Ln5/o0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    const-string v2, "tag size too big"
-
-    if-eq v0, v1, :cond_4
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_1
-
-    .line 3
-    invoke-virtual {p0}, Ln5/u0;->t()I
-
-    move-result p0
-
-    const/16 v0, 0x40
-
-    if-gt p0, v0, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 5
-    :cond_1
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "unknown hash type"
-
-    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 6
-    :cond_2
-    invoke-virtual {p0}, Ln5/u0;->t()I
-
-    move-result p0
-
-    const/16 v0, 0x20
-
-    if-gt p0, v0, :cond_3
-
-    goto :goto_0
-
-    .line 7
-    :cond_3
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 8
-    :cond_4
-    invoke-virtual {p0}, Ln5/u0;->t()I
-
-    move-result p0
-
-    const/16 v0, 0x14
-
-    if-gt p0, v0, :cond_5
-
-    :goto_0
-    return-void
-
-    .line 9
-    :cond_5
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 10
-    :cond_6
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "tag size too small"
-
-    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final i(Lm5/x$f;)Ljava/lang/Object;
+    .locals 3
 
-    const-string v0, "type.googleapis.com/google.crypto.tink.HmacKey"
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
-    return-object v0
-.end method
+    move-result p1
 
-.method public final c()Lf5/i$a;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lf5/i$a<",
-            "Ln5/t0;",
-            "Ln5/s0;",
-            ">;"
-        }
-    .end annotation
+    const/4 v0, 0x1
 
-    new-instance v0, Ll5/b$b;
+    packed-switch p1, :pswitch_data_0
 
-    invoke-direct {v0, p0}, Ll5/b$b;-><init>(Ll5/b;)V
+    .line 2
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    return-object v0
-.end method
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-.method public final d()Ln5/v0$b;
-    .locals 1
+    throw p1
 
-    sget-object v0, Ln5/v0$b;->i:Ln5/v0$b;
+    .line 3
+    :pswitch_0
+    sget-object p1, Ll5/b;->PARSER:Lm5/y0;
 
-    return-object v0
-.end method
+    if-nez p1, :cond_1
 
-.method public final e(Lo5/d;)Lcom/google/crypto/tink/shaded/protobuf/x;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
+    .line 4
+    const-class v0, Ll5/b;
 
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
+    monitor-enter v0
 
-    move-result-object v0
+    .line 5
+    :try_start_0
+    sget-object p1, Ll5/b;->PARSER:Lm5/y0;
 
-    invoke-static {p1, v0}, Ln5/s0;->z(Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Ln5/s0;
+    if-nez p1, :cond_0
+
+    .line 6
+    new-instance p1, Lm5/x$b;
+
+    sget-object v1, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
+
+    invoke-direct {p1, v1}, Lm5/x$b;-><init>(Lm5/x;)V
+
+    .line 7
+    sput-object p1, Ll5/b;->PARSER:Lm5/y0;
+
+    .line 8
+    :cond_0
+    monitor-exit v0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    return-object p1
+
+    .line 9
+    :pswitch_1
+    sget-object p1, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
+
+    return-object p1
+
+    .line 10
+    :pswitch_2
+    new-instance p1, Ll5/b$a;
+
+    invoke-direct {p1}, Ll5/b$a;-><init>()V
+
+    return-object p1
+
+    .line 11
+    :pswitch_3
+    new-instance p1, Ll5/b;
+
+    invoke-direct {p1}, Ll5/b;-><init>()V
+
+    return-object p1
+
+    :pswitch_4
+    const/4 p1, 0x2
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    const-string v2, "keySize_"
+
+    aput-object v2, p1, v1
+
+    const-string v1, "params_"
+
+    aput-object v1, p1, v0
+
+    const-string v0, "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u000b\u0002\t"
+
+    .line 12
+    sget-object v1, Ll5/b;->DEFAULT_INSTANCE:Ll5/b;
+
+    .line 13
+    new-instance v2, Lm5/c1;
+
+    invoke-direct {v2, v1, v0, p1}, Lm5/c1;-><init>(Lm5/q0;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-object v2
+
+    :pswitch_5
+    const/4 p1, 0x0
+
+    return-object p1
+
+    .line 14
+    :pswitch_6
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p1
 
     return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final bridge synthetic g(Lcom/google/crypto/tink/shaded/protobuf/x;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+.method public final r()I
+    .locals 1
 
-    check-cast p1, Ln5/s0;
+    iget v0, p0, Ll5/b;->keySize_:I
 
-    invoke-virtual {p0, p1}, Ll5/b;->h(Ln5/s0;)V
-
-    return-void
+    return v0
 .end method
 
-.method public final h(Ln5/s0;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+.method public final s()Ll5/c;
+    .locals 1
 
-    .line 1
-    invoke-virtual {p1}, Ln5/s0;->x()I
+    iget-object v0, p0, Ll5/b;->params_:Ll5/c;
 
-    move-result v0
+    if-nez v0, :cond_0
 
-    invoke-static {v0}, Lr5/l0;->e(I)V
-
-    .line 2
-    invoke-virtual {p1}, Ln5/s0;->v()Lo5/d;
+    invoke-static {}, Ll5/c;->r()Ll5/c;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lo5/d;->size()I
-
-    move-result v0
-
-    const/16 v1, 0x10
-
-    if-lt v0, v1, :cond_0
-
-    .line 3
-    invoke-virtual {p1}, Ln5/s0;->w()Ln5/u0;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ll5/b;->i(Ln5/u0;)V
-
-    return-void
-
-    .line 4
     :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "key too short"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object v0
 .end method

@@ -76,7 +76,7 @@
 .end method
 
 .method public maxAge(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     if-ltz p1, :cond_1
 
@@ -89,9 +89,9 @@
 
     const-wide/32 v0, 0x7fffffff
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-lez v2, :cond_0
+    if-lez v0, :cond_0
 
     const p1, 0x7fffffff
 
@@ -113,7 +113,7 @@
     const-string v0, "maxAge < 0: "
 
     .line 4
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -124,7 +124,7 @@
 .end method
 
 .method public maxStale(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     if-ltz p1, :cond_1
 
@@ -137,9 +137,9 @@
 
     const-wide/32 v0, 0x7fffffff
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-lez v2, :cond_0
+    if-lez v0, :cond_0
 
     const p1, 0x7fffffff
 
@@ -161,7 +161,7 @@
     const-string v0, "maxStale < 0: "
 
     .line 4
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -172,7 +172,7 @@
 .end method
 
 .method public minFresh(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
-    .locals 3
+    .locals 2
 
     if-ltz p1, :cond_1
 
@@ -185,9 +185,9 @@
 
     const-wide/32 v0, 0x7fffffff
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-lez v2, :cond_0
+    if-lez v0, :cond_0
 
     const p1, 0x7fffffff
 
@@ -209,7 +209,7 @@
     const-string v0, "minFresh < 0: "
 
     .line 4
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

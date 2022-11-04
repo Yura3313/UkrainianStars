@@ -1,245 +1,106 @@
 .class public final Lnd/l;
-.super Ljava/lang/Object;
-.source "MessagesTabFriendsFragment.kt"
+.super Lif/i;
+.source "OnboardingNicknamePageFragment.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Lhf/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/l<",
+        "Ljava/lang/String;",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic f:Lnd/k$f;
 
-.field public final b:Lvc/v;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lvc/v;)V
-    .locals 1
+.method public constructor <init>(Lnd/k$f;Ljava/lang/String;)V
+    .locals 0
 
-    const-string v0, "shopItem"
+    iput-object p1, p0, Lnd/l;->f:Lnd/k$f;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-object p2, p0, Lnd/l;->g:Ljava/lang/String;
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x1
 
-    iput-object p1, p0, Lnd/l;->b:Lvc/v;
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->fragment_messages_list_item_friend_request:I
-
-    iput p1, p0, Lnd/l;->a:I
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    instance-of v0, p1, Lnd/l;
+    check-cast p1, Ljava/lang/String;
 
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
+    const-string v0, "text"
 
     .line 2
-    :cond_0
-    check-cast p1, Lnd/l;
-
-    iget-object p1, p1, Lnd/l;->b:Lvc/v;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p1, Lvc/v;->e:Lvc/w;
+    iget-object v0, p0, Lnd/l;->f:Lnd/k$f;
 
-    .line 4
-    iget-object v0, p0, Lnd/l;->b:Lvc/v;
+    iget-object v0, v0, Lnd/k$f;->f:Ljava/lang/ref/WeakReference;
 
-    .line 5
-    iget-object v0, v0, Lvc/v;->e:Lvc/w;
-
-    .line 6
-    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c()I
-    .locals 1
-
-    iget v0, p0, Lnd/l;->a:I
-
-    return v0
-.end method
-
-.method public final d(Lae/a2;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    instance-of v0, p1, Lnd/l;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lnd/l;
-
-    iget-object p1, p1, Lnd/l;->b:Lvc/v;
-
-    .line 2
-    iget-object p1, p1, Lvc/v;->a:Ljava/lang/String;
-
-    .line 3
-    iget-object v0, p0, Lnd/l;->b:Lvc/v;
-
-    .line 4
-    iget-object v0, v0, Lvc/v;->a:Ljava/lang/String;
-
-    .line 5
-    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
-.end method
-
-.method public final e()Ljava/util/Date;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lnd/l;->b:Lvc/v;
-
-    .line 2
-    iget-object v0, v0, Lvc/v;->e:Lvc/w;
-
-    .line 3
-    instance-of v1, v0, Lvc/w$e;
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x0
-
-    :cond_0
-    check-cast v0, Lvc/w$e;
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    iget-object v0, v0, Lvc/w$e;->e:Ljava/util/Date;
-
-    if-eqz v0, :cond_1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    new-instance v0, Ljava/util/Date;
-
-    invoke-direct {v0}, Ljava/util/Date;-><init>()V
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lnd/l;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lnd/l;
-
-    iget-object v0, p0, Lnd/l;->b:Lvc/v;
-
-    iget-object p1, p1, Lnd/l;->b:Lvc/v;
-
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Lnd/l;->b:Lvc/v;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lvc/v;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "ReceivedDonationRow(shopItem="
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
-    iget-object v1, p0, Lnd/l;->b:Lvc/v;
+    check-cast v0, Lnd/k;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_0
 
-    const-string v1, ")"
+    .line 4
+    sget v1, Lcom/supercell/id/R$id;->fair_play_text_view:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lnd/k;->U0(I)Landroid/view/View;
 
     move-result-object v0
 
-    return-object v0
+    check-cast v0, Landroid/widget/TextView;
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Landroid/text/SpannableString;
+
+    invoke-direct {v1, p1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+
+    new-instance v2, Landroid/text/style/URLSpan;
+
+    iget-object v3, p0, Lnd/l;->g:Ljava/lang/String;
+
+    invoke-direct {v2, v3}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result p1
+
+    const/16 v4, 0x21
+
+    invoke-virtual {v1, v2, v3, p1, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 5
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

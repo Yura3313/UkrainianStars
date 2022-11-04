@@ -3,7 +3,7 @@
 .source "KGAuthActivity.java"
 
 # interfaces
-.implements Lu/a$c;
+.implements Lu/a$a;
 
 
 # annotations
@@ -155,14 +155,14 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p0, p1, p2, v0}, Lcom/kakaogame/KGAuthActivity;->start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$c;)J
+    invoke-static {p0, p1, p2, v0}, Lcom/kakaogame/KGAuthActivity;->start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$a;)J
 
     move-result-wide p0
 
     return-wide p0
 .end method
 
-.method public static start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$c;)J
+.method public static start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$a;)J
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -171,7 +171,7 @@
             "Lcom/kakaogame/KGAuthActivity$KGActivityAction;",
             "Lcom/kakaogame/util/MutexLock<",
             "*>;",
-            "Lu/a$c;",
+            "Lu/a$a;",
             ")J"
         }
     .end annotation
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/kakaogame/auth/AuthActivityManager;->setActivityParameters(Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$c;)J
+    invoke-virtual {v0, p1, p2, p3}, Lcom/kakaogame/auth/AuthActivityManager;->setActivityParameters(Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$a;)J
 
     move-result-wide p1
 
@@ -396,28 +396,28 @@
     invoke-static {v6, v8}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1, v5, v3, v4}, Landroid/os/Bundle;->getLong(Ljava/lang/String;J)J
+    invoke-virtual {p1, v5, v3, v4}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/kakaogame/KGAuthActivity;->txId:J
 
     .line 4
-    invoke-virtual {p1, v2, v7}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v2, v7}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
     iput v2, p0, Lcom/kakaogame/KGAuthActivity;->systemUiVisibility:I
 
     .line 5
-    invoke-virtual {p1, v1, v7}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v1, v7}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v1
 
     iput v1, p0, Lcom/kakaogame/KGAuthActivity;->flags:I
 
     .line 6
-    invoke-virtual {p1, v0, v7}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v0, v7}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result p1
 
@@ -525,7 +525,7 @@
 .end method
 
 .method public onDestroy()V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
@@ -542,9 +542,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v0, :cond_0
 
     .line 4
     invoke-static {}, Lcom/kakaogame/auth/AuthActivityManager;->getInstance()Lcom/kakaogame/auth/AuthActivityManager;
@@ -588,7 +588,7 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -665,28 +665,28 @@
 
     const-string v2, "txId"
 
-    invoke-virtual {p1, v2, v0, v1}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {p1, v2, v0, v1}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 2
     iget v0, p0, Lcom/kakaogame/KGAuthActivity;->systemUiVisibility:I
 
     const-string v1, "systemUiVisibility"
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 3
     iget v0, p0, Lcom/kakaogame/KGAuthActivity;->flags:I
 
     const-string v1, "flags"
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 4
     iget v0, p0, Lcom/kakaogame/KGAuthActivity;->displayCutoutMode:I
 
     const-string v1, "cutoutMode"
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 5
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V

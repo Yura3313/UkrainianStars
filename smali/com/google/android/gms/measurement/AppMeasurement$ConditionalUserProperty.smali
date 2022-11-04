@@ -110,8 +110,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const-string v0, "null reference"
+
     .line 2
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 3
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mAppId:Ljava/lang/String;

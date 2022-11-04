@@ -16,16 +16,16 @@
 
 
 # instance fields
-.field public final g:Landroid/app/PendingIntent;
+.field public final f:Landroid/app/PendingIntent;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lv1/d;
+    new-instance v0, Lt1/d;
 
-    invoke-direct {v0}, Lv1/d;-><init>()V
+    invoke-direct {v0}, Lt1/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -38,14 +38,13 @@
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
+    const-string v0, "null reference"
+
     .line 2
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-object v0, p1
-
-    check-cast v0, Landroid/app/PendingIntent;
-
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->g:Landroid/app/PendingIntent;
+    .line 3
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->f:Landroid/app/PendingIntent;
 
     return-void
 .end method
@@ -69,11 +68,11 @@
     check-cast p1, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->g:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->f:Landroid/app/PendingIntent;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->g:Landroid/app/PendingIntent;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->f:Landroid/app/PendingIntent;
 
-    invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -88,7 +87,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->g:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->f:Landroid/app/PendingIntent;
 
     const/4 v2, 0x0
 
@@ -108,22 +107,22 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->g:Landroid/app/PendingIntent;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordResult;->f:Landroid/app/PendingIntent;
 
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 4
-    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

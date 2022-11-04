@@ -54,12 +54,12 @@
 
     if-nez v2, :cond_0
 
-    const/4 v2, 0x1
+    move v2, v4
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_0
     iget-boolean v5, v1, Lokhttp3/internal/cache/DiskLruCache;->closed:Z

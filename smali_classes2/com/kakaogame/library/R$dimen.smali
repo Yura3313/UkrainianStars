@@ -202,243 +202,243 @@
 
 .field public static final disabled_alpha_material_light:I = 0x7f0700af
 
-.field public static final highlight_alpha_material_colored:I = 0x7f0700cb
+.field public static final highlight_alpha_material_colored:I = 0x7f0700ca
 
-.field public static final highlight_alpha_material_dark:I = 0x7f0700cc
+.field public static final highlight_alpha_material_dark:I = 0x7f0700cb
 
-.field public static final highlight_alpha_material_light:I = 0x7f0700cd
+.field public static final highlight_alpha_material_light:I = 0x7f0700cc
 
-.field public static final hint_alpha_material_dark:I = 0x7f0700ce
+.field public static final hint_alpha_material_dark:I = 0x7f0700cd
 
-.field public static final hint_alpha_material_light:I = 0x7f0700cf
+.field public static final hint_alpha_material_light:I = 0x7f0700ce
 
-.field public static final hint_pressed_alpha_material_dark:I = 0x7f0700d0
+.field public static final hint_pressed_alpha_material_dark:I = 0x7f0700cf
 
-.field public static final hint_pressed_alpha_material_light:I = 0x7f0700d1
+.field public static final hint_pressed_alpha_material_light:I = 0x7f0700d0
 
-.field public static final notification_action_icon_size:I = 0x7f0701c3
+.field public static final notification_action_icon_size:I = 0x7f0701c2
 
-.field public static final notification_action_text_size:I = 0x7f0701c4
+.field public static final notification_action_text_size:I = 0x7f0701c3
 
-.field public static final notification_big_circle_margin:I = 0x7f0701c5
+.field public static final notification_big_circle_margin:I = 0x7f0701c4
 
-.field public static final notification_content_margin_start:I = 0x7f0701c8
+.field public static final notification_content_margin_start:I = 0x7f0701c7
 
-.field public static final notification_large_icon_height:I = 0x7f0701c9
+.field public static final notification_large_icon_height:I = 0x7f0701c8
 
-.field public static final notification_large_icon_width:I = 0x7f0701ca
+.field public static final notification_large_icon_width:I = 0x7f0701c9
 
-.field public static final notification_main_column_padding_top:I = 0x7f0701cb
+.field public static final notification_main_column_padding_top:I = 0x7f0701ca
 
-.field public static final notification_media_narrow_margin:I = 0x7f0701cc
+.field public static final notification_media_narrow_margin:I = 0x7f0701cb
 
-.field public static final notification_right_icon_size:I = 0x7f0701cd
+.field public static final notification_right_icon_size:I = 0x7f0701cc
 
-.field public static final notification_right_side_padding_top:I = 0x7f0701ce
+.field public static final notification_right_side_padding_top:I = 0x7f0701cd
 
-.field public static final notification_small_icon_background_padding:I = 0x7f0701cf
+.field public static final notification_small_icon_background_padding:I = 0x7f0701ce
 
-.field public static final notification_small_icon_size_as_large:I = 0x7f0701d0
+.field public static final notification_small_icon_size_as_large:I = 0x7f0701cf
 
-.field public static final notification_subtext_size:I = 0x7f0701d1
+.field public static final notification_subtext_size:I = 0x7f0701d0
 
-.field public static final notification_top_pad:I = 0x7f0701d2
+.field public static final notification_top_pad:I = 0x7f0701d1
 
-.field public static final notification_top_pad_large_text:I = 0x7f0701d3
+.field public static final notification_top_pad_large_text:I = 0x7f0701d2
 
-.field public static final sdk_cafe_land_min_bottom_margin:I = 0x7f0701f0
+.field public static final sdk_cafe_land_min_bottom_margin:I = 0x7f0701ef
 
-.field public static final sdk_cafe_land_min_side_margin:I = 0x7f0701f1
+.field public static final sdk_cafe_land_min_side_margin:I = 0x7f0701f0
 
-.field public static final sdk_cafe_landscape_height:I = 0x7f0701f2
+.field public static final sdk_cafe_landscape_height:I = 0x7f0701f1
 
-.field public static final sdk_cafe_landscape_width:I = 0x7f0701f3
+.field public static final sdk_cafe_landscape_width:I = 0x7f0701f2
 
-.field public static final sdk_cafe_menu_tab:I = 0x7f0701f4
+.field public static final sdk_cafe_menu_tab:I = 0x7f0701f3
 
-.field public static final sdk_cafe_min_bottom_margin:I = 0x7f0701f5
+.field public static final sdk_cafe_min_bottom_margin:I = 0x7f0701f4
 
-.field public static final sdk_cafe_min_side_margin:I = 0x7f0701f6
+.field public static final sdk_cafe_min_side_margin:I = 0x7f0701f5
 
-.field public static final sdk_cafe_portrait_height:I = 0x7f0701f7
+.field public static final sdk_cafe_portrait_height:I = 0x7f0701f6
 
-.field public static final sdk_cafe_portrait_width:I = 0x7f0701f8
+.field public static final sdk_cafe_portrait_width:I = 0x7f0701f7
 
-.field public static final sdk_cafe_title:I = 0x7f0701f9
+.field public static final sdk_cafe_title:I = 0x7f0701f8
 
-.field public static final sdk_coppa_desc_text_size:I = 0x7f0701fa
+.field public static final sdk_coppa_desc_text_size:I = 0x7f0701f9
 
-.field public static final sdk_coppa_text_margin:I = 0x7f0701fb
+.field public static final sdk_coppa_text_margin:I = 0x7f0701fa
 
-.field public static final sdk_coppa_title_text_size:I = 0x7f0701fc
+.field public static final sdk_coppa_title_text_size:I = 0x7f0701fb
 
-.field public static final sdk_invitation_landscape_reward_height:I = 0x7f0701fd
+.field public static final sdk_invitation_landscape_reward_height:I = 0x7f0701fc
 
-.field public static final sdk_invitation_landscape_reward_width:I = 0x7f0701fe
+.field public static final sdk_invitation_landscape_reward_width:I = 0x7f0701fd
 
-.field public static final sdk_invitation_landscape_share_height:I = 0x7f0701ff
+.field public static final sdk_invitation_landscape_share_height:I = 0x7f0701fe
 
-.field public static final sdk_invitation_landscape_share_width:I = 0x7f070200
+.field public static final sdk_invitation_landscape_share_width:I = 0x7f0701ff
 
-.field public static final sdk_invitation_portrait_reward_height:I = 0x7f070201
+.field public static final sdk_invitation_portrait_reward_height:I = 0x7f070200
 
-.field public static final sdk_invitation_portrait_reward_width:I = 0x7f070202
+.field public static final sdk_invitation_portrait_reward_width:I = 0x7f070201
 
-.field public static final sdk_invitation_portrait_share_height:I = 0x7f070203
+.field public static final sdk_invitation_portrait_share_height:I = 0x7f070202
 
-.field public static final sdk_invitation_portrait_share_width:I = 0x7f070204
+.field public static final sdk_invitation_portrait_share_width:I = 0x7f070203
 
-.field public static final sdk_login_big_title_text_size:I = 0x7f070205
+.field public static final sdk_login_big_title_text_size:I = 0x7f070204
 
-.field public static final sdk_login_button_bottom_margin:I = 0x7f070206
+.field public static final sdk_login_button_bottom_margin:I = 0x7f070205
 
-.field public static final sdk_login_button_bottom_margin_lgview:I = 0x7f070207
+.field public static final sdk_login_button_bottom_margin_lgview:I = 0x7f070206
 
-.field public static final sdk_login_exit_side_margin:I = 0x7f070208
+.field public static final sdk_login_exit_side_margin:I = 0x7f070207
 
-.field public static final sdk_login_exit_side_margin_right:I = 0x7f070209
+.field public static final sdk_login_exit_side_margin_right:I = 0x7f070208
 
-.field public static final sdk_login_exit_side_margin_top:I = 0x7f07020a
+.field public static final sdk_login_exit_side_margin_top:I = 0x7f070209
 
-.field public static final sdk_login_exit_size:I = 0x7f07020b
+.field public static final sdk_login_exit_size:I = 0x7f07020a
 
-.field public static final sdk_login_idp_icon_left_margin:I = 0x7f07020c
+.field public static final sdk_login_idp_icon_left_margin:I = 0x7f07020b
 
-.field public static final sdk_login_idp_icon_margin:I = 0x7f07020d
+.field public static final sdk_login_idp_icon_margin:I = 0x7f07020c
 
-.field public static final sdk_login_idp_icon_size:I = 0x7f07020e
+.field public static final sdk_login_idp_icon_size:I = 0x7f07020d
 
-.field public static final sdk_login_idp_item_bottom_padding:I = 0x7f07020f
+.field public static final sdk_login_idp_item_bottom_padding:I = 0x7f07020e
 
-.field public static final sdk_login_idp_item_right_margin:I = 0x7f070210
+.field public static final sdk_login_idp_item_right_margin:I = 0x7f07020f
 
-.field public static final sdk_login_idp_name_text_padding:I = 0x7f070211
+.field public static final sdk_login_idp_name_text_padding:I = 0x7f070210
 
-.field public static final sdk_login_idp_name_text_size:I = 0x7f070212
+.field public static final sdk_login_idp_name_text_size:I = 0x7f070211
 
-.field public static final sdk_login_land_dialog_width:I = 0x7f070213
+.field public static final sdk_login_land_dialog_width:I = 0x7f070212
 
-.field public static final sdk_login_land_multi_item_button_width:I = 0x7f070214
+.field public static final sdk_login_land_multi_item_button_width:I = 0x7f070213
 
-.field public static final sdk_login_land_multi_side_margin:I = 0x7f070215
+.field public static final sdk_login_land_multi_side_margin:I = 0x7f070214
 
-.field public static final sdk_login_land_ryan_bottom_margin:I = 0x7f070216
+.field public static final sdk_login_land_ryan_bottom_margin:I = 0x7f070215
 
-.field public static final sdk_login_land_ryan_height:I = 0x7f070217
+.field public static final sdk_login_land_ryan_height:I = 0x7f070216
 
-.field public static final sdk_login_land_ryan_width:I = 0x7f070218
+.field public static final sdk_login_land_ryan_width:I = 0x7f070217
 
-.field public static final sdk_login_land_side_margin:I = 0x7f070219
+.field public static final sdk_login_land_side_margin:I = 0x7f070218
 
-.field public static final sdk_login_land_single_item_bottom_margin:I = 0x7f07021a
+.field public static final sdk_login_land_single_item_bottom_margin:I = 0x7f070219
 
-.field public static final sdk_login_land_single_item_button_width:I = 0x7f07021b
+.field public static final sdk_login_land_single_item_button_width:I = 0x7f07021a
 
-.field public static final sdk_login_land_title_top_margin:I = 0x7f07021c
+.field public static final sdk_login_land_title_top_margin:I = 0x7f07021b
 
-.field public static final sdk_login_land_top_bottom_margin:I = 0x7f07021d
+.field public static final sdk_login_land_top_bottom_margin:I = 0x7f07021c
 
-.field public static final sdk_login_middle_title_text_size:I = 0x7f07021e
+.field public static final sdk_login_middle_title_text_size:I = 0x7f07021d
 
-.field public static final sdk_login_port_bottom_margin:I = 0x7f07021f
+.field public static final sdk_login_port_bottom_margin:I = 0x7f07021e
 
-.field public static final sdk_login_port_button_icon_left_margin:I = 0x7f070220
+.field public static final sdk_login_port_button_icon_left_margin:I = 0x7f07021f
 
-.field public static final sdk_login_port_button_side_margin:I = 0x7f070221
+.field public static final sdk_login_port_button_side_margin:I = 0x7f070220
 
-.field public static final sdk_login_port_dialog_width:I = 0x7f070222
+.field public static final sdk_login_port_dialog_width:I = 0x7f070221
 
-.field public static final sdk_login_port_multi_item_button_width:I = 0x7f070223
+.field public static final sdk_login_port_multi_item_button_width:I = 0x7f070222
 
-.field public static final sdk_login_port_ryan_height:I = 0x7f070224
+.field public static final sdk_login_port_ryan_height:I = 0x7f070223
 
-.field public static final sdk_login_port_ryan_width:I = 0x7f070225
+.field public static final sdk_login_port_ryan_width:I = 0x7f070224
 
-.field public static final sdk_login_port_side_margin:I = 0x7f070226
+.field public static final sdk_login_port_side_margin:I = 0x7f070225
 
-.field public static final sdk_login_port_title_top_margin:I = 0x7f070227
+.field public static final sdk_login_port_title_top_margin:I = 0x7f070226
 
-.field public static final sdk_login_title_bottom_margin:I = 0x7f070228
+.field public static final sdk_login_title_bottom_margin:I = 0x7f070227
 
-.field public static final sdk_logout_button_text_size:I = 0x7f070229
+.field public static final sdk_logout_button_text_size:I = 0x7f070228
 
-.field public static final sdk_logout_dialog_width:I = 0x7f07022a
+.field public static final sdk_logout_dialog_width:I = 0x7f070229
 
-.field public static final sdk_logout_idp_icon_margin_right:I = 0x7f07022b
+.field public static final sdk_logout_idp_icon_margin_right:I = 0x7f07022a
 
-.field public static final sdk_logout_title_text_size:I = 0x7f07022c
+.field public static final sdk_logout_title_text_size:I = 0x7f07022b
 
-.field public static final sdk_screenshot_dialog_camera_height:I = 0x7f07022d
+.field public static final sdk_screenshot_dialog_camera_height:I = 0x7f07022c
 
-.field public static final sdk_screenshot_dialog_camera_margin_bottom:I = 0x7f07022e
+.field public static final sdk_screenshot_dialog_camera_margin_bottom:I = 0x7f07022d
 
-.field public static final sdk_screenshot_dialog_camera_margin_right:I = 0x7f07022f
+.field public static final sdk_screenshot_dialog_camera_margin_right:I = 0x7f07022e
 
-.field public static final sdk_screenshot_dialog_camera_padding:I = 0x7f070230
+.field public static final sdk_screenshot_dialog_camera_padding:I = 0x7f07022f
 
-.field public static final sdk_screenshot_dialog_camera_width:I = 0x7f070231
+.field public static final sdk_screenshot_dialog_camera_width:I = 0x7f070230
 
-.field public static final sdk_screenshot_dialog_close_height:I = 0x7f070232
+.field public static final sdk_screenshot_dialog_close_height:I = 0x7f070231
 
-.field public static final sdk_screenshot_dialog_close_padding:I = 0x7f070233
+.field public static final sdk_screenshot_dialog_close_padding:I = 0x7f070232
 
-.field public static final sdk_screenshot_dialog_close_width:I = 0x7f070234
+.field public static final sdk_screenshot_dialog_close_width:I = 0x7f070233
 
-.field public static final sdk_screenshot_dialog_crop_height:I = 0x7f070235
+.field public static final sdk_screenshot_dialog_crop_height:I = 0x7f070234
 
-.field public static final sdk_screenshot_dialog_crop_margin_bottom:I = 0x7f070236
+.field public static final sdk_screenshot_dialog_crop_margin_bottom:I = 0x7f070235
 
-.field public static final sdk_screenshot_dialog_crop_padding:I = 0x7f070237
+.field public static final sdk_screenshot_dialog_crop_padding:I = 0x7f070236
 
-.field public static final sdk_screenshot_dialog_crop_width:I = 0x7f070238
+.field public static final sdk_screenshot_dialog_crop_width:I = 0x7f070237
 
-.field public static final sdk_starting_promotion_bottom_bar_height:I = 0x7f070239
+.field public static final sdk_starting_promotion_bottom_bar_height:I = 0x7f070238
 
-.field public static final sdk_starting_promotion_check_margin_left:I = 0x7f07023a
+.field public static final sdk_starting_promotion_check_margin_left:I = 0x7f070239
 
-.field public static final sdk_starting_promotion_check_margin_right:I = 0x7f07023b
+.field public static final sdk_starting_promotion_check_margin_right:I = 0x7f07023a
 
-.field public static final sdk_starting_promotion_check_size:I = 0x7f07023c
+.field public static final sdk_starting_promotion_check_size:I = 0x7f07023b
 
-.field public static final sdk_starting_promotion_close_size:I = 0x7f07023d
+.field public static final sdk_starting_promotion_close_size:I = 0x7f07023c
 
-.field public static final sdk_starting_promotion_donotshow_desc_text_size:I = 0x7f07023e
+.field public static final sdk_starting_promotion_donotshow_desc_text_size:I = 0x7f07023d
 
-.field public static final sdk_starting_promotion_land_image_height:I = 0x7f07023f
+.field public static final sdk_starting_promotion_land_image_height:I = 0x7f07023e
 
-.field public static final sdk_starting_promotion_land_image_width:I = 0x7f070240
+.field public static final sdk_starting_promotion_land_image_width:I = 0x7f07023f
 
-.field public static final sdk_starting_promotion_port_image_height:I = 0x7f070241
+.field public static final sdk_starting_promotion_port_image_height:I = 0x7f070240
 
-.field public static final sdk_starting_promotion_port_image_width:I = 0x7f070242
+.field public static final sdk_starting_promotion_port_image_width:I = 0x7f070241
 
-.field public static final sdk_starting_promotion_progress:I = 0x7f070243
+.field public static final sdk_starting_promotion_progress:I = 0x7f070242
 
-.field public static final sdk_starting_promotion_side_margin:I = 0x7f070244
+.field public static final sdk_starting_promotion_side_margin:I = 0x7f070243
 
-.field public static final subtitle_corner_radius:I = 0x7f070248
+.field public static final subtitle_corner_radius:I = 0x7f070247
 
-.field public static final subtitle_outline_width:I = 0x7f070249
+.field public static final subtitle_outline_width:I = 0x7f070248
 
-.field public static final subtitle_shadow_offset:I = 0x7f07024a
+.field public static final subtitle_shadow_offset:I = 0x7f070249
 
-.field public static final subtitle_shadow_radius:I = 0x7f07024b
+.field public static final subtitle_shadow_radius:I = 0x7f07024a
 
-.field public static final tooltip_corner_radius:I = 0x7f070256
+.field public static final tooltip_corner_radius:I = 0x7f070255
 
-.field public static final tooltip_horizontal_padding:I = 0x7f070257
+.field public static final tooltip_horizontal_padding:I = 0x7f070256
 
-.field public static final tooltip_margin:I = 0x7f070258
+.field public static final tooltip_margin:I = 0x7f070257
 
-.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f070259
+.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f070258
 
-.field public static final tooltip_precise_anchor_threshold:I = 0x7f07025a
+.field public static final tooltip_precise_anchor_threshold:I = 0x7f070259
 
-.field public static final tooltip_vertical_padding:I = 0x7f07025b
+.field public static final tooltip_vertical_padding:I = 0x7f07025a
 
-.field public static final tooltip_y_offset_non_touch:I = 0x7f07025c
+.field public static final tooltip_y_offset_non_touch:I = 0x7f07025b
 
-.field public static final tooltip_y_offset_touch:I = 0x7f07025d
+.field public static final tooltip_y_offset_touch:I = 0x7f07025c
 
 
 # direct methods

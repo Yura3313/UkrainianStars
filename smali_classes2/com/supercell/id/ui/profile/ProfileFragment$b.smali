@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$b;
-.super Lcom/supercell/id/ui/BaseFragment;
+.super Luc/j;
 .source "ProfileFragment.kt"
 
 
@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Luc/j;-><init>()V
 
     return-void
 .end method
@@ -31,12 +31,12 @@
     return-void
 .end method
 
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_profile_head:I
 
@@ -49,10 +49,10 @@
     return-object p1
 .end method
 
-.method public final synthetic a0()V
+.method public final synthetic Z()V
     .locals 0
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Luc/j;->Z()V
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "Value.java"
 
 # interfaces
-.implements Lcom/google/protobuf/v1;
+.implements Lcom/google/protobuf/y1;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Value;",
         "Lcom/google/protobuf/Value$a;",
         ">;",
-        "Lcom/google/protobuf/v1;"
+        "Lcom/google/protobuf/y1;"
     }
 .end annotation
 

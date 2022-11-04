@@ -188,7 +188,7 @@
 
     const/high16 v2, 0x41400000    # 12.0f
 
-    mul-float p1, p1, v2
+    mul-float/2addr p1, v2
 
     invoke-virtual {v1, p1}, Landroid/graphics/Paint;->setTextSize(F)V
 
@@ -243,6 +243,8 @@
 
     return-void
 
+    nop
+
     :array_0
     .array-data 4
         0x40800000    # 4.0f
@@ -252,7 +254,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/graphics/Canvas;IILo/p;)V
+.method public final a(Landroid/graphics/Canvas;IILo/o;)V
     .locals 21
 
     move-object/from16 v6, p0
@@ -267,17 +269,17 @@
 
     const/4 v11, 0x1
 
-    const/4 v12, 0x0
+    const/4 v12, 0x4
 
-    const/4 v13, 0x4
+    const/4 v13, 0x0
 
-    if-ne v8, v13, :cond_4
+    if-ne v8, v12, :cond_4
 
-    const/4 v0, 0x0
+    move v0, v13
 
-    const/4 v1, 0x0
+    move v1, v0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 1
     :goto_0
@@ -292,7 +294,7 @@
 
     if-ne v4, v11, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v11
 
     .line 3
     :cond_0
@@ -300,7 +302,7 @@
 
     if-ne v3, v10, :cond_1
 
-    const/4 v2, 0x1
+    move v2, v11
 
     :cond_1
     add-int/lit8 v0, v0, 0x1
@@ -342,7 +344,7 @@
     invoke-virtual {v7, v0, v1}, Landroid/graphics/Canvas;->drawLines([FLandroid/graphics/Paint;)V
 
     .line 9
-    iget-object v0, v9, Lo/p;->a:Landroid/view/View;
+    iget-object v0, v9, Lo/o;->a:Landroid/view/View;
 
     if-eqz v0, :cond_7
 
@@ -352,7 +354,7 @@
     move-result v0
 
     .line 11
-    iget-object v1, v9, Lo/p;->a:Landroid/view/View;
+    iget-object v1, v9, Lo/o;->a:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -365,19 +367,19 @@
     goto :goto_1
 
     :cond_7
-    const/4 v15, 0x0
+    move v15, v13
 
-    const/16 v16, 0x0
+    move/from16 v16, v15
 
     :goto_1
-    const/4 v5, 0x1
+    move v5, v11
 
     :goto_2
     add-int/lit8 v0, p3, -0x1
 
     if-ge v5, v0, :cond_10
 
-    if-ne v8, v13, :cond_8
+    if-ne v8, v12, :cond_8
 
     .line 12
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:[I
@@ -448,17 +450,17 @@
     add-int/lit8 v0, v5, -0x1
 
     .line 21
-    iget-object v1, v9, Lo/p;->s:Ljava/util/ArrayList;
+    iget-object v1, v9, Lo/o;->s:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lo/r;
+    check-cast v1, Lo/q;
 
     const/16 v17, 0x0
 
-    if-ne v8, v13, :cond_c
+    if-ne v8, v12, :cond_c
 
     .line 22
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:[I
@@ -607,7 +609,7 @@
     if-le v1, v11, :cond_11
 
     .line 34
-    aget v1, v0, v12
+    aget v1, v0, v13
 
     aget v0, v0, v11
 
@@ -786,7 +788,7 @@
     const-string v12, ""
 
     .line 9
-    invoke-static {v12}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v12}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -806,8 +808,6 @@
     float-to-double v14, v6
 
     const-wide/high16 v16, 0x3fe0000000000000L    # 0.5
-
-    invoke-static {v14, v15}, Ljava/lang/Double;->isNaN(D)Z
 
     add-double v14, v14, v16
 
@@ -875,7 +875,7 @@
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 16
-    invoke-static {v12}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v12}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -891,8 +891,6 @@
     div-float/2addr v2, v3
 
     float-to-double v2, v2
-
-    invoke-static {v2, v3}, Ljava/lang/Double;->isNaN(D)Z
 
     add-double v2, v2, v16
 
@@ -1048,13 +1046,13 @@
 
     sub-float/2addr v7, v4
 
-    mul-float v8, v8, v7
+    mul-float/2addr v8, v7
 
     sub-float v9, v3, v6
 
     sub-float/2addr v1, v6
 
-    mul-float v9, v9, v1
+    mul-float/2addr v9, v1
 
     add-float/2addr v9, v8
 
@@ -1062,11 +1060,11 @@
 
     div-float/2addr v9, v8
 
-    mul-float v7, v7, v9
+    mul-float/2addr v7, v9
 
     add-float/2addr v4, v7
 
-    mul-float v9, v9, v1
+    mul-float/2addr v9, v1
 
     add-float/2addr v6, v9
 
@@ -1099,7 +1097,7 @@
     const-string v7, ""
 
     .line 10
-    invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -1177,7 +1175,7 @@
     const-string v8, ""
 
     .line 1
-    invoke-static {v8}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v8}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1190,7 +1188,7 @@
 
     const/high16 v9, 0x42c80000    # 100.0f
 
-    mul-float v2, v2, v9
+    mul-float/2addr v2, v9
 
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->n:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1207,8 +1205,6 @@
     float-to-double v2, v2
 
     const-wide/high16 v10, 0x3fe0000000000000L    # 0.5
-
-    invoke-static {v2, v3}, Ljava/lang/Double;->isNaN(D)Z
 
     add-double/2addr v2, v10
 
@@ -1280,7 +1276,7 @@
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 8
-    invoke-static {v8}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v8}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1291,7 +1287,7 @@
 
     sub-float v2, p3, v2
 
-    mul-float v2, v2, v9
+    mul-float/2addr v2, v9
 
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->n:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1306,8 +1302,6 @@
     div-float/2addr v2, v3
 
     float-to-double v2, v2
-
-    invoke-static {v2, v3}, Ljava/lang/Double;->isNaN(D)Z
 
     add-double/2addr v2, v10
 

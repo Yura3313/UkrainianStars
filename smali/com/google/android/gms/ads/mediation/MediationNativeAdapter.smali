@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lk1/f;
+.implements Li1/f;
 
 
 # virtual methods
@@ -16,5 +16,5 @@
 .method public abstract synthetic onResume()V
 .end method
 
-.method public abstract requestNativeAd(Landroid/content/Context;Lk1/m;Landroid/os/Bundle;Lk1/r;Landroid/os/Bundle;)V
+.method public abstract requestNativeAd(Landroid/content/Context;Li1/l;Landroid/os/Bundle;Li1/q;Landroid/os/Bundle;)V
 .end method

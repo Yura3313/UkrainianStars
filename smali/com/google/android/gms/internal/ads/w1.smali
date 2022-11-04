@@ -128,7 +128,7 @@
 
     throw p0
     :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzegz; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lj3/bv0; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 10
     :catch_0
@@ -138,11 +138,5 @@
 
     invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p0
-
-    :goto_2
-    goto :goto_1
 .end method

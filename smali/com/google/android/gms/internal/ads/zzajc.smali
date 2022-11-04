@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -49,14 +49,14 @@
     :cond_0
     sget-object p1, Lcom/google/android/gms/internal/ads/zzuw;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuw;
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     throw v0
 
@@ -105,9 +105,9 @@
 
     .line 10
     :goto_0
-    new-instance p1, Lk3/w3;
+    new-instance p1, Lj3/w3;
 
-    invoke-direct {p1, p2}, Lk3/w3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
+    invoke-direct {p1, p2}, Lj3/w3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
 
     throw v0
 .end method

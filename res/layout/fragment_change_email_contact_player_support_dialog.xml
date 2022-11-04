@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dialog_container" android:background="@drawable/error_background" android:padding="30.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+        <TextView android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:maxWidth="275.0dip" android:minWidth="275.0dip" textKey="account_settings_change_email_contact_player_support_popup_title" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/positive_button" android:layout_width="wrap_content" android:minWidth="160.0dip" style="@style/SupercellIdButtonPrimary" textKey="account_settings_change_email_contact_player_support_popup_button_positive" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

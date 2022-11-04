@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$c;
-.super Lse/i;
+.super Lif/i;
 .source "IngameFriendRequestsFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lae/m<",
+        "Lif/i;",
+        "Lhf/l<",
+        "Lzd/j<",
         "+",
-        "Lvc/i;",
+        "Ltc/i;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$c;->g:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$c;->f:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,34 +55,34 @@
     .locals 11
 
     .line 1
-    check-cast p1, Lae/m;
+    check-cast p1, Lzd/j;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$c;->g:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$c;->f:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
 
     .line 3
-    instance-of v1, p1, Lae/m$a;
+    instance-of v1, p1, Lzd/j$a;
 
     if-eqz v1, :cond_9
 
     .line 4
-    check-cast p1, Lae/m$a;
+    check-cast p1, Lzd/j$a;
 
     .line 5
-    iget-object v1, p1, Lae/m$a;->a:Ljava/lang/Object;
+    iget-object v1, p1, Lzd/j$a;->a:Ljava/lang/Object;
 
     .line 6
-    check-cast v1, Lvc/i;
+    check-cast v1, Ltc/i;
 
     .line 7
-    iget-object v1, v1, Lvc/i;->c:Ljava/util/List;
+    iget-object v1, v1, Ltc/i;->c:Ljava/util/List;
 
     .line 8
     new-instance v2, Ljava/util/ArrayList;
 
     const/16 v3, 0xa
 
-    invoke-static {v1, v3}, Lje/f;->l(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lze/f;->s(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -105,12 +105,12 @@
     move-result-object v4
 
     .line 10
-    check-cast v4, Lvc/h;
+    check-cast v4, Ltc/h;
 
-    new-instance v5, Lfd/a;
+    new-instance v5, Led/a;
 
     .line 11
-    invoke-direct {v5, v4}, Lfd/a;-><init>(Lvc/h;)V
+    invoke-direct {v5, v4}, Led/a;-><init>(Ltc/h;)V
 
     invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -118,27 +118,27 @@
 
     .line 12
     :cond_0
-    new-instance v1, Lfd/f;
+    new-instance v1, Led/f;
 
-    invoke-direct {v1}, Lfd/f;-><init>()V
+    invoke-direct {v1}, Led/f;-><init>()V
 
-    invoke-static {v2, v1}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v2, v1}, Lze/j;->O(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object v1
 
     .line 13
-    iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lzd/j$a;->a:Ljava/lang/Object;
 
     .line 14
-    check-cast p1, Lvc/i;
+    check-cast p1, Ltc/i;
 
     .line 15
-    iget-object p1, p1, Lvc/i;->b:Ljava/util/List;
+    iget-object p1, p1, Ltc/i;->b:Ljava/util/List;
 
     .line 16
     new-instance v2, Ljava/util/ArrayList;
 
-    invoke-static {p1, v3}, Lje/f;->l(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v3}, Lze/f;->s(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -161,12 +161,12 @@
     move-result-object v4
 
     .line 18
-    check-cast v4, Lvc/h;
+    check-cast v4, Ltc/h;
 
-    new-instance v5, Lfd/b;
+    new-instance v5, Led/b;
 
     .line 19
-    invoke-direct {v5, v4}, Lfd/b;-><init>(Lvc/h;)V
+    invoke-direct {v5, v4}, Led/b;-><init>(Ltc/h;)V
 
     invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -176,30 +176,30 @@
     :cond_1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
     .line 21
-    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lzd/q;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 22
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getCollator()Ljava/text/Collator;
 
     move-result-object p1
 
-    new-instance v4, Lfd/e;
+    new-instance v4, Led/e;
 
-    invoke-direct {v4, p1}, Lfd/e;-><init>(Ljava/util/Comparator;)V
+    invoke-direct {v4, p1}, Led/e;-><init>(Ljava/util/Comparator;)V
 
-    invoke-static {v2, v4}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v2, v4}, Lze/j;->O(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
     .line 23
-    sget-object v2, Lcom/supercell/id/ui/ingame/friendrequests/a;->g:Lcom/supercell/id/ui/ingame/friendrequests/a;
+    sget-object v2, Lcom/supercell/id/ui/ingame/friendrequests/a;->f:Lcom/supercell/id/ui/ingame/friendrequests/a;
 
-    invoke-static {p1, v2}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {p1, v2}, Lze/j;->O(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
@@ -226,13 +226,13 @@
 
     .line 25
     :cond_2
-    new-instance p1, Lae/x;
+    new-instance p1, Lzd/t;
 
     const-string v1, "ingame_friend_requests_no_new_requests"
 
-    invoke-direct {p1, v1}, Lae/x;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v1}, Lzd/t;-><init>(Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -251,7 +251,7 @@
     aput-object p1, v5, v4
 
     .line 26
-    invoke-static {v5}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lb2/e0;->l([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -298,7 +298,7 @@
     :cond_5
     new-instance p1, Ljava/util/ArrayList;
 
-    invoke-static {v1, v3}, Lje/f;->l(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lze/f;->s(Ljava/lang/Iterable;I)I
 
     move-result v3
 
@@ -324,10 +324,10 @@
     check-cast v3, Ljava/util/List;
 
     .line 33
-    sget-object v5, Lfd/g;->a:Lae/e2;
+    sget-object v5, Led/g;->a:Lzd/z1;
 
     .line 34
-    invoke-static {v3}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {v3}, Lze/j;->Z(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v5
 
@@ -337,32 +337,32 @@
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 36
-    check-cast v5, Lje/q;
+    check-cast v5, Lze/q;
 
-    invoke-virtual {v5}, Lje/q;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v5}, Lze/q;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
 
     :goto_5
     move-object v8, v5
 
-    check-cast v8, Lje/r;
+    check-cast v8, Lze/r;
 
-    invoke-virtual {v8}, Lje/r;->hasNext()Z
+    invoke-virtual {v8}, Lze/r;->hasNext()Z
 
     move-result v9
 
     if-eqz v9, :cond_7
 
-    invoke-virtual {v8}, Lje/r;->next()Ljava/lang/Object;
+    invoke-virtual {v8}, Lze/r;->next()Ljava/lang/Object;
 
     move-result-object v8
 
     .line 37
-    check-cast v8, Lje/p;
+    check-cast v8, Lze/p;
 
     .line 38
-    iget v9, v8, Lje/p;->a:I
+    iget v9, v8, Lze/p;->a:I
 
     if-lez v9, :cond_6
 
@@ -378,35 +378,35 @@
     move-result-object v9
 
     .line 40
-    iget-object v10, v8, Lje/p;->b:Ljava/lang/Object;
+    iget-object v10, v8, Lze/p;->b:Ljava/lang/Object;
 
     .line 41
     invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v10
 
-    invoke-static {v9, v10}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v10}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v9
 
     if-eqz v9, :cond_6
 
-    new-array v9, v2, [Lae/a2;
+    new-array v9, v2, [Lzd/v1;
 
     .line 42
-    sget-object v10, Lfd/g;->b:Lae/k;
+    sget-object v10, Led/g;->b:Lzd/i;
 
     aput-object v10, v9, v6
 
     .line 43
-    iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
+    iget-object v8, v8, Lze/p;->b:Ljava/lang/Object;
 
     .line 44
-    check-cast v8, Lae/a2;
+    check-cast v8, Lzd/v1;
 
     aput-object v8, v9, v4
 
-    invoke-static {v9}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v9}, Lb2/e0;->l([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v8
 
@@ -414,16 +414,16 @@
 
     .line 45
     :cond_6
-    iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
+    iget-object v8, v8, Lze/p;->b:Ljava/lang/Object;
 
     .line 46
-    invoke-static {v8}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v8}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v8
 
     .line 47
     :goto_6
-    invoke-static {v7, v8}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v7, v8}, Lze/h;->w(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_5
 
@@ -435,10 +435,10 @@
 
     .line 49
     :cond_8
-    sget-object v1, Lfd/g;->a:Lae/e2;
+    sget-object v1, Led/g;->a:Lzd/z1;
 
     .line 50
-    invoke-static {p1, v1}, Lae/y1;->b(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1, v1}, Lzd/t1;->b(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -446,23 +446,23 @@
 
     .line 51
     :cond_9
-    instance-of v1, p1, Lae/m$b;
+    instance-of v1, p1, Lzd/j$b;
 
     if-eqz v1, :cond_a
 
-    new-instance v1, Lae/q;
+    new-instance v1, Lzd/n;
 
-    check-cast p1, Lae/m$b;
+    check-cast p1, Lzd/j$b;
 
     .line 52
-    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lzd/j$b;->a:Ljava/lang/Object;
 
     .line 53
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v1, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v1, p1}, Lzd/n;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -473,13 +473,13 @@
 
     .line 54
     :goto_7
-    sget v1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;->m0:I
+    sget v1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;->l0:I
 
     .line 55
-    invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;->g1(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;->f1(Ljava/util/List;)V
 
     .line 56
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

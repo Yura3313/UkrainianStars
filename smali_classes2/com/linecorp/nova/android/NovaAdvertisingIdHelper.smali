@@ -295,7 +295,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 12
     :goto_0
@@ -401,7 +401,7 @@
     .line 5
     sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;->a:Ljava/util/concurrent/Semaphore;
@@ -412,7 +412,7 @@
     sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
     .line 8
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;->a:Ljava/util/concurrent/Semaphore;

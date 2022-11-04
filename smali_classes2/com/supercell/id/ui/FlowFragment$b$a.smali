@@ -34,7 +34,7 @@
     invoke-direct {v0}, Lcom/supercell/id/ui/FlowFragment$b;-><init>()V
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
@@ -50,22 +50,22 @@
     const-string v2, "title0"
 
     .line 4
-    invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "title1"
 
     .line 5
-    invoke-virtual {v1, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, p2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "title2"
 
     .line 6
-    invoke-virtual {v1, p1, p3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, p3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "clampPosition"
 
     .line 7
-    invoke-virtual {v1, p1, p4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {v1, p1, p4}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 8
     invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V

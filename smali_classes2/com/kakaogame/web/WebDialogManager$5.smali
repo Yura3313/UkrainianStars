@@ -38,26 +38,13 @@
     .locals 0
 
     .line 1
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object p1, p0, Lcom/kakaogame/web/WebDialogManager$5;->val$activity:Landroid/app/Activity;
 
-    const/16 p2, 0x17
+    const-string p2, "market://details?id=com.android.chrome"
 
-    if-le p1, p2, :cond_0
-
-    const-string p1, "market://details?id=com.android.chrome"
-
-    goto :goto_0
-
-    :cond_0
-    const-string p1, "market://details?id=com.google.android.webview"
+    invoke-static {p1, p2}, Lcom/kakaogame/util/AppUtil;->launchApp(Landroid/content/Context;Ljava/lang/String;)Z
 
     .line 2
-    :goto_0
-    iget-object p2, p0, Lcom/kakaogame/web/WebDialogManager$5;->val$activity:Landroid/app/Activity;
-
-    invoke-static {p2, p1}, Lcom/kakaogame/util/AppUtil;->launchApp(Landroid/content/Context;Ljava/lang/String;)Z
-
-    .line 3
     iget-object p1, p0, Lcom/kakaogame/web/WebDialogManager$5;->val$activity:Landroid/app/Activity;
 
     invoke-static {p1}, Lcom/kakaogame/util/AppUtil;->terminateApp(Landroid/app/Activity;)V

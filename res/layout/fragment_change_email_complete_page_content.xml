@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="account_settings_change_email_complete_title" />
+    <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" textKey="account_settings_change_email_complete_subtitle" />
+    <TextView android:textSize="@dimen/S" android:textColor="@color/gray40" android:gravity="center" android:id="@id/infoTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="17.0dip" android:textAlignment="center" textKey="account_settings_change_email_complete_info" />
+    <FrameLayout style="@style/SupercellIdFlowPageButtonContainer">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/positive_button" android:layout_width="wrap_content" android:minWidth="160.0dip" style="@style/SupercellIdButtonPrimary" textKey="account_settings_change_email_complete_button_positive" />
+    </FrameLayout>
+</merge>

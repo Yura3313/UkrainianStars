@@ -1,82 +1,145 @@
 .class public final Lod/j;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
+.super Lif/i;
+.source "FriendsFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
+        "Lif/i;",
+        "Lhf/p<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Ltd/g;",
+        "Lye/m;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+.field public final synthetic f:Lod/i$a$g;
+
+.field public final synthetic g:Lhf/l;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method public constructor <init>(Lod/i$a$g;Lhf/l;)V
     .locals 0
 
-    iput-object p1, p0, Lod/j;->g:Ljava/util/Comparator;
+    iput-object p1, p0, Lod/j;->f:Lod/i$a$g;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lod/j;->g:Lhf/l;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
 
     .line 1
-    iget-object v0, p0, Lod/j;->g:Ljava/util/Comparator;
+    check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p1, Lod/d$a;
+    check-cast p2, Ltd/g;
+
+    const-string v0, "drawable"
 
     .line 2
-    iget-object p1, p1, Lod/d$a;->b:Ljava/lang/String;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v1, ""
+    const-string v0, "<anonymous parameter 1>"
 
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move-object p1, v1
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    :goto_0
-    check-cast p2, Lod/d$a;
+    iget-object p2, p0, Lod/j;->f:Lod/i$a$g;
+
+    iget-object p2, p2, Lod/i$a$g;->f:Lod/i$a;
 
     .line 4
-    iget-object p2, p2, Lod/d$a;->b:Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    move-object v1, p2
+    iget-object p2, p2, Lod/i$a;->g:Ljava/lang/ref/WeakReference;
 
     .line 5
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/content/Context;
+
+    if-eqz p2, :cond_3
+
+    .line 6
+    instance-of v0, p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    move-object p1, v1
+
+    :cond_0
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz p1, :cond_1
+
+    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    invoke-direct {v1, v0, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+
+    .line 7
     :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget p2, Lcom/supercell/id/R$dimen;->friend_list_game_icon_size:I
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p1
 
-    return p1
+    if-eqz v1, :cond_2
+
+    .line 8
+    new-instance p2, Landroid/graphics/Rect;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p2, v0, v0, p1, p1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    invoke-virtual {v1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
+
+    :cond_2
+    if-eqz v1, :cond_3
+
+    .line 9
+    iget-object p1, p0, Lod/j;->g:Lhf/l;
+
+    invoke-interface {p1, v1}, Lhf/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lye/m;
+
+    .line 10
+    :cond_3
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

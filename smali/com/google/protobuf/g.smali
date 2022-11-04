@@ -3,9 +3,9 @@
 .source "BooleanArrayList.java"
 
 # interfaces
-.implements Lcom/google/protobuf/a0$a;
+.implements Lcom/google/protobuf/b0$a;
 .implements Ljava/util/RandomAccess;
-.implements Lcom/google/protobuf/d1;
+.implements Lcom/google/protobuf/f1;
 
 
 # annotations
@@ -14,21 +14,21 @@
         "Lcom/google/protobuf/c<",
         "Ljava/lang/Boolean;",
         ">;",
-        "Lcom/google/protobuf/a0$a;",
+        "Lcom/google/protobuf/b0$a;",
         "Ljava/util/RandomAccess;",
-        "Lcom/google/protobuf/d1;"
+        "Lcom/google/protobuf/f1;"
     }
 .end annotation
 
 
 # static fields
-.field public static final j:Lcom/google/protobuf/g;
+.field public static final i:Lcom/google/protobuf/g;
 
 
 # instance fields
-.field public h:[Z
+.field public g:[Z
 
-.field public i:I
+.field public h:I
 
 
 # direct methods
@@ -44,10 +44,10 @@
 
     invoke-direct {v0, v2, v1}, Lcom/google/protobuf/g;-><init>([ZI)V
 
-    sput-object v0, Lcom/google/protobuf/g;->j:Lcom/google/protobuf/g;
+    sput-object v0, Lcom/google/protobuf/g;->i:Lcom/google/protobuf/g;
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/protobuf/c;->g:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/c;->f:Z
 
     return-void
 .end method
@@ -74,10 +74,10 @@
     invoke-direct {p0}, Lcom/google/protobuf/c;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/google/protobuf/g;->h:[Z
+    iput-object p1, p0, Lcom/google/protobuf/g;->g:[Z
 
     .line 4
-    iput p2, p0, Lcom/google/protobuf/g;->i:I
+    iput p2, p0, Lcom/google/protobuf/g;->h:I
 
     return-void
 .end method
@@ -101,12 +101,12 @@
     if-ltz p1, :cond_1
 
     .line 4
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     if-gt p1, v0, :cond_1
 
     .line 5
-    iget-object v1, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v1, p0, Lcom/google/protobuf/g;->g:[Z
 
     array-length v2, v1
 
@@ -129,7 +129,7 @@
     const/4 v4, 0x1
 
     .line 7
-    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lj3/d30;->b(IIII)I
 
     move-result v0
 
@@ -142,31 +142,31 @@
     invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 10
-    iget-object v1, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v1, p0, Lcom/google/protobuf/g;->g:[Z
 
     add-int/lit8 v2, p1, 0x1
 
-    iget v3, p0, Lcom/google/protobuf/g;->i:I
+    iget v3, p0, Lcom/google/protobuf/g;->h:I
 
     sub-int/2addr v3, p1
 
     invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 11
-    iput-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iput-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     .line 12
     :goto_0
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     aput-boolean p2, v0, p1
 
     .line 13
-    iget p1, p0, Lcom/google/protobuf/g;->i:I
+    iget p1, p0, Lcom/google/protobuf/g;->h:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lcom/google/protobuf/g;->i:I
+    iput p1, p0, Lcom/google/protobuf/g;->h:I
 
     .line 14
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -181,7 +181,7 @@
     :cond_1
     new-instance p2, Ljava/lang/IndexOutOfBoundsException;
 
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->f(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->e(I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -224,10 +224,10 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/a0;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/google/protobuf/b0;->a:Ljava/nio/charset/Charset;
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     instance-of v0, p1, Lcom/google/protobuf/g;
@@ -246,7 +246,7 @@
     check-cast p1, Lcom/google/protobuf/g;
 
     .line 7
-    iget v0, p1, Lcom/google/protobuf/g;->i:I
+    iget v0, p1, Lcom/google/protobuf/g;->h:I
 
     const/4 v1, 0x0
 
@@ -258,7 +258,7 @@
     const v2, 0x7fffffff
 
     .line 8
-    iget v3, p0, Lcom/google/protobuf/g;->i:I
+    iget v3, p0, Lcom/google/protobuf/g;->h:I
 
     sub-int/2addr v2, v3
 
@@ -267,7 +267,7 @@
     add-int/2addr v3, v0
 
     .line 9
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     array-length v2, v0
 
@@ -278,22 +278,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iput-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     .line 11
     :cond_2
-    iget-object v0, p1, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p1, Lcom/google/protobuf/g;->g:[Z
 
-    iget-object v2, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v2, p0, Lcom/google/protobuf/g;->g:[Z
 
-    iget v4, p0, Lcom/google/protobuf/g;->i:I
+    iget v4, p0, Lcom/google/protobuf/g;->h:I
 
-    iget p1, p1, Lcom/google/protobuf/g;->i:I
+    iget p1, p1, Lcom/google/protobuf/g;->h:I
 
     invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
-    iput v3, p0, Lcom/google/protobuf/g;->i:I
+    iput v3, p0, Lcom/google/protobuf/g;->h:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -322,9 +322,9 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
-    iget-object v1, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v1, p0, Lcom/google/protobuf/g;->g:[Z
 
     array-length v2, v1
 
@@ -337,7 +337,7 @@
     const/4 v4, 0x1
 
     .line 3
-    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lj3/d30;->b(IIII)I
 
     move-result v2
 
@@ -350,17 +350,17 @@
     invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 6
-    iput-object v2, p0, Lcom/google/protobuf/g;->h:[Z
+    iput-object v2, p0, Lcom/google/protobuf/g;->g:[Z
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
-    iget v1, p0, Lcom/google/protobuf/g;->i:I
+    iget v1, p0, Lcom/google/protobuf/g;->h:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/protobuf/g;->i:I
+    iput v2, p0, Lcom/google/protobuf/g;->h:I
 
     aput-boolean p1, v0, v1
 
@@ -389,13 +389,13 @@
     return p1
 .end method
 
-.method public final e(I)V
+.method public final d(I)V
     .locals 1
 
     if-ltz p1, :cond_0
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     if-ge p1, v0, :cond_0
 
@@ -405,13 +405,37 @@
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->f(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->e(I)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
     throw v0
+.end method
+
+.method public final e(I)Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "Index:"
+
+    const-string v1, ", Size:"
+
+    .line 1
+    invoke-static {v0, p1, v1}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    .line 2
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -441,9 +465,9 @@
     check-cast p1, Lcom/google/protobuf/g;
 
     .line 4
-    iget v1, p0, Lcom/google/protobuf/g;->i:I
+    iget v1, p0, Lcom/google/protobuf/g;->h:I
 
-    iget v2, p1, Lcom/google/protobuf/g;->i:I
+    iget v2, p1, Lcom/google/protobuf/g;->h:I
 
     const/4 v3, 0x0
 
@@ -453,18 +477,18 @@
 
     .line 5
     :cond_2
-    iget-object p1, p1, Lcom/google/protobuf/g;->h:[Z
+    iget-object p1, p1, Lcom/google/protobuf/g;->g:[Z
 
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 6
     :goto_0
-    iget v2, p0, Lcom/google/protobuf/g;->i:I
+    iget v2, p0, Lcom/google/protobuf/g;->h:I
 
     if-ge v1, v2, :cond_4
 
     .line 7
-    iget-object v2, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v2, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean v2, v2, v1
 
@@ -483,48 +507,24 @@
     return v0
 .end method
 
-.method public final f(I)Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "Index:"
-
-    const-string v1, ", Size:"
-
-    .line 1
-    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    .line 2
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final g(I)Lcom/google/protobuf/a0$a;
+.method public final f(I)Lcom/google/protobuf/b0$a;
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     if-lt p1, v0, :cond_0
 
     .line 2
     new-instance v0, Lcom/google/protobuf/g;
 
-    iget-object v1, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v1, p0, Lcom/google/protobuf/g;->g:[Z
 
     invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([ZI)[Z
 
     move-result-object p1
 
-    iget v1, p0, Lcom/google/protobuf/g;->i:I
+    iget v1, p0, Lcom/google/protobuf/g;->h:I
 
     invoke-direct {v0, p1, v1}, Lcom/google/protobuf/g;-><init>([ZI)V
 
@@ -543,10 +543,10 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->e(I)V
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->d(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean p1, v0, p1
 
@@ -567,18 +567,18 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lcom/google/protobuf/g;->i:I
+    iget v2, p0, Lcom/google/protobuf/g;->h:I
 
     if-ge v1, v2, :cond_0
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget-object v2, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v2, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean v2, v2, v1
 
-    invoke-static {v2}, Lcom/google/protobuf/a0;->a(Z)I
+    invoke-static {v2}, Lcom/google/protobuf/b0;->a(Z)I
 
     move-result v2
 
@@ -613,7 +613,7 @@
     move-result p1
 
     .line 3
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     const/4 v2, 0x0
 
@@ -621,7 +621,7 @@
     if-ge v2, v0, :cond_2
 
     .line 4
-    iget-object v3, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v3, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean v3, v3, v2
 
@@ -638,16 +638,6 @@
     return v1
 .end method
 
-.method public final bridge synthetic l(I)Lcom/google/protobuf/a0$i;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->g(I)Lcom/google/protobuf/a0$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
 .method public final remove(I)Ljava/lang/Object;
     .locals 4
 
@@ -655,15 +645,15 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
     .line 2
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->e(I)V
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->d(I)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean v1, v0, p1
 
     .line 4
-    iget v2, p0, Lcom/google/protobuf/g;->i:I
+    iget v2, p0, Lcom/google/protobuf/g;->h:I
 
     add-int/lit8 v3, v2, -0x1
 
@@ -680,11 +670,11 @@
 
     .line 6
     :cond_0
-    iget p1, p0, Lcom/google/protobuf/g;->i:I
+    iget p1, p0, Lcom/google/protobuf/g;->h:I
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lcom/google/protobuf/g;->i:I
+    iput p1, p0, Lcom/google/protobuf/g;->h:I
 
     .line 7
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -710,22 +700,22 @@
     if-lt p2, p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
-    iget v1, p0, Lcom/google/protobuf/g;->i:I
+    iget v1, p0, Lcom/google/protobuf/g;->h:I
 
     sub-int/2addr v1, p2
 
     invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 3
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     sub-int/2addr p2, p1
 
     sub-int/2addr v0, p2
 
-    iput v0, p0, Lcom/google/protobuf/g;->i:I
+    iput v0, p0, Lcom/google/protobuf/g;->h:I
 
     .line 4
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -762,10 +752,10 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
     .line 4
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->e(I)V
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->d(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/protobuf/g;->h:[Z
+    iget-object v0, p0, Lcom/google/protobuf/g;->g:[Z
 
     aget-boolean v1, v0, p1
 
@@ -783,7 +773,17 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lcom/google/protobuf/g;->i:I
+    iget v0, p0, Lcom/google/protobuf/g;->h:I
 
     return v0
+.end method
+
+.method public final bridge synthetic v(I)Lcom/google/protobuf/b0$i;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/g;->f(I)Lcom/google/protobuf/b0$a;
+
+    move-result-object p1
+
+    return-object p1
 .end method

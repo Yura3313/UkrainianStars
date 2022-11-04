@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Thu thập Điểm Sức mạnh từ Hộp Brawl và ưu đãi trong cửa hàng để mở khóa mức nâng cấp tiếp theo
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Sức mạnh Sao hiện có thể được tìm thấy trong Hộp Brawl
-TID_HERO_INFO_STAR_POWER_BLOCKED,Tăng sức mạnh cho <HERONAME> bằng Sức mạnh Sao chọn được! Có trong Hộp Brawl sau khi đạt SỨC MẠNH <LEVEL>.
+TID_HERO_INFO_STAR_POWER_BLOCKED,Cường hóa cho <HERONAME> bằng một Sức mạnh Sao đặc biệt! Có thể mua sau khi đạt CẤP SỨC MẠNH <LEVEL>.
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Phụ kiện đã có thể được tìm thấy trong Hộp Brawl
-TID_HERO_INFO_ACCESSORIES_BLOCKED,Tăng sức mạnh cho <HERONAME> bằng một phụ kiện đặc biệt! Có trong Hộp Brawl sau khi đạt SỨC MẠNH <LEVEL>.
+TID_HERO_INFO_ACCESSORIES_BLOCKED,Cường hóa cho <HERONAME> bằng một Phụ kiện độc đáo! Có thể mua sau khi đạt CẤP SỨC MẠNH <LEVEL>.
 TID_HERO_INFO_STAR_POWER_LABEL,SỨC MẠNH SAO: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,PHỤ KIỆN: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Cơ hội sở hữu Chiến binh Brawl SẮC MÀU tăng lên theo mỗi Mùa giải Brawl Pass. Xác suất nhận được sẽ bắt đầu từ HUYỀN THOẠI rồi sau đó tăng lên THẦN THOẠI và cuối cùng là QUÝ HIẾM.\n\nTrong Mùa giải này, xác suất mở khóa <BRAWLER> là <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,Cơ hội sở hữu Chiến binh Brawl SẮC MÀU tăng lên theo mỗi Mùa giải Vé Brawl Pass. Xác suất nhận được sẽ bắt đầu từ HUYỀN THOẠI rồi sau đó tăng lên thành THẦN THOẠI và cuối cùng là QUÝ HIẾM.\n\nBạn cần phải đạt đến Bậc <TIER> của Mùa giải <SEASON> thì <BRAWLER> mới xuất hiện trong các hộp.
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,Cơ hội sở hữu Chiến binh Brawl SẮC MÀU tăng lên theo mỗi Mùa giải Vé Brawl Pass. Xác suất nhận được sẽ bắt đầu từ HUYỀN THOẠI rồi sau đó tăng lên THẦN THOẠI và cuối cùng là QUÝ HIẾM.\n\n<BRAWLER> sẽ xuất hiện vào Mùa giải <SEASON>.
+TID_HERO_INFO_BUY_ITEM,MUA
+TID_HERO_INFO_BUY_ITEM_FREE,MIỄN PHÍ
+TID_HERO_INFO_BUY_MISSING1,BẠN CẦN CÓ THÊM <MISSINGCOINS> XU
+TID_HERO_INFO_BUY_MISSING2,Mua ngay số Xu còn thiếu?
+TID_HERO_INFO_BUY_MISSING_GEMS1,BẠN CẦN CÓ THÊM <MISSINGCOINS> XU
+TID_HERO_INFO_BUY_MISSING_GEMS2,Thu thập thêm <MISSINGGEMS> Ngọc để mua số Xu còn thiếu
+TID_HERO_INFO_SEE_OFFERS,MUA NGỌC
+TID_HERO_INFO_UNLOCK_GADGETS,MỞ KHÓA PHỤ KIỆN
+TID_HERO_INFO_UNLOCK_STARPOWERS,MỞ KHÓA SỨC MẠNH SAO
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,XÁC NHẬN MUA
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,XÁC NHẬN MUA
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,XÁC NHẬN MUA
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,MUA THÊM NGỌC
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,Có thêm <cC5F724><REQUIREDGEMS> Ngọc</c> để mua số Xu còn thiếu
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,TẤT CẢ GÓI NGỌC
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,ĐƯỢC ĐỀ XUẤT
 TID_MATCHMAKE_FAILED_5,Ghép trận thất bại: sự kiện đã hết hạn
 TID_MATCHMAKE_FAILED_7,Ghép trận thất bại: thành viên trong đội bị mất kết nối
 TID_MATCHMAKE_FAILED_9,Ghép trận thất bại: nghỉ bảo trì sắp bắt đầu
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,KHÔNG CÓ MÔ TẢ CÂU LẠC BỘ
 TID_EVENT_POPUP_TITLE,CHIẾN ĐẤU NÀO!
 TID_GOLDRUSH_8,Đồng bằng Sapphire
 TID_USE_AUTOFIRE_TUTORIAL,NHẤN vào <ccc0033>nút điều khiển màu đỏ</c> để bắn kẻ địch ở gần nhất!
-TID_BRAWL_BOX_INFO_1,"Mỗi Hộp Lớn sẽ cho bạn số phần thưởng tương đương với khi mở 3 Hộp Brawl, nhưng số Điểm Sức mạnh được phân bố cho ít Chiến binh Brawl hơn. Các Thẻ Trang bị chỉ có thể thuộc cùng một loại Thẻ.\n\nBạn có 3 lần nhận thưởng ngẫu nhiên, với xác suất phần thưởng cho mỗi lần như sau:"
-TID_BRAWL_BOX_INFO_2,"Mỗi Hộp Brawl chứa một trong các phần thưởng sau: 1 Chiến binh Brawl mới, Điểm Sức mạnh & Xu, Thẻ Trang bị & Mảnh vụn, 1 Phụ kiện hoặc 1 Sức mạnh Sao. Thêm vào đó, bạn còn có thể nhận được thêm phần thưởng là Bộ Nhân đôi Thẻ.\n\nXác suất phần thưởng như sau:"
-TID_BRAWL_BOX_INFO_3,"Mỗi Hộp Siêu cấp sẽ cho bạn số phần thưởng tương đương với khi mở 10 Hộp Brawl, nhưng số Điểm Sức mạnh được phân bố cho ít Chiến binh Brawl hơn. Các Thẻ Trang bị đều thuộc cùng một loại Thẻ.\n\nBạn có 10 lần nhận thưởng ngẫu nhiên, với xác suất phần thưởng cho mỗi lần như sau:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nChiến binh Brawl Hiếm: <NUM2>%<GAR_HERO_1>\nChiến binh Brawl Siêu Hiếm: <NUM3>%<GAR_HERO_2>\nChiến binh Brawl Quý hiếm: <NUM4>%<GAR_HERO_3>\nChiến binh Brawl Thần thoại: <NUM5>%<GAR_HERO_4>\nChiến binh Brawl Huyền thoại: <NUM6>%<GAR_HERO_5>\nSức mạnh Sao: <NUM7>%<GAR_STAR_POWER>\nPhụ kiện: <NUM8>%<GAR_ACCESSORY>\nThẻ Trang bị: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nNgoài ra, với mỗi lần nhận thưởng, bạn có <TOKEN_DOUBLER>% cơ hội nhận được 1 bộ Nhân đôi Thẻ. Phụ kiện chỉ dành cho Chiến binh Brawl đã đạt Cấp Sức mạnh 7. Sức mạnh Sao chỉ dành cho Chiến binh Brawl đã đạt Cấp Sức mạnh 9. Thẻ Trang bị và Mảnh vụn chỉ dành cho Chiến binh Brawl đã đạt Cấp Sức mạnh 10. Sau khi mở khóa <WCPP_BRAWLERS> chiến binh brawl, bạn sẽ có <WCPP_CHANCE>% cơ hội nhận được số điểm sức mạnh mà bạn có thể phân bổ cho bất kỳ chiến binh brawl nào. Khi bạn đã mở khóa tất cả phần thưởng của một loại nhất định, ví dụ như Chiến binh Brawl Hiếm, thì xác suất nhận được tất cả phần thưởng khác sẽ tăng lên. Vận may: để trải nghiệm mở Hộp Brawl được công bằng hơn, sẽ có một hệ thống vận may tác động lên xác xuất của Chiến binh Brawl Huyền thoại. Với mỗi lần nhận thưởng không mang lại cho bạn Chiến binh Brawl mới thì chỉ số may mắn của bạn sẽ tăng lên, và mỗi lần bạn nhận được một Chiến binh Brawl mới thì chỉ số may mắn của bạn sẽ bị giảm xuống dựa theo độ quý hiếm của Chiến binh Brawl bạn đã nhận. Khi chỉ số may mắn của bạn đủ cao, cơ hội nhận được 1 Chiến binh Brawl Huyền thoại của bạn sẽ cao hơn, nhưng cơ hội sẽ không tăng quá <MAX_LEGENDARY>%. Ngược lại, nếu chỉ số may mắn thấp, cơ hội nhận được 1 Chiến binh Brawl Huyền thoại mới của bạn sẽ thấp hơn. Phần thưởng từ những lần nhận thưởng ban đầu đã được định sẵn để đảm bảo mọi người đều có một khởi đầu công bằng."
+TID_BRAWL_BOX_INFO_1,"Mỗi Hộp Lớn sẽ cho bạn số phần thưởng tương tự như khi bạn mở 3 Hộp Brawl, nhưng số Điểm Sức mạnh được phân bố cho ít Chiến binh Brawl hơn.\n\nBạn sẽ có 3 lần nhận thưởng ngẫu nhiên, với xác suất phần thưởng của mỗi lần như sau:"
+TID_BRAWL_BOX_INFO_2,"Mỗi Hộp Brawl chứa một trong các phần thưởng sau: 1 Chiến binh Brawl mới, Điểm Sức mạnh và Xu, 1 Phụ kiện hoặc 1 Sức mạnh Sao. Ngoài ra, bạn còn có thể nhận được thêm phần thưởng là bộ Nhân đôi Thẻ.\n\nXác suất phần thưởng như sau:"
+TID_BRAWL_BOX_INFO_3,"Mỗi Hộp Siêu cấp sẽ cho bạn số phần thưởng tương tự như khi bạn mở 10 Hộp Brawl, nhưng số Điểm Sức mạnh được phân bố cho ít Chiến binh Brawl hơn.\n\nBạn sẽ có 10 lần nhận thưởng ngẫu nhiên, với xác suất phần thưởng của mỗi lần như sau:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1>%\nChiến binh Brawl Hiếm: <NUM2>% <GAR_HERO_1>\nChiến binh Brawl Siêu Hiếm: <NUM3>% <GAR_HERO_2>\nChiến binh Brawl Quý hiếm: <NUM4>% <GAR_HERO_3>\nChiến binh Brawl Thần thoại: <NUM5>% <GAR_HERO_4>\nChiến binh Brawl Huyền thoại: <NUM6>% <GAR_HERO_5>\nSức mạnh Sao: <NUM7>% <GAR_STAR_POWER>\nPhụ kiện: <NUM8>% <GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nNgoài ra, với mỗi lần nhận thưởng, bạn có <TOKEN_DOUBLER>% cơ hội nhận được 1 bộ Nhân đôi Thẻ. Phụ kiện chỉ xuất hiện khi Chiến binh Brawl đã đạt Cấp Sức mạnh 7. Sức mạnh Sao chỉ dành cho Chiến binh Brawl có Cấp Sức mạnh 9. Sau khi mở khóa <WCPP_BRAWLERS> chiến binh brawl, bạn sẽ có <WCPP_CHANCE>% cơ hội nhận được số điểm sức mạnh mà bạn có thể phân bổ cho bất kỳ chiến binh brawl nào. Khi bạn đã mở khóa tất cả phần thưởng của một loại nhất định, ví dụ như Chiến binh Brawl Hiếm, thì xác suất nhận được tất cả phần thưởng khác sẽ tăng lên. Vận may: để trải nghiệm mở Hộp Brawl được công bằng hơn, sẽ có một hệ thống vận may tác động lên xác xuất của Chiến binh Brawl Huyền thoại. Với mỗi lần nhận thưởng không mang lại cho bạn Chiến binh Brawl mới thì chỉ số may mắn của bạn sẽ tăng lên, và mỗi lần bạn nhận được một Chiến binh Brawl mới thì chỉ số may mắn của bạn sẽ bị giảm xuống dựa theo độ quý hiếm của Chiến binh Brawl bạn đã nhận. Khi chỉ số may mắn của bạn đủ cao, cơ hội nhận được 1 Chiến binh Brawl Huyền thoại của bạn sẽ cao hơn, nhưng cơ hội sẽ không tăng quá <MAX_LEGENDARY>%. Ngược lại, nếu chỉ số may mắn thấp, cơ hội nhận được 1 Chiến binh Brawl Huyền thoại mới của bạn sẽ thấp hơn. Phần thưởng từ những lần nhận thưởng ban đầu đã được định sẵn để đảm bảo mọi người đều có một khởi đầu công bằng."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Điểm Sức mạnh + Xu
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Điểm Sức mạnh + Xu + Mảnh vụn
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Xu + Mảnh vụn
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Khi tích đầy Tuyệt chiêu (mà không sử dụ
 TID_SPEC_ABI_PET,THẢ CHIM
 TID_SPEC_ABI_PET_DESC,Chú chim của Dynamike tham chiến!
 TID_SPEC_ABI_DAMAGE_ULTI,TÁN HỒN CHƯỞNG
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Khi đã tích đầy Tuyệt chiêu, Thần đèn sẽ gây thêm <c00cc00><VALUE1></c> sát thương khi tấn công."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,8-BIT là thùng máy điện tử thẻ biết đi nhưng rất chậm chạp. 8-BIT bắn Tia laze và sở hữu Tuyệt chiêu cường hóa sát thương cho phe mình!
 TID_ARCADE_SHORT_DESC,KẺ GÂY SÁT THƯƠNG
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Cảm ơn bạn đã sử dụng Trình Tạo
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Cảm ơn bạn đã sử dụng Trình Tạo Bản đồ. Vui lòng tuân theo Thỏa thuận Người dùng cùng các quy định có liên quan khi sử dụng Trình Tạo Bản đồ. Xin đừng tạo ra và chia sẻ những nội dung không phù hợp, mang tính chất khiêu dâm, đồi trụy, hoặc gây ảnh hưởng xấu đến sự đoàn kết, tính chủ quyền và toàn vẹn lãnh thổ của quốc gia, cũng như vi phạm các điều luật và quy định khác."
 TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,CHIẾN BINH HỖ TRỢ
-TID_RUFFS_DESC,"Tuy rất lớn tiếng khi sủa ra lệnh cho cấp dưới, nhưng Đại tá Ruffs lại là một chú chó tốt bụng!\n\nDo có phong thái nghiêm túc và điềm tĩnh nên Ruffs có thể dễ dàng che giấu các đặc tính về chó của mình, trừ khi có ai đó đang chơi trò ném bắt!"
+TID_RUFFS_DESC,"Tuy rất lớn tiếng khi sủa ra lệnh cho cấp dưới, nhưng Đại tá Ruffs là một chú chó rất tốt bụng!\n\nBình thường Ruffs rất điềm tĩnh, nhưng bất cứ khi nào có người chơi trò ném bắt gần đó, Ruffs sẽ bộc lộ bản năng của loài chó."
 TID_RUFFS_WEAPON,CHÙM TIA LAZE KÉP
 TID_RUFFS_WEAPON_DESC,Chùm tia laze kép của Ruffs có thể bật tường nhiều lần và bắn trúng đối thủ đang ẩn nấp.
 TID_RUFFS_ULTI,THÙNG TIẾP TẾ
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Văng tung tóe
 TID_KO_JUNE21_2,Vùng nước sâu
 TID_QUALIFIED_INFO_PARAM,Chúc mừng! Bạn đã chinh phục <CHALLENGE>! Phần thưởng chiến thắng thử thách của bạn là: <REWARD>
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Phần thưởng của bạn cho trận thắng #<WIN> trong <CHALLENGE> là: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,Chúc mừng! Bạn đã chinh phục <CHALLENGE>! Phần thưởng chiến thắng thử thách của bạn là: <REWARD>\nPhần thưởng này sẽ thay thế cho phần thưởng ban đầu mà bạn đã có.
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Phần thưởng của bạn cho trận thắng #<WIN> trong <CHALLENGE> là: <REWARD>\nPhần thưởng này sẽ thay thế cho phần thưởng ban đầu mà bạn đã có.
 TID_CHALLENGE_TEASER_INFO_PARAM,<CHALLENGE> sắp bắt đầu!\n\nThắng <WIN> trận đấu và phần thưởng <REWARD> sẽ là của bạn! Lập đội cùng bạn bè hoặc \qTÌM ĐỘI\q để tăng tối đa cơ hội thắng của mình.\n\nThử thách chỉ diễn ra trong <DURATION> giờ. Chúc bạn may mắn và chơi thật vui!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Chinh phục thử thách để nhận được: <REWARD>!
 TID_GEN_JUNE21_1,Công viên nước
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Đạt <NUM> cúp để mở khóa Thử t
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Chỉ sử dụng 1 trang phục đã chọn
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,Hiện một trang phục sẽ được chọn ngẫu nhiên từ các trang phục đã chọn
 TID_GEAR_TOKEN_DROP_TITLE,THẺ TRANG BỊ
-TID_GEAR_TOKEN_DAMAGE,Thẻ Sát thương
-TID_GEAR_TOKEN_HEAL,Thẻ Hồi máu
-TID_GEAR_TOKEN_RESISTANCE,Thẻ Kháng cự
-TID_GEAR_TOKEN_SHIELD,Thẻ Khiên chắn
-TID_GEAR_TOKEN_SPEED,Thẻ Tốc độ
-TID_GEAR_TOKEN_TYPE_DAMAGE,SÁT THƯƠNG
-TID_GEAR_TOKEN_TYPE_HEAL,MÁU
-TID_GEAR_TOKEN_TYPE_VISION,TẦM NHÌN
-TID_GEAR_TOKEN_TYPE_SHIELD,KHIÊN CHẮN
-TID_GEAR_TOKEN_TYPE_SPEED,TỐC ĐỘ
-TID_GEAR_TOKEN,Thẻ Trang bị
 TID_GEAR_SCRAP_DROP_TITLE,MẢNH VỤN
 TID_GEAR_SCRAP,Mảnh vụn
 TID_GEAR_UNLOCK_SLOT,MỞ KHÓA Ô TRANG BỊ <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,MÁU
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,SÁT THƯƠNG
 TID_GEAR_VISION_TITLE,TẦM NHÌN
 TID_GEAR_SHIELD_TITLE,KHIÊN CHẮN
+TID_GEAR_RELOAD_SPEED_TITLE,TỐC ĐỘ NẠP ĐẠN
+TID_GEAR_SUPER_CHARGE_TITLE,SẠC TUYỆT CHIÊU
 TID_GEAR_FOREST_SPEED_INFO,TỐC ĐỘ TĂNG <NUM>% khi di chuyển trong bụi rậm.
 TID_GEAR_STANDING_HEAL_INFO,HỒI MÁU <NUM>% hiệu quả hơn.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Gây THÊM <NUM>% SÁT THƯƠNG khi còn dưới 50% Máu.
 TID_GEAR_VISION_INFO,THẤY ĐƯỢC đối thủ trong <NUM> giây sau khi gây sát thương cho họ.
 TID_GEAR_SHIELD_INFO,Nhận thêm <NUM> MÁU dưới dạng KHIÊN CHẮN tiêu hao. Khiên chắn khôi phục sau 10 giây khi chiến binh brawl đầy máu.
+TID_GEAR_RELOAD_SPEED_INFO,NẠP ĐẠN nhanh hơn <NUM>%
+TID_GEAR_SUPER_CHARGE_INFO,Tuyệt chiêu SẠC NHANH HƠN <NUM>%
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,TĂNG TỐC ĐỘ khi di chuyển trong bụi rậm
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,HỒI MÁU hiệu quả hơn
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Gây thêm SÁT THƯƠNG khi còn dưới 50% máu
 TID_GEAR_VISION_UPGRADE_INFO,NHÌN THẤU đối thủ sau khi gây sát thương cho họ
 TID_GEAR_SHIELD_UPGRADE_INFO,Nhận KHIÊN CHẮN giúp tăng MÁU
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Nạp đạn nhanh hơn
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Sạc Tuyệt chiêu nhanh hơn
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,TỐC ĐỘ ĐƯỢC CƯỜNG HÓA
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,HỒI MÁU THÊM
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,TĂNG SÁT THƯƠNG
 TID_GEAR_VISION_UPGRADE_TARGET,SỐ GIÂY NHÌN THẤU
 TID_GEAR_SHIELD_UPGRADE_TARGET,MÁU KHIÊN CHẮN
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,TỐC ĐỘ NẠP ĐẠN
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,TỐC ĐỘ SẠC TUYỆT CHIÊU
+TID_GEAR_SUPER_HEALTH_TITLE,MÁU ĐẦU
+TID_GEAR_SUPER_HEALTH_INFO,Đầu có THÊM <NUM> MÁU
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Đầu có thêm máu
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,MÁU ĐẦU
+TID_GEAR_SUPER_RANGE_TITLE,PHẠM VI TAY
+TID_GEAR_SUPER_RANGE_INFO,Phạm vi tay mở rộng thêm một ô
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Phạm vi tay xa hơn
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,PHẠM VI TAY
 TID_GEAR_UPGRADED,ĐÃ NÂNG CẤP TRANG BỊ!
 TID_GEAR_TITLE,TRANG BỊ
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> CẤP <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Trang bị: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,TRANG BỊ <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Trang bị này đã được chọn trong một ô khác
 TID_ITEMS_TITLE,VẬT PHẨM
 TID_TEAMUP_YOUR_SETTINGS_TITLE,CÀI ĐẶT CÁ NHÂN
 TID_TRUE_SILVER_BROCK_SKIN,BROCK BẰNG BẠC
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>TRẬN ĐẤU SỨC MẠNH</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,TRẬN ĐẤU SỨC MẠNH
 TID_CLUB_INFO_COLUMN_TROPHIES,CÚP
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,THỨ HẠNG GIẢI ĐẤU SỨC MẠNH
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,TRỰC TUYẾN LẦN CUỐI
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,TRẠNG THÁI
 TID_CLUB_INFO_COLUMN_NAME,TÊN
 TID_CLUB_INFO_COLUMN_TICKETS_USED,SỐ VÉ ĐÃ DÙNG
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,CÚP CÂU LẠC BỘ
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,TRẬN THUA
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,Lập đội cùng người chơi ngẫu nhiên
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,Lập đội cùng Thành viên Câu lạc bộ
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,PHẦN THƯỞNG CÚP CÂU LẠC BỘ
-TID_REWARD_DESC_GEAR_TOKENS,THẺ TRANG BỊ
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,THẺ TRANG BỊ
-TID_REWARD_DESC_GEAR_SCRAP,MẢNH VỤN TRANG BỊ
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Xin chào! Có vẻ đã quá trễ để tham gia sự kiện tuần này.\n\nBạn có thể dùng chế độ xem để theo dõi Câu lạc bộ của mình cho đến khi tuần tiếp theo bắt đầu!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Hãy đến xem có gì trong Cửa hàng Câu lạc bộ!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Kết quả chung cuộc:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,NHÂN TỐ X
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,Những mảnh vỡ từ đòn tấn công chính của Grom gây ra thêm tối đa <c00cc00><VALUE1>%</c> sát thương tại cự li xa nhất.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,THÁP CANH
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,Grom phóng ra một tòa Tháp canh từ quả Bom Grom của mình để tất cả đồng đội có thể nhìn xuyên bụi rậm trong phạm vi rộng. Máu của tháp canh sẽ dần tiêu hao theo thời gian.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Chế tạo Trang bị đầu tiên của bạn
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,Thu thập thêm Mảnh vụn và Thẻ Trang bị từ các Hộp Brawl hoặc Cửa hàng Câu lạc bộ để chế tạo và nâng cấp Trang bị của bạn
-TID_FIRST_GEAR_TUTORIAL_TITLE,Ô TRANG BỊ
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Đã mở khóa Ô Trang bị!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Chọn Trang bị đầu tiên MIỄN PHÍ
+TID_ITEMS_HUB_GUIDE_GADGET,Bạn có thể chọn và mua các Phụ kiện độc đáo cho <BRAWLER> tại đây
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Phụ kiện hiện đã có ở đây
+TID_ITEMS_HUB_GUIDE_STARPOWER,Bạn có thể chọn và mua các Sức mạnh Sao độc đáo cho <BRAWLER> tại đây
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Sức mạnh Sao hiện đã có ở đây
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Phụ kiện hiện đã có ở đây
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Sức mạnh Sao hiện đã có ở đây
+TID_FIRST_GEAR_TUTORIAL_TITLE,TRANG BỊ
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,Đã mở khóa!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Trang bị
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Tạo thêm kỹ năng cho Chiến binh Brawl mà bạn muốn
@@ -6619,21 +6646,21 @@ TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Khi Găng tay thép đang ở trên mặt đ
 TID_ACCESSORY_WEAPON_THROWER_GADGET_1,VÙNG TỪ TRƯỜNG
 TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Khi Găng tay thép đang ở trên mặt đất, Sam có thể kích hoạt chúng để kéo những đối thủ quanh đó lại gần."
 TID_ACCESSORY_WEAPON_THROWER_GADGET_2,LỰC ĐẨY CỦA XUNG ĐIỆN
-TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Lần tiếp theo Sam ném Găng tay thép, phụ kiện này sẽ tạo ra xung điện khi chạm đất và hất văng kẻ thù về phía sau."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Lần tiếp theo Sam ném Găng tay thép, phụ kiện này sẽ tạo ra xung điện khi chạm đất và hất văng đối thủ về phía sau."
 TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Không có Găng tay thép trên mặt đất!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Găng tay thép đang ở quá xa!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Cần có Găng tay thép!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,CHIẾN BINH HỖ TRỢ
-TID_SOUL_COLLECTOR_DESC,"Gus rất thích bong bóng và hay lảng vảng trên một đoàn tàu lửa bị bỏ hoang từ lâu! Cậu ấy là chuyên gia nắn bong bóng thành hình động vật, và điều này giúp cậu ấy cảm thấy bớt cô đơn hơn."
+TID_SOUL_COLLECTOR_DESC,"Gus là một cậu bé rất thích bong bóng và trú ngụ trên một chiếc tàu hỏa bỏ hoang. Truyền thuyết kể rằng, một ngày nọ Gus đã đuổi theo một chú chó bong bóng đi quá xa, cậu ta đã bị lạc và ở lại đây kể từ đó."
 TID_SOUL_COLLECTOR_WEAPON,BONG BÓNG MA QUÁI
-TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus phóng các quả bong bóng về phía kẻ địch. Sau vài lần phóng trúng đối thủ, một linh hồn sẽ xuất hiện. Bạn hoặc đồng đội có thể thu thập các linh hồn này để hồi máu."
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus phóng các quả bong bóng về phía kẻ địch. Sau vài lần phóng trúng đối thủ, một linh hồn sẽ xuất hiện. Gus hoặc đồng đội có thể thu thập các linh hồn này để hồi máu."
 TID_SOUL_COLLECTOR_ULTI,SỰ BẢO HỘ CỦA SPOOKY
 TID_SOUL_COLLECTOR_ULTI_DESC,Gus sẽ dùng Spooky (quả bong bóng hình thú và cũng là bạn thân nhất của cậu ta) để tạo ra một khiên chắn quanh mình hoặc quanh một người đồng đội.
 TID_SPEC_ABI_SOUL_COLLECTOR_1,TĂNG CƯỜNG HỒI MÁU
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hiệu quả hồi máu từ các quả Bong bóng ma quái của Gus sẽ tăng thêm <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hiệu quả hồi máu từ các linh hồn tăng <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,BẠN BÈ TƯƠNG TRỢ
-TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky sẽ giúp một đồng đội gây ra thêm <c00cc00><VALUE1>%</c> sát thương trong <c00cc00><VALUE2></c> giây.
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky sẽ giúp một đồng đội gây thêm <c00cc00><VALUE1>%</c> sát thương trong <c00cc00><VALUE2></c> giây.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,BONG BÓNG NỔ TUNG
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,Tất cả những linh hồn chưa được thu thập sẽ nổ tung và gây <c00cc00><VALUE1></c> sát thương cho kẻ địch ở gần đó.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,HOÁN ĐỔI LINH HỒN
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000> 8-BIT sắp sập nguồn!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Gói Huy hiệu Băng Bất hảo
 TID_SHOP_OUTLAW_SKINS,Trang phục Băng Bất hảo
 TID_SHOP_OUTLAW_TITLE,BĂNG BẤT HẢO
+TID_GEAR_RARITY_RARE,Hiếm
+TID_GEAR_RARITY_SUPER_RARE,Siêu Hiếm
+TID_GEAR_RARITY_EPIC,Quý hiếm
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - Trang bị Hiếm
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - Trang bị Siêu Hiếm
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - Trang bị Quý hiếm
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Các linh hồn ở quá xa!
+TID_TRY_BRAWLER_TITLE,Dùng thử Chiến binh Brawl
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,TRẬN ĐẤU LUYỆN TẬP
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,THAO TRƯỜNG
+TID_FIRST_GADGET_TUTORIAL_HEADER,PHỤ KIỆN
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Một kỹ năng bổ sung cho chiến binh brawl của bạn
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Tất cả Chiến binh Brawl sẽ mở khóa ô Phụ kiện của mình khi đạt Cấp Sức mạnh 7
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Phụ kiện độc đáo cho mọi chiến binh brawl
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Sử dụng Phụ kiện đã trang bị tối đa 3 lần trong mỗi trận đấu
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,SỨC MẠNH SAO
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Các kỹ năng bị động độc đáo cho chiến binh brawl của bạn
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Tất cả Chiến binh Brawl sẽ mở khóa ô Sức mạnh Sao của mình khi đạt Cấp Sức mạnh 9
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Sức mạnh Sao độc đáo cho mọi chiến binh brawl
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Sức mạnh Sao đã trang bị sẽ luôn được kích hoạt
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Tất cả Chiến binh Brawl sẽ mở khóa ô Trang bị đầu tiên của mình khi đạt Cấp Sức mạnh 10
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Mỗi chiến binh brawl sẽ có nhiều trang bị
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Trang bị đã chọn sẽ luôn được kích hoạt
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Chọn Trận đấu Luyện tập
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,CHIẾN BINH ĐỠ ĐÒN
+TID_SHIELD_TANK_DESC,"Với kinh nghiệm điều hành máy chiếu tại rạp chiếu phim, Buster đã ghi nhớ mọi tựa phim hành động mà anh ta thích nhất. Giấc mơ của anh ta là trở thành một anh hùng trong bộ phim hành động bom tấn của riêng mình."
+TID_SHIELD_TANK_WEAPON,ÁNH ĐÈN MÁY CHIẾU
+TID_SHIELD_TANK_WEAPON_DESC,"Buster dùng máy chiếu bắn ra một luồng ánh sáng, gây sát thương cho mọi đối thủ trong tầm bắn."
+TID_SHIELD_TANK_ULTI,THƯỚC PHIM BẢO HỘ
+TID_SHIELD_TANK_ULTI_DESC,Buster dùng máy chiếu tạo ra một tấm khiên trước mặt để chắn tất cả đạn dược từ đối thủ và phản chiếu lại năng lượng về phía đối thủ.
+TID_SPEC_ABI_SHIELD_TANK_1,ĐẶC QUYỀN ĐẠO DIỄN
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Ánh đèn máy chiếu của Buster gây thêm <c00cc00><VALUE1>%</c> sát thương với mỗi đồng đội đứng trong phạm vi sạc Tuyệt chiêu của anh ta.
+TID_SPEC_ABI_SHIELD_TANK_2,ÁO CHỐNG ĐẠN
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Khi Thước phim bảo hộ đang được kích hoạt, sát thương Buster nhận vào sẽ được giảm <c00cc00><VALUE1>%</c>, đồng thời miễn nhiễm với các đòn tấn công có khả năng đẩy lùi, làm chậm tốc độ và gây choáng."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,ĐAI LƯNG TIỆN DỤNG
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,"Với mỗi đồng đội đứng trong phạm vi sạc tuyệt chiêu của mình, Buster sẽ hồi phục <c00cc00><VALUE1></c> máu cho tất cả đồng đội ở gần."
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRAILER
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Đòn tấn công Ánh đèn máy chiếu tiếp theo của Buster sẽ kéo các đối thủ về phía anh ta và khiến họ di chuyển chậm hơn trong <c00cc00><VALUE1></c> giây.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,THẺ TRANG BỊ <TOKENS>\nMẢNH VỤN <SCRAP>
+TID_GEAR_COMPENSATION_CLAIM,NHẬN
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Tùy chỉnh khả năng của nhân vật bằng một kỹ năng bị động mới
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,BẮT ĐẦU THÔI!
+TID_INBOX_CAPTION_52,Tặng Trang bị <TYPE> cho <NAME>
+TID_GEAR_COMPENSATION_INFO,"Đây là <COINS> Xu cho Trang bị, Thẻ Trang bị và Mảnh vụn của bạn!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,Các Trang bị đã được thiết lập lại và bạn đã được đền bù <COINS> Xu
+TID_RECRUIT_TOKEN,Thẻ Chiêu mộ
+TID_CHROMATIC_TOKEN,Thẻ Sắc màu
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,SỨC MẠNH SAO
+TID_FIRST_GADGET_TUTORIAL_TITLE,PHỤ KIỆN
+TID_GEAR_TO_COINS_POPUP_TITLE,ĐÃ CẢI TIẾN TRANG BỊ!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Đã có Trang bị mới!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Kiểm tra Chiến binh Brawl của bạn để xem các tùy chọn Trang bị mới.
+TID_GEAR_TO_COINS_POPUP_INFO,"Tất cả Trang bị hiện có đã được thiết lập lại. Từ giờ, bạn không cần chế tạo và nâng cấp các Trang bị nữa. Hiện tại, Trang bị được chia thành các loại Hiếm, Siêu Hiếm hoặc Quý hiếm.\n\nĐể đền bù cho thay đổi này, mỗi Thẻ Trang bị và Mảnh vụn bạn đã thu thập sẽ được chuyển thành Xu. HÃY DÙNG SỐ XU NÀY ĐỂ MUA TRANG BỊ MỚI NHÉ!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,HOÀN LẠI:
+TID_REPORT_PLAYER_REPORT,BÁO CÁO
+TID_REPORT_PLAYER_REPORTED,ĐÃ BÁO CÁO
+TID_REPORT_PLAYER_POPUP_TITLE,BÁO CÁO <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Bạn đang báo cáo <PLAYER_NAME> vì có hành vi chơi xấu.\n\nHành vi này bao gồm việc cố tình không chơi đúng theo mục đích của sự kiện và gây rối. Hành vi tiêu cực này sẽ làm ảnh hưởng đến đồng đội và cả kết quả trận đấu.\n\nVí dụ điển hình:\nĐỨNG YÊN CHO ĐỐI THỦ HẠ GỤC MÌNH, DÀN XẾP KẾT QUẢ TRẬN ĐẤU và KHÔNG DI CHUYỂN."
+TID_REPORT_PLAYER_BUTTON_REPORT,BÁO CÁO
+TID_REPORT_PLAYER_BUTTON_CANCEL,HỦY
+TID_QUEST_FALLBACK_REWARD_DESC,"Vì bạn đã có phần thưởng của Nhiệm vụ này rồi, nên bạn sẽ nhận được <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,PHẦN THƯỞNG NHIỆM VỤ
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,NHẬN
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,CON ĐƯỜNG CHIÊU MỘ
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,CỬA HÀNG SẮC MÀU
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Mở khóa thêm <NUM>Chiến binh Brawl Sắc màu
+TID_BUTTON_NAVI_RECRUIT_ROAD,Con đường Chiêu mộ
+TID_SKIN_INFO_GHOST_TRAIN,Trang phục Nhà ga ma
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Đã xảy ra lỗi khi xác nhận giao dịch mua của bạn
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Chiến binh Brawl này sạc Tuyệt chiêu bằng cách đứng gần đồng đội
+TID_SKIN_INFO_ACTION,Trang phục Anh hùng phim hành động
+TID_SKIN_INFO_WF_2022,Trang phục Chung kết Thế giới 2022
+TID_BRAWL_PASS_SEASON_14,NHÀ GA MA
+TID_CHAINSAW_BUSTER_SKIN,BUSTER CƯA XÍCH
+TID_CHAINSAW_BUSTER_SKIN_SHOP,BUSTER\nCƯA XÍCH
+TID_GHOST_TRAIN_GROM_SKIN,FRANKENGROM
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,FRANKENGROM
+TID_GHOST_TRAIN_COLETTE_SKIN,COLETTE CƯƠNG THI SOÁT VÉ
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,COLETTE\nCƯƠNG THI SOÁT VÉ
+TID_BRICK_OVEN_ASH_SKIN,ASH LÒ NƯỚNG PIZZA
+TID_BRICK_OVEN_ASH_SKIN_SHOP,ASH\nLÒ NƯỚNG PIZZA
+TID_VETERAN_SQUEAK_SKIN,SQUEAK ĐẶC CÔNG
+TID_VETERAN_SQUEAK_SKIN_SHOP,SQUEAK\nĐẶC CÔNG
+TID_ZOMBIE_BROCK_SKIN,BROCK ZOMBIE
+TID_ZOMBIE_BROCK_SKIN_SHOP,BROCK\nZOMBIE
+TID_MEGA_MEGABOX_DARRYL_SKIN,DARRYL HỘP OMEGA
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,DARRYL\nHỘP OMEGA
+TID_GHOST_METRO_PENNY_SKIN,PENNY GẤU MÈO XẤU XA
+TID_GHOST_METRO_PENNY_SKIN_SHOP,PENNY\nGẤU MÈO XẤU XA
+TID_BSWF22_TARA_SKIN,TARA NGƯỜI CHƠI GIẬN DỮ
+TID_BSWF22_TARA_SKIN_SHOP,TARA\nNGƯỜI CHƠI GIẬN DỮ
+TID_TOPGUN_JANET_SKIN,JANET LỰC LƯỢNG G
+TID_TOPGUN_JANET_SKIN_SHOP,JANET\nLỰC LƯỢNG G
+TID_SHOP_OFFER_TITLE_40,HỘP OMEGA
+TID_PIN_OFFER_TITLE,Ưu đãi Huy hiệu
+TID_THUMBNAILS_OFFER_TITLE,Ưu đãi Biểu tượng
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,VÉ BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Mở khóa phần thưởng Vé Brawl Pass, có thêm Nhiệm vụ và <NUM> lượt thay đổi Nhiệm vụ mỗi tuần"
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,KÍCH HOẠT
+TID_BRAWL_PASS_REDEEM,KÍCH HOẠT
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Supercell ID của bạn có <NUMBER> Vé Brawl Pass. Kích hoạt một Vé Brawl Pass cho mùa giải này?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,Vui lòng chờ. Hiện đang kích hoạt Vé Brawl Pass từ Supercell ID của bạn.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Supercell ID của bạn không có đủ Vé Brawl Pass để kích hoạt. Hãy mua thêm trong Cửa hàng Supercell.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Nắm Ngọc
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Giỏ ngọc
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Túi ngọc
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Xô Ngọc
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Thùng Ngọc
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Két Ngọc
+TID_SUPERCELL_STORE_BRAWL_PASS,Vé Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Gói Vé Brawl Pass
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

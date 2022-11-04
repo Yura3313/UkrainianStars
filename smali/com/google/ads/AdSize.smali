@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field private final zzdt:Lcom/google/android/gms/ads/g;
+.field private final zzdt:Lcom/google/android/gms/ads/e;
 
 
 # direct methods
@@ -117,11 +117,11 @@
     .locals 1
 
     .line 3
-    new-instance v0, Lcom/google/android/gms/ads/g;
+    new-instance v0, Lcom/google/android/gms/ads/e;
 
-    invoke-direct {v0, p1, p2}, Lcom/google/android/gms/ads/g;-><init>(II)V
+    invoke-direct {v0, p1, p2}, Lcom/google/android/gms/ads/e;-><init>(II)V
 
-    invoke-direct {p0, v0}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/g;)V
+    invoke-direct {p0, v0}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/e;)V
 
     return-void
 .end method
@@ -130,23 +130,23 @@
     .locals 0
 
     .line 4
-    new-instance p3, Lcom/google/android/gms/ads/g;
+    new-instance p3, Lcom/google/android/gms/ads/e;
 
-    invoke-direct {p3, p1, p2}, Lcom/google/android/gms/ads/g;-><init>(II)V
+    invoke-direct {p3, p1, p2}, Lcom/google/android/gms/ads/e;-><init>(II)V
 
-    invoke-direct {p0, p3}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/g;)V
+    invoke-direct {p0, p3}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/e;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/gms/ads/g;)V
+.method public constructor <init>(Lcom/google/android/gms/ads/e;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iput-object p1, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     return-void
 .end method
@@ -170,11 +170,11 @@
     check-cast p1, Lcom/google/ads/AdSize;
 
     .line 3
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
-    iget-object p1, p1, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object p1, p1, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/e;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -230,7 +230,7 @@
 
     if-eqz v9, :cond_2
 
-    mul-int v7, v7, v8
+    mul-int/2addr v7, v8
 
     int-to-float v7, v7
 
@@ -270,10 +270,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/g;->b:I
+    iget v0, v0, Lcom/google/android/gms/ads/e;->b:I
 
     return v0
 .end method
@@ -281,9 +281,9 @@
 .method public final getHeightInPixels(Landroid/content/Context;)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->a(Landroid/content/Context;)I
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/e;->a(Landroid/content/Context;)I
 
     move-result p1
 
@@ -294,10 +294,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/g;->a:I
+    iget v0, v0, Lcom/google/android/gms/ads/e;->a:I
 
     return v0
 .end method
@@ -305,9 +305,9 @@
 .method public final getWidthInPixels(Landroid/content/Context;)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->b(Landroid/content/Context;)I
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/e;->b(Landroid/content/Context;)I
 
     move-result p1
 
@@ -317,9 +317,9 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/ads/g;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/android/gms/ads/e;->hashCode()I
 
     move-result v0
 
@@ -330,10 +330,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/g;->b:I
+    iget v0, v0, Lcom/google/android/gms/ads/e;->b:I
 
     const/4 v1, -0x2
 
@@ -362,10 +362,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/g;->a:I
+    iget v0, v0, Lcom/google/android/gms/ads/e;->a:I
 
     const/4 v1, -0x1
 
@@ -409,7 +409,7 @@
 
     const v3, 0x3f4ccccd
 
-    mul-float v0, v0, v3
+    mul-float/2addr v0, v3
 
     cmpl-float p1, p1, v0
 
@@ -419,13 +419,13 @@
 
     int-to-float p2, v1
 
-    mul-float v2, v2, p2
+    mul-float/2addr v2, p2
 
     cmpg-float v0, p1, v2
 
     if-gtz v0, :cond_0
 
-    mul-float p2, p2, v3
+    mul-float/2addr p2, v3
 
     cmpl-float p1, p1, p2
 
@@ -445,10 +445,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/e;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/ads/g;->c:Ljava/lang/String;
+    iget-object v0, v0, Lcom/google/android/gms/ads/e;->c:Ljava/lang/String;
 
     return-object v0
 .end method

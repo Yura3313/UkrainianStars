@@ -124,9 +124,9 @@
     :cond_0
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
-    cmpl-double v4, p1, v2
+    cmpl-double v2, p1, v2
 
-    if-ltz v4, :cond_1
+    if-ltz v2, :cond_1
 
     const-wide p1, 0x3feffffde7210be9L    # 0.999999
 
@@ -171,11 +171,9 @@
 
     sub-double/2addr v6, v8
 
-    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double/2addr v4, v6
 
-    mul-double p1, p1, v4
+    mul-double/2addr p1, v4
 
     .line 3
     aget v0, v1, v3
@@ -184,9 +182,7 @@
 
     aget-wide v6, v2, v3
 
-    mul-double v4, v4, v6
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
+    mul-double/2addr v4, v6
 
     sub-double/2addr v0, v4
 
@@ -199,42 +195,44 @@
 .method public final c(D)D
     .locals 10
 
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v2, 0x0
+    cmpg-double v2, p1, v0
 
-    cmpg-double v4, p1, v2
+    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
 
-    if-gez v4, :cond_0
+    if-gez v2, :cond_0
 
-    move-wide p1, v2
+    move-wide p1, v0
 
     goto :goto_0
 
     :cond_0
-    cmpl-double v4, p1, v0
+    cmpl-double v2, p1, v3
 
-    if-lez v4, :cond_1
+    if-lez v2, :cond_1
 
-    move-wide p1, v0
+    move-wide p1, v3
 
     .line 1
     :cond_1
     :goto_0
-    iget-object v4, p0, Ln/f;->b:[D
+    iget-object v2, p0, Ln/f;->b:[D
 
-    invoke-static {v4, p1, p2}, Ljava/util/Arrays;->binarySearch([DD)I
+    invoke-static {v2, p1, p2}, Ljava/util/Arrays;->binarySearch([DD)I
 
-    move-result v4
+    move-result v2
 
-    if-lez v4, :cond_2
+    if-lez v2, :cond_2
+
+    move-wide v0, v3
 
     goto :goto_1
 
     :cond_2
-    if-eqz v4, :cond_3
+    if-eqz v2, :cond_3
 
-    neg-int v0, v4
+    neg-int v0, v2
 
     add-int/lit8 v0, v0, -0x1
 
@@ -259,8 +257,6 @@
 
     sub-double/2addr v6, v8
 
-    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double/2addr v4, v6
 
     .line 3
@@ -274,9 +270,7 @@
 
     aget-wide v8, v2, v3
 
-    mul-double v8, v8, v4
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
+    mul-double/2addr v8, v4
 
     sub-double/2addr v0, v8
 
@@ -284,21 +278,21 @@
 
     sub-double v8, p1, v8
 
-    mul-double v8, v8, v0
+    mul-double/2addr v8, v0
 
     add-double/2addr v8, v6
 
-    mul-double p1, p1, p1
+    mul-double/2addr p1, p1
 
     aget-wide v0, v2, v3
 
     aget-wide v6, v2, v3
 
-    mul-double v0, v0, v6
+    mul-double/2addr v0, v6
 
     sub-double/2addr p1, v0
 
-    mul-double p1, p1, v4
+    mul-double/2addr p1, v4
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
@@ -306,11 +300,7 @@
 
     add-double v0, p1, v8
 
-    goto :goto_1
-
     :cond_3
-    move-wide v0, v2
-
     :goto_1
     return-wide v0
 .end method
@@ -336,7 +326,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v1
+    mul-double/2addr p1, v1
 
     invoke-static {p1, p2}, Ljava/lang/Math;->sin(D)D
 
@@ -350,7 +340,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v3
+    mul-double/2addr p1, v3
 
     rem-double/2addr p1, v3
 
@@ -362,7 +352,7 @@
 
     sub-double p1, v7, p1
 
-    mul-double p1, p1, p1
+    mul-double/2addr p1, p1
 
     goto :goto_0
 
@@ -372,7 +362,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v1
+    mul-double/2addr p1, v1
 
     invoke-static {p1, p2}, Ljava/lang/Math;->cos(D)D
 
@@ -386,7 +376,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v5
+    mul-double/2addr p1, v5
 
     add-double/2addr p1, v7
 
@@ -400,7 +390,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v5
+    mul-double/2addr p1, v5
 
     add-double/2addr p1, v7
 
@@ -416,7 +406,7 @@
 
     move-result-wide p1
 
-    mul-double p1, p1, v3
+    mul-double/2addr p1, v3
 
     add-double/2addr p1, v7
 
@@ -451,6 +441,8 @@
 
     return-wide p1
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_5
@@ -468,7 +460,7 @@
     const-string v0, "pos ="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

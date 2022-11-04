@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/ActionMenuPresenter;
+.field public final synthetic f:Landroidx/appcompat/widget/ActionMenuPresenter;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->g:Landroidx/appcompat/widget/ActionMenuPresenter;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->f:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     .line 2
     sget p1, Landroidx/appcompat/R$attr;->actionOverflowButtonStyle:I
@@ -107,9 +107,9 @@
     invoke-virtual {p0, v0}, Landroid/view/View;->playSoundEffect(I)V
 
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->g:Landroidx/appcompat/widget/ActionMenuPresenter;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->f:Landroidx/appcompat/widget/ActionMenuPresenter;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->u()Z
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->o()Z
 
     return v1
 .end method
@@ -194,7 +194,7 @@
     add-int/2addr p4, v0
 
     .line 11
-    invoke-static {p3, v1, v2, p2, p4}, Ly/a;->k(Landroid/graphics/drawable/Drawable;IIII)V
+    invoke-virtual {p3, v1, v2, p2, p4}, Landroid/graphics/drawable/Drawable;->setHotspotBounds(IIII)V
 
     :cond_0
     return p1

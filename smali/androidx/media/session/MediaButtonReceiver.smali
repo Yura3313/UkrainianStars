@@ -240,7 +240,7 @@
     .line 16
     :cond_4
     :goto_1
-    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     return-void
 .end method

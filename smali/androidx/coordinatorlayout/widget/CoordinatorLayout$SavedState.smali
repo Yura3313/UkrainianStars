@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public i:Landroid/util/SparseArray;
+.field public h:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -78,7 +78,7 @@
 
     invoke-direct {p2, v0}, Landroid/util/SparseArray;-><init>(I)V
 
-    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
+    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
 
     const/4 p2, 0x0
 
@@ -86,7 +86,7 @@
     if-ge p2, v0, :cond_0
 
     .line 7
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
 
     aget v3, v1, p2
 
@@ -117,12 +117,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
 
@@ -135,7 +135,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 3
     :goto_0
@@ -151,7 +151,7 @@
     if-ge v1, v0, :cond_1
 
     .line 6
-    iget-object v4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
+    iget-object v4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -160,7 +160,7 @@
     aput v4, v2, v1
 
     .line 7
-    iget-object v4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
+    iget-object v4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 

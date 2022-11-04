@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract N1()Lcom/google/android/gms/games/internal/zzbq;
+.method public abstract x2()Lcom/google/android/gms/games/internal/zzbq;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

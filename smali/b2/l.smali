@@ -1,93 +1,57 @@
 .class public final Lb2/l;
-.super La2/b;
+.super Landroid/widget/Button;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<R::",
-        "La2/g;",
-        ">",
-        "La2/b<",
-        "TR;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
-            "TR;>;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(La2/c;)V
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const v1, 0x1010048
+
+    invoke-direct {p0, p1, v0, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public static a(IIII)I
     .locals 0
-    .param p1    # La2/c;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "La2/c<",
-            "TR;>;)V"
-        }
-    .end annotation
+
+    if-eqz p0, :cond_2
+
+    const/4 p1, 0x1
+
+    if-eq p0, p1, :cond_1
+
+    const/4 p1, 0x2
+
+    if-ne p0, p1, :cond_0
+
+    return p3
 
     .line 1
-    invoke-direct {p0}, La2/b;-><init>()V
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const/16 p2, 0x21
+
+    const-string p3, "Unknown color scheme: "
 
     .line 2
-    check-cast p1, Lcom/google/android/gms/common/api/internal/BasePendingResult;
+    invoke-static {p2, p3, p0}, La0/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
-    iput-object p1, p0, Lb2/l;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+    move-result-object p0
 
-    return-void
-.end method
+    .line 3
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    throw p1
 
-# virtual methods
-.method public final b(La2/c$a;)V
-    .locals 1
-    .param p1    # La2/c$a;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+    :cond_1
+    return p2
 
-    iget-object v0, p0, Lb2/l;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
-
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->b(La2/c$a;)V
-
-    return-void
-.end method
-
-.method public final c()La2/g;
-    .locals 1
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J",
-            "Ljava/util/concurrent/TimeUnit;",
-            ")TR;"
-        }
-    .end annotation
-
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    iget-object v0, p0, Lb2/l;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->c()La2/g;
-
-    move-result-object v0
-
-    return-object v0
+    :cond_2
+    return p1
 .end method

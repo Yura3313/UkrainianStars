@@ -54,17 +54,18 @@
 .method public static b(Landroid/database/sqlite/SQLiteDatabase;I)Landroid/database/Cursor;
     .locals 9
 
+    const-string v0, "value"
+
+    .line 1
+    filled-new-array {v0}, [Ljava/lang/String;
+
+    move-result-object v3
+
     const/4 v0, 0x1
 
-    new-array v3, v0, [Ljava/lang/String;
-
-    const-string v1, "value"
-
-    const/4 v2, 0x0
-
-    aput-object v1, v3, v2
-
     new-array v5, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
 
     if-eqz p1, :cond_2
 
@@ -79,21 +80,21 @@
     :cond_0
     const-string p1, "last_successful_request_time"
 
-    aput-object p1, v5, v2
+    aput-object p1, v5, v1
 
     goto :goto_0
 
     :cond_1
     const-string p1, "total_requests"
 
-    aput-object p1, v5, v2
+    aput-object p1, v5, v1
 
     goto :goto_0
 
     :cond_2
     const-string p1, "failed_requests"
 
-    aput-object p1, v5, v2
+    aput-object p1, v5, v1
 
     :goto_0
     const/4 v6, 0x0
@@ -108,6 +109,7 @@
 
     move-object v1, p0
 
+    .line 2
     invoke-virtual/range {v1 .. v8}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p0

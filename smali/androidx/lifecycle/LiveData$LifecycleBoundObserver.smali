@@ -32,13 +32,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/j;Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/j;Landroidx/lifecycle/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/lifecycle/j;",
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;)V"
         }
     .end annotation
@@ -47,7 +47,7 @@
     iput-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
     .line 2
-    invoke-direct {p0, p1, p3}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+    invoke-direct {p0, p1, p3}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
 
     .line 3
     iput-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/j;
@@ -73,16 +73,16 @@
     iget-object p1, p1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object p2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
 
     if-ne p1, p2, :cond_0
 
     .line 4
     iget-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
-    iget-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/o;
+    iget-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/p;
 
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/LiveData;->h(Landroidx/lifecycle/o;)V
+    invoke-virtual {p1, p2}, Landroidx/lifecycle/LiveData;->h(Landroidx/lifecycle/p;)V
 
     return-void
 
@@ -105,7 +105,7 @@
     iget-object p2, p2, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 7
-    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p2, v0}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 
@@ -186,7 +186,7 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 

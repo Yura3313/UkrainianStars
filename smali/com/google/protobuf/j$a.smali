@@ -133,7 +133,7 @@
 
     iget-object v3, p0, Lcom/google/protobuf/j$a;->e:[B
 
-    sget-object v4, Lcom/google/protobuf/a0;->a:Ljava/nio/charset/Charset;
+    sget-object v4, Lcom/google/protobuf/b0;->a:Ljava/nio/charset/Charset;
 
     invoke-direct {v1, v3, v2, v0, v4}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
 
@@ -157,7 +157,7 @@
     if-gez v0, :cond_2
 
     .line 5
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->f()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->f()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
 
     .line 6
     :cond_2
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
     .line 3
     iget-object v1, p0, Lcom/google/protobuf/j$a;->e:[B
 
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/u1;->c([BII)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/x1;->c([BII)Ljava/lang/String;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
     if-gtz v0, :cond_2
 
     .line 5
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->f()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->f()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -231,7 +231,7 @@
 
     .line 6
     :cond_2
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -276,7 +276,7 @@
 
     .line 4
     :cond_1
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->b()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->b()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -354,7 +354,7 @@
 
     .line 2
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->d()Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
+    invoke-static {}, Lcom/google/protobuf/c0;->d()Lcom/google/protobuf/c0$a;
 
     move-result-object p1
 
@@ -445,7 +445,7 @@
 
     .line 10
     :cond_8
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->e()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->e()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -483,7 +483,7 @@
 
     .line 13
     :cond_b
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -491,17 +491,11 @@
 
     .line 14
     :cond_c
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->e()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->e()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
-    goto :goto_4
-
-    :goto_3
     throw p1
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public final I()I
@@ -571,7 +565,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -625,77 +619,77 @@
 
     shl-long/2addr v7, v2
 
-    or-long/2addr v3, v7
+    or-long v2, v3, v7
 
-    add-int/lit8 v2, v0, 0x2
+    add-int/lit8 v4, v0, 0x2
 
-    aget-byte v2, v1, v2
+    aget-byte v4, v1, v4
 
-    int-to-long v7, v2
-
-    and-long/2addr v7, v5
-
-    const/16 v2, 0x10
-
-    shl-long/2addr v7, v2
-
-    or-long/2addr v3, v7
-
-    add-int/lit8 v2, v0, 0x3
-
-    aget-byte v2, v1, v2
-
-    int-to-long v7, v2
+    int-to-long v7, v4
 
     and-long/2addr v7, v5
 
-    const/16 v2, 0x18
+    const/16 v4, 0x10
 
-    shl-long/2addr v7, v2
+    shl-long/2addr v7, v4
 
-    or-long/2addr v3, v7
+    or-long/2addr v2, v7
 
-    add-int/lit8 v2, v0, 0x4
+    add-int/lit8 v4, v0, 0x3
 
-    aget-byte v2, v1, v2
+    aget-byte v4, v1, v4
 
-    int-to-long v7, v2
-
-    and-long/2addr v7, v5
-
-    const/16 v2, 0x20
-
-    shl-long/2addr v7, v2
-
-    or-long/2addr v3, v7
-
-    add-int/lit8 v2, v0, 0x5
-
-    aget-byte v2, v1, v2
-
-    int-to-long v7, v2
+    int-to-long v7, v4
 
     and-long/2addr v7, v5
 
-    const/16 v2, 0x28
+    const/16 v4, 0x18
 
-    shl-long/2addr v7, v2
+    shl-long/2addr v7, v4
 
-    or-long/2addr v3, v7
+    or-long/2addr v2, v7
 
-    add-int/lit8 v2, v0, 0x6
+    add-int/lit8 v4, v0, 0x4
 
-    aget-byte v2, v1, v2
+    aget-byte v4, v1, v4
 
-    int-to-long v7, v2
+    int-to-long v7, v4
 
     and-long/2addr v7, v5
 
-    const/16 v2, 0x30
+    const/16 v4, 0x20
 
-    shl-long/2addr v7, v2
+    shl-long/2addr v7, v4
 
-    or-long/2addr v3, v7
+    or-long/2addr v2, v7
+
+    add-int/lit8 v4, v0, 0x5
+
+    aget-byte v4, v1, v4
+
+    int-to-long v7, v4
+
+    and-long/2addr v7, v5
+
+    const/16 v4, 0x28
+
+    shl-long/2addr v7, v4
+
+    or-long/2addr v2, v7
+
+    add-int/lit8 v4, v0, 0x6
+
+    aget-byte v4, v1, v4
+
+    int-to-long v7, v4
+
+    and-long/2addr v7, v5
+
+    const/16 v4, 0x30
+
+    shl-long/2addr v7, v4
+
+    or-long/2addr v2, v7
 
     add-int/lit8 v0, v0, 0x7
 
@@ -705,17 +699,17 @@
 
     and-long/2addr v0, v5
 
-    const/16 v2, 0x38
+    const/16 v4, 0x38
 
-    shl-long/2addr v0, v2
+    shl-long/2addr v0, v4
 
-    or-long/2addr v0, v3
+    or-long/2addr v0, v2
 
     return-wide v0
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -738,7 +732,7 @@
 
     if-ne v1, v0, :cond_0
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
     .line 3
     :cond_0
@@ -765,7 +759,7 @@
 
     if-ge v1, v4, :cond_2
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
     :cond_2
     add-int/lit8 v1, v3, 0x1
@@ -784,7 +778,7 @@
     :goto_0
     int-to-long v2, v0
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
     :cond_3
     add-int/lit8 v3, v1, 0x1
@@ -808,7 +802,7 @@
 
     move-wide v2, v9
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
     :cond_4
     add-int/lit8 v1, v3, 0x1
@@ -853,13 +847,11 @@
     const-wide/32 v1, 0xfe03f80
 
     :goto_1
-    xor-long/2addr v1, v3
-
-    move-wide v2, v1
+    xor-long v2, v3, v1
 
     move v1, v0
 
-    goto :goto_5
+    goto :goto_4
 
     :cond_6
     add-int/lit8 v1, v0, 0x1
@@ -877,20 +869,16 @@
 
     cmp-long v0, v3, v5
 
-    if-gez v0, :cond_8
+    if-gez v0, :cond_7
 
     const-wide v5, -0x7f01fc080L
 
     :goto_2
-    xor-long/2addr v3, v5
+    xor-long v2, v3, v5
+
+    goto :goto_4
 
     :cond_7
-    :goto_3
-    move-wide v2, v3
-
-    goto :goto_5
-
-    :cond_8
     add-int/lit8 v0, v1, 0x1
 
     .line 11
@@ -906,13 +894,13 @@
 
     cmp-long v1, v3, v5
 
-    if-ltz v1, :cond_9
+    if-ltz v1, :cond_8
 
     const-wide v1, 0x3f80fe03f80L
 
     goto :goto_1
 
-    :cond_9
+    :cond_8
     add-int/lit8 v1, v0, 0x1
 
     .line 12
@@ -928,13 +916,13 @@
 
     cmp-long v0, v3, v5
 
-    if-gez v0, :cond_a
+    if-gez v0, :cond_9
 
     const-wide v5, -0x1fc07f01fc080L
 
     goto :goto_2
 
-    :cond_a
+    :cond_9
     add-int/lit8 v0, v1, 0x1
 
     .line 13
@@ -954,7 +942,7 @@
 
     cmp-long v1, v3, v5
 
-    if-gez v1, :cond_b
+    if-gez v1, :cond_a
 
     add-int/lit8 v1, v0, 0x1
 
@@ -965,23 +953,24 @@
 
     cmp-long v0, v7, v5
 
-    if-gez v0, :cond_7
+    if-gez v0, :cond_b
 
     .line 15
-    :goto_4
+    :goto_3
     invoke-virtual {p0}, Lcom/google/protobuf/j$a;->L()J
 
     move-result-wide v0
 
     return-wide v0
 
-    :cond_b
+    :cond_a
     move v1, v0
 
-    goto :goto_3
+    :cond_b
+    move-wide v2, v3
 
     .line 16
-    :goto_5
+    :goto_4
     iput v1, p0, Lcom/google/protobuf/j$a;->i:I
 
     return-wide v2
@@ -1041,7 +1030,7 @@
 
     .line 3
     :cond_1
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -1049,17 +1038,11 @@
 
     .line 4
     :cond_2
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->e()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->e()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
-    goto :goto_2
-
-    :goto_1
     throw v0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public final M()V
@@ -1136,7 +1119,7 @@
     if-gez p1, :cond_1
 
     .line 3
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->f()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->f()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1144,7 +1127,7 @@
 
     .line 4
     :cond_1
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1155,7 +1138,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -1168,7 +1151,7 @@
 
     .line 2
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->a()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->a()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1255,7 +1238,7 @@
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -1287,7 +1270,7 @@
 
     .line 5
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1295,7 +1278,7 @@
 
     .line 6
     :cond_1
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->g()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->g()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1303,7 +1286,7 @@
 
     .line 7
     :cond_2
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->f()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->f()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1311,7 +1294,7 @@
 .end method
 
 .method public final l()Z
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1324,9 +1307,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -1367,7 +1350,7 @@
     iget-object v1, p0, Lcom/google/protobuf/j$a;->e:[B
 
     .line 4
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->f([BII)Lcom/google/protobuf/i;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->e([BII)Lcom/google/protobuf/i;
 
     move-result-object v1
 
@@ -1384,7 +1367,7 @@
     if-nez v0, :cond_1
 
     .line 6
-    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     return-object v0
 
@@ -1420,11 +1403,11 @@
     if-nez v0, :cond_3
 
     .line 10
-    sget-object v0, Lcom/google/protobuf/a0;->b:[B
+    sget-object v0, Lcom/google/protobuf/b0;->b:[B
 
     .line 11
     :goto_0
-    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
+    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     .line 12
     new-instance v1, Lcom/google/protobuf/i$h;
@@ -1435,7 +1418,7 @@
 
     .line 13
     :cond_3
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->f()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->f()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -1443,7 +1426,7 @@
 
     .line 14
     :cond_4
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object v0
 
@@ -1533,7 +1516,7 @@
     return v0
 .end method
 
-.method public final s(ILcom/google/protobuf/q0$a;Lcom/google/protobuf/q;)V
+.method public final s(ILcom/google/protobuf/s0$a;Lcom/google/protobuf/r;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1557,7 +1540,7 @@
     check-cast p2, Lcom/google/protobuf/GeneratedMessageLite$a;
 
     .line 4
-    invoke-virtual {p2, p0, p3}, Lcom/google/protobuf/GeneratedMessageLite$a;->e(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite$a;
+    invoke-virtual {p2, p0, p3}, Lcom/google/protobuf/GeneratedMessageLite$a;->e(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     shl-int/lit8 p1, p1, 0x3
 
@@ -1577,7 +1560,7 @@
 
     .line 7
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->h()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->h()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1614,7 +1597,7 @@
     return-wide v0
 .end method
 
-.method public final v(Lcom/google/protobuf/q0$a;Lcom/google/protobuf/q;)V
+.method public final v(Lcom/google/protobuf/s0$a;Lcom/google/protobuf/r;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1650,7 +1633,7 @@
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$a;
 
     .line 6
-    invoke-virtual {p1, p0, p2}, Lcom/google/protobuf/GeneratedMessageLite$a;->e(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite$a;
+    invoke-virtual {p1, p0, p2}, Lcom/google/protobuf/GeneratedMessageLite$a;->e(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     const/4 p1, 0x0
 
@@ -1678,7 +1661,7 @@
 
     .line 11
     :cond_0
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1686,7 +1669,7 @@
 
     .line 12
     :cond_1
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->h()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->h()Lcom/google/protobuf/c0;
 
     move-result-object p1
 
@@ -1842,9 +1825,9 @@
 
     move-result-wide v0
 
-    long-to-int v1, v0
+    long-to-int v0, v0
 
-    return v1
+    return v0
 
     .line 12
     :cond_7

@@ -1,6 +1,6 @@
 .class public final Lp3/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
 # static fields
@@ -61,26 +61,25 @@
     return-object p0
 .end method
 
-.method public static b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-    .locals 2
-
-    const/4 v0, 0x0
+.method public static b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    .locals 0
 
     if-nez p1, :cond_0
 
+    const/4 p1, 0x0
+
     .line 1
-    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
     return-void
 
-    :cond_0
-    const/4 v1, 0x1
-
     .line 2
-    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+    :cond_0
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
-    .line 3
-    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
     return-void
 .end method

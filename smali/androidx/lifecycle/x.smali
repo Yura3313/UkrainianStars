@@ -61,7 +61,7 @@
     const-string v1, "androidx.lifecycle.ViewModelProvider.DefaultKey:"
 
     .line 2
-    invoke-static {v1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

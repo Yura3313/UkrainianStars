@@ -30,35 +30,28 @@
     move-result-object v0
 
     .line 3
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x15
-
-    if-lt v1, v3, :cond_1
-
-    .line 4
     invoke-interface {p0}, Lcom/google/android/material/circularreveal/c;->getRevealInfo()Lcom/google/android/material/circularreveal/c$d;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 5
+    .line 4
     iget v1, v1, Lcom/google/android/material/circularreveal/c$d;->c:F
 
-    .line 6
+    .line 5
     check-cast p0, Landroid/view/View;
 
     float-to-int p1, p1
 
     float-to-int p2, p2
 
-    .line 7
+    .line 6
     invoke-static {p0, p1, p2, v1, p3}, Landroid/view/ViewAnimationUtils;->createCircularReveal(Landroid/view/View;IIFF)Landroid/animation/Animator;
 
     move-result-object p0
 
-    .line 8
+    .line 7
     new-instance p1, Landroid/animation/AnimatorSet;
 
     invoke-direct {p1}, Landroid/animation/AnimatorSet;-><init>()V
@@ -71,12 +64,12 @@
 
     aput-object p0, p2, v2
 
-    .line 9
+    .line 8
     invoke-virtual {p1, p2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
     return-object p1
 
-    .line 10
+    .line 9
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -85,7 +78,4 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
-
-    :cond_1
-    return-object v0
 .end method

@@ -3,14 +3,6 @@
 .source "FitWindowsViewGroup.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/appcompat/widget/s$a;
-    }
-.end annotation
-
-
 # virtual methods
-.method public abstract setOnFitSystemWindowsListener(Landroidx/appcompat/widget/s$a;)V
+.method public abstract a()V
 .end method

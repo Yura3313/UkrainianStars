@@ -1,41 +1,16 @@
-.class public final synthetic Lu5/c;
+.class public interface abstract Lu5/c;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/util/concurrent/Executor;
-
-
-# static fields
-.field public static final g:Lu5/c;
-
-
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lu5/c;
-
-    invoke-direct {v0}, Lu5/c;-><init>()V
-
-    sput-object v0, Lu5/c;->g:Lu5/c;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.source "com.google.firebase:firebase-common@@16.0.2"
 
 
 # virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 0
-
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
-
-    return-void
+.method public abstract getComponents()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lu5/a<",
+            "*>;>;"
+        }
+    .end annotation
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/Fragment;->s()Landroidx/fragment/app/p;
+    value = Landroidx/fragment/app/Fragment;->r()Landroidx/fragment/app/p;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/fragment/app/Fragment;
+.field public final synthetic f:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
@@ -31,13 +31,13 @@
 
 
 # virtual methods
-.method public final h(I)Landroid/view/View;
+.method public final N(I)Landroid/view/View;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -55,12 +55,12 @@
     const-string v0, "Fragment "
 
     .line 4
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -77,12 +77,12 @@
     throw p1
 .end method
 
-.method public final i()Z
+.method public final T()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-eqz v0, :cond_0
 

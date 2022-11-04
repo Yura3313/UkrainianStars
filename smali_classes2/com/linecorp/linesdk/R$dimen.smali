@@ -146,17 +146,17 @@
 
 .field public static final disabled_alpha_material_light:I = 0x7f0700af
 
-.field public static final highlight_alpha_material_colored:I = 0x7f0700cb
+.field public static final highlight_alpha_material_colored:I = 0x7f0700ca
 
-.field public static final highlight_alpha_material_dark:I = 0x7f0700cc
+.field public static final highlight_alpha_material_dark:I = 0x7f0700cb
 
-.field public static final highlight_alpha_material_light:I = 0x7f0700cd
+.field public static final highlight_alpha_material_light:I = 0x7f0700cc
 
-.field public static final notification_large_icon_height:I = 0x7f0701c9
+.field public static final notification_large_icon_height:I = 0x7f0701c8
 
-.field public static final notification_large_icon_width:I = 0x7f0701ca
+.field public static final notification_large_icon_width:I = 0x7f0701c9
 
-.field public static final notification_subtext_size:I = 0x7f0701d1
+.field public static final notification_subtext_size:I = 0x7f0701d0
 
 
 # direct methods

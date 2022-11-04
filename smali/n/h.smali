@@ -51,11 +51,11 @@
 
     const/high16 v8, 0x40000000    # 2.0f
 
-    mul-float v7, v7, v8
+    mul-float/2addr v7, v8
 
     sub-float v6, p2, v6
 
-    mul-float v6, v6, v8
+    mul-float/2addr v6, v8
 
     .line 3
     iget v8, v0, Ln/h;->c:F
@@ -70,14 +70,14 @@
     .line 5
     iget v8, v0, Ln/h;->a:F
 
-    mul-float v8, v8, v7
+    mul-float/2addr v8, v7
 
     add-float/2addr v8, v3
 
     .line 6
     iget v3, v0, Ln/h;->b:F
 
-    mul-float v3, v3, v6
+    mul-float/2addr v3, v6
 
     add-float/2addr v3, v5
 
@@ -107,7 +107,7 @@
 
     int-to-float v10, v10
 
-    mul-float v10, v10, v7
+    mul-float/2addr v10, v7
 
     float-to-double v10, v10
 
@@ -118,15 +118,13 @@
 
     move-result-wide v14
 
-    invoke-static {v10, v11}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v14, v14, v10
+    mul-double/2addr v14, v10
 
     move/from16 v5, p4
 
     int-to-float v5, v5
 
-    mul-float v5, v5, v6
+    mul-float/2addr v5, v6
 
     float-to-double v5, v5
 
@@ -134,21 +132,19 @@
 
     move-result-wide v10
 
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v10, v10, v5
+    mul-double/2addr v10, v5
 
     sub-double/2addr v14, v10
 
     double-to-float v10, v14
 
-    mul-float v10, v10, v9
+    mul-float/2addr v10, v9
 
     add-float/2addr v10, v8
 
     int-to-float v1, v1
 
-    mul-float v1, v1, v7
+    mul-float/2addr v1, v7
 
     float-to-double v7, v1
 
@@ -157,23 +153,19 @@
 
     move-result-wide v14
 
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v14, v14, v7
+    mul-double/2addr v14, v7
 
     invoke-static {v12, v13}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v7
 
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v7, v7, v5
+    mul-double/2addr v7, v5
 
     sub-double/2addr v14, v7
 
     double-to-float v1, v14
 
-    mul-float v9, v9, v1
+    mul-float/2addr v9, v1
 
     add-float/2addr v9, v3
 

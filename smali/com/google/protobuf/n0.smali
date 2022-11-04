@@ -1,60 +1,56 @@
-.class public final Lcom/google/protobuf/n0;
+.class public interface abstract Lcom/google/protobuf/n0;
 .super Ljava/lang/Object;
-.source "MapFieldSchemas.java"
+.source "MapFieldSchema.java"
 
 
-# static fields
-.field public static final a:Lcom/google/protobuf/l0;
+# virtual methods
+.method public abstract c(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-.field public static final b:Lcom/google/protobuf/m0;
+.method public abstract d(ILjava/lang/Object;Ljava/lang/Object;)I
+.end method
 
+.method public abstract e(Ljava/lang/Object;)Z
+.end method
 
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public abstract f(Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    :try_start_0
-    const-string v0, "com.google.protobuf.MapFieldSchemaFull"
+.method public abstract g(Ljava/lang/Object;)Lcom/google/protobuf/l0$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Lcom/google/protobuf/l0$a<",
+            "**>;"
+        }
+    .end annotation
+.end method
 
-    .line 1
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+.method public abstract h()Ljava/lang/Object;
+.end method
 
-    move-result-object v0
+.method public abstract i(Ljava/lang/Object;)Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Ljava/util/Map<",
+            "**>;"
+        }
+    .end annotation
+.end method
 
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v0
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/protobuf/l0;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    const/4 v0, 0x0
-
-    .line 3
-    :goto_0
-    sput-object v0, Lcom/google/protobuf/n0;->a:Lcom/google/protobuf/l0;
-
-    .line 4
-    new-instance v0, Lcom/google/protobuf/m0;
-
-    invoke-direct {v0}, Lcom/google/protobuf/m0;-><init>()V
-
-    sput-object v0, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/m0;
-
-    return-void
+.method public abstract j(Ljava/lang/Object;)Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Ljava/util/Map<",
+            "**>;"
+        }
+    .end annotation
 .end method

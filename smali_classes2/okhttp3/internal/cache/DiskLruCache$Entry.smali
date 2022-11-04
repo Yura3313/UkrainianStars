@@ -146,7 +146,7 @@
     const-string v1, "unexpected journal line: "
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -228,13 +228,7 @@
 
     move-result-object p1
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public snapshot()Lokhttp3/internal/cache/DiskLruCache$Snapshot;
@@ -269,7 +263,7 @@
 
     const/4 v8, 0x0
 
-    const/4 v1, 0x0
+    move v1, v8
 
     .line 4
     :goto_0
@@ -315,10 +309,8 @@
 
     return-object v9
 
-    :catch_0
-    nop
-
     .line 7
+    :catch_0
     :goto_1
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
@@ -358,13 +350,7 @@
 
     invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
 
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public writeLengths(Lokio/BufferedSink;)V

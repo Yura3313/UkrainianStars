@@ -74,7 +74,7 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->b:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->s:Landroidx/recyclerview/widget/RecyclerView$m;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->r:Landroidx/recyclerview/widget/RecyclerView$m;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->x()I
 
@@ -93,13 +93,13 @@
 
     sub-int p1, v0, p1
 
-    mul-int v0, v0, p1
+    mul-int/2addr v0, p1
 
     const/4 v1, 0x0
 
     if-gtz v0, :cond_1
 
-    const/4 p1, 0x0
+    move p1, v1
 
     :cond_1
     iput p1, p0, Landroidx/recyclerview/widget/p;->n:I
@@ -109,7 +109,7 @@
 
     sub-int p2, v0, p2
 
-    mul-int v0, v0, p2
+    mul-int/2addr v0, p2
 
     if-gtz v0, :cond_2
 
@@ -170,12 +170,12 @@
     goto :goto_2
 
     :cond_4
-    mul-float p2, p2, p2
+    mul-float/2addr p2, p2
 
     .line 11
     iget v0, p1, Landroid/graphics/PointF;->y:F
 
-    mul-float v0, v0, v0
+    mul-float/2addr v0, v0
 
     add-float/2addr v0, p2
 
@@ -206,14 +206,14 @@
 
     const p1, 0x461c4000    # 10000.0f
 
-    mul-float v0, v0, p1
+    mul-float/2addr v0, p1
 
     float-to-int p2, v0
 
     .line 15
     iput p2, p0, Landroidx/recyclerview/widget/p;->n:I
 
-    mul-float v1, v1, p1
+    mul-float/2addr v1, p1
 
     float-to-int p1, v1
 
@@ -234,7 +234,7 @@
 
     const v0, 0x3f99999a
 
-    mul-float p2, p2, v0
+    mul-float/2addr p2, v0
 
     float-to-int p2, p2
 
@@ -242,13 +242,13 @@
 
     int-to-float v1, v1
 
-    mul-float v1, v1, v0
+    mul-float/2addr v1, v0
 
     float-to-int v1, v1
 
     int-to-float p1, p1
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     float-to-int p1, p1
 
@@ -310,29 +310,27 @@
 
     iget v0, v0, Landroid/graphics/PointF;->x:F
 
-    cmpl-float v5, v0, v4
+    cmpl-float v0, v0, v3
 
-    if-nez v5, :cond_0
+    if-nez v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    cmpl-float v0, v0, v4
-
     if-lez v0, :cond_1
 
-    const/4 v10, 0x1
+    move v10, v1
 
     goto :goto_1
 
     :cond_1
-    const/4 v10, -0x1
+    move v10, v2
 
     goto :goto_1
 
     :cond_2
     :goto_0
-    const/4 v10, 0x0
+    move v10, v4
 
     .line 2
     :goto_1
@@ -401,7 +399,7 @@
 
     :cond_4
     :goto_2
-    const/4 v0, 0x0
+    move v0, v4
 
     .line 11
     :goto_3
@@ -411,29 +409,27 @@
 
     iget v5, v5, Landroid/graphics/PointF;->y:F
 
-    cmpl-float v6, v5, v4
+    cmpl-float v3, v5, v3
 
-    if-nez v6, :cond_5
+    if-nez v3, :cond_5
 
     goto :goto_4
 
     :cond_5
-    cmpl-float v4, v5, v4
+    if-lez v3, :cond_6
 
-    if-lez v4, :cond_6
-
-    const/4 v10, 0x1
+    move v10, v1
 
     goto :goto_5
 
     :cond_6
-    const/4 v10, -0x1
+    move v10, v2
 
     goto :goto_5
 
     :cond_7
     :goto_4
-    const/4 v10, 0x0
+    move v10, v4
 
     .line 12
     :goto_5
@@ -496,13 +492,13 @@
     .line 20
     invoke-virtual/range {v5 .. v10}, Landroidx/recyclerview/widget/p;->f(IIIII)I
 
-    move-result v3
+    move-result v4
 
     :cond_9
     :goto_6
     mul-int p1, v0, v0
 
-    mul-int v1, v3, v3
+    mul-int v1, v4, v4
 
     add-int/2addr v1, p1
 
@@ -524,7 +520,7 @@
 
     neg-int v0, v0
 
-    neg-int v1, v3
+    neg-int v1, v4
 
     .line 23
     iget-object v2, p0, Landroidx/recyclerview/widget/p;->i:Landroid/view/animation/DecelerateInterpolator;
@@ -611,8 +607,6 @@
 
     const-wide v2, 0x3fd57a786c22680aL    # 0.3356
 
-    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double/2addr v0, v2
 
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
@@ -657,7 +651,7 @@
     :cond_0
     iget v0, p0, Landroidx/recyclerview/widget/p;->m:F
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     float-to-double v0, p1
 

@@ -15,22 +15,22 @@
 
 
 # instance fields
-.field public final g:Landroid/content/Intent;
+.field public final f:Landroid/content/Intent;
+
+.field public final g:Ljava/lang/String;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:Ljava/lang/String;
-
-.field public final j:Lcom/google/android/gms/common/data/BitmapTeleporter;
+.field public final i:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lj3/f;
+    new-instance v0, Li3/f;
 
-    invoke-direct {v0}, Lj3/f;-><init>()V
+    invoke-direct {v0}, Li3/f;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/instantapps/LaunchData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -44,21 +44,21 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/google/android/gms/instantapps/LaunchData;->f:Landroid/content/Intent;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/instantapps/LaunchData;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iput-object p4, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
     if-eqz p4, :cond_0
 
     .line 6
-    iget-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->k:Z
+    iget-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Z
 
     if-nez p1, :cond_0
 
@@ -67,16 +67,19 @@
 
     new-instance p2, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
 
-    iget-object p3, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
+    iget-object p3, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->g:Landroid/os/ParcelFileDescriptor;
+
+    const-string v0, "null reference"
 
     .line 8
-    invoke-static {p3}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 9
     invoke-direct {p2, p3}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
 
     invoke-direct {p1, p2}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 9
+    .line 10
     :try_start_0
     invoke-virtual {p1}, Ljava/io/DataInputStream;->readInt()I
 
@@ -84,17 +87,17 @@
 
     new-array p2, p2, [B
 
-    .line 10
+    .line 11
     invoke-virtual {p1}, Ljava/io/DataInputStream;->readInt()I
 
     move-result p3
 
-    .line 11
+    .line 12
     invoke-virtual {p1}, Ljava/io/DataInputStream;->readInt()I
 
     move-result v0
 
-    .line 12
+    .line 13
     invoke-virtual {p1}, Ljava/io/DataInputStream;->readUTF()Ljava/lang/String;
 
     move-result-object v1
@@ -103,39 +106,39 @@
 
     move-result-object v1
 
-    .line 13
+    .line 14
     invoke-virtual {p1, p2}, Ljava/io/DataInputStream;->read([B)I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
+    .line 15
     :try_start_1
     invoke-interface {p1}, Ljava/io/Closeable;->close()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 15
+    .line 16
     :catch_0
     invoke-static {p2}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 16
+    .line 17
     invoke-static {p3, v0, v1}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object p2
 
-    .line 17
+    .line 18
     invoke-virtual {p2, p1}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
-    .line 18
-    iput-object p2, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Landroid/graphics/Bitmap;
+    .line 19
+    iput-object p2, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:Landroid/graphics/Bitmap;
 
     const/4 p1, 0x1
 
-    .line 19
-    iput-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->k:Z
+    .line 20
+    iput-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Z
 
     goto :goto_1
 
@@ -147,7 +150,7 @@
     :catch_1
     move-exception p2
 
-    .line 20
+    .line 21
     :try_start_2
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -159,14 +162,14 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 21
+    .line 22
     :goto_0
     :try_start_3
     invoke-interface {p1}, Ljava/io/Closeable;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 22
+    .line 23
     :catch_2
     throw p2
 
@@ -183,45 +186,45 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Landroid/content/Intent;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->f:Landroid/content/Intent;
 
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x3
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x4
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
 
     .line 7
-    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x5
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 9
-    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -1,72 +1,81 @@
 .class public final Lv3/c;
-.super Lv3/s4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+.super Lv3/p;
+.source "com.android.billingclient:billing@@5.0.0"
 
 
 # instance fields
-.field public final synthetic k:Landroid/app/Activity;
-
-.field public final synthetic l:Ljava/lang/String;
-
-.field public final synthetic m:Ljava/lang/String;
-
-.field public final synthetic n:Lv3/s4;
+.field public final synthetic h:Lv3/d;
 
 
 # direct methods
-.method public constructor <init>(Lv3/s4;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Lv3/d;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lv3/c;->n:Lv3/s4;
+    iput-object p1, p0, Lv3/c;->h:Lv3/d;
 
-    iput-object p2, p0, Lv3/c;->k:Landroid/app/Activity;
-
-    iput-object p3, p0, Lv3/c;->l:Ljava/lang/String;
-
-    iput-object p4, p0, Lv3/c;->m:Ljava/lang/String;
-
-    const/4 p2, 0x1
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
+    invoke-direct {p0}, Lv3/p;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 7
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final g()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic get(I)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/c;->n:Lv3/s4;
+    iget-object v0, p0, Lv3/c;->h:Lv3/d;
 
     .line 2
-    iget-object v1, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    iget v0, v0, Lv3/d;->j:I
 
     .line 3
-    iget-object v0, p0, Lv3/c;->k:Landroid/app/Activity;
+    invoke-static {p1, v0}, Lv3/k;->a(II)I
+
+    iget-object v0, p0, Lv3/c;->h:Lv3/d;
+
+    add-int/2addr p1, p1
 
     .line 4
-    new-instance v2, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v2, v0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+    iget-object v1, v0, Lv3/d;->i:[Ljava/lang/Object;
 
     .line 5
-    iget-object v3, p0, Lv3/c;->l:Ljava/lang/String;
+    aget-object v1, v1, p1
 
-    iget-object v4, p0, Lv3/c;->m:Ljava/lang/String;
-
-    iget-wide v5, p0, Lv3/s4$a;->g:J
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    invoke-interface/range {v1 .. v6}, Lcom/google/android/gms/internal/measurement/zzm;->setCurrentScreen(Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Ljava/lang/String;J)V
+    iget-object v0, v0, Lv3/d;->i:[Ljava/lang/Object;
 
-    return-void
+    add-int/lit8 p1, p1, 0x1
+
+    .line 7
+    aget-object p1, v0, p1
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Ljava/util/AbstractMap$SimpleImmutableEntry;
+
+    .line 8
+    invoke-direct {v0, v1, p1}, Ljava/util/AbstractMap$SimpleImmutableEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 1
+
+    iget-object v0, p0, Lv3/c;->h:Lv3/d;
+
+    iget v0, v0, Lv3/d;->j:I
+
+    return v0
 .end method

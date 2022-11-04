@@ -56,7 +56,7 @@
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator;
 
     .line 4
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v1, 0x0
 

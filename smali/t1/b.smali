@@ -1,5 +1,6 @@
 .class public final Lt1/b;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -10,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/accounttransfer/zzo;",
+        "Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;",
         ">;"
     }
 .end annotation
@@ -28,131 +29,93 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 10
+    .locals 7
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move-object v2, v1
 
-    move-object v5, v1
-
-    move-object v6, v5
-
-    move-object v7, v6
-
-    move-object v8, v7
-
-    move-object v9, v8
-
-    const/4 v4, 0x0
+    move-object v3, v2
 
     .line 2
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v1
+    move-result v4
 
-    if-ge v1, v0, :cond_0
+    if-ge v4, v0, :cond_3
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v1
+    move-result v4
 
-    const v2, 0xffff
+    const v5, 0xffff
 
-    and-int/2addr v2, v1
+    and-int/2addr v5, v4
 
-    packed-switch v2, :pswitch_data_0
+    const/4 v6, 0x1
+
+    if-eq v5, v6, :cond_2
+
+    const/4 v6, 0x2
+
+    if-eq v5, v6, :cond_1
+
+    const/4 v6, 0x3
+
+    if-eq v5, v6, :cond_0
 
     .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v4}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
-    :pswitch_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    :cond_0
+    invoke-static {p1, v4}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v3
 
     goto :goto_0
 
     .line 6
-    :pswitch_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    :cond_1
+    invoke-static {p1, v4}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v2
 
     goto :goto_0
 
     .line 7
-    :pswitch_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    :cond_2
+    invoke-static {p1, v4}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v1
 
     goto :goto_0
 
     .line 8
-    :pswitch_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
-
-    move-result-object v6
-
-    goto :goto_0
+    :cond_3
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 9
-    :pswitch_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    new-instance p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;
 
-    move-result-object v5
-
-    goto :goto_0
-
-    .line 10
-    :pswitch_5
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v4
-
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 12
-    new-instance p1, Lcom/google/android/gms/auth/api/accounttransfer/zzo;
-
-    move-object v3, p1
-
-    invoke-direct/range {v3 .. v9}, Lcom/google/android/gms/auth/api/accounttransfer/zzo;-><init>(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/accounttransfer/zzo;
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;
 
     return-object p1
 .end method

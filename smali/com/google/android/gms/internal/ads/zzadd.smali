@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final o:I
+.field public static final n:I
 
-.field public static final p:I
+.field public static final o:I
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Ljava/util/ArrayList;
+.field public final g:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field public final i:Ljava/util/ArrayList;
+.field public final h:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -32,6 +32,8 @@
     .end annotation
 .end field
 
+.field public final i:I
+
 .field public final j:I
 
 .field public final k:I
@@ -39,8 +41,6 @@
 .field public final l:I
 
 .field public final m:I
-
-.field public final n:I
 
 
 # direct methods
@@ -66,10 +66,10 @@
     move-result v1
 
     .line 3
-    sput v1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
+    sput v1, Lcom/google/android/gms/internal/ads/zzadd;->n:I
 
     .line 4
-    sput v0, Lcom/google/android/gms/internal/ads/zzadd;->p:I
+    sput v0, Lcom/google/android/gms/internal/ads/zzadd;->o:I
 
     return-void
 .end method
@@ -98,17 +98,17 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/util/ArrayList;
 
     .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->f:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -130,12 +130,12 @@
     check-cast v0, Lcom/google/android/gms/internal/ads/zzadi;
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -154,10 +154,10 @@
     goto :goto_1
 
     :cond_1
-    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
+    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->n:I
 
     :goto_1
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->j:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:I
 
     if-eqz p4, :cond_2
 
@@ -169,10 +169,10 @@
     goto :goto_2
 
     :cond_2
-    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->p:I
+    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
 
     :goto_2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->k:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->j:I
 
     if-eqz p5, :cond_3
 
@@ -187,28 +187,28 @@
     const/16 p1, 0xc
 
     :goto_3
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->l:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->k:I
 
     .line 12
-    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadd;->m:I
+    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadd;->l:I
 
     .line 13
-    iput p7, p0, Lcom/google/android/gms/internal/ads/zzadd;->n:I
+    iput p7, p0, Lcom/google/android/gms/internal/ads/zzadd;->m:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C1()Ljava/lang/String;
+.method public final a2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->f:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final o3()Ljava/util/List;
+.method public final l5()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -219,7 +219,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
 
     return-object v0
 .end method

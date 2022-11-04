@@ -88,7 +88,7 @@
 .end method
 
 .method public read(Lokio/Buffer;J)J
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -122,9 +122,9 @@
 
     const-wide/16 v3, 0x0
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-nez v5, :cond_1
+    if-nez v1, :cond_1
 
     .line 4
     iget-object v1, p0, Lokio/Pipe$PipeSource;->this$0:Lokio/Pipe;
@@ -189,13 +189,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public timeout()Lokio/Timeout;

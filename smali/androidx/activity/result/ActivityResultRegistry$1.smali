@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/activity/result/ActivityResultRegistry;->c(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
+    value = Landroidx/activity/result/ActivityResultRegistry;->d(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -144,10 +144,10 @@
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Lb/a;
 
     .line 10
-    iget v1, p1, Landroidx/activity/result/ActivityResult;->g:I
+    iget v1, p1, Landroidx/activity/result/ActivityResult;->f:I
 
     .line 11
-    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->g:Landroid/content/Intent;
 
     .line 12
     invoke-virtual {v0, v1, p1}, Lb/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;
@@ -194,7 +194,7 @@
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->a:Ljava/lang/String;
 
-    invoke-virtual {p1, p2}, Landroidx/activity/result/ActivityResultRegistry;->f(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Landroidx/activity/result/ActivityResultRegistry;->g(Ljava/lang/String;)V
 
     :cond_3
     :goto_0

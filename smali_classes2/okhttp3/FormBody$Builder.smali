@@ -81,11 +81,17 @@
 .method public add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
     .locals 8
 
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    const-string v0, "name == null"
 
     .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    const-string v0, "value == null"
+
+    .line 2
+    invoke-static {p2, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 3
     iget-object v0, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
     const/4 v3, 0x0
@@ -108,7 +114,7 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2
+    .line 4
     iget-object p1, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
     const/4 v2, 0x0
@@ -128,36 +134,22 @@
     invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object p0
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "value == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 4
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "name == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public addEncoded(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
     .locals 8
 
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    const-string v0, "name == null"
 
     .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    const-string v0, "value == null"
+
+    .line 2
+    invoke-static {p2, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 3
     iget-object v0, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
     const/4 v3, 0x1
@@ -180,7 +172,7 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2
+    .line 4
     iget-object p1, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
     const/4 v2, 0x1
@@ -202,26 +194,6 @@
     invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object p0
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "value == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 4
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "name == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public build()Lokhttp3/FormBody;

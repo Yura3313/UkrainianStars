@@ -1,13 +1,48 @@
-.class public Lb2/p;
-.super Lcom/google/android/gms/common/api/c;
+.class public final Lb2/p;
+.super Lb2/n;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
+# instance fields
+.field public final synthetic f:Landroid/content/Intent;
+
+.field public final synthetic g:Landroid/app/Activity;
+
+.field public final synthetic h:I
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Intent;Landroid/app/Activity;I)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/c;-><init>()V
+    iput-object p1, p0, Lb2/p;->f:Landroid/content/Intent;
 
+    iput-object p2, p0, Lb2/p;->g:Landroid/app/Activity;
+
+    iput p3, p0, Lb2/p;->h:I
+
+    invoke-direct {p0}, Lb2/n;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lb2/p;->f:Landroid/content/Intent;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Lb2/p;->g:Landroid/app/Activity;
+
+    iget v2, p0, Lb2/p;->h:I
+
+    invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    :cond_0
     return-void
 .end method

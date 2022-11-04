@@ -96,7 +96,7 @@
     sget-object v1, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
 
     .line 11
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

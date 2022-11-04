@@ -68,12 +68,12 @@
 
     check-cast v3, [[D
 
-    const/4 v10, 0x0
+    move v10, v5
 
     :goto_0
     if-ge v10, v6, :cond_2
 
-    const/4 v11, 0x0
+    move v11, v5
 
     :goto_1
     if-ge v11, v7, :cond_1
@@ -161,12 +161,12 @@
     goto :goto_0
 
     :cond_2
-    const/4 v4, 0x0
+    move v4, v5
 
     :goto_3
     if-ge v4, v7, :cond_6
 
-    const/4 v8, 0x0
+    move v8, v5
 
     :goto_4
     if-ge v8, v6, :cond_5
@@ -293,7 +293,7 @@
 
     const-wide/high16 v2, -0x3fe8000000000000L    # -6.0
 
-    mul-double v2, v2, v0
+    mul-double/2addr v2, v0
 
     mul-double v2, v2, p6
 
@@ -305,49 +305,49 @@
 
     add-double/2addr v8, v2
 
-    mul-double v4, v4, v0
+    mul-double/2addr v4, v0
 
-    mul-double v4, v4, p4
+    mul-double/2addr v4, p4
 
     add-double/2addr v4, v8
 
-    mul-double v6, v6, p4
+    mul-double/2addr v6, p4
 
     sub-double/2addr v4, v6
 
     const-wide/high16 v2, 0x4008000000000000L    # 3.0
 
-    mul-double v2, v2, p0
+    mul-double/2addr v2, p0
 
     mul-double v6, v2, p10
 
-    mul-double v6, v6, v0
+    mul-double/2addr v6, v0
 
     add-double/2addr v6, v4
 
     mul-double v2, v2, p8
 
-    mul-double v2, v2, v0
+    mul-double/2addr v2, v0
 
     add-double/2addr v2, v6
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    mul-double v0, v0, p0
+    mul-double/2addr v0, p0
 
     mul-double v0, v0, p10
 
-    mul-double v0, v0, p2
+    mul-double/2addr v0, p2
 
     sub-double/2addr v2, v0
 
     const-wide/high16 v0, 0x4010000000000000L    # 4.0
 
-    mul-double v0, v0, p0
+    mul-double/2addr v0, p0
 
     mul-double v0, v0, p8
 
-    mul-double v0, v0, p2
+    mul-double/2addr v0, p2
 
     sub-double/2addr v2, v0
 
@@ -367,13 +367,13 @@
 
     const-wide/high16 v4, -0x4000000000000000L    # -2.0
 
-    mul-double v4, v4, v2
+    mul-double/2addr v4, v2
 
     mul-double v4, v4, p6
 
     const-wide/high16 v6, 0x4008000000000000L    # 3.0
 
-    mul-double v6, v6, v0
+    mul-double/2addr v6, v0
 
     mul-double v8, v6, p6
 
@@ -401,23 +401,23 @@
 
     mul-double v10, p0, p8
 
-    mul-double v2, v2, v10
+    mul-double/2addr v2, v10
 
     add-double/2addr v2, v8
 
-    mul-double v6, v6, v0
+    mul-double/2addr v6, v0
 
     sub-double/2addr v2, v6
 
-    mul-double v4, v4, p0
+    mul-double/2addr v4, p0
 
     mul-double v4, v4, p8
 
-    mul-double v4, v4, v0
+    mul-double/2addr v4, v0
 
     sub-double/2addr v2, v4
 
-    mul-double v10, v10, p2
+    mul-double/2addr v10, p2
 
     add-double/2addr v10, v2
 
@@ -441,9 +441,9 @@
     .line 2
     aget-wide v4, v1, v3
 
-    cmpg-double v6, p1, v4
+    cmpg-double v4, p1, v4
 
-    if-gtz v6, :cond_0
+    if-gtz v4, :cond_0
 
     .line 3
     iget-object v1, v0, Ln/e;->b:[[D
@@ -474,7 +474,7 @@
     return-wide v2
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v3
 
     :goto_0
     if-ge v1, v2, :cond_4
@@ -484,9 +484,9 @@
 
     aget-wide v5, v4, v1
 
-    cmpl-double v7, p1, v5
+    cmpl-double v5, p1, v5
 
-    if-nez v7, :cond_2
+    if-nez v5, :cond_2
 
     .line 7
     iget-object v2, v0, Ln/e;->b:[[D
@@ -503,9 +503,9 @@
     .line 8
     aget-wide v6, v4, v5
 
-    cmpg-double v8, p1, v6
+    cmpg-double v6, p1, v6
 
-    if-gez v8, :cond_3
+    if-gez v6, :cond_3
 
     .line 9
     aget-wide v6, v4, v5
@@ -585,11 +585,11 @@
     .line 3
     aget-wide v5, v1, v4
 
-    cmpg-double v7, p1, v5
+    cmpg-double v5, p1, v5
 
-    if-gtz v7, :cond_1
+    if-gtz v5, :cond_1
 
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_0
     if-ge v1, v3, :cond_0
@@ -640,7 +640,7 @@
     return-void
 
     :cond_3
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_2
     if-ge v1, v2, :cond_7
@@ -654,7 +654,7 @@
 
     if-nez v5, :cond_4
 
-    const/4 v5, 0x0
+    move v5, v4
 
     :goto_3
     if-ge v5, v3, :cond_4
@@ -680,9 +680,9 @@
 
     aget-wide v7, v5, v6
 
-    cmpg-double v9, p1, v7
+    cmpg-double v7, p1, v7
 
-    if-gez v9, :cond_6
+    if-gez v7, :cond_6
 
     .line 10
     aget-wide v7, v5, v6
@@ -774,11 +774,11 @@
     .line 3
     aget-wide v5, v1, v4
 
-    cmpg-double v7, p1, v5
+    cmpg-double v5, p1, v5
 
-    if-gtz v7, :cond_1
+    if-gtz v5, :cond_1
 
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_0
     if-ge v1, v3, :cond_0
@@ -833,7 +833,7 @@
     return-void
 
     :cond_3
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_2
     if-ge v1, v2, :cond_7
@@ -847,7 +847,7 @@
 
     if-nez v5, :cond_4
 
-    const/4 v5, 0x0
+    move v5, v4
 
     :goto_3
     if-ge v5, v3, :cond_4
@@ -875,9 +875,9 @@
 
     aget-wide v7, v5, v6
 
-    cmpg-double v9, p1, v7
+    cmpg-double v7, p1, v7
 
-    if-gez v9, :cond_6
+    if-gez v7, :cond_6
 
     .line 10
     aget-wide v7, v5, v6
@@ -964,15 +964,15 @@
     .line 2
     aget-wide v4, v1, v3
 
-    cmpg-double v6, p1, v4
+    cmpg-double v4, p1, v4
 
-    if-gez v6, :cond_0
+    if-gez v4, :cond_0
 
     .line 3
     aget-wide v4, v1, v3
 
     :goto_0
-    const/4 v1, 0x0
+    move v1, v3
 
     goto :goto_1
 
@@ -982,9 +982,9 @@
     .line 4
     aget-wide v5, v1, v4
 
-    cmpl-double v7, p1, v5
+    cmpl-double v5, p1, v5
 
-    if-ltz v7, :cond_1
+    if-ltz v5, :cond_1
 
     .line 5
     aget-wide v4, v1, v4
@@ -1008,9 +1008,9 @@
 
     aget-wide v8, v6, v7
 
-    cmpg-double v10, v4, v8
+    cmpg-double v8, v4, v8
 
-    if-gtz v10, :cond_2
+    if-gtz v8, :cond_2
 
     .line 7
     aget-wide v8, v6, v7
@@ -1094,9 +1094,9 @@
     .line 3
     aget-wide v5, v1, v4
 
-    cmpg-double v7, p1, v5
+    cmpg-double v5, p1, v5
 
-    if-gtz v7, :cond_0
+    if-gtz v5, :cond_0
 
     .line 4
     aget-wide v5, v1, v4
@@ -1109,9 +1109,9 @@
     .line 5
     aget-wide v6, v1, v5
 
-    cmpl-double v8, p1, v6
+    cmpl-double v6, p1, v6
 
-    if-ltz v8, :cond_1
+    if-ltz v6, :cond_1
 
     .line 6
     aget-wide v5, v1, v5
@@ -1122,7 +1122,7 @@
     move-wide/from16 v5, p1
 
     :goto_0
-    const/4 v1, 0x0
+    move v1, v4
 
     :goto_1
     add-int/lit8 v7, v2, -0x1
@@ -1136,9 +1136,9 @@
 
     aget-wide v9, v7, v8
 
-    cmpg-double v11, v5, v9
+    cmpg-double v9, v5, v9
 
-    if-gtz v11, :cond_2
+    if-gtz v9, :cond_2
 
     .line 8
     aget-wide v9, v7, v8

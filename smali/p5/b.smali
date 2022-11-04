@@ -1,102 +1,159 @@
 .class public final Lp5/b;
-.super Lf5/i;
-.source "EcdsaVerifyKeyManager.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lf5/i<",
-        "Ln5/b0;",
-        ">;"
-    }
-.end annotation
+.super Landroidx/fragment/app/p;
+.source "AesCtrHmacStreaming.java"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
-
-    const-class v0, Ln5/b0;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Lf5/i$b;
-
-    new-instance v2, Lp5/b$a;
-
-    invoke-direct {v2}, Lp5/b$a;-><init>()V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Lf5/i;-><init>(Ljava/lang/Class;[Lf5/i$b;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.EcdsaPublicKey"
-
-    return-object v0
-.end method
-
-.method public final d()Ln5/v0$b;
-    .locals 1
-
-    sget-object v0, Ln5/v0$b;->k:Ln5/v0$b;
-
-    return-object v0
-.end method
-
-.method public final e(Lo5/d;)Lcom/google/crypto/tink/shaded/protobuf/x;
-    .locals 1
+.method public constructor <init>([BILjava/lang/String;II)V
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
-
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Ln5/b0;->B(Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Ln5/b0;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final g(Lcom/google/crypto/tink/shaded/protobuf/x;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
+            Ljava/security/InvalidAlgorithmParameterException;
         }
     .end annotation
 
     .line 1
-    check-cast p1, Ln5/b0;
+    invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Ln5/b0;->x()I
+    array-length v0, p1
+
+    const/16 v1, 0x10
+
+    if-lt v0, v1, :cond_6
+
+    if-lt v0, p2, :cond_6
+
+    .line 3
+    invoke-static {p2}, Lp5/j0;->a(I)V
+
+    const/16 v0, 0xa
+
+    if-lt p4, v0, :cond_5
+
+    const-string v0, "HmacSha1"
+
+    .line 4
+    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    invoke-static {v0}, Lr5/l0;->e(I)V
+    if-eqz v0, :cond_0
 
-    .line 3
-    invoke-virtual {p1}, Ln5/b0;->w()Ln5/z;
+    const/16 v0, 0x14
 
-    move-result-object p1
+    if-gt p4, v0, :cond_2
 
-    invoke-static {p1}, Lp5/k;->d(Ln5/z;)V
+    :cond_0
+    const-string v0, "HmacSha256"
+
+    .line 5
+    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/16 v0, 0x20
+
+    if-gt p4, v0, :cond_2
+
+    :cond_1
+    const-string v0, "HmacSha512"
+
+    .line 6
+    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_3
+
+    const/16 p3, 0x40
+
+    if-gt p4, p3, :cond_2
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p2, "tag size too big"
+
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_3
+    :goto_0
+    add-int/lit8 p5, p5, 0x0
+
+    sub-int/2addr p5, p4
+
+    sub-int/2addr p5, p2
+
+    add-int/lit8 p5, p5, -0x7
+
+    add-int/lit8 p5, p5, -0x1
+
+    if-lez p5, :cond_4
+
+    .line 8
+    array-length p2, p1
+
+    invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([BI)[B
 
     return-void
+
+    .line 9
+    :cond_4
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p2, "ciphertextSegmentSize too small"
+
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 10
+    :cond_5
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p2, "tag size too small "
+
+    .line 11
+    invoke-static {p2, p4}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 12
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 13
+    :cond_6
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p3, "ikm too short, must be >= "
+
+    .line 14
+    invoke-static {p3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p3
+
+    .line 15
+    invoke-static {v1, p2}, Ljava/lang/Math;->max(II)I
+
+    move-result p2
+
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

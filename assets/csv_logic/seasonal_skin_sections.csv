@@ -13,12 +13,12 @@
 "Punk",5,"PUNK","TID_SKIN_INFO_CAMPAIGN_PUNK_TITLE","TID_SKIN_INFO_CAMPAIGN_PUNK_TITLE","TID_PUNK_SKINS_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_punk","DeadMariachi","TRUE","punk",
 ,,"BRAWLPASS_PUNK",,,,,,,,"Roller",,,
 ,,,,,,,,,,"RopeDude",,,
-"Retro",6,"RETRO","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_RETRO_SKINS_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_retro","Whirlwind","TRUE","retro","Retropolis"
+"Retro",6,"RETRO","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_RETRO_SKINS_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_retro","Whirlwind","TRUE","retro",
 ,,,,,,,,,,"Undertaker",,,
 ,,,,,,,,,,"Arcade",,,
 ,,,,,,,,,,"Barkeep",,,
 ,,,,,,,,,,"RocketGirl",,,
-"Brawloween",7,"BRAWLOWEEN","TID_SHOP_BRAWLOWEEN_SKINS","TID_SHOP_BRAWLOWEEN_TITLE","TID_SHOP_BRAWLOWEEN_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_brawloween",,"TRUE","brawloween","Brawloween"
+"Brawloween",7,"BRAWLOWEEN2020","TID_SHOP_BRAWLOWEEN_SKINS","TID_SHOP_BRAWLOWEEN_TITLE","TID_SHOP_BRAWLOWEEN_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_brawloween",,"TRUE","brawloween",
 "Scmake",8,"SC_MAKE","TID_SHOP_SCMAKE_SKINS",,"TID_SHOP_SCMAKE_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_scmake",,"TRUE","scmake",
 "Legendaryset",9,"LEGENDARYSET","TID_SHOP_LEGENDARYSET_SKINS_GROUP","TID_SHOP_LEGENDARYSET_TITLE","TID_SHOP_LEGENDARYSET_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_legendary",,"TRUE","legendary",
 "Brawlywood",10,"BRAWLYWOOD","TID_SHOP_BRAWLYWOOD_SKINS","TID_SHOP_BRAWLYWOOD_TITLE","TID_SHOP_BRAWLYWOOD_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_brawlywood","Blower","TRUE","brawlywood",
@@ -55,3 +55,9 @@
 "Deepsea",18,"DEEPSEA","TID_SHOP_DEEPSEA_SKINS","TID_SHOP_DEEPSEA_TITLE","TID_SHOP_DEEPSEA_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_deepsea","ElectroSniper","TRUE","deepsea","Deepsea"
 ,,,,,,,,,,"Gunslinger",,,
 ,,,,,,,,,,"KickerDude",,,
+"Brawloween22",19,"BRAWLOWEEN22","TID_SHOP_BRAWLOWEEN_SKINS","TID_SHOP_BRAWLOWEEN_TITLE","TID_SHOP_BRAWLOWEEN_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_brawloween",,"TRUE","brawloween",
+"Retro22",20,"RETRO22","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE","TID_RETRO_SKINS_INFO","FALSE","TID_SHOP_LAST_CHANCE_SKINS","TRUE","offer_1_item_skin_pack_retro","Whirlwind","TRUE","retro",
+,,,,,,,,,,"Undertaker",,,
+,,,,,,,,,,"Arcade",,,
+,,,,,,,,,,"Barkeep",,,
+,,,,,,,,,,"RocketGirl",,,

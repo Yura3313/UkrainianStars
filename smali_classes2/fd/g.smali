@@ -1,29 +1,17 @@
 .class public final Lfd/g;
 .super Ljava/lang/Object;
-.source "IngameFriendRequestsFragment.kt"
+.source "IngameInviteToPlayFragment.kt"
 
 
 # static fields
-.field public static final a:Lae/e2;
-
-.field public static final b:Lae/k;
+.field public static final a:Lzd/i;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 4
 
-    .line 1
-    new-instance v0, Lae/e2;
-
-    const-string v1, "account_friends_pending_requests"
-
-    invoke-direct {v0, v1}, Lae/e2;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lfd/g;->a:Lae/e2;
-
-    .line 2
-    new-instance v0, Lae/k;
+    new-instance v0, Lzd/i;
 
     const/4 v1, 0x0
 
@@ -31,9 +19,9 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/f;)V
+    invoke-direct {v0, v1, v2, v3}, Lzd/i;-><init>(IILif/e;)V
 
-    sput-object v0, Lfd/g;->b:Lae/k;
+    sput-object v0, Lfd/g;->a:Lzd/i;
 
     return-void
 .end method

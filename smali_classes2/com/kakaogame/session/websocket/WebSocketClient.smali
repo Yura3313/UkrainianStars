@@ -306,7 +306,7 @@
     const-string p2, "Received Invalid response line: "
 
     .line 11
-    invoke-static {p2, v3}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v3}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -634,7 +634,7 @@
     const-string p2, "Received Invalid status line: "
 
     .line 40
-    invoke-static {p2, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -651,13 +651,7 @@
 
     invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_5
-
-    :goto_4
     throw p1
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private createSecret()Ljava/lang/String;
@@ -669,7 +663,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v0, :cond_0
@@ -681,7 +675,7 @@
 
     const-wide/high16 v6, 0x4070000000000000L    # 256.0
 
-    mul-double v4, v4, v6
+    mul-double/2addr v4, v6
 
     double-to-int v4, v4
 

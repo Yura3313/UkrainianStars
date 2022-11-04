@@ -116,29 +116,17 @@
 
     sput-object v0, Lcom/kakaogame/util/json/parser/Yylex;->ZZ_TRANS:[I
 
-    const/4 v0, 0x3
+    const-string v0, "Unkown internal scanner error"
 
-    new-array v0, v0, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const-string v2, "Unkown internal scanner error"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const-string v2, "Error: could not match input"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
+    const-string v1, "Error: could not match input"
 
     const-string v2, "Error: pushback value was too large"
 
-    aput-object v2, v0, v1
-
     .line 6
+    filled-new-array {v0, v1, v2}, [Ljava/lang/String;
+
+    move-result-object v0
+
     sput-object v0, Lcom/kakaogame/util/json/parser/Yylex;->ZZ_ERROR_MSG:[Ljava/lang/String;
 
     .line 7
@@ -1202,7 +1190,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     const/16 v3, 0x5a
@@ -1447,7 +1435,7 @@
 
     move v9, v7
 
-    const/4 v10, -0x1
+    move v10, v8
 
     :goto_1
     const/16 v11, 0x8
@@ -1461,7 +1449,7 @@
     .line 11
     aget-char v7, v2, v7
 
-    goto :goto_3
+    goto :goto_2
 
     .line 12
     :cond_0
@@ -1469,10 +1457,9 @@
 
     if-eqz v13, :cond_1
 
-    :goto_2
-    const/4 v7, -0x1
+    move v7, v8
 
-    goto :goto_4
+    goto :goto_3
 
     .line 13
     :cond_1
@@ -1502,9 +1489,11 @@
 
     move-object v2, v7
 
+    move v7, v8
+
     move v0, v13
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_2
     add-int/lit8 v0, v2, 0x1
@@ -1525,7 +1514,7 @@
     move-object/from16 v2, v17
 
     .line 21
-    :goto_3
+    :goto_2
     iget v14, v1, Lcom/kakaogame/util/json/parser/Yylex;->zzState:I
 
     aget v14, v5, v14
@@ -1538,7 +1527,7 @@
 
     if-ne v14, v8, :cond_3
 
-    goto :goto_4
+    goto :goto_3
 
     .line 22
     :cond_3
@@ -1560,12 +1549,12 @@
     move v10, v14
 
     .line 24
-    :goto_4
+    :goto_3
     iput v9, v1, Lcom/kakaogame/util/json/parser/Yylex;->zzMarkedPos:I
 
     if-gez v10, :cond_4
 
-    goto :goto_5
+    goto :goto_4
 
     .line 25
     :cond_4
@@ -1573,7 +1562,7 @@
 
     aget v10, v8, v10
 
-    :goto_5
+    :goto_4
     const/4 v8, 0x2
 
     const/4 v9, 0x0
@@ -1901,17 +1890,15 @@
 
     move v10, v14
 
-    goto :goto_6
+    goto :goto_5
 
     :cond_7
     const/4 v8, -0x1
 
-    :goto_6
+    :goto_5
     move v7, v13
 
     goto/16 :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

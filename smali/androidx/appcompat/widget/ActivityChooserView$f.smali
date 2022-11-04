@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
+
+.field public g:Z
 
 .field public h:Z
 
-.field public i:Z
-
-.field public final synthetic j:Landroidx/appcompat/widget/ActivityChooserView;
+.field public final synthetic i:Landroidx/appcompat/widget/ActivityChooserView;
 
 
 # direct methods
@@ -29,14 +29,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     const/4 p1, 0x4
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->g:I
+    iput p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->f:I
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActivityChooserView$f;->getItemViewType(I)I
 
     .line 2
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->h:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->g:Z
 
     const/4 v0, 0x0
 
@@ -83,7 +83,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->h:Z
 
     if-nez p1, :cond_0
 
@@ -117,7 +117,7 @@
 
     .line 3
     :cond_0
-    iget-object p2, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iget-object p2, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -137,7 +137,7 @@
 
     .line 4
     :cond_1
-    iget-object p3, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iget-object p3, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 

@@ -105,12 +105,12 @@
 
     if-eqz v7, :cond_1
 
-    const/4 v7, 0x1
+    move v7, v6
 
     goto :goto_0
 
     :cond_1
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 4
     :goto_0
@@ -214,12 +214,12 @@
 
     if-ne v9, v6, :cond_7
 
-    const/4 v9, 0x1
+    move v9, v6
 
     goto :goto_4
 
     :cond_7
-    const/4 v9, 0x0
+    move v9, v5
 
     :goto_4
     if-eqz v9, :cond_6
@@ -266,12 +266,12 @@
 
     if-eqz v7, :cond_9
 
-    const/4 v7, 0x1
+    move v7, v6
 
     goto :goto_5
 
     :cond_9
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 14
     :goto_5
@@ -377,12 +377,12 @@
 
     if-ne v8, v10, :cond_f
 
-    const/4 v8, 0x1
+    move v8, v6
 
     goto :goto_9
 
     :cond_f
-    const/4 v8, 0x0
+    move v8, v5
 
     :goto_9
     if-eqz v8, :cond_e
@@ -449,7 +449,7 @@
     :cond_1
     array-length v1, p0
 
-    const/4 v3, 0x0
+    move v3, v0
 
     :goto_0
     if-ge v3, v1, :cond_3
@@ -669,13 +669,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 16
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static checkPermissions(Landroid/app/Activity;Ljava/util/List;)Lcom/kakaogame/KGResult;
@@ -868,13 +862,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 15
-    goto :goto_5
-
-    :goto_4
     throw p0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private static checkPermissionsImpl(Landroid/content/Context;Ljava/util/List;)Z
@@ -1137,7 +1125,7 @@
     const-string p0, "permissions desc count: "
 
     .line 9
-    invoke-static {p0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1196,7 +1184,7 @@
 .method private static isForeverDenied(Landroid/app/Activity;Ljava/lang/String;)Z
     .locals 5
 
-    .line 8
+    .line 9
     invoke-static {p0, p1}, Lv/a;->a(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v0
@@ -1207,22 +1195,25 @@
 
     if-nez v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_0
     if-nez v0, :cond_1
 
-    .line 9
-    invoke-static {p0, p1}, Lu/a;->n(Landroid/app/Activity;Ljava/lang/String;)Z
+    .line 10
+    sget v0, Lu/a;->b:I
+
+    .line 11
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 10
+    .line 12
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1243,12 +1234,12 @@
 
     const-string v3, "KG_Permissions"
 
-    .line 11
+    .line 13
     invoke-static {p0, v3, p1}, Lcom/kakaogame/util/PreferenceUtil;->getBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
-    .line 12
+    .line 14
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1335,17 +1326,20 @@
 
     if-nez v3, :cond_1
 
-    const/4 v2, 0x1
+    move v2, v4
 
     :cond_1
     if-nez v2, :cond_0
 
     .line 4
-    invoke-static {p0, v0}, Lu/a;->n(Landroid/app/Activity;Ljava/lang/String;)Z
+    sget v2, Lu/a;->b:I
+
+    .line 5
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v2
 
-    .line 5
+    .line 6
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1364,12 +1358,12 @@
 
     const-string v3, "KG_Permissions"
 
-    .line 6
+    .line 7
     invoke-static {p0, v3, v0}, Lcom/kakaogame/util/PreferenceUtil;->getBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 7
+    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1596,13 +1590,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 16
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method private static requestPermissionImpl(Landroid/app/Activity;Ljava/util/List;)Z
@@ -1680,7 +1668,7 @@
 
     invoke-direct {v0, v1}, Lcom/kakaogame/ui/PermissionManager$6;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-static {p0, v2, v1, v0}, Lcom/kakaogame/KGAuthActivity;->start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$c;)J
+    invoke-static {p0, v2, v1, v0}, Lcom/kakaogame/KGAuthActivity;->start(Landroid/app/Activity;Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$a;)J
 
     .line 6
     invoke-virtual {v1}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -1911,13 +1899,7 @@
     invoke-static {p1, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 15
-    goto :goto_5
-
-    :goto_4
     throw p0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private static requestPermissions(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;ZZ)Z
@@ -1961,106 +1943,79 @@
     invoke-static {v0, p3}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 17
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x1
-
-    const/16 v2, 0x17
-
-    if-ge p3, v2, :cond_0
-
-    .line 18
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p1, "do not support request permissions in this os version: "
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
-
-    return v1
-
-    .line 19
-    :cond_0
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_0
 
-    .line 20
+    .line 18
     invoke-virtual {p3, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    :cond_1
-    if-eqz p2, :cond_2
+    :cond_0
+    if-eqz p2, :cond_1
 
-    .line 21
+    .line 19
     invoke-virtual {p3, p2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 22
-    :cond_2
+    .line 20
+    :cond_1
     invoke-static {p0, p3}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 23
+    .line 21
     invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_3
+    const/4 v2, 0x1
 
-    return v1
+    if-eqz v1, :cond_2
 
-    .line 24
-    :cond_3
-    new-instance v2, Ljava/lang/StringBuilder;
+    return v2
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    .line 22
+    :cond_2
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v3, "notGrantedPermissions: "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v0, v2}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_4
+    if-eqz p4, :cond_3
 
-    .line 25
+    .line 23
     sget p4, Lcom/kakaogame/R$string;->zinny_sdk_permission_guide:I
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-static {p0, p4, v2}, Lcom/kakaogame/ui/PermissionManager;->showPopup(Landroid/app/Activity;IZ)V
+    invoke-static {p0, p4, v1}, Lcom/kakaogame/ui/PermissionManager;->showPopup(Landroid/app/Activity;IZ)V
 
-    .line 26
-    :cond_4
+    .line 24
+    :cond_3
     invoke-static {p0, p2}, Lcom/kakaogame/ui/PermissionManager;->requestPermissionImpl(Landroid/app/Activity;Ljava/util/List;)Z
 
     move-result p2
 
-    .line 27
+    .line 25
     new-instance p4, Ljava/lang/StringBuilder;
 
     invoke-direct {p4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "permissionGranted: "
+    const-string v1, "permissionGranted: "
 
-    invoke-virtual {p4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2070,7 +2025,7 @@
 
     invoke-static {v0, p4}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 28
+    .line 26
     invoke-virtual {p3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p3
@@ -2080,7 +2035,7 @@
 
     move-result p4
 
-    if-eqz p4, :cond_5
+    if-eqz p4, :cond_4
 
     invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2090,51 +2045,51 @@
 
     const-string v0, "KG_Permissions"
 
-    .line 29
-    invoke-static {p0, v0, p4, v1}, Lcom/kakaogame/util/PreferenceUtil;->setBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
+    .line 27
+    invoke-static {p0, v0, p4, v2}, Lcom/kakaogame/util/PreferenceUtil;->setBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
 
+    :cond_4
+    if-nez p1, :cond_5
+
+    return p2
+
+    .line 28
     :cond_5
-    if-nez p1, :cond_6
+    invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 29
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
+    move-result p3
+
+    if-eqz p3, :cond_6
 
     return p2
 
     .line 30
     :cond_6
-    invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
-
-    move-result-object p1
-
-    .line 31
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
-
-    move-result p3
-
-    if-eqz p3, :cond_7
-
-    return p2
-
-    .line 32
-    :cond_7
     invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->isForeverDenied(Landroid/app/Activity;Ljava/util/List;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_7
 
-    .line 33
+    .line 31
     sget p1, Lcom/kakaogame/R$string;->zinny_sdk_permission_denied_forever:I
 
     goto :goto_1
 
-    .line 34
-    :cond_8
+    .line 32
+    :cond_7
     sget p1, Lcom/kakaogame/R$string;->zinny_sdk_permission_denied:I
 
-    .line 35
+    .line 33
     :goto_1
-    invoke-static {p0, p1, v1}, Lcom/kakaogame/ui/PermissionManager;->showPopup(Landroid/app/Activity;IZ)V
+    invoke-static {p0, p1, v2}, Lcom/kakaogame/ui/PermissionManager;->showPopup(Landroid/app/Activity;IZ)V
 
     return p2
 .end method
@@ -2437,137 +2392,110 @@
         }
     .end annotation
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x1
-
-    const-string v2, "PermissionManager"
-
-    const/16 v3, 0x17
-
-    if-ge v0, v3, :cond_0
-
-    .line 2
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p1, "do not support request permissions in this os version: "
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v2, p0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
-
-    return v1
-
-    :cond_0
     const-string v0, "KG_Permissions"
 
-    const-string v3, "isLaunched"
+    const-string v1, "isLaunched"
 
-    .line 3
-    invoke-static {p0, v0, v3}, Lcom/kakaogame/util/PreferenceUtil;->getBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
+    .line 1
+    invoke-static {p0, v0, v1}, Lcom/kakaogame/util/PreferenceUtil;->getBoolean(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
-    const-string v3, "isAlreadyLaunched: "
+    const-string v1, "isAlreadyLaunched: "
 
-    .line 4
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 2
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v1
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    const-string v4, "true"
+    const-string v2, "true"
 
     goto :goto_0
 
-    :cond_1
-    const-string v4, "false"
+    :cond_0
+    const-string v2, "false"
 
-    .line 5
+    .line 3
     :goto_0
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-static {v2, v3}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v2, "PermissionManager"
 
-    if-nez p3, :cond_4
+    invoke-static {v2, v1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_4
+    const/4 v1, 0x1
 
-    if-eqz p1, :cond_3
+    if-nez p3, :cond_3
 
-    .line 6
+    if-eqz v0, :cond_3
+
+    if-eqz p1, :cond_2
+
+    .line 4
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p3
 
-    if-eqz p3, :cond_2
+    if-eqz p3, :cond_1
 
     goto :goto_1
 
-    .line 7
-    :cond_2
+    .line 5
+    :cond_1
     invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p3
 
-    .line 8
+    .line 6
     invoke-interface {p3}, Ljava/util/List;->isEmpty()Z
 
     move-result p3
 
-    if-eqz p3, :cond_4
+    if-eqz p3, :cond_3
 
     const-string p0, "all required permission is granted."
 
-    .line 9
+    .line 7
     invoke-static {v2, p0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_3
+    :cond_2
     :goto_1
     return v1
 
-    .line 10
-    :cond_4
+    .line 8
+    :cond_3
     invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 11
+    .line 9
     invoke-static {p0, p2}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 12
+    .line 10
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 13
+    .line 11
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    :cond_5
+    :cond_4
     :goto_2
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2575,37 +2503,37 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 14
+    .line 12
     invoke-static {p0, v0}, Lcom/kakaogame/ui/PermissionManager;->isForeverDenied(Landroid/app/Activity;Ljava/lang/String;)Z
 
     move-result v3
 
-    if-nez v3, :cond_5
+    if-nez v3, :cond_4
 
-    .line 15
+    .line 13
     invoke-virtual {p3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 16
-    :cond_6
+    .line 14
+    :cond_5
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p2
 
-    if-eqz p2, :cond_7
+    if-eqz p2, :cond_6
 
-    .line 17
+    .line 15
     invoke-virtual {p3}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result p2
 
-    if-eqz p2, :cond_7
+    if-eqz p2, :cond_6
 
     return v1
 
-    .line 18
-    :cond_7
+    .line 16
+    :cond_6
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
@@ -2618,7 +2546,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    .line 19
+    .line 17
     sget v0, Lcom/kakaogame/R$layout;->zinny_sdk_permission_noti:I
 
     const/4 v1, 0x0
@@ -2627,7 +2555,7 @@
 
     move-result-object p2
 
-    .line 20
+    .line 18
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_icon:I
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2636,7 +2564,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 21
+    .line 19
     sget v1, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_title:I
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2645,7 +2573,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 22
+    .line 20
     sget v3, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_scrollview:I
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2654,7 +2582,7 @@
 
     check-cast v3, Landroid/widget/ScrollView;
 
-    .line 23
+    .line 21
     sget v4, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_content:I
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2663,25 +2591,25 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    .line 24
+    .line 22
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getIconResource()Landroid/graphics/drawable/Drawable;
 
     move-result-object v5
 
-    if-nez v5, :cond_8
+    if-nez v5, :cond_7
 
     const/16 v5, 0x8
 
-    .line 25
+    .line 23
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_3
 
-    .line 26
-    :cond_8
+    .line 24
+    :cond_7
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 27
+    .line 25
     :goto_3
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getTitleTextColor()I
 
@@ -2689,34 +2617,34 @@
 
     const v5, 0x7fffffff
 
-    if-eq v0, v5, :cond_9
+    if-eq v0, v5, :cond_8
 
-    .line 28
+    .line 26
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 29
-    :cond_9
+    .line 27
+    :cond_8
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getContentTextColor()I
 
     move-result v0
 
-    if-eq v0, v5, :cond_a
+    if-eq v0, v5, :cond_9
 
-    .line 30
+    .line 28
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 31
-    :cond_a
+    .line 29
+    :cond_9
     invoke-static {p0}, Lcom/kakaogame/ui/DialogManager;->createAlertDialogBuilder(Landroid/app/Activity;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 32
+    .line 30
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     const/4 p2, 0x0
 
-    .line 33
+    .line 31
     :try_start_0
     invoke-static {p0}, Lcom/kakaogame/ui/PermissionManager;->getPermissionDescriptions(Landroid/app/Activity;)Lorg/json/JSONObject;
 
@@ -2724,7 +2652,7 @@
 
     const-string v6, "title"
 
-    .line 34
+    .line 32
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -2733,31 +2661,31 @@
 
     const-string v1, "prefix_essential"
 
-    .line 35
+    .line 33
     invoke-virtual {v5, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v6, "prefix_optional"
 
-    .line 36
+    .line 34
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     const-string v7, "summary"
 
-    .line 37
+    .line 35
     invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 38
+    .line 36
     invoke-static {v5, p1, p3, v1, v6}, Lcom/kakaogame/ui/PermissionManager;->appendPermissionDescBody(Lorg/json/JSONObject;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 39
+    .line 37
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -2774,7 +2702,7 @@
 
     invoke-static {v2, v5}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 40
+    .line 38
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -2789,15 +2717,15 @@
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 41
+    .line 39
     invoke-virtual {v3}, Landroid/widget/ScrollView;->requestLayout()V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 42
+    .line 40
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 43
+    .line 41
     sget v1, Lcom/kakaogame/R$string;->zinny_sdk_common_button_ok:I
 
     new-instance v2, Lcom/kakaogame/ui/PermissionManager$1;
@@ -2806,22 +2734,22 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 44
+    .line 42
     invoke-static {}, Lcom/kakaogame/util/MutexLock;->createLock()Lcom/kakaogame/util/MutexLock;
 
     move-result-object v1
 
-    .line 45
+    .line 43
     new-instance v2, Lcom/kakaogame/ui/PermissionManager$2;
 
     invoke-direct {v2, v0, p4, p0, v1}, Lcom/kakaogame/ui/PermissionManager$2;-><init>(Landroid/app/AlertDialog$Builder;Lcom/kakaogame/KGApplication$KGPermissionTheme;Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 46
+    .line 44
     invoke-virtual {v1}, Lcom/kakaogame/util/MutexLock;->lock()V
 
-    .line 47
+    .line 45
     invoke-static {p0, p1, p3, p2, p2}, Lcom/kakaogame/ui/PermissionManager;->requestPermissions(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;ZZ)Z
 
     move-result p0
@@ -2831,7 +2759,7 @@
     :catch_0
     move-exception p0
 
-    .line 48
+    .line 46
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return p2

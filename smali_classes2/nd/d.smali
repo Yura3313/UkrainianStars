@@ -1,87 +1,74 @@
 .class public final Lnd/d;
-.super Lse/i;
-.source "MessagesTabFriendsFragment.kt"
+.super Lif/i;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lnd/b;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Landroid/widget/TextView;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lnd/d;
+# instance fields
+.field public final synthetic f:Lnd/c$b$c;
+
+.field public final synthetic g:Landroid/graphics/drawable/BitmapDrawable;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lnd/c$b$c;Landroid/graphics/drawable/BitmapDrawable;)V
+    .locals 0
 
-    new-instance v0, Lnd/d;
+    iput-object p1, p0, Lnd/d;->f:Lnd/c$b$c;
 
-    invoke-direct {v0}, Lnd/d;-><init>()V
+    iput-object p2, p0, Lnd/d;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    sput-object v0, Lnd/d;->g:Lnd/d;
+    const/4 p1, 0x1
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lnd/b;
-
-    check-cast p2, Ljava/lang/Exception;
-
-    const-string v0, "$receiver"
+    check-cast p1, Landroid/widget/TextView;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p1, p0, Lnd/d;->f:Lnd/c$b$c;
 
-    const-string v0, "it"
+    iget-object p1, p1, Lnd/c$b$c;->h:Landroid/view/View;
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    sget v0, Lcom/supercell/id/R$id;->friend_playing_name_label:I
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    check-cast p1, Landroid/widget/TextView;
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lnd/d;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
+
+    .line 3
+    invoke-virtual {p1, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

@@ -46,7 +46,7 @@
     .end param
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->E2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->L2()Z
 
     move-result v0
 
@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->b(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->c(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
 
     return-void
 
@@ -75,7 +75,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->S0(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->L0(Lcom/google/android/gms/common/ConnectionResult;)V
 
     :cond_1
     return-void

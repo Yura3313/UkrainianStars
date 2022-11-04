@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/play/core/appupdate/k;
+.field public final a:Lcom/google/android/play/core/appupdate/l;
 
 .field public final b:Lcom/google/android/play/core/appupdate/d;
 
@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/appupdate/k;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/google/android/play/core/appupdate/l;Landroid/content/Context;)V
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +24,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object p1, p0, Lcom/google/android/play/core/appupdate/e;->a:Lcom/google/android/play/core/appupdate/k;
+    iput-object p1, p0, Lcom/google/android/play/core/appupdate/e;->a:Lcom/google/android/play/core/appupdate/l;
 
     new-instance p1, Lcom/google/android/play/core/appupdate/d;
 
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final declared-synchronized a(Ly4/b;)V
+.method public final declared-synchronized a(Lw4/c;)V
     .locals 5
 
     monitor-enter p0
@@ -53,7 +53,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :try_start_1
-    iget-object v1, v0, Lb5/c;->a:La5/b;
+    iget-object v1, v0, Lz4/c;->a:Lx3/g3;
 
     const-string v2, "registerListener"
 
@@ -64,18 +64,19 @@
     const/4 v4, 0x4
 
     .line 2
-    invoke-virtual {v1, v4, v2, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v1, v4, v2, v3}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     const-string v1, "Registered Play Core listener should not be null."
 
     .line 3
-    invoke-static {p1, v1}, Lod/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    iget-object v1, v0, Lb5/c;->d:Ljava/util/HashSet;
+    .line 4
+    iget-object v1, v0, Lz4/c;->d:Ljava/util/HashSet;
 
-    invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0}, Lb5/c;->c()V
+    invoke-virtual {v0}, Lz4/c;->c()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -84,7 +85,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 4
+    .line 5
     monitor-exit p0
 
     return-void
@@ -92,7 +93,7 @@
     :catchall_0
     move-exception p1
 
-    .line 5
+    .line 6
     :try_start_3
     monitor-exit v0
 
@@ -131,12 +132,12 @@
 
     if-eqz v1, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v3
 
     :goto_0
     if-eqz v1, :cond_1
@@ -170,7 +171,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_1
     return v2

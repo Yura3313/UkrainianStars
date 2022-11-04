@@ -36,9 +36,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;->extensions:Lcom/google/protobuf/v;
+    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;->extensions:Lcom/google/protobuf/w;
 
-    invoke-virtual {p1}, Lcom/google/protobuf/v;->o()Ljava/util/Iterator;
+    invoke-virtual {p1}, Lcom/google/protobuf/w;->o()Ljava/util/Iterator;
 
     move-result-object p1
 

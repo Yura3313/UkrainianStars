@@ -136,42 +136,31 @@
 .method public static fromMediaItem(Ljava/lang/Object;)Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
     .locals 2
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
     invoke-static {p0}, Landroid/support/v4/media/MediaBrowserCompatApi21$MediaItem;->getFlags(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 3
+    .line 2
     invoke-static {p0}, Landroid/support/v4/media/MediaBrowserCompatApi21$MediaItem;->getDescription(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 4
+    .line 3
     invoke-static {p0}, Landroid/support/v4/media/MediaDescriptionCompat;->fromMediaDescription(Ljava/lang/Object;)Landroid/support/v4/media/MediaDescriptionCompat;
 
     move-result-object p0
 
-    .line 5
+    .line 4
     new-instance v1, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
     invoke-direct {v1, p0, v0}, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;-><init>(Landroid/support/v4/media/MediaDescriptionCompat;I)V
 
     return-object v1
 
-    :cond_1
-    :goto_0
+    :cond_0
     const/4 p0, 0x0
 
     return-object p0
@@ -190,19 +179,9 @@
         }
     .end annotation
 
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    goto :goto_1
-
-    .line 2
-    :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -211,7 +190,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3
+    .line 2
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -221,13 +200,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 4
+    .line 3
     invoke-static {v1}, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->fromMediaItem(Ljava/lang/Object;)Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
     move-result-object v1
@@ -236,11 +215,10 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     return-object v0
 
-    :cond_2
-    :goto_1
+    :cond_1
     const/4 p0, 0x0
 
     return-object p0

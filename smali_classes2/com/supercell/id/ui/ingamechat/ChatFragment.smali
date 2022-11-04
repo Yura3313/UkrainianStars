@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingamechat/ChatFragment;
-.super Lcom/supercell/id/ui/BaseFragment;
+.super Luc/j;
 .source "IngameChatFragment.kt"
 
 
@@ -13,44 +13,44 @@
 
 
 # instance fields
-.field public final i0:Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
+.field public final h0:Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/l<",
-            "Lae/m<",
-            "Lvc/g;",
+            "Lhf/l<",
+            "Lzd/j<",
+            "Ltc/g;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/i;",
+            "Lye/m;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public j0:Ljava/util/List;
+.field public i0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lae/a2;",
+            "Lzd/v1;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public k0:Ljava/lang/String;
+.field public j0:Ljava/lang/String;
 
-.field public l0:Lze/g0;
+.field public k0:Lpf/h0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/f0<",
-            "Lie/i;",
+            "Lpf/g0<",
+            "Lye/m;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public m0:Ljava/util/HashMap;
+.field public l0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -58,14 +58,14 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Luc/j;-><init>()V
 
     .line 2
     new-instance v0, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->i0:Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->h0:Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -85,14 +85,14 @@
     return-void
 .end method
 
-.method public final V(Landroid/os/Bundle;)V
+.method public final U(Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->U(Landroid/os/Bundle;)V
 
     .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->u()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
 
@@ -112,7 +112,7 @@
     return-void
 .end method
 
-.method public final V0()Landroidx/recyclerview/widget/RecyclerView;
+.method public final U0()Landroidx/recyclerview/widget/RecyclerView;
     .locals 1
 
     const/4 v0, 0x0
@@ -120,12 +120,12 @@
     return-object v0
 .end method
 
-.method public final W0()Landroid/view/View;
+.method public final V0()Landroid/view/View;
     .locals 1
 
     sget v0, Lcom/supercell/id/R$id;->toolbar_wrapper:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -134,12 +134,12 @@
     return-object v0
 .end method
 
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_chat_messages_chat_page:I
 
@@ -152,25 +152,25 @@
     return-object p1
 .end method
 
-.method public final a0()V
+.method public final Z()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Lze/g0;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0:Lpf/h0;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, v1}, Lze/f1;->q(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {v0, v1}, Lpf/h1;->m(Ljava/util/concurrent/CancellationException;)V
 
     .line 3
     :cond_0
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Luc/j;->Z()V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_1
 
@@ -180,10 +180,10 @@
     return-void
 .end method
 
-.method public final f1(I)Landroid/view/View;
+.method public final e1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -191,10 +191,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -209,7 +209,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->m0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -235,25 +235,25 @@
     return-object v0
 .end method
 
-.method public final g1()V
+.method public final f1()V
     .locals 2
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->o:Lrc/d0;
+    iget-object v0, v0, Lzd/q;->o:Lpc/d1;
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->j0:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v0, v1}, Lrc/d0;->i(Ljava/lang/String;)Lze/f0;
+    invoke-virtual {v0, v1}, Lpc/d1;->i(Ljava/lang/String;)Lpf/g0;
 
     move-result-object v0
 
@@ -261,12 +261,12 @@
 
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment$b;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
 
-    invoke-static {v0, v1}, Lae/t1;->q(Lze/f0;Lre/l;)Lze/f0;
+    invoke-static {v0, v1}, Lzd/o1;->r(Lpf/g0;Lhf/l;)Lpf/g0;
 
     const-wide/16 v0, 0x1f4
 
     .line 4
-    invoke-static {v0, v1}, Lae/t1;->f(J)Lze/f0;
+    invoke-static {v0, v1}, Lzd/o1;->f(J)Lpf/g0;
 
     move-result-object v0
 
@@ -274,13 +274,13 @@
 
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment$c;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
 
-    invoke-static {v0, v1}, Lae/t1;->q(Lze/f0;Lre/l;)Lze/f0;
+    invoke-static {v0, v1}, Lzd/o1;->r(Lpf/g0;Lhf/l;)Lpf/g0;
 
     move-result-object v0
 
-    check-cast v0, Lze/g0;
+    check-cast v0, Lpf/h0;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Lze/g0;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0:Lpf/h0;
 
     return-void
 
@@ -288,49 +288,49 @@
     const-string v0, "feedId"
 
     .line 5
-    invoke-static {v0}, Lt3/h;->k(Ljava/lang/String;)V
+    invoke-static {v0}, Lif/h;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     throw v0
 .end method
 
-.method public final i0()V
+.method public final h0()V
     .locals 1
 
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->m:Lpe/a;
+    iget-object v0, v0, Lzd/q;->m:Lgc/a;
 
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Luc/j;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object p1
 
@@ -339,26 +339,26 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p1, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;->i:Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
     .line 4
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->j0:Ljava/lang/String;
 
     .line 5
-    new-instance p1, Lse/p;
+    new-instance p1, Lif/p;
 
-    invoke-direct {p1}, Lse/p;-><init>()V
+    invoke-direct {p1}, Lif/p;-><init>()V
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lse/p;->g:Z
+    iput-boolean p2, p1, Lif/p;->f:Z
 
     .line 6
     sget v0, Lcom/supercell/id/R$id;->messagesList:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -367,7 +367,7 @@
     invoke-virtual {v1, p2}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
 
     .line 7
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -375,11 +375,11 @@
 
     const-string v2, "messagesList"
 
-    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
 
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroid/content/Context;
 
     move-result-object v4
 
@@ -392,13 +392,13 @@
     invoke-virtual {v1, v3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
     .line 10
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object p2
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
@@ -407,15 +407,15 @@
     .line 11
     new-instance v2, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;
 
-    invoke-direct {v2, v1, p0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lse/p;)V
+    invoke-direct {v2, v1, p0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lif/p;)V
 
-    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView$e;->k(Landroidx/recyclerview/widget/RecyclerView$g;)V
+    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView$e;->j(Landroidx/recyclerview/widget/RecyclerView$g;)V
 
     .line 12
     invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     .line 13
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object p2
 
@@ -423,14 +423,14 @@
 
     new-instance v0, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;
 
-    invoke-direct {v0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;-><init>(Lse/p;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;-><init>(Lif/p;)V
 
     invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->h(Landroidx/recyclerview/widget/RecyclerView$q;)V
 
     .line 14
     sget p1, Lcom/supercell/id/R$id;->sendMessageButton:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -443,7 +443,7 @@
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 15
-    invoke-virtual {p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->g1()V
+    invoke-virtual {p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1()V
 
     return-void
 

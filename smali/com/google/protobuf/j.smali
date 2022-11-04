@@ -81,7 +81,7 @@
     if-nez p0, :cond_0
 
     .line 1
-    sget-object p0, Lcom/google/protobuf/a0;->b:[B
+    sget-object p0, Lcom/google/protobuf/b0;->b:[B
 
     .line 2
     array-length v0, p0
@@ -152,7 +152,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    sget-boolean v0, Lcom/google/protobuf/t1;->d:Z
+    sget-boolean v0, Lcom/google/protobuf/w1;->d:Z
 
     if-eqz v0, :cond_1
 
@@ -202,7 +202,7 @@
     :try_start_0
     invoke-virtual {v0, p2}, Lcom/google/protobuf/j$a;->k(I)I
     :try_end_0
-    .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/protobuf/c0; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v0
 
@@ -269,7 +269,7 @@
 
     .line 2
     :cond_2
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p0
 
@@ -301,7 +301,7 @@
 
     .line 4
     :cond_5
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->i()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->i()Lcom/google/protobuf/c0;
 
     move-result-object p0
 
@@ -309,17 +309,11 @@
 
     .line 5
     :cond_6
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->e()Lcom/google/protobuf/InvalidProtocolBufferException;
+    invoke-static {}, Lcom/google/protobuf/c0;->e()Lcom/google/protobuf/c0;
 
     move-result-object p0
 
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 
@@ -391,7 +385,7 @@
 .method public abstract a(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 .end method
@@ -416,7 +410,7 @@
 .method public abstract k(I)I
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 .end method
@@ -477,7 +471,7 @@
     .end annotation
 .end method
 
-.method public abstract s(ILcom/google/protobuf/q0$a;Lcom/google/protobuf/q;)V
+.method public abstract s(ILcom/google/protobuf/s0$a;Lcom/google/protobuf/r;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -501,7 +495,7 @@
     .end annotation
 .end method
 
-.method public abstract v(Lcom/google/protobuf/q0$a;Lcom/google/protobuf/q;)V
+.method public abstract v(Lcom/google/protobuf/s0$a;Lcom/google/protobuf/r;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -1,11 +1,14 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$g;
-.super Ljava/util/TimerTask;
-.source "Timer.kt"
+.super Ljava/lang/Object;
+.source "IngameInviteToPlayFragment.kt"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->g0()V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -14,31 +17,46 @@
 .end annotation
 
 
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$g;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
 
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    .line 1
+    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$g;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    move-result-object v0
+    move-result-object p1
 
-    invoke-virtual {v0}, Lae/u;->d()Lbe/h;
+    if-eqz p1, :cond_0
 
-    move-result-object v0
+    new-instance v0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;
 
-    invoke-virtual {v0}, Lbe/h;->l()Lze/f0;
+    invoke-direct {v0}, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;-><init>()V
 
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+
+    :cond_0
     return-void
 .end method

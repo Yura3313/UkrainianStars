@@ -38,7 +38,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 12
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
@@ -61,7 +61,7 @@
     move-result-object v2
 
     .line 3
-    invoke-static {p1}, Landroidx/appcompat/widget/g;->d(Landroid/os/Parcel;)Lcom/supercell/id/model/IdSocialAccount;
+    invoke-static {p1}, Lcom/android/billingclient/api/w;->j(Landroid/os/Parcel;)Lcom/supercell/id/model/IdSocialAccount;
 
     move-result-object v3
 
@@ -88,7 +88,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_0
     move-object v5, v1
@@ -109,69 +109,54 @@
     check-cast v6, Lcom/supercell/id/model/IdRelationshipStatus;
 
     .line 7
-    const-class v1, Lcom/supercell/id/model/IdPresenceStatus;
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v1
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v7, v1
-
-    check-cast v7, Lcom/supercell/id/model/IdPresenceStatus;
-
-    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    const/4 v8, 0x1
+    const/4 v7, 0x1
 
-    const/4 v9, 0x0
+    const/4 v8, 0x0
 
     if-eqz v1, :cond_1
 
-    const/4 v10, 0x1
+    move v9, v7
 
     goto :goto_1
 
     :cond_1
-    const/4 v10, 0x0
+    move v9, v8
 
-    .line 9
+    .line 8
     :goto_1
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v10
 
-    .line 10
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    const/4 p1, 0x1
+    move p1, v7
 
     goto :goto_2
 
     :cond_2
-    const/4 p1, 0x0
+    move p1, v8
 
     :goto_2
     move-object v1, v0
 
-    move v8, v10
+    move v7, v9
 
-    move-object v9, v11
+    move-object v8, v10
 
-    move v10, p1
+    move v9, p1
 
-    .line 11
-    invoke-direct/range {v1 .. v10}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;Z)V
+    .line 10
+    invoke-direct/range {v1 .. v9}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;ZLjava/lang/String;Z)V
 
     return-object v0
 .end method

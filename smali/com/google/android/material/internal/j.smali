@@ -1,178 +1,327 @@
 .class public final Lcom/google/android/material/internal/j;
-.super Landroidx/transition/Transition;
-.source "TextScale.java"
+.super Ljava/lang/Object;
+.source "ThemeEnforcement.java"
+
+
+# static fields
+.field public static final a:[I
+
+.field public static final b:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Landroidx/transition/Transition;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final L(Lv0/s;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
-
-    instance-of v1, v0, Landroid/widget/TextView;
-
-    if-eqz v1, :cond_0
-
-    .line 2
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 3
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v0}, Landroid/view/View;->getScaleX()F
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v0
-
-    const-string v1, "android:textscale:scale"
-
-    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
-    return-void
-.end method
-
-.method public final d(Lv0/s;)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/google/android/material/internal/j;->L(Lv0/s;)V
-
-    return-void
-.end method
-
-.method public final g(Lv0/s;)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/google/android/material/internal/j;->L(Lv0/s;)V
-
-    return-void
-.end method
-
-.method public final l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public static constructor <clinit>()V
     .locals 4
 
-    const/4 p1, 0x0
+    const/4 v0, 0x1
 
-    if-eqz p2, :cond_4
-
-    if-eqz p3, :cond_4
+    new-array v1, v0, [I
 
     .line 1
-    iget-object v0, p2, Lv0/s;->b:Landroid/view/View;
+    sget v2, Lcom/google/android/material/R$attr;->colorPrimary:I
 
-    instance-of v0, v0, Landroid/widget/TextView;
+    const/4 v3, 0x0
 
-    if-eqz v0, :cond_4
+    aput v2, v1, v3
 
-    iget-object v0, p3, Lv0/s;->b:Landroid/view/View;
+    sput-object v1, Lcom/google/android/material/internal/j;->a:[I
 
-    instance-of v1, v0, Landroid/widget/TextView;
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
+    new-array v0, v0, [I
 
     .line 2
-    :cond_0
-    check-cast v0, Landroid/widget/TextView;
+    sget v1, Lcom/google/android/material/R$attr;->colorPrimaryVariant:I
+
+    aput v1, v0, v3
+
+    sput-object v0, Lcom/google/android/material/internal/j;->b:[I
+
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/material/R$styleable;->ThemeEnforcement:[I
+
+    .line 2
+    invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object p1
 
     .line 3
-    iget-object p2, p2, Lv0/s;->a:Ljava/util/HashMap;
-
-    .line 4
-    iget-object p3, p3, Lv0/s;->a:Ljava/util/HashMap;
-
-    const-string v1, "android:textscale:scale"
-
-    .line 5
-    invoke-virtual {p2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/Float;
-
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    goto :goto_0
-
-    :cond_1
-    const/high16 p2, 0x3f800000    # 1.0f
-
-    .line 6
-    :goto_0
-    invoke-virtual {p3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {p3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p3
-
-    check-cast p3, Ljava/lang/Float;
-
-    invoke-virtual {p3}, Ljava/lang/Float;->floatValue()F
-
-    move-result v3
-
-    :cond_2
-    cmpl-float p3, p2, v3
-
-    if-nez p3, :cond_3
-
-    return-object p1
-
-    :cond_3
-    const/4 p1, 0x2
-
-    new-array p1, p1, [F
+    sget p2, Lcom/google/android/material/R$styleable;->ThemeEnforcement_enforceMaterialTheme:I
 
     const/4 p3, 0x0
 
-    aput p2, p1, p3
+    .line 4
+    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
-    const/4 p2, 0x1
+    move-result p2
 
-    aput v3, p1, p2
+    .line 5
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    if-eqz p2, :cond_1
+
+    .line 6
+    new-instance p1, Landroid/util/TypedValue;
+
+    invoke-direct {p1}, Landroid/util/TypedValue;-><init>()V
 
     .line 7
-    invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
+    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object p2
+
+    sget p3, Lcom/google/android/material/R$attr;->isMaterialTheme:I
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p2, p3, p1, v0}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 8
+    iget p2, p1, Landroid/util/TypedValue;->type:I
+
+    const/16 p3, 0x12
+
+    if-ne p2, p3, :cond_1
+
+    iget p1, p1, Landroid/util/TypedValue;->data:I
+
+    if-nez p1, :cond_1
+
+    .line 9
+    :cond_0
+    sget-object p1, Lcom/google/android/material/internal/j;->b:[I
+
+    const-string p2, "Theme.MaterialComponents"
+
+    invoke-static {p0, p1, p2}, Lcom/google/android/material/internal/j;->c(Landroid/content/Context;[ILjava/lang/String;)V
+
+    .line 10
+    :cond_1
+    sget-object p1, Lcom/google/android/material/internal/j;->a:[I
+
+    const-string p2, "Theme.AppCompat"
+
+    invoke-static {p0, p1, p2}, Lcom/google/android/material/internal/j;->c(Landroid/content/Context;[ILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static varargs b(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)V
+    .locals 4
+
+    .line 1
+    sget-object v0, Lcom/google/android/material/R$styleable;->ThemeEnforcement:[I
+
+    .line 2
+    invoke-virtual {p0, p1, v0, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object v0
+
+    .line 3
+    sget v1, Lcom/google/android/material/R$styleable;->ThemeEnforcement_enforceTextAppearance:I
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 5
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    return-void
+
+    :cond_0
+    const/4 v1, -0x1
+
+    .line 6
+    array-length v3, p5
+
+    if-nez v3, :cond_1
+
+    .line 7
+    sget p0, Lcom/google/android/material/R$styleable;->ThemeEnforcement_android_textAppearance:I
+
+    .line 8
+    invoke-virtual {v0, p0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result p0
+
+    if-eq p0, v1, :cond_4
+
+    goto :goto_1
+
+    .line 9
+    :cond_1
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object p0
+
+    .line 10
+    array-length p1, p5
+
+    move p2, v2
+
+    :goto_0
+    if-ge p2, p1, :cond_3
+
+    aget p3, p5, p2
+
+    .line 11
+    invoke-virtual {p0, p3, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result p3
+
+    if-ne p3, v1, :cond_2
+
+    .line 12
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    goto :goto_2
+
+    :cond_2
+    add-int/lit8 p2, p2, 0x1
+
+    goto :goto_0
+
+    .line 13
+    :cond_3
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    :goto_1
+    const/4 v2, 0x1
+
+    .line 14
+    :cond_4
+    :goto_2
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    if-eqz v2, :cond_5
+
+    return-void
+
+    .line 15
+    :cond_5
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "This component requires that you specify a valid TextAppearance attribute. Update your app theme to inherit from Theme.MaterialComponents (or a descendant)."
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static c(Landroid/content/Context;[ILjava/lang/String;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    .line 2
+    :goto_0
+    array-length v2, p1
+
+    if-ge v1, v2, :cond_1
+
+    .line 3
+    invoke-virtual {p0, v1}, Landroid/content/res/TypedArray;->hasValue(I)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 4
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    const/4 v0, 0x1
+
+    :goto_1
+    if-eqz v0, :cond_2
+
+    return-void
+
+    .line 6
+    :cond_2
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "The style on this component requires your app theme to be "
+
+    const-string v0, " (or a descendant)."
+
+    .line 7
+    invoke-static {p1, p2, v0}, La0/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 8
-    new-instance p2, Lcom/google/android/material/internal/j$a;
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p2, v0}, Lcom/google/android/material/internal/j$a;-><init>(Landroid/widget/TextView;)V
+    throw p0
+.end method
 
-    invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+.method public static varargs d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    .locals 0
 
-    :cond_4
-    :goto_1
-    return-object p1
+    .line 1
+    invoke-static {p0, p1, p3, p4}, Lcom/google/android/material/internal/j;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 2
+    invoke-static/range {p0 .. p5}, Lcom/google/android/material/internal/j;->b(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)V
+
+    .line 3
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static varargs e(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroidx/appcompat/widget/h0;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p3, p4}, Lcom/google/android/material/internal/j;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 2
+    invoke-static/range {p0 .. p5}, Lcom/google/android/material/internal/j;->b(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)V
+
+    .line 3
+    new-instance p5, Landroidx/appcompat/widget/h0;
+
+    .line 4
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object p1
+
+    invoke-direct {p5, p0, p1}, Landroidx/appcompat/widget/h0;-><init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
+
+    return-object p5
 .end method

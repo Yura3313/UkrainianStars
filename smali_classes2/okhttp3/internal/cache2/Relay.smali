@@ -249,11 +249,9 @@
 
     const-wide/16 v2, 0x20
 
-    add-long v4, v8, v2
+    add-long v3, v8, v2
 
     move-object v2, p0
-
-    move-wide v3, v4
 
     move-object v5, v0
 
@@ -320,9 +318,9 @@
 
     const-wide/16 p3, 0x20
 
-    cmp-long p5, p1, p3
+    cmp-long p1, p1, p3
 
-    if-nez p5, :cond_0
+    if-nez p1, :cond_0
 
     .line 6
     new-instance v0, Lokhttp3/internal/cache2/FileOperator;

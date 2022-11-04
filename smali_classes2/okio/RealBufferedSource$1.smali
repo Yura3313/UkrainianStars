@@ -57,9 +57,9 @@
 
     move-result-wide v0
 
-    long-to-int v1, v0
+    long-to-int v0, v0
 
-    return v1
+    return v0
 
     .line 3
     :cond_0
@@ -88,7 +88,7 @@
 .end method
 
 .method public read()I
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -109,9 +109,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-nez v6, :cond_0
+    if-nez v2, :cond_0
 
     .line 3
     iget-object v0, v0, Lokio/RealBufferedSource;->source:Lokio/Source;
@@ -124,9 +124,9 @@
 
     const-wide/16 v2, -0x1
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     const/4 v0, -0x1
 
@@ -192,9 +192,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-nez v6, :cond_0
+    if-nez v2, :cond_0
 
     .line 9
     iget-object v0, v0, Lokio/RealBufferedSource;->source:Lokio/Source;
@@ -207,9 +207,9 @@
 
     const-wide/16 v2, -0x1
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     const/4 p1, -0x1
 

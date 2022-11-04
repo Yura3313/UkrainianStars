@@ -1,336 +1,387 @@
 .class public final Lr5/c;
 .super Ljava/lang/Object;
-.source "AesCtrJceCipher.java"
-
-# interfaces
-.implements Lr5/c0;
-
-
-# static fields
-.field public static final d:Lr5/c$a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ThreadLocal<",
-            "Ljavax/crypto/Cipher;",
-            ">;"
-        }
-    .end annotation
-.end field
+.source "com.google.firebase:firebase-common@@16.0.2"
 
 
 # instance fields
-.field public final a:Ljavax/crypto/spec/SecretKeySpec;
+.field public final a:Ljava/lang/String;
 
-.field public final b:I
+.field public final b:Ljava/lang/String;
 
-.field public final c:I
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/lang/String;
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:Ljava/lang/String;
+
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lr5/c$a;
-
-    invoke-direct {v0}, Lr5/c$a;-><init>()V
-
-    sput-object v0, Lr5/c;->d:Lr5/c$a;
-
-    return-void
-.end method
-
-.method public constructor <init>([BI)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    array-length v0, p1
+    sget v0, Lj2/o;->a:I
 
-    invoke-static {v0}, Lr5/l0;->a(I)V
+    const/4 v0, 0x1
 
-    .line 3
-    new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
-
-    const-string v1, "AES"
-
-    invoke-direct {v0, p1, v1}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
-
-    iput-object v0, p0, Lr5/c;->a:Ljavax/crypto/spec/SecretKeySpec;
-
-    .line 4
-    sget-object p1, Lr5/c;->d:Lr5/c$a;
-
-    invoke-virtual {p1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljavax/crypto/Cipher;
-
-    invoke-virtual {p1}, Ljavax/crypto/Cipher;->getBlockSize()I
-
-    move-result p1
-
-    iput p1, p0, Lr5/c;->c:I
-
-    const/16 v0, 0xc
-
-    if-lt p2, v0, :cond_0
-
-    if-gt p2, p1, :cond_0
-
-    .line 5
-    iput p2, p0, Lr5/c;->b:I
-
-    return-void
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string p2, "invalid IV size"
-
-    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-
-# virtual methods
-.method public final a([B)[B
-    .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    array-length v0, p1
-
-    iget v1, p0, Lr5/c;->b:I
-
-    const v2, 0x7fffffff
-
-    sub-int v3, v2, v1
-
-    if-gt v0, v3, :cond_0
-
-    .line 2
-    array-length v0, p1
-
-    add-int/2addr v0, v1
-
-    new-array v0, v0, [B
+    if-eqz p1, :cond_1
 
     .line 3
-    invoke-static {v1}, Lr5/f0;->a(I)[B
+    invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v1
 
-    .line 4
-    iget v1, p0, Lr5/c;->b:I
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
-    const/4 v2, 0x0
+    move-result v1
 
-    invoke-static {v8, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    const/4 v4, 0x0
-
-    .line 5
-    array-length v5, p1
-
-    iget v7, p0, Lr5/c;->b:I
-
-    const/4 v9, 0x1
-
-    move-object v2, p0
-
-    move-object v3, p1
-
-    move-object v6, v0
-
-    invoke-virtual/range {v2 .. v9}, Lr5/c;->c([BII[BI[BZ)V
-
-    return-object v0
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "plaintext length can not exceed "
-
-    .line 7
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 8
-    iget v1, p0, Lr5/c;->b:I
-
-    sub-int/2addr v2, v1
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final b([B)[B
-    .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    array-length v0, p1
-
-    iget v1, p0, Lr5/c;->b:I
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    new-array v8, v1, [B
-
-    const/4 v0, 0x0
-
-    .line 3
-    invoke-static {p1, v0, v8, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 4
-    array-length v0, p1
-
-    iget v4, p0, Lr5/c;->b:I
-
-    sub-int/2addr v0, v4
-
-    new-array v0, v0, [B
-
-    .line 5
-    array-length v1, p1
-
-    sub-int v5, v1, v4
-
-    const/4 v7, 0x0
-
-    const/4 v9, 0x0
-
-    move-object v2, p0
-
-    move-object v3, p1
-
-    move-object v6, v0
-
-    invoke-virtual/range {v2 .. v9}, Lr5/c;->c([BII[BI[BZ)V
-
-    return-object v0
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "ciphertext too short"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final c([BII[BI[BZ)V
-    .locals 7
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lr5/c;->d:Lr5/c$a;
-
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v1, v0
-
-    check-cast v1, Ljavax/crypto/Cipher;
-
-    .line 2
-    iget v0, p0, Lr5/c;->c:I
-
-    new-array v0, v0, [B
-
-    .line 3
-    iget v2, p0, Lr5/c;->b:I
-
-    const/4 v3, 0x0
-
-    invoke-static {p6, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 4
-    new-instance p6, Ljavax/crypto/spec/IvParameterSpec;
-
-    invoke-direct {p6, v0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
-
-    if-eqz p7, :cond_0
-
-    const/4 p7, 0x1
-
-    .line 5
-    iget-object v0, p0, Lr5/c;->a:Ljavax/crypto/spec/SecretKeySpec;
-
-    invoke-virtual {v1, p7, v0, p6}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+    if-eqz v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 p7, 0x2
+    const/4 v1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v1, v0
+
+    :goto_1
+    xor-int/2addr v0, v1
+
+    const-string v1, "ApplicationId must be set."
+
+    .line 4
+    invoke-static {v0, v1}, Lb2/h;->k(ZLjava/lang/Object;)V
+
+    .line 5
+    iput-object p1, p0, Lr5/c;->b:Ljava/lang/String;
 
     .line 6
-    iget-object v0, p0, Lr5/c;->a:Ljavax/crypto/spec/SecretKeySpec;
-
-    invoke-virtual {v1, p7, v0, p6}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
-
-    :goto_0
-    move-object v2, p1
-
-    move v3, p2
-
-    move v4, p3
-
-    move-object v5, p4
-
-    move v6, p5
+    iput-object p2, p0, Lr5/c;->a:Ljava/lang/String;
 
     .line 7
-    invoke-virtual/range {v1 .. v6}, Ljavax/crypto/Cipher;->doFinal([BII[BI)I
+    iput-object p3, p0, Lr5/c;->c:Ljava/lang/String;
+
+    .line 8
+    iput-object p4, p0, Lr5/c;->d:Ljava/lang/String;
+
+    .line 9
+    iput-object p5, p0, Lr5/c;->e:Ljava/lang/String;
+
+    .line 10
+    iput-object p6, p0, Lr5/c;->f:Ljava/lang/String;
+
+    .line 11
+    iput-object p7, p0, Lr5/c;->g:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;)Lr5/c;
+    .locals 9
+
+    .line 1
+    new-instance v0, Lb2/j;
+
+    invoke-direct {v0, p0}, Lb2/j;-><init>(Landroid/content/Context;)V
+
+    const-string p0, "google_app_id"
+
+    .line 2
+    invoke-virtual {v0, p0}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 3
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 4
+    :cond_0
+    new-instance p0, Lr5/c;
+
+    const-string v1, "google_api_key"
+
+    .line 5
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v1, "firebase_database_url"
+
+    .line 6
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v1, "ga_trackingId"
+
+    .line 7
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v1, "gcm_defaultSenderId"
+
+    .line 8
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v1, "google_storage_bucket"
+
+    .line 9
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v1, "project_id"
+
+    .line 10
+    invoke-virtual {v0, v1}, Lb2/j;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    move-object v1, p0
+
+    invoke-direct/range {v1 .. v8}, Lr5/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    instance-of v0, p1, Lr5/c;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    check-cast p1, Lr5/c;
+
+    .line 3
+    iget-object v0, p0, Lr5/c;->b:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->b:Ljava/lang/String;
+
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->a:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->a:Ljava/lang/String;
+
+    .line 4
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->c:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->c:Ljava/lang/String;
+
+    .line 5
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->d:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->d:Ljava/lang/String;
+
+    .line 6
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->e:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->e:Ljava/lang/String;
+
+    .line 7
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->f:Ljava/lang/String;
+
+    iget-object v2, p1, Lr5/c;->f:Ljava/lang/String;
+
+    .line 8
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lr5/c;->g:Ljava/lang/String;
+
+    iget-object p1, p1, Lr5/c;->g:Ljava/lang/String;
+
+    .line 9
+    invoke-static {v0, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-ne p1, p3, :cond_1
+    if-eqz p1, :cond_1
 
-    return-void
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_1
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    const/4 v0, 0x7
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    iget-object v1, p0, Lr5/c;->b:Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->a:Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->c:Ljava/lang/String;
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->d:Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->e:Ljava/lang/String;
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->f:Ljava/lang/String;
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Lr5/c;->g:Ljava/lang/String;
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lb2/f$a;
+
+    invoke-direct {v0, p0}, Lb2/f$a;-><init>(Ljava/lang/Object;)V
+
+    .line 2
+    iget-object v1, p0, Lr5/c;->b:Ljava/lang/String;
+
+    const-string v2, "applicationId"
+
+    .line 3
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
+
+    iget-object v1, p0, Lr5/c;->a:Ljava/lang/String;
+
+    const-string v2, "apiKey"
+
+    .line 4
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
+
+    iget-object v1, p0, Lr5/c;->c:Ljava/lang/String;
+
+    const-string v2, "databaseUrl"
+
+    .line 5
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
+
+    iget-object v1, p0, Lr5/c;->e:Ljava/lang/String;
+
+    const-string v2, "gcmSenderId"
+
+    .line 6
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
+
+    iget-object v1, p0, Lr5/c;->f:Ljava/lang/String;
+
+    const-string v2, "storageBucket"
+
+    .line 7
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
+
+    iget-object v1, p0, Lr5/c;->g:Ljava/lang/String;
+
+    const-string v2, "projectId"
 
     .line 8
-    :cond_1
-    new-instance p1, Ljava/security/GeneralSecurityException;
+    invoke-virtual {v0, v2, v1}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
 
-    const-string p2, "stored output\'s length does not match input\'s length"
+    .line 9
+    invoke-virtual {v0}, Lb2/f$a;->toString()Ljava/lang/String;
 
-    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw p1
+    return-object v0
 .end method

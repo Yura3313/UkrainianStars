@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/g;
+.field public final synthetic f:Lcom/google/android/material/textfield/g;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/g;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/j;->g:Lcom/google/android/material/textfield/g;
+    iput-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -24,7 +24,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/j;->g:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
     iget-object v0, p1, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
@@ -35,7 +35,7 @@
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setChecked(Z)V
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/j;->g:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
     .line 5
     iget-object p1, p1, Lcom/google/android/material/textfield/g;->p:Landroid/animation/ValueAnimator;

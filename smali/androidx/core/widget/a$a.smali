@@ -62,44 +62,44 @@
 
 # virtual methods
 .method public final a(J)F
-    .locals 9
+    .locals 8
 
     .line 1
     iget-wide v0, p0, Landroidx/core/widget/a$a;->e:J
 
-    const/4 v2, 0x0
+    cmp-long v2, p1, v0
 
-    cmp-long v3, p1, v0
+    const/4 v3, 0x0
 
-    if-gez v3, :cond_0
+    if-gez v2, :cond_0
 
-    return v2
+    return v3
 
     .line 2
     :cond_0
-    iget-wide v3, p0, Landroidx/core/widget/a$a;->g:J
+    iget-wide v4, p0, Landroidx/core/widget/a$a;->g:J
 
-    const-wide/16 v5, 0x0
+    const-wide/16 v6, 0x0
 
-    const/high16 v7, 0x3f800000    # 1.0f
+    cmp-long v2, v4, v6
 
-    cmp-long v8, v3, v5
+    const/high16 v6, 0x3f800000    # 1.0f
 
-    if-ltz v8, :cond_2
+    if-ltz v2, :cond_2
 
-    cmp-long v5, p1, v3
+    cmp-long v2, p1, v4
 
-    if-gez v5, :cond_1
+    if-gez v2, :cond_1
 
     goto :goto_0
 
     :cond_1
-    sub-long/2addr p1, v3
+    sub-long/2addr p1, v4
 
     .line 3
     iget v0, p0, Landroidx/core/widget/a$a;->h:F
 
-    sub-float v1, v7, v0
+    sub-float v1, v6, v0
 
     long-to-float p1, p1
 
@@ -110,11 +110,11 @@
     div-float/2addr p1, p2
 
     .line 4
-    invoke-static {p1, v2, v7}, Landroidx/core/widget/a;->b(FFF)F
+    invoke-static {p1, v3, v6}, Landroidx/core/widget/a;->b(FFF)F
 
     move-result p1
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     add-float/2addr p1, v1
 
@@ -135,11 +135,11 @@
 
     div-float/2addr p1, p2
 
-    invoke-static {p1, v2, v7}, Landroidx/core/widget/a;->b(FFF)F
+    invoke-static {p1, v3, v6}, Landroidx/core/widget/a;->b(FFF)F
 
     move-result p1
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     return p1
 .end method

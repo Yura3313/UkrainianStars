@@ -1,441 +1,252 @@
 .class public final Lr2/e;
 .super Ljava/lang/Object;
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
-# static fields
-.field public static final a:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lq2/a<",
-            "*>;>;"
-        }
-    .end annotation
-.end field
 
-.field public static final b:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lr2/f;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/query/internal/FilterHolder;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v0, Lr2/e;->a:Ljava/util/HashMap;
-
-    .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v0, Lr2/e;->b:Ljava/util/HashMap;
-
-    .line 3
-    sget-object v0, Lr3/n0;->a:Lr3/i1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 4
-    sget-object v0, Lr3/n0;->G:Lr3/x0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 5
-    sget-object v0, Lr3/n0;->x:Lr3/s0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 6
-    sget-object v0, Lr3/n0;->E:Lr3/w0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 7
-    sget-object v0, Lr3/n0;->H:Lr3/y0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 8
-    sget-object v0, Lr3/n0;->n:Lr3/o0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 9
-    sget-object v0, Lr3/n0;->m:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 10
-    sget-object v0, Lr3/n0;->o:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 11
-    sget-object v0, Lr3/n0;->p:Lr3/r0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 12
-    sget-object v0, Lr3/n0;->q:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 13
-    sget-object v0, Lr3/n0;->k:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 14
-    sget-object v0, Lr3/n0;->s:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 15
-    sget-object v0, Lr3/n0;->t:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 16
-    sget-object v0, Lr3/n0;->u:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 17
-    sget-object v0, Lr3/n0;->C:Lr2/m;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 18
-    sget-object v0, Lr3/n0;->b:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 19
-    sget-object v0, Lr3/n0;->z:Lr2/p;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 20
-    sget-object v0, Lr3/n0;->d:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 21
-    sget-object v0, Lr3/n0;->l:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 22
-    sget-object v0, Lr3/n0;->e:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 23
-    sget-object v0, Lr3/n0;->f:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 24
-    sget-object v0, Lr3/n0;->g:Lr2/h;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 25
-    sget-object v0, Lr3/n0;->h:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 26
-    sget-object v0, Lr3/n0;->w:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 27
-    sget-object v0, Lr3/n0;->r:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 28
-    sget-object v0, Lr3/n0;->y:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 29
-    sget-object v0, Lr3/n0;->A:Lr2/r;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 30
-    sget-object v0, Lr3/n0;->B:Lr2/r;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 31
-    sget-object v0, Lr3/n0;->D:Lr3/t0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 32
-    sget-object v0, Lr3/n0;->I:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 33
-    sget-object v0, Lr3/n0;->J:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 34
-    sget-object v0, Lr3/n0;->j:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 35
-    sget-object v0, Lr3/n0;->i:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 36
-    sget-object v0, Lr3/n0;->F:Lr3/p0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 37
-    sget-object v0, Lr3/n0;->v:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 38
-    sget-object v0, Lr3/n0;->c:Lr3/q0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 39
-    sget-object v0, Lr3/n0;->K:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 40
-    sget-object v0, Lr3/n0;->L:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 41
-    sget-object v0, Lr3/n0;->M:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 42
-    sget-object v0, Lr3/n0;->N:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 43
-    sget-object v0, Lr3/n0;->O:Lr3/u0;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 44
-    sget-object v0, Lr3/n0;->P:Lr2/q;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 45
-    sget-object v0, Lr3/n0;->Q:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 46
-    sget-object v0, Lr3/b1;->a:Lr3/c1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 47
-    sget-object v0, Lr3/b1;->c:Lr3/f1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 48
-    sget-object v0, Lr3/b1;->d:Lr3/e1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 49
-    sget-object v0, Lr3/b1;->e:Lr3/h1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 50
-    sget-object v0, Lr3/b1;->b:Lr3/d1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 51
-    sget-object v0, Lr3/b1;->f:Lr3/g1;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 52
-    sget-object v0, Lr3/j1;->a:Lr2/g;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 53
-    sget-object v0, Lr3/j1;->b:Lr2/b;
-
-    invoke-static {v0}, Lr2/e;->b(Lq2/a;)V
-
-    .line 54
-    sget-object v0, Lr2/m;->c:Lr2/n;
-
-    invoke-static {v0}, Lr2/e;->a(Lr2/f;)V
-
-    .line 55
-    sget-object v0, Lr3/z0;->c:Lr3/a1;
-
-    invoke-static {v0}, Lr2/e;->a(Lr2/f;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Lr2/f;)V
-    .locals 4
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    sget-object v0, Lr2/e;->b:Ljava/util/HashMap;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    invoke-interface {p0}, Lr2/f;->a()Ljava/lang/String;
+    move-result v0
 
-    move-result-object v1
+    const/4 v1, 0x0
 
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object v3, v1
 
-    move-result-object v0
+    move-object v4, v3
 
-    if-nez v0, :cond_0
+    move-object v5, v4
 
-    return-void
+    move-object v6, v5
+
+    move-object v7, v6
+
+    move-object v8, v7
+
+    move-object v9, v8
+
+    move-object v10, v9
+
+    move-object v11, v10
 
     .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 3
-    invoke-interface {p0}, Lr2/f;->a()Ljava/lang/String;
-
-    move-result-object p0
-
-    const/16 v1, 0x2e
-
-    .line 4
-    invoke-static {p0, v1}, La1/e;->b(Ljava/lang/String;I)I
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v1
 
-    const-string v2, "A cleaner for key "
-
-    const-string v3, " has already been registered"
-
-    .line 5
-    invoke-static {v1, v2, p0, v3}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 6
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static b(Lq2/a;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lq2/a<",
-            "*>;)V"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lr2/e;->a:Ljava/util/HashMap;
-
-    move-object v1, p0
-
-    check-cast v1, Lq2/b;
-
-    .line 2
-    iget-object v1, v1, Lq2/b;->a:Ljava/lang/String;
+    if-ge v1, v0, :cond_0
 
     .line 3
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    const v2, 0xffff
+
+    and-int/2addr v2, v1
+
+    packed-switch v2, :pswitch_data_0
 
     .line 4
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "Duplicate field name registered: "
-
-    check-cast p0, Lq2/b;
-
-    .line 5
-    iget-object p0, p0, Lq2/b;->a:Ljava/lang/String;
-
-    .line 6
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    :cond_0
-    new-instance p0, Ljava/lang/String;
+    .line 5
+    :pswitch_0
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzz;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-direct {p0, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    .line 6
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    :goto_0
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-result-object v1
 
-    throw v0
+    move-object v11, v1
+
+    check-cast v11, Lcom/google/android/gms/drive/query/internal/zzz;
+
+    goto :goto_0
 
     .line 7
-    :cond_1
-    move-object v1, p0
-
-    check-cast v1, Lq2/b;
+    :pswitch_1
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzl;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
-    iget-object v1, v1, Lq2/b;->a:Ljava/lang/String;
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    check-cast v10, Lcom/google/android/gms/drive/query/internal/zzl;
+
+    goto :goto_0
 
     .line 9
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_2
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzn;->CREATOR:Lr2/g;
 
-    return-void
+    .line 10
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v9, v1
+
+    check-cast v9, Lcom/google/android/gms/drive/query/internal/zzn;
+
+    goto :goto_0
+
+    .line 11
+    :pswitch_3
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 12
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    check-cast v8, Lcom/google/android/gms/drive/query/internal/zzt;
+
+    goto :goto_0
+
+    .line 13
+    :pswitch_4
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Lr2/h;
+
+    .line 14
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v7, v1
+
+    check-cast v7, Lcom/google/android/gms/drive/query/internal/zzp;
+
+    goto :goto_0
+
+    .line 15
+    :pswitch_5
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzv;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 16
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v6, v1
+
+    check-cast v6, Lcom/google/android/gms/drive/query/internal/zzv;
+
+    goto :goto_0
+
+    .line 17
+    :pswitch_6
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzr;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 18
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    check-cast v5, Lcom/google/android/gms/drive/query/internal/zzr;
+
+    goto :goto_0
+
+    .line 19
+    :pswitch_7
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzd;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 20
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    check-cast v4, Lcom/google/android/gms/drive/query/internal/zzd;
+
+    goto :goto_0
+
+    .line 21
+    :pswitch_8
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzb;->CREATOR:Lr2/b;
+
+    .line 22
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    check-cast v3, Lcom/google/android/gms/drive/query/internal/zzb;
+
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 24
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/FilterHolder;
+
+    move-object v2, p1
+
+    invoke-direct/range {v2 .. v11}, Lcom/google/android/gms/drive/query/internal/FilterHolder;-><init>(Lcom/google/android/gms/drive/query/internal/zzb;Lcom/google/android/gms/drive/query/internal/zzd;Lcom/google/android/gms/drive/query/internal/zzr;Lcom/google/android/gms/drive/query/internal/zzv;Lcom/google/android/gms/drive/query/internal/zzp;Lcom/google/android/gms/drive/query/internal/zzt;Lcom/google/android/gms/drive/query/internal/zzn;Lcom/google/android/gms/drive/query/internal/zzl;Lcom/google/android/gms/drive/query/internal/zzz;)V
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/FilterHolder;
+
+    return-object p1
 .end method

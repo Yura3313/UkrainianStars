@@ -3,7 +3,7 @@
 .source "BinaryReader.java"
 
 # interfaces
-.implements Lcom/google/protobuf/h1;
+.implements Lcom/google/protobuf/j1;
 
 
 # annotations

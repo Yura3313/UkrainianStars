@@ -206,7 +206,7 @@
 
     if-eqz v0, :cond_3
 
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 6
     :goto_0
@@ -230,7 +230,7 @@
 
     array-length v7, v6
 
-    const/4 v8, 0x0
+    move v8, v2
 
     :goto_1
     if-ge v8, v7, :cond_2

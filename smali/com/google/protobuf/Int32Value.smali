@@ -3,7 +3,7 @@
 .source "Int32Value.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -19,7 +19,7 @@
         "Lcom/google/protobuf/Int32Value;",
         "Lcom/google/protobuf/Int32Value$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 
@@ -27,10 +27,10 @@
 # static fields
 .field private static final DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-.field private static volatile PARSER:Lcom/google/protobuf/c1; = null
+.field private static volatile PARSER:Lcom/google/protobuf/e1; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Int32Value;",
             ">;"
         }
@@ -156,7 +156,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->d()V
 
     .line 3
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     check-cast v1, Lcom/google/protobuf/Int32Value;
 
@@ -192,7 +192,7 @@
     return-object p0
 .end method
 
-.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -203,7 +203,7 @@
     .line 2
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -216,7 +216,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -232,18 +232,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 4
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -272,7 +272,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -283,7 +283,7 @@
     .line 10
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -312,7 +312,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -323,7 +323,7 @@
     .line 8
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -336,7 +336,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -352,18 +352,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -376,7 +376,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -392,18 +392,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom([BLcom/google/protobuf/q;)Lcom/google/protobuf/Int32Value;
+.method public static parseFrom([BLcom/google/protobuf/r;)Lcom/google/protobuf/Int32Value;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 6
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -412,12 +412,12 @@
     return-object p0
 .end method
 
-.method public static parser()Lcom/google/protobuf/c1;
+.method public static parser()Lcom/google/protobuf/e1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Int32Value;",
             ">;"
         }
@@ -425,7 +425,7 @@
 
     sget-object v0, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/e1;
 
     move-result-object v0
 
@@ -476,7 +476,7 @@
 
     .line 4
     :pswitch_2
-    sget-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_1
 
@@ -487,7 +487,7 @@
 
     .line 6
     :try_start_0
-    sget-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_0
 
@@ -499,7 +499,7 @@
     invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
-    sput-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/c1;
+    sput-object p1, Lcom/google/protobuf/Int32Value;->PARSER:Lcom/google/protobuf/e1;
 
     .line 9
     :cond_0
@@ -540,7 +540,7 @@
     .line 11
     sget-object p3, Lcom/google/protobuf/Int32Value;->DEFAULT_INSTANCE:Lcom/google/protobuf/Int32Value;
 
-    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/q0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/s0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
-.super Lse/i;
+.super Lif/i;
 .source "YoungPlayerRegisterFlow.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lzd/l;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lyd/l;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
+.field public static final f:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
+    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;->f:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,9 +58,9 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Lzd/l;
+    new-instance v0, Lyd/l;
 
-    invoke-direct {v0}, Lzd/l;-><init>()V
+    invoke-direct {v0}, Lyd/l;-><init>()V
 
     return-object v0
 .end method

@@ -12,23 +12,23 @@
 
 
 # static fields
-.field public static final synthetic n0:I
+.field public static final synthetic m0:I
 
 
 # instance fields
-.field public final k0:Lze/f0;
+.field public final j0:Lpf/g0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/f0<",
+            "Lpf/g0<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final l0:Lie/g;
+.field public final k0:Lye/h;
 
-.field public m0:Ljava/util/HashMap;
+.field public l0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -39,14 +39,14 @@
     invoke-direct {p0}, Lcom/supercell/id/ui/FlowFragment;-><init>()V
 
     .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k1()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j1()Lcom/supercell/id/model/IdProfile;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
@@ -76,7 +76,7 @@
     if-eqz v0, :cond_2
 
     .line 5
-    invoke-static {v0}, Landroidx/lifecycle/b0;->a(Ljava/lang/Object;)Lze/o;
+    invoke-static {v0}, Lj3/ws0;->a(Ljava/lang/Object;)Lpf/o;
 
     move-result-object v0
 
@@ -86,29 +86,29 @@
     :cond_2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->m()Lze/f0;
+    invoke-virtual {v0}, Lzd/q;->n()Lpf/g0;
 
     move-result-object v0
 
     :goto_2
-    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k0:Lze/f0;
+    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j0:Lpf/g0;
 
     .line 7
     new-instance v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;-><init>(Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;)V
 
-    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
+    invoke-static {v0}, Lj3/rt;->c(Lhf/a;)Lye/d;
 
     move-result-object v0
 
-    check-cast v0, Lie/g;
+    check-cast v0, Lye/h;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Lie/g;
+    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k0:Lye/h;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -128,14 +128,14 @@
     return-void
 .end method
 
-.method public final S(Landroid/os/Bundle;)V
+.method public final R(Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->S(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->R(Landroid/os/Bundle;)V
 
     .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k1()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j1()Lcom/supercell/id/model/IdProfile;
 
     move-result-object p1
 
@@ -144,7 +144,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     :cond_2
     :goto_1
-    const/4 p1, 0x1
+    move p1, v1
 
     :goto_2
     const-string v2, "flowPager"
@@ -182,13 +182,13 @@
     .line 5
     sget p1, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
@@ -198,7 +198,7 @@
 
     .line 6
     :cond_3
-    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object p1
 
@@ -207,7 +207,7 @@
     if-eqz p1, :cond_4
 
     .line 7
-    iget-boolean p1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
 
     .line 8
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -218,7 +218,7 @@
     :cond_4
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -227,13 +227,13 @@
     .line 10
     sget p1, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v1}, Landroidx/viewpager/widget/RtlViewPager;->setCurrentItem(I)V
 
@@ -242,20 +242,20 @@
     return-void
 .end method
 
-.method public final synthetic a0()V
+.method public final synthetic Z()V
     .locals 0
 
-    invoke-super {p0}, Lcom/supercell/id/ui/FlowFragment;->a0()V
+    invoke-super {p0}, Lcom/supercell/id/ui/FlowFragment;->Z()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->N0()V
 
     return-void
 .end method
 
-.method public final f1(I)Landroid/view/View;
+.method public final e1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -263,10 +263,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -281,7 +281,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -295,7 +295,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -307,35 +307,35 @@
     return-object v0
 .end method
 
-.method public final g1()[Lre/a;
+.method public final f1()[Lhf/a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()[",
-            "Lre/a<",
-            "Lwc/w;",
+            "Lhf/a<",
+            "Luc/z;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Lie/g;
+    iget-object v0, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k0:Lye/h;
 
-    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lye/h;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lre/a;
+    check-cast v0, [Lhf/a;
 
     return-object v0
 .end method
 
-.method public final j1()V
+.method public final i1()V
     .locals 3
 
     .line 1
     sget v0, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -343,20 +343,20 @@
 
     const-string v1, "flowPager"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->getCurrentItem()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->l0:Lie/g;
+    iget-object v1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->k0:Lye/h;
 
-    invoke-virtual {v1}, Lie/g;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lye/h;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, [Lre/a;
+    check-cast v1, [Lhf/a;
 
     .line 3
     array-length v1, v1
@@ -366,14 +366,14 @@
     if-ne v0, v1, :cond_3
 
     .line 4
-    invoke-static {p0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
     .line 5
-    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
@@ -382,7 +382,7 @@
     if-eqz v1, :cond_0
 
     .line 6
-    iget-object v1, v1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Ljava/util/List;
+    iget-object v1, v1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Ljava/util/List;
 
     goto :goto_0
 
@@ -400,7 +400,7 @@
 
     invoke-direct {v1}, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;-><init>()V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
@@ -433,28 +433,28 @@
 
     .line 10
     :cond_2
-    new-instance v0, Lkotlin/TypeCastException;
+    new-instance v0, Lye/j;
 
     const-string v1, "null cannot be cast to non-null type kotlin.Array<T>"
 
-    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lye/j;-><init>(Ljava/lang/String;)V
 
     throw v0
 
     .line 11
     :cond_3
-    invoke-super {p0}, Lcom/supercell/id/ui/FlowFragment;->j1()V
+    invoke-super {p0}, Lcom/supercell/id/ui/FlowFragment;->i1()V
 
     :cond_4
     :goto_2
     return-void
 .end method
 
-.method public final k1()Lcom/supercell/id/model/IdProfile;
+.method public final j1()Lcom/supercell/id/model/IdProfile;
     .locals 1
 
     .line 1
-    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdProfile;
 
     goto :goto_0
 

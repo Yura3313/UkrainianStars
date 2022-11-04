@@ -18,13 +18,13 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:Lk3/mq;
+.field public final b:Lj3/tq;
 
 .field public final c:Landroid/telephony/TelephonyManager;
 
-.field public final d:Lk3/c40;
+.field public final d:Lj3/l50;
 
-.field public final e:Lk3/a40;
+.field public final e:Lj3/i50;
 
 .field public f:I
 
@@ -47,7 +47,7 @@
 
     move-result v1
 
-    sget-object v2, Lcom/google/android/gms/internal/ads/k8$b;->j:Lcom/google/android/gms/internal/ads/k8$b;
+    sget-object v2, Lcom/google/android/gms/internal/ads/k8$b;->i:Lcom/google/android/gms/internal/ads/k8$b;
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -58,7 +58,7 @@
 
     move-result v1
 
-    sget-object v2, Lcom/google/android/gms/internal/ads/k8$b;->i:Lcom/google/android/gms/internal/ads/k8$b;
+    sget-object v2, Lcom/google/android/gms/internal/ads/k8$b;->h:Lcom/google/android/gms/internal/ads/k8$b;
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -87,7 +87,7 @@
 
     move-result v1
 
-    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->k:Lcom/google/android/gms/internal/ads/k8$b;
+    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->j:Lcom/google/android/gms/internal/ads/k8$b;
 
     invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -98,7 +98,7 @@
 
     move-result v1
 
-    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->l:Lcom/google/android/gms/internal/ads/k8$b;
+    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->k:Lcom/google/android/gms/internal/ads/k8$b;
 
     invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -145,7 +145,7 @@
 
     move-result v1
 
-    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->m:Lcom/google/android/gms/internal/ads/k8$b;
+    sget-object v3, Lcom/google/android/gms/internal/ads/k8$b;->l:Lcom/google/android/gms/internal/ads/k8$b;
 
     invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -170,7 +170,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lk3/mq;Lk3/c40;Lk3/a40;)V
+.method public constructor <init>(Landroid/content/Context;Lj3/tq;Lj3/l50;Lj3/i50;)V
     .locals 0
 
     .line 1
@@ -180,13 +180,13 @@
     iput-object p1, p0, Lcom/google/android/gms/internal/ads/k0;->a:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/k0;->b:Lk3/mq;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/k0;->b:Lj3/tq;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/k0;->d:Lk3/c40;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/k0;->d:Lj3/l50;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/k0;->e:Lk3/a40;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/k0;->e:Lj3/i50;
 
     const-string p2, "phone"
 

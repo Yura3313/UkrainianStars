@@ -58,9 +58,9 @@
     iget-object v0, p0, Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterButton;
 
     .line 4
-    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterButton;->k:F
+    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterButton;->j:F
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     const/high16 v0, 0x40000000    # 2.0f
 

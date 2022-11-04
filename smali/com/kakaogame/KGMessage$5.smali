@@ -116,7 +116,7 @@
     if-eqz v5, :cond_0
 
     .line 8
-    invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 

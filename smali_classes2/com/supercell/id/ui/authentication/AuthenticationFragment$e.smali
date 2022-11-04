@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/authentication/AuthenticationFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/authentication/AuthenticationFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$n;
-.super Lse/i;
+.super Lif/i;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Ljava/lang/Boolean;",
         ">;"
     }
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$n;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$n;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$n;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$n;->f:Lcom/supercell/id/ui/game/GameFragment;
 
-    invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->h1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->g1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -59,13 +59,13 @@
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lae/i;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lzd/u1;
 
     move-result-object v1
 
     const/16 v2, 0xa
 
-    invoke-virtual {v1, v2}, Lae/i;->d(I)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lzd/u1;->d(I)Ljava/util/List;
 
     move-result-object v1
 
@@ -87,7 +87,7 @@
     :goto_0
     sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

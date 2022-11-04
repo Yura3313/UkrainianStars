@@ -3,7 +3,7 @@
 .source "MenuItemWrapperICS.java"
 
 # interfaces
-.implements Lf/c;
+.implements Lf/b;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final g:Landroid/view/CollapsibleActionView;
+.field public final f:Landroid/view/CollapsibleActionView;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/view/CollapsibleActionView;
 
-    iput-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
+    iput-object v0, p0, Lg/c$c;->f:Landroid/view/CollapsibleActionView;
 
     .line 3
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
@@ -50,7 +50,7 @@
 .method public final c()V
     .locals 1
 
-    iget-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
+    iget-object v0, p0, Lg/c$c;->f:Landroid/view/CollapsibleActionView;
 
     invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewExpanded()V
 
@@ -60,7 +60,7 @@
 .method public final e()V
     .locals 1
 
-    iget-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
+    iget-object v0, p0, Lg/c$c;->f:Landroid/view/CollapsibleActionView;
 
     invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewCollapsed()V
 

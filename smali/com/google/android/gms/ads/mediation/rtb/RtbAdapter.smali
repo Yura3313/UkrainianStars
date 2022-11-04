@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/ads/mediation/rtb/RtbAdapter;
-.super Lk1/a;
+.super Li1/a;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
@@ -12,12 +12,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lk1/a;-><init>()V
+    invoke-direct {p0}, Li1/a;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract collectSignals(Lm1/a;Lm1/b;)V
+.method public abstract collectSignals(Lk1/a;Lk1/b;)V
 .end method

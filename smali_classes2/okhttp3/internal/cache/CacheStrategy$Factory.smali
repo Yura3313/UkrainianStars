@@ -623,35 +623,35 @@
 
     move-result-object v0
 
-    const-string v2, "Warning"
+    cmp-long v2, v11, v5
 
-    cmp-long v7, v11, v5
+    const-string v5, "Warning"
 
-    if-ltz v7, :cond_7
+    if-ltz v2, :cond_7
 
-    const-string v5, "110 HttpURLConnection \"Response is stale\""
+    const-string v2, "110 HttpURLConnection \"Response is stale\""
 
     .line 20
-    invoke-virtual {v0, v2, v5}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
+    invoke-virtual {v0, v5, v2}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
 
     :cond_7
-    const-wide/32 v5, 0x5265c00
+    const-wide/32 v6, 0x5265c00
 
-    cmp-long v7, v3, v5
+    cmp-long v2, v3, v6
 
-    if-lez v7, :cond_8
+    if-lez v2, :cond_8
 
     .line 21
     invoke-direct {p0}, Lokhttp3/internal/cache/CacheStrategy$Factory;->isFreshnessLifetimeHeuristic()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_8
+    if-eqz v2, :cond_8
 
-    const-string v3, "113 HttpURLConnection \"Heuristic expiration\""
+    const-string v2, "113 HttpURLConnection \"Heuristic expiration\""
 
     .line 22
-    invoke-virtual {v0, v2, v3}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
+    invoke-virtual {v0, v5, v2}, Lokhttp3/Response$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Response$Builder;
 
     .line 23
     :cond_8

@@ -26,10 +26,10 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lie/i;
+.method public static synthetic a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lye/m;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lie/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lye/m;
 
     move-result-object p0
 
@@ -203,7 +203,7 @@
     return-void
 .end method
 
-.method private static synthetic lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lie/i;
+.method private static synthetic lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lye/m;
     .locals 1
 
     const-string v0, "sendTextTemplateMessage"
@@ -262,7 +262,7 @@
     .line 9
     :cond_1
     :goto_0
-    sget-object p0, Lie/i;->a:Lie/i;
+    sget-object p0, Lye/m;->a:Lye/m;
 
     return-object p0
 .end method
@@ -323,7 +323,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 88
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -394,7 +394,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     .line 94
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -424,7 +424,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 97
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -461,7 +461,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 101
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -515,7 +515,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     .line 107
-    invoke-static {v3, v5}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v5}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -552,7 +552,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
     .line 111
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -585,7 +585,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     .line 115
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -613,7 +613,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
     .line 118
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -704,7 +704,7 @@
 
     invoke-direct {v0, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    invoke-static {v0, v7}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+    invoke-static {v0, v7}, Lre/l$a;->a(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
 
     move-result-object v6
     :try_end_a
@@ -773,13 +773,13 @@
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
     .line 133
-    invoke-interface {v9, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v9, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v10, 0x0
 
     .line 134
     :goto_0
-    invoke-interface {v9}, Ljava/util/List;->size()I
+    invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
 
     move-result v11
 
@@ -808,7 +808,7 @@
 
     move-result-object v12
 
-    invoke-interface {v9, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v9, v10}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
@@ -816,7 +816,7 @@
 
     invoke-direct {v11, v12, v10}, Lcom/kakaogame/kakao/model/FilePart;-><init>(Ljava/lang/String;Ljava/io/File;)V
 
-    invoke-interface {v8, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     move v10, v13
 
@@ -842,7 +842,7 @@
 
     invoke-direct {v9, v10, v11}, Lcom/kakaogame/kakao/model/StringPart;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 137
     sget-object v9, Lcom/kakaogame/idp/KGKakao2Auth;->context:Landroid/content/Context;
@@ -1076,7 +1076,7 @@
     if-nez v1, :cond_d
 
     .line 156
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1104,7 +1104,7 @@
     .catchall {:try_start_11 .. :try_end_11} :catchall_2
 
     .line 159
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1134,7 +1134,7 @@
     .catchall {:try_start_12 .. :try_end_12} :catchall_2
 
     .line 162
-    invoke-static {v3, v5}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v5}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1190,7 +1190,7 @@
     .line 166
     :catch_5
     :cond_e
-    invoke-static {v3, v5}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v5}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1256,7 +1256,7 @@
     .catchall {:try_start_17 .. :try_end_17} :catchall_2
 
     .line 172
-    invoke-static {v3, v0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1271,7 +1271,7 @@
 
     .line 174
     :goto_6
-    invoke-static {v3, v5}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v3, v5}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1283,13 +1283,7 @@
     invoke-static {v1, v5, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 176
-    goto :goto_8
-
-    :goto_7
     throw v0
-
-    :goto_8
-    goto :goto_7
 .end method
 
 .method private static sendGameMessage(Lcom/kakaogame/KGKakaoProfile;Ljava/lang/String;Ljava/util/Map;)Lcom/kakaogame/KGResult;
@@ -1341,7 +1335,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 8
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1412,7 +1406,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 14
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1442,7 +1436,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 17
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1479,7 +1473,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 21
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1533,7 +1527,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 27
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1570,7 +1564,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 31
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1603,7 +1597,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     .line 35
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1649,7 +1643,7 @@
     if-nez p1, :cond_8
 
     .line 40
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1677,7 +1671,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 43
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1722,7 +1716,7 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
     .line 47
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1737,7 +1731,7 @@
 
     .line 49
     :goto_0
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1870,7 +1864,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1941,7 +1935,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1971,7 +1965,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2025,7 +2019,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 21
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2062,7 +2056,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 25
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2095,7 +2089,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 29
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2145,7 +2139,7 @@
     if-nez p1, :cond_7
 
     .line 34
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2173,7 +2167,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 37
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2218,7 +2212,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 41
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2233,7 +2227,7 @@
 
     .line 43
     :goto_0
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2325,7 +2319,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2396,7 +2390,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2426,7 +2420,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2459,7 +2453,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 19
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2513,7 +2507,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 25
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2589,7 +2583,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 33
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2636,7 +2630,7 @@
     if-nez p1, :cond_8
 
     .line 38
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2664,7 +2658,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 41
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2709,7 +2703,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 45
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2724,7 +2718,7 @@
 
     .line 47
     :goto_1
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2816,7 +2810,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2887,7 +2881,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2917,7 +2911,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2954,7 +2948,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 19
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2987,7 +2981,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 23
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3041,7 +3035,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 29
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3087,7 +3081,7 @@
     if-nez p1, :cond_7
 
     .line 34
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3115,7 +3109,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 37
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3160,7 +3154,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 41
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3175,7 +3169,7 @@
 
     .line 43
     :goto_0
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3267,7 +3261,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3338,7 +3332,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3368,7 +3362,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3422,7 +3416,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 21
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3459,7 +3453,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 25
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3492,7 +3486,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 29
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3542,7 +3536,7 @@
     if-nez p1, :cond_7
 
     .line 34
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3570,7 +3564,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 37
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3615,7 +3609,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 41
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3630,7 +3624,7 @@
 
     .line 43
     :goto_0
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3722,7 +3716,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3793,7 +3787,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3823,7 +3817,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3856,7 +3850,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 19
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3910,7 +3904,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 25
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3986,7 +3980,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 33
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4033,7 +4027,7 @@
     if-nez p1, :cond_8
 
     .line 38
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4061,7 +4055,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 41
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4106,7 +4100,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 45
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4121,7 +4115,7 @@
 
     .line 47
     :goto_1
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4215,7 +4209,7 @@
     const-string v1, "required_scopes: "
 
     .line 6
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -4277,7 +4271,7 @@
     const-string p0, "updateScope Fail: "
 
     .line 13
-    invoke-static {p0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -4471,25 +4465,25 @@
     const-string v3, "${current_user_id}"
 
     .line 3
-    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "product_id"
 
     const-string v3, "${shared_product_id}"
 
     .line 4
-    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     invoke-static {}, Lcom/kakao/sdk/link/LinkClient;->getInstance()Lcom/kakao/sdk/link/LinkClient;
 
     move-result-object v2
 
-    new-instance v3, Lcom/kakaogame/c;
+    new-instance v3, Lcom/kakaogame/f;
 
-    invoke-direct {v3, p2}, Lcom/kakaogame/c;-><init>(Lcom/kakaogame/KGResultCallback;)V
+    invoke-direct {v3, p2}, Lcom/kakaogame/f;-><init>(Lcom/kakaogame/KGResultCallback;)V
 
-    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lre/p;)V
+    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lhf/p;)V
 
     .line 6
     new-instance v0, Lcom/kakaogame/KGKakaoTalkMessage$9;
@@ -4540,7 +4534,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4577,7 +4571,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 9
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4648,7 +4642,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 15
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4701,7 +4695,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 21
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -4736,7 +4730,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 25
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -4772,7 +4766,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 30
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4821,7 +4815,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     .line 34
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4866,7 +4860,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 38
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4881,7 +4875,7 @@
 
     .line 40
     :goto_1
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 

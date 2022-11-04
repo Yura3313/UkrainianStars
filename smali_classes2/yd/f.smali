@@ -1,26 +1,26 @@
 .class public final Lyd/f;
-.super Lse/i;
-.source "YoungPlayerLoginConfirmPageFragment.kt"
+.super Lif/i;
+.source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Ljava/lang/String;",
-        "Landroid/text/SpannableStringBuilder;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lyd/i;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lyd/f;
+.field public static final f:Lyd/f;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lyd/f;-><init>()V
 
-    sput-object v0, Lyd/f;->g:Lyd/f;
+    sput-object v0, Lyd/f;->f:Lyd/f;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,28 +52,36 @@
     .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Lyd/i;
 
-    check-cast p2, Landroid/text/SpannableStringBuilder;
+    check-cast p2, Ljava/lang/Exception;
 
-    const-string v0, "text"
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "result"
+    const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lud/d0;->b(Ljava/lang/String;)Landroid/text/Spanned;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    if-eqz p1, :cond_0
+
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v0, 0x0
 
     .line 4
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
+
+    .line 5
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

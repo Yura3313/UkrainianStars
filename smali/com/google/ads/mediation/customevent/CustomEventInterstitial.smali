@@ -12,7 +12,7 @@
 .method public abstract synthetic destroy()V
 .end method
 
-.method public abstract requestInterstitialAd(Lb1/b;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;La1/a;Ljava/lang/Object;)V
+.method public abstract requestInterstitialAd(Lz0/b;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ly0/a;Ljava/lang/Object;)V
 .end method
 
 .method public abstract showInterstitial()V

@@ -1,23 +1,22 @@
 .class public final Lt3/i;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-games@@20.0.1"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# static fields
-.field public static final synthetic a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/instantapps/zzat;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lt3/i;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -26,60 +25,136 @@
     return-void
 .end method
 
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
-        }
-    .end annotation
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 13
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
-    if-nez v0, :cond_0
+    const/4 v1, 0x0
 
-    const/4 p0, 0x0
+    const/4 v2, 0x0
 
-    return-object p0
+    const-wide/16 v3, 0x0
+
+    move-object v6, v1
+
+    move-object v8, v6
+
+    move-object v9, v8
+
+    move-object v12, v9
+
+    move v7, v2
+
+    move-wide v10, v3
 
     .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    const v2, 0xffff
+
+    and-int/2addr v2, v1
+
+    packed-switch v2, :pswitch_data_0
+
+    .line 4
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_0
+    invoke-static {p1, v1}, Lc2/b;->e(Landroid/os/Parcel;I)[B
+
+    move-result-object v12
+
+    goto :goto_0
+
+    .line 6
+    :pswitch_1
+    invoke-static {p1, v1}, Lc2/b;->t(Landroid/os/Parcel;I)J
+
+    move-result-wide v10
+
+    goto :goto_0
+
+    .line 7
+    :pswitch_2
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v9
+
+    goto :goto_0
+
+    .line 8
+    :pswitch_3
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v8
+
+    goto :goto_0
+
+    .line 9
+    :pswitch_4
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v7
+
+    goto :goto_0
+
+    .line 10
+    :pswitch_5
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_0
+
+    .line 11
     :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
-    move-result-object p0
+    .line 12
+    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzat;
 
-    check-cast p0, Landroid/os/Parcelable;
+    move-object v5, p1
 
-    return-object p0
+    invoke-direct/range {v5 .. v12}, Lcom/google/android/gms/internal/instantapps/zzat;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;J[B)V
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public static b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+.method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    if-nez p1, :cond_0
+    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzat;
 
-    const/4 p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-
-    return-void
+    return-object p1
 .end method

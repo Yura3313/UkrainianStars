@@ -33,14 +33,14 @@
 
 
 # virtual methods
-.method public e(Landroid/view/View;Lg0/c;)V
+.method public d(Landroid/view/View;Lg0/b;)V
     .locals 12
 
     .line 1
     iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
 
     .line 2
-    iget-object v1, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object v1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 3
     invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -105,75 +105,72 @@
 
     move-result v5
 
-    xor-int/lit8 v5, v5, 0x1
+    const/4 v6, 0x1
+
+    xor-int/2addr v5, v6
 
     .line 12
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v6
+    move-result v7
 
-    xor-int/lit8 v6, v6, 0x1
+    xor-int/2addr v7, v6
 
     .line 13
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v7
+    move-result v8
 
-    xor-int/lit8 v7, v7, 0x1
+    xor-int/2addr v8, v6
 
     .line 14
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v8
+    move-result v9
 
-    xor-int/lit8 v8, v8, 0x1
+    xor-int/2addr v9, v6
 
-    if-nez v8, :cond_2
+    if-nez v9, :cond_2
 
     .line 15
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v9
+    move-result v10
 
-    if-nez v9, :cond_1
+    if-nez v10, :cond_1
 
     goto :goto_1
 
     :cond_1
-    const/4 v9, 0x0
-
-    goto :goto_2
+    const/4 v6, 0x0
 
     :cond_2
     :goto_1
-    const/4 v9, 0x1
-
-    :goto_2
     const-string v10, ""
 
-    if-eqz v6, :cond_3
+    if-eqz v7, :cond_3
 
     .line 16
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_3
     move-object v0, v10
 
     .line 17
-    :goto_3
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_2
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v7
 
     const-string v11, ", "
 
-    if-nez v8, :cond_4
+    if-nez v9, :cond_4
 
-    if-eqz v7, :cond_5
+    if-eqz v8, :cond_5
 
     .line 18
     :cond_4
@@ -185,39 +182,39 @@
 
     move-object v0, v11
 
-    goto :goto_4
+    goto :goto_3
 
     :cond_5
     move-object v0, v10
 
-    :goto_4
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_3
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     .line 19
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    if-eqz v8, :cond_6
+    if-eqz v9, :cond_6
 
     move-object v1, v2
 
-    goto :goto_5
+    goto :goto_4
 
     :cond_6
-    if-eqz v7, :cond_7
+    if-eqz v8, :cond_7
 
-    goto :goto_5
+    goto :goto_4
 
     :cond_7
     move-object v1, v10
 
     .line 20
-    :goto_5
+    :goto_4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -227,9 +224,9 @@
     if-eqz v5, :cond_8
 
     .line 21
-    invoke-virtual {p2, p1}, Lg0/c;->Z(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lg0/b;->T(Ljava/lang/CharSequence;)V
 
-    goto :goto_6
+    goto :goto_5
 
     .line 22
     :cond_8
@@ -240,11 +237,11 @@
     if-nez v1, :cond_9
 
     .line 23
-    invoke-virtual {p2, v0}, Lg0/c;->Z(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Lg0/b;->T(Ljava/lang/CharSequence;)V
 
     .line 24
     :cond_9
-    :goto_6
+    :goto_5
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -254,14 +251,14 @@
     .line 25
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v6, 0x1a
+    const/16 v7, 0x1a
 
-    if-lt v1, v6, :cond_a
+    if-lt v1, v7, :cond_a
 
     .line 26
-    invoke-virtual {p2, v0}, Lg0/c;->P(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Lg0/b;->M(Ljava/lang/CharSequence;)V
 
-    goto :goto_7
+    goto :goto_6
 
     :cond_a
     if-eqz v5, :cond_b
@@ -283,13 +280,13 @@
 
     .line 28
     :cond_b
-    invoke-virtual {p2, v0}, Lg0/c;->Z(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Lg0/b;->T(Ljava/lang/CharSequence;)V
 
-    :goto_7
+    :goto_6
     xor-int/lit8 v0, v5, 0x1
 
     .line 29
-    invoke-virtual {p2, v0}, Lg0/c;->Y(Z)V
+    invoke-virtual {p2, v0}, Lg0/b;->S(Z)V
 
     :cond_c
     if-eqz p1, :cond_d
@@ -301,27 +298,31 @@
 
     if-ne p1, v3, :cond_d
 
-    goto :goto_8
+    goto :goto_7
 
     :cond_d
     const/4 v3, -0x1
 
     .line 31
-    :goto_8
-    invoke-virtual {p2, v3}, Lg0/c;->Q(I)V
+    :goto_7
+    iget-object p1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    if-eqz v9, :cond_f
+    invoke-virtual {p1, v3}, Landroid/view/accessibility/AccessibilityNodeInfo;->setMaxTextLength(I)V
 
-    if-eqz v8, :cond_e
+    if-eqz v6, :cond_f
 
-    goto :goto_9
+    if-eqz v9, :cond_e
+
+    goto :goto_8
 
     :cond_e
     move-object v2, v4
 
     .line 32
-    :goto_9
-    invoke-virtual {p2, v2}, Lg0/c;->L(Ljava/lang/CharSequence;)V
+    :goto_8
+    iget-object p1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    invoke-virtual {p1, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setError(Ljava/lang/CharSequence;)V
 
     :cond_f
     return-void

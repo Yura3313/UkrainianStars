@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
-.field public h:Landroid/graphics/drawable/Drawable;
+.field public g:Landroid/graphics/drawable/Drawable;
 
-.field public i:F
+.field public h:F
 
-.field public j:Z
+.field public i:Z
 
 
 # direct methods
@@ -52,13 +52,13 @@
 
     if-eqz p4, :cond_1
 
-    const/4 p3, 0x0
+    move p3, v0
 
     :cond_1
     const-string p4, "context"
 
     .line 1
-    invoke-static {p1, p4}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -91,7 +91,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:I
+    iput p2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->f:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -99,7 +99,7 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 7
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 8
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -110,11 +110,11 @@
 
     if-ne p1, p2, :cond_2
 
-    const/4 v0, 0x1
+    move v0, p2
 
     .line 9
     :cond_2
-    iput-boolean v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->j:Z
+    iput-boolean v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:Z
 
     return-void
 
@@ -131,7 +131,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -146,7 +146,7 @@
 
     const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    move v1, v0
 
     :cond_0
     if-eqz p1, :cond_3
@@ -155,35 +155,28 @@
     invoke-virtual {p1, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
     .line 4
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-lt v0, v2, :cond_1
-
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->canResolveLayoutDirection()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
+    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
 
-    .line 7
+    .line 6
     :cond_1
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_3
 
     if-eqz v1, :cond_3
 
-    .line 8
+    .line 7
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v2
@@ -204,20 +197,20 @@
 
     if-eq v2, v0, :cond_3
 
-    .line 9
+    .line 8
     :cond_2
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 10
+    .line 9
     :cond_3
-    iput-object p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
-    .line 11
+    .line 10
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     if-eqz v1, :cond_4
 
-    .line 12
+    .line 11
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -230,19 +223,19 @@
 
     if-eqz p1, :cond_4
 
-    .line 13
+    .line 12
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->isStateful()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 14
+    .line 13
     invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
     move-result-object v0
 
-    .line 15
+    .line 14
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     :cond_4
@@ -280,7 +273,7 @@
     sub-int/2addr p1, v0
 
     .line 4
-    iget v2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:F
+    iget v2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:F
 
     const/4 v3, 0x0
 
@@ -293,7 +286,7 @@
 
     if-gez v4, :cond_0
 
-    const/4 v2, 0x0
+    move v2, v3
 
     goto :goto_0
 
@@ -304,12 +297,12 @@
 
     if-lez v3, :cond_1
 
-    const/high16 v2, 0x3f800000    # 1.0f
+    move v2, v5
 
     .line 6
     :cond_1
     :goto_0
-    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 7
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -320,7 +313,7 @@
 
     if-ne v3, v4, :cond_2
 
-    const/4 v3, 0x1
+    move v3, v4
 
     goto :goto_1
 
@@ -337,7 +330,7 @@
     :cond_3
     int-to-float p1, p1
 
-    mul-float v2, v2, p1
+    mul-float/2addr v2, p1
 
     const/high16 p1, 0x3f000000    # 0.5f
 
@@ -356,7 +349,7 @@
 
     const-string v1, "indicator.bounds"
 
-    invoke-static {p3, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     iget v1, p3, Landroid/graphics/Rect;->top:I
@@ -413,7 +406,7 @@
     sub-int/2addr p1, v1
 
     .line 4
-    iget v2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:F
+    iget v2, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:F
 
     const/4 v3, 0x0
 
@@ -426,7 +419,7 @@
 
     if-gez v4, :cond_0
 
-    const/4 v2, 0x0
+    move v2, v3
 
     goto :goto_0
 
@@ -437,13 +430,13 @@
 
     if-lez v3, :cond_1
 
-    const/high16 v2, 0x3f800000    # 1.0f
+    move v2, v5
 
     :cond_1
     :goto_0
     int-to-float p1, p1
 
-    mul-float v2, v2, p1
+    mul-float/2addr v2, p1
 
     const/high16 p1, 0x3f000000    # 0.5f
 
@@ -462,7 +455,7 @@
 
     const-string v0, "indicator.bounds"
 
-    invoke-static {p3, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     iget v0, p3, Landroid/graphics/Rect;->left:I
@@ -494,7 +487,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:I
+    iget v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->f:I
 
     const/4 v1, 0x0
 
@@ -516,7 +509,7 @@
     sub-int/2addr p1, v0
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -531,7 +524,7 @@
     div-int/lit8 p1, p1, 0x2
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_3
 
@@ -554,7 +547,7 @@
     sub-int/2addr p2, v0
 
     .line 7
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_2
 
@@ -569,7 +562,7 @@
     div-int/lit8 p2, p2, 0x2
 
     .line 9
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_3
 
@@ -587,7 +580,7 @@
     invoke-super {p0}, Landroid/view/View;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -618,7 +611,7 @@
 .method public final getProgress()F
     .locals 1
 
-    iget v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:F
+    iget v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:F
 
     return v0
 .end method
@@ -630,7 +623,7 @@
     invoke-super {p0}, Landroid/view/View;->jumpDrawablesToCurrentState()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -648,13 +641,13 @@
     :try_start_0
     const-string v0, "canvas"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -707,7 +700,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -720,7 +713,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 2
     :goto_0
@@ -784,7 +777,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->onRtlPropertiesChanged(I)V
 
     .line 2
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -795,7 +788,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const/4 p1, 0x1
+    move p1, v0
 
     goto :goto_0
 
@@ -804,20 +797,20 @@
 
     .line 4
     :goto_0
-    iget-boolean v1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->j:Z
+    iget-boolean v1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:Z
 
     if-eq v1, p1, :cond_2
 
     .line 5
-    iput-boolean p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->j:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:Z
 
     .line 6
-    iget-object p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_2
 
     .line 7
-    iget v1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:I
+    iget v1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->f:I
 
     const/high16 v2, -0x80000000
 
@@ -864,65 +857,65 @@
     .locals 5
 
     .line 1
-    iput p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->i:F
+    iput p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:F
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_3
 
-    const/16 v1, 0xff
+    const/4 v1, 0x0
 
-    const/high16 v2, 0x3f800000    # 1.0f
+    cmpl-float v2, p1, v1
 
-    const/4 v3, 0x0
+    const/16 v3, 0xff
 
-    cmpl-float v4, p1, v3
+    const/high16 v4, 0x3f800000    # 1.0f
 
-    if-ltz v4, :cond_0
+    if-ltz v2, :cond_0
 
-    cmpg-float v4, p1, v2
+    cmpg-float v2, p1, v4
 
-    if-gtz v4, :cond_0
+    if-gtz v2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/high16 v4, -0x41000000    # -0.5f
+    const/high16 v2, -0x41000000    # -0.5f
 
-    cmpl-float v4, p1, v4
+    cmpl-float v2, p1, v2
 
-    if-ltz v4, :cond_1
+    if-ltz v2, :cond_1
 
-    cmpg-float v3, p1, v3
+    cmpg-float v1, p1, v1
 
-    if-gtz v3, :cond_1
+    if-gtz v1, :cond_1
 
-    const/4 v3, -0x2
+    const/4 v1, -0x2
 
-    int-to-float v3, v3
+    int-to-float v1, v1
 
-    mul-float p1, p1, v3
+    mul-float/2addr p1, v1
 
-    sub-float/2addr v2, p1
+    sub-float/2addr v4, p1
 
-    int-to-float p1, v1
+    int-to-float p1, v3
 
-    mul-float v2, v2, p1
+    mul-float/2addr v4, p1
 
-    float-to-int v1, v2
+    float-to-int v3, v4
 
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
     .line 3
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+    invoke-virtual {v0, v3}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 4
-    iget p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:I
+    iget p1, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->f:I
 
     const/4 v1, 0x1
 
@@ -960,9 +953,9 @@
 
     const-string v0, "who"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/FlowPhaseIndicator;->g:Landroid/graphics/drawable/Drawable;
 
     if-eq p1, v0, :cond_1
 

@@ -1,112 +1,57 @@
 .class public final Ltd/o;
-.super Lse/i;
-.source "RegisterEnterPinPageFragment.kt"
+.super Lif/i;
+.source "AssetCache.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Ltd/q;",
-        "Lvc/a0$a;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Ltd/o;
+# instance fields
+.field public final synthetic f:Lhf/l;
+
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lhf/l;Ljava/lang/String;)V
+    .locals 0
 
-    new-instance v0, Ltd/o;
+    iput-object p1, p0, Ltd/o;->f:Lhf/l;
 
-    invoke-direct {v0}, Ltd/o;-><init>()V
+    iput-object p2, p0, Ltd/o;->g:Ljava/lang/String;
 
-    sput-object v0, Ltd/o;->g:Ltd/o;
+    const/4 p1, 0x0
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    move-object v1, p1
+    iget-object v0, p0, Ltd/o;->f:Lhf/l;
 
-    check-cast v1, Ltd/q;
+    iget-object v1, p0, Ltd/o;->g:Ljava/lang/String;
 
-    check-cast p2, Lvc/a0$a;
-
-    const-string p1, "$receiver"
+    invoke-interface {v0, v1}, Lhf/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {v1, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object v0, Lye/m;->a:Lye/m;
 
-    const-string p1, "data"
-
-    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3
-    iget-object v3, p2, Lvc/a0$a;->c:Ljava/lang/String;
-
-    .line 4
-    iget-object v4, p2, Lvc/a0;->a:Ljava/lang/String;
-
-    .line 5
-    sget p1, Ltd/q;->d0:I
-
-    .line 6
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Ltd/s;->U0()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v1}, Ltd/s;->V0()Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x1
-
-    invoke-virtual/range {v2 .. v7}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
-
-    move-result-object v0
-
-    sget-object v2, Ltd/m;->g:Ltd/m;
-
-    .line 7
-    sget-object v3, Ltd/n;->g:Ltd/n;
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x8
-
-    .line 8
-    invoke-static/range {v0 .. v5}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
-
-    .line 9
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return-object v0
 .end method

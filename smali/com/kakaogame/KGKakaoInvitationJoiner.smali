@@ -66,7 +66,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_1
@@ -432,7 +432,7 @@
 
     .line 25
     :goto_2
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -449,7 +449,7 @@
     const/4 v1, 0x0
 
     .line 27
-    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -461,13 +461,7 @@
     invoke-static {v2, v1, v3, v4}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 29
-    goto :goto_5
-
-    :goto_4
     throw p0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method public static loadInvitationJoiners(ILcom/kakaogame/KGResultCallback;)V

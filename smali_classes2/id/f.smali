@@ -1,68 +1,88 @@
 .class public final Lid/f;
-.super Ljava/lang/Object;
-.source "DonationReceivedDialog.kt"
+.super Lif/i;
+.source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lhf/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/a<",
+        "Lzd/y1;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic g:Lid/e$f;
+.field public final synthetic f:Ljava/util/List;
+
+.field public final synthetic g:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Lid/e$f;)V
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lid/f;->g:Lid/e$f;
+    iput-object p1, p0, Lid/f;->f:Ljava/util/List;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lid/f;->g:Ljava/util/List;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [F
+.method public final invoke()Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    fill-array-data v0, :array_0
+    new-instance v0, Lzd/y1;
 
-    invoke-static {v0}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
+    iget-object v1, p0, Lid/f;->f:Ljava/util/List;
 
-    move-result-object v0
-
-    const-wide/16 v1, 0x12c
+    iget-object v2, p0, Lid/f;->g:Ljava/util/List;
 
     .line 2
-    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+    new-instance v3, Lzd/x1;
+
+    if-eqz v1, :cond_0
+
+    move-object v4, v1
+
+    goto :goto_0
 
     .line 3
-    sget-object v1, Ltc/a;->d:Landroid/view/animation/Interpolator;
+    :cond_0
+    sget-object v4, Lze/l;->f:Lze/l;
+
+    :goto_0
+    if-eqz v2, :cond_1
+
+    move-object v5, v2
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v5, Lze/l;->f:Lze/l;
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    :goto_1
+    invoke-direct {v3, v4, v5}, Lzd/x1;-><init>(Ljava/util/List;Ljava/util/List;)V
 
     .line 5
-    new-instance v1, Lid/f$a;
+    invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
 
-    invoke-direct {v1, p0}, Lid/f$a;-><init>(Lid/f;)V
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+    invoke-direct {v0, v1, v2, v3}, Lzd/y1;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
 
-    .line 6
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
-
-    return-void
-
-    :array_0
-    .array-data 4
-        0x0
-        0x3ecccccd
-    .end array-data
+    return-object v0
 .end method

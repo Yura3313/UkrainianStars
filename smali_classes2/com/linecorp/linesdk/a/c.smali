@@ -12,7 +12,7 @@
 
 
 # static fields
-.field private static final a:Lwb/a;
+.field private static final a:Lub/b;
 
 .field private static volatile b:Z
 
@@ -22,11 +22,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lwb/a;
+    new-instance v0, Lub/b;
 
-    invoke-direct {v0}, Lwb/a;-><init>()V
+    invoke-direct {v0}, Lub/b;-><init>()V
 
-    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
+    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/b;
 
     const/4 v0, 0x0
 
@@ -36,11 +36,11 @@
     return-void
 .end method
 
-.method public static a()Lwb/a;
+.method public static a()Lub/b;
     .locals 1
 
     .line 6
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/b;
 
     return-object v0
 .end method
@@ -79,10 +79,10 @@
     return-void
 .end method
 
-.method public static synthetic b()Lwb/a;
+.method public static synthetic b()Lub/b;
     .locals 1
 
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/b;
 
     return-object v0
 .end method

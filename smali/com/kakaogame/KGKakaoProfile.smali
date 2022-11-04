@@ -464,7 +464,7 @@
 
     if-ne v1, v2, :cond_1
 
-    const/4 v0, 0x1
+    move v0, v2
 
     .line 46
     :cond_1
@@ -1087,7 +1087,7 @@
     invoke-direct {v4, v3}, Lcom/kakaogame/KGKakaoProfile;-><init>(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;)V
 
     .line 28
-    invoke-interface {p1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -1142,7 +1142,7 @@
 
     .line 33
     :goto_1
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1159,7 +1159,7 @@
     const/4 p1, 0x0
 
     .line 35
-    invoke-static {v0, p1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1171,13 +1171,7 @@
     invoke-static {v1, p1, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 37
-    goto :goto_4
-
-    :goto_3
     throw p0
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static loadInvitableFriendProfiles(IIILcom/kakaogame/KGResultCallback;)V
@@ -1453,7 +1447,7 @@
 
     .line 12
     :goto_1
-    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1470,7 +1464,7 @@
     const/4 p1, 0x0
 
     .line 14
-    invoke-static {v0, p1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p2
 

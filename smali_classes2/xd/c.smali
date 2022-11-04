@@ -1,194 +1,151 @@
 .class public final Lxd/c;
-.super Lwc/t1;
-.source "TutorialPageFragment.kt"
+.super Lif/i;
+.source "YoungPlayerLoginConfirmPageFragment.kt"
+
+# interfaces
+.implements Lhf/p;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lxd/c$a;
+        "Lif/i;",
+        "Lhf/p<",
+        "Lxd/e;",
+        "Ltc/c0;",
+        "Lye/m;",
+        ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final d0:Lxd/c$a;
-
-
-# instance fields
-.field public c0:Ljava/util/HashMap;
+.field public static final f:Lxd/c;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lxd/c$a;
+    new-instance v0, Lxd/c;
 
-    invoke-direct {v0}, Lxd/c$a;-><init>()V
+    invoke-direct {v0}, Lxd/c;-><init>()V
 
-    sput-object v0, Lxd/c;->d0:Lxd/c$a;
+    sput-object v0, Lxd/c;->f:Lxd/c;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Lwc/t1;-><init>()V
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final N0()V
-    .locals 1
-
-    iget-object v0, p0, Lxd/c;->c0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    const-string p3, "inflater"
-
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_image_page:I
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final a0()V
-    .locals 1
-
-    invoke-super {p0}, Lwc/t1;->a0()V
-
-    iget-object v0, p0, Lxd/c;->c0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 2
-
-    const-string p2, "view"
-
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    sget p1, Lcom/supercell/id/R$id;->image:I
+    move-object v1, p1
+
+    check-cast v1, Lxd/e;
+
+    check-cast p2, Ltc/c0;
+
+    const-string p1, "$receiver"
 
     .line 2
-    iget-object p2, p0, Lxd/c;->c0:Ljava/util/HashMap;
+    invoke-static {v1, p1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-nez p2, :cond_0
+    const-string p1, "data"
 
-    new-instance p2, Ljava/util/HashMap;
+    invoke-static {p2, p1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
+    .line 3
+    instance-of p1, p2, Ltc/c0$c;
 
-    iput-object p2, p0, Lxd/c;->c0:Ljava/util/HashMap;
+    if-eqz p1, :cond_0
 
-    :cond_0
-    iget-object p2, p0, Lxd/c;->c0:Ljava/util/HashMap;
+    .line 4
+    iget-object p1, p2, Ltc/c0;->a:Ljava/lang/String;
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 5
+    sget p2, Lxd/e;->c0:I
+
+    .line 6
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lxd/o;->U0()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1}, Lxd/o;->X0()Z
 
-    move-result-object p2
+    move-result v1
 
-    check-cast p2, Landroid/view/View;
+    invoke-virtual {p2, v0, p1, v1}, Lcom/supercell/id/SupercellId;->loadAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    const/4 v0, 0x0
-
-    if-nez p2, :cond_2
-
-    .line 3
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
-
-    if-nez p2, :cond_1
-
-    move-object p2, v0
+    .line 7
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->dismiss()V
 
     goto :goto_0
 
-    .line 4
-    :cond_1
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    iget-object v1, p0, Lxd/c;->c0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    :cond_2
-    :goto_0
-    check-cast p2, Landroid/widget/ImageView;
-
-    if-eqz p2, :cond_5
-
-    .line 6
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
-
-    if-eqz p1, :cond_4
-
-    const-string v1, "imageKey"
-
-    .line 7
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_3
-
-    const/4 v0, 0x1
-
     .line 8
-    invoke-static {p2, p1, v0}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    :cond_0
+    instance-of p1, p2, Ltc/c0$a;
 
-    goto :goto_1
+    if-eqz p1, :cond_1
+
+    move-object p1, p2
+
+    check-cast p1, Ltc/c0$a;
 
     .line 9
-    :cond_3
-    invoke-static {}, Lt3/h;->j()V
+    iget-object p1, p1, Ltc/c0$a;->c:Ljava/lang/String;
 
-    throw v0
+    .line 10
+    iget-object p2, p2, Ltc/c0;->a:Ljava/lang/String;
 
-    :cond_4
-    invoke-static {}, Lt3/h;->j()V
+    .line 11
+    sget v0, Lxd/e;->c0:I
 
-    throw v0
+    .line 12
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    :cond_5
-    :goto_1
-    return-void
+    invoke-virtual {v1}, Lxd/o;->U0()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1}, Lxd/o;->X0()Z
+
+    move-result v3
+
+    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lpf/g0;
+
+    move-result-object v0
+
+    sget-object v2, Lxd/a;->f:Lxd/a;
+
+    .line 13
+    sget-object v3, Lxd/b;->f:Lxd/b;
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    .line 14
+    invoke-static/range {v0 .. v5}, Lzd/o1;->j(Lpf/g0;Ljava/lang/Object;Lhf/p;Lhf/p;Lhf/l;I)Lpf/g0;
+
+    .line 15
+    :cond_1
+    :goto_0
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

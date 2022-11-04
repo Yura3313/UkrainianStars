@@ -7,29 +7,28 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroidx/media/MediaBrowserServiceCompat$a;,
-        Landroidx/media/MediaBrowserServiceCompat$k;,
         Landroidx/media/MediaBrowserServiceCompat$j;,
         Landroidx/media/MediaBrowserServiceCompat$i;,
+        Landroidx/media/MediaBrowserServiceCompat$h;,
         Landroidx/media/MediaBrowserServiceCompat$b;,
-        Landroidx/media/MediaBrowserServiceCompat$l;,
+        Landroidx/media/MediaBrowserServiceCompat$k;,
         Landroidx/media/MediaBrowserServiceCompat$g;,
         Landroidx/media/MediaBrowserServiceCompat$f;,
         Landroidx/media/MediaBrowserServiceCompat$e;,
         Landroidx/media/MediaBrowserServiceCompat$d;,
-        Landroidx/media/MediaBrowserServiceCompat$h;,
         Landroidx/media/MediaBrowserServiceCompat$c;
     }
 .end annotation
 
 
 # static fields
-.field public static final j:Z
+.field public static final i:Z
 
 
 # instance fields
-.field public g:Landroidx/media/MediaBrowserServiceCompat$c;
+.field public f:Landroidx/media/MediaBrowserServiceCompat$e;
 
-.field public final h:Lm/a;
+.field public final g:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/a<",
@@ -40,7 +39,7 @@
     .end annotation
 .end field
 
-.field public final i:Landroidx/media/MediaBrowserServiceCompat$l;
+.field public final h:Landroidx/media/MediaBrowserServiceCompat$k;
 
 
 # direct methods
@@ -55,7 +54,7 @@
 
     move-result v0
 
-    sput-boolean v0, Landroidx/media/MediaBrowserServiceCompat;->j:Z
+    sput-boolean v0, Landroidx/media/MediaBrowserServiceCompat;->i:Z
 
     return-void
 .end method
@@ -71,14 +70,14 @@
 
     invoke-direct {v0}, Lm/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->h:Lm/a;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Lm/a;
 
     .line 3
-    new-instance v0, Landroidx/media/MediaBrowserServiceCompat$l;
+    new-instance v0, Landroidx/media/MediaBrowserServiceCompat$k;
 
-    invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$l;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
+    invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$k;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$k;
 
     return-void
 .end method
@@ -108,9 +107,14 @@
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
+    .line 1
+    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->f:Landroidx/media/MediaBrowserServiceCompat$e;
 
-    invoke-interface {v0, p1}, Landroidx/media/MediaBrowserServiceCompat$c;->d(Landroid/content/Intent;)Landroid/os/IBinder;
+    .line 2
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat$d;->b:Landroidx/media/j$a;
+
+    .line 3
+    invoke-virtual {v0, p1}, Landroid/service/media/MediaBrowserService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -135,7 +139,7 @@
 
     invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$g;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->f:Landroidx/media/MediaBrowserServiceCompat$e;
 
     goto :goto_0
 
@@ -149,51 +153,23 @@
 
     invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$f;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->f:Landroidx/media/MediaBrowserServiceCompat$e;
 
     goto :goto_0
 
-    :cond_1
-    const/16 v1, 0x17
-
-    if-lt v0, v1, :cond_2
-
     .line 5
+    :cond_1
     new-instance v0, Landroidx/media/MediaBrowserServiceCompat$e;
 
     invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$e;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
-
-    goto :goto_0
-
-    :cond_2
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_3
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->f:Landroidx/media/MediaBrowserServiceCompat$e;
 
     .line 6
-    new-instance v0, Landroidx/media/MediaBrowserServiceCompat$d;
-
-    invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$d;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
-
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
-
-    goto :goto_0
-
-    .line 7
-    :cond_3
-    new-instance v0, Landroidx/media/MediaBrowserServiceCompat$h;
-
-    invoke-direct {v0, p0}, Landroidx/media/MediaBrowserServiceCompat$h;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
-
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
-
-    .line 8
     :goto_0
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->g:Landroidx/media/MediaBrowserServiceCompat$c;
+    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->f:Landroidx/media/MediaBrowserServiceCompat$e;
 
-    invoke-interface {v0}, Landroidx/media/MediaBrowserServiceCompat$c;->a()V
+    invoke-interface {v0}, Landroidx/media/MediaBrowserServiceCompat$c;->c()V
 
     return-void
 .end method

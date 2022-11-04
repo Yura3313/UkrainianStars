@@ -1,215 +1,206 @@
 .class public final Lw5/d;
 .super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@16.0.2"
 
 
-# instance fields
-.field public final a:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
+# static fields
+.field public static e:Lw5/d;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "MessengerIpcClient.class"
     .end annotation
 .end field
 
-.field public final b:I
 
-.field public final c:I
+# instance fields
+.field public final a:Landroid/content/Context;
+
+.field public final b:Ljava/util/concurrent/ScheduledExecutorService;
+
+.field public c:Lw5/e;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+.field public d:I
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;II)V"
-        }
-    .end annotation
+.method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lw5/d;->a:Ljava/lang/Class;
+    new-instance v0, Lw5/e;
 
-    const/4 p1, 0x1
+    invoke-direct {v0, p0}, Lw5/e;-><init>(Lw5/d;)V
+
+    iput-object v0, p0, Lw5/d;->c:Lw5/e;
+
+    const/4 v0, 0x1
 
     .line 3
-    iput p1, p0, Lw5/d;->b:I
-
-    const/4 p1, 0x0
+    iput v0, p0, Lw5/d;->d:I
 
     .line 4
-    iput p1, p0, Lw5/d;->c:I
+    iput-object p2, p0, Lw5/d;->b:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 5
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lw5/d;->a:Landroid/content/Context;
 
     return-void
 .end method
 
+.method public static declared-synchronized b(Landroid/content/Context;)Lw5/d;
+    .locals 4
+
+    const-class v0, Lw5/d;
+
+    monitor-enter v0
+
+    .line 1
+    :try_start_0
+    sget-object v1, Lw5/d;->e:Lw5/d;
+
+    if-nez v1, :cond_0
+
+    .line 2
+    new-instance v1, Lw5/d;
+
+    .line 3
+    new-instance v2, Lk2/a;
+
+    const-string v3, "MessengerIpcClient"
+
+    invoke-direct {v2, v3}, Lk2/a;-><init>(Ljava/lang/String;)V
+
+    const/4 v3, 0x1
+
+    .line 4
+    invoke-static {v3, v2}, Ljava/util/concurrent/Executors;->newScheduledThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;
+
+    move-result-object v2
+
+    .line 5
+    invoke-static {v2}, Ljava/util/concurrent/Executors;->unconfigurableScheduledExecutorService(Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledExecutorService;
+
+    move-result-object v2
+
+    .line 6
+    invoke-direct {v1, p0, v2}, Lw5/d;-><init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    sput-object v1, Lw5/d;->e:Lw5/d;
+
+    .line 7
+    :cond_0
+    sget-object p0, Lw5/d;->e:Lw5/d;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
 
 # virtual methods
-.method public final a()Ljava/lang/Class;
-    .locals 1
+.method public final declared-synchronized a(Lw5/i;)La4/h;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lw5/i<",
+            "TT;>;)",
+            "La4/h<",
+            "TT;>;"
         }
     .end annotation
 
-    iget-object v0, p0, Lw5/d;->a:Ljava/lang/Class;
+    monitor-enter p0
 
-    return-object v0
-.end method
+    :try_start_0
+    const-string v0, "MessengerIpcClient"
 
-.method public final b()Z
-    .locals 2
-
-    iget v0, p0, Lw5/d;->b:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    return v1
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    const/4 v1, 0x3
 
     .line 1
-    instance-of v0, p1, Lw5/d;
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
-    const/4 v1, 0x0
+    move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    check-cast p1, Lw5/d;
-
-    .line 3
-    iget-object v0, p0, Lw5/d;->a:Ljava/lang/Class;
-
-    iget-object v2, p1, Lw5/d;->a:Ljava/lang/Class;
-
-    if-ne v0, v2, :cond_0
-
-    iget v0, p0, Lw5/d;->b:I
-
-    iget v2, p1, Lw5/d;->b:I
-
-    if-ne v0, v2, :cond_0
-
-    iget v0, p0, Lw5/d;->c:I
-
-    iget p1, p1, Lw5/d;->c:I
-
-    if-ne v0, p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lw5/d;->a:Ljava/lang/Class;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    const v1, 0xf4243
-
-    xor-int/2addr v0, v1
-
-    mul-int v0, v0, v1
-
-    .line 2
-    iget v2, p0, Lw5/d;->b:I
-
-    xor-int/2addr v0, v2
-
-    mul-int v0, v0, v1
-
-    .line 3
-    iget v1, p0, Lw5/d;->c:I
-
-    xor-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Dependency{anInterface="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lw5/d;->a:Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", required="
-
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lw5/d;->b:I
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    if-ne v1, v3, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 4
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", direct="
-
-    .line 5
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lw5/d;->c:I
-
-    if-nez v1, :cond_1
-
-    const/4 v2, 0x1
-
-    :cond_1
-    const-string v1, "}"
-
-    .line 6
-    invoke-static {v0, v2, v1}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x9
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lw5/d;->c:Lw5/e;
+
+    invoke-virtual {v0, p1}, Lw5/e;->b(Lw5/i;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 4
+    new-instance v0, Lw5/e;
+
+    invoke-direct {v0, p0}, Lw5/e;-><init>(Lw5/d;)V
+
+    iput-object v0, p0, Lw5/d;->c:Lw5/e;
+
+    .line 5
+    invoke-virtual {v0, p1}, Lw5/e;->b(Lw5/i;)Z
+
+    .line 6
+    :cond_1
+    iget-object p1, p1, Lw5/i;->b:La4/i;
+
+    .line 7
+    iget-object p1, p1, La4/i;->a:La4/a0;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 8
+    monitor-exit p0
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method

@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final i:Ljava/lang/Long;
+.field public final h:Ljava/lang/Long;
+
+.field public final i:Z
 
 .field public final j:Z
 
-.field public final k:Z
-
-.field public final l:Ljava/util/List;
+.field public final k:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -38,16 +38,16 @@
     .end annotation
 .end field
 
-.field public final m:Ljava/lang/String;
+.field public final l:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr1/d;
+    new-instance v0, Lp1/d;
 
-    invoke-direct {v0}, Lr1/d;-><init>()V
+    invoke-direct {v0}, Lp1/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/TokenData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -74,27 +74,27 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/TokenData;->g:I
+    iput p1, p0, Lcom/google/android/gms/auth/TokenData;->f:I
 
     .line 3
-    invoke-static {p2}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lb2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/TokenData;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/TokenData;->i:Ljava/lang/Long;
+    iput-object p3, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/Long;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/auth/TokenData;->i:Z
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/android/gms/auth/TokenData;->k:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/util/List;
+    iput-object p6, p0, Lcom/google/android/gms/auth/TokenData;->k:Ljava/util/List;
 
     .line 8
-    iput-object p7, p0, Lcom/google/android/gms/auth/TokenData;->m:Ljava/lang/String;
+    iput-object p7, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/lang/String;
 
     return-void
 .end method
@@ -118,9 +118,9 @@
     check-cast p1, Lcom/google/android/gms/auth/TokenData;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->g:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->g:Ljava/lang/String;
 
     invoke-static {v0, v2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -128,16 +128,22 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->i:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/Long;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->i:Ljava/lang/Long;
+    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/Long;
 
     .line 4
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->i:Z
+
+    iget-boolean v2, p1, Lcom/google/android/gms/auth/TokenData;->i:Z
+
+    if-ne v0, v2, :cond_1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
 
@@ -145,29 +151,23 @@
 
     if-ne v0, v2, :cond_1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->k:Z
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->k:Ljava/util/List;
 
-    iget-boolean v2, p1, Lcom/google/android/gms/auth/TokenData;->k:Z
-
-    if-ne v0, v2, :cond_1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/util/List;
-
-    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->l:Ljava/util/List;
+    iget-object v2, p1, Lcom/google/android/gms/auth/TokenData;->k:Ljava/util/List;
 
     .line 5
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->m:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/TokenData;->m:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/TokenData;->l:Ljava/lang/String;
 
     .line 6
-    invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -189,19 +189,19 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->i:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/Long;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/TokenData;->i:Z
 
     .line 2
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -212,7 +212,7 @@
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/TokenData;->k:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -222,13 +222,13 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->k:Ljava/util/List;
 
     const/4 v2, 0x4
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/lang/String;
 
     const/4 v2, 0x5
 
@@ -248,79 +248,79 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/auth/TokenData;->g:I
+    iget v0, p0, Lcom/google/android/gms/auth/TokenData;->f:I
 
     const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 4
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->g:Ljava/lang/String;
 
     const/4 v1, 0x2
 
     const/4 v3, 0x0
 
     .line 6
-    invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->i:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->h:Ljava/lang/Long;
 
     const/4 v1, 0x3
 
     .line 8
-    invoke-static {p1, v1, v0}, Le2/b;->k(Landroid/os/Parcel;ILjava/lang/Long;)V
+    invoke-static {p1, v1, v0}, Lc2/c;->f(Landroid/os/Parcel;ILjava/lang/Long;)V
 
     .line 9
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->i:Z
 
     .line 10
-    invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 11
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->k:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/TokenData;->j:Z
 
     const/4 v1, 0x5
 
     .line 13
-    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 14
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->k:Ljava/util/List;
 
     const/4 v1, 0x6
 
     .line 16
-    invoke-static {p1, v1, v0}, Le2/b;->o(Landroid/os/Parcel;ILjava/util/List;)V
+    invoke-static {p1, v1, v0}, Lc2/c;->j(Landroid/os/Parcel;ILjava/util/List;)V
 
     .line 17
-    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->m:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/TokenData;->l:Ljava/lang/String;
 
     const/4 v1, 0x7
 
     .line 18
-    invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 19
-    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

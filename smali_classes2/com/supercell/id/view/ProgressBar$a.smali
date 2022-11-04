@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
-.field public final synthetic h:I
+.field public final synthetic g:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar$a;->g:Landroid/view/View;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar$a;->f:Landroid/view/View;
 
-    iput p2, p0, Lcom/supercell/id/view/ProgressBar$a;->h:I
+    iput p2, p0, Lcom/supercell/id/view/ProgressBar$a;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,22 +42,22 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar$a;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar$a;->f:Landroid/view/View;
 
     const-string v1, "it"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/supercell/id/view/ProgressBar$a;->g:Landroid/view/View;
+    iget-object v2, p0, Lcom/supercell/id/view/ProgressBar$a;->f:Landroid/view/View;
 
-    invoke-static {v2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     .line 2
-    iget v2, p0, Lcom/supercell/id/view/ProgressBar$a;->h:I
+    iget v2, p0, Lcom/supercell/id/view/ProgressBar$a;->g:I
 
     iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
@@ -65,7 +65,7 @@
 
     const v3, 0x3e9e412a
 
-    mul-float v2, v2, v3
+    mul-float/2addr v2, v3
 
     float-to-int v2, v2
 

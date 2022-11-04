@@ -33,12 +33,12 @@
     int-to-float v0, v0
 
     .line 1
-    sget v1, La5/e0;->g:F
+    sget v1, Lb2/t;->g:F
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
+    invoke-static {v0}, Le0/d;->e(F)I
 
     move-result v0
 
@@ -51,12 +51,12 @@
     int-to-float p3, p3
 
     .line 3
-    sget v1, La5/e0;->g:F
+    sget v1, Lb2/t;->g:F
 
-    mul-float p3, p3, v1
+    mul-float/2addr p3, v1
 
     .line 4
-    invoke-static {p3}, Lcom/android/billingclient/api/y;->i(F)I
+    invoke-static {p3}, Le0/d;->e(F)I
 
     move-result p3
 
@@ -73,7 +73,7 @@
     div-int/lit8 p1, p1, 0x3
 
     .line 5
-    invoke-static {p3, v1}, Lt3/h;->d(II)I
+    invoke-static {p3, v1}, Lif/h;->f(II)I
 
     move-result v0
 
@@ -84,7 +84,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {p3, p1}, Lt3/h;->d(II)I
+    invoke-static {p3, p1}, Lif/h;->f(II)I
 
     move-result v0
 

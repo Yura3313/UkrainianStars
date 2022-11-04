@@ -2,39 +2,30 @@
 .super Ljava/lang/Object;
 .source "R8$$SyntheticClass"
 
-# interfaces
-.implements Lre/p;
-
-
-# instance fields
-.field public final synthetic g:Lcom/kakaogame/KGResultCallback;
-
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/kakaogame/KGResultCallback;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/kakaogame/c;->g:Lcom/kakaogame/KGResultCallback;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/kakaogame/c;->g:Lcom/kakaogame/KGResultCallback;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    check-cast p1, Lcom/kakao/sdk/link/model/LinkResult;
+    .line 2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    check-cast p2, Ljava/lang/Throwable;
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lie/i;
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return-object p1
+    move-result-object p0
+
+    .line 6
+    invoke-static {p2, p0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
 .end method

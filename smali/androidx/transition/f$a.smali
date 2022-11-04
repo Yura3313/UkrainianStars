@@ -1,9 +1,9 @@
 .class public final Landroidx/transition/f$a;
-.super Ljava/lang/Object;
-.source "TransitionUtils.java"
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "TranslationAnimationCreator.java"
 
 # interfaces
-.implements Landroid/animation/TypeEvaluator;
+.implements Landroidx/transition/Transition$d;
 
 
 # annotations
@@ -16,114 +16,271 @@
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/animation/TypeEvaluator<",
-        "Landroid/graphics/Matrix;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final a:[F
+.field public final f:Landroid/view/View;
 
-.field public final b:[F
+.field public final g:Landroid/view/View;
 
-.field public final c:Landroid/graphics/Matrix;
+.field public final h:I
+
+.field public final i:I
+
+.field public j:[I
+
+.field public k:F
+
+.field public l:F
+
+.field public final m:F
+
+.field public final n:F
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Landroid/view/View;Landroid/view/View;IIFF)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/16 v0, 0x9
-
-    new-array v1, v0, [F
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     .line 2
-    iput-object v1, p0, Landroidx/transition/f$a;->a:[F
-
-    new-array v0, v0, [F
+    iput-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
 
     .line 3
-    iput-object v0, p0, Landroidx/transition/f$a;->b:[F
+    iput-object p2, p0, Landroidx/transition/f$a;->f:Landroid/view/View;
 
     .line 4
-    new-instance v0, Landroid/graphics/Matrix;
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+    move-result v0
 
-    iput-object v0, p0, Landroidx/transition/f$a;->c:Landroid/graphics/Matrix;
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
+    move-result v0
+
+    sub-int/2addr p3, v0
+
+    iput p3, p0, Landroidx/transition/f$a;->h:I
+
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
+
+    move-result p1
+
+    sub-int/2addr p4, p1
+
+    iput p4, p0, Landroidx/transition/f$a;->i:I
+
+    .line 6
+    iput p5, p0, Landroidx/transition/f$a;->m:F
+
+    .line 7
+    iput p6, p0, Landroidx/transition/f$a;->n:F
+
+    .line 8
+    sget p1, Landroidx/transition/R$id;->transition_position:I
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, [I
+
+    iput-object p3, p0, Landroidx/transition/f$a;->j:[I
+
+    if-eqz p3, :cond_0
+
+    const/4 p3, 0x0
+
+    .line 9
+    invoke-virtual {p2, p1, p3}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final b()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final c()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final e(Landroidx/transition/Transition;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v1, p0, Landroidx/transition/f$a;->m:F
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 2
+    iget-object v0, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v1, p0, Landroidx/transition/f$a;->n:F
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 3
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+
+    return-void
+.end method
+
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 3
 
     .line 1
-    check-cast p2, Landroid/graphics/Matrix;
+    iget-object p1, p0, Landroidx/transition/f$a;->j:[I
 
-    check-cast p3, Landroid/graphics/Matrix;
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x2
+
+    new-array p1, p1, [I
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/f$a;->a:[F
-
-    invoke-virtual {p2, v0}, Landroid/graphics/Matrix;->getValues([F)V
+    iput-object p1, p0, Landroidx/transition/f$a;->j:[I
 
     .line 3
-    iget-object p2, p0, Landroidx/transition/f$a;->b:[F
+    :cond_0
+    iget-object p1, p0, Landroidx/transition/f$a;->j:[I
 
-    invoke-virtual {p3, p2}, Landroid/graphics/Matrix;->getValues([F)V
+    const/4 v0, 0x0
 
-    const/4 p2, 0x0
+    iget v1, p0, Landroidx/transition/f$a;->h:I
 
-    :goto_0
-    const/16 p3, 0x9
+    int-to-float v1, v1
 
-    if-ge p2, p3, :cond_0
+    iget-object v2, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    invoke-virtual {v2}, Landroid/view/View;->getTranslationX()F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+
+    move-result v1
+
+    aput v1, p1, v0
 
     .line 4
-    iget-object p3, p0, Landroidx/transition/f$a;->b:[F
+    iget-object p1, p0, Landroidx/transition/f$a;->j:[I
 
-    aget v0, p3, p2
+    const/4 v0, 0x1
 
-    iget-object v1, p0, Landroidx/transition/f$a;->a:[F
+    iget v1, p0, Landroidx/transition/f$a;->i:I
 
-    aget v2, v1, p2
+    int-to-float v1, v1
 
-    sub-float/2addr v0, v2
+    iget-object v2, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    invoke-virtual {v2}, Landroid/view/View;->getTranslationY()F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+
+    move-result v1
+
+    aput v1, p1, v0
 
     .line 5
-    aget v1, v1, p2
+    iget-object p1, p0, Landroidx/transition/f$a;->f:Landroid/view/View;
 
-    mul-float v0, v0, p1
+    sget v0, Landroidx/transition/R$id;->transition_position:I
 
-    add-float/2addr v0, v1
+    iget-object v1, p0, Landroidx/transition/f$a;->j:[I
 
-    aput v0, p3, p2
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    add-int/lit8 p2, p2, 0x1
+    return-void
+.end method
 
-    goto :goto_0
+.method public final onAnimationPause(Landroid/animation/Animator;)V
+    .locals 1
 
-    .line 6
-    :cond_0
-    iget-object p1, p0, Landroidx/transition/f$a;->c:Landroid/graphics/Matrix;
+    .line 1
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
 
-    iget-object p2, p0, Landroidx/transition/f$a;->b:[F
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
-    invoke-virtual {p1, p2}, Landroid/graphics/Matrix;->setValues([F)V
+    move-result p1
 
-    .line 7
-    iget-object p1, p0, Landroidx/transition/f$a;->c:Landroid/graphics/Matrix;
+    iput p1, p0, Landroidx/transition/f$a;->k:F
 
-    return-object p1
+    .line 2
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+
+    move-result p1
+
+    iput p1, p0, Landroidx/transition/f$a;->l:F
+
+    .line 3
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v0, p0, Landroidx/transition/f$a;->m:F
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 4
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v0, p0, Landroidx/transition/f$a;->n:F
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
+
+    return-void
+.end method
+
+.method public final onAnimationResume(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v0, p0, Landroidx/transition/f$a;->k:F
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 2
+    iget-object p1, p0, Landroidx/transition/f$a;->g:Landroid/view/View;
+
+    iget v0, p0, Landroidx/transition/f$a;->l:F
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
+
+    return-void
 .end method

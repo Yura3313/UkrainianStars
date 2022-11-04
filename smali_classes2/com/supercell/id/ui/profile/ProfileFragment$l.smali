@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$l;
-.super Lse/i;
+.super Lif/i;
 .source "ProfileFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lbe/w;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Lae/a0;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,14 +50,14 @@
     .locals 5
 
     .line 1
-    check-cast p1, Lbe/w;
+    check-cast p1, Lae/a0;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lbe/w;->a()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {p1}, Lae/a0;->a()Lcom/supercell/id/model/IdProfile;
 
     move-result-object p1
 
@@ -74,18 +74,18 @@
     if-eqz p1, :cond_2
 
     .line 3
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->j()Z
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->i()Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
     .line 4
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->profile_content:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -95,11 +95,11 @@
 
     .line 5
     :cond_1
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->profile_progress_bar:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -113,11 +113,11 @@
 
     .line 6
     :cond_2
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->profile_content:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -127,11 +127,11 @@
 
     .line 7
     :cond_3
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->profile_progress_bar:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -144,11 +144,11 @@
     .line 8
     :cond_4
     :goto_1
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->online_status_indicator:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -159,12 +159,12 @@
     if-eqz p1, :cond_5
 
     .line 9
-    iget-boolean v4, p1, Lcom/supercell/id/model/IdProfile;->t:Z
+    iget-boolean v4, p1, Lcom/supercell/id/model/IdProfile;->s:Z
 
     goto :goto_2
 
     :cond_5
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_2
     xor-int/lit8 v4, v4, 0x1
@@ -174,11 +174,11 @@
 
     .line 11
     :cond_6
-    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v4, Lcom/supercell/id/R$id;->online_status_text:I
 
-    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -189,11 +189,11 @@
     if-eqz p1, :cond_7
 
     .line 12
-    iget-boolean v4, p1, Lcom/supercell/id/model/IdProfile;->t:Z
+    iget-boolean v4, p1, Lcom/supercell/id/model/IdProfile;->s:Z
 
     if-nez v4, :cond_7
 
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 13
     :cond_7
@@ -201,11 +201,11 @@
 
     .line 14
     :cond_8
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v2, Lcom/supercell/id/R$id;->profile_image:I
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -215,7 +215,7 @@
 
     if-eqz p1, :cond_9
 
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->d()Lcom/supercell/id/model/MyProfileImage;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->f()Lcom/supercell/id/model/MyProfileImage;
 
     move-result-object v0
 
@@ -224,11 +224,11 @@
 
     .line 15
     :cond_a
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->profile_name:I
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profile/ProfileFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -239,7 +239,7 @@
     if-eqz p1, :cond_b
 
     .line 16
-    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
 
     if-eqz p1, :cond_b
 
@@ -249,11 +249,11 @@
     :cond_b
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lae/u;->c()Ljava/lang/String;
+    invoke-virtual {p1}, Lzd/q;->d()Ljava/lang/String;
 
     move-result-object p1
 
@@ -262,12 +262,12 @@
 
     .line 18
     :cond_c
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
-    invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->h1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
+    invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->g1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 19
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

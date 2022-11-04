@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
 
 # direct methods
@@ -25,7 +25,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     move-result p1
 
     .line 3
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     .line 4
     invoke-virtual {p0, p2, p3}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
@@ -106,7 +106,7 @@
     if-eqz p1, :cond_3
 
     .line 5
-    invoke-static {p0}, Lb2/e;->a(Landroid/content/Context;)Lb2/e;
+    invoke-static {p0}, Lz1/e;->a(Landroid/content/Context;)Lz1/e;
 
     move-result-object p1
 
@@ -141,13 +141,13 @@
     move-result p3
 
     .line 9
-    invoke-virtual {p1, p2, p3}, Lb2/e;->f(Lcom/google/android/gms/common/ConnectionResult;I)V
+    invoke-virtual {p1, p2, p3}, Lz1/e;->e(Lcom/google/android/gms/common/ConnectionResult;I)V
 
     goto :goto_0
 
     .line 10
     :cond_1
-    iget-object p1, p1, Lb2/e;->t:Lp3/c;
+    iget-object p1, p1, Lz1/e;->s:Lo3/c;
 
     const/4 p2, 0x3
 
@@ -165,7 +165,7 @@
     if-ne p1, v1, :cond_3
 
     .line 11
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     .line 12
     invoke-virtual {p0, p2, p3}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
@@ -188,7 +188,7 @@
     const/4 p1, 0x0
 
     .line 1
-    iput p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     .line 2
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setResult(I)V
@@ -210,15 +210,15 @@
     const-string v0, "resolution"
 
     .line 2
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     .line 3
     :cond_0
-    iget p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iget p1, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     const/4 v0, 0x1
 
@@ -244,7 +244,7 @@
     const-string v1, "pending_intent"
 
     .line 6
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -253,7 +253,7 @@
     const-string v2, "error_code"
 
     .line 7
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -293,7 +293,7 @@
     invoke-virtual/range {v3 .. v9}, Landroid/app/Activity;->startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;III)V
 
     .line 11
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Landroid/content/IntentSender$SendIntentException; {:try_start_0 .. :try_end_0} :catch_0
@@ -307,19 +307,17 @@
     return-void
 
     :catch_1
-    nop
-
     const-string v2, "notify_manager"
 
     .line 13
-    invoke-virtual {p1, v2, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v2, v0}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
     .line 14
-    invoke-static {p0}, Lb2/e;->a(Landroid/content/Context;)Lb2/e;
+    invoke-static {p0}, Lz1/e;->a(Landroid/content/Context;)Lz1/e;
 
     move-result-object p1
 
@@ -346,7 +344,7 @@
     move-result v2
 
     .line 17
-    invoke-virtual {p1, v1, v2}, Lb2/e;->f(Lcom/google/android/gms/common/ConnectionResult;I)V
+    invoke-virtual {p1, v1, v2}, Lz1/e;->e(Lcom/google/android/gms/common/ConnectionResult;I)V
 
     goto :goto_0
 
@@ -367,7 +365,7 @@
     const-string v3, "."
 
     .line 19
-    invoke-static {v1, v2, p1, v3}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, p1, v3}, Lg1/j;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -394,31 +392,34 @@
     .line 22
     :cond_4
     :goto_0
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     .line 23
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     return-void
 
-    .line 24
     :cond_5
-    invoke-static {v2}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p1, "null reference"
 
+    .line 24
+    invoke-static {v2, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 25
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
 
-    .line 25
-    sget-object v1, Lz1/c;->c:Ljava/lang/Object;
-
-    sget-object v1, Lz1/c;->d:Lz1/c;
-
     .line 26
-    invoke-virtual {v1, p0, p1, p0}, Lz1/c;->f(Landroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;)Z
+    sget-object v1, Lx1/c;->c:Ljava/lang/Object;
+
+    sget-object v1, Lx1/c;->d:Lx1/c;
 
     .line 27
-    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    invoke-virtual {v1, p0, p1, p0}, Lx1/c;->f(Landroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;)Z
+
+    .line 28
+    iput v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     :cond_6
     return-void
@@ -432,11 +433,11 @@
     .end param
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->g:I
+    iget v0, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->f:I
 
     const-string v1, "resolution"
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 2
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V

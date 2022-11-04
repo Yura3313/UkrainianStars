@@ -14,14 +14,14 @@
         ">",
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lfd/b;",
+        "Led/b;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/ingame/friendrequests/a;
+.field public static final f:Lcom/supercell/id/ui/ingame/friendrequests/a;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/ingame/friendrequests/a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/a;->g:Lcom/supercell/id/ui/ingame/friendrequests/a;
+    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/a;->f:Lcom/supercell/id/ui/ingame/friendrequests/a;
 
     return-void
 .end method
@@ -51,24 +51,24 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lfd/b;
+    check-cast p1, Led/b;
 
-    check-cast p2, Lfd/b;
+    check-cast p2, Led/b;
 
     .line 2
-    iget-object p1, p1, Lfd/b;->b:Lvc/h;
+    iget-object p1, p1, Led/b;->b:Ltc/h;
 
     .line 3
-    iget-object p1, p1, Lvc/h;->b:Ljava/lang/String;
+    iget-object p1, p1, Ltc/h;->b:Ljava/lang/String;
 
     .line 4
-    iget-object p2, p2, Lfd/b;->b:Lvc/h;
+    iget-object p2, p2, Led/b;->b:Ltc/h;
 
     .line 5
-    iget-object p2, p2, Lvc/h;->b:Ljava/lang/String;
+    iget-object p2, p2, Ltc/h;->b:Ljava/lang/String;
 
     .line 6
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1, p2}, Lcom/google/android/play/core/assetpacks/z1;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 

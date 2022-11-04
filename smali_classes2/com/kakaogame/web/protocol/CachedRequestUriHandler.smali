@@ -79,7 +79,7 @@
 
 # virtual methods
 .method public handleInternal(Landroid/webkit/WebView;Landroid/net/Uri;)Ljava/lang/String;
-    .locals 7
+    .locals 6
 
     .line 1
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
@@ -139,9 +139,9 @@
 
     move-result-wide v2
 
-    cmp-long v6, v4, v2
+    cmp-long v2, v4, v2
 
-    if-gez v6, :cond_0
+    if-gez v2, :cond_0
 
     const/4 v2, 0x1
 

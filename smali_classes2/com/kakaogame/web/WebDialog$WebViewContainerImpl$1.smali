@@ -57,7 +57,7 @@
     const-string v2, "WebDialog"
 
     .line 2
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     return-void
 .end method

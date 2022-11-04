@@ -108,7 +108,7 @@
 
     iget-object v0, p0, Landroidx/fragment/app/j0$d;->d:Ljava/util/ArrayList;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
@@ -211,7 +211,7 @@
     .line 5
     iget-object v0, p0, Landroidx/fragment/app/j0$d;->d:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -241,7 +241,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sget-object v0, Landroidx/fragment/app/j0$d$c;->f:Landroidx/fragment/app/j0$d$c;
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
@@ -270,22 +270,22 @@
     .line 3
     iget-object p1, p0, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     iget-object p1, p0, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     iget-object p1, p0, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 4
     :cond_1
     iput-object v0, p0, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 5
-    sget-object p1, Landroidx/fragment/app/j0$d$b;->i:Landroidx/fragment/app/j0$d$b;
+    sget-object p1, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
 
     iput-object p1, p0, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
@@ -307,20 +307,20 @@
     .line 8
     iget-object p1, p0, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     iget-object p1, p0, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 9
     :cond_3
-    sget-object p1, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
+    sget-object p1, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
 
     iput-object p1, p0, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 10
-    sget-object p1, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
+    sget-object p1, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
 
     iput-object p1, p0, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
@@ -342,13 +342,13 @@
     .line 13
     iget-object p2, p0, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     iget-object p2, p0, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
-    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 14
     :cond_5
@@ -373,7 +373,7 @@
     const-string v1, "{"
 
     .line 1
-    invoke-static {v0, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

@@ -3,14 +3,13 @@
 .source "PresenceMessage.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$a;,
-        Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
+        Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$a;
     }
 .end annotation
 
@@ -20,33 +19,37 @@
         "Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;",
         "Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 
 
 # static fields
-.field public static final ALL_PRESENCES_FIELD_NUMBER:I = 0x1
-
 .field private static final DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-.field private static volatile PARSER:Lcom/google/protobuf/c1; = null
+.field private static volatile PARSER:Lcom/google/protobuf/e1; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public static final UPDATED_PRESENCES_FIELD_NUMBER:I = 0x2
+.field public static final PRESENCES_FIELD_NUMBER:I = 0x1
 
 
 # instance fields
-.field private kindCase_:I
-
-.field private kind_:Ljava/lang/Object;
+.field private presences_:Lcom/google/protobuf/b0$i;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/b0$i<",
+            "Lcom/supercell/websocket/proxy/protocol/presence/Presence;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -75,10 +78,12 @@
     .line 1
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
     return-void
 .end method
@@ -91,121 +96,142 @@
     return-object v0
 .end method
 
-.method public static synthetic access$100(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;)V
+.method public static synthetic access$100(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->clearKind()V
+    invoke-direct {p0, p1, p2}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->setPresences(ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
 
     return-void
 .end method
 
-.method public static synthetic access$200(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
+.method public static synthetic access$200(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Lcom/supercell/websocket/proxy/protocol/presence/Presence;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->setAllPresences(Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
+    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->addPresences(Lcom/supercell/websocket/proxy/protocol/presence/Presence;)V
 
     return-void
 .end method
 
-.method public static synthetic access$300(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
+.method public static synthetic access$300(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->mergeAllPresences(Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
+    invoke-direct {p0, p1, p2}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->addPresences(ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
 
     return-void
 .end method
 
-.method public static synthetic access$400(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;)V
+.method public static synthetic access$400(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Ljava/lang/Iterable;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->clearAllPresences()V
+    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->addAllPresences(Ljava/lang/Iterable;)V
 
     return-void
 .end method
 
-.method public static synthetic access$500(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
+.method public static synthetic access$500(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->setUpdatedPresences(Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->clearPresences()V
 
     return-void
 .end method
 
-.method public static synthetic access$600(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
+.method public static synthetic access$600(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->mergeUpdatedPresences(Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
+    invoke-direct {p0, p1}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->removePresences(I)V
 
     return-void
 .end method
 
-.method public static synthetic access$700(Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->clearUpdatedPresences()V
-
-    return-void
-.end method
-
-.method private clearAllPresences()V
-    .locals 2
+.method private addAllPresences(Ljava/lang/Iterable;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "+",
+            "Lcom/supercell/websocket/proxy/protocol/presence/Presence;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x0
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->ensurePresencesIsMutable()V
 
     .line 2
-    iput v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
-    const/4 v0, 0x0
+    invoke-static {p1, v0}, Lcom/google/protobuf/a;->addAll(Ljava/lang/Iterable;Ljava/util/List;)V
 
-    .line 3
-    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    :cond_0
     return-void
 .end method
 
-.method private clearKind()V
+.method private addPresences(ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
     .locals 1
 
-    const/4 v0, 0x0
+    .line 4
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1
-    iput v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    .line 5
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->ensurePresencesIsMutable()V
 
-    const/4 v0, 0x0
+    .line 6
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
-    .line 2
-    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method private clearUpdatedPresences()V
+.method private addPresences(Lcom/supercell/websocket/proxy/protocol/presence/Presence;)V
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->ensurePresencesIsMutable()V
+
+    .line 3
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method private clearPresences()V
+    .locals 1
+
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    return-void
+.end method
+
+.method private ensurePresencesIsMutable()V
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
     .line 2
-    iput v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    invoke-interface {v0}, Lcom/google/protobuf/b0$i;->T()Z
 
-    const/4 v0, 0x0
+    move-result v1
+
+    if-nez v1, :cond_0
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/google/protobuf/GeneratedMessageLite;->mutableCopy(Lcom/google/protobuf/b0$i;)Lcom/google/protobuf/b0$i;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
     :cond_0
     return-void
@@ -217,120 +243,6 @@
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
     return-object v0
-.end method
-
-.method private mergeAllPresences(Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    .line 3
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;->getDefaultInstance()Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
-
-    move-result-object v2
-
-    if-eq v0, v2, :cond_0
-
-    .line 4
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    check-cast v0, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
-
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;->newBuilder(Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)Lcom/supercell/websocket/proxy/protocol/presence/AllPresences$a;
-
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$a;->f(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
-
-    move-object p1, v0
-
-    check-cast p1, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences$a;
-
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->c()Lcom/google/protobuf/GeneratedMessageLite;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    .line 7
-    :goto_0
-    iput v1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    return-void
-.end method
-
-.method private mergeUpdatedPresences(Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    .line 3
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;->getDefaultInstance()Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-
-    move-result-object v2
-
-    if-eq v0, v2, :cond_0
-
-    .line 4
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    check-cast v0, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;->newBuilder(Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences$a;
-
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$a;->f(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
-
-    move-object p1, v0
-
-    check-cast p1, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences$a;
-
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->c()Lcom/google/protobuf/GeneratedMessageLite;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    .line 7
-    :goto_0
-    iput v1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    return-void
 .end method
 
 .method public static newBuilder()Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$a;
@@ -383,7 +295,7 @@
     return-object p0
 .end method
 
-.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -394,7 +306,7 @@
     .line 2
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -407,7 +319,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -423,18 +335,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 4
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -463,7 +375,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -474,7 +386,7 @@
     .line 10
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -503,7 +415,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -514,7 +426,7 @@
     .line 8
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -527,7 +439,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -543,18 +455,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 2
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -567,7 +479,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -583,18 +495,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom([BLcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
+.method public static parseFrom([BLcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 6
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -603,12 +515,12 @@
     return-object p0
 .end method
 
-.method public static parser()Lcom/google/protobuf/c1;
+.method public static parser()Lcom/google/protobuf/e1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;",
             ">;"
         }
@@ -616,43 +528,40 @@
 
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/e1;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private setAllPresences(Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;)V
-    .locals 0
+.method private removePresences(I)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->ensurePresencesIsMutable()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
-    const/4 p1, 0x1
-
-    .line 3
-    iput p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method private setUpdatedPresences(Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;)V
-    .locals 0
+.method private setPresences(ILcom/supercell/websocket/proxy/protocol/presence/Presence;)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    const/4 p1, 0x2
+    invoke-direct {p0}, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->ensurePresencesIsMutable()V
 
     .line 3
-    iput p1, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -693,7 +602,7 @@
 
     .line 4
     :pswitch_2
-    sget-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_1
 
@@ -704,7 +613,7 @@
 
     .line 6
     :try_start_0
-    sget-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_0
 
@@ -716,7 +625,7 @@
     invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
-    sput-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/c1;
+    sput-object p1, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->PARSER:Lcom/google/protobuf/e1;
 
     .line 9
     :cond_0
@@ -744,39 +653,27 @@
     return-object p1
 
     :pswitch_4
-    const/4 p1, 0x4
+    const/4 p1, 0x2
 
     new-array p1, p1, [Ljava/lang/Object;
 
     const/4 p3, 0x0
 
-    const-string v0, "kind_"
+    const-string v0, "presences_"
 
     aput-object v0, p1, p3
 
-    const-string p3, "kindCase_"
-
-    aput-object p3, p1, p2
-
-    const/4 p2, 0x2
-
     .line 11
-    const-class p3, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
+    const-class p3, Lcom/supercell/websocket/proxy/protocol/presence/Presence;
 
     aput-object p3, p1, p2
 
-    const/4 p2, 0x3
-
-    const-class p3, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-
-    aput-object p3, p1, p2
-
-    const-string p2, "\u0000\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001<\u0000\u0002<\u0000"
+    const-string p2, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b"
 
     .line 12
     sget-object p3, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;
 
-    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/q0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/s0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -813,132 +710,75 @@
     .end packed-switch
 .end method
 
-.method public getAllPresences()Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
-    .locals 2
+.method public getPresences(I)Lcom/supercell/websocket/proxy/protocol/presence/Presence;
+    .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
-    const/4 v1, 0x1
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-ne v0, v1, :cond_0
+    move-result-object p1
 
-    .line 2
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
+    check-cast p1, Lcom/supercell/websocket/proxy/protocol/presence/Presence;
 
-    check-cast v0, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;->getDefaultInstance()Lcom/supercell/websocket/proxy/protocol/presence/AllPresences;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method
 
-.method public getKindCase()Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
-    .locals 2
+.method public getPresencesCount()I
+    .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
 
-    if-eqz v0, :cond_2
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    const/4 v1, 0x1
+    move-result v0
 
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
-
-    goto :goto_0
-
-    .line 4
-    :cond_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public getUpdatedPresences()Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kind_:Ljava/lang/Object;
-
-    check-cast v0, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;->getDefaultInstance()Lcom/supercell/websocket/proxy/protocol/presence/UpdatedPresences;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public hasAllPresences()Z
-    .locals 2
-
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    return v1
-.end method
-
-.method public hasUpdatedPresences()Z
-    .locals 2
-
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->kindCase_:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
+.end method
+
+.method public getPresencesList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/supercell/websocket/proxy/protocol/presence/Presence;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    return-object v0
+.end method
+
+.method public getPresencesOrBuilder(I)Lee/b;
+    .locals 1
+
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lee/b;
+
+    return-object p1
+.end method
+
+.method public getPresencesOrBuilderList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lee/b;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage;->presences_:Lcom/google/protobuf/b0$i;
+
+    return-object v0
 .end method

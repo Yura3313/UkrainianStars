@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/appcontent/zzh;",
         ">;"
     }
@@ -20,7 +20,40 @@
 
 
 # virtual methods
-.method public abstract f1()Ljava/lang/String;
+.method public abstract A()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/android/gms/games/appcontent/zza;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract E()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/android/gms/games/appcontent/zzc;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract F2()Ljava/lang/String;
+.end method
+
+.method public abstract M()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/android/gms/games/appcontent/zzd;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method public abstract getExtras()Landroid/os/Bundle;
@@ -35,41 +68,8 @@
 .method public abstract getType()Ljava/lang/String;
 .end method
 
-.method public abstract h()Ljava/lang/String;
+.method public abstract l()Ljava/lang/String;
 .end method
 
-.method public abstract k()Ljava/lang/String;
-.end method
-
-.method public abstract t()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/games/appcontent/zza;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract u()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/games/appcontent/zzc;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract w()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/games/appcontent/zzd;",
-            ">;"
-        }
-    .end annotation
+.method public abstract o()Ljava/lang/String;
 .end method

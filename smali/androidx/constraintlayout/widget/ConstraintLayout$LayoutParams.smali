@@ -586,7 +586,7 @@
 
     move-result p2
 
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_0
     if-ge v1, p2, :cond_6
@@ -647,10 +647,8 @@
 
     goto/16 :goto_3
 
-    :catch_0
-    nop
-
     .line 70
+    :catch_0
     iget v5, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->M:I
 
     invoke-virtual {p1, v4, v5}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -679,10 +677,8 @@
 
     goto/16 :goto_3
 
-    :catch_1
-    nop
-
     .line 73
+    :catch_1
     iget v5, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->K:I
 
     invoke-virtual {p1, v4, v5}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -730,10 +726,8 @@
 
     goto/16 :goto_3
 
-    :catch_2
-    nop
-
     .line 78
+    :catch_2
     iget v5, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->L:I
 
     invoke-virtual {p1, v4, v5}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -762,10 +756,8 @@
 
     goto/16 :goto_3
 
-    :catch_3
-    nop
-
     .line 81
+    :catch_3
     iget v5, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->J:I
 
     invoke-virtual {p1, v4, v5}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -1452,7 +1444,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 146
     :goto_2
@@ -2003,7 +1995,7 @@
 
     iget v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->R:I
 
-    invoke-virtual {v0, v1}, Lq/h;->s0(I)V
+    invoke-virtual {v0, v1}, Lq/h;->V(I)V
 
     :cond_8
     return-void
@@ -2035,12 +2027,12 @@
 
     if-ne v3, p1, :cond_0
 
-    const/4 p1, 0x1
+    move p1, v3
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     :goto_0
     const/4 v4, -0x1
@@ -2098,7 +2090,7 @@
     iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->d0:I
 
     :goto_1
-    const/4 v2, 0x1
+    move v2, v3
 
     goto :goto_2
 
@@ -2123,7 +2115,7 @@
     .line 20
     iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->c0:I
 
-    const/4 v2, 0x1
+    move v2, v3
 
     .line 21
     :cond_3
@@ -2134,7 +2126,7 @@
     .line 22
     iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->b0:I
 
-    const/4 v2, 0x1
+    move v2, v3
 
     .line 23
     :cond_4

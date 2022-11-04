@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/game/donate/DonateFragment$g;
-.super Lse/i;
+.super Lif/i;
 .source "DonateFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Lcom/supercell/id/model/IdSystem;",
         ">;"
     }
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$g;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$g;->f:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$g;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$g;->f:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
-    invoke-static {v0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSystem;
+    iget-object v0, v0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     goto :goto_0
 

@@ -105,7 +105,7 @@
 
     invoke-virtual {v4, v5}, Landroid/graphics/drawable/AnimationDrawable;->setOneShot(Z)V
 
-    const/4 v5, 0x0
+    move v5, p2
 
     :goto_0
     const/16 v6, 0x2710
@@ -173,16 +173,16 @@
     .locals 7
 
     .line 1
-    instance-of v0, p1, Ly/f;
+    instance-of v0, p1, Ly/d;
 
     if-eqz v0, :cond_0
 
     .line 2
     move-object v0, p1
 
-    check-cast v0, Ly/f;
+    check-cast v0, Ly/d;
 
-    invoke-interface {v0}, Ly/f;->b()Landroid/graphics/drawable/Drawable;
+    invoke-interface {v0}, Ly/d;->b()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -194,7 +194,7 @@
     move-result-object p2
 
     .line 4
-    invoke-interface {v0, p2}, Ly/f;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-interface {v0, p2}, Ly/d;->a(Landroid/graphics/drawable/Drawable;)V
 
     goto/16 :goto_4
 
@@ -219,7 +219,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, p2, :cond_3
@@ -245,13 +245,13 @@
     goto :goto_1
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v2
 
     goto :goto_2
 
     :cond_2
     :goto_1
-    const/4 v4, 0x1
+    move v4, v1
 
     :goto_2
     invoke-virtual {p0, v5, v4}, Landroidx/appcompat/widget/i;->b(Landroid/graphics/drawable/Drawable;Z)Landroid/graphics/drawable/Drawable;

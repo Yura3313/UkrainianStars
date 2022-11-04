@@ -246,7 +246,7 @@
 
     int-to-float v0, v0
 
-    mul-float v0, v0, v2
+    mul-float/2addr v0, v2
 
     .line 9
     iput v0, p0, Ly/c;->g:F

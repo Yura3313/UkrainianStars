@@ -25,10 +25,10 @@
 .method public abstract g()Z
 .end method
 
-.method public abstract h(I)V
+.method public abstract k(I)V
 .end method
 
-.method public abstract i()V
+.method public abstract l()V
 .end method
 
 .method public abstract setWindowCallback(Landroid/view/Window$Callback;)V

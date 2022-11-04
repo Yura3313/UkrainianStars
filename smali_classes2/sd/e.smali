@@ -1,76 +1,97 @@
 .class public final Lsd/e;
-.super Lse/i;
-.source "FriendsFragment.kt"
+.super Lif/i;
+.source "RegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lae/d2;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lsd/i;",
+        "Ljava/lang/String;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/util/List;
+# static fields
+.field public static final f:Lsd/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lsd/e;->g:Ljava/util/List;
+    new-instance v0, Lsd/e;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lsd/e;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    sput-object v0, Lsd/e;->f:Lsd/e;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Lae/d2;
+    check-cast p1, Lsd/i;
 
-    iget-object v1, p0, Lsd/e;->g:Ljava/util/List;
+    check-cast p2, Ljava/lang/String;
+
+    const-string v0, "$receiver"
 
     .line 2
-    new-instance v2, Lae/c2;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v1, :cond_0
+    const-string v0, "it"
 
-    move-object v3, v1
-
-    goto :goto_0
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    :cond_0
-    sget-object v3, Lje/l;->g:Lje/l;
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    :goto_0
-    sget-object v4, Lje/l;->g:Lje/l;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->clearPendingRegistration$supercellId_release()V
 
     .line 4
-    invoke-direct {v2, v3, v4}, Lae/c2;-><init>(Ljava/util/List;Ljava/util/List;)V
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
 
     .line 5
-    invoke-static {v2}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
-    move-result-object v2
+    move-result-object p2
 
-    const/4 v3, 0x0
+    invoke-virtual {p2}, Lzd/q;->n()Lpf/g0;
 
-    invoke-direct {v0, v1, v3, v2}, Lae/d2;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+    .line 6
+    invoke-virtual {p1}, Lsd/k;->U0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
-    return-object v0
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->i1()V
+
+    .line 7
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

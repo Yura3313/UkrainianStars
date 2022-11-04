@@ -200,7 +200,7 @@
 .end method
 
 .method public static loadBadgeInfo(Lcom/kakaogame/KGResultCallback;)V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -286,9 +286,9 @@
 
     move-result-wide v3
 
-    cmp-long v5, v3, v1
+    cmp-long v1, v3, v1
 
-    if-gez v5, :cond_1
+    if-gez v1, :cond_1
 
     .line 10
     sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
@@ -836,7 +836,7 @@
     const/16 v1, 0xfa1
 
     .line 19
-    invoke-static {p0, v0, p0, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

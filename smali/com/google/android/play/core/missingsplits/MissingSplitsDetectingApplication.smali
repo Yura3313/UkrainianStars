@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->f:Z
 
     return-void
 .end method
@@ -22,21 +22,39 @@
 
 # virtual methods
 .method public final onCreate()V
-    .locals 2
+    .locals 4
 
-    iget-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->f:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->f:Z
 
-    invoke-static {p0}, Lc5/b;->a(Landroid/content/Context;)Lc5/a;
+    sget-object v0, La5/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    move-result-object v0
+    .line 1
+    new-instance v0, La5/c;
 
-    invoke-interface {v0}, Lc5/a;->a()Z
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v1
+
+    new-instance v2, La5/b;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v3
+
+    invoke-direct {v2, p0, v3}, La5/b;-><init>(Landroid/content/Context;Landroid/content/pm/PackageManager;)V
+
+    sget-object v3, La5/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0, p0, v1, v2, v3}, La5/c;-><init>(Landroid/content/Context;Ljava/lang/Runtime;La5/b;Ljava/util/concurrent/atomic/AtomicReference;)V
+
+    .line 2
+    invoke-virtual {v0}, La5/c;->b()Z
 
     move-result v0
 

@@ -1,75 +1,260 @@
 .class public final Lod/h;
-.super Landroidx/recyclerview/widget/RecyclerView$q;
-.source "OnboardingInviteFriendsPageFragment.kt"
+.super Ljava/lang/Object;
+.source "FriendsFragment.kt"
+
+# interfaces
+.implements Lzd/v1;
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final a:I
 
-.field public final synthetic b:Landroid/view/View;
-
-.field public final synthetic c:Landroid/widget/FrameLayout;
-
-.field public final synthetic d:Lod/s;
-
-.field public final synthetic e:Lod/d;
+.field public final b:Ltc/h;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/s;Lod/d;)V
-    .locals 0
+.method public constructor <init>(Ltc/h;)V
+    .locals 1
 
-    iput-object p1, p0, Lod/h;->a:Landroid/view/View;
+    const-string v0, "friend"
 
-    iput-object p2, p0, Lod/h;->b:Landroid/view/View;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object p3, p0, Lod/h;->c:Landroid/widget/FrameLayout;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p4, p0, Lod/h;->d:Lod/s;
+    iput-object p1, p0, Lod/h;->b:Ltc/h;
 
-    iput-object p5, p0, Lod/h;->e:Lod/d;
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_profile_list_item_friend:I
 
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
+    iput p1, p0, Lod/h;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
-    .locals 7
+.method public final b(Lzd/v1;)Z
+    .locals 3
 
-    const-string p2, "recyclerView"
+    const-string v0, "other"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lod/h;->e:Lod/d;
+    .line 1
+    instance-of v0, p1, Lod/h;
 
-    iget-object v1, p0, Lod/h;->a:Landroid/view/View;
+    const/4 v1, 0x0
 
-    const-string p2, "this@apply"
+    if-nez v0, :cond_0
 
-    invoke-static {v1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    return v1
 
-    iget-object v2, p0, Lod/h;->b:Landroid/view/View;
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
 
-    const-string p2, "selectAllBackground"
+    .line 3
+    iget-object v0, v0, Ltc/h;->b:Ljava/lang/String;
 
-    invoke-static {v2, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 4
+    check-cast p1, Lod/h;
 
-    iget-object v3, p0, Lod/h;->c:Landroid/widget/FrameLayout;
+    .line 5
+    iget-object v2, p1, Lod/h;->b:Ltc/h;
 
-    iget-object v4, p0, Lod/h;->d:Lod/s;
+    .line 6
+    iget-object v2, v2, Ltc/h;->b:Ljava/lang/String;
 
-    const/4 p2, 0x0
+    .line 7
+    invoke-static {v0, v2}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-static {p1, p2}, Lae/y1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+    move-result v0
 
-    move-result v5
+    if-eqz v0, :cond_1
 
-    move v6, p3
+    .line 8
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
 
-    invoke-static/range {v0 .. v6}, Lod/d;->W0(Lod/d;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lod/s;II)V
+    .line 9
+    iget-object v0, v0, Ltc/h;->c:Lcom/supercell/id/model/ProfileImage;
 
-    return-void
+    .line 10
+    iget-object v2, p1, Lod/h;->b:Ltc/h;
+
+    .line 11
+    iget-object v2, v2, Ltc/h;->c:Lcom/supercell/id/model/ProfileImage;
+
+    .line 12
+    invoke-static {v0, v2}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lod/h;->f()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Lod/h;->f()Z
+
+    move-result p1
+
+    if-ne v0, p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method public final d()I
+    .locals 1
+
+    iget v0, p0, Lod/h;->a:I
+
+    return v0
+.end method
+
+.method public final e(Lzd/v1;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    instance-of v0, p1, Lod/h;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lod/h;
+
+    .line 2
+    iget-object p1, p1, Lod/h;->b:Ltc/h;
+
+    .line 3
+    iget-object p1, p1, Ltc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
+
+    .line 4
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
+
+    .line 5
+    iget-object v0, v0, Ltc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
+
+    .line 6
+    invoke-static {p1, v0}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lod/h;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lod/h;
+
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
+
+    iget-object p1, p1, Lod/h;->b:Ltc/h;
+
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final f()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
+
+    .line 2
+    iget-object v0, v0, Ltc/h;->e:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    .line 3
+    instance-of v0, v0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$Friends;
+
+    xor-int/lit8 v0, v0, 0x1
+
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lod/h;->b:Ltc/h;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ltc/h;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "FriendRow(friend="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lod/h;->b:Ltc/h;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

@@ -81,10 +81,10 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lye/m;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth;->lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth;->lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lye/m;
 
     move-result-object p0
 
@@ -373,7 +373,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lhf/p;)V
 
     .line 5
     invoke-static {}, Lcom/kakaogame/KGKakaoTalk;->isKakaoTalkInstalled()Z
@@ -414,7 +414,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lhf/p;)V
 
     .line 11
     iput-object v1, p0, Lcom/kakaogame/idp/KGKakao2Auth;->loginType:Ljava/lang/String;
@@ -435,7 +435,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lre/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lhf/p;)V
 
     const-string p1, "INSTALLED_APP"
 
@@ -450,7 +450,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lhf/p;)V
 
     .line 16
     iput-object v1, p0, Lcom/kakaogame/idp/KGKakao2Auth;->loginType:Ljava/lang/String;
@@ -459,7 +459,7 @@
     return-void
 .end method
 
-.method private static synthetic lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/i;
+.method private static synthetic lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lye/m;
     .locals 1
 
     if-eqz p2, :cond_0
@@ -527,7 +527,7 @@
 
     .line 9
     :goto_0
-    sget-object p0, Lie/i;->a:Lie/i;
+    sget-object p0, Lye/m;->a:Lye/m;
 
     return-object p0
 .end method
@@ -825,13 +825,7 @@
     invoke-static {v1}, Lcom/kakaogame/kakao/KakaoUtil;->convertResultCode(Lcom/kakaogame/KGResult;)V
 
     .line 31
-    goto :goto_5
-
-    :goto_4
     throw v0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private onFirstLogin()V
@@ -1336,7 +1330,7 @@
 
     invoke-direct {v2, p1}, Lcom/kakaogame/idp/a;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v1, v2}, Lcom/kakao/sdk/user/UserApiClient;->accessTokenInfo(Lre/p;)V
+    invoke-virtual {v1, v2}, Lcom/kakao/sdk/user/UserApiClient;->accessTokenInfo(Lhf/p;)V
 
     .line 7
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -1576,7 +1570,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, p0, p1, v1}, Lcom/kakao/sdk/user/UserApiClient;->loginWithNewScopes(Landroid/content/Context;Ljava/util/List;Lre/p;)V
+    invoke-virtual {v2, p0, p1, v1}, Lcom/kakao/sdk/user/UserApiClient;->loginWithNewScopes(Landroid/content/Context;Ljava/util/List;Lhf/p;)V
 
     .line 4
     invoke-virtual {v0}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -1635,7 +1629,7 @@
 
 # virtual methods
 .method public checkAuth(Landroid/app/Activity;Lcom/kakaogame/idp/IdpAccount;)Lcom/kakaogame/KGResult;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1807,9 +1801,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-eqz v6, :cond_4
+    if-eqz v2, :cond_4
 
     .line 21
     invoke-virtual {p1}, Lcom/kakaogame/kakao/UserProfile;->getServiceUserId()J
@@ -2096,13 +2090,13 @@
 
     if-eqz v8, :cond_2
 
-    const/4 v8, 0x1
+    move v8, v1
 
     goto :goto_0
 
     :catch_0
     :cond_2
-    const/4 v8, 0x0
+    move v8, v4
 
     :goto_0
     :try_start_2
@@ -2113,7 +2107,7 @@
     goto :goto_1
 
     :cond_3
-    const/4 v1, 0x0
+    move v1, v4
 
     .line 17
     :goto_1
@@ -3034,13 +3028,7 @@
     invoke-static {v1}, Lcom/kakaogame/kakao/KakaoUtil;->convertResultCode(Lcom/kakaogame/KGResult;)V
 
     .line 15
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)Lcom/kakaogame/KGResult;

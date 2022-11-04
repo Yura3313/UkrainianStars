@@ -72,13 +72,13 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    const/4 v0, 0x1
+    move v0, v3
 
     :goto_1
     if-nez p1, :cond_3
@@ -88,7 +88,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v3, 0x0
+    move v3, v1
 
     .line 6
     :cond_3

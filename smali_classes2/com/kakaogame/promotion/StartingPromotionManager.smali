@@ -375,7 +375,7 @@
 
     invoke-direct {v0}, Lcom/kakaogame/promotion/StartingPromotionManager$2;-><init>()V
 
-    invoke-static {v2, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lkc/a;)V
+    invoke-static {v2, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Ljc/a;)V
 
     goto :goto_0
 

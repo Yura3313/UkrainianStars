@@ -17,13 +17,7 @@
 
 
 # virtual methods
-.method public final a()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final b(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -55,4 +49,10 @@
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
+.end method
+
+.method public final b()V
+    .locals 0
+
+    return-void
 .end method

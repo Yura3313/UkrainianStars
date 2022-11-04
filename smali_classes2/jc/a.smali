@@ -1,29 +1,17 @@
 .class public interface abstract Ljc/a;
 .super Ljava/lang/Object;
-.source "ImageAware.java"
+.source "ImageLoadingListener.java"
 
 
 # virtual methods
-.method public abstract a(Landroid/graphics/drawable/Drawable;)Z
+.method public abstract onLoadingCancelled(Ljava/lang/String;Landroid/view/View;)V
 .end method
 
-.method public abstract b()Landroid/view/View;
+.method public abstract onLoadingComplete(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
 .end method
 
-.method public abstract c()Z
+.method public abstract onLoadingFailed(Ljava/lang/String;Landroid/view/View;Ldc/b;)V
 .end method
 
-.method public abstract d()Lfc/f;
-.end method
-
-.method public abstract e(Landroid/graphics/Bitmap;)Z
-.end method
-
-.method public abstract getHeight()I
-.end method
-
-.method public abstract getId()I
-.end method
-
-.method public abstract getWidth()I
+.method public abstract onLoadingStarted(Ljava/lang/String;Landroid/view/View;)V
 .end method

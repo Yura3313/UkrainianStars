@@ -52,6 +52,52 @@
 
 # virtual methods
 .method public final a(II)V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Landroidx/recyclerview/widget/c;->b:I
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    iget v0, p0, Landroidx/recyclerview/widget/c;->c:I
+
+    if-lt v0, p1, :cond_0
+
+    add-int v2, p1, p2
+
+    if-gt v0, v2, :cond_0
+
+    .line 2
+    iget v0, p0, Landroidx/recyclerview/widget/c;->d:I
+
+    add-int/2addr v0, p2
+
+    iput v0, p0, Landroidx/recyclerview/widget/c;->d:I
+
+    .line 3
+    iput p1, p0, Landroidx/recyclerview/widget/c;->c:I
+
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/c;->e()V
+
+    .line 5
+    iput p1, p0, Landroidx/recyclerview/widget/c;->c:I
+
+    .line 6
+    iput p2, p0, Landroidx/recyclerview/widget/c;->d:I
+
+    .line 7
+    iput v1, p0, Landroidx/recyclerview/widget/c;->b:I
+
+    return-void
+.end method
+
+.method public final b(II)V
     .locals 1
 
     .line 1
@@ -60,12 +106,12 @@
     .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/c;->a:Landroidx/recyclerview/widget/r;
 
-    invoke-interface {v0, p1, p2}, Landroidx/recyclerview/widget/r;->a(II)V
+    invoke-interface {v0, p1, p2}, Landroidx/recyclerview/widget/r;->b(II)V
 
     return-void
 .end method
 
-.method public final b(II)V
+.method public final c(II)V
     .locals 4
 
     .line 1
@@ -95,52 +141,6 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/recyclerview/widget/c;->c:I
-
-    return-void
-
-    .line 4
-    :cond_0
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/c;->e()V
-
-    .line 5
-    iput p1, p0, Landroidx/recyclerview/widget/c;->c:I
-
-    .line 6
-    iput p2, p0, Landroidx/recyclerview/widget/c;->d:I
-
-    .line 7
-    iput v1, p0, Landroidx/recyclerview/widget/c;->b:I
-
-    return-void
-.end method
-
-.method public final c(II)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/c;->b:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    iget v0, p0, Landroidx/recyclerview/widget/c;->c:I
-
-    if-lt v0, p1, :cond_0
-
-    add-int v2, p1, p2
-
-    if-gt v0, v2, :cond_0
-
-    .line 2
-    iget v0, p0, Landroidx/recyclerview/widget/c;->d:I
-
-    add-int/2addr v0, p2
-
-    iput v0, p0, Landroidx/recyclerview/widget/c;->d:I
-
-    .line 3
     iput p1, p0, Landroidx/recyclerview/widget/c;->c:I
 
     return-void
@@ -273,7 +273,7 @@
 
     iget v2, p0, Landroidx/recyclerview/widget/c;->d:I
 
-    invoke-interface {v0, v1, v2}, Landroidx/recyclerview/widget/r;->c(II)V
+    invoke-interface {v0, v1, v2}, Landroidx/recyclerview/widget/r;->a(II)V
 
     goto :goto_0
 
@@ -285,7 +285,7 @@
 
     iget v2, p0, Landroidx/recyclerview/widget/c;->d:I
 
-    invoke-interface {v0, v1, v2}, Landroidx/recyclerview/widget/r;->b(II)V
+    invoke-interface {v0, v1, v2}, Landroidx/recyclerview/widget/r;->c(II)V
 
     :goto_0
     const/4 v0, 0x0

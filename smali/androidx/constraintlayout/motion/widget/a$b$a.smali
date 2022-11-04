@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final g:Landroidx/constraintlayout/motion/widget/a$b;
+.field public final f:Landroidx/constraintlayout/motion/widget/a$b;
+
+.field public g:I
 
 .field public h:I
-
-.field public i:I
 
 
 # direct methods
@@ -35,15 +35,15 @@
     const/4 v0, -0x1
 
     .line 2
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
+    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:I
 
     const/16 v0, 0x11
 
     .line 3
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     .line 4
-    iput-object p2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iput-object p2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 5
     invoke-static {p3}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
@@ -77,13 +77,13 @@
     if-ne v0, v1, :cond_0
 
     .line 9
-    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
+    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v0
 
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
+    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:I
 
     goto :goto_1
 
@@ -94,13 +94,13 @@
     if-ne v0, v1, :cond_1
 
     .line 11
-    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v0
 
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iput v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     :cond_1
     :goto_1
@@ -121,7 +121,7 @@
     .locals 7
 
     .line 1
-    iget v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
+    iget v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:I
 
     const/4 v1, -0x1
 
@@ -155,7 +155,7 @@
 
     .line 5
     :cond_2
-    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/lit8 v2, v1, 0x1
 
@@ -167,12 +167,12 @@
 
     if-ne p2, v0, :cond_3
 
-    const/4 v5, 0x1
+    move v5, v4
 
     goto :goto_1
 
     :cond_3
-    const/4 v5, 0x0
+    move v5, v3
 
     :goto_1
     and-int/lit16 v6, v1, 0x100
@@ -181,12 +181,12 @@
 
     if-ne p2, v0, :cond_4
 
-    const/4 v6, 0x1
+    move v6, v4
 
     goto :goto_2
 
     :cond_4
-    const/4 v6, 0x0
+    move v6, v3
 
     :goto_2
     or-int/2addr v5, v6
@@ -195,12 +195,12 @@
 
     if-ne p2, v0, :cond_5
 
-    const/4 v0, 0x1
+    move v0, v4
 
     goto :goto_3
 
     :cond_5
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_3
     or-int/2addr v0, v5
@@ -211,12 +211,12 @@
 
     if-ne p2, p3, :cond_6
 
-    const/4 v2, 0x1
+    move v2, v4
 
     goto :goto_4
 
     :cond_6
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_4
     or-int/2addr v0, v2
@@ -227,7 +227,7 @@
 
     if-ne p2, p3, :cond_7
 
-    const/4 v3, 0x1
+    move v3, v4
 
     :cond_7
     or-int p2, v0, v3
@@ -245,7 +245,7 @@
     .locals 8
 
     .line 1
-    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 2
     iget-object v0, p1, Landroidx/constraintlayout/motion/widget/a$b;->j:Landroidx/constraintlayout/motion/widget/a;
@@ -254,7 +254,7 @@
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/a;->a:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     .line 4
-    iget-boolean v2, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->H:Z
+    iget-boolean v2, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->E:Z
 
     if-nez v2, :cond_0
 
@@ -276,7 +276,7 @@
     if-ne p1, v3, :cond_1
 
     .line 7
-    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 8
     iget p1, p1, Landroidx/constraintlayout/motion/widget/a$b;->c:I
@@ -290,7 +290,7 @@
     :cond_1
     new-instance v0, Landroidx/constraintlayout/motion/widget/a$b;
 
-    iget-object v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iget-object v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 11
     iget-object v3, v2, Landroidx/constraintlayout/motion/widget/a$b;->j:Landroidx/constraintlayout/motion/widget/a;
@@ -302,7 +302,7 @@
     iput p1, v0, Landroidx/constraintlayout/motion/widget/a$b;->d:I
 
     .line 14
-    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 15
     iget p1, p1, Landroidx/constraintlayout/motion/widget/a$b;->c:I
@@ -323,7 +323,7 @@
     iget-object v0, v0, Landroidx/constraintlayout/motion/widget/a;->c:Landroidx/constraintlayout/motion/widget/a$b;
 
     .line 20
-    iget v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/lit8 v4, v2, 0x1
 
@@ -340,13 +340,13 @@
     goto :goto_0
 
     :cond_3
-    const/4 v4, 0x0
+    move v4, v5
 
     goto :goto_1
 
     :cond_4
     :goto_0
-    const/4 v4, 0x1
+    move v4, v6
 
     :goto_1
     and-int/lit8 v7, v2, 0x10
@@ -360,25 +360,25 @@
     goto :goto_2
 
     :cond_5
-    const/4 v2, 0x0
+    move v2, v5
 
     goto :goto_3
 
     :cond_6
     :goto_2
-    const/4 v2, 0x1
+    move v2, v6
 
     :goto_3
     if-eqz v4, :cond_7
 
     if-eqz v2, :cond_7
 
-    const/4 v7, 0x1
+    move v7, v6
 
     goto :goto_4
 
     :cond_7
-    const/4 v7, 0x0
+    move v7, v5
 
     :goto_4
     if-eqz v7, :cond_b
@@ -413,18 +413,18 @@
     goto :goto_5
 
     :cond_9
-    const/4 v2, 0x0
+    move v2, v5
 
     goto :goto_6
 
     :cond_a
     :goto_5
-    const/4 v4, 0x0
+    move v4, v5
 
     .line 23
     :cond_b
     :goto_6
-    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->g:Landroidx/constraintlayout/motion/widget/a$b;
+    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->f:Landroidx/constraintlayout/motion/widget/a$b;
 
     if-ne p1, v0, :cond_c
 
@@ -440,7 +440,7 @@
     if-ne v7, v3, :cond_d
 
     .line 26
-    iget v3, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->D:I
+    iget v3, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->A:I
 
     if-eq v3, v0, :cond_f
 
@@ -448,7 +448,7 @@
 
     .line 27
     :cond_d
-    iget v3, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->D:I
+    iget v3, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->A:I
 
     if-eq v3, v7, :cond_e
 
@@ -456,7 +456,7 @@
 
     :cond_e
     :goto_7
-    const/4 v5, 0x1
+    move v5, v6
 
     :cond_f
     if-eqz v5, :cond_13
@@ -464,7 +464,7 @@
     if-eqz v4, :cond_10
 
     .line 28
-    iget v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v0, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/2addr v0, v6
 
@@ -484,7 +484,7 @@
     if-eqz v2, :cond_11
 
     .line 31
-    iget v3, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v3, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/lit8 v3, v3, 0x10
 
@@ -502,7 +502,7 @@
     if-eqz v4, :cond_12
 
     .line 34
-    iget v3, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v3, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/lit16 v3, v3, 0x100
 
@@ -522,7 +522,7 @@
     if-eqz v2, :cond_13
 
     .line 37
-    iget v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->i:I
+    iget v2, p0, Landroidx/constraintlayout/motion/widget/a$b$a;->h:I
 
     and-int/lit16 v2, v2, 0x1000
 

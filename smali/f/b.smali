@@ -1,71 +1,16 @@
-.class public abstract Lf/b;
+.class public interface abstract Lf/b;
 .super Ljava/lang/Object;
-.source "ActionMode.java"
+.source "CollapsibleActionView.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lf/b$a;
-    }
+.annotation runtime Ljava/lang/Deprecated;
 .end annotation
-
-
-# instance fields
-.field public g:Ljava/lang/Object;
-
-.field public h:Z
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
 
 
 # virtual methods
 .method public abstract c()V
 .end method
 
-.method public abstract d()Landroid/view/View;
-.end method
-
-.method public abstract e()Landroid/view/Menu;
-.end method
-
-.method public abstract f()Landroid/view/MenuInflater;
-.end method
-
-.method public abstract g()Ljava/lang/CharSequence;
-.end method
-
-.method public abstract h()Ljava/lang/CharSequence;
-.end method
-
-.method public abstract i()V
-.end method
-
-.method public abstract j()Z
-.end method
-
-.method public abstract k(Landroid/view/View;)V
-.end method
-
-.method public abstract l(I)V
-.end method
-
-.method public abstract m(Ljava/lang/CharSequence;)V
-.end method
-
-.method public abstract n(I)V
-.end method
-
-.method public abstract o(Ljava/lang/CharSequence;)V
-.end method
-
-.method public abstract p(Z)V
+.method public abstract e()V
 .end method

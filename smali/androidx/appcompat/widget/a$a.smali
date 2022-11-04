@@ -3,7 +3,7 @@
 .source "AbsActionBarView.java"
 
 # interfaces
-.implements Lf0/y;
+.implements Lf0/s;
 
 
 # annotations
@@ -60,7 +60,7 @@
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroidx/appcompat/widget/a;->l:Lf0/x;
+    iput-object v1, v0, Landroidx/appcompat/widget/a;->k:Lf0/r;
 
     .line 3
     iget v1, p0, Landroidx/appcompat/widget/a$a;->b:I
@@ -94,18 +94,4 @@
     iput-boolean v0, p0, Landroidx/appcompat/widget/a$a;->a:Z
 
     return-void
-.end method
-
-.method public final d(Lf0/x;I)Landroidx/appcompat/widget/a$a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
-
-    iput-object p1, v0, Landroidx/appcompat/widget/a;->l:Lf0/x;
-
-    .line 2
-    iput p2, p0, Landroidx/appcompat/widget/a$a;->b:I
-
-    return-object p0
 .end method

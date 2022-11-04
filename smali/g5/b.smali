@@ -1,90 +1,71 @@
 .class public final Lg5/b;
 .super Ljava/lang/Object;
-.source "AeadWrapper.java"
-
-# interfaces
-.implements Lf5/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lg5/b$b;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lf5/p<",
-        "Lf5/a;",
-        ">;"
-    }
-.end annotation
+.source "DeterministicAeadConfig.java"
 
 
 # static fields
-.field public static final a:Ljava/util/logging/Logger;
+.field public static final a:Ll5/g1;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field public static final b:Ll5/g1;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lg5/b;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sput-object v0, Lg5/b;->a:Ljava/util/logging/Logger;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Lf5/o;)Ljava/lang/Object;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
 
-    new-instance v0, Lg5/b$b;
+    .line 1
+    new-instance v0, Lg5/a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lg5/a;-><init>()V
 
-    invoke-direct {v0, p1, v1}, Lg5/b$b;-><init>(Lf5/o;Lg5/b$a;)V
+    .line 2
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
-    return-object v0
-.end method
+    move-result-object v0
 
-.method public final b()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "Lf5/a;",
-            ">;"
-        }
-    .end annotation
+    sput-object v0, Lg5/b;->a:Ll5/g1;
 
-    const-class v0, Lf5/a;
+    .line 3
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
-    return-object v0
+    move-result-object v0
+
+    sput-object v0, Lg5/b;->b:Ll5/g1;
+
+    .line 4
+    :try_start_0
+    new-instance v0, Lg5/a;
+
+    invoke-direct {v0}, Lg5/a;-><init>()V
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 5
+    new-instance v0, Lg5/c;
+
+    invoke-direct {v0}, Lg5/c;-><init>()V
+
+    invoke-static {v0}, Ld5/x;->i(Ld5/p;)V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 6
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method

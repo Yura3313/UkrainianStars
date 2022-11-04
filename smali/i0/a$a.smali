@@ -1,6 +1,9 @@
 .class public final Li0/a$a;
-.super Landroid/database/ContentObserver;
-.source "CursorAdapter.java"
+.super Ljava/lang/Object;
+.source "ExploreByTouchHelper.java"
+
+# interfaces
+.implements Li0/b$a;
 
 
 # annotations
@@ -9,72 +12,39 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
-    name = "a"
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Li0/b$a<",
+        "Lg0/b;",
+        ">;"
+    }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Li0/a;
-
-
 # direct methods
-.method public constructor <init>(Li0/a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Li0/a$a;->a:Li0/a;
-
-    .line 2
-    new-instance p1, Landroid/os/Handler;
-
-    invoke-direct {p1}, Landroid/os/Handler;-><init>()V
-
-    invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final deliverSelfNotifications()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final onChange(Z)V
-    .locals 1
+.method public final a(Ljava/lang/Object;Landroid/graphics/Rect;)V
+    .locals 0
 
     .line 1
-    iget-object p1, p0, Li0/a$a;->a:Li0/a;
+    check-cast p1, Lg0/b;
 
     .line 2
-    iget-boolean v0, p1, Li0/a;->h:Z
+    invoke-virtual {p1, p2}, Lg0/b;->f(Landroid/graphics/Rect;)V
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p1, Li0/a;->i:Landroid/database/Cursor;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 3
-    iget-object v0, p1, Li0/a;->i:Landroid/database/Cursor;
-
-    invoke-interface {v0}, Landroid/database/Cursor;->requery()Z
-
-    move-result v0
-
-    iput-boolean v0, p1, Li0/a;->g:Z
-
-    :cond_0
     return-void
 .end method

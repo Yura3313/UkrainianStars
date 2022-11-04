@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final getCurrentControllerInfo()Lp0/d;
+.method public final getCurrentControllerInfo()Lo0/d;
     .locals 2
 
     .line 1
@@ -49,14 +49,14 @@
     move-result-object v0
 
     .line 3
-    new-instance v1, Lp0/d;
+    new-instance v1, Lo0/d;
 
-    invoke-direct {v1, v0}, Lp0/d;-><init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
+    invoke-direct {v1, v0}, Lo0/d;-><init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
 
     return-object v1
 .end method
 
-.method public setCurrentControllerInfo(Lp0/d;)V
+.method public setCurrentControllerInfo(Lo0/d;)V
     .locals 0
 
     return-void

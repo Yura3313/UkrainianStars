@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;
+.field public static final f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$q;
 
     return-void
 .end method
@@ -65,12 +65,12 @@
     check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->f:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->f:Ljava/lang/String;
 
     .line 3
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1, p2}, Lcom/google/android/play/core/assetpacks/z1;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 

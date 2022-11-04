@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/stats/zza;
-.super Lc2/d;
+.super La2/d;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -7,52 +7,15 @@
 
 
 # instance fields
-.field public j:Landroid/os/Bundle;
+.field public i:Landroid/os/Bundle;
 
 
 # virtual methods
-.method public final B2()F
-    .locals 1
-
-    const-string v0, "ave_session_length_minutes"
-
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final D0()F
-    .locals 2
-
-    const-string v0, "total_spend_next_28_days"
-
-    .line 1
-    invoke-virtual {p0, v0}, Lc2/d;->B(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const/high16 v0, -0x40800000    # -1.0f
-
-    return v0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final H()Landroid/os/Bundle;
+.method public final F()Landroid/os/Bundle;
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/stats/zza;->j:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/stats/zza;->i:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
@@ -64,19 +27,19 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/games/stats/zza;->j:Landroid/os/Bundle;
+    iput-object v0, p0, Lcom/google/android/gms/games/stats/zza;->i:Landroid/os/Bundle;
 
     const-string v0, "unknown_raw_keys"
 
     .line 3
-    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, La2/d;->D(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "unknown_raw_values"
 
     .line 4
-    invoke-virtual {p0, v1}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, La2/d;->D(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -110,7 +73,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v4
 
     :goto_0
     if-eqz v2, :cond_2
@@ -122,13 +85,13 @@
     if-ge v4, v2, :cond_3
 
     .line 9
-    iget-object v2, p0, Lcom/google/android/gms/games/stats/zza;->j:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/google/android/gms/games/stats/zza;->i:Landroid/os/Bundle;
 
     aget-object v3, v0, v4
 
     aget-object v5, v1, v4
 
-    invoke-virtual {v2, v3, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v5}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     add-int/lit8 v4, v4, 0x1
 
@@ -146,21 +109,80 @@
 
     .line 11
     :cond_3
-    iget-object v0, p0, Lcom/google/android/gms/games/stats/zza;->j:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/stats/zza;->i:Landroid/os/Bundle;
 
     return-object v0
 .end method
 
-.method public final R()F
-    .locals 1
+.method public final G1()F
+    .locals 2
 
-    const-string v0, "churn_probability"
+    const-string v0, "total_spend_next_28_days"
 
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
+    .line 1
+    invoke-virtual {p0, v0}, La2/d;->J(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    return v0
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
 
     move-result v0
 
     return v0
+.end method
+
+.method public final I2()F
+    .locals 1
+
+    const-string v0, "ave_session_length_minutes"
+
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final O0()I
+    .locals 1
+
+    const-string v0, "num_sessions"
+
+    invoke-virtual {p0, v0}, La2/d;->p(Ljava/lang/String;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final Y()F
+    .locals 1
+
+    const-string v0, "churn_probability"
+
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic d2()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;-><init>(Lcom/google/android/gms/games/stats/PlayerStats;)V
+
+    return-object v0
 .end method
 
 .method public final describeContents()I
@@ -174,19 +196,44 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->E2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->L2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final g0()I
+.method public final h0()F
     .locals 1
 
-    const-string v0, "num_sessions"
+    const-string v0, "num_sessions_percentile"
 
-    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final h2()F
+    .locals 2
+
+    const-string v0, "high_spender_probability"
+
+    .line 1
+    invoke-virtual {p0, v0}, La2/d;->J(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    return v0
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
 
     move-result v0
 
@@ -196,79 +243,32 @@
 .method public final hashCode()I
     .locals 1
 
-    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->D2(Lcom/google/android/gms/games/stats/PlayerStats;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->K2(Lcom/google/android/gms/games/stats/PlayerStats;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final synthetic k2()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;-><init>(Lcom/google/android/gms/games/stats/PlayerStats;)V
-
-    return-object v0
-.end method
-
-.method public final m1()F
-    .locals 1
-
-    const-string v0, "num_sessions_percentile"
-
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final n2()F
-    .locals 2
-
-    const-string v0, "high_spender_probability"
-
-    .line 1
-    invoke-virtual {p0, v0}, Lc2/d;->B(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const/high16 v0, -0x40800000    # -1.0f
-
-    return v0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final p0()F
+.method public final k1()F
     .locals 1
 
     const-string v0, "spend_percentile"
 
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
 
     move-result v0
 
     return v0
 .end method
 
-.method public final p1()F
+.method public final l0()F
     .locals 2
 
     const-string v0, "spend_probability"
 
     .line 1
-    invoke-virtual {p0, v0}, Lc2/d;->B(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, La2/d;->J(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -280,31 +280,31 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
+    invoke-virtual {p0, v0}, La2/d;->i(Ljava/lang/String;)F
 
     move-result v0
 
     return v0
 .end method
 
-.method public final r1()I
-    .locals 1
-
-    const-string v0, "num_purchases"
-
-    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final r2()I
+.method public final n2()I
     .locals 1
 
     const-string v0, "days_since_last_played"
 
-    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, La2/d;->p(Ljava/lang/String;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final o0()I
+    .locals 1
+
+    const-string v0, "num_purchases"
+
+    invoke-virtual {p0, v0}, La2/d;->p(Ljava/lang/String;)I
 
     move-result v0
 
@@ -314,7 +314,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->F2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->M2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
 
     move-result-object v0
 

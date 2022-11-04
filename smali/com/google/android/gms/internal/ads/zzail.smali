@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -39,7 +39,7 @@
     move-result-object p1
 
     .line 2
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaim;->B6(Ljava/util/List;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaim;->x5(Ljava/util/List;)V
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

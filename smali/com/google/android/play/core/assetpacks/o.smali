@@ -2,11 +2,11 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/assetpacks/t2;
+.implements Lcom/google/android/play/core/assetpacks/l2;
 
 
 # static fields
-.field public static final f:La5/b;
+.field public static final f:Lx3/g3;
 
 .field public static final g:Landroid/content/Intent;
 
@@ -14,22 +14,22 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lcom/google/android/play/core/assetpacks/r0;
+.field public final b:Lcom/google/android/play/core/assetpacks/o0;
 
-.field public c:La5/l;
+.field public c:Ly4/k;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La5/l<",
+            "Ly4/k<",
             "Lcom/google/android/play/core/internal/s;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public d:La5/l;
+.field public d:Ly4/k;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La5/l<",
+            "Ly4/k<",
             "Lcom/google/android/play/core/internal/s;",
             ">;"
         }
@@ -43,13 +43,13 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, La5/b;
+    new-instance v0, Lx3/g3;
 
     const-string v1, "AssetPackServiceImpl"
 
-    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lx3/g3;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sput-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/r0;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/o0;)V
     .locals 8
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -85,15 +85,15 @@
 
     iput-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/r0;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/o0;
 
-    invoke-static {p1}, La5/h0;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, Ly4/x;->a(Landroid/content/Context;)Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    new-instance p2, La5/l;
+    new-instance p2, Ly4/k;
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -111,11 +111,11 @@
 
     .line 2
     :goto_0
-    sget-object v6, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v6, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     sget-object v7, Lcom/google/android/play/core/assetpacks/o;->g:Landroid/content/Intent;
 
-    sget-object v5, Lae/t;->g:Lae/t;
+    sget-object v5, Lcom/google/android/play/core/assetpacks/m2;->a:Lcom/google/android/play/core/assetpacks/m2;
 
     const-string v3, "AssetPackService"
 
@@ -125,11 +125,11 @@
 
     move-object v4, v7
 
-    invoke-direct/range {v0 .. v5}, La5/l;-><init>(Landroid/content/Context;La5/b;Ljava/lang/String;Landroid/content/Intent;La5/h;)V
+    invoke-direct/range {v0 .. v5}, Ly4/k;-><init>(Landroid/content/Context;Lx3/g3;Ljava/lang/String;Landroid/content/Intent;Ly4/g;)V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
-    new-instance p2, La5/l;
+    new-instance p2, Ly4/k;
 
     .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -147,7 +147,7 @@
 
     .line 4
     :goto_1
-    sget-object p1, Lcom/google/android/play/core/assetpacks/u2;->g:Lcom/google/android/play/core/assetpacks/u2;
+    sget-object p1, La0/b;->a:La0/b;
 
     const-string v5, "AssetPackService-keepAlive"
 
@@ -159,12 +159,12 @@
 
     move-object v7, p1
 
-    invoke-direct/range {v2 .. v7}, La5/l;-><init>(Landroid/content/Context;La5/b;Ljava/lang/String;Landroid/content/Intent;La5/h;)V
+    invoke-direct/range {v2 .. v7}, Ly4/k;-><init>(Landroid/content/Context;Lx3/g3;Ljava/lang/String;Landroid/content/Intent;Ly4/g;)V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->d:La5/l;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->d:Ly4/k;
 
     :cond_2
-    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object p1, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 p2, 0x0
 
@@ -175,7 +175,7 @@
     const-string v1, "AssetPackService initiated."
 
     .line 5
-    invoke-virtual {p1, v0, v1, p2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p1, v0, v1, p2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     return-void
 .end method
@@ -191,7 +191,7 @@
 
     const/16 v2, 0x29ce
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -238,21 +238,21 @@
 
     const-string v1, "session_id"
 
-    invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     const-string p0, "module_name"
 
     .line 2
-    invoke-virtual {v0, p0, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p0, "slice_id"
 
     .line 3
-    invoke-virtual {v0, p0, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, p2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p0, "chunk_number"
 
-    invoke-virtual {v0, p0, p3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, p0, p3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     return-object v0
 .end method
@@ -269,7 +269,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x1
 
@@ -290,12 +290,12 @@
     const-string v4, "onError(%d)"
 
     .line 1
-    invoke-virtual {v0, v3, v4, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v3, v4, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
-    new-instance v0, Lcom/google/android/play/core/assetpacks/AssetPackException;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/a;
 
-    invoke-direct {v0, v2}, Lcom/google/android/play/core/assetpacks/AssetPackException;-><init>(I)V
+    invoke-direct {v0, v2}, Lcom/google/android/play/core/assetpacks/a;-><init>(I)V
 
     invoke-static {v0}, Lcom/google/android/play/core/tasks/Tasks;->a(Ljava/lang/Exception;)Lcom/google/android/play/core/tasks/Task;
 
@@ -306,14 +306,63 @@
 
 
 # virtual methods
-.method public final K(I)V
+.method public final A(Ljava/util/List;)V
     .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object p1, v1, v2
+
+    const/4 v2, 0x4
+
+    const-string v3, "cancelDownloads(%s)"
+
+    .line 1
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 2
+    new-instance v0, Lcom/google/android/play/core/tasks/i;
+
+    invoke-direct {v0}, Lcom/google/android/play/core/tasks/i;-><init>()V
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
+
+    new-instance v2, Lcom/google/android/play/core/assetpacks/b;
+
+    invoke-direct {v2, p0, v0, p1, v0}, Lcom/google/android/play/core/assetpacks/b;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Ljava/util/List;Lcom/google/android/play/core/tasks/i;)V
+
+    invoke-virtual {v1, v2}, Ly4/k;->b(Ly4/b;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final X(I)V
+    .locals 4
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x0
 
@@ -324,29 +373,29 @@
     const-string v3, "notifySessionFailed"
 
     .line 1
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v0, Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v0}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     new-instance v2, Lcom/google/android/play/core/assetpacks/f;
 
     invoke-direct {v2, p0, v0, p1, v0}, Lcom/google/android/play/core/assetpacks/f;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;ILcom/google/android/play/core/tasks/i;)V
 
-    invoke-virtual {v1, v2}, La5/l;->b(La5/c;)V
+    invoke-virtual {v1, v2}, Ly4/k;->b(Ly4/b;)V
 
     return-void
 
     :cond_0
-    new-instance v0, Lcom/google/android/play/core/assetpacks/o0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/l0;
 
     const-string v1, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/l0;-><init>(Ljava/lang/String;I)V
 
     throw v0
 .end method
@@ -354,11 +403,11 @@
 .method public final a(ILjava/lang/String;I)V
     .locals 11
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x0
 
@@ -369,14 +418,14 @@
     const-string v3, "notifyModuleCompleted"
 
     .line 1
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v9, Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v9}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     new-instance v1, Lcom/google/android/play/core/assetpacks/e;
 
@@ -394,16 +443,16 @@
 
     invoke-direct/range {v4 .. v10}, Lcom/google/android/play/core/assetpacks/e;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;ILjava/lang/String;Lcom/google/android/play/core/tasks/i;I)V
 
-    invoke-virtual {v0, v1}, La5/l;->b(La5/c;)V
+    invoke-virtual {v0, v1}, Ly4/k;->b(Ly4/b;)V
 
     return-void
 
     :cond_0
-    new-instance p2, Lcom/google/android/play/core/assetpacks/o0;
+    new-instance p2, Lcom/google/android/play/core/assetpacks/l0;
 
     const-string p3, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {p2, p3, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p2, p3, p1}, Lcom/google/android/play/core/assetpacks/l0;-><init>(Ljava/lang/String;I)V
 
     throw p2
 .end method
@@ -420,11 +469,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x0
 
@@ -435,20 +484,20 @@
     const-string v3, "syncPacks"
 
     .line 1
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v0, Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v0}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     new-instance v2, Lcom/google/android/play/core/assetpacks/c;
 
     invoke-direct {v2, p0, v0, v0}, Lcom/google/android/play/core/assetpacks/c;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;)V
 
-    invoke-virtual {v1, v2}, La5/l;->b(La5/c;)V
+    invoke-virtual {v1, v2}, Ly4/k;->b(Ly4/b;)V
 
     invoke-virtual {v0}, Lcom/google/android/play/core/tasks/i;->a()Lcom/google/android/play/core/tasks/Task;
 
@@ -464,19 +513,19 @@
     return-object v0
 .end method
 
-.method public final declared-synchronized o0()V
+.method public final declared-synchronized v0()V
     .locals 5
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->d:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->d:Ly4/k;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const-string v2, "keepAlive"
 
@@ -485,7 +534,7 @@
     const/4 v4, 0x4
 
     .line 1
-    invoke-virtual {v0, v4, v2, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v4, v2, v3}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     iget-object v2, p0, Lcom/google/android/play/core/assetpacks/o;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -503,7 +552,7 @@
     new-array v1, v1, [Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {v0, v4, v2, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v4, v2, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -518,13 +567,13 @@
 
     invoke-direct {v0}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->d:La5/l;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->d:Ly4/k;
 
     new-instance v2, Lcom/google/android/play/core/assetpacks/i;
 
     invoke-direct {v2, p0, v0, v0}, Lcom/google/android/play/core/assetpacks/i;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;)V
 
-    invoke-virtual {v1, v2}, La5/l;->b(La5/c;)V
+    invoke-virtual {v1, v2}, Ly4/k;->b(Ly4/b;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -534,7 +583,7 @@
 
     :cond_1
     :try_start_2
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const-string v2, "Keep alive connection manager is not initialized."
 
@@ -543,7 +592,7 @@
     const/4 v3, 0x5
 
     .line 5
-    invoke-virtual {v0, v3, v2, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v3, v2, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -560,7 +609,7 @@
     throw v0
 .end method
 
-.method public final p0(ILjava/lang/String;)V
+.method public final w0(ILjava/lang/String;)V
     .locals 1
 
     const/16 v0, 0xa
@@ -570,7 +619,7 @@
     return-void
 .end method
 
-.method public final q0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
+.method public final x0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -586,11 +635,11 @@
 
     move-object v8, p0
 
-    iget-object v0, v8, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, v8, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x4
 
@@ -623,14 +672,14 @@
     const-string v3, "getChunkFileDescriptor(%s, %s, %d, session=%d)"
 
     .line 1
-    invoke-virtual {v0, v1, v3, v2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v1, v3, v2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v9, Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v9}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v10, v8, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v10, v8, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     new-instance v11, Lcom/google/android/play/core/assetpacks/g;
 
@@ -652,7 +701,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/google/android/play/core/assetpacks/g;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;ILjava/lang/String;Ljava/lang/String;ILcom/google/android/play/core/tasks/i;)V
 
-    invoke-virtual {v10, v11}, La5/l;->b(La5/c;)V
+    invoke-virtual {v10, v11}, Ly4/k;->b(Ly4/b;)V
 
     invoke-virtual {v9}, Lcom/google/android/play/core/tasks/i;->a()Lcom/google/android/play/core/tasks/Task;
 
@@ -668,14 +717,14 @@
     return-object v0
 .end method
 
-.method public final r0(ILjava/lang/String;Ljava/lang/String;I)V
+.method public final y0(ILjava/lang/String;Ljava/lang/String;I)V
     .locals 10
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x0
 
@@ -686,14 +735,14 @@
     const-string v3, "notifyChunkTransferred"
 
     .line 1
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v7, Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v7}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v8, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v8, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     new-instance v9, Lcom/google/android/play/core/assetpacks/d;
 
@@ -713,65 +762,16 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/google/android/play/core/assetpacks/d;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;ILjava/lang/String;Ljava/lang/String;ILcom/google/android/play/core/tasks/i;)V
 
-    invoke-virtual {v8, v9}, La5/l;->b(La5/c;)V
+    invoke-virtual {v8, v9}, Ly4/k;->b(Ly4/b;)V
 
     return-void
 
     :cond_0
-    new-instance v0, Lcom/google/android/play/core/assetpacks/o0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/l0;
 
     const-string v1, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/l0;-><init>(Ljava/lang/String;I)V
 
     throw v0
-.end method
-
-.method public final w(Ljava/util/List;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p1, v1, v2
-
-    const/4 v2, 0x4
-
-    const-string v3, "cancelDownloads(%s)"
-
-    .line 1
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
-
-    .line 2
-    new-instance v0, Lcom/google/android/play/core/tasks/i;
-
-    invoke-direct {v0}, Lcom/google/android/play/core/tasks/i;-><init>()V
-
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
-
-    new-instance v2, Lcom/google/android/play/core/assetpacks/b;
-
-    invoke-direct {v2, p0, v0, p1, v0}, Lcom/google/android/play/core/assetpacks/b;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Ljava/util/List;Lcom/google/android/play/core/tasks/i;)V
-
-    invoke-virtual {v1, v2}, La5/l;->b(La5/c;)V
-
-    :cond_0
-    return-void
 .end method

@@ -1,272 +1,270 @@
-.class public final Lm5/a;
-.super Lf5/i;
-.source "HkdfPrfKeyManager.java"
+.class public abstract Lm5/a;
+.super Ljava/lang/Object;
+.source "AbstractMessageLite.java"
+
+# interfaces
+.implements Lm5/q0;
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lm5/a$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lf5/i<",
-        "Ln5/p0;",
-        ">;"
+        "<MessageType:",
+        "Lm5/a<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lm5/a$a<",
+        "TMessageType;TBuilderType;>;>",
+        "Ljava/lang/Object;",
+        "Lm5/q0;"
     }
 .end annotation
 
 
+# instance fields
+.field public memoizedHashCode:I
+
+
 # direct methods
 .method public constructor <init>()V
-    .locals 4
-
-    const-class v0, Ln5/p0;
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Lf5/i$b;
-
-    new-instance v2, Lm5/a$a;
-
-    invoke-direct {v2}, Lm5/a$a;-><init>()V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    new-instance v2, Lm5/a$b;
-
-    invoke-direct {v2}, Lm5/a$b;-><init>()V
-
-    const/4 v3, 0x1
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Lf5/i;-><init>(Ljava/lang/Class;[Lf5/i$b;)V
-
-    return-void
-.end method
-
-.method public static h(Ln5/o0;)I
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result v0
-
-    const/4 v1, 0x4
-
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    if-eq v0, v4, :cond_3
-
-    if-eq v0, v3, :cond_2
-
-    if-eq v0, v2, :cond_1
-
-    if-ne v0, v1, :cond_0
-
-    goto :goto_0
+    const/4 v0, 0x0
 
     .line 2
-    :cond_0
-    new-instance v0, Ljava/security/GeneralSecurityException;
+    iput v0, p0, Lm5/a;->memoizedHashCode:I
 
-    const-string v1, "HashType "
-
-    .line 3
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " not known in"
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const/4 v1, 0x2
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v1, 0x3
-
-    goto :goto_0
-
-    :cond_3
-    const/4 v1, 0x1
-
-    :goto_0
-    return v1
-.end method
-
-.method public static i(Ln5/r0;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Ln5/r0;->s()Ln5/o0;
-
-    move-result-object v0
-
-    sget-object v1, Ln5/o0;->k:Ln5/o0;
-
-    if-eq v0, v1, :cond_1
-
-    invoke-virtual {p0}, Ln5/r0;->s()Ln5/o0;
-
-    move-result-object p0
-
-    sget-object v0, Ln5/o0;->l:Ln5/o0;
-
-    if-ne p0, v0, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "Invalid HkdfPrfKey/HkdfPrfKeyFormat: Unsupported hash"
-
-    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :cond_1
-    :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final a()[B
+    .locals 4
 
-    const-string v0, "type.googleapis.com/google.crypto.tink.HkdfPrfKey"
+    .line 1
+    :try_start_0
+    move-object v0, p0
 
-    return-object v0
+    check-cast v0, Lm5/x;
+
+    invoke-virtual {v0}, Lm5/x;->getSerializedSize()I
+
+    move-result v1
+
+    new-array v2, v1, [B
+
+    .line 2
+    sget-object v3, Lm5/l;->b:Ljava/util/logging/Logger;
+
+    .line 3
+    new-instance v3, Lm5/l$b;
+
+    invoke-direct {v3, v2, v1}, Lm5/l$b;-><init>([BI)V
+
+    .line 4
+    invoke-virtual {v0, v3}, Lm5/x;->b(Lm5/l;)V
+
+    .line 5
+    iget v0, v3, Lm5/l$b;->e:I
+
+    iget v1, v3, Lm5/l$b;->f:I
+
+    sub-int/2addr v0, v1
+
+    if-nez v0, :cond_0
+
+    return-object v2
+
+    .line 6
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Did not write as much data as expected."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    .line 7
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string v2, "byte array"
+
+    invoke-virtual {p0, v2}, Lm5/a;->e(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-.method public final c()Lf5/i$a;
+.method c()I
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lf5/i$a<",
-            "Ln5/q0;",
-            "Ln5/p0;",
-            ">;"
-        }
-    .end annotation
 
-    new-instance v0, Lm5/a$c;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    invoke-direct {v0, p0}, Lm5/a$c;-><init>(Lm5/a;)V
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    return-object v0
+    throw v0
 .end method
 
-.method public final d()Ln5/v0$b;
-    .locals 1
+.method public final d(Lm5/e1;)I
+    .locals 2
 
-    sget-object v0, Ln5/v0$b;->i:Ln5/v0$b;
+    .line 1
+    invoke-virtual {p0}, Lm5/a;->c()I
 
-    return-object v0
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 2
+    invoke-interface {p1, p0}, Lm5/e1;->g(Ljava/lang/Object;)I
+
+    move-result v0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lm5/a;->f(I)V
+
+    :cond_0
+    return v0
 .end method
 
-.method public final e(Lo5/d;)Lcom/google/crypto/tink/shaded/protobuf/x;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
+.method public final e(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
 
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
+    const-string v0, "Serializing "
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ln5/p0;->y(Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Ln5/p0;
+    .line 2
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " to a "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, " threw an IOException (should never happen)."
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final g(Lcom/google/crypto/tink/shaded/protobuf/x;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+.method f(I)V
+    .locals 0
 
-    .line 1
-    check-cast p1, Ln5/p0;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 2
-    invoke-virtual {p1}, Ln5/p0;->w()I
-
-    move-result v0
-
-    invoke-static {v0}, Lr5/l0;->e(I)V
-
-    .line 3
-    invoke-virtual {p1}, Ln5/p0;->u()Lo5/d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lo5/d;->size()I
-
-    move-result v0
-
-    const/16 v1, 0x20
-
-    if-lt v0, v1, :cond_0
-
-    .line 4
-    invoke-virtual {p1}, Ln5/p0;->v()Ln5/r0;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lm5/a;->i(Ln5/r0;)V
-
-    return-void
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "Invalid HkdfPrfKey/HkdfPrfKeyFormat: Key size too short"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
+.end method
+
+.method public final toByteString()Lm5/i;
+    .locals 4
+
+    .line 1
+    :try_start_0
+    move-object v0, p0
+
+    check-cast v0, Lm5/x;
+
+    invoke-virtual {v0}, Lm5/x;->getSerializedSize()I
+
+    move-result v1
+
+    sget-object v2, Lm5/i;->g:Lm5/i$f;
+
+    .line 2
+    new-array v2, v1, [B
+
+    .line 3
+    sget-object v3, Lm5/l;->b:Ljava/util/logging/Logger;
+
+    .line 4
+    new-instance v3, Lm5/l$b;
+
+    invoke-direct {v3, v2, v1}, Lm5/l$b;-><init>([BI)V
+
+    .line 5
+    invoke-virtual {v0, v3}, Lm5/x;->b(Lm5/l;)V
+
+    .line 6
+    iget v0, v3, Lm5/l$b;->e:I
+
+    iget v1, v3, Lm5/l$b;->f:I
+
+    sub-int/2addr v0, v1
+
+    if-nez v0, :cond_0
+
+    .line 7
+    new-instance v0, Lm5/i$f;
+
+    invoke-direct {v0, v2}, Lm5/i$f;-><init>([B)V
+
+    return-object v0
+
+    .line 8
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Did not write as much data as expected."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    .line 9
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string v2, "ByteString"
+
+    invoke-virtual {p0, v2}, Lm5/a;->e(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
 .end method

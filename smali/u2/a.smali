@@ -1,37 +1,13 @@
-.class public final Lu2/a;
-.super Ljava/lang/ThreadLocal;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/ThreadLocal<",
-        "Ljava/lang/Long;",
-        ">;"
-    }
-.end annotation
+.class public abstract Lu2/a;
+.super Ls3/a;
+.source "com.google.android.gms:play-services-games@@20.0.1"
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/app/Activity;Lu2/b$a;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
+    invoke-direct {p0, p1, p2}, Ls3/a;-><init>(Landroid/app/Activity;Lu2/b$a;)V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic initialValue()Ljava/lang/Object;
-    .locals 2
-
-    const-wide/16 v0, 0x0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v0
-
-    return-object v0
 .end method

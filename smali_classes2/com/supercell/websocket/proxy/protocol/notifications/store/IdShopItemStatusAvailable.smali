@@ -3,7 +3,7 @@
 .source "IdShopItemStatusAvailable.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -19,7 +19,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 
@@ -27,10 +27,10 @@
 # static fields
 .field private static final DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-.field private static volatile PARSER:Lcom/google/protobuf/c1;
+.field private static volatile PARSER:Lcom/google/protobuf/e1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;",
             ">;"
         }
@@ -132,7 +132,7 @@
     return-object p0
 .end method
 
-.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -143,7 +143,7 @@
     .line 2
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -156,7 +156,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -172,18 +172,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 4
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -212,7 +212,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -223,7 +223,7 @@
     .line 10
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -252,7 +252,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -263,7 +263,7 @@
     .line 8
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -276,7 +276,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -292,18 +292,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 2
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -316,7 +316,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -332,18 +332,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom([BLcom/google/protobuf/q;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
+.method public static parseFrom([BLcom/google/protobuf/r;)Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 6
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -352,12 +352,12 @@
     return-object p0
 .end method
 
-.method public static parser()Lcom/google/protobuf/c1;
+.method public static parser()Lcom/google/protobuf/e1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;",
             ">;"
         }
@@ -365,7 +365,7 @@
 
     sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/e1;
 
     move-result-object v0
 
@@ -408,7 +408,7 @@
 
     .line 4
     :pswitch_2
-    sget-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_1
 
@@ -419,7 +419,7 @@
 
     .line 6
     :try_start_0
-    sget-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_0
 
@@ -431,7 +431,7 @@
     invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
-    sput-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/c1;
+    sput-object p1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->PARSER:Lcom/google/protobuf/e1;
 
     .line 9
     :cond_0
@@ -464,7 +464,7 @@
     .line 11
     sget-object p3, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;->DEFAULT_INSTANCE:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusAvailable;
 
-    invoke-static {p3, p1, p2}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/q0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p1, p2}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/s0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

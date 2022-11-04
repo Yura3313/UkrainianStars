@@ -81,19 +81,19 @@
     move-result-object v0
 
     .line 6
-    sget-object v1, Landroidx/lifecycle/q;->o:Landroidx/lifecycle/q;
+    sget-object v1, Landroidx/lifecycle/ProcessLifecycleOwner;->n:Landroidx/lifecycle/ProcessLifecycleOwner;
 
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     new-instance v3, Landroid/os/Handler;
 
     invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    iput-object v3, v1, Landroidx/lifecycle/q;->k:Landroid/os/Handler;
+    iput-object v3, v1, Landroidx/lifecycle/ProcessLifecycleOwner;->j:Landroid/os/Handler;
 
     .line 8
-    iget-object v3, v1, Landroidx/lifecycle/q;->l:Landroidx/lifecycle/k;
+    iget-object v3, v1, Landroidx/lifecycle/ProcessLifecycleOwner;->k:Landroidx/lifecycle/k;
 
     sget-object v4, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
 
@@ -109,7 +109,7 @@
     .line 10
     new-instance v3, Landroidx/lifecycle/r;
 
-    invoke-direct {v3, v1}, Landroidx/lifecycle/r;-><init>(Landroidx/lifecycle/q;)V
+    invoke-direct {v3, v1}, Landroidx/lifecycle/r;-><init>(Landroidx/lifecycle/ProcessLifecycleOwner;)V
 
     invoke-virtual {v0, v3}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 

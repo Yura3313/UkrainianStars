@@ -915,9 +915,9 @@
 
     const-wide/16 p0, 0x0
 
-    cmp-long p2, p3, p0
+    cmp-long p0, p3, p0
 
-    if-lez p2, :cond_4
+    if-lez p0, :cond_4
 
     .line 20
     invoke-virtual {v2, p3, p4}, Lcom/kakaogame/server/ServerRequest;->setTimeout(J)V
@@ -1004,13 +1004,7 @@
     invoke-static {p1, p4, p2, p3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 28
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static request(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;JLcom/kakaogame/KGResultCallback;)V

@@ -71,21 +71,6 @@
     invoke-virtual {v1, v0, v2, v0}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
     .line 4
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-ge v0, v2, :cond_0
-
-    .line 5
-    invoke-virtual {v1}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
     new-instance v0, Lcom/kakaogame/server/NoSSLv3SocketFactory;
 
     invoke-virtual {v1}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
@@ -94,7 +79,6 @@
 
     invoke-direct {v0, v1}, Lcom/kakaogame/server/NoSSLv3SocketFactory;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
 
-    :goto_0
     return-object v0
 .end method
 

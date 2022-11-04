@@ -1,82 +1,157 @@
 .class public final Lyd/a;
-.super Lse/i;
-.source "YoungPlayerLoginConfirmPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.super Lyd/k;
+.source "YoungPlayerRegisterDonePageFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lyd/e;",
-        "Ljava/lang/String;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lyd/a;
+# instance fields
+.field public b0:Ljava/util/HashMap;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lyd/a;
-
-    invoke-direct {v0}, Lyd/a;-><init>()V
-
-    sput-object v0, Lyd/a;->g:Lyd/a;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Lyd/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final N0()V
+    .locals 1
+
+    iget-object v0, p0, Lyd/a;->b0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final O0()V
     .locals 1
 
     .line 1
-    check-cast p1, Lyd/e;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    check-cast p2, Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
-    const-string v0, "$receiver"
+    move-result-object v0
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, v0, Lzd/q;->m:Lgc/a;
 
     .line 3
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p3, Lcom/supercell/id/R$layout;->fragment_young_player_register_done_page:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    return-object p1
+.end method
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->j1()V
+.method public final synthetic Z()V
+    .locals 0
+
+    invoke-super {p0}, Lyd/k;->Z()V
+
+    invoke-virtual {p0}, Lyd/a;->N0()V
+
+    return-void
+.end method
+
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 1
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2}, Luc/z;->j0(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$id;->okButton:I
+
+    .line 3
+    iget-object p2, p0, Lyd/a;->b0:Ljava/util/HashMap;
+
+    if-nez p2, :cond_0
+
+    new-instance p2, Ljava/util/HashMap;
+
+    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p2, p0, Lyd/a;->b0:Ljava/util/HashMap;
+
+    :cond_0
+    iget-object p2, p0, Lyd/a;->b0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/View;
+
+    if-nez p2, :cond_2
 
     .line 4
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
-    return-object p1
+    if-nez p2, :cond_1
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    iget-object v0, p0, Lyd/a;->b0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_2
+    move-object p1, p2
+
+    .line 6
+    :goto_0
+    check-cast p1, Landroid/widget/Button;
+
+    new-instance p2, Lyd/a$a;
+
+    invoke-direct {p2, p0}, Lyd/a$a;-><init>(Lyd/a;)V
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
 .end method

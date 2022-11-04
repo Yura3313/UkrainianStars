@@ -77,8 +77,12 @@ SilencerHugger,,,sc/effects_brawler.sc,otto_def_ulti_hugger_starfish,otto_def_ul
 SilencerHuggerMine,,,sc/effects_brawler.sc,otto_def_gajet_mine,otto_def_gajet_mine_red,shadow_normal_circle,,,,,1,,3,HuggerMineExplosion,true,,,,,,,,,Above
 Otto002Hugger,SilencerHugger,,sc/effects_brawler.sc,otto_002_ulti_hugger_bug,otto_002_ulti_hugger_bug_red,,,otto_002_ulti_hugger_loop,,,,60,,,,otto_002_ulti_hugger_hit,sticky_def_atk_hit,,,,,true,2,Above
 Otto002HuggerMine,SilencerHuggerMine,,sc/effects_brawler.sc,otto_002_gajet_mine,otto_002_gajet_mine_red,shadow_normal_circle,,,,,1,,3,Otto002MineExplosion,true,,,,,,,,2,Above
-Turret,,,,,,,,,true,,,,,,,,,sc3d/item_bolt.scw,sc3d/item_bolt.scw,,true,,,Above
+Turret,,,,,,,,,,,,,,,,,,sc3d/generic_turret.scw,sc3d/generic_turret.scw,,true,,,Above
 WeaponThrowerWeapon,,,sc/effects_brawler.sc,bronson_def_ulti_gauntlet,bronson_def_ulti_gauntlet_red,,,otto_002_ulti_hugger_loop,,,,,3,,true,Spawn_plasmoid,,,,,,,,Above
 Bronson002Weapon,WeaponThrowerWeapon,,sc/effects_brawler.sc,bronson_002_ulti_reached_ryan,bronson_002_ulti_reached_ryan_red,bronson_002_ulti_reached_ryan_shadow,,,,,,,3,,true,bo_def_ulti2_spawn,,,,,,,,Above
-SoulCollectorSoul,,,sc/effects_brawler.sc,gus_def_atk_spirit,gus_def_atk_spirit_red,,,gus_def_spirit_loop,,1000,,,3,SoulCollectorSoulExplosion,true,gus_def_spirit_active,,,,,,,2,Above
+SoulCollectorSoul,,,sc/effects_brawler.sc,gus_def_atk_spirit,gus_def_atk_spirit_red,,,gus_def_spirit_loop,,800,,,3,SoulCollectorSoulExplosion,true,gus_def_spirit_active,,,,,,,2,Above
 LastStandCoin,,,sc/effects.sc,,,,pickup_glow_gold,laststand_coin_twinkle,,100,,,4,,true,Spawn_plasmoid,,sc3d/item_last_stand_coin.scw,sc3d/item_last_stand_coin.scw,,true,,,Above
+DoorHorizontal,,,,,,,,,true,,,,,,,,,sc3d/generic_door_3x1.scw,sc3d/generic_door_3x1.scw,,true,,,Object
+DoorVertical,,,,,,,,,true,,,,,,,,,sc3d/generic_door_3x1.scw,sc3d/generic_door_3x1.scw,,true,,,Object
+ButtonPress,,,,,,,,,true,,,,2,,,,,sc3d/generic_button_single_press.scw,sc3d/generic_button_single_press.scw,,true,,,GroundLow
+ButtonHold,,,,,,,,,true,,,,2,,,,,sc3d/generic_button_hold.scw,sc3d/generic_button_hold.scw,,true,,,GroundLow

@@ -11,5 +11,6 @@
   "UseSocialPlatforms": ["ALL"],
   "InternalDomains": [
     "www.google.com"
-  ]
+  ],
+  "EnableStoreAndGifts":true
 }

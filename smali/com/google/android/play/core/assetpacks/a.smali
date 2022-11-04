@@ -1,132 +1,135 @@
-.class public abstract Lcom/google/android/play/core/assetpacks/a;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/play/core/assetpacks/a;
+.super Lcom/google/android/play/core/tasks/j;
+
+
+# instance fields
+.field public final f:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 6
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
-    return-void
-.end method
+    new-array v0, v0, [Ljava/lang/Object;
 
-.method public static a(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/r0;)Lcom/google/android/play/core/assetpacks/a;
-    .locals 16
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-object/from16 v0, p0
+    move-result-object v1
 
-    new-instance v1, Ljava/util/ArrayList;
+    const/4 v2, 0x0
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    aput-object v1, v0, v2
 
     .line 1
-    sget-object v2, Lcom/google/android/play/core/assetpacks/x;->a:Lcom/google/android/play/core/assetpacks/x;
+    sget-object v1, Lu4/a;->a:Ljava/util/HashMap;
 
-    const-string v3, "pack_names"
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 2
-    invoke-virtual {v0, v3}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    sget-object v3, Lu4/a;->b:Ljava/util/HashMap;
+
+    invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v4, Ljava/util/HashMap;
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
 
-    invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
+    move-result v3
 
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result v5
+    move-result-object v4
 
-    const/4 v6, 0x0
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
 
-    const/4 v7, 0x0
+    move-result v4
 
-    :goto_0
-    if-ge v7, v5, :cond_0
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-interface {v3, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    add-int/lit8 v3, v3, 0x71
 
-    move-result-object v8
+    add-int/2addr v3, v4
 
-    check-cast v8, Ljava/lang/String;
+    invoke-direct {v5, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    move-object/from16 v9, p1
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v8, v9, v2}, Lcom/google/android/play/core/assetpacks/AssetPackState;->a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/v;)Lcom/google/android/play/core/assetpacks/AssetPackState;
+    const-string v1, " (https://developer.android.com/reference/com/google/android/play/core/assetpacks/model/AssetPackErrorCode.html#"
 
-    move-result-object v10
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v8, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    add-int/lit8 v7, v7, 0x1
+    const-string v1, ")"
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    const-string v1, ""
 
-    move-result v2
+    :goto_0
+    const/4 v2, 0x1
 
-    :goto_1
-    if-ge v6, v2, :cond_1
+    aput-object v1, v0, v2
 
-    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    const-string v1, "Asset Pack Download Error(%d): %s"
 
-    move-result-object v3
+    .line 2
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    check-cast v3, Ljava/lang/String;
+    move-result-object v0
 
-    const/4 v8, 0x4
+    invoke-direct {p0, v0}, Lcom/google/android/play/core/tasks/j;-><init>(Ljava/lang/String;)V
 
-    const/4 v9, 0x0
+    if-eqz p1, :cond_1
 
-    const-wide/16 v10, 0x0
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/a;->f:I
 
-    const-wide/16 v12, 0x0
-
-    const-wide/16 v14, 0x0
-
-    move-object v7, v3
-
-    invoke-static/range {v7 .. v15}, Lcom/google/android/play/core/assetpacks/AssetPackState;->b(Ljava/lang/String;IIJJD)Lcom/google/android/play/core/assetpacks/AssetPackState;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v3, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
+    return-void
 
     :cond_1
-    const-string v1, "total_bytes_to_download"
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    const-string v0, "errorCode should not be 0."
 
-    move-result-wide v0
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 3
-    new-instance v2, Lcom/google/android/play/core/assetpacks/e0;
-
-    invoke-direct {v2, v0, v1, v4}, Lcom/google/android/play/core/assetpacks/e0;-><init>(JLjava/util/Map;)V
-
-    return-object v2
+    throw p1
 .end method
 
 
 # virtual methods
-.method public abstract b()Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/play/core/assetpacks/AssetPackState;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final getErrorCode()I
+    .locals 1
 
-.method public abstract c()J
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/a;->f:I
+
+    return v0
 .end method

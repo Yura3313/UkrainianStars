@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract B6(Ljava/util/List;)V
+.method public abstract x5(Ljava/util/List;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

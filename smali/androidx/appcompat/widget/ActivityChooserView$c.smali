@@ -31,13 +31,10 @@
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
+    const/4 p1, 0x1
+
     .line 2
-    new-instance p1, Lg0/c;
-
-    invoke-direct {p1, p2}, Lg0/c;-><init>(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
-    .line 3
-    invoke-virtual {p1}, Lg0/c;->C()V
+    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setCanOpenPopup(Z)V
 
     return-void
 .end method

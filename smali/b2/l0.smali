@@ -1,36 +1,42 @@
-.class public abstract Lb2/l0;
-.super Lb2/q;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.class public final synthetic Lb2/l0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 0
+.method public static a(Landroid/os/Parcel;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    .locals 1
 
-    invoke-direct {p0, p1}, Lb2/q;-><init>(I)V
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
-    return-void
+    move-result-object v0
+
+    .line 2
+    invoke-static {v0}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->L0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {p0}, Landroid/os/Parcel;->recycle()V
+
+    return-object v0
 .end method
 
+.method public static b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .locals 1
 
-# virtual methods
-.method public abstract f(Lb2/e$a;)[Lcom/google/android/gms/common/Feature;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)[",
-            "Lcom/google/android/gms/common/Feature;"
-        }
-    .end annotation
-.end method
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-.method public abstract g(Lb2/e$a;)Z
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)Z"
-        }
-    .end annotation
+    .line 2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    return-object v0
 .end method

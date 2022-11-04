@@ -50,7 +50,7 @@
 .end method
 
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/util/BitSet;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -72,32 +72,34 @@
 
     const/4 v2, 0x0
 
+    move v3, v2
+
     .line 5
     :goto_0
-    sget-object v3, Lcom/google/gson/stream/JsonToken;->END_ARRAY:Lcom/google/gson/stream/JsonToken;
+    sget-object v4, Lcom/google/gson/stream/JsonToken;->END_ARRAY:Lcom/google/gson/stream/JsonToken;
 
-    if-eq v1, v3, :cond_5
+    if-eq v1, v4, :cond_5
 
     .line 6
-    sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters$36;->$SwitchMap$com$google$gson$stream$JsonToken:[I
+    sget-object v4, Lcom/google/gson/internal/bind/TypeAdapters$36;->$SwitchMap$com$google$gson$stream$JsonToken:[I
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v4
+    move-result v5
 
-    aget v3, v3, v4
+    aget v4, v4, v5
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    if-eq v3, v4, :cond_2
+    if-eq v4, v5, :cond_2
 
-    const/4 v5, 0x2
+    const/4 v6, 0x2
 
-    if-eq v3, v5, :cond_1
+    if-eq v4, v6, :cond_1
 
-    const/4 v5, 0x3
+    const/4 v6, 0x3
 
-    if-ne v3, v5, :cond_0
+    if-ne v4, v6, :cond_0
 
     .line 7
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
@@ -123,7 +125,7 @@
     const-string v0, "Error: Expecting: bitset number value (1, 0), Found: "
 
     .line 10
-    invoke-static {v0, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -158,7 +160,7 @@
     :cond_1
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextBoolean()Z
 
-    move-result v4
+    move-result v5
 
     goto :goto_1
 
@@ -173,16 +175,16 @@
     goto :goto_1
 
     :cond_3
-    const/4 v4, 0x0
+    move v5, v2
 
     :goto_1
-    if-eqz v4, :cond_4
+    if-eqz v5, :cond_4
 
     .line 15
-    invoke-virtual {v0, v2}, Ljava/util/BitSet;->set(I)V
+    invoke-virtual {v0, v3}, Ljava/util/BitSet;->set(I)V
 
     :cond_4
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 16
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;

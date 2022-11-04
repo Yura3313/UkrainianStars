@@ -164,13 +164,13 @@
 
     iget-wide v7, v0, Lokhttp3/internal/cache2/Relay;->upstreamPos:J
 
-    const/4 v9, 0x2
+    cmp-long v5, v5, v7
 
-    const-wide/16 v10, -0x1
+    const/4 v6, 0x2
 
-    cmp-long v12, v5, v7
+    const-wide/16 v9, -0x1
 
-    if-nez v12, :cond_2
+    if-nez v5, :cond_2
 
     .line 4
     iget-boolean v5, v0, Lokhttp3/internal/cache2/Relay;->complete:Z
@@ -179,7 +179,7 @@
 
     monitor-exit v4
 
-    return-wide v10
+    return-wide v9
 
     .line 5
     :cond_0
@@ -215,14 +215,14 @@
 
     invoke-virtual {v0}, Lokio/Buffer;->size()J
 
-    move-result-wide v5
+    move-result-wide v11
 
-    sub-long v5, v7, v5
+    sub-long v11, v7, v11
 
     .line 10
-    iget-wide v12, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
+    iget-wide v13, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
-    cmp-long v0, v12, v5
+    cmp-long v0, v13, v11
 
     if-gez v0, :cond_6
 
@@ -231,12 +231,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_5
 
-    const/4 v0, 0x2
+    move v0, v6
 
     :goto_1
     const-wide/16 v4, 0x20
 
-    if-ne v0, v9, :cond_3
+    if-ne v0, v6, :cond_3
 
     .line 12
     iget-wide v9, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
@@ -276,17 +276,17 @@
     :try_start_1
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
-    iget-object v9, v0, Lokhttp3/internal/cache2/Relay;->upstream:Lokio/Source;
+    iget-object v11, v0, Lokhttp3/internal/cache2/Relay;->upstream:Lokio/Source;
 
     iget-object v12, v0, Lokhttp3/internal/cache2/Relay;->upstreamBuffer:Lokio/Buffer;
 
     iget-wide v13, v0, Lokhttp3/internal/cache2/Relay;->bufferMaxSize:J
 
-    invoke-interface {v9, v12, v13, v14}, Lokio/Source;->read(Lokio/Buffer;J)J
+    invoke-interface {v11, v12, v13, v14}, Lokio/Source;->read(Lokio/Buffer;J)J
 
-    move-result-wide v12
+    move-result-wide v11
 
-    cmp-long v0, v12, v10
+    cmp-long v0, v11, v9
 
     if-nez v0, :cond_4
 
@@ -314,7 +314,7 @@
     .line 20
     monitor-exit v2
 
-    return-wide v10
+    return-wide v9
 
     :catchall_0
     move-exception v0
@@ -328,22 +328,22 @@
     .line 21
     :cond_4
     :try_start_3
-    invoke-static {v12, v13, v2, v3}, Ljava/lang/Math;->min(JJ)J
+    invoke-static {v11, v12, v2, v3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v2
 
     .line 22
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
-    iget-object v14, v0, Lokhttp3/internal/cache2/Relay;->upstreamBuffer:Lokio/Buffer;
+    iget-object v13, v0, Lokhttp3/internal/cache2/Relay;->upstreamBuffer:Lokio/Buffer;
 
-    const-wide/16 v16, 0x0
+    const-wide/16 v15, 0x0
 
-    move-object/from16 v15, p1
+    move-object/from16 v14, p1
 
-    move-wide/from16 v18, v2
+    move-wide/from16 v17, v2
 
-    invoke-virtual/range {v14 .. v19}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
+    invoke-virtual/range {v13 .. v18}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
 
     .line 23
     iget-wide v9, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
@@ -366,7 +366,7 @@
 
     move-result-object v18
 
-    move-wide/from16 v19, v12
+    move-wide/from16 v19, v11
 
     .line 26
     invoke-virtual/range {v15 .. v20}, Lokhttp3/internal/cache2/FileOperator;->write(JLokio/Buffer;J)V
@@ -386,7 +386,7 @@
 
     iget-object v0, v0, Lokhttp3/internal/cache2/Relay;->upstreamBuffer:Lokio/Buffer;
 
-    invoke-virtual {v5, v0, v12, v13}, Lokio/Buffer;->write(Lokio/Buffer;J)V
+    invoke-virtual {v5, v0, v11, v12}, Lokio/Buffer;->write(Lokio/Buffer;J)V
 
     .line 29
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
@@ -426,7 +426,7 @@
 
     iget-wide v7, v5, Lokhttp3/internal/cache2/Relay;->upstreamPos:J
 
-    add-long/2addr v7, v12
+    add-long/2addr v7, v11
 
     iput-wide v7, v5, Lokhttp3/internal/cache2/Relay;->upstreamPos:J
 
@@ -510,7 +510,7 @@
     throw v0
 
     :cond_6
-    sub-long/2addr v7, v12
+    sub-long/2addr v7, v13
 
     .line 42
     :try_start_a
@@ -521,17 +521,17 @@
     .line 43
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
-    iget-object v9, v0, Lokhttp3/internal/cache2/Relay;->buffer:Lokio/Buffer;
+    iget-object v13, v0, Lokhttp3/internal/cache2/Relay;->buffer:Lokio/Buffer;
 
-    iget-wide v7, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
+    iget-wide v5, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
-    sub-long v11, v7, v5
+    sub-long v15, v5, v11
 
-    move-object/from16 v10, p1
+    move-object/from16 v14, p1
 
-    move-wide v13, v2
+    move-wide/from16 v17, v2
 
-    invoke-virtual/range {v9 .. v14}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
+    invoke-virtual/range {v13 .. v18}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
 
     .line 44
     iget-wide v5, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
@@ -563,13 +563,7 @@
 
     invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public timeout()Lokio/Timeout;

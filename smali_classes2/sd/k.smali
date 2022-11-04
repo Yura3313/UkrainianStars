@@ -1,87 +1,72 @@
-.class public final Lsd/k;
-.super Lse/i;
-.source "GamesFragment.kt"
-
-# interfaces
-.implements Lre/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lsd/j;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lsd/k;
+.class public abstract Lsd/k;
+.super Luc/z;
+.source "RegisterFlow.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lsd/k;
-
-    invoke-direct {v0}, Lsd/k;-><init>()V
-
-    sput-object v0, Lsd/k;->g:Lsd/k;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Luc/z;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public N0()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final T0()Ljava/lang/String;
     .locals 1
 
     .line 1
-    check-cast p1, Lsd/j;
+    invoke-virtual {p0}, Lsd/k;->U0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
-    check-cast p2, Ljava/lang/Exception;
+    move-result-object v0
 
-    const-string v0, "$receiver"
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->j0:Ljava/lang/String;
 
-    const-string v0, "it"
+    goto :goto_0
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    :cond_0
+    const/4 v0, 0x0
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    :goto_0
+    return-object v0
+.end method
 
-    move-result-object p1
+.method public final U0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    .locals 2
 
-    if-eqz p1, :cond_0
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    .line 2
+    instance-of v1, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
+
+    if-nez v1, :cond_0
 
     const/4 v0, 0x0
 
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
     :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    check-cast v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
-    return-object p1
+    return-object v0
+.end method
+
+.method public synthetic Z()V
+    .locals 0
+
+    invoke-super {p0}, Luc/z;->Z()V
+
+    invoke-virtual {p0}, Lsd/k;->N0()V
+
+    return-void
 .end method

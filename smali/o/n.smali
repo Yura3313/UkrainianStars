@@ -18,11 +18,13 @@
 
 
 # instance fields
-.field public g:F
+.field public f:F
+
+.field public g:I
 
 .field public h:I
 
-.field public i:I
+.field public i:F
 
 .field public j:F
 
@@ -48,9 +50,7 @@
 
 .field public u:F
 
-.field public v:F
-
-.field public w:Ljava/util/LinkedHashMap;
+.field public v:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap<",
@@ -72,62 +72,62 @@
     const/high16 v0, 0x3f800000    # 1.0f
 
     .line 2
-    iput v0, p0, Lo/n;->g:F
+    iput v0, p0, Lo/n;->f:F
 
     const/4 v1, 0x0
 
     .line 3
-    iput v1, p0, Lo/n;->h:I
+    iput v1, p0, Lo/n;->g:I
 
     const/4 v1, 0x0
 
     .line 4
-    iput v1, p0, Lo/n;->j:F
+    iput v1, p0, Lo/n;->i:F
 
     .line 5
-    iput v1, p0, Lo/n;->k:F
+    iput v1, p0, Lo/n;->j:F
 
     .line 6
-    iput v1, p0, Lo/n;->l:F
+    iput v1, p0, Lo/n;->k:F
 
     .line 7
-    iput v1, p0, Lo/n;->m:F
+    iput v1, p0, Lo/n;->l:F
 
     .line 8
-    iput v0, p0, Lo/n;->n:F
+    iput v0, p0, Lo/n;->m:F
 
     .line 9
-    iput v0, p0, Lo/n;->o:F
+    iput v0, p0, Lo/n;->n:F
 
     const/high16 v0, 0x7fc00000    # Float.NaN
 
     .line 10
-    iput v0, p0, Lo/n;->p:F
+    iput v0, p0, Lo/n;->o:F
 
     .line 11
-    iput v0, p0, Lo/n;->q:F
+    iput v0, p0, Lo/n;->p:F
 
     .line 12
-    iput v1, p0, Lo/n;->r:F
+    iput v1, p0, Lo/n;->q:F
 
     .line 13
-    iput v1, p0, Lo/n;->s:F
+    iput v1, p0, Lo/n;->r:F
 
     .line 14
-    iput v1, p0, Lo/n;->t:F
+    iput v1, p0, Lo/n;->s:F
 
     .line 15
-    iput v0, p0, Lo/n;->u:F
+    iput v0, p0, Lo/n;->t:F
 
     .line 16
-    iput v0, p0, Lo/n;->v:F
+    iput v0, p0, Lo/n;->u:F
 
     .line 17
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object v0, p0, Lo/n;->w:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Lo/n;->v:Ljava/util/LinkedHashMap;
 
     return-void
 .end method
@@ -141,7 +141,7 @@
             "(",
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Lo/s;",
+            "Lo/r;",
             ">;I)V"
         }
     .end annotation
@@ -174,10 +174,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lo/s;
+    check-cast v2, Lo/r;
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v3, -0x1
 
@@ -395,7 +395,7 @@
     goto :goto_1
 
     :cond_d
-    const/4 v3, 0x1
+    move v3, v5
 
     goto :goto_1
 
@@ -439,7 +439,7 @@
     aget-object v1, v1, v5
 
     .line 6
-    iget-object v3, p0, Lo/n;->w:Ljava/util/LinkedHashMap;
+    iget-object v3, p0, Lo/n;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v3, v1}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -448,7 +448,7 @@
     if-eqz v3, :cond_0
 
     .line 7
-    iget-object v3, p0, Lo/n;->w:Ljava/util/LinkedHashMap;
+    iget-object v3, p0, Lo/n;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v3, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -457,15 +457,15 @@
     check-cast v1, Ls/a;
 
     .line 8
-    instance-of v3, v2, Lo/s$b;
+    instance-of v3, v2, Lo/r$b;
 
     if-eqz v3, :cond_f
 
     .line 9
-    check-cast v2, Lo/s$b;
+    check-cast v2, Lo/r$b;
 
     .line 10
-    iget-object v2, v2, Lo/s$b;->f:Landroid/util/SparseArray;
+    iget-object v2, v2, Lo/r$b;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p2, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
@@ -475,13 +475,13 @@
     :cond_f
     invoke-virtual {v1}, Ls/a;->b()F
 
-    invoke-static {v2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     goto/16 :goto_0
 
     .line 12
     :pswitch_0
-    iget v1, p0, Lo/n;->g:F
+    iget v1, p0, Lo/n;->f:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -492,16 +492,16 @@
     goto :goto_2
 
     :cond_10
-    iget v4, p0, Lo/n;->g:F
+    iget v4, p0, Lo/n;->f:F
 
     :goto_2
-    invoke-virtual {v2, p2, v4}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v4}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 13
     :pswitch_1
-    iget v1, p0, Lo/n;->u:F
+    iget v1, p0, Lo/n;->t:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -512,16 +512,16 @@
     goto :goto_3
 
     :cond_11
-    iget v6, p0, Lo/n;->u:F
+    iget v6, p0, Lo/n;->t:F
 
     :goto_3
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 14
     :pswitch_2
-    iget v1, p0, Lo/n;->j:F
+    iget v1, p0, Lo/n;->i:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -532,16 +532,16 @@
     goto :goto_4
 
     :cond_12
-    iget v6, p0, Lo/n;->j:F
+    iget v6, p0, Lo/n;->i:F
 
     :goto_4
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 15
     :pswitch_3
-    iget v1, p0, Lo/n;->k:F
+    iget v1, p0, Lo/n;->j:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -552,16 +552,16 @@
     goto :goto_5
 
     :cond_13
-    iget v6, p0, Lo/n;->k:F
+    iget v6, p0, Lo/n;->j:F
 
     :goto_5
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 16
     :pswitch_4
-    iget v1, p0, Lo/n;->q:F
+    iget v1, p0, Lo/n;->p:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -572,16 +572,16 @@
     goto :goto_6
 
     :cond_14
-    iget v6, p0, Lo/n;->q:F
+    iget v6, p0, Lo/n;->p:F
 
     :goto_6
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 17
     :pswitch_5
-    iget v1, p0, Lo/n;->p:F
+    iget v1, p0, Lo/n;->o:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -592,16 +592,16 @@
     goto :goto_7
 
     :cond_15
-    iget v6, p0, Lo/n;->p:F
+    iget v6, p0, Lo/n;->o:F
 
     :goto_7
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 18
     :pswitch_6
-    iget v1, p0, Lo/n;->o:F
+    iget v1, p0, Lo/n;->n:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -612,16 +612,16 @@
     goto :goto_8
 
     :cond_16
-    iget v4, p0, Lo/n;->o:F
+    iget v4, p0, Lo/n;->n:F
 
     :goto_8
-    invoke-virtual {v2, p2, v4}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v4}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 19
     :pswitch_7
-    iget v1, p0, Lo/n;->n:F
+    iget v1, p0, Lo/n;->m:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -632,16 +632,16 @@
     goto :goto_9
 
     :cond_17
-    iget v4, p0, Lo/n;->n:F
+    iget v4, p0, Lo/n;->m:F
 
     :goto_9
-    invoke-virtual {v2, p2, v4}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v4}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 20
     :pswitch_8
-    iget v1, p0, Lo/n;->v:F
+    iget v1, p0, Lo/n;->u:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -652,16 +652,16 @@
     goto :goto_a
 
     :cond_18
-    iget v6, p0, Lo/n;->v:F
+    iget v6, p0, Lo/n;->u:F
 
     :goto_a
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 21
     :pswitch_9
-    iget v1, p0, Lo/n;->t:F
+    iget v1, p0, Lo/n;->s:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -672,16 +672,16 @@
     goto :goto_b
 
     :cond_19
-    iget v6, p0, Lo/n;->t:F
+    iget v6, p0, Lo/n;->s:F
 
     :goto_b
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 22
     :pswitch_a
-    iget v1, p0, Lo/n;->s:F
+    iget v1, p0, Lo/n;->r:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -692,16 +692,16 @@
     goto :goto_c
 
     :cond_1a
-    iget v6, p0, Lo/n;->s:F
+    iget v6, p0, Lo/n;->r:F
 
     :goto_c
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 23
     :pswitch_b
-    iget v1, p0, Lo/n;->r:F
+    iget v1, p0, Lo/n;->q:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -712,16 +712,16 @@
     goto :goto_d
 
     :cond_1b
-    iget v6, p0, Lo/n;->r:F
+    iget v6, p0, Lo/n;->q:F
 
     :goto_d
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 24
     :pswitch_c
-    iget v1, p0, Lo/n;->m:F
+    iget v1, p0, Lo/n;->l:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -732,16 +732,16 @@
     goto :goto_e
 
     :cond_1c
-    iget v6, p0, Lo/n;->m:F
+    iget v6, p0, Lo/n;->l:F
 
     :goto_e
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
     .line 25
     :pswitch_d
-    iget v1, p0, Lo/n;->l:F
+    iget v1, p0, Lo/n;->k:F
 
     invoke-static {v1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -752,10 +752,10 @@
     goto :goto_f
 
     :cond_1d
-    iget v6, p0, Lo/n;->l:F
+    iget v6, p0, Lo/n;->k:F
 
     :goto_f
-    invoke-virtual {v2, p2, v6}, Lo/s;->c(IF)V
+    invoke-virtual {v2, p2, v6}, Lo/r;->c(IF)V
 
     goto/16 :goto_0
 
@@ -808,7 +808,7 @@
     check-cast p1, Lo/n;
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p1, 0x0
 
@@ -819,7 +819,7 @@
     return p1
 .end method
 
-.method public final e(FF)Z
+.method public final d(FF)Z
     .locals 3
 
     .line 1
@@ -858,7 +858,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_0
     return v1
@@ -879,148 +879,19 @@
     goto :goto_2
 
     :cond_3
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_2
     return v1
 .end method
 
-.method public final f(Landroid/view/View;)V
+.method public final e(Lq/e;Landroidx/constraintlayout/widget/a;I)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getX()F
+    invoke-virtual {p1}, Lq/e;->v()I
 
-    invoke-virtual {p1}, Landroid/view/View;->getY()F
-
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
-
-    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
-
-    .line 2
-    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    iput v0, p0, Lo/n;->i:I
-
-    .line 3
-    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->getAlpha()F
-
-    move-result v0
-
-    :goto_0
-    iput v0, p0, Lo/n;->g:F
-
-    .line 4
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_1
-
-    .line 5
-    invoke-virtual {p1}, Landroid/view/View;->getElevation()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->j:F
-
-    .line 6
-    :cond_1
-    invoke-virtual {p1}, Landroid/view/View;->getRotation()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->k:F
-
-    .line 7
-    invoke-virtual {p1}, Landroid/view/View;->getRotationX()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->l:F
-
-    .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getRotationY()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->m:F
-
-    .line 9
-    invoke-virtual {p1}, Landroid/view/View;->getScaleX()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->n:F
-
-    .line 10
-    invoke-virtual {p1}, Landroid/view/View;->getScaleY()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->o:F
-
-    .line 11
-    invoke-virtual {p1}, Landroid/view/View;->getPivotX()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->p:F
-
-    .line 12
-    invoke-virtual {p1}, Landroid/view/View;->getPivotY()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->q:F
-
-    .line 13
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->r:F
-
-    .line 14
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
-
-    move-result v2
-
-    iput v2, p0, Lo/n;->s:F
-
-    if-lt v0, v1, :cond_2
-
-    .line 15
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationZ()F
-
-    move-result p1
-
-    iput p1, p0, Lo/n;->t:F
-
-    :cond_2
-    return-void
-.end method
-
-.method public final g(Lq/e;Landroidx/constraintlayout/widget/a;I)V
-    .locals 3
-
-    .line 1
     invoke-virtual {p1}, Lq/e;->w()I
-
-    invoke-virtual {p1}, Lq/e;->x()I
 
     .line 2
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/widget/a;->g(I)Landroidx/constraintlayout/widget/a$a;
@@ -1032,12 +903,12 @@
 
     iget p3, p2, Landroidx/constraintlayout/widget/a$d;->c:I
 
-    iput p3, p0, Lo/n;->h:I
+    iput p3, p0, Lo/n;->g:I
 
     .line 4
     iget v0, p2, Landroidx/constraintlayout/widget/a$d;->b:I
 
-    iput v0, p0, Lo/n;->i:I
+    iput v0, p0, Lo/n;->h:I
 
     if-eqz v0, :cond_0
 
@@ -1052,7 +923,7 @@
     iget p2, p2, Landroidx/constraintlayout/widget/a$d;->d:F
 
     :goto_0
-    iput p2, p0, Lo/n;->g:F
+    iput p2, p0, Lo/n;->f:F
 
     .line 6
     iget-object p2, p1, Landroidx/constraintlayout/widget/a$a;->e:Landroidx/constraintlayout/widget/a$e;
@@ -1062,57 +933,57 @@
     .line 7
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->m:F
 
-    iput p3, p0, Lo/n;->j:F
+    iput p3, p0, Lo/n;->i:F
 
     .line 8
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->b:F
 
-    iput p3, p0, Lo/n;->k:F
+    iput p3, p0, Lo/n;->j:F
 
     .line 9
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->c:F
 
-    iput p3, p0, Lo/n;->l:F
+    iput p3, p0, Lo/n;->k:F
 
     .line 10
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->d:F
 
-    iput p3, p0, Lo/n;->m:F
+    iput p3, p0, Lo/n;->l:F
 
     .line 11
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->e:F
 
-    iput p3, p0, Lo/n;->n:F
+    iput p3, p0, Lo/n;->m:F
 
     .line 12
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->f:F
 
-    iput p3, p0, Lo/n;->o:F
+    iput p3, p0, Lo/n;->n:F
 
     .line 13
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->g:F
 
-    iput p3, p0, Lo/n;->p:F
+    iput p3, p0, Lo/n;->o:F
 
     .line 14
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->h:F
 
-    iput p3, p0, Lo/n;->q:F
+    iput p3, p0, Lo/n;->p:F
 
     .line 15
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->i:F
 
-    iput p3, p0, Lo/n;->r:F
+    iput p3, p0, Lo/n;->q:F
 
     .line 16
     iget p3, p2, Landroidx/constraintlayout/widget/a$e;->j:F
 
-    iput p3, p0, Lo/n;->s:F
+    iput p3, p0, Lo/n;->r:F
 
     .line 17
     iget p2, p2, Landroidx/constraintlayout/widget/a$e;->k:F
 
-    iput p2, p0, Lo/n;->t:F
+    iput p2, p0, Lo/n;->s:F
 
     .line 18
     iget-object p2, p1, Landroidx/constraintlayout/widget/a$a;->c:Landroidx/constraintlayout/widget/a$c;
@@ -1126,14 +997,14 @@
 
     iget p2, p2, Landroidx/constraintlayout/widget/a$c;->g:F
 
-    iput p2, p0, Lo/n;->u:F
+    iput p2, p0, Lo/n;->t:F
 
     .line 20
     iget-object p2, p1, Landroidx/constraintlayout/widget/a$a;->b:Landroidx/constraintlayout/widget/a$d;
 
     iget p2, p2, Landroidx/constraintlayout/widget/a$d;->e:F
 
-    iput p2, p0, Lo/n;->v:F
+    iput p2, p0, Lo/n;->u:F
 
     .line 21
     iget-object p2, p1, Landroidx/constraintlayout/widget/a$a;->f:Ljava/util/HashMap;
@@ -1178,7 +1049,7 @@
     if-eq v1, v2, :cond_1
 
     .line 25
-    iget-object v1, p0, Lo/n;->w:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lo/n;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, p3, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

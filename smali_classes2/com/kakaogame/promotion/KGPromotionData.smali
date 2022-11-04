@@ -795,13 +795,7 @@
     const/4 v0, 0x0
 
     .line 38
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 

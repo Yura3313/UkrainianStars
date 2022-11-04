@@ -1,5 +1,5 @@
 .class public abstract Lcom/supercell/id/ui/FlowFragment;
-.super Lcom/supercell/id/ui/BaseFragment;
+.super Luc/j;
 .source "FlowFragment.kt"
 
 
@@ -14,18 +14,18 @@
 
 
 # static fields
-.field public static final synthetic j0:I
+.field public static final synthetic i0:I
 
 
 # instance fields
-.field public i0:Ljava/util/HashMap;
+.field public h0:Ljava/util/HashMap;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Luc/j;-><init>()V
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method public N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->h0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -45,35 +45,35 @@
     return-void
 .end method
 
-.method public S(Landroid/os/Bundle;)V
+.method public R(Landroid/os/Bundle;)V
     .locals 3
 
     const/4 p1, 0x1
 
     .line 1
-    iput-boolean p1, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean p1, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     .line 2
     new-instance p1, Lcom/supercell/id/ui/FlowFragment$a;
 
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroidx/fragment/app/FragmentManager;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->w()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
 
     const-string v1, "childFragmentManager"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/FlowFragment;->g1()[Lre/a;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/FlowFragment;->f1()[Lhf/a;
 
     move-result-object v1
 
-    invoke-direct {p1, v0, v1}, Lcom/supercell/id/ui/FlowFragment$a;-><init>(Landroidx/fragment/app/FragmentManager;[Lre/a;)V
+    invoke-direct {p1, v0, v1}, Lcom/supercell/id/ui/FlowFragment$a;-><init>(Landroidx/fragment/app/FragmentManager;[Lhf/a;)V
 
     .line 3
     sget v0, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -81,12 +81,12 @@
 
     const-string v2, "flowPager"
 
-    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
+    invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Lw0/b;)V
 
     .line 4
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -101,11 +101,11 @@
     return-void
 .end method
 
-.method public V(Landroid/os/Bundle;)V
+.method public U(Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->U(Landroid/os/Bundle;)V
 
     const/4 p1, 0x1
 
@@ -115,12 +115,12 @@
     return-void
 .end method
 
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_flow:I
 
@@ -133,36 +133,36 @@
     return-object p1
 .end method
 
-.method public final Z()V
+.method public final Y()V
     .locals 1
 
     const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->i1(Lre/l;)V
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->h1(Lhf/l;)V
 
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     return-void
 .end method
 
-.method public synthetic a0()V
+.method public synthetic Z()V
     .locals 0
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Luc/j;->Z()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/FlowFragment;->N0()V
 
     return-void
 .end method
 
-.method public f1(I)Landroid/view/View;
+.method public e1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->h0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -170,10 +170,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->i0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->h0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -188,7 +188,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/FlowFragment;->i0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/FlowFragment;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -214,22 +214,22 @@
     return-object v0
 .end method
 
-.method public abstract g1()[Lre/a;
+.method public abstract f1()[Lhf/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()[",
-            "Lre/a<",
-            "Lwc/w;",
+            "Lhf/a<",
+            "Luc/z;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public final h1()Lcom/supercell/id/ui/FlowFragment$b;
+.method public final g1()Lcom/supercell/id/ui/FlowFragment$b;
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
 
     if-eqz v0, :cond_5
 
@@ -269,10 +269,10 @@
     const-string v4, "it"
 
     .line 5
-    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
-    iget v3, v3, Landroidx/fragment/app/Fragment;->C:I
+    iget v3, v3, Landroidx/fragment/app/Fragment;->B:I
 
     .line 7
     sget v4, Lcom/supercell/id/R$id;->head:I
@@ -326,11 +326,11 @@
 
     .line 10
     :cond_4
-    invoke-static {v0}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lze/j;->D(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/supercell/id/ui/BaseFragment;
+    check-cast v0, Luc/j;
 
     goto :goto_3
 
@@ -343,12 +343,12 @@
     return-object v0
 .end method
 
-.method public final i1(Lre/l;)V
+.method public final h1(Lhf/l;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lre/l<",
+            "Lhf/l<",
             "-",
             "Landroid/view/View;",
             "Ljava/lang/Boolean;",
@@ -357,7 +357,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->u()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-interface {p1, v0}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lhf/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -385,7 +385,7 @@
 
     if-ne p1, v1, :cond_0
 
-    const/4 p1, 0x1
+    move p1, v1
 
     goto :goto_0
 
@@ -397,24 +397,24 @@
 
     .line 2
     :cond_1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->u()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->h(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->k(Landroid/app/Activity;)V
 
     :cond_2
     return-void
 .end method
 
-.method public j1()V
+.method public i1()V
     .locals 2
 
     sget v0, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/FlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -434,16 +434,16 @@
     return-void
 .end method
 
-.method public final l0(Landroid/os/Bundle;)V
+.method public final k0(Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/supercell/id/ui/BaseFragment;->l0(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Luc/j;->k0(Landroid/os/Bundle;)V
 
     .line 2
     sget p1, Lcom/supercell/id/R$id;->flowPager:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -451,7 +451,7 @@
 
     const-string v1, "flowPager"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->getCurrentItem()I
 
@@ -460,27 +460,27 @@
     if-nez v0, :cond_4
 
     .line 3
-    invoke-virtual {p0}, Lcom/supercell/id/ui/FlowFragment;->h1()Lcom/supercell/id/ui/FlowFragment$b;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/FlowFragment;->g1()Lcom/supercell/id/ui/FlowFragment$b;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
-
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/FlowFragment$b;->f1(F)V
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/FlowFragment$b;->e1(I)V
 
     .line 4
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroidx/viewpager/widget/RtlViewPager;->getAdapter()Ly0/b;
+    invoke-virtual {p1}, Landroidx/viewpager/widget/RtlViewPager;->getAdapter()Lw0/b;
 
     move-result-object p1
 
@@ -497,14 +497,12 @@
 
     if-eqz p1, :cond_2
 
-    const/4 v0, 0x0
-
     .line 5
-    iget-object p1, p1, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lre/a;
+    iget-object p1, p1, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lhf/a;
 
-    aget-object p1, p1, v0
+    aget-object p1, p1, v2
 
-    invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lhf/a;->invoke()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -517,7 +515,7 @@
 
     .line 6
     :goto_0
-    instance-of v0, p1, Lwc/w;
+    instance-of v0, p1, Luc/z;
 
     if-nez v0, :cond_3
 
@@ -527,11 +525,11 @@
     move-object v1, p1
 
     :goto_1
-    check-cast v1, Lwc/w;
+    check-cast v1, Luc/z;
 
     if-eqz v1, :cond_4
 
-    invoke-virtual {v1}, Lwc/w;->T0()V
+    invoke-virtual {v1}, Luc/z;->S0()V
 
     :cond_4
     return-void

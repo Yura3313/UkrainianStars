@@ -2,67 +2,56 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements La5/u0;
+.implements Ly4/p;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "La5/u0<",
-        "Lcom/google/android/play/core/assetpacks/e2;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final g:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/y;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final f:Lcom/google/android/gms/ads/a;
 
 
 # direct methods
-.method public constructor <init>(La5/u0;)V
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/ads/a;
+
+    invoke-direct {v0}, Lcom/google/android/gms/ads/a;-><init>()V
+
+    sput-object v0, Lcom/google/android/play/core/assetpacks/f2;->f:Lcom/google/android/gms/ads/a;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/y;",
-            ">;)V"
-        }
-    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/f2;->g:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic e()Ljava/lang/Object;
-    .locals 2
+.method public b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
+    .locals 1
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/f2;->g:La5/u0;
+    .line 1
+    new-instance v0, Lp5/a0;
 
-    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
+    invoke-direct {v0}, Lp5/a0;-><init>()V
 
-    move-result-object v0
+    .line 2
+    invoke-static {p1, p2, v0}, Lhd/h;->a(Ljava/lang/ClassLoader;Ljava/util/Set;Ly4/t;)V
 
-    new-instance v1, Lcom/google/android/play/core/assetpacks/e2;
+    return-void
+.end method
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/y;
+.method public c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
+    .locals 0
 
-    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/e2;-><init>(Lcom/google/android/play/core/assetpacks/y;)V
+    invoke-static {p1, p2, p3, p4}, Lhd/h;->e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
 
-    return-object v1
+    move-result p1
+
+    return p1
 .end method

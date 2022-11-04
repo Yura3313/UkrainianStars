@@ -87,7 +87,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v2
 
     :cond_2
     :goto_0
@@ -147,9 +147,9 @@
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
 
-    long-to-int v1, v0
+    long-to-int v0, v0
 
-    return v1
+    return v0
 
     .line 3
     :catch_1

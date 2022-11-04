@@ -87,7 +87,7 @@
 
     new-array p1, p1, [I
 
-    const/4 v3, 0x0
+    move v3, v1
 
     .line 5
     :goto_0
@@ -110,7 +110,7 @@
 
     if-eqz v4, :cond_0
 
-    const/4 v4, 0x0
+    move v4, v1
 
     goto :goto_1
 
@@ -143,10 +143,10 @@
 
     .line 9
     :cond_2
-    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
+    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
 
     .line 10
-    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
+    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
 
     .line 11
     iget-object v3, p0, Landroidx/fragment/app/FragmentManager$b;->a:Landroidx/fragment/app/FragmentManager;
@@ -165,7 +165,7 @@
 
     .line 14
     :cond_3
-    invoke-virtual {v2, v1, v0, p1}, Landroidx/fragment/app/Fragment;->f0(I[Ljava/lang/String;[I)V
+    invoke-virtual {v2, v1, v0, p1}, Landroidx/fragment/app/Fragment;->e0(I[Ljava/lang/String;[I)V
 
     :goto_2
     return-void

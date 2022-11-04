@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public final a:Lj8/b;
+.field public final a:Lg8/b;
 
-.field public final b:Le8/i;
+.field public final b:Lb8/g;
 
-.field public final c:Le8/d;
+.field public final c:Lb8/c;
 
-.field public d:La8/f;
+.field public d:Lx7/g;
 
-.field public e:Lv0/u;
+.field public e:Lb8/h;
 
-.field public f:Lla/b;
+.field public f:Lka/b;
 
 .field public g:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method public constructor <init>(La8/f;Le8/s;Lj8/b;)V
+.method public constructor <init>(Lx7/g;Lb8/s;Lg8/b;)V
     .locals 1
 
     .line 1
@@ -42,31 +42,31 @@
     iput-object v0, p0, Lba/a;->g:Ljava/util/LinkedList;
 
     .line 3
-    iput-object p1, p0, Lba/a;->d:La8/f;
+    iput-object p1, p0, Lba/a;->d:Lx7/g;
 
     .line 4
-    iput-object p3, p0, Lba/a;->a:Lj8/b;
+    iput-object p3, p0, Lba/a;->a:Lg8/b;
 
     .line 5
-    check-cast p2, Le8/j;
+    check-cast p2, Lb8/l;
 
     .line 6
-    iget-object p1, p2, Le8/j;->i:Lv0/u;
+    iget-object p1, p2, Lb8/l;->i:Lb8/h;
 
     .line 7
-    iput-object p1, p0, Lba/a;->e:Lv0/u;
+    iput-object p1, p0, Lba/a;->e:Lb8/h;
 
     .line 8
-    iget-object p1, p2, Le8/j;->t:Le8/i;
+    iget-object p1, p2, Lb8/l;->t:Lb8/g;
 
     .line 9
-    iput-object p1, p0, Lba/a;->b:Le8/i;
+    iput-object p1, p0, Lba/a;->b:Lb8/g;
 
     .line 10
-    iget-object p1, p2, Le8/j;->g:Le8/d;
+    iget-object p1, p2, Lb8/l;->g:Lb8/c;
 
     .line 11
-    iput-object p1, p0, Lba/a;->c:Le8/d;
+    iput-object p1, p0, Lba/a;->c:Lb8/c;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     move-object/from16 v1, p0
 
     .line 1
-    sget-object v2, Ld8/c;->g:Ld8/c;
+    sget-object v2, La8/c;->f:La8/c;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -88,18 +88,16 @@
     const-string v3, "breadcrumbs"
 
     .line 2
-    iget-object v4, v1, Lba/a;->b:Le8/i;
+    iget-object v4, v1, Lba/a;->b:Lb8/g;
 
-    iget-object v5, v1, Lba/a;->e:Lv0/u;
+    iget-object v5, v1, Lba/a;->e:Lb8/h;
 
     .line 3
-    iget-object v5, v5, Lv0/u;->g:Ljava/lang/Object;
-
-    check-cast v5, Lk3/s9;
+    iget-object v5, v5, Lb8/h;->a:Lu3/v4;
 
     const-string v6, "key_bread_crumb_storage"
 
-    invoke-virtual {v5, v6}, Lk3/s9;->f(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v5, v6}, Lu3/v4;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -115,7 +113,7 @@
 
     .line 5
     :goto_0
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     new-instance v4, Lorg/json/JSONArray;
@@ -149,14 +147,14 @@
     invoke-direct {v8}, Lorg/json/JSONObject;-><init>()V
 
     .line 9
-    iget-object v9, v7, Lca/a;->g:Ljava/lang/String;
+    iget-object v9, v7, Lca/a;->f:Ljava/lang/String;
 
     const-string v10, "action"
 
     invoke-virtual {v8, v10, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 10
-    iget-object v7, v7, Lca/a;->h:Ljava/lang/String;
+    iget-object v7, v7, Lca/a;->g:Ljava/lang/String;
 
     const-string v9, "datetime"
 
@@ -175,7 +173,7 @@
     const-string v3, "Exception while forming breadcrumb string"
 
     .line 12
-    invoke-static {v0, v2, v3}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+    invoke-static {v0, v2, v3}, La8/f;->b(Ljava/lang/Exception;La8/a;Ljava/lang/String;)La8/f;
 
     move-result-object v0
 
@@ -193,9 +191,9 @@
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     .line 15
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "platform"
 
@@ -204,9 +202,9 @@
     invoke-virtual {v4, v5, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "library-version"
 
@@ -215,9 +213,9 @@
     invoke-virtual {v4, v5, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     sget-object v5, Landroid/os/Build;->MODEL:Ljava/lang/String;
@@ -228,9 +226,9 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 20
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     sget-object v5, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
@@ -242,25 +240,25 @@
 
     .line 23
     :try_start_1
-    iget-object v5, v1, Lba/a;->a:Lj8/b;
+    iget-object v5, v1, Lba/a;->a:Lg8/b;
 
     const-string v7, "sdkLanguage"
 
-    invoke-virtual {v5, v7}, Lj8/b;->k(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Lg8/b;->j(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 24
-    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
     .line 25
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -273,7 +271,7 @@
 
     .line 27
     :cond_2
-    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -286,17 +284,12 @@
     :try_end_1
     .catch Ljava/util/MissingResourceException; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_2
-
-    :catch_1
-    nop
-
     .line 29
+    :catch_1
     :cond_3
-    :goto_2
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
     new-instance v5, Ljava/text/SimpleDateFormat;
@@ -322,10 +315,10 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 33
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
     .line 34
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -337,14 +330,14 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Le8/d;->c()Ljava/lang/String;
+    invoke-virtual {v5}, Lb8/c;->c()Ljava/lang/String;
 
     move-result-object v5
 
     .line 37
-    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -359,9 +352,9 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Le8/d;->d()Ljava/lang/String;
+    invoke-virtual {v5}, Lb8/c;->d()Ljava/lang/String;
 
     move-result-object v5
 
@@ -370,9 +363,9 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     new-instance v5, Landroid/os/StatFs;
@@ -401,27 +394,7 @@
 
     long-to-double v9, v9
 
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v7, v7, v9
+    mul-double/2addr v7, v9
 
     const-wide/high16 v9, 0x41d0000000000000L    # 1.073741824E9
 
@@ -429,7 +402,7 @@
 
     const-wide/high16 v11, 0x4059000000000000L    # 100.0
 
-    mul-double v7, v7, v11
+    mul-double/2addr v7, v11
 
     .line 44
     invoke-static {v7, v8}, Ljava/lang/Math;->round(D)J
@@ -437,16 +410,6 @@
     move-result-wide v7
 
     long-to-double v7, v7
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double/2addr v7, v11
 
@@ -466,31 +429,11 @@
 
     long-to-double v5, v6
 
-    invoke-static {v13, v14}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v13, v14}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v13, v14}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v13, v14}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v13, v14}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v13, v13, v5
+    mul-double/2addr v13, v5
 
     div-double/2addr v13, v9
 
-    mul-double v13, v13, v11
+    mul-double/2addr v13, v11
 
     .line 47
     invoke-static {v13, v14}, Ljava/lang/Math;->round(D)J
@@ -498,16 +441,6 @@
     move-result-wide v5
 
     long-to-double v5, v5
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double/2addr v5, v11
 
@@ -556,9 +489,9 @@
     invoke-virtual {v7, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
-    iget-object v5, v1, Lba/a;->b:Le8/i;
+    iget-object v5, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v5, v7}, Le8/i;->i(Ljava/util/Map;)Ljava/lang/Object;
+    invoke-virtual {v5, v7}, Lb8/g;->i(Ljava/util/Map;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -568,11 +501,11 @@
     invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 54
-    iget-object v5, v1, Lba/a;->a:Lj8/b;
+    iget-object v5, v1, Lba/a;->a:Lg8/b;
 
     const-string v6, "fullPrivacy"
 
-    invoke-virtual {v5, v6}, Lj8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lg8/b;->c(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -581,10 +514,10 @@
     if-nez v5, :cond_7
 
     .line 55
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
     .line 56
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     const-string v7, "phone"
 
@@ -598,7 +531,7 @@
 
     move-object v5, v6
 
-    goto :goto_3
+    goto :goto_2
 
     .line 57
     :cond_5
@@ -606,17 +539,17 @@
 
     move-result-object v5
 
-    :goto_3
+    :goto_2
     const-string v8, "country-code"
 
     .line 58
     invoke-virtual {v4, v8, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 59
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
     .line 60
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     invoke-virtual {v5, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -628,7 +561,7 @@
 
     move-object v5, v6
 
-    goto :goto_4
+    goto :goto_3
 
     .line 61
     :cond_6
@@ -636,7 +569,7 @@
 
     move-result-object v5
 
-    :goto_4
+    :goto_3
     const-string v7, "carrier-name"
 
     .line 62
@@ -644,13 +577,13 @@
 
     .line 63
     :cond_7
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
     :try_start_2
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     const-string v7, "connectivity"
 
@@ -676,13 +609,13 @@
     :try_end_2
     .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_2
 
-    goto :goto_5
+    goto :goto_4
 
     :catch_2
     :cond_8
     const/4 v5, 0x0
 
-    :goto_5
+    :goto_4
     if-nez v5, :cond_9
 
     const-string v5, "Unknown"
@@ -694,9 +627,9 @@
     invoke-virtual {v4, v7, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 69
     new-instance v7, Landroid/content/IntentFilter;
@@ -706,7 +639,7 @@
     invoke-direct {v7, v8}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 70
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -718,7 +651,7 @@
 
     if-nez v5, :cond_a
 
-    goto :goto_6
+    goto :goto_5
 
     :cond_a
     const-string v6, "level"
@@ -743,7 +676,7 @@
 
     const/high16 v5, 0x42c80000    # 100.0f
 
-    mul-float v6, v6, v5
+    mul-float/2addr v6, v5
 
     float-to-int v5, v6
 
@@ -762,16 +695,16 @@
 
     move-result-object v6
 
-    :goto_6
+    :goto_5
     const-string v5, "battery-level"
 
     .line 74
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 75
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 76
     new-instance v6, Landroid/content/IntentFilter;
@@ -779,7 +712,7 @@
     invoke-direct {v6, v8}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 77
-    iget-object v5, v5, Le8/d;->a:Landroid/content/Context;
+    iget-object v5, v5, Lb8/c;->a:Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -793,7 +726,7 @@
 
     if-nez v5, :cond_b
 
-    goto :goto_9
+    goto :goto_8
 
     :cond_b
     const-string v9, "status"
@@ -811,33 +744,33 @@
 
     if-ne v5, v7, :cond_c
 
-    goto :goto_7
+    goto :goto_6
 
     :cond_c
-    const/4 v5, 0x0
+    move v5, v8
 
-    goto :goto_8
+    goto :goto_7
 
     :cond_d
-    :goto_7
+    :goto_6
     const/4 v5, 0x1
 
-    :goto_8
+    :goto_7
     if-eqz v5, :cond_e
 
     const-string v6, "Charging"
 
     :cond_e
-    :goto_9
+    :goto_8
     const-string v5, "battery-status"
 
     .line 79
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 80
-    iget-object v5, v1, Lba/a;->b:Le8/i;
+    iget-object v5, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v5, v4}, Le8/i;->i(Ljava/util/Map;)Ljava/lang/Object;
+    invoke-virtual {v5, v4}, Lb8/g;->i(Ljava/util/Map;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -863,11 +796,11 @@
     move-result v5
 
     .line 85
-    iget-object v6, v1, Lba/a;->a:Lj8/b;
+    iget-object v6, v1, Lba/a;->a:Lg8/b;
 
     const-string v7, "debugLogLimit"
 
-    invoke-virtual {v6, v7}, Lj8/b;->g(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-virtual {v6, v7}, Lg8/b;->g(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v6
 
@@ -877,9 +810,9 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    const/4 v7, 0x0
+    move v7, v8
 
-    :goto_a
+    :goto_9
     if-ge v7, v5, :cond_f
 
     if-ge v7, v6, :cond_f
@@ -899,7 +832,7 @@
 
     add-int/lit8 v7, v7, 0x1
 
-    goto :goto_a
+    goto :goto_9
 
     :catch_3
     move-exception v0
@@ -908,7 +841,7 @@
 
     .line 87
     :try_start_5
-    invoke-static {v0, v9, v9}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+    invoke-static {v0, v9, v9}, La8/f;->b(Ljava/lang/Exception;La8/a;Ljava/lang/String;)La8/f;
 
     move-result-object v0
 
@@ -924,9 +857,9 @@
     invoke-virtual {v5}, Ljava/util/LinkedList;->clear()V
 
     .line 90
-    iget-object v5, v1, Lba/a;->b:Le8/i;
+    iget-object v5, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v5, v4}, Le8/i;->e(Ljava/util/List;)Ljava/lang/Object;
+    invoke-virtual {v5, v4}, Lb8/g;->e(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v4
     :try_end_5
@@ -938,12 +871,12 @@
     invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 92
-    iget-object v3, v1, Lba/a;->f:Lla/b;
+    iget-object v3, v1, Lba/a;->f:Lka/b;
 
     if-eqz v3, :cond_19
 
     .line 93
-    invoke-interface {v3}, Lla/b;->call()Ljava/util/Map;
+    invoke-interface {v3}, Lka/b;->call()Ljava/util/Map;
 
     move-result-object v3
 
@@ -964,7 +897,7 @@
     move-result-object v3
 
     :cond_10
-    :goto_b
+    :goto_a
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
@@ -992,7 +925,7 @@
     check-cast v5, Ljava/io/Serializable;
 
     .line 98
-    invoke-static {v6}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v6}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -1004,7 +937,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -1014,7 +947,7 @@
     :cond_11
     invoke-virtual {v4, v6}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    goto :goto_b
+    goto :goto_a
 
     :cond_12
     const-string v3, "hs-tags"
@@ -1044,15 +977,15 @@
     .line 104
     array-length v7, v6
 
-    const/4 v10, 0x0
+    move v10, v8
 
-    :goto_c
+    :goto_b
     if-ge v10, v7, :cond_14
 
     aget-object v11, v6, v10
 
     .line 105
-    invoke-static {v11}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v11}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v12
 
@@ -1078,7 +1011,7 @@
     :cond_13
     add-int/lit8 v10, v10, 0x1
 
-    goto :goto_c
+    goto :goto_b
 
     :cond_14
     new-array v6, v8, [Ljava/lang/String;
@@ -1110,31 +1043,29 @@
 
     invoke-direct {v4, v3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    goto :goto_d
+    goto :goto_c
 
     :cond_18
     move-object v4, v9
 
     .line 111
-    :goto_d
-    iget-object v5, v1, Lba/a;->e:Lv0/u;
+    :goto_c
+    iget-object v5, v1, Lba/a;->e:Lb8/h;
 
-    invoke-virtual {v5, v4}, Lv0/u;->d(Ljava/util/HashMap;)V
+    invoke-virtual {v5, v4}, Lb8/h;->a(Ljava/util/HashMap;)V
 
-    goto :goto_e
+    goto :goto_d
 
     .line 112
     :cond_19
-    iget-object v3, v1, Lba/a;->e:Lv0/u;
+    iget-object v3, v1, Lba/a;->e:Lb8/h;
 
     .line 113
-    iget-object v3, v3, Lv0/u;->g:Ljava/lang/Object;
-
-    check-cast v3, Lk3/s9;
+    iget-object v3, v3, Lb8/h;->a:Lu3/v4;
 
     const-string v4, "key_custom_meta_storage"
 
-    invoke-virtual {v3, v4}, Lk3/s9;->f(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lu3/v4;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1143,20 +1074,20 @@
     .line 114
     check-cast v3, Ljava/util/HashMap;
 
-    goto :goto_e
+    goto :goto_d
 
     :cond_1a
     move-object v3, v9
 
-    :goto_e
+    :goto_d
     if-eqz v3, :cond_1d
 
     .line 115
-    iget-object v4, v1, Lba/a;->a:Lj8/b;
+    iget-object v4, v1, Lba/a;->a:Lg8/b;
 
     const-string v5, "fullPrivacy"
 
-    invoke-virtual {v4, v5}, Lj8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v4, v5}, Lg8/b;->c(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -1169,9 +1100,9 @@
 
     .line 117
     :cond_1b
-    iget-object v4, v1, Lba/a;->b:Le8/i;
+    iget-object v4, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 118
     :try_start_6
@@ -1188,7 +1119,7 @@
 
     move-result-object v3
 
-    :goto_f
+    :goto_e
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
@@ -1223,7 +1154,7 @@
 
     invoke-direct {v8, v7}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    invoke-virtual {v4, v8}, Le8/i;->f(Ljava/util/List;)Ljava/lang/Object;
+    invoke-virtual {v4, v8}, Lb8/g;->f(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1239,7 +1170,7 @@
     :try_end_6
     .catch Lorg/json/JSONException; {:try_start_6 .. :try_end_6} :catch_4
 
-    goto :goto_f
+    goto :goto_e
 
     :catch_4
     move-exception v0
@@ -1247,7 +1178,7 @@
     const-string v3, "Exception while forming custom meta string"
 
     .line 125
-    invoke-static {v0, v2, v3}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+    invoke-static {v0, v2, v3}, La8/f;->b(Ljava/lang/Exception;La8/a;Ljava/lang/String;)La8/f;
 
     move-result-object v0
 
@@ -1266,42 +1197,44 @@
 
     .line 127
     :cond_1f
-    iget-object v2, v1, Lba/a;->d:La8/f;
+    iget-object v2, v1, Lba/a;->d:Lx7/g;
 
     .line 128
-    iget-object v2, v2, La8/f;->r:Li7/e;
+    iget-object v2, v2, Lx7/g;->r:Le7/e;
 
     .line 129
-    invoke-virtual {v2}, Li7/e;->f()Li7/c;
+    invoke-virtual {v2}, Le7/e;->f()Le7/c;
 
     move-result-object v3
 
     .line 130
-    iget-boolean v4, v3, Li7/c;->m:Z
+    iget-boolean v4, v3, Le7/c;->l:Z
 
     if-eqz v4, :cond_20
 
     .line 131
-    iget-object v2, v2, Li7/e;->b:Lg7/c;
+    iget-object v2, v2, Le7/e;->b:Ld1/i;
 
     .line 132
-    iget-object v2, v2, Lg7/c;->a:Lk3/s9;
+    iget-object v2, v2, Ld1/i;->g:Ljava/lang/Object;
+
+    check-cast v2, Lu3/v4;
 
     const-string v3, "userMetaIdentifier"
 
     const-string v4, ""
 
-    invoke-virtual {v2, v3, v4}, Lk3/s9;->h(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Lu3/v4;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    goto :goto_10
+    goto :goto_f
 
     .line 133
     :cond_20
-    iget-object v2, v3, Li7/c;->h:Ljava/lang/String;
+    iget-object v2, v3, Le7/c;->g:Ljava/lang/String;
 
-    :goto_10
+    :goto_f
     const-string v3, "extra"
 
     .line 134
@@ -1310,9 +1243,9 @@
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     .line 135
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "api-version"
 
@@ -1321,9 +1254,9 @@
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 136
-    iget-object v5, v1, Lba/a;->c:Le8/d;
+    iget-object v5, v1, Lba/a;->c:Lb8/c;
 
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "library-version"
 
@@ -1332,7 +1265,7 @@
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -1345,9 +1278,9 @@
 
     .line 139
     :cond_21
-    iget-object v2, v1, Lba/a;->b:Le8/i;
+    iget-object v2, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v2, v4}, Le8/i;->i(Ljava/util/Map;)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lb8/g;->i(Ljava/util/Map;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1362,11 +1295,11 @@
     const-string v3, "fp_status"
 
     .line 142
-    iget-object v4, v1, Lba/a;->a:Lj8/b;
+    iget-object v4, v1, Lba/a;->a:Lg8/b;
 
     const-string v5, "fullPrivacy"
 
-    invoke-virtual {v4, v5}, Lj8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v4, v5}, Lg8/b;->c(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -1379,18 +1312,18 @@
     const-string v3, "user_info"
 
     .line 143
-    iget-object v4, v1, Lba/a;->b:Le8/i;
+    iget-object v4, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v4, v2}, Le8/i;->i(Ljava/util/Map;)Ljava/lang/Object;
+    invoke-virtual {v4, v2}, Lb8/g;->i(Ljava/util/Map;)Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 144
-    iget-object v2, v1, Lba/a;->b:Le8/i;
+    iget-object v2, v1, Lba/a;->b:Lb8/g;
 
-    invoke-virtual {v2, v0}, Le8/i;->i(Ljava/util/Map;)Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Lb8/g;->i(Ljava/util/Map;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1402,11 +1335,5 @@
     .line 145
     monitor-exit p0
 
-    goto :goto_12
-
-    :goto_11
     throw v0
-
-    :goto_12
-    goto :goto_11
 .end method

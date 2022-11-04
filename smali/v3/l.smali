@@ -1,71 +1,263 @@
 .class public final Lv3/l;
-.super Lv3/s4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
-
-
-# instance fields
-.field public final synthetic k:Landroid/os/Bundle;
-
-.field public final synthetic l:Lcom/google/android/gms/internal/measurement/zzk;
-
-.field public final synthetic m:Lv3/s4;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@5.0.0"
 
 
 # direct methods
-.method public constructor <init>(Lv3/s4;Landroid/os/Bundle;Lcom/google/android/gms/internal/measurement/zzk;)V
-    .locals 0
+.method public static varargs a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    .locals 11
+    .param p0    # Ljava/lang/String;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p1    # [Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x0
+
+    move v1, v0
 
     .line 1
-    iput-object p1, p0, Lv3/l;->m:Lv3/s4;
+    :goto_0
+    array-length v2, p1
 
-    iput-object p2, p0, Lv3/l;->k:Landroid/os/Bundle;
+    if-ge v1, v2, :cond_1
 
-    iput-object p3, p0, Lv3/l;->l:Lcom/google/android/gms/internal/measurement/zzk;
+    aget-object v2, p1, v1
 
-    const/4 p2, 0x1
+    if-nez v2, :cond_0
 
-    .line 2
-    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
+    const-string v2, "null"
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lv3/l;->m:Lv3/s4;
+    goto :goto_1
 
     .line 2
-    iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    :cond_0
+    :try_start_0
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v9
 
     .line 3
-    iget-object v1, p0, Lv3/l;->k:Landroid/os/Bundle;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lv3/l;->l:Lcom/google/android/gms/internal/measurement/zzk;
+    .line 4
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-wide v3, p0, Lv3/s4$a;->g:J
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-interface {v0, v1, v2, v3, v4}, Lcom/google/android/gms/internal/measurement/zzm;->performAction(Landroid/os/Bundle;Lcom/google/android/gms/internal/measurement/zzn;J)V
+    move-result-object v4
 
-    return-void
-.end method
+    .line 5
+    invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-.method public final b()V
-    .locals 2
+    move-result-object v4
 
-    iget-object v0, p0, Lv3/l;->l:Lcom/google/android/gms/internal/measurement/zzk;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
+    const/16 v4, 0x40
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/measurement/zzk;->zza(Landroid/os/Bundle;)V
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    return-void
+    invoke-static {v2}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "com.google.common.base.Strings"
+
+    .line 6
+    invoke-static {v3}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    move-result-object v3
+
+    sget-object v4, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
+
+    const-string v5, "Exception during lenientFormat for "
+
+    invoke-virtual {v5, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v5, "com.google.common.base.Strings"
+
+    const-string v6, "lenientToString"
+
+    move-object v8, v9
+
+    .line 7
+    invoke-virtual/range {v3 .. v8}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 8
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "<"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " threw "
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ">"
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 9
+    :goto_1
+    aput-object v2, p1, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 10
+    :cond_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    mul-int/lit8 v2, v2, 0x10
+
+    add-int/2addr v2, v3
+
+    .line 11
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    move v2, v0
+
+    :goto_2
+    array-length v3, p1
+
+    if-ge v0, v3, :cond_3
+
+    const-string v4, "%s"
+
+    .line 12
+    invoke-virtual {p0, v4, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;I)I
+
+    move-result v4
+
+    const/4 v5, -0x1
+
+    if-ne v4, v5, :cond_2
+
+    goto :goto_3
+
+    .line 13
+    :cond_2
+    invoke-virtual {v1, p0, v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v0, 0x1
+
+    .line 14
+    aget-object v0, p1, v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v0, v4, 0x2
+
+    move v10, v2
+
+    move v2, v0
+
+    move v0, v10
+
+    goto :goto_2
+
+    .line 15
+    :cond_3
+    :goto_3
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    .line 16
+    invoke-virtual {v1, p0, v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+
+    if-ge v0, v3, :cond_5
+
+    const-string p0, " ["
+
+    .line 17
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 p0, v0, 0x1
+
+    .line 18
+    aget-object v0, p1, v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    :goto_4
+    array-length v0, p1
+
+    if-ge p0, v0, :cond_4
+
+    const-string v0, ", "
+
+    .line 19
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v0, p0, 0x1
+
+    .line 20
+    aget-object p0, p1, p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move p0, v0
+
+    goto :goto_4
+
+    :cond_4
+    const/16 p0, 0x5d
+
+    .line 21
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :cond_5
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method

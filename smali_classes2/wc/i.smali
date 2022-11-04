@@ -1,55 +1,121 @@
 .class public final Lwc/i;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "BaseFragment.kt"
+.super Lif/i;
+.source "ChangeEmailCurrentEmailEnterPinPageFragment.kt"
+
+# interfaces
+.implements Lhf/p;
 
 
-# instance fields
-.field public final synthetic g:Lze/o;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/p<",
+        "Lwc/g;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final f:Lwc/i;
 
 
 # direct methods
-.method public constructor <init>(Lze/o;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lwc/i;->g:Lze/o;
+    new-instance v0, Lwc/i;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {v0}, Lwc/i;-><init>()V
+
+    sput-object v0, Lwc/i;->f:Lwc/i;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lwc/i;->g:Lze/o;
+    check-cast p1, Lwc/g;
 
-    new-instance v0, Ljava/util/concurrent/CancellationException;
+    check-cast p2, Ljava/lang/Exception;
 
-    invoke-direct {v0}, Ljava/util/concurrent/CancellationException;-><init>()V
-
-    .line 2
-    invoke-interface {p1, v0}, Lze/o;->l(Ljava/lang/Throwable;)Z
-
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object p1, p0, Lwc/i;->g:Lze/o;
-
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-interface {p1, v0}, Lze/o;->m(Ljava/lang/Object;)Z
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    :catch_0
-    return-void
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
+
+    .line 5
+    :cond_0
+    instance-of v0, p2, Lpc/n;
+
+    if-eqz v0, :cond_1
+
+    check-cast p2, Lpc/n;
+
+    .line 6
+    iget-object p2, p2, Lpc/n;->f:Ljava/lang/String;
+
+    const-string v0, "change_email_expired"
+
+    .line 7
+    invoke-static {p2, v0}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 8
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->clearPendingEmailChange$supercellId_release()V
+
+    .line 9
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
+
+    .line 10
+    :cond_1
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

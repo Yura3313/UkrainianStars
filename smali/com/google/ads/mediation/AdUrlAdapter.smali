@@ -54,7 +54,7 @@
     const-string v0, "_noRefresh"
 
     .line 3
-    invoke-virtual {p1, v0, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {p1, v0, p2}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     return-object p1
 .end method

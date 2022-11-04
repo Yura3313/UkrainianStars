@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,اجمع نقاط القوة من صناديق العراك وعروض المتجر لفتح الترقية التالية.
 TID_HERO_INFO_STAR_POWER_CAN_DROP,يمكن الآن العثور على القدرات الخاصة في صناديق العراك.
-TID_HERO_INFO_STAR_POWER_BLOCKED,ارفع قوة <HERONAME> باستخدام قدرة خاصة من اختيارك. متوفرة في صناديق العراك بعد بلوغ مستوى القوة <LEVEL>.
+TID_HERO_INFO_STAR_POWER_BLOCKED,سلّح <HERONAME> بقدرة خاصة متميزة. متاحة للشراء بعد بلوغ القوة <LEVEL>.
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,يمكن الآن العثور على الأجهزة في صناديق العراك.
-TID_HERO_INFO_ACCESSORIES_BLOCKED,ارفع قوة <HERONAME> باستخدام جهاز خاص. متوفر في صناديق العراك بعد بلوغ مستوى القوة <LEVEL>.
+TID_HERO_INFO_ACCESSORIES_BLOCKED,سلّح <HERONAME> بجهاز فريد. متاح للشراء بعد بلوغ القوة <LEVEL>.
 TID_HERO_INFO_STAR_POWER_LABEL,القدرة الخاصة: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,جهاز: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,ترتفع فرص الحصول على بطل متلوّن مع حلول كل موسم من مواسم Brawl Pass (بدءًا بفرصة ندرة أسطوري، ثم خرافي، وأخيرًا استثنائي).\n\nفرصة فتح <BRAWLER> هذا الموسم: <RARITY>.
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,ترتفع فرص الحصول على بطل متلوّن مع حلول كل موسم من مواسم Brawl Pass (بدءًا بفرصة ندرة أسطوري، ثم خرافي، وأخيرًا استثنائي).\n\nيجب أن تبلغ المستوى <TIER> من مكافآت الموسم <SEASON> لإتاحة <BRAWLER> في الصناديق.
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,ترتفع فرص الحصول على بطل متلوّن مع حلول كل موسم من مواسم Brawl Pass (بدءًا بفرصة ندرة أسطوري، ثم خرافي، وأخيرًا استثنائي).\n\n<BRAWLER>: الإصدار في الموسم <SEASON>.
+TID_HERO_INFO_BUY_ITEM,الشراء
+TID_HERO_INFO_BUY_ITEM_FREE,مجانًا
+TID_HERO_INFO_BUY_MISSING1,تحتاج إلى <MISSINGCOINS> من النقود الإضافية
+TID_HERO_INFO_BUY_MISSING2,أتريد شراء النقود التي تنقصك الآن؟
+TID_HERO_INFO_BUY_MISSING_GEMS1,تحتاج إلى <MISSINGCOINS> من النقود الإضافية
+TID_HERO_INFO_BUY_MISSING_GEMS2,احصل على <MISSINGGEMS> من الجواهر الإضافية لشراء النقود الناقصة
+TID_HERO_INFO_SEE_OFFERS,اشتر الجواهر
+TID_HERO_INFO_UNLOCK_GADGETS,فتح الأجهزة
+TID_HERO_INFO_UNLOCK_STARPOWERS,فتح القدرات الخاصة
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,تأكيد الشراء
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,تأكيد الشراء
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,تأكيد الشراء
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,احصل على مزيد من الجواهر
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,احصل على <cC5F724><REQUIREDGEMS> من الجواهر الإضافية </c> لشراء النقود الناقصة
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,كل باقات الجواهر
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,موصى بها
 TID_MATCHMAKE_FAILED_5,تعذّرت المطابقة: انتهت صلاحية الحدث
 TID_MATCHMAKE_FAILED_7,تعذّرت المطابقة: انقطع اتصال أحد أعضاء الفريق
 TID_MATCHMAKE_FAILED_9,تعذّرت المطابقة: الصيانة قيد البدء
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,لا يوجد وصف للاتحاد
 TID_EVENT_POPUP_TITLE,لنخض معركة!
 TID_GOLDRUSH_8,سهول الياقوت
 TID_USE_AUTOFIRE_TUTORIAL,اضغط على <ccc0033>وحدة التحكم الحمراء</c> لإطلاق النار على أقرب عدو!
-TID_BRAWL_BOX_INFO_1,يمنحك الصندوق الكبير مكافآت تعادل تلك التي تحصل عليها عند فتح 3 صناديق عراك، لكن توزع نقاط القوة على عدد أقل من الأبطال. لا يمكن أن تكون أقراص العتاد سوى من نوع واحد من الأقراص.\n\nتسحب 3 مكافآت عشوائية، واحتمالاتها كالتالي:
-TID_BRAWL_BOX_INFO_2,يحتوي كل صندوق عراك على أحد العناصر التالية: بطل جديد، أو نقاط قوة ونقود، أو أقراص عتاد وخردة، أو جهاز، أو قدرة خاصة. إلى جانب ذلك، يمكنك الحصول على مضاعفي أقراص إضافية.\n\nاحتمالات المكافآت كالتالي:
-TID_BRAWL_BOX_INFO_3,يمنحك الصندوق العملاق مكافآت تعادل تلك التي تحصل عليها عند فتح 10 صناديق عراك، لكن توزع نقاط القوة على عدد أقل من الأبطال. لا يمكن أن تكون أقراص العتاد سوى من نوع واحد من الأقراص.\n\nتسحب 10 مكافآت عشوائية، واحتمالاتها كالتالي:
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nبطل نادر: <NUM2>%<GAR_HERO_1>\nبطل بالغ الندرة: <NUM3>%<GAR_HERO_2>\nبطل استثنائي: <NUM4>%<GAR_HERO_3>\nبطل خرافي: <NUM5>%<GAR_HERO_4>\nبطل أسطوري: <NUM6>%<GAR_HERO_5>\nقدرة خاصة: <NUM7>%<GAR_STAR_POWER>\nجهاز: <NUM8>%<GAR_ACCESSORY>\nأقراص العتاد: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,\n\nبالإضافة إلى ذلك، في كل مرة تفتح صندوقًا، لديك فرصة <TOKEN_DOUBLER>% للحصول على مضاعف أقراص. تكون الأجهزة متاحة فقط عندما يبلغ الأبطال مستوى القوة 7. القدرات الخاصة متاحة فقط للأبطال الذين بلغوا مستوى القوة 9. تكون الخردة وأقراص العتاد متاحة فقط عندما يبلغ الأبطال مستوى القوة 10. بعد فتح <WCPP_BRAWLERS> من الأبطال، ستكون هناك فرصة بنسبة <WCPP_CHANCE>% لمنح نقاط القوة لأي بطل. بعد فتح جميع المكافآت من نوع معين، على سبيل المثال، الأبطال من فئة نادر، ستزيد لديك فرصة الحصول على باقي المكافآت الأخرى. نظام الحظ: لتحري العدل بخصوص فرص صناديق العراك، وضعنا نظام الحظ الذي يؤثر على احتمالات ظهور الأبطال الأسطوريين. في كل مرة تفتح صندوقًا ولا تحصل منه على بطل جديد، يرتفع معدل الحظ، والعكس صحيح؛ حيث ينخفض معدل الحظ لديك في كل مرة تحصل فيها على بطل جديد حسب فئة ندرته. عندما يرتفع معدل الحظ لديك بدرجة كافية، تزيد فرصة حصولك على بطل أسطوري، ولكن الفرصة لن ترتفع عن <MAX_LEGENDARY>%. أما معدل الحظ المنخفض، فيعني أنه ستضعف فرصة الحصول على بطل أسطوري جديد. حرصنا على تحديد محتويات صناديق العراك الأولية مسبقًا لضمان بداية عادلة لجميع اللاعبين.
+TID_BRAWL_BOX_INFO_1,يمنح الصندوق الكبير الواحد مكافآت تعادل فتح 3 صناديق عراك، لكن توزع نقاط القوة على عدد أقل من الأبطال.\n\nتسحب 3 مكافآت عشوائية، واحتمالاتها كالتالي:
+TID_BRAWL_BOX_INFO_2,يحتوي كل صندوق عراك على أحد العناصر التالية: بطل جديد، أو نقاط قوة ونقود، أو جهاز، أو قدرة خاصة. إلى جانب ذلك، يمكنك الحصول على مضاعفي أقراص إضافية.\n\nاحتمالات المكافآت كالتالي:
+TID_BRAWL_BOX_INFO_3,يمنحك صندوق عملاق واحد مكافآت تعادل تلك التي تحصل عليها عند فتح 10 صناديق عراك، لكن توزع نقاط القوة على عدد أقل من الأبطال.\n\nتسحب 10 مكافآت عشوائية، واحتمالاتها كالتالي:
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nبطل نادر : <NUM2>%<GAR_HERO_1>\nبطل بالغ الندرة : <NUM3>%<GAR_HERO_2>\nبطل استثنائي : <NUM4>%<GAR_HERO_3>\nبطل خرافي : <NUM5>%<GAR_HERO_4>\nبطل أسطوري : <NUM6>%<GAR_HERO_5>\nقدرة خاصة : <NUM7>%<GAR_STAR_POWER>\nجهاز: <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,\n\nبالإضافة إلى ذلك، في كل مرة تفتح صندوقًا، لديك فرصة <TOKEN_DOUBLER>% للحصول على مضاعف أقراص. تكون الأجهزة متاحة فقط عندما يبلغ الأبطال مستوى القوة 7. القدرات الخاصة متاحة فقط للأبطال الذين بلغوا مستوى القوة 9. بعد فتح <WCPP_BRAWLERS> من الأبطال، ستكون هناك فرصة بنسبة <WCPP_CHANCE>% لمنح نقاط القوة لأي بطل. بعد فتح جميع المكافآت من نوع معين، على سبيل المثال، الأبطال من فئة نادر، ستزيد لديك فرصة الحصول على باقي المكافآت الأخرى. نظام الحظ: لتحري العدل بخصوص فرص صناديق العراك، وضعنا نظام الحظ الذي يؤثر على احتمالات ظهور الأبطال الأسطوريين. في كل مرة تفتح صندوقًا ولا تحصل منه على بطل جديد، يرتفع معدل الحظ، والعكس صحيح؛ حيث ينخفض معدل الحظ لديك في كل مرة تحصل فيها على بطل جديد حسب فئة ندرته. عندما يرتفع معدل الحظ لديك بدرجة كافية، تزيد فرصة حصولك على بطل أسطوري، ولكن الفرصة لن ترتفع عن <MAX_LEGENDARY>%. أما معدل الحظ المنخفض، فيعني أنه ستضعف فرصة الحصول على بطل أسطوري جديد. حرصنا على تحديد محتويات صناديق العراك الأولية مسبقًا لضمان بداية عادلة لجميع اللاعبين.
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,نقاط قوة + نقود
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,نقاط قوة + نقود + خردة
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,نقود + خردة
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,عندما يمتلئ زخم بروك بالكامل (
 TID_SPEC_ABI_PET,الطائر المساعد
 TID_SPEC_ABI_PET_DESC,طائر دينامايك يشاركه في القتال.
 TID_SPEC_ABI_DAMAGE_ULTI,الصفعة الخفية
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,عندما يمتلئ زخم الجني، يلحق هجومه <c00cc00>+<VALUE1></c> من الضرر.
 TID_ARCADE,8-بت
 TID_ARCADE_DESC,يتحرك 8-بت بخطوات ثقيلة كمنصة آركيد متنقلة ويطلق أشعة ناسفة، بينما يعزز زخمه الضرر الذي يلحقه أصدقاؤه.
 TID_ARCADE_SHORT_DESC,فئة ملحق ضرر
@@ -3215,7 +3230,7 @@ TID_MRP_AGENT_SKIN,العميل ب
 TID_MRP_AGENT_SKIN_SHOP,العميل ب
 TID_HERO_INFO_ATTACK_DAMAGE_MULTIPLIER,<AMMO> x <DAMAGE>
 TID_HERO_INFO_DURATION,المدة
-TID_HERO_INFO_CHANGE_CHARACTER_DURATION,مدة تشغيل الآلي
+TID_HERO_INFO_CHANGE_CHARACTER_DURATION,مدة ارتداء الآلي
 TID_HERO_INFO_DAMAGE_REDUCTION,تخفيض الضرر
 TID_HERO_INFO_LIFE_STEAL,التعافي من الضرر
 TID_SPAWN_BUILDING_HEALTH,صحة القاعدة الرئيسية
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,نشكرك على استخدام مصمم ال
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,نشكرك على استخدام مصمم الخرائط. الرجاء الالتزام باتفاقية المستخدم والقواعد التنظيمية الأخرى ذات الصلة عند استخدام مصمم الخرائط. امتنع عن صنع أو نشر أي محتويات غير لائقة ذات طابع جنسي أو فاحش، أو تهدد الوحدة الوطنية أو السيادة أو سلامة الأراضي، أو تخالف القوانين والقواعد التنظيمية الأخرى.
 TID_RUFFS,روفس
 TID_RUFFS_SHORT_DESC,فئة داعم
-TID_RUFFS_DESC,قد يزمجر العقيد روفس عند إصداره الأوامر لمرؤوسيه، لكنه طيب جدًا!\n\nيتمتع روفس بسلوك جاد وهادئ، ويخفي سماته الكلبية، ما لم يرم له أحدهم غرضًا ليحضره!
+TID_RUFFS_DESC,قد يزمجر العقيد روفس عند إصداره الأوامر لمرؤوسيه، لكنه طيب جدًا!\n\nيتمتع روفس بسلوك جاد وهادئ إلا أن سماته الكلبية تظهر عندما يرمي له أحدهم غرضًا ليحضره.
 TID_RUFFS_WEAPON,الليزر الثنائي
 TID_RUFFS_WEAPON_DESC,يرتد ليزر روفس الثنائي على الجدران عدة مرات. يمكنه إصابة خصومه الموجودين وراء ساتر.
 TID_RUFFS_ULTI,الإمدادات الجوية
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,بذخ المبذرين
 TID_KO_JUNE21_2,في العمق
 TID_QUALIFIED_INFO_PARAM,تهانينا. لقد فزت في <CHALLENGE>! مكافأة الفوز في التحدي: <REWARD>
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,مكافأتك على الانتصار #<WIN> في <CHALLENGE>: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,تهانينا. لقد فزت في <CHALLENGE>! مكافأة الفوز في التحدي: <REWARD>\nهذه تشير إلى المكافأة الأصلية التي كانت لديك بالفعل.
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,مكافأة الفوز رقم <WIN> في <CHALLENGE>: <REWARD>\nستستبدل هذه المكافأة الأصلية التي كانت لديك بالفعل.
 TID_CHALLENGE_TEASER_INFO_PARAM,<CHALLENGE> قادم!\n\nفز في <WIN> من المواجهات لتحصل على مكافأة <REWARD>! شكل فريقًا مع أصدقائك أو \qابحث عن فريق\q لزيادة حظوظك في الفوز.\n\nالتحدي سار لمدة <DURATION> س فقط. حظًا موفقًا، واستمتع باللعب!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,فز في التحدي لربح: <REWARD>
 TID_GEN_JUNE21_1,المتنزه المائي
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,ابلغ <NUM> من الكؤوس لفتح 
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,تم تحديد مظهر واحد
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,الآن يتم اختيار مظهر واحد عشوائيًا من بين المظاهر المحددة
 TID_GEAR_TOKEN_DROP_TITLE,أقراص العتاد
-TID_GEAR_TOKEN_DAMAGE,أقراص الضرر
-TID_GEAR_TOKEN_HEAL,أقراص التعافي
-TID_GEAR_TOKEN_RESISTANCE,أقراص المقاومة
-TID_GEAR_TOKEN_SHIELD,أقراص الدرع
-TID_GEAR_TOKEN_SPEED,أقراص السرعة
-TID_GEAR_TOKEN_TYPE_DAMAGE,الضرر
-TID_GEAR_TOKEN_TYPE_HEAL,الصحة
-TID_GEAR_TOKEN_TYPE_VISION,الرؤية
-TID_GEAR_TOKEN_TYPE_SHIELD,الدرع
-TID_GEAR_TOKEN_TYPE_SPEED,السرعة
-TID_GEAR_TOKEN,قرص عتاد
 TID_GEAR_SCRAP_DROP_TITLE,الخردة
 TID_GEAR_SCRAP,الخردة
 TID_GEAR_UNLOCK_SLOT,فتح موضع العتاد <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,الصحة
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,الضرر
 TID_GEAR_VISION_TITLE,الرؤية
 TID_GEAR_SHIELD_TITLE,الدرع
+TID_GEAR_RELOAD_SPEED_TITLE,سرعة التعبئة
+TID_GEAR_SUPER_CHARGE_TITLE,الشحن الكامل
 TID_GEAR_FOREST_SPEED_INFO,احصل على زيادة في السرعة قدرها <NUM> عندما تتحرك في الشجيرات
 TID_GEAR_STANDING_HEAL_INFO,استرجاع الصحة بكفاءة أكثر بنسبة <NUM>%
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,ألحق <NUM>% من الضرر الإضافي عندما تقل صحتك عن 50%.
 TID_GEAR_VISION_INFO,إظهار الخصوم لمدة <NUM> ث بعد إصابتهم
 TID_GEAR_SHIELD_INFO,احصل على <NUM> من الصحة الإضافية في صورة درع قابل للاستهلاك. سيتجدد الدرع بعد 10 ثوان عند اكتمال نقاط الصحة.
+TID_GEAR_RELOAD_SPEED_INFO,تعبئة أسرع بنسبة <NUM>%
+TID_GEAR_SUPER_CHARGE_INFO,يشخن الزخم بسرعة أكبر بنسبة <NUM>%
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,زيادة سرعة الحركة في الشجيرات
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,استرجاع الصحة بكفاءة أكثر
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,ضرر إضافي عندما تقل صحتك عن 50%
 TID_GEAR_VISION_UPGRADE_INFO,إظهار الخصوم بعد إصابتهم
 TID_GEAR_SHIELD_UPGRADE_INFO,اكتسب درعًا يزيد الصحة
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,تعبئة أسرع
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,شحن زخم أسرع
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,تم تعزيز السرعة
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,مكافأة تعافي
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,ضرر إضافي
 TID_GEAR_VISION_UPGRADE_TARGET,ثواني الظهور
 TID_GEAR_SHIELD_UPGRADE_TARGET,صحة الدرع
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,سرعة التعبئة
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,معدل الشحن الكامل
+TID_GEAR_SUPER_HEALTH_TITLE,صحة الرأس
+TID_GEAR_SUPER_HEALTH_INFO,تحصل الرأس على <NUM> من الصحة الإضافية
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,صحة إضافية للرأس
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,صحة الرأس
+TID_GEAR_SUPER_RANGE_TITLE,مدى اليد
+TID_GEAR_SUPER_RANGE_INFO,يطول مدى اليد بمقدار رقعة واحدة
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,يطول مدى اليد
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,مدى اليد
 TID_GEAR_UPGRADED,تمت ترقية العتاد!
 TID_GEAR_TITLE,العتاد
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> من المستوى <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,العتاد: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,العتاد: <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,اخترت هذا العتاد في خانة أخرى بالفعل
 TID_ITEMS_TITLE,العناصر
 TID_TEAMUP_YOUR_SETTINGS_TITLE,الإعدادات الشخصية
 TID_TRUE_SILVER_BROCK_SKIN,بروك الفضة الخالصة
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>مباراة قوة</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,مباراة قوة
 TID_CLUB_INFO_COLUMN_TROPHIES,الكؤوس
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,ترتيب دوري القوة
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,آخر ظهور
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,الحالة
 TID_CLUB_INFO_COLUMN_NAME,الاسم
 TID_CLUB_INFO_COLUMN_TICKETS_USED,التذاكر المستخدمة
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,كؤوس الاتحاد
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,عند الخسارة
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,شكل فريقًا مع لاعبين عشوائيين
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,شكل فريقًا مع أعضاء الاتحاد
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,مكافآت كؤوس الاتحاد
-TID_REWARD_DESC_GEAR_TOKENS,أقراص العتاد
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,قرص العتاد
-TID_REWARD_DESC_GEAR_SCRAP,خردة العتاد
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,مرحبًا! يبدو أن الوقت فات لتلعب في هذا الأسبوع.\n\nيمكنك إلقاء نظرة ومشاهدة مواجهات اتحادك قبل بداية الأسبوع التالي.
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,اطّلع على محتويات متجر الاتحاد!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,النتائج النهائية:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,إكس فاكتور
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,يلحق انقسام هجوم جروم الأساسي حتى <c00cc00>+<VALUE1>%</c> من الضرر الإضافي من أقصى مسافة.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,برج المراقبة
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,يخرج جروم برج مراقبة من قنبلة جروم، فيمنح كل حلفائه قدرة رؤية ما وراء الشجيرات في منطقة واسعة. يفقد برج المراقبة الصحة بمرور الوقت.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,اصنع عتادك الأول
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,اجمع المزيد من الخردة وأقراص العتاد من صناديق العراك أو متجر الاتحاد لصنع عتادك وترقيته
-TID_FIRST_GEAR_TUTORIAL_TITLE,موضع عتاد
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,تم فتح موضع عتاد!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,اختر عتادك الأول مجانًا
+TID_ITEMS_HUB_GUIDE_GADGET,يمكنك اختيار أجهزة فريدة وشراؤها لـ<BRAWLER> هنا
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,الآن تتوفر الأجهزة من هنا
+TID_ITEMS_HUB_GUIDE_STARPOWER,يمكنك اختيار قدرات خاصة فريدة وشراؤها لـ<BRAWLER> هنا
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,الآن تتوفر القدرات الخاصة هنا
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,الآن تتوفر الأجهزة هنا
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,الآن تتوفر القدرات الخاصة هنا
+TID_FIRST_GEAR_TUTORIAL_TITLE,العتاد
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,تم الفتح!
 TID_FIRST_GEAR_TUTORIAL_HEADER,العتاد
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,اصنع قدرات إضافية لأبطال من اختيارك
@@ -6625,19 +6652,19 @@ TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,القفازات بعيدة جدًا!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,يلزم توفر القفازات!
 TID_SOUL_COLLECTOR,جاس
 TID_SOUL_COLLECTOR_SHORT_DESC,فئة داعم
-TID_SOUL_COLLECTOR_DESC,يتسكع جاس في عربة قطار مهجورة ومنسية منذ فترة طويلة. يُعرف عنه شغفه بالبالونات، واحترافه في صناعة حيوانات من البالونات، والتي يستخدمها لتمضية الوقت وتسلية نفسه بمفرده.
+TID_SOUL_COLLECTOR_DESC,يسكن جاس في قطار مهجور، ويُعرف عنه شغفه بالبالونات. تقول الأسطورة إنه ذات يوم تتبع جاس بالون الكلب إلى مكان يعيد، ومنذ ذلك الحين بقى هناك بعد أن ضل طريقه.
 TID_SOUL_COLLECTOR_WEAPON,البالونات المجنونة
-TID_SOUL_COLLECTOR_WEAPON_DESC,يطلق جاس بالونات على الأعداء. بعد عدة ضربات متتالية، ستسقط روح. وستعمل الأرواح المجمعة على استعادة بعض الصحة لك أو لفريقك.
+TID_SOUL_COLLECTOR_WEAPON_DESC,يطلق جاس بالونات على الأعداء، وبعد ضربات عديدة ستسقط روح. ستعمل الأرواح المجمعة على استعادة بعض الصحة لجاس أو لزملائه بالفريق.
 TID_SOUL_COLLECTOR_ULTI,البالون سبوكي
 TID_SOUL_COLLECTOR_ULTI_DESC,يستخدم جاس صديقه العزيز البالون سبوكي، لإنشاء درع حوله أو حول أحد زملائه في الفريق.
 TID_SPEC_ABI_SOUL_COLLECTOR_1,منفاخ الصحة
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,يزيد التعافي المكتسب من البالونات المجنونة بنسبة <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,يزيد التعافي المكتسب من الأرواح بنسبة <c00cc00><VALUE1>%</c>
 TID_SPEC_ABI_SOUL_COLLECTOR_2,الروح العجيبة
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,يزيد سبوكي من الضرر الصادر من زميل في الفريق بنسبة <c00cc00><VALUE1>%</c>لمدة <c00cc00><VALUE2></c> ث.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,مفرقع البالونات الغريب
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,فجر كل الأرواح التي لم يتم جمعها لإلحاق <c00cc00><VALUE1></c> من الضرر بالأعداء القريبين.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,مبدل الأرواح
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,يفقد جاس <ccc0000><VALUE1>%</c> من الصحة ويحصل على <c00cc00><VALUE2>%</c> من الروح فورًا.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,يفقد جاس <ccc0000><VALUE1>%</c> من الصحة، لكنه يحصل على <c00cc00><VALUE2>%</c> من الروح فورًا.
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,الأرواح غير متاحة!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,شريط الروح مكتمل بالفعل!
 TID_SKIN_INFO_OUTLAW,مظهر عصابة الكوارث
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>انتهى 8-بت!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,باقة تعبير عصابة الكوارث
 TID_SHOP_OUTLAW_SKINS,مظهر عصابة الكوارث
 TID_SHOP_OUTLAW_TITLE,عصابة الكوارث
+TID_GEAR_RARITY_RARE,نادر
+TID_GEAR_RARITY_SUPER_RARE,بالغ الندرة
+TID_GEAR_RARITY_EPIC,استثنائي
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - عتاد نادر
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - عتاد بالغ الندرة
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - عتاد استثنائي
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,الأرواح بعيدة جدًا!
+TID_TRY_BRAWLER_TITLE,جرب البطل
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,مواجهة تدريبية
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,أراضي التدريب
+TID_FIRST_GADGET_TUTORIAL_HEADER,الأجهزة
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,قدرة إضافية لبطلك
+TID_FIRST_GADGET_TUTORIAL_1_DESC,يفتح كل الأبطال موضع الجهاز في مستوى القوة 7
+TID_FIRST_GADGET_TUTORIAL_2_DESC,أجهزة فريدة لكل بطل
+TID_FIRST_GADGET_TUTORIAL_3_DESC,استخدم الجهاز المحدد 3 مرات في المواجهة بحد أقصى.
+TID_FIRST_GADGET_TUTORIAL_3_x3,3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,القدرات الخاصة
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,قدرات سلبية فريدة لبطلك
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,يفتح كل الأبطال موضع القدرة الخاصة في مستوى القوة 9
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,قدرات خاصة فريدة لكل بطل
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,ستكون القدرة الخاصة المحددة مُفعلة طوال الوقت
+TID_FIRST_GEAR_TUTORIAL_1_DESC,يفتح الأبطال موضع العتاد الأول في مستوى القوة 10
+TID_FIRST_GEAR_TUTORIAL_2_DESC,كثير من العتاد لكل بطل
+TID_FIRST_GEAR_TUTORIAL_3_DESC,سيكون العتاد المحدد مُفعلاً طوال الوقت
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,اختيار مواجهة تدريبية
+TID_SHIELD_TANK,باستر
+TID_SHIELD_TANK_SHORT_DESC,فئة قوات واقية
+TID_SHIELD_TANK_DESC,باستر مسؤول عن تشغيل آلة العرض السينمائي في إحدى دور السينما، ولهذا فقد حفظ كل أفلام الأكشن المفضلة لديه عن ظهر قلب. يحلم باستر بأن يصبح يومًا ما نجمًا كبيرًا في فيلم أكشن ناجح من بطولته.
+TID_SHIELD_TANK_WEAPON,فلاش العدسة
+TID_SHIELD_TANK_WEAPON_DESC,يطلق باستر مخروط ضوء من آلة العرض ليلحق الضرر بكل الأعداء الواقعين في نطاقه.
+TID_SHIELD_TANK_ULTI,المونتاج
+TID_SHIELD_TANK_ULTI_DESC,يصنع باستر درعًا أمامه من أشعة آلة العرض، فيصد كل قذائف العدو ويعكس طاقتها لترتد إلى الأعداء.
+TID_SPEC_ABI_SHIELD_TANK_1,تعديلات المُخرج
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,يمنح فلاش عدسة باستر <c00cc00><VALUE1>%</c> من الضرر الإضافي لكل حليف في منطقة شحن زخمه.
+TID_SPEC_ABI_SHIELD_TANK_2,السترة الواقية
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,أثناء تفعيل المونتاج، يتكبد باستر ضررًا أقل بنسبة <c00cc00><VALUE1>%</c>، ويصبح محصنًا ضد الدفع للخلف والإبطاء والإضعاف.
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,حزام الأدوات
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,يعالج باستر كل الحلفاء القريبين بمقدار <c00cc00><VALUE1></c> من الصحة في نطاق شحن زخمه.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,الإعلان الجذاب
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,يجذب فلاش عدسة باستر التالي الأعداء نحوه ويبطئ حركتهم لمدة <c00cc00><VALUE1></c> ث.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,أقراص عتاد <TOKENS>\nخردة <SCRAP>
+TID_GEAR_COMPENSATION_CLAIM,المطالبة
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,خصص بطلك بقدرة سلبية جديدة
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,البدء
+TID_INBOX_CAPTION_52,تبرع بعتاد <TYPE> لصالح <NAME>
+TID_GEAR_COMPENSATION_INFO,إليك <COINS> من النقود نظير العتاد وأقراص العتاد والخردة!
+TID_INBOX_CAPTION_GEAR_COMPENSATION,تم تغيير نظام العتاد وسيتم تعويضك عن عتادك بـ <COINS> من النقود
+TID_RECRUIT_TOKEN,قرص التجنيد
+TID_CHROMATIC_TOKEN,قرص متلوّن
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,القدرات الخاصة
+TID_FIRST_GADGET_TUTORIAL_TITLE,الأجهزة
+TID_GEAR_TO_COINS_POPUP_TITLE,تعديل العتاد
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,صدر عتاد جديد!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,اطلع على الأبطال لمعرفة خيارات العتاد الجديدة.
+TID_GEAR_TO_COINS_POPUP_INFO,تمت إعادة ضبط كل العتاد الحالي. الآن لم يعد العتاد قابلاً للتصنيع وترقية المستويات. وضعنا فئات ندرة للعتاد كالتالي: نادر وبالغ الندرة واستثنائي.\n\nنتيجة لتغيير نظام العتاد، سنعوضك الآن عن كل قرص عتاد وخردة جمعتها بالنقود. اشتر عتادك الجديد بالنقود.
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,التعويض:
+TID_REPORT_PLAYER_REPORT,الإبلاغ
+TID_REPORT_PLAYER_REPORTED,تم الإبلاغ
+TID_REPORT_PLAYER_POPUP_TITLE,أتريد الإبلاغ عن <PLAYER_NAME>؟
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,تبلغ عن <PLAYER_NAME> لقيامه بتعمد إفساد اللعب.\n\nتعمد إفساد اللعب هو الامتناع عن لعب هدف الحدث والتعطيل. هذا السلوك السلبي يؤثر على الفريق ونتيجة المواجهة.\n\nأمثلة تعمد إفساد اللعب:\nتعمد تلقي الضرر والموت، الاتفاق على نتيجة للمواجهة، وعدم النشاط.
+TID_REPORT_PLAYER_BUTTON_REPORT,الإبلاغ
+TID_REPORT_PLAYER_BUTTON_CANCEL,الإلغاء
+TID_QUEST_FALLBACK_REWARD_DESC,لأن مكافأة المهمة كانت لديك بالفعل، ستحصل على <REWARD>!
+TID_QUEST_FALLBACK_REWARD_TITLE,مكافأة المهمة
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,المطالبة
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,مسار التجنيد
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,متجر الأبطال المتلوّنين
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,افتح <NUM> من الأبطال المتلوّنين الآخرين
+TID_BUTTON_NAVI_RECRUIT_ROAD,مسار التجنيد
+TID_SKIN_INFO_GHOST_TRAIN,مظهر محطة الأشباح
+TID_SCID_PURCHASE_VERIFICATION_ERROR,وقع خطأ في مصادقة عملية الشراء
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,يشحن هذا البطل الزخم بالبقاء بالقرب من الزملاء.
+TID_SKIN_INFO_ACTION,مظهر أبطال الأكشن
+TID_SKIN_INFO_WF_2022,مظهر نهائيات بطولة العالم 2022
+TID_BRAWL_PASS_SEASON_14,محطة الأشباح
+TID_CHAINSAW_BUSTER_SKIN,باستر ذو المنشار الكهربائي
+TID_CHAINSAW_BUSTER_SKIN_SHOP,باستر\nذو المنشار الكهربائي
+TID_GHOST_TRAIN_GROM_SKIN,جروم فرانكشتاين
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,جروم فرانكشتاين
+TID_GHOST_TRAIN_COLETTE_SKIN,كوليت مفتشة التذاكر
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,كوليت\nمفتشة التذاكر
+TID_BRICK_OVEN_ASH_SKIN,آش طاهي البيتزا
+TID_BRICK_OVEN_ASH_SKIN_SHOP,آش\nطاهي البيتزا
+TID_VETERAN_SQUEAK_SKIN,سكويك الكوماندو
+TID_VETERAN_SQUEAK_SKIN_SHOP,سكويك\nالكوماندو
+TID_ZOMBIE_BROCK_SKIN,بروك الزومبي
+TID_ZOMBIE_BROCK_SKIN_SHOP,بروك الزومبي
+TID_MEGA_MEGABOX_DARRYL_SKIN,داريل صندوق أوميجا
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,داريل\nصندوق أوميجا
+TID_GHOST_METRO_PENNY_SKIN,بيني الراكون
+TID_GHOST_METRO_PENNY_SKIN_SHOP,بيني\nالراكون
+TID_BSWF22_TARA_SKIN,تارا المنسحبة الغاضبة
+TID_BSWF22_TARA_SKIN_SHOP,تارا\nالمنسحبة الغاضبة
+TID_TOPGUN_JANET_SKIN,جانيت القوة جي
+TID_TOPGUN_JANET_SKIN_SHOP,جانيت\nالقوة جي
+TID_SHOP_OFFER_TITLE_40,صندوق أوميجا
+TID_PIN_OFFER_TITLE,عروض التعبيرات
+TID_THUMBNAILS_OFFER_TITLE,عروض الأيقونات
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,افتح مكافآت Brawl Pass، ومهامًا إضافية، و<NUM> من تبديلات المهام كل أسبوع
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,الاسترداد
+TID_BRAWL_PASS_REDEEM,الاسترداد
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,يحتوي Supercell ID الخاص بك على عدد <NUMBER> Brawl Pass. أتريد استخدام واحد لتفعيل Brawl Pass لهذا الموسم؟
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,يرجى الانتظار. جارٍ استرداد Brawl Pass من Supercell ID الخاص بك الآن.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,لا يحتوي Supercell ID الخاص بك على تذاكر Brawl Pass كافية. زر متجر Supercell لشرائه.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,حفنة جواهر
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,كيس جواهر
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,حقيبة جواهر
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,دلو جواهر
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,صندوق جواهر
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,خزينة جواهر
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,مجموعة BRAWL PASS
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

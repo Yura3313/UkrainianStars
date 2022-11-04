@@ -148,7 +148,7 @@
     const-string p4, "Invalid attempt to bind an instance of "
 
     .line 8
-    invoke-static {p4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p4}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p4
 

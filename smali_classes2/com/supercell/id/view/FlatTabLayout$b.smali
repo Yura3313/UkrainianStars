@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/FlatTabLayout$b;
-.super Lse/i;
+.super Lif/i;
 .source "FlatTabLayout.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/view/FlatTabLayout$b;
+.field public static final f:Lcom/supercell/id/view/FlatTabLayout$b;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/view/FlatTabLayout$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$b;->g:Lcom/supercell/id/view/FlatTabLayout$b;
+    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$b;->f:Lcom/supercell/id/view/FlatTabLayout$b;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method

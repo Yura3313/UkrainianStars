@@ -1,75 +1,93 @@
 .class public final Lvd/d;
-.super Lse/i;
-.source "SettingsGeneralTabFragment.kt"
+.super Lif/i;
+.source "TokenLoginConfirmPageFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lze/f0<",
-        "+",
-        "Lvc/u;",
-        ">;>;"
+        "Lif/i;",
+        "Lhf/p<",
+        "Lvd/e;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Z
+# static fields
+.field public static final f:Lvd/d;
 
 
 # direct methods
-.method public constructor <init>(Z)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-boolean p1, p0, Lvd/d;->g:Z
+    new-instance v0, Lvd/d;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lvd/d;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    sput-object v0, Lvd/d;->f:Lvd/d;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 7
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    .line 1
+    check-cast p1, Lvd/e;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    check-cast p2, Ljava/lang/Exception;
 
-    move-result-object v0
+    const-string v0, "$receiver"
 
-    invoke-virtual {v0}, Lae/u;->i()Lbe/y;
+    .line 2
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v1
+    const-string v0, "it"
 
-    iget-boolean v0, p0, Lvd/d;->g:Z
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    xor-int/lit8 v0, v0, 0x1
+    .line 3
+    invoke-virtual {p1}, Lvd/g;->V0()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object p1
 
-    move-result-object v4
+    if-eqz p1, :cond_0
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0xb
-
-    invoke-static/range {v1 .. v6}, Lbe/y;->j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/f0;
+    .line 4
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    new-instance v1, Lvd/f;
+
+    invoke-direct {v1, p1}, Lvd/f;-><init>(Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;)V
+
+    invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
+
+    .line 5
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

@@ -139,35 +139,35 @@
 
     const-wide/16 v4, 0x0
 
-    const-string p0, ".csv"
+    cmp-long p0, v2, v4
 
-    cmp-long v6, v2, v4
+    const-string v2, ".csv"
 
-    if-nez v6, :cond_1
+    if-nez p0, :cond_1
 
     .line 7
     :try_start_1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Lcom/kakaogame/core/CoreManager;->currentTimeMillis()J
+    invoke-virtual {v0}, Lcom/kakaogame/core/CoreManager;->currentTimeMillis()J
 
-    move-result-wide v1
+    move-result-wide v0
 
-    invoke-static {v1, v2}, Lcom/kakaogame/util/DateUtil;->convertLongToFormattedString(J)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/util/DateUtil;->convertLongToFormattedString(J)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -177,12 +177,12 @@
 
     .line 8
     :cond_1
-    new-instance v2, Ljava/net/URL;
+    new-instance p0, Ljava/net/URL;
 
-    invoke-direct {v2, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
     .line 9
-    invoke-virtual {v2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+    invoke-virtual {p0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v1
 
@@ -197,37 +197,37 @@
     invoke-virtual {v1, v3}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 12
-    invoke-static {v2}, Lcom/kakaogame/server/ServerSecurityManager;->getHostnameVerifier(Ljava/net/URL;)Ljavax/net/ssl/HostnameVerifier;
+    invoke-static {p0}, Lcom/kakaogame/server/ServerSecurityManager;->getHostnameVerifier(Ljava/net/URL;)Ljavax/net/ssl/HostnameVerifier;
 
-    move-result-object v2
+    move-result-object p0
 
-    invoke-virtual {v1, v2}, Ljavax/net/ssl/HttpsURLConnection;->setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
+    invoke-virtual {v1, p0}, Ljavax/net/ssl/HttpsURLConnection;->setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
 
     .line 13
     invoke-static {}, Lcom/kakaogame/server/ServerSecurityManager;->getSSLSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
-    move-result-object v2
+    move-result-object p0
 
-    invoke-virtual {v1, v2}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
+    invoke-virtual {v1, p0}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
 
-    const/4 v2, 0x1
+    const/4 p0, 0x1
 
     .line 14
-    invoke-virtual {v1, v2}, Ljava/net/URLConnection;->setDoOutput(Z)V
+    invoke-virtual {v1, p0}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
-    const-string v2, "PUT"
+    const-string p0, "PUT"
 
     .line 15
-    invoke-virtual {v1, v2}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+    invoke-virtual {v1, p0}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    const-string v2, "Connection"
+    const-string p0, "Connection"
 
     const-string v3, "close"
 
     .line 16
-    invoke-virtual {v1, v2, v3}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, p0, v3}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v2, 0x0
+    const/4 p0, 0x0
 
     .line 17
     new-instance v3, Ljava/io/DataOutputStream;
@@ -259,22 +259,22 @@
 
     invoke-direct {v4, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    invoke-static {v4, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+    invoke-static {v4, v0}, Lre/h$a;->a(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
-    move-result-object v2
+    move-result-object p0
 
     .line 20
     invoke-virtual {v0}, Ljava/io/File;->length()J
 
     move-result-wide v4
 
-    long-to-int v5, v4
+    long-to-int v4, v4
 
-    new-array v4, v5, [B
+    new-array v4, v4, [B
 
     .line 21
     :goto_0
-    invoke-virtual {v2, v4}, Ljava/io/FileInputStream;->read([B)I
+    invoke-virtual {p0, v4}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v5
 
@@ -287,7 +287,7 @@
     .line 22
     invoke-virtual {v3, v4, v6, v5}, Ljava/io/DataOutputStream;->write([BII)V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto :goto_0
@@ -303,163 +303,138 @@
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
 
-    goto :goto_1
-
     :catch_0
-    nop
-
-    :goto_1
-    if-eqz v2, :cond_3
+    if-eqz p0, :cond_3
 
     .line 25
+    :goto_1
     :try_start_4
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
+    invoke-virtual {p0}, Ljava/io/FileInputStream;->close()V
     :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
-
-    .line 26
-    :catch_1
-    :cond_3
-    :goto_2
-    :try_start_5
-    invoke-static {}, Ljava/lang/System;->gc()V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_6
-
-    goto :goto_4
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_5
-
-    :catch_2
-    move-exception v4
-
-    .line 27
-    :try_start_6
-    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
-    .line 28
-    :try_start_7
-    invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
-
-    .line 29
-    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
-    :try_end_7
-    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
-
-    goto :goto_3
-
-    :catch_3
-    nop
-
-    :goto_3
-    if-eqz v2, :cond_3
-
-    .line 30
-    :try_start_8
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
 
     goto :goto_2
 
-    .line 31
-    :goto_4
-    :try_start_9
+    :catchall_0
+    move-exception v0
+
+    goto :goto_3
+
+    :catch_1
+    move-exception v4
+
+    .line 26
+    :try_start_5
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 27
+    :try_start_6
+    invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
+
+    .line 28
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_2
+    if-eqz p0, :cond_3
+
+    goto :goto_1
+
+    .line 29
+    :catch_3
+    :cond_3
+    :goto_2
+    :try_start_7
+    invoke-static {}, Ljava/lang/System;->gc()V
+
+    .line 30
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
-    move-result v1
+    move-result p0
 
-    const/16 v2, 0xc8
+    const/16 v1, 0xc8
 
-    if-ne v1, v2, :cond_5
+    if-ne p0, v1, :cond_5
 
-    .line 32
+    .line 31
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 33
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 32
+    new-instance p0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Lcom/kakaogame/core/CoreManager;->currentTimeMillis()J
+    invoke-virtual {v0}, Lcom/kakaogame/core/CoreManager;->currentTimeMillis()J
 
-    move-result-wide v1
+    move-result-wide v0
 
-    invoke-static {v1, v2}, Lcom/kakaogame/util/DateUtil;->convertLongToFormattedString(J)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/util/DateUtil;->convertLongToFormattedString(J)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     sput-object p0, Lcom/kakaogame/log/APILatencyLogManager;->fileName:Ljava/lang/String;
-    :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_6
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
 
-    goto :goto_7
+    goto :goto_4
 
-    .line 34
-    :goto_5
-    :try_start_a
+    .line 33
+    :goto_3
+    :try_start_8
     invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
 
-    .line 35
+    .line 34
     invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
-    :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_4
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_6
-
-    goto :goto_6
+    :try_end_8
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_4
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
 
     :catch_4
-    nop
+    if-eqz p0, :cond_4
 
-    :goto_6
-    if-eqz v2, :cond_4
+    .line 35
+    :try_start_9
+    invoke-virtual {p0}, Ljava/io/FileInputStream;->close()V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_6
 
     .line 36
-    :try_start_b
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-    :try_end_b
-    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_5
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_6
-
-    .line 37
     :catch_5
     :cond_4
-    :try_start_c
+    :try_start_a
     invoke-static {}, Ljava/lang/System;->gc()V
 
-    .line 38
-    throw p0
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_6
+    .line 37
+    throw v0
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_6
 
     :catch_6
     move-exception p0
 
-    .line 39
+    .line 38
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     :cond_5
-    :goto_7
+    :goto_4
     return-void
 .end method
 

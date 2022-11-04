@@ -18,22 +18,22 @@
 
 
 # instance fields
+.field public final synthetic f:I
+
 .field public final synthetic g:I
 
-.field public final synthetic h:I
-
-.field public final synthetic i:Lcom/google/android/material/tabs/TabLayout$f;
+.field public final synthetic h:Lcom/google/android/material/tabs/TabLayout$f;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/tabs/TabLayout$f;II)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->i:Lcom/google/android/material/tabs/TabLayout$f;
+    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
-    iput p2, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->g:I
+    iput p2, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->f:I
 
-    iput p3, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->h:I
+    iput p3, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,21 +51,21 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->i:Lcom/google/android/material/tabs/TabLayout$f;
+    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
     .line 3
-    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->p:I
+    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->n:I
 
     .line 4
-    iget v2, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->g:I
+    iget v2, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->f:I
 
-    sget-object v3, Ld4/a;->a:Landroid/view/animation/LinearInterpolator;
+    sget-object v3, Lb4/a;->a:Landroid/view/animation/LinearInterpolator;
 
     sub-int/2addr v2, v1
 
     int-to-float v2, v2
 
-    mul-float v2, v2, p1
+    mul-float/2addr v2, p1
 
     .line 5
     invoke-static {v2}, Ljava/lang/Math;->round(F)I
@@ -75,19 +75,19 @@
     add-int/2addr v2, v1
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->i:Lcom/google/android/material/tabs/TabLayout$f;
+    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
     .line 7
-    iget v1, v1, Lcom/google/android/material/tabs/TabLayout$f;->q:I
+    iget v1, v1, Lcom/google/android/material/tabs/TabLayout$f;->o:I
 
     .line 8
-    iget v3, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->h:I
+    iget v3, p0, Lcom/google/android/material/tabs/TabLayout$f$a;->g:I
 
     sub-int/2addr v3, v1
 
     int-to-float v3, v3
 
-    mul-float p1, p1, v3
+    mul-float/2addr p1, v3
 
     .line 9
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
@@ -97,23 +97,23 @@
     add-int/2addr p1, v1
 
     .line 10
-    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->m:I
+    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->k:I
 
     if-ne v2, v1, :cond_0
 
-    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->n:I
+    iget v1, v0, Lcom/google/android/material/tabs/TabLayout$f;->l:I
 
     if-eq p1, v1, :cond_1
 
     .line 11
     :cond_0
-    iput v2, v0, Lcom/google/android/material/tabs/TabLayout$f;->m:I
+    iput v2, v0, Lcom/google/android/material/tabs/TabLayout$f;->k:I
 
     .line 12
-    iput p1, v0, Lcom/google/android/material/tabs/TabLayout$f;->n:I
+    iput p1, v0, Lcom/google/android/material/tabs/TabLayout$f;->l:I
 
     .line 13
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V

@@ -114,7 +114,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    const/4 v4, 0x0
+    move v4, v1
 
     :goto_0
     if-ge v4, v2, :cond_1
@@ -715,7 +715,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -732,7 +732,7 @@
     const-string p1, "jsonException: "
 
     .line 11
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -866,13 +866,13 @@
 
     const-wide/16 v2, 0x3c
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     return-wide v0
 .end method
@@ -914,7 +914,7 @@
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     return-wide v0
 .end method
@@ -1261,11 +1261,7 @@
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
     :catch_0
-    nop
-
     :cond_2
     :goto_0
     cmp-long p0, p2, p4
@@ -1347,7 +1343,7 @@
     const-string v0, "market://details?id="
 
     .line 5
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1383,7 +1379,7 @@
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     return-wide v0
 .end method
@@ -1553,11 +1549,11 @@
 
     const-wide/16 v2, 0x3c
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     return-wide v0
 .end method
@@ -1750,7 +1746,7 @@
 
     check-cast v8, Ljava/lang/String;
 
-    invoke-interface {v2, v7, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1762,7 +1758,7 @@
     const-string v5, "jsonException: "
 
     .line 19
-    invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -2092,7 +2088,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 6
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
@@ -2159,17 +2155,13 @@
 .end method
 
 .method public static getUseCustomMarketRefundUIGooglePlay()Ljava/lang/Boolean;
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "useCustomMarketRefundUIGooglePlay"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "useCustomMarketRefundUIGooglePlay"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2202,7 +2194,7 @@
     const-string v0, "userAgeCheck_"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2380,7 +2372,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -2408,11 +2400,11 @@
 
     const-wide/16 v2, 0x3c
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     const-wide/16 v2, 0x3e8
 
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     return-wide v0
 .end method
@@ -2452,17 +2444,13 @@
 .end method
 
 .method public static isPlayerOnline()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "usePlayerOnline"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "usePlayerOnline"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2503,17 +2491,13 @@
 .end method
 
 .method public static isShowInvitationRewardNoReferrer()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "showRewardNoReferrer"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "showRewardNoReferrer"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2523,17 +2507,13 @@
 .end method
 
 .method public static isUseHttpHeartbeat()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "useHttpHeartbeat"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "useHttpHeartbeat"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2598,17 +2578,13 @@
 .end method
 
 .method public static offPromotion3()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "offPromotion3"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "offPromotion3"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2618,17 +2594,13 @@
 .end method
 
 .method public static offPushAgreementPopup()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "offPushAgreementPopup"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "offPushAgreementPopup"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2638,17 +2610,13 @@
 .end method
 
 .method public static offWebViewPopupUI()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "offWebviewPopup"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "offWebviewPopup"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
@@ -2658,17 +2626,13 @@
 .end method
 
 .method public static offWebviewTopBarYellow()Z
-    .locals 3
+    .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "offWebviewTopBarYellow"
 
-    new-array v0, v0, [Ljava/lang/String;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    const-string v2, "offWebviewTopBarYellow"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 

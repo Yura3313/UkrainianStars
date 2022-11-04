@@ -1,63 +1,60 @@
-.class public final synthetic Lcom/google/android/play/core/assetpacks/i2;
+.class public final Lcom/google/android/play/core/assetpacks/i2;
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/tasks/OnFailureListener;
+.implements Ly4/l0;
 
 
-# static fields
-.field public static final a:Lcom/google/android/play/core/assetpacks/i2;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ly4/l0<",
+        "Landroid/content/Context;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final f:Lcom/google/android/play/core/assetpacks/e2;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/google/android/play/core/assetpacks/i2;
-
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/i2;-><init>()V
-
-    sput-object v0, Lcom/google/android/play/core/assetpacks/i2;->a:Lcom/google/android/play/core/assetpacks/i2;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/google/android/play/core/assetpacks/e2;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i2;->f:Lcom/google/android/play/core/assetpacks/e2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onFailure(Ljava/lang/Exception;)V
-    .locals 3
+.method public final a()Landroid/content/Context;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i2;->f:Lcom/google/android/play/core/assetpacks/e2;
 
     .line 1
-    sget-object v0, Lcom/google/android/play/core/assetpacks/j2;->e:La5/b;
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/e2;->a:Landroid/content/Context;
 
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p1, v1, v2
-
-    const-string p1, "Could not sync active asset packs. %s"
-
-    invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    new-array v1, v2, [Ljava/lang/Object;
-
-    const/4 v2, 0x5
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 2
-    invoke-virtual {v0, v2, p1, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    return-void
+    return-object v0
+.end method
+
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/i2;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
 .end method

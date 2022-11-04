@@ -1,14 +1,14 @@
 .class public final synthetic Lcom/supercell/id/ui/messages/MessagesFragment$a;
-.super Lse/h;
+.super Lif/g;
 .source "MessagesFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/messages/MessagesFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/messages/MessagesFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
+        "Lif/g;",
+        "Lhf/l<",
         "Ljava/lang/Integer;",
         "Ljava/lang/String;",
         ">;"
@@ -28,12 +28,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lae/l2;)V
+.method public constructor <init>(Lzd/h2;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lse/h;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lif/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -48,12 +48,12 @@
     return-object v0
 .end method
 
-.method public final getOwner()Lwe/d;
+.method public final getOwner()Lmf/d;
     .locals 1
 
-    const-class v0, Lae/l2;
+    const-class v0, Lzd/h2;
 
-    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lif/s;->a(Ljava/lang/Class;)Lmf/c;
 
     move-result-object v0
 
@@ -79,12 +79,12 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lif/b;->receiver:Ljava/lang/Object;
 
-    check-cast v0, Lae/l2;
+    check-cast v0, Lzd/h2;
 
     .line 3
-    invoke-virtual {v0, p1}, Lae/l2;->x(I)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lzd/h2;->x(I)Ljava/lang/String;
 
     move-result-object p1
 

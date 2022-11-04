@@ -264,7 +264,7 @@
 
     if-eqz p1, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v3
 
     .line 12
     :cond_0
@@ -418,7 +418,7 @@
 
     if-eqz p1, :cond_4
 
-    const/4 v0, 0x1
+    move v0, v3
 
     .line 40
     :cond_4

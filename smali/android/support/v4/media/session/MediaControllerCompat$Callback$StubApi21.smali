@@ -241,7 +241,7 @@
 .end method
 
 .method public onSessionEvent(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallback:Ljava/lang/ref/WeakReference;
@@ -252,26 +252,14 @@
 
     check-cast v0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     .line 2
     iget-object v1, v0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mIControllerCallback:Landroid/support/v4/media/session/IMediaControllerCallback;
 
-    if-eqz v1, :cond_0
-
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-ge v1, v2, :cond_0
-
-    goto :goto_0
-
     .line 3
-    :cond_0
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->onSessionEvent(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    :cond_1
-    :goto_0
+    :cond_0
     return-void
 .end method

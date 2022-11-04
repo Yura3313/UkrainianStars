@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/bottomsheet/b;
-.super Landroidx/appcompat/app/q;
+.super Landroidx/appcompat/app/l;
 .source "BottomSheetDialogFragment.java"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Landroidx/appcompat/app/q;-><init>()V
+    invoke-direct {p0}, Landroidx/appcompat/app/l;-><init>()V
 
     return-void
 .end method
@@ -20,12 +20,12 @@
     .line 1
     new-instance v0, Lcom/google/android/material/bottomsheet/a;
 
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroid/content/Context;
 
     move-result-object v1
 
     .line 2
-    iget v2, p0, Landroidx/fragment/app/k;->g0:I
+    iget v2, p0, Landroidx/fragment/app/k;->f0:I
 
     .line 3
     invoke-direct {v0, v1, v2}, Lcom/google/android/material/bottomsheet/a;-><init>(Landroid/content/Context;I)V

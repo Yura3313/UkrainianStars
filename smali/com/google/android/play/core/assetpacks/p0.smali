@@ -3,381 +3,386 @@
 
 
 # static fields
-.field public static final j:La5/b;
+.field public static final a:Lj3/f4;
 
-
-# instance fields
-.field public final a:Lcom/google/android/play/core/assetpacks/c1;
-
-.field public final b:Lcom/google/android/play/core/assetpacks/m0;
-
-.field public final c:Lcom/google/android/play/core/assetpacks/e2;
-
-.field public final d:Lcom/google/android/play/core/assetpacks/o1;
-
-.field public final e:Lcom/google/android/play/core/assetpacks/s1;
-
-.field public final f:Lcom/google/android/play/core/assetpacks/x1;
-
-.field public final g:La5/r0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/r0<",
-            "Lcom/google/android/play/core/assetpacks/t2;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Lcom/google/android/play/core/assetpacks/f1;
-
-.field public final i:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public static final b:[B
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
-    new-instance v0, La5/b;
+    .line 1
+    new-instance v0, Lj3/f4;
 
-    const-string v1, "ExtractorLooper"
+    invoke-direct {v0}, Lj3/f4;-><init>()V
 
-    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+    sput-object v0, Lcom/google/android/play/core/assetpacks/p0;->a:Lj3/f4;
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
+    const/16 v0, 0x40
+
+    new-array v0, v0, [B
+
+    .line 2
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/google/android/play/core/assetpacks/p0;->b:[B
 
     return-void
+
+    nop
+
+    :array_0
+    .array-data 1
+        0x41t
+        0x42t
+        0x43t
+        0x44t
+        0x45t
+        0x46t
+        0x47t
+        0x48t
+        0x49t
+        0x4at
+        0x4bt
+        0x4ct
+        0x4dt
+        0x4et
+        0x4ft
+        0x50t
+        0x51t
+        0x52t
+        0x53t
+        0x54t
+        0x55t
+        0x56t
+        0x57t
+        0x58t
+        0x59t
+        0x5at
+        0x61t
+        0x62t
+        0x63t
+        0x64t
+        0x65t
+        0x66t
+        0x67t
+        0x68t
+        0x69t
+        0x6at
+        0x6bt
+        0x6ct
+        0x6dt
+        0x6et
+        0x6ft
+        0x70t
+        0x71t
+        0x72t
+        0x73t
+        0x74t
+        0x75t
+        0x76t
+        0x77t
+        0x78t
+        0x79t
+        0x7at
+        0x30t
+        0x31t
+        0x32t
+        0x33t
+        0x34t
+        0x35t
+        0x36t
+        0x37t
+        0x38t
+        0x39t
+        0x2bt
+        0x2ft
+    .end array-data
 .end method
 
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/c1;La5/r0;Lcom/google/android/play/core/assetpacks/m0;Lcom/google/android/play/core/assetpacks/e2;Lcom/google/android/play/core/assetpacks/o1;Lcom/google/android/play/core/assetpacks/s1;Lcom/google/android/play/core/assetpacks/x1;Lcom/google/android/play/core/assetpacks/f1;)V
+.method public synthetic constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/play/core/assetpacks/c1;",
-            "La5/r0<",
-            "Lcom/google/android/play/core/assetpacks/t2;",
-            ">;",
-            "Lcom/google/android/play/core/assetpacks/m0;",
-            "Lcom/google/android/play/core/assetpacks/e2;",
-            "Lcom/google/android/play/core/assetpacks/o1;",
-            "Lcom/google/android/play/core/assetpacks/s1;",
-            "Lcom/google/android/play/core/assetpacks/x1;",
-            "Lcom/google/android/play/core/assetpacks/f1;",
-            ")V"
-        }
-    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p0;->a:Lcom/google/android/play/core/assetpacks/c1;
-
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/p0;->g:La5/r0;
-
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/p0;->b:Lcom/google/android/play/core/assetpacks/m0;
-
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/p0;->c:Lcom/google/android/play/core/assetpacks/e2;
-
-    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/p0;->d:Lcom/google/android/play/core/assetpacks/o1;
-
-    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/p0;->e:Lcom/google/android/play/core/assetpacks/s1;
-
-    iput-object p7, p0, Lcom/google/android/play/core/assetpacks/p0;->f:Lcom/google/android/play/core/assetpacks/x1;
-
-    iput-object p8, p0, Lcom/google/android/play/core/assetpacks/p0;->h:Lcom/google/android/play/core/assetpacks/f1;
-
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    const/4 p2, 0x0
-
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p0;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
-
     return-void
 .end method
 
+.method public static a([B)Ljava/lang/String;
+    .locals 10
 
-# virtual methods
-.method public final a()V
-    .locals 8
+    if-nez p0, :cond_0
 
-    sget-object v0, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
+    const/4 p0, 0x0
 
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    const/4 v3, 0x3
-
-    const-string v4, "Run extractor loop"
+    return-object p0
 
     .line 1
-    invoke-virtual {v0, v3, v4, v2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    :cond_0
+    array-length v0, p0
+
+    mul-int/lit8 v0, v0, 0x8
+
+    add-int/lit8 v0, v0, 0x5
+
+    div-int/lit8 v0, v0, 0x6
+
+    const/4 v1, 0x3
+
+    add-int/2addr v0, v1
+
+    div-int/lit8 v0, v0, 0x4
+
+    mul-int/lit8 v0, v0, 0x4
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/p0;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x1
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-virtual {v2, v1, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    const/4 v3, 0x0
 
-    move-result v2
+    move v4, v3
 
-    if-eqz v2, :cond_7
-
+    .line 3
     :goto_0
-    const/4 v0, 0x0
+    div-int/lit8 v5, v4, 0x8
 
-    const/4 v2, 0x6
+    .line 4
+    array-length v6, p0
 
-    :try_start_0
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->h:Lcom/google/android/play/core/assetpacks/f1;
+    if-gt v6, v5, :cond_1
 
-    invoke-virtual {v4}, Lcom/google/android/play/core/assetpacks/f1;->a()Lcom/google/android/play/core/assetpacks/e1;
+    const/4 v5, -0x1
 
-    move-result-object v0
-    :try_end_0
-    .catch Lcom/google/android/play/core/assetpacks/o0; {:try_start_0 .. :try_end_0} :catch_0
+    goto :goto_4
+
+    .line 5
+    :cond_1
+    array-length v6, p0
+
+    const/4 v7, 0x1
+
+    sub-int/2addr v6, v7
+
+    if-ne v6, v5, :cond_2
+
+    move v6, v3
 
     goto :goto_1
 
-    :catch_0
-    move-exception v4
-
-    sget-object v5, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
-
-    new-array v6, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object v7
-
-    aput-object v7, v6, v1
-
-    const-string v7, "Error while getting next extraction task: %s"
-
-    .line 3
-    invoke-virtual {v5, v2, v7, v6}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
-
-    .line 4
-    iget v5, v4, Lcom/google/android/play/core/assetpacks/o0;->g:I
-
-    if-ltz v5, :cond_0
-
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/p0;->g:La5/r0;
-
-    invoke-interface {v5}, La5/r0;->e()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/t2;
-
-    iget v6, v4, Lcom/google/android/play/core/assetpacks/o0;->g:I
-
-    invoke-interface {v5, v6}, Lcom/google/android/play/core/assetpacks/t2;->K(I)V
-
-    iget v5, v4, Lcom/google/android/play/core/assetpacks/o0;->g:I
-
-    invoke-virtual {p0, v5, v4}, Lcom/google/android/play/core/assetpacks/p0;->b(ILjava/lang/Exception;)V
-
-    :cond_0
-    :goto_1
-    if-eqz v0, :cond_6
-
-    :try_start_1
-    instance-of v4, v0, Lcom/google/android/play/core/assetpacks/l0;
-
-    if-eqz v4, :cond_1
-
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->b:Lcom/google/android/play/core/assetpacks/m0;
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/l0;
-
-    invoke-virtual {v4, v5}, Lcom/google/android/play/core/assetpacks/m0;->a(Lcom/google/android/play/core/assetpacks/l0;)V
-
-    goto :goto_0
-
-    :cond_1
-    instance-of v4, v0, Lcom/google/android/play/core/assetpacks/d2;
-
-    if-eqz v4, :cond_2
-
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->c:Lcom/google/android/play/core/assetpacks/e2;
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/d2;
-
-    invoke-virtual {v4, v5}, Lcom/google/android/play/core/assetpacks/e2;->a(Lcom/google/android/play/core/assetpacks/d2;)V
-
-    goto :goto_0
-
     :cond_2
-    instance-of v4, v0, Lcom/google/android/play/core/assetpacks/n1;
-
-    if-eqz v4, :cond_3
-
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->d:Lcom/google/android/play/core/assetpacks/o1;
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/n1;
-
-    invoke-virtual {v4, v5}, Lcom/google/android/play/core/assetpacks/o1;->a(Lcom/google/android/play/core/assetpacks/n1;)V
-
-    goto :goto_0
-
-    :cond_3
-    instance-of v4, v0, Lcom/google/android/play/core/assetpacks/q1;
-
-    if-eqz v4, :cond_4
-
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->e:Lcom/google/android/play/core/assetpacks/s1;
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/q1;
-
-    invoke-virtual {v4, v5}, Lcom/google/android/play/core/assetpacks/s1;->a(Lcom/google/android/play/core/assetpacks/q1;)V
-
-    goto :goto_0
-
-    :cond_4
-    instance-of v4, v0, Lcom/google/android/play/core/assetpacks/w1;
-
-    if-nez v4, :cond_5
-
-    sget-object v4, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
-
-    new-array v5, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v6
-
-    aput-object v6, v5, v1
-
-    const-string v6, "Unknown task type: %s"
-
-    .line 5
-    invoke-virtual {v4, v2, v6, v5}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
-
-    goto :goto_0
+    add-int/lit8 v6, v5, 0x1
 
     .line 6
-    :cond_5
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/p0;->f:Lcom/google/android/play/core/assetpacks/x1;
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/play/core/assetpacks/w1;
-
-    invoke-virtual {v4, v5}, Lcom/google/android/play/core/assetpacks/x1;->a(Lcom/google/android/play/core/assetpacks/w1;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    goto/16 :goto_0
-
-    :catch_1
-    move-exception v4
-
-    sget-object v5, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
-
-    new-array v6, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object v7
-
-    aput-object v7, v6, v1
-
-    const-string v7, "Error during extraction task: %s"
+    aget-byte v6, p0, v6
 
     .line 7
-    invoke-virtual {v5, v2, v7, v6}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    :goto_1
+    rem-int/lit8 v8, v4, 0x18
+
+    div-int/lit8 v8, v8, 0x6
+
+    const/4 v9, 0x2
+
+    if-eqz v8, :cond_6
+
+    if-eq v8, v7, :cond_5
+
+    if-eq v8, v9, :cond_4
+
+    if-eq v8, v1, :cond_3
+
+    move v5, v3
+
+    goto :goto_4
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/p0;->g:La5/r0;
+    :cond_3
+    aget-byte v5, p0, v5
 
-    invoke-interface {v2}, La5/r0;->e()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/play/core/assetpacks/t2;
-
-    iget v5, v0, Lcom/google/android/play/core/assetpacks/e1;->a:I
-
-    invoke-interface {v2, v5}, Lcom/google/android/play/core/assetpacks/t2;->K(I)V
-
-    iget v0, v0, Lcom/google/android/play/core/assetpacks/e1;->a:I
-
-    invoke-virtual {p0, v0, v4}, Lcom/google/android/play/core/assetpacks/p0;->b(ILjava/lang/Exception;)V
-
-    goto/16 :goto_0
-
-    :cond_6
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p0;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
-    return-void
-
-    :cond_7
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x5
-
-    const-string v3, "runLoop already looping; return"
+    goto :goto_3
 
     .line 9
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    :cond_4
+    aget-byte v5, p0, v5
 
-    return-void
+    shl-int/2addr v5, v9
+
+    and-int/lit8 v5, v5, 0x3c
+
+    shr-int/lit8 v6, v6, 0x6
+
+    and-int/2addr v6, v1
+
+    goto :goto_2
+
+    .line 10
+    :cond_5
+    aget-byte v5, p0, v5
+
+    shl-int/lit8 v5, v5, 0x4
+
+    and-int/lit8 v5, v5, 0x30
+
+    shr-int/lit8 v6, v6, 0x4
+
+    and-int/lit8 v6, v6, 0xf
+
+    :goto_2
+    or-int/2addr v5, v6
+
+    goto :goto_4
+
+    .line 11
+    :cond_6
+    aget-byte v5, p0, v5
+
+    shr-int/2addr v5, v9
+
+    :goto_3
+    and-int/lit8 v5, v5, 0x3f
+
+    :goto_4
+    if-gez v5, :cond_8
+
+    .line 12
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
+
+    move-result p0
+
+    :goto_5
+    if-ge p0, v0, :cond_7
+
+    const/16 v1, 0x3d
+
+    .line 13
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    add-int/lit8 p0, p0, 0x1
+
+    goto :goto_5
+
+    .line 14
+    :cond_7
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 15
+    :cond_8
+    sget-object v6, Lcom/google/android/play/core/assetpacks/p0;->b:[B
+
+    aget-byte v5, v6, v5
+
+    int-to-char v5, v5
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v4, v4, 0x6
+
+    goto :goto_0
 .end method
 
-.method public final b(ILjava/lang/Exception;)V
-    .locals 2
+.method public static b(Landroid/content/Context;Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;Z)V
+    .locals 3
 
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p0;->a:Lcom/google/android/play/core/assetpacks/c1;
+    .line 1
+    iget v0, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->p:I
 
-    invoke-virtual {v0, p1}, Lcom/google/android/play/core/assetpacks/c1;->g(I)V
+    const/4 v1, 0x4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p0;->a:Lcom/google/android/play/core/assetpacks/c1;
+    if-ne v0, v1, :cond_1
 
-    invoke-virtual {v0, p1}, Lcom/google/android/play/core/assetpacks/c1;->b(I)V
-    :try_end_0
-    .catch Lcom/google/android/play/core/assetpacks/o0; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v0, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->h:Lh1/j;
+
+    if-nez v0, :cond_1
+
+    .line 2
+    iget-object p2, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->g:Lj3/p81;
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-interface {p2}, Lj3/p81;->n()V
+
+    .line 4
+    :cond_0
+    sget-object p2, Lg1/p;->B:Lg1/p;
+
+    iget-object p2, p2, Lg1/p;->a:Lc5/h;
+
+    .line 5
+    iget-object p2, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->f:Lcom/google/android/gms/ads/internal/overlay/zzd;
+
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->n:Lh1/m;
+
+    .line 6
+    invoke-static {p0, p2, p1}, Lc5/h;->d(Landroid/content/Context;Lcom/google/android/gms/ads/internal/overlay/zzd;Lh1/m;)Z
 
     return-void
 
-    :catch_0
-    sget-object p1, Lcom/google/android/play/core/assetpacks/p0;->j:La5/b;
+    .line 7
+    :cond_1
+    new-instance v0, Landroid/content/Intent;
 
-    const/4 v0, 0x1
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    new-array v0, v0, [Ljava/lang/Object;
+    const-string v1, "com.google.android.gms.ads.AdActivity"
 
-    const/4 v1, 0x0
+    .line 8
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    .line 9
+    iget-object v1, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->r:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    move-result-object p2
+    iget-boolean v1, v1, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
 
-    aput-object p2, v0, v1
+    const-string v2, "com.google.android.gms.ads.internal.overlay.useClientJar"
 
-    const/4 p2, 0x6
+    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const-string v1, "Error during error handling: %s"
+    const-string v1, "shouldCallOnOverlayOpened"
 
-    invoke-virtual {p1, p2, v1, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    .line 10
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 11
+    new-instance p2, Landroid/os/Bundle;
+
+    const/4 v1, 0x1
+
+    invoke-direct {p2, v1}, Landroid/os/Bundle;-><init>(I)V
+
+    const-string v1, "com.google.android.gms.ads.inernal.overlay.AdOverlayInfo"
+
+    .line 12
+    invoke-virtual {p2, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 13
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
+
+    .line 14
+    instance-of p1, p0, Landroid/app/Activity;
+
+    if-nez p1, :cond_2
+
+    const/high16 p1, 0x10000000
+
+    .line 15
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 16
+    :cond_2
+    sget-object p1, Lg1/p;->B:Lg1/p;
+
+    iget-object p1, p1, Lg1/p;->c:Lj3/fb;
+
+    .line 17
+    invoke-static {p0, v0}, Lj3/fb;->d(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method

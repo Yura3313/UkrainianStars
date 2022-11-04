@@ -166,7 +166,7 @@
     check-cast p3, Landroid/support/v4/media/MediaDescriptionCompat;
 
     .line 18
-    invoke-virtual {p2, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p2, v3}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p2
 
@@ -231,7 +231,7 @@
     const/4 p3, -0x1
 
     .line 27
-    invoke-virtual {p2, v3, p3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p2, v3, p3}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result p2
 
@@ -353,7 +353,7 @@
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_MEDIA_ID"
 
     .line 9
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -377,7 +377,7 @@
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_QUERY"
 
     .line 12
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -425,7 +425,7 @@
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_CAPTIONING_ENABLED"
 
     .line 18
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -449,7 +449,7 @@
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_REPEAT_MODE"
 
     .line 21
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
@@ -473,7 +473,7 @@
     const-string p1, "android.support.v4.media.session.action.ARGUMENT_SHUFFLE_MODE"
 
     .line 24
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result p1
 

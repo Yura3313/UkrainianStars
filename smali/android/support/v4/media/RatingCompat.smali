@@ -89,13 +89,6 @@
     if-eqz p0, :cond_1
 
     .line 1
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x13
-
-    if-lt v1, v2, :cond_1
-
-    .line 2
     move-object v1, p0
 
     check-cast v1, Landroid/media/Rating;
@@ -104,7 +97,7 @@
 
     move-result v2
 
-    .line 3
+    .line 2
     invoke-virtual {v1}, Landroid/media/Rating;->isRated()Z
 
     move-result v3
@@ -115,33 +108,33 @@
 
     return-object v0
 
-    .line 4
+    .line 3
     :pswitch_0
     invoke-virtual {v1}, Landroid/media/Rating;->getPercentRating()F
 
     move-result v0
 
-    .line 5
+    .line 4
     invoke-static {v0}, Landroid/support/v4/media/RatingCompat;->newPercentageRating(F)Landroid/support/v4/media/RatingCompat;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 6
+    .line 5
     :pswitch_1
     invoke-virtual {v1}, Landroid/media/Rating;->getStarRating()F
 
     move-result v0
 
-    .line 7
+    .line 6
     invoke-static {v2, v0}, Landroid/support/v4/media/RatingCompat;->newStarRating(IF)Landroid/support/v4/media/RatingCompat;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 8
+    .line 7
     :pswitch_2
     invoke-virtual {v1}, Landroid/media/Rating;->isThumbUp()Z
 
@@ -153,7 +146,7 @@
 
     goto :goto_0
 
-    .line 9
+    .line 8
     :pswitch_3
     invoke-virtual {v1}, Landroid/media/Rating;->hasHeart()Z
 
@@ -165,13 +158,13 @@
 
     goto :goto_0
 
-    .line 10
+    .line 9
     :cond_0
     invoke-static {v2}, Landroid/support/v4/media/RatingCompat;->newUnratedRating(I)Landroid/support/v4/media/RatingCompat;
 
     move-result-object v0
 
-    .line 11
+    .line 10
     :goto_0
     iput-object p0, v0, Landroid/support/v4/media/RatingCompat;->mRatingObj:Ljava/lang/Object;
 
@@ -405,12 +398,6 @@
 
     if-nez v0, :cond_1
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_1
-
     .line 2
     invoke-virtual {p0}, Landroid/support/v4/media/RatingCompat;->isRated()Z
 
@@ -584,7 +571,7 @@
 
     if-nez v0, :cond_1
 
-    const/4 v1, 0x1
+    move v1, v2
 
     :cond_1
     return v1
@@ -648,7 +635,7 @@
     const-string v0, "Rating:style="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

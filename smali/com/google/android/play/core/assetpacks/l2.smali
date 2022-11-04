@@ -1,45 +1,53 @@
-.class public final synthetic Lcom/google/android/play/core/assetpacks/l2;
+.class public interface abstract Lcom/google/android/play/core/assetpacks/l2;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
-
-
-# static fields
-.field public static final a:Lcom/google/android/play/core/assetpacks/l2;
-
-
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/google/android/play/core/assetpacks/l2;
-
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/l2;-><init>()V
-
-    sput-object v0, Lcom/google/android/play/core/assetpacks/l2;->a:Lcom/google/android/play/core/assetpacks/l2;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 2
+.method public abstract A(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+.end method
 
-    new-instance v0, Ljava/lang/Thread;
+.method public abstract X(I)V
+.end method
 
-    const-string v1, "UpdateListenerExecutor"
+.method public abstract e()Lcom/google/android/play/core/tasks/Task;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/android/play/core/tasks/Task<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end method
 
-    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+.method public abstract v0()V
+.end method
 
-    return-object v0
+.method public abstract w0(ILjava/lang/String;)V
+.end method
+
+.method public abstract x0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I)",
+            "Lcom/google/android/play/core/tasks/Task<",
+            "Landroid/os/ParcelFileDescriptor;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract y0(ILjava/lang/String;Ljava/lang/String;I)V
 .end method

@@ -69,12 +69,12 @@
 
     if-lt v1, v2, :cond_0
 
-    const/4 v2, 0x1
+    move v2, v4
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_0
     iput-boolean v2, p2, Landroidx/recyclerview/widget/m;->t:Z
@@ -98,12 +98,12 @@
 
     if-lt v5, v6, :cond_1
 
-    const/4 v6, 0x1
+    move v6, v4
 
     goto :goto_1
 
     :cond_1
-    const/4 v6, 0x0
+    move v6, v3
 
     :goto_1
     iput-boolean v6, p2, Landroidx/recyclerview/widget/m;->u:Z
@@ -138,7 +138,7 @@
 
     add-float/2addr v7, p1
 
-    mul-float v7, v7, v6
+    mul-float/2addr v7, v6
 
     int-to-float p1, v0
 
@@ -174,7 +174,7 @@
 
     add-float/2addr v0, p1
 
-    mul-float v0, v0, p3
+    mul-float/2addr v0, p3
 
     int-to-float p1, v2
 

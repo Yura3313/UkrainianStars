@@ -15,10 +15,10 @@
 
 
 # static fields
-.field public static d:Le0/d;
+.field public static d:Le0/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Le0/d;"
+            "Le0/b;"
         }
     .end annotation
 .end field
@@ -36,13 +36,13 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Le0/d;
+    new-instance v0, Le0/b;
 
     const/16 v1, 0x14
 
-    invoke-direct {v0, v1}, Le0/d;-><init>(I)V
+    invoke-direct {v0, v1}, Le0/b;-><init>(I)V
 
-    sput-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/d;
+    sput-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/b;
 
     return-void
 .end method
@@ -59,9 +59,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/d;
+    sget-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/b;
 
-    invoke-virtual {v0}, Le0/d;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Le0/b;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -95,9 +95,9 @@
     iput-object v0, p0, Landroidx/recyclerview/widget/e0$a;->c:Landroidx/recyclerview/widget/RecyclerView$j$c;
 
     .line 4
-    sget-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/d;
+    sget-object v0, Landroidx/recyclerview/widget/e0$a;->d:Le0/b;
 
-    invoke-virtual {v0, p0}, Le0/d;->b(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Le0/b;->b(Ljava/lang/Object;)Z
 
     return-void
 .end method

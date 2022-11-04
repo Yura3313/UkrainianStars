@@ -79,7 +79,7 @@
     invoke-direct {v1, v0}, Lcom/kakaogame/KGMessage;-><init>(Ljava/util/Map;)V
 
     .line 5
-    invoke-interface {p2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 

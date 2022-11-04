@@ -60,12 +60,12 @@
 
     const-string v0, "view.tab_icon"
 
-    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x6
 
     .line 3
-    invoke-static {p1, v0}, Lae/q2;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
+    invoke-static {p1, v0}, Lzd/m2;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
 
     move-result-object p1
 
@@ -84,6 +84,22 @@
 .method public final b(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 3
 
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout$e;->a:Lcom/supercell/id/view/FlatTabLayout;
+
+    const/4 v1, 0x0
+
+    sget v2, Lcom/supercell/id/view/FlatTabLayout;->d0:I
+
+    .line 2
+    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/FlatTabLayout;->s(Lcom/google/android/material/tabs/TabLayout$g;Z)V
+
+    return-void
+.end method
+
+.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
+    .locals 3
+
     if-eqz p1, :cond_0
 
     .line 1
@@ -91,7 +107,7 @@
 
     const/4 v1, 0x1
 
-    sget v2, Lcom/supercell/id/view/FlatTabLayout;->e0:I
+    sget v2, Lcom/supercell/id/view/FlatTabLayout;->d0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/FlatTabLayout;->s(Lcom/google/android/material/tabs/TabLayout$g;Z)V
@@ -115,12 +131,12 @@
 
     const-string v0, "view.tab_icon"
 
-    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x6
 
     .line 5
-    invoke-static {p1, v0}, Lae/q2;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
+    invoke-static {p1, v0}, Lzd/m2;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
 
     move-result-object p1
 
@@ -133,21 +149,5 @@
     invoke-virtual {p1}, Landroid/animation/Animator;->start()V
 
     :cond_1
-    return-void
-.end method
-
-.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout$e;->a:Lcom/supercell/id/view/FlatTabLayout;
-
-    const/4 v1, 0x0
-
-    sget v2, Lcom/supercell/id/view/FlatTabLayout;->e0:I
-
-    .line 2
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/FlatTabLayout;->s(Lcom/google/android/material/tabs/TabLayout$g;Z)V
-
     return-void
 .end method

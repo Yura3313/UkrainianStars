@@ -1,100 +1,125 @@
 .class public final Ln2/c;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# static fields
-.field public static b:Ln2/c;
-
-
-# instance fields
-.field public a:Ln2/b;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/events/zze;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Ln2/c;
-
-    invoke-direct {v0}, Ln2/c;-><init>()V
-
-    sput-object v0, Ln2/c;->b:Ln2/c;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, Ln2/c;->a:Ln2/b;
-
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)Ln2/b;
-    .locals 2
-    .param p0    # Landroid/content/Context;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    sget-object v0, Ln2/c;->b:Ln2/c;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    move-object v3, v2
+
+    move v2, v1
 
     .line 2
-    monitor-enter v0
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v4
+
+    if-ge v4, v0, :cond_3
 
     .line 3
-    :try_start_0
-    iget-object v1, v0, Ln2/c;->a:Ln2/b;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    if-nez v1, :cond_1
+    move-result v4
+
+    const v5, 0xffff
+
+    and-int/2addr v5, v4
+
+    const/4 v6, 0x2
+
+    if-eq v5, v6, :cond_2
+
+    const/4 v6, 0x3
+
+    if-eq v5, v6, :cond_1
+
+    const/4 v6, 0x4
+
+    if-eq v5, v6, :cond_0
 
     .line 4
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
+    invoke-static {p1, v4}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    :cond_0
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p0
-
     .line 5
-    :goto_0
-    new-instance v1, Ln2/b;
-
-    invoke-direct {v1, p0}, Ln2/b;-><init>(Landroid/content/Context;)V
-
-    iput-object v1, v0, Ln2/c;->a:Ln2/b;
+    :cond_0
+    sget-object v3, Lcom/google/android/gms/drive/DriveSpace;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 6
+    invoke-static {p1, v4, v3}, Lc2/b;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 7
     :cond_1
-    iget-object p0, v0, Ln2/c;->a:Ln2/b;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-static {p1, v4}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
-    monitor-exit v0
+    move-result v2
 
-    return-object p0
+    goto :goto_0
 
-    :catchall_0
-    move-exception p0
+    .line 8
+    :cond_2
+    invoke-static {p1, v4}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
-    monitor-exit v0
+    move-result v1
 
-    throw p0
+    goto :goto_0
+
+    .line 9
+    :cond_3
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/drive/events/zze;
+
+    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/drive/events/zze;-><init>(IZLjava/util/List;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/drive/events/zze;
+
+    return-object p1
 .end method

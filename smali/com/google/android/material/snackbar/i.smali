@@ -127,7 +127,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -140,12 +140,12 @@
 
     if-ne v0, p1, :cond_0
 
-    const/4 p1, 0x1
+    move p1, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     :goto_0
     if-eqz p1, :cond_1
@@ -153,7 +153,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     return v1
@@ -171,7 +171,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -184,12 +184,12 @@
 
     if-ne v0, p1, :cond_0
 
-    const/4 p1, 0x1
+    move p1, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     :goto_0
     if-eqz p1, :cond_1
@@ -197,7 +197,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     return v1
@@ -326,7 +326,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0xabe
+    move v0, v1
 
     .line 2
     :goto_0
@@ -378,7 +378,7 @@
     if-eqz v0, :cond_0
 
     .line 5
-    invoke-interface {v0}, Lcom/google/android/material/snackbar/i$b;->R()V
+    invoke-interface {v0}, Lcom/google/android/material/snackbar/i$b;->x()V
 
     goto :goto_0
 

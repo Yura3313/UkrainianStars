@@ -195,7 +195,7 @@
     .line 13
     iget-object v1, p0, Landroidx/appcompat/view/menu/h;->i:Landroidx/appcompat/view/menu/i$a;
 
-    invoke-interface {v0, v1}, Landroidx/appcompat/view/menu/i;->e(Landroidx/appcompat/view/menu/i$a;)V
+    invoke-interface {v0, v1}, Landroidx/appcompat/view/menu/i;->k(Landroidx/appcompat/view/menu/i$a;)V
 
     .line 14
     iget-boolean v1, p0, Landroidx/appcompat/view/menu/h;->h:Z
@@ -224,7 +224,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Lg/f;->a()Z
+    invoke-interface {v0}, Lg/f;->b()Z
 
     move-result v0
 
@@ -273,7 +273,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/i;->e(Landroidx/appcompat/view/menu/i$a;)V
+    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/i;->k(Landroidx/appcompat/view/menu/i$a;)V
 
     :cond_0
     return-void
@@ -298,7 +298,7 @@
     iget-object p4, p0, Landroidx/appcompat/view/menu/h;->f:Landroid/view/View;
 
     .line 4
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {p4}, Landroid/view/View;->getLayoutDirection()I
@@ -347,7 +347,7 @@
 
     const/high16 p4, 0x42400000    # 48.0f
 
-    mul-float p3, p3, p4
+    mul-float/2addr p3, p4
 
     const/high16 p4, 0x40000000    # 2.0f
 
@@ -369,11 +369,11 @@
     invoke-direct {p4, v1, v2, p1, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 12
-    iput-object p4, v0, Lg/d;->g:Landroid/graphics/Rect;
+    iput-object p4, v0, Lg/d;->f:Landroid/graphics/Rect;
 
     .line 13
     :cond_1
-    invoke-interface {v0}, Lg/f;->R()V
+    invoke-interface {v0}, Lg/f;->x()V
 
     return-void
 .end method

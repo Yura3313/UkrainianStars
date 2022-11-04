@@ -1,63 +1,53 @@
-.class public final Lv3/h;
-.super Lv3/s4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+.class public abstract Lv3/h;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@5.0.0"
 
-
-# instance fields
-.field public final synthetic k:Lcom/google/android/gms/internal/measurement/zzk;
-
-.field public final synthetic l:Lv3/s4;
+# interfaces
+.implements Ljava/util/ListIterator;
+.implements Ljava/util/Iterator;
 
 
 # direct methods
-.method public constructor <init>(Lv3/s4;Lcom/google/android/gms/internal/measurement/zzk;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lv3/h;->l:Lv3/s4;
-
-    iput-object p2, p0, Lv3/h;->k:Lcom/google/android/gms/internal/measurement/zzk;
-
-    const/4 p2, 0x1
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
+.method public final add(Ljava/lang/Object;)V
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lv3/h;->l:Lv3/s4;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 2
-    iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 3
-    iget-object v1, p0, Lv3/h;->k:Lcom/google/android/gms/internal/measurement/zzk;
-
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/measurement/zzm;->getCurrentScreenName(Lcom/google/android/gms/internal/measurement/zzn;)V
-
-    return-void
+    throw p1
 .end method
 
-.method public final b()V
-    .locals 2
+.method public final remove()V
+    .locals 1
 
-    iget-object v0, p0, Lv3/h;->k:Lcom/google/android/gms/internal/measurement/zzk;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/measurement/zzk;->zza(Landroid/os/Bundle;)V
+    throw v0
+.end method
 
-    return-void
+.method public final set(Ljava/lang/Object;)V
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
 .end method

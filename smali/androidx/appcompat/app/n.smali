@@ -1,129 +1,122 @@
 .class public final Landroidx/appcompat/app/n;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "ResourcesFlusher.java"
 
 
-# instance fields
-.field public final synthetic g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+# static fields
+.field public static a:Ljava/lang/reflect/Field;
+
+.field public static b:Z
+
+.field public static c:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public static d:Z
+
+.field public static e:Ljava/lang/reflect/Field;
+
+.field public static f:Z
+
+.field public static g:Ljava/lang/reflect/Field;
+
+.field public static h:Z
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
-    .locals 0
-
-    iput-object p1, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
+.method public static a(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    sget-boolean v0, Landroidx/appcompat/app/n;->d:Z
 
-    iget-object v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->v:Landroid/widget/PopupWindow;
+    const/4 v1, 0x1
 
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
+    if-nez v0, :cond_0
 
-    const/16 v2, 0x37
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v0, v2, v3, v3}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
+    :try_start_0
+    const-string v0, "android.content.res.ThemedResourceCache"
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->L()V
+    move-result-object v0
+
+    sput-object v0, Landroidx/appcompat/app/n;->c:Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    :catch_0
+    sput-boolean v1, Landroidx/appcompat/app/n;->d:Z
 
     .line 4
-    iget-boolean v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->y:Z
-
-    if-eqz v1, :cond_0
-
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->z:Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {v0}, Lf0/r;->s(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
     :cond_0
-    const/4 v0, 0x0
+    sget-object v0, Landroidx/appcompat/app/n;->c:Ljava/lang/Class;
 
-    :goto_0
-    const/high16 v1, 0x3f800000    # 1.0f
+    if-nez v0, :cond_1
 
-    if-eqz v0, :cond_1
+    return-void
 
     .line 5
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    :cond_1
+    sget-boolean v2, Landroidx/appcompat/app/n;->f:Z
 
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
+    if-nez v2, :cond_2
 
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setAlpha(F)V
+    :try_start_1
+    const-string v2, "mUnthemedEntries"
 
     .line 6
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    iget-object v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
+    move-result-object v0
 
-    invoke-static {v2}, Lf0/r;->a(Landroid/view/View;)Lf0/x;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Lf0/x;->a(F)Lf0/x;
-
-    iput-object v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->x:Lf0/x;
+    sput-object v0, Landroidx/appcompat/app/n;->e:Ljava/lang/reflect/Field;
 
     .line 7
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->x:Lf0/x;
-
-    new-instance v1, Landroidx/appcompat/app/n$a;
-
-    invoke-direct {v1, p0}, Landroidx/appcompat/app/n$a;-><init>(Landroidx/appcompat/app/n;)V
-
-    invoke-virtual {v0, v1}, Lf0/x;->d(Lf0/y;)Lf0/x;
-
-    goto :goto_1
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 8
-    :cond_1
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    :catch_1
+    sput-boolean v1, Landroidx/appcompat/app/n;->f:Z
 
     .line 9
-    iget-object v0, p0, Landroidx/appcompat/app/n;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    :cond_2
+    sget-object v0, Landroidx/appcompat/app/n;->e:Ljava/lang/reflect/Field;
 
-    iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->u:Landroidx/appcompat/widget/ActionBarContextView;
+    if-nez v0, :cond_3
 
-    invoke-virtual {v0, v3}, Landroidx/appcompat/widget/ActionBarContextView;->setVisibility(I)V
+    return-void
 
-    :goto_1
+    :cond_3
+    const/4 v1, 0x0
+
+    .line 10
+    :try_start_2
+    invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/util/LongSparseArray;
+    :try_end_2
+    .catch Ljava/lang/IllegalAccessException; {:try_start_2 .. :try_end_2} :catch_2
+
+    move-object v1, p0
+
+    :catch_2
+    if-eqz v1, :cond_4
+
+    .line 11
+    invoke-virtual {v1}, Landroid/util/LongSparseArray;->clear()V
+
+    :cond_4
     return-void
 .end method

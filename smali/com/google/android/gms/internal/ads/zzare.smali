@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final j4(Ljava/util/List;)V
+.method public final V6(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,7 +37,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -47,7 +47,7 @@
     const/4 p1, 0x1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->B2(ILandroid/os/Parcel;)V
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
     const/4 p1, 0x2
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->B2(ILandroid/os/Parcel;)V
 
     return-void
 .end method

@@ -63,7 +63,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x0
+    move v0, v1
 
     goto :goto_0
 
@@ -109,7 +109,7 @@
     const-string v0, "DisplayCutoutCompat{"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

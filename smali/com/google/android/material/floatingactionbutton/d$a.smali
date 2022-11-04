@@ -1,11 +1,11 @@
 .class public final Lcom/google/android/material/floatingactionbutton/d$a;
-.super Ld4/f;
+.super Lb4/f;
 .source "FloatingActionButtonImpl.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/floatingactionbutton/d;->b(Ld4/g;FFF)Landroid/animation/AnimatorSet;
+    value = Lcom/google/android/material/floatingactionbutton/d;->b(Lb4/g;FFF)Landroid/animation/AnimatorSet;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$a;->d:Lcom/google/android/material/floatingactionbutton/d;
 
-    invoke-direct {p0}, Ld4/f;-><init>()V
+    invoke-direct {p0}, Lb4/f;-><init>()V
 
     return-void
 .end method
@@ -46,12 +46,12 @@
     iput p1, v0, Lcom/google/android/material/floatingactionbutton/d;->s:F
 
     .line 4
-    iget-object v0, p0, Ld4/f;->a:[F
+    iget-object v0, p0, Lb4/f;->a:[F
 
     invoke-virtual {p2, v0}, Landroid/graphics/Matrix;->getValues([F)V
 
     .line 5
-    iget-object p2, p0, Ld4/f;->b:[F
+    iget-object p2, p0, Lb4/f;->b:[F
 
     invoke-virtual {p3, p2}, Landroid/graphics/Matrix;->getValues([F)V
 
@@ -63,11 +63,11 @@
     if-ge p2, p3, :cond_0
 
     .line 6
-    iget-object p3, p0, Ld4/f;->b:[F
+    iget-object p3, p0, Lb4/f;->b:[F
 
     aget v0, p3, p2
 
-    iget-object v1, p0, Ld4/f;->a:[F
+    iget-object v1, p0, Lb4/f;->a:[F
 
     aget v2, v1, p2
 
@@ -76,7 +76,7 @@
     .line 7
     aget v1, v1, p2
 
-    mul-float v0, v0, p1
+    mul-float/2addr v0, p1
 
     add-float/2addr v0, v1
 
@@ -88,14 +88,14 @@
 
     .line 8
     :cond_0
-    iget-object p1, p0, Ld4/f;->c:Landroid/graphics/Matrix;
+    iget-object p1, p0, Lb4/f;->c:Landroid/graphics/Matrix;
 
-    iget-object p2, p0, Ld4/f;->b:[F
+    iget-object p2, p0, Lb4/f;->b:[F
 
     invoke-virtual {p1, p2}, Landroid/graphics/Matrix;->setValues([F)V
 
     .line 9
-    iget-object p1, p0, Ld4/f;->c:Landroid/graphics/Matrix;
+    iget-object p1, p0, Lb4/f;->c:Landroid/graphics/Matrix;
 
     return-object p1
 .end method

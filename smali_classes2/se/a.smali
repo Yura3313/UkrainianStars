@@ -1,133 +1,305 @@
 .class public final Lse/a;
 .super Ljava/lang/Object;
-.source "ArrayIterator.kt"
+.source "App.java"
 
 # interfaces
-.implements Ljava/util/Iterator;
-.implements Lte/a;
+.implements Lhe/u0;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "TT;>;",
-        "Lte/a;"
+        Lse/a$a;
     }
 .end annotation
 
 
 # instance fields
-.field public g:I
+.field public f:Ljava/lang/String;
 
-.field public final h:[Ljava/lang/Object;
+.field public g:Ljava/util/Date;
+
+.field public h:Ljava/lang/String;
+
+.field public i:Ljava/lang/String;
+
+.field public j:Ljava/lang/String;
+
+.field public k:Ljava/lang/String;
+
+.field public l:Ljava/lang/String;
+
+.field public m:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "[TT;"
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public n:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>([Ljava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TT;)V"
-        }
-    .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+.method public constructor <init>()V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lse/a;->h:[Ljava/lang/Object;
+    return-void
+.end method
+
+.method public constructor <init>(Lse/a;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iget-object v0, p1, Lse/a;->l:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->l:Ljava/lang/String;
+
+    .line 3
+    iget-object v0, p1, Lse/a;->f:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->f:Ljava/lang/String;
+
+    .line 4
+    iget-object v0, p1, Lse/a;->j:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->j:Ljava/lang/String;
+
+    .line 5
+    iget-object v0, p1, Lse/a;->g:Ljava/util/Date;
+
+    iput-object v0, p0, Lse/a;->g:Ljava/util/Date;
+
+    .line 6
+    iget-object v0, p1, Lse/a;->k:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->k:Ljava/lang/String;
+
+    .line 7
+    iget-object v0, p1, Lse/a;->i:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->i:Ljava/lang/String;
+
+    .line 8
+    iget-object v0, p1, Lse/a;->h:Ljava/lang/String;
+
+    iput-object v0, p0, Lse/a;->h:Ljava/lang/String;
+
+    .line 9
+    iget-object v0, p1, Lse/a;->m:Ljava/util/Map;
+
+    invoke-static {v0}, Lue/a;->a(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lse/a;->m:Ljava/util/Map;
+
+    .line 10
+    iget-object p1, p1, Lse/a;->n:Ljava/util/Map;
+
+    invoke-static {p1}, Lue/a;->a(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lse/a;->n:Ljava/util/Map;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
-    .locals 2
-
-    iget v0, p0, Lse/a;->g:I
-
-    iget-object v1, p0, Lse/a;->h:[Ljava/lang/Object;
-
-    array-length v1, v1
-
-    if-ge v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
+.method public final serialize(Lhe/s0;Lhe/b0;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()TT;"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    :try_start_0
-    iget-object v0, p0, Lse/a;->h:[Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p1}, Lxe/b;->b()Lxe/b;
 
-    iget v1, p0, Lse/a;->g:I
+    .line 2
+    iget-object v0, p0, Lse/a;->f:Ljava/lang/String;
 
-    add-int/lit8 v2, v1, 0x1
+    if-eqz v0, :cond_0
 
-    iput v2, p0, Lse/a;->g:I
+    const-string v0, "app_identifier"
 
-    aget-object v0, v0, v1
-    :try_end_0
-    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 3
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
 
-    return-object v0
+    iget-object v0, p0, Lse/a;->f:Ljava/lang/String;
 
-    :catch_0
-    move-exception v0
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
 
-    iget v1, p0, Lse/a;->g:I
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lse/a;->g:Ljava/util/Date;
 
-    add-int/lit8 v1, v1, -0x1
+    if-eqz v0, :cond_1
 
-    iput v1, p0, Lse/a;->g:I
+    const-string v0, "app_start_time"
 
-    new-instance v1, Ljava/util/NoSuchElementException;
+    .line 5
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    iget-object v0, p0, Lse/a;->g:Ljava/util/Date;
+
+    invoke-virtual {p1, p2, v0}, Lhe/s0;->q(Lhe/b0;Ljava/lang/Object;)Lhe/s0;
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lse/a;->h:Ljava/lang/String;
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "device_app_hash"
+
+    .line 7
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
+
+    .line 8
+    :cond_2
+    iget-object v0, p0, Lse/a;->i:Ljava/lang/String;
+
+    if-eqz v0, :cond_3
+
+    const-string v0, "build_type"
+
+    .line 9
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->i:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
+
+    .line 10
+    :cond_3
+    iget-object v0, p0, Lse/a;->j:Ljava/lang/String;
+
+    if-eqz v0, :cond_4
+
+    const-string v0, "app_name"
+
+    .line 11
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->j:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
+
+    .line 12
+    :cond_4
+    iget-object v0, p0, Lse/a;->k:Ljava/lang/String;
+
+    if-eqz v0, :cond_5
+
+    const-string v0, "app_version"
+
+    .line 13
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->k:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
+
+    .line 14
+    :cond_5
+    iget-object v0, p0, Lse/a;->l:Ljava/lang/String;
+
+    if-eqz v0, :cond_6
+
+    const-string v0, "app_build"
+
+    .line 15
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->l:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lxe/b;->n(Ljava/lang/String;)Lxe/b;
+
+    .line 16
+    :cond_6
+    iget-object v0, p0, Lse/a;->m:Ljava/util/Map;
+
+    if-eqz v0, :cond_7
+
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    const-string v0, "permissions"
+
+    .line 17
+    invoke-virtual {p1, v0}, Lhe/s0;->p(Ljava/lang/String;)Lhe/s0;
+
+    iget-object v0, p0, Lse/a;->m:Ljava/util/Map;
+
+    invoke-virtual {p1, p2, v0}, Lhe/s0;->q(Lhe/b0;Ljava/lang/Object;)Lhe/s0;
+
+    .line 18
+    :cond_7
+    iget-object v0, p0, Lse/a;->n:Ljava/util/Map;
+
+    if-eqz v0, :cond_8
+
+    .line 19
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    throw v1
-.end method
+    move-result-object v0
 
-.method public final remove()V
-    .locals 2
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    move-result v1
 
-    const-string v1, "Operation is not supported for read-only collection"
+    if-eqz v1, :cond_8
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    throw v0
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    .line 20
+    iget-object v2, p0, Lse/a;->n:Ljava/util/Map;
+
+    .line 21
+    invoke-static {v2, v1, p1, v1, p2}, Lf7/a;->b(Ljava/util/Map;Ljava/lang/String;Lhe/s0;Ljava/lang/String;Lhe/b0;)V
+
+    goto :goto_0
+
+    .line 22
+    :cond_8
+    invoke-virtual {p1}, Lxe/b;->d()Lxe/b;
+
+    return-void
 .end method

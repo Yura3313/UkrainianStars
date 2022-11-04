@@ -2,14 +2,14 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements La5/u0;
+.implements Ly4/l0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La5/u0<",
+        "Ly4/l0<",
         "Lcom/google/android/play/core/assetpacks/o1;",
         ">;"
     }
@@ -17,11 +17,11 @@
 
 
 # instance fields
-.field public final g:La5/u0;
+.field public final f:Ly4/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/y;",
+            "Ly4/l0<",
+            "Landroid/content/Context;",
             ">;"
         }
     .end annotation
@@ -29,20 +29,20 @@
 
 
 # direct methods
-.method public constructor <init>(La5/u0;)V
+.method public constructor <init>(Ly4/l0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/y;",
+            "Ly4/l0<",
+            "Landroid/content/Context;",
             ">;)V"
         }
     .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p1;->g:La5/u0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p1;->f:Ly4/l0;
 
     return-void
 .end method
@@ -52,17 +52,17 @@
 .method public final bridge synthetic e()Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p1;->g:La5/u0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p1;->f:Ly4/l0;
 
-    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/i2;
+
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/i2;->a()Landroid/content/Context;
 
     move-result-object v0
 
     new-instance v1, Lcom/google/android/play/core/assetpacks/o1;
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/y;
-
-    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/o1;-><init>(Lcom/google/android/play/core/assetpacks/y;)V
+    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/o1;-><init>(Landroid/content/Context;)V
 
     return-object v1
 .end method

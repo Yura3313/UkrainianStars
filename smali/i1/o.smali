@@ -1,72 +1,44 @@
-.class public final Li1/o;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/Callable;
+.class public Li1/o;
+.super Li1/n;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/concurrent/Callable<",
-        "Lk3/lr0;",
-        ">;"
-    }
+.annotation runtime Ljava/lang/Deprecated;
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/ads/internal/zzj;
+.field public e:Ljava/lang/String;
+
+.field public f:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ld1/a$a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public g:Ljava/lang/String;
+
+.field public h:Ld1/a$a;
+
+.field public i:Ljava/lang/String;
+
+.field public j:D
+
+.field public k:Ljava/lang/String;
+
+.field public l:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/ads/internal/zzj;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Li1/o;->a:Lcom/google/android/gms/ads/internal/zzj;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Li1/n;-><init>()V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Li1/o;->a:Lcom/google/android/gms/ads/internal/zzj;
-
-    .line 2
-    iget-object v1, v0, Lcom/google/android/gms/ads/internal/zzj;->g:Lcom/google/android/gms/internal/ads/zzbbg;
-
-    .line 3
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
-
-    .line 4
-    iget-object v0, v0, Lcom/google/android/gms/ads/internal/zzj;->j:Landroid/content/Context;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    .line 5
-    invoke-static {v1, v0, v2, v3}, Lcom/google/android/gms/internal/ads/r5;->r(Ljava/lang/String;Landroid/content/Context;ZI)Lcom/google/android/gms/internal/ads/r5;
-
-    move-result-object v0
-
-    .line 6
-    new-instance v1, Lk3/lr0;
-
-    invoke-direct {v1, v0}, Lk3/lr0;-><init>(Lk3/mm0;)V
-
-    return-object v1
 .end method

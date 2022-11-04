@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/VersionedParcel;)Landroidx/core/app/RemoteActionCompat;
+.method public static read(Lv0/a;)Landroidx/core/app/RemoteActionCompat;
     .locals 3
 
     .line 1
@@ -26,7 +26,7 @@
     const/4 v2, 0x1
 
     .line 3
-    invoke-virtual {p0, v2}, Landroidx/versionedparcelable/VersionedParcel;->i(I)Z
+    invoke-virtual {p0, v2}, Lv0/a;->i(I)Z
 
     move-result v2
 
@@ -36,7 +36,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->o()Lx0/b;
+    invoke-virtual {p0}, Lv0/a;->o()Lv0/c;
 
     move-result-object v1
 
@@ -52,7 +52,7 @@
     const/4 v2, 0x2
 
     .line 7
-    invoke-virtual {p0, v2}, Landroidx/versionedparcelable/VersionedParcel;->i(I)Z
+    invoke-virtual {p0, v2}, Lv0/a;->i(I)Z
 
     move-result v2
 
@@ -62,7 +62,7 @@
 
     .line 8
     :cond_1
-    invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->h()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lv0/a;->h()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -76,7 +76,7 @@
     const/4 v2, 0x3
 
     .line 11
-    invoke-virtual {p0, v2}, Landroidx/versionedparcelable/VersionedParcel;->i(I)Z
+    invoke-virtual {p0, v2}, Lv0/a;->i(I)Z
 
     move-result v2
 
@@ -86,7 +86,7 @@
 
     .line 12
     :cond_2
-    invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->h()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lv0/a;->h()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -99,7 +99,7 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/VersionedParcel;->m(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+    invoke-virtual {p0, v1, v2}, Lv0/a;->m(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -113,7 +113,7 @@
     const/4 v2, 0x5
 
     .line 16
-    invoke-virtual {p0, v2}, Landroidx/versionedparcelable/VersionedParcel;->i(I)Z
+    invoke-virtual {p0, v2}, Lv0/a;->i(I)Z
 
     move-result v2
 
@@ -123,7 +123,7 @@
 
     .line 17
     :cond_3
-    invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->f()Z
+    invoke-virtual {p0}, Lv0/a;->f()Z
 
     move-result v1
 
@@ -137,7 +137,7 @@
     const/4 v2, 0x6
 
     .line 20
-    invoke-virtual {p0, v2}, Landroidx/versionedparcelable/VersionedParcel;->i(I)Z
+    invoke-virtual {p0, v2}, Lv0/a;->i(I)Z
 
     move-result v2
 
@@ -147,7 +147,7 @@
 
     .line 21
     :cond_4
-    invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->f()Z
+    invoke-virtual {p0}, Lv0/a;->f()Z
 
     move-result v1
 
@@ -158,11 +158,11 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/core/app/RemoteActionCompat;Landroidx/versionedparcelable/VersionedParcel;)V
+.method public static write(Landroidx/core/app/RemoteActionCompat;Lv0/a;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object v0, p0, Landroidx/core/app/RemoteActionCompat;->a:Landroidx/core/graphics/drawable/IconCompat;
@@ -170,10 +170,10 @@
     const/4 v1, 0x1
 
     .line 3
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v1}, Lv0/a;->p(I)V
 
     .line 4
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->y(Lx0/b;)V
+    invoke-virtual {p1, v0}, Lv0/a;->y(Lv0/c;)V
 
     .line 5
     iget-object v0, p0, Landroidx/core/app/RemoteActionCompat;->b:Ljava/lang/CharSequence;
@@ -181,10 +181,10 @@
     const/4 v1, 0x2
 
     .line 6
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v1}, Lv0/a;->p(I)V
 
     .line 7
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->s(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lv0/a;->s(Ljava/lang/CharSequence;)V
 
     .line 8
     iget-object v0, p0, Landroidx/core/app/RemoteActionCompat;->c:Ljava/lang/CharSequence;
@@ -192,17 +192,17 @@
     const/4 v1, 0x3
 
     .line 9
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v1}, Lv0/a;->p(I)V
 
     .line 10
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->s(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lv0/a;->s(Ljava/lang/CharSequence;)V
 
     .line 11
     iget-object v0, p0, Landroidx/core/app/RemoteActionCompat;->d:Landroid/app/PendingIntent;
 
     const/4 v1, 0x4
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->w(Landroid/os/Parcelable;I)V
+    invoke-virtual {p1, v0, v1}, Lv0/a;->w(Landroid/os/Parcelable;I)V
 
     .line 12
     iget-boolean v0, p0, Landroidx/core/app/RemoteActionCompat;->e:Z
@@ -210,10 +210,10 @@
     const/4 v1, 0x5
 
     .line 13
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v1}, Lv0/a;->p(I)V
 
     .line 14
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->q(Z)V
+    invoke-virtual {p1, v0}, Lv0/a;->q(Z)V
 
     .line 15
     iget-boolean p0, p0, Landroidx/core/app/RemoteActionCompat;->f:Z
@@ -221,10 +221,10 @@
     const/4 v0, 0x6
 
     .line 16
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v0}, Lv0/a;->p(I)V
 
     .line 17
-    invoke-virtual {p1, p0}, Landroidx/versionedparcelable/VersionedParcel;->q(Z)V
+    invoke-virtual {p1, p0}, Lv0/a;->q(Z)V
 
     return-void
 .end method

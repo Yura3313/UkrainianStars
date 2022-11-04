@@ -1,107 +1,134 @@
 .class public final Lb4/c;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.super Landroid/util/Property;
+.source "ChildrenAlphaProperty.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/signin/internal/zai;",
+        "Landroid/util/Property<",
+        "Landroid/view/ViewGroup;",
+        "Ljava/lang/Float;",
         ">;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# static fields
+.field public static final a:Lb4/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/Property<",
+            "Landroid/view/ViewGroup;",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lb4/c;
+
+    invoke-direct {v0}, Lb4/c;-><init>()V
+
+    sput-object v0, Lb4/c;->a:Lb4/c;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    const-class v0, Ljava/lang/Float;
+
+    const-string v1, "childrenAlpha"
+
+    invoke-direct {p0, v0, v1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 6
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    check-cast p1, Landroid/view/ViewGroup;
+
+    .line 2
+    sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 3
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+.end method
+
+.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 3
+
+    .line 1
+    check-cast p1, Landroid/view/ViewGroup;
+
+    check-cast p2, Ljava/lang/Float;
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+
+    move-result p2
+
+    .line 3
+    sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
+
+    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    move-object v2, v1
-
-    .line 2
     :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v3
-
-    if-ge v3, v0, :cond_2
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v3
-
-    const v4, 0xffff
-
-    and-int/2addr v4, v3
-
-    const/4 v5, 0x1
-
-    if-eq v4, v5, :cond_1
-
-    const/4 v5, 0x2
-
-    if-eq v4, v5, :cond_0
-
-    .line 4
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
+    if-ge v1, v0, :cond_0
 
     .line 5
-    :cond_0
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    goto :goto_0
-
     .line 6
-    :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    invoke-virtual {v2, p2}, Landroid/view/View;->setAlpha(F)V
 
-    move-result-object v1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 7
-    :cond_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 8
-    new-instance p1, Lcom/google/android/gms/signin/internal/zai;
-
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/signin/internal/zai;-><init>(Ljava/util/List;Ljava/lang/String;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    new-array p1, p1, [Lcom/google/android/gms/signin/internal/zai;
-
-    return-object p1
+    :cond_0
+    return-void
 .end method

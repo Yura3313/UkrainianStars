@@ -1,242 +1,624 @@
-.class public final Lg9/a;
-.super Ljava/lang/Object;
-.source "CryptoDM.java"
+.class public abstract Lg9/a;
+.super Landroid/database/sqlite/SQLiteOpenHelper;
+.source "BaseSqliteHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lg9/a$a;
+    }
+.end annotation
+
+
+# instance fields
+.field public f:Lg9/b;
+
+.field public g:Lg9/a$a;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lg9/b;)V
+    .locals 3
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-interface {p2}, Lg9/b;->s()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p2}, Lg9/b;->q()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-direct {p0, p1, v0, v2, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
+
+    .line 2
+    iput-object p2, p0, Lg9/a;->f:Lg9/b;
 
     return-void
 .end method
 
-.method public static final a(Lcom/google/protobuf/Timestamp;)Ljava/util/Date;
-    .locals 7
 
-    new-instance v0, Ljava/util/Date;
+# virtual methods
+.method public final a(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 2
 
-    invoke-virtual {p0}, Lcom/google/protobuf/Timestamp;->getNanos()I
+    .line 1
+    iget-object v0, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v0}, Lg9/b;->m()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    int-to-long v1, v1
+    if-eqz v1, :cond_0
 
-    const-wide/32 v3, 0xf4240
-
-    div-long/2addr v1, v3
-
-    invoke-virtual {p0}, Lcom/google/protobuf/Timestamp;->getSeconds()J
-
-    move-result-wide v3
-
-    const-wide/16 v5, 0x3e8
-
-    mul-long v3, v3, v5
-
-    add-long/2addr v3, v1
-
-    invoke-direct {v0, v3, v4}, Ljava/util/Date;-><init>(J)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 9
-
-    const-string v0, "HmacSHA256"
-
-    const-string v1, "UTF-8"
-
-    const/4 v2, 0x1
-
-    if-le p3, v2, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const/4 v3, 0x0
-
-    .line 1
-    :try_start_0
-    new-instance v4, Ljavax/crypto/spec/SecretKeySpec;
-
-    invoke-virtual {p2, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
-
-    move-result-object v5
-
-    invoke-direct {v4, v5, v0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
-
-    .line 2
-    invoke-static {v0}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
-
-    move-result-object v0
-
-    .line 3
-    invoke-virtual {v0, v4}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
-
-    .line 4
-    invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->doFinal([B)[B
+    check-cast v1, Ljava/lang/String;
 
-    move-result-object v0
-
-    const/16 v1, 0x10
-
-    new-array v1, v1, [C
-
-    .line 5
-    fill-array-data v1, :array_0
-
-    .line 6
-    array-length v4, v0
-
-    mul-int/lit8 v4, v4, 0x2
-
-    new-array v4, v4, [C
-
-    const/4 v5, 0x0
-
-    .line 7
-    :goto_0
-    array-length v6, v0
-
-    if-ge v5, v6, :cond_1
-
-    .line 8
-    aget-byte v6, v0, v5
-
-    and-int/lit16 v6, v6, 0xff
-
-    mul-int/lit8 v7, v5, 0x2
-
-    ushr-int/lit8 v8, v6, 0x4
-
-    .line 9
-    aget-char v8, v1, v8
-
-    aput-char v8, v4, v7
-
-    add-int/lit8 v7, v7, 0x1
-
-    and-int/lit8 v6, v6, 0xf
-
-    .line 10
-    aget-char v6, v1, v6
-
-    aput-char v6, v4, v7
-
-    add-int/lit8 v5, v5, 0x1
+    .line 2
+    invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 11
-    :cond_1
-    new-instance v0, Ljava/lang/String;
+    :cond_0
+    return-void
+.end method
 
-    invoke-direct {v0, v4}, Ljava/lang/String;-><init>([C)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+.method public final b(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 4
 
-    return-object v0
+    .line 1
+    iget-object v0, p0, Lg9/a;->f:Lg9/b;
 
-    :catch_0
-    move-exception v0
+    invoke-interface {v0}, Lg9/b;->n()Ljava/util/List;
 
-    const-string v1, ", retryCount: "
+    move-result-object v0
 
-    const-string v4, "Could not generate mac signature: "
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    const-string v5, "Helpshift_CryptoDM"
+    move-result-object v0
 
-    if-ne p3, v2, :cond_2
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 12
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v1
 
-    move-result-object v4
+    if-eqz v1, :cond_0
 
-    .line 13
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    new-array v3, v3, [Lz9/a;
+    check-cast v1, Ljava/lang/String;
 
-    invoke-static {v5, v1, v0, v3}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    .line 2
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "DROP TABLE IF EXISTS "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final c(Landroid/database/sqlite/SQLiteDatabase;)Z
+    .locals 6
+
+    const-string v0, "Error in recreating inside finally block, "
+
+    .line 1
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const/4 v1, 0x0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
+
+    .line 3
+    invoke-virtual {p0, p1}, Lg9/a;->b(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 4
+    invoke-virtual {p0, p1}, Lg9/a;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 5
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    :try_start_1
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 7
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_3
+
+    :catch_0
+    move-exception p1
+
+    .line 8
+    iget-object v2, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v2}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v2
+
+    new-array v1, v1, [Lz9/a;
+
+    invoke-static {v2, v0, p1, v1}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    goto :goto_3
+
+    :catchall_0
+    move-exception v2
 
     goto :goto_1
 
-    .line 14
-    :cond_2
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_1
+    move-exception v2
+
+    .line 9
+    :try_start_2
+    iget-object v3, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v3}, Lg9/b;->getTag()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 15
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Exception while recreating tables: version: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lg9/a;->f:Lg9/b;
+
+    .line 10
+    invoke-interface {v5}, Lg9/b;->q()I
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-array v5, v1, [Lz9/a;
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 11
+    invoke-static {v3, v4, v2, v5}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    invoke-virtual {v3, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 12
+    :try_start_3
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 13
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
+
+    goto :goto_0
+
+    :catch_2
+    move-exception p1
+
+    .line 14
+    iget-object v2, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v2}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v2
+
+    new-array v3, v1, [Lz9/a;
+
+    invoke-static {v2, v0, p1, v3}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    :cond_0
+    :goto_0
+    return v1
+
+    .line 15
+    :goto_1
+    :try_start_4
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 16
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
+
+    goto :goto_2
+
+    :catch_3
+    move-exception p1
+
+    .line 17
+    iget-object v3, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v3}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v3
+
+    new-array v1, v1, [Lz9/a;
+
+    invoke-static {v3, v0, p1, v1}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    .line 18
+    :cond_1
+    :goto_2
+    throw v2
+
+    :cond_2
+    :goto_3
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final d(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 3
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1}, Lg9/a;->b(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 2
+    invoke-virtual {p0, p1}, Lg9/a;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    iget-object v0, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v0}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Exception while recreating tables on DB upgrade/downgrade: version: "
+
+    .line 4
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-static {v5, v1, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    .line 5
+    iget-object v2, p0, Lg9/a;->f:Lg9/b;
+
+    .line 6
+    invoke-interface {v2}, Lg9/b;->q()I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Lz9/a;
+
+    .line 7
+    invoke-static {v0, v1, p1, v2}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    .line 8
+    throw p1
+.end method
+
+.method public final onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 4
+
+    const-string v0, "Error in onCreate inside finally block, "
+
+    const/4 v1, 0x0
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
+
+    .line 2
+    invoke-virtual {p0, p1}, Lg9/a;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 3
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 4
+    :try_start_1
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 5
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    .line 6
+    iget-object v2, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v2}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v2
+
+    new-array v1, v1, [Lz9/a;
+
+    invoke-static {v2, v0, p1, v1}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :catchall_0
+    move-exception v2
+
+    .line 7
+    :try_start_2
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 8
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception p1
+
+    .line 9
+    iget-object v3, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v3}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v3
+
+    new-array v1, v1, [Lz9/a;
+
+    invoke-static {v3, v0, p1, v1}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    .line 10
+    :cond_1
+    :goto_1
+    throw v2
+.end method
+
+.method public final onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lg9/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 2
+    iget-object p1, p0, Lg9/a;->g:Lg9/a$a;
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    iget-object p1, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {p1}, Lg9/b;->s()Ljava/lang/String;
+
+    .line 4
+    sget-object p1, Lcom/helpshift/util/t;->c:La7/g;
+
+    .line 5
+    invoke-virtual {p1}, La7/g;->f()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+    .locals 4
+
+    .line 1
+    iget-object p3, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {p3, p2}, Lg9/b;->o(I)Ljava/util/List;
+
+    move-result-object p3
+
+    .line 2
+    invoke-static {p3}, La0/b;->g(Ljava/util/List;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const/4 v0, 0x0
+
+    .line 3
+    :try_start_0
+    invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p3
+
+    :goto_0
+    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lg9/d;
+
+    .line 4
+    invoke-interface {v1, p1}, Lg9/d;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p3
+
+    .line 5
+    iget-object v1, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {v1}, Lg9/b;->getTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Exception while migrating "
+
+    .line 6
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 7
+    iget-object v3, p0, Lg9/a;->f:Lg9/b;
+
+    .line 8
+    invoke-interface {v3}, Lg9/b;->s()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, " old: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p2, ", new: "
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p2, p0, Lg9/a;->f:Lg9/b;
+
+    .line 9
+    invoke-interface {p2}, Lg9/b;->q()I
+
+    move-result p2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    new-array v2, v0, [Lz9/a;
+
+    .line 10
+    invoke-static {v1, p2, p3, v2}, Lcom/android/billingclient/api/w;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_1
-    add-int/2addr p3, v2
+    if-nez v0, :cond_1
+
+    .line 11
+    invoke-virtual {p0, p1}, Lg9/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
+
+    .line 12
+    :cond_1
+    iget-object p1, p0, Lg9/a;->g:Lg9/a$a;
+
+    if-eqz p1, :cond_3
+
+    if-eqz v0, :cond_2
+
+    .line 13
+    iget-object p1, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {p1}, Lg9/b;->s()Ljava/lang/String;
+
+    goto :goto_2
+
+    .line 14
+    :cond_2
+    iget-object p1, p0, Lg9/a;->f:Lg9/b;
+
+    invoke-interface {p1}, Lg9/b;->s()Ljava/lang/String;
+
+    .line 15
+    sget-object p1, Lcom/helpshift/util/t;->c:La7/g;
 
     .line 16
-    invoke-virtual {p0, p1, p2, p3}, Lg9/a;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {p1}, La7/g;->f()V
 
-    move-result-object p1
-
-    return-object p1
-
-    nop
-
-    :array_0
-    .array-data 2
-        0x30s
-        0x31s
-        0x32s
-        0x33s
-        0x34s
-        0x35s
-        0x36s
-        0x37s
-        0x38s
-        0x39s
-        0x61s
-        0x62s
-        0x63s
-        0x64s
-        0x65s
-        0x66s
-    .end array-data
+    :cond_3
+    :goto_2
+    return-void
 .end method

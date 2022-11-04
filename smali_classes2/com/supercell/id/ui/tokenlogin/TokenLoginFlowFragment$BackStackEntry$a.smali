@@ -38,7 +38,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;
@@ -65,19 +65,14 @@
 
     move-result-object v2
 
-    .line 4
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const-string v3, ""
+    const-string v2, ""
 
-    .line 5
+    .line 4
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -92,9 +87,9 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 6
+    .line 5
     :goto_1
-    invoke-direct {v0, v1, v2, v3, p1}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct {v0, v1, v2, p1}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-object v0
 .end method

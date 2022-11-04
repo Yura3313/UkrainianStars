@@ -1,92 +1,94 @@
 .class public final Lo5/c;
-.super Lo5/d$a;
-.source "ByteString.java"
+.super Ljava/lang/Object;
+.source "StreamingAeadConfig.java"
 
 
-# instance fields
-.field public g:I
+# static fields
+.field public static final a:Ll5/g1;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
-.field public final h:I
-
-.field public final synthetic i:Lo5/d;
+.field public static final b:Ll5/g1;
 
 
 # direct methods
-.method public constructor <init>(Lo5/d;)V
-    .locals 1
-
-    .line 1
-    iput-object p1, p0, Lo5/c;->i:Lo5/d;
-
-    invoke-direct {p0}, Lo5/d$a;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lo5/c;->g:I
-
-    .line 3
-    invoke-virtual {p1}, Lo5/d;->size()I
-
-    move-result p1
-
-    iput p1, p0, Lo5/c;->h:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b()B
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 1
-    iget v0, p0, Lo5/c;->g:I
+    new-instance v0, Lo5/a;
+
+    invoke-direct {v0}, Lo5/a;-><init>()V
 
     .line 2
-    iget v1, p0, Lo5/c;->h:I
+    new-instance v0, Lo5/b;
 
-    if-ge v0, v1, :cond_0
-
-    add-int/lit8 v1, v0, 0x1
+    invoke-direct {v0}, Lo5/b;-><init>()V
 
     .line 3
-    iput v1, p0, Lo5/c;->g:I
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
+
+    move-result-object v0
+
+    sput-object v0, Lo5/c;->a:Ll5/g1;
 
     .line 4
-    iget-object v1, p0, Lo5/c;->i:Lo5/d;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
-    invoke-virtual {v1, v0}, Lo5/d;->h(I)B
+    move-result-object v0
 
-    move-result v0
-
-    return v0
+    sput-object v0, Lo5/c;->b:Ll5/g1;
 
     .line 5
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    :try_start_0
+    invoke-static {}, Lo5/c;->a()V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+    return-void
 
-    throw v0
+    :catch_0
+    move-exception v0
+
+    .line 6
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-.method public final hasNext()Z
+.method public static a()V
     .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
-    iget v0, p0, Lo5/c;->g:I
+    .line 1
+    new-instance v0, Lo5/a;
 
-    iget v1, p0, Lo5/c;->h:I
+    invoke-direct {v0}, Lo5/a;-><init>()V
 
-    if-ge v0, v1, :cond_0
+    const/4 v1, 0x1
 
-    const/4 v0, 0x1
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
 
-    goto :goto_0
+    .line 2
+    new-instance v0, Lo5/b;
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-direct {v0}, Lo5/b;-><init>()V
 
-    :goto_0
-    return v0
+    invoke-static {v0, v1}, Ld5/x;->h(Ld5/i;Z)V
+
+    .line 3
+    new-instance v0, Lo5/f;
+
+    invoke-direct {v0}, Lo5/f;-><init>()V
+
+    invoke-static {v0}, Ld5/x;->i(Ld5/p;)V
+
+    return-void
 .end method

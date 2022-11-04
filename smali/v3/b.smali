@@ -1,75 +1,119 @@
 .class public final Lv3/b;
-.super Lv3/s4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+.super Lv3/p;
+.source "com.android.billingclient:billing@@5.0.0"
+
+
+# static fields
+.field public static final j:Lv3/b;
 
 
 # instance fields
-.field public final synthetic k:Ljava/lang/String;
+.field public final transient h:[Ljava/lang/Object;
 
-.field public final synthetic l:Ljava/lang/String;
-
-.field public final synthetic m:Lcom/google/android/gms/internal/measurement/zzk;
-
-.field public final synthetic n:Lv3/s4;
+.field public final transient i:I
 
 
 # direct methods
-.method public constructor <init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/measurement/zzk;)V
+.method public static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lv3/b;
+
+    const/4 v1, 0x0
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    invoke-direct {v0, v2, v1}, Lv3/b;-><init>([Ljava/lang/Object;I)V
+
+    sput-object v0, Lv3/b;->j:Lv3/b;
+
+    return-void
+.end method
+
+.method public constructor <init>([Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lv3/b;->n:Lv3/s4;
+    invoke-direct {p0}, Lv3/p;-><init>()V
 
-    iput-object p2, p0, Lv3/b;->k:Ljava/lang/String;
+    iput-object p1, p0, Lv3/b;->h:[Ljava/lang/Object;
 
-    iput-object p3, p0, Lv3/b;->l:Ljava/lang/String;
-
-    iput-object p4, p0, Lv3/b;->m:Lcom/google/android/gms/internal/measurement/zzk;
-
-    const/4 p2, 0x1
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
+    iput p2, p0, Lv3/b;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final b([Ljava/lang/Object;)I
+    .locals 3
 
-    .line 1
-    iget-object v0, p0, Lv3/b;->n:Lv3/s4;
+    iget-object v0, p0, Lv3/b;->h:[Ljava/lang/Object;
 
-    .line 2
-    iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    iget v1, p0, Lv3/b;->i:I
 
-    .line 3
-    iget-object v1, p0, Lv3/b;->k:Ljava/lang/String;
+    const/4 v2, 0x0
 
-    iget-object v2, p0, Lv3/b;->l:Ljava/lang/String;
+    invoke-static {v0, v2, p1, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v3, p0, Lv3/b;->m:Lcom/google/android/gms/internal/measurement/zzk;
+    iget p1, p0, Lv3/b;->i:I
 
-    invoke-interface {v0, v1, v2, v3}, Lcom/google/android/gms/internal/measurement/zzm;->getConditionalUserProperties(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/measurement/zzn;)V
-
-    return-void
+    return p1
 .end method
 
-.method public final b()V
-    .locals 2
+.method public final c()I
+    .locals 1
 
-    iget-object v0, p0, Lv3/b;->m:Lcom/google/android/gms/internal/measurement/zzk;
+    iget v0, p0, Lv3/b;->i:I
 
-    const/4 v1, 0x0
+    return v0
+.end method
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/measurement/zzk;->zza(Landroid/os/Bundle;)V
+.method public final d()I
+    .locals 1
 
-    return-void
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final g()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final get(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lv3/b;->i:I
+
+    invoke-static {p1, v0}, Lv3/k;->a(II)I
+
+    iget-object v0, p0, Lv3/b;->h:[Ljava/lang/Object;
+
+    .line 2
+    aget-object p1, v0, p1
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method public final h()[Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lv3/b;->h:[Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 1
+
+    iget v0, p0, Lv3/b;->i:I
+
+    return v0
 .end method

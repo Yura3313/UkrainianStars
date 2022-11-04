@@ -69,13 +69,13 @@
     .line 2
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$h;->c:I
 
-    const/4 v1, 0x2
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
     const/4 v3, 0x1
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v2, :cond_1
 
     iget v4, p0, Lcom/google/android/material/tabs/TabLayout$h;->b:I
 
@@ -84,16 +84,16 @@
     goto :goto_0
 
     :cond_0
-    const/4 v4, 0x0
+    move v4, v1
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    const/4 v4, 0x1
+    move v4, v3
 
     :goto_1
-    if-ne v0, v1, :cond_2
+    if-ne v0, v2, :cond_2
 
     .line 3
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$h;->b:I
@@ -101,17 +101,17 @@
     if-eqz v0, :cond_3
 
     :cond_2
-    const/4 v2, 0x1
+    move v1, v3
 
     .line 4
     :cond_3
-    invoke-virtual {p3, p1, p2, v4, v2}, Lcom/google/android/material/tabs/TabLayout;->m(IFZZ)V
+    invoke-virtual {p3, p1, p2, v4, v1}, Lcom/google/android/material/tabs/TabLayout;->m(IFZZ)V
 
     :cond_4
     return-void
 .end method
 
-.method public final c(I)V
+.method public final b(I)V
     .locals 1
 
     .line 1
@@ -125,7 +125,7 @@
     return-void
 .end method
 
-.method public final d(I)V
+.method public final c(I)V
     .locals 3
 
     .line 1
@@ -190,7 +190,7 @@
     goto :goto_2
 
     :cond_2
-    iget-object v2, v0, Lcom/google/android/material/tabs/TabLayout;->g:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/google/android/material/tabs/TabLayout;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

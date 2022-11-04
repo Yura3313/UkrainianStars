@@ -3,7 +3,7 @@
 .source "Account.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/common/Account;",
         "Lcom/supercell/websocket/proxy/protocol/common/Account$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

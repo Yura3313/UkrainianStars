@@ -13,13 +13,13 @@
     .end annotation
 .end field
 
-.field public static final i:Ljava/util/regex/Pattern;
+.field public static final h:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:I
+.field public final g:I
 
 
 # direct methods
@@ -27,9 +27,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lq2/d;
+    new-instance v0, Lo2/d;
 
-    invoke-direct {v0}, Lq2/d;-><init>()V
+    invoke-direct {v0}, Lo2/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->i:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -54,10 +54,10 @@
     const-string v0, "key"
 
     .line 2
-    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lb2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    sget-object v0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->i:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:Ljava/util/regex/Pattern;
 
     .line 4
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -71,7 +71,7 @@
     const-string v1, "key name characters must be alphanumeric or one of .!@$%^&*()-_/"
 
     .line 5
-    invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lb2/h;->b(ZLjava/lang/Object;)V
 
     const/4 v0, 0x1
 
@@ -89,13 +89,13 @@
     const-string v1, "visibility must be either PUBLIC or PRIVATE"
 
     .line 6
-    invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lb2/h;->b(ZLjava/lang/Object;)V
 
     .line 7
-    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
     .line 8
-    iput p2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iput p2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     return-void
 .end method
@@ -134,10 +134,10 @@
     check-cast p1, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;
 
     .line 3
-    iget-object v2, p1, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
     .line 4
-    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -146,10 +146,10 @@
     if-eqz v2, :cond_2
 
     .line 5
-    iget p1, p1, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iget p1, p1, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     .line 6
-    iget v2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iget v2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     if-ne p1, v2, :cond_2
 
@@ -164,14 +164,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
-    iget v1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iget v1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     const/16 v2, 0xb
 
     .line 2
-    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -199,14 +199,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
-    iget v1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iget v1, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     const/16 v2, 0x1f
 
     .line 2
-    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -244,21 +244,21 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->f:Ljava/lang/String;
 
     const/4 v0, 0x2
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v0, p2, v1}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget v3, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->h:I
+    iget v3, p0, Lcom/google/android/gms/drive/metadata/CustomPropertyKey;->g:I
 
     const/4 v1, 0x3
 
@@ -269,7 +269,7 @@
     move-object v4, p1
 
     .line 4
-    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Lg1/i;->a(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

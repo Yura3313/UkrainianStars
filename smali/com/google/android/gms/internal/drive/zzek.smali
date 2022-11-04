@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/drive/DriveId;
+.field public final f:Lcom/google/android/gms/drive/DriveId;
 
-.field public final h:Z
+.field public final g:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr3/g;
+    new-instance v0, Lq3/g;
 
-    invoke-direct {v0}, Lr3/g;-><init>()V
+    invoke-direct {v0}, Lq3/g;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzek;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzek;->g:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzek;->f:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/internal/drive/zzek;->h:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/internal/drive/zzek;->g:Z
 
     return-void
 .end method
@@ -56,23 +56,23 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v6
 
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzek;->g:Lcom/google/android/gms/drive/DriveId;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzek;->f:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, p2, v2}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v0, v1, p2, v2}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v2, 0x3
 
     .line 3
-    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzek;->h:Z
+    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzek;->g:Z
 
     const/4 v3, 0x4
 
@@ -81,7 +81,7 @@
     move-object v5, p1
 
     .line 4
-    invoke-static/range {v1 .. v6}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
+    invoke-static/range {v1 .. v6}, Lg1/i;->a(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -1,26 +1,26 @@
 .class public final Lmd/d;
-.super Lse/i;
-.source "LoginConfirmPageFragment.kt"
+.super Lif/i;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lmd/e;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lmd/b;",
         "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lmd/d;
+.field public static final f:Lmd/d;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lmd/d;-><init>()V
 
-    sput-object v0, Lmd/d;->g:Lmd/d;
+    sput-object v0, Lmd/d;->f:Lmd/d;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,36 +52,36 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lmd/e;
+    check-cast p1, Lmd/b;
 
     check-cast p2, Ljava/lang/Exception;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
 
     .line 5
     :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

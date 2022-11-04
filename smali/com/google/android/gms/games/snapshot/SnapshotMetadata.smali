@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
+.implements La2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/snapshot/SnapshotMetadata;",
         ">;"
     }
@@ -20,22 +20,25 @@
 
 
 # virtual methods
-.method public abstract A2()Ljava/lang/String;
+.method public abstract B1()Z
 .end method
 
-.method public abstract B1()Landroid/net/Uri;
+.method public abstract E2()Ljava/lang/String;
 .end method
 
-.method public abstract M1()Lcom/google/android/gms/games/Player;
+.method public abstract F0()Landroid/net/Uri;
 .end method
 
-.method public abstract S0()J
+.method public abstract a0()Ljava/lang/String;
 .end method
 
-.method public abstract U1()Z
+.method public abstract d1()J
 .end method
 
-.method public abstract e()Lcom/google/android/gms/games/Game;
+.method public abstract f1()Lcom/google/android/gms/games/Player;
+.end method
+
+.method public abstract g()Lcom/google/android/gms/games/Game;
 .end method
 
 .method public abstract getCoverImageUrl()Ljava/lang/String;
@@ -52,17 +55,14 @@
 .method public abstract getTitle()Ljava/lang/String;
 .end method
 
-.method public abstract j0()J
+.method public abstract o2()J
 .end method
 
-.method public abstract j1()Ljava/lang/String;
+.method public abstract q2()F
 .end method
 
-.method public abstract t2()F
+.method public abstract v1()J
 .end method
 
-.method public abstract x2()Ljava/lang/String;
-.end method
-
-.method public abstract y0()J
+.method public abstract z2()Ljava/lang/String;
 .end method

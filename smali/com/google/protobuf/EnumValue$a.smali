@@ -3,7 +3,7 @@
 .source "EnumValue.java"
 
 # interfaces
-.implements Lcom/google/protobuf/n;
+.implements Lcom/google/protobuf/o;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/EnumValue;",
         "Lcom/google/protobuf/EnumValue$a;",
         ">;",
-        "Lcom/google/protobuf/n;"
+        "Lcom/google/protobuf/o;"
     }
 .end annotation
 

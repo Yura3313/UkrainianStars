@@ -1,75 +1,101 @@
 .class public final Lp4/a;
-.super Lb2/z;
-.source "CancelableFontCallback.java"
+.super Ljava/lang/Object;
+.source "AbsoluteCornerSize.java"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lp4/a$a;
-    }
-.end annotation
+# interfaces
+.implements Lp4/c;
 
 
 # instance fields
-.field public final g:Landroid/graphics/Typeface;
-
-.field public final h:Lp4/a$a;
-
-.field public i:Z
+.field public final a:F
 
 
 # direct methods
-.method public constructor <init>(Lp4/a$a;Landroid/graphics/Typeface;)V
+.method public constructor <init>(F)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lb2/z;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lp4/a;->g:Landroid/graphics/Typeface;
-
-    .line 3
-    iput-object p1, p0, Lp4/a;->h:Lp4/a$a;
+    iput p1, p0, Lp4/a;->a:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Lp4/a;->g:Landroid/graphics/Typeface;
-
-    .line 2
-    iget-boolean v0, p0, Lp4/a;->i:Z
-
-    if-nez v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lp4/a;->h:Lp4/a$a;
-
-    invoke-interface {v0, p1}, Lp4/a$a;->a(Landroid/graphics/Typeface;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final d(Landroid/graphics/Typeface;Z)V
+.method public final a(Landroid/graphics/RectF;)F
     .locals 0
 
-    .line 1
-    iget-boolean p2, p0, Lp4/a;->i:Z
+    iget p1, p0, Lp4/a;->a:F
 
-    if-nez p2, :cond_0
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    instance-of v1, p1, Lp4/a;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
 
     .line 2
-    iget-object p2, p0, Lp4/a;->h:Lp4/a$a;
+    :cond_1
+    check-cast p1, Lp4/a;
 
-    invoke-interface {p2, p1}, Lp4/a$a;->a(Landroid/graphics/Typeface;)V
+    .line 3
+    iget v1, p0, Lp4/a;->a:F
 
-    :cond_0
-    return-void
+    iget p1, p1, Lp4/a;->a:F
+
+    cmpl-float p1, v1, p1
+
+    if-nez p1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v2
+
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    iget v1, p0, Lp4/a;->a:F
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    return v0
 .end method

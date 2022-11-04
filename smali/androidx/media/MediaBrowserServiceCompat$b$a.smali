@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/media/MediaBrowserServiceCompat$b;
+.field public final synthetic f:Landroidx/media/MediaBrowserServiceCompat$b;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$b;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$b$a;->g:Landroidx/media/MediaBrowserServiceCompat$b;
+    iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$b$a;->f:Landroidx/media/MediaBrowserServiceCompat$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,21 +37,21 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$b$a;->g:Landroidx/media/MediaBrowserServiceCompat$b;
+    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$b$a;->f:Landroidx/media/MediaBrowserServiceCompat$b;
 
     iget-object v1, v0, Landroidx/media/MediaBrowserServiceCompat$b;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->h:Lm/a;
+    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->g:Lm/a;
 
-    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat$b;->b:Landroidx/media/MediaBrowserServiceCompat$j;
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat$b;->b:Landroidx/media/MediaBrowserServiceCompat$i;
 
-    check-cast v0, Landroidx/media/MediaBrowserServiceCompat$k;
+    check-cast v0, Landroidx/media/MediaBrowserServiceCompat$j;
 
-    invoke-virtual {v0}, Landroidx/media/MediaBrowserServiceCompat$k;->a()Landroid/os/IBinder;
+    invoke-virtual {v0}, Landroidx/media/MediaBrowserServiceCompat$j;->a()Landroid/os/IBinder;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

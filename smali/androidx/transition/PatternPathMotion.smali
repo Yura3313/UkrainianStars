@@ -66,7 +66,7 @@
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->b:Landroid/graphics/Matrix;
 
     .line 8
-    sget-object v0, Lv0/p;->i:[I
+    sget-object v0, Lt0/m;->i:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -80,14 +80,14 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p1, p2, v0, v1}, Lw/f;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p2, v0, v1}, Lw/e;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
     .line 10
-    invoke-static {p2}, Lx/d;->d(Ljava/lang/String;)Landroid/graphics/Path;
+    invoke-static {p2}, Lx/c;->c(Ljava/lang/String;)Landroid/graphics/Path;
 
     move-result-object p2
 

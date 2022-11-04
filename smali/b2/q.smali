@@ -1,91 +1,44 @@
-.class public abstract Lb2/q;
-.super Ljava/lang/Object;
+.class public final Lb2/q;
+.super Lb2/n;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic f:Landroid/content/Intent;
+
+.field public final synthetic g:Lz1/h;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>(Landroid/content/Intent;Lz1/h;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lb2/q;->f:Landroid/content/Intent;
 
-    .line 2
-    iput p1, p0, Lb2/q;->a:I
+    iput-object p2, p0, Lb2/q;->g:Lz1/h;
+
+    invoke-direct {p0}, Lb2/n;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/os/RemoteException;)Lcom/google/android/gms/common/api/Status;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ": "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 3
-    new-instance p0, Lcom/google/android/gms/common/api/Status;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/16 v1, 0x13
-
-    invoke-direct {p0, v1, v0}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public abstract b(Lb2/e$a;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)V"
-        }
-    .end annotation
+.method public final a()V
+    .locals 3
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/DeadObjectException;
-        }
-    .end annotation
-.end method
+    .line 1
+    iget-object v0, p0, Lb2/q;->f:Landroid/content/Intent;
 
-.method public abstract c(Lb2/v0;Z)V
-.end method
+    if-eqz v0, :cond_0
 
-.method public abstract d(Lcom/google/android/gms/common/api/Status;)V
-.end method
+    .line 2
+    iget-object v1, p0, Lb2/q;->g:Lz1/h;
 
-.method public abstract e(Ljava/lang/Exception;)V
+    const/4 v2, 0x2
+
+    invoke-interface {v1, v0, v2}, Lz1/h;->startActivityForResult(Landroid/content/Intent;I)V
+
+    :cond_0
+    return-void
 .end method

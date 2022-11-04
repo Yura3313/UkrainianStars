@@ -3,7 +3,7 @@
 .source "Enum.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -19,7 +19,7 @@
         "Lcom/google/protobuf/Enum;",
         "Lcom/google/protobuf/Enum$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 
@@ -33,10 +33,10 @@
 
 .field public static final OPTIONS_FIELD_NUMBER:I = 0x3
 
-.field private static volatile PARSER:Lcom/google/protobuf/c1; = null
+.field private static volatile PARSER:Lcom/google/protobuf/e1; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Enum;",
             ">;"
         }
@@ -49,10 +49,10 @@
 
 
 # instance fields
-.field private enumvalue_:Lcom/google/protobuf/a0$i;
+.field private enumvalue_:Lcom/google/protobuf/b0$i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/a0$i<",
+            "Lcom/google/protobuf/b0$i<",
             "Lcom/google/protobuf/EnumValue;",
             ">;"
         }
@@ -61,10 +61,10 @@
 
 .field private name_:Ljava/lang/String;
 
-.field private options_:Lcom/google/protobuf/a0$i;
+.field private options_:Lcom/google/protobuf/b0$i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/a0$i<",
+            "Lcom/google/protobuf/b0$i<",
             "Lcom/google/protobuf/Option;",
             ">;"
         }
@@ -108,18 +108,18 @@
     iput-object v0, p0, Lcom/google/protobuf/Enum;->name_:Ljava/lang/String;
 
     .line 3
-    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/a0$i;
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     .line 4
-    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/a0$i;
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     return-void
 .end method
@@ -228,10 +228,10 @@
     return-void
 .end method
 
-.method public static synthetic access$2000(Lcom/google/protobuf/Enum;Lcom/google/protobuf/n1;)V
+.method public static synthetic access$2000(Lcom/google/protobuf/Enum;Lcom/google/protobuf/p1;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/google/protobuf/Enum;->setSyntax(Lcom/google/protobuf/n1;)V
+    invoke-direct {p0, p1}, Lcom/google/protobuf/Enum;->setSyntax(Lcom/google/protobuf/p1;)V
 
     return-void
 .end method
@@ -316,7 +316,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureEnumvalueIsMutable()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-static {p1, v0}, Lcom/google/protobuf/a;->addAll(Ljava/lang/Iterable;Ljava/util/List;)V
 
@@ -339,7 +339,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureOptionsIsMutable()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-static {p1, v0}, Lcom/google/protobuf/a;->addAll(Ljava/lang/Iterable;Ljava/util/List;)V
 
@@ -350,13 +350,13 @@
     .locals 1
 
     .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureEnumvalueIsMutable()V
 
     .line 6
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -367,13 +367,13 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureEnumvalueIsMutable()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -384,13 +384,13 @@
     .locals 1
 
     .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureOptionsIsMutable()V
 
     .line 6
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -401,13 +401,13 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureOptionsIsMutable()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -417,11 +417,11 @@
 .method private clearEnumvalue()V
     .locals 1
 
-    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/a0$i;
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     return-void
 .end method
@@ -445,11 +445,11 @@
 .method private clearOptions()V
     .locals 1
 
-    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/a0$i;
+    invoke-static {}, Lcom/google/protobuf/GeneratedMessageLite;->emptyProtobufList()Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     return-void
 .end method
@@ -478,21 +478,21 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     .line 2
-    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->N()Z
+    invoke-interface {v0}, Lcom/google/protobuf/b0$i;->T()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 3
-    invoke-static {v0}, Lcom/google/protobuf/GeneratedMessageLite;->mutableCopy(Lcom/google/protobuf/a0$i;)Lcom/google/protobuf/a0$i;
+    invoke-static {v0}, Lcom/google/protobuf/GeneratedMessageLite;->mutableCopy(Lcom/google/protobuf/b0$i;)Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     :cond_0
     return-void
@@ -502,21 +502,21 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     .line 2
-    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->N()Z
+    invoke-interface {v0}, Lcom/google/protobuf/b0$i;->T()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 3
-    invoke-static {v0}, Lcom/google/protobuf/GeneratedMessageLite;->mutableCopy(Lcom/google/protobuf/a0$i;)Lcom/google/protobuf/a0$i;
+    invoke-static {v0}, Lcom/google/protobuf/GeneratedMessageLite;->mutableCopy(Lcom/google/protobuf/b0$i;)Lcom/google/protobuf/b0$i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iput-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     :cond_0
     return-void
@@ -534,7 +534,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object v0, p0, Lcom/google/protobuf/Enum;->sourceContext_:Lcom/google/protobuf/SourceContext;
@@ -630,7 +630,7 @@
     return-object p0
 .end method
 
-.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -641,7 +641,7 @@
     .line 2
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -654,7 +654,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -670,18 +670,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseFrom(Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 4
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/i;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -710,7 +710,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseFrom(Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -721,7 +721,7 @@
     .line 10
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/j;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -750,7 +750,7 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -761,7 +761,7 @@
     .line 8
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -774,7 +774,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -790,18 +790,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -814,7 +814,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
@@ -830,18 +830,18 @@
     return-object p0
 .end method
 
-.method public static parseFrom([BLcom/google/protobuf/q;)Lcom/google/protobuf/Enum;
+.method public static parseFrom([BLcom/google/protobuf/r;)Lcom/google/protobuf/Enum;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/protobuf/InvalidProtocolBufferException;
+            Lcom/google/protobuf/c0;
         }
     .end annotation
 
     .line 6
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/q;)Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/r;)Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -850,12 +850,12 @@
     return-object p0
 .end method
 
-.method public static parser()Lcom/google/protobuf/c1;
+.method public static parser()Lcom/google/protobuf/e1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/protobuf/c1<",
+            "Lcom/google/protobuf/e1<",
             "Lcom/google/protobuf/Enum;",
             ">;"
         }
@@ -863,7 +863,7 @@
 
     sget-object v0, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/e1;
 
     move-result-object v0
 
@@ -877,7 +877,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureEnumvalueIsMutable()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -891,7 +891,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureOptionsIsMutable()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -902,13 +902,13 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureEnumvalueIsMutable()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -919,7 +919,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iput-object p1, p0, Lcom/google/protobuf/Enum;->name_:Ljava/lang/String;
@@ -934,7 +934,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->q()Ljava/lang/String;
 
     move-result-object p1
 
@@ -947,13 +947,13 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-direct {p0}, Lcom/google/protobuf/Enum;->ensureOptionsIsMutable()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -964,7 +964,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iput-object p1, p0, Lcom/google/protobuf/Enum;->sourceContext_:Lcom/google/protobuf/SourceContext;
@@ -972,10 +972,10 @@
     return-void
 .end method
 
-.method private setSyntax(Lcom/google/protobuf/n1;)V
+.method private setSyntax(Lcom/google/protobuf/p1;)V
     .locals 0
 
-    invoke-virtual {p1}, Lcom/google/protobuf/n1;->d()I
+    invoke-virtual {p1}, Lcom/google/protobuf/p1;->f()I
 
     move-result p1
 
@@ -1028,7 +1028,7 @@
 
     .line 4
     :pswitch_2
-    sget-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_1
 
@@ -1039,7 +1039,7 @@
 
     .line 6
     :try_start_0
-    sget-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/c1;
+    sget-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/e1;
 
     if-nez p1, :cond_0
 
@@ -1051,7 +1051,7 @@
     invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
-    sput-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/c1;
+    sput-object p1, Lcom/google/protobuf/Enum;->PARSER:Lcom/google/protobuf/e1;
 
     .line 9
     :cond_0
@@ -1129,7 +1129,7 @@
     .line 12
     sget-object p3, Lcom/google/protobuf/Enum;->DEFAULT_INSTANCE:Lcom/google/protobuf/Enum;
 
-    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/q0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/s0;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1167,7 +1167,7 @@
 .method public getEnumvalue(I)Lcom/google/protobuf/EnumValue;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1181,7 +1181,7 @@
 .method public getEnumvalueCount()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1201,21 +1201,21 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     return-object v0
 .end method
 
-.method public getEnumvalueOrBuilder(I)Lcom/google/protobuf/n;
+.method public getEnumvalueOrBuilder(I)Lcom/google/protobuf/o;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/google/protobuf/n;
+    check-cast p1, Lcom/google/protobuf/o;
 
     return-object p1
 .end method
@@ -1227,12 +1227,12 @@
             "()",
             "Ljava/util/List<",
             "+",
-            "Lcom/google/protobuf/n;",
+            "Lcom/google/protobuf/o;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->enumvalue_:Lcom/google/protobuf/b0$i;
 
     return-object v0
 .end method
@@ -1250,7 +1250,7 @@
 
     iget-object v0, p0, Lcom/google/protobuf/Enum;->name_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->g(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1260,7 +1260,7 @@
 .method public getOptions(I)Lcom/google/protobuf/Option;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1274,7 +1274,7 @@
 .method public getOptionsCount()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1294,21 +1294,21 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     return-object v0
 .end method
 
-.method public getOptionsOrBuilder(I)Lcom/google/protobuf/b1;
+.method public getOptionsOrBuilder(I)Lcom/google/protobuf/d1;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/google/protobuf/b1;
+    check-cast p1, Lcom/google/protobuf/d1;
 
     return-object p1
 .end method
@@ -1320,12 +1320,12 @@
             "()",
             "Ljava/util/List<",
             "+",
-            "Lcom/google/protobuf/b1;",
+            "Lcom/google/protobuf/d1;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/a0$i;
+    iget-object v0, p0, Lcom/google/protobuf/Enum;->options_:Lcom/google/protobuf/b0$i;
 
     return-object v0
 .end method
@@ -1345,20 +1345,20 @@
     return-object v0
 .end method
 
-.method public getSyntax()Lcom/google/protobuf/n1;
+.method public getSyntax()Lcom/google/protobuf/p1;
     .locals 1
 
     .line 1
     iget v0, p0, Lcom/google/protobuf/Enum;->syntax_:I
 
-    invoke-static {v0}, Lcom/google/protobuf/n1;->c(I)Lcom/google/protobuf/n1;
+    invoke-static {v0}, Lcom/google/protobuf/p1;->c(I)Lcom/google/protobuf/p1;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/n1;->j:Lcom/google/protobuf/n1;
+    sget-object v0, Lcom/google/protobuf/p1;->i:Lcom/google/protobuf/p1;
 
     :cond_0
     return-object v0

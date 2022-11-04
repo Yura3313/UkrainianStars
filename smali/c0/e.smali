@@ -14,10 +14,10 @@
 
 
 # static fields
-.field public static final a:Lm/e;
+.field public static final a:Lm/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/e<",
+            "Lm/f<",
             "Ljava/lang/String;",
             "Landroid/graphics/Typeface;",
             ">;"
@@ -29,10 +29,10 @@
 
 .field public static final c:Ljava/lang/Object;
 
-.field public static final d:Lm/g;
+.field public static final d:Lm/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/g<",
+            "Lm/h<",
             "Ljava/lang/String;",
             "Ljava/util/ArrayList<",
             "Lc0/f$c<",
@@ -57,13 +57,13 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lm/e;
+    new-instance v0, Lm/f;
 
     const/16 v1, 0x10
 
-    invoke-direct {v0, v1}, Lm/e;-><init>(I)V
+    invoke-direct {v0, v1}, Lm/f;-><init>(I)V
 
-    sput-object v0, Lc0/e;->a:Lm/e;
+    sput-object v0, Lc0/e;->a:Lm/f;
 
     .line 2
     new-instance v0, Lc0/f;
@@ -80,11 +80,11 @@
     sput-object v0, Lc0/e;->c:Ljava/lang/Object;
 
     .line 4
-    new-instance v0, Lm/g;
+    new-instance v0, Lm/h;
 
-    invoke-direct {v0}, Lm/g;-><init>()V
+    invoke-direct {v0}, Lm/h;-><init>()V
 
-    sput-object v0, Lc0/e;->d:Lm/g;
+    sput-object v0, Lc0/e;->d:Lm/h;
 
     .line 5
     new-instance v0, Lc0/e$a;
@@ -97,7 +97,7 @@
 .end method
 
 .method public static a(Landroid/content/Context;Lc0/a;)Lc0/e$b;
-    .locals 21
+    .locals 20
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -157,7 +157,7 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    const/4 v6, 0x0
+    move v6, v4
 
     .line 10
     :goto_0
@@ -172,7 +172,7 @@
 
     move-result-object v7
 
-    invoke-interface {v3, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v6, v6, 0x1
 
@@ -193,12 +193,12 @@
 
     .line 14
     :cond_1
-    invoke-static {v2, v4}, Lw/c;->b(Landroid/content/res/Resources;I)Ljava/util/List;
+    invoke-static {v2, v4}, Lw/a;->b(Landroid/content/res/Resources;I)Ljava/util/List;
 
     move-result-object v1
 
     :goto_1
-    const/4 v2, 0x0
+    move v2, v4
 
     .line 15
     :goto_2
@@ -229,11 +229,11 @@
     invoke-static {v6, v9}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 18
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v9
 
-    invoke-interface {v6}, Ljava/util/List;->size()I
+    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
     move-result v10
 
@@ -242,24 +242,24 @@
     goto :goto_4
 
     :cond_2
-    const/4 v9, 0x0
+    move v9, v4
 
     .line 19
     :goto_3
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v10
 
     if-ge v9, v10, :cond_4
 
     .line 20
-    invoke-interface {v3, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v3, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
     check-cast v10, [B
 
-    invoke-interface {v6, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v6, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -272,7 +272,7 @@
     if-nez v10, :cond_3
 
     :goto_4
-    const/4 v6, 0x0
+    move v6, v4
 
     goto :goto_5
 
@@ -282,7 +282,7 @@
     goto :goto_3
 
     :cond_4
-    const/4 v6, 0x1
+    move v6, v8
 
     :goto_5
     if-eqz v6, :cond_5
@@ -311,62 +311,50 @@
     :cond_7
     iget-object v1, v5, Landroid/content/pm/ProviderInfo;->authority:Ljava/lang/String;
 
-    const-string v2, "result_code"
-
-    const-string v3, "font_italic"
-
-    const-string v5, "font_weight"
-
-    const-string v6, "font_ttc_index"
-
-    const-string v9, "file_id"
-
-    const-string v10, "_id"
-
     .line 23
-    new-instance v11, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 24
-    new-instance v12, Landroid/net/Uri$Builder;
+    new-instance v3, Landroid/net/Uri$Builder;
 
-    invoke-direct {v12}, Landroid/net/Uri$Builder;-><init>()V
+    invoke-direct {v3}, Landroid/net/Uri$Builder;-><init>()V
 
-    const-string v13, "content"
+    const-string v5, "content"
 
-    invoke-virtual {v12, v13}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v3, v5}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    move-result-object v12
+    move-result-object v3
 
     .line 25
-    invoke-virtual {v12, v1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v3, v1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    move-result-object v12
+    move-result-object v3
 
     .line 26
-    invoke-virtual {v12}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+    invoke-virtual {v3}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
-    move-result-object v12
+    move-result-object v3
 
     .line 27
-    new-instance v14, Landroid/net/Uri$Builder;
+    new-instance v6, Landroid/net/Uri$Builder;
 
-    invoke-direct {v14}, Landroid/net/Uri$Builder;-><init>()V
+    invoke-direct {v6}, Landroid/net/Uri$Builder;-><init>()V
 
-    invoke-virtual {v14, v13}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v6, v5}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    move-result-object v13
+    move-result-object v5
 
     .line 28
-    invoke-virtual {v13, v1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v5, v1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v1
 
-    const-string v13, "file"
+    const-string v5, "file"
 
     .line 29
-    invoke-virtual {v1, v13}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v1, v5}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v1
 
@@ -379,61 +367,43 @@
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v14
+    move-result-object v9
 
-    const/4 v13, 0x7
+    const-string v10, "_id"
 
-    new-array v13, v13, [Ljava/lang/String;
+    const-string v11, "file_id"
 
-    aput-object v10, v13, v4
+    const-string v12, "font_ttc_index"
 
-    aput-object v9, v13, v8
+    const-string v13, "font_variation_settings"
 
-    const/4 v15, 0x2
+    const-string v14, "font_weight"
 
-    aput-object v6, v13, v15
+    const-string v15, "font_italic"
 
-    const/4 v15, 0x3
+    const-string v16, "result_code"
 
-    const-string v16, "font_variation_settings"
+    filled-new-array/range {v10 .. v16}, [Ljava/lang/String;
 
-    aput-object v16, v13, v15
+    move-result-object v11
 
-    const/4 v15, 0x4
+    const-string v12, "query = ?"
 
-    aput-object v5, v13, v15
-
-    const/4 v15, 0x5
-
-    aput-object v3, v13, v15
-
-    const/4 v15, 0x6
-
-    aput-object v2, v13, v15
-
-    const-string v17, "query = ?"
-
-    new-array v15, v8, [Ljava/lang/String;
+    new-array v13, v8, [Ljava/lang/String;
 
     .line 32
     iget-object v0, v0, Lc0/a;->c:Ljava/lang/String;
 
-    aput-object v0, v15, v4
+    aput-object v0, v13, v4
 
-    const/16 v19, 0x0
+    const/4 v14, 0x0
 
-    const/16 v20, 0x0
+    const/4 v15, 0x0
 
-    move-object v0, v15
-
-    move-object v15, v12
-
-    move-object/from16 v16, v13
-
-    move-object/from16 v18, v0
+    move-object v10, v3
 
     .line 33
-    invoke-virtual/range {v14 .. v20}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
+    invoke-virtual/range {v9 .. v15}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 
     move-result-object v7
 
@@ -446,52 +416,64 @@
 
     if-lez v0, :cond_d
 
+    const-string v0, "result_code"
+
     .line 35
-    invoke-interface {v7, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    invoke-interface {v7, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
 
     .line 36
-    new-instance v11, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v5, "_id"
 
     .line 37
-    invoke-interface {v7, v10}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v2
-
-    .line 38
-    invoke-interface {v7, v9}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v9
-
-    .line 39
-    invoke-interface {v7, v6}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v6
-
-    .line 40
     invoke-interface {v7, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v5
 
-    .line 41
-    invoke-interface {v7, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    const-string v6, "file_id"
 
-    move-result v3
+    .line 38
+    invoke-interface {v7, v6}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v6
+
+    const-string v9, "font_ttc_index"
+
+    .line 39
+    invoke-interface {v7, v9}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v9
+
+    const-string v10, "font_weight"
+
+    .line 40
+    invoke-interface {v7, v10}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v10
+
+    const-string v11, "font_italic"
+
+    .line 41
+    invoke-interface {v7, v11}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v11
 
     .line 42
     :goto_7
     invoke-interface {v7}, Landroid/database/Cursor;->moveToNext()Z
 
-    move-result v10
+    move-result v12
 
-    if-eqz v10, :cond_d
+    if-eqz v12, :cond_d
 
-    const/4 v10, -0x1
+    const/4 v12, -0x1
 
-    if-eq v0, v10, :cond_8
+    if-eq v0, v12, :cond_8
 
     .line 43
     invoke-interface {v7, v0}, Landroid/database/Cursor;->getInt(I)I
@@ -503,15 +485,13 @@
     goto :goto_8
 
     :cond_8
-    const/4 v13, 0x0
-
-    const/16 v19, 0x0
+    move/from16 v19, v4
 
     :goto_8
-    if-eq v6, v10, :cond_9
+    if-eq v9, v12, :cond_9
 
     .line 44
-    invoke-interface {v7, v6}, Landroid/database/Cursor;->getInt(I)I
+    invoke-interface {v7, v9}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v13
 
@@ -520,20 +500,18 @@
     goto :goto_9
 
     :cond_9
-    const/4 v13, 0x0
-
-    const/16 v16, 0x0
+    move/from16 v16, v4
 
     :goto_9
-    if-ne v9, v10, :cond_a
+    if-ne v6, v12, :cond_a
 
     .line 45
-    invoke-interface {v7, v2}, Landroid/database/Cursor;->getLong(I)J
+    invoke-interface {v7, v5}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v13
 
     .line 46
-    invoke-static {v12, v13, v14}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+    invoke-static {v3, v13, v14}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v13
 
@@ -541,7 +519,7 @@
 
     .line 47
     :cond_a
-    invoke-interface {v7, v9}, Landroid/database/Cursor;->getLong(I)J
+    invoke-interface {v7, v6}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v13
 
@@ -553,52 +531,46 @@
     :goto_a
     move-object v15, v13
 
-    if-eq v5, v10, :cond_b
+    if-eq v10, v12, :cond_b
 
     .line 49
-    invoke-interface {v7, v5}, Landroid/database/Cursor;->getInt(I)I
+    invoke-interface {v7, v10}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v13
-
-    move/from16 v17, v13
 
     goto :goto_b
 
     :cond_b
     const/16 v13, 0x190
 
-    const/16 v17, 0x190
-
     :goto_b
-    if-eq v3, v10, :cond_c
+    move/from16 v17, v13
+
+    if-eq v11, v12, :cond_c
 
     .line 50
-    invoke-interface {v7, v3}, Landroid/database/Cursor;->getInt(I)I
+    invoke-interface {v7, v11}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v10
+    move-result v12
 
-    if-ne v10, v8, :cond_c
+    if-ne v12, v8, :cond_c
 
-    const/4 v10, 0x1
-
-    const/16 v18, 0x1
+    move/from16 v18, v8
 
     goto :goto_c
 
     :cond_c
-    const/4 v10, 0x0
-
-    const/16 v18, 0x0
+    move/from16 v18, v4
 
     .line 51
     :goto_c
-    new-instance v10, Lc0/e$c;
+    new-instance v12, Lc0/e$c;
 
-    move-object v14, v10
+    move-object v14, v12
 
     invoke-direct/range {v14 .. v19}, Lc0/e$c;-><init>(Landroid/net/Uri;IIZI)V
 
-    invoke-virtual {v11, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -614,7 +586,7 @@
     new-array v0, v4, [Lc0/e$c;
 
     .line 53
-    invoke-virtual {v11, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
@@ -678,20 +650,14 @@
     const-string v1, "No package found for authority: "
 
     .line 61
-    invoke-static {v1, v3}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 62
     invoke-direct {v0, v1}, Landroid/content/pm/PackageManager$NameNotFoundException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_e
-
-    :goto_d
     throw v0
-
-    :goto_e
-    goto :goto_d
 .end method
 
 .method public static b(Landroid/content/Context;Lc0/a;I)Lc0/e$d;
@@ -718,9 +684,9 @@
     iget-object p1, p1, Lc0/e$b;->b:[Lc0/e$c;
 
     .line 4
-    sget-object v0, Lx/e;->a:Lx/k;
+    sget-object v0, Lx/d;->a:Lx/j;
 
-    invoke-virtual {v0, p0, p1, p2}, Lx/k;->b(Landroid/content/Context;[Lc0/e$c;I)Landroid/graphics/Typeface;
+    invoke-virtual {v0, p0, p1, p2}, Lx/j;->b(Landroid/content/Context;[Lc0/e$c;I)Landroid/graphics/Typeface;
 
     move-result-object p0
 

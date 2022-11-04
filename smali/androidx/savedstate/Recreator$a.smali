@@ -74,13 +74,3 @@
 
     return-object v0
 .end method
-
-.method public final b(Ljava/lang/String;)V
-    .locals 1
-
-    iget-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/HashSet;
-
-    invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    return-void
-.end method

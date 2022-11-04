@@ -106,7 +106,7 @@
 .end method
 
 .method public isExpired()Z
-    .locals 5
+    .locals 4
 
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
@@ -120,9 +120,9 @@
 
     move-result-wide v2
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -201,9 +201,9 @@
 
     sub-long/2addr v2, v4
 
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
-    if-gez v4, :cond_0
+    if-gez v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -222,7 +222,7 @@
     const-string v0, "ZinnyAccessToken [zat="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

@@ -34,7 +34,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->h(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object v0
 
@@ -42,7 +42,7 @@
     invoke-virtual {v0, p0, p1}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->d(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->c(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object p0
 
@@ -54,71 +54,7 @@
     return-wide p0
 .end method
 
-.method public static b(Ljava/lang/String;Ljava/lang/String;II)I
-    .locals 2
-
-    :goto_0
-    if-ltz p3, :cond_1
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-ge p3, v0, :cond_1
-
-    .line 2
-    invoke-virtual {p0, p3}, Ljava/lang/String;->charAt(I)C
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_1
-
-    .line 3
-    invoke-virtual {p0, p3}, Ljava/lang/String;->charAt(I)C
-
-    move-result v0
-
-    const/16 v1, 0x27
-
-    if-ne v0, v1, :cond_0
-
-    :goto_1
-    add-int/2addr p3, p2
-
-    if-ltz p3, :cond_0
-
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-ge p3, v0, :cond_0
-
-    invoke-virtual {p0, p3}, Ljava/lang/String;->charAt(I)C
-
-    move-result v0
-
-    if-eq v0, v1, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    add-int/2addr p3, p2
-
-    goto :goto_0
-
-    :cond_1
-    return p3
-.end method
-
-.method public static c(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
+.method public static b(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
     .locals 0
     .annotation build Landroid/annotation/TargetApi;
         value = 0x18
@@ -142,18 +78,18 @@
     return-object p0
 .end method
 
-.method public static d(Ljava/util/Calendar;)Ljava/util/Calendar;
+.method public static c(Ljava/util/Calendar;)Ljava/util/Calendar;
     .locals 4
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {p0}, Lcom/google/android/material/datepicker/b0;->h(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object p0
 
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->h(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object v0
 
@@ -184,7 +120,7 @@
     return-object v0
 .end method
 
-.method public static e()Ljava/text/SimpleDateFormat;
+.method public static d()Ljava/text/SimpleDateFormat;
     .locals 3
 
     .line 1
@@ -224,7 +160,7 @@
     invoke-direct {v1, v0, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 5
-    invoke-static {}, Lcom/google/android/material/datepicker/b0;->g()Ljava/util/TimeZone;
+    invoke-static {}, Lcom/google/android/material/datepicker/b0;->f()Ljava/util/TimeZone;
 
     move-result-object v0
 
@@ -238,7 +174,7 @@
     return-object v1
 .end method
 
-.method public static f(Landroid/content/res/Resources;Ljava/text/SimpleDateFormat;)Ljava/lang/String;
+.method public static e(Landroid/content/res/Resources;Ljava/text/SimpleDateFormat;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -289,7 +225,7 @@
     return-object p0
 .end method
 
-.method public static g()Ljava/util/TimeZone;
+.method public static f()Ljava/util/TimeZone;
     .locals 1
 
     const-string v0, "UTC"
@@ -301,7 +237,7 @@
     return-object v0
 .end method
 
-.method public static h()Ljava/util/Calendar;
+.method public static g()Ljava/util/Calendar;
     .locals 4
 
     .line 1
@@ -373,7 +309,7 @@
     invoke-virtual {v1, v0, v2}, Ljava/util/Calendar;->set(II)V
 
     .line 11
-    invoke-static {}, Lcom/google/android/material/datepicker/b0;->g()Ljava/util/TimeZone;
+    invoke-static {}, Lcom/google/android/material/datepicker/b0;->f()Ljava/util/TimeZone;
 
     move-result-object v0
 
@@ -382,11 +318,11 @@
     return-object v1
 .end method
 
-.method public static i(Ljava/util/Calendar;)Ljava/util/Calendar;
+.method public static h(Ljava/util/Calendar;)Ljava/util/Calendar;
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/google/android/material/datepicker/b0;->g()Ljava/util/TimeZone;
+    invoke-static {}, Lcom/google/android/material/datepicker/b0;->f()Ljava/util/TimeZone;
 
     move-result-object v0
 

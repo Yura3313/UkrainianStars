@@ -1,23 +1,39 @@
 .class public final Lb4/b;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "ArgbEvaluatorCompat.java"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Landroid/animation/TypeEvaluator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/signin/internal/zaa;",
+        "Landroid/animation/TypeEvaluator<",
+        "Ljava/lang/Integer;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static final a:Lb4/b;
+
+
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lb4/b;
+
+    invoke-direct {v0}, Lb4/b;-><init>()V
+
+    sput-object v0, Lb4/b;->a:Lb4/b;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -28,101 +44,227 @@
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    check-cast p2, Ljava/lang/Integer;
+
+    check-cast p3, Ljava/lang/Integer;
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    shr-int/lit8 v0, p2, 0x18
+
+    and-int/lit16 v0, v0, 0xff
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x437f0000    # 255.0f
+
+    div-float/2addr v0, v1
+
+    shr-int/lit8 v2, p2, 0x10
+
+    and-int/lit16 v2, v2, 0xff
+
+    int-to-float v2, v2
+
+    div-float/2addr v2, v1
+
+    shr-int/lit8 v3, p2, 0x8
+
+    and-int/lit16 v3, v3, 0xff
+
+    int-to-float v3, v3
+
+    div-float/2addr v3, v1
+
+    and-int/lit16 p2, p2, 0xff
+
+    int-to-float p2, p2
+
+    div-float/2addr p2, v1
+
+    .line 3
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    move-result p3
+
+    shr-int/lit8 v4, p3, 0x18
+
+    and-int/lit16 v4, v4, 0xff
+
+    int-to-float v4, v4
+
+    div-float/2addr v4, v1
+
+    shr-int/lit8 v5, p3, 0x10
+
+    and-int/lit16 v5, v5, 0xff
+
+    int-to-float v5, v5
+
+    div-float/2addr v5, v1
+
+    shr-int/lit8 v6, p3, 0x8
+
+    and-int/lit16 v6, v6, 0xff
+
+    int-to-float v6, v6
+
+    div-float/2addr v6, v1
+
+    and-int/lit16 p3, p3, 0xff
+
+    int-to-float p3, p3
+
+    div-float/2addr p3, v1
+
+    float-to-double v7, v2
+
+    const-wide v9, 0x400199999999999aL    # 2.2
+
+    .line 4
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v2, v7
+
+    float-to-double v7, v3
+
+    .line 5
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v3, v7
+
+    float-to-double v7, p2
+
+    .line 6
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float p2, v7
+
+    float-to-double v7, v5
+
+    .line 7
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v5, v7
+
+    float-to-double v6, v6
+
+    .line 8
+    invoke-static {v6, v7, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v6
+
+    double-to-float v6, v6
+
+    float-to-double v7, p3
+
+    .line 9
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float p3, v7
+
+    invoke-static {v4, v0, p1, v0}, Lj3/vr0;->c(FFFF)F
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v3, v2
-
-    const/4 v2, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v4
-
-    if-ge v4, v0, :cond_3
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v4
-
-    const v5, 0xffff
-
-    and-int/2addr v5, v4
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_2
-
-    const/4 v6, 0x2
-
-    if-eq v5, v6, :cond_1
-
-    const/4 v6, 0x3
-
-    if-eq v5, v6, :cond_0
-
-    .line 4
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    sget-object v3, Landroid/content/Intent;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 6
-    invoke-static {p1, v4, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/content/Intent;
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v5, v2, p1, v2}, Lj3/vr0;->c(FFFF)F
 
     move-result v2
 
-    goto :goto_0
+    invoke-static {v6, v3, p1, v3}, Lj3/vr0;->c(FFFF)F
 
-    .line 8
-    :cond_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    move-result v3
 
-    move-result v1
+    invoke-static {p3, p2, p1, p2}, Lj3/vr0;->c(FFFF)F
 
-    goto :goto_0
+    move-result p1
 
-    .line 9
-    :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    mul-float/2addr v0, v1
+
+    float-to-double p2, v2
+
+    const-wide v4, 0x3fdd1745d1745d17L    # 0.45454545454545453
 
     .line 10
-    new-instance p1, Lcom/google/android/gms/signin/internal/zaa;
+    invoke-static {p2, p3, v4, v5}, Ljava/lang/Math;->pow(DD)D
 
-    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/signin/internal/zaa;-><init>(IILandroid/content/Intent;)V
+    move-result-wide p2
 
-    return-object p1
-.end method
+    double-to-float p2, p2
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    mul-float/2addr p2, v1
 
-    new-array p1, p1, [Lcom/google/android/gms/signin/internal/zaa;
+    float-to-double v2, v3
+
+    .line 11
+    invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v2
+
+    double-to-float p3, v2
+
+    mul-float/2addr p3, v1
+
+    float-to-double v2, p1
+
+    .line 12
+    invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v2
+
+    double-to-float p1, v2
+
+    mul-float/2addr p1, v1
+
+    .line 13
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
+    shl-int/lit8 v0, v0, 0x18
+
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+
+    move-result p2
+
+    shl-int/lit8 p2, p2, 0x10
+
+    or-int/2addr p2, v0
+
+    invoke-static {p3}, Ljava/lang/Math;->round(F)I
+
+    move-result p3
+
+    shl-int/lit8 p3, p3, 0x8
+
+    or-int/2addr p2, p3
+
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
+
+    move-result p1
+
+    or-int/2addr p1, p2
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
 
     return-object p1
 .end method

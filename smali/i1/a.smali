@@ -1,213 +1,196 @@
-.class public final Li1/a;
+.class public abstract Li1/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-
-# annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
-
-
-# instance fields
-.field public final a:Landroid/content/Context;
-
-.field public b:Z
-
-.field public c:Lk3/k9;
-
-.field public d:Lcom/google/android/gms/internal/ads/zzasa;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/k9;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Li1/a;->a:Landroid/content/Context;
-
-    .line 3
-    iput-object p2, p0, Li1/a;->c:Lk3/k9;
-
-    const/4 p1, 0x0
-
-    .line 4
-    iput-object p1, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
-
-    .line 5
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzasa;
-
-    invoke-direct {p1}, Lcom/google/android/gms/internal/ads/zzasa;-><init>()V
-
-    iput-object p1, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
-    .locals 5
+.method public abstract getSDKVersionInfo()Li1/u;
+.end method
 
-    .line 1
-    invoke-virtual {p0}, Li1/a;->b()Z
+.method public abstract getVersionInfo()Li1/u;
+.end method
 
-    move-result v0
+.method public abstract initialize(Landroid/content/Context;Li1/b;Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Li1/b;",
+            "Ljava/util/List<",
+            "Lb8/k;",
+            ">;)V"
+        }
+    .end annotation
+.end method
 
-    if-nez v0, :cond_0
+.method public loadBannerAd(Li1/g;Li1/d;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li1/g;",
+            "Li1/d<",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
 
-    return-void
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    :cond_0
-    const-string v0, ""
+    move-result-object p1
 
-    if-eqz p1, :cond_1
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    goto :goto_0
+    move-result-object p1
 
-    :cond_1
-    move-object p1, v0
+    const-string v0, " does not support banner ads."
 
-    .line 2
-    :goto_0
-    iget-object v1, p0, Li1/a;->c:Lk3/k9;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    if-eqz v1, :cond_2
+    move-result-object p1
 
-    const/4 v0, 0x0
+    invoke-interface {p2, p1}, Li1/d;->a(Ljava/lang/String;)V
 
-    const/4 v2, 0x3
-
-    .line 3
-    invoke-interface {v1, p1, v0, v2}, Lk3/k9;->b(Ljava/lang/String;Ljava/util/Map;I)V
-
-    return-void
-
-    .line 4
-    :cond_2
-    iget-object v1, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
-
-    iget-boolean v2, v1, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
-
-    if-eqz v2, :cond_4
-
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
-
-    if-eqz v1, :cond_4
-
-    .line 5
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_3
-    :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 6
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_3
-
-    .line 7
-    invoke-static {p1}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "{NAVIGATION_URL}"
-
-    invoke-virtual {v2, v4, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 8
-    sget-object v3, Li1/p;->B:Li1/p;
-
-    iget-object v3, v3, Li1/p;->c:Lk3/bb;
-
-    .line 9
-    iget-object v3, p0, Li1/a;->a:Landroid/content/Context;
-
-    invoke-static {v3, v0, v2}, Lk3/bb;->q(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_4
     return-void
 .end method
 
-.method public final b()Z
+.method public loadInterstitialAd(Li1/i;Li1/d;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li1/i;",
+            "Li1/d<",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Li1/a;->c:Lk3/k9;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    if-eqz v0, :cond_0
+    move-result-object p1
 
-    .line 2
-    invoke-interface {v0}, Lk3/k9;->a()Lcom/google/android/gms/internal/ads/zzavt;
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
 
-    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzavt;->l:Z
+    const-string v0, " does not support interstitial ads."
 
-    if-nez v0, :cond_1
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    :cond_0
-    iget-object v0, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
+    move-result-object p1
 
-    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
+    invoke-interface {p2, p1}, Li1/d;->a(Ljava/lang/String;)V
 
-    if-eqz v0, :cond_2
-
-    :cond_1
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    return v0
+    return-void
 .end method
 
-.method public final c()Z
+.method public loadNativeAd(Li1/k;Li1/d;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li1/k;",
+            "Li1/d<",
+            "Li1/t;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-virtual {p0}, Li1/a;->b()Z
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result v0
+    move-result-object p1
 
-    if-eqz v0, :cond_1
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    iget-boolean v0, p0, Li1/a;->b:Z
+    move-result-object p1
 
-    if-eqz v0, :cond_0
+    const-string v0, " does not support native ads."
 
-    goto :goto_0
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    :cond_0
-    const/4 v0, 0x0
+    move-result-object p1
 
-    return v0
+    invoke-interface {p2, p1}, Li1/d;->a(Ljava/lang/String;)V
 
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
+    return-void
+.end method
 
-    return v0
+.method public loadRewardedAd(Li1/m;Li1/d;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li1/m;",
+            "Li1/d<",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, " does not support rewarded ads."
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p2, p1}, Li1/d;->a(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public loadRewardedInterstitialAd(Li1/m;Li1/d;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li1/m;",
+            "Li1/d<",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, " does not support rewarded interstitial ads."
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 2
+    invoke-interface {p2, p1}, Li1/d;->a(Ljava/lang/String;)V
+
+    return-void
 .end method

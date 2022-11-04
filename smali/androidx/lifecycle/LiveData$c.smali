@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field public final a:Landroidx/lifecycle/o;
+.field public final a:Landroidx/lifecycle/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;"
         }
     .end annotation
@@ -32,12 +32,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;)V"
         }
     .end annotation
@@ -53,7 +53,7 @@
     iput p1, p0, Landroidx/lifecycle/LiveData$c;->c:I
 
     .line 3
-    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/o;
+    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/p;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 
     if-eqz p1, :cond_1
 
-    const/4 p1, 0x1
+    move p1, v1
 
     goto :goto_0
 
@@ -121,24 +121,24 @@
 
     if-lez v3, :cond_3
 
-    const/4 v4, 0x1
+    move v4, v1
 
     goto :goto_2
 
     :cond_3
-    const/4 v4, 0x0
+    move v4, p1
 
     :goto_2
     if-lez v2, :cond_4
 
     if-nez v3, :cond_4
 
-    const/4 v2, 0x1
+    move v2, v1
 
     goto :goto_3
 
     :cond_4
-    const/4 v2, 0x0
+    move v2, p1
 
     :goto_3
     if-eqz v4, :cond_5
@@ -187,13 +187,7 @@
     iput-boolean p1, v0, Landroidx/lifecycle/LiveData;->d:Z
 
     .line 15
-    goto :goto_7
-
-    :goto_6
     throw v1
-
-    :goto_7
-    goto :goto_6
 .end method
 
 .method public c()V

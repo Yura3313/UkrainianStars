@@ -1,184 +1,181 @@
 .class public final Lcom/google/android/play/core/assetpacks/e0;
-.super Lcom/google/android/play/core/assetpacks/a;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ly4/l0;
+.implements Lhe/e0;
 
 
 # instance fields
-.field public final a:J
-
-.field public final b:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/play/core/assetpacks/AssetPackState;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final f:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(JLjava/util/Map;)V
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
+
+    move-result-object v0
+
+    .line 3
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/play/core/assetpacks/AssetPackState;",
-            ">;)V"
-        }
-    .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/play/core/assetpacks/a;-><init>()V
+    .line 1
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    iput-wide p1, p0, Lcom/google/android/play/core/assetpacks/e0;->a:J
-
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/util/Map;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/play/core/assetpacks/AssetPackState;",
-            ">;"
-        }
-    .end annotation
+.method public final a(J)V
+    .locals 3
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    return-object v0
-.end method
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
 
-.method public final c()J
-    .locals 2
+    monitor-enter v0
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/e0;->a:J
+    .line 2
+    :try_start_0
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    return-wide v0
-.end method
+    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
-    const/4 v0, 0x1
-
-    if-eq p1, p0, :cond_1
-
-    instance-of v1, p1, Lcom/google/android/play/core/assetpacks/a;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    check-cast p1, Lcom/google/android/play/core/assetpacks/a;
-
-    iget-wide v3, p0, Lcom/google/android/play/core/assetpacks/e0;->a:J
-
-    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/a;->c()J
-
-    move-result-wide v5
-
-    cmp-long v1, v3, v5
+    move-result v1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
+    .line 3
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/a;->b()Ljava/util/Map;
+    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
 
-    move-result-object p1
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-interface {v1, p1}, Ljava/util/Map;->equals(Ljava/lang/Object;)Z
+    .line 4
+    :try_start_1
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
+
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-interface {v1, p1, p2, v2}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
-    return v0
+    .line 5
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
+    check-cast p1, Ljava/util/concurrent/ScheduledExecutorService;
+
+    invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+    :try_end_1
+    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 6
+    :catch_0
+    :try_start_2
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
+
+    check-cast p1, Ljava/util/concurrent/ScheduledExecutorService;
+
+    invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+
+    .line 7
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
+
+    .line 8
     :cond_0
-    return v2
+    :goto_0
+    monitor-exit v0
 
-    :cond_1
-    return v0
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
 .end method
 
-.method public final hashCode()I
+.method public final b(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     .locals 4
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/e0;->a:J
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    const/16 v2, 0x20
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
 
-    ushr-long v2, v0, v2
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    xor-long/2addr v0, v2
+    const-wide/16 v2, 0x7530
 
-    long-to-int v1, v0
+    invoke-interface {v0, p1, v2, v3, v1}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
 
-    const v0, 0xf4243
+    move-result-object p1
 
-    xor-int/2addr v1, v0
-
-    mul-int v1, v1, v0
-
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->hashCode()I
-
-    move-result v0
-
-    xor-int/2addr v0, v1
-
-    return v0
+    return-object p1
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 5
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/e0;->a:J
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
+    check-cast v0, Ly4/l0;
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    add-int/lit8 v3, v3, 0x3d
-
-    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v3, "AssetPackStates{totalBytes="
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, ", packStates="
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "}"
-
-    .line 1
-    invoke-static {v4, v2, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Ly4/k0;->b(Ly4/l0;)Ly4/i0;
 
     move-result-object v0
 
-    return-object v0
+    new-instance v1, Lcom/google/android/play/core/assetpacks/d0;
+
+    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/d0;-><init>(Ly4/i0;)V
+
+    return-object v1
+.end method
+
+.method public final submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e0;->f:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
+
+    invoke-interface {v0, p1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    move-result-object p1
+
+    return-object p1
 .end method

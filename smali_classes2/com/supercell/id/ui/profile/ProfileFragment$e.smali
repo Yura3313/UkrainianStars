@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profile/ProfileFragment;->S(Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/profile/ProfileFragment;->R(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,21 +35,21 @@
 
 
 # virtual methods
-.method public final d(I)V
+.method public final c(I)V
     .locals 4
 
     .line 1
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->b:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     .line 2
-    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:I
+    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:I
 
     .line 3
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
     const-string v1, "add_friends_button"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -58,7 +58,7 @@
     .line 4
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -87,7 +87,7 @@
     move-result-object v1
 
     .line 7
-    sget-object v2, Ltc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v2, Lrc/a;->b:Landroid/view/animation/PathInterpolator;
 
     .line 8
     invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -111,7 +111,7 @@
 
     const-string v1, "add_friends_button.anima\u2026          .scaleY(target)"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
     new-instance v1, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;
@@ -124,7 +124,7 @@
 
     const-string v0, "setListener(object : Ani\u2026d = true\n        }\n    })"
 
-    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V

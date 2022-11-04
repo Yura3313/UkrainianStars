@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/datepicker/m;->Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/google/android/material/datepicker/m;->X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/datepicker/m;
+.field public final synthetic f:Lcom/google/android/material/datepicker/m;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/datepicker/m;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/m$b;->g:Lcom/google/android/material/datepicker/m;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/m$b;->f:Lcom/google/android/material/datepicker/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/m$b;->g:Lcom/google/android/material/datepicker/m;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/m$b;->f:Lcom/google/android/material/datepicker/m;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/material/datepicker/m;->s0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/datepicker/m;->r0:Ljava/util/LinkedHashSet;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
@@ -68,7 +68,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/datepicker/m$b;->g:Lcom/google/android/material/datepicker/m;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/m$b;->f:Lcom/google/android/material/datepicker/m;
 
     const/4 v0, 0x0
 

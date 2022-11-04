@@ -1,85 +1,47 @@
-.class public Landroidx/appcompat/app/q;
-.super Landroidx/fragment/app/k;
-.source "AppCompatDialogFragment.java"
+.class public final Landroidx/appcompat/app/q;
+.super Ljava/lang/Object;
+.source "TwilightManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/appcompat/app/q$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static d:Landroidx/appcompat/app/q;
+
+
+# instance fields
+.field public final a:Landroid/content/Context;
+
+.field public final b:Landroid/location/LocationManager;
+
+.field public final c:Landroidx/appcompat/app/q$a;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Landroidx/fragment/app/k;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public O0()Landroid/app/Dialog;
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;Landroid/location/LocationManager;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Landroidx/appcompat/app/p;
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
-
-    move-result-object v1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget v2, p0, Landroidx/fragment/app/k;->g0:I
+    new-instance v0, Landroidx/appcompat/app/q$a;
+
+    invoke-direct {v0}, Landroidx/appcompat/app/q$a;-><init>()V
+
+    iput-object v0, p0, Landroidx/appcompat/app/q;->c:Landroidx/appcompat/app/q$a;
 
     .line 3
-    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/p;-><init>(Landroid/content/Context;I)V
-
-    return-object v0
-.end method
-
-.method public final R0(Landroid/app/Dialog;I)V
-    .locals 3
-
-    .line 1
-    instance-of v0, p1, Landroidx/appcompat/app/p;
-
-    if-eqz v0, :cond_2
-
-    .line 2
-    move-object v0, p1
-
-    check-cast v0, Landroidx/appcompat/app/p;
-
-    const/4 v1, 0x1
-
-    if-eq p2, v1, :cond_1
-
-    const/4 v2, 0x2
-
-    if-eq p2, v2, :cond_1
-
-    const/4 v2, 0x3
-
-    if-eq p2, v2, :cond_0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object p1
-
-    const/16 p2, 0x18
-
-    invoke-virtual {p1, p2}, Landroid/view/Window;->addFlags(I)V
+    iput-object p1, p0, Landroidx/appcompat/app/q;->a:Landroid/content/Context;
 
     .line 4
-    :cond_1
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/p;->c(I)Z
+    iput-object p2, p0, Landroidx/appcompat/app/q;->b:Landroid/location/LocationManager;
 
-    goto :goto_0
-
-    .line 5
-    :cond_2
-    invoke-super {p0, p1, p2}, Landroidx/fragment/app/k;->R0(Landroid/app/Dialog;I)V
-
-    :goto_0
     return-void
 .end method

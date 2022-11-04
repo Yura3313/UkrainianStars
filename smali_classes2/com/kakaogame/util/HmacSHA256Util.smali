@@ -13,71 +13,31 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 3
+    .locals 10
 
-    const/16 v0, 0xa
+    const-string v0, "qvjNK+TlTJ"
 
-    new-array v0, v0, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const-string v2, "qvjNK+TlTJ"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const-string v2, "uJoTgQBO+9"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
+    const-string v1, "uJoTgQBO+9"
 
     const-string v2, "MovWHJmjAW"
 
-    aput-object v2, v0, v1
+    const-string v3, "P+vHJcozPQ"
 
-    const/4 v1, 0x3
+    const-string v4, "+XYDl3Dwpz"
 
-    const-string v2, "P+vHJcozPQ"
+    const-string v5, "w+uUO93NB6"
 
-    aput-object v2, v0, v1
+    const-string v6, "TIog+qN34W"
 
-    const/4 v1, 0x4
+    const-string v7, "MQs+58R2ww"
 
-    const-string v2, "+XYDl3Dwpz"
+    const-string v8, "pH+H7qoHe0"
 
-    aput-object v2, v0, v1
+    const-string v9, "Dxd+pOe5tp"
 
-    const/4 v1, 0x5
+    filled-new-array/range {v0 .. v9}, [Ljava/lang/String;
 
-    const-string v2, "w+uUO93NB6"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x6
-
-    const-string v2, "TIog+qN34W"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x7
-
-    const-string v2, "MQs+58R2ww"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x8
-
-    const-string v2, "pH+H7qoHe0"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x9
-
-    const-string v2, "Dxd+pOe5tp"
-
-    aput-object v2, v0, v1
+    move-result-object v0
 
     sput-object v0, Lcom/kakaogame/util/HmacSHA256Util;->secrets:[Ljava/lang/String;
 

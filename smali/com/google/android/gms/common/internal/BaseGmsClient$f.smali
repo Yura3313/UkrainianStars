@@ -67,7 +67,7 @@
     if-nez p1, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->f()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->e()Z
 
     move-result p1
 
@@ -88,7 +88,7 @@
     invoke-direct {p1, v0, v1, v1}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;Ljava/lang/String;)V
 
     .line 8
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->e(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->d(Lcom/google/android/gms/common/ConnectionResult;)V
 
     return-void
 
@@ -128,7 +128,7 @@
     invoke-direct {v0, v2, p1, v1}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;Ljava/lang/String;)V
 
     .line 15
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->e(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/internal/BaseGmsClient$f;->d(Lcom/google/android/gms/common/ConnectionResult;)V
 
     :cond_2
     return-void
@@ -140,8 +140,8 @@
     return-void
 .end method
 
-.method public abstract e(Lcom/google/android/gms/common/ConnectionResult;)V
+.method public abstract d(Lcom/google/android/gms/common/ConnectionResult;)V
 .end method
 
-.method public abstract f()Z
+.method public abstract e()Z
 .end method

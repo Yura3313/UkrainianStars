@@ -23,7 +23,7 @@
     const/4 p1, 0x0
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {p1}, Lcom/google/android/material/datepicker/b0;->h(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object v0
 
@@ -31,7 +31,7 @@
     iput-object v0, p0, Lcom/google/android/material/datepicker/g;->a:Ljava/util/Calendar;
 
     .line 4
-    invoke-static {p1}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
+    invoke-static {p1}, Lcom/google/android/material/datepicker/b0;->h(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object p1
 
@@ -87,10 +87,10 @@
     iget-object v3, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 6
-    iget-object v3, v3, Lcom/google/android/material/datepicker/f;->d0:Lcom/google/android/material/datepicker/DateSelector;
+    iget-object v3, v3, Lcom/google/android/material/datepicker/f;->c0:Lcom/google/android/material/datepicker/DateSelector;
 
     .line 7
-    invoke-interface {v3}, Lcom/google/android/material/datepicker/DateSelector;->f0()Ljava/util/Collection;
+    invoke-interface {v3}, Lcom/google/android/material/datepicker/DateSelector;->N0()Ljava/util/Collection;
 
     move-result-object v3
 
@@ -110,14 +110,14 @@
 
     move-result-object v4
 
-    check-cast v4, Le0/c;
+    check-cast v4, Le0/a;
 
     .line 8
-    iget-object v5, v4, Le0/c;->a:Ljava/lang/Object;
+    iget-object v5, v4, Le0/a;->a:Ljava/lang/Object;
 
     if-eqz v5, :cond_1
 
-    iget-object v6, v4, Le0/c;->b:Ljava/lang/Object;
+    iget-object v6, v4, Le0/a;->b:Ljava/lang/Object;
 
     if-nez v6, :cond_2
 
@@ -138,7 +138,7 @@
     .line 10
     iget-object v5, v0, Lcom/google/android/material/datepicker/g;->b:Ljava/util/Calendar;
 
-    iget-object v4, v4, Le0/c;->b:Ljava/lang/Object;
+    iget-object v4, v4, Le0/a;->b:Ljava/lang/Object;
 
     check-cast v4, Ljava/lang/Long;
 
@@ -157,7 +157,7 @@
 
     move-result v4
 
-    invoke-virtual {v1, v4}, Lcom/google/android/material/datepicker/d0;->m(I)I
+    invoke-virtual {v1, v4}, Lcom/google/android/material/datepicker/d0;->l(I)I
 
     move-result v4
 
@@ -168,7 +168,7 @@
 
     move-result v5
 
-    invoke-virtual {v1, v5}, Lcom/google/android/material/datepicker/d0;->m(I)I
+    invoke-virtual {v1, v5}, Lcom/google/android/material/datepicker/d0;->l(I)I
 
     move-result v5
 
@@ -199,7 +199,7 @@
     .line 18
     iget v9, v2, Landroidx/recyclerview/widget/GridLayoutManager;->H:I
 
-    mul-int v9, v9, v8
+    mul-int/2addr v9, v8
 
     .line 19
     invoke-virtual {v2, v9}, Landroidx/recyclerview/widget/LinearLayoutManager;->s(I)Landroid/view/View;
@@ -219,7 +219,7 @@
     iget-object v11, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 21
-    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
+    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
 
     .line 22
     iget-object v11, v11, Lcom/google/android/material/datepicker/b;->d:Lcom/google/android/material/datepicker/a;
@@ -239,7 +239,7 @@
     iget-object v11, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 25
-    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
+    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
 
     .line 26
     iget-object v11, v11, Lcom/google/android/material/datepicker/b;->d:Lcom/google/android/material/datepicker/a;
@@ -308,7 +308,7 @@
     iget-object v12, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 32
-    iget-object v12, v12, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
+    iget-object v12, v12, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
 
     .line 33
     iget-object v12, v12, Lcom/google/android/material/datepicker/b;->h:Landroid/graphics/Paint;

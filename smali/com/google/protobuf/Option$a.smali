@@ -3,7 +3,7 @@
 .source "Option.java"
 
 # interfaces
-.implements Lcom/google/protobuf/b1;
+.implements Lcom/google/protobuf/d1;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/google/protobuf/Option;",
         "Lcom/google/protobuf/Option$a;",
         ">;",
-        "Lcom/google/protobuf/b1;"
+        "Lcom/google/protobuf/d1;"
     }
 .end annotation
 

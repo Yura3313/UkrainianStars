@@ -1,992 +1,858 @@
-.class public final Lk7/a;
+.class public abstract Lk7/a;
 .super Ljava/lang/Object;
-.source "AnalyticsEventDM.java"
+.source "BaseDownloadRunnable.java"
 
 # interfaces
-.implements Lx7/a;
-
-
-# static fields
-.field public static final g:Ljava/text/DecimalFormat;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:La8/f;
+.field public f:Lj3/f90;
 
-.field public final b:Le8/s;
+.field public g:Lj7/a;
 
-.field public final c:Le8/i;
+.field public h:Lj7/c;
 
-.field public final d:Lhb/a;
-
-.field public e:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ll7/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public f:Lj8/b;
+.field public i:Lj7/b;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Ljava/text/DecimalFormat;
-
-    new-instance v1, Ljava/text/DecimalFormatSymbols;
-
-    sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    invoke-direct {v1, v2}, Ljava/text/DecimalFormatSymbols;-><init>(Ljava/util/Locale;)V
-
-    const-string v2, "0.000"
-
-    invoke-direct {v0, v2, v1}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V
-
-    sput-object v0, Lk7/a;->g:Ljava/text/DecimalFormat;
-
-    return-void
-.end method
-
-.method public constructor <init>(La8/f;Le8/s;)V
-    .locals 1
+.method public constructor <init>(Lj3/f90;Lj7/a;Lj7/c;Lj7/b;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk7/a;->a:La8/f;
+    iput-object p1, p0, Lk7/a;->f:Lj3/f90;
 
     .line 3
-    iput-object p2, p0, Lk7/a;->b:Le8/s;
+    iput-object p2, p0, Lk7/a;->g:Lj7/a;
 
     .line 4
-    check-cast p2, Le8/j;
+    iput-object p3, p0, Lk7/a;->h:Lj7/c;
 
     .line 5
-    iget-object v0, p2, Le8/j;->t:Le8/i;
-
-    .line 6
-    iput-object v0, p0, Lk7/a;->c:Le8/i;
-
-    .line 7
-    iget-object p2, p2, Le8/j;->l:Lhb/a;
-
-    .line 8
-    iput-object p2, p0, Lk7/a;->d:Lhb/a;
-
-    .line 9
-    iget-object p2, p1, La8/f;->f:Lj8/b;
-
-    .line 10
-    iput-object p2, p0, Lk7/a;->f:Lj8/b;
-
-    .line 11
-    iget-object p1, p1, La8/f;->o:Lx7/d;
-
-    .line 12
-    sget-object p2, Lx7/d$b;->m:Lx7/d$b;
-
-    invoke-virtual {p1, p2, p0}, Lx7/d;->a(Lx7/d$b;Lx7/a;)V
-
-    .line 13
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object p1, p0, Lk7/a;->e:Ljava/util/ArrayList;
+    iput-object p4, p0, Lk7/a;->i:Lj7/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lc8/j;
-    .locals 4
+.method public final a()Ljava/net/URL;
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/net/MalformedURLException;,
+            Ljava/net/URISyntaxException;,
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Lc8/l;
+    iget-object v0, p0, Lk7/a;->f:Lj3/f90;
 
-    iget-object v1, p0, Lk7/a;->a:La8/f;
+    iget-boolean v1, v0, Lj3/f90;->a:Z
 
-    iget-object v2, p0, Lk7/a;->b:Le8/s;
-
-    const-string v3, "/events/"
-
-    invoke-direct {v0, v3, v1, v2}, Lc8/l;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
+    if-eqz v1, :cond_0
 
     .line 2
-    new-instance v1, Lc8/e;
+    iget-object v0, v0, Lj3/f90;->b:Ljava/lang/Object;
 
-    invoke-direct {v1, v0}, Lc8/e;-><init>(Lc8/j;)V
+    check-cast v0, Ljava/lang/String;
+
+    iget-object v1, p0, Lk7/a;->g:Lj7/a;
+
+    invoke-static {v0, v1}, Lm7/a;->a(Ljava/lang/String;Lj7/a;)Ljava/net/URL;
+
+    move-result-object v0
+
+    return-object v0
 
     .line 3
-    new-instance v0, Ln1/a;
+    :cond_0
+    new-instance v0, Ljava/net/URL;
 
-    invoke-direct {v0, v1}, Ln1/a;-><init>(Ljava/lang/Object;)V
+    new-instance v1, Ljava/net/URI;
+
+    iget-object v2, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v2, v2, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-direct {v1, v2}, Ljava/net/URI;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/net/URI;->toASCIIString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
     return-object v0
 .end method
 
-.method public final declared-synchronized b(I)V
-    .locals 1
-
-    monitor-enter p0
-
-    const/4 v0, 0x0
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p0, p1, v0}, Lk7/a;->d(ILjava/util/Map;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 2
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
+.method public abstract b()V
 .end method
 
-.method public final c(Lx7/d$b;)V
-    .locals 6
-
-    .line 1
-    sget-object v0, Lx7/d$b;->m:Lx7/d$b;
-
-    if-eq p1, v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iget-object p1, p0, Lk7/a;->d:Lhb/a;
-
-    .line 3
-    invoke-virtual {p1}, Lhb/a;->a()Ljava/util/HashMap;
-
-    move-result-object p1
-
-    .line 4
-    invoke-interface {p1}, Ljava/util/Map;->size()I
-
-    move-result v0
-
-    if-lez v0, :cond_2
-
-    .line 5
-    invoke-virtual {p0}, Lk7/a;->a()Lc8/j;
-
-    move-result-object v0
-
-    .line 6
-    invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 7
-    :try_start_0
-    new-instance v3, Lf8/h;
-
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/util/Map;
-
-    invoke-direct {v3, v4}, Lf8/h;-><init>(Ljava/util/Map;)V
-
-    .line 8
-    move-object v4, v0
-
-    check-cast v4, Ln1/a;
-
-    invoke-virtual {v4, v3}, Ln1/a;->b(Lf8/h;)Lf8/i;
-
-    .line 9
-    iget-object v3, p0, Lk7/a;->d:Lhb/a;
-
-    invoke-virtual {v3, v2}, Lhb/a;->b(Ljava/lang/String;)V
-    :try_end_0
-    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v3
-
-    .line 10
-    iget-object v4, v3, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
-
-    sget-object v5, Ld8/b;->t:Ld8/b;
-
-    if-ne v4, v5, :cond_1
-
-    .line 11
-    iget-object v3, p0, Lk7/a;->d:Lhb/a;
-
-    invoke-virtual {v3, v2}, Lhb/a;->b(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 12
-    :cond_1
-    throw v3
-
-    :cond_2
-    return-void
-.end method
-
-.method public final declared-synchronized d(ILjava/util/Map;)V
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
+.method public final c(Ljava/io/Closeable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;)V"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    monitor-enter p0
+    if-eqz p1, :cond_0
 
-    .line 1
-    :try_start_0
-    sget-object v0, Lk7/a;->g:Ljava/text/DecimalFormat;
+    invoke-interface {p1}, Ljava/io/Closeable;->close()V
 
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    long-to-double v1, v1
-
-    const-wide v3, 0x408f400000000000L    # 1000.0
-
-    invoke-static {v1, v2}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v1, v2}, Ljava/lang/Double;->isNaN(D)Z
-
-    div-double/2addr v1, v3
-
-    :try_start_1
-    invoke-virtual {v0, v1, v2}, Ljava/text/NumberFormat;->format(D)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    .line 3
-    new-instance v1, Ll7/a;
-
-    invoke-direct {v1, p1, p2, v0}, Ll7/a;-><init>(ILjava/util/Map;Ljava/lang/String;)V
-
-    .line 4
-    iget-object p1, p0, Lk7/a;->e:Ljava/util/ArrayList;
-
-    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 5
-    monitor-exit p0
-
+    :cond_0
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
 .end method
 
-.method public final e(Li7/c;)V
-    .locals 17
+.method public abstract d()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/FileNotFoundException;
+        }
+    .end annotation
+.end method
 
-    move-object/from16 v1, p0
+.method public abstract e()Z
+.end method
 
-    move-object/from16 v2, p1
+.method public final f(ZLjava/lang/Object;ILjava/lang/String;)V
+    .locals 6
 
     .line 1
-    monitor-enter p0
+    iget-object v0, p0, Lk7/a;->i:Lj7/b;
+
+    if-eqz v0, :cond_0
 
     .line 2
-    :try_start_0
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object v1, p0, Lk7/a;->f:Lj3/f90;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iget-object v1, v1, Lj3/f90;->b:Ljava/lang/Object;
+
+    move-object v2, v1
+
+    check-cast v2, Ljava/lang/String;
+
+    move v1, p1
+
+    move-object v3, p2
+
+    move v4, p3
+
+    move-object v5, p4
+
+    invoke-interface/range {v0 .. v5}, Lj7/b;->a(ZLjava/lang/String;Ljava/lang/Object;ILjava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public abstract g(Ljava/io/InputStream;IILjava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public final run()V
+    .locals 12
+
+    const-string v0, "Exception in closing download response"
+
+    const-string v1, "route"
+
+    const-string v2, "Starting download : "
+
+    .line 1
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 2
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "Helpshift_DownloadRun"
+
+    const/4 v4, 0x0
 
     .line 3
-    iget-object v3, v1, Lk7/a;->e:Ljava/util/ArrayList;
+    invoke-static {v3, v2, v4, v4}, Lcom/android/billingclient/api/w;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
-    if-eqz v3, :cond_0
+    const/16 v2, 0xa
 
     .line 4
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_4
+    invoke-static {v2}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 5
-    :cond_0
-    monitor-exit p0
+    const-string v2, ""
 
-    .line 6
-    monitor-enter p0
-
-    .line 7
-    :try_start_1
-    iget-object v3, v1, Lk7/a;->e:Ljava/util/ArrayList;
-
-    if-eqz v3, :cond_1
-
-    .line 8
-    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_3
-
-    .line 9
-    :cond_1
-    monitor-exit p0
-
-    .line 10
-    iget-object v3, v1, Lk7/a;->d:Lhb/a;
-
-    .line 11
-    iget-object v3, v3, Lhb/a;->a:Lk3/s9;
-
-    const-string v4, "unsent_app_launch_analytics_events"
+    const/4 v3, 0x1
 
     const/4 v5, 0x0
 
-    .line 12
-    invoke-virtual {v3, v4, v5}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
+    .line 5
+    :try_start_0
+    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
-    .line 13
-    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
+    move-result v6
 
-    move-result v3
+    if-nez v6, :cond_7
 
-    if-nez v3, :cond_f
+    .line 6
+    invoke-virtual {p0}, Lk7/a;->a()Ljava/net/URL;
 
-    .line 14
-    iget-object v3, v1, Lk7/a;->c:Le8/i;
+    move-result-object v6
 
-    invoke-virtual {v3, v0}, Le8/i;->c(Ljava/util/List;)Ljava/lang/String;
+    const-string v7, "https"
 
-    move-result-object v3
+    .line 7
+    invoke-virtual {v6}, Ljava/net/URL;->getProtocol()Ljava/lang/String;
 
-    .line 15
-    invoke-static/range {p1 .. p1}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
+    move-result-object v8
 
-    move-result-object v4
-
-    const-string v6, "id"
-
-    .line 16
-    iget-object v0, v1, Lk7/a;->b:Le8/s;
-
-    .line 17
-    iget-boolean v7, v2, Li7/c;->m:Z
-
-    if-eqz v7, :cond_2
-
-    goto :goto_0
-
-    .line 18
-    :cond_2
-    iget-object v7, v2, Li7/c;->h:Ljava/lang/String;
-
-    .line 19
-    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_3
+    if-eqz v7, :cond_0
+
+    .line 8
+    invoke-virtual {v6}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object v6
+
+    check-cast v6, Ljavax/net/ssl/HttpsURLConnection;
 
     goto :goto_0
 
-    .line 20
-    :cond_3
-    check-cast v0, Le8/j;
+    .line 9
+    :cond_0
+    invoke-virtual {v6}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
-    invoke-virtual {v0}, Le8/j;->h()Lg7/a;
+    move-result-object v6
 
-    move-result-object v0
+    check-cast v6, Ljava/net/HttpURLConnection;
 
-    .line 21
-    iget-object v7, v2, Li7/c;->h:Ljava/lang/String;
+    .line 10
+    :goto_0
+    iget-object v7, p0, Lk7/a;->f:Lj3/f90;
 
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v7, v7, Lj3/f90;->d:Ljava/lang/Object;
 
-    .line 23
-    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
+    move-object v8, v7
+
+    check-cast v8, Ljava/lang/String;
+
+    if-eqz v8, :cond_1
+
+    check-cast v7, Ljava/lang/String;
+
+    invoke-virtual {v7}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    const-string v7, "If-None-Match"
+
+    .line 11
+    iget-object v8, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v8, v8, Lj3/f90;->d:Ljava/lang/Object;
+
+    check-cast v8, Ljava/lang/String;
+
+    invoke-virtual {v6, v7, v8}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    :cond_1
+    invoke-virtual {v6, v3}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_e
+    .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_d
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_c
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_b
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_a
+
+    .line 13
+    :try_start_1
+    invoke-virtual {p0}, Lk7/a;->d()J
+
+    move-result-wide v7
+
+    const-string v9, "Range"
+
+    .line 14
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v11, "bytes="
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v7, "-"
+
+    invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v9, v7}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 15
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->getResponseCode()I
+
+    move-result v7
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/16 v8, 0x1a0
+
+    if-eq v7, v8, :cond_4
+
+    const/16 v8, 0x130
+
+    if-ne v7, v8, :cond_2
+
+    .line 16
+    :try_start_2
+    invoke-virtual {p0, v5, v4, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 17
+    :try_start_3
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
+    :try_end_3
+    .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_9
+    .catch Ljava/net/MalformedURLException; {:try_start_3 .. :try_end_3} :catch_8
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_7
+    .catch Ljava/security/GeneralSecurityException; {:try_start_3 .. :try_end_3} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_5
+
+    return-void
+
+    .line 18
+    :cond_2
+    :try_start_4
+    invoke-virtual {v6}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object v4
+
+    .line 19
+    invoke-virtual {p0}, Lk7/a;->e()Z
 
     move-result v8
 
-    if-eqz v8, :cond_4
+    if-eqz v8, :cond_3
 
-    :goto_0
-    move-object v0, v5
+    .line 20
+    invoke-virtual {v6}, Ljava/net/URLConnection;->getHeaderFields()Ljava/util/Map;
 
-    goto :goto_4
+    move-result-object v8
+
+    const-string v9, "Content-Encoding"
+
+    .line 21
+    invoke-interface {v8, v9}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/util/List;
+
+    if-eqz v8, :cond_3
+
+    .line 22
+    invoke-interface {v8}, Ljava/util/List;->size()I
+
+    move-result v9
+
+    if-lez v9, :cond_3
+
+    .line 23
+    invoke-interface {v8, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/String;
+
+    const-string v9, "gzip"
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_3
 
     .line 24
-    :cond_4
-    iget-object v0, v0, Lg7/a;->g:Ljava/lang/Object;
+    new-instance v8, Ljava/util/zip/GZIPInputStream;
 
-    move-object v8, v0
+    invoke-direct {v8, v4}, Ljava/util/zip/GZIPInputStream;-><init>(Ljava/io/InputStream;)V
 
-    check-cast v8, Lg7/e;
+    move-object v4, v8
 
     .line 25
-    monitor-enter v8
+    :cond_3
+    invoke-virtual {v6}, Ljava/net/URLConnection;->getContentLength()I
 
-    const/4 v0, 0x1
+    move-result v8
 
-    :try_start_2
-    new-array v13, v0, [Ljava/lang/String;
-
-    const/4 v0, 0x0
-
-    aput-object v7, v13, v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+    const-string v9, "Etag"
 
     .line 26
-    :try_start_3
-    iget-object v0, v8, Lg7/e;->a:Lq9/a;
+    invoke-virtual {v6, v9}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v9
-
-    const-string v10, "legacy_analytics_event_id_table"
-
-    const/4 v11, 0x0
-
-    const-string v12, "identifier = ?"
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x0
+    move-result-object v2
 
     .line 27
-    invoke-virtual/range {v9 .. v16}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v7
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    invoke-virtual {p0, v4, v8, v7, v2}, Lk7/a;->g(Ljava/io/InputStream;IILjava/lang/String;)V
 
     .line 28
-    :try_start_4
-    invoke-interface {v7}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    const-string v0, "analytics_event_id"
+    if-eqz v4, :cond_5
 
     .line 29
-    invoke-interface {v7, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v0
-
-    .line 30
-    invoke-interface {v7, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+    :try_start_5
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
+    .catch Ljava/lang/InterruptedException; {:try_start_5 .. :try_end_5} :catch_9
+    .catch Ljava/security/GeneralSecurityException; {:try_start_5 .. :try_end_5} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
 
     goto :goto_2
 
     :catch_0
-    move-exception v0
+    move-exception v4
+
+    .line 30
+    :try_start_6
+    invoke-virtual {p0, v5, v4, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+
+    new-array v8, v3, [Lz9/a;
+
+    .line 31
+    iget-object v9, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v9, v9, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v9, Ljava/lang/String;
+
+    .line 32
+    invoke-static {v1, v9}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+
+    move-result-object v9
+
+    aput-object v9, v8, v5
+
+    .line 33
+    invoke-static {v0, v4, v8}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    :try_end_6
+    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_9
+    .catch Ljava/net/MalformedURLException; {:try_start_6 .. :try_end_6} :catch_8
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_7
+    .catch Ljava/security/GeneralSecurityException; {:try_start_6 .. :try_end_6} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_5
+
+    goto :goto_2
+
+    .line 34
+    :cond_4
+    :try_start_7
+    invoke-virtual {p0}, Lk7/a;->b()V
+
+    .line 35
+    new-instance v8, Ljava/io/IOException;
+
+    const-string v9, "Requested Range Not Satisfiable, failed with 416 status"
+
+    invoke-direct {v8, v9}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v8
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_1
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+
+    :catch_1
+    move-exception v8
 
     goto :goto_1
 
     :catchall_0
-    move-exception v0
+    move-exception v7
 
-    goto/16 :goto_7
+    move-object v8, v7
 
-    :catch_1
-    move-exception v0
-
-    move-object v7, v5
-
-    :goto_1
-    :try_start_5
-    const-string v9, "Helpshift_UserDB"
-
-    const-string v10, "Error in reading legacy analytics eventID with identifier"
-
-    .line 31
-    invoke-static {v9, v10, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    if-eqz v7, :cond_6
-
-    :cond_5
-    move-object v0, v5
-
-    .line 32
-    :goto_2
-    :try_start_6
-    invoke-interface {v7}, Landroid/database/Cursor;->close()V
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    move v7, v5
 
     goto :goto_3
 
-    :cond_6
-    move-object v0, v5
+    :catch_2
+    move-exception v7
 
-    .line 33
-    :goto_3
-    monitor-exit v8
+    move-object v8, v7
 
-    .line 34
-    :goto_4
-    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_7
-
-    .line 35
-    iget-object v0, v2, Li7/c;->k:Ljava/lang/String;
+    move v7, v5
 
     .line 36
-    :cond_7
-    invoke-virtual {v4, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :goto_1
+    :try_start_8
+    invoke-virtual {p0, v5, v8, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    const-string v0, "e"
+    const-string v9, "Exception in download"
+
+    new-array v10, v3, [Lz9/a;
 
     .line 37
-    invoke-virtual {v4, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v11, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v11, v11, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v11, Ljava/lang/String;
 
     .line 38
-    iget-object v0, v1, Lk7/a;->b:Le8/s;
+    invoke-static {v1, v11}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
-    check-cast v0, Le8/j;
+    move-result-object v11
+
+    aput-object v11, v10, v5
 
     .line 39
-    iget-object v0, v0, Le8/j;->g:Le8/d;
+    invoke-static {v9, v8, v10}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
-    const-string v2, "v"
+    if-eqz v4, :cond_5
 
     .line 40
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_start_9
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_3
+    .catch Ljava/lang/InterruptedException; {:try_start_9 .. :try_end_9} :catch_9
+    .catch Ljava/security/GeneralSecurityException; {:try_start_9 .. :try_end_9} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_5
 
-    const-string v3, "7.11.0"
+    goto :goto_2
 
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v2, "os"
+    :catch_3
+    move-exception v4
 
     .line 41
-    sget-object v3, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+    :try_start_a
+    invoke-virtual {p0, v5, v4, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+
+    new-array v8, v3, [Lz9/a;
 
     .line 42
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v9, p0, Lk7/a;->f:Lj3/f90;
 
-    const-string v2, "av"
+    iget-object v9, v9, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v9, Ljava/lang/String;
 
     .line 43
-    invoke-virtual {v0}, Le8/d;->d()Ljava/lang/String;
+    invoke-static {v1, v9}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
-    move-result-object v3
+    move-result-object v9
 
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v2, "dm"
+    aput-object v9, v8, v5
 
     .line 44
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+    invoke-static {v0, v4, v8}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 45
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_5
+    :goto_2
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
+    :try_end_a
+    .catch Ljava/lang/InterruptedException; {:try_start_a .. :try_end_a} :catch_9
+    .catch Ljava/net/MalformedURLException; {:try_start_a .. :try_end_a} :catch_8
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_7
+    .catch Ljava/security/GeneralSecurityException; {:try_start_a .. :try_end_a} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_5
 
-    const-string v2, "s"
+    goto/16 :goto_a
+
+    :catchall_1
+    move-exception v8
+
+    :goto_3
+    if-eqz v4, :cond_6
 
     .line 46
-    iget-object v3, v1, Lk7/a;->f:Lj8/b;
+    :try_start_b
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_4
+    .catch Ljava/lang/InterruptedException; {:try_start_b .. :try_end_b} :catch_9
+    .catch Ljava/security/GeneralSecurityException; {:try_start_b .. :try_end_b} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_5
 
-    const-string v6, "sdkType"
+    goto :goto_4
 
-    invoke-virtual {v3, v6}, Lj8/b;->k(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :catch_4
+    move-exception v4
 
     .line 47
-    iget-object v2, v1, Lk7/a;->f:Lj8/b;
+    :try_start_c
+    invoke-virtual {p0, v5, v4, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    const-string v3, "pluginVersion"
-
-    invoke-virtual {v2, v3}, Lj8/b;->k(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
+    new-array v9, v3, [Lz9/a;
 
     .line 48
-    iget-object v3, v1, Lk7/a;->f:Lj8/b;
+    iget-object v10, p0, Lk7/a;->f:Lj3/f90;
 
-    const-string v6, "runtimeVersion"
+    iget-object v10, v10, Lj3/f90;->b:Ljava/lang/Object;
 
-    invoke-virtual {v3, v6}, Lj8/b;->k(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
+    check-cast v10, Ljava/lang/String;
 
     .line 49
-    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {v1, v10}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
-    move-result v6
+    move-result-object v10
 
-    if-nez v6, :cond_8
-
-    const-string v6, "pv"
+    aput-object v10, v9, v5
 
     .line 50
-    invoke-virtual {v4, v6, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v4, v9}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 51
-    :cond_8
-    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_9
-
-    const-string v2, "rv"
+    :cond_6
+    :goto_4
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 52
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    throw v8
+    :try_end_c
+    .catch Ljava/lang/InterruptedException; {:try_start_c .. :try_end_c} :catch_9
+    .catch Ljava/net/MalformedURLException; {:try_start_c .. :try_end_c} :catch_8
+    .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_7
+    .catch Ljava/security/GeneralSecurityException; {:try_start_c .. :try_end_c} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_5
 
-    :cond_9
-    const-string v2, "rs"
-
-    .line 53
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "os.version"
-
-    invoke-static {v6}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v6, ":"
-
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v6, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
-
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 54
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 55
-    iget-object v2, v0, Le8/d;->a:Landroid/content/Context;
-
-    const-string v3, "phone"
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/telephony/TelephonyManager;
-
-    if-nez v2, :cond_a
-
-    const-string v2, ""
+    :catch_5
+    move-exception v0
 
     goto :goto_5
 
-    .line 56
-    :cond_a
-    invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getSimCountryIso()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 57
-    :goto_5
-    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_b
-
-    const-string v3, "cc"
-
-    .line 58
-    invoke-virtual {v4, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_b
-    const-string v2, "ln"
-
-    .line 59
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/util/Locale;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 60
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 61
-    iget-object v2, v1, Lk7/a;->a:La8/f;
-
-    .line 62
-    iget-object v2, v2, La8/f;->n:Lw9/a;
-
-    .line 63
-    invoke-virtual {v2}, Lw9/a;->d()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 64
-    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_c
-
-    const-string v3, "dln"
-
-    .line 65
-    invoke-virtual {v4, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_c
-    const-string v2, "and_id"
-
-    .line 66
-    :try_start_7
-    iget-object v0, v0, Le8/d;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v3, "android_id"
-
-    invoke-static {v0, v3}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_2
+    :catch_6
+    move-exception v0
 
     goto :goto_6
 
-    :catch_2
+    :catch_7
     move-exception v0
 
-    const-string v3, "AndroidDevice"
+    goto :goto_7
 
-    const-string v6, "Exception while getting android_id"
+    :catch_8
+    move-exception v0
 
-    .line 67
-    invoke-static {v3, v6, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    goto :goto_8
 
-    .line 68
+    :catch_9
+    move-exception v0
+
+    goto/16 :goto_9
+
+    .line 53
+    :cond_7
+    :try_start_d
+    new-instance v0, Ljava/lang/InterruptedException;
+
+    invoke-direct {v0}, Ljava/lang/InterruptedException;-><init>()V
+
+    throw v0
+    :try_end_d
+    .catch Ljava/lang/InterruptedException; {:try_start_d .. :try_end_d} :catch_e
+    .catch Ljava/net/MalformedURLException; {:try_start_d .. :try_end_d} :catch_d
+    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_c
+    .catch Ljava/security/GeneralSecurityException; {:try_start_d .. :try_end_d} :catch_b
+    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_a
+
+    :catch_a
+    move-exception v0
+
+    move v7, v5
+
+    .line 54
+    :goto_5
+    invoke-virtual {p0, v5, v0, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+
+    new-array v2, v3, [Lz9/a;
+
+    .line 55
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+
+    move-result-object v1
+
+    aput-object v1, v2, v5
+
+    const-string v1, "Unknown Exception"
+
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    goto :goto_a
+
+    :catch_b
+    move-exception v0
+
+    move v7, v5
+
+    .line 56
     :goto_6
-    invoke-virtual {v4, v2, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v5, v0, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    .line 69
-    :try_start_8
-    new-instance v0, Lf8/h;
+    new-array v2, v3, [Lz9/a;
 
-    invoke-direct {v0, v4}, Lf8/h;-><init>(Ljava/util/Map;)V
+    .line 57
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
 
-    .line 70
-    invoke-virtual/range {p0 .. p0}, Lk7/a;->a()Lc8/j;
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
 
-    move-result-object v2
+    check-cast v3, Ljava/lang/String;
 
-    check-cast v2, Ln1/a;
+    invoke-static {v1, v3}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
-    invoke-virtual {v2, v0}, Ln1/a;->b(Lf8/h;)Lf8/i;
+    move-result-object v1
 
-    .line 71
-    iget-object v0, v1, Lk7/a;->f:Lj8/b;
+    aput-object v1, v2, v5
 
-    .line 72
-    iget-object v0, v0, Lj8/b;->c:Lk3/s9;
+    const-string v1, "GeneralSecurityException"
 
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
-    move-result-wide v2
+    goto :goto_a
 
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    const-string v3, "lastSuccessfulAppLaunchEventTime"
-
-    .line 73
-    invoke-virtual {v0, v3, v2}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
-    :try_end_8
-    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_8 .. :try_end_8} :catch_3
-
-    goto :goto_8
-
-    :catch_3
+    :catch_c
     move-exception v0
 
-    .line 74
-    iget-object v2, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+    move v7, v5
 
-    sget-object v3, Ld8/b;->t:Ld8/b;
-
-    if-ne v2, v3, :cond_d
-
-    goto :goto_8
-
-    .line 75
-    :cond_d
-    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 76
-    iget-object v3, v1, Lk7/a;->d:Lhb/a;
-
-    .line 77
-    invoke-virtual {v3}, Lhb/a;->a()Ljava/util/HashMap;
-
-    move-result-object v5
-
-    .line 78
-    invoke-virtual {v5, v2, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 79
-    iget-object v2, v3, Lhb/a;->a:Lk3/s9;
-
-    const-string v3, "unsent_analytics_events"
-
-    .line 80
-    invoke-virtual {v2, v3, v5}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
-
-    .line 81
-    iget-object v2, v1, Lk7/a;->a:La8/f;
-
-    .line 82
-    iget-object v2, v2, La8/f;->o:Lx7/d;
-
-    .line 83
-    sget-object v3, Lx7/d$b;->m:Lx7/d$b;
-
-    invoke-virtual {v0}, Lcom/helpshift/common/exception/RootAPIException;->a()I
-
-    move-result v4
-
-    invoke-virtual {v2, v3, v4}, Lx7/d;->c(Lx7/d$b;I)V
-
-    .line 84
-    throw v0
-
-    :catchall_1
-    move-exception v0
-
-    move-object v5, v7
-
+    .line 58
     :goto_7
-    if-eqz v5, :cond_e
+    invoke-virtual {p0, v5, v0, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    .line 85
-    :try_start_9
-    invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    new-array v2, v3, [Lz9/a;
 
-    .line 86
-    :cond_e
-    throw v0
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_2
+    .line 59
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
 
-    :catchall_2
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+
+    move-result-object v1
+
+    aput-object v1, v2, v5
+
+    const-string v1, "Exception IO"
+
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    goto :goto_a
+
+    :catch_d
     move-exception v0
 
-    monitor-exit v8
+    move v7, v5
 
-    throw v0
-
-    :cond_f
+    .line 60
     :goto_8
+    invoke-virtual {p0, v5, v0, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+
+    new-array v2, v3, [Lz9/a;
+
+    .line 61
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+
+    move-result-object v1
+
+    aput-object v1, v2, v5
+
+    const-string v1, "MalformedURLException"
+
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    goto :goto_a
+
+    :catch_e
+    move-exception v0
+
+    move v7, v5
+
+    .line 62
+    :goto_9
+    invoke-virtual {p0, v5, v0, v7, v2}, Lk7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
+
+    new-array v2, v3, [Lz9/a;
+
+    .line 63
+    iget-object v3, p0, Lk7/a;->f:Lj3/f90;
+
+    iget-object v3, v3, Lj3/f90;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lcom/google/android/play/core/assetpacks/k2;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+
+    move-result-object v1
+
+    aput-object v1, v2, v5
+
+    const-string v1, "Exception Interrupted"
+
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/w;->f(Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+
+    .line 64
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+
+    :goto_a
     return-void
-
-    :catchall_3
-    move-exception v0
-
-    .line 87
-    monitor-exit p0
-
-    throw v0
-
-    :catchall_4
-    move-exception v0
-
-    .line 88
-    monitor-exit p0
-
-    throw v0
 .end method

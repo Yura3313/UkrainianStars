@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$a$c;
-.super Lse/i;
+.super Lif/i;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/GameFragment$a;->n(Lae/b2$a;ILae/a2;)V
+    value = Lcom/supercell/id/ui/game/GameFragment$a;->m(Lzd/w1$a;ILzd/v1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,45 +18,45 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
+        "Lif/i;",
+        "Lhf/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment$a;
 
-.field public final synthetic h:Lae/a2;
+.field public final synthetic g:Lzd/v1;
 
-.field public final synthetic i:Lae/b2$a;
+.field public final synthetic h:Lzd/w1$a;
 
-.field public final synthetic j:Landroid/view/View;
+.field public final synthetic i:Landroid/view/View;
 
-.field public final synthetic k:Ljava/lang/String;
+.field public final synthetic j:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment$a;Lae/a2;Lae/b2$a;Landroid/view/View;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment$a;Lzd/v1;Lzd/w1$a;Landroid/view/View;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->h:Lae/a2;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lzd/v1;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Lae/b2$a;
+    iput-object p3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->h:Lzd/w1$a;
 
-    iput-object p4, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iput-object p4, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
-    iput-object p5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->k:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Ljava/lang/String;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -70,30 +70,30 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->h:Lae/a2;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lzd/v1;
 
-    check-cast p1, Lad/b;
+    check-cast p1, Lzc/b;
 
     .line 3
-    iget-object p1, p1, Lad/b;->b:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object p1, p1, Lzc/b;->b:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 4
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->f()Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 5
-    iget-object v0, p2, Lae/s;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p2, Lzd/p;->f:Landroidx/fragment/app/Fragment;
 
     .line 6
     check-cast v0, Lcom/supercell/id/ui/game/GameFragment;
 
     .line 7
-    iget-object v0, v0, Lcom/supercell/id/ui/game/GameFragment;->p0:Lbe/n0;
+    iget-object v0, v0, Lcom/supercell/id/ui/game/GameFragment;->o0:Lae/r0;
 
     if-eqz v0, :cond_0
 
@@ -101,7 +101,7 @@
     iget-object p2, p2, Lcom/supercell/id/ui/game/GameFragment$a;->g:Ljava/lang/String;
 
     .line 9
-    invoke-static {v0, p2, p1}, Lbd/d;->a(Lbe/n0;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, p2, p1}, Lad/d;->a(Lae/r0;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -118,7 +118,7 @@
     :goto_0
     sget-object p2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {p1, p2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p2}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -135,31 +135,31 @@
     .line 11
     new-instance p1, Ljava/lang/ref/WeakReference;
 
-    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Lae/b2$a;
+    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->h:Lzd/w1$a;
 
     invoke-direct {p1, v3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 12
-    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 13
-    iget-object v3, v3, Lcom/supercell/id/ui/game/GameFragment$a;->i:Lae/x2;
+    iget-object v3, v3, Lcom/supercell/id/ui/game/GameFragment$a;->i:Lzd/t2;
 
     const-string v4, "pass_"
 
     .line 14
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
     .line 15
-    iget-object v5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object v5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 16
     iget-object v5, v5, Lcom/supercell/id/ui/game/GameFragment$a;->g:Ljava/lang/String;
 
     .line 17
-    invoke-static {v4, v5, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5, v0}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -168,10 +168,10 @@
 
     invoke-direct {v4, p0, p1}, Lcom/supercell/id/ui/game/b;-><init>(Lcom/supercell/id/ui/game/GameFragment$a$c;Ljava/lang/ref/WeakReference;)V
 
-    invoke-virtual {v3, v0, v4}, Lae/x2;->a(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v3, v0, v4}, Lzd/t2;->a(Ljava/lang/String;Lhf/l;)V
 
     .line 19
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->friendPlayingNameLabel:I
 
@@ -181,16 +181,16 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v2, Lcom/supercell/id/ui/game/c;->g:Lcom/supercell/id/ui/game/c;
+    sget-object v2, Lcom/supercell/id/ui/game/c;->f:Lcom/supercell/id/ui/game/c;
 
     const-string v3, "account_donate_friend_pending_donate"
 
-    invoke-static {p1, v3, v2}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {p1, v3, v2}, Ltd/e0;->g(Landroid/widget/TextView;Ljava/lang/String;Lhf/p;)V
 
     .line 20
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -206,14 +206,18 @@
 
     sget v2, Lcom/supercell/id/R$color;->text_gold:I
 
-    invoke-static {v0, v2}, Lv/a;->b(Landroid/content/Context;I)I
+    sget-object v3, Lv/a;->a:Ljava/lang/Object;
+
+    .line 21
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getColor(I)I
 
     move-result v0
 
+    .line 22
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 21
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    .line 23
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->gameNameContainer:I
 
@@ -223,58 +227,58 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     goto/16 :goto_1
 
-    .line 22
+    .line 24
     :cond_1
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->k:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
-    .line 23
+    .line 25
     new-instance p1, Ljava/lang/ref/WeakReference;
 
-    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Lae/b2$a;
+    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->h:Lzd/w1$a;
 
     invoke-direct {p1, v3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 24
-    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    .line 26
+    iget-object v3, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
-    .line 25
-    iget-object v3, v3, Lcom/supercell/id/ui/game/GameFragment$a;->i:Lae/x2;
+    .line 27
+    iget-object v3, v3, Lcom/supercell/id/ui/game/GameFragment$a;->i:Lzd/t2;
 
     const-string v4, "AppIcon_"
 
-    .line 26
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 28
+    invoke-static {v4}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 27
-    iget-object v5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->g:Lcom/supercell/id/ui/game/GameFragment$a;
+    .line 29
+    iget-object v5, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->f:Lcom/supercell/id/ui/game/GameFragment$a;
 
-    .line 28
+    .line 30
     iget-object v5, v5, Lcom/supercell/id/ui/game/GameFragment$a;->g:Ljava/lang/String;
 
-    .line 29
-    invoke-static {v4, v5, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 31
+    invoke-static {v4, v5, v0}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 30
+    .line 32
     new-instance v4, Lcom/supercell/id/ui/game/d;
 
     invoke-direct {v4, p0, p1}, Lcom/supercell/id/ui/game/d;-><init>(Lcom/supercell/id/ui/game/GameFragment$a$c;Ljava/lang/ref/WeakReference;)V
 
-    invoke-virtual {v3, v0, v4}, Lae/x2;->a(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v3, v0, v4}, Lzd/t2;->a(Ljava/lang/String;Lhf/l;)V
 
-    .line 31
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    .line 33
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->friendPlayingNameLabel:I
 
@@ -284,15 +288,15 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
-    sget-object v3, Lud/d0;->a:Ljava/util/Map;
+    .line 34
+    sget-object v3, Ltd/e0;->a:Ljava/util/Map;
 
     invoke-interface {v3, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    .line 35
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -300,14 +304,14 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 34
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    .line 36
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +319,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -323,14 +327,18 @@
 
     sget v2, Lcom/supercell/id/R$color;->gray60:I
 
-    invoke-static {v0, v2}, Lv/a;->b(Landroid/content/Context;I)I
+    sget-object v3, Lv/a;->a:Ljava/lang/Object;
+
+    .line 37
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getColor(I)I
 
     move-result v0
 
+    .line 38
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 35
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    .line 39
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->gameNameContainer:I
 
@@ -340,15 +348,15 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 36
+    .line 40
     :cond_2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->j:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$c;->i:Landroid/view/View;
 
     sget p2, Lcom/supercell/id/R$id;->gameNameContainer:I
 
@@ -358,15 +366,15 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 p2, 0x8
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 37
+    .line 41
     :goto_1
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

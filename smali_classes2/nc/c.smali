@@ -1,209 +1,1056 @@
 .class public final Lnc/c;
-.super Ljava/util/LinkedHashMap;
-.source "JSONObject.java"
-
-# interfaces
-.implements Lnc/b;
-.implements Lnc/d;
+.super Ljava/lang/Object;
+.source "Yylex.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/util/LinkedHashMap<",
-        "Ljava/lang/String;",
-        "Ljava/lang/Object;",
-        ">;",
-        "Lnc/b;",
-        "Lnc/d;"
-    }
-.end annotation
+# static fields
+.field public static final l:[I
+
+.field public static final m:[C
+
+.field public static final n:[I
+
+.field public static final o:[I
+
+.field public static final p:[I
+
+.field public static final q:[Ljava/lang/String;
+
+.field public static final r:[I
+
+
+# instance fields
+.field public a:Ljava/io/Reader;
+
+.field public b:I
+
+.field public c:I
+
+.field public d:[C
+
+.field public e:I
+
+.field public f:I
+
+.field public g:I
+
+.field public h:I
+
+.field public i:I
+
+.field public j:Z
+
+.field public k:Ljava/lang/StringBuffer;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
-    invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    .line 1
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lnc/c;->l:[I
+
+    .line 2
+    invoke-static {}, Lnc/c;->d()[C
+
+    move-result-object v0
+
+    sput-object v0, Lnc/c;->m:[C
+
+    .line 3
+    invoke-static {}, Lnc/c;->b()[I
+
+    move-result-object v0
+
+    sput-object v0, Lnc/c;->n:[I
+
+    .line 4
+    invoke-static {}, Lnc/c;->e()[I
+
+    move-result-object v0
+
+    sput-object v0, Lnc/c;->o:[I
+
+    const/16 v0, 0x2a3
+
+    new-array v0, v0, [I
+
+    .line 5
+    fill-array-data v0, :array_1
+
+    sput-object v0, Lnc/c;->p:[I
+
+    const-string v0, "Unkown internal scanner error"
+
+    const-string v1, "Error: could not match input"
+
+    const-string v2, "Error: pushback value was too large"
+
+    .line 6
+    filled-new-array {v0, v1, v2}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lnc/c;->q:[Ljava/lang/String;
+
+    .line 7
+    invoke-static {}, Lnc/c;->c()[I
+
+    move-result-object v0
+
+    sput-object v0, Lnc/c;->r:[I
+
+    return-void
+
+    :array_0
+    .array-data 4
+        0x0
+        0x0
+        0x1
+        0x1
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x2
+        0x2
+        0x3
+        0x4
+        0x2
+        0x2
+        0x2
+        0x5
+        0x2
+        0x6
+        0x2
+        0x2
+        0x7
+        0x8
+        0x2
+        0x9
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0xa
+        0xb
+        0xc
+        0xd
+        0xe
+        0xf
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x11
+        0x12
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x4
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x4
+        0x13
+        0x14
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x14
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x5
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x15
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x16
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x17
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        -0x1
+        -0x1
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x18
+        0x19
+        0x1a
+        0x1b
+        0x1c
+        0x1d
+        0x1e
+        0x1f
+        0x20
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x21
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x22
+        0x23
+        -0x1
+        -0x1
+        0x22
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x24
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x25
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x26
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x27
+        -0x1
+        0x27
+        -0x1
+        0x27
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x27
+        0x27
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x27
+        0x27
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x21
+        -0x1
+        0x14
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x14
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x23
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x26
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x28
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x29
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2a
+        -0x1
+        0x2a
+        -0x1
+        0x2a
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2a
+        0x2a
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2a
+        0x2a
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2b
+        -0x1
+        0x2b
+        -0x1
+        0x2b
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2b
+        0x2b
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2b
+        0x2b
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2c
+        -0x1
+        0x2c
+        -0x1
+        0x2c
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2c
+        0x2c
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        0x2c
+        0x2c
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+        -0x1
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lnc/c;->c:I
+
+    const/16 v0, 0x4000
+
+    new-array v0, v0, [C
+
+    .line 3
+    iput-object v0, p0, Lnc/c;->d:[C
+
+    .line 4
+    new-instance v0, Ljava/lang/StringBuffer;
+
+    invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
+
+    iput-object v0, p0, Lnc/c;->k:Ljava/lang/StringBuffer;
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lnc/c;->a:Ljava/io/Reader;
 
     return-void
 .end method
 
-.method public static a(Ljava/util/Map;Ljava/io/Writer;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;",
-            "Ljava/io/Writer;",
-            ")V"
-        }
-    .end annotation
+.method public static b()[I
+    .locals 7
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    const/16 v0, 0x2d
 
-    if-nez p0, :cond_0
+    new-array v0, v0, [I
 
-    const-string p0, "null"
+    const/16 v1, 0x42
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    add-int/lit8 v4, v2, 0x1
+
+    const-string v5, "\u0002\u0000\u0002\u0001\u0001\u0002\u0001\u0003\u0001\u0004\u0003\u0001\u0001\u0005\u0001\u0006\u0001\u0007\u0001\u0008\u0001\t\u0001\n\u0001\u000b\u0001\u000c\u0001\r\u0005\u0000\u0001\u000c\u0001\u000e\u0001\u000f\u0001\u0010\u0001\u0011\u0001\u0012\u0001\u0013\u0001\u0014\u0001\u0000\u0001\u0015\u0001\u0000\u0001\u0015\u0004\u0000\u0001\u0016\u0001\u0017\u0002\u0000\u0001\u0018"
 
     .line 1
-    invoke-virtual {p1, p0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    invoke-virtual {v5, v2}, Ljava/lang/String;->charAt(I)C
 
-    return-void
+    move-result v2
 
-    :cond_0
-    const/4 v0, 0x1
+    add-int/lit8 v6, v4, 0x1
 
     .line 2
-    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    invoke-virtual {v5, v4}, Ljava/lang/String;->charAt(I)C
 
-    move-result-object p0
+    move-result v4
 
-    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    const/16 v1, 0x7b
+    :cond_0
+    add-int/lit8 v5, v3, 0x1
 
     .line 3
-    invoke-virtual {p1, v1}, Ljava/io/Writer;->write(I)V
+    aput v4, v0, v3
 
-    .line 4
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    add-int/lit8 v2, v2, -0x1
 
-    move-result v1
+    move v3, v5
 
-    if-eqz v1, :cond_2
+    if-gtz v2, :cond_0
 
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    const/16 v1, 0x2c
-
-    .line 5
-    invoke-virtual {p1, v1}, Ljava/io/Writer;->write(I)V
-
-    .line 6
-    :goto_1
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
-
-    const/16 v2, 0x22
-
-    .line 7
-    invoke-virtual {p1, v2}, Ljava/io/Writer;->write(I)V
-
-    .line 8
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 9
-    invoke-static {v3}, Lnc/e;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 10
-    invoke-virtual {p1, v3}, Ljava/io/Writer;->write(Ljava/lang/String;)V
-
-    .line 11
-    invoke-virtual {p1, v2}, Ljava/io/Writer;->write(I)V
-
-    const/16 v2, 0x3a
-
-    .line 12
-    invoke-virtual {p1, v2}, Ljava/io/Writer;->write(I)V
-
-    .line 13
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-static {v1, p1}, Lnc/e;->c(Ljava/lang/Object;Ljava/io/Writer;)V
+    move v2, v6
 
     goto :goto_0
 
-    :cond_2
-    const/16 p0, 0x7d
+    :cond_1
+    return-object v0
+.end method
 
-    .line 14
-    invoke-virtual {p1, p0}, Ljava/io/Writer;->write(I)V
+.method public static c()[I
+    .locals 7
 
-    return-void
+    const/16 v0, 0x2d
+
+    new-array v0, v0, [I
+
+    const/16 v1, 0x24
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    add-int/lit8 v4, v2, 0x1
+
+    const-string v5, "\u0002\u0000\u0001\t\u0003\u0001\u0001\t\u0003\u0001\u0006\t\u0002\u0001\u0001\t\u0005\u0000\u0008\t\u0001\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0004\u0000\u0002\t\u0002\u0000\u0001\t"
+
+    .line 1
+    invoke-virtual {v5, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v2
+
+    add-int/lit8 v6, v4, 0x1
+
+    .line 2
+    invoke-virtual {v5, v4}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    :cond_0
+    add-int/lit8 v5, v3, 0x1
+
+    .line 3
+    aput v4, v0, v3
+
+    add-int/lit8 v2, v2, -0x1
+
+    move v3, v5
+
+    if-gtz v2, :cond_0
+
+    move v2, v6
+
+    goto :goto_0
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public static d()[C
+    .locals 6
+
+    const/high16 v0, 0x10000
+
+    new-array v0, v0, [C
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    :goto_0
+    const/16 v3, 0x5a
+
+    if-ge v1, v3, :cond_1
+
+    add-int/lit8 v3, v1, 0x1
+
+    const-string v4, "\t\u0000\u0001\u0007\u0001\u0007\u0002\u0000\u0001\u0007\u0012\u0000\u0001\u0007\u0001\u0000\u0001\t\u0008\u0000\u0001\u0006\u0001\u0019\u0001\u0002\u0001\u0004\u0001\n\n\u0003\u0001\u001a\u0006\u0000\u0004\u0001\u0001\u0005\u0001\u0001\u0014\u0000\u0001\u0017\u0001\u0008\u0001\u0018\u0003\u0000\u0001\u0012\u0001\u000b\u0002\u0001\u0001\u0011\u0001\u000c\u0005\u0000\u0001\u0013\u0001\u0000\u0001\r\u0003\u0000\u0001\u000e\u0001\u0014\u0001\u000f\u0001\u0010\u0005\u0000\u0001\u0015\u0001\u0000\u0001\u0016\uff82\u0000"
+
+    .line 1
+    invoke-virtual {v4, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v1
+
+    add-int/lit8 v5, v3, 0x1
+
+    .line 2
+    invoke-virtual {v4, v3}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    :cond_0
+    add-int/lit8 v4, v2, 0x1
+
+    .line 3
+    aput-char v3, v0, v2
+
+    add-int/lit8 v1, v1, -0x1
+
+    move v2, v4
+
+    if-gtz v1, :cond_0
+
+    move v1, v5
+
+    goto :goto_0
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public static e()[I
+    .locals 8
+
+    const/16 v0, 0x2d
+
+    new-array v0, v0, [I
+
+    const/16 v1, 0x5a
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v2, v1, :cond_0
+
+    add-int/lit8 v4, v2, 0x1
+
+    const-string v5, "\u0000\u0000\u0000\u001b\u00006\u0000Q\u0000l\u0000\u0087\u00006\u0000\u00a2\u0000\u00bd\u0000\u00d8\u00006\u00006\u00006\u00006\u00006\u00006\u0000\u00f3\u0000\u010e\u00006\u0000\u0129\u0000\u0144\u0000\u015f\u0000\u017a\u0000\u0195\u00006\u00006\u00006\u00006\u00006\u00006\u00006\u00006\u0000\u01b0\u0000\u01cb\u0000\u01e6\u0000\u01e6\u0000\u0201\u0000\u021c\u0000\u0237\u0000\u0252\u00006\u00006\u0000\u026d\u0000\u0288\u00006"
+
+    .line 1
+    invoke-virtual {v5, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v2
+
+    shl-int/lit8 v2, v2, 0x10
+
+    add-int/lit8 v6, v3, 0x1
+
+    add-int/lit8 v7, v4, 0x1
+
+    .line 2
+    invoke-virtual {v5, v4}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    or-int/2addr v2, v4
+
+    aput v2, v0, v3
+
+    move v3, v6
+
+    move v2, v7
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final toJSONString()Ljava/lang/String;
-    .locals 2
+.method public final a()Ljava/lang/String;
+    .locals 4
 
-    .line 1
-    new-instance v0, Ljava/io/StringWriter;
+    new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
+    iget-object v1, p0, Lnc/c;->d:[C
 
-    .line 2
-    :try_start_0
-    invoke-static {p0, v0}, Lnc/c;->a(Ljava/util/Map;Ljava/io/Writer;)V
+    iget v2, p0, Lnc/c;->g:I
 
-    .line 3
-    invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
+    iget v3, p0, Lnc/c;->e:I
 
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    sub-int/2addr v3, v2
+
+    invoke-direct {v0, v1, v2, v3}, Ljava/lang/String;-><init>([CII)V
 
     return-object v0
-
-    :catch_0
-    move-exception v0
-
-    .line 4
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    invoke-virtual {p0}, Lnc/c;->toJSONString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final writeJSONString(Ljava/io/Writer;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    invoke-static {p0, p1}, Lnc/c;->a(Ljava/util/Map;Ljava/io/Writer;)V
-
-    return-void
 .end method

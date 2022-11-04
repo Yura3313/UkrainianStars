@@ -56,7 +56,7 @@
     const-string p1, "search_results"
 
     .line 2
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 

@@ -1,42 +1,49 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;
 .super Ljava/lang/Object;
-.source "Comparisons.kt"
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lzd/v1;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
+    name = "m"
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+# static fields
+.field public static final a:I
+
+.field public static final b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Ljava/util/Comparator;
+    .line 1
+    new-instance v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;
+
+    invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;-><init>()V
+
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$layout;->list_item_space:I
+
+    sput v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,47 +52,42 @@
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final b(Lzd/v1;)Z
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Ljava/util/Comparator;
+    const-string v0, "other"
 
-    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
+    const/4 p1, 0x1
 
-    const-string v1, ""
+    return p1
+.end method
 
-    if-eqz p1, :cond_0
+.method public final d()I
+    .locals 1
+
+    sget v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->a:I
+
+    return v0
+.end method
+
+.method public final e(Lzd/v1;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_0
-    move-object p1, v1
+    const/4 p1, 0x0
 
-    .line 3
     :goto_0
-    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
-
-    .line 4
-    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    move-object v1, p2
-
-    .line 5
-    :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result p1
-
     return p1
 .end method

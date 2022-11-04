@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:insetSystemWindow="right|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/illustrationImageView" srcKey="change_email_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
+        <include layout="@layout/fragment_change_email_enter_pin_page_content" />
+    </LinearLayout>
+</ScrollView>

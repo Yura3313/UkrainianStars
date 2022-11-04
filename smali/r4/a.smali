@@ -1,189 +1,147 @@
 .class public final Lr4/a;
 .super Ljava/lang/Object;
-.source "ShadowRenderer.java"
+.source "MaterialThemeOverlay.java"
 
 
 # static fields
-.field public static final i:[I
+.field public static final a:[I
 
-.field public static final j:[F
-
-.field public static final k:[I
-
-.field public static final l:[F
-
-
-# instance fields
-.field public final a:Landroid/graphics/Paint;
-
-.field public final b:Landroid/graphics/Paint;
-
-.field public final c:Landroid/graphics/Paint;
-
-.field public d:I
-
-.field public e:I
-
-.field public f:I
-
-.field public final g:Landroid/graphics/Path;
-
-.field public h:Landroid/graphics/Paint;
+.field public static final b:[I
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x3
+    const/4 v0, 0x2
 
-    new-array v1, v0, [I
+    new-array v0, v0, [I
+
+    const/high16 v1, 0x1010000
+
+    const/4 v2, 0x0
+
+    aput v1, v0, v2
 
     .line 1
-    sput-object v1, Lr4/a;->i:[I
+    sget v1, Lcom/google/android/material/R$attr;->theme:I
 
-    new-array v0, v0, [F
+    const/4 v3, 0x1
+
+    aput v1, v0, v3
+
+    sput-object v0, Lr4/a;->a:[I
+
+    new-array v0, v3, [I
 
     .line 2
-    fill-array-data v0, :array_0
+    sget v1, Lcom/google/android/material/R$attr;->materialThemeOverlay:I
 
-    sput-object v0, Lr4/a;->j:[F
+    aput v1, v0, v2
 
-    const/4 v0, 0x4
-
-    new-array v1, v0, [I
-
-    .line 3
-    sput-object v1, Lr4/a;->k:[I
-
-    new-array v0, v0, [F
-
-    .line 4
-    fill-array-data v0, :array_1
-
-    sput-object v0, Lr4/a;->l:[F
+    sput-object v0, Lr4/a;->b:[I
 
     return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x0
-        0x3f000000    # 0.5f
-        0x3f800000    # 1.0f
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x0
-        0x0
-        0x3f000000    # 0.5f
-        0x3f800000    # 1.0f
-    .end array-data
 .end method
 
-.method public constructor <init>()V
+.method public static a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lr4/a;->b:[I
 
     .line 2
-    new-instance v0, Landroid/graphics/Path;
+    invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+    move-result-object p2
 
-    iput-object v0, p0, Lr4/a;->g:Landroid/graphics/Path;
+    const/4 p3, 0x0
 
     .line 3
-    new-instance v0, Landroid/graphics/Paint;
+    invoke-virtual {p2, p3, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
-    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
-
-    iput-object v0, p0, Lr4/a;->h:Landroid/graphics/Paint;
+    move-result v0
 
     .line 4
-    new-instance v0, Landroid/graphics/Paint;
-
-    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
-
-    iput-object v0, p0, Lr4/a;->a:Landroid/graphics/Paint;
-
-    const/high16 v0, -0x1000000
+    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 5
-    invoke-virtual {p0, v0}, Lr4/a;->a(I)V
+    instance-of p2, p0, Lf/c;
+
+    const/4 v1, 0x1
+
+    if-eqz p2, :cond_0
+
+    move-object p2, p0
+
+    check-cast p2, Lf/c;
 
     .line 6
-    iget-object v0, p0, Lr4/a;->h:Landroid/graphics/Paint;
+    iget p2, p2, Lf/c;->a:I
 
-    const/4 v1, 0x0
+    if-ne p2, v0, :cond_0
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
+    move p2, v1
+
+    goto :goto_0
+
+    :cond_0
+    move p2, p3
+
+    :goto_0
+    if-eqz v0, :cond_4
+
+    if-eqz p2, :cond_1
+
+    goto :goto_2
 
     .line 7
-    new-instance v0, Landroid/graphics/Paint;
+    :cond_1
+    new-instance p2, Lf/c;
 
-    const/4 v1, 0x4
-
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
-
-    iput-object v0, p0, Lr4/a;->b:Landroid/graphics/Paint;
+    invoke-direct {p2, p0, v0}, Lf/c;-><init>(Landroid/content/Context;I)V
 
     .line 8
-    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+    sget-object v0, Lr4/a;->a:[I
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-virtual {p0, p1, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object p0
 
     .line 9
-    new-instance v1, Landroid/graphics/Paint;
-
-    invoke-direct {v1, v0}, Landroid/graphics/Paint;-><init>(Landroid/graphics/Paint;)V
-
-    iput-object v1, p0, Lr4/a;->c:Landroid/graphics/Paint;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(I)V
-    .locals 1
-
-    const/16 v0, 0x44
-
-    .line 1
-    invoke-static {p1, v0}, Lx/b;->d(II)I
-
-    move-result v0
-
-    iput v0, p0, Lr4/a;->d:I
-
-    const/16 v0, 0x14
-
-    .line 2
-    invoke-static {p1, v0}, Lx/b;->d(II)I
-
-    move-result v0
-
-    iput v0, p0, Lr4/a;->e:I
-
-    const/4 v0, 0x0
-
-    .line 3
-    invoke-static {p1, v0}, Lx/b;->d(II)I
+    invoke-virtual {p0, p3, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p1
 
-    iput p1, p0, Lr4/a;->f:I
+    .line 10
+    invoke-virtual {p0, v1, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
-    .line 4
-    iget-object p1, p0, Lr4/a;->a:Landroid/graphics/Paint;
+    move-result p3
 
-    iget v0, p0, Lr4/a;->d:I
+    .line 11
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
+    if-eqz p1, :cond_2
 
-    return-void
+    goto :goto_1
+
+    :cond_2
+    move p1, p3
+
+    :goto_1
+    if-eqz p1, :cond_3
+
+    .line 12
+    invoke-virtual {p2}, Lf/c;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
+
+    :cond_3
+    return-object p2
+
+    :cond_4
+    :goto_2
+    return-object p0
 .end method

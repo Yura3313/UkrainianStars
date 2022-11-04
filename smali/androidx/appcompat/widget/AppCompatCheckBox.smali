@@ -2,17 +2,13 @@
 .super Landroid/widget/CheckBox;
 .source "AppCompatCheckBox.java"
 
-# interfaces
-.implements Landroidx/core/widget/j;
-.implements Lf0/q;
-
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/e;
+.field public final f:Landroidx/appcompat/widget/e;
 
-.field public final h:Landroidx/appcompat/widget/d;
+.field public final g:Landroidx/appcompat/widget/d;
 
-.field public final i:Landroidx/appcompat/widget/m;
+.field public final h:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -33,8 +29,6 @@
     .line 2
     invoke-static {p1}, Landroidx/appcompat/widget/e0;->a(Landroid/content/Context;)Landroid/content/Context;
 
-    move-result-object p1
-
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
@@ -49,7 +43,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/widget/CompoundButton;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->b(Landroid/util/AttributeSet;I)V
@@ -59,7 +53,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/d;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     .line 7
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/d;->d(Landroid/util/AttributeSet;I)V
@@ -69,7 +63,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->i:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/m;
 
     .line 9
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
@@ -86,7 +80,7 @@
     invoke-super {p0}, Landroid/widget/CompoundButton;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -95,7 +89,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->i:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -115,12 +109,12 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return v0
@@ -130,7 +124,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -152,7 +146,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -174,7 +168,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -194,7 +188,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -217,7 +211,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz p1, :cond_0
 
@@ -235,7 +229,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -254,7 +248,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -270,7 +264,7 @@
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_1
 
@@ -304,7 +298,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -319,7 +313,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -334,7 +328,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -357,7 +351,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 

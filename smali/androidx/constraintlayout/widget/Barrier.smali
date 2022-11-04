@@ -4,11 +4,11 @@
 
 
 # instance fields
+.field public n:I
+
 .field public o:I
 
-.field public p:I
-
-.field public q:Lq/a;
+.field public p:Lq/a;
 
 
 # direct methods
@@ -60,7 +60,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     .line 2
     iget v0, v0, Lq/a;->s0:I
@@ -71,7 +71,7 @@
 .method public getType()I
     .locals 1
 
-    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
+    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->n:I
 
     return v0
 .end method
@@ -87,7 +87,7 @@
 
     invoke-direct {v0}, Lq/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iput-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     if-eqz p1, :cond_4
 
@@ -109,7 +109,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_3
@@ -140,7 +140,7 @@
     if-ne v3, v4, :cond_1
 
     .line 9
-    iget-object v4, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v4, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     const/4 v5, 0x1
 
@@ -165,7 +165,7 @@
     move-result v3
 
     .line 13
-    iget-object v4, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v4, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     .line 14
     iput v3, v4, Lq/a;->s0:I
@@ -182,12 +182,12 @@
 
     .line 16
     :cond_4
-    iget-object p1, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object p1, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
-    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->j:Lq/j;
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->i:Lq/j;
 
     .line 17
-    invoke-virtual {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->r()V
+    invoke-virtual {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->q()V
 
     return-void
 .end method
@@ -233,7 +233,7 @@
 
     iget p4, p4, Landroidx/constraintlayout/widget/a$b;->b0:I
 
-    invoke-virtual {p0, p3, p4, p2}, Landroidx/constraintlayout/widget/Barrier;->s(Lq/e;IZ)V
+    invoke-virtual {p0, p3, p4, p2}, Landroidx/constraintlayout/widget/Barrier;->r(Lq/e;IZ)V
 
     .line 8
     iget-object p1, p1, Landroidx/constraintlayout/widget/a$a;->d:Landroidx/constraintlayout/widget/a$b;
@@ -256,18 +256,18 @@
 .method public final n(Lq/e;Z)V
     .locals 1
 
-    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
+    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->n:I
 
-    invoke-virtual {p0, p1, v0, p2}, Landroidx/constraintlayout/widget/Barrier;->s(Lq/e;IZ)V
+    invoke-virtual {p0, p1, v0, p2}, Landroidx/constraintlayout/widget/Barrier;->r(Lq/e;IZ)V
 
     return-void
 .end method
 
-.method public final s(Lq/e;IZ)V
+.method public final r(Lq/e;IZ)V
     .locals 3
 
     .line 1
-    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     const/4 p2, 0x1
 
@@ -280,12 +280,12 @@
     if-eqz p3, :cond_1
 
     .line 2
-    iget p3, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
+    iget p3, p0, Landroidx/constraintlayout/widget/Barrier;->n:I
 
     if-ne p3, v2, :cond_0
 
     .line 3
-    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     goto :goto_0
 
@@ -293,18 +293,18 @@
     if-ne p3, v1, :cond_3
 
     .line 4
-    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     goto :goto_0
 
     .line 5
     :cond_1
-    iget p3, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
+    iget p3, p0, Landroidx/constraintlayout/widget/Barrier;->n:I
 
     if-ne p3, v2, :cond_2
 
     .line 6
-    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     goto :goto_0
 
@@ -312,7 +312,7 @@
     if-ne p3, v1, :cond_3
 
     .line 7
-    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iput p2, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     .line 8
     :cond_3
@@ -325,7 +325,7 @@
     check-cast p1, Lq/a;
 
     .line 10
-    iget p2, p0, Landroidx/constraintlayout/widget/Barrier;->p:I
+    iget p2, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
 
     .line 11
     iput p2, p1, Lq/a;->q0:I
@@ -338,7 +338,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     .line 2
     iput-boolean p1, v0, Lq/a;->r0:Z
@@ -362,7 +362,7 @@
 
     int-to-float p1, p1
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     const/high16 v0, 0x3f000000    # 0.5f
 
@@ -371,7 +371,7 @@
     float-to-int p1, p1
 
     .line 2
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     .line 3
     iput p1, v0, Lq/a;->s0:I
@@ -383,7 +383,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->q:Lq/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->p:Lq/a;
 
     .line 2
     iput p1, v0, Lq/a;->s0:I
@@ -394,7 +394,7 @@
 .method public setType(I)V
     .locals 0
 
-    iput p1, p0, Landroidx/constraintlayout/widget/Barrier;->o:I
+    iput p1, p0, Landroidx/constraintlayout/widget/Barrier;->n:I
 
     return-void
 .end method

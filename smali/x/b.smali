@@ -1,253 +1,237 @@
 .class public final Lx/b;
 .super Ljava/lang/Object;
-.source "ColorUtils.java"
+.source "Insets.java"
+
+
+# static fields
+.field public static final e:Lx/b;
+
+
+# instance fields
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    new-instance v0, Ljava/lang/ThreadLocal;
+    new-instance v0, Lx/b;
 
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1, v1, v1, v1}, Lx/b;-><init>(IIII)V
+
+    sput-object v0, Lx/b;->e:Lx/b;
 
     return-void
 .end method
 
-.method public static a(F)I
-    .locals 7
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    sub-float/2addr v0, p0
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-static {v1}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    mul-float v2, v2, v0
-
-    const/high16 v3, -0x1000000
-
-    invoke-static {v3}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v4
-
-    int-to-float v4, v4
-
-    mul-float v4, v4, p0
-
-    add-float/2addr v4, v2
-
-    .line 2
-    invoke-static {v1}, Landroid/graphics/Color;->red(I)I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    mul-float v2, v2, v0
-
-    invoke-static {v3}, Landroid/graphics/Color;->red(I)I
-
-    move-result v5
-
-    int-to-float v5, v5
-
-    mul-float v5, v5, p0
-
-    add-float/2addr v5, v2
-
-    .line 3
-    invoke-static {v1}, Landroid/graphics/Color;->green(I)I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    mul-float v2, v2, v0
-
-    invoke-static {v3}, Landroid/graphics/Color;->green(I)I
-
-    move-result v6
-
-    int-to-float v6, v6
-
-    mul-float v6, v6, p0
-
-    add-float/2addr v6, v2
-
-    .line 4
-    invoke-static {v1}, Landroid/graphics/Color;->blue(I)I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    mul-float v1, v1, v0
-
-    invoke-static {v3}, Landroid/graphics/Color;->blue(I)I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    mul-float v0, v0, p0
-
-    add-float/2addr v0, v1
-
-    float-to-int p0, v4
-
-    float-to-int v1, v5
-
-    float-to-int v2, v6
-
-    float-to-int v0, v0
-
-    .line 5
-    invoke-static {p0, v1, v2, v0}, Landroid/graphics/Color;->argb(IIII)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static b(II)I
-    .locals 6
-
-    .line 1
-    invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v0
-
-    .line 2
-    invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v1
-
-    rsub-int v2, v0, 0xff
-
-    rsub-int v3, v1, 0xff
-
-    mul-int v3, v3, v2
-
-    .line 3
-    div-int/lit16 v3, v3, 0xff
-
-    rsub-int v2, v3, 0xff
-
-    .line 4
-    invoke-static {p0}, Landroid/graphics/Color;->red(I)I
-
-    move-result v3
-
-    .line 5
-    invoke-static {p1}, Landroid/graphics/Color;->red(I)I
-
-    move-result v4
-
-    .line 6
-    invoke-static {v3, v1, v4, v0, v2}, Lx/b;->c(IIIII)I
-
-    move-result v3
-
-    .line 7
-    invoke-static {p0}, Landroid/graphics/Color;->green(I)I
-
-    move-result v4
-
-    .line 8
-    invoke-static {p1}, Landroid/graphics/Color;->green(I)I
-
-    move-result v5
-
-    .line 9
-    invoke-static {v4, v1, v5, v0, v2}, Lx/b;->c(IIIII)I
-
-    move-result v4
-
-    .line 10
-    invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
-
-    move-result p0
-
-    .line 11
-    invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
-
-    move-result p1
-
-    .line 12
-    invoke-static {p0, v1, p1, v0, v2}, Lx/b;->c(IIIII)I
-
-    move-result p0
-
-    .line 13
-    invoke-static {v2, v3, v4, p0}, Landroid/graphics/Color;->argb(IIII)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static c(IIIII)I
+.method public constructor <init>(IIII)V
     .locals 0
 
-    if-nez p4, :cond_0
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p0, 0x0
+    .line 2
+    iput p1, p0, Lx/b;->a:I
 
-    return p0
+    .line 3
+    iput p2, p0, Lx/b;->b:I
 
-    :cond_0
-    mul-int/lit16 p0, p0, 0xff
+    .line 4
+    iput p3, p0, Lx/b;->c:I
 
-    mul-int p0, p0, p1
+    .line 5
+    iput p4, p0, Lx/b;->d:I
 
-    mul-int p2, p2, p3
-
-    rsub-int p1, p1, 0xff
-
-    mul-int p1, p1, p2
-
-    add-int/2addr p1, p0
-
-    mul-int/lit16 p4, p4, 0xff
-
-    div-int/2addr p1, p4
-
-    return p1
+    return-void
 .end method
 
-.method public static d(II)I
+.method public static a(IIII)Lx/b;
     .locals 1
 
-    if-ltz p1, :cond_0
+    if-nez p0, :cond_0
 
-    const/16 v0, 0xff
+    if-nez p1, :cond_0
 
-    if-gt p1, v0, :cond_0
+    if-nez p2, :cond_0
 
-    const v0, 0xffffff
+    if-nez p3, :cond_0
 
-    and-int/2addr p0, v0
+    .line 1
+    sget-object p0, Lx/b;->e:Lx/b;
 
-    shl-int/lit8 p1, p1, 0x18
+    return-object p0
 
-    or-int/2addr p0, p1
+    .line 2
+    :cond_0
+    new-instance v0, Lx/b;
 
-    return p0
+    invoke-direct {v0, p0, p1, p2, p3}, Lx/b;-><init>(IIII)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
 
     :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    const/4 v1, 0x0
 
-    const-string p1, "alpha must be between 0 and 255."
+    if-eqz p1, :cond_6
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 1
+    const-class v2, Lx/b;
 
-    throw p0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_1
+
+    goto :goto_0
+
+    .line 2
+    :cond_1
+    check-cast p1, Lx/b;
+
+    .line 3
+    iget v2, p0, Lx/b;->d:I
+
+    iget v3, p1, Lx/b;->d:I
+
+    if-eq v2, v3, :cond_2
+
+    return v1
+
+    .line 4
+    :cond_2
+    iget v2, p0, Lx/b;->a:I
+
+    iget v3, p1, Lx/b;->a:I
+
+    if-eq v2, v3, :cond_3
+
+    return v1
+
+    .line 5
+    :cond_3
+    iget v2, p0, Lx/b;->c:I
+
+    iget v3, p1, Lx/b;->c:I
+
+    if-eq v2, v3, :cond_4
+
+    return v1
+
+    .line 6
+    :cond_4
+    iget v2, p0, Lx/b;->b:I
+
+    iget p1, p1, Lx/b;->b:I
+
+    if-eq v2, p1, :cond_5
+
+    return v1
+
+    :cond_5
+    return v0
+
+    :cond_6
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lx/b;->a:I
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 2
+    iget v1, p0, Lx/b;->b:I
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 3
+    iget v1, p0, Lx/b;->c:I
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 4
+    iget v1, p0, Lx/b;->d:I
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "Insets{left="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget v1, p0, Lx/b;->a:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", top="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lx/b;->b:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", right="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lx/b;->c:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", bottom="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lx/b;->d:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

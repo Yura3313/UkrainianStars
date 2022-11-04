@@ -1,79 +1,92 @@
-.class public final Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;
-.super Lse/i;
+.class public final synthetic Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;
+.super Lif/g;
 .source "PublicProfileFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x1019
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lcom/google/android/material/imageview/ShapeableImageView;",
-        "Lie/i;",
+        "Lif/g;",
+        "Lhf/l<",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/String;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
-    .locals 0
+.method public constructor <init>(Lzd/h2;)V
+    .locals 1
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    const/4 v0, 0x1
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0, p1}, Lif/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final getName()Ljava/lang/String;
+    .locals 1
 
-    .line 1
-    check-cast p1, Lcom/google/android/material/imageview/ShapeableImageView;
+    const-string v0, "getTitleKey"
 
-    .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    return-object v0
+.end method
 
-    sget v1, Lcom/supercell/id/R$id;->online_status_indicator:I
+.method public final getOwner()Lmf/d;
+    .locals 1
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->f1(I)Landroid/view/View;
+    const-class v0, Lzd/h2;
+
+    invoke-static {v0}, Lif/s;->a(Ljava/lang/Class;)Lmf/c;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/ImageView;
+    return-object v0
+.end method
 
-    if-eqz v0, :cond_0
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
 
-    const-string v1, "imageView"
+    const-string v0, "getTitleKey(I)Ljava/lang/String;"
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    return-object v0
+.end method
 
-    invoke-static {v0, p1}, Lae/v;->j(Landroid/view/View;Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    .line 2
+    iget-object v0, p0, Lif/b;->receiver:Ljava/lang/Object;
+
+    check-cast v0, Lzd/h2;
 
     .line 3
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-virtual {v0, p1}, Lzd/h2;->x(I)Ljava/lang/String;
+
+    move-result-object p1
 
     return-object p1
 .end method

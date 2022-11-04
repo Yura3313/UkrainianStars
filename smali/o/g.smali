@@ -41,22 +41,9 @@
 
     iget p2, p2, Lo/h$o;->a:I
 
-    if-ne p1, p2, :cond_0
+    invoke-static {p1, p2}, Ljava/lang/Integer;->compare(II)I
 
-    const/4 p1, 0x0
+    move-result p1
 
-    goto :goto_0
-
-    :cond_0
-    if-ge p1, p2, :cond_1
-
-    const/4 p1, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, 0x1
-
-    :goto_0
     return p1
 .end method

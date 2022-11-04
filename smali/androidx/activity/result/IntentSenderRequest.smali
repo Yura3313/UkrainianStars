@@ -13,12 +13,6 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/activity/result/IntentSenderRequest$b;
-    }
-.end annotation
-
 
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
@@ -33,13 +27,13 @@
 
 
 # instance fields
-.field public final g:Landroid/content/IntentSender;
+.field public final f:Landroid/content/IntentSender;
 
-.field public final h:Landroid/content/Intent;
+.field public final g:Landroid/content/Intent;
+
+.field public final h:I
 
 .field public final i:I
-
-.field public final j:I
 
 
 # direct methods
@@ -62,16 +56,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/IntentSender;
+    iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest;->f:Landroid/content/IntentSender;
 
     .line 3
-    iput-object p2, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/Intent;
+    iput-object p2, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/Intent;
 
     .line 4
-    iput p3, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
+    iput p3, p0, Landroidx/activity/result/IntentSenderRequest;->h:I
 
     .line 5
-    iput p4, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
+    iput p4, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
 
     return-void
 .end method
@@ -95,7 +89,7 @@
 
     check-cast v0, Landroid/content/IntentSender;
 
-    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/IntentSender;
+    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->f:Landroid/content/IntentSender;
 
     .line 8
     const-class v0, Landroid/content/Intent;
@@ -110,43 +104,27 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/Intent;
+    iput-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/Intent;
 
     .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
+    iput v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:I
 
     .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
+    iput p1, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/content/Intent;
-    .locals 1
-
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/Intent;
-
-    return-object v0
-.end method
-
-.method public final d()I
-    .locals 1
-
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
-
-    return v0
-.end method
-
 .method public final describeContents()I
     .locals 1
 
@@ -155,42 +133,26 @@
     return v0
 .end method
 
-.method public final j()I
-    .locals 1
-
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
-
-    return v0
-.end method
-
-.method public final l()Landroid/content/IntentSender;
-    .locals 1
-
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/IntentSender;
-
-    return-object v0
-.end method
-
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/IntentSender;
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->f:Landroid/content/IntentSender;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->h:Landroid/content/Intent;
+    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/Intent;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 3
-    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
+    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 4
-    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->j:I
+    iget p2, p0, Landroidx/activity/result/IntentSenderRequest;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

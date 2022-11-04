@@ -55,7 +55,7 @@
     check-cast p2, Landroid/graphics/PointF;
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget v0, p2, Landroid/graphics/PointF;->x:F

@@ -30,13 +30,13 @@
 .method public final onAttachedToWindow()V
     .locals 0
 
-    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     return-void
 .end method
 
 .method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 1
+    .locals 5
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -47,19 +47,71 @@
     move-result-object p1
 
     .line 3
-    new-instance v0, Lf/a;
+    sget-object v0, Landroidx/appcompat/R$styleable;->ActionBar:[I
 
-    invoke-direct {v0, p1}, Lf/a;-><init>(Landroid/content/Context;)V
+    sget v1, Landroidx/appcompat/R$attr;->actionBarStyle:I
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1, v2, v0, v1, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object v0
 
     .line 4
-    invoke-virtual {v0}, Lf/a;->b()I
+    sget v1, Landroidx/appcompat/R$styleable;->ActionBar_height:I
 
-    move-result p1
+    invoke-virtual {v0, v1, v3}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/a0;->setContentHeight(I)V
+    move-result v1
 
     .line 5
-    invoke-virtual {v0}, Lf/a;->a()I
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    .line 6
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v4, Landroidx/appcompat/R$bool;->abc_action_bar_embed_tabs:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    .line 7
+    sget v3, Landroidx/appcompat/R$dimen;->abc_action_bar_stacked_max_height:I
+
+    .line 8
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v2
+
+    .line 9
+    invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
+
+    .line 10
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 11
+    invoke-virtual {p0, v1}, Landroidx/appcompat/widget/a0;->setContentHeight(I)V
+
+    .line 12
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget v0, Landroidx/appcompat/R$dimen;->abc_action_bar_stacked_tab_max_width:I
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     return-void
 .end method
@@ -67,7 +119,7 @@
 .method public final onDetachedFromWindow()V
     .locals 0
 
-    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
     return-void
 .end method
@@ -88,10 +140,9 @@
     check-cast p2, Landroidx/appcompat/widget/a0$a;
 
     .line 2
-    invoke-virtual {p2}, Landroidx/appcompat/widget/a0$a;->a()Landroidx/appcompat/app/ActionBar$b;
+    iget-object p1, p2, Landroidx/appcompat/widget/a0$a;->f:Landroidx/appcompat/app/ActionBar$b;
 
-    move-result-object p1
-
+    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/app/ActionBar$b;->a()V
 
     return-void

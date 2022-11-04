@@ -60,7 +60,7 @@
 
 .field public final j:Landroid/content/Context;
 
-.field public final k:Landroidx/appcompat/widget/n$c;
+.field public final k:Landroidx/appcompat/widget/n$a;
 
 
 # direct methods
@@ -146,31 +146,17 @@
 
     invoke-direct {p1}, Landroidx/appcompat/widget/n$b;-><init>()V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$c;
+    iput-object p1, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$a;
 
     goto :goto_0
 
-    :cond_0
-    const/16 v0, 0x17
-
-    if-lt p1, v0, :cond_1
-
     .line 13
+    :cond_0
     new-instance p1, Landroidx/appcompat/widget/n$a;
 
     invoke-direct {p1}, Landroidx/appcompat/widget/n$a;-><init>()V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$c;
-
-    goto :goto_0
-
-    .line 14
-    :cond_1
-    new-instance p1, Landroidx/appcompat/widget/n$c;
-
-    invoke-direct {p1}, Landroidx/appcompat/widget/n$c;-><init>()V
-
-    iput-object p1, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$c;
+    iput-object p1, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$a;
 
     :goto_0
     return-void
@@ -289,12 +275,12 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_0
     if-nez v0, :cond_1
@@ -328,11 +314,11 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$c;
+    iget-object v0, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$a;
 
     iget-object v3, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroidx/appcompat/widget/n$c;->b(Landroid/widget/TextView;)Z
+    invoke-virtual {v0, v3}, Landroidx/appcompat/widget/n$c;->a(Landroid/widget/TextView;)Z
 
     move-result v0
 
@@ -488,7 +474,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v0, :cond_2
@@ -514,7 +500,7 @@
 
     move-result-object v4
 
-    invoke-interface {v1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_1
     add-int/lit8 v3, v3, 0x1
@@ -523,7 +509,7 @@
 
     .line 7
     :cond_2
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
@@ -533,7 +519,7 @@
 
     .line 8
     :cond_3
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result p1
 
@@ -544,7 +530,7 @@
     if-ge v2, p1, :cond_4
 
     .line 10
-    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -565,405 +551,318 @@
 .end method
 
 .method public final c(Landroid/graphics/RectF;)I
-    .locals 20
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
+    .locals 12
 
     .line 1
-    iget-object v2, v0, Landroidx/appcompat/widget/n;->f:[I
+    iget-object v0, p0, Landroidx/appcompat/widget/n;->f:[I
 
-    array-length v2, v2
+    array-length v0, v0
 
-    if-eqz v2, :cond_a
+    if-eqz v0, :cond_8
 
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
-    sub-int/2addr v2, v3
+    sub-int/2addr v0, v1
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    const/4 v5, 0x1
+    move v3, v1
 
-    const/4 v6, 0x0
+    move v4, v2
 
     :goto_0
-    if-gt v5, v2, :cond_9
+    if-gt v3, v0, :cond_7
 
-    add-int v6, v5, v2
+    add-int v4, v3, v0
 
     .line 2
-    div-int/lit8 v6, v6, 0x2
+    div-int/lit8 v4, v4, 0x2
 
     .line 3
-    iget-object v7, v0, Landroidx/appcompat/widget/n;->f:[I
+    iget-object v5, p0, Landroidx/appcompat/widget/n;->f:[I
 
-    aget v7, v7, v6
+    aget v5, v5, v4
 
     .line 4
-    iget-object v8, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v6, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-virtual {v8}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {v6}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
-    move-result-object v8
+    move-result-object v6
 
     .line 5
-    iget-object v9, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v7, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-virtual {v9}, Landroid/widget/TextView;->getTransformationMethod()Landroid/text/method/TransformationMethod;
+    invoke-virtual {v7}, Landroid/widget/TextView;->getTransformationMethod()Landroid/text/method/TransformationMethod;
 
-    move-result-object v9
+    move-result-object v7
 
-    if-eqz v9, :cond_0
+    if-eqz v7, :cond_0
 
     .line 6
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v8, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-interface {v9, v8, v10}, Landroid/text/method/TransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
+    invoke-interface {v7, v6, v8}, Landroid/text/method/TransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
 
-    move-result-object v9
+    move-result-object v7
 
-    if-eqz v9, :cond_0
+    if-eqz v7, :cond_0
 
-    move-object v8, v9
+    move-object v6, v7
 
     .line 7
     :cond_0
-    sget v9, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object v7, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    invoke-virtual {v7}, Landroid/widget/TextView;->getMaxLines()I
 
-    invoke-virtual {v10}, Landroid/widget/TextView;->getMaxLines()I
-
-    move-result v15
+    move-result v7
 
     .line 8
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
+    iget-object v8, p0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
 
-    if-nez v10, :cond_1
+    if-nez v8, :cond_1
 
     .line 9
-    new-instance v10, Landroid/text/TextPaint;
+    new-instance v8, Landroid/text/TextPaint;
 
-    invoke-direct {v10}, Landroid/text/TextPaint;-><init>()V
+    invoke-direct {v8}, Landroid/text/TextPaint;-><init>()V
 
-    iput-object v10, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
+    iput-object v8, p0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
 
     goto :goto_1
 
     .line 10
     :cond_1
-    invoke-virtual {v10}, Landroid/graphics/Paint;->reset()V
+    invoke-virtual {v8}, Landroid/graphics/Paint;->reset()V
 
     .line 11
     :goto_1
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
+    iget-object v8, p0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
 
-    iget-object v11, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v9, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-virtual {v11}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+    invoke-virtual {v9}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-virtual {v10, v11}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
+    invoke-virtual {v8, v9}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
 
     .line 12
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
+    iget-object v8, p0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
 
-    int-to-float v7, v7
+    int-to-float v5, v5
 
-    invoke-virtual {v10, v7}, Landroid/graphics/Paint;->setTextSize(F)V
+    invoke-virtual {v8, v5}, Landroid/graphics/Paint;->setTextSize(F)V
 
     .line 13
-    iget-object v7, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v5, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    sget-object v10, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
+    sget-object v8, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    const-string v11, "getLayoutAlignment"
+    const-string v9, "getLayoutAlignment"
 
-    invoke-static {v7, v11, v10}, Landroidx/appcompat/widget/n;->e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v5, v9, v8}, Landroidx/appcompat/widget/n;->e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v5
 
-    move-object v14, v7
-
-    check-cast v14, Landroid/text/Layout$Alignment;
+    check-cast v5, Landroid/text/Layout$Alignment;
 
     .line 14
-    iget v7, v1, Landroid/graphics/RectF;->right:F
+    iget v8, p1, Landroid/graphics/RectF;->right:F
 
-    invoke-static {v7}, Ljava/lang/Math;->round(F)I
+    invoke-static {v8}, Ljava/lang/Math;->round(F)I
 
-    move-result v13
-
-    const/16 v7, 0x17
-
-    const/4 v12, -0x1
-
-    if-lt v9, v7, :cond_3
+    move-result v8
 
     .line 15
-    invoke-interface {v8}, Ljava/lang/CharSequence;->length()I
+    invoke-interface {v6}, Ljava/lang/CharSequence;->length()I
 
-    move-result v7
+    move-result v9
 
-    iget-object v9, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
+    iget-object v10, p0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
 
     .line 16
-    invoke-static {v8, v4, v7, v9, v13}, Landroid/text/StaticLayout$Builder;->obtain(Ljava/lang/CharSequence;IILandroid/text/TextPaint;I)Landroid/text/StaticLayout$Builder;
+    invoke-static {v6, v2, v9, v10, v8}, Landroid/text/StaticLayout$Builder;->obtain(Ljava/lang/CharSequence;IILandroid/text/TextPaint;I)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v7
+    move-result-object v8
 
     .line 17
-    invoke-virtual {v7, v14}, Landroid/text/StaticLayout$Builder;->setAlignment(Landroid/text/Layout$Alignment;)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v8, v5}, Landroid/text/StaticLayout$Builder;->setAlignment(Landroid/text/Layout$Alignment;)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v9
+    move-result-object v5
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v9, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     .line 18
-    invoke-virtual {v10}, Landroid/widget/TextView;->getLineSpacingExtra()F
+    invoke-virtual {v9}, Landroid/widget/TextView;->getLineSpacingExtra()F
 
-    move-result v10
+    move-result v9
 
-    iget-object v11, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v10, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     .line 19
-    invoke-virtual {v11}, Landroid/widget/TextView;->getLineSpacingMultiplier()F
+    invoke-virtual {v10}, Landroid/widget/TextView;->getLineSpacingMultiplier()F
 
-    move-result v11
+    move-result v10
 
     .line 20
-    invoke-virtual {v9, v10, v11}, Landroid/text/StaticLayout$Builder;->setLineSpacing(FF)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v5, v9, v10}, Landroid/text/StaticLayout$Builder;->setLineSpacing(FF)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v9
+    move-result-object v5
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v9, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     .line 21
-    invoke-virtual {v10}, Landroid/widget/TextView;->getIncludeFontPadding()Z
+    invoke-virtual {v9}, Landroid/widget/TextView;->getIncludeFontPadding()Z
 
-    move-result v10
+    move-result v9
 
-    invoke-virtual {v9, v10}, Landroid/text/StaticLayout$Builder;->setIncludePad(Z)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v5, v9}, Landroid/text/StaticLayout$Builder;->setIncludePad(Z)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v9
+    move-result-object v5
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v9, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     .line 22
-    invoke-virtual {v10}, Landroid/widget/TextView;->getBreakStrategy()I
+    invoke-virtual {v9}, Landroid/widget/TextView;->getBreakStrategy()I
 
-    move-result v10
+    move-result v9
 
-    invoke-virtual {v9, v10}, Landroid/text/StaticLayout$Builder;->setBreakStrategy(I)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v5, v9}, Landroid/text/StaticLayout$Builder;->setBreakStrategy(I)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v9
+    move-result-object v5
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v9, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     .line 23
-    invoke-virtual {v10}, Landroid/widget/TextView;->getHyphenationFrequency()I
+    invoke-virtual {v9}, Landroid/widget/TextView;->getHyphenationFrequency()I
 
-    move-result v10
+    move-result v9
 
-    invoke-virtual {v9, v10}, Landroid/text/StaticLayout$Builder;->setHyphenationFrequency(I)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v5, v9}, Landroid/text/StaticLayout$Builder;->setHyphenationFrequency(I)Landroid/text/StaticLayout$Builder;
 
-    move-result-object v9
+    move-result-object v5
 
-    if-ne v15, v12, :cond_2
+    const/4 v9, -0x1
+
+    if-ne v7, v9, :cond_2
 
     const v10, 0x7fffffff
 
     goto :goto_2
 
     :cond_2
-    move v10, v15
+    move v10, v7
 
     .line 24
     :goto_2
-    invoke-virtual {v9, v10}, Landroid/text/StaticLayout$Builder;->setMaxLines(I)Landroid/text/StaticLayout$Builder;
+    invoke-virtual {v5, v10}, Landroid/text/StaticLayout$Builder;->setMaxLines(I)Landroid/text/StaticLayout$Builder;
 
     .line 25
     :try_start_0
-    iget-object v9, v0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$c;
+    iget-object v5, p0, Landroidx/appcompat/widget/n;->k:Landroidx/appcompat/widget/n$a;
 
-    iget-object v10, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
+    iget-object v10, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
-    invoke-virtual {v9, v7, v10}, Landroidx/appcompat/widget/n$c;->a(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
+    invoke-virtual {v5, v8, v10}, Landroidx/appcompat/widget/n$a;->b(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 26
     :catch_0
-    invoke-virtual {v7}, Landroid/text/StaticLayout$Builder;->build()Landroid/text/StaticLayout;
+    invoke-virtual {v8}, Landroid/text/StaticLayout$Builder;->build()Landroid/text/StaticLayout;
 
-    move-result-object v7
+    move-result-object v5
 
-    move v3, v15
-
-    const/4 v4, -0x1
-
-    goto :goto_3
+    if-eq v7, v9, :cond_3
 
     .line 27
-    :cond_3
-    iget-object v7, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
-
-    invoke-virtual {v7}, Landroid/widget/TextView;->getLineSpacingMultiplier()F
-
-    move-result v7
-
-    .line 28
-    iget-object v9, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
-
-    invoke-virtual {v9}, Landroid/widget/TextView;->getLineSpacingExtra()F
-
-    move-result v16
-
-    .line 29
-    iget-object v9, v0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
-
-    invoke-virtual {v9}, Landroid/widget/TextView;->getIncludeFontPadding()Z
-
-    move-result v17
-
-    .line 30
-    new-instance v9, Landroid/text/StaticLayout;
-
-    iget-object v11, v0, Landroidx/appcompat/widget/n;->h:Landroid/text/TextPaint;
-
-    move-object v10, v9
-
-    move-object/from16 v18, v11
-
-    move-object v11, v8
-
-    const/4 v4, -0x1
-
-    move-object/from16 v12, v18
-
-    move v3, v15
-
-    move v15, v7
-
-    invoke-direct/range {v10 .. v17}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
-
-    move-object v7, v9
-
-    :goto_3
-    if-eq v3, v4, :cond_5
-
-    .line 31
-    invoke-virtual {v7}, Landroid/text/StaticLayout;->getLineCount()I
-
-    move-result v4
-
-    if-gt v4, v3, :cond_4
-
-    .line 32
-    invoke-virtual {v7}, Landroid/text/StaticLayout;->getLineCount()I
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    sub-int/2addr v3, v4
-
-    invoke-virtual {v7, v3}, Landroid/text/Layout;->getLineEnd(I)I
-
-    move-result v3
-
-    invoke-interface {v8}, Ljava/lang/CharSequence;->length()I
+    invoke-virtual {v5}, Landroid/text/StaticLayout;->getLineCount()I
 
     move-result v8
 
-    if-eq v3, v8, :cond_6
+    if-gt v8, v7, :cond_4
 
-    goto :goto_4
+    .line 28
+    invoke-virtual {v5}, Landroid/text/StaticLayout;->getLineCount()I
+
+    move-result v7
+
+    sub-int/2addr v7, v1
+
+    invoke-virtual {v5, v7}, Landroid/text/Layout;->getLineEnd(I)I
+
+    move-result v7
+
+    invoke-interface {v6}, Ljava/lang/CharSequence;->length()I
+
+    move-result v6
+
+    if-eq v7, v6, :cond_3
+
+    goto :goto_3
+
+    .line 29
+    :cond_3
+    invoke-virtual {v5}, Landroid/text/Layout;->getHeight()I
+
+    move-result v5
+
+    int-to-float v5, v5
+
+    iget v6, p1, Landroid/graphics/RectF;->bottom:F
+
+    cmpl-float v5, v5, v6
+
+    if-lez v5, :cond_5
 
     :cond_4
-    const/4 v4, 0x1
+    :goto_3
+    move v5, v2
 
     goto :goto_4
 
     :cond_5
-    const/4 v4, 0x1
-
-    .line 33
-    :cond_6
-    invoke-virtual {v7}, Landroid/text/Layout;->getHeight()I
-
-    move-result v3
-
-    int-to-float v3, v3
-
-    iget v7, v1, Landroid/graphics/RectF;->bottom:F
-
-    cmpl-float v3, v3, v7
-
-    if-lez v3, :cond_7
+    move v5, v1
 
     :goto_4
-    const/4 v3, 0x0
+    if-eqz v5, :cond_6
 
-    goto :goto_5
+    add-int/lit8 v4, v4, 0x1
 
+    move v11, v4
+
+    move v4, v3
+
+    move v3, v11
+
+    goto/16 :goto_0
+
+    :cond_6
+    add-int/lit8 v4, v4, -0x1
+
+    move v0, v4
+
+    goto/16 :goto_0
+
+    .line 30
     :cond_7
-    const/4 v3, 0x1
+    iget-object p1, p0, Landroidx/appcompat/widget/n;->f:[I
 
-    :goto_5
-    if-eqz v3, :cond_8
+    aget p1, p1, v4
 
-    add-int/lit8 v6, v6, 0x1
+    return p1
 
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    move/from16 v19, v6
-
-    move v6, v5
-
-    move/from16 v5, v19
-
-    goto/16 :goto_0
-
+    .line 31
     :cond_8
-    add-int/lit8 v6, v6, -0x1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    move v2, v6
+    const-string v0, "No available text sizes to choose from."
 
-    const/4 v3, 0x1
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    const/4 v4, 0x0
-
-    goto/16 :goto_0
-
-    .line 34
-    :cond_9
-    iget-object v1, v0, Landroidx/appcompat/widget/n;->f:[I
-
-    aget v1, v1, v6
-
-    return v1
-
-    .line 35
-    :cond_a
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    const-string v2, "No available text sizes to choose from."
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_7
-
-    :goto_6
-    throw v1
-
-    :goto_7
-    goto :goto_6
+    throw p1
 .end method
 
 .method public final f(IF)V
@@ -1061,13 +960,8 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_1
-
     :catch_0
-    nop
-
     :cond_1
-    :goto_1
     if-nez p1, :cond_2
 
     .line 12
@@ -1075,7 +969,7 @@
 
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
-    goto :goto_2
+    goto :goto_1
 
     .line 13
     :cond_2
@@ -1084,7 +978,7 @@
     invoke-virtual {p1}, Landroid/view/View;->forceLayout()V
 
     .line 14
-    :goto_2
+    :goto_1
     iget-object p1, p0, Landroidx/appcompat/widget/n;->i:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
@@ -1157,7 +1051,7 @@
 
     iget v6, p0, Landroidx/appcompat/widget/n;->c:F
 
-    mul-float v5, v5, v6
+    mul-float/2addr v5, v6
 
     add-float/2addr v5, v4
 
@@ -1210,12 +1104,12 @@
 
     if-lez v1, :cond_0
 
-    const/4 v4, 0x1
+    move v4, v3
 
     goto :goto_0
 
     :cond_0
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 2
     :goto_0
@@ -1271,21 +1165,21 @@
         }
     .end annotation
 
-    const-string v0, "px) is less or equal to (0px)"
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    cmpg-float v1, p1, v0
 
-    cmpg-float v2, p1, v1
+    const-string v2, "px) is less or equal to (0px)"
 
-    if-lez v2, :cond_2
+    if-lez v1, :cond_2
 
-    cmpg-float v2, p2, p1
+    cmpg-float v1, p2, p1
 
-    if-lez v2, :cond_1
+    if-lez v1, :cond_1
 
-    cmpg-float v1, p3, v1
+    cmpg-float v0, p3, v0
 
-    if-lez v1, :cond_0
+    if-lez v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -1316,13 +1210,13 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "The auto-size step granularity ("
+    const-string v0, "The auto-size step granularity ("
 
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1372,13 +1266,13 @@
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "Minimum auto-size text size ("
+    const-string v0, "Minimum auto-size text size ("
 
-    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

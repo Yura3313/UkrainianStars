@@ -129,7 +129,7 @@
     return-void
 .end method
 
-.method public final c(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/c0;
+.method public final d(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/c0;
     .locals 2
 
     new-instance v0, Landroidx/fragment/app/c0$a;
@@ -143,7 +143,7 @@
     return-object p0
 .end method
 
-.method public final d()Landroidx/fragment/app/c0;
+.method public final e()Landroidx/fragment/app/c0;
     .locals 2
 
     .line 1
@@ -167,7 +167,4 @@
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
-.end method
-
-.method public abstract e(ILandroidx/fragment/app/Fragment;Ljava/lang/String;I)V
 .end method

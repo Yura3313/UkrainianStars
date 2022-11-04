@@ -21,7 +21,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p1, p2, p3, v0}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v0}, Lr4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
@@ -82,7 +82,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v6, 0x0
+    move v6, v0
 
     :goto_0
     if-nez v6, :cond_1
@@ -119,7 +119,7 @@
     sget v0, Lcom/google/android/material/R$attr;->textAppearanceLineHeightEnabled:I
 
     .line 2
-    invoke-static {p0, v0}, Lp4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
+    invoke-static {p0, v0}, Lm4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
 
     move-result-object p0
 
@@ -151,13 +151,13 @@
 .method public static varargs f(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
     .locals 7
 
-    const/4 v0, -0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, -0x1
 
-    const/4 v2, 0x0
+    move v2, v0
 
-    const/4 v3, -0x1
+    move v3, v1
 
     .line 1
     :goto_0
@@ -202,14 +202,14 @@
 
     iget v4, v4, Landroid/util/TypedValue;->data:I
 
-    aput v4, v5, v1
+    aput v4, v5, v0
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object v3
 
     .line 6
-    invoke-virtual {v3, v1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {v3, v0, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v4
 
@@ -223,7 +223,7 @@
     .line 8
     :cond_1
     :goto_1
-    invoke-virtual {p1, v3, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v3
 

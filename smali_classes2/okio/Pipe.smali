@@ -28,7 +28,7 @@
 
 # direct methods
 .method public constructor <init>(J)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -56,9 +56,9 @@
 
     const-wide/16 v0, 0x1
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-ltz v2, :cond_0
+    if-ltz v0, :cond_0
 
     .line 5
     iput-wide p1, p0, Lokio/Pipe;->maxBufferSize:J

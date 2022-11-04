@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/FlowFragment$b;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/FlowFragment$b;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/FlowFragment$b;
+.field public final synthetic f:Lcom/supercell/id/ui/FlowFragment$b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/FlowFragment$b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->g:Lcom/supercell/id/ui/FlowFragment$b;
+    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->f:Lcom/supercell/id/ui/FlowFragment$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    iget-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->g:Lcom/supercell/id/ui/FlowFragment$b;
+    iget-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->f:Lcom/supercell/id/ui/FlowFragment$b;
 
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->u()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
 

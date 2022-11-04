@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->f:I
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->f:I
 
     :cond_0
     return-void
@@ -63,7 +63,7 @@
 .method public final getUserSetVisibility()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
+    iget v0, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->f:I
 
     return v0
 .end method

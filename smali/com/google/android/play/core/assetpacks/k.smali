@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final c7(Landroid/os/Bundle;)V
+.method public final C6(Landroid/os/Bundle;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -40,16 +40,16 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 3
-    invoke-virtual {v0}, La5/l;->a()V
+    invoke-virtual {v0}, Ly4/k;->a()V
 
     .line 4
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x0
 
@@ -60,7 +60,7 @@
     const-string v3, "onGetChunkFileDescriptor"
 
     .line 5
-    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     const-string v0, "chunk_file_descriptor"
 
@@ -71,7 +71,7 @@
 
     check-cast p1, Landroid/os/ParcelFileDescriptor;
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->f:Lcom/google/android/play/core/tasks/i;
 
     invoke-virtual {v0, p1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 

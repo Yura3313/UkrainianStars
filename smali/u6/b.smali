@@ -1,107 +1,188 @@
-.class public Lu6/b;
+.class public final Lu6/b;
 .super Ljava/lang/Object;
-.source "DataCharacter.java"
+.source "BarcodeValue.java"
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
+.field public final a:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lu6/b;->a:I
+    new-instance v0, Ljava/util/HashMap;
 
-    .line 3
-    iput p2, p0, Lu6/b;->b:I
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lu6/b;->a:Ljava/util/HashMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final a()[I
+    .locals 5
 
     .line 1
-    instance-of v0, p1, Lu6/b;
+    new-instance v0, Ljava/util/ArrayList;
 
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
+    iget-object v1, p0, Lu6/b;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    const/4 v2, -0x1
+
     :cond_0
-    check-cast p1, Lu6/b;
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
 
     .line 3
-    iget v0, p0, Lu6/b;->a:I
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    iget v2, p1, Lu6/b;->a:I
+    move-result-object v4
 
-    if-ne v0, v2, :cond_1
+    check-cast v4, Ljava/lang/Integer;
 
-    iget v0, p0, Lu6/b;->b:I
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
-    iget p1, p1, Lu6/b;->b:I
+    move-result v4
 
-    if-ne v0, p1, :cond_1
+    if-le v4, v2, :cond_1
 
-    const/4 p1, 0x1
+    .line 4
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    return p1
+    move-result-object v2
 
+    check-cast v2, Ljava/lang/Integer;
+
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    .line 5
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 6
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 7
     :cond_1
-    return v1
-.end method
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 2
+    move-result-object v4
 
-    iget v0, p0, Lu6/b;->a:I
+    check-cast v4, Ljava/lang/Integer;
 
-    iget v1, p0, Lu6/b;->b:I
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
-    xor-int/2addr v0, v1
+    move-result v4
 
-    return v0
-.end method
+    if-ne v4, v2, :cond_0
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 8
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget v1, p0, Lu6/b;->a:I
+    goto :goto_0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, "("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lu6/b;->b:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 9
+    :cond_2
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->d(Ljava/util/Collection;)[I
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final b(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lu6/b;->a:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Integer;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    .line 3
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    .line 4
+    iget-object v1, p0, Lu6/b;->a:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
 .end method

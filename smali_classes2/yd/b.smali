@@ -1,47 +1,37 @@
 .class public final Lyd/b;
-.super Lse/i;
-.source "YoungPlayerLoginConfirmPageFragment.kt"
+.super Lif/i;
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lyd/e;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lyd/d;",
+        "Ljava/lang/Boolean;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lyd/b;
+# instance fields
+.field public final synthetic f:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
-    new-instance v0, Lyd/b;
+    iput-object p1, p0, Lyd/b;->f:Ljava/lang/String;
 
-    invoke-direct {v0}, Lyd/b;-><init>()V
+    const/4 p1, 0x2
 
-    sput-object v0, Lyd/b;->g:Lyd/b;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,39 +39,55 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .line 1
-    check-cast p1, Lyd/e;
+    check-cast p1, Lyd/d;
 
-    check-cast p2, Ljava/lang/Exception;
+    check-cast p2, Ljava/lang/Boolean;
 
-    const-string v0, "$receiver"
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    const-string p2, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    iget-object v0, p0, Lyd/b;->f:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingRegistrationWithEmail$supercellId_release(Ljava/lang/String;Z)V
+
+    .line 4
+    iget-object p2, p0, Lyd/b;->f:Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {p1}, Lyd/k;->U0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 6
+    iput-object p2, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->j0:Ljava/lang/String;
+
+    .line 7
+    :cond_0
+    invoke-virtual {p1}, Lyd/k;->U0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->i1()V
 
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    .line 8
+    :cond_1
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

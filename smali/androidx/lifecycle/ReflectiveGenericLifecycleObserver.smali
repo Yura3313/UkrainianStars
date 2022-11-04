@@ -51,7 +51,7 @@
     .line 2
     iget-object v2, v0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
-    invoke-interface {v2, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -64,7 +64,7 @@
 
     sget-object v2, Landroidx/lifecycle/f$b;->ON_ANY:Landroidx/lifecycle/f$b;
 
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

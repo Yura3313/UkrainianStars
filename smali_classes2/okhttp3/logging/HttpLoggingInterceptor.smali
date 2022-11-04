@@ -144,9 +144,9 @@
 
     const-wide/16 v3, 0x40
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-gez v5, :cond_0
+    if-gez v1, :cond_0
 
     invoke-virtual {p0}, Lokio/Buffer;->size()J
 
@@ -169,7 +169,7 @@
     .line 3
     invoke-virtual/range {v1 .. v6}, Lokio/Buffer;->copyTo(Lokio/Buffer;JJ)Lokio/Buffer;
 
-    const/4 p0, 0x0
+    move p0, v0
 
     :goto_1
     const/16 v1, 0x10
@@ -327,7 +327,7 @@
 
     if-ne v2, v4, :cond_1
 
-    const/4 v4, 0x1
+    move v4, v5
 
     goto :goto_0
 
@@ -351,7 +351,7 @@
 
     :cond_3
     :goto_1
-    const/4 v2, 0x1
+    move v2, v5
 
     .line 7
     :goto_2
@@ -375,7 +375,7 @@
     const-string v8, "--> "
 
     .line 9
-    invoke-static {v8}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v8}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
@@ -404,7 +404,7 @@
     const-string v10, " "
 
     .line 12
-    invoke-static {v10}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v10}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v10
 
@@ -440,7 +440,7 @@
     if-eqz v5, :cond_6
 
     .line 14
-    invoke-static {v7, v10}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7, v10}, Lb2/l0;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -484,7 +484,7 @@
     const-string v14, "Content-Type: "
 
     .line 19
-    invoke-static {v14}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v14}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v14
 
@@ -507,9 +507,9 @@
 
     move-result-wide v13
 
-    cmp-long v15, v13, v11
+    cmp-long v11, v13, v11
 
-    if-eqz v15, :cond_8
+    if-eqz v11, :cond_8
 
     .line 22
     iget-object v11, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
@@ -517,7 +517,7 @@
     const-string v12, "Content-Length: "
 
     .line 23
-    invoke-static {v12}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v12}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v12
 
@@ -605,7 +605,7 @@
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 32
-    invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
@@ -678,7 +678,7 @@
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 43
-    invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v11
 
@@ -714,7 +714,7 @@
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 48
-    invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v11
 
@@ -753,7 +753,7 @@
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 53
-    invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
@@ -810,9 +810,9 @@
 
     const-wide/16 v13, -0x1
 
-    cmp-long v15, v11, v13
+    cmp-long v13, v11, v13
 
-    if-eqz v15, :cond_11
+    if-eqz v13, :cond_11
 
     .line 60
     new-instance v13, Ljava/lang/StringBuilder;
@@ -841,7 +841,7 @@
     const-string v15, "<-- "
 
     .line 62
-    invoke-static {v15}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v15}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v15
 
@@ -867,11 +867,11 @@
 
     const/16 v8, 0x20
 
-    move-object v8, v9
-
     move-wide/from16 v17, v11
 
-    const/16 v11, 0x20
+    move v11, v8
+
+    move-object v8, v9
 
     goto :goto_9
 
@@ -927,7 +927,7 @@
     const-string v6, " body"
 
     .line 66
-    invoke-static {v5, v13, v6}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v13, v6}, La0/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1134,7 +1134,7 @@
     const-string v3, "<-- END HTTP (binary "
 
     .line 90
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1189,7 +1189,7 @@
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 95
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -1223,7 +1223,7 @@
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 98
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -1284,13 +1284,7 @@
     invoke-interface {v0, v3}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
     .line 102
-    goto :goto_11
-
-    :goto_10
     throw v2
-
-    :goto_11
-    goto :goto_10
 .end method
 
 .method public redactHeader(Ljava/lang/String;)V
@@ -1320,20 +1314,13 @@
 .method public setLevel(Lokhttp3/logging/HttpLoggingInterceptor$Level;)Lokhttp3/logging/HttpLoggingInterceptor;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "level == null. Use Level.NONE instead."
 
     .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 2
     iput-object p1, p0, Lokhttp3/logging/HttpLoggingInterceptor;->level:Lokhttp3/logging/HttpLoggingInterceptor$Level;
 
     return-object p0
-
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "level == null. Use Level.NONE instead."
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

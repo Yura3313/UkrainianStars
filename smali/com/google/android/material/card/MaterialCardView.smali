@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/widget/Checkable;
-.implements Ls4/o;
+.implements Lp4/o;
 
 
 # annotations
@@ -16,25 +16,25 @@
 
 
 # static fields
+.field public static final t:[I
+
 .field public static final u:[I
 
 .field public static final v:[I
 
-.field public static final w:[I
-
-.field public static final x:I
+.field public static final w:I
 
 
 # instance fields
-.field public final p:Lg4/a;
+.field public final o:Ld4/a;
+
+.field public p:Z
 
 .field public q:Z
 
 .field public r:Z
 
-.field public s:Z
-
-.field public t:Lcom/google/android/material/card/MaterialCardView$a;
+.field public s:Lcom/google/android/material/card/MaterialCardView$a;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     aput v2, v1, v3
 
     .line 1
-    sput-object v1, Lcom/google/android/material/card/MaterialCardView;->u:[I
+    sput-object v1, Lcom/google/android/material/card/MaterialCardView;->t:[I
 
     new-array v1, v0, [I
 
@@ -61,7 +61,7 @@
     aput v2, v1, v3
 
     .line 2
-    sput-object v1, Lcom/google/android/material/card/MaterialCardView;->v:[I
+    sput-object v1, Lcom/google/android/material/card/MaterialCardView;->u:[I
 
     new-array v0, v0, [I
 
@@ -70,12 +70,12 @@
 
     aput v1, v0, v3
 
-    sput-object v0, Lcom/google/android/material/card/MaterialCardView;->w:[I
+    sput-object v0, Lcom/google/android/material/card/MaterialCardView;->v:[I
 
     .line 4
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CardView:I
 
-    sput v0, Lcom/google/android/material/card/MaterialCardView;->x:I
+    sput v0, Lcom/google/android/material/card/MaterialCardView;->w:I
 
     return-void
 .end method
@@ -95,9 +95,9 @@
     .locals 6
 
     .line 2
-    sget v4, Lcom/google/android/material/card/MaterialCardView;->x:I
+    sget v4, Lcom/google/android/material/card/MaterialCardView;->w:I
 
-    invoke-static {p1, p2, p3, v4}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v4}, Lr4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
@@ -106,15 +106,15 @@
     const/4 p1, 0x0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
+    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
 
     .line 4
-    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->s:Z
+    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
 
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
+    iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Z
 
     .line 6
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -131,23 +131,23 @@
     move v3, p3
 
     .line 8
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/k;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/j;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
     .line 9
-    new-instance v1, Lg4/a;
+    new-instance v1, Ld4/a;
 
-    invoke-direct {v1, p0, p2, p3}, Lg4/a;-><init>(Lcom/google/android/material/card/MaterialCardView;Landroid/util/AttributeSet;I)V
+    invoke-direct {v1, p0, p2, p3}, Ld4/a;-><init>(Lcom/google/android/material/card/MaterialCardView;Landroid/util/AttributeSet;I)V
 
-    iput-object v1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iput-object v1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 10
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getCardBackgroundColor()Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    invoke-virtual {v1, p2}, Lg4/a;->f(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v1, p2}, Ld4/a;->f(Landroid/content/res/ColorStateList;)V
 
     .line 11
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getContentPaddingLeft()I
@@ -170,15 +170,15 @@
     move-result v3
 
     .line 15
-    iget-object v4, v1, Lg4/a;->b:Landroid/graphics/Rect;
+    iget-object v4, v1, Ld4/a;->b:Landroid/graphics/Rect;
 
     invoke-virtual {v4, p2, p3, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 16
-    invoke-virtual {v1}, Lg4/a;->l()V
+    invoke-virtual {v1}, Ld4/a;->j()V
 
     .line 17
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 18
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -188,11 +188,11 @@
     sget p3, Lcom/google/android/material/R$styleable;->MaterialCardView_strokeColor:I
 
     .line 19
-    invoke-static {p2, v0, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p2, v0, p3}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    iput-object p2, v1, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iput-object p2, v1, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_0
 
@@ -203,7 +203,7 @@
 
     move-result-object p2
 
-    iput-object p2, v1, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iput-object p2, v1, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     .line 21
     :cond_0
@@ -213,7 +213,7 @@
 
     move-result p2
 
-    iput p2, v1, Lg4/a;->g:I
+    iput p2, v1, Ld4/a;->g:I
 
     .line 22
     sget p2, Lcom/google/android/material/R$styleable;->MaterialCardView_android_checkable:I
@@ -222,15 +222,15 @@
 
     move-result p2
 
-    iput-boolean p2, v1, Lg4/a;->s:Z
+    iput-boolean p2, v1, Ld4/a;->r:Z
 
     .line 23
-    iget-object p3, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p3, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     invoke-virtual {p3, p2}, Landroid/view/View;->setLongClickable(Z)V
 
     .line 24
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 25
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -240,14 +240,14 @@
     sget p3, Lcom/google/android/material/R$styleable;->MaterialCardView_checkedIconTint:I
 
     .line 26
-    invoke-static {p2, v0, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p2, v0, p3}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    iput-object p2, v1, Lg4/a;->k:Landroid/content/res/ColorStateList;
+    iput-object p2, v1, Ld4/a;->k:Landroid/content/res/ColorStateList;
 
     .line 27
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 28
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -257,15 +257,15 @@
     sget p3, Lcom/google/android/material/R$styleable;->MaterialCardView_checkedIcon:I
 
     .line 29
-    invoke-static {p2, v0, p3}, Lp4/c;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p2, v0, p3}, Lm4/c;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     .line 30
-    invoke-virtual {v1, p2}, Lg4/a;->g(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v1, p2}, Ld4/a;->g(Landroid/graphics/drawable/Drawable;)V
 
     .line 31
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 32
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -275,21 +275,21 @@
     sget p3, Lcom/google/android/material/R$styleable;->MaterialCardView_rippleColor:I
 
     .line 33
-    invoke-static {p2, v0, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p2, v0, p3}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    iput-object p2, v1, Lg4/a;->j:Landroid/content/res/ColorStateList;
+    iput-object p2, v1, Ld4/a;->j:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_1
 
     .line 34
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     sget p3, Lcom/google/android/material/R$attr;->colorControlHighlight:I
 
     .line 35
-    invoke-static {p2, p3}, Lk3/a00;->b(Landroid/view/View;I)I
+    invoke-static {p2, p3}, Lcom/android/billingclient/api/a0;->k(Landroid/view/View;I)I
 
     move-result p2
 
@@ -298,11 +298,11 @@
 
     move-result-object p2
 
-    iput-object p2, v1, Lg4/a;->j:Landroid/content/res/ColorStateList;
+    iput-object p2, v1, Ld4/a;->j:Landroid/content/res/ColorStateList;
 
     .line 37
     :cond_1
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 38
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -312,12 +312,12 @@
     sget p3, Lcom/google/android/material/R$styleable;->MaterialCardView_cardForegroundColor:I
 
     .line 39
-    invoke-static {p2, v0, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p2, v0, p3}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
     .line 40
-    iget-object p3, v1, Lg4/a;->d:Ls4/g;
+    iget-object p3, v1, Ld4/a;->d:Lp4/g;
 
     if-nez p2, :cond_2
 
@@ -328,38 +328,38 @@
 
     .line 42
     :cond_2
-    invoke-virtual {p3, p2}, Ls4/g;->o(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p3, p2}, Lp4/g;->n(Landroid/content/res/ColorStateList;)V
 
     .line 43
-    invoke-virtual {v1}, Lg4/a;->n()V
+    invoke-virtual {v1}, Ld4/a;->l()V
 
     .line 44
-    iget-object p1, v1, Lg4/a;->c:Ls4/g;
+    iget-object p1, v1, Ld4/a;->c:Lp4/g;
 
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     invoke-virtual {p2}, Landroidx/cardview/widget/CardView;->getCardElevation()F
 
     move-result p2
 
-    invoke-virtual {p1, p2}, Ls4/g;->n(F)V
+    invoke-virtual {p1, p2}, Lp4/g;->m(F)V
 
     .line 45
-    invoke-virtual {v1}, Lg4/a;->o()V
+    invoke-virtual {v1}, Ld4/a;->m()V
 
     .line 46
-    iget-object p1, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p1, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
-    iget-object p2, v1, Lg4/a;->c:Ls4/g;
+    iget-object p2, v1, Ld4/a;->c:Lp4/g;
 
-    invoke-virtual {v1, p2}, Lg4/a;->e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, p2}, Ld4/a;->e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Lcom/google/android/material/card/MaterialCardView;->setBackgroundInternal(Landroid/graphics/drawable/Drawable;)V
 
     .line 47
-    iget-object p1, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p1, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     .line 48
     invoke-virtual {p1}, Landroid/view/View;->isClickable()Z
@@ -368,26 +368,26 @@
 
     if-eqz p1, :cond_3
 
-    invoke-virtual {v1}, Lg4/a;->d()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1}, Ld4/a;->d()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
     goto :goto_0
 
     :cond_3
-    iget-object p1, v1, Lg4/a;->d:Ls4/g;
+    iget-object p1, v1, Ld4/a;->d:Lp4/g;
 
     :goto_0
-    iput-object p1, v1, Lg4/a;->h:Landroid/graphics/drawable/Drawable;
+    iput-object p1, v1, Ld4/a;->h:Landroid/graphics/drawable/Drawable;
 
     .line 49
-    iget-object p2, v1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p2, v1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
-    invoke-virtual {v1, p1}, Lg4/a;->e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, p1}, Ld4/a;->e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Landroid/widget/FrameLayout;->setForeground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p2, p1}, Landroid/view/View;->setForeground(Landroid/graphics/drawable/Drawable;)V
 
     .line 50
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -404,10 +404,10 @@
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 3
-    iget-object v1, v1, Lg4/a;->c:Ls4/g;
+    iget-object v1, v1, Ld4/a;->c:Lp4/g;
 
     .line 4
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
@@ -421,19 +421,97 @@
 
 
 # virtual methods
+.method public final f()V
+    .locals 8
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-le v0, v1, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
+
+    .line 3
+    iget-object v1, v0, Ld4/a;->n:Landroid/graphics/drawable/RippleDrawable;
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object v1
+
+    .line 5
+    iget v2, v1, Landroid/graphics/Rect;->bottom:I
+
+    .line 6
+    iget-object v3, v0, Ld4/a;->n:Landroid/graphics/drawable/RippleDrawable;
+
+    iget v4, v1, Landroid/graphics/Rect;->left:I
+
+    iget v5, v1, Landroid/graphics/Rect;->top:I
+
+    iget v6, v1, Landroid/graphics/Rect;->right:I
+
+    add-int/lit8 v7, v2, -0x1
+
+    invoke-virtual {v3, v4, v5, v6, v7}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 7
+    iget-object v0, v0, Ld4/a;->n:Landroid/graphics/drawable/RippleDrawable;
+
+    iget v3, v1, Landroid/graphics/Rect;->left:I
+
+    iget v4, v1, Landroid/graphics/Rect;->top:I
+
+    iget v1, v1, Landroid/graphics/Rect;->right:I
+
+    invoke-virtual {v0, v3, v4, v1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final g()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-boolean v0, v0, Ld4/a;->r:Z
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public getCardBackgroundColor()Landroid/content/res/ColorStateList;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->c:Ls4/g;
+    iget-object v0, v0, Ld4/a;->c:Lp4/g;
 
     .line 3
-    iget-object v0, v0, Ls4/g;->g:Ls4/g$b;
+    iget-object v0, v0, Lp4/g;->f:Lp4/g$b;
 
-    iget-object v0, v0, Ls4/g$b;->c:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Lp4/g$b;->c:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -442,15 +520,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->d:Ls4/g;
+    iget-object v0, v0, Ld4/a;->d:Lp4/g;
 
     .line 3
-    iget-object v0, v0, Ls4/g;->g:Ls4/g$b;
+    iget-object v0, v0, Lp4/g;->f:Lp4/g$b;
 
-    iget-object v0, v0, Ls4/g$b;->c:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Lp4/g$b;->c:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -469,10 +547,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->i:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Ld4/a;->i:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -481,10 +559,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->k:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Ld4/a;->k:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -493,10 +571,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->b:Landroid/graphics/Rect;
+    iget-object v0, v0, Ld4/a;->b:Landroid/graphics/Rect;
 
     .line 3
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
@@ -508,10 +586,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->b:Landroid/graphics/Rect;
+    iget-object v0, v0, Ld4/a;->b:Landroid/graphics/Rect;
 
     .line 3
     iget v0, v0, Landroid/graphics/Rect;->left:I
@@ -523,10 +601,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->b:Landroid/graphics/Rect;
+    iget-object v0, v0, Ld4/a;->b:Landroid/graphics/Rect;
 
     .line 3
     iget v0, v0, Landroid/graphics/Rect;->right:I
@@ -538,10 +616,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->b:Landroid/graphics/Rect;
+    iget-object v0, v0, Ld4/a;->b:Landroid/graphics/Rect;
 
     .line 3
     iget v0, v0, Landroid/graphics/Rect;->top:I
@@ -553,15 +631,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->c:Ls4/g;
+    iget-object v0, v0, Ld4/a;->c:Lp4/g;
 
     .line 3
-    iget-object v0, v0, Ls4/g;->g:Ls4/g$b;
+    iget-object v0, v0, Lp4/g;->f:Lp4/g$b;
 
-    iget v0, v0, Ls4/g$b;->j:F
+    iget v0, v0, Lp4/g$b;->j:F
 
     return v0
 .end method
@@ -570,12 +648,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->c:Ls4/g;
+    iget-object v0, v0, Ld4/a;->c:Lp4/g;
 
-    invoke-virtual {v0}, Ls4/g;->j()F
+    invoke-virtual {v0}, Lp4/g;->i()F
 
     move-result v0
 
@@ -586,22 +664,22 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->j:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Ld4/a;->j:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
 
-.method public getShapeAppearanceModel()Ls4/k;
+.method public getShapeAppearanceModel()Lp4/k;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->l:Ls4/k;
+    iget-object v0, v0, Ld4/a;->l:Lp4/k;
 
     return-object v0
 .end method
@@ -612,10 +690,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
@@ -636,10 +714,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -648,96 +726,18 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget v0, v0, Lg4/a;->g:I
+    iget v0, v0, Ld4/a;->g:I
 
-    return v0
-.end method
-
-.method public final h()V
-    .locals 8
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1a
-
-    if-le v0, v1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
-
-    .line 3
-    iget-object v1, v0, Lg4/a;->n:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v1, :cond_0
-
-    .line 4
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
-
-    move-result-object v1
-
-    .line 5
-    iget v2, v1, Landroid/graphics/Rect;->bottom:I
-
-    .line 6
-    iget-object v3, v0, Lg4/a;->n:Landroid/graphics/drawable/Drawable;
-
-    iget v4, v1, Landroid/graphics/Rect;->left:I
-
-    iget v5, v1, Landroid/graphics/Rect;->top:I
-
-    iget v6, v1, Landroid/graphics/Rect;->right:I
-
-    add-int/lit8 v7, v2, -0x1
-
-    invoke-virtual {v3, v4, v5, v6, v7}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 7
-    iget-object v0, v0, Lg4/a;->n:Landroid/graphics/drawable/Drawable;
-
-    iget v3, v1, Landroid/graphics/Rect;->left:I
-
-    iget v4, v1, Landroid/graphics/Rect;->top:I
-
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    invoke-virtual {v0, v3, v4, v1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final i()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-boolean v0, v0, Lg4/a;->s:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
 .end method
 
 .method public final isChecked()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
 
     return v0
 .end method
@@ -749,13 +749,13 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 3
-    iget-object v0, v0, Lg4/a;->c:Ls4/g;
+    iget-object v0, v0, Ld4/a;->c:Lp4/g;
 
     .line 4
-    invoke-static {p0, v0}, Ls4/e;->p(Landroid/view/View;Ls4/g;)V
+    invoke-static {p0, v0}, Lj3/rt;->f(Landroid/view/View;Lp4/g;)V
 
     return-void
 .end method
@@ -771,14 +771,14 @@
     move-result-object p1
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->i()Z
+    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->g()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->u:[I
+    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->t:[I
 
     invoke-static {p1, v0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
 
@@ -791,18 +791,18 @@
     if-eqz v0, :cond_1
 
     .line 5
-    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->v:[I
+    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->u:[I
 
     invoke-static {p1, v0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
 
     .line 6
     :cond_1
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->s:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
 
     if-eqz v0, :cond_2
 
     .line 7
-    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->w:[I
+    sget-object v0, Lcom/google/android/material/card/MaterialCardView;->v:[I
 
     invoke-static {p1, v0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
 
@@ -843,7 +843,7 @@
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->i()Z
+    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->g()Z
 
     move-result v0
 
@@ -867,13 +867,13 @@
 .end method
 
 .method public final onMeasure(II)V
-    .locals 10
+    .locals 6
 
     .line 1
     invoke-super {p0, p1, p2}, Landroidx/cardview/widget/CardView;->onMeasure(II)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -884,16 +884,16 @@
     move-result v0
 
     .line 3
-    iget-object v1, p1, Lg4/a;->o:Landroid/graphics/drawable/LayerDrawable;
+    iget-object v1, p1, Ld4/a;->o:Landroid/graphics/drawable/LayerDrawable;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_3
 
     .line 4
-    iget v1, p1, Lg4/a;->e:I
+    iget v1, p1, Ld4/a;->e:I
 
     sub-int/2addr p2, v1
 
-    iget v2, p1, Lg4/a;->f:I
+    iget v2, p1, Ld4/a;->f:I
 
     sub-int/2addr p2, v2
 
@@ -902,26 +902,7 @@
     sub-int/2addr v0, v2
 
     .line 5
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    const/4 v3, 0x1
-
-    if-ge v1, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-nez v1, :cond_2
-
-    .line 6
-    iget-object v1, p1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object v1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     invoke-virtual {v1}, Landroidx/cardview/widget/CardView;->getUseCompatPadding()Z
 
@@ -929,66 +910,56 @@
 
     if-eqz v1, :cond_1
 
-    goto :goto_2
-
-    :cond_1
-    :goto_1
-    move v9, v0
-
-    goto :goto_4
-
-    .line 7
-    :cond_2
-    :goto_2
-    invoke-virtual {p1}, Lg4/a;->c()F
+    .line 6
+    invoke-virtual {p1}, Ld4/a;->c()F
 
     move-result v1
 
     const/high16 v2, 0x40000000    # 2.0f
 
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
-    float-to-double v4, v1
+    float-to-double v3, v1
 
-    invoke-static {v4, v5}, Ljava/lang/Math;->ceil(D)D
+    invoke-static {v3, v4}, Ljava/lang/Math;->ceil(D)D
 
-    move-result-wide v4
+    move-result-wide v3
 
-    double-to-int v1, v4
+    double-to-int v1, v3
 
     sub-int/2addr v0, v1
 
-    .line 8
-    iget-object v1, p1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    .line 7
+    iget-object v1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     invoke-virtual {v1}, Landroidx/cardview/widget/CardView;->getMaxCardElevation()F
 
     move-result v1
 
-    .line 9
-    invoke-virtual {p1}, Lg4/a;->j()Z
+    .line 8
+    invoke-virtual {p1}, Ld4/a;->i()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_0
 
-    invoke-virtual {p1}, Lg4/a;->a()F
+    invoke-virtual {p1}, Ld4/a;->a()F
 
-    move-result v4
+    move-result v3
 
-    goto :goto_3
+    goto :goto_0
 
-    :cond_3
-    const/4 v4, 0x0
+    :cond_0
+    const/4 v3, 0x0
 
-    :goto_3
-    add-float/2addr v1, v4
+    :goto_0
+    add-float/2addr v1, v3
 
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
     float-to-double v1, v1
 
-    .line 10
+    .line 9
     invoke-static {v1, v2}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v1
@@ -997,46 +968,48 @@
 
     sub-int/2addr p2, v1
 
-    goto :goto_1
+    :cond_1
+    move v5, v0
+
+    .line 10
+    iget v0, p1, Ld4/a;->e:I
 
     .line 11
-    :goto_4
-    iget v0, p1, Lg4/a;->e:I
+    iget-object v1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    sget-object v2, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 12
-    iget-object v1, p1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
-
-    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
-
-    .line 13
     invoke-virtual {v1}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v1
 
-    if-ne v1, v3, :cond_4
+    const/4 v2, 0x1
 
-    move v8, p2
+    if-ne v1, v2, :cond_2
 
-    move v6, v0
+    move v4, p2
 
-    goto :goto_5
+    move v2, v0
 
-    :cond_4
-    move v6, p2
+    goto :goto_1
 
-    move v8, v0
+    :cond_2
+    move v2, p2
 
-    .line 14
-    :goto_5
-    iget-object v4, p1, Lg4/a;->o:Landroid/graphics/drawable/LayerDrawable;
+    move v4, v0
 
-    const/4 v5, 0x2
+    .line 13
+    :goto_1
+    iget-object v0, p1, Ld4/a;->o:Landroid/graphics/drawable/LayerDrawable;
 
-    iget v7, p1, Lg4/a;->e:I
+    const/4 v1, 0x2
 
-    invoke-virtual/range {v4 .. v9}, Landroid/graphics/drawable/LayerDrawable;->setLayerInset(IIIII)V
+    iget v3, p1, Ld4/a;->e:I
 
-    :cond_5
+    invoke-virtual/range {v0 .. v5}, Landroid/graphics/drawable/LayerDrawable;->setLayerInset(IIIII)V
+
+    :cond_3
     return-void
 .end method
 
@@ -1052,22 +1025,22 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Z
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 3
-    iget-boolean v1, v0, Lg4/a;->r:Z
+    iget-boolean v1, v0, Ld4/a;->q:Z
 
     if-nez v1, :cond_0
 
     const/4 v1, 0x1
 
     .line 4
-    iput-boolean v1, v0, Lg4/a;->r:Z
+    iput-boolean v1, v0, Ld4/a;->q:Z
 
     .line 5
     :cond_0
@@ -1089,13 +1062,13 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lg4/a;->f(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Ld4/a;->f(Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
@@ -1104,9 +1077,9 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {v0, p1}, Lg4/a;->f(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Ld4/a;->f(Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
@@ -1118,18 +1091,18 @@
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setCardElevation(F)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 3
-    iget-object v0, p1, Lg4/a;->c:Ls4/g;
+    iget-object v0, p1, Ld4/a;->c:Lp4/g;
 
-    iget-object p1, p1, Lg4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+    iget-object p1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
 
     invoke-virtual {p1}, Landroidx/cardview/widget/CardView;->getCardElevation()F
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Ls4/g;->n(F)V
+    invoke-virtual {v0, p1}, Lp4/g;->m(F)V
 
     return-void
 .end method
@@ -1138,10 +1111,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v0, v0, Lg4/a;->d:Ls4/g;
+    iget-object v0, v0, Ld4/a;->d:Lp4/g;
 
     if-nez p1, :cond_0
 
@@ -1154,7 +1127,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {v0, p1}, Ls4/g;->o(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Lp4/g;->n(Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
@@ -1163,10 +1136,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iput-boolean p1, v0, Lg4/a;->s:Z
+    iput-boolean p1, v0, Ld4/a;->r:Z
 
     return-void
 .end method
@@ -1175,7 +1148,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
 
     if-eq v0, p1, :cond_0
 
@@ -1189,9 +1162,9 @@
 .method public setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {v0, p1}, Lg4/a;->g(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p1}, Ld4/a;->g(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
@@ -1199,17 +1172,17 @@
 .method public setCheckedIconResource(I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, p1}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, p1}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lg4/a;->g(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p1}, Ld4/a;->g(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
@@ -1218,38 +1191,98 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iput-object p1, v0, Lg4/a;->k:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Ld4/a;->k:Landroid/content/res/ColorStateList;
 
     .line 3
-    iget-object v0, v0, Lg4/a;->i:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Ld4/a;->i:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-static {v0, p1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
     :cond_0
     return-void
 .end method
 
 .method public setClickable(Z)V
-    .locals 0
+    .locals 2
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/View;->setClickable(Z)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
 
     .line 3
-    invoke-virtual {p1}, Lg4/a;->k()V
+    iget-object v0, p1, Ld4/a;->h:Landroid/graphics/drawable/Drawable;
+
+    .line 4
+    iget-object v1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    .line 5
+    invoke-virtual {v1}, Landroid/view/View;->isClickable()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p1}, Ld4/a;->d()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    goto :goto_0
 
     :cond_0
+    iget-object v1, p1, Ld4/a;->d:Lp4/g;
+
+    :goto_0
+    iput-object v1, p1, Ld4/a;->h:Landroid/graphics/drawable/Drawable;
+
+    if-eq v0, v1, :cond_2
+
+    .line 6
+    iget-object v0, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    .line 7
+    invoke-virtual {v0}, Landroid/view/View;->getForeground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/graphics/drawable/InsetDrawable;
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    iget-object p1, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    invoke-virtual {p1}, Landroid/view/View;->getForeground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/graphics/drawable/InsetDrawable;
+
+    invoke-virtual {p1, v1}, Landroid/graphics/drawable/DrawableWrapper;->setDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    goto :goto_1
+
+    .line 9
+    :cond_1
+    iget-object v0, p1, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    invoke-virtual {p1, v1}, Ld4/a;->e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->setForeground(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_2
+    :goto_1
     return-void
 .end method
 
@@ -1257,18 +1290,18 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->s:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->s:Z
+    iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->h()V
+    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->f()V
 
     .line 5
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
@@ -1284,9 +1317,9 @@
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setMaxCardElevation(F)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {p1}, Lg4/a;->m()V
+    invoke-virtual {p1}, Ld4/a;->k()V
 
     return-void
 .end method
@@ -1294,7 +1327,7 @@
 .method public setOnCheckedChangeListener(Lcom/google/android/material/card/MaterialCardView$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->t:Lcom/google/android/material/card/MaterialCardView$a;
+    iput-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->s:Lcom/google/android/material/card/MaterialCardView$a;
 
     return-void
 .end method
@@ -1306,14 +1339,14 @@
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setPreventCornerOverlap(Z)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {p1}, Lg4/a;->m()V
+    invoke-virtual {p1}, Ld4/a;->k()V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {p1}, Lg4/a;->l()V
+    invoke-virtual {p1}, Ld4/a;->j()V
 
     return-void
 .end method
@@ -1322,29 +1355,29 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget-object v1, v0, Lg4/a;->c:Ls4/g;
+    iget-object v1, v0, Ld4/a;->c:Lp4/g;
 
-    invoke-virtual {v1, p1}, Ls4/g;->p(F)V
+    invoke-virtual {v1, p1}, Lp4/g;->o(F)V
 
     .line 3
-    iget-object v1, v0, Lg4/a;->d:Ls4/g;
+    iget-object v1, v0, Ld4/a;->d:Lp4/g;
 
     if-eqz v1, :cond_0
 
     .line 4
-    invoke-virtual {v1, p1}, Ls4/g;->p(F)V
+    invoke-virtual {v1, p1}, Lp4/g;->o(F)V
 
     .line 5
     :cond_0
-    iget-object v0, v0, Lg4/a;->q:Ls4/g;
+    iget-object v0, v0, Ld4/a;->p:Lp4/g;
 
     if-eqz v0, :cond_1
 
     .line 6
-    invoke-virtual {v0, p1}, Ls4/g;->p(F)V
+    invoke-virtual {v0, p1}, Lp4/g;->o(F)V
 
     :cond_1
     return-void
@@ -1357,52 +1390,73 @@
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setRadius(F)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 3
-    iget-object v1, v0, Lg4/a;->l:Ls4/k;
+    iget-object v1, v0, Ld4/a;->l:Lp4/k;
 
-    invoke-virtual {v1, p1}, Ls4/k;->f(F)Ls4/k;
+    invoke-virtual {v1, p1}, Lp4/k;->f(F)Lp4/k;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lg4/a;->h(Ls4/k;)V
+    invoke-virtual {v0, p1}, Ld4/a;->h(Lp4/k;)V
 
     .line 4
-    iget-object p1, v0, Lg4/a;->h:Landroid/graphics/drawable/Drawable;
+    iget-object p1, v0, Ld4/a;->h:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     .line 5
-    invoke-virtual {v0}, Lg4/a;->j()Z
+    invoke-virtual {v0}, Ld4/a;->i()Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 6
+    iget-object p1, v0, Ld4/a;->a:Lcom/google/android/material/card/MaterialCardView;
+
+    invoke-virtual {p1}, Landroidx/cardview/widget/CardView;->getPreventCornerOverlap()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 7
+    iget-object p1, v0, Ld4/a;->c:Lp4/g;
+
+    invoke-virtual {p1}, Lp4/g;->l()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 6
-    invoke-virtual {v0}, Lg4/a;->i()Z
+    const/4 p1, 0x1
 
-    move-result p1
+    goto :goto_0
 
-    if-eqz p1, :cond_1
-
-    .line 7
     :cond_0
-    invoke-virtual {v0}, Lg4/a;->l()V
+    const/4 p1, 0x0
+
+    :goto_0
+    if-eqz p1, :cond_2
 
     .line 8
     :cond_1
-    invoke-virtual {v0}, Lg4/a;->j()Z
+    invoke-virtual {v0}, Ld4/a;->j()V
+
+    .line 9
+    :cond_2
+    invoke-virtual {v0}, Ld4/a;->i()Z
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_3
 
-    .line 9
-    invoke-virtual {v0}, Lg4/a;->m()V
+    .line 10
+    invoke-virtual {v0}, Ld4/a;->k()V
 
-    :cond_2
+    :cond_3
     return-void
 .end method
 
@@ -1410,67 +1464,62 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iput-object p1, v0, Lg4/a;->j:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Ld4/a;->j:Landroid/content/res/ColorStateList;
 
     .line 3
-    invoke-virtual {v0}, Lg4/a;->n()V
+    invoke-virtual {v0}, Ld4/a;->l()V
 
     return-void
 .end method
 
 .method public setRippleColorResource(I)V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, p1}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v2, Lc/a;->a:Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {v1, p1}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
-    .line 3
-    iput-object p1, v0, Lg4/a;->j:Landroid/content/res/ColorStateList;
-
     .line 4
-    invoke-virtual {v0}, Lg4/a;->n()V
+    iput-object p1, v0, Ld4/a;->j:Landroid/content/res/ColorStateList;
+
+    .line 5
+    invoke-virtual {v0}, Ld4/a;->l()V
 
     return-void
 .end method
 
-.method public setShapeAppearanceModel(Ls4/k;)V
-    .locals 2
+.method public setShapeAppearanceModel(Lp4/k;)V
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/card/MaterialCardView;->getBoundsAsRectF()Landroid/graphics/RectF;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Ls4/k;->e(Landroid/graphics/RectF;)Z
+    invoke-virtual {p1, v0}, Lp4/k;->e(Landroid/graphics/RectF;)Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setClipToOutline(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setClipToOutline(Z)V
 
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {v0, p1}, Lg4/a;->h(Ls4/k;)V
+    invoke-virtual {v0, p1}, Ld4/a;->h(Lp4/k;)V
 
     return-void
 .end method
@@ -1479,14 +1528,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     .line 2
-    iget-object v1, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iget-object v1, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     if-ne v1, p1, :cond_0
 
@@ -1494,10 +1543,10 @@
 
     .line 3
     :cond_0
-    iput-object p1, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     .line 4
-    invoke-virtual {v0}, Lg4/a;->o()V
+    invoke-virtual {v0}, Ld4/a;->m()V
 
     :goto_0
     return-void
@@ -1507,10 +1556,10 @@
     .locals 2
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 6
-    iget-object v1, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iget-object v1, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     if-ne v1, p1, :cond_0
 
@@ -1518,10 +1567,10 @@
 
     .line 7
     :cond_0
-    iput-object p1, v0, Lg4/a;->m:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Ld4/a;->m:Landroid/content/res/ColorStateList;
 
     .line 8
-    invoke-virtual {v0}, Lg4/a;->o()V
+    invoke-virtual {v0}, Ld4/a;->m()V
 
     :goto_0
     return-void
@@ -1531,10 +1580,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
     .line 2
-    iget v1, v0, Lg4/a;->g:I
+    iget v1, v0, Ld4/a;->g:I
 
     if-ne p1, v1, :cond_0
 
@@ -1542,10 +1591,10 @@
 
     .line 3
     :cond_0
-    iput p1, v0, Lg4/a;->g:I
+    iput p1, v0, Ld4/a;->g:I
 
     .line 4
-    invoke-virtual {v0}, Lg4/a;->o()V
+    invoke-virtual {v0}, Ld4/a;->m()V
 
     :goto_0
     return-void
@@ -1558,14 +1607,14 @@
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setUseCompatPadding(Z)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {p1}, Lg4/a;->m()V
+    invoke-virtual {p1}, Ld4/a;->k()V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->p:Lg4/a;
+    iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->o:Ld4/a;
 
-    invoke-virtual {p1}, Lg4/a;->l()V
+    invoke-virtual {p1}, Ld4/a;->j()V
 
     return-void
 .end method
@@ -1574,7 +1623,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->i()Z
+    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->g()Z
 
     move-result v0
 
@@ -1587,20 +1636,20 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
+    iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->r:Z
+    iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->q:Z
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->h()V
+    invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->f()V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->t:Lcom/google/android/material/card/MaterialCardView$a;
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->s:Lcom/google/android/material/card/MaterialCardView$a;
 
     if-eqz v0, :cond_0
 

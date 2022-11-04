@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;Lf0/a0;Lcom/google/android/material/internal/o$c;)Lf0/a0;
+.method public abstract a(Landroid/view/View;Lf0/v;Lcom/google/android/material/internal/o$c;)Lf0/v;
 .end method

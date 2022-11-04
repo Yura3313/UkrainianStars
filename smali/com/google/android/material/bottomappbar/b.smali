@@ -32,10 +32,10 @@
 
     iget v1, p0, Lcom/google/android/material/bottomappbar/b;->a:I
 
-    sget v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0:I
+    sget v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
 
     .line 2
-    invoke-virtual {v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->M(I)F
+    invoke-virtual {v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->E(I)F
 
     move-result v0
 

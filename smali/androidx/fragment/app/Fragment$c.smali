@@ -68,7 +68,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Landroidx/fragment/app/Fragment;->a0:Ljava/lang/Object;
+    sget-object v0, Landroidx/fragment/app/Fragment;->Z:Ljava/lang/Object;
 
     iput-object v0, p0, Landroidx/fragment/app/Fragment$c;->j:Ljava/lang/Object;
 

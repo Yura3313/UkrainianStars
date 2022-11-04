@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/m;->g:Landroid/view/View;
+    iput-object p1, p0, Lcom/google/android/material/internal/m;->f:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/m;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/google/android/material/internal/m;->f:Landroid/view/View;
 
     .line 2
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -43,7 +43,7 @@
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/internal/m;->g:Landroid/view/View;
+    iget-object v1, p0, Lcom/google/android/material/internal/m;->f:Landroid/view/View;
 
     const/4 v2, 0x1
 

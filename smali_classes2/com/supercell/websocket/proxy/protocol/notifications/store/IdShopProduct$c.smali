@@ -15,10 +15,10 @@
 
 
 # static fields
-.field public static final a:Lcom/google/protobuf/j0;
+.field public static final a:Lcom/google/protobuf/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/j0<",
+            "Lcom/google/protobuf/l0<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -32,17 +32,17 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/w1$b;->q:Lcom/google/protobuf/w1$b$a;
+    sget-object v0, Lcom/google/protobuf/z1$b;->p:Lcom/google/protobuf/z1$b$a;
 
     .line 2
-    new-instance v1, Lcom/google/protobuf/j0;
+    new-instance v1, Lcom/google/protobuf/l0;
 
     const-string v2, ""
 
-    invoke-direct {v1, v0, v0, v2}, Lcom/google/protobuf/j0;-><init>(Lcom/google/protobuf/w1$b;Lcom/google/protobuf/w1$b;Ljava/lang/Object;)V
+    invoke-direct {v1, v0, v0, v2}, Lcom/google/protobuf/l0;-><init>(Lcom/google/protobuf/z1$b;Lcom/google/protobuf/z1$b;Ljava/lang/Object;)V
 
     .line 3
-    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopProduct$c;->a:Lcom/google/protobuf/j0;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopProduct$c;->a:Lcom/google/protobuf/l0;
 
     return-void
 .end method

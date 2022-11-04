@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/view/menu/b;
+.field public final synthetic f:Landroidx/appcompat/view/menu/b;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/view/menu/b;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,22 +34,22 @@
 
 
 # virtual methods
-.method public final c(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+.method public final a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->m:Landroid/os/Handler;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->l:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -63,9 +63,9 @@
     if-ge v2, v0, :cond_1
 
     .line 3
-    iget-object v4, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v4, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v4, v4, Landroidx/appcompat/view/menu/b;->o:Ljava/util/ArrayList;
+    iget-object v4, v4, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -85,7 +85,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v2, -0x1
+    move v2, v3
 
     :goto_1
     if-ne v2, v3, :cond_2
@@ -96,9 +96,9 @@
     add-int/lit8 v2, v2, 0x1
 
     .line 4
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -107,9 +107,9 @@
     if-ge v2, v0, :cond_3
 
     .line 5
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -135,21 +135,21 @@
     add-long/2addr v1, v3
 
     .line 8
-    iget-object p2, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object p2, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object p2, p2, Landroidx/appcompat/view/menu/b;->m:Landroid/os/Handler;
+    iget-object p2, p2, Landroidx/appcompat/view/menu/b;->l:Landroid/os/Handler;
 
     invoke-virtual {p2, v0, p1, v1, v2}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;Ljava/lang/Object;J)Z
 
     return-void
 .end method
 
-.method public final f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
+.method public final d(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)V
     .locals 0
 
-    iget-object p2, p0, Landroidx/appcompat/view/menu/b$c;->g:Landroidx/appcompat/view/menu/b;
+    iget-object p2, p0, Landroidx/appcompat/view/menu/b$c;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object p2, p2, Landroidx/appcompat/view/menu/b;->m:Landroid/os/Handler;
+    iget-object p2, p2, Landroidx/appcompat/view/menu/b;->l:Landroid/os/Handler;
 
     invoke-virtual {p2, p1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 

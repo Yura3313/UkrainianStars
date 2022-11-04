@@ -62,7 +62,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I

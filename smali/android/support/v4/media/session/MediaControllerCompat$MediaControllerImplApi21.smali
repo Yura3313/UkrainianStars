@@ -144,7 +144,7 @@
 
 # virtual methods
 .method public addQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;)V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->getFlags()J
@@ -157,9 +157,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 2
     new-instance v0, Landroid/os/Bundle;
@@ -192,7 +192,7 @@
 .end method
 
 .method public addQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;I)V
-    .locals 5
+    .locals 4
 
     .line 6
     invoke-virtual {p0}, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->getFlags()J
@@ -205,9 +205,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 7
     new-instance v0, Landroid/os/Bundle;
@@ -222,7 +222,7 @@
     const-string p1, "android.support.v4.media.session.command.ARGUMENT_INDEX"
 
     .line 9
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, p1, p2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     const/4 p1, 0x0
 
@@ -417,10 +417,8 @@
 
     return-object v0
 
-    :catch_0
-    nop
-
     .line 3
+    :catch_0
     :cond_0
     iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mControllerObj:Ljava/lang/Object;
 
@@ -491,42 +489,8 @@
 .end method
 
 .method public getRatingType()I
-    .locals 2
+    .locals 1
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x16
-
-    if-ge v0, v1, :cond_0
-
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mSessionToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
-
-    invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->getExtraBinder()Landroid/support/v4/media/session/IMediaSession;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mSessionToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
-
-    invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->getExtraBinder()Landroid/support/v4/media/session/IMediaSession;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Landroid/support/v4/media/session/IMediaSession;->getRatingType()I
-
-    move-result v0
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return v0
-
-    .line 3
-    :catch_0
-    :cond_0
     iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mControllerObj:Ljava/lang/Object;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompatApi21;->getRatingType(Ljava/lang/Object;)I
@@ -870,7 +834,7 @@
 .end method
 
 .method public removeQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;)V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->getFlags()J
@@ -883,9 +847,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 2
     new-instance v0, Landroid/os/Bundle;

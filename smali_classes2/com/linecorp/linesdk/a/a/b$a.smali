@@ -1,5 +1,5 @@
 .class public final Lcom/linecorp/linesdk/a/a/b$a;
-.super Lp7/a;
+.super Ll7/a;
 .source "SourceFile"
 
 
@@ -15,18 +15,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp7/a;"
+        "Ll7/a;"
     }
 .end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lp7/a;-><init>(I)V
+    invoke-direct {p0}, Ll7/a;-><init>()V
 
     return-void
 .end method
@@ -80,7 +78,7 @@
 
     const-wide/16 v6, 0x3e8
 
-    mul-long v4, v4, v6
+    mul-long/2addr v4, v6
 
     .line 7
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J

@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
-.super Lse/i;
+.super Lif/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->g1()V
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->f1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,21 +18,21 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lvc/i;",
-        "Lze/f0<",
+        "Lif/i;",
+        "Lhf/l<",
+        "Ltc/i;",
+        "Lpf/g0<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Lvc/k;",
+        "Ltc/k;",
         ">;>;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
+.field public static final f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
+    sput-object v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -64,12 +64,12 @@
     .locals 7
 
     .line 1
-    check-cast p1, Lvc/i;
+    check-cast p1, Ltc/i;
 
     const-string v0, "friends"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -79,13 +79,13 @@
     move-result-object v0
 
     .line 4
-    iget-object v1, p1, Lvc/i;->a:Ljava/util/List;
+    iget-object v1, p1, Ltc/i;->a:Ljava/util/List;
 
     .line 5
-    iget-object p1, p1, Lvc/i;->b:Ljava/util/List;
+    iget-object p1, p1, Ltc/i;->b:Ljava/util/List;
 
     .line 6
-    invoke-static {v1, p1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, p1}, Lze/j;->L(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 
@@ -94,7 +94,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lze/f;->s(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -119,10 +119,10 @@
     move-result-object v2
 
     .line 9
-    check-cast v2, Lvc/h;
+    check-cast v2, Ltc/h;
 
     .line 10
-    iget-object v2, v2, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v2, v2, Ltc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 11
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -130,19 +130,19 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {v1}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v1}, Lze/j;->Y(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p1
 
     .line 12
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v1
 
     .line 13
-    iget-object v1, v1, Lae/u;->o:Lrc/d0;
+    iget-object v1, v1, Lzd/q;->o:Lpc/d1;
 
     .line 14
     new-instance v2, Ljava/util/ArrayList;
@@ -181,7 +181,7 @@
 
     .line 17
     :cond_2
-    invoke-virtual {v1, v2}, Lrc/d0;->j(Ljava/util/List;)Lze/f0;
+    invoke-virtual {v1, v2}, Lpc/d1;->j(Ljava/util/List;)Lpf/g0;
 
     move-result-object p1
 

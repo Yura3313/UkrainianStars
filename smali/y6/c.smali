@@ -1,297 +1,216 @@
-.class public final Ly6/c;
-.super Ljava/lang/Object;
-.source "BoundingBox.java"
+.class public abstract enum Ly6/c;
+.super Ljava/lang/Enum;
+.source "DataMask.java"
 
 
-# instance fields
-.field public a:Ll6/b;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Ly6/c;",
+        ">;"
+    }
+.end annotation
 
-.field public b:Le6/l;
 
-.field public c:Le6/l;
+# static fields
+.field public static final enum f:Ly6/c$a;
 
-.field public d:Le6/l;
+.field public static final enum g:Ly6/c$b;
 
-.field public e:Le6/l;
+.field public static final enum h:Ly6/c$c;
 
-.field public f:I
+.field public static final enum i:Ly6/c$d;
 
-.field public g:I
+.field public static final enum j:Ly6/c$e;
 
-.field public h:I
+.field public static final enum k:Ly6/c$f;
 
-.field public i:I
+.field public static final enum l:Ly6/c$g;
+
+.field public static final enum m:Ly6/c$h;
+
+.field public static final synthetic n:[Ly6/c;
 
 
 # direct methods
-.method public constructor <init>(Ll6/b;Le6/l;Le6/l;Le6/l;Le6/l;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/zxing/NotFoundException;
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 16
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ly6/c$a;
 
-    if-nez p2, :cond_0
+    invoke-direct {v0}, Ly6/c$a;-><init>()V
 
-    if-eqz p4, :cond_3
-
-    :cond_0
-    if-nez p3, :cond_1
-
-    if-eqz p5, :cond_3
-
-    :cond_1
-    if-eqz p2, :cond_2
-
-    if-eqz p3, :cond_3
-
-    :cond_2
-    if-eqz p4, :cond_4
-
-    if-eqz p5, :cond_3
-
-    goto :goto_0
+    sput-object v0, Ly6/c;->f:Ly6/c$a;
 
     .line 2
-    :cond_3
-    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
+    new-instance v1, Ly6/c$b;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1}, Ly6/c$b;-><init>()V
+
+    sput-object v1, Ly6/c;->g:Ly6/c$b;
 
     .line 3
-    throw p1
+    new-instance v3, Ly6/c$c;
+
+    const/4 v4, 0x2
+
+    invoke-direct {v3}, Ly6/c$c;-><init>()V
+
+    sput-object v3, Ly6/c;->h:Ly6/c$c;
 
     .line 4
-    :cond_4
-    :goto_0
-    iput-object p1, p0, Ly6/c;->a:Ll6/b;
+    new-instance v5, Ly6/c$d;
+
+    const/4 v6, 0x3
+
+    invoke-direct {v5}, Ly6/c$d;-><init>()V
+
+    sput-object v5, Ly6/c;->i:Ly6/c$d;
 
     .line 5
-    iput-object p2, p0, Ly6/c;->b:Le6/l;
+    new-instance v7, Ly6/c$e;
+
+    const/4 v8, 0x4
+
+    invoke-direct {v7}, Ly6/c$e;-><init>()V
+
+    sput-object v7, Ly6/c;->j:Ly6/c$e;
 
     .line 6
-    iput-object p3, p0, Ly6/c;->c:Le6/l;
+    new-instance v9, Ly6/c$f;
+
+    const/4 v10, 0x5
+
+    invoke-direct {v9}, Ly6/c$f;-><init>()V
+
+    sput-object v9, Ly6/c;->k:Ly6/c$f;
 
     .line 7
-    iput-object p4, p0, Ly6/c;->d:Le6/l;
+    new-instance v11, Ly6/c$g;
+
+    invoke-direct {v11}, Ly6/c$g;-><init>()V
+
+    sput-object v11, Ly6/c;->l:Ly6/c$g;
 
     .line 8
-    iput-object p5, p0, Ly6/c;->e:Le6/l;
+    new-instance v12, Ly6/c$h;
+
+    const/4 v13, 0x7
+
+    invoke-direct {v12}, Ly6/c$h;-><init>()V
+
+    sput-object v12, Ly6/c;->m:Ly6/c$h;
+
+    const/16 v14, 0x8
+
+    new-array v14, v14, [Ly6/c;
+
+    const/4 v15, 0x0
+
+    aput-object v0, v14, v15
+
+    aput-object v1, v14, v2
+
+    aput-object v3, v14, v4
+
+    aput-object v5, v14, v6
+
+    aput-object v7, v14, v8
+
+    aput-object v9, v14, v10
+
+    const/4 v0, 0x6
+
+    aput-object v11, v14, v0
+
+    aput-object v12, v14, v13
 
     .line 9
-    invoke-virtual {p0}, Ly6/c;->a()V
+    sput-object v14, Ly6/c;->n:[Ly6/c;
 
     return-void
 .end method
 
-.method public constructor <init>(Ly6/c;)V
-    .locals 4
+.method public constructor <init>(Ljava/lang/String;ILy6/c$a;)V
+    .locals 0
 
-    .line 10
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    iget-object v0, p1, Ly6/c;->a:Ll6/b;
-
-    iget-object v1, p1, Ly6/c;->b:Le6/l;
-
-    iget-object v2, p1, Ly6/c;->c:Le6/l;
-
-    iget-object v3, p1, Ly6/c;->d:Le6/l;
-
-    iget-object p1, p1, Ly6/c;->e:Le6/l;
-
-    .line 12
-    iput-object v0, p0, Ly6/c;->a:Ll6/b;
-
-    .line 13
-    iput-object v1, p0, Ly6/c;->b:Le6/l;
-
-    .line 14
-    iput-object v2, p0, Ly6/c;->c:Le6/l;
-
-    .line 15
-    iput-object v3, p0, Ly6/c;->d:Le6/l;
-
-    .line 16
-    iput-object p1, p0, Ly6/c;->e:Le6/l;
-
-    .line 17
-    invoke-virtual {p0}, Ly6/c;->a()V
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Ly6/c;
+    .locals 1
+
+    const-class v0, Ly6/c;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Ly6/c;
+
+    return-object p0
+.end method
+
+.method public static values()[Ly6/c;
+    .locals 1
+
+    sget-object v0, Ly6/c;->n:[Ly6/c;
+
+    invoke-virtual {v0}, [Ly6/c;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ly6/c;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public abstract c(II)Z
+.end method
+
+.method public final d(Lh6/b;I)V
     .locals 4
 
-    .line 1
-    iget-object v0, p0, Ly6/c;->b:Le6/l;
+    const/4 v0, 0x0
 
-    if-nez v0, :cond_0
+    move v1, v0
+
+    :goto_0
+    if-ge v1, p2, :cond_2
+
+    move v2, v0
+
+    :goto_1
+    if-ge v2, p2, :cond_1
+
+    .line 1
+    invoke-virtual {p0, v1, v2}, Ly6/c;->c(II)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
 
     .line 2
-    new-instance v0, Le6/l;
+    invoke-virtual {p1, v2, v1}, Lh6/b;->a(II)V
 
-    iget-object v1, p0, Ly6/c;->d:Le6/l;
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
 
-    .line 3
-    iget v1, v1, Le6/l;->b:F
+    goto :goto_1
 
-    const/4 v2, 0x0
-
-    .line 4
-    invoke-direct {v0, v2, v1}, Le6/l;-><init>(FF)V
-
-    iput-object v0, p0, Ly6/c;->b:Le6/l;
-
-    .line 5
-    new-instance v0, Le6/l;
-
-    iget-object v1, p0, Ly6/c;->e:Le6/l;
-
-    .line 6
-    iget v1, v1, Le6/l;->b:F
-
-    .line 7
-    invoke-direct {v0, v2, v1}, Le6/l;-><init>(FF)V
-
-    iput-object v0, p0, Ly6/c;->c:Le6/l;
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 8
-    :cond_0
-    iget-object v1, p0, Ly6/c;->d:Le6/l;
-
-    if-nez v1, :cond_1
-
-    .line 9
-    new-instance v1, Le6/l;
-
-    iget-object v2, p0, Ly6/c;->a:Ll6/b;
-
-    .line 10
-    iget v2, v2, Ll6/b;->g:I
-
-    add-int/lit8 v3, v2, -0x1
-
-    int-to-float v3, v3
-
-    .line 11
-    iget v0, v0, Le6/l;->b:F
-
-    .line 12
-    invoke-direct {v1, v3, v0}, Le6/l;-><init>(FF)V
-
-    iput-object v1, p0, Ly6/c;->d:Le6/l;
-
-    .line 13
-    new-instance v0, Le6/l;
-
-    add-int/lit8 v2, v2, -0x1
-
-    int-to-float v1, v2
-
-    iget-object v2, p0, Ly6/c;->c:Le6/l;
-
-    .line 14
-    iget v2, v2, Le6/l;->b:F
-
-    .line 15
-    invoke-direct {v0, v1, v2}, Le6/l;-><init>(FF)V
-
-    iput-object v0, p0, Ly6/c;->e:Le6/l;
-
-    .line 16
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Ly6/c;->b:Le6/l;
-
-    .line 17
-    iget v0, v0, Le6/l;->a:F
-
-    .line 18
-    iget-object v1, p0, Ly6/c;->c:Le6/l;
-
-    .line 19
-    iget v1, v1, Le6/l;->a:F
-
-    .line 20
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iput v0, p0, Ly6/c;->f:I
-
-    .line 21
-    iget-object v0, p0, Ly6/c;->d:Le6/l;
-
-    .line 22
-    iget v0, v0, Le6/l;->a:F
-
-    .line 23
-    iget-object v1, p0, Ly6/c;->e:Le6/l;
-
-    .line 24
-    iget v1, v1, Le6/l;->a:F
-
-    .line 25
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iput v0, p0, Ly6/c;->g:I
-
-    .line 26
-    iget-object v0, p0, Ly6/c;->b:Le6/l;
-
-    .line 27
-    iget v0, v0, Le6/l;->b:F
-
-    .line 28
-    iget-object v1, p0, Ly6/c;->d:Le6/l;
-
-    .line 29
-    iget v1, v1, Le6/l;->b:F
-
-    .line 30
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iput v0, p0, Ly6/c;->h:I
-
-    .line 31
-    iget-object v0, p0, Ly6/c;->c:Le6/l;
-
-    .line 32
-    iget v0, v0, Le6/l;->b:F
-
-    .line 33
-    iget-object v1, p0, Ly6/c;->e:Le6/l;
-
-    .line 34
-    iget v1, v1, Le6/l;->b:F
-
-    .line 35
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iput v0, p0, Ly6/c;->i:I
-
+    :cond_2
     return-void
 .end method

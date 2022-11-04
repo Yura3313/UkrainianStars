@@ -72,7 +72,7 @@
     const-string v1, "KGCoupon"
 
     .line 2
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 3
     iget-object v0, p0, Lcom/kakaogame/KGCoupon$1;->val$callback:Lcom/kakaogame/KGResultCallback;

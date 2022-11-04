@@ -1,5 +1,5 @@
-.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$g;
-.super Landroidx/appcompat/app/AppCompatDelegateImpl$h;
+.class public abstract Landroidx/appcompat/app/AppCompatDelegateImpl$g;
+.super Ljava/lang/Object;
 .source "AppCompatDelegateImpl.java"
 
 
@@ -9,108 +9,113 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
+    accessFlags = 0x401
     name = "g"
 .end annotation
 
 
 # instance fields
-.field public final c:Landroid/os/PowerManager;
+.field public a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
 
-.field public final synthetic d:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public final synthetic b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Landroid/content/Context;)V
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    invoke-direct {p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$h;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
-
-    .line 2
-    invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    const-string p2, "power"
-
-    .line 3
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/os/PowerManager;
-
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->c:Landroid/os/PowerManager;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Landroid/content/IntentFilter;
+.method public final a()V
     .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    new-instance v0, Landroid/content/IntentFilter;
-
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
-
-    const-string v1, "android.os.action.POWER_SAVE_MODE_CHANGED"
-
-    .line 3
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final c()V
-    .locals 1
-
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->C()Z
-
-    return-void
-.end method
-
-.method public final e()I
-    .locals 3
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x1
-
-    const/16 v2, 0x15
-
-    if-lt v0, v2, :cond_0
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->c:Landroid/os/PowerManager;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager;->isPowerSaveMode()Z
-
-    move-result v0
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
 
     if-eqz v0, :cond_0
 
-    const/4 v1, 0x2
+    .line 2
+    :try_start_0
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    .line 3
+    iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
 
     :cond_0
-    return v1
+    return-void
+.end method
+
+.method public abstract b()Landroid/content/IntentFilter;
+.end method
+
+.method public abstract c()I
+.end method
+
+.method public abstract d()V
+.end method
+
+.method public final e()V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a()V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->b()Landroid/content/IntentFilter;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 3
+    invoke-virtual {v0}, Landroid/content/IntentFilter;->countActions()I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
+
+    if-nez v1, :cond_1
+
+    .line 5
+    new-instance v1, Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
+
+    invoke-direct {v1, p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl$g;)V
+
+    iput-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
+
+    .line 6
+    :cond_1
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
+
+    iget-object v2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$g$a;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    :cond_2
+    :goto_0
+    return-void
 .end method

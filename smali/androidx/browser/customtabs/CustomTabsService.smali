@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Lm/a;
+.field public final f:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field public h:Landroidx/browser/customtabs/CustomTabsService$a;
+.field public g:Landroidx/browser/customtabs/CustomTabsService$a;
 
 
 # direct methods
@@ -30,14 +30,14 @@
 
     invoke-direct {v0}, Lm/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Lm/a;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->f:Lm/a;
 
     .line 3
     new-instance v0, Landroidx/browser/customtabs/CustomTabsService$a;
 
     invoke-direct {v0, p0}, Landroidx/browser/customtabs/CustomTabsService$a;-><init>(Landroidx/browser/customtabs/CustomTabsService;)V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroidx/browser/customtabs/CustomTabsService$a;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Landroidx/browser/customtabs/CustomTabsService$a;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lk/c;",
+            "Lk/d;",
             "Landroid/net/Uri;",
             "Landroid/os/Bundle;",
             "Ljava/util/List<",
@@ -82,7 +82,7 @@
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroidx/browser/customtabs/CustomTabsService$a;
+    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Landroidx/browser/customtabs/CustomTabsService$a;
 
     return-object p1
 .end method

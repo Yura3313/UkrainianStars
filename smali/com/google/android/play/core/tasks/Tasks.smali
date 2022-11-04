@@ -139,7 +139,7 @@
 
     const-string v0, "Task must not be null"
 
-    invoke-static {p0, v0}, Lod/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v0}, Lp4/e;->c(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {p0}, Lcom/google/android/play/core/tasks/Task;->isComplete()Z
 
@@ -195,11 +195,11 @@
 
     const-string v0, "Task must not be null"
 
-    invoke-static {p0, v0}, Lod/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v0}, Lp4/e;->c(Ljava/lang/Object;Ljava/lang/Object;)V
 
     const-string v0, "TimeUnit must not be null"
 
-    invoke-static {p3, v0}, Lod/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p3, v0}, Lp4/e;->c(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {p0}, Lcom/google/android/play/core/tasks/Task;->isComplete()Z
 

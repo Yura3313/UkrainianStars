@@ -3,79 +3,90 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ly1/a$f;,
+        Ly1/a$b;,
+        Ly1/a$g;,
+        Ly1/a$c;,
+        Ly1/a$d;,
+        Ly1/a$a;,
+        Ly1/a$e;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<O::",
+        "Ly1/a$d;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
 # instance fields
-.field public a:I
+.field public final a:Ly1/a$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly1/a$a<",
+            "*TO;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ly1/a$g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly1/a$g<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ly1/a$a;Ly1/a$g;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ly1/a$a;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p3    # Ly1/a$g;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<C::",
+            "Ly1/a$f;",
+            ">(",
+            "Ljava/lang/String;",
+            "Ly1/a$a<",
+            "TC;TO;>;",
+            "Ly1/a$g<",
+            "TC;>;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x1
-
     .line 2
-    iput v0, p0, Ly1/a;->a:I
+    iput-object p1, p0, Ly1/a;->c:Ljava/lang/String;
+
+    .line 3
+    iput-object p2, p0, Ly1/a;->a:Ly1/a$a;
+
+    .line 4
+    iput-object p3, p0, Ly1/a;->b:Ly1/a$g;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Ly1/a;
-    .locals 2
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    iget v0, p0, Ly1/a;->a:I
-
-    const/16 v1, 0x1f
-
-    mul-int v1, v1, v0
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
-
-    move-result p1
-
-    :goto_0
-    add-int/2addr v1, p1
-
-    iput v1, p0, Ly1/a;->a:I
-
-    return-object p0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    iget v0, p0, Ly1/a;->a:I
-
-    return v0
-.end method
-
-.method public final c(Z)Ly1/a;
-    .locals 2
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    iget v0, p0, Ly1/a;->a:I
-
-    const/16 v1, 0x1f
-
-    mul-int v1, v1, v0
-
-    add-int/2addr v1, p1
-
-    iput v1, p0, Ly1/a;->a:I
-
-    return-object p0
 .end method

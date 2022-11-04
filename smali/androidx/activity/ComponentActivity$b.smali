@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final b(ILb/a;Ljava/lang/Object;)V
+.method public final c(ILb/a;Ljava/lang/Object;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -155,7 +155,7 @@
 
     .line 12
     :cond_3
-    invoke-static {v0, p2, p1}, Lu/a;->k(Landroid/app/Activity;[Ljava/lang/String;I)V
+    invoke-static {v0, p2, p1}, Lu/a;->b(Landroid/app/Activity;[Ljava/lang/String;I)V
 
     goto :goto_0
 
@@ -184,32 +184,25 @@
 
     .line 15
     :try_start_0
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->l()Landroid/content/IntentSender;
-
-    move-result-object v1
+    iget-object v1, p2, Landroidx/activity/result/IntentSenderRequest;->f:Landroid/content/IntentSender;
 
     .line 16
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->a()Landroid/content/Intent;
-
-    move-result-object v3
-
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->d()I
-
-    move-result v4
+    iget-object v3, p2, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/Intent;
 
     .line 17
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->j()I
+    iget v4, p2, Landroidx/activity/result/IntentSenderRequest;->h:I
 
-    move-result v5
+    .line 18
+    iget v5, p2, Landroidx/activity/result/IntentSenderRequest;->i:I
 
     const/4 v6, 0x0
 
-    .line 18
+    .line 19
     sget p2, Lu/a;->b:I
 
     move v2, p1
 
-    .line 19
+    .line 20
     invoke-virtual/range {v0 .. v7}, Landroidx/activity/ComponentActivity;->startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V
     :try_end_0
     .catch Landroid/content/IntentSender$SendIntentException; {:try_start_0 .. :try_end_0} :catch_0
@@ -219,7 +212,7 @@
     :catch_0
     move-exception p2
 
-    .line 20
+    .line 21
     new-instance p3, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -236,11 +229,11 @@
 
     goto :goto_0
 
-    .line 21
+    .line 22
     :cond_5
     sget p3, Lu/a;->b:I
 
-    .line 22
+    .line 23
     invoke-virtual {v0, p2, p1, v7}, Landroidx/activity/ComponentActivity;->startActivityForResult(Landroid/content/Intent;ILandroid/os/Bundle;)V
 
     :goto_0

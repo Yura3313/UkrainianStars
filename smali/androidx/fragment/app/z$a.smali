@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/z$a;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/fragment/app/z$a;->f:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,17 +35,20 @@
 
 # virtual methods
 .method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 0
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/z$a;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/fragment/app/z$a;->f:Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/z$a;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/fragment/app/z$a;->f:Landroid/view/View;
 
-    invoke-static {p1}, Lf0/r;->B(Landroid/view/View;)V
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->requestApplyInsets()V
 
     return-void
 .end method

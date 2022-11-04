@@ -22,7 +22,13 @@
 
 
 # virtual methods
-.method public J0(ILandroid/os/Parcel;)V
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public n0(ILandroid/os/Parcel;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,12 +37,6 @@
     .end annotation
 
     return-void
-.end method
-
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 0
-
-    return-object p0
 .end method
 
 .method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
@@ -68,7 +68,7 @@
 
     invoke-virtual {p2, p3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    const/4 p3, 0x0
+    move p3, v0
 
     :goto_0
     if-eqz p3, :cond_1
@@ -79,7 +79,7 @@
 
     .line 3
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/instantapps/zza;->J0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/instantapps/zza;->n0(ILandroid/os/Parcel;)V
 
     return v0
 .end method

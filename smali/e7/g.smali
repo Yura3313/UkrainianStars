@@ -1,610 +1,133 @@
-.class public final Le7/g;
-.super Ljava/lang/Object;
-.source "JavaCore.java"
-
-# interfaces
-.implements Le7/a;
+.class public final enum Le7/g;
+.super Ljava/lang/Enum;
+.source "UserSetupState.java"
 
 
-# instance fields
-.field public final a:Lj8/b;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Le7/g;",
+        ">;"
+    }
+.end annotation
 
-.field public final b:Lk7/a;
 
-.field public final c:Le8/s;
+# static fields
+.field public static final enum f:Le7/g;
 
-.field public final d:La8/d;
+.field public static final enum g:Le7/g;
 
-.field public final e:Lba/a;
+.field public static final enum h:Le7/g;
 
-.field public f:La8/f;
+.field public static final enum i:Le7/g;
 
-.field public g:Li7/e;
-
-.field public h:Z
+.field public static final synthetic j:[Le7/g;
 
 
 # direct methods
-.method public constructor <init>(Le8/s;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Le7/g;
 
-    const/4 v0, 0x0
+    const-string v1, "NON_STARTED"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Le7/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Le7/g;->f:Le7/g;
 
     .line 2
-    iput-boolean v0, p0, Le7/g;->h:Z
+    new-instance v1, Le7/g;
+
+    const-string v3, "IN_PROGRESS"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4}, Le7/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Le7/g;->g:Le7/g;
 
     .line 3
-    iput-object p1, p0, Le7/g;->c:Le8/s;
+    new-instance v3, Le7/g;
+
+    const-string v5, "COMPLETED"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6}, Le7/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v3, Le7/g;->h:Le7/g;
 
     .line 4
-    new-instance v0, La8/f;
+    new-instance v5, Le7/g;
 
-    invoke-direct {v0, p1}, La8/f;-><init>(Le8/s;)V
+    const-string v7, "FAILED"
 
-    iput-object v0, p0, Le7/g;->f:La8/f;
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8}, Le7/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v5, Le7/g;->i:Le7/g;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Le7/g;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 5
-    iget-object p1, v0, La8/f;->r:Li7/e;
-
-    .line 6
-    iput-object p1, p0, Le7/g;->g:Li7/e;
-
-    .line 7
-    iget-object p1, v0, La8/f;->c:La8/d;
-
-    .line 8
-    iput-object p1, p0, Le7/g;->d:La8/d;
-
-    .line 9
-    iget-object p1, v0, La8/f;->f:Lj8/b;
-
-    .line 10
-    iput-object p1, p0, Le7/g;->a:Lj8/b;
-
-    .line 11
-    iget-object p1, v0, La8/f;->h:Lk7/a;
-
-    .line 12
-    iput-object p1, p0, Le7/g;->b:Lk7/a;
-
-    .line 13
-    iget-object p1, v0, La8/f;->i:Lba/a;
-
-    .line 14
-    iput-object p1, p0, Le7/g;->e:Lba/a;
+    sput-object v7, Le7/g;->j:[Le7/g;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()Lj8/b;
-    .locals 1
-
-    iget-object v0, p0, Le7/g;->a:Lj8/b;
-
-    return-object v0
-.end method
-
-.method public final b()La8/f;
-    .locals 1
-
-    iget-object v0, p0, Le7/g;->f:La8/f;
-
-    return-object v0
-.end method
-
-.method public final c()Lq8/d;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Le7/g;->e()Lt8/b;
-
-    move-result-object v0
-
-    .line 2
-    invoke-virtual {v0}, Lt8/b;->o()Lq8/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final d()La8/b;
-    .locals 1
-
-    iget-object v0, p0, Le7/g;->f:La8/f;
-
-    invoke-virtual {v0}, La8/f;->a()La8/b;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final e()Lt8/b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le7/g;->f:La8/f;
-
-    .line 2
-    iget-object v0, v0, La8/f;->s:Lt8/e;
-
-    .line 3
-    invoke-virtual {v0}, Lt8/e;->a()Lt8/b;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final f()Lm8/a;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Le7/g;->e()Lt8/b;
-
-    move-result-object v0
-
-    .line 2
-    iget-object v0, v0, Lt8/b;->k:Lm8/a;
-
-    return-object v0
-.end method
-
-.method public final g()Lv9/e;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le7/g;->f:La8/f;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    iget-object v1, v0, La8/f;->k:Lv9/e;
-
-    if-nez v1, :cond_0
-
-    .line 4
-    new-instance v1, Lv9/e;
-
-    iget-object v2, v0, La8/f;->a:Le8/s;
-
-    invoke-direct {v1, v0, v2}, Lv9/e;-><init>(La8/f;Le8/s;)V
-
-    iput-object v1, v0, La8/f;->k:Lv9/e;
-
-    .line 5
-    :cond_0
-    iget-object v1, v0, La8/f;->k:Lv9/e;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-.end method
-
-.method public final h()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Le7/g;->g:Li7/e;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    invoke-virtual {v0}, Li7/e;->h()Ljava/util/List;
-
-    move-result-object v1
-
-    .line 4
-    check-cast v1, Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Li7/c;
-
-    .line 5
-    monitor-enter v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
-
-    .line 6
-    :try_start_1
-    sget-object v3, Li7/i;->g:Li7/i;
-
-    invoke-virtual {v0, v2, v3}, Li7/e;->q(Li7/c;Li7/i;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 7
-    :try_start_2
-    monitor-exit v0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-
-    .line 8
-    :cond_0
-    monitor-enter v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    const/4 v1, 0x0
-
-    .line 9
-    :try_start_3
-    iput-object v1, v0, Li7/e;->g:Li7/f;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    .line 10
-    :try_start_4
-    monitor-exit v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    .line 11
-    monitor-exit v0
-
-    .line 12
-    iget-object v0, p0, Le7/g;->g:Li7/e;
-
-    .line 13
-    invoke-virtual {v0}, Li7/e;->g()Li7/f;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Li7/f;->j()V
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
-
-    :catchall_1
-    move-exception v1
-
-    .line 14
-    :try_start_5
-    monitor-exit v0
-
-    throw v1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
-
-    :catchall_2
-    move-exception v1
-
-    monitor-exit v0
-
-    goto :goto_2
-
-    :goto_1
-    throw v1
-
-    :goto_2
-    goto :goto_1
 .end method
 
-.method public final i(Lk8/a;)V
-    .locals 18
+.method public static valueOf(Ljava/lang/String;)Le7/g;
+    .locals 1
 
-    move-object/from16 v0, p0
+    const-class v0, Le7/g;
 
-    move-object/from16 v1, p1
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 1
-    iget-object v2, v0, Le7/g;->a:Lj8/b;
+    move-result-object p0
 
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p0, Le7/g;
 
-    .line 2
-    new-instance v3, Ljava/util/HashMap;
+    return-object p0
+.end method
 
-    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
+.method public static values()[Le7/g;
+    .locals 1
 
-    .line 3
-    iget-object v4, v1, Lk8/a;->h:Ljava/lang/String;
+    sget-object v0, Le7/g;->j:[Le7/g;
 
-    const-string v5, "conversationPrefillText"
+    invoke-virtual {v0}, [Le7/g;->clone()Ljava/lang/Object;
 
-    invoke-virtual {v3, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
 
-    .line 4
-    iget-object v4, v1, Lk8/a;->l:Ljava/lang/String;
+    check-cast v0, [Le7/g;
 
-    const-string v5, "initialUserMessageToAutoSendInPreissue"
-
-    invoke-virtual {v3, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    new-instance v4, Ljava/util/HashMap;
-
-    invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
-
-    .line 6
-    iget-object v5, v1, Lk8/a;->d:Ljava/lang/Boolean;
-
-    const-string v6, "fullPrivacy"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    iget-object v5, v1, Lk8/a;->c:Ljava/lang/Boolean;
-
-    const-string v6, "hideNameAndEmail"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    iget-object v5, v1, Lk8/a;->b:Ljava/lang/Boolean;
-
-    const-string v6, "requireEmail"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 9
-    iget-object v5, v1, Lk8/a;->e:Ljava/lang/Boolean;
-
-    const-string v6, "showSearchOnNewConversation"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 10
-    iget-object v5, v1, Lk8/a;->a:Ljava/lang/Boolean;
-
-    const-string v6, "gotoConversationAfterContactUs"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 11
-    iget-object v5, v1, Lk8/a;->f:Ljava/lang/Boolean;
-
-    const-string v6, "showConversationResolutionQuestion"
-
-    .line 12
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 13
-    iget-object v5, v1, Lk8/a;->i:Ljava/lang/Boolean;
-
-    const-string v6, "showConversationInfoScreen"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    iget-object v5, v1, Lk8/a;->j:Ljava/lang/Boolean;
-
-    const-string v6, "enableTypingIndicator"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 15
-    iget v5, v1, Lk8/a;->g:I
-
-    if-eqz v5, :cond_0
-
-    .line 16
-    invoke-static {v5}, Lp/g;->b(I)I
-
-    move-result v5
-
-    .line 17
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    const-string v6, "enableContactUs"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 18
-    :cond_0
-    iget-object v5, v1, Lk8/a;->k:Ljava/lang/Boolean;
-
-    const-string v6, "enableDefaultConversationalFiling"
-
-    invoke-virtual {v4, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 19
-    invoke-virtual {v2, v4}, Lj8/b;->q(Ljava/util/Map;)V
-
-    .line 20
-    invoke-virtual {v4, v3}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
-
-    .line 21
-    iget-object v2, v2, Lj8/b;->c:Lk3/s9;
-
-    invoke-virtual {v2, v4}, Lk3/s9;->i(Ljava/util/Map;)V
-
-    .line 22
-    iget-object v1, v1, Lk8/a;->d:Ljava/lang/Boolean;
-
-    if-eqz v1, :cond_4
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    .line 23
-    new-instance v1, Li7/d;
-
-    iget-object v2, v0, Le7/g;->f:La8/f;
-
-    iget-object v3, v0, Le7/g;->c:Le8/s;
-
-    invoke-direct {v1, v0, v2, v3}, Li7/d;-><init>(Le7/a;La8/f;Le8/s;)V
-
-    .line 24
-    iget-boolean v2, v0, Le7/g;->h:Z
-
-    const/4 v3, 0x0
-
-    if-eqz v2, :cond_1
-
-    const-string v1, "Helpshift_ULoginM"
-
-    const-string v2, "clear PII should not be called after starting a Helpshift session"
-
-    .line 25
-    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
-
-    goto :goto_0
-
-    .line 26
-    :cond_1
-    iget-object v2, v0, Le7/g;->g:Li7/e;
-
-    .line 27
-    invoke-virtual {v2}, Li7/e;->f()Li7/c;
-
-    move-result-object v4
-
-    .line 28
-    iget-object v5, v4, Li7/c;->h:Ljava/lang/String;
-
-    .line 29
-    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    .line 30
-    invoke-virtual {v1}, Li7/d;->d()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    .line 31
-    invoke-virtual {v1, v4}, Li7/d;->b(Li7/c;)Z
-
-    .line 32
-    iget-object v1, v1, Li7/d;->c:Le8/s;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    goto :goto_0
-
-    .line 33
-    :cond_2
-    iget-object v6, v4, Li7/c;->g:Ljava/lang/Long;
-
-    .line 34
-    iget-object v7, v4, Li7/c;->h:Ljava/lang/String;
-
-    .line 35
-    iget-object v10, v4, Li7/c;->k:Ljava/lang/String;
-
-    .line 36
-    iget-boolean v11, v4, Li7/c;->l:Z
-
-    .line 37
-    iget-boolean v12, v4, Li7/c;->m:Z
-
-    .line 38
-    iget-boolean v13, v4, Li7/c;->n:Z
-
-    .line 39
-    iget-object v14, v4, Li7/c;->o:Ljava/lang/String;
-
-    .line 40
-    iget-boolean v15, v4, Li7/c;->p:Z
-
-    .line 41
-    iget-object v9, v4, Li7/c;->q:Li7/i;
-
-    const/4 v8, 0x0
-
-    const/16 v16, 0x0
-
-    .line 42
-    new-instance v5, Li7/c;
-
-    move-object/from16 p1, v5
-
-    move-object/from16 v17, v9
-
-    move-object/from16 v9, v16
-
-    move-object/from16 v16, v17
-
-    invoke-direct/range {v5 .. v16}, Li7/c;-><init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;ZLi7/i;)V
-
-    .line 43
-    iget-object v5, v2, Li7/e;->a:Lka/e;
-
-    move-object/from16 v6, p1
-
-    invoke-virtual {v5, v6}, Lka/e;->e(Li7/c;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3
-
-    .line 44
-    invoke-virtual {v2, v4, v6}, Li7/e;->k(Li7/c;Li7/c;)V
-
-    .line 45
-    :cond_3
-    iget-object v2, v1, Li7/d;->a:Le7/a;
-
-    check-cast v2, Le7/g;
-
-    invoke-virtual {v2}, Le7/g;->e()Lt8/b;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v3}, Lt8/b;->D(Ljava/lang/String;)V
-
-    .line 46
-    iget-object v1, v1, Li7/d;->a:Le7/a;
-
-    check-cast v1, Le7/g;
-
-    invoke-virtual {v1}, Le7/g;->e()Lt8/b;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v3}, Lt8/b;->C(Ljava/lang/String;)V
-
-    :cond_4
-    :goto_0
-    return-void
+    return-object v0
 .end method

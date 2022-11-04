@@ -41,7 +41,7 @@
 
     const-string p2, "recyclerView"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x0
 
@@ -51,43 +51,56 @@
     move-result-object p3
 
     .line 2
-    invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->K(Landroid/view/View;)I
+    invoke-static {p3}, Landroidx/recyclerview/widget/RecyclerView;->L(Landroid/view/View;)Landroidx/recyclerview/widget/RecyclerView$z;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_0
+
+    .line 3
+    invoke-virtual {p3}, Landroidx/recyclerview/widget/RecyclerView$z;->e()I
 
     move-result p3
 
-    .line 3
+    goto :goto_0
+
+    :cond_0
+    const/4 p3, -0x1
+
+    .line 4
+    :goto_0
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
     add-int/2addr v0, p3
 
-    .line 4
+    .line 5
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$e;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$e;->b()I
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$e;->a()I
 
     move-result p2
 
-    :cond_0
-    if-nez p3, :cond_1
+    :cond_1
+    if-nez p3, :cond_2
 
     const/4 p1, 0x0
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_1
-    if-ne v0, p2, :cond_2
+    :cond_2
+    if-ne v0, p2, :cond_3
 
     int-to-float p1, p2
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_3
     int-to-float p1, p3
 
     int-to-float p2, p2
@@ -100,8 +113,8 @@
 
     div-float/2addr p1, p2
 
-    .line 5
-    :goto_0
+    .line 6
+    :goto_1
     iget-object p2, p0, Lcom/supercell/id/view/FastScroll$e;->a:Lcom/supercell/id/view/FastScroll;
 
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
@@ -110,7 +123,7 @@
 
     int-to-float p3, p3
 
-    mul-float p3, p3, p1
+    mul-float/2addr p3, p1
 
     invoke-static {p2, p3}, Lcom/supercell/id/view/FastScroll;->b(Lcom/supercell/id/view/FastScroll;F)V
 

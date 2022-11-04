@@ -92,7 +92,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILif/e;)V
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILif/e;)V
 
     return-void
 .end method
@@ -136,7 +136,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILif/e;)V
 
     return-void
 .end method
@@ -169,7 +169,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILif/e;)V
 
     return-void
 .end method
@@ -206,7 +206,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/f;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILif/e;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x1
@@ -384,7 +384,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -394,7 +394,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->mobileWebUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -404,7 +404,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->androidExecParams:Ljava/util/Map;
 
-    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -414,7 +414,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/template/model/Link;->iosExecParams:Ljava/util/Map;
 
-    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -500,7 +500,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
@@ -516,7 +516,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_1
     add-int/2addr v0, v2
@@ -534,7 +534,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_2
     add-int/2addr v0, v2
@@ -561,7 +561,7 @@
     const-string v0, "Link(webUrl="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -610,7 +610,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 

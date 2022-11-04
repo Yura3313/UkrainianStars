@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lk/c;
+.field public final synthetic a:Lk/d;
 
 .field public final synthetic b:Landroidx/browser/customtabs/CustomTabsService$a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/browser/customtabs/CustomTabsService$a;Lk/c;)V
+.method public constructor <init>(Landroidx/browser/customtabs/CustomTabsService$a;Lk/d;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->b:Landroidx/browser/customtabs/CustomTabsService$a;
 
-    iput-object p2, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->a:Lk/c;
+    iput-object p2, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->a:Lk/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,15 +44,15 @@
     .line 1
     iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->b:Landroidx/browser/customtabs/CustomTabsService$a;
 
-    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService$a;->f:Landroidx/browser/customtabs/CustomTabsService;
 
-    iget-object v1, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->a:Lk/c;
+    iget-object v1, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->a:Lk/d;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     :try_start_0
-    iget-object v2, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Lm/a;
+    iget-object v2, v0, Landroidx/browser/customtabs/CustomTabsService;->f:Lm/a;
 
     monitor-enter v2
     :try_end_0
@@ -60,17 +60,17 @@
 
     .line 3
     :try_start_1
-    invoke-virtual {v1}, Lk/c;->a()Landroid/os/IBinder;
+    invoke-virtual {v1}, Lk/d;->a()Landroid/os/IBinder;
 
     move-result-object v1
 
     .line 4
-    iget-object v3, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Lm/a;
+    iget-object v3, v0, Landroidx/browser/customtabs/CustomTabsService;->f:Lm/a;
 
     const/4 v4, 0x0
 
     .line 5
-    invoke-virtual {v3, v1, v4}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v1, v4}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -83,9 +83,9 @@
     invoke-interface {v1, v3, v4}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
     .line 8
-    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Lm/a;
+    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService;->f:Lm/a;
 
-    invoke-virtual {v0, v1}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     monitor-exit v2

@@ -1,26 +1,26 @@
 .class public final Lyd/g;
-.super Lse/i;
-.source "YoungPlayerLoginConfirmPageFragment.kt"
+.super Lif/i;
+.source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Ljava/lang/String;",
-        "Landroid/text/SpannableStringBuilder;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lyd/i;",
+        "Ltc/c0$a;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lyd/g;
+.field public static final f:Lyd/g;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lyd/g;-><init>()V
 
-    sput-object v0, Lyd/g;->g:Lyd/g;
+    sput-object v0, Lyd/g;->f:Lyd/g;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,91 +49,60 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+    .locals 6
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    move-object v1, p1
 
-    check-cast p2, Landroid/text/SpannableStringBuilder;
+    check-cast v1, Lyd/i;
 
-    const-string v0, "text"
+    check-cast p2, Ltc/c0$a;
+
+    const-string p1, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "result"
+    const-string p1, "data"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    const v1, 0x304bf2
-
-    if-eq v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, "game"
+    iget-object p1, p2, Ltc/c0$a;->c:Ljava/lang/String;
 
     .line 4
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object p1
+    iget-object p2, p2, Ltc/c0;->a:Ljava/lang/String;
 
     .line 5
-    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    sget v0, Lyd/i;->c0:I
 
     .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getInstantGameLocalizedName()Ljava/lang/String;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    move-result-object p1
+    invoke-virtual {v1}, Lyd/k;->T0()Ljava/lang/String;
 
-    invoke-virtual {p2, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    move-result-object v2
 
-    goto :goto_1
+    const/4 v3, 0x1
+
+    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lpf/g0;
+
+    move-result-object v0
+
+    sget-object v2, Lyd/e;->f:Lyd/e;
 
     .line 7
-    :cond_1
-    :goto_0
-    new-instance v0, Landroid/text/style/URLSpan;
+    sget-object v3, Lyd/f;->f:Lyd/f;
 
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    const/4 v4, 0x0
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object v1
+    const/16 v5, 0x8
 
     .line 8
-    iget-object v1, v1, Lae/u;->s:Lud/i;
-
-    const-string v2, "young_player_log_in_connect_privacy_url"
+    invoke-static/range {v0 .. v5}, Lzd/o1;->j(Lpf/g0;Ljava/lang/Object;Lhf/p;Lhf/p;Lhf/l;I)Lpf/g0;
 
     .line 9
-    invoke-virtual {v1, v2}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
-
-    const/16 v1, 0x21
-
-    invoke-static {p2, p1, v0, v1}, Lae/t;->e(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
-
-    .line 10
-    :goto_1
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

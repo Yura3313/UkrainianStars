@@ -117,16 +117,14 @@
 
     const/4 v1, 0x1
 
-    const/4 v6, 0x1
-
     goto :goto_1
 
     :cond_1
     const/4 v1, 0x0
 
-    const/4 v6, 0x0
-
     :goto_1
+    move v6, v1
+
     if-nez v0, :cond_2
 
     .line 4
@@ -251,7 +249,7 @@
 
     const/4 v14, 0x0
 
-    const/4 v15, 0x0
+    move v15, v14
 
     :goto_1
     if-ge v15, v13, :cond_6
@@ -309,7 +307,7 @@
 
     move-object v3, v1
 
-    const/4 v2, 0x0
+    move v2, v14
 
     :goto_2
     if-ge v2, v4, :cond_4
@@ -323,7 +321,7 @@
 
     if-eqz v2, :cond_2
 
-    const/16 v18, 0x0
+    move/from16 v18, v14
 
     goto :goto_3
 
@@ -539,7 +537,7 @@
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 9
-    invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 10
     array-length p1, v0
@@ -552,7 +550,7 @@
     aget-object v3, v0, v2
 
     .line 11
-    invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 

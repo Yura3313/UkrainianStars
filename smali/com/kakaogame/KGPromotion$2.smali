@@ -188,7 +188,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 13
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$2;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -224,7 +224,7 @@
     move-result-object p1
 
     .line 17
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 18
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$2;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -247,7 +247,7 @@
     move-result-object p1
 
     .line 21
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 22
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$2;->val$callback:Lcom/kakaogame/KGResultCallback;

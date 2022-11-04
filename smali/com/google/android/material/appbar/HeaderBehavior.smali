@@ -173,7 +173,7 @@
     if-gt p1, p5, :cond_0
 
     .line 2
-    invoke-static {p3, p4, p5}, La0/a;->b(III)I
+    invoke-static {p3, p4, p5}, La0/b;->c(III)I
 
     move-result p2
 
@@ -233,11 +233,11 @@
 
     const/4 v1, 0x2
 
-    const/4 v2, -0x1
+    const/4 v2, 0x1
 
-    const/4 v3, 0x0
+    const/4 v3, -0x1
 
-    const/4 v4, 0x1
+    const/4 v4, 0x0
 
     if-ne v0, v1, :cond_3
 
@@ -248,9 +248,9 @@
     .line 4
     iget v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->f:I
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v3, :cond_1
 
-    return v3
+    return v4
 
     .line 5
     :cond_1
@@ -258,9 +258,9 @@
 
     move-result v0
 
-    if-ne v0, v2, :cond_2
+    if-ne v0, v3, :cond_2
 
-    return v3
+    return v4
 
     .line 6
     :cond_2
@@ -287,7 +287,7 @@
     .line 9
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->g:I
 
-    return v4
+    return v2
 
     .line 10
     :cond_3
@@ -298,7 +298,7 @@
     if-nez v0, :cond_6
 
     .line 11
-    iput v2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->f:I
+    iput v3, p0, Lcom/google/android/material/appbar/HeaderBehavior;->f:I
 
     .line 12
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getX()F
@@ -317,22 +317,22 @@
     .line 14
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/HeaderBehavior;->w(Landroid/view/View;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
-    invoke-virtual {p1, p2, v0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t(Landroid/view/View;II)Z
+    invoke-virtual {p1, p2, v0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Landroid/view/View;II)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    const/4 p1, 0x1
+    move p1, v2
 
     goto :goto_0
 
     :cond_4
-    const/4 p1, 0x0
+    move p1, v4
 
     :goto_0
     iput-boolean p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->e:Z
@@ -343,7 +343,7 @@
     iput v1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->g:I
 
     .line 16
-    invoke-virtual {p3, v3}, Landroid/view/MotionEvent;->getPointerId(I)I
+    invoke-virtual {p3, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result p1
 
@@ -378,7 +378,7 @@
 
     invoke-virtual {p1}, Landroid/widget/OverScroller;->abortAnimation()V
 
-    return v4
+    return v2
 
     .line 21
     :cond_6
@@ -390,7 +390,7 @@
     invoke-virtual {p1, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     :cond_7
-    return v3
+    return v4
 .end method
 
 .method public final s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
@@ -416,13 +416,13 @@
 
     move-result v0
 
-    const/4 v8, 0x1
-
-    const/4 v9, 0x0
-
     const/4 v1, 0x0
 
     const/4 v3, -0x1
+
+    const/4 v8, 0x1
+
+    const/4 v9, 0x0
 
     if-eq v0, v8, :cond_4
 
@@ -448,12 +448,12 @@
 
     if-nez v0, :cond_1
 
-    const/4 v0, 0x1
+    move v0, v8
 
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v9
 
     .line 3
     :goto_0
@@ -522,7 +522,7 @@
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/appbar/HeaderBehavior;->B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     :goto_1
-    const/4 v0, 0x0
+    move v0, v9
 
     goto/16 :goto_4
 
@@ -634,7 +634,7 @@
     iput-object v0, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Lcom/google/android/material/appbar/HeaderBehavior$a;
 
     .line 26
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 27
     invoke-virtual {v2, v0}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
@@ -648,12 +648,12 @@
     invoke-virtual/range {p0 .. p2}, Lcom/google/android/material/appbar/HeaderBehavior;->A(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
 
     :goto_2
-    const/4 v0, 0x1
+    move v0, v8
 
     goto :goto_3
 
     :cond_8
-    const/4 v0, 0x0
+    move v0, v9
 
     .line 29
     :goto_3
@@ -694,7 +694,7 @@
     goto :goto_5
 
     :cond_b
-    const/4 v8, 0x0
+    move v8, v9
 
     :cond_c
     :goto_5

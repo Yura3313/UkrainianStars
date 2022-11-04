@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$e;
-.super Lse/i;
+.super Lif/i;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,27 +18,27 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lvc/j;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Ltc/j;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$e;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$e;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,12 +49,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$e;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$e;->f:Lcom/supercell/id/ui/game/GameFragment;
 
-    sget v1, Lcom/supercell/id/ui/game/GameFragment;->z0:I
+    sget v1, Lcom/supercell/id/ui/game/GameFragment;->y0:I
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->j1()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->i1()Lcom/supercell/id/model/IdProfile;
 
     move-result-object v0
 
@@ -63,7 +63,7 @@
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->h:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->g:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
@@ -85,19 +85,19 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/j;
+    check-cast v3, Ltc/j;
 
     .line 5
-    iget-object v3, v3, Lvc/j;->j:Ljava/lang/String;
+    iget-object v3, v3, Ltc/j;->j:Ljava/lang/String;
 
     .line 6
-    iget-object v4, p0, Lcom/supercell/id/ui/game/GameFragment$e;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v4, p0, Lcom/supercell/id/ui/game/GameFragment$e;->f:Lcom/supercell/id/ui/game/GameFragment;
 
-    invoke-static {v4}, Lcom/supercell/id/ui/game/GameFragment;->h1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/supercell/id/ui/game/GameFragment;->g1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -106,7 +106,7 @@
     move-object v1, v2
 
     :cond_1
-    check-cast v1, Lvc/j;
+    check-cast v1, Ltc/j;
 
     :cond_2
     return-object v1

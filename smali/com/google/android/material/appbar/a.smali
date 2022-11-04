@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Ls4/g;
+.field public final synthetic f:Lp4/g;
 
 
 # direct methods
-.method public constructor <init>(Ls4/g;)V
+.method public constructor <init>(Lp4/g;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/appbar/a;->g:Ls4/g;
+    iput-object p1, p0, Lcom/google/android/material/appbar/a;->f:Lp4/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/appbar/a;->g:Ls4/g;
+    iget-object v0, p0, Lcom/google/android/material/appbar/a;->f:Lp4/g;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -38,7 +38,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Ls4/g;->n(F)V
+    invoke-virtual {v0, p1}, Lp4/g;->m(F)V
 
     return-void
 .end method

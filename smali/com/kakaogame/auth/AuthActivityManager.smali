@@ -316,13 +316,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)V
@@ -393,23 +387,17 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public onRequestPermissionsResult(JI[Ljava/lang/String;[I)V
-    .locals 3
+    .locals 2
 
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-gez v2, :cond_0
+    if-gez v0, :cond_0
 
     return-void
 
@@ -439,18 +427,18 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 4
-    invoke-static {p1}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$300(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;)Lu/a$c;
+    invoke-static {p1}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$300(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;)Lu/a$a;
 
     move-result-object p2
 
     if-eqz p2, :cond_1
 
     .line 5
-    invoke-static {p1}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$300(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;)Lu/a$c;
+    invoke-static {p1}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$300(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;)Lu/a$a;
 
     move-result-object p1
 
-    invoke-interface {p1, p3, p4, p5}, Lu/a$c;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+    invoke-interface {p1, p3, p4, p5}, Lu/a$a;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
     :cond_1
     return-void
@@ -470,21 +458,21 @@
 .method public processActivityAction(JLandroid/app/Activity;)Z
     .locals 4
 
-    const/4 v0, 0x0
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v1, 0x0
+    cmp-long v0, p1, v0
 
-    cmp-long v3, p1, v1
+    const/4 v1, 0x0
 
-    if-gez v3, :cond_0
+    if-gez v0, :cond_0
 
-    return v0
+    return v1
 
     .line 1
     :cond_0
-    iget-object v1, p0, Lcom/kakaogame/auth/AuthActivityManager;->parameterLock:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/kakaogame/auth/AuthActivityManager;->parameterLock:Ljava/lang/Object;
 
-    monitor-enter v1
+    monitor-enter v0
 
     .line 2
     :try_start_0
@@ -501,13 +489,13 @@
     check-cast v2, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;
 
     .line 3
-    monitor-exit v1
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     if-nez v2, :cond_1
 
-    return v0
+    return v1
 
     .line 4
     :cond_1
@@ -561,7 +549,7 @@
 
     .line 8
     :try_start_2
-    monitor-exit v1
+    monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -573,9 +561,9 @@
 
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
-    if-gez v2, :cond_0
+    if-gez v0, :cond_0
 
     return-void
 
@@ -769,23 +757,23 @@
 .end method
 
 .method public setActivity(JLandroid/app/Activity;)Z
-    .locals 4
+    .locals 3
 
-    const/4 v0, 0x0
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v1, 0x0
+    cmp-long v0, p1, v0
 
-    cmp-long v3, p1, v1
+    const/4 v1, 0x0
 
-    if-gez v3, :cond_0
+    if-gez v0, :cond_0
 
-    return v0
+    return v1
 
     .line 1
     :cond_0
-    iget-object v1, p0, Lcom/kakaogame/auth/AuthActivityManager;->parameterLock:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/kakaogame/auth/AuthActivityManager;->parameterLock:Ljava/lang/Object;
 
-    monitor-enter v1
+    monitor-enter v0
 
     .line 2
     :try_start_0
@@ -802,13 +790,13 @@
     check-cast p1, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;
 
     .line 3
-    monitor-exit v1
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-nez p1, :cond_1
 
-    return v0
+    return v1
 
     .line 4
     :cond_1
@@ -823,14 +811,14 @@
 
     .line 5
     :try_start_1
-    monitor-exit v1
+    monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
 
-.method public setActivityParameters(Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$c;)J
+.method public setActivityParameters(Lcom/kakaogame/KGAuthActivity$KGActivityAction;Lcom/kakaogame/util/MutexLock;Lu/a$a;)J
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -838,7 +826,7 @@
             "Lcom/kakaogame/KGAuthActivity$KGActivityAction;",
             "Lcom/kakaogame/util/MutexLock<",
             "*>;",
-            "Lu/a$c;",
+            "Lu/a$a;",
             ")J"
         }
     .end annotation
@@ -863,7 +851,7 @@
     invoke-static {v2, p2}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$202(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;Lcom/kakaogame/util/MutexLock;)Lcom/kakaogame/util/MutexLock;
 
     .line 6
-    invoke-static {v2, p3}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$302(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;Lu/a$c;)Lu/a$c;
+    invoke-static {v2, p3}, Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;->access$302(Lcom/kakaogame/auth/AuthActivityManager$ActivityParameters;Lu/a$a;)Lu/a$a;
 
     .line 7
     iget-object p1, p0, Lcom/kakaogame/auth/AuthActivityManager;->parameterLock:Ljava/lang/Object;

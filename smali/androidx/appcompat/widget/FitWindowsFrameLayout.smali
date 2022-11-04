@@ -2,12 +2,9 @@
 .super Landroid/widget/FrameLayout;
 .source "FitWindowsFrameLayout.java"
 
-# interfaces
-.implements Landroidx/appcompat/widget/s;
-
 
 # instance fields
-.field public g:Landroidx/appcompat/widget/s$a;
+.field public f:Landroidx/appcompat/widget/s;
 
 
 # direct methods
@@ -22,28 +19,17 @@
 
 # virtual methods
 .method public final fitSystemWindows(Landroid/graphics/Rect;)Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->g:Landroidx/appcompat/widget/s$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->f:Landroidx/appcompat/widget/s;
 
     if-eqz v0, :cond_0
 
     .line 2
-    check-cast v0, Landroidx/appcompat/app/l;
+    invoke-interface {v0}, Landroidx/appcompat/widget/s;->a()V
 
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/app/l;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Y(Lf0/a0;Landroid/graphics/Rect;)I
-
-    move-result v0
-
-    iput v0, p1, Landroid/graphics/Rect;->top:I
-
-    .line 4
     :cond_0
     invoke-super {p0, p1}, Landroid/view/View;->fitSystemWindows(Landroid/graphics/Rect;)Z
 
@@ -52,10 +38,10 @@
     return p1
 .end method
 
-.method public setOnFitSystemWindowsListener(Landroidx/appcompat/widget/s$a;)V
+.method public setOnFitSystemWindowsListener(Landroidx/appcompat/widget/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->g:Landroidx/appcompat/widget/s$a;
+    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->f:Landroidx/appcompat/widget/s;
 
     return-void
 .end method

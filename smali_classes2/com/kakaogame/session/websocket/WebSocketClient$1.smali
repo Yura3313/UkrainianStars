@@ -619,7 +619,7 @@
     const-string v1, "Websocket Exception: "
 
     .line 33
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -674,8 +674,6 @@
     goto :goto_7
 
     :catch_1
-    nop
-
     const-string v0, "Websocket Socket Exception"
 
     .line 39
@@ -709,8 +707,6 @@
     goto :goto_7
 
     :catch_2
-    nop
-
     const-string v0, "Websocket SSL error!"
 
     .line 43
@@ -744,8 +740,6 @@
     goto :goto_7
 
     :catch_3
-    nop
-
     const-string v1, "WebSocket EOF!"
 
     .line 47

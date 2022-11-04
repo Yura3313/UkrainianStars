@@ -13,8 +13,6 @@
 
 .field public C:Z
 
-.field public D:Landroid/view/ContextMenu$ContextMenuInfo;
-
 .field public final a:I
 
 .field public final b:I
@@ -280,24 +278,20 @@
 
     .line 2
     :cond_0
-    invoke-static {p1}, Ly/a;->q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p1
-
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    .line 4
+    .line 3
     iget-boolean v0, p0, Landroidx/appcompat/view/menu/g;->u:Z
 
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 4
     iget-object v0, p0, Landroidx/appcompat/view/menu/g;->s:Landroid/content/res/ColorStateList;
 
-    invoke-static {p1, v0}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
     .line 6
     :cond_1
@@ -308,23 +302,38 @@
     .line 7
     iget-object v0, p0, Landroidx/appcompat/view/menu/g;->t:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {p1, v0}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
+    .line 8
+    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_2
     const/4 v0, 0x0
 
-    .line 8
+    .line 9
     iput-boolean v0, p0, Landroidx/appcompat/view/menu/g;->w:Z
 
     :cond_3
     return-object p1
 .end method
 
-.method public final e()I
+.method public final e()C
     .locals 1
 
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->d:I
+    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
 
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->o()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-char v0, p0, Landroidx/appcompat/view/menu/g;->j:C
+
+    goto :goto_0
+
+    :cond_0
+    iget-char v0, p0, Landroidx/appcompat/view/menu/g;->h:C
+
+    :goto_0
     return v0
 .end method
 
@@ -332,7 +341,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/g;->g()Z
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/g;->f()Z
 
     move-result v0
 
@@ -372,29 +381,7 @@
     return v0
 .end method
 
-.method public final f()C
-    .locals 1
-
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->o()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-char v0, p0, Landroidx/appcompat/view/menu/g;->j:C
-
-    goto :goto_0
-
-    :cond_0
-    iget-char v0, p0, Landroidx/appcompat/view/menu/g;->h:C
-
-    :goto_0
-    return v0
-.end method
-
-.method public final g()Z
+.method public final f()Z
     .locals 2
 
     .line 1
@@ -432,6 +419,28 @@
 
     :cond_1
     return v1
+.end method
+
+.method public final g()Z
+    .locals 2
+
+    iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
+
+    const/16 v1, 0x20
+
+    and-int/2addr v0, v1
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method
 
 .method public final getActionProvider()Landroid/view/ActionProvider;
@@ -537,7 +546,7 @@
     iget-object v1, v1, Landroidx/appcompat/view/menu/e;->a:Landroid/content/Context;
 
     .line 6
-    invoke-static {v1, v0}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, v0}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -599,7 +608,7 @@
 .method public final getMenuInfo()Landroid/view/ContextMenu$ContextMenuInfo;
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->D:Landroid/view/ContextMenu$ContextMenuInfo;
+    const/4 v0, 0x0
 
     return-object v0
 .end method
@@ -671,75 +680,22 @@
 .end method
 
 .method public final h()Z
-    .locals 3
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->p:Landroid/view/MenuItem$OnMenuItemClickListener;
+    iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
 
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0, p0}, Landroid/view/MenuItem$OnMenuItemClickListener;->onMenuItemClick(Landroid/view/MenuItem;)Z
-
-    move-result v0
+    and-int/lit8 v0, v0, 0x4
 
     if-eqz v0, :cond_0
 
-    return v1
+    const/4 v0, 0x1
 
-    .line 2
+    goto :goto_0
+
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    invoke-virtual {v0, v0, p0}, Landroidx/appcompat/view/menu/e;->f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    return v1
-
-    .line 3
-    :cond_1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->g:Landroid/content/Intent;
-
-    if-eqz v0, :cond_2
-
-    .line 4
-    :try_start_0
-    iget-object v2, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    .line 5
-    iget-object v2, v2, Landroidx/appcompat/view/menu/e;->a:Landroid/content/Context;
-
-    .line 6
-    invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return v1
-
-    :catch_0
-    nop
-
-    .line 7
-    :cond_2
-    iget-object v0, p0, Landroidx/appcompat/view/menu/g;->A:Lf0/b;
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Lf0/b;->e()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    return v1
-
-    :cond_3
     const/4 v0, 0x0
 
+    :goto_0
     return v0
 .end method
 
@@ -761,26 +717,42 @@
     return v0
 .end method
 
-.method public final i()Z
+.method public final i(Landroid/view/View;)Lz/b;
     .locals 2
 
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
+    .line 1
+    iput-object p1, p0, Landroidx/appcompat/view/menu/g;->z:Landroid/view/View;
 
-    const/16 v1, 0x20
+    const/4 v0, 0x0
 
-    and-int/2addr v0, v1
+    .line 2
+    iput-object v0, p0, Landroidx/appcompat/view/menu/g;->A:Lf0/b;
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
+
+    move-result v0
+
+    const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    const/4 v0, 0x1
+    iget v0, p0, Landroidx/appcompat/view/menu/g;->a:I
 
-    goto :goto_0
+    if-lez v0, :cond_0
 
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->setId(I)V
+
+    .line 5
     :cond_0
-    const/4 v0, 0x0
+    iget-object p1, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
 
-    :goto_0
-    return v0
+    invoke-virtual {p1}, Landroidx/appcompat/view/menu/e;->q()V
+
+    return-object p0
 .end method
 
 .method public final isActionViewExpanded()Z
@@ -889,7 +861,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_0
     return v1
@@ -905,71 +877,13 @@
     goto :goto_1
 
     :cond_2
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     return v1
 .end method
 
-.method public final j()Z
-    .locals 1
-
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
-
-    and-int/lit8 v0, v0, 0x4
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final k(Landroid/view/View;)Lz/b;
-    .locals 2
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/g;->z:Landroid/view/View;
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, Landroidx/appcompat/view/menu/g;->A:Lf0/b;
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_0
-
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->a:I
-
-    if-lez v0, :cond_0
-
-    .line 4
-    invoke-virtual {p1, v0}, Landroid/view/View;->setId(I)V
-
-    .line 5
-    :cond_0
-    iget-object p1, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    invoke-virtual {p1}, Landroidx/appcompat/view/menu/e;->q()V
-
-    return-object p0
-.end method
-
-.method public final l(Z)V
+.method public final j(Z)V
     .locals 3
 
     .line 1
@@ -986,7 +900,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     :goto_0
     or-int/2addr p1, v1
@@ -1005,7 +919,7 @@
     return-void
 .end method
 
-.method public final m(Z)V
+.method public final k(Z)V
     .locals 1
 
     iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
@@ -1029,7 +943,7 @@
     return-void
 .end method
 
-.method public final n(Z)V
+.method public final l(Z)V
     .locals 0
 
     if-eqz p1, :cond_0
@@ -1055,7 +969,7 @@
     return-void
 .end method
 
-.method public final o(Landroidx/appcompat/view/menu/l;)V
+.method public final m(Landroidx/appcompat/view/menu/l;)V
     .locals 1
 
     .line 1
@@ -1068,39 +982,6 @@
     invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/l;->setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
 
     return-void
-.end method
-
-.method public final p(Z)Z
-    .locals 3
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->x:I
-
-    and-int/lit8 v1, v0, -0x9
-
-    const/4 v2, 0x0
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 p1, 0x8
-
-    :goto_0
-    or-int/2addr p1, v1
-
-    .line 2
-    iput p1, p0, Landroidx/appcompat/view/menu/g;->x:I
-
-    if-eq v0, p1, :cond_1
-
-    const/4 v2, 0x1
-
-    :cond_1
-    return v2
 .end method
 
 .method public final setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
@@ -1140,7 +1021,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->k(Landroid/view/View;)Lz/b;
+    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->i(Landroid/view/View;)Lz/b;
 
     return-object p0
 .end method
@@ -1149,7 +1030,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->k(Landroid/view/View;)Lz/b;
+    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->i(Landroid/view/View;)Lz/b;
 
     return-object p0
 .end method
@@ -1260,7 +1141,7 @@
     .line 2
     iget-object p1, p0, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/g;->getGroupId()I
@@ -1279,7 +1160,7 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_4
@@ -1294,14 +1175,12 @@
     check-cast v4, Landroidx/appcompat/view/menu/g;
 
     .line 7
-    invoke-virtual {v4}, Landroidx/appcompat/view/menu/g;->getGroupId()I
-
-    move-result v5
+    iget v5, v4, Landroidx/appcompat/view/menu/g;->b:I
 
     if-ne v5, v0, :cond_3
 
     .line 8
-    invoke-virtual {v4}, Landroidx/appcompat/view/menu/g;->j()Z
+    invoke-virtual {v4}, Landroidx/appcompat/view/menu/g;->h()Z
 
     move-result v5
 
@@ -1327,11 +1206,11 @@
     goto :goto_1
 
     :cond_2
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 10
     :goto_1
-    invoke-virtual {v4, v5}, Landroidx/appcompat/view/menu/g;->l(Z)V
+    invoke-virtual {v4, v5}, Landroidx/appcompat/view/menu/g;->j(Z)V
 
     :cond_3
     :goto_2
@@ -1347,7 +1226,7 @@
 
     .line 12
     :cond_5
-    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->l(Z)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/g;->j(Z)V
 
     :goto_3
     return-object p0
@@ -1797,7 +1676,7 @@
 
     if-eqz p1, :cond_0
 
-    const/4 p1, 0x0
+    move p1, v2
 
     goto :goto_0
 
@@ -1814,7 +1693,7 @@
 
     if-eq v0, p1, :cond_1
 
-    const/4 v2, 0x1
+    move v2, v1
 
     :cond_1
     if-eqz v2, :cond_2

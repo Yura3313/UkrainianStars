@@ -46,12 +46,12 @@
 
     if-gt v1, v2, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v3
 
     :goto_0
     invoke-static {v1}, Lcom/google/gson/internal/$Gson$Preconditions;->checkArgument(Z)V
@@ -61,12 +61,12 @@
 
     if-ne v1, v2, :cond_1
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v3
 
     :goto_1
     invoke-static {v1}, Lcom/google/gson/internal/$Gson$Preconditions;->checkArgument(Z)V
@@ -94,7 +94,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_2
     invoke-static {v2}, Lcom/google/gson/internal/$Gson$Preconditions;->checkArgument(Z)V
@@ -257,7 +257,7 @@
     const-string v0, "? super "
 
     .line 2
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -292,7 +292,7 @@
     const-string v0, "? extends "
 
     .line 5
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

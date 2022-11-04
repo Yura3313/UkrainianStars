@@ -14,13 +14,13 @@
 
 
 # virtual methods
-.method public X0()V
+.method public F0(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public v0(I)V
+.method public P6()V
     .locals 0
 
     return-void

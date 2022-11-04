@@ -1,77 +1,65 @@
 .class public final Ly1/h;
-.super Ly1/n;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
+.super Lcom/google/android/gms/common/api/internal/BasePendingResult;
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ly1/n<",
-        "Lx1/b;",
-        ">;"
+        "<R::",
+        "Ly1/k;",
+        ">",
+        "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
+        "TR;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic l:Landroid/content/Context;
-
-.field public final synthetic m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+.field public final l:Ly1/k;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TR;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/c;Landroid/content/Context;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
-    .locals 0
+.method public constructor <init>(Ly1/k;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ly1/d;",
+            "TR;)V"
+        }
+    .end annotation
 
-    iput-object p2, p0, Ly1/h;->l:Landroid/content/Context;
+    const/4 v0, 0x0
 
-    iput-object p3, p0, Ly1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    .line 1
+    invoke-direct {p0, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Ly1/d;)V
 
-    invoke-direct {p0, p1}, Ly1/n;-><init>(Lcom/google/android/gms/common/api/c;)V
+    .line 2
+    iput-object p1, p0, Ly1/h;->l:Ly1/k;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic d(Lcom/google/android/gms/common/api/Status;)La2/g;
-    .locals 2
-
-    new-instance v0, Lx1/b;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, p1}, Lx1/b;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
-
-    return-object v0
-.end method
-
-.method public final synthetic k(Lcom/google/android/gms/common/api/a$b;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
+.method public final d(Lcom/google/android/gms/common/api/Status;)Ly1/k;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Landroid/os/RemoteException;
+            "(",
+            "Lcom/google/android/gms/common/api/Status;",
+            ")TR;"
         }
     .end annotation
 
-    .line 1
-    check-cast p1, Ly1/f;
+    iget-object p1, p0, Ly1/h;->l:Ly1/k;
 
-    .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/auth/api/signin/internal/zzt;
-
-    new-instance v0, Ly1/k;
-
-    invoke-direct {v0, p0}, Ly1/k;-><init>(Ly1/h;)V
-
-    iget-object v1, p0, Ly1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
-
-    .line 3
-    invoke-interface {p1, v0, v1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->A3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
-
-    return-void
+    return-object p1
 .end method

@@ -1,28 +1,22 @@
-.class public final synthetic Lt3/f;
+.class public final Lt3/f;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
-.implements Lb2/m;
+.implements Landroid/os/Parcelable$Creator;
 
 
-# static fields
-.field public static final a:Lt3/f;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/instantapps/zzan;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lt3/f;
-
-    invoke-direct {v0}, Lt3/f;-><init>()V
-
-    sput-object v0, Lt3/f;->a:Lt3/f;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -33,14 +27,108 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move-object v2, v1
+
+    move-object v3, v2
+
+    move-object v4, v3
+
+    .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v5
+
+    if-ge v5, v0, :cond_4
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v5
+
+    const v6, 0xffff
+
+    and-int/2addr v6, v5
+
+    const/4 v7, 0x1
+
+    if-eq v6, v7, :cond_3
+
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_2
+
+    const/4 v7, 0x3
+
+    if-eq v6, v7, :cond_1
+
+    const/4 v7, 0x4
+
+    if-eq v6, v7, :cond_0
+
+    .line 4
+    invoke-static {p1, v5}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v5}, Lc2/b;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-static {p1, v5}, Lc2/b;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v5}, Lc2/b;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p1, v5}, Lc2/b;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzan;
+
+    invoke-direct {p1, v1, v2, v3, v4}, Lcom/google/android/gms/internal/instantapps/zzan;-><init>([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lz2/g;
+    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzan;
 
-    check-cast p2, Lc4/g;
-
-    invoke-static {p1, p2}, Lt3/e;->g(Lz2/g;Lc4/g;)V
-
-    return-void
+    return-object p1
 .end method

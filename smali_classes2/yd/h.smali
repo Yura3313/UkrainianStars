@@ -1,41 +1,47 @@
 .class public final Lyd/h;
-.super Lse/i;
-.source "YoungPlayerLoginEnterEmailPageFragment.kt"
+.super Lif/i;
+.source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lyd/j;",
-        "Ljava/lang/Boolean;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lyd/i;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Z
+# static fields
+.field public static final f:Lyd/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Z)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lyd/h;->g:Ljava/lang/String;
+    new-instance v0, Lyd/h;
 
-    iput-boolean p2, p0, Lyd/h;->h:Z
+    invoke-direct {v0}, Lyd/h;-><init>()V
 
-    const/4 p1, 0x2
+    sput-object v0, Lyd/h;->f:Lyd/h;
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -43,148 +49,39 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 11
+    .locals 1
 
     .line 1
-    check-cast p1, Lyd/j;
+    check-cast p1, Lyd/i;
 
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p2, Ljava/lang/Exception;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    const-string p2, "$receiver"
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    iget-object v0, p0, Lyd/h;->g:Ljava/lang/String;
-
-    iget-boolean v1, p0, Lyd/h;->h:Z
-
-    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingLoginWithEmail$supercellId_release(Ljava/lang/String;Z)V
-
-    .line 4
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object p2
-
-    .line 5
-    iget-object p2, p2, Lae/u;->m:Lpe/a;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x18
-
-    const-string v2, "Remember me"
-
-    const-string v3, "Selection"
-
-    .line 6
-    invoke-static {p2, v2, v3, v0, v1}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
-
-    .line 7
-    iget-object v5, p0, Lyd/h;->g:Ljava/lang/String;
-
-    .line 8
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object p2
-
-    const-string v0, "<set-?>"
-
-    if-eqz p2, :cond_0
-
-    .line 9
-    iget-object v4, p2, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
-
-    if-eqz v4, :cond_0
-
-    .line 10
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/16 v9, 0xe
-
-    const/4 v10, 0x0
-
-    invoke-static/range {v4 .. v10}, Lcom/supercell/id/IdLoginDetails;->copy$default(Lcom/supercell/id/IdLoginDetails;Ljava/lang/String;Ljava/lang/String;ZZILjava/lang/Object;)Lcom/supercell/id/IdLoginDetails;
-
-    move-result-object v1
-
-    .line 11
-    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    iput-object v1, p2, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
-
-    .line 13
-    :cond_0
-    iget-boolean v5, p0, Lyd/h;->h:Z
-
-    .line 14
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_1
-
-    .line 15
-    iget-object v2, p2, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
-
-    if-eqz v2, :cond_1
-
-    .line 16
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_1
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v6, 0x0
-
-    const/16 v7, 0xb
-
-    const/4 v8, 0x0
-
-    invoke-static/range {v2 .. v8}, Lcom/supercell/id/IdLoginDetails;->copy$default(Lcom/supercell/id/IdLoginDetails;Ljava/lang/String;Ljava/lang/String;ZZILjava/lang/Object;)Lcom/supercell/id/IdLoginDetails;
-
-    move-result-object v1
-
-    .line 17
-    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 18
-    iput-object v1, p2, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
-
-    .line 19
-    :cond_1
-    invoke-virtual {p1}, Lyd/n;->X0()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->j1()V
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    .line 20
-    :cond_2
-    sget-object p1, Lie/i;->a:Lie/i;
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
+
+    .line 5
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

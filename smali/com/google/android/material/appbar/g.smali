@@ -26,17 +26,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/view/View;)V
-    .locals 1
-
-    sget-object v0, Landroid/view/ViewOutlineProvider;->BOUNDS:Landroid/view/ViewOutlineProvider;
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
-
-    return-void
-.end method
-
-.method public static b(Landroid/view/View;F)V
+.method public static a(Landroid/view/View;F)V
     .locals 11
 
     .line 1
@@ -145,69 +135,4 @@
     invoke-virtual {p0, v1}, Landroid/view/View;->setStateListAnimator(Landroid/animation/StateListAnimator;)V
 
     return-void
-.end method
-
-.method public static c(Landroid/view/View;Landroid/util/AttributeSet;I)V
-    .locals 8
-
-    sget v4, Lcom/google/android/material/appbar/AppBarLayout;->w:I
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v6
-
-    .line 2
-    sget-object v2, Lcom/google/android/material/appbar/g;->a:[I
-
-    const/4 v7, 0x0
-
-    new-array v5, v7, [I
-
-    move-object v0, v6
-
-    move-object v1, p1
-
-    move v3, p2
-
-    .line 3
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/k;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
-
-    move-result-object p1
-
-    .line 4
-    :try_start_0
-    invoke-virtual {p1, v7}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    .line 5
-    invoke-virtual {p1, v7, v7}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result p2
-
-    invoke-static {v6, p2}, Landroid/animation/AnimatorInflater;->loadStateListAnimator(Landroid/content/Context;I)Landroid/animation/StateListAnimator;
-
-    move-result-object p2
-
-    .line 6
-    invoke-virtual {p0, p2}, Landroid/view/View;->setStateListAnimator(Landroid/animation/StateListAnimator;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    :cond_0
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 8
-    throw p0
 .end method

@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final M(Landroid/os/Bundle;)V
+.method public final M0(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -26,15 +26,38 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, La5/y0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p1}, Ly4/q0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+
+    invoke-static {v0, p2}, Ly4/q0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+
+    const/4 p1, 0x2
+
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->L0(ILandroid/os/Parcel;)V
+
+    return-void
+.end method
+
+.method public final Z(Landroid/os/Bundle;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->n0()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, Ly4/q0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x4
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->S0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->L0(ILandroid/os/Parcel;)V
 
     return-void
 .end method
@@ -47,38 +70,15 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, La5/y0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p1}, Ly4/q0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x3
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->S0(ILandroid/os/Parcel;)V
-
-    return-void
-.end method
-
-.method public final z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lcom/google/android/play/core/internal/i;->J0()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    invoke-static {v0, p1}, La5/y0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-
-    invoke-static {v0, p2}, La5/y0;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-
-    const/4 p1, 0x2
-
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->S0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/play/core/internal/i;->L0(ILandroid/os/Parcel;)V
 
     return-void
 .end method

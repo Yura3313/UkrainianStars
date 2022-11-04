@@ -1,118 +1,66 @@
 .class public final Lr0/b;
 .super Ljava/lang/Object;
-.source "MultiDex.java"
+.source "CircularProgressDrawable.java"
 
 # interfaces
-.implements Lr0/a;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # instance fields
-.field public final a:Ljava/lang/reflect/Constructor;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/reflect/Constructor<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic f:Lr0/d$a;
+
+.field public final synthetic g:Lr0/d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)V"
-        }
-    .end annotation
+.method public constructor <init>(Lr0/d;Lr0/d$a;)V
+    .locals 0
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/SecurityException;,
-            Ljava/lang/NoSuchMethodException;
-        }
-    .end annotation
+    iput-object p1, p0, Lr0/b;->g:Lr0/d;
 
-    .line 1
+    iput-object p2, p0, Lr0/b;->f:Lr0/d$a;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Ljava/lang/Class;
-
-    const/4 v1, 0x0
-
-    .line 2
-    const-class v2, Ljava/io/File;
-
-    aput-object v2, v0, v1
-
-    const-class v1, Ljava/util/zip/ZipFile;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    const/4 v1, 0x2
-
-    const-class v3, Ldalvik/system/DexFile;
-
-    aput-object v3, v0, v1
-
-    .line 3
-    invoke-virtual {p1, v0}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lr0/b;->a:Ljava/lang/reflect/Constructor;
-
-    .line 4
-    invoke-virtual {p1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/io/File;Ldalvik/system/DexFile;)Ljava/lang/Object;
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalArgumentException;,
-            Ljava/lang/InstantiationException;,
-            Ljava/lang/IllegalAccessException;,
-            Ljava/lang/reflect/InvocationTargetException;,
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    iget-object v0, p0, Lr0/b;->a:Ljava/lang/reflect/Constructor;
-
-    const/4 v1, 0x3
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p1, v1, v2
-
-    new-instance v2, Ljava/util/zip/ZipFile;
-
-    invoke-direct {v2, p1}, Ljava/util/zip/ZipFile;-><init>(Ljava/io/File;)V
-
-    const/4 p1, 0x1
-
-    aput-object v2, v1, p1
-
-    const/4 p1, 0x2
-
-    aput-object p2, v1, p1
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    return-object p1
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    .line 2
+    iget-object v0, p0, Lr0/b;->g:Lr0/d;
+
+    iget-object v1, p0, Lr0/b;->f:Lr0/d$a;
+
+    invoke-virtual {v0, p1, v1}, Lr0/d;->d(FLr0/d$a;)V
+
+    .line 3
+    iget-object v0, p0, Lr0/b;->g:Lr0/d;
+
+    iget-object v1, p0, Lr0/b;->f:Lr0/d$a;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v1, v2}, Lr0/d;->a(FLr0/d$a;Z)V
+
+    .line 4
+    iget-object p1, p0, Lr0/b;->g:Lr0/d;
+
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
+
+    return-void
 .end method

@@ -3,7 +3,7 @@
 .source "AppCompatDrawableManager.java"
 
 # interfaces
-.implements Landroidx/appcompat/widget/x$e;
+.implements Landroidx/appcompat/widget/x$c;
 
 
 # annotations
@@ -218,7 +218,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_1
@@ -280,7 +280,7 @@
     aput-object p1, v1, v3
 
     .line 5
-    invoke-static {v2, p2}, Lx/b;->b(II)I
+    invoke-static {v2, p2}, Lx/a;->b(II)I
 
     move-result p1
 
@@ -294,7 +294,7 @@
     aput-object p1, v1, v3
 
     .line 7
-    invoke-static {v2, p2}, Lx/b;->b(II)I
+    invoke-static {v2, p2}, Lx/a;->b(II)I
 
     move-result p1
 
@@ -328,28 +328,34 @@
     .line 2
     sget p2, Landroidx/appcompat/R$color;->abc_tint_edittext:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
+    .line 4
     :cond_0
     sget v0, Landroidx/appcompat/R$drawable;->abc_switch_track_mtrl_alpha:I
 
     if-ne p2, v0, :cond_1
 
-    .line 4
+    .line 5
     sget p2, Landroidx/appcompat/R$color;->abc_tint_switch_track:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 6
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 5
+    .line 7
     :cond_1
     sget v0, Landroidx/appcompat/R$drawable;->abc_switch_thumb_material:I
 
@@ -363,7 +369,7 @@
 
     new-array p2, p2, [I
 
-    .line 6
+    .line 8
     sget v2, Landroidx/appcompat/R$attr;->colorSwitchThumbNormal:I
 
     invoke-static {p1, v2}, Landroidx/appcompat/widget/c0;->d(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
@@ -376,33 +382,33 @@
 
     if-eqz v3, :cond_2
 
-    .line 7
+    .line 9
     invoke-virtual {v3}, Landroid/content/res/ColorStateList;->isStateful()Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    .line 8
+    .line 10
     sget-object v2, Landroidx/appcompat/widget/c0;->b:[I
 
     aput-object v2, v0, v1
 
     aget-object v2, v0, v1
 
-    .line 9
+    .line 11
     invoke-virtual {v3, v2, v1}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v2
 
     aput v2, p2, v1
 
-    .line 10
+    .line 12
     sget-object v1, Landroidx/appcompat/widget/c0;->e:[I
 
     aput-object v1, v0, v5
 
-    .line 11
+    .line 13
     sget v1, Landroidx/appcompat/R$attr;->colorControlActivated:I
 
     invoke-static {p1, v1}, Landroidx/appcompat/widget/c0;->c(Landroid/content/Context;I)I
@@ -411,12 +417,12 @@
 
     aput p1, p2, v5
 
-    .line 12
+    .line 14
     sget-object p1, Landroidx/appcompat/widget/c0;->f:[I
 
     aput-object p1, v0, v4
 
-    .line 13
+    .line 15
     invoke-virtual {v3}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result p1
@@ -425,25 +431,25 @@
 
     goto :goto_0
 
-    .line 14
+    .line 16
     :cond_2
     sget-object v3, Landroidx/appcompat/widget/c0;->b:[I
 
     aput-object v3, v0, v1
 
-    .line 15
+    .line 17
     invoke-static {p1, v2}, Landroidx/appcompat/widget/c0;->b(Landroid/content/Context;I)I
 
     move-result v3
 
     aput v3, p2, v1
 
-    .line 16
+    .line 18
     sget-object v1, Landroidx/appcompat/widget/c0;->e:[I
 
     aput-object v1, v0, v5
 
-    .line 17
+    .line 19
     sget v1, Landroidx/appcompat/R$attr;->colorControlActivated:I
 
     invoke-static {p1, v1}, Landroidx/appcompat/widget/c0;->c(Landroid/content/Context;I)I
@@ -452,19 +458,19 @@
 
     aput v1, p2, v5
 
-    .line 18
+    .line 20
     sget-object v1, Landroidx/appcompat/widget/c0;->f:[I
 
     aput-object v1, v0, v4
 
-    .line 19
+    .line 21
     invoke-static {p1, v2}, Landroidx/appcompat/widget/c0;->c(Landroid/content/Context;I)I
 
     move-result p1
 
     aput p1, p2, v4
 
-    .line 20
+    .line 22
     :goto_0
     new-instance p1, Landroid/content/res/ColorStateList;
 
@@ -472,62 +478,62 @@
 
     return-object p1
 
-    .line 21
+    .line 23
     :cond_3
     sget v0, Landroidx/appcompat/R$drawable;->abc_btn_default_mtrl_shape:I
 
     if-ne p2, v0, :cond_4
 
-    .line 22
+    .line 24
     sget p2, Landroidx/appcompat/R$attr;->colorButtonNormal:I
 
-    .line 23
+    .line 25
     invoke-static {p1, p2}, Landroidx/appcompat/widget/c0;->c(Landroid/content/Context;I)I
 
     move-result p2
 
-    .line 24
-    invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/f$a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 25
-    :cond_4
-    sget v0, Landroidx/appcompat/R$drawable;->abc_btn_borderless_material:I
-
-    if-ne p2, v0, :cond_5
-
     .line 26
-    invoke-virtual {p0, p1, v1}, Landroidx/appcompat/widget/f$a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/f$a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
     .line 27
+    :cond_4
+    sget v0, Landroidx/appcompat/R$drawable;->abc_btn_borderless_material:I
+
+    if-ne p2, v0, :cond_5
+
+    .line 28
+    invoke-virtual {p0, p1, v1}, Landroidx/appcompat/widget/f$a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 29
     :cond_5
     sget v0, Landroidx/appcompat/R$drawable;->abc_btn_colored_material:I
 
     if-ne p2, v0, :cond_6
 
-    .line 28
+    .line 30
     sget p2, Landroidx/appcompat/R$attr;->colorAccent:I
 
-    .line 29
+    .line 31
     invoke-static {p1, p2}, Landroidx/appcompat/widget/c0;->c(Landroid/content/Context;I)I
 
     move-result p2
 
-    .line 30
+    .line 32
     invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/f$a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 31
+    .line 33
     :cond_6
     sget v0, Landroidx/appcompat/R$drawable;->abc_spinner_mtrl_am_alpha:I
 
@@ -539,7 +545,7 @@
 
     goto :goto_1
 
-    .line 32
+    .line 34
     :cond_7
     iget-object v0, p0, Landroidx/appcompat/widget/f$a;->b:[I
 
@@ -549,7 +555,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 33
+    .line 35
     sget p2, Landroidx/appcompat/R$attr;->colorControlNormal:I
 
     invoke-static {p1, p2}, Landroidx/appcompat/widget/c0;->d(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
@@ -558,7 +564,7 @@
 
     return-object p1
 
-    .line 34
+    .line 36
     :cond_8
     iget-object v0, p0, Landroidx/appcompat/widget/f$a;->e:[I
 
@@ -568,16 +574,19 @@
 
     if-eqz v0, :cond_9
 
-    .line 35
+    .line 37
     sget p2, Landroidx/appcompat/R$color;->abc_tint_default:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 38
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 36
+    .line 39
     :cond_9
     iget-object v0, p0, Landroidx/appcompat/widget/f$a;->f:[I
 
@@ -587,25 +596,31 @@
 
     if-eqz v0, :cond_a
 
-    .line 37
+    .line 40
     sget p2, Landroidx/appcompat/R$color;->abc_tint_btn_checkable:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 41
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 38
+    .line 42
     :cond_a
     sget v0, Landroidx/appcompat/R$drawable;->abc_seekbar_thumb_material:I
 
     if-ne p2, v0, :cond_b
 
-    .line 39
+    .line 43
     sget p2, Landroidx/appcompat/R$color;->abc_tint_seek_thumb:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 44
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
@@ -616,12 +631,15 @@
 
     return-object p1
 
-    .line 40
+    .line 45
     :cond_c
     :goto_1
     sget p2, Landroidx/appcompat/R$color;->abc_tint_spinner:I
 
-    invoke-static {p1, p2}, Lc/a;->a(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+    sget-object v0, Lc/a;->a:Ljava/lang/Object;
+
+    .line 46
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 

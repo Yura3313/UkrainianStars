@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;
-.super Lse/i;
+.super Lif/i;
 .source "PublicProfileFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
+        "Lif/i;",
+        "Lhf/l<",
         "Ljava/lang/Object;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;
+.field public static final f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$c;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,10 +62,10 @@
     const-string v0, "it"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

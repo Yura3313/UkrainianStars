@@ -23,15 +23,15 @@
 
 
 # static fields
+.field public static final enum f:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+
 .field public static final enum g:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
 .field public static final enum h:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
 .field public static final enum i:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
-.field public static final enum j:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
-
-.field public static final synthetic k:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+.field public static final synthetic j:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout$h;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->g:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sput-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->f:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     .line 2
     new-instance v1, Landroidx/constraintlayout/motion/widget/MotionLayout$h;
@@ -58,7 +58,7 @@
 
     invoke-direct {v1, v3, v4}, Landroidx/constraintlayout/motion/widget/MotionLayout$h;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->h:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sput-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->g:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     .line 3
     new-instance v3, Landroidx/constraintlayout/motion/widget/MotionLayout$h;
@@ -69,7 +69,7 @@
 
     invoke-direct {v3, v5, v6}, Landroidx/constraintlayout/motion/widget/MotionLayout$h;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->i:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sput-object v3, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->h:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     .line 4
     new-instance v5, Landroidx/constraintlayout/motion/widget/MotionLayout$h;
@@ -80,7 +80,7 @@
 
     invoke-direct {v5, v7, v8}, Landroidx/constraintlayout/motion/widget/MotionLayout$h;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->j:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sput-object v5, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->i:Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     const/4 v7, 0x4
 
@@ -95,7 +95,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->k:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sput-object v7, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->j:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     return-void
 .end method
@@ -130,7 +130,7 @@
 .method public static values()[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
     .locals 1
 
-    sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->k:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+    sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$h;->j:[Landroidx/constraintlayout/motion/widget/MotionLayout$h;
 
     invoke-virtual {v0}, [Landroidx/constraintlayout/motion/widget/MotionLayout$h;->clone()Ljava/lang/Object;
 

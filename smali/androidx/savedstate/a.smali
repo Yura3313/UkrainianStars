@@ -91,7 +91,7 @@
     .line 5
     iget-object p1, p0, Landroidx/savedstate/a;->b:Landroid/os/Bundle;
 
-    invoke-virtual {p1}, Landroid/os/Bundle;->isEmpty()Z
+    invoke-virtual {p1}, Landroid/os/BaseBundle;->isEmpty()Z
 
     move-result p1
 
@@ -123,7 +123,7 @@
     .line 1
     iget-object v0, p0, Landroidx/savedstate/a;->a:Li/b;
 
-    invoke-virtual {v0, p1, p2}, Li/b;->f(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Li/b;->e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -193,24 +193,27 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Landroidx/savedstate/Recreator$a;->b(Ljava/lang/String;)V
+    .line 6
+    iget-object v1, v1, Landroidx/savedstate/Recreator$a;->a:Ljava/util/HashSet;
+
+    invoke-virtual {v1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     return-void
 
     :catch_0
     move-exception v1
 
-    .line 6
+    .line 7
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const-string v3, "Class"
 
-    .line 7
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 8
+    invoke-static {v3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 8
+    .line 9
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
@@ -229,7 +232,7 @@
 
     throw v2
 
-    .line 9
+    .line 10
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 

@@ -3,7 +3,7 @@
 .source "AbstractProtobufList.java"
 
 # interfaces
-.implements Lcom/google/protobuf/a0$i;
+.implements Lcom/google/protobuf/b0$i;
 
 
 # annotations
@@ -14,14 +14,14 @@
         ">",
         "Ljava/util/AbstractList<",
         "TE;>;",
-        "Lcom/google/protobuf/a0$i<",
+        "Lcom/google/protobuf/b0$i<",
         "TE;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
 
 # direct methods
@@ -34,17 +34,17 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/protobuf/c;->g:Z
+    iput-boolean v0, p0, Lcom/google/protobuf/c;->f:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final N()Z
+.method public final T()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/protobuf/c;->g:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/c;->f:Z
 
     return v0
 .end method
@@ -114,7 +114,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/c;->g:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/c;->f:Z
 
     if-eqz v0, :cond_0
 
@@ -137,16 +137,6 @@
 
     .line 2
     invoke-super {p0}, Ljava/util/AbstractList;->clear()V
-
-    return-void
-.end method
-
-.method public final d()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/google/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -202,7 +192,7 @@
     return v2
 
     :cond_3
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_5
@@ -267,6 +257,16 @@
 
     :cond_0
     return v1
+.end method
+
+.method public final p()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/protobuf/c;->f:Z
+
+    return-void
 .end method
 
 .method public abstract remove(I)Ljava/lang/Object;

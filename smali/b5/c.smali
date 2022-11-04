@@ -1,207 +1,164 @@
-.class public abstract Lb5/c;
-.super Ljava/lang/Object;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<StateT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+.class public final Lb5/c;
+.super Lb5/q;
 
 
 # instance fields
-.field public final a:La5/b;
+.field public final a:Ljava/io/File;
 
-.field public final b:Landroid/content/IntentFilter;
-
-.field public final c:Landroid/content/Context;
-
-.field public final d:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Lb5/a<",
-            "TStateT;>;>;"
-        }
-    .end annotation
-.end field
-
-.field public e:Lb5/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lb5/b;"
-        }
-    .end annotation
-.end field
-
-.field public volatile f:Z
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(La5/b;Landroid/content/IntentFilter;Landroid/content/Context;)V
-    .locals 1
+.method public constructor <init>(Ljava/io/File;Ljava/lang/String;)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lb5/q;-><init>()V
 
-    new-instance v0, Ljava/util/HashSet;
+    iput-object p1, p0, Lb5/c;->a:Ljava/io/File;
 
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+    const-string p1, "Null splitId"
 
-    iput-object v0, p0, Lb5/c;->d:Ljava/util/HashSet;
+    invoke-static {p2, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lb5/c;->e:Lb5/b;
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lb5/c;->f:Z
-
-    iput-object p1, p0, Lb5/c;->a:La5/b;
-
-    iput-object p2, p0, Lb5/c;->b:Landroid/content/IntentFilter;
-
-    .line 1
-    invoke-virtual {p3}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    move-object p3, p1
-
-    .line 2
-    :cond_0
-    iput-object p3, p0, Lb5/c;->c:Landroid/content/Context;
+    iput-object p2, p0, Lb5/c;->b:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Landroid/content/Context;Landroid/content/Intent;)V
+.method public final a()Ljava/io/File;
+    .locals 1
+
+    iget-object v0, p0, Lb5/c;->a:Ljava/io/File;
+
+    return-object v0
 .end method
 
-.method public final declared-synchronized b(Ljava/lang/Object;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TStateT;)V"
-        }
-    .end annotation
+.method public final b()Ljava/lang/String;
+    .locals 1
 
-    monitor-enter p0
+    iget-object v0, p0, Lb5/c;->b:Ljava/lang/String;
 
-    :try_start_0
-    new-instance v0, Ljava/util/HashSet;
+    return-object v0
+.end method
 
-    iget-object v1, p0, Lb5/c;->d:Ljava/util/HashSet;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    const/4 v0, 0x1
 
-    invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
+    if-eq p1, p0, :cond_1
 
-    move-result-object v0
+    instance-of v1, p1, Lb5/q;
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    check-cast p1, Lb5/q;
+
+    iget-object v1, p0, Lb5/c;->a:Ljava/io/File;
+
+    invoke-virtual {p1}, Lb5/q;->a()Ljava/io/File;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget-object v1, p0, Lb5/c;->b:Ljava/lang/String;
 
-    move-result-object v1
+    invoke-virtual {p1}, Lb5/q;->b()Ljava/lang/String;
 
-    check-cast v1, Lb5/a;
+    move-result-object p1
 
-    invoke-interface {v1, p1}, Lb5/a;->a(Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    move-result p1
 
-    :cond_0
-    monitor-exit p0
+    if-eqz p1, :cond_0
 
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    goto :goto_2
-
-    :goto_1
-    throw p1
-
-    :goto_2
-    goto :goto_1
-.end method
-
-.method public final c()V
-    .locals 3
-
-    iget-boolean v0, p0, Lb5/c;->f:Z
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lb5/c;->d:Ljava/util/HashSet;
-
-    invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
+    return v0
 
     :cond_0
-    iget-object v0, p0, Lb5/c;->e:Lb5/b;
-
-    if-nez v0, :cond_1
-
-    new-instance v0, Lb5/b;
-
-    invoke-direct {v0, p0}, Lb5/b;-><init>(Lb5/c;)V
-
-    iput-object v0, p0, Lb5/c;->e:Lb5/b;
-
-    iget-object v1, p0, Lb5/c;->c:Landroid/content/Context;
-
-    iget-object v2, p0, Lb5/c;->b:Landroid/content/IntentFilter;
-
-    invoke-virtual {v1, v0, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    return v2
 
     :cond_1
-    iget-boolean v0, p0, Lb5/c;->f:Z
+    return v0
+.end method
 
-    if-nez v0, :cond_2
+.method public final hashCode()I
+    .locals 2
 
-    iget-object v0, p0, Lb5/c;->d:Ljava/util/HashSet;
+    iget-object v0, p0, Lb5/c;->a:Ljava/io/File;
 
-    invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/io/File;->hashCode()I
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    const v1, 0xf4243
 
-    iget-object v0, p0, Lb5/c;->e:Lb5/b;
+    xor-int/2addr v0, v1
 
-    if-eqz v0, :cond_2
+    mul-int/2addr v0, v1
 
-    iget-object v1, p0, Lb5/c;->c:Landroid/content/Context;
+    iget-object v1, p0, Lb5/c;->b:Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    const/4 v0, 0x0
+    move-result v1
 
-    iput-object v0, p0, Lb5/c;->e:Lb5/b;
+    xor-int/2addr v0, v1
 
-    :cond_2
-    return-void
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    iget-object v0, p0, Lb5/c;->a:Ljava/io/File;
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lb5/c;->b:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v2, 0x23
+
+    add-int/2addr v2, v3
+
+    invoke-direct {v4, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "SplitFileInfo{splitFile="
+
+    const-string v3, ", splitId="
+
+    .line 1
+    invoke-static {v4, v2, v0, v3, v1}, Lj0/a;->f(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "}"
+
+    .line 2
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

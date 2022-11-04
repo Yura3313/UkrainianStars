@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract G3(Lcom/google/android/gms/dynamic/IObjectWrapper;)Landroid/os/IBinder;
+.method public abstract O5(Lcom/google/android/gms/dynamic/IObjectWrapper;)Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

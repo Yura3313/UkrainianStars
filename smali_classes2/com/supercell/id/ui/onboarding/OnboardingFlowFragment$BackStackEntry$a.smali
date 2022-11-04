@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
@@ -97,12 +97,12 @@
 
     if-eq v3, v5, :cond_0
 
-    const/4 v3, 0x1
+    move v3, v6
 
     goto :goto_0
 
     :cond_0
-    const/4 v3, 0x0
+    move v3, v4
 
     .line 6
     :goto_0
@@ -112,7 +112,7 @@
 
     if-eq p1, v5, :cond_1
 
-    const/4 v4, 0x1
+    move v4, v6
 
     .line 7
     :cond_1
@@ -122,7 +122,7 @@
 
     .line 8
     :cond_2
-    invoke-static {}, Lt3/h;->j()V
+    invoke-static {}, Lif/h;->h()V
 
     const/4 p1, 0x0
 

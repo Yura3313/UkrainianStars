@@ -249,7 +249,7 @@
     const-string v0, "[enablePersonalizedAds]: "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -314,12 +314,12 @@
     const-string v1, "playerId"
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const-string v1, "customProperty"
 
     .line 3
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object v0
 .end method
@@ -827,7 +827,7 @@
     invoke-virtual {v6, v4, v5}, Lcom/kakaogame/KGObject;->put(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 27
-    invoke-interface {v3, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -893,13 +893,7 @@
     invoke-static {v2, v0, v3, v4}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 33
-    goto :goto_4
-
-    :goto_3
     throw v1
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static loadFriendPlayers(Lcom/kakaogame/KGResultCallback;)V
@@ -1036,7 +1030,7 @@
     const/16 v0, 0xfa1
 
     .line 10
-    invoke-static {p0, p1, p0, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1105,13 +1099,13 @@
     if-nez v2, :cond_1
 
     .line 5
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 6
     :cond_2
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result p0
 
@@ -1268,7 +1262,7 @@
     invoke-direct {v5, v3}, Lcom/kakaogame/KGPlayer;-><init>(Ljava/util/Map;)V
 
     .line 24
-    invoke-interface {v2, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
@@ -1360,13 +1354,7 @@
     invoke-static {v2, p0, v3, v4}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 34
-    goto :goto_4
-
-    :goto_3
     throw v0
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static loadPlayers(Ljava/util/List;Lcom/kakaogame/KGResultCallback;)V

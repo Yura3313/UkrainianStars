@@ -352,7 +352,7 @@
     goto :goto_0
 
     :cond_3
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_0
     return v0
@@ -445,7 +445,7 @@
     goto :goto_1
 
     :cond_8
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_1
     return v0
@@ -499,7 +499,7 @@
     goto :goto_2
 
     :cond_b
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_2
     return v0
@@ -1059,13 +1059,7 @@
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
 
-    goto :goto_2
-
-    :goto_1
     throw p0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public static varargs newParameterizedTypeWithOwner(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
@@ -1249,12 +1243,12 @@
 
     if-eq v3, v0, :cond_7
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_2
 
     :cond_7
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 20
     :goto_2
@@ -1291,7 +1285,7 @@
 
     check-cast v4, [Ljava/lang/reflect/Type;
 
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 25
     :cond_8
@@ -1369,12 +1363,9 @@
     .line 36
     aget-object v0, v3, v2
 
-    :try_start_0
     invoke-static {p0, p1, v0, p3}, Lcom/google/gson/internal/$Gson$Types;->resolve(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/util/Collection;)Ljava/lang/reflect/Type;
 
     move-result-object p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 37
     aget-object p1, v3, v2
@@ -1390,18 +1381,6 @@
 
     :cond_e
     return-object p2
-
-    :catchall_0
-    move-exception p0
-
-    .line 39
-    goto :goto_5
-
-    :goto_4
-    throw p0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method public static resolveTypeVariable(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;

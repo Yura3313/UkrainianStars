@@ -12,8 +12,3 @@
     accessFlags = 0x609
     name = "e"
 .end annotation
-
-
-# virtual methods
-.method public abstract X0()V
-.end method

@@ -337,7 +337,7 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 5
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -359,7 +359,7 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 8
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -381,7 +381,7 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 11
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -468,7 +468,7 @@
     const-string v1, "Unexpected end of DN: "
 
     .line 7
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -547,7 +547,7 @@
 
     and-int/lit8 v0, v0, 0x1f
 
-    const/4 v3, 0x1
+    move v3, v2
 
     goto :goto_0
 
@@ -827,7 +827,7 @@
     new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 18
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -849,7 +849,7 @@
     new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 21
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -864,13 +864,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_5
-
-    :goto_4
     throw v0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private nextAT()Ljava/lang/String;
@@ -996,7 +990,7 @@
     new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 10
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1135,7 +1129,7 @@
     new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 18
-    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1150,13 +1144,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_6
-
-    :goto_5
     throw v0
-
-    :goto_6
-    goto :goto_5
 .end method
 
 .method private quotedAV()Ljava/lang/String;
@@ -1286,7 +1274,7 @@
     const-string v1, "Unexpected end of DN: "
 
     .line 15
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1301,13 +1289,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_4
-
-    :goto_3
     throw v0
-
-    :goto_4
-    goto :goto_3
 .end method
 
 
@@ -1461,7 +1443,7 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 17
-    invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1499,7 +1481,7 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 22
-    invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1514,11 +1496,5 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_4
-
-    :goto_3
     throw p1
-
-    :goto_4
-    goto :goto_3
 .end method

@@ -100,7 +100,7 @@
     const-string v1, "KGSession"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/KGSession$6;->val$callback:Lcom/kakaogame/KGResultCallback;

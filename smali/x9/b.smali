@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public a:La8/f;
+.field public a:Lx7/g;
 
-.field public b:Le8/s;
+.field public b:Lb8/s;
 
 
 # direct methods
-.method public constructor <init>(Le8/s;La8/f;)V
+.method public constructor <init>(Lb8/s;Lx7/g;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lx9/b;->b:Le8/s;
+    iput-object p1, p0, Lx9/b;->b:Lb8/s;
 
     .line 3
-    iput-object p2, p0, Lx9/b;->a:La8/f;
+    iput-object p2, p0, Lx9/b;->a:Lx7/g;
 
     return-void
 .end method
@@ -89,19 +89,19 @@
     const-string v2, "sm"
 
     .line 7
-    iget-object v3, p0, Lx9/b;->b:Le8/s;
+    iget-object v3, p0, Lx9/b;->b:Lb8/s;
 
-    check-cast v3, Le8/j;
+    check-cast v3, Lb8/l;
 
     .line 8
-    iget-object v3, v3, Le8/j;->t:Le8/i;
+    iget-object v3, v3, Lb8/l;->t:Lb8/g;
 
     .line 9
-    invoke-static {}, Lae/v;->f()Ljava/util/Map;
+    invoke-static {}, Lcom/android/billingclient/api/x;->c()Ljava/util/Map;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Le8/i;->a(Ljava/util/Map;)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lb8/g;->a(Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -116,19 +116,19 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lx9/b;->b:Le8/s;
+    iget-object v3, p0, Lx9/b;->b:Lb8/s;
 
-    check-cast v3, Le8/j;
+    check-cast v3, Lb8/l;
 
     .line 11
-    iget-object v3, v3, Le8/j;->t:Le8/i;
+    iget-object v3, v3, Lb8/l;->t:Lb8/g;
 
     .line 12
-    invoke-static {}, Lae/v;->f()Ljava/util/Map;
+    invoke-static {}, Lcom/android/billingclient/api/x;->c()Ljava/util/Map;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Le8/i;->a(Ljava/util/Map;)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lb8/g;->a(Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -143,13 +143,13 @@
     const-string v2, "signature"
 
     .line 13
-    iget-object v3, p0, Lx9/b;->a:La8/f;
+    iget-object v3, p0, Lx9/b;->a:Lx7/g;
 
-    invoke-virtual {v3}, La8/f;->b()Lg9/a;
+    invoke-virtual {v3}, Lx7/g;->b()Lcom/google/android/play/core/appupdate/f;
 
     move-result-object v3
 
-    invoke-static {v1}, La5/b0;->i(Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/billingclient/api/c0;->m(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -158,7 +158,7 @@
     const/4 v5, 0x0
 
     .line 14
-    invoke-virtual {v3, v1, v4, v5}, Lg9/a;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {v3, v1, v4, v5}, Lcom/google/android/play/core/appupdate/f;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -187,7 +187,7 @@
     const-string v2, "SecurityException while creating signature"
 
     .line 17
-    invoke-static {v0, v1, v2}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+    invoke-static {v0, v1, v2}, La8/f;->b(Ljava/lang/Exception;La8/a;Ljava/lang/String;)La8/f;
 
     move-result-object v0
 

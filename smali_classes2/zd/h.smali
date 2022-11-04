@@ -1,87 +1,109 @@
 .class public final Lzd/h;
-.super Lse/i;
-.source "YoungPlayerRegisterEnterPinPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.super Landroid/text/style/MetricAffectingSpan;
+.source "FontUtil.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lzd/i;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lzd/h;
+# instance fields
+.field public final f:Landroid/graphics/Typeface;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Landroid/graphics/Typeface;)V
     .locals 1
 
-    new-instance v0, Lzd/h;
+    const-string v0, "typeface"
 
-    invoke-direct {v0}, Lzd/h;-><init>()V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput-object v0, Lzd/h;->g:Lzd/h;
+    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    iput-object p1, p0, Lzd/h;->f:Landroid/graphics/Typeface;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Landroid/graphics/Paint;)V
+    .locals 2
 
     .line 1
-    check-cast p1, Lzd/i;
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
-    check-cast p2, Ljava/lang/Exception;
+    move-result-object v0
 
-    const-string v0, "$receiver"
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/graphics/Typeface;->getStyle()I
 
-    const-string v0, "it"
+    move-result v0
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    goto :goto_0
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
+    :cond_0
     const/4 v0, 0x0
 
+    .line 3
+    :goto_0
+    iget-object v1, p0, Lzd/h;->f:Landroid/graphics/Typeface;
+
+    invoke-virtual {v1}, Landroid/graphics/Typeface;->getStyle()I
+
+    move-result v1
+
+    not-int v1, v1
+
+    and-int/2addr v0, v1
+
+    and-int/lit8 v1, v0, 0x1
+
+    if-eqz v1, :cond_1
+
+    const/4 v1, 0x1
+
     .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
+
+    :cond_1
+    and-int/lit8 v0, v0, 0x2
+
+    if-eqz v0, :cond_2
+
+    const/high16 v0, -0x41800000    # -0.25f
 
     .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
 
-    return-object p1
+    .line 6
+    :cond_2
+    iget-object v0, p0, Lzd/h;->f:Landroid/graphics/Typeface;
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+
+    return-void
+.end method
+
+.method public final updateDrawState(Landroid/text/TextPaint;)V
+    .locals 1
+
+    const-string v0, "drawState"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Lzd/h;->a(Landroid/graphics/Paint;)V
+
+    return-void
+.end method
+
+.method public final updateMeasureState(Landroid/text/TextPaint;)V
+    .locals 1
+
+    const-string v0, "paint"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Lzd/h;->a(Landroid/graphics/Paint;)V
+
+    return-void
 .end method

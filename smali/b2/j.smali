@@ -1,206 +1,85 @@
 .class public final Lb2/j;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
-# interfaces
-.implements Landroid/content/ServiceConnection;
-.implements Lcom/google/android/gms/common/api/a$f;
+
+# instance fields
+.field public final a:Landroid/content/res/Resources;
+
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
-    const-class v0, Lb2/j;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "null reference"
+
+    .line 2
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lb2/j;->a:Landroid/content/res/Resources;
+
+    .line 4
+    sget v0, Lcom/google/android/gms/common/R$string;->common_google_play_services_unknown_issue:I
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getResourcePackageName(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lb2/j;->b:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Lcom/google/android/gms/common/api/Scope;",
-            ">;"
-        }
-    .end annotation
-
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final b(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/internal/IAccountAccessor;",
-            "Ljava/util/Set<",
-            "Lcom/google/android/gms/common/api/Scope;",
-            ">;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 0
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final disconnect()V
-    .locals 1
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final e()Ljava/lang/String;
-    .locals 1
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
-
-    throw v0
-.end method
-
-.method public final f(Lcom/google/android/gms/common/internal/BaseGmsClient$c;)V
-    .locals 0
-    .param p1    # Lcom/google/android/gms/common/internal/BaseGmsClient$c;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final g(Lcom/google/android/gms/common/internal/BaseGmsClient$e;)V
-    .locals 0
-    .param p1    # Lcom/google/android/gms/common/internal/BaseGmsClient$e;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    return-void
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final i()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final isConnected()Z
-    .locals 1
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final j()[Lcom/google/android/gms/common/Feature;
-    .locals 1
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Lcom/google/android/gms/common/Feature;
-
-    return-object v0
-.end method
-
-.method public final k()Ljava/lang/String;
-    .locals 1
     .annotation build Landroidx/annotation/RecentlyNullable;
     .end annotation
 
-    const/4 v0, 0x0
+    .line 1
+    iget-object v0, p0, Lb2/j;->a:Landroid/content/res/Resources;
 
-    return-object v0
-.end method
+    iget-object v1, p0, Lb2/j;->b:Ljava/lang/String;
 
-.method public final m()Z
-    .locals 1
+    const-string v2, "string"
 
-    const/4 v0, 0x0
+    invoke-virtual {v0, p1, v2, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
-    return v0
-.end method
+    move-result p1
 
-.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Landroid/os/IBinder;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+    if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
-    throw p1
-.end method
+    return-object p1
 
-.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lb2/j;->a:Landroid/content/res/Resources;
 
-    const/4 p1, 0x0
+    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    throw p1
+    move-result-object p1
+
+    return-object p1
 .end method

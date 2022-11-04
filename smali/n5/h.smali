@@ -1,304 +1,123 @@
 .class public final Ln5/h;
-.super Lcom/google/crypto/tink/shaded/protobuf/n;
-.source "AesCtrHmacStreamingParams.java"
-
-# interfaces
-.implements Lo5/r;
+.super Ld5/i;
+.source "RsaSsaPkcs1VerifyKeyManager.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ln5/h$a;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/crypto/tink/shaded/protobuf/n<",
-        "Ln5/h;",
-        "Ln5/h$a;",
-        ">;",
-        "Lo5/r;"
+        "Ld5/i<",
+        "Ll5/k1;",
+        ">;"
     }
 .end annotation
-
-
-# static fields
-.field public static final CIPHERTEXT_SEGMENT_SIZE_FIELD_NUMBER:I = 0x1
-
-.field private static final DEFAULT_INSTANCE:Ln5/h;
-
-.field public static final DERIVED_KEY_SIZE_FIELD_NUMBER:I = 0x2
-
-.field public static final HKDF_HASH_TYPE_FIELD_NUMBER:I = 0x3
-
-.field public static final HMAC_PARAMS_FIELD_NUMBER:I = 0x4
-
-.field private static volatile PARSER:Lo5/u;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lo5/u<",
-            "Ln5/h;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field private ciphertextSegmentSize_:I
-
-.field private derivedKeySize_:I
-
-.field private hkdfHashType_:I
-
-.field private hmacParams_:Ln5/u0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ln5/h;
-
-    invoke-direct {v0}, Ln5/h;-><init>()V
-
-    .line 2
-    sput-object v0, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    .line 3
-    const-class v1, Ln5/h;
-
-    invoke-static {v1, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->p(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/n;)V
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 0
+    .locals 4
 
-    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>()V
+    const-class v0, Ll5/k1;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ld5/i$b;
+
+    new-instance v2, Ln5/h$a;
+
+    invoke-direct {v2}, Ln5/h$a;-><init>()V
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    invoke-direct {p0, v0, v1}, Ld5/i;-><init>(Ljava/lang/Class;[Ld5/i$b;)V
 
     return-void
-.end method
-
-.method public static synthetic q()Ln5/h;
-    .locals 1
-
-    sget-object v0, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    return-object v0
-.end method
-
-.method public static s()Ln5/h;
-    .locals 1
-
-    sget-object v0, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
-    .locals 3
+.method public final a()Ljava/lang/String;
+    .locals 1
 
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    const-string v0, "type.googleapis.com/google.crypto.tink.RsaSsaPkcs1PublicKey"
 
-    move-result p1
+    return-object v0
+.end method
 
-    const/4 v0, 0x1
+.method public final d()Ll5/v0$b;
+    .locals 1
 
-    packed-switch p1, :pswitch_data_0
+    sget-object v0, Ll5/v0$b;->j:Ll5/v0$b;
 
-    .line 2
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    return-object v0
+.end method
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+.method public final e(Lm5/i;)Lm5/q0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lm5/a0;
+        }
+    .end annotation
 
-    throw p1
+    invoke-static {}, Lm5/p;->a()Lm5/p;
 
-    .line 3
-    :pswitch_0
-    sget-object p1, Ln5/h;->PARSER:Lo5/u;
+    move-result-object v0
 
-    if-nez p1, :cond_1
-
-    .line 4
-    const-class v0, Ln5/h;
-
-    monitor-enter v0
-
-    .line 5
-    :try_start_0
-    sget-object p1, Ln5/h;->PARSER:Lo5/u;
-
-    if-nez p1, :cond_0
-
-    .line 6
-    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/n$b;
-
-    sget-object v1, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    invoke-direct {p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$b;-><init>(Lcom/google/crypto/tink/shaded/protobuf/n;)V
-
-    .line 7
-    sput-object p1, Ln5/h;->PARSER:Lo5/u;
-
-    .line 8
-    :cond_0
-    monitor-exit v0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-
-    :cond_1
-    :goto_0
-    return-object p1
-
-    .line 9
-    :pswitch_1
-    sget-object p1, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    return-object p1
-
-    .line 10
-    :pswitch_2
-    new-instance p1, Ln5/h$a;
-
-    invoke-direct {p1}, Ln5/h$a;-><init>()V
-
-    return-object p1
-
-    .line 11
-    :pswitch_3
-    new-instance p1, Ln5/h;
-
-    invoke-direct {p1}, Ln5/h;-><init>()V
-
-    return-object p1
-
-    :pswitch_4
-    const/4 p1, 0x4
-
-    new-array p1, p1, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    const-string v2, "ciphertextSegmentSize_"
-
-    aput-object v2, p1, v1
-
-    const-string v1, "derivedKeySize_"
-
-    aput-object v1, p1, v0
-
-    const/4 v0, 0x2
-
-    const-string v1, "hkdfHashType_"
-
-    aput-object v1, p1, v0
-
-    const/4 v0, 0x3
-
-    const-string v1, "hmacParams_"
-
-    aput-object v1, p1, v0
-
-    const-string v0, "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u000b\u0002\u000b\u0003\u000c\u0004\t"
-
-    .line 12
-    sget-object v1, Ln5/h;->DEFAULT_INSTANCE:Ln5/h;
-
-    .line 13
-    new-instance v2, Lo5/x;
-
-    invoke-direct {v2, v1, v0, p1}, Lo5/x;-><init>(Lcom/google/crypto/tink/shaded/protobuf/x;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-object v2
-
-    :pswitch_5
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 14
-    :pswitch_6
-    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+    invoke-static {p1, v0}, Ll5/k1;->B(Lm5/i;Lm5/p;)Ll5/k1;
 
     move-result-object p1
 
     return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final r()I
-    .locals 1
-
-    iget v0, p0, Ln5/h;->ciphertextSegmentSize_:I
-
-    return v0
-.end method
-
-.method public final t()I
-    .locals 1
-
-    iget v0, p0, Ln5/h;->derivedKeySize_:I
-
-    return v0
-.end method
-
-.method public final u()Ln5/o0;
-    .locals 1
+.method public final g(Lm5/q0;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, Ln5/h;->hkdfHashType_:I
-
-    invoke-static {v0}, Ln5/o0;->c(I)Ln5/o0;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
+    check-cast p1, Ll5/k1;
 
     .line 2
-    sget-object v0, Ln5/o0;->m:Ln5/o0;
+    invoke-virtual {p1}, Ll5/k1;->z()I
 
-    :cond_0
-    return-object v0
-.end method
+    move-result v0
 
-.method public final v()Ln5/u0;
-    .locals 1
+    invoke-static {v0}, Lp5/j0;->e(I)V
 
-    iget-object v0, p0, Ln5/h;->hmacParams_:Ln5/u0;
+    .line 3
+    new-instance v0, Ljava/math/BigInteger;
 
-    if-nez v0, :cond_0
+    invoke-virtual {p1}, Ll5/k1;->x()Lm5/i;
 
-    invoke-static {}, Ln5/u0;->r()Ln5/u0;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Lm5/i;->l()[B
 
-    :cond_0
-    return-object v0
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v2, v1}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    invoke-virtual {v0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v0
+
+    invoke-static {v0}, Lp5/j0;->c(I)V
+
+    .line 4
+    invoke-virtual {p1}, Ll5/k1;->y()Ll5/i1;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ln5/k;->e(Ll5/i1;)V
+
+    return-void
 .end method

@@ -99,7 +99,7 @@
     move-result p4
 
     .line 13
-    invoke-virtual {p2, p4}, Lcom/google/android/material/bottomappbar/BottomAppBar;->R(I)Z
+    invoke-virtual {p2, p4}, Lcom/google/android/material/bottomappbar/BottomAppBar;->J(I)Z
 
     .line 14
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -140,7 +140,7 @@
     sub-int/2addr p4, p5
 
     .line 20
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->F(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->x(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p5
 
@@ -149,14 +149,14 @@
     iput p5, p1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 21
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->G(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->y(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p4
 
     iput p4, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 22
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->H(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->z(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p4
 
@@ -173,7 +173,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 25
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
 
     add-int/2addr p3, p2
 
@@ -187,7 +187,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 28
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
 
     add-int/2addr p3, p2
 

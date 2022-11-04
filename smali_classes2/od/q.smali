@@ -1,80 +1,94 @@
 .class public final Lod/q;
-.super Lse/i;
-.source "OnboardingProfileImagePageFragment.kt"
+.super Lif/i;
+.source "FriendsFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lod/p;",
-        "Ljava/lang/Object;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Landroid/graphics/drawable/BitmapDrawable;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lod/q;
+# instance fields
+.field public final synthetic f:Ljava/lang/String;
+
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
+
+.field public final synthetic h:Lzd/v1;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/ref/WeakReference;Lzd/v1;)V
+    .locals 0
 
-    new-instance v0, Lod/q;
+    iput-object p1, p0, Lod/q;->f:Ljava/lang/String;
 
-    invoke-direct {v0}, Lod/q;-><init>()V
+    iput-object p2, p0, Lod/q;->g:Ljava/lang/ref/WeakReference;
 
-    sput-object v0, Lod/q;->g:Lod/q;
+    iput-object p3, p0, Lod/q;->h:Lzd/v1;
 
-    return-void
-.end method
+    const/4 p1, 0x1
 
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    const-string v0, "drawable"
 
     .line 1
-    check-cast p1, Lod/p;
-
-    const-string v0, "$receiver"
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const-string v0, "it"
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Lod/b;->U0()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iget-object v0, v0, Lzd/q;->u:Ltd/i;
 
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j1()V
+    const-string v1, "game_name_"
 
     .line 4
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 5
+    iget-object v2, p0, Lod/q;->f:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lod/p;
+
+    invoke-direct {v2, p0, p1}, Lod/p;-><init>(Lod/q;Landroid/graphics/drawable/BitmapDrawable;)V
+
+    invoke-virtual {v0, v1, v2}, Ltd/i;->e(Ljava/lang/String;Lhf/l;)V
+
+    .line 6
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

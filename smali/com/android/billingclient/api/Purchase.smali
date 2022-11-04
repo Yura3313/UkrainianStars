@@ -1,14 +1,6 @@
 .class public final Lcom/android/billingclient/api/Purchase;
 .super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/billingclient/api/Purchase$a;
-    }
-.end annotation
+.source "com.android.billingclient:billing@@5.0.0"
 
 
 # instance fields
@@ -45,7 +37,89 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final a()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iget-object v1, p0, Lcom/android/billingclient/api/Purchase;->c:Lorg/json/JSONObject;
+
+    const-string v2, "productIds"
+
+    .line 2
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/billingclient/api/Purchase;->c:Lorg/json/JSONObject;
+
+    .line 3
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    const/4 v2, 0x0
+
+    .line 4
+    :goto_0
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v3
+
+    if-ge v2, v3, :cond_1
+
+    .line 5
+    invoke-virtual {v1, v2}, Lorg/json/JSONArray;->optString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v1, p0, Lcom/android/billingclient/api/Purchase;->c:Lorg/json/JSONObject;
+
+    const-string v2, "productId"
+
+    .line 6
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/billingclient/api/Purchase;->c:Lorg/json/JSONObject;
+
+    .line 7
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
     .locals 3
 
     iget-object v0, p0, Lcom/android/billingclient/api/Purchase;->c:Lorg/json/JSONObject;
@@ -131,7 +205,7 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     iget-object v0, p0, Lcom/android/billingclient/api/Purchase;->a:Ljava/lang/String;
 
@@ -139,25 +213,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    const-string v1, "Purchase. Json: "
 
-    move-result v1
-
-    const-string v2, "Purchase. Json: "
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
     return-object v0
 .end method

@@ -3,7 +3,7 @@
 .source "FriendRequestSender.java"
 
 # interfaces
-.implements Lde/a;
+.implements Lce/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/promotion/FriendRequestSender;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/promotion/FriendRequestSender$a;",
         ">;",
-        "Lde/a;"
+        "Lce/a;"
     }
 .end annotation
 

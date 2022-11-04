@@ -53,10 +53,10 @@
 
 
 # virtual methods
-.method public abstract b()I
+.method public abstract a()I
 .end method
 
-.method public c(I)J
+.method public b(I)J
     .locals 2
 
     const-wide/16 v0, -0x1
@@ -64,7 +64,7 @@
     return-wide v0
 .end method
 
-.method public d(I)I
+.method public c(I)I
     .locals 0
 
     const/4 p1, 0x0
@@ -72,7 +72,7 @@
     return p1
 .end method
 
-.method public final e()V
+.method public final d()V
     .locals 1
 
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
@@ -82,7 +82,7 @@
     return-void
 .end method
 
-.method public final f(I)V
+.method public final e(I)V
     .locals 3
 
     .line 1
@@ -98,7 +98,7 @@
     return-void
 .end method
 
-.method public final g(II)V
+.method public final f(II)V
     .locals 1
 
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
@@ -108,7 +108,7 @@
     return-void
 .end method
 
-.method public abstract h(Landroidx/recyclerview/widget/RecyclerView$z;I)V
+.method public abstract g(Landroidx/recyclerview/widget/RecyclerView$z;I)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TVH;I)V"
@@ -116,7 +116,7 @@
     .end annotation
 .end method
 
-.method public abstract i(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
+.method public abstract h(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -126,7 +126,7 @@
     .end annotation
 .end method
 
-.method public j(Landroidx/recyclerview/widget/RecyclerView$z;)V
+.method public i(Landroidx/recyclerview/widget/RecyclerView$z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -137,7 +137,7 @@
     return-void
 .end method
 
-.method public final k(Landroidx/recyclerview/widget/RecyclerView$g;)V
+.method public final j(Landroidx/recyclerview/widget/RecyclerView$g;)V
     .locals 1
 
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
@@ -147,7 +147,7 @@
     return-void
 .end method
 
-.method public final l(Landroidx/recyclerview/widget/RecyclerView$g;)V
+.method public final k(Landroidx/recyclerview/widget/RecyclerView$g;)V
     .locals 1
 
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;

@@ -1,79 +1,68 @@
-.class public final Lcom/android/billingclient/api/k;
+.class public final synthetic Lcom/android/billingclient/api/k;
 .super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
+.source "com.android.billingclient:billing@@5.0.0"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/concurrent/Callable<",
-        "Landroid/os/Bundle;",
-        ">;"
-    }
-.end annotation
-
-
 # instance fields
-.field public final synthetic a:Lcom/android/billingclient/api/SkuDetails;
+.field public final synthetic a:Lcom/android/billingclient/api/a;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic b:I
 
-.field public final synthetic c:Lcom/android/billingclient/api/b;
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:Landroid/os/Bundle;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/billingclient/api/b;Lcom/android/billingclient/api/SkuDetails;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/android/billingclient/api/a;ILjava/lang/String;Ljava/lang/String;Lcom/android/billingclient/api/c;Landroid/os/Bundle;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/k;->c:Lcom/android/billingclient/api/b;
-
-    iput-object p2, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/SkuDetails;
-
-    iput-object p3, p0, Lcom/android/billingclient/api/k;->b:Ljava/lang/String;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/a;
+
+    iput p2, p0, Lcom/android/billingclient/api/k;->b:I
+
+    iput-object p3, p0, Lcom/android/billingclient/api/k;->c:Ljava/lang/String;
+
+    iput-object p4, p0, Lcom/android/billingclient/api/k;->d:Ljava/lang/String;
+
+    iput-object p6, p0, Lcom/android/billingclient/api/k;->e:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic call()Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+.method public final call()Ljava/lang/Object;
+    .locals 7
 
-    iget-object v0, p0, Lcom/android/billingclient/api/k;->c:Lcom/android/billingclient/api/b;
+    iget-object v0, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/a;
+
+    iget v2, p0, Lcom/android/billingclient/api/k;->b:I
+
+    iget-object v4, p0, Lcom/android/billingclient/api/k;->c:Ljava/lang/String;
+
+    iget-object v5, p0, Lcom/android/billingclient/api/k;->d:Ljava/lang/String;
+
+    iget-object v6, p0, Lcom/android/billingclient/api/k;->e:Landroid/os/Bundle;
 
     .line 1
-    iget-object v1, v0, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
+    iget-object v1, v0, Lcom/android/billingclient/api/a;->k:Lcom/google/android/gms/internal/play_billing/zze;
 
-    .line 2
-    iget-object v0, v0, Lcom/android/billingclient/api/b;->e:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/billingclient/api/a;->j:Landroid/content/Context;
 
-    .line 3
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    iget-object v2, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/SkuDetails;
-
-    .line 4
-    invoke-virtual {v2}, Lcom/android/billingclient/api/SkuDetails;->a()Ljava/lang/String;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/billingclient/api/k;->b:Ljava/lang/String;
-
-    .line 5
-    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/gms/internal/play_billing/zzd;->u5(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+    .line 2
+    invoke-interface/range {v1 .. v6}, Lcom/google/android/gms/internal/play_billing/zze;->A1(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 

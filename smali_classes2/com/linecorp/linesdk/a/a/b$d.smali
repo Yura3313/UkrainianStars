@@ -1,5 +1,5 @@
 .class public final Lcom/linecorp/linesdk/a/a/b$d;
-.super Lp7/a;
+.super Ll7/a;
 .source "SourceFile"
 
 
@@ -15,18 +15,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp7/a;"
+        "Ll7/a;"
     }
 .end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lp7/a;-><init>(I)V
+    invoke-direct {p0}, Ll7/a;-><init>()V
 
     return-void
 .end method
@@ -62,7 +60,7 @@
 
     const-wide/16 v5, 0x3e8
 
-    mul-long v3, v3, v5
+    mul-long/2addr v3, v5
 
     .line 5
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z

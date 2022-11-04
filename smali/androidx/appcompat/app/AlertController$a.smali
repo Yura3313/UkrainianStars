@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/app/AlertController;
+.field public final synthetic f:Landroidx/appcompat/app/AlertController;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/AlertController;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iput-object p1, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iget-object v0, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
     iget-object v1, v0, Landroidx/appcompat/app/AlertController;->i:Landroid/widget/Button;
 
@@ -100,13 +100,13 @@
 
     .line 8
     :cond_3
-    iget-object p1, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iget-object p1, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
     iget-object v0, p1, Landroidx/appcompat/app/AlertController;->K:Landroidx/appcompat/app/AlertController$c;
 
     const/4 v1, 0x1
 
-    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/p;
+    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/k;
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

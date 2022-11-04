@@ -4,8 +4,8 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
-.implements Ld3/a;
+.implements La2/e;
+.implements Lc3/a;
 
 
 # annotations
@@ -13,35 +13,35 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/multiplayer/realtime/Room;",
         ">;",
-        "Ld3/a;"
+        "Lc3/a;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract P1()Ljava/lang/String;
-.end method
-
-.method public abstract f()J
-.end method
-
-.method public abstract g()I
+.method public abstract e()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
 .end method
 
-.method public abstract getStatus()I
+.method public abstract j()J
 .end method
 
-.method public abstract p()Ljava/lang/String;
+.method public abstract k()I
 .end method
 
-.method public abstract s1()I
+.method public abstract m()Landroid/os/Bundle;
 .end method
 
-.method public abstract y()Landroid/os/Bundle;
+.method public abstract p0()I
+.end method
+
+.method public abstract r1()Ljava/lang/String;
+.end method
+
+.method public abstract t()Ljava/lang/String;
 .end method

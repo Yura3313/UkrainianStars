@@ -1,23 +1,24 @@
-.class public interface abstract annotation Landroidx/lifecycle/p;
+.class public interface abstract Landroidx/lifecycle/p;
 .super Ljava/lang/Object;
-.source "OnLifecycleEvent.java"
-
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
+.source "Observer.java"
 
 
 # annotations
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract value()Landroidx/lifecycle/f$b;
+.method public abstract a(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 .end method

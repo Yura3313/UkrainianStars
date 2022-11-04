@@ -3,7 +3,7 @@
 .source "AppBarLayout.java"
 
 # interfaces
-.implements Lf0/n;
+.implements Lf0/m;
 
 
 # annotations
@@ -34,16 +34,16 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+.method public final a(Landroid/view/View;Lf0/v;)Lf0/v;
     .locals 2
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$a;->a:Lcom/google/android/material/appbar/AppBarLayout;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -61,19 +61,20 @@
 
     .line 4
     :goto_0
-    iget-object v1, p1, Lcom/google/android/material/appbar/AppBarLayout;->m:Lf0/a0;
+    iget-object v1, p1, Lcom/google/android/material/appbar/AppBarLayout;->l:Lf0/v;
 
-    invoke-static {v1, v0}, Le0/b;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    invoke-static {v1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 5
-    iput-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->m:Lf0/a0;
-
     .line 6
-    iget-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->l:Lf0/v;
+
+    .line 7
+    iget-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -85,7 +86,7 @@
 
     if-lez v0, :cond_1
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_1
 
@@ -95,10 +96,10 @@
     :goto_1
     xor-int/2addr v0, v1
 
-    .line 7
+    .line 8
     invoke-virtual {p1, v0}, Landroid/view/View;->setWillNotDraw(Z)V
 
-    .line 8
+    .line 9
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
     :cond_2

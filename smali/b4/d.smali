@@ -1,112 +1,97 @@
 .class public final Lb4/d;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.super Landroid/util/Property;
+.source "DrawableAlphaProperty.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/signin/internal/zaj;",
+        "Landroid/util/Property<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Ljava/lang/Integer;",
         ">;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# static fields
+.field public static final a:Lb4/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/Property<",
+            "Landroid/graphics/drawable/Drawable;",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lb4/d;
+
+    invoke-direct {v0}, Lb4/d;-><init>()V
+
+    sput-object v0, Lb4/d;->a:Lb4/d;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    const-class v0, Ljava/lang/Integer;
+
+    const-string v1, "drawableAlphaCompat"
+
+    invoke-direct {p0, v0, v1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+
+    .line 2
+    new-instance v0, Ljava/util/WeakHashMap;
+
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 6
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
+    check-cast p1, Landroid/graphics/drawable/Drawable;
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getAlpha()I
 
-    move-result v3
+    move-result p1
 
-    if-ge v3, v0, :cond_2
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v3
-
-    const v4, 0xffff
-
-    and-int/2addr v4, v3
-
-    const/4 v5, 0x1
-
-    if-eq v4, v5, :cond_1
-
-    const/4 v5, 0x2
-
-    if-eq v4, v5, :cond_0
-
-    .line 4
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    sget-object v2, Lcom/google/android/gms/common/internal/zat;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 6
-    invoke-static {p1, v3, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/gms/common/internal/zat;
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v1
-
-    goto :goto_0
-
-    .line 8
-    :cond_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 9
-    new-instance p1, Lcom/google/android/gms/signin/internal/zaj;
-
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/signin/internal/zaj;-><init>(ILcom/google/android/gms/common/internal/zat;)V
+    move-result-object p1
 
     return-object p1
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
+.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/signin/internal/zaj;
+    .line 1
+    check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    return-object p1
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    return-void
 .end method

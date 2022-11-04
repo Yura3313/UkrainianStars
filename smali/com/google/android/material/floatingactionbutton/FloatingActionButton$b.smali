@@ -3,7 +3,7 @@
 .source "FloatingActionButton.java"
 
 # interfaces
-.implements Lr4/b;
+.implements Lo4/b;
 
 
 # annotations

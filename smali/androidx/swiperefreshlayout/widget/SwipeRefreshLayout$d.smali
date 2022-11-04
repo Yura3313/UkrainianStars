@@ -40,14 +40,14 @@
     .line 1
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->q(Landroid/view/animation/Animation$AnimationListener;)V
+    invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->k(Landroid/view/animation/Animation$AnimationListener;)V
 
     return-void
 .end method

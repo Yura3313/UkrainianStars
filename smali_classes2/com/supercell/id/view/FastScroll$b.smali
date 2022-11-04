@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/FastScroll;
+.field public final synthetic f:Lcom/supercell/id/view/FastScroll;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/FastScroll;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/FastScroll$b;->g:Lcom/supercell/id/view/FastScroll;
+    iput-object p1, p0, Lcom/supercell/id/view/FastScroll$b;->f:Lcom/supercell/id/view/FastScroll;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/FastScroll$b;->g:Lcom/supercell/id/view/FastScroll;
+    iget-object v0, p0, Lcom/supercell/id/view/FastScroll$b;->f:Lcom/supercell/id/view/FastScroll;
 
-    sget v1, Lcom/supercell/id/view/FastScroll;->n:I
+    sget v1, Lcom/supercell/id/view/FastScroll;->m:I
 
     .line 2
     invoke-virtual {v0}, Lcom/supercell/id/view/FastScroll;->d()V

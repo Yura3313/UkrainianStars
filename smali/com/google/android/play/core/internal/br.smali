@@ -6,7 +6,16 @@
 
 
 # virtual methods
-.method public abstract K(I)V
+.method public abstract A(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/os/Bundle;",
+            ">;)V"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -14,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract M(Landroid/os/Bundle;)V
+.method public abstract A3(ILandroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -22,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract N5(ILandroid/os/Bundle;)V
+.method public abstract E4()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract R5(Landroid/os/Bundle;)V
+.method public abstract J3(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -38,7 +47,15 @@
     .end annotation
 .end method
 
-.method public abstract U2()V
+.method public abstract X(I)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract Z(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -70,7 +87,7 @@
     .end annotation
 .end method
 
-.method public abstract i3(Landroid/os/Bundle;)V
+.method public abstract e5(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -78,7 +95,7 @@
     .end annotation
 .end method
 
-.method public abstract o0()V
+.method public abstract g1()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -86,24 +103,7 @@
     .end annotation
 .end method
 
-.method public abstract w(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Landroid/os/Bundle;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract z4()V
+.method public abstract v0()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

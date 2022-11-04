@@ -25,13 +25,7 @@
 
 
 # virtual methods
-.method public a(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public b(Landroid/widget/TextView;)Z
+.method public a(Landroid/widget/TextView;)Z
     .locals 2
 
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;

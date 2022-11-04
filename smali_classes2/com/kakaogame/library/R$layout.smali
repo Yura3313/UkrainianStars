@@ -104,87 +104,87 @@
 
 .field public static final browser_actions_context_menu_row:I = 0x7f0d002d
 
-.field public static final custom_dialog:I = 0x7f0d0030
+.field public static final custom_dialog:I = 0x7f0d002f
 
-.field public static final info_dialog:I = 0x7f0d0135
+.field public static final info_dialog:I = 0x7f0d0139
 
-.field public static final kakao_game_kakao_login_dialog:I = 0x7f0d0137
+.field public static final kakao_game_kakao_login_dialog:I = 0x7f0d013b
 
-.field public static final kakao_game_kakao_login_item:I = 0x7f0d0138
+.field public static final kakao_game_kakao_login_item:I = 0x7f0d013c
 
-.field public static final kakao_game_sdk_coppa:I = 0x7f0d0139
+.field public static final kakao_game_sdk_coppa:I = 0x7f0d013d
 
-.field public static final kakao_game_sdk_login:I = 0x7f0d013a
+.field public static final kakao_game_sdk_login:I = 0x7f0d013e
 
-.field public static final kakao_game_sdk_login_item:I = 0x7f0d013b
+.field public static final kakao_game_sdk_login_item:I = 0x7f0d013f
 
-.field public static final kakao_game_sdk_login_item_space:I = 0x7f0d013c
+.field public static final kakao_game_sdk_login_item_space:I = 0x7f0d0140
 
-.field public static final kakao_game_sdk_login_land_multi_item:I = 0x7f0d013d
+.field public static final kakao_game_sdk_login_land_multi_item:I = 0x7f0d0141
 
-.field public static final kakao_game_sdk_login_land_single_item:I = 0x7f0d013e
+.field public static final kakao_game_sdk_login_land_single_item:I = 0x7f0d0142
 
-.field public static final kakao_game_sdk_logout_popup:I = 0x7f0d013f
+.field public static final kakao_game_sdk_logout_popup:I = 0x7f0d0143
 
-.field public static final kakao_game_sdk_share_screenshot:I = 0x7f0d0140
+.field public static final kakao_game_sdk_share_screenshot:I = 0x7f0d0144
 
-.field public static final nav_list_item:I = 0x7f0d0168
+.field public static final nav_list_item:I = 0x7f0d016c
 
-.field public static final notification_action:I = 0x7f0d0169
+.field public static final notification_action:I = 0x7f0d016d
 
-.field public static final notification_action_tombstone:I = 0x7f0d016a
+.field public static final notification_action_tombstone:I = 0x7f0d016e
 
-.field public static final notification_media_action:I = 0x7f0d016b
+.field public static final notification_media_action:I = 0x7f0d016f
 
-.field public static final notification_media_cancel_action:I = 0x7f0d016c
+.field public static final notification_media_cancel_action:I = 0x7f0d0170
 
-.field public static final notification_template_big_media:I = 0x7f0d016d
+.field public static final notification_template_big_media:I = 0x7f0d0171
 
-.field public static final notification_template_big_media_custom:I = 0x7f0d016e
+.field public static final notification_template_big_media_custom:I = 0x7f0d0172
 
-.field public static final notification_template_big_media_narrow:I = 0x7f0d016f
+.field public static final notification_template_big_media_narrow:I = 0x7f0d0173
 
-.field public static final notification_template_big_media_narrow_custom:I = 0x7f0d0170
+.field public static final notification_template_big_media_narrow_custom:I = 0x7f0d0174
 
-.field public static final notification_template_custom_big:I = 0x7f0d0171
+.field public static final notification_template_custom_big:I = 0x7f0d0175
 
-.field public static final notification_template_icon_group:I = 0x7f0d0172
+.field public static final notification_template_icon_group:I = 0x7f0d0176
 
-.field public static final notification_template_lines_media:I = 0x7f0d0173
+.field public static final notification_template_lines_media:I = 0x7f0d0177
 
-.field public static final notification_template_media:I = 0x7f0d0174
+.field public static final notification_template_media:I = 0x7f0d0178
 
-.field public static final notification_template_media_custom:I = 0x7f0d0175
+.field public static final notification_template_media_custom:I = 0x7f0d0179
 
-.field public static final notification_template_part_chronometer:I = 0x7f0d0176
+.field public static final notification_template_part_chronometer:I = 0x7f0d017a
 
-.field public static final notification_template_part_time:I = 0x7f0d0177
+.field public static final notification_template_part_time:I = 0x7f0d017b
 
-.field public static final select_dialog_item_material:I = 0x7f0d017d
+.field public static final select_dialog_item_material:I = 0x7f0d0181
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d017e
+.field public static final select_dialog_multichoice_material:I = 0x7f0d0182
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d017f
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d0183
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0181
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0185
 
-.field public static final zinny_sdk_agreement_kakao:I = 0x7f0d0195
+.field public static final zinny_sdk_agreement_kakao:I = 0x7f0d0199
 
-.field public static final zinny_sdk_cafe_dialog_web_kakao:I = 0x7f0d0196
+.field public static final zinny_sdk_cafe_dialog_web_kakao:I = 0x7f0d019a
 
-.field public static final zinny_sdk_coupon_popup:I = 0x7f0d0197
+.field public static final zinny_sdk_coupon_popup:I = 0x7f0d019b
 
-.field public static final zinny_sdk_dialog_web_kakao:I = 0x7f0d0198
+.field public static final zinny_sdk_dialog_web_kakao:I = 0x7f0d019c
 
-.field public static final zinny_sdk_notification:I = 0x7f0d0199
+.field public static final zinny_sdk_notification:I = 0x7f0d019d
 
-.field public static final zinny_sdk_permission_noti:I = 0x7f0d019a
+.field public static final zinny_sdk_permission_noti:I = 0x7f0d019e
 
-.field public static final zinny_sdk_progress:I = 0x7f0d019b
+.field public static final zinny_sdk_progress:I = 0x7f0d019f
 
-.field public static final zinny_sdk_promotion_ending_popup:I = 0x7f0d019c
+.field public static final zinny_sdk_promotion_ending_popup:I = 0x7f0d01a0
 
-.field public static final zinny_sdk_promotion_start_popup:I = 0x7f0d019d
+.field public static final zinny_sdk_promotion_start_popup:I = 0x7f0d01a1
 
 
 # direct methods

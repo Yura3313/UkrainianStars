@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" />
+    <com.supercell.id.view.PinEntryView android:id="@id/pinEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="17.0dip" />
+    <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
+        <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/negative_button" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" />
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+        <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/positive_button" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" />
+    </LinearLayout>
+</merge>

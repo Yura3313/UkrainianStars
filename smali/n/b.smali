@@ -32,7 +32,7 @@
 
     if-ne v0, v2, :cond_0
 
-    const/4 p0, 0x2
+    move p0, v1
 
     :cond_0
     if-eqz p0, :cond_2

@@ -51,7 +51,7 @@
     iput-object p3, p0, Lc0/a;->c:Ljava/lang/String;
 
     .line 5
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     iput-object p4, p0, Lc0/a;->d:Ljava/util/List;
@@ -94,7 +94,7 @@
     const-string v1, "FontRequest {mProviderAuthority: "
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -131,7 +131,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 4
     :goto_0
@@ -157,7 +157,7 @@
 
     check-cast v3, Ljava/util/List;
 
-    const/4 v4, 0x0
+    move v4, v1
 
     .line 7
     :goto_1
@@ -211,7 +211,7 @@
     const-string v2, "mCertificatesArray: 0"
 
     .line 13
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

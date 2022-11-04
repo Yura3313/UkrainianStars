@@ -1,16 +1,16 @@
 .class public final Lcom/supercell/id/ui/game/c;
-.super Lse/i;
+.super Lif/i;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
+        "Lif/i;",
+        "Lhf/p<",
         "Landroid/widget/TextView;",
         "Ljava/lang/String;",
         "Ljava/lang/String;",
@@ -20,7 +20,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/game/c;
+.field public static final f:Lcom/supercell/id/ui/game/c;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/game/c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/game/c;->g:Lcom/supercell/id/ui/game/c;
+    sput-object v0, Lcom/supercell/id/ui/game/c;->f:Lcom/supercell/id/ui/game/c;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,21 +59,21 @@
     const-string v0, "<anonymous parameter 0>"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "text"
 
-    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
     .line 4
-    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lzd/q;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 5
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getLocale()Ljava/util/Locale;
@@ -86,7 +86,7 @@
 
     const-string p2, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

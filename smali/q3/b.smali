@@ -1,23 +1,74 @@
-.class public Lq3/b;
-.super Landroid/os/Handler;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.class public final Lq3/b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/drive/zzad;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Looper;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-    .locals 0
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
 
     .line 2
-    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    return-void
+    move-result v1
+
+    if-ge v1, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    .line 4
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 6
+    new-instance p1, Lcom/google/android/gms/internal/drive/zzad;
+
+    invoke-direct {p1}, Lcom/google/android/gms/internal/drive/zzad;-><init>()V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/internal/drive/zzad;
+
+    return-object p1
 .end method

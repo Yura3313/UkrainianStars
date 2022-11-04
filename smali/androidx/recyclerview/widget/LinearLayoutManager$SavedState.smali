@@ -36,11 +36,11 @@
 
 
 # instance fields
+.field public f:I
+
 .field public g:I
 
-.field public h:I
-
-.field public i:Z
+.field public h:Z
 
 
 # direct methods
@@ -76,14 +76,14 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
+    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -100,7 +100,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
+    iput-boolean v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
 
     return-void
 .end method
@@ -112,19 +112,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 7
+    iget v0, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+
+    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+
+    .line 8
     iget v0, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
-    .line 8
-    iget v0, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
-
-    iput v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
-
     .line 9
-    iget-boolean p1, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
+    iget-boolean p1, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
 
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 .method public final a()Z
     .locals 1
 
-    iget v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iget v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
 
     if-ltz v0, :cond_0
 
@@ -161,17 +161,17 @@
     .locals 0
 
     .line 1
-    iget p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iget p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2
-    iget p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
+    iget p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget-boolean p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
+    iget-boolean p2, p0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

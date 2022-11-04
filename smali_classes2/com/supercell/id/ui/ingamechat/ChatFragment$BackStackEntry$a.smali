@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
@@ -67,7 +67,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {}, Lt3/h;->j()V
+    invoke-static {}, Lif/h;->h()V
 
     const/4 p1, 0x0
 

@@ -42,7 +42,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->o(I)Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->n(I)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 2
     iget-object v0, p0, Lcom/google/android/gms/internal/ads/d7;->e:Ljava/lang/reflect/Method;
@@ -86,7 +86,7 @@
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->o(I)Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->n(I)Lcom/google/android/gms/internal/ads/a0$a;
 
     goto :goto_0
 
@@ -94,7 +94,7 @@
     :cond_0
     iget-object v0, p0, Lcom/google/android/gms/internal/ads/d7;->d:Lcom/google/android/gms/internal/ads/a0$a;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->o(I)Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/a0$a;->n(I)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 8
     :goto_0

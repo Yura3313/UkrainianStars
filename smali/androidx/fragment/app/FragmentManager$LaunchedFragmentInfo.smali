@@ -36,9 +36,9 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field public h:I
+.field public g:I
 
 
 # direct methods
@@ -65,14 +65,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
+    iput-object v0, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
 
     .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
+    iput p1, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
 
     return-void
 .end method
@@ -84,10 +84,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
+    iput p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
 
     return-void
 .end method
@@ -106,12 +106,12 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
+    iget-object p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
+    iget p2, p0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

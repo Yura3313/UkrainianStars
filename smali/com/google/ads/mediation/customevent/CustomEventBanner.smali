@@ -12,5 +12,5 @@
 .method public abstract synthetic destroy()V
 .end method
 
-.method public abstract requestBannerAd(Lb1/a;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/AdSize;La1/a;Ljava/lang/Object;)V
+.method public abstract requestBannerAd(Lz0/a;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/AdSize;Ly0/a;Ljava/lang/Object;)V
 .end method

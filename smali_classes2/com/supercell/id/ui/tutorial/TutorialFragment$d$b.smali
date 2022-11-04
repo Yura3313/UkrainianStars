@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
-.super Lse/i;
+.super Lif/i;
 .source "TutorialFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lxd/a;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lwd/a;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+.field public static final f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 6
 
-    sget-object v0, Lxd/a;->g0:Lxd/a$a;
+    sget-object v0, Lwd/a;->f0:Lwd/a$a;
 
     const-string v1, "tutorial_2.png"
 
@@ -70,7 +70,7 @@
 
     const-string v5, "Intro 2"
 
-    invoke-virtual/range {v0 .. v5}, Lxd/a$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lxd/a;
+    invoke-virtual/range {v0 .. v5}, Lwd/a$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lwd/a;
 
     move-result-object v0
 

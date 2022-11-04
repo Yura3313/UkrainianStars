@@ -1,92 +1,138 @@
 .class public final Lr3/e;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.super Landroidx/fragment/app/p;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/drive/zzec;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final f:Lr3/c;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
+
+    .line 2
+    new-instance v0, Lr3/c;
+
+    invoke-direct {v0}, Lr3/c;-><init>()V
+
+    iput-object v0, p0, Lr3/e;->f:Lr3/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 5
+.method public final i0(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 4
+
+    if-eq p2, p1, :cond_3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    const/4 v1, 0x0
+    iget-object v0, p0, Lr3/e;->f:Lr3/c;
 
     .line 2
+    iget-object v1, v0, Lr3/c;->b:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/ref/ReferenceQueue;
+
+    invoke-virtual {v1}, Ljava/lang/ref/ReferenceQueue;->poll()Ljava/lang/ref/Reference;
+
+    move-result-object v1
+
     :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v2
-
-    if-ge v2, v0, :cond_1
+    if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    iget-object v2, v0, Lr3/c;->a:Ljava/lang/Object;
 
-    move-result v2
+    check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
-    const v3, 0xffff
-
-    and-int/2addr v3, v2
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_0
+    invoke-virtual {v2, v1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    iget-object v1, v0, Lr3/c;->b:Ljava/lang/Object;
 
-    goto :goto_0
+    check-cast v1, Ljava/lang/ref/ReferenceQueue;
 
-    .line 5
-    :cond_0
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+    invoke-virtual {v1}, Ljava/lang/ref/ReferenceQueue;->poll()Ljava/lang/ref/Reference;
 
     move-result-object v1
 
     goto :goto_0
 
+    .line 5
+    :cond_0
+    new-instance v1, Lr3/d;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p1, v2}, Lr3/d;-><init>(Ljava/lang/Throwable;Ljava/lang/ref/ReferenceQueue;)V
+
     .line 6
-    :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    iget-object v2, v0, Lr3/c;->a:Ljava/lang/Object;
+
+    check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v2, v1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/List;
+
+    if-eqz v1, :cond_1
+
+    goto :goto_1
 
     .line 7
-    new-instance p1, Lcom/google/android/gms/internal/drive/zzec;
+    :cond_1
+    new-instance v1, Ljava/util/Vector;
 
-    invoke-direct {p1, v1}, Lcom/google/android/gms/internal/drive/zzec;-><init>(Landroid/os/IBinder;)V
+    const/4 v2, 0x2
 
-    return-object p1
-.end method
+    invoke-direct {v1, v2}, Ljava/util/Vector;-><init>(I)V
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    .line 8
+    iget-object v2, v0, Lr3/c;->a:Ljava/lang/Object;
 
-    new-array p1, p1, [Lcom/google/android/gms/internal/drive/zzec;
+    check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
-    return-object p1
+    new-instance v3, Lr3/d;
+
+    iget-object v0, v0, Lr3/c;->b:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/ref/ReferenceQueue;
+
+    invoke-direct {v3, p1, v0}, Lr3/d;-><init>(Ljava/lang/Throwable;Ljava/lang/ref/ReferenceQueue;)V
+
+    invoke-virtual {v2, v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/List;
+
+    if-nez p1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    move-object v1, p1
+
+    .line 9
+    :goto_1
+    invoke-interface {v1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-void
+
+    .line 10
+    :cond_3
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Self suppression is not allowed."
+
+    invoke-direct {p1, v0, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw p1
 .end method

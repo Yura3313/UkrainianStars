@@ -53,9 +53,9 @@
 
     const/4 v1, 0x2
 
-    const/4 v2, 0x0
+    move v2, v0
 
-    const/4 v3, 0x2
+    move v3, v1
 
     :goto_0
     if-ge v2, p2, :cond_2
@@ -82,19 +82,19 @@
 
     packed-switch v3, :pswitch_data_0
 
-    const/4 v3, 0x2
+    move v3, v1
 
     goto :goto_1
 
     :cond_0
     :pswitch_0
-    const/4 v3, 0x0
+    move v3, v0
 
     goto :goto_1
 
     :cond_1
     :pswitch_1
-    const/4 v3, 0x1
+    move v3, v4
 
     :goto_1
     add-int/lit8 v2, v2, 0x1

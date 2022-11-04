@@ -3,7 +3,7 @@
 .source "RemoteActionCompat.java"
 
 # interfaces
-.implements Lx0/b;
+.implements Lv0/c;
 
 
 # instance fields

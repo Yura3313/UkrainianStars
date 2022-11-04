@@ -60,7 +60,7 @@
 
     move-result p1
 
-    mul-int p1, p1, v0
+    mul-int/2addr p1, v0
 
     const/4 v0, 0x0
 
@@ -75,18 +75,18 @@
     return-void
 .end method
 
-.method public final a0(Landroidx/recyclerview/widget/RecyclerView$s;Landroidx/recyclerview/widget/RecyclerView$w;Lg0/c;)V
+.method public final a0(Landroidx/recyclerview/widget/RecyclerView$s;Landroidx/recyclerview/widget/RecyclerView$w;Lg0/b;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->a0(Landroidx/recyclerview/widget/RecyclerView$s;Landroidx/recyclerview/widget/RecyclerView$w;Lg0/c;)V
+    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->a0(Landroidx/recyclerview/widget/RecyclerView$s;Landroidx/recyclerview/widget/RecyclerView$w;Lg0/b;)V
 
     .line 2
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$f;->G:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->z:Landroidx/viewpager2/widget/ViewPager2$h;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->y:Landroidx/viewpager2/widget/ViewPager2$h;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -97,9 +97,9 @@
     .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$f;->G:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->z:Landroidx/viewpager2/widget/ViewPager2$h;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->y:Landroidx/viewpager2/widget/ViewPager2$h;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/recyclerview/widget/RecyclerView$m;->o0(Landroidx/recyclerview/widget/RecyclerView$s;Landroidx/recyclerview/widget/RecyclerView$w;ILandroid/os/Bundle;)Z

@@ -1,253 +1,461 @@
-.class public abstract Lo0/c;
+.class public final Lo0/c;
 .super Ljava/lang/Object;
-.source "ModernAsyncTask.java"
+.source "AudioAttributesImplBase.java"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lo0/c$d;,
-        Lo0/c$f;,
-        Lo0/c$e;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<Params:",
-        "Ljava/lang/Object;",
-        "Progress:",
-        "Ljava/lang/Object;",
-        "Result:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final l:Lo0/c$a;
-
-.field public static final m:Ljava/util/concurrent/LinkedBlockingQueue;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/BlockingQueue<",
-            "Ljava/lang/Runnable;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final n:Ljava/util/concurrent/ThreadPoolExecutor;
-
-.field public static o:Lo0/c$e;
+# interfaces
+.implements Lo0/a;
 
 
 # instance fields
-.field public final g:Lo0/c$b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lo0/c$f<",
-            "TParams;TResult;>;"
-        }
-    .end annotation
-.end field
+.field public a:I
 
-.field public final h:Lo0/c$c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/FutureTask<",
-            "TResult;>;"
-        }
-    .end annotation
-.end field
+.field public b:I
 
-.field public volatile i:I
+.field public c:I
 
-.field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final k:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
-
-    .line 1
-    new-instance v7, Lo0/c$a;
-
-    invoke-direct {v7}, Lo0/c$a;-><init>()V
-
-    sput-object v7, Lo0/c;->l:Lo0/c$a;
-
-    .line 2
-    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
-
-    const/16 v0, 0xa
-
-    invoke-direct {v6, v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
-
-    sput-object v6, Lo0/c;->m:Ljava/util/concurrent/LinkedBlockingQueue;
-
-    .line 3
-    new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
-
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    const/4 v1, 0x5
-
-    const/16 v2, 0x80
-
-    const-wide/16 v3, 0x1
-
-    move-object v0, v8
-
-    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-
-    sput-object v8, Lo0/c;->n:Ljava/util/concurrent/ThreadPoolExecutor;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lo0/c;->i:I
+    iput v0, p0, Lo0/c;->a:I
 
     .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
-
-    iput-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput v0, p0, Lo0/c;->b:I
 
     .line 4
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput v0, p0, Lo0/c;->c:I
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
-
-    iput-object v0, p0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    const/4 v0, -0x1
 
     .line 5
-    new-instance v0, Lo0/c$b;
-
-    invoke-direct {v0, p0}, Lo0/c$b;-><init>(Lo0/c;)V
-
-    iput-object v0, p0, Lo0/c;->g:Lo0/c$b;
-
-    .line 6
-    new-instance v1, Lo0/c$c;
-
-    invoke-direct {v1, p0, v0}, Lo0/c$c;-><init>(Lo0/c;Ljava/util/concurrent/Callable;)V
-
-    iput-object v1, p0, Lo0/c;->h:Lo0/c$c;
+    iput v0, p0, Lo0/c;->d:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public varargs abstract a([Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TParams;)TResult;"
-        }
-    .end annotation
-.end method
-
-.method public b()V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TResult;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public c(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TResult;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TResult;)TResult;"
-        }
-    .end annotation
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 11
 
     .line 1
-    const-class v0, Lo0/c;
+    instance-of v0, p1, Lo0/c;
 
-    monitor-enter v0
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
 
     .line 2
-    :try_start_0
-    sget-object v1, Lo0/c;->o:Lo0/c$e;
-
-    if-nez v1, :cond_0
+    :cond_0
+    check-cast p1, Lo0/c;
 
     .line 3
-    new-instance v1, Lo0/c$e;
-
-    invoke-direct {v1}, Lo0/c$e;-><init>()V
-
-    sput-object v1, Lo0/c;->o:Lo0/c$e;
+    iget v0, p0, Lo0/c;->b:I
 
     .line 4
-    :cond_0
-    sget-object v1, Lo0/c;->o:Lo0/c$e;
+    iget v2, p1, Lo0/c;->b:I
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 v3, 0x1
+
+    if-ne v0, v2, :cond_6
 
     .line 5
-    new-instance v0, Lo0/c$d;
+    iget v0, p0, Lo0/c;->c:I
+
+    .line 6
+    iget v2, p1, Lo0/c;->c:I
+
+    .line 7
+    iget v4, p1, Lo0/c;->d:I
+
+    const/4 v5, -0x1
+
+    const/4 v6, 0x6
+
+    const/4 v7, 0x7
+
+    const/4 v8, 0x4
+
+    if-eq v4, v5, :cond_1
+
+    move v8, v4
+
+    goto :goto_1
+
+    .line 8
+    :cond_1
+    iget v5, p1, Lo0/c;->a:I
+
+    sget v9, Landroidx/media/AudioAttributesCompat;->b:I
+
+    and-int/lit8 v9, v2, 0x1
+
+    const/4 v10, 0x3
+
+    if-ne v9, v3, :cond_2
+
+    move v8, v7
+
+    goto :goto_1
+
+    :cond_2
+    and-int/lit8 v9, v2, 0x4
+
+    if-ne v9, v8, :cond_3
+
+    move v8, v6
+
+    goto :goto_1
+
+    :cond_3
+    packed-switch v5, :pswitch_data_0
+
+    :pswitch_0
+    goto :goto_0
+
+    :pswitch_1
+    move v8, v3
+
+    goto :goto_1
+
+    :pswitch_2
+    const/16 v8, 0xa
+
+    goto :goto_1
+
+    :pswitch_3
+    const/4 v8, 0x2
+
+    goto :goto_1
+
+    :pswitch_4
+    const/4 v8, 0x5
+
+    goto :goto_1
+
+    :pswitch_5
+    const/16 v8, 0x8
+
+    goto :goto_1
+
+    :pswitch_6
+    move v8, v1
+
+    goto :goto_1
+
+    :goto_0
+    move v8, v10
+
+    :goto_1
+    :pswitch_7
+    if-ne v8, v6, :cond_4
+
+    or-int/lit8 v2, v2, 0x4
+
+    goto :goto_2
+
+    :cond_4
+    if-ne v8, v7, :cond_5
+
+    or-int/lit8 v2, v2, 0x1
+
+    :cond_5
+    :goto_2
+    and-int/lit16 v2, v2, 0x111
+
+    if-ne v0, v2, :cond_6
+
+    .line 9
+    iget v0, p0, Lo0/c;->a:I
+
+    .line 10
+    iget p1, p1, Lo0/c;->a:I
+
+    if-ne v0, p1, :cond_6
+
+    .line 11
+    iget p1, p0, Lo0/c;->d:I
+
+    if-ne p1, v4, :cond_6
+
+    move v1, v3
+
+    :cond_6
+    return v1
+
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_6
+        :pswitch_5
+        :pswitch_7
+        :pswitch_4
+        :pswitch_3
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_2
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    iget v1, p0, Lo0/c;->b:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    iget v1, p0, Lo0/c;->c:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
 
     const/4 v2, 0x1
 
-    new-array v3, v2, [Ljava/lang/Object;
+    aput-object v1, v0, v2
 
-    const/4 v4, 0x0
+    iget v1, p0, Lo0/c;->a:I
 
-    aput-object p1, v3, v4
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-direct {v0, p0, v3}, Lo0/c$d;-><init>(Lo0/c;[Ljava/lang/Object;)V
+    move-result-object v1
 
-    invoke-virtual {v1, v2, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    iget v1, p0, Lo0/c;->d:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "AudioAttributesCompat:"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 2
+    iget v1, p0, Lo0/c;->d:I
+
+    const/4 v2, -0x1
+
+    if-eq v1, v2, :cond_0
+
+    const-string v1, " stream="
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lo0/c;->d:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " derived"
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_0
+    const-string v1, " usage="
+
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lo0/c;->a:I
+
+    .line 6
+    sget v2, Landroidx/media/AudioAttributesCompat;->b:I
+
+    packed-switch v1, :pswitch_data_0
+
+    :pswitch_0
+    const-string v2, "unknown usage "
+
+    .line 7
+    invoke-static {v2, v1}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :pswitch_1
+    const-string v1, "USAGE_ASSISTANT"
+
+    goto :goto_0
+
+    :pswitch_2
+    const-string v1, "USAGE_GAME"
+
+    goto :goto_0
+
+    :pswitch_3
+    const-string v1, "USAGE_ASSISTANCE_SONIFICATION"
+
+    goto :goto_0
+
+    :pswitch_4
+    const-string v1, "USAGE_ASSISTANCE_NAVIGATION_GUIDANCE"
+
+    goto :goto_0
+
+    :pswitch_5
+    const-string v1, "USAGE_ASSISTANCE_ACCESSIBILITY"
+
+    goto :goto_0
+
+    :pswitch_6
+    const-string v1, "USAGE_NOTIFICATION_EVENT"
+
+    goto :goto_0
+
+    :pswitch_7
+    const-string v1, "USAGE_NOTIFICATION_COMMUNICATION_DELAYED"
+
+    goto :goto_0
+
+    :pswitch_8
+    const-string v1, "USAGE_NOTIFICATION_COMMUNICATION_INSTANT"
+
+    goto :goto_0
+
+    :pswitch_9
+    const-string v1, "USAGE_NOTIFICATION_COMMUNICATION_REQUEST"
+
+    goto :goto_0
+
+    :pswitch_a
+    const-string v1, "USAGE_NOTIFICATION_RINGTONE"
+
+    goto :goto_0
+
+    :pswitch_b
+    const-string v1, "USAGE_NOTIFICATION"
+
+    goto :goto_0
+
+    :pswitch_c
+    const-string v1, "USAGE_ALARM"
+
+    goto :goto_0
+
+    :pswitch_d
+    const-string v1, "USAGE_VOICE_COMMUNICATION_SIGNALLING"
+
+    goto :goto_0
+
+    :pswitch_e
+    const-string v1, "USAGE_VOICE_COMMUNICATION"
+
+    goto :goto_0
+
+    :pswitch_f
+    const-string v1, "USAGE_MEDIA"
+
+    goto :goto_0
+
+    :pswitch_10
+    const-string v1, "USAGE_UNKNOWN"
+
+    .line 8
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " content="
+
+    .line 9
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lo0/c;->b:I
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " flags=0x"
+
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lo0/c;->c:I
+
+    .line 12
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
-    invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
+    return-object v0
 
-    return-object p1
+    nop
 
-    :catchall_0
-    move-exception p1
-
-    .line 7
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
 .end method

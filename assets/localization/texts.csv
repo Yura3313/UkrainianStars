@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,"Атака Шеллі стріляє широким
 TID_MEGA_BLASH_ULTI,БУ-УМ!
 TID_MEGA_BLASH_ULTI_DESC,"Суператака від Шеллі знищує як укриття, так і ворогів. Усіх, хто вижив, відкидає."
 TID_GUNSLINGER,КОЛЬТ
-TID_GUNSLINGER_DESC,"Неймовірний герой, який часто опиняється не в тому місці в потрібний час. Він не з тих, хто ухиляється від дзеркала і просто сповнений впевненості "
+TID_GUNSLINGER_DESC,"Неймовірний герой, який часто опиняється не в тому місці в потрібний час. Він не з тих, хто ухиляється від дзеркала і просто сповнений впевненості"
 TID_RAPID_FIRE,ПО ТРИ НА КОЖЕН
 TID_RAPID_FIRE_DESC,Кольт вистрілює шість куль на велику відстань зі своїх револьверів
 TID_RAPID_FIRE_ULTI,ШТОРМ КУЛЬ
@@ -316,8 +316,8 @@ TID_CACTUS_WEAPON_DESC,"Спайк вистрілює маленький как�
 TID_CACTUS_ULTI,Прилипучка
 TID_CACTUS_ULTI_DESC,"Спайк кидає колючу гранату. Вороги, що потрапили в зону вибуху, отримують пошкодження та сповільнюються."
 TID_BARKEEP,БАРЛІ
-TID_BARKEEP_DESC,"Барлі з готовністю подає найкращі напої в Старр-парку. Забруднити його бар, і виходить пара, і пляшки починають літати!"
-TID_BARKEEP_WEAPON,Потужний
+TID_BARKEEP_DESC,"Барлі подає найкращі напої в Стар Парку. Але забруднивши його бар, з нього виходить пара, і пляшки починають літати!"
+TID_BARKEEP_WEAPON,Бандера смузі
 TID_BARKEEP_WEAPON_DESC,"Барлі кидає пляшку, розбиваючи її об землю. Вороги отримують пошкодження від бризок, а з часом вони отримують більше шкоди, якщо залишаються в калюжі."
 TID_BARKEEP_ULTI,Останій виклик
 TID_BARKEEP_ULTI_DESC,"Барлі кидає шквал вогняних пляшок, охоплюючи величезну площу полум’ям."
@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,"Збирайте бали сили з Бравл Боксів і купуйте пропозиції, щоб розблокувати наступне оновлення"
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Пасівки тепер можна знайти в Бравл Боксах
-TID_HERO_INFO_STAR_POWER_BLOCKED,Підсилюйте <HERONAME> за допомогою вибору Star Power! Доступний у Brawl Boxes після досягнення POWER <LEVEL>.
-TID_HERO_INFO_ACCESSORIES_CAN_DROP,Відтепер гаджет можна знайти в Brawl Boxes
-TID_HERO_INFO_ACCESSORIES_BLOCKED,Покращіть <HERONAME> за допомогою спеціального гаджета! Доступні у Бравл Боксах після досягнення Рівню сили<LEVEL>.
+TID_HERO_INFO_STAR_POWER_BLOCKED,Крокачайте <HERONAME> особливою зірковою силою! Доступний для покупки після досягнення рівня<LEVEL>.
+TID_HERO_INFO_ACCESSORIES_CAN_DROP,Відтепер гаджет можна знайти в Бравл Боксах
+TID_HERO_INFO_ACCESSORIES_BLOCKED,Прокачайте <HERONAME> унікальним гаджетом! Доступний для покупки після досягнення рівня <LEVEL>.
 TID_HERO_INFO_STAR_POWER_LABEL,ПАСІВКА: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,ГАДЖЕТ: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл Пасс. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\nУ цьому сезоні шанс розблокувати <BRAWLER> – є <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл Пассу. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і нарешті стають ЕПІЧНИМИ.\n\nВи повинні досягти рівня <TIER> сезону <SEASON>, щоб зробити <BRAWLER> доступним у коробках."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл пассу. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\n<BRAWLER> з’являється в сезоні <SEASON>."
+TID_HERO_INFO_BUY_ITEM,КУПИТИ
+TID_HERO_INFO_BUY_ITEM_FREE,БЕЗПЛАТНО
+TID_HERO_INFO_BUY_MISSING1,ТОБІ ПОТРІБНО ЩЕ <MISSINGCOINS> МОНЕТ
+TID_HERO_INFO_BUY_MISSING2,Купити бракуючі монети?
+TID_HERO_INFO_BUY_MISSING_GEMS1,ТОБІ ПОТРІБНО ЩЕ <MISSINGCOINS> МОНЕТ
+TID_HERO_INFO_BUY_MISSING_GEMS2,"Отримайте <MISSINGGEMS> геми, щоб купити відсутні монети"
+TID_HERO_INFO_SEE_OFFERS,ОТРИМАЙТИ ГЕМИ
+TID_HERO_INFO_UNLOCK_GADGETS,РОЗБЛОКУВАТИ ГАДЖЕТИ
+TID_HERO_INFO_UNLOCK_STARPOWERS,РОЗБЛОКУВАТИ ЗІРКОВІ СИЛИ
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,ПІДТВЕРДИТИ ПОКУПКУ
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,ПІДТВЕРДИТИ ПОКУПКУ
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,ПІДТВЕРДИТИ ПОКУПКУ
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,ОТРИМАЙТЕ БІЛЬШЕ ГЕМІВ
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,"Отримайте <cC5F724><REQUIREDGEMS> гемів</c>, щоб купити відсутні монети"
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,УСІ НАБОРИ ГЕМІВ
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,РЕКОМЕНДОВАНО
 TID_MATCHMAKE_FAILED_5,Не вдалося знайти матч: термін дії події закінчився
 TID_MATCHMAKE_FAILED_7,Не вдалося знайти матч: учасник команди був відключений
 TID_MATCHMAKE_FAILED_9,Не вдалося знайти матч: розпочинається технічне обслуговування
@@ -703,7 +719,7 @@ TID_SKIN_INFO_CAMPAIGN_BRAWLIDAYS_2018,Скін БравліДейс 2018
 TID_SKIN_INFO_CAMPAIGN_3_AVAILABLE,Святкуйте Бравл-о-Він з цим святковим скіном!
 TID_SKIN_INFO_CAMPAIGN_3_NOT_AVAILABLE,Скіна Бравл-о-Він
 TID_SKIN_INFO_LEGENDARY,Зоряний Скін
-TID_SKIN_INFO_CLUB_LEAGUE,Скін Клубу
+TID_SKIN_INFO_CLUB_LEAGUE,Клубний Скін
 TID_LEGENDARY_TROPHIES,Зоряні Бали
 TID_SKIN_REWARD_TITLE_1,НАГОРОДА: СКІН
 TID_SKIN_REWARD_INFO_1,Ви відкрили новий скін! Дякуємо за гру в Brawl Stars у 2018 році
@@ -828,7 +844,7 @@ TID_SKIN_COMING_SOON,Скін ще недоступний
 TID_UNLOCK_SKIN_BUTTON_LABEL,Купити
 TID_HERO_LIST_TOTAL_TROPHIES,Всього трофеїв
 TID_TOP_TOOL_TIP_1,"<c00ccff>Токени</c> розблокують нагороди Brawl Pass.\n\nЗбирайте токени з квестів, нових подій і битв."
-TID_TOP_TOOL_TIP_3,"<c0ed12d>Кристали</c> використовуються для покупки Боксів, скінів та інших речей у Магазині.\n\nОтримайте кристали за нагороду Brawl Pass або купуйте в Магазині за гривні."
+TID_TOP_TOOL_TIP_3,"<c0ed12d>Геми</c> використовуються для покупки Боксів, скінів та інших речей у Магазині.\n\nОтримайте кристали за нагороду Brawl Pass або купуйте в Магазині за гривні."
 TID_TOP_TOOL_TIP_2,<cff8E1b>Монети</c> використовуються для покращення ваших скандалістів.\n\nЗнайдіть монети в ящиках бійки.
 TID_TOP_TOOL_TIP_4,<cff0000>Квитки на події</c> дають вам доступ до квиткових подій.
 TID_TOP_TOOL_TIP_5,<cff00ff>Зіркові бали</c> використовуються для покупки ексклюзивних предметів у магазині.\n\nЗаробляйте зіркові бали в Трофейній лізі або коли будь-який бравлер досягає 10-го рангу та кожні п’ять рангів після цього!
@@ -1400,10 +1416,10 @@ TID_LINK_DEVICE_BUTTON,Підключіть пристрій
 TID_SETTINGS_FACEBOOK,Дрюзі
 TID_CHANGE_NAME_BUTTON,Змінити ім'я
 TID_CREDITS_BUTTON,Про програму
-TID_PRIVACY_POLICY_BUTTON,Політика конфіденційності
+TID_PRIVACY_POLICY_BUTTON,Про програму
 TID_PARENTS_GUIDE_BUTTON,Посібник для батьків
 TID_MULTIDEVICE_INFO,"Увійдіть, використовуючи свій обліковий запис Game Center, щоб зберегти свій прогрес і грати на кількох пристроях iOS."
-TID_SETTINGS_GOOGLE,Google Play увійти
+TID_SETTINGS_GOOGLE,Увійти у гугл ігри
 TID_SETTINGS_BUTTON_FACEBOOK_CONNECTED,Підключений
 TID_SETTINGS_BUTTON_FACEBOOK_DISCONNECTED,Підключити
 TID_SETTINGS_BUTTON_FACEBOOK_CONNECTED_UP,ПІДКЛЮЧЕНО
@@ -1736,16 +1752,16 @@ TID_CLAN_INFO_TITLE,ІНФОРМАЦІЯ КЛУБУ
 TID_CLAN_INFO_NO_DESCRIPTION,НЕМАЄ ОПИСУ КЛУБУ
 TID_EVENT_POPUP_TITLE,ДАВАЙ ПОЧНЕМО
 TID_GOLDRUSH_8,Сапфірові рівнини
-TID_USE_AUTOFIRE_TUTORIAL,Натисни на <ccc0033> ЧЕРВОНИЙ ДЖОЙСТИК</c> щоб стрельнути на найблищого бравлера!
-TID_BRAWL_BOX_INFO_1,"Великий Бокс дає нагороди, подібні до відкриття 3 Бравл Боксів. Однак Бали сили розподіляються між меншою кількістю бравлерів. Жетони спорядження можуть бути лише одного типу.\n\nВи отримуєте три випадкові розіграші, кожен з яких має такі ймовірності винагород:"
-TID_BRAWL_BOX_INFO_2,"Кожний Бравл Бокс містить одне з наступного: новий Бравлер, Бали сили& монети, Токени щестернь & металолом, Гаджет або Пасівку. Крім того, ви також можете отримати бонусні подвійники токенів.\n\nІмовірності винагороди:"
-TID_BRAWL_BOX_INFO_3,"МЕГА БОКС дає вам нагороди, подібні до відкриття 10 Бравл Боксів. Однак очки Балів Сили розподіляються між меншою кількістю Бравлерів. Жетони спорядження збираються в один тип жетона.\n\nВи отримуєте 10 випадкових розіграшів, кожен з яких має такі ймовірності винагороди:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nРідкісний Бравлер: <NUM2>%<GAR_HERO_1>\nСупер рідкісний Бравлер: <NUM3>%<GAR_HERO_2>\nЕпічний Бравлер: <NUM4>%<GAR_HERO_3>\nМіфічний Бравлер: <NUM5>%<GAR_HERO_4>\nLegendary Brawler : <NUM6>%<GAR_HERO_5>\nStar Power : <NUM7>%<GAR_STAR_POWER>\nGadget : <NUM8>%<GAR_ACCESSORY>\nGear Tokens: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nКрім того, кожен розіграш дає вам <TOKEN_DOUBLER>% шанс отримати подвоювання токена. Гаджети доступні лише після досягнення Бравлерів рівня сили 7. Пасівки доступні лише для Бравлерів з рівнем сили 9. Метало брухт та токени Шестерней доступні лише після досягнення Бравлерів рівня сили 10. Після розблокування Бравлерів <WCPP_BRAWLERS> буде <WCPP_CHANCE>% імовірності того, що бали потужності можуть бути призначені будь-якому Бравлеру. Після того, як ви розблокуєте всі нагороди певного типу, наприклад рідкісні бійці, ймовірність отримати всі інші нагороди зросте. Удача: щоб зробити відкриття Бравл Бокс більш справедливим, існує система удачі, яка впливає на ймовірність легендарних Бравлерів. З кожним розіграшем, який не дає вам нового Бравлера, ваша удача збільшується. Кожного разу, коли ви отримуєте нового Бравлера, ваша удача зменшується залежно від рідкості отриманого Бравлера. Коли удача достатньо велика, у вас вищий шанс отримати легендарного бійця, шанс не перевищуватиме <MAX_LEGENDARY>%. І навпаки, невелика удача означає, що у вас менше шансів отримати нового легендарного бійця. Ранні випаданя наперед визначені, щоб забезпечити справедливий старт для всіх."
-TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Очки Сили + Монетки
-TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Очки Сили + Монетки + Металолом
-TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Монетки + Металолом
-TID_BRAWL_BOX_INFO_COINS,Монетки
+TID_USE_AUTOFIRE_TUTORIAL,Натисни на <ccc0033>червоний джойстик</c> щоб атакувати найблищого бравлера!
+TID_BRAWL_BOX_INFO_1,"Великий Бокс дає нагороди, подібні до відкриття 3 Бравл Боксів. Однак Бали сили розподіляються між меншою кількістю бравлерів.\n\nВи отримуєте три випадкові розіграші, кожен з яких має такі ймовірності винагород:"
+TID_BRAWL_BOX_INFO_2,"Кожний Бравл Бокс містить одне з наступного: новий Бравлер, Бали сили & монети, Гаджет або Пасівку. Крім того, ви також можете отримати бонусні подвійники токенів.\n\nІмовірності винагороди:"
+TID_BRAWL_BOX_INFO_3,"МЕГА БОКС дає вам нагороди, подібні до відкриття 10 Бравл Боксів. Однак очки Балів Сили розподіляються між меншою кількістю Бравлерів.\n\nВи отримуєте 10 випадкових розіграшів, кожен з яких має такі ймовірності винагороди:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nРідкісний Бравлер: <NUM2>%<GAR_HERO_1>\nСупер рідкісний Бравлер: <NUM3>%<GAR_HERO_2>\nЕпічний Бравлер: <NUM4>%<GAR_HERO_3>\nМіфічний Бравлер: <NUM5>%<GAR_HERO_4>\nLegendary Brawler : <NUM6>%<GAR_HERO_5>\nStar Power : <NUM7>%<GAR_STAR_POWER>\nGadget : <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nКрім того, кожен розіграш дає вам <TOKEN_DOUBLER>% шанс отримати подвоювання токена. Гаджети доступні лише після досягнення Бравлерів рівня сили 7. Пасівки доступні лише для Бравлерів з рівнем сили 9. Після розблокування Бравлерів <WCPP_BRAWLERS> буде <WCPP_CHANCE>% імовірності того, що бали потужності можуть бути призначені будь-якому Бравлеру. Після того, як ви розблокуєте всі нагороди певного типу, наприклад рідкісні бійці, ймовірність отримати всі інші нагороди зросте. Удача: щоб зробити відкриття Бравл Бокс більш справедливим, існує система удачі, яка впливає на ймовірність легендарних Бравлерів. З кожним розіграшем, який не дає вам нового Бравлера, ваша удача збільшується. Кожного разу, коли ви отримуєте нового Бравлера, ваша удача зменшується залежно від рідкості отриманого Бравлера. Коли удача достатньо велика, у вас вищий шанс отримати легендарного бійця, шанс не перевищуватиме <MAX_LEGENDARY>%. І навпаки, невелика удача означає, що у вас менше шансів отримати нового легендарного бійця. Ранні випаданя наперед визначені, щоб забезпечити справедливий старт для всіх."
+TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Очки Сили + Монети
+TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Очки Сили + Монети
+TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Монети
+TID_BRAWL_BOX_INFO_COINS,Монети
 TID_BRAWL_BOX_INFO_GUARANTEED_HERO_IN,(guaranteed in <DRAWS> draws)
 TID_BRAWL_BOX_INFO_GUARANTEED_STARPOWER_IN,(guaranteed in <DRAWS> draws)
 TID_BRAWL_BOX_INFO_GUARANTEED_ACCESSORY_IN,(guaranteed in <DRAWS> draws)
@@ -1975,7 +1991,7 @@ TID_HINT_33,Ви можете запросити членів Клубу ста�
 TID_HINT_34,Ви можете запросити людей із вашої команди стати вашими друзями.
 TID_HINT_35,"Після кількох хороших битв із кимось, ви можете запросити його стати вашим другом із запропонованого списку друзів."
 TID_HINT_36,Ви можете запросити людей із вашої команди стати вашими друзями.
-TID_HINT_37,"Ви можете використовувати кнопку «Оголошення», щоб рекламувати свою команду своїм друзям та членам клубу."
+TID_HINT_37,"Ви можете використовувати кнопку ""Оголошення"", щоб рекламувати свою команду своїм друзям та членам клубу."
 TID_COOP_GENERATED,Арена
 TID_MECHANIC_KNIGHT_SKIN,ЛИЦАР ДРАКОНКА ДЖЕССІ
 TID_FRANK_CAVEMAN_SKIN,ПЕЧЕРНИЙ ФРАНК
@@ -2482,8 +2498,8 @@ TID_GOLDRUSH_26,Інь Янь
 TID_ROBO_HEALTH,SIEGE BOT:
 TID_TEAMING_WARNING,<c99dd3333>ATTACK ENEMIES</c> or get hit by <c99dd3333>SUPER METEORS</c>!!!
 TID_FREE_NAME_CHANGE_INTRO_TEXT,"You only get one free name change. Use it wisely, as future name changes will cost you Gems."
-TID_PAID_NAME_CHANGE_INTRO_TEXT,"Use Gems to choose a new name?\nIf you pick an inappropriate name, we reserve the right to change it without refunding your Gems."
-TID_NAME_CHANGE_INTRO_TITLE,CHANGE NAME
+TID_PAID_NAME_CHANGE_INTRO_TEXT,"Використовувати геми для вибору нового ім'я?\nЯкщо ви виберете погане ім'я, ми залишаємо за собою право змінити її без відшкодування ваших гемів."
+TID_NAME_CHANGE_INTRO_TITLE,ЗМІНА ІМ'Я
 TID_NAME_CHANGE_ON_COOLDOWN,Почекай <time> щоб змінити своє ім'я щераз
 TID_NAME_CHANGE_FREE,БЕЗПЛАТНО
 TID_PLAYER_YOU,ТИ
@@ -2493,7 +2509,7 @@ TID_NEWS_TAB_ESPORTS,КІБЕРСПОРТ
 TID_NEWS_TAB_COMMUNITY,COMMUNITY
 TID_NEWS_TAB_VIDEOS_LIVESTREAM_CHINA,视频/直播
 TID_NEWS_NOTIFICATION_LIVE,ПРЯМИЙ ЕФІР
-TID_EPORTS_INFO_NEW_TOURNAMENT,A new tournament has been unlocked!
+TID_EPORTS_INFO_NEW_TOURNAMENT,TID_EPORTS_INFO_NEW_TOURNAMENT
 TID_VS_TRAINING,Starr Park\nEntrance
 TID_TRAINING_DPS,Damage per second:
 TID_SHOP_SHORTCUT_1,ПРОПОЗИЦІЇ
@@ -2504,7 +2520,7 @@ TID_SHOP_SHORTCUT_4,ЗІРКОВИЙ МАГАЗИН
 TID_SHOP_SHORTCUT_5,РЕСУРСИ
 TID_SHOP_NOTIFICATION_NEW,НОВЕ!
 TID_SHOP_NOTIFICATION_FREE,БЕЗПЛ.!
-TID_SKIN_INFO_INCLUDES,Skin includes:\n
+TID_SKIN_INFO_INCLUDES,Скін має:\n
 TID_SKIN_INFO_NORMAL,- Custom Brawler model
 TID_SKIN_INFO_NORMAL_PET,- Custom Brawler model\n- Custom pet model
 TID_SKIN_INFO_NORMAL_TURRET,- Custom Brawler model\n- Custom turret model
@@ -2594,7 +2610,7 @@ TID_LINE_ACCOUNT_BIND_INFO,"Connecting your account to LINE allows you to see yo
 TID_LINE_LOG_OUT_TITLE,Unlink LINE
 TID_LINE_LOG_OUT_DESC,Do you wish to unlink your LINE account?
 TID_LINE_CONNECT,LINE Connect
-TID_LINE_CONNECT_UP,ПІДКЛЮЧИТИ ЛІНІЮ
+TID_LINE_CONNECT_UP,ПІДКЛЮЧИТИ LINE
 TID_LINE_CONNECTED,LINE Connected
 TID_LINE_CONNECTED_UP,LINE CONNECTED
 TID_SKIN_INFO_FX_TURRET,- Custom Brawler model\n- Custom turret model\n- Custom effects
@@ -2724,13 +2740,13 @@ TID_COLT_OUTLAW_SKIN_SHOP,БАНДИТ\nКОЛЬТ
 TID_CARL_HOG_RIDER_SKIN,НАЇЗНИК КАРЛ
 TID_CARL_HOG_RIDER_SKIN_SHOP,НАЇЗНИК\nКАРЛ
 TID_SKIN_INFO_ANIM_SOUND_FX_VOICE,- Custom Brawler model\n- Custom effects\n- Custom animations\n- Custom sounds\n- Custom voice
-TID_SHOP_OFFER_STAR_SKIN_LABEL,STAR SKIN
+TID_SHOP_OFFER_STAR_SKIN_LABEL,ЗІРКОВИЙ СКІН
 TID_WANTED_15,Пляжний Баунті
 TID_WANTED_16,Сонячний удар
 TID_WANTED_17,Палаючі піски
 TID_BANKHEIST_16,Beachcombers
 TID_BANKHEIST_17,Gift Gems
-TID_BANKHEIST_18,Hot Potato
+TID_BANKHEIST_18,Гаряча Картопля
 TID_BANKHEIST_18B,Figure 8
 TID_BALL_22,Пляжний м'яч
 TID_BALL_23,Сонячний футбол
@@ -2762,7 +2778,7 @@ TID_SPEC_SHIELD_ULTI_DESC,When Brock's Super is fully charged (and he doesn't us
 TID_SPEC_ABI_PET,RELEASE THE BIRD
 TID_SPEC_ABI_PET_DESC,Dynamikes bird joins the fight!
 TID_SPEC_ABI_DAMAGE_ULTI,SPIRIT SLAP
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"""When Gene's Super is fully charged he does <c00cc00>+<VALUE1></c> damage with his attack."""
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"""Чарівна рука Джина також завдає шкоди ворогам, завдаючи <c00cc00><VALUE1></c> шкоди під час удару."""
 TID_ARCADE,8-БІТ
 TID_ARCADE_DESC,8-Bit lumbers along like an arcade cabinet on legs. He shoots Blaster Beams and his Super boosts friendlies' damage!
 TID_ARCADE_SHORT_DESC,ВОЇН
@@ -3225,21 +3241,21 @@ TID_HERO_INFO_CHANGE_CHARACTER_DURATION,Затримка зміни
 TID_HERO_INFO_DAMAGE_REDUCTION,Damage reduction
 TID_HERO_INFO_LIFE_STEAL,Healing from damage
 TID_SPAWN_BUILDING_HEALTH,Home Base health
-TID_PORTER_HEALTH,Porter Health
-TID_PORTER_DAMAGE,Porter Damage
-TID_KING_OF_HILL_3,Temple of Boom
-TID_KING_OF_HILL_4,Breakout Brawl
-TID_KING_OF_HILL_5,Controller Chaos
-TID_KING_OF_HILL_6,Golden Hacks
-TID_KING_OF_HILL_7,Street Brawler 2
-TID_KING_OF_HILL_8,Primo Kong Jr.
-TID_KING_OF_HILL_9,Quarter Pounder
-TID_KING_OF_HILL_10,Super Brawl Out
-TID_KING_OF_HILL_11,High Score
-TID_KING_OF_HILL_12,Coin Op
-TID_KING_OF_HILL_13,Game Over
-TID_KING_OF_HILL_14,Cheat Code
-TID_KING_OF_HILL_15,Marble Brawler
+TID_PORTER_HEALTH,Здоров'я портера
+TID_PORTER_DAMAGE,Пошкодження портера
+TID_KING_OF_HILL_3,Храм Буму
+TID_KING_OF_HILL_4,Палаюча битва
+TID_KING_OF_HILL_5,Контролер хаосу
+TID_KING_OF_HILL_6,Золоті Чіти
+TID_KING_OF_HILL_7,Вуличний Бравлер 2
+TID_KING_OF_HILL_8,Прімо Конг мл.
+TID_KING_OF_HILL_9,Чверть фунта
+TID_KING_OF_HILL_10,Супер Битва
+TID_KING_OF_HILL_11,Висока оцінка
+TID_KING_OF_HILL_12,Монета Op
+TID_KING_OF_HILL_13,Гра завершена
+TID_KING_OF_HILL_14,Чіт Код
+TID_KING_OF_HILL_15,Мармуровий бешкетник
 TID_BALL_26,Фліп-флоп
 TID_BALL_27,Велосипедний удар
 TID_BALL_28,Слов'янські блоки
@@ -3687,7 +3703,7 @@ TID_ZONE_CAPTURED_GAME_OVER,Team captured Hot Zone!\nMatch over
 TID_BRAWL_PASS_NEW_SEASON,NEW SEASON!
 TID_BRAWL_PASS_UNLOCK_PASS,Get BRAWL PASS to unlock premium rewards!
 TID_BRAWL_PASS_GET_MORE_POINTS,Get more Tokens to unlock this tier!
-TID_RANK_GET_MORE_TROPHIES,Get more Trophies to unlock this reward!
+TID_RANK_GET_MORE_TROPHIES,"Отримай більше трофеїв, щоб розблокувати цю нагороду!"
 TID_RANK_COLLECT_PREVIOUS_REWARD,You must collect previous rewards first!
 TID_BRAWL_PASS_GET_MORE_POINTS_TAIL,Get more Tokens to get BONUS rewards!
 TID_BRAWL_PASS_SEASON,BRAWL PASS SEASON:
@@ -4188,14 +4204,14 @@ TID_PLAYER_MAP_SLOT_STATUS_WINNER,Виграшна!
 TID_PLAYER_MAP_SLOT_STATUS_REJECTED,Відхилино
 TID_PLAYER_MAP_SLOT_STATUS_FEATURED,Оглянуто: <VOTE>
 TID_PLAYER_MAP_STATUS_INFO_TITLE,Статус вашої карти
-TID_PLAYER_MAP_STATUS_INFO_DRAFT,"Ви можете подати нову карту на затвердження в товариських боях. Якщо її схвалять інші гравці, ви можете опублікувати її як карту «Кандидат дня»."
+TID_PLAYER_MAP_STATUS_INFO_DRAFT,"Ви можете подати нову карту на затвердження в товариських боях. Якщо її схвалять інші гравці, ви можете опублікувати її як карту ""Кандидат дня""."
 TID_PLAYER_MAP_STATUS_INFO_SUBMITTED,"Якщо достатня кількість гравців схвалить карту в дружніх боях, вона може взяти участь у конкурсі карт. Редагування карти повертає її до стану чернетки та видаляє попередні схвалення карти."
 TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED,Після схвалення іншими гравцями ваша карта може брати участь у конкурсі карт. Примітка! Редагування карти видаляє всі попередні схвалення.
 TID_PLAYER_MAP_STATUS_INFO_PUBLISHED,"Опубліковані карти беруть участь у конкурсі карт, і інші гравці-учасники зможуть грати в них. На основі їхніх голосів карти-переможці отримають місце в події переможців."
 TID_PLAYER_MAP_STATUS_INFO_BANNED,Заборонені карти видалені з редагування. Їх можна лише видалити.
 TID_PLAYER_MAP_STATUS_INFO_REJECTED,"Якщо вашу карту було відхилено, не хвилюйтеся. Ви все ще можете редагувати та вдосконалювати його, а також надсилати його знову."
 TID_PLAYER_MAP_STATUS_INFO_WINNER,"У нас є переможці, вітаємо! Переможні карти відображатимуться в подіях переможців."
-TID_PLAYER_MAP_STATUS_INFO_FEATURED,"Рекомендовані карти представлені в розділі «День кандидата». Виходячи з голосів гравців, переможні карти отримують місце в події переможців."
+TID_PLAYER_MAP_STATUS_INFO_FEATURED,"Рекомендовані карти представлені в розділі ""День кандидата"". Виходячи з голосів гравців, переможні карти отримують місце в події переможців."
 TID_PLAYER_MAP_STATUS_INFO_DRAFT_AUTOREVIEW,Ви можете подати нові карти для участі в конкурсі карт. Надіслані карти потрібно спочатку перевірити на неприйнятний вміст і отримати зелений світло перед публікацією.
 TID_PLAYER_MAP_STATUS_INFO_SUBMITTED_AUTOREVIEW,"Надіслана карта очікує на отримання зеленого світла для публікації, після чого вона може брати участь у конкурсі карт. Редагування карти повертає її до стану чернетки та видаляє попереднє схвалення карти."
 TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED_AUTOREVIEW,Після схвалення до публікації ваша карта може брати участь у конкурсі карт. Примітка! Редагування карти видаляє статус зеленого світла.
@@ -4319,9 +4335,9 @@ TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM_OWNER,"Використовуйте
 TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM,Розробник карт недоступний під час гри в дружній команді!
 TID_MAP_FEATURE_UNAVAILABLE,Ця функція наразі недоступна
 TID_MAP_SUBMITTED_INFO_TITLE,Карта надіслана
-TID_MAP_SUBMITTED_INFO,Вашу карту «<NAME>» надіслано!
+TID_MAP_SUBMITTED_INFO,"Вашу карту ""<NAME>"" надіслано!"
 TID_MAP_GREENLIGHTED_INFO_TITLE,Карта схвалена
-TID_MAP_GREENLIGHTED_INFO,Вашу карту «<NAME>» схвалено до публікації!
+TID_MAP_GREENLIGHTED_INFO,"Вашу карту ""<NAME>"" схвалено до публікації!"
 TID_MAP_PUBLISHED_INFO_TITLE,Карта опублікована
 TID_MAP_PUBLISHED_INFO,"Ваша карта ""<NAME>"" опублікована!"
 TID_MAP_WINNER_INFO_TITLE,Карта перемогла!
@@ -4493,7 +4509,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Thanks for using Map Maker. Please abide by t
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Thanks for using Map Maker. Please abide by the User Agreement and other related regulations when using Map Maker. Do not make or spread inappropriate content that is erotic, obscene, or endangers national unity, sovereignty, and territorial integrity, or violates laws and other regulations."
 TID_RUFFS,ГЕНЕРАЛ\nРАФС
 TID_RUFFS_SHORT_DESC,ПІДТРИМКА
-TID_RUFFS_DESC,"""Він може гавкати накази своїм підлеглим, але полковник Раффс дуже хороший хлопчик!\n\nМаючи серйозну та спокійну поведінку, Раффс приховує свої собачі риси, якщо тільки не відбувається гра в апорт!"""
+TID_RUFFS_DESC,"""Він може гавкати накази своїм підлеглим, але полковник Раффс дуже хороший хлопчик!\n\nЗазвичай заспокійлива зовнішність, його собачі інстинкти спрацьовують щоразу, коли поблизу є гра в аборт."""
 TID_RUFFS_WEAPON,DOUBLE-BARREL LASER
 TID_RUFFS_WEAPON_DESC,Ruffs' twin-laser bounces off walls multiple times. They can hit opponents behind cover.
 TID_RUFFS_ULTI,SUPPLY DROP
@@ -4543,7 +4559,7 @@ TID_ACCESSORY_NINJA_INVISIBLE_AREA,LOLLIPOP DROP
 TID_ACCESSORY_NINJA_INVISIBLE_AREA_DESC,Leon creates a stealthy area for his team to hide in. The lollipop slowly loses its health over time.
 TID_ACCESSORY_TRICKSHOT_DUDE_BOUNCE_HEAL,BOUNCY CASTLE
 TID_ACCESSORY_TRICKSHOT_DUDE_BOUNCE_HEAL_DESC,Rico's next attack will heal him for <c00cc00><VALUE1></c> health from each bounce of a projectile.
-TID_TRAITS_HEADER,TRAITS:
+TID_TRAITS_HEADER,ОСОБЛИВОСТІ
 TID_TRAIT_CHARGE_SUPER_FROM_DAMAGE,This Brawler charges Super from damage received
 TID_TRAIT_CHARGE_SUPER_AUTOMATIC,This Brawler charges Super over time
 TID_TRAIT_CHARGE_SUPER_FROM_DISTANCE,This Brawler charges Super from staying close to opposing Brawlers
@@ -5158,6 +5174,8 @@ TID_KO_JUNE21_1,Splash Out
 TID_KO_JUNE21_2,Deep End
 TID_QUALIFIED_INFO_PARAM,"Congrats, you won the <CHALLENGE>! Your challenge victory reward: <REWARD>"
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Your reward for win #<WIN> in <CHALLENGE>: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"""Вітання ти виграв <CHALLENGE>! Твоя вингорода: <REWARD>\nЦе замінює оригінальну винагороду яку ти вже маєш."""
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Твоя винагорода за #<WIN> перемогу в <CHALLENGE>: <REWARD>\nЦезамінює оригінальну винагороду яку ти вже маєш.
 TID_CHALLENGE_TEASER_INFO_PARAM,The <CHALLENGE> is coming!\n\nWin <WIN> matches and claim your <REWARD> reward! Team up with friends or \qLOOK FOR A TEAM\q to maximize your chances of winning.\n\nThe challenge will only be active for <DURATION> hours. Good luck and have fun!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Beat the challenge to receive: <REWARD>!
 TID_GEN_JUNE21_1,Splash Pads
@@ -5184,9 +5202,9 @@ TID_CHAT_TEAM_UP_DESCRIPTION,Створи команду і грай з друз
 TID_CHAT_TEAM_UP_BTN,СТВОРИТИ КОМАНДУ!
 TID_CHAT_STREAM_TEAM_UP_BTN,СТВОРИТИ КОМАНДУ!
 TID_CHAT_CLUB_PROMO_DESC,Share brawling glory and honors by joining a Club or forming your own!
-TID_CHAT_CLUB_PROMO_BTN,GO
-TID_CHAT_TAB_TEAM,TEAM
-TID_CHAT_TAB_CLUB,CLUB
+TID_CHAT_CLUB_PROMO_BTN,ВПЕРЕД
+TID_CHAT_TAB_TEAM,КОМАНДА
+TID_CHAT_TAB_CLUB,КЛУБ
 TID_CHAT_TAB_CLUB_ONLINE_TITLE,ОНЛАЙН:
 TID_CHAT_TAB_CLUB_ONLINE_COUNT,<NUM>/<MAX>
 TID_CHAT_TAB_TEAM_CODE_TITLE,Team Code
@@ -5271,45 +5289,50 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Reach <NUM> trophies to unlock Challenges
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Single skin selected
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,A skin is now chosen randomly from all selected
 TID_GEAR_TOKEN_DROP_TITLE,ЖЕТОНИ ШЕСТЕРНЕЙ
-TID_GEAR_TOKEN_DAMAGE,Damage Tokens
-TID_GEAR_TOKEN_HEAL,Heal Tokens
-TID_GEAR_TOKEN_RESISTANCE,Resistance Tokens
-TID_GEAR_TOKEN_SHIELD,Shield Tokens
-TID_GEAR_TOKEN_SPEED,Speed Tokens
-TID_GEAR_TOKEN_TYPE_DAMAGE,ШКОДА
-TID_GEAR_TOKEN_TYPE_HEAL,ЗДОРОВ'Я
-TID_GEAR_VISION_TITLE,БАЧЕННЯ
-TID_GEAR_TOKEN_TYPE_SHIELD,ЩИТ
-TID_GEAR_TOKEN_TYPE_SPEED,ШВИДКІСТЬ
-TID_GEAR_TOKEN,Жетон шестерней
-TID_GEAR_SCRAP_DROP_TITLE,SCRAP
-TID_GEAR_SCRAP,Scrap
+TID_GEAR_SCRAP_DROP_TITLE,МЕТАЛОБРУХТ
+TID_GEAR_SCRAP,Металобрухт
 TID_GEAR_UNLOCK_SLOT,UNLOCK GEAR SLOT <NUM>
 TID_GEAR_CRAFT_TITLE,Craft <NAME> Level <NUM>?
 TID_GEAR_UPGRADE_TITLE,Upgrade <NAME> to Level <NUM>?
-TID_GEAR_CRAFT_BUTTON,CRAFT
-TID_GEAR_UPGRADE_BUTTON,UPGRADE
-TID_GEAR_FOREST_SPEED_TITLE,SPEED
-TID_GEAR_STANDING_HEAL_TITLE,HEALTH
-TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,DAMAGE
-TID_GEAR_SLOW_RESISTANCE_TITLE,RESISTANCE
-TID_GEAR_SHIELD_TITLE,SHIELD
-TID_GEAR_FOREST_SPEED_INFO,Get a SPEED INCREASE when moving in bushes by <NUM>%.
-TID_GEAR_STANDING_HEAL_INFO,RECOVER HEALTH <NUM>% more effectively
-TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Deal <NUM>% EXTRA DAMAGE when below 50% Health.
-TID_GEAR_VISION_INFO,REVEAL opponents for <NUM> seconds after dealing damage to them
-TID_GEAR_SHIELD_INFO,"Gain extra <NUM> HEALTH as a consumable SHIELD. The shield regenerates in 10 seconds, when at full health."
-TID_GEAR_FOREST_SPEED_UPGRADE_INFO,Bush movement SPEED INCREASE
-TID_GEAR_STANDING_HEAL_UPGRADE_INFO,RECOVER HEALTH more effectively
-TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Extra DAMAGE when below 50% health
-TID_GEAR_VISION_UPGRADE_INFO,REVEAL opponents after dealing damage to them
-TID_GEAR_SHIELD_UPGRADE_INFO,Gain a SHIELD that increases HEALTH
-TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,SPEED BOOSTED
-TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,RECOVERY BONUS
-TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,EXTRA DAMAGE
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,REVEAL SECONDS
-TID_GEAR_SHIELD_UPGRADE_TARGET,SHIELD HEALTH
-TID_GEAR_UPGRADED,GEAR UPGRADED!
+TID_GEAR_CRAFT_BUTTON,Зкрафтити
+TID_GEAR_UPGRADE_BUTTON,ПОКРАЩИТИ
+TID_GEAR_FOREST_SPEED_TITLE,ШВИДКІСТЬ
+TID_GEAR_STANDING_HEAL_TITLE,ЗДОРОВ'Я
+TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,ПОШКОДЖЕННЯ
+TID_GEAR_SLOW_RESISTANCE_TITLE,ОПІР
+TID_GEAR_SHIELD_TITLE,ЩИТ
+TID_GEAR_RELOAD_SPEED_TITLE,ШВИДКІСТЬ ПЕРЕЗАРЯДКИ
+TID_GEAR_SUPER_CHARGE_TITLE,СУПЕР ЗАРЯДКА
+TID_GEAR_FOREST_SPEED_INFO,Отримайте ЗБІЛЬШЕННЯ ШВИДКОСТІ під час руху в кущах на <NUM>%.
+TID_GEAR_STANDING_HEAL_INFO,ВІДНОВЛЮЙТЕ ЗДОРОВ'Я <NUM>% ефективніше
+TID_GEAR_LOW_HEALTH_DAMAGE_INFO,"Завдайте <NUM>% ДОДАТКОВОЇ ШКОДИ, коли здоров’я нижче 50%."
+TID_GEAR_VISION_INFO,"ВИЯВИ супротивників протягом <NUM> секунд після того, як завдано їм шкоди"
+TID_GEAR_SHIELD_INFO,Отримайте додатково <NUM> ЗДОРОВ'Я як витратний ЩИТ. Щит відновлюється за 10 секунд при повному здоров’ї.
+TID_GEAR_RELOAD_SPEED_INFO,<NUM>% швидше ПЕРЕЗАРЯДЖАННЯ
+TID_GEAR_SUPER_CHARGE_INFO,СУПЕР заряджається на <NUM>% швидше
+TID_GEAR_FOREST_SPEED_UPGRADE_INFO,Рухайтеся швидше в кущах
+TID_GEAR_STANDING_HEAL_UPGRADE_INFO,ВІДНОВЛЮЙТЕ ЗДОРОВ'Я ефективніше
+TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,"Додаткова ШКОДА, коли рівень здоров’я нижче 50%."
+TID_GEAR_VISION_UPGRADE_INFO,"ВИЯВЛЯЙТЕ супротивників після того, як завдали їм шкоди"
+TID_GEAR_SHIELD_UPGRADE_INFO,"Отримайте ЩИТ, який збільшує ЗДОРОВ'Я"
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Швидша перезарядка
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Швидша зарядка супер
+TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,ЗБІЛЬШЕНА ШВИДКІСТЬ
+TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,БОНУС ЗА ВІДНОВЛЕННЯ
+TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,ЕКСТРА ШКОДА
+TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,РОЗКРИТИ СЕКУНДИ
+TID_GEAR_SHIELD_UPGRADE_TARGET,ЗДОРОВ'Я ЩИТА
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,ШВИДКІСТЬ ПЕРЕЗАРЯДКИ
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,ШВИДКІСТЬ ЗАРЯДКИ СУПЕР
+TID_GEAR_SUPER_HEALTH_TITLE,ЗДДОРОВ'Я ГОЛОВИ
+TID_GEAR_SUPER_HEALTH_INFO,Голова отримує <NUM> ДОДАТКОВОГО ЗДОРОВ'Я
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Голова отримує додаткове здоров'я
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,ЗДОРОВ'Я ГОЛОВИ
+TID_GEAR_SUPER_RANGE_TITLE,ДАЛЬНІСТЬ РУКИ
+TID_GEAR_SUPER_RANGE_INFO,Рука простягаєтсья на 1 куб далі
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Рука дістає далі
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,ДАЛЬНІСТЬ РУКИ
+TID_GEAR_UPGRADED,ОБЛАДНАННЯ ОНОВЛЕНО!
 TID_GEAR_TITLE,ШЕСТЕРНЯ
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> LEVEL <NUM>
 TID_GEAR_LEVEL_TITLE,LEVEL <NUM>
@@ -5322,6 +5345,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Gear: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,ШЕСТЕРНЬ <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Ця шестерня вже вибрана в іншому слоті
 TID_ITEMS_TITLE,РЕЧІ
 TID_TEAMUP_YOUR_SETTINGS_TITLE,ПЕРСОНАЛЬНІ НАЛАШТУВАННЯ
 TID_TRUE_SILVER_BROCK_SKIN,СПРАВЖНІЙ СРІБНИЙ БРОК
@@ -5627,7 +5652,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>POWER MATCH</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,ПАВЕР МАТЧ
 TID_CLUB_INFO_COLUMN_TROPHIES,ТРОФЕЇ
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,РАНК ПАВЕР ЛІГИ
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,ОСТАНІЙ ОНЛАЙН
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,СТАТУС
 TID_CLUB_INFO_COLUMN_NAME,ІМ'Я
 TID_CLUB_INFO_COLUMN_TICKETS_USED,ВИКОРИСТАНО КВИТКІВ
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,КЛУБНІ ТРОФЕЇ
@@ -5642,9 +5667,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,LOSE MATCH
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,Team up with Randoms
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,Team up with Club Members
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,CLUB TROPHY REWARDS
-TID_REWARD_DESC_GEAR_TOKENS,Жетони шестерней
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,ЖЕТОН ШЕСТЕРНЕЙ
-TID_REWARD_DESC_GEAR_SCRAP,БРУХТ
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,"Привіт! Схоже, ви запізнилися грати цього тижня.\n\nНе соромтеся озирнутися та подивитися на свій клуб до початку наступного тижня!"
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Come check out what's in the Club Shop!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Final Results:
@@ -5674,7 +5696,7 @@ TID_SKIN_INFO_LEGENDARYSET_SKINS,Legendary Skins
 TID_SHOP_LEGENDARYSET_SKINS_GROUP,Legendary Skins
 TID_SHOP_LEGENDARYSET_TITLE,LEGENDARY
 TID_SHOP_LEGENDARYSET_INFO,Skin set
-TID_SHOP_HERO_OFFER_LABEL,NEW BRAWLER: <BRAWLER>
+TID_SHOP_HERO_OFFER_LABEL,НОВИЙ БРАВЛЕР: <BRAWLER>
 TID_MATCHMAKE_FAILED_24,Not enough Tickets!
 TID_EMOTE_BUNDLE_BRAWLOWEEN_PACK,Brawl-o-ween pin pack
 TID_SKIN_INFO_BRAWLYWOOD,Brawlywood Skins
@@ -5745,11 +5767,17 @@ TID_SPEC_ABI_CROSS_BOMBER_2,X-FACTOR
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,The split from Grom's main attack deals up to <c00cc00>+<VALUE1>%</c> extra damage at max distance.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,WATCHTOWER
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,Grom ejects a Watchtower from his Grom Bomb that gives all allies sight into bushes over a large area. The watchtower slowly loses health over time.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Craft your first Gear
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,Collect more Scrap and Gear Tokens from Brawl Boxes or the Club Shop to craft and upgrade your Gear
-TID_FIRST_GEAR_TUTORIAL_TITLE,GEAR SLOT
-TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,Unlocked!
-TID_FIRST_GEAR_TUTORIAL_HEADER,Gear
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Слот шестерні розблокований
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Вибери свою першу шестерню БЕЗКОШТОВНО
+TID_ITEMS_HUB_GUIDE_GADGET,Ти можеш вибрати і купити особливі гаджети для <BRAWLER> тут
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Гаджети тепер доступні тут
+TID_ITEMS_HUB_GUIDE_STARPOWER,Ти можеш вибрати і купити особливі пасівки для <BRAWLER> тут
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Пасівки тепер доступні тут
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Гаджети тепер доступні тут
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Пасівки тепер доступні тут
+TID_FIRST_GEAR_TUTORIAL_TITLE,ШЕСТЕРНІ
+TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,Розблоковано?
+TID_FIRST_GEAR_TUTORIAL_HEADER,Шестерня
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Craft extra abilities for the Brawlers of your choice
 TID_FIRST_GEAR_TUTORIAL_UNLOCK,Brawlers unlock their 1st gear slot at Power Level 10
 TID_FIRST_GEAR_TUTORIAL_COLLECT,Collect Gear crafting items
@@ -5782,7 +5810,7 @@ TID_CLUB_LEAGUE_MIGRATION_NO_CLUB_FOUND,"Oof, we couldn't find a suitable Club f
 TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,You are now shown as LOOKING FOR A TEAM to others online
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Your Team is now shown as LOOKING FOR PLAYERS to others online
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Cannot join club. Clubs unlock at <NUM> trophies.
-TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,CURRENT LEAGUE
+TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,ВАША ЛІГА
 TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,"Підвищення та пониження в кінці кожного тижня Клубної ліги!\nПіднімайте ліги, щоб збільшити свої винагороди за клубні монети."
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OK
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,LEAGUES
@@ -6275,8 +6303,8 @@ TID_TERMS_CHILDREN_BUTTON_YOOZOO,Yoozoo Children's Privacy Protection Guidelines
 TID_YOOZOO_THIRDPARTY_INFO,Third Party Info Sharing List
 TID_THIRD_PARTY_SHARING_BUTTON_YOOZOO,Third Party Info Sharing List
 TID_YOOZOO_SYSTEM_SETTINGS_BUTTON,System Settings
-TID_SKIN_PIN_INCLUDED,+ Exclusive pin!
-TID_SKIN_PINS_INCLUDED,+ Exclusive pin pack!
+TID_SKIN_PIN_INCLUDED,+Ексклюзивна емозі!
+TID_SKIN_PINS_INCLUDED,+Ексклюзивний пакет емозі!
 TID_OWN_TEAM_BANS,BLUE TEAM BANS
 TID_ENEMY_TEAM_BANS,RED TEAM BANS
 TID_PRE_PICK_YOUR_BRAWLER,PRE PICK YOUR BRAWLER
@@ -6403,12 +6431,12 @@ TID_CLUB_QUESTS_LOCKED_REWARD_DESC,ВИКОНАЙ БУДЬ ЯКИЙ КВЕСТ �
 TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,"Наберіть <POINTS> балів у своєму клубі, щоб отримати це як нагороду кінця тижня!"
 TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,Це нагорода за поточний клубний квест на кінець тижня.
 TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,"Це нагорода за поточний клубний квест на кінець тижня. Виконайте клубний квест, щоб отримати його наприкінці тижня!"
-TID_CLUB_QUESTS_LEAGUES_BUTTON,LEAGUES
-TID_CLUB_QUESTS_LEAGUES_DESC,Promote to a higher Club League to increase your MAX REWARD.
-TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,CURRENT LEAGUE
+TID_CLUB_QUESTS_LEAGUES_BUTTON,ЛІГИ
+TID_CLUB_QUESTS_LEAGUES_DESC,"Перейдіть до вищої клубної ліги, щоб збільшити МАКСИМАЛЬНУ ВИНАГОРОДУ."
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,ВАША ЛІГА
 TID_CLUB_QUESTS_RANKS_MAX_REWARD,МАКСИМАЛЬНА ВИНАГОРОДА
-TID_CLUB_QUESTS_RANKS_MESSAGE,Your Club League rank determines the maximum rewards for the Club Quest week. Climb the leagues to increase your Club Coin rewards!
-TID_CLUB_QUESTS_RANKS_TITLE,LEAGUES
+TID_CLUB_QUESTS_RANKS_MESSAGE,"Ваш рейтинг у Клубній лізі визначає максимальні винагороди за тиждень Клубних квестів. Підніміться в лігах, щоб збільшити свої винагороди за клубні монети!"
+TID_CLUB_QUESTS_RANKS_TITLE,ЛІГИ
 TID_CLUB_QUESTS_FLOW_NEW_SEASON,Новий тиждень!
 TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Week has ended
 TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,КЛУБНІ КВЕСТИ
@@ -6421,16 +6449,16 @@ TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,YOUR END OF WEEK REWARD
 TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
 TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
 TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,"Грайте принаймні з 1 членом клубу, щоб <cFCF044>ПОДВОЇТИ</c> свій прогрес у клубному квесті"
-TID_CLUB_QUESTS_ALL_COMPLETED_DESC,All Club Quests completed this week!
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,Усі квести на тиждень виконано виконано
 TID_CLUB_QUEST_ALREADY_COMPLETED,This Club Quest has been already completed!
 TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,Week ends in:
 TID_CLUB_QUESTS_REWARD_LOCKED_DESC,1ий квест розблоковує винагороду
-TID_CLUB_QUESTS_COMPLETED_NUM,Quests completed: <NUM>/<MAX>
+TID_CLUB_QUESTS_COMPLETED_NUM,Квестів виконано: <NUM>/<MAX>
 TID_CLUB_QUESTS_TITLE,КЛУБНІ КВЕСТИ
 TID_CLUB_QUESTS_NEW_SEASON,НОВИЙ ТИЖДЕНЬ!
 TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,"CLUB QUESTS END OF WEEK: As a reward from the week, you gained <COINS> <cEE1B39>Club Coins</c>!"
-TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,THIS WEEK'S CONTRIBUTIONS
-TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Club members: <NUM>
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,ВНЕСКИ ЦЬОГО ТИЖНЯ
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Членів клубу: <NUM>
 TID_CLUB_QUESTS_CLUB_TEAM_BONUS,x2 CLUB TEAM BONUS
 TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,TEAM UP BONUS!
 TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,Play with at least 1 Club Member to <cFCF044>DOUBLE</c> your Club Quest Progress!
@@ -6442,7 +6470,7 @@ TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,TEAM UP!
 TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,You can only contribute to the club in which you started this week.\n\nWait until the next week to contribute to this Club!
 TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,CLAIMED
 TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,Hey! Looks like your Club is not yet participating in a Club League week. You can compete with other clubs when the next Club League week starts.
-TID_CLUB_EVENT_TIME_LEFT,<TIME> left
+TID_CLUB_EVENT_TIME_LEFT,<TIME> залишилося
 TID_SHOP_CLUB_SHOP_SEE_OFFERS,ПЕРЕГЛЯНУТИ ПРОПОЗИЦІЇ
 TID_SHOP_CLUB_SHOP_TITLE,КЛУБНИЙ МАГАЗИН
 TID_SHOP_CLUB_SHOP_DESC,ПРИСКОРТЕ СВІЙ ПРОГРЕС
@@ -6491,7 +6519,7 @@ TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,КЛУБНІ КВЕСТИ
 TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Виконуйте квести зі своїм клубом!
 TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Грайте зі своїм клубом! 1 клубна гра на тиждень.
 TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Заробляйте клубні монети!
-TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Купляйте речі  у Магазині Клубу!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Купляйте речі у Магазині Клубу!
 TID_SUGGEST_TITLE,Запропонувати Бравлера
 TID_CLUB_LEAGUE_TOP_24_REWARDS,Усі гравці мають право отримати свої нагороди наприкінці тижня
 TID_CLUB_LEAGUE_STARTS_IN,Club League starts in:
@@ -6634,23 +6662,23 @@ TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Рукавиці надто далеко
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Потрібні рукавиці!
 TID_SOUL_COLLECTOR,ГАС
 TID_SOUL_COLLECTOR_SHORT_DESC,ПІДТРИМКА
-TID_SOUL_COLLECTOR_DESC,"Прогулявшись у давно забутому та покинутому поїзді, Гас обожнює повітряні кулі. Він майстер у створенні тварин з повітряних кульок, якими він користується, щоб скоротати час і скласти собі компанію."
+TID_SOUL_COLLECTOR_DESC,"""Гас любить повітряні кулі, викликаючи поїздку додому на покинутому поїзді. Згідно з легендою, одного разу він пішов за собакою-балончиком занадто далеко, заблукав і з тих пір залишається там"""
 TID_SOUL_COLLECTOR_WEAPON,БЕЗУМНІ ПОВІТРЯНІ КУЛІ
-TID_SOUL_COLLECTOR_WEAPON_DESC,Гас стріляє кульками у ворогів. Після кількох послідовних ударів випаде дух. Зібрані духи відновлять здоров’я вам або вашій команді.
+TID_SOUL_COLLECTOR_WEAPON_DESC,"""Гас стріляє повітряними кулями у ворогів. Після кількох влучень випадає дух. Зібрані духи відновлять здоров’я Гаса або його товаришів по команді."""
 TID_SOUL_COLLECTOR_ULTI,МОТОРІЙНИЙ ХЛОПЧИК
 TID_SOUL_COLLECTOR_ULTI_DESC,"Гас використовує СТРАШИЛКУ(повітряна куля, а також його найкращий друг), щоб створити щит навколо себе або когось із своїх товаришів по команді."
 TID_SPEC_ABI_SOUL_COLLECTOR_1,БОНАНЦА ЗДОРОВ'Я
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Зцілення від цих кульок збільшується на <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Зцілення від духів збільшується на <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,ДУХ ТВАРИНИ
-TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,СТРАШИЛКА збільшує потужність шкоди для товариша по команді на <c00cc00><VALUE1>%</c> протягом <c00cc00><VALUE2></c> секунд.
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,СТРАШИЛКА збільшує потужність шкоди товариша по команді на <c00cc00><VALUE1>%</c> протягом <c00cc00><VALUE2></c> секунд.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,КУКІ ПОППЕР
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Вибухайте всіх незібраних духів, завдаючи <c00cc00><VALUE1></c> шкоди ворогам поблизу."
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,ПЕРЕКЛЮЧАТЕЛЬ ДУШ
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Гас втрачає <ccc0000><VALUE1>%</c> здоров’я та миттєво отримує <c00cc00><VALUE2>%</c> духу.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Гас втрачає <ccc0000><VALUE1>%</c> здоров’я але миттєво отримує <c00cc00><VALUE2>%</c> духу.
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,Зниклий дух!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Дух уже повний!
 TID_SKIN_INFO_OUTLAW,Скін банди лиха
-TID_EMOJI_SURGE_TEAM,NAVI\n(🇺🇦 🇺🇦 🇺🇦)
+TID_EMOJI_SURGE_TEAM,NAVI
 TID_EMOJI_MORTIS_TEAM,SK
 TID_EMOJI_SPIKE_TEAM,INTZ
 TID_EMOJI_PRIMO_TEAM,TQ
@@ -6660,7 +6688,7 @@ TID_EMOJI_LEON_TEAM,QLASH
 TID_EMOJI_JESSIE_TEAM,ZETA
 TID_EMOJI_EMZ_TEAM,TRIBE
 TID_EMOJI_SHELLY_TEAM,TOTEM
-TID_SKIN_INFO_MECHA,Mecha skin
+TID_SKIN_INFO_MECHA,МЕХА СКІН
 TID_SCID_REQUIRED_DESC,Через ваш вік вам потрібно підключити свою гру до СУПЕРСЕЛЛ ІД
 TID_SCID_REQUIRED_CONNECT,ПІДКЛЮЧИТИ
 TID_LOGIN_CALENDAR_POPULAR,ПОПУЛЯРНО
@@ -6684,26 +6712,26 @@ TID_ESPORTS_OFFER_ITEM_PINS,Емозі
 TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Значок гравця
 TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Набір емозі МЕХА МОРТІСА
 TID_BRAWL_PASS_SEASON_13,ФАБРИКА РОБОТІВ
-TID_TRUE_GOLD_OTIS_SKIN,TRUE GOLD OTIS
-TID_TRUE_GOLD_OTIS_SKIN_SHOP,TRUE GOLD\nOTIS
-TID_TRUE_SILVER_OTIS_SKIN,TRUE SILVER OTIS
-TID_TRUE_SILVER_OTIS_SKIN_SHOP,TRUE SILVER\nOTIS
-TID_TRUE_GOLD_SQUEAK_SKIN,TRUE GOLD SQUEAK
-TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,TRUE GOLD\nSQUEAK
-TID_TRUE_SILVER_SQUEAK_SKIN,TRUE SILVER SQUEAK
-TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,TRUE SILVER\nSQUEAK
-TID_TRUE_GOLD_BYRON_SKIN,TRUE GOLD BYRON
-TID_TRUE_GOLD_BYRON_SKIN_SHOP,TRUE GOLD\nBYRON
-TID_TRUE_SILVER_BRYON_SKIN,TRUE SILVER BYRON
-TID_TRUE_SILVER_BYRON_SKIN_SHOP,TRUE SILVER\nBYRON
-TID_TRUE_GOLD_GRIFF_SKIN,TRUE GOLD GRIFF
-TID_TRUE_GOLD_GRIFF_SKIN_SHOP,TRUE GOLD\nGRIFF
-TID_TRUE_SILVER_GRIFF_SKIN,TRUE SILVER GRIFF
-TID_TRUE_SILVER_GRIFF_SKIN_SHOP,TRUE SILVER\nGRIFF
-TID_TRUE_GOLD_EDGAR_SKIN,TRUE GOLD EDGAR
-TID_TRUE_GOLD_EDGAR_SKIN_SHOP,TRUE GOLD\nEDGAR
-TID_TRUE_SILVER_EDGAR_SKIN,TRUE SILVER EDGAR
-TID_TRUE_SILVER_EDGAR_SKIN_SHOP,TRUE SILVER\nEDGAR
+TID_TRUE_GOLD_OTIS_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ОТІС
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nОТІС
+TID_TRUE_SILVER_OTIS_SKIN,СПРАВЖНІЙ СРІБНИЙ ОТІС
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nОТІС
+TID_TRUE_GOLD_SQUEAK_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ СКВІК
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nСКВІК
+TID_TRUE_SILVER_SQUEAK_SKIN,СПРАВЖНІЙ СРІБНИЙ СКВІК
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nСКВІК
+TID_TRUE_GOLD_BYRON_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ БАЙРОН
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nБАЙРОН
+TID_TRUE_SILVER_BRYON_SKIN,СПРАВЖНІЙ СРІБНИЙ БАЙРОН
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nБАЙРОН
+TID_TRUE_GOLD_GRIFF_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ГРІФ
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nГРІФ
+TID_TRUE_SILVER_GRIFF_SKIN,СПРАВЖНІЙ СРІБНИЙ ГРІФ
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nГРІФ
+TID_TRUE_GOLD_EDGAR_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ЕДГАР
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nЕДГАР
+TID_TRUE_SILVER_EDGAR_SKIN,СПРАВЖНІЙ СРІБНИЙ ЕДГАР
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nЕДГАР
 TID_CAESAR_BRONSON_SKIN,ЦЕЗАР СЕМ
 TID_CAESAR_BRONSON_SKIN_SHOP,ЦЕЗАР\nСЕМ
 TID_MECHA_MORIS_SKIN,МЕХА МОРТІС
@@ -6712,8 +6740,8 @@ TID_DARK_MECHA_MORTIS_SKIN,ТЕМНИЙ МЕХА МОРТИС
 TID_DARK_MECHA_MORTIS_SKIN_SHOP,ТЕМНИЙ\nМЕХА МОРТІС
 TID_LIGHT_MECHA_MORTIS_SKIN,СВІТЛИЙ МЕХА МОРТІС
 TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,ЛЕГКИЙ\nМЕХА МОРТІС
-TID_OUTLAW_LOLA_SKIN,НЕЛЕГАЛЬНА ЛОЛА
-TID_OUTLAW_LOLA_SKIN_SHOP,НЕЛЕГАЛЬНА\nЛОЛА
+TID_OUTLAW_LOLA_SKIN,КРИМІНАЛЬНА ЛОЛА
+TID_OUTLAW_LOLA_SKIN_SHOP,КРИМІНАЛЬНА\nЛОЛА
 TID_OUTLAW_CROW,КІСТКОВИЙ ВОРОН
 TID_OUTLAW_CROW_SKIN_SHOP,КІСТКОВИЙ\nВОРОН
 TID_OUTLAW_POCO_SKIN,ДЕСПЕРАДО ПОКО
@@ -6731,15 +6759,15 @@ TID_HINT_48,"Використовуйте Піни та Спреї в грі, щ
 TID_HINT_49,"Паркани схожі на стіни, тільки через них можна стріляти!"
 TID_HINT_50,Командна робота робить мрію успішною!
 TID_HINT_51,"Вам не подобається, як ваш макет елементів керування? Ви можете змінити за допомогою функції TRY."
-TID_HINT_52,"У Brawl Ball ви можете використовувати свій Super, щоб виконати суперудар!"
+TID_HINT_52,"У Бравл Болі ви можете використовувати свою Супер атаку, щоб виконати суперудар!"
 TID_HINT_53,"Коли ви тримаєте найбільше дорогоцінних каменів у Gem Grab, віддайте перевагу захисту, а не атаці."
 TID_HINT_54,"Якщо ваші товариші по команді зазнають поразки, зачекайте, доки вони відродяться, перш ніж кинутися разом!"
 TID_HINT_55,"Використовуйте дружні битви, щоб практикувати та вдосконалювати свої навички"
-TID_HINT_56,У деяких скандалістів є особливості! Перевірте їх на екрані Brawl Stats.
-TID_HINT_57,"У Duo Showdown переконайтеся, що ваш товариш по команді живий, перш ніж брати Power Cubes."
+TID_HINT_56,У деяких скандалістів є особливості! Перевірте їх на екрані Статискик.
+TID_HINT_57,"У парному зіткненні переконайтеся, що ваш товариш по команді живий, перш ніж брати Енергетики."
 TID_HINT_58,"Використовуйте функцію \qШукати команду\q, якщо граєте в виклики!"
 TID_HINT_59,"Завжди стежте за мінами Бо, вони можуть бути де завгодно!"
-TID_HINT_60,"Lou's Super чудово підходить для контролю території, використовуйте його з розумом у ключових точках карти!"
+TID_HINT_60,"Супер Лу чудово підходить для контролю території, використовуйте його з розумом у ключових точках карти!"
 TID_HINT_61,"Шкода Джессі зменшується кожного разу, коли її атака відбивається від ворога."
 TID_HINT_62,"Колетт може завдати великої шкоди, атакуючи танкових бешкетників!"
 TID_HINT_63,"Едгар зцілюється щоразу, коли завдає удару!"
@@ -6751,4 +6779,118 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-розрядне завершення роб�
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Набір шпильок Calamity Gang
 TID_SHOP_OUTLAW_SKINS,Скін БАНДИ ЛИХА
 TID_SHOP_OUTLAW_TITLE,БАНДА ЛИХА
+TID_GEAR_RARITY_RARE,Супер рідкісна
+TID_GEAR_RARITY_SUPER_RARE,Епічна
+TID_GEAR_RARITY_EPIC,Міфічна
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - Супер рідкісна шестерня
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - Епічна шестерня
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - Міфічна шестерня
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Духи занадто далеко!
+TID_TRY_BRAWLER_TITLE,Випробувати бравлера
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,Матч практики
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,Тренувальна зона
+TID_FIRST_GADGET_TUTORIAL_HEADER,ГАДЖЕТИ
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Додаткова можливість для вашого бравлера
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Всі бравлери розблоковуються слот гаджета на 7 рівні сили
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Унікальні гаджети для кожного бравлера
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Використовуй свій гаджет до трьох разів на матч
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,ПАСІВКИ
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Унікальні пасивні можливості для вашого бравлера
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Усі бравлери розблокують свій слот пасівки на 9 рівні
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Унікальні пасівки для кожного бравлера
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Твоя активована пасівка буде працювати весь час
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Усі бравлери розблоковують свій перший слот для шестерней на 10 рівні
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Кілька шестерней доступні для усіх бравлерів
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Шестерню яку ти вибереш буде активна весь час
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Вибирання матчу для практики
+TID_SHIELD_TANK,БАСТЕР
+TID_SHIELD_TANK_SHORT_DESC,ТАНК
+TID_SHIELD_TANK_DESC,"Керуючи проектором у кінотеатрі, Бастер запам’ятовує свої улюблені бойовики. Він мріє колись стати героєм бойовика у власному блокбастері."
+TID_SHIELD_TANK_WEAPON,БЛІК ОБ'ЄКТИВА
+TID_SHIELD_TANK_WEAPON_DESC,"Бастер випускає світловий конус зі свого проектора, ушкоджуючи всіх ворогів у межах досяжності."
+TID_SHIELD_TANK_ULTI,МОНТАЖ
+TID_SHIELD_TANK_ULTI_DESC,"Бастер проектує щит перед собою, блокуючи всі ворожі снаряди та відбиваючи енергію назад до ворогів."
+TID_SPEC_ABI_SHIELD_TANK_1,БЛОКБАСТЕР
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Відблиск Бастера завдає на <c00cc00><VALUE1>%</c> більше шкоди кожному союзнику в його зоні суперзаряду.
+TID_SPEC_ABI_SHIELD_TANK_2,КЕВЛАРОВИЙ ЖИЛЕТ
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Поки супер активна, Бастер отримує на <c00cc00><VALUE1>%</c> менше шкоди та захищений від відкидання, уповільнення та приголомшення."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,ДОПОМІЖНИЙ РЕМІНЬ
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Бастер зцілює себе та всіх найближчих союзників на <c00cc00><VALUE1></c> здоров’я для кожного союзника в його зоні суперзаряду.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,УПОВІЛЬНЕНИЙ ПОВТОР
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Наступний відблиск Бастера притягує ворогів до себе та сповільнює їх на <c00cc00><VALUE1></c> секунд.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> ТОКЕНІВ ШЕСТЕРЕНЬ\n<SCRAP> МЕТАЛОБРУХТУ
+TID_GEAR_COMPENSATION_CLAIM,ОТРИМАТИ
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Налаштуйте свою збірку за допомогою нової пасивної здатності
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,ВПЕРЕД!
+TID_INBOX_CAPTION_52,Пожертвування шестерні <TYPE> для <NAME>
+TID_GEAR_COMPENSATION_INFO,"Ось <COINS> монет за ваші шестерні, Токени шестерней і Металобрухт!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,Шестерні були скинуті і відкомпенсовані <COINS> монетами
+TID_RECRUIT_TOKEN,Запрошувальний жетон
+TID_CHROMATIC_TOKEN,Хроматичний жетон
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,ПАСІВКИ
+TID_FIRST_GADGET_TUTORIAL_TITLE,ГАДЖЕТИ
+TID_GEAR_TO_COINS_POPUP_TITLE,ШЕСТЕРНІ ПЕРЕРОБЛЕНО!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Нова шестерня доступна!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Перевірте своїх Бравлерів на наявність нових варіантів шестернь.
+TID_GEAR_TO_COINS_POPUP_INFO,"Усі наявні Шестерні скинуто. Шестерні більше не створюються та не мають покращень рівня. Спорядження тепер є суперрідкісними, епічними або міфічними.\n\nЩоб компенсувати цю зміну, кожен зібраний вами жетон і брухт тепер повертається вам у вигляді монет. ІДИ КУПИ СВОЄ НОВІ ШЕСТЕРНІ ЗА МОНЕТИ!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,ВІДШКОДУВАННЯ:
+TID_REPORT_PLAYER_REPORT,ПОСКАРЖИТИСЯ
+TID_REPORT_PLAYER_REPORTED,СКАРГУ ВІДПРАВЛЕНО
+TID_REPORT_PLAYER_POPUP_TITLE,ПОСКАРЖИТИСЯ на <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Ви повідомляєте, що <PLAYER_NAME> гріфить команду.\n\nГравець навмисно не відповідає меті Події та є руйнівним. Ця негативна поведінка впливає як на команду, так і на результат матчу.\n\nПоширені приклади гріфу включають:\nДОПОМАГАННЯ ВОРОЖІЙ КОМАНДІ та БЕЗДІЯЛЬНІСТЬ."
+TID_REPORT_PLAYER_BUTTON_REPORT,ПОСКАРЖИТИСЯ
+TID_REPORT_PLAYER_BUTTON_CANCEL,СКАСУВАТИ
+TID_QUEST_FALLBACK_REWARD_DESC,"Оскільки ви вже володієте нагородою за квест, ви отримуєте <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,НАГОРОДА ЗА КВЕСТ
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,ОТРИМАТИ
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,ДОРОГА ЗАПРОШЕНЬ
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,ХРОМАТИЧНИЙ МАГАЗИН
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Розблокуй ще <NUM> Хроматичних бравлерів
+TID_BUTTON_NAVI_RECRUIT_ROAD,Дорога запрошень
+TID_SKIN_INFO_GHOST_TRAIN,Скін привидової станції
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Відбулася помилка при перевірці вашого платежу
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Цей бравлер заряджає супер тим що є близько до членів команди
+TID_SKIN_INFO_ACTION,Скін Герої екшину
+TID_SKIN_INFO_WF_2022,Скін Світового фіналу 2022
+TID_BRAWL_PASS_SEASON_14,СТАНЦІЯ ПРИВИДА
+TID_CHAINSAW_BUSTER_SKIN,БЕНЗОПИЛА БАСТЕР
+TID_CHAINSAW_BUSTER_SKIN_SHOP,БЕНЗОПИЛА\nБАСТЕР
+TID_GHOST_TRAIN_GROM_SKIN,ФРАНКЕНГРОМ
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,ФРАНКЕНГРОМ
+TID_GHOST_TRAIN_COLETTE_SKIN,ІНСПЕКТОР КОЛЕТ
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,ІНСПЕКТОР\nКОЛЕТ
+TID_BRICK_OVEN_ASH_SKIN,ПІЦОВА ПІЧКА ЕШ
+TID_BRICK_OVEN_ASH_SKIN_SHOP,ПІЦОВА ПІЧКА\nЕШ
+TID_VETERAN_SQUEAK_SKIN,ПЕРШИЙ ПИСК СКВІК
+TID_VETERAN_SQUEAK_SKIN_SHOP,ПЕРША ПИСК\nСКВІК
+TID_ZOMBIE_BROCK_SKIN,ЗОМБРОК
+TID_ZOMBIE_BROCK_SKIN_SHOP,ЗОМБРОК
+TID_MEGA_MEGABOX_DARRYL_SKIN,ОМЕГА БОКС ДЕРРІЛ
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,ОМЕГА БОКС\nДЕРРІЛ
+TID_GHOST_METRO_PENNY_SKIN,ТРЕШ ПАНДА ПЕННІ
+TID_GHOST_METRO_PENNY_SKIN_SHOP,ТРЕШ ПАНДА\nПЕННІ
+TID_BSWF22_TARA_SKIN,РОЗЛЮЧЕНА ТАРА
+TID_BSWF22_TARA_SKIN_SHOP,РОЗЛЮЧЕНА\nТАРА
+TID_TOPGUN_JANET_SKIN,G-СИЛА ДЖАНЕТ
+TID_TOPGUN_JANET_SKIN_SHOP,G-СИЛА\nДЖАНЕТ
+TID_SHOP_OFFER_TITLE_40,ОМЕГА БОКС
+TID_PIN_OFFER_TITLE,Пропозиції на емозі
+TID_THUMBNAILS_OFFER_TITLE,Пропозиції на аватарки
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,БРАВЛ ПАСС
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Розблокуйте нагороди Бравл Пассу, додаткові квести та <NUM> повторних квестів на тиждень"
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,ОТРИМАТИ
+TID_BRAWL_PASS_REDEEM,ОТРИМАТИ
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,"Ваш ідентифікатор SupercellID має <NUMBER> x Бравл Пассів. Використовувати один, щоб активувати цей сезон Бравл Пассу?"
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,"Будь ласка, зачекайте. Використовуйте Бравл Пасс зі свого Supercell ID зараз."
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,"У вашому ідентифікаторі SupercellID недостатньо квитків Бравлу, які можна використати. Перейдіть у Магазин суперселл, щоб купити більше."
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,30 Гемів
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,80 Гемів
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,170 Гемів
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,360 Гемів
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,950 Гемів
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,200 Гемів
+TID_SUPERCELL_STORE_BRAWL_PASS,Бравл Пасс
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Пакет Бравл Пасу
+TID_SKIN_INFO_CAMPAIGN_LASTBOX,Омегабокс скін
+TID_IAP_NOT_AVAILABLE_ANDROID,Покупки не доступні!\nВпевніться що ви використровуєте існуючий гугл акаунт і що ваш метод платежу дійсний.

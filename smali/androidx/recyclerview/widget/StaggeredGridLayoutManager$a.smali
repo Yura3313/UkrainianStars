@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+.field public final synthetic f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->g:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+    iput-object p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->g:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+    iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->M0()Z
 

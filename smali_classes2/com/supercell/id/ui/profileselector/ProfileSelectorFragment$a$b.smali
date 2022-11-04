@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;
-.super Lse/i;
+.super Lif/i;
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/b2$a;ILae/a2;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->m(Lzd/w1$a;ILzd/v1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
+        "Lif/i;",
+        "Lhf/p<",
         "Landroid/widget/TextView;",
-        "Ljava/lang/String;",
-        "Landroid/text/SpannableStringBuilder;",
+        "Ljava/lang/CharSequence;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;
+.field public static final f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,75 +58,51 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+    .locals 1
 
     .line 1
     check-cast p1, Landroid/widget/TextView;
 
-    check-cast p2, Ljava/lang/String;
+    check-cast p2, Ljava/lang/CharSequence;
 
-    const-string v0, "view"
+    const-string v0, "textView"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    new-instance v0, Landroid/text/SpannableStringBuilder;
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
-    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
+    move-result p2
 
-    .line 4
-    invoke-virtual {v0, p2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    const/4 v0, 0x0
 
-    move-result-object p2
+    if-lez p2, :cond_0
 
-    const-string v0, "  "
+    const/4 p2, 0x1
 
-    .line 5
-    invoke-virtual {p2, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
-
-    move-result-object p2
-
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 7
-    invoke-static {p1}, Lae/l;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 8
-    new-instance v1, Landroid/text/style/ImageSpan;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, p1, v0, v2}, Landroid/text/style/ImageSpan;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;I)V
-
-    .line 9
-    invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, -0x1
-
-    .line 10
-    invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
-
-    move-result v0
-
-    const/16 v2, 0x21
-
-    .line 11
-    invoke-virtual {p2, v1, p1, v0, v2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+    goto :goto_0
 
     :cond_0
-    return-object p2
+    move p2, v0
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/16 v0, 0x8
+
+    :goto_1
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 4
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

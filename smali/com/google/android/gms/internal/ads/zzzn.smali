@@ -14,7 +14,7 @@
 
 
 # virtual methods
-.method public final W(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public final I(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -25,7 +25,7 @@
     return-void
 .end method
 
-.method public final f6()V
+.method public final l4()V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -36,7 +36,7 @@
     return-void
 .end method
 
-.method public final j0(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public final o0(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .locals 0
 
     return-void

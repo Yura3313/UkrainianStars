@@ -1,36 +1,32 @@
 .class public final Lcom/google/android/play/core/assetpacks/w;
-.super Lcom/google/android/play/core/internal/v;
+.super Ljava/lang/Object;
 
 
 # instance fields
-.field public final g:La5/b;
-
-.field public final h:Landroid/content/Context;
-
-.field public final i:Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;
-
-.field public final j:Lcom/google/android/play/core/assetpacks/y;
+.field public final a:Lcom/google/android/play/core/assetpacks/v;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;Lcom/google/android/play/core/assetpacks/y;)V
-    .locals 2
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/play/core/internal/v;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, La5/b;
+    invoke-static {p1}, Lcom/google/android/play/core/assetpacks/i1;->a(Landroid/content/Context;)Lcom/google/android/play/core/assetpacks/h0;
 
-    const-string v1, "AssetPackExtractionService"
+    move-result-object p1
 
-    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+    .line 1
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/h0;->d:Ly4/l0;
 
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/w;->g:La5/b;
+    invoke-interface {p1}, Ly4/l0;->e()Ljava/lang/Object;
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/w;->h:Landroid/content/Context;
+    move-result-object p1
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/w;->i:Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;
+    check-cast p1, Lcom/google/android/play/core/assetpacks/v;
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/w;->j:Lcom/google/android/play/core/assetpacks/y;
+    .line 2
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/w;->a:Lcom/google/android/play/core/assetpacks/v;
 
     return-void
 .end method

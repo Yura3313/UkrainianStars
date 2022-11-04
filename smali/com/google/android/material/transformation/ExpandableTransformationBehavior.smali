@@ -63,9 +63,9 @@
     iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->b:Landroid/animation/AnimatorSet;
 
     .line 4
-    new-instance p2, Lw4/a;
+    new-instance p2, Lt4/a;
 
-    invoke-direct {p2, p0}, Lw4/a;-><init>(Lcom/google/android/material/transformation/ExpandableTransformationBehavior;)V
+    invoke-direct {p2, p0}, Lt4/a;-><init>(Lcom/google/android/material/transformation/ExpandableTransformationBehavior;)V
 
     invoke-virtual {p1, p2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 

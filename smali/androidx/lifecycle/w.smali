@@ -71,7 +71,7 @@
     :try_start_0
     iget-object v2, p0, Landroidx/lifecycle/w;->a:Ljava/util/HashMap;
 
-    invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -80,7 +80,7 @@
     .line 3
     iget-object v3, p0, Landroidx/lifecycle/w;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     :cond_0

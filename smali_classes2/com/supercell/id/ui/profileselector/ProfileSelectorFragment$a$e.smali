@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/b2$a;ILae/a2;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->m(Lzd/w1$a;ILzd/v1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$e;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$e;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,64 +35,49 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 4
+    .locals 2
 
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
+    iget-object p1, p1, Lzd/q;->m:Lgc/a;
 
     const-string v0, "Saved Credentials"
 
     const-string v1, "click"
 
-    const/4 v2, 0x0
-
-    const/16 v3, 0x18
-
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1}, Lgc/a;->b(Lgc/a;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$e;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$e;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 5
-    iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lzd/p;->f:Landroidx/fragment/app/Fragment;
 
     .line 6
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$e;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     .line 7
-    iget-object v0, v0, Lae/s;->f:Landroidx/fragment/app/Fragment;
+    invoke-static {p1, v0, v1, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v1
 
     .line 8
-    check-cast v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
-
-    sget v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:I
-
-    .line 9
-    invoke-virtual {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h1()Z
-
-    move-result v0
-
-    .line 10
-    invoke-virtual {p1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
-
-    move-result-object v0
-
-    .line 11
-    invoke-virtual {p1, v0, v2}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
     :cond_0
     return-void

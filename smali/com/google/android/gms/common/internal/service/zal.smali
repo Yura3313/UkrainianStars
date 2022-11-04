@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final c2(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final B2(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

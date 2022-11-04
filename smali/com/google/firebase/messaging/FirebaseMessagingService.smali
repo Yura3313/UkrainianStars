@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static final l:Ljava/util/ArrayDeque;
+.field public static final k:Ljava/util/ArrayDeque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue<",
@@ -24,7 +24,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayDeque;-><init>(I)V
 
-    sput-object v0, Lcom/google/firebase/messaging/FirebaseMessagingService;->l:Ljava/util/ArrayDeque;
+    sput-object v0, Lcom/google/firebase/messaging/FirebaseMessagingService;->k:Ljava/util/ArrayDeque;
 
     return-void
 .end method
@@ -43,14 +43,14 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Ly5/p;->b()Ly5/p;
+    invoke-static {}, Lw5/q;->b()Lw5/q;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Ly5/p;->e:Ljava/util/ArrayDeque;
+    iget-object p1, p1, Lw5/q;->e:Ljava/util/ArrayDeque;
 
-    invoke-interface {p1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -122,15 +122,10 @@
     :try_end_0
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
-    :catch_0
-    nop
-
     .line 4
+    :catch_0
     :cond_0
-    :goto_0
-    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
+    invoke-static {p1}, Landroidx/lifecycle/b0;->h(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -153,17 +148,17 @@
     if-eqz v0, :cond_1
 
     .line 7
-    invoke-static {}, Lt5/b;->b()Lt5/b;
+    invoke-static {}, Lr5/b;->b()Lr5/b;
 
     move-result-object v0
 
-    const-class v1, Lu5/a;
+    const-class v1, Ls5/a;
 
-    invoke-virtual {v0, v1}, Lt5/b;->a(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lr5/b;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lu5/a;
+    check-cast v0, Ls5/a;
 
     if-eqz v0, :cond_1
 
@@ -175,7 +170,7 @@
     move-result-object v1
 
     .line 9
-    invoke-interface {v0, v1}, Lu5/a;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Ls5/a;->b(Ljava/lang/Object;)V
 
     .line 10
     new-instance v2, Landroid/os/Bundle;
@@ -187,30 +182,30 @@
     const-string v4, "Firebase"
 
     .line 11
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "medium"
 
     const-string v4, "notification"
 
     .line 12
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "campaign"
 
     .line 13
-    invoke-virtual {v2, v3, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "_cmp"
 
     .line 14
-    invoke-interface {v0, v1, v2}, Lu5/a;->h0(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-interface {v0, v1, v2}, Ls5/a;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
     :cond_1
     const-string v0, "_no"
 
     .line 15
-    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, Landroidx/lifecycle/b0;->i(Ljava/lang/String;Landroid/content/Intent;)V
 
     :cond_2
     const/4 p1, 0x1
@@ -261,7 +256,7 @@
     if-eqz v1, :cond_1
 
     .line 4
-    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
+    invoke-static {p1}, Landroidx/lifecycle/b0;->h(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -270,7 +265,7 @@
     const-string v0, "_nd"
 
     .line 5
-    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, Landroidx/lifecycle/b0;->i(Ljava/lang/String;Landroid/content/Intent;)V
 
     return-void
 
@@ -337,7 +332,7 @@
     const/4 v1, 0x0
 
     .line 11
-    invoke-static {v1}, Lc4/i;->d(Ljava/lang/Object;)Lc4/f;
+    invoke-static {v1}, La4/k;->d(Ljava/lang/Object;)La4/h;
 
     move-result-object v1
 
@@ -352,35 +347,35 @@
     const-string v2, "google.message_id"
 
     .line 13
-    invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
-    invoke-static {p0}, Ly5/d;->b(Landroid/content/Context;)Ly5/d;
+    invoke-static {p0}, Lw5/d;->b(Landroid/content/Context;)Lw5/d;
 
     move-result-object v2
 
     .line 15
-    new-instance v3, Ly5/i;
+    new-instance v3, Lw5/h;
 
     .line 16
     monitor-enter v2
 
     .line 17
     :try_start_0
-    iget v4, v2, Ly5/d;->d:I
+    iget v4, v2, Lw5/d;->d:I
 
     add-int/lit8 v5, v4, 0x1
 
-    iput v5, v2, Ly5/d;->d:I
+    iput v5, v2, Lw5/d;->d:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit v2
 
     .line 18
-    invoke-direct {v3, v4, v1}, Ly5/i;-><init>(ILandroid/os/Bundle;)V
+    invoke-direct {v3, v4, v1}, Lw5/h;-><init>(ILandroid/os/Bundle;)V
 
-    invoke-virtual {v2, v3}, Ly5/d;->a(Ly5/j;)Lc4/f;
+    invoke-virtual {v2, v3}, Lw5/d;->a(Lw5/i;)La4/h;
 
     move-result-object v1
 
@@ -402,9 +397,9 @@
 
     .line 20
     :cond_6
-    sget-object v2, Lcom/google/firebase/messaging/FirebaseMessagingService;->l:Ljava/util/ArrayDeque;
+    sget-object v2, Lcom/google/firebase/messaging/FirebaseMessagingService;->k:Ljava/util/ArrayDeque;
 
-    invoke-interface {v2, v0}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayDeque;->contains(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -435,13 +430,13 @@
     invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_7
-    const/4 v0, 0x1
+    move v0, v5
 
     goto :goto_3
 
     .line 23
     :cond_8
-    invoke-interface {v2}, Ljava/util/Collection;->size()I
+    invoke-virtual {v2}, Ljava/util/ArrayDeque;->size()I
 
     move-result v6
 
@@ -450,17 +445,17 @@
     if-lt v6, v7, :cond_9
 
     .line 24
-    invoke-interface {v2}, Ljava/util/Queue;->remove()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/util/ArrayDeque;->remove()Ljava/lang/Object;
 
     .line 25
     :cond_9
-    invoke-interface {v2, v0}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
 
     :goto_2
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_3
-    if-nez v0, :cond_17
+    if-nez v0, :cond_13
 
     const-string v0, "message_type"
 
@@ -473,42 +468,45 @@
 
     const-string v0, "gcm"
 
-    .line 27
     :cond_a
+    const/4 v2, -0x1
+
+    .line 27
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    move-result v2
+    move-result v6
 
-    const/4 v6, 0x2
+    sparse-switch v6, :sswitch_data_0
 
-    sparse-switch v2, :sswitch_data_0
+    :goto_4
+    move v3, v2
 
-    goto :goto_4
+    goto :goto_5
 
     :sswitch_0
-    const-string v2, "send_event"
+    const-string v3, "send_event"
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_b
+    if-nez v3, :cond_b
 
     goto :goto_4
 
     :cond_b
-    const/4 v3, 0x3
+    move v3, v4
 
     goto :goto_5
 
     :sswitch_1
-    const-string v2, "send_error"
+    const-string v3, "send_error"
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_c
+    if-nez v3, :cond_c
 
     goto :goto_4
 
@@ -518,42 +516,35 @@
     goto :goto_5
 
     :sswitch_2
-    const-string v2, "gcm"
+    const-string v3, "gcm"
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_d
+    if-nez v3, :cond_d
 
     goto :goto_4
 
     :cond_d
-    const/4 v3, 0x1
+    move v3, v5
 
     goto :goto_5
 
     :sswitch_3
-    const-string v2, "deleted_messages"
+    const-string v4, "deleted_messages"
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_e
+    if-nez v4, :cond_e
 
-    :goto_4
-    const/4 v3, -0x1
+    goto :goto_4
 
     :cond_e
     :goto_5
-    if-eqz v3, :cond_16
-
-    if-eq v3, v5, :cond_12
-
-    if-eq v3, v6, :cond_10
-
-    if-eq v3, v4, :cond_f
+    packed-switch v3, :pswitch_data_0
 
     const-string p1, "Received message with unknown type: "
 
@@ -562,13 +553,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_13
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_6
 
-    :cond_f
+    :pswitch_0
     const-string v0, "google.message_id"
 
     .line 29
@@ -580,7 +571,7 @@
 
     goto :goto_6
 
-    :cond_10
+    :pswitch_1
     const-string v0, "google.message_id"
 
     .line 30
@@ -588,7 +579,7 @@
 
     move-result-object v0
 
-    if-nez v0, :cond_11
+    if-nez v0, :cond_f
 
     const-string v0, "message_id"
 
@@ -598,8 +589,8 @@
     move-result-object v0
 
     .line 32
-    :cond_11
-    new-instance v2, Lcom/google/firebase/messaging/SendException;
+    :cond_f
+    new-instance v2, Lz5/b;
 
     const-string v3, "error"
 
@@ -608,7 +599,7 @@
 
     move-result-object p1
 
-    invoke-direct {v2, p1}, Lcom/google/firebase/messaging/SendException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, p1}, Lz5/b;-><init>(Ljava/lang/String;)V
 
     .line 34
     invoke-virtual {p0, v0, v2}, Lcom/google/firebase/messaging/FirebaseMessagingService;->onSendError(Ljava/lang/String;Ljava/lang/Exception;)V
@@ -616,69 +607,69 @@
     goto :goto_6
 
     .line 35
-    :cond_12
-    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
+    :pswitch_2
+    invoke-static {p1}, Landroidx/lifecycle/b0;->h(Landroid/content/Intent;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_13
+    if-eqz v0, :cond_10
 
     const-string v0, "_nr"
 
     .line 36
-    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, Landroidx/lifecycle/b0;->i(Ljava/lang/String;Landroid/content/Intent;)V
 
     .line 37
-    :cond_13
+    :cond_10
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
-    if-nez v0, :cond_14
+    if-nez v0, :cond_11
 
     .line 38
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    :cond_14
+    :cond_11
     const-string v2, "androidx.contentpager.content.wakelockid"
 
     .line 39
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
     .line 40
-    invoke-static {v0}, Lb6/b;->h(Landroid/os/Bundle;)Z
+    invoke-static {v0}, Lz5/c;->h(Landroid/os/Bundle;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_12
 
     .line 41
-    new-instance v2, Lb6/b;
+    new-instance v2, Lz5/c;
 
-    invoke-direct {v2, p0}, Lb6/b;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p0}, Lz5/c;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v2, v0}, Lb6/b;->j(Landroid/os/Bundle;)Z
+    invoke-virtual {v2, v0}, Lz5/c;->j(Landroid/os/Bundle;)Z
 
     move-result v2
 
-    if-nez v2, :cond_17
+    if-nez v2, :cond_13
 
     .line 42
-    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
+    invoke-static {p1}, Landroidx/lifecycle/b0;->h(Landroid/content/Intent;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_12
 
     const-string v2, "_nf"
 
     .line 43
-    invoke-static {v2, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v2, p1}, Landroidx/lifecycle/b0;->i(Ljava/lang/String;Landroid/content/Intent;)V
 
     .line 44
-    :cond_15
+    :cond_12
     new-instance p1, Lcom/google/firebase/messaging/RemoteMessage;
 
     invoke-direct {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage;-><init>(Landroid/os/Bundle;)V
@@ -688,10 +679,10 @@
     goto :goto_6
 
     .line 45
-    :cond_16
+    :pswitch_3
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessagingService;->onDeletedMessages()V
 
-    :cond_17
+    :cond_13
     :goto_6
     const-wide/16 v2, 0x1
 
@@ -699,7 +690,7 @@
     :try_start_1
     sget-object p1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-static {v1, v2, v3, p1}, Lc4/i;->b(Lc4/f;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    invoke-static {v1, v2, v3, p1}, La4/k;->b(La4/h;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
@@ -755,4 +746,12 @@
         0x308f3e91 -> :sswitch_1
         0x3090df23 -> :sswitch_0
     .end sparse-switch
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

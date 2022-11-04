@@ -50,7 +50,7 @@
     iget-object v1, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v2, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
+    sget-object v2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne v1, v2, :cond_2
 
@@ -124,7 +124,7 @@
     .line 1
     iget-object v0, p0, Landroidx/savedstate/b;->b:Landroidx/savedstate/a;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     new-instance v1, Landroid/os/Bundle;

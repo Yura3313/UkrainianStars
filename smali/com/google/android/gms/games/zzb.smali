@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/zzb;
-.super Lv2/o;
+.super Lu2/n;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -15,24 +15,34 @@
 
 
 # instance fields
-.field public final j:Lc3/b;
+.field public final i:Lb3/b;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/data/DataHolder;ILc3/b;)V
+.method public constructor <init>(Lcom/google/android/gms/common/data/DataHolder;ILb3/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lv2/o;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
+    invoke-direct {p0, p1, p2}, Lu2/n;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->j:Lc3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->i:Lb3/b;
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final synthetic d2()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/games/zza;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zza;-><init>(Lcom/google/android/gms/games/CurrentPlayerInfo;)V
+
+    return-object v0
+.end method
+
 .method public final describeContents()I
     .locals 1
 
@@ -44,7 +54,7 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->D2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->K2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -79,20 +89,10 @@
     return v0
 .end method
 
-.method public final synthetic k2()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lcom/google/android/gms/games/zza;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zza;-><init>(Lcom/google/android/gms/games/CurrentPlayerInfo;)V
-
-    return-object v0
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->E2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->L2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -103,18 +103,18 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->j:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->i:Lb3/b;
 
-    iget-object v0, v0, Lc3/b;->K:Ljava/lang/String;
+    iget-object v0, v0, Lb3/b;->K:Ljava/lang/String;
 
     .line 2
-    invoke-virtual {p0, v0}, Lc2/d;->B(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, La2/d;->J(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0, v0}, Lc2/d;->G(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, La2/d;->N(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -124,7 +124,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, La2/d;->p(Ljava/lang/String;)I
 
     move-result v0
 

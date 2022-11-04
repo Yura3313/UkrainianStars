@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static final synthetic h:I
+.field public static final synthetic g:I
 
 
 # instance fields
-.field public g:Landroid/os/ResultReceiver;
+.field public f:Landroid/os/ResultReceiver;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     if-nez p1, :cond_1
 
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->f:Landroid/os/ResultReceiver;
 
     if-eqz p1, :cond_1
 
@@ -84,7 +84,7 @@
 
     check-cast p1, Landroid/os/ResultReceiver;
 
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->f:Landroid/os/ResultReceiver;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -96,7 +96,7 @@
 
     const-string v0, "confirmation_intent"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -126,9 +126,7 @@
     return-void
 
     :catch_0
-    nop
-
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->f:Landroid/os/ResultReceiver;
 
     if-eqz p1, :cond_0
 
@@ -152,7 +150,7 @@
 
     check-cast p1, Landroid/os/ResultReceiver;
 
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->f:Landroid/os/ResultReceiver;
 
     return-void
 .end method
@@ -160,7 +158,7 @@
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
+    iget-object v0, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->f:Landroid/os/ResultReceiver;
 
     const-string v1, "result_receiver"
 

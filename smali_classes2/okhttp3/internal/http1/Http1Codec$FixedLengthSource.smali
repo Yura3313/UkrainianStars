@@ -57,7 +57,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -77,9 +77,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-eqz v4, :cond_1
+    if-eqz v0, :cond_1
 
     const/16 v0, 0x64
 
@@ -129,13 +129,13 @@
     .line 2
     iget-wide v2, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->bytesRemaining:J
 
-    const-wide/16 v4, -0x1
+    cmp-long v4, v2, v0
 
-    cmp-long v6, v2, v0
+    const-wide/16 v5, -0x1
 
-    if-nez v6, :cond_0
+    if-nez v4, :cond_0
 
-    return-wide v4
+    return-wide v5
 
     .line 3
     :cond_0
@@ -147,7 +147,7 @@
 
     move-result-wide p1
 
-    cmp-long p3, p1, v4
+    cmp-long p3, p1, v5
 
     if-eqz p3, :cond_2
 

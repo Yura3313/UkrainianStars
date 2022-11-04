@@ -1,277 +1,140 @@
-.class public final Ly4/c;
-.super Ly4/a;
+.class public final synthetic Ly4/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/IBinder$DeathRecipient;
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:J
-
-.field public final c:J
-
-.field public final d:I
-
-.field public final e:Ljava/lang/String;
+.field public final a:Ly4/k;
 
 
 # direct methods
-.method public constructor <init>(IJJILjava/lang/String;)V
+.method public constructor <init>(Ly4/k;)V
     .locals 0
 
-    invoke-direct {p0}, Ly4/a;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Ly4/c;->a:I
-
-    iput-wide p2, p0, Ly4/c;->b:J
-
-    iput-wide p4, p0, Ly4/c;->c:J
-
-    iput p6, p0, Ly4/c;->d:I
-
-    if-eqz p7, :cond_0
-
-    iput-object p7, p0, Ly4/c;->e:Ljava/lang/String;
+    iput-object p1, p0, Ly4/c;->a:Ly4/k;
 
     return-void
-
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "Null packageName"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final b()J
-    .locals 2
+.method public final binderDied()V
+    .locals 8
 
-    iget-wide v0, p0, Ly4/c;->b:J
+    iget-object v0, p0, Ly4/c;->a:Ly4/k;
 
-    return-wide v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    iget v0, p0, Ly4/c;->d:I
-
-    return v0
-.end method
-
-.method public final d()I
-    .locals 1
-
-    iget v0, p0, Ly4/c;->a:I
-
-    return v0
-.end method
-
-.method public final e()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Ly4/c;->e:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    const/4 v0, 0x1
-
-    if-eq p1, p0, :cond_1
-
-    instance-of v1, p1, Ly4/a;
+    .line 1
+    iget-object v1, v0, Ly4/k;->b:Lx3/g3;
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_0
+    new-array v3, v2, [Ljava/lang/Object;
 
-    check-cast p1, Ly4/a;
+    const/4 v4, 0x4
 
-    iget v1, p0, Ly4/c;->a:I
+    const-string v5, "reportBinderDeath"
 
-    invoke-virtual {p1}, Ly4/a;->d()I
+    .line 2
+    invoke-virtual {v1, v4, v5, v3}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 3
+    iget-object v1, v0, Ly4/k;->h:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ly4/f;
+
+    if-nez v1, :cond_2
+
+    iget-object v1, v0, Ly4/k;->b:Lx3/g3;
+
+    const/4 v3, 0x1
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    iget-object v5, v0, Ly4/k;->c:Ljava/lang/String;
+
+    aput-object v5, v3, v2
+
+    const-string v5, "%s : Binder has died."
+
+    .line 4
+    invoke-virtual {v1, v4, v5, v3}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 5
+    iget-object v1, v0, Ly4/k;->d:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    if-ne v1, v3, :cond_0
+    :goto_0
+    if-ge v2, v3, :cond_1
 
-    iget-wide v3, p0, Ly4/c;->b:J
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ly4/a;->b()J
+    move-result-object v4
 
-    move-result-wide v5
+    check-cast v4, Ly4/b;
 
-    cmp-long v1, v3, v5
+    .line 6
+    iget-object v4, v4, Ly4/b;->f:Lcom/google/android/play/core/tasks/i;
 
-    if-nez v1, :cond_0
+    if-nez v4, :cond_0
 
-    iget-wide v3, p0, Ly4/c;->c:J
+    goto :goto_1
 
-    invoke-virtual {p1}, Ly4/a;->f()J
-
-    move-result-wide v5
-
-    cmp-long v1, v3, v5
-
-    if-nez v1, :cond_0
-
-    iget v1, p0, Ly4/c;->d:I
-
-    invoke-virtual {p1}, Ly4/a;->c()I
-
-    move-result v3
-
-    if-ne v1, v3, :cond_0
-
-    iget-object v1, p0, Ly4/c;->e:Ljava/lang/String;
-
-    invoke-virtual {p1}, Ly4/a;->e()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    return v0
-
+    .line 7
     :cond_0
-    return v2
+    new-instance v5, Landroid/os/RemoteException;
+
+    iget-object v6, v0, Ly4/k;->c:Ljava/lang/String;
+
+    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, " : Binder has died."
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-direct {v5, v6}, Landroid/os/RemoteException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v5}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Exception;)V
+
+    :goto_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
 
     :cond_1
-    return v0
-.end method
+    iget-object v0, v0, Ly4/k;->d:Ljava/util/ArrayList;
 
-.method public final f()J
-    .locals 2
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    iget-wide v0, p0, Ly4/c;->c:J
+    goto :goto_2
 
-    return-wide v0
-.end method
+    :cond_2
+    iget-object v0, v0, Ly4/k;->b:Lx3/g3;
 
-.method public final hashCode()I
-    .locals 9
+    new-array v2, v2, [Ljava/lang/Object;
 
-    iget v0, p0, Ly4/c;->a:I
+    const-string v3, "calling onBinderDied"
 
-    iget-wide v1, p0, Ly4/c;->b:J
+    .line 8
+    invoke-virtual {v0, v4, v3, v2}, Lx3/g3;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    iget-wide v3, p0, Ly4/c;->c:J
+    .line 9
+    invoke-interface {v1}, Ly4/f;->e()V
 
-    const v5, 0xf4243
-
-    xor-int/2addr v0, v5
-
-    mul-int v0, v0, v5
-
-    const/16 v6, 0x20
-
-    ushr-long v7, v1, v6
-
-    xor-long/2addr v1, v7
-
-    long-to-int v2, v1
-
-    xor-int/2addr v0, v2
-
-    mul-int v0, v0, v5
-
-    ushr-long v1, v3, v6
-
-    xor-long/2addr v1, v3
-
-    long-to-int v2, v1
-
-    xor-int/2addr v0, v2
-
-    mul-int v0, v0, v5
-
-    iget v1, p0, Ly4/c;->d:I
-
-    xor-int/2addr v0, v1
-
-    mul-int v0, v0, v5
-
-    iget-object v1, p0, Ly4/c;->e:Ljava/lang/String;
-
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    move-result v1
-
-    xor-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 9
-
-    iget v0, p0, Ly4/c;->a:I
-
-    iget-wide v1, p0, Ly4/c;->b:J
-
-    iget-wide v3, p0, Ly4/c;->c:J
-
-    iget v5, p0, Ly4/c;->d:I
-
-    iget-object v6, p0, Ly4/c;->e:Ljava/lang/String;
-
-    invoke-virtual {v6}, Ljava/lang/String;->length()I
-
-    move-result v7
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    add-int/lit16 v7, v7, 0xa4
-
-    invoke-direct {v8, v7}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v7, "InstallState{installStatus="
-
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v0, ", bytesDownloaded="
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, ", totalBytesToDownload="
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, ", installErrorCode="
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v0, ", packageName="
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "}"
-
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :goto_2
+    return-void
 .end method

@@ -26,7 +26,7 @@
 
 # direct methods
 .method public constructor <init>(J)V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGObject;-><init>()V
@@ -58,9 +58,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v2, :cond_0
 
     const/4 v2, 0x1
 

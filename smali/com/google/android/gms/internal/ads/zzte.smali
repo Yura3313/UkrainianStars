@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final H6(Lcom/google/android/gms/internal/ads/zzta;)Lcom/google/android/gms/internal/ads/zzsv;
+.method public final P5(Lcom/google/android/gms/internal/ads/zzta;)Lcom/google/android/gms/internal/ads/zzsv;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -28,24 +28,24 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->n0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lk3/gw0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p1}, Lj3/gz0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->S0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->L0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object p1
 
     .line 4
     sget-object v0, Lcom/google/android/gms/internal/ads/zzsv;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p1, v0}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v0}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v0
 

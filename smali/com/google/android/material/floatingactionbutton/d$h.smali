@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
+
+.field public g:F
 
 .field public h:F
 
-.field public i:F
-
-.field public final synthetic j:Lcom/google/android/material/floatingactionbutton/d;
+.field public final synthetic i:Lcom/google/android/material/floatingactionbutton/d;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/floatingactionbutton/d;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->j:Lcom/google/android/material/floatingactionbutton/d;
+    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:Lcom/google/android/material/floatingactionbutton/d;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -47,9 +47,9 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->j:Lcom/google/android/material/floatingactionbutton/d;
+    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:Lcom/google/android/material/floatingactionbutton/d;
 
-    iget v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:F
+    iget v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->h:F
 
     float-to-int v0, v0
 
@@ -60,7 +60,7 @@
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->f:Z
 
     return-void
 .end method
@@ -69,14 +69,14 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->f:Z
 
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->j:Lcom/google/android/material/floatingactionbutton/d;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:Lcom/google/android/material/floatingactionbutton/d;
 
-    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/d;->b:Ls4/g;
+    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/d;->b:Lp4/g;
 
     if-nez v0, :cond_0
 
@@ -86,33 +86,33 @@
 
     .line 3
     :cond_0
-    iget-object v0, v0, Ls4/g;->g:Ls4/g$b;
+    iget-object v0, v0, Lp4/g;->f:Lp4/g$b;
 
-    iget v0, v0, Ls4/g$b;->n:F
+    iget v0, v0, Lp4/g$b;->n:F
 
     .line 4
     :goto_0
-    iput v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->h:F
+    iput v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->g:F
 
     .line 5
     invoke-virtual {p0}, Lcom/google/android/material/floatingactionbutton/d$h;->a()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:F
+    iput v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->h:F
 
     const/4 v0, 0x1
 
     .line 6
-    iput-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->g:Z
+    iput-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->f:Z
 
     .line 7
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->j:Lcom/google/android/material/floatingactionbutton/d;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:Lcom/google/android/material/floatingactionbutton/d;
 
-    iget v1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->h:F
+    iget v1, p0, Lcom/google/android/material/floatingactionbutton/d$h;->g:F
 
-    iget v2, p0, Lcom/google/android/material/floatingactionbutton/d$h;->i:F
+    iget v2, p0, Lcom/google/android/material/floatingactionbutton/d$h;->h:F
 
     sub-float/2addr v2, v1
 
@@ -121,7 +121,7 @@
 
     move-result p1
 
-    mul-float p1, p1, v2
+    mul-float/2addr p1, v2
 
     add-float/2addr p1, v1
 

@@ -45,19 +45,19 @@
 
     if-lez v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 3
     :goto_0
-    iput-object p2, p1, Landroidx/drawerlayout/widget/DrawerLayout;->D:Ljava/lang/Object;
+    iput-object p2, p1, Landroidx/drawerlayout/widget/DrawerLayout;->B:Ljava/lang/Object;
 
     .line 4
-    iput-boolean v0, p1, Landroidx/drawerlayout/widget/DrawerLayout;->E:Z
+    iput-boolean v0, p1, Landroidx/drawerlayout/widget/DrawerLayout;->C:Z
 
     if-nez v0, :cond_1
 
@@ -71,7 +71,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     invoke-virtual {p1, v1}, Landroid/view/View;->setWillNotDraw(Z)V

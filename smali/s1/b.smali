@@ -1,14 +1,17 @@
 .class public final Ls1/b;
-.super Lcom/google/android/gms/common/api/a$a;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-auth@@19.0.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/android/gms/common/api/a$a<",
-        "Ln3/c;",
-        "Ls1/a$a;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;",
         ">;"
     }
 .end annotation
@@ -18,37 +21,133 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/a$a;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lcom/google/android/gms/common/api/c$a;Lcom/google/android/gms/common/api/c$b;)Lcom/google/android/gms/common/api/a$f;
-    .locals 7
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    move-object v4, p4
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    check-cast v4, Ls1/a$a;
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move v3, v1
+
+    move v4, v3
+
+    move v5, v4
+
+    move v6, v5
+
+    move v7, v6
 
     .line 2
-    new-instance p4, Ln3/c;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-object v0, p4
+    move-result v1
 
-    move-object v1, p1
+    if-ge v1, v0, :cond_5
 
-    move-object v2, p2
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-object v3, p3
+    move-result v1
 
-    move-object v5, p5
+    const v2, 0xffff
 
-    move-object v6, p6
+    and-int/2addr v2, v1
 
-    invoke-direct/range {v0 .. v6}, Ln3/c;-><init>(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ls1/a$a;Lcom/google/android/gms/common/api/c$a;Lcom/google/android/gms/common/api/c$b;)V
+    const/4 v8, 0x1
 
-    return-object p4
+    if-eq v2, v8, :cond_4
+
+    const/4 v8, 0x2
+
+    if-eq v2, v8, :cond_3
+
+    const/4 v8, 0x3
+
+    if-eq v2, v8, :cond_2
+
+    const/4 v8, 0x4
+
+    if-eq v2, v8, :cond_1
+
+    const/16 v8, 0x3e8
+
+    if-eq v2, v8, :cond_0
+
+    .line 4
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v3
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v7
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v6
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v5
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v4
+
+    goto :goto_0
+
+    .line 10
+    :cond_5
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 11
+    new-instance p1, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    move-object v2, p1
+
+    invoke-direct/range {v2 .. v7}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;-><init>(IZZZI)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    return-object p1
 .end method

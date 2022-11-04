@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;
-.super Lse/i;
+.super Lif/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
+        "Lif/i;",
+        "Lhf/l<",
         "Ljava/util/List<",
         "+",
-        "Lvc/k;",
+        "Ltc/k;",
         ">;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,17 +58,17 @@
     const-string v0, "list"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lze/f;->s(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -91,35 +91,35 @@
     move-result-object v2
 
     .line 6
-    check-cast v2, Lvc/k;
+    check-cast v2, Ltc/k;
 
     .line 7
-    new-instance v11, Lld/c;
+    new-instance v11, Lkd/c;
 
     .line 8
-    iget-object v4, v2, Lvc/k;->a:Ljava/lang/String;
+    iget-object v4, v2, Ltc/k;->a:Ljava/lang/String;
 
     .line 9
-    iget-object v5, v2, Lvc/k;->b:Ljava/lang/String;
+    iget-object v5, v2, Ltc/k;->b:Ljava/lang/String;
 
     .line 10
-    iget-object v6, v2, Lvc/k;->c:Ljava/lang/String;
+    iget-object v6, v2, Ltc/k;->c:Ljava/lang/String;
 
     .line 11
-    iget-object v7, v2, Lvc/k;->d:Ljava/lang/String;
+    iget-object v7, v2, Ltc/k;->d:Ljava/lang/String;
 
     .line 12
-    iget-boolean v8, v2, Lvc/k;->e:Z
+    iget-boolean v8, v2, Ltc/k;->e:Z
 
     .line 13
-    iget-object v9, v2, Lvc/k;->f:Lvc/t;
+    iget-object v9, v2, Ltc/k;->f:Ltc/v;
 
     const/4 v10, 0x0
 
     move-object v3, v11
 
     .line 14
-    invoke-direct/range {v3 .. v10}, Lld/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/t;Z)V
+    invoke-direct/range {v3 .. v10}, Lkd/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLtc/v;Z)V
 
     .line 15
     invoke-virtual {v1, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -128,13 +128,13 @@
 
     .line 16
     :cond_0
-    sget p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->n0:I
+    sget p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->m0:I
 
     .line 17
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->i1(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->h1(Ljava/util/List;)V
 
     .line 18
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

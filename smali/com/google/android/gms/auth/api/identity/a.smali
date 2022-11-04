@@ -32,7 +32,7 @@
     .locals 8
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -40,11 +40,11 @@
 
     const/4 v2, 0x0
 
-    move-object v2, v1
+    move-object v3, v1
 
-    move-object v3, v2
+    move v4, v2
 
-    const/4 v4, 0x0
+    move-object v2, v3
 
     .line 2
     :goto_0
@@ -80,13 +80,13 @@
     if-eq v6, v7, :cond_0
 
     .line 4
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v5}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {p1, v5}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v4
 
@@ -94,7 +94,7 @@
 
     .line 6
     :cond_1
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {p1, v5}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -105,7 +105,7 @@
     sget-object v2, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
-    invoke-static {p1, v5, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v5, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v2
 
@@ -118,7 +118,7 @@
     sget-object v1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 10
-    invoke-static {p1, v5, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v5, v1}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -128,7 +128,7 @@
 
     .line 11
     :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 12
     new-instance p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;

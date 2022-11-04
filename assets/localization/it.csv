@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Ottieni punti energia dalle casse brawl e dalle offerte per sbloccare un nuovo miglioramento.
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Ora l'abilità stellare è disponibile nelle casse brawl.
-TID_HERO_INFO_STAR_POWER_BLOCKED,"Potenzia <HERONAME> con una delle abilità stellari disponibili, che trovi nelle casse brawl dopo aver raggiunto il livello <LEVEL>."
+TID_HERO_INFO_STAR_POWER_BLOCKED,"Potenzia <HERONAME> con un'abilità stellare, disponibile per l'acquisto dopo che il brawler ha raggiunto il LIVELLO <LEVEL>."
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Ora il gadget è disponibile nelle casse brawl.
-TID_HERO_INFO_ACCESSORIES_BLOCKED,"Potenzia <HERONAME> con uno dei gadget disponibili, che trovi nelle casse brawl dopo aver raggiunto il livello <LEVEL>."
+TID_HERO_INFO_ACCESSORIES_BLOCKED,"Potenzia <HERONAME> con un gadget unico, disponibile per l'acquisto dopo che il brawler ha raggiunto il LIVELLO <LEVEL>."
 TID_HERO_INFO_STAR_POWER_LABEL,ABILITÀ STELLARE: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,GADGET: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Le probabilità di ottenere un brawler CROMATICO aumentano con ogni nuova stagione del Brawl Pass. Inizialmente, la sua rarità sarà LEGGENDARIA, per poi diventare MITICA e infine EPICA.\n\nIn questa stagione, le probabilità di sbloccare <BRAWLER> sono le stesse di un brawler <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Le probabilità di ottenere un brawler CROMATICO aumentano con ogni nuova stagione del Brawl Pass. Inizialmente, la sua rarità sarà LEGGENDARIA, per poi diventare MITICA e infine EPICA.\n\nDevi raggiungere la soglia <TIER> della stagione <SEASON> per trovare <BRAWLER> nelle casse brawl."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Le probabilità di ottenere un brawler CROMATICO aumentano con ogni nuova stagione del Brawl Pass. Inizialmente, la sua rarità sarà LEGGENDARIA, per poi diventare MITICA e infine EPICA.\n\n<BRAWLER> arriverà nella stagione <SEASON>."
+TID_HERO_INFO_BUY_ITEM,COMPRA
+TID_HERO_INFO_BUY_ITEM_FREE,GRATUITO
+TID_HERO_INFO_BUY_MISSING1,MONETE MANCANTI: <MISSINGCOINS>
+TID_HERO_INFO_BUY_MISSING2,Vuoi comprare le monete mancanti ora?
+TID_HERO_INFO_BUY_MISSING_GEMS1,MONETE MANCANTI: <MISSINGCOINS>
+TID_HERO_INFO_BUY_MISSING_GEMS2,Hai bisogno di <MISSINGGEMS> gemma/e in più per comprare le monete mancanti.
+TID_HERO_INFO_SEE_OFFERS,OTTIENI GEMME
+TID_HERO_INFO_UNLOCK_GADGETS,SBLOCCA I GADGET
+TID_HERO_INFO_UNLOCK_STARPOWERS,SBLOCCA LE ABILITÀ STELLARI
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,CONFERMA DELL'ACQUISTO
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,CONFERMA DELL'ACQUISTO
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,CONFERMA DELL'ACQUISTO
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,OTTIENI ALTRE GEMME
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,Hai bisogno di <cC5F724><REQUIREDGEMS> gemma/e in più </c> per acquistare le monete mancanti.
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,TUTTI I PACCHETTI DI GEMME
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,CONSIGLIATO
 TID_MATCHMAKE_FAILED_5,Matchmaking impossibile. L'evento è scaduto.
 TID_MATCHMAKE_FAILED_7,Matchmaking impossibile. Il membro della squadra si è disconnesso.
 TID_MATCHMAKE_FAILED_9,Matchmaking impossibile. Sta per iniziare la manutenzione.
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,NESSUNA DESCRIZIONE DEL CLUB
 TID_EVENT_POPUP_TITLE,COMBATTIAMO!
 TID_GOLDRUSH_8,Piane di zaffiro
 TID_USE_AUTOFIRE_TUTORIAL,TOCCA la <ccc0033>levetta rossa</c> per attaccare il nemico più vicino!
-TID_BRAWL_BOX_INFO_1,"In termini di contenuti, aprire una cassa enorme equivale ad aprire tre casse brawl, con la differenza che i punti energia sono distribuiti a un numero inferiore di brawler. Gli eventuali gettoni equipaggiamento possono essere di un solo tipo per cassa enorme.\n\nCi sono tre estrazioni e ogni contenuto appare con le seguenti probabilità:"
-TID_BRAWL_BOX_INFO_2,"Le casse brawl contengono uno dei seguenti articoli: un nuovo brawler, un gadget, un'abilità stellare, punti energia e monete o gettoni equipaggiamento e frammenti. In più puoi anche trovare dei raddoppiagettoni come bonus.\n\nOgni contenuto appare con le seguenti probabilità:"
-TID_BRAWL_BOX_INFO_3,"In termini di contenuti, aprire una megacassa equivale ad aprire 10 casse brawl, con la differenza che i punti energia sono distribuiti a un numero inferiore di brawler. Gli eventuali gettoni equipaggiamento possono essere di un solo tipo per megacassa.\n\nCi sono 10 estrazioni e ogni contenuto appare con le seguenti probabilità:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<NUM1>% per <CATEGORY1>\n<NUM2>% per i brawler rari <GAR_HERO_1>\n<NUM3>% per i brawler super rari <GAR_HERO_2>\n<NUM4>% per i brawler epici <GAR_HERO_3>\n<NUM5>% per i brawler mitici <GAR_HERO_4>\n<NUM6>% per i brawler leggendari <GAR_HERO_5>\n<NUM7>% per le abilità stellari <GAR_STAR_POWER>\n<NUM8>% per i gadget <GAR_ACCESSORY>\n<NUM9>% per i gettoni equipaggiamento
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nIn più, hai il <TOKEN_DOUBLER>% di possibilità di ottenere un raddoppiagettoni. I gadget sono disponibili solo per i brawler di livello 7 o superiore, le abilità stellari lo sono per i brawler di livello 9 o superiore, mentre i gettoni equipaggiamento e i frammenti per quelli che hanno raggiunto il livello 10. Dopo aver sbloccato <WCPP_BRAWLERS> brawler, avrai il <WCPP_CHANCE>% di possibilità che i punti energia siano assegnati a un personaggio qualsiasi. Quando hai sbloccato tutti i premi di un certo tipo (per esempio, tutti i brawler rari), le probabilità di ottenere gli altri premi aumentano. Inoltre, al fine di garantire un'esperienza più equilibrata, il gioco usa un sistema basato sulla fortuna che gestisce le probabilità di ricevere i brawler leggendari. Funziona così: ogni volta che non trovi un nuovo brawler, la fortuna aumenta, mentre se ne trovi uno, la fortuna diminuisce a seconda della rarità del personaggio ottenuto. Ciò significa che con valori di fortuna elevati, hai più possibilità di ricevere un brawler leggendario (fino a un massimo dello <MAX_LEGENDARY>%), mentre con valori bassi, le probabilità sono minori. Le prime estrazioni sono prestabilite così da garantire una partenza più equilibrata per tutti i giocatori."
+TID_BRAWL_BOX_INFO_1,"In termini di contenuti, aprire una cassa enorme equivale ad aprire tre casse brawl, con la differenza che i punti energia sono distribuiti a un numero inferiore di brawler.\n\nCi sono tre estrazioni e ogni contenuto appare con le seguenti probabilità:"
+TID_BRAWL_BOX_INFO_2,"Le casse brawl contengono uno dei seguenti articoli: un nuovo brawler, un gadget, un'abilità stellare, punti energia e monete. In più puoi anche trovare dei raddoppiagettoni come bonus.\n\nOgni contenuto appare con le seguenti probabilità:"
+TID_BRAWL_BOX_INFO_3,"In termini di contenuti, aprire una megacassa equivale ad aprire dieci casse brawl, con la differenza che i punti energia sono distribuiti a un numero inferiore di brawler.\n\nCi sono dieci estrazioni e ogni contenuto appare con le seguenti probabilità:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<NUM1>% per <CATEGORY1>\n<NUM2>% per i brawler rari <GAR_HERO_1>\n<NUM3>% per i brawler super rari <GAR_HERO_2>\n<NUM4>% per i brawler epici <GAR_HERO_3>\n<NUM5>% per i brawler mitici <GAR_HERO_4>\n<NUM6>% per i brawler leggendari <GAR_HERO_5>\n<NUM7>% per le abilità stellari <GAR_STAR_POWER>\n<NUM8>% per i gadget <GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nIn più, hai il <TOKEN_DOUBLER>% di possibilità di ottenere un raddoppiagettoni. I gadget sono disponibili solo per i brawler di livello 7 o superiore, le abilità stellari lo sono per i brawler di livello 9 o superiore. Dopo aver sbloccato <WCPP_BRAWLERS> brawler, avrai il <WCPP_CHANCE>% di possibilità che i punti energia siano assegnati a un personaggio qualsiasi. Quando hai sbloccato tutti i premi di un certo tipo (per esempio, tutti i brawler rari), le probabilità di ottenere gli altri premi aumentano. Inoltre, al fine di garantire un'esperienza più equilibrata, il gioco usa un sistema basato sulla fortuna che gestisce le probabilità di ricevere i brawler leggendari. Funziona così: ogni volta che non trovi un nuovo brawler, la fortuna aumenta, mentre se ne trovi uno, la fortuna diminuisce a seconda della rarità del personaggio ottenuto. Ciò significa che con valori di fortuna elevati, hai più possibilità di ricevere un brawler leggendario (fino a un massimo dello <MAX_LEGENDARY>%), mentre con valori bassi, le probabilità sono minori. Le prime estrazioni sono prestabilite, così da garantire una partenza più equilibrata per tutti i giocatori."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,punti energia e monete
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,"punti energia, monete e frammenti"
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,monete e frammenti
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Quando Brock ha a disposizione la super e non la usa,
 TID_SPEC_ABI_PET,CANARINO CANAGLIA
 TID_SPEC_ABI_PET_DESC,L'amico pennuto di Dynamike si unisce alla battaglia!
 TID_SPEC_ABI_DAMAGE_ULTI,CEFFONE MAGICO
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Quando la super di Eugenio è carica, gli attacchi causano <c00cc00><VALUE1></c> punti danno in più."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,"8-BIT si muove a fatica, forse perché è letteralmente un cabinato in movimento, ma spara temibili raggi laser e la super permette a lui e agli alleati di aumentare i danni causati!"
 TID_ARCADE_SHORT_DESC,ASSALITORE
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Gran splash
 TID_KO_JUNE21_2,Le profondità
 TID_QUALIFIED_INFO_PARAM,"Congratulazioni, hai completato l'evento \q<CHALLENGE>\q! Ricevi in premio: <REWARD>!"
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Premio per la <WIN>ª vittoria nell'evento \q<CHALLENGE>\q: <REWARD>.
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"Congratulazioni, hai completato l'evento \q<CHALLENGE>\q e hai vinto questo premio: <REWARD>!\nLa ricompensa sostituisce quella precedente che avevi già."
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Per aver vinto <WIN> volte nell'evento \q<CHALLENGE>\q hai ricevuto in premio: <REWARD>!\nLa ricompensa sostituisce quella precedente che avevi già.
 TID_CHALLENGE_TEASER_INFO_PARAM,L'evento \q<CHALLENGE>\q sta arrivando!\n\nVinci <WIN> scontri per ottenere: <REWARD>! Fai squadra con gli amici o \qCERCA UNA SQUADRA\q per avere più possibilità di vittoria.\n\nLa sfida sarà attiva soltanto per <DURATION> ore. Buona fortuna e buon divertimento!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Supera la sfida per ricevere: <REWARD>!
 TID_GEN_JUNE21_1,Piscinetta
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Sblocca le sfide ottenendo <NUM> trofei!
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Verrà utilizzata solo la skin che selezioni.
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,La skin verrà scelta casualmente tra quelle selezionate.
 TID_GEAR_TOKEN_DROP_TITLE,GETTONI EQUIP.
-TID_GEAR_TOKEN_DAMAGE,Gettoni dei danni
-TID_GEAR_TOKEN_HEAL,Gettoni della salute
-TID_GEAR_TOKEN_RESISTANCE,Gettoni della resistenza
-TID_GEAR_TOKEN_SHIELD,Gettoni della difesa
-TID_GEAR_TOKEN_SPEED,Gettoni della velocità
-TID_GEAR_TOKEN_TYPE_DAMAGE,DANNI
-TID_GEAR_TOKEN_TYPE_HEAL,SALUTE
-TID_GEAR_TOKEN_TYPE_VISION,SUPERVISTA
-TID_GEAR_TOKEN_TYPE_SHIELD,DIFESA
-TID_GEAR_TOKEN_TYPE_SPEED,VELOCITÀ
-TID_GEAR_TOKEN,Gettone equip.
 TID_GEAR_SCRAP_DROP_TITLE,FRAMMENTI
 TID_GEAR_SCRAP,Frammenti
 TID_GEAR_UNLOCK_SLOT,SBLOCCA LO SLOT EQUIPAGG. N. <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,SALUTE
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,DANNI
 TID_GEAR_VISION_TITLE,SUPERVISTA
 TID_GEAR_SHIELD_TITLE,DIFESA
+TID_GEAR_RELOAD_SPEED_TITLE,VELOCITÀ DI RICARICA
+TID_GEAR_SUPER_CHARGE_TITLE,SUPERCARICA
 TID_GEAR_FOREST_SPEED_INFO,Migliora del <NUM>% la VELOCITÀ del brawler tra i cespugli.
 TID_GEAR_STANDING_HEAL_INFO,La RIGENERAZIONE DELLA SALUTE è più efficace del <NUM>%.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Fa causare al brawler il <NUM>% di DANNI IN PIÙ quando la sua salute è sotto il 50%.
 TID_GEAR_VISION_INFO,RENDE VISIBILI i nemici per <NUM> secondi dopo averli colpiti.
 TID_GEAR_SHIELD_INFO,"Dà al brawler uno SCUDO danneggiabile da <NUM> PUNTI SALUTE che si rigenera in 10 secondi, quando il brawler ha la salute piena."
+TID_GEAR_RELOAD_SPEED_INFO,RICARICA i colpi più in fretta del <NUM>%.
+TID_GEAR_SUPER_CHARGE_INFO,La super SI CARICA più in fretta del <NUM>%.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,La VELOCITÀ di movimento aumenta nei cespugli.
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,La RIGENERAZIONE DELLA SALUTE è più efficace.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Il brawler infligge più DANNI quando la salute è sotto il 50%.
 TID_GEAR_VISION_UPGRADE_INFO,RENDE VISIBILI i nemici dopo averli colpiti.
 TID_GEAR_SHIELD_UPGRADE_INFO,Applica uno SCUDO che aumenta la SALUTE.
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,I colpi vengono ricaricati più velocemente.
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,La super si carica più velocemente.
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,VELOCITÀ POTENZIATA
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,BONUS RIGENERAZIONE
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,DANNI EXTRA
 TID_GEAR_VISION_UPGRADE_TARGET,DURATA VISIBILITÀ (IN SEC)
 TID_GEAR_SHIELD_UPGRADE_TARGET,SALUTE DELLO SCUDO
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,VELOCITÀ DI RICARICA
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,VELOCITÀ DI CARICAMENTO DELLA SUPER
+TID_GEAR_SUPER_HEALTH_TITLE,SALUTE DELLA TESTA
+TID_GEAR_SUPER_HEALTH_INFO,La salute della testa AUMENTA di <NUM> punti.
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,La testa riceve più salute.
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,SALUTE DELLA TESTA
+TID_GEAR_SUPER_RANGE_TITLE,PORTATA DELLA MANO
+TID_GEAR_SUPER_RANGE_INFO,La portata della mano aumenta di una casella.
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,La mano arriva più lontano.
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,PORTATA DELLA MANO
 TID_GEAR_UPGRADED,EQUIP. MIGLIORATO
 TID_GEAR_TITLE,EQUIPAGGIAMENTO
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> di liv. <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM><c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>%<c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Equip.: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,SLOT <SLOT> EQUIP.
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Questo equipaggiamento è già presente in un altro slot.
 TID_ITEMS_TITLE,OGGETTI
 TID_TEAMUP_YOUR_SETTINGS_TITLE,IMPOSTAZIONI PERSONALI
 TID_TRUE_SILVER_BROCK_SKIN,BROCK ARGENTEO
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>SCONTRO TRA POTENZE</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,SCONTRO TRA POTENZE
 TID_CLUB_INFO_COLUMN_TROPHIES,TROFEI
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,PIAZZAM. NELLA LEGA DELLE STELLE
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,ULTIMO ACCESSO
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,STATO
 TID_CLUB_INFO_COLUMN_NAME,NOME
 TID_CLUB_INFO_COLUMN_TICKETS_USED,BIGLIETTI USATI
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,TROFEI DEL CLUB
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,SCONFITTA
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,In squadra con giocat. casuali
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,In squadra con soci del club
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,TROFEI DEL CLUB IN PREMIO
-TID_REWARD_DESC_GEAR_TOKENS,GETTONI EQUIP.
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,GETTONE EQUIP.
-TID_REWARD_DESC_GEAR_SCRAP,FRAMMENTI PER EQUIPAGG.
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Ciao! Purtroppo è troppo tardi per partecipare a questa settimana. Puoi comunque osservare gli scontri del club da spettatore prima dell'inizio della prossima settimana!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Scopri cosa ti offre il negozio del club!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Risultati finali:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,IMPATTO EXTRA
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,"Le scie esplosive causate dall'attacco base di Grom infliggono fino al <c00cc00><VALUE1>%</c> di danni in più, in base alla distanza dal punto d'impatto."
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,TORRETTA D'OSSERVAZIONE
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,"Attivando il gadget, Grom estrae dalla Gromba una torretta che perde lentamente salute col tempo e che permette agli alleati di vedere tra i cespugli in un ampio raggio d'azione."
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Realizza il tuo primo equipaggiamento
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,"Ottieni più gettoni e frammenti per gli equipaggiamenti dalle casse brawl o dal negozio del club, per realizzare e migliorare gli equipaggiamenti."
-TID_FIRST_GEAR_TUTORIAL_TITLE,SLOT EQUIPAGGIAMENTO
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Slot equipaggiamento sbloccato!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Scegli il tuo primo equipaggiamento GRATIS!
+TID_ITEMS_HUB_GUIDE_GADGET,Qui puoi scegliere e acquistare gadget unici per <BRAWLER>.
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Ora i gadget sono disponibili da qui.
+TID_ITEMS_HUB_GUIDE_STARPOWER,Qui puoi scegliere e acquistare abilità stellari uniche per <BRAWLER>.
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Ora le abilità stellari sono disponibili qui.
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Ora i gadget sono disponibili qui.
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Ora le abilità stellari sono disponibili qui.
+TID_FIRST_GEAR_TUTORIAL_TITLE,EQUIPAGGIAMENTI
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,sbloccati!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Equipaggiamenti
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Dona ai tuoi brawler delle abilità extra di tua scelta.
@@ -6609,7 +6636,7 @@ TID_WEAPON_THROWER,SAM
 TID_WEAPON_THROWER_SHORT_DESC,ASSALITORE
 TID_WEAPON_THROWER_DESC,"Sam Bronson è un ex operaio che ha giurato vendetta contro TUTTI i robot. Nella banda di Bracciodoro, è quello che ti mena prima di fare domande ed è sempre pronto a rubare del bottino, soprattutto se c'è da fare a pezzi qualche testa di latta."
 TID_WEAPON_THROWER_WEAPON,UNO-DUE
-TID_WEAPON_THROWER_WEAPON_DESC,"Sam sferra due pugni potenti, che acquistano ancora più potenza quando indossa i suoi guanti metallici."
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam sferra due pugni potenti, che acquistano ancora più forza quando indossa i suoi guanti metallici."
 TID_WEAPON_THROWER_ULTI,ZANNE METALLICHE
 TID_WEAPON_THROWER_ULTI_DESC,"Sam lancia le sue Zanne metalliche, che rimangono al suolo dopo aver danneggiato tutti i nemici nella loro traiettoria. Quando usa la super nuovamente, le Zanne gli ritornano in mano e colpiscono gli avversari che si trovano in mezzo."
 TID_SPEC_ABI_WEAPON_THROWER_1,RECUPERO ISTANTANEO
@@ -6625,13 +6652,13 @@ TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Le Zanne metalliche sono troppo lontane!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Devi indossare le Zanne metalliche!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,SUPPORTO
-TID_SOUL_COLLECTOR_DESC,"Gus adora i palloncini e vaga nei pressi di alcune montagne russe ormai abbandonate da molto tempo. Per passare il tempo, usa i suoi palloncini per creare degli animali e tenersi compagnia."
+TID_SOUL_COLLECTOR_DESC,Gus è un amante dei palloncini e vive da tempo in una giostra abbandonata. La leggenda dice che è apparso in quel luogo dopo aver seguito un palloncino a forma di cane ed essersi perso.
 TID_SOUL_COLLECTOR_WEAPON,PALLONCINO STREGATO
 TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus lancia un palloncino stregato ai nemici. Se l'attacco va a segno per diverse volte, apparirà uno spirito, che Gus o un alleato possono raccogliere per ripristinare la loro salute."
 TID_SOUL_COLLECTOR_ULTI,BABAU
 TID_SOUL_COLLECTOR_ULTI_DESC,"Gus usa Babau, un palloncino a forma di animale di sua creazione e suo migliore amico, per generare uno scudo attorno a sé o a uno dei suoi alleati."
 TID_SPEC_ABI_SOUL_COLLECTOR_1,MANNA SPIRITICA
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,La salute ripristinata dagli spiriti dei palloncini stregati aumenta del <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,La salute recuperata con gli spiriti aumenta del <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,SPIRITO GUIDA
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,"Per <c00cc00><VALUE2></c> secondi, Babau aumenta del <c00cc00><VALUE1>%</c> i danni causati dall'alleato che protegge."
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,DETONATORE SPIRITICO
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-BIT si sta arrestando!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Pacc. reazioni della Calamity Gang
 TID_SHOP_OUTLAW_SKINS,Skin della Calamity Gang
 TID_SHOP_OUTLAW_TITLE,CALAMITY GANG
+TID_GEAR_RARITY_RARE,Raro
+TID_GEAR_RARITY_SUPER_RARE,Super raro
+TID_GEAR_RARITY_EPIC,Epico
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> (equipaggiamento raro)
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> (equipaggiamento super raro)
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> (equipaggiamento epico)
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Gli spiriti sono troppo lontani!
+TID_TRY_BRAWLER_TITLE,Prova il brawler!
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,SCONTRO
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,CAMPO DI PROVA
+TID_FIRST_GADGET_TUTORIAL_HEADER,GADGET
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Un'abilità aggiuntiva per il brawler.
+TID_FIRST_GADGET_TUTORIAL_1_DESC,I brawler sbloccano lo slot dei gadget al livello 7.
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Ognuno di loro ha dei gadget unici.
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Usa il gadget equipaggiato fino a tre volte in un combattimento.
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,ABILITÀ STELLARI
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Abilità passive e uniche per il brawler.
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,I brawler sbloccano lo slot delle abilità stellari al livello 9.
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Ognuno di loro ha delle abilità stellari uniche.
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,L'abilità stellare equipaggiata sarà sempre attiva.
+TID_FIRST_GEAR_TUTORIAL_1_DESC,I brawler sbloccheranno il primo slot degli equipaggiamenti al livello 10.
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Ogni brawler ha a disposizione equipaggiamenti diversi.
+TID_FIRST_GEAR_TUTORIAL_3_DESC,L'equipaggiamento che porti in battaglia sarà sempre attivo.
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Selezione dello scontro per la prova...
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,TANK
+TID_SHIELD_TANK_DESC,Buster è l'addetto al proiettore del cinema ed è così patito dei film d'azione che ha imparato a memoria tutti quelli che gli piacciono. Il suo sogno è quello di diventare un giorno il protagonista di un film di successo.
+TID_SHIELD_TANK_WEAPON,FLARE
+TID_SHIELD_TANK_WEAPON_DESC,"Usando il proiettore, Buster investe i nemici a portata con dei fasci di luce e li danneggia."
+TID_SHIELD_TANK_ULTI,MONTAGGIO
+TID_SHIELD_TANK_ULTI_DESC,Buster proietta uno scudo davanti a sé che blocca tutti i proiettili nemici e li rispedisce al mittente sotto forma di sfere energetiche.
+TID_SPEC_ABI_SHIELD_TANK_1,FOCALIZZATORE
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Flare causa il <c00cc00><VALUE1>%</c> di danni in più per ogni alleato che si trova nell'area di caricamento della super di Buster.
+TID_SPEC_ABI_SHIELD_TANK_2,GIUBBOTTO ANTIPROIETTILE
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Mentre Montaggio è attivo, Buster riceve il <c00cc00><VALUE1>%</c> di danni in meno ed è immune a respinte, rallentamenti e stordimenti."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,CINTURA PORTA ATTREZZI
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Buster cura tutti i personaggi alleati vicini di <c00cc00><VALUE1></c> punti salute per ogni alleato che si trova nell'area di caricamento della sua super.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRAILER
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Il Flare successivo all'attivazione del gadget trascina i nemici colpiti vicino a Buster e li rallenta per <c00cc00><VALUE1></c> secondi.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> GETTONI EQUIPAGGIAMENTO\n<SCRAP> FRAMMENTI
+TID_GEAR_COMPENSATION_CLAIM,RITIRA
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Personalizza il brawler con una nuova abilità passiva.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,OK
+TID_INBOX_CAPTION_52,Donazione dell'equipaggiamento \q<TYPE>\q per <NAME>
+TID_GEAR_COMPENSATION_INFO,"Ecco qui <COINS> monete per i tuoi equipaggiamenti, gettoni equipaggiamento e frammenti."
+TID_INBOX_CAPTION_GEAR_COMPENSATION,"Gli equipaggiamenti sono stati ripristinati, perciò hai ricevuto <COINS> monete come risarcimento."
+TID_RECRUIT_TOKEN,Gettone reclutamento
+TID_CHROMATIC_TOKEN,Gettone cromatico
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,ABILITÀ STELLARI
+TID_FIRST_GADGET_TUTORIAL_TITLE,GADGET
+TID_GEAR_TO_COINS_POPUP_TITLE,EQUIPAGGIAMENTI RIVOLUZIONATI
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Nuovo equipaggiamento disponibile!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Controlla i brawler per scoprire le nuove opzioni sugli equipaggiamenti.
+TID_GEAR_TO_COINS_POPUP_INFO,"Tutti i tuoi equipaggiamenti esistenti sono stati ripristinati. Ora, questi oggetti non si creano più con i materiali appositi, né hanno diversi livelli, ma sono suddivisi in tre rarità (rari, super rari o epici).\n\nPer via di questo cambio, ogni gettone equipaggiamento e frammento che hai ottenuto finora ti sarà rimborsato con delle monete. SPENDILE PER ACQUISTARE FIN DA SUBITO I TUOI NUOVI EQUIPAGGIAMENTI!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,RIMBORSO:
+TID_REPORT_PLAYER_REPORT,SEGNALA
+TID_REPORT_PLAYER_REPORTED,SEGNALAZIONE FATTA
+TID_REPORT_PLAYER_POPUP_TITLE,VUOI SEGNALARE <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Stai per segnalare <PLAYER_NAME> per \qgriefing\q.\n\nCon questo termine, s'intende un comportamento antisportivo per cui un giocatore intralcia la sua squadra e influenza l'esito dello scontro evitando di completare l'obiettivo deliberatamente.\n\nAltri esempi di griefing includono:\nIL FEEDING, LE PARTITE TRUCCATE e L'INATTIVITÀ."
+TID_REPORT_PLAYER_BUTTON_REPORT,SEGNALA
+TID_REPORT_PLAYER_BUTTON_CANCEL,ANNULLA
+TID_QUEST_FALLBACK_REWARD_DESC,"Poiché hai già la ricompensa di questa missione, riceverai in cambio: <REWARD>."
+TID_QUEST_FALLBACK_REWARD_TITLE,RICOMPENSA MISSIONE
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,RITIRA
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,CAMMINO DEL RECLUTAMENTO
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,NEGOZIO CROMATICO
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Sblocca altri <NUM> brawler cromatici.
+TID_BUTTON_NAVI_RECRUIT_ROAD,Cammino del reclutamento
+TID_SKIN_INFO_GHOST_TRAIN,Skin de La stazione infestata
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Si è verificato un errore durante la verifica dell'acquisto.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Questo brawler ricarica la super stando vicino ai brawler alleati.
+TID_SKIN_INFO_ACTION,Skin degli eroi d'azione
+TID_SKIN_INFO_WF_2022,Skin delle Finali mondiali del 2022
+TID_BRAWL_PASS_SEASON_14,LA STAZIONE INFESTATA
+TID_CHAINSAW_BUSTER_SKIN,BUSTER MOTOSEGA
+TID_CHAINSAW_BUSTER_SKIN_SHOP,BUSTER\nMOTOSEGA
+TID_GHOST_TRAIN_GROM_SKIN,GROMENSTEIN
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,GROMENSTEIN
+TID_GHOST_TRAIN_COLETTE_SKIN,COLETTE CONTROLLORE
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,COLETTE\nCONTROLLORE
+TID_BRICK_OVEN_ASH_SKIN,ASH PIZZAIOLO
+TID_BRICK_OVEN_ASH_SKIN_SHOP,ASH\nPIZZAIOLO
+TID_VETERAN_SQUEAK_SKIN,SQUEAK GUERRIGLIERO
+TID_VETERAN_SQUEAK_SKIN_SHOP,SQUEAK\nGUERRIGLIERO
+TID_ZOMBIE_BROCK_SKIN,ZOMBROCK
+TID_ZOMBIE_BROCK_SKIN_SHOP,ZOMBROCK
+TID_MEGA_MEGABOX_DARRYL_SKIN,BARRYL CASSA OMEGA
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,BARRYL\nCASSA OMEGA
+TID_GHOST_METRO_PENNY_SKIN,PENNY SIGNORA DEI PROCIONI
+TID_GHOST_METRO_PENNY_SKIN_SHOP,PENNY\nSIGNORA DEI PROCIONI
+TID_BSWF22_TARA_SKIN,TARA GAMER ROSICONA
+TID_BSWF22_TARA_SKIN_SHOP,TARA\nGAMER ROSICONA
+TID_TOPGUN_JANET_SKIN,JANET FORZA G
+TID_TOPGUN_JANET_SKIN_SHOP,JANET\nFORZA G
+TID_SHOP_OFFER_TITLE_40,CASSA OMEGA
+TID_PIN_OFFER_TITLE,Offerte sulle reazioni
+TID_THUMBNAILS_OFFER_TITLE,Offerte sulle icone
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Sblocca i premi del Brawl Pass, delle missioni aggiuntive e la possibilità di cambiare <NUM> missioni a settimana."
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,RISCATTA
+TID_BRAWL_PASS_REDEEM,RISCATTA
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Hai a disposizione <NUMBER> Brawl Pass nel tuo Supercell ID. Vuoi usarne uno per attivare quello di questa stagione?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,"Attendi, stiamo riscattando il Brawl Pass dal tuo Supercell ID."
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Il tuo Supercell ID non ha Brawl Pass a sufficienza da riscattare. Acquistane di più dal Supercell Store.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Manciata di gemme
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Sacchetto di gemme
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Borsa di gemme
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Secchio di gemme
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Cassa di gemme
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Montagna di gemme
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Bundle del Brawl Pass
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

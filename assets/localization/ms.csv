@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Kumpul Mata Kuasa dari Kotak Brawl dan tawaran kedai untuk buka naik taraf seterusnya.
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Kuasa Bintang kini boleh ditemui di dalam Kotak Brawl
-TID_HERO_INFO_STAR_POWER_BLOCKED,Menguatkan <HERONAME> dengan Kuasa Bintang boleh dipilih! Tersedia dalam Kotak Brawl selepas mencapai KUASA <LEVEL>.
+TID_HERO_INFO_STAR_POWER_BLOCKED,Menguatkan <HERONAME> dengan kuasa bintang khas! Boleh dibeli selepas mencapai KUASA <LEVEL>.
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Alat kini boleh ditemui di dalam Kotak Brawl
-TID_HERO_INFO_ACCESSORIES_BLOCKED,Menguatkan <HERONAME> dengan alat khas! Tersedia dalam Kotak Brawl selepas mencapai KUASA <LEVEL>.
+TID_HERO_INFO_ACCESSORIES_BLOCKED,Menguatkan <HERONAME> dengan alat khas! Boleh dibeli selepas mencapai KUASA <LEVEL>.
 TID_HERO_INFO_STAR_POWER_LABEL,KUASA BINTANG: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,ALAT: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Peluang untuk mendapat Brawler KROMATIK meningkat dengan setiap Musim Brawl Pass. Peluang bermula dari LEGENDA, kemudian meningkat ke MITOS dan akhirnya EPIK.\n\nMusim ini, peluang untuk membuka <BRAWLER> ialah <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Peluang untuk mendapat Brawler KROMATIK meningkat setiap Musim Brawl Pass. Peluang bermula daripada LEGENDA, kemudian meningkat kepada MITOS dan akhirnya EPIK.\n\nAnda mesti mencapai Peringkat <TIER> di Musim <SEASON> untuk <BRAWLER> tersedia di dalam kotak."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Peluang untuk mendapat Brawler KROMATIK meningkat dengan setiap Musim Brawl Pass. Peluang bermula dari LEGENDA, kemudian meningkat ke MITOS dan akhirnya EPIK.\n\n<BRAWLER> tiba di Musim <SEASON>."
+TID_HERO_INFO_BUY_ITEM,BELI
+TID_HERO_INFO_BUY_ITEM_FREE,PERCUMA
+TID_HERO_INFO_BUY_MISSING1,ANDA PERLUKAN <MISSINGCOINS> SYILING LAGI
+TID_HERO_INFO_BUY_MISSING2,Beli syiling yang tiada sekarang?
+TID_HERO_INFO_BUY_MISSING_GEMS1,ANDA PERLUKAN <MISSINGCOINS> SYILING LAGI
+TID_HERO_INFO_BUY_MISSING_GEMS2,Dapatkan <MISSINGGEMS> permata lagi untuk beli syiling yang tiada
+TID_HERO_INFO_SEE_OFFERS,DAPATKAN PERMATA
+TID_HERO_INFO_UNLOCK_GADGETS,BUKA ALAT
+TID_HERO_INFO_UNLOCK_STARPOWERS,BUKA KUASA BINTANG
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,SAHKAN PEMBELIAN
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,SAHKAN PEMBELIAN
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,SAHKAN PEMBELIAN
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,DAPATKAN LEBIH BANYAK PERMATA
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,Dapatkan <cC5F724><REQUIREDGEMS> permata lagi</c> untuk beli syiling yang tiada
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,PEK PERMATA SEPENUHNYA
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,DISYORKAN
 TID_MATCHMAKE_FAILED_5,Pemadanan gagal: Acara telah tamat tempoh
 TID_MATCHMAKE_FAILED_7,Pemadanan gagal: Ahli pasukan putus sambungan
 TID_MATCHMAKE_FAILED_9,Pemadanan gagal: Penyelenggaraan bermula
@@ -874,7 +890,7 @@ TID_TUTORIAL_7,"Bagus! Kita dah kumpul <c50d050>KIUB KUASA</c>, jom keluar dari 
 TID_TUTORIAL_8,Super anda akan dicas setiap kali musuh anda terkena tembakan. Guna <cff9900>KAWALAN KUNING</c> untuk serang musuh dengan Super anda!
 TID_TUTORIAL_9,Anda memang Brawler berbakat!\n\nJom habiskan mereka!
 TID_TUTORIAL_10,Setiap serangan yang mengenai target akan mengecas meter serangan Super. Super saya dah sedia digunakan! Ketik butang Super!
-TID_TUTORIAL_11,<cff6633>Bar warna oren</c> menunjukkan peluru anda. Saya akan muat semula secepat mungkin!
+TID_TUTORIAL_11,<cff6633>Bar warna oren</c> menunjukkan peluru anda. Saya akan isi semula secepat mungkin!
 TID_FIGHT_TUTORIAL,MAIN
 TID_HERO_SCORE_INFO,Kumpul trofi untuk Brawler ini dengan memenangi pertempuran menentang pemain lain.\n\nCapai <PROGRESS> trofi untuk maju ke pangkat seterusnya dan peroleh <COINS> token.
 TID_HERO_SCORE_INFO_LEG_TROS,"Kumpul trofi untuk Brawler ini dengan memenangi pertempuran menentang pemain lain.\n\nCapai <PROGRESS> trofi untuk maju ke pangkat seterusnya, peroleh <COINS> token dan <cff00ff><LEGTROS> Mata Bintang</c>"
@@ -1656,7 +1672,7 @@ TID_SPEC_ABI_BARREL_DEFENSE,GELUNG BESI
 TID_SPEC_HEAL_MAIN_ATTACK,PENJANA!
 TID_SPEC_ABI_FREEZE_DESC,Peluru Super Shelly memperlahankan musuh selama <c00cc00><VALUE1></c> saat!
 TID_SPEC_ABI_PREY_ON_THE_WEAK_DESC,Crow mengenakan <c00cc00>+<VALUE2></c> kerosakan dengan serangan dan Supernya terhadap sasaran dengan nilai nyawa <VALUE1>% atau lebih rendah.
-TID_SPEC_ABI_BERSERKER_DESC,"Apabila nilai nyawa Bull jatuh ke bawah <c00cc00><VALUE1>%</c>, kelajuan muat semula dia berganda."
+TID_SPEC_ABI_BERSERKER_DESC,"Apabila nilai nyawa Bull jatuh ke bawah <c00cc00><VALUE1>%</c>, kelajuan isi semula dia berganda."
 TID_SPEC_SELF_DESTRUCT_DESC,"Apabila Dynamike ditewaskan, di lontarkan enam batang dinamit yang setiap satunya melakukan kerosakan <c00cc00><VALUE1></c>."
 TID_SPEC_ABI_CACTUS_HEAL_DESC,"Selepas menggunakan Super, Spike memulihkan <c00cc00><VALUE1></c> nilai nyawa setiap saat dengan berada di dalam kawasan terkesan."
 TID_SPEC_ABI_HEAL_SELF_MAIN_ATTACK_DESC,Barley memulihkan <c00cc00><VALUE1></c> nilai nyawa dari setiap serangan.
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,TIADA PERIHALAN KELAB
 TID_EVENT_POPUP_TITLE,JOM BERTEMPUR!
 TID_GOLDRUSH_8,Dataran Nilam
 TID_USE_AUTOFIRE_TUTORIAL,KETIK <ccc0033> kawalan merah</c> untuk tembak musuh terdekat.
-TID_BRAWL_BOX_INFO_1,"Kotak Besar memberikan ganjaran serupa dengan membuka 3 Kotak Brawl. Namun, mata kuasa diagihkan antara lebih kurang Brawler. token pelengkap hanya daripada satu jenis token.\n\nAnda mendapat tiga cabutan rawak, setiap cabutan dengan kebarangkalian ganjaran ini:"
-TID_BRAWL_BOX_INFO_2,"Setiap Kotak Brawl mengandungi salah satu item berikut: Brawler baharu, mata kuasa & syiling, token pelengkap & sekerap, alat atau kuasa bintang. Selain itu, anda boleh mendapat gandaan token bonus.\n\nKebarangkalian ganjaran ialah:"
-TID_BRAWL_BOX_INFO_3,"Kotak Mega memberi anda ganjaran serupa dengan membuka 10 Kotak Brawl. Namun, mata kuasa diagihkan antara lebih kurang Brawler. Token pelengkap diterima adalah daripada satu jenis token.\n\nAnda mendapat 10 cabutan rawak, setiap cabutan dengan kebarangkalian ganjaran ini:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nBrawler Jarang : <NUM2>%<GAR_HERO_1>\nBrawler Superjarang : <NUM3>%<GAR_HERO_2>\nBrawler Epik : <NUM4>%<GAR_HERO_3>\nBrawler Mitos : <NUM5>%<GAR_HERO_4>\nBrawler Legenda : <NUM6>%<GAR_HERO_5>\nKuasa Bintang : <NUM7>%<GAR_STAR_POWER>\nAlat : <NUM8>%<GAR_ACCESSORY>\nToken Pelengkap: <NUM9>%
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nSelain itu, setiap cabutan memberi anda <TOKEN_DOUBLER>% peluang mendapat gandaan token. Alat hanya tersedia selepas brawler mencapai tahap kuasa 7. Kuasa bintang hanya tersedia untuk brawler dengan tahap kuasa 9. Sekerap dan token pelengkap hanya tersedia selepas Brawler mencapai tahap kuasa 10. Selepas membuka <WCPP_BRAWLERS> brawler, terdapat <WCPP_CHANCE>% peluang untuk memberikan mata kuasa kepada sebarang brawler. Selepas anda membuka semua ganjaran jenis tertentu, contohnya Brawler Jarang, kebarangkalian untuk mendapat semua ganjaran lain akan meningkat. Nasib: Untuk membuat pengalaman pembukaan Kotak Brawl lebih adil, terdapat satu sistem nasib yang mempengaruhi kebarangkalian Brawler Legenda. Bagi setiap cabutan yang tidak memberikan brawler baharu, nilai nasib anda akan meningkat. Setiap kali anda mendapat brawler baharu, nilai nasib anda akan menurun berdasarkan kenadiran brawler yang anda dapat. Apabila nasib cukup baik, anda berpeluang tinggi untuk mendapat Brawler Legenda, peluang tidak akan melebihi <MAX_LEGENDARY>%. Sebaliknya, nasib rendah bermaksud peluang mendapat Brawler Legenda baharu adalah lebih rendah. Cabutan awal ditentukan terlebih dahulu untuk memastikan permulaan yang adil bagi semua orang."
+TID_BRAWL_BOX_INFO_1,"Satu Kotak Besar memberi anda ganjaran serupa dengan membuka 3 Kotak Brawl. Namun, mata kuasa diagihkan di antara lebih kurang brawler\n\nAnda mendapat tiga cabutan secara rawak, setiap satunya dengan kebarangkalian ganjaran ini:"
+TID_BRAWL_BOX_INFO_2,"Setiap Kotak Brawl mengandungi salah satu item berikut: Satu brawler baharu, mata kuasa & syiling, satu alat atau kuasa bintang. Selain itu, anda boleh mendapat gandaan token bonus.\n\nKebarangkalian ganjaran ialah:"
+TID_BRAWL_BOX_INFO_3,"Satu Kotak Mega memberi anda ganjaran yang serupa dengan 10 Kotak Brawl. Namun, mata kuasa diagihkan di antara lebih kurang brawler.\n\nAnda mendapat 10 cabutan rawak, setiap satunya dengan kebarangkalian ganjaran ini:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1> : <NUM1>%\nBrawler Jarang : <NUM2>%<GAR_HERO_1>\nBrawler Superjarang : <NUM3>%<GAR_HERO_2>\nBrawler Epik : <NUM4>%<GAR_HERO_3>\nBrawler Mitos : <NUM5>%<GAR_HERO_4>\nBrawler Legenda : <NUM6>%<GAR_HERO_5>\nKuasa Bintang : <NUM7>%<GAR_STAR_POWER>\nAlat : <NUM8>%<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nSelain itu, setiap cabutan memberi anda <TOKEN_DOUBLER>% peluang mendapat gandaan token. Alat hanya tersedia selepas brawler mencapai tahap kuasa 7. Kuasa bintang hanya tersedia untuk brawler dengan tahap kuasa 9. Selepas membuka <WCPP_BRAWLERS> brawler, terdapat <WCPP_CHANCE>% peluang untuk memberikan mata kuasa kepada sebarang brawler. Selepas anda membuka semua ganjaran jenis tertentu, contohnya Brawler Jarang, kebarangkalian untuk mendapat semua ganjaran lain akan meningkat. Nasib: Untuk membuat pengalaman pembukaan Kotak Brawl lebih adil, terdapat satu sistem nasib yang mempengaruhi kebarangkalian Brawler Legenda. Bagi setiap cabutan yang tidak memberikan brawler baharu, nilai nasib anda akan meningkat. Setiap kali anda mendapat brawler baharu, nilai nasib anda akan menurun berdasarkan kenadiran brawler yang anda dapat. Apabila nasib cukup baik, anda berpeluang tinggi untuk mendapat Brawler Legenda, peluang tidak akan melebihi <MAX_LEGENDARY>%. Sebaliknya, nasib rendah bermaksud peluang mendapat Brawler Legenda baharu adalah lebih rendah. Cabutan awal ditentukan terlebih dahulu untuk memastikan permulaan yang adil bagi semua orang."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,Mata Kuasa + Syiling
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,Mata Kuasa + Syiling + Sekerap
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,Syiling + Sekerap
@@ -1812,7 +1828,7 @@ TID_HINT_21,Anda boleh menyembunyikan diri daripada musuh dan menyembuhkan diri 
 TID_HINT_22,"Apabila anda guna TEMBAKAN BERTURUT-TURUT, ia akan menembak walaupun tiada musuh berada di dalam julat."
 TID_VS_TUTORIAL,Kumpul semua <c50d050>KIUB KUASA</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,SERET <ccc0033>kawalan merah</c> untuk menyasar!
-TID_TUTORIAL_GOOD_JOB_2,Syabas! <cff6633>BAR WARNA OREN</c> menunjukkan peluru anda. Saya akan muat semula secepat yang boleh!
+TID_TUTORIAL_GOOD_JOB_2,Syabas! <cff6633>BAR WARNA OREN</c> menunjukkan peluru anda. Saya akan isi semula secepat yang boleh!
 TID_TUTORIAL_GOOD_JOB_3,Syabas! Menyerang musuh akan mengecas <cff9900>serangan SUPER</c>!
 TID_TUTORIAL_GOOD_JOB_4,Syabas!
 TID_SPECTATE_PLAYER_BUTTON,Tonton
@@ -2677,7 +2693,7 @@ TID_SPEC_ABI_SUPER_DAMAGE_DESC,Tambah <c00cc00>+<VALUE1></c> kerosakan untuk Sup
 TID_SPEC_ABI_SPEED_LOW_HEALTH,"ROBOT, UNDUR!"
 TID_SPEC_ABI_SPEED_LOW_HEALTH_DESC,"Apabila nilai nyawa Rico jatuh di bawah <c00cc00><VALUE2>%</c>, dia berlari <c00cc00><VALUE1>%</c> lebih pantas!"
 TID_SPEC_ABI_SUPER_RELOAD,ISI SEMULA SEGERA
-TID_SPEC_ABI_SUPER_RELOAD_DESC,"Apabila Darryl guna Super, kelajuan muat semulanya digandakan selama <c00cc00><VALUE1></c> saat."
+TID_SPEC_ABI_SUPER_RELOAD_DESC,"Apabila Darryl guna Super, kelajuan isi semulanya digandakan selama <c00cc00><VALUE1></c> saat."
 TID_SPEC_ABI_DAMAGE_MAIN_ATTACK,LEBIH BERACUN
 TID_SPEC_ABI_DAMAGE_MAIN_ATTACK_DESC,Menambah <c00cc00>+<VALUE1></c> kerosakan setiap saat untuk serangan Barley.
 TID_SPEC_ABI_SUPER_HEALS,TEPUKAN SEMANGAT
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Apabila Super Brock dicas penuh (dan tidak digunakan)
 TID_SPEC_ABI_PET,BEBASKAN BURUNG
 TID_SPEC_ABI_PET_DESC,Burung Dynamike menyertai perjuangan!
 TID_SPEC_ABI_DAMAGE_ULTI,TAMPARAN ROH
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Apabila Super Gene dicas penuh, serangannya akan melakukan <c00cc00>+<VALUE1></c> kerosakan."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,8-Bit berjalan dengan hentakkan kuat seperti arked berkaki. Dia tembak Pancaran Peletus dan Supernya menambah kerosakan Brawler diri dan rakan!
 TID_ARCADE_SHORT_DESC,PEROSAK
@@ -3188,7 +3203,7 @@ TID_HERO_INFO_SPEED_1,PERLAHAN
 TID_HERO_INFO_SPEED_2,BIASA
 TID_HERO_INFO_SPEED_3,CEPAT
 TID_HERO_INFO_SPEED_4,SANGAT CEPAT
-TID_HERO_INFO_ATTACK_SPEED,Kelajuan muat semula
+TID_HERO_INFO_ATTACK_SPEED,Kelajuan isi semula
 TID_HERO_INFO_ATTACK_RANGE,Julat
 TID_HERO_INFO_ATTACK_DAMAGE,Kerosakan
 TID_HERO_INFO_STUN_DURATION,Tempoh pegun
@@ -3391,7 +3406,7 @@ TID_ACCESSORY_SPAWNER_DUDE_PROMOTE_DESC,Mr. P menguatkan porter semasa dengan me
 TID_ACCESSORY_SANDY_SLEEP_DESC,Sandy tertidur selama <c00cc00><VALUE1></c> saat dan nilai nyawanya pulih sepenuhnya.
 TID_ACCESSORY_BEE_SNIPER_SLOW_DESC,Bea menjatuhkan sarang lebah dengan percikan madu melekit di sekelilingnya. Madu itu memperlahankan musuh yang terpijak padanya.
 TID_ACCESSORY_BULL_HEAL_DESC,Bull segera meremajakan dirinya sebanyak <c00cc00><VALUE1></c> nilai nyawa.
-TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,Colt segera memuat semula <c00cc00><VALUE1></c> peluru.
+TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,Colt segera mengisi semula <c00cc00><VALUE1></c> peluru.
 TID_ACCESSORY_MUMMY_PUSH_DESC,Emz menolak semua musuh di sekelilingnya sambil melakukan <c00cc00><VALUE1></c> kerosakan.
 TID_ACCESSORY_NINJA_FAKE_DESC,Leon mencipta ilusi dirinya untuk mengelirukan musuhnya.
 TID_ACCESSORY_BASEBALL_HEAL_DESC,Bibi memulihkan <c00cc00><VALUE1></c> nilai nyawa setiap saat selama <c00cc00><VALUE2></c> saat.
@@ -3760,7 +3775,7 @@ TID_ACCESSORY_SHELLY_FOCUS_DESC,"Apabila diaktifkan, serangan utama Shelly pada 
 TID_ACCESSORY_BO_MINE_TRIGGER,TALI BELANTIK
 TID_ACCESSORY_BO_MINE_TRIGGER_DESC,Bo mencetus semua periuk apinya selepas <c00cc00><VALUE1></c> saat. Pihak lawan tidak akan dapat kesan periuk api sebelum dicetuskan.
 TID_ACCESSORY_UNDERTAKER_RELOAD,PENYODOK PANTAS
-TID_ACCESSORY_UNDERTAKER_RELOAD_DESC,Mortis memuat semula lebih cepat selama <c00cc00><VALUE1></c> saat.
+TID_ACCESSORY_UNDERTAKER_RELOAD_DESC,Mortis mengisi semula lebih cepat selama <c00cc00><VALUE1></c> saat.
 TID_ACCESSORY_SNIPER_SEEKER,RESIPI BUATAN SENDIRI
 TID_ACCESSORY_SNIPER_SEEKER_DESC,"Apabila diaktifkan, serangan utama Piper seterusnya akan terus terkena musuh."
 TID_ACCESSORY_LUCHADOR_METEOR,TALI PINGGANG ASTEROID
@@ -4099,7 +4114,7 @@ TID_FIRE_DUDE_ULTI_DESC,Amber melemparkan termos bendalir api yang dia boleh bak
 TID_SPEC_ABI_FIRE_DUDE_1,API LIAR
 TID_SPEC_ABI_FIRE_DUDE_1_DESC,Amber meninggalkan dua lopak petrol di tanah secara serentak dan dia akan mengecas Supernya secara automatik semasa berdiri berdekatannya.
 TID_SPEC_ABI_FIRE_DUDE_2,SIFON TERIK
-TID_SPEC_ABI_FIRE_DUDE_2_DESC,"Semasa berada berdekatan lopak bendalir api, Amber menggunakannya untuk memuat semula hembusan apinya <c00cc00><VALUE1>%</c> lebih cepat."
+TID_SPEC_ABI_FIRE_DUDE_2_DESC,"Semasa berada berdekatan lopak bendalir api, Amber menggunakannya untuk mengisi semula hembusan apinya <c00cc00><VALUE1>%</c> lebih cepat."
 TID_ACCESSORY_FIRE_DUDE_SPILL,PEMULA API
 TID_ACCESSORY_FIRE_DUDE_SPILL_DESC,Amber lari pantas selama <c00cc00><VALUE1></c> saat sambil menumpahkan bendalir api yang boleh dinyalakan.
 TID_EMOTE_EQUIP_ALREADY_IN_USE,Pin ini sudah digunakan!
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Terima kasih kerana menggunakan ciri pembuat 
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Terima kasih kerana menggunakan ciri pembuat peta. Sila mematuhi Perjanjian Pengguna dan peraturan lain yang berkaitan ketika menggunakan ciri pembuat peta. Jangan membuat atau menyebarkan kandungan yang tidak wajar yang bersifat erotik, lucah atau membahayakan perpaduan nasional, kedaulatan, dan keutuhan wilayah, atau melanggar undang-undang dan peraturan lain."
 TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,SOKONGAN
-TID_RUFFS_DESC,"Colonel Ruffs memekikkan perintah kepada orang bawahannya tetapi dia sebenarnya sangat baik! Ruffs serius dan tenang, dia menyembunyikan sifat anjingnya kecuali apabila ada permainan mengutip!"
+TID_RUFFS_DESC,"Colonel Ruffs memekikkan perintah kepada orang bawahannya, tetapi sebenarnya dia baik hati!\n\nRuffs selalunya tenang, tetapi naluri kaninnya akan kelihatan apabila ada permainan mengutip!"
 TID_RUFFS_WEAPON,LASER DWILARAS
 TID_RUFFS_WEAPON_DESC,Laser berganda Ruffs melantun dari dinding berbilang kali dan boleh mengenai lawan yang berada di sebalik penghalang.
 TID_RUFFS_ULTI,BEKALAN BANTUAN
@@ -4729,7 +4744,7 @@ TID_ELECTRO_SNIPER_ULTI_DESC,Belle melepaskan tembakan yang meninggalkan tanda p
 TID_SPEC_ABI_ELECTRO_SNIPER_1,SUAP BALIK POSITIF
 TID_SPEC_ABI_ELECTRO_SNIPER_1_DESC,Belle mendapat <c00cc00><VALUE1>%</c> perisai setiap kali kilat elektro mengenai sasaran.
 TID_SPEC_ABI_ELECTRO_SNIPER_2,TERKANDAS
-TID_SPEC_ABI_ELECTRO_SNIPER_2_DESC,"Apabila pihak lawan ditandai Super milik Belle, lawan itu tidak akan dapat memuat semula serangan selama <c00cc00><VALUE2></c> saat."
+TID_SPEC_ABI_ELECTRO_SNIPER_2_DESC,"Apabila pihak lawan ditandai Super milik Belle, lawan itu tidak akan dapat mengisi semula serangan selama <c00cc00><VALUE2></c> saat."
 TID_ACCESSORY_ELECTRO_SNIPER_TRAP,PERANGKAP LETUPAN
 TID_ACCESSORY_ELECTRO_SNIPER_TRAP_DESC,Belle meletakkan perangkap di tanah yang akan meletup apabila dicetuskan oleh lawan. Perangkap melakukan <c00cc00><VALUE1></c> kerosakan dan melambatkan sesiapa sahaja dalam radius letupannya selama <c00cc00><VALUE2></c> saat.
 TID_STICKY_BOMB,SQUEAK
@@ -4958,7 +4973,7 @@ TID_KNIGHT_ULTI_DESC,"Tikus robot yang bantu dalam kerja pembasmian? Ya, ia mele
 TID_SPEC_ABI_KNIGHT_1,PUKULAN AWAL
 TID_SPEC_ABI_KNIGHT_1_DESC,Ash menjadi lebih marah apabila menyerang pihak lawan ketika cas serangannya dalam keadaan penuh. Keradangannya naik <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_KNIGHT_2,PANAS BARAN
-TID_SPEC_ABI_KNIGHT_2_DESC,"Ash mendapat sehingga <c00cc00><VALUE1>%</c> kelajuan muat semula yang lebih cepat secara berperingkat, sama dengan barannya."
+TID_SPEC_ABI_KNIGHT_2_DESC,"Ash mendapat sehingga <c00cc00><VALUE1>%</c> kelajuan isi semula yang lebih cepat secara berperingkat, sama dengan barannya."
 TID_ACCESSORY_KNIGHT_HEAL,MASA SANTAI
 TID_ACCESSORY_KNIGHT_HEAL_DESC,"Walaupun meradang, Ash perlu bertenang. Meter keradangan yang penuh akan memulihkan <c00cc00><VALUE1></c> nilai nyawa apabila alat diaktifkan - lebih kurang kemarahan, lebih kurang pemulihan."
 TID_MECHA_DUDE,MEG
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Berbelanja Besar
 TID_KO_JUNE21_2,Resah Gelisah
 TID_QUALIFIED_INFO_PARAM,"Tahniah, anda telah memenangi <CHALLENGE>! Ganjaran kemenangan cabaran anda: <REWARD>"
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Ganjaran anda untuk kemenangan #<WIN> dalam <CHALLENGE>: <REWARD>
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"Tahniah, anda telah memenangi <CHALLENGE>! Ganjaran kemenangan cabaran anda: <REWARD>\nIni akan menggantikan ganjaran asal yang anda telah miliki."
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,Ganjaran anda untuk kemenangan #<WIN> dalam <CHALLENGE>: <REWARD>\nIni akan menggantikan ganjaran asal yang anda telah miliki.
 TID_CHALLENGE_TEASER_INFO_PARAM,<CHALLENGE> bakal tiba!\n\nMenangi <WIN> perlawanan dan tuntut ganjaran <REWARD> anda! Bentuk bersama dengan rakan anda atau \qCARI PASUKAN\q untuk memaksimumkan peluang kemenangan anda.\n\nCabaran hanya aktif selama <DURATION> jam. Semoga berjaya dan selamat berseronok!
 TID_CC_POPUP_QUALIFY_INFO_PARAM,Menang cabaran untuk mendapat: <REWARD>!
 TID_GEN_JUNE21_1,Alas Percikan
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Mencapai <NUM> trofi untuk buka cabaran
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Memilih satu kulit
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,Satu kulit akan dipilih secara rawak daripada semua yang terpilih
 TID_GEAR_TOKEN_DROP_TITLE,TOKEN PELENGKAP
-TID_GEAR_TOKEN_DAMAGE,Token Kerosakan
-TID_GEAR_TOKEN_HEAL,Token Penyembuhan
-TID_GEAR_TOKEN_RESISTANCE,Token Rintangan
-TID_GEAR_TOKEN_SHIELD,Token Pelindung
-TID_GEAR_TOKEN_SPEED,Token Kelajuan
-TID_GEAR_TOKEN_TYPE_DAMAGE,KEROSAKAN
-TID_GEAR_TOKEN_TYPE_HEAL,NILAI NYAWA
-TID_GEAR_TOKEN_TYPE_VISION,PENGLIHATAN
-TID_GEAR_TOKEN_TYPE_SHIELD,PELINDUNG
-TID_GEAR_TOKEN_TYPE_SPEED,KELAJUAN
-TID_GEAR_TOKEN,Token Pelengkap
 TID_GEAR_SCRAP_DROP_TITLE,SEKERAP
 TID_GEAR_SCRAP,Sekerap
 TID_GEAR_UNLOCK_SLOT,BUKA SLOT PELENGKAP <NUM>
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,NILAI NYAWA
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,KEROSAKAN
 TID_GEAR_VISION_TITLE,PENGLIHATAN
 TID_GEAR_SHIELD_TITLE,PELINDUNG
+TID_GEAR_RELOAD_SPEED_TITLE,KELAJUAN ISI SEMULA
+TID_GEAR_SUPER_CHARGE_TITLE,CAS SUPER
 TID_GEAR_FOREST_SPEED_INFO,MENINGKATKAN KELAJUAN sebanyak <NUM>% apabila bergerak dalam semak.
 TID_GEAR_STANDING_HEAL_INFO,MEMULIHKAN NILAI NYAWA <NUM>% dengan lebih berkesan.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,MELAKUKAN <NUM>% KEROSAKAN TAMBAHAN apabila nilai nyawa di bawah 50%.
 TID_GEAR_VISION_INFO,MENDEDAHKAN pihak lawan selama <NUM> saat selepas melakukan kerosakan terhadap mereka.
 TID_GEAR_SHIELD_INFO,Mendapat <NUM> NILAI NYAWA tambahan sebagai PELINDUNG guna habis. Pelindung menjana semula dalam masa 10 saat apabila nilai nyawa penuh.
+TID_GEAR_RELOAD_SPEED_INFO,ISI SEMULA <NUM>% lebih cepat.
+TID_GEAR_SUPER_CHARGE_INFO,Super MENGECAS <NUM>% LEBIH CEPAT.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,KELAJUAN pergerakan dalam semak MENINGKAT
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,MEMULIHKAN NILAI NYAWA dengan lebih berkesan.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,KEROSAKAN tambahan apabila nilai nyawa di bawah 50%
 TID_GEAR_VISION_UPGRADE_INFO,MENDEDAHKAN pihak lawan selepas melakukan kerosakan terhadap mereka.
 TID_GEAR_SHIELD_UPGRADE_INFO,Mendapat PELINDUNG yang meningkatkan NILAI NYAWA
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Isi semula lebih cepat
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Super cas semula lebih cepat
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,KELAJUAN DIGALAKKAN
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,BONUS PEMULIHAN
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,KEROSAKAN TAMBAHAN
 TID_GEAR_VISION_UPGRADE_TARGET,SAAT PENDEDAHAN
 TID_GEAR_SHIELD_UPGRADE_TARGET,NILAI NYAWA PELINDUNG
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,KELAJUAN ISI SEMULA
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,KADAR CAS SUPER
+TID_GEAR_SUPER_HEALTH_TITLE,NILAI NYAWA KEPALA
+TID_GEAR_SUPER_HEALTH_INFO,Kepala mendapat <NUM> NILAI NYAWA TAMBAHAN.
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Kepala mendapat nilai nyawa tambahan.
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,NILAI NYAWA KEPALA
+TID_GEAR_SUPER_RANGE_TITLE,JANGKAUAN TANGAN
+TID_GEAR_SUPER_RANGE_INFO,Tangan menjangkau satu jubin lebih jauh.
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Tangan menjangkau lebih jauh.
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,JANGKAUAN TANGAN
 TID_GEAR_UPGRADED,PELENGKAP DINAIK TARAF!
 TID_GEAR_TITLE,PELENGKAP
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> TAHAP <NUM>
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM>%
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Pelengkap: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,PELENGKAP: <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Pelengkap ini telah dipilih di slot lain.
 TID_ITEMS_TITLE,ITEM
 TID_TEAMUP_YOUR_SETTINGS_TITLE,TETAPAN PERIBADI
 TID_TRUE_SILVER_BROCK_SKIN,BROCK PERAK
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>PERLAWANAN BINTANG</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,PERLAWANAN BINTANG
 TID_CLUB_INFO_COLUMN_TROPHIES,TROFI
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,KEDUDUKAN LIGA BINTANG
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,DALAM TALIAN
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,STATUS
 TID_CLUB_INFO_COLUMN_NAME,NAMA
 TID_CLUB_INFO_COLUMN_TICKETS_USED,TIKET DIGUNAKAN
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,TROFI KELAB
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,KALAH
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,Bentuk pasukan rawak
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,Bentuk pasukan dengan ahli kelab
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,GANJARAN TROFI KELAB
-TID_REWARD_DESC_GEAR_TOKENS,TOKEN PELENGKAP
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,TOKEN PELENGKAP
-TID_REWARD_DESC_GEAR_SCRAP,SEKERAP PELENGKAP
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hei! Nampaknya anda terlambat untuk bermain pada minggu ini.\n\nPergilah lihat perlawanan kelab anda sebelum minggu seterusnya bermula!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Mari lihat apa yang ada di Kedai Kelab!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Keputusan Akhir:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,FACTOR X
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,Pembelahan daripada serangan utama Grom melakukan sehingga <c00cc00>+<VALUE1>%</c> kerosakan tambahan pada jarak maks.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,MENARA PENGAWAL
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,Grom mengeluarkan Menara Pengawal daripada Bom Grom yang memberikan semua sekutu penglihatan ke dalam kawasan semak yang luas. Nilai nyawa menara pengawal berkurang secara perlahan apabila masa berlalu.
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Buat pelengkap pertama anda
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,Kumpul lebih banyak Token Sekerap dan Token Pelengkap dari Kotak Brawl atau Kedai Kelab untuk membuat dan menaik taraf pelengkap anda
-TID_FIRST_GEAR_TUTORIAL_TITLE,SLOT PELENGKAP
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Slot pelengkap dibuka!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Pilih pelengkap pertama anda secara PERCUMA.
+TID_ITEMS_HUB_GUIDE_GADGET,Anda boleh pilih dan beli alat unik untuk <BRAWLER> di sini.
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Alat kini tersedia di sini.
+TID_ITEMS_HUB_GUIDE_STARPOWER,Anda boleh pilih dan beli kuasa bintang unik untuk <BRAWLER> di sini.
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Kuasa bintang kini tersedia di sini.
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Alat kini tersedia di sini.
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Kuasa bintang kini tersedia di sini.
+TID_FIRST_GEAR_TUTORIAL_TITLE,PELENGKAP
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,Dibuka!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Pelengkap
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Buat keupayaan tambahan untuk Brawler pilihan anda
@@ -6178,7 +6205,7 @@ TID_SPEC_ABI_CANNON_GIRL_1_DESC,Julat Pelancar Bintang Bonnie meningkat sebanyak
 TID_SPEC_ABI_CANNON_GIRL_2,GIGI BONGSU
 TID_SPEC_ABI_CANNON_GIRL_2_DESC,"Gigi Goyah hancur berkecai apabila terkena sasaran, melakukan <c00cc00><VALUE1>%</c> kerosakan tambahan terhadap musuh berdekatan."
 TID_ACCESSORY_CANNON_GIRL_SPEED,TENAGA SEGERA
-TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,Pergerakan Clyde dan kelajuan muat semula meningkat sebanyak <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> saat.
+TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,Pergerakan Clyde dan kelajuan isi semula meningkat sebanyak <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> saat.
 TID_ACCESSORY_CANNON_GIRL_DASH,UJIAN PELANGGARAN
 TID_ACCESSORY_CANNON_GIRL_DASH_DESC,"Bonnie meluru ke depan, menolak musuh dan melakukan <c00cc00><VALUE1></c> kerosakan apabila terkena sasaran."
 TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,Memerlukan Clyde!
@@ -6343,7 +6370,7 @@ TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,Lambung Syiling Griff yang seteru
 TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,TARIAN API
 TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Amber mencipta <c00cc00><VALUE2></c> api yang mengorbit di sekelilingnya selama <c00cc00><VALUE1></c> saat, melakukan <c00cc00><VALUE3></c> kerosakan apabila terkena sasaran."
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,KOTAK ALAT
-TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak alat yang meningkatkan kelajuan muat semula untuk sekutu berdekatan sebanyak <c00cc00><VALUE1>%</c> sehingga ia musnah.
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak alat yang meningkatkan kelajuan isi semula untuk sekutu berdekatan sebanyak <c00cc00><VALUE1>%</c> sehingga ia musnah.
 TID_ACCESSORY_ROPE_DUDE_VISION,BEBAYANG SINAR-X
 TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz boleh boleh melihat ke dalam semak dalam kawasan pengecasan Super selama <c00cc00><VALUE1></c> saat.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Anda sudah memiliki brawler ini.
@@ -6625,19 +6652,19 @@ TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Sarung besi terlalu jauh!
 TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Memerlukan sarung besi!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,SOKONGAN
-TID_SOUL_COLLECTOR_DESC,Gus melepak dalam perjalanan kereta api yang telah lama dilupakan dan ditinggalkan. Dia suka belon dan mahir membentuk haiwan belon untuk meluangkan masa dan menemani dia.
+TID_SOUL_COLLECTOR_DESC,"Gus suka belon dan menghantui perjalanan kereta api yang terbiar. Menurut legenda, pada suatu hari, dia mengikuti sebiji belon anjing terlalu jauh sehingga sesat dan tidak pernah lagi ditemukan selepas itu."
 TID_SOUL_COLLECTOR_WEAPON,BELON LIAR
-TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembak belon ke arah musuh. Selepas mengenai musuh berkali-kali, satu roh akan jatuh. Roh yang terkumpul akan memulihkan sedikit nilai nyawa anda atau pasukan anda."
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembak belon ke arah musuh. Selepas mengenai musuh berkali-kali, satu roh akan jatuh. Roh yang terkumpul akan memulihkan sedikit nilai nyawa Gus atau rakan sepasukannya."
 TID_SOUL_COLLECTOR_ULTI,BUDAK SERAM
 TID_SOUL_COLLECTOR_ULTI_DESC,Gus menggunakan Spooky (Belon ciptaannya yang juga merupakan kawan karibnya) untuk membentuk perisai di kelilingnya atau salah seorang ahli pasukan.
 TID_SPEC_ABI_SOUL_COLLECTOR_1,BONANZA NILAI NYAWA
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Penyembuhan yang diperoleh daripada Belon Liar meningkat sebanyak <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Penyembuhan daripada roh ditingkatkan sebanyak <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,HAIWAN ROH
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky meningkatkan kerosakan rakan sepasukan sebanyak <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> saat.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,PELETUP BELON
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Meletupkan semua roh yang tidak dikumpul, melakukan <c00cc00><VALUE1></c> kerosakan terhadap musuh berdekatan."
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,PENUKAR JIWA
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus kehilangan <ccc0000><VALUE1>%</c> nilai nyawa dan segera mendapat <c00cc00><VALUE2>%</c> roh.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus kehilangan <ccc0000><VALUE1>%</c> nilai nyawa tetapi segera mendapat <c00cc00><VALUE2>%</c> roh.
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,Tiada roh!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Roh sudah penuh!
 TID_SKIN_INFO_OUTLAW,Kulit Geng Gempar
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-BIT akan dimatikan!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Pek Pin Geng Gempar
 TID_SHOP_OUTLAW_SKINS,Kulit Geng Gempar
 TID_SHOP_OUTLAW_TITLE,GENG GEMPAR
+TID_GEAR_RARITY_RARE,Jarang
+TID_GEAR_RARITY_SUPER_RARE,Superjarang
+TID_GEAR_RARITY_EPIC,Epik
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - Pelengkap Jarang
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - Pelengkap Superjarang
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - Pelengkap Epik
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Roh terlalu jauh!
+TID_TRY_BRAWLER_TITLE,Cuba Brawler
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,PERLAWANAN LATIHAN
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,TAPAK LATIHAN
+TID_FIRST_GADGET_TUTORIAL_HEADER,ALAT
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Keupayaan tambahan untuk brawler anda.
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Semua brawler membuka slot pelengkap mereka pada kuasa 7.
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Alat unik untuk setiap brawler.
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Guna alat yang dilengkapkan sehingga 3 kali dalam setiap perlawanan.
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,KUASA BINTANG
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Keupayaan pasif unik untuk brawler anda.
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Semua brawler membuka slot kuasa bintang mereka pada kuasa 9.
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Kuasa bintang unik untuk setiap brawler.
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Kuasa bintang yang dilengkapkan akan aktif sepanjang masa.
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Semua brawler membuka slot pelengkap pertama mereka pada kuasa 10.
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Setiap brawler ada berbilang pelengkap.
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Pelengkap yang dilengkapkan akan aktif sepanjang masa.
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Memilih perlawanan latihan
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,TANK
+TID_SHIELD_TANK_DESC,Buster mengendalikan projektor di panggung wayang dan telah menghafal filem aksi kegemarannya. Dia berimpian menjadi wira aksi pada suatu hari dalam filem blockbuster dirinya.
+TID_SHIELD_TANK_WEAPON,SUAR KANTA
+TID_SHIELD_TANK_WEAPON_DESC,"Buster menembak cahaya dalam bentuk kon daripada projektornya, melakukan kerosakan terhadap semua musuh dalam jarak tembaknya."
+TID_SHIELD_TANK_ULTI,MONTAJ
+TID_SHIELD_TANK_ULTI_DESC,Buster memancarkan perisai di hadapannya untuk menyekat semua tembakan musuh dan memantulkan tenaga kembali kepada musuh.
+TID_SPEC_ABI_SHIELD_TANK_1,VERSI PENGARAH
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Suar Kanta Buster melakukan <c00cc00> <VALUE1>%</c> lebih banyak kerosakan untuk setiap sekutu yang berada di dalam kawasan cas supernya.
+TID_SPEC_ABI_SHIELD_TANK_2,VES KALIS PELURU
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Ketika Montaj aktif, Buster menerima <c00cc00><VALUE1>%</c> lebih kurang kerosakan dan tidak terjejas oleh tolakan, kelambatan dan pegun."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,PEMEGANG PERALATAN
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Buster menyembuhkan setiap rakan sahabat yang berada di dalam kawasan cas supernya sebanyak <c00cc00><VALUE1></c> nilai nyawa.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRELER
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Suar Kantar Buster yang seterusnya menarik musuh ke arahnya dan memperlahankan mereka selama <c00cc00><VALUE1></c> saat.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> TOKEN PELENGKAP\n<SCRAP> SEKERAP
+TID_GEAR_COMPENSATION_CLAIM,KUMPUL
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Suaikan binaan anda dengan keupayaan pasif baharu.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,JOM!
+TID_INBOX_CAPTION_52,Pemberian pelengkap <TYPE> kepada <NAME>.
+TID_GEAR_COMPENSATION_INFO,"Terimalah <COINS> syiling ini untuk pelengkap, token pelengkap dan sekerap anda!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,Pelengkap akan set semula dan diberi pampasan <COINS> syiling.
+TID_RECRUIT_TOKEN,Token Pengambilan
+TID_CHROMATIC_TOKEN,Token Kromatik
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,KUASA BINTANG
+TID_FIRST_GADGET_TUTORIAL_TITLE,ALAT
+TID_GEAR_TO_COINS_POPUP_TITLE,PELENGKAP DIKERJA SEMULA!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Pelengkap baharu tersedia!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Lihat brawler anda untuk pilihan pelengkap baharu.
+TID_GEAR_TO_COINS_POPUP_INFO,"Semua pelengkap yang ada sekarang telah set semula. Pelengkap tidak lagi dicipta dan tiada lagi tahap naik taraf. Pelengkap kini dikategorikan kepada JARANG, SUPERJARANG atau EPIK.\n\nSebagai pampasan kepada perubahan ini, setiap token pelengkap dan sekerap yang anda telah kumpul akan dibayar balik dengan syiling. PERGILAH BELI PELENGKAP BAHARU ANDA DENGAN SYILING!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,BAYARAN BALIK:
+TID_REPORT_PLAYER_REPORT,LAPOR
+TID_REPORT_PLAYER_REPORTED,TELAH DILAPORKAN
+TID_REPORT_PLAYER_POPUP_TITLE,MELAPORKAN <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Anda melaporkan <PLAYER_NAME> atas sebab griefing.\n\nGriefing ialah tindakan bermain acara tidak mengikut objektif secara sengaja dan menggangu. Kelakuan negatif ini mempengaruhi pasukan dan keputusan perlawanan.\n\nContoh biasa griefing termasuk:\nSengaja mati berkali-kali, pengaturan perlawanan dan tidak aktif."
+TID_REPORT_PLAYER_BUTTON_REPORT,LAPOR
+TID_REPORT_PLAYER_BUTTON_CANCEL,BATAL
+TID_QUEST_FALLBACK_REWARD_DESC,"Anda telah memiliki ganjaran misi ini, jadi anda akan dapat <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,GANJARAN MISI
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,KUMPUL
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,JALAN PENGAMBILAN
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,KEDAI KROMATIK
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Buka <NUM> lagi Brawler Kromatik.
+TID_BUTTON_NAVI_RECRUIT_ROAD,Jalan Pengambilan
+TID_SKIN_INFO_GHOST_TRAIN,Kulit Stesen Berhantu
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Berlaku ralat ketika mengesahkan pembelian anda.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Brawler ini mengecas Super dengan berada dekat dengan rakan sepasukan.
+TID_SKIN_INFO_ACTION,Kulit Wira Aksi
+TID_SKIN_INFO_WF_2022,Kulit Pertandingan Akhir Dunia 2022
+TID_BRAWL_PASS_SEASON_14,STESEN BERHANTU
+TID_CHAINSAW_BUSTER_SKIN,BUSTER GERGAJI RANTAI
+TID_CHAINSAW_BUSTER_SKIN_SHOP,BUSTER\nGERGAJI RANTAI
+TID_GHOST_TRAIN_GROM_SKIN,FRANKENGROM
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,FRANKENGROM
+TID_GHOST_TRAIN_COLETTE_SKIN,INSPEKTOR COLETTE
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,INSPEKTOR\nCOLETTE
+TID_BRICK_OVEN_ASH_SKIN,ASH KETUHAR PIZA
+TID_BRICK_OVEN_ASH_SKIN_SHOP,ASH\nKETUHAR PIZA
+TID_VETERAN_SQUEAK_SKIN,KOMANDO SQUEAK
+TID_VETERAN_SQUEAK_SKIN_SHOP,KOMANDO\nSQUEAK
+TID_ZOMBIE_BROCK_SKIN,ZOMBROCK
+TID_ZOMBIE_BROCK_SKIN_SHOP,ZOMBROCK
+TID_MEGA_MEGABOX_DARRYL_SKIN,DARRYL KOTAK OMEGA
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,DARRYL\nKOTAK OMEGA
+TID_GHOST_METRO_PENNY_SKIN,PENNY RAKUN
+TID_GHOST_METRO_PENNY_SKIN_SHOP,PENNY\nRAKUN
+TID_BSWF22_TARA_SKIN,TARA MENGAMUK
+TID_BSWF22_TARA_SKIN_SHOP,TARA\nMENGAMUK
+TID_TOPGUN_JANET_SKIN,JANET DAYA G
+TID_TOPGUN_JANET_SKIN_SHOP,JANET\nDAYA G
+TID_SHOP_OFFER_TITLE_40,KOTAK OMEGA
+TID_PIN_OFFER_TITLE,Tawaran Pin
+TID_THUMBNAILS_OFFER_TITLE,Tawaran Ikon
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Buka ganjaran Brawl Pass, misi tambahan dan <NUM> rawak semula misi setiap minggu."
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,TUKAR
+TID_BRAWL_PASS_REDEEM,TUKAR
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Supercell ID anda ada <NUMBER> Brawl Pass. Guna satu untuk mengaktifkan Brawl Pass musim ini?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,Sila tunggu sebentar. Brawl Pass sedang ditukar daripada Supercell ID anda.
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Supercell ID anda tiada Brawl Pass yang cukup untuk ditukar. Pergi ke Kedai Supercell untuk beli lagi.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Segenggam Permata
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Sekantung Permata
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Satu Beg Permata
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Satu Tong Permata
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Satu Krat Permata
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Timbunan Permata
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Pakej Brawl Pass
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

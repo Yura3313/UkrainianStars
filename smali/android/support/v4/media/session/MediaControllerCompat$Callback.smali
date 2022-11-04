@@ -35,19 +35,12 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 3
     new-instance v0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;
 
     invoke-direct {v0, p0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;-><init>(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)V
@@ -58,19 +51,6 @@
 
     iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mCallbackObj:Ljava/lang/Object;
 
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance v0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;
-
-    invoke-direct {v0, p0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;-><init>(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)V
-
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mIControllerCallback:Landroid/support/v4/media/session/IMediaControllerCallback;
-
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mCallbackObj:Ljava/lang/Object;
-
-    :goto_0
     return-void
 .end method
 

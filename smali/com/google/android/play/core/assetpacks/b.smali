@@ -1,26 +1,26 @@
 .class public final Lcom/google/android/play/core/assetpacks/b;
-.super La5/c;
+.super Ly4/b;
 
 
 # instance fields
-.field public final synthetic h:Ljava/util/List;
+.field public final synthetic g:Ljava/util/List;
 
-.field public final synthetic i:Lcom/google/android/play/core/tasks/i;
+.field public final synthetic h:Lcom/google/android/play/core/tasks/i;
 
-.field public final synthetic j:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Ljava/util/List;Lcom/google/android/play/core/tasks/i;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/b;->g:Ljava/util/List;
 
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/tasks/i;
+    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/b;->h:Lcom/google/android/play/core/tasks/i;
 
-    invoke-direct {p0, p2}, La5/c;-><init>(Lcom/google/android/play/core/tasks/i;)V
+    invoke-direct {p0, p2}, Ly4/b;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 .method public final a()V
     .locals 7
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->g:Ljava/util/List;
 
     .line 1
     new-instance v1, Ljava/util/ArrayList;
@@ -64,7 +64,7 @@
 
     const-string v4, "module_name"
 
-    invoke-virtual {v3, v4, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v4, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -73,13 +73,13 @@
     .line 2
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
 
     .line 3
-    iget-object v2, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
+    iget-object v2, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/k;
 
     .line 4
-    iget-object v2, v2, La5/l;->k:Landroid/os/IInterface;
+    iget-object v2, v2, Ly4/k;->k:Landroid/os/IInterface;
 
     .line 5
     check-cast v2, Lcom/google/android/play/core/internal/s;
@@ -94,15 +94,15 @@
 
     new-instance v4, Lcom/google/android/play/core/assetpacks/j;
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
 
-    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/tasks/i;
+    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/b;->h:Lcom/google/android/play/core/tasks/i;
 
     .line 8
     invoke-direct {v4, v5, v6}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
     .line 9
-    invoke-interface {v2, v0, v1, v3, v4}, Lcom/google/android/play/core/internal/s;->m6(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
+    invoke-interface {v2, v0, v1, v3, v4}, Lcom/google/android/play/core/internal/s;->L4(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -110,7 +110,7 @@
 
     .line 10
     :catch_0
-    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:Lx3/g3;
 
     const/4 v1, 0x1
 
@@ -119,13 +119,13 @@
     const/4 v2, 0x0
 
     .line 11
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/b;->g:Ljava/util/List;
 
     aput-object v3, v1, v2
 
     const-string v2, "cancelDownloads(%s)"
 
-    invoke-virtual {v0, v2, v1}, La5/b;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v0, v2, v1}, Lx3/g3;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 .end method

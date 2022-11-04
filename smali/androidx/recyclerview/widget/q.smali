@@ -223,7 +223,7 @@
     goto :goto_0
 
     :cond_5
-    const/4 p2, 0x0
+    move p2, v7
 
     .line 11
     :cond_6
@@ -256,7 +256,7 @@
     goto :goto_1
 
     :cond_7
-    const/4 p3, 0x0
+    move p3, v7
 
     .line 15
     :cond_8
@@ -399,13 +399,13 @@
 
     const/high16 v5, -0x80000000
 
+    move v7, p4
+
+    move v6, v5
+
+    move v5, v4
+
     move-object v4, v3
-
-    const v5, 0x7fffffff
-
-    const/high16 v6, -0x80000000
-
-    const/4 v7, 0x0
 
     :goto_0
     if-ge v7, p3, :cond_4
@@ -493,7 +493,7 @@
     :cond_6
     int-to-float p1, p2
 
-    mul-float p1, p1, v2
+    mul-float/2addr p1, v2
 
     sub-int/2addr v6, v5
 

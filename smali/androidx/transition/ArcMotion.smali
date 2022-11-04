@@ -83,7 +83,7 @@
     iput v1, p0, Landroidx/transition/ArcMotion;->c:F
 
     .line 9
-    sget-object v1, Lv0/p;->h:[I
+    sget-object v1, Lt0/m;->h:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -97,7 +97,7 @@
     const/4 v2, 0x1
 
     .line 11
-    invoke-static {p1, p2, v1, v2, v0}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p2, v1, v2, v0}, Lw/e;->b(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result v1
 
@@ -113,7 +113,7 @@
     const-string v2, "minimumHorizontalAngle"
 
     .line 13
-    invoke-static {p1, p2, v2, v1, v0}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p2, v2, v1, v0}, Lw/e;->b(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result v0
 
@@ -131,7 +131,7 @@
     const-string v2, "maximumAngle"
 
     .line 15
-    invoke-static {p1, p2, v2, v0, v1}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p2, v2, v0, v1}, Lw/e;->b(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result p2
 
@@ -228,7 +228,7 @@
 
     const/high16 v6, 0x3e800000    # 0.25f
 
-    mul-float v6, v6, v3
+    mul-float/2addr v6, v3
 
     cmpl-float v8, p2, p4
 
@@ -255,7 +255,7 @@
 
     if-gez v9, :cond_2
 
-    mul-float v1, v1, v4
+    mul-float/2addr v1, v4
 
     div-float/2addr v3, v1
 
@@ -284,7 +284,7 @@
     goto :goto_3
 
     :cond_2
-    mul-float v0, v0, v4
+    mul-float/2addr v0, v4
 
     div-float/2addr v3, v0
 
@@ -312,47 +312,47 @@
     :goto_3
     mul-float v8, v6, v3
 
-    mul-float v8, v8, v3
+    mul-float/2addr v8, v3
 
     sub-float v3, v2, v1
 
     sub-float v9, v5, v0
 
-    mul-float v3, v3, v3
+    mul-float/2addr v3, v3
 
-    mul-float v9, v9, v9
+    mul-float/2addr v9, v9
 
     add-float/2addr v9, v3
 
     .line 7
     iget v3, p0, Landroidx/transition/ArcMotion;->c:F
 
-    mul-float v6, v6, v3
+    mul-float/2addr v6, v3
 
-    mul-float v6, v6, v3
+    mul-float/2addr v6, v3
 
-    const/4 v3, 0x0
+    cmpg-float v3, v9, v8
 
-    cmpg-float v10, v9, v8
+    const/4 v10, 0x0
 
-    if-gez v10, :cond_4
+    if-gez v3, :cond_4
 
     goto :goto_4
 
     :cond_4
-    cmpl-float v8, v9, v6
+    cmpl-float v3, v9, v6
 
-    if-lez v8, :cond_5
+    if-lez v3, :cond_5
 
     move v8, v6
 
     goto :goto_4
 
     :cond_5
-    const/4 v8, 0x0
+    move v8, v10
 
     :goto_4
-    cmpl-float v3, v8, v3
+    cmpl-float v3, v8, v10
 
     if-eqz v3, :cond_6
 
@@ -367,11 +367,11 @@
 
     double-to-float v3, v8
 
-    invoke-static {v1, v2, v3, v2}, Lo/o;->a(FFFF)F
+    invoke-static {v1, v2, v3, v2}, Lj3/vr0;->c(FFFF)F
 
     move-result v1
 
-    invoke-static {v0, v5, v3, v5}, Lo/o;->a(FFFF)F
+    invoke-static {v0, v5, v3, v5}, Lj3/vr0;->c(FFFF)F
 
     move-result v0
 

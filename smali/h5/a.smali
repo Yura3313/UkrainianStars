@@ -1,156 +1,158 @@
 .class public final Lh5/a;
-.super Ljava/lang/Object;
-.source "TinkConfig.java"
+.super Ld5/r;
+.source "EciesAeadHkdfPrivateKeyManager.java"
 
 
-# static fields
-.field public static final synthetic a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ld5/r<",
+        "Ll5/g0;",
+        "Ll5/h0;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 4
 
-    .line 1
-    invoke-static {}, Ln5/g1;->t()Ln5/g1$a;
+    const-class v0, Ll5/g0;
 
-    move-result-object v0
+    const/4 v1, 0x1
 
-    sget-object v1, Lj5/c;->a:Ln5/g1;
+    new-array v1, v1, [Ld5/i$b;
 
-    .line 2
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
+    new-instance v2, Lh5/a$a;
 
-    move-object v1, v0
+    invoke-direct {v2}, Lh5/a$a;-><init>()V
 
-    check-cast v1, Ln5/g1$a;
+    const/4 v3, 0x0
 
-    sget-object v1, Lp5/l;->a:Ln5/g1;
+    aput-object v2, v1, v3
 
-    .line 3
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    const-string v1, "TINK_1_0_0"
-
-    .line 4
-    invoke-virtual {v0, v1}, Ln5/g1$a;->h(Ljava/lang/String;)Ln5/g1$a;
-
-    .line 5
-    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->c()Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    move-result-object v0
-
-    check-cast v0, Ln5/g1;
-
-    .line 6
-    invoke-static {}, Ln5/g1;->t()Ln5/g1$a;
-
-    move-result-object v0
-
-    sget-object v1, Lj5/c;->b:Ln5/g1;
-
-    .line 7
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Lp5/l;->b:Ln5/g1;
-
-    .line 8
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Li5/b;->a:Ln5/g1;
-
-    .line 9
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Lq5/c;->a:Ln5/g1;
-
-    .line 10
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    const-string v1, "TINK_1_1_0"
-
-    .line 11
-    invoke-virtual {v0, v1}, Ln5/g1$a;->h(Ljava/lang/String;)Ln5/g1$a;
-
-    .line 12
-    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->c()Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    move-result-object v0
-
-    check-cast v0, Ln5/g1;
-
-    .line 13
-    invoke-static {}, Ln5/g1;->t()Ln5/g1$a;
-
-    move-result-object v0
-
-    sget-object v1, Lj5/c;->c:Ln5/g1;
-
-    .line 14
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Lp5/l;->c:Ln5/g1;
-
-    .line 15
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Li5/b;->b:Ln5/g1;
-
-    .line 16
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    sget-object v1, Lq5/c;->b:Ln5/g1;
-
-    .line 17
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
-
-    move-object v1, v0
-
-    check-cast v1, Ln5/g1$a;
-
-    const-string v1, "TINK"
-
-    .line 18
-    invoke-virtual {v0, v1}, Ln5/g1$a;->h(Ljava/lang/String;)Ln5/g1$a;
-
-    .line 19
-    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->c()Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    move-result-object v0
-
-    check-cast v0, Ln5/g1;
+    invoke-direct {p0, v0, v1}, Ld5/r;-><init>(Ljava/lang/Class;[Ld5/i$b;)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.EciesAeadHkdfPrivateKey"
+
+    return-object v0
+.end method
+
+.method public final c()Ld5/i$a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ld5/i$a<",
+            "Ll5/e0;",
+            "Ll5/g0;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lh5/a$b;
+
+    invoke-direct {v0, p0}, Lh5/a$b;-><init>(Lh5/a;)V
+
+    return-object v0
+.end method
+
+.method public final d()Ll5/v0$b;
+    .locals 1
+
+    sget-object v0, Ll5/v0$b;->i:Ll5/v0$b;
+
+    return-object v0
+.end method
+
+.method public final e(Lm5/i;)Lm5/q0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lm5/a0;
+        }
+    .end annotation
+
+    invoke-static {}, Lm5/p;->a()Lm5/p;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Ll5/g0;->y(Lm5/i;Lm5/p;)Ll5/g0;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final g(Lm5/q0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Ll5/g0;
+
+    .line 2
+    invoke-virtual {p1}, Ll5/g0;->u()Lm5/i;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {v0}, Lm5/i;->size()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-nez v0, :cond_1
+
+    .line 4
+    invoke-virtual {p1}, Ll5/g0;->w()I
+
+    move-result v0
+
+    invoke-static {v0}, Lp5/j0;->e(I)V
+
+    .line 5
+    invoke-virtual {p1}, Ll5/g0;->v()Ll5/h0;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ll5/h0;->w()Ll5/f0;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lh5/f;->d(Ll5/f0;)V
+
+    return-void
+
+    .line 6
+    :cond_1
+    new-instance p1, Ljava/security/GeneralSecurityException;
+
+    const-string v0, "invalid ECIES private key"
+
+    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

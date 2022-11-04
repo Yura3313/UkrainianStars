@@ -23,19 +23,19 @@
     return-void
 .end method
 
-.method public static final a(Lsd/m;)Ljava/util/List;
+.method public static final a(Lrd/i;)Ljava/util/List;
     .locals 2
 
-    sget-object v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->s0:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$a;
+    sget-object v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->t0:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$a;
 
     if-eqz p0, :cond_0
 
     .line 1
-    instance-of v0, p0, Lsd/m$c;
+    instance-of v0, p0, Lrd/i$c;
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lsd/m;->i()Lcom/supercell/id/model/IdRelationshipStatus;
+    invoke-virtual {p0}, Lrd/i;->g()Lcom/supercell/id/model/IdRelationshipStatus;
 
     move-result-object p0
 
@@ -45,24 +45,24 @@
 
     const/4 p0, 0x2
 
-    new-array p0, p0, [Lae/k2;
+    new-array p0, p0, [Lzd/g2;
 
     const/4 v0, 0x0
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->q0:Lae/k2;
+    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->r0:Lzd/g2;
 
     aput-object v1, p0, v0
 
     const/4 v0, 0x1
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->r0:Lae/k2;
+    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->s0:Lzd/g2;
 
     aput-object v1, p0, v0
 
     .line 4
-    invoke-static {p0}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lb2/e0;->l([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -70,10 +70,10 @@
 
     .line 5
     :cond_0
-    sget-object p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->q0:Lae/k2;
+    sget-object p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->r0:Lzd/g2;
 
     .line 6
-    invoke-static {p0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lb2/e0;->k(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 

@@ -38,13 +38,13 @@
     const-string v2, "Application foreground"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Lcom/android/billingclient/api/w;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
-    sget-object v0, Ls7/c;->d:Ls7/c;
+    sget-object v0, Lp7/c;->d:Lp7/c;
 
     .line 3
-    iget-object v0, v0, Ls7/c;->b:Ls7/a;
+    iget-object v0, v0, Lp7/c;->b:Lp7/a;
 
     if-nez v0, :cond_0
 
@@ -52,7 +52,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {v0}, Ls7/a;->b()V
+    invoke-virtual {v0}, Lp7/a;->b()V
 
     :goto_0
     return-void

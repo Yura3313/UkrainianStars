@@ -356,7 +356,7 @@ If you want to continue playing with your existing account, please grant permiss
     <string name="s5">Create calendar event</string>
     <string name="s6">Allow Ad to create a calendar event?</string>
     <string name="s7">Test Ad</string>
-    <string name="sc_manifest_package_name">com.supercell.brawlstars</string>
+    <string name="sc_manifest_package_name">com.yura331.bs</string>
     <string name="search_menu_title">Search</string>
     <string name="siwa_client_id">com.kakaogames.web-data-zinny</string>
     <string name="status_bar_notification_info_overflow">999+</string>

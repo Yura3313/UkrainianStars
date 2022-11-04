@@ -46,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    move v1, v0
 
     :goto_0
     const/16 v2, 0x1f
@@ -210,22 +210,15 @@
     .line 6
     iput-boolean v0, p0, Lcom/google/gson/stream/JsonWriter;->serializeNulls:Z
 
-    if-eqz p1, :cond_0
+    const-string v0, "out == null"
 
     .line 7
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 8
     iput-object p1, p0, Lcom/google/gson/stream/JsonWriter;->out:Ljava/io/Writer;
 
     return-void
-
-    .line 8
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "out == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method private beforeName()V
@@ -450,7 +443,7 @@
     const-string p2, "Dangling name: "
 
     .line 8
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -649,7 +642,7 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_1
     if-ge v3, v1, :cond_6
@@ -997,24 +990,27 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_2
+    const-string v0, "name == null"
 
     .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 2
     iget-object v0, p0, Lcom/google/gson/stream/JsonWriter;->deferredName:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2
+    .line 3
     iget v0, p0, Lcom/google/gson/stream/JsonWriter;->stackSize:I
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     iput-object p1, p0, Lcom/google/gson/stream/JsonWriter;->deferredName:Ljava/lang/String;
 
     return-object p0
 
-    .line 4
+    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -1024,21 +1020,11 @@
 
     throw p1
 
-    .line 5
+    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
-
-    throw p1
-
-    .line 6
-    :cond_2
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "name == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method

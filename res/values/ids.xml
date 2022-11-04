@@ -174,6 +174,7 @@
     <item type="id" name="cancel_custom_image_button" />
     <item type="id" name="cannotDonateLabel" />
     <item type="id" name="change" />
+    <item type="id" name="change_email_button" />
     <item type="id" name="change_name_button" />
     <item type="id" name="checkbox" />
     <item type="id" name="checked" />
@@ -471,7 +472,6 @@
     <item type="id" name="icon" />
     <item type="id" name="iconView" />
     <item type="id" name="icon_group" />
-    <item type="id" name="identifierLabel" />
     <item type="id" name="illustrationImageView" />
     <item type="id" name="image" />
     <item type="id" name="imagePager" />
@@ -567,10 +567,10 @@
     <item type="id" name="loading_error_tap_to_retry" />
     <item type="id" name="loading_progressbar" />
     <item type="id" name="loading_state_view" />
+    <item type="id" name="logOutButton" />
     <item type="id" name="logged_in_with_label" />
     <item type="id" name="loginButton" />
     <item type="id" name="loginContainer" />
-    <item type="id" name="loginEnterContactDetailsScrollView" />
     <item type="id" name="loginEnterEmailScrollView" />
     <item type="id" name="loginWithAnotherIdButton" />
     <item type="id" name="login_close_button" />
@@ -588,7 +588,6 @@
     <item type="id" name="logo_background" />
     <item type="id" name="logo_container" />
     <item type="id" name="logo_tall_guide" />
-    <item type="id" name="logoutButton" />
     <item type="id" name="maintenance_mode" />
     <item type="id" name="masked" />
     <item type="id" name="media_actions" />
@@ -643,6 +642,7 @@
     <item type="id" name="navigation_divider" />
     <item type="id" name="navigation_header_container" />
     <item type="id" name="navigation_logo" />
+    <item type="id" name="negative_button" />
     <item type="id" name="networkErrorFooter" />
     <item type="id" name="networkErrorFooterText" />
     <item type="id" name="networkErrorIcon" />
@@ -697,10 +697,9 @@
     <item type="id" name="passesIcon" />
     <item type="id" name="passesIcons" />
     <item type="id" name="passesLabel" />
-    <item type="id" name="phoneEditText" />
-    <item type="id" name="phoneRegionButton" />
     <item type="id" name="picker_list" />
     <item type="id" name="pinEditText" />
+    <item type="id" name="positive_button" />
     <item type="id" name="privacyTextView" />
     <item type="id" name="productBackground" />
     <item type="id" name="productCard" />
@@ -770,14 +769,12 @@
     <item type="id" name="radio" />
     <item type="id" name="ratingBar" />
     <item type="id" name="receiveFriendRequestsSwitch" />
-    <item type="id" name="region_code" />
     <item type="id" name="region_flag" />
     <item type="id" name="region_header_title" />
     <item type="id" name="region_header_title_sticky" />
     <item type="id" name="region_name_and_country_code" />
     <item type="id" name="region_selected" />
     <item type="id" name="register" />
-    <item type="id" name="registerEnterContactDetailsScrollView" />
     <item type="id" name="registerEnterEmailScrollView" />
     <item type="id" name="rejectButton" />
     <item type="id" name="rememberCheckBox" />
@@ -829,6 +826,7 @@
     <item type="id" name="scrollView" />
     <item type="id" name="scroll_indicator" />
     <item type="id" name="scroll_jump_button" />
+    <item type="id" name="scroll_view" />
     <item type="id" name="searchField" />
     <item type="id" name="search_badge" />
     <item type="id" name="search_bar" />
@@ -878,7 +876,6 @@
     <item type="id" name="share_profile_title" />
     <item type="id" name="share_title" />
     <item type="id" name="sharedAvatarImageView" />
-    <item type="id" name="sharedIdentifierLabel" />
     <item type="id" name="sharedProfileAccountView" />
     <item type="id" name="sharedProfileName" />
     <item type="id" name="shared_accounts" />
@@ -911,11 +908,13 @@
     <item type="id" name="supercellStoreStartGuide" />
     <item type="id" name="supercellStoreTextView" />
     <item type="id" name="support_fragment_container" />
+    <item type="id" name="switchAccountButton" />
     <item type="id" name="systemImageView" />
     <item type="id" name="systemLevelLabel" />
     <item type="id" name="systemNameLabel" />
     <item type="id" name="systemNicknameContainer" />
     <item type="id" name="systemNicknameLabel" />
+    <item type="id" name="systemProgressLabel" />
     <item type="id" name="systemRowView" />
     <item type="id" name="system_message" />
     <item type="id" name="tabFriends" />

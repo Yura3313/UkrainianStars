@@ -465,7 +465,7 @@
 
     move-result-object v4
 
-    const/4 v5, 0x0
+    move v5, v0
 
     .line 27
     :goto_0
@@ -670,7 +670,7 @@
 
     move-result-object p1
 
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 4
     :goto_0
@@ -911,7 +911,7 @@
 
     if-eqz p1, :cond_4
 
-    const/4 v0, 0x1
+    move v0, v2
 
     :cond_4
     return v0

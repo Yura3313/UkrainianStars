@@ -55,7 +55,7 @@
 
     const-wide/16 v4, 0x3e8
 
-    mul-long v2, v2, v4
+    mul-long/2addr v2, v4
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
     :try_end_0

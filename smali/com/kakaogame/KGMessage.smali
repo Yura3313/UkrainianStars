@@ -218,7 +218,7 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -355,13 +355,7 @@
     invoke-static {v1, v0, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 23
-    goto :goto_6
-
-    :goto_5
     throw p0
-
-    :goto_6
-    goto :goto_5
 .end method
 
 .method public static deleteMessages(Ljava/util/List;Lcom/kakaogame/KGResultCallback;)V
@@ -649,7 +643,7 @@
 
     move-result-object v4
 
-    invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -732,7 +726,7 @@
     invoke-direct {p3, p2}, Lcom/kakaogame/KGMessage;-><init>(Ljava/util/Map;)V
 
     .line 26
-    invoke-interface {v4, p3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
@@ -762,7 +756,7 @@
     goto :goto_3
 
     :cond_8
-    const/4 v7, -0x1
+    move v7, p2
 
     .line 29
     :goto_3
@@ -788,7 +782,7 @@
     goto :goto_4
 
     :cond_9
-    const/4 v8, -0x1
+    move v8, p2
 
     .line 31
     :goto_4
@@ -884,13 +878,7 @@
     invoke-static {p1, p4, p2, p3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 38
-    goto :goto_8
-
-    :goto_7
     throw p0
-
-    :goto_8
-    goto :goto_7
 .end method
 
 .method public static loadMessages(Ljava/lang/String;Ljava/util/List;JILcom/kakaogame/KGResultCallback;)V
@@ -1191,13 +1179,7 @@
     invoke-static {v1, v0, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 22
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public static loadUnreadMessageCount(Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
@@ -1363,7 +1345,7 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -1500,13 +1482,7 @@
     invoke-static {v1, v0, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 23
-    goto :goto_6
-
-    :goto_5
     throw p0
-
-    :goto_6
-    goto :goto_5
 .end method
 
 .method public static markAsReadMessages(Ljava/util/List;Lcom/kakaogame/KGResultCallback;)V
@@ -1662,7 +1638,7 @@
     invoke-direct {v3, v4}, Lcom/kakaogame/KGItem;-><init>(Ljava/util/Map;)V
 
     .line 5
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 

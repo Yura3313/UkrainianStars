@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final l:I
+.field public static final k:I
 
-.field public static final m:[[I
+.field public static final l:[[I
 
 
 # instance fields
-.field public j:Landroid/content/res/ColorStateList;
+.field public i:Landroid/content/res/ColorStateList;
 
-.field public k:Z
+.field public j:Z
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CompoundButton_RadioButton:I
 
-    sput v0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->l:I
+    sput v0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->k:I
 
     const/4 v0, 0x4
 
@@ -61,7 +61,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->m:[[I
+    sput-object v0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->l:[[I
 
     return-void
 
@@ -105,9 +105,9 @@
     .locals 7
 
     .line 2
-    sget v4, Lcom/google/android/material/radiobutton/MaterialRadioButton;->l:I
+    sget v4, Lcom/google/android/material/radiobutton/MaterialRadioButton;->k:I
 
-    invoke-static {p1, p2, p3, v4}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v4}, Lr4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
@@ -132,7 +132,7 @@
     move v3, p3
 
     .line 5
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/k;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/j;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -146,12 +146,12 @@
     if-eqz v0, :cond_0
 
     .line 7
-    invoke-static {p1, p2, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p1, p2, p3}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
     .line 8
-    invoke-static {p0, p1}, Landroidx/core/widget/c;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintList(Landroid/content/res/ColorStateList;)V
 
     .line 9
     :cond_0
@@ -162,7 +162,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Z
 
     .line 11
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
@@ -174,33 +174,33 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->i:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
     .line 2
     sget v0, Lcom/google/android/material/R$attr;->colorControlActivated:I
 
-    invoke-static {p0, v0}, Lk3/a00;->b(Landroid/view/View;I)I
+    invoke-static {p0, v0}, Lcom/android/billingclient/api/a0;->k(Landroid/view/View;I)I
 
     move-result v0
 
     .line 3
     sget v1, Lcom/google/android/material/R$attr;->colorOnSurface:I
 
-    invoke-static {p0, v1}, Lk3/a00;->b(Landroid/view/View;I)I
+    invoke-static {p0, v1}, Lcom/android/billingclient/api/a0;->k(Landroid/view/View;I)I
 
     move-result v1
 
     .line 4
     sget v2, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {p0, v2}, Lk3/a00;->b(Landroid/view/View;I)I
+    invoke-static {p0, v2}, Lcom/android/billingclient/api/a0;->k(Landroid/view/View;I)I
 
     move-result v2
 
     .line 5
-    sget-object v3, Lcom/google/android/material/radiobutton/MaterialRadioButton;->m:[[I
+    sget-object v3, Lcom/google/android/material/radiobutton/MaterialRadioButton;->l:[[I
 
     const/4 v4, 0x4
 
@@ -211,7 +211,7 @@
     const/high16 v6, 0x3f800000    # 1.0f
 
     .line 6
-    invoke-static {v2, v0, v6}, Lk3/a00;->c(IIF)I
+    invoke-static {v2, v0, v6}, Lcom/android/billingclient/api/a0;->n(IIF)I
 
     move-result v0
 
@@ -222,7 +222,7 @@
     const v5, 0x3f0a3d71
 
     .line 7
-    invoke-static {v2, v1, v5}, Lk3/a00;->c(IIF)I
+    invoke-static {v2, v1, v5}, Lcom/android/billingclient/api/a0;->n(IIF)I
 
     move-result v5
 
@@ -233,7 +233,7 @@
     const v5, 0x3ec28f5c
 
     .line 8
-    invoke-static {v2, v1, v5}, Lk3/a00;->c(IIF)I
+    invoke-static {v2, v1, v5}, Lcom/android/billingclient/api/a0;->n(IIF)I
 
     move-result v6
 
@@ -242,7 +242,7 @@
     const/4 v0, 0x3
 
     .line 9
-    invoke-static {v2, v1, v5}, Lk3/a00;->c(IIF)I
+    invoke-static {v2, v1, v5}, Lcom/android/billingclient/api/a0;->n(IIF)I
 
     move-result v1
 
@@ -253,11 +253,11 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
-    iput-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->i:Landroid/content/res/ColorStateList;
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->i:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -271,11 +271,12 @@
     invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->k:Z
+    iget-boolean v0, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Z
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Landroidx/core/widget/c;->b(Landroid/widget/CompoundButton;)Landroid/content/res/ColorStateList;
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/CompoundButton;->getButtonTintList()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -283,7 +284,7 @@
 
     const/4 v0, 0x1
 
-    .line 3
+    .line 4
     invoke-virtual {p0, v0}, Lcom/google/android/material/radiobutton/MaterialRadioButton;->setUseMaterialThemeColors(Z)V
 
     :cond_0
@@ -294,7 +295,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/material/radiobutton/MaterialRadioButton;->j:Z
 
     if-eqz p1, :cond_0
 
@@ -303,15 +304,16 @@
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/core/widget/c;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintList(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
-    invoke-static {p0, p1}, Landroidx/core/widget/c;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
+    .line 4
+    invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintList(Landroid/content/res/ColorStateList;)V
 
     :goto_0
     return-void

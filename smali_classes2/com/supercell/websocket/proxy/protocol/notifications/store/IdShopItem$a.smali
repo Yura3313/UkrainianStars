@@ -3,7 +3,7 @@
 .source "IdShopItem.java"
 
 # interfaces
-.implements Lee/a;
+.implements Lde/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItem;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItem$a;",
         ">;",
-        "Lee/a;"
+        "Lde/a;"
     }
 .end annotation
 

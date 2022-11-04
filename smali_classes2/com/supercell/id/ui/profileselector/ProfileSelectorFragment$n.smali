@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;
 .super Ljava/lang/Object;
-.source "Comparisons.kt"
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,31 +16,20 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-.field public final synthetic h:Ljava/util/Comparator;
+.field public final synthetic g:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;Ljava/util/Comparator;)V
+.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Ljava/util/Comparator;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->h:Ljava/util/Comparator;
+    iput-boolean p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,60 +38,98 @@
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final run()V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Ljava/util/Comparator;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    invoke-interface {v0, p1, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    sget v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:I
+
+    .line 2
+    invoke-virtual {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
     move-result v0
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    goto :goto_1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->h:Ljava/util/Comparator;
-
-    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
-
     .line 3
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->e:Ljava/lang/String;
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Z
 
-    const-string v1, ""
+    if-nez v0, :cond_0
 
-    if-eqz p1, :cond_1
+    .line 4
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+    invoke-static {v0}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    new-instance v2, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
+
+    .line 5
+    invoke-direct {v2, v1}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(Z)V
+
+    .line 6
+    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
 
     goto :goto_0
 
-    :cond_1
-    move-object p1, v1
+    .line 7
+    :cond_0
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    .line 4
-    :goto_0
-    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
-
-    .line 5
-    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->e:Ljava/lang/String;
-
-    if-eqz p2, :cond_2
-
-    move-object v1, p2
-
-    .line 6
-    :cond_2
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .line 8
+    invoke-virtual {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
     move-result v0
 
-    :goto_1
-    return v0
+    if-nez v0, :cond_2
+
+    .line 9
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+    invoke-static {v0}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+    .line 10
+    invoke-static {v2}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_1
+
+    .line 11
+    iget-boolean v2, v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+
+    if-ne v2, v3, :cond_1
+
+    move v1, v3
+
+    :cond_1
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-static {v0, v2, v1, v3}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
+
+    :cond_2
+    :goto_0
+    return-void
 .end method

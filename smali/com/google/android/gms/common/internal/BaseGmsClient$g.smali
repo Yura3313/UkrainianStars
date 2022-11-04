@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/common/internal/BaseGmsClient$g;
-.super Lq3/b;
+.super Lp3/b;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
@@ -26,7 +26,7 @@
     iput-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$g;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     .line 2
-    invoke-direct {p0, p2}, Lq3/b;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0, p2}, Lp3/b;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     if-ne v0, v3, :cond_1
 
     :cond_0
-    const/4 v2, 0x1
+    move v2, v5
 
     :cond_1
     if-eqz v2, :cond_2
@@ -112,7 +112,7 @@
     iget-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$g;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -124,7 +124,7 @@
     iget-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$g;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     .line 6
-    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->d()Z
+    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->g()Z
 
     move-result v0
 
@@ -311,13 +311,13 @@
     .line 36
     iget p1, p1, Landroid/os/Message;->arg2:I
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->J0(I)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->n0(I)V
 
     .line 37
     :cond_e
     iget-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$g;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -357,7 +357,7 @@
     if-ne v0, v3, :cond_12
 
     :cond_11
-    const/4 v2, 0x1
+    move v2, v5
 
     :cond_12
     if-eqz v2, :cond_15
@@ -471,7 +471,7 @@
     const-string v2, "Don\'t know how to handle message: "
 
     .line 59
-    invoke-static {v1, v2, v0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, La0/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

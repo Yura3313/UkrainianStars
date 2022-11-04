@@ -18,6 +18,22 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:maxSdkVersion="18" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <queries>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.kakao.onetalk"/>
+        <package android:name="com.android.chrome"/>
+        <package android:name="com.chrome.beta"/>
+        <package android:name="com.chrome.dev"/>
+        <package android:name="com.supercell.brawlstars"/>
+        <package android:name="com.supercell.boombeach"/>
+        <package android:name="com.supercell.clashofclans"/>
+        <package android:name="com.supercell.clashroyale"/>
+        <package android:name="com.supercell.hayday"/>
+        <package android:name="com.supercell.clashquest"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+    </queries>
     <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
@@ -137,11 +153,6 @@
         </receiver>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <activity android:launchMode="singleTask" android:name="com.kakao.sdk.partner.auth.AgeAuthActivity" android:theme="@style/TransparentCompat"/>
-        <activity android:exported="false" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.TalkAuthCodeActivity" android:theme="@style/TransparentCompat"/>
-        <activity android:launchMode="singleTask" android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" android:theme="@style/TransparentCompat"/>
-        <provider android:authorities="com.yura331.bs.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
-        <provider android:authorities="com.yura331.bs.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
         <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
             <intent-filter android:priority="-500">
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
@@ -168,6 +179,9 @@
         </provider>
         <activity android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.helpshift.support.activities.ParentActivity" android:theme="@style/Helpshift.Theme.Activity"/>
         <activity android:configChanges="orientation|screenSize" android:name="com.helpshift.support.HSReview" android:theme="@style/Helpshift.Theme.Dialog"/>
+        <activity android:launchMode="singleTask" android:name="com.kakao.sdk.partner.auth.AgeAuthActivity" android:theme="@style/TransparentCompat"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.TalkAuthCodeActivity" android:theme="@style/TransparentCompat"/>
+        <activity android:launchMode="singleTask" android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" android:theme="@style/TransparentCompat"/>
         <activity android:name="com.supercell.id.ui.MainActivity" android:theme="@style/SupercellIdTheme"/>
         <receiver android:exported="true" android:name="com.supercell.id.SharedDataBroadcastReceiver">
             <intent-filter>
@@ -178,8 +192,10 @@
         <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
         <activity android:enabled="false" android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
         <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"/>
-        <meta-data android:name="com.google.android.play.billingclient.version" android:value="3.0.3"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.0.0"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.yura331.bs.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.yura331.bs.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity" android:theme="@style/LineSdk_AuthenticationActivity"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity">
             <intent-filter>

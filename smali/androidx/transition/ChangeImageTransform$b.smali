@@ -55,7 +55,7 @@
     check-cast p2, Landroid/graphics/Matrix;
 
     .line 2
-    invoke-static {p1, p2}, Lv0/h;->a(Landroid/widget/ImageView;Landroid/graphics/Matrix;)V
+    invoke-static {p1, p2}, Lt0/h;->a(Landroid/widget/ImageView;Landroid/graphics/Matrix;)V
 
     return-void
 .end method

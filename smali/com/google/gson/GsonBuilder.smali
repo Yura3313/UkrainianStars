@@ -485,7 +485,7 @@
     .line 2
     iget-object v2, v0, Lcom/google/gson/GsonBuilder;->factories:Ljava/util/List;
 
-    invoke-interface {v1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 3
     invoke-static {v1}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
@@ -501,7 +501,7 @@
     invoke-static {v2}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
     .line 6
-    invoke-interface {v1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 7
     iget-object v2, v0, Lcom/google/gson/GsonBuilder;->datePattern:Ljava/lang/String;

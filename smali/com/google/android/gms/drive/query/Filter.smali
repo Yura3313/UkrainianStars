@@ -6,13 +6,13 @@
 
 
 # virtual methods
-.method public abstract f2(Lk3/r5;)Ljava/lang/Object;
+.method public abstract a1(Lf0/t;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lk3/r5;",
+            "Lf0/t;",
             ")TT;"
         }
     .end annotation

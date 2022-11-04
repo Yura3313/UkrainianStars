@@ -15,26 +15,26 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
-.field public final h:J
+.field public final g:J
 
-.field public final i:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
+
+.field public final i:I
 
 .field public final j:I
 
-.field public final k:I
-
-.field public final l:Ljava/lang/String;
+.field public final k:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr1/a;
+    new-instance v0, Lp1/a;
 
-    invoke-direct {v0}, Lr1/a;-><init>()V
+    invoke-direct {v0}, Lp1/a;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/AccountChangeEvent;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -48,24 +48,27 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:I
+    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->f:I
 
     .line 3
-    iput-wide p2, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:J
+    iput-wide p2, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:J
+
+    const-string p1, "null reference"
 
     .line 4
-    invoke-static {p4}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
-
-    iput-object p4, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    invoke-static {p4, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 5
-    iput p5, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
+    iput-object p4, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
     .line 6
-    iput p6, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
+    iput p5, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
 
     .line 7
-    iput-object p7, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
+    iput p6, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
+
+    .line 8
+    iput-object p7, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
     return-void
 .end method
@@ -93,30 +96,36 @@
     check-cast p1, Lcom/google/android/gms/auth/AccountChangeEvent;
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:I
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->f:I
 
-    iget v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->g:I
+    iget v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->f:I
 
     if-ne v1, v3, :cond_1
 
-    iget-wide v3, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:J
+    iget-wide v3, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:J
 
-    iget-wide v5, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->h:J
+    iget-wide v5, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->g:J
 
     cmp-long v1, v3, v5
 
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
     .line 4
-    invoke-static {v1, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
+
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
+
+    iget v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
+
+    if-ne v1, v3, :cond_1
 
     iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
 
@@ -124,18 +133,12 @@
 
     if-ne v1, v3, :cond_1
 
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
-    iget v3, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
-
-    if-ne v1, v3, :cond_1
-
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
-
-    iget-object p1, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
     .line 5
-    invoke-static {v1, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -155,7 +158,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:I
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->f:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -165,7 +168,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:J
+    iget-wide v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -175,13 +178,13 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -191,7 +194,7 @@
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -201,7 +204,7 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
     const/4 v2, 0x5
 
@@ -219,7 +222,7 @@
     .locals 7
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
+    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
 
     const/4 v1, 0x1
 
@@ -261,16 +264,16 @@
 
     .line 2
     :goto_0
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
-    iget v3, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
+    iget v3, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
 
     const/16 v4, 0x5b
 
     .line 3
-    invoke-static {v1, v4}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v1, v4}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v4
 
@@ -282,7 +285,7 @@
     add-int/2addr v5, v4
 
     .line 5
-    invoke-static {v2, v5}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v2, v5}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v4
 
@@ -291,7 +294,7 @@
     const-string v6, ", changeType = "
 
     .line 6
-    invoke-static {v4, v5, v1, v6, v0}, Lcom/kakaogame/b;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, v5, v1, v6, v0}, Lcom/android/billingclient/api/f;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -325,74 +328,74 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:I
+    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->f:I
 
     const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 4
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-wide v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->g:J
 
     const/4 v3, 0x2
 
     const/16 v4, 0x8
 
     .line 6
-    invoke-static {p1, v3, v4}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v3, v4}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 7
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->h:Ljava/lang/String;
 
     const/4 v1, 0x3
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
+    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->i:I
 
     .line 10
-    invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 11
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
-    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:I
+    iget v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->j:I
 
     const/4 v1, 0x5
 
     .line 13
-    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 14
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->l:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/AccountChangeEvent;->k:Ljava/lang/String;
 
     const/4 v1, 0x6
 
-    invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 16
-    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

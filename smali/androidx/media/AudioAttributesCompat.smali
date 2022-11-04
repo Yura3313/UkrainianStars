@@ -3,7 +3,7 @@
 .source "AudioAttributesCompat.java"
 
 # interfaces
-.implements Lx0/b;
+.implements Lv0/c;
 
 
 # static fields
@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field public a:Lp0/a;
+.field public a:Lo0/a;
 
 
 # direct methods
@@ -87,12 +87,12 @@
     check-cast p1, Landroidx/media/AudioAttributesCompat;
 
     .line 3
-    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lp0/a;
+    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lo0/a;
 
     if-nez v0, :cond_2
 
     .line 4
-    iget-object p1, p1, Landroidx/media/AudioAttributesCompat;->a:Lp0/a;
+    iget-object p1, p1, Landroidx/media/AudioAttributesCompat;->a:Lo0/a;
 
     if-nez p1, :cond_1
 
@@ -103,7 +103,7 @@
 
     .line 5
     :cond_2
-    iget-object p1, p1, Landroidx/media/AudioAttributesCompat;->a:Lp0/a;
+    iget-object p1, p1, Landroidx/media/AudioAttributesCompat;->a:Lo0/a;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -115,7 +115,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lp0/a;
+    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lo0/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -127,7 +127,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lp0/a;
+    iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Lo0/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

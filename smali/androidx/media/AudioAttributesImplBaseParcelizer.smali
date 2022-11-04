@@ -12,94 +12,94 @@
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/VersionedParcel;)Lp0/c;
+.method public static read(Lv0/a;)Lo0/c;
     .locals 3
 
     .line 1
-    new-instance v0, Lp0/c;
+    new-instance v0, Lo0/c;
 
-    invoke-direct {v0}, Lp0/c;-><init>()V
+    invoke-direct {v0}, Lo0/c;-><init>()V
 
     .line 2
-    iget v1, v0, Lp0/c;->a:I
+    iget v1, v0, Lo0/c;->a:I
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/VersionedParcel;->k(II)I
+    invoke-virtual {p0, v1, v2}, Lv0/a;->k(II)I
 
     move-result v1
 
-    iput v1, v0, Lp0/c;->a:I
+    iput v1, v0, Lo0/c;->a:I
 
     .line 3
-    iget v1, v0, Lp0/c;->b:I
+    iget v1, v0, Lo0/c;->b:I
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/VersionedParcel;->k(II)I
+    invoke-virtual {p0, v1, v2}, Lv0/a;->k(II)I
 
     move-result v1
 
-    iput v1, v0, Lp0/c;->b:I
+    iput v1, v0, Lo0/c;->b:I
 
     .line 4
-    iget v1, v0, Lp0/c;->c:I
+    iget v1, v0, Lo0/c;->c:I
 
     const/4 v2, 0x3
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/VersionedParcel;->k(II)I
+    invoke-virtual {p0, v1, v2}, Lv0/a;->k(II)I
 
     move-result v1
 
-    iput v1, v0, Lp0/c;->c:I
+    iput v1, v0, Lo0/c;->c:I
 
     .line 5
-    iget v1, v0, Lp0/c;->d:I
+    iget v1, v0, Lo0/c;->d:I
 
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/VersionedParcel;->k(II)I
+    invoke-virtual {p0, v1, v2}, Lv0/a;->k(II)I
 
     move-result p0
 
-    iput p0, v0, Lp0/c;->d:I
+    iput p0, v0, Lo0/c;->d:I
 
     return-object v0
 .end method
 
-.method public static write(Lp0/c;Landroidx/versionedparcelable/VersionedParcel;)V
+.method public static write(Lo0/c;Lv0/a;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget v0, p0, Lp0/c;->a:I
+    iget v0, p0, Lo0/c;->a:I
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
+    invoke-virtual {p1, v0, v1}, Lv0/a;->u(II)V
 
     .line 3
-    iget v0, p0, Lp0/c;->b:I
+    iget v0, p0, Lo0/c;->b:I
 
     const/4 v1, 0x2
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
+    invoke-virtual {p1, v0, v1}, Lv0/a;->u(II)V
 
     .line 4
-    iget v0, p0, Lp0/c;->c:I
+    iget v0, p0, Lo0/c;->c:I
 
     const/4 v1, 0x3
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
+    invoke-virtual {p1, v0, v1}, Lv0/a;->u(II)V
 
     .line 5
-    iget p0, p0, Lp0/c;->d:I
+    iget p0, p0, Lo0/c;->d:I
 
     const/4 v0, 0x4
 
-    invoke-virtual {p1, p0, v0}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
+    invoke-virtual {p1, p0, v0}, Lv0/a;->u(II)V
 
     return-void
 .end method

@@ -1,28 +1,25 @@
-.class public final synthetic Lb2/c0;
+.class public final Lb2/c0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/os/Parcelable$Creator;
 
 
-# instance fields
-.field public final synthetic g:I
-
-.field public final h:Ljava/lang/Object;
-
-.field public final i:Ljava/lang/Object;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>()V
     .locals 0
-
-    iput p3, p0, Lb2/c0;->g:I
-
-    iput-object p1, p0, Lb2/c0;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, Lb2/c0;->i:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,199 +28,135 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
-
-    iget v0, p0, Lb2/c0;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto/16 :goto_0
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lb2/c0;->h:Ljava/lang/Object;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/a;
+    move-result v0
 
-    iget-object v1, p0, Lb2/c0;->i:Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    check-cast v1, Landroid/graphics/Bitmap;
+    const/4 v2, 0x0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-object v4, v1
+
+    move-object v7, v4
+
+    move v5, v2
+
+    move v6, v5
+
+    move v8, v6
 
     .line 2
-    sget-object v2, Lk3/yq0;->h:Lk3/gr0;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, v0, :cond_5
 
     .line 3
-    new-instance v2, Lk3/fr0;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    invoke-direct {v2}, Lk3/fr0;-><init>()V
+    move-result v1
+
+    const v2, 0xffff
+
+    and-int/2addr v2, v1
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_4
+
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x3
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x4
+
+    if-eq v2, v3, :cond_1
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_0
 
     .line 4
-    sget-object v3, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    const/4 v4, 0x0
-
-    invoke-virtual {v1, v3, v4, v2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+    goto :goto_0
 
     .line 5
-    iget-object v1, v0, Lcom/google/android/gms/internal/ads/a;->j:Ljava/lang/Object;
+    :cond_0
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
-    monitor-enter v1
+    move-result v8
+
+    goto :goto_0
 
     .line 6
-    :try_start_0
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/a;->a:Lcom/google/android/gms/internal/ads/z5$a;
+    :cond_1
+    invoke-static {p1, v1}, Lc2/b;->f(Landroid/os/Parcel;I)[I
+
+    move-result-object v7
+
+    goto :goto_0
 
     .line 7
-    invoke-static {}, Lcom/google/android/gms/internal/ads/z5$f;->z()Lcom/google/android/gms/internal/ads/z5$f$a;
+    :cond_2
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
-    move-result-object v3
+    move-result v6
+
+    goto :goto_0
 
     .line 8
-    invoke-virtual {v2}, Lk3/fr0;->a()Lk3/yq0;
+    :cond_3
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
-    move-result-object v2
+    move-result v5
+
+    goto :goto_0
 
     .line 9
-    iget-boolean v5, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    if-eqz v5, :cond_0
+    :cond_4
+    sget-object v2, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 10
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    check-cast v4, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
+
+    goto :goto_0
 
     .line 11
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    :cond_5
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 12
-    :cond_0
-    iget-object v5, v3, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    new-instance p1, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
-    check-cast v5, Lcom/google/android/gms/internal/ads/z5$f;
+    move-object v3, p1
 
-    invoke-static {v5, v2}, Lcom/google/android/gms/internal/ads/z5$f;->x(Lcom/google/android/gms/internal/ads/z5$f;Lk3/yq0;)V
+    invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;-><init>(Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;ZZ[II)V
 
-    .line 13
-    iget-boolean v2, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    return-object p1
+.end method
 
-    if-eqz v2, :cond_1
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 14
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
-    .line 15
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    .line 16
-    :cond_1
-    iget-object v2, v3, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/z5$f;
-
-    invoke-static {v2}, Lcom/google/android/gms/internal/ads/z5$f;->y(Lcom/google/android/gms/internal/ads/z5$f;)V
-
-    .line 17
-    iget-boolean v2, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    if-eqz v2, :cond_2
-
-    .line 18
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
-
-    .line 19
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    .line 20
-    :cond_2
-    iget-object v2, v3, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/z5$f;
-
-    invoke-static {v2}, Lcom/google/android/gms/internal/ads/z5$f;->w(Lcom/google/android/gms/internal/ads/z5$f;)V
-
-    .line 21
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/v5$b;->i()Lk3/at0;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/v5;
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/z5$f;
-
-    .line 22
-    iget-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    if-eqz v3, :cond_3
-
-    .line 23
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
-
-    .line 24
-    iput-boolean v4, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
-
-    .line 25
-    :cond_3
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/z5;
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/ads/z5;->A(Lcom/google/android/gms/internal/ads/z5;Lcom/google/android/gms/internal/ads/z5$f;)V
-
-    .line 26
-    monitor-exit v1
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-
-    .line 27
-    :pswitch_1
-    iget-object v0, p0, Lb2/c0;->h:Ljava/lang/Object;
-
-    check-cast v0, Lk3/k4;
-
-    iget-object v1, p0, Lb2/c0;->i:Ljava/lang/Object;
-
-    check-cast v1, Ljava/lang/String;
-
-    .line 28
-    iget-object v0, v0, Lk3/k4;->g:Lk3/gh;
-
-    invoke-interface {v0, v1}, Lk3/o4;->g(Ljava/lang/String;)V
-
-    return-void
-
-    .line 29
-    :goto_0
-    iget-object v0, p0, Lb2/c0;->h:Ljava/lang/Object;
-
-    check-cast v0, Lk3/gh;
-
-    iget-object v1, p0, Lb2/c0;->i:Ljava/lang/Object;
-
-    check-cast v1, Lorg/json/JSONObject;
-
-    const-string v2, "AFMA_updateActiveView"
-
-    .line 30
-    invoke-interface {v0, v2, v1}, Lk3/o4;->V(Ljava/lang/String;Lorg/json/JSONObject;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

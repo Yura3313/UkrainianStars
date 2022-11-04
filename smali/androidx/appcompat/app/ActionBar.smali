@@ -98,7 +98,7 @@
 .method public abstract q(Ljava/lang/CharSequence;)V
 .end method
 
-.method public r(Lf/b$a;)Lf/b;
+.method public r(Lf/a$a;)Lf/a;
     .locals 0
 
     const/4 p1, 0x0

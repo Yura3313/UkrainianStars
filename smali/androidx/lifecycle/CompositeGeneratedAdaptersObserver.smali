@@ -29,9 +29,9 @@
     .locals 3
 
     .line 1
-    new-instance p1, Ljava/util/HashMap;
+    new-instance p1, Landroidx/lifecycle/n;
 
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+    invoke-direct {p1}, Landroidx/lifecycle/n;-><init>()V
 
     .line 2
     iget-object p1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->a:[Landroidx/lifecycle/e;
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    move v1, v0
 
     :goto_0
     if-ge v1, p2, :cond_0

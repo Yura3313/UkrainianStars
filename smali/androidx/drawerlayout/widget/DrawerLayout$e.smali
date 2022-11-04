@@ -1,5 +1,5 @@
 .class public final Landroidx/drawerlayout/widget/DrawerLayout$e;
-.super Lj0/c$c;
+.super Li0/c$c;
 .source "DrawerLayout.java"
 
 
@@ -17,7 +17,7 @@
 # instance fields
 .field public final a:I
 
-.field public b:Lj0/c;
+.field public b:Li0/c;
 
 .field public final c:Landroidx/drawerlayout/widget/DrawerLayout$e$a;
 
@@ -31,7 +31,7 @@
     .line 1
     iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->d:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    invoke-direct {p0}, Lj0/c$c;-><init>()V
+    invoke-direct {p0}, Li0/c$c;-><init>()V
 
     .line 2
     new-instance p1, Landroidx/drawerlayout/widget/DrawerLayout$e$a;
@@ -184,9 +184,9 @@
     if-nez v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Lj0/c;
+    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Li0/c;
 
-    invoke-virtual {v0, p1, p2}, Lj0/c;->c(Landroid/view/View;I)V
+    invoke-virtual {v0, p1, p2}, Li0/c;->c(Landroid/view/View;I)V
 
     :cond_1
     return-void
@@ -255,10 +255,10 @@
     .line 1
     iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->d:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    iget-object v1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Lj0/c;
+    iget-object v1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Li0/c;
 
     .line 2
-    iget-object v1, v1, Lj0/c;->s:Landroid/view/View;
+    iget-object v1, v1, Li0/c;->s:Landroid/view/View;
 
     .line 3
     invoke-virtual {v0, p1, v1}, Landroidx/drawerlayout/widget/DrawerLayout;->p(ILandroid/view/View;)V
@@ -344,7 +344,7 @@
     .line 1
     iget-object p3, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->d:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -375,11 +375,9 @@
 
     if-eqz v1, :cond_2
 
-    cmpl-float v1, p2, v3
-
-    if-gtz v1, :cond_1
-
     cmpl-float p2, p2, v3
+
+    if-gtz p2, :cond_1
 
     if-nez p2, :cond_0
 
@@ -428,13 +426,13 @@
 
     .line 6
     :goto_1
-    iget-object p3, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Lj0/c;
+    iget-object p3, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Li0/c;
 
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result p1
 
-    invoke-virtual {p3, p2, p1}, Lj0/c;->x(II)Z
+    invoke-virtual {p3, p2, p1}, Li0/c;->w(II)Z
 
     .line 7
     iget-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e;->d:Landroidx/drawerlayout/widget/DrawerLayout;

@@ -80,45 +80,13 @@
 
 
 # virtual methods
-.method public final c()V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    .line 1
-    :goto_0
-    iget v1, p0, Lq/j;->p0:I
-
-    if-ge v0, v1, :cond_1
-
-    .line 2
-    iget-object v1, p0, Lq/j;->o0:[Lq/e;
-
-    aget-object v1, v1, v0
-
-    if-eqz v1, :cond_0
-
-    const/4 v2, 0x1
-
-    .line 3
-    iput-boolean v2, v1, Lq/e;->A:Z
-
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-.method public p0(IIII)V
+.method public V(IIII)V
     .locals 0
 
     return-void
 .end method
 
-.method public final q0(Lq/e;Lq/e$a;ILq/e$a;I)V
+.method public final W(Lq/e;Lq/e$a;ILq/e$a;I)V
     .locals 2
 
     .line 1
@@ -161,21 +129,21 @@
     .line 10
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;
 
-    invoke-virtual {v0, p1, v1}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->c(Lq/e;Lr/b$a;)V
+    invoke-virtual {v0, p1, v1}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->b(Lq/e;Lr/b$a;)V
 
     .line 11
     iget-object p2, p0, Lq/l;->z0:Lr/b$a;
 
     iget p2, p2, Lr/b$a;->e:I
 
-    invoke-virtual {p1, p2}, Lq/e;->j0(I)V
+    invoke-virtual {p1, p2}, Lq/e;->R(I)V
 
     .line 12
     iget-object p2, p0, Lq/l;->z0:Lr/b$a;
 
     iget p2, p2, Lr/b$a;->f:I
 
-    invoke-virtual {p1, p2}, Lq/e;->R(I)V
+    invoke-virtual {p1, p2}, Lq/e;->M(I)V
 
     .line 13
     iget-object p2, p0, Lq/l;->z0:Lr/b$a;
@@ -188,7 +156,39 @@
     .line 15
     iget p2, p2, Lr/b$a;->g:I
 
-    invoke-virtual {p1, p2}, Lq/e;->K(I)V
+    invoke-virtual {p1, p2}, Lq/e;->J(I)V
 
+    return-void
+.end method
+
+.method public final c()V
+    .locals 3
+
+    const/4 v0, 0x0
+
+    .line 1
+    :goto_0
+    iget v1, p0, Lq/j;->p0:I
+
+    if-ge v0, v1, :cond_1
+
+    .line 2
+    iget-object v1, p0, Lq/j;->o0:[Lq/e;
+
+    aget-object v1, v1, v0
+
+    if-eqz v1, :cond_0
+
+    const/4 v2, 0x1
+
+    .line 3
+    iput-boolean v2, v1, Lq/e;->A:Z
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
     return-void
 .end method

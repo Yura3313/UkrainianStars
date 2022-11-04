@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public final g:Lk3/wm;
+.field public final f:Lj3/an;
 
-.field public final h:Lcom/google/android/gms/internal/ads/zzwu;
+.field public final g:Lcom/google/android/gms/internal/ads/zzwu;
 
 
 # direct methods
-.method public constructor <init>(Lk3/wm;Lcom/google/android/gms/internal/ads/zzwu;)V
+.method public constructor <init>(Lj3/an;Lcom/google/android/gms/internal/ads/zzwu;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzsg;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbne;->g:Lk3/wm;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbne;->f:Lj3/an;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzbne;->h:Lcom/google/android/gms/internal/ads/zzwu;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzbne;->g:Lcom/google/android/gms/internal/ads/zzwu;
 
     return-void
 .end method

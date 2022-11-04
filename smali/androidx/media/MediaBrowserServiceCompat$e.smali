@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public c()V
     .locals 2
 
     .line 1
@@ -49,12 +49,12 @@
     iput-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$d;->b:Landroidx/media/j$a;
 
     .line 4
-    invoke-static {v1}, Landroidx/media/j;->b(Ljava/lang/Object;)V
+    invoke-static {v1}, Landroidx/media/j;->a(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final f(Landroidx/media/j$b;)V
+.method public final e(Landroidx/media/j$b;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -69,7 +69,7 @@
     .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$e;->e:Landroidx/media/MediaBrowserServiceCompat;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 

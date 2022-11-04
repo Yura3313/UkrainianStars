@@ -1,281 +1,276 @@
-.class public abstract Ln4/a;
+.class public final Ln4/a;
 .super Ljava/lang/Object;
-.source "BaseMotionStrategy.java"
-
-# interfaces
-.implements Ln4/g;
+.source "RippleUtils.java"
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
+# static fields
+.field public static final a:[I
 
-.field public final b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+.field public static final b:[I
 
-.field public final c:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Landroid/animation/Animator$AnimatorListener;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final c:[I
 
-.field public final d:Lj1/d;
-
-.field public e:Ld4/g;
-
-.field public f:Ld4/g;
+.field public static final d:[I
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ln4/a;->c:Ljava/util/ArrayList;
-
-    .line 3
-    iput-object p1, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    .line 4
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ln4/a;->a:Landroid/content/Context;
-
-    .line 5
-    iput-object p2, p0, Ln4/a;->d:Lj1/d;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ln4/a;->d:Lj1/d;
-
-    const/4 v1, 0x0
-
-    .line 2
-    iput-object v1, v0, Lj1/d;->g:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public b()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ln4/a;->d:Lj1/d;
-
-    const/4 v1, 0x0
-
-    .line 2
-    iput-object v1, v0, Lj1/d;->g:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public g()Landroid/animation/AnimatorSet;
-    .locals 1
-
-    invoke-virtual {p0}, Ln4/a;->i()Ld4/g;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Ln4/a;->h(Ld4/g;)Landroid/animation/AnimatorSet;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final h(Ld4/g;)Landroid/animation/AnimatorSet;
+.method public static constructor <clinit>()V
     .locals 4
 
+    const/4 v0, 0x1
+
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    const v3, 0x10100a7
+
+    aput v3, v1, v2
+
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    sput-object v1, Ln4/a;->a:[I
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const/4 v1, 0x2
 
-    const-string v1, "opacity"
+    new-array v3, v1, [I
 
     .line 2
-    invoke-virtual {p1, v1}, Ld4/g;->g(Ljava/lang/String;)Z
+    fill-array-data v3, :array_0
 
-    move-result v2
+    sput-object v3, Ln4/a;->b:[I
 
-    if-eqz v2, :cond_0
+    new-array v0, v0, [I
+
+    const v3, 0x10100a1
+
+    aput v3, v0, v2
 
     .line 3
-    iget-object v2, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+    sput-object v0, Ln4/a;->c:[I
 
-    sget-object v3, Landroid/view/View;->ALPHA:Landroid/util/Property;
-
-    invoke-virtual {p1, v1, v2, v3}, Ld4/g;->d(Ljava/lang/String;Ljava/lang/Object;Landroid/util/Property;)Landroid/animation/ObjectAnimator;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    const-string v1, "scale"
+    new-array v0, v1, [I
 
     .line 4
-    invoke-virtual {p1, v1}, Ld4/g;->g(Ljava/lang/String;)Z
+    fill-array-data v0, :array_1
 
-    move-result v2
+    sput-object v0, Ln4/a;->d:[I
 
-    if-eqz v2, :cond_1
+    return-void
 
-    .line 5
-    iget-object v2, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+    :array_0
+    .array-data 4
+        0x10100a1
+        0x10100a7
+    .end array-data
 
-    sget-object v3, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
-
-    invoke-virtual {p1, v1, v2, v3}, Ld4/g;->d(Ljava/lang/String;Ljava/lang/Object;Landroid/util/Property;)Landroid/animation/ObjectAnimator;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 6
-    iget-object v2, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    sget-object v3, Landroid/view/View;->SCALE_X:Landroid/util/Property;
-
-    invoke-virtual {p1, v1, v2, v3}, Ld4/g;->d(Ljava/lang/String;Ljava/lang/Object;Landroid/util/Property;)Landroid/animation/ObjectAnimator;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_1
-    const-string v1, "width"
-
-    .line 7
-    invoke-virtual {p1, v1}, Ld4/g;->g(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 8
-    iget-object v2, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    sget-object v3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->F:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
-
-    invoke-virtual {p1, v1, v2, v3}, Ld4/g;->d(Ljava/lang/String;Ljava/lang/Object;Landroid/util/Property;)Landroid/animation/ObjectAnimator;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_2
-    const-string v1, "height"
-
-    .line 9
-    invoke-virtual {p1, v1}, Ld4/g;->g(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    .line 10
-    iget-object v2, p0, Ln4/a;->b:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    sget-object v3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->G:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
-
-    invoke-virtual {p1, v1, v2, v3}, Ld4/g;->d(Ljava/lang/String;Ljava/lang/Object;Landroid/util/Property;)Landroid/animation/ObjectAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 11
-    :cond_3
-    new-instance p1, Landroid/animation/AnimatorSet;
-
-    invoke-direct {p1}, Landroid/animation/AnimatorSet;-><init>()V
-
-    .line 12
-    invoke-static {p1, v0}, Lcom/google/android/gms/ads/i;->d(Landroid/animation/AnimatorSet;Ljava/util/List;)V
-
-    return-object p1
+    :array_1
+    .array-data 4
+        0x101009e
+        0x10100a7
+    .end array-data
 .end method
 
-.method public final i()Ld4/g;
-    .locals 2
+.method public static a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v1, v0, [[I
+
+    new-array v0, v0, [I
+
+    const/4 v2, 0x0
 
     .line 1
-    iget-object v0, p0, Ln4/a;->f:Ld4/g;
+    sget-object v3, Ln4/a;->c:[I
 
-    if-eqz v0, :cond_0
-
-    return-object v0
+    aput-object v3, v1, v2
 
     .line 2
-    :cond_0
-    iget-object v0, p0, Ln4/a;->e:Ld4/g;
+    sget-object v3, Ln4/a;->b:[I
 
-    if-nez v0, :cond_1
+    invoke-static {p0, v3}, Ln4/a;->b(Landroid/content/res/ColorStateList;[I)I
+
+    move-result v3
+
+    aput v3, v0, v2
+
+    const/4 v2, 0x1
 
     .line 3
-    iget-object v0, p0, Ln4/a;->a:Landroid/content/Context;
+    sget-object v3, Landroid/util/StateSet;->NOTHING:[I
+
+    aput-object v3, v1, v2
 
     .line 4
-    invoke-interface {p0}, Ln4/g;->c()I
+    sget-object v3, Ln4/a;->a:[I
+
+    invoke-static {p0, v3}, Ln4/a;->b(Landroid/content/res/ColorStateList;[I)I
+
+    move-result p0
+
+    aput p0, v0, v2
+
+    .line 5
+    new-instance p0, Landroid/content/res/ColorStateList;
+
+    invoke-direct {p0, v1, v0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
+
+    return-object p0
+.end method
+
+.method public static b(Landroid/content/res/ColorStateList;[I)I
+    .locals 1
+
+    if-eqz p0, :cond_0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
+
+    move-result v0
+
+    invoke-virtual {p0, p1, v0}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+
+    move-result p0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 2
+    :goto_0
+    invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
+
+    move-result p1
+
+    mul-int/lit8 p1, p1, 0x2
+
+    const/16 v0, 0xff
+
+    invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
+
+    move-result p1
+
+    .line 3
+    invoke-static {p0, p1}, Lx/a;->d(II)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static c(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_1
+
+    .line 1
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1b
+
+    if-gt v1, v2, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v1
 
-    .line 5
-    invoke-static {v0, v1}, Ld4/g;->b(Landroid/content/Context;I)Ld4/g;
+    invoke-static {v1}, Landroid/graphics/Color;->alpha(I)I
 
-    move-result-object v0
+    move-result v1
 
-    iput-object v0, p0, Ln4/a;->e:Ld4/g;
+    if-nez v1, :cond_0
 
-    .line 6
-    :cond_1
-    iget-object v0, p0, Ln4/a;->e:Ld4/g;
-
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ln4/a;->d:Lj1/d;
-
-    .line 2
-    iget-object v1, v0, Lj1/d;->g:Ljava/lang/Object;
-
-    check-cast v1, Landroid/animation/Animator;
-
-    if-eqz v1, :cond_0
+    sget-object v1, Ln4/a;->d:[I
 
     .line 3
-    invoke-virtual {v1}, Landroid/animation/Animator;->cancel()V
+    invoke-virtual {p0, v1, v0}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+
+    move-result v0
+
+    invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
+
+    :cond_0
+    return-object p0
 
     .line 4
-    :cond_0
-    iput-object p1, v0, Lj1/d;->g:Ljava/lang/Object;
+    :cond_1
+    invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static d([I)Z
+    .locals 8
+
+    array-length v0, p0
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    move v3, v2
+
+    move v4, v3
+
+    :goto_0
+    const/4 v5, 0x1
+
+    if-ge v2, v0, :cond_4
+
+    aget v6, p0, v2
+
+    const v7, 0x101009e
+
+    if-ne v6, v7, :cond_0
+
+    move v3, v5
+
+    goto :goto_2
+
+    :cond_0
+    const v7, 0x101009c
+
+    if-ne v6, v7, :cond_1
+
+    :goto_1
+    move v4, v5
+
+    goto :goto_2
+
+    :cond_1
+    const v7, 0x10100a7
+
+    if-ne v6, v7, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    const v7, 0x1010367
+
+    if-ne v6, v7, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    :goto_2
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    if-eqz v3, :cond_5
+
+    if-eqz v4, :cond_5
+
+    move v1, v5
+
+    :cond_5
+    return v1
 .end method

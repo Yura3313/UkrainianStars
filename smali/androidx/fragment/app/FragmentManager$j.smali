@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract getName()Ljava/lang/String;
+.method public abstract c()Ljava/lang/String;
 .end method

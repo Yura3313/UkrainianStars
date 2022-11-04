@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public final a(Ljava/lang/Object;)Landroid/content/Intent;
-    .locals 4
+    .locals 5
 
     .line 1
     check-cast p1, Landroidx/activity/result/IntentSenderRequest;
@@ -48,9 +48,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Landroidx/activity/result/IntentSenderRequest;->a()Landroid/content/Intent;
-
-    move-result-object v1
+    iget-object v1, p1, Landroidx/activity/result/IntentSenderRequest;->g:Landroid/content/Intent;
 
     if-eqz v1, :cond_0
 
@@ -81,34 +79,22 @@
     if-eqz v1, :cond_0
 
     .line 8
-    new-instance v1, Landroidx/activity/result/IntentSenderRequest$b;
-
-    invoke-virtual {p1}, Landroidx/activity/result/IntentSenderRequest;->l()Landroid/content/IntentSender;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Landroidx/activity/result/IntentSenderRequest$b;-><init>(Landroid/content/IntentSender;)V
+    iget-object v1, p1, Landroidx/activity/result/IntentSenderRequest;->f:Landroid/content/IntentSender;
 
     const/4 v2, 0x0
 
     .line 9
-    invoke-virtual {v1, v2}, Landroidx/activity/result/IntentSenderRequest$b;->b(Landroid/content/Intent;)Landroidx/activity/result/IntentSenderRequest$b;
+    iget v3, p1, Landroidx/activity/result/IntentSenderRequest;->i:I
 
     .line 10
-    invoke-virtual {p1}, Landroidx/activity/result/IntentSenderRequest;->j()I
-
-    move-result v2
-
-    invoke-virtual {p1}, Landroidx/activity/result/IntentSenderRequest;->d()I
-
-    move-result p1
-
-    invoke-virtual {v1, v2, p1}, Landroidx/activity/result/IntentSenderRequest$b;->c(II)Landroidx/activity/result/IntentSenderRequest$b;
+    iget p1, p1, Landroidx/activity/result/IntentSenderRequest;->h:I
 
     .line 11
-    invoke-virtual {v1}, Landroidx/activity/result/IntentSenderRequest$b;->a()Landroidx/activity/result/IntentSenderRequest;
+    new-instance v4, Landroidx/activity/result/IntentSenderRequest;
 
-    move-result-object p1
+    invoke-direct {v4, v1, v2, p1, v3}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
+
+    move-object p1, v4
 
     :cond_0
     const-string v1, "androidx.activity.result.contract.extra.INTENT_SENDER_REQUEST"

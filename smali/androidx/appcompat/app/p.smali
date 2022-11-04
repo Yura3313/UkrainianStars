@@ -1,377 +1,319 @@
-.class public Landroidx/appcompat/app/p;
-.super Landroid/app/Dialog;
-.source "AppCompatDialog.java"
+.class public final Landroidx/appcompat/app/p;
+.super Ljava/lang/Object;
+.source "TwilightCalculator.java"
 
-# interfaces
-.implements Landroidx/appcompat/app/h;
+
+# static fields
+.field public static d:Landroidx/appcompat/app/p;
 
 
 # instance fields
-.field public g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public a:J
 
-.field public final h:Landroidx/appcompat/app/p$a;
+.field public b:J
+
+.field public c:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
-    .locals 4
+.method public constructor <init>()V
+    .locals 0
 
-    const/4 v0, 0x1
-
-    if-nez p2, :cond_0
-
-    .line 1
-    new-instance v1, Landroid/util/TypedValue;
-
-    invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
-
-    .line 2
-    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v2
-
-    sget v3, Landroidx/appcompat/R$attr;->dialogTheme:I
-
-    invoke-virtual {v2, v3, v1, v0}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 3
-    iget v1, v1, Landroid/util/TypedValue;->resourceId:I
-
-    goto :goto_0
-
-    :cond_0
-    move v1, p2
-
-    .line 4
-    :goto_0
-    invoke-direct {p0, p1, v1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
-
-    .line 5
-    new-instance v1, Landroidx/appcompat/app/p$a;
-
-    invoke-direct {v1, p0}, Landroidx/appcompat/app/p$a;-><init>(Landroidx/appcompat/app/p;)V
-
-    iput-object v1, p0, Landroidx/appcompat/app/p;->h:Landroidx/appcompat/app/p$a;
-
-    .line 6
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v1
-
-    if-nez p2, :cond_1
-
-    .line 7
-    new-instance p2, Landroid/util/TypedValue;
-
-    invoke-direct {p2}, Landroid/util/TypedValue;-><init>()V
-
-    .line 8
-    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object p1
-
-    sget v2, Landroidx/appcompat/R$attr;->dialogTheme:I
-
-    invoke-virtual {p1, v2, p2, v0}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 9
-    iget p2, p2, Landroid/util/TypedValue;->resourceId:I
-
-    .line 10
-    :cond_1
-    move-object p1, v1
-
-    check-cast p1, Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    .line 11
-    iput p2, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->S:I
-
-    .line 12
-    invoke-virtual {v1}, Landroidx/appcompat/app/i;->m()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroidx/appcompat/app/i;
-    .locals 3
+.method public final a(JDD)V
+    .locals 15
+
+    move-object v0, p0
+
+    const-wide v1, 0xdc6d62da00L
+
+    sub-long v3, p1, v1
+
+    long-to-float v3, v3
+
+    const v4, 0x4ca4cb80    # 8.64E7f
+
+    div-float/2addr v3, v4
+
+    const v4, 0x3c8ceb25
+
+    mul-float/2addr v4, v3
+
+    const v5, 0x40c7ae92
+
+    add-float/2addr v4, v5
+
+    float-to-double v5, v4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/p;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
-    if-nez v0, :cond_0
+    move-result-wide v7
+
+    const-wide v9, 0x3fa11c5fc0000000L    # 0.03341960161924362
+
+    mul-double/2addr v7, v9
+
+    add-double/2addr v7, v5
+
+    const/high16 v9, 0x40000000    # 2.0f
+
+    mul-float/2addr v9, v4
+
+    float-to-double v9, v9
 
     .line 2
-    sget-object v0, Landroidx/appcompat/app/i;->g:Lm/c;
+    invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v9
+
+    const-wide v11, 0x3f36e05b00000000L    # 3.4906598739326E-4
+
+    mul-double/2addr v9, v11
+
+    add-double/2addr v9, v7
+
+    const/high16 v7, 0x40400000    # 3.0f
+
+    mul-float/2addr v4, v7
+
+    float-to-double v7, v4
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v7
+
+    const-wide v11, 0x3ed5f61cc0000000L    # 5.236000106378924E-6
+
+    mul-double/2addr v7, v11
+
+    add-double/2addr v7, v9
+
+    const-wide v9, 0x3ffcbed85e1ce332L    # 1.796593063
+
+    add-double/2addr v7, v9
+
+    const-wide v9, 0x400921fb54442d18L    # Math.PI
+
+    add-double/2addr v7, v9
+
+    move-wide/from16 v9, p5
+
+    neg-double v9, v9
+
+    const-wide v11, 0x4076800000000000L    # 360.0
+
+    div-double/2addr v9, v11
+
+    const v4, 0x3a6bedfa
+
+    sub-float/2addr v3, v4
+
+    float-to-double v11, v3
+
+    sub-double/2addr v11, v9
 
     .line 3
-    new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-static {v11, v12}, Ljava/lang/Math;->round(D)J
+
+    move-result-wide v11
+
+    long-to-float v3, v11
+
+    add-float/2addr v3, v4
+
+    float-to-double v3, v3
+
+    add-double/2addr v3, v9
 
     .line 4
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
-    move-result-object v1
+    move-result-wide v5
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    const-wide v9, 0x3f75b573eab367a1L    # 0.0053
 
-    move-result-object v2
+    mul-double/2addr v5, v9
 
-    invoke-direct {v0, v1, v2, p0, p0}, Landroidx/appcompat/app/AppCompatDelegateImpl;-><init>(Landroid/content/Context;Landroid/view/Window;Landroidx/appcompat/app/h;Ljava/lang/Object;)V
+    add-double/2addr v5, v3
+
+    const-wide/high16 v3, 0x4000000000000000L    # 2.0
+
+    mul-double/2addr v3, v7
 
     .line 5
-    iput-object v0, p0, Landroidx/appcompat/app/p;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v3
+
+    const-wide v9, -0x4083bcd35a858794L    # -0.0069
+
+    mul-double/2addr v3, v9
+
+    add-double/2addr v3, v5
 
     .line 6
+    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v5
+
+    const-wide v7, 0x3fda31a380000000L    # 0.4092797040939331
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v7
+
+    mul-double/2addr v7, v5
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->asin(D)D
+
+    move-result-wide v5
+
+    const-wide v7, 0x3f91df46a0000000L    # 0.01745329238474369
+
+    mul-double v7, v7, p3
+
+    const-wide v9, -0x4045311600000000L    # -0.10471975803375244
+
+    .line 7
+    invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v9
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v11
+
+    .line 8
+    invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v13
+
+    mul-double/2addr v13, v11
+
+    sub-double/2addr v9, v13
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
+
+    move-result-wide v7
+
+    invoke-static {v5, v6}, Ljava/lang/Math;->cos(D)D
+
+    move-result-wide v5
+
+    mul-double/2addr v5, v7
+
+    div-double/2addr v9, v5
+
+    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+
+    cmpl-double v5, v9, v5
+
+    const/4 v6, 0x1
+
+    const-wide/16 v7, -0x1
+
+    if-ltz v5, :cond_0
+
+    .line 9
+    iput v6, v0, Landroidx/appcompat/app/p;->c:I
+
+    .line 10
+    iput-wide v7, v0, Landroidx/appcompat/app/p;->a:J
+
+    .line 11
+    iput-wide v7, v0, Landroidx/appcompat/app/p;->b:J
+
+    return-void
+
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/app/p;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    const-wide/high16 v11, -0x4010000000000000L    # -1.0
 
-    return-object v0
-.end method
+    cmpg-double v5, v9, v11
 
-.method public final addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
+    const/4 v11, 0x0
 
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
+    if-gtz v5, :cond_1
 
-    move-result-object v0
+    .line 12
+    iput v11, v0, Landroidx/appcompat/app/p;->c:I
 
-    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/app/i;->c(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    .line 13
+    iput-wide v7, v0, Landroidx/appcompat/app/p;->a:J
 
-    return-void
-.end method
-
-.method public final b(Landroid/view/KeyEvent;)Z
-    .locals 0
-
-    invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c(I)Z
-    .locals 1
-
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object p1
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p1, v0}, Landroidx/appcompat/app/i;->u(I)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final dismiss()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Dialog;->dismiss()V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/i;->n()V
+    .line 14
+    iput-wide v7, v0, Landroidx/appcompat/app/p;->b:J
 
     return-void
-.end method
 
-.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 2
+    .line 15
+    :cond_1
+    invoke-static {v9, v10}, Ljava/lang/Math;->acos(D)D
 
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    move-result-wide v7
 
-    move-result-object v0
+    const-wide v9, 0x401921fb54442d18L    # 6.283185307179586
 
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    div-double/2addr v7, v9
 
-    move-result-object v0
+    double-to-float v5, v7
 
-    .line 2
-    iget-object v1, p0, Landroidx/appcompat/app/p;->h:Landroidx/appcompat/app/p$a;
+    float-to-double v7, v5
 
-    invoke-static {v1, v0, p0, p1}, Lf0/d;->b(Lf0/d$a;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
+    add-double v9, v3, v7
 
-    move-result p1
+    const-wide v12, 0x4194997000000000L    # 8.64E7
 
-    return p1
-.end method
+    mul-double/2addr v9, v12
 
-.method public final findViewById(I)Landroid/view/View;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Landroid/view/View;",
-            ">(I)TT;"
-        }
-    .end annotation
+    .line 16
+    invoke-static {v9, v10}, Ljava/lang/Math;->round(D)J
 
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
+    move-result-wide v9
 
-    move-result-object v0
+    add-long/2addr v9, v1
 
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/i;->e(I)Landroid/view/View;
+    iput-wide v9, v0, Landroidx/appcompat/app/p;->a:J
 
-    move-result-object p1
+    sub-double/2addr v3, v7
 
-    return-object p1
-.end method
+    mul-double/2addr v3, v12
 
-.method public final invalidateOptionsMenu()V
-    .locals 1
+    .line 17
+    invoke-static {v3, v4}, Ljava/lang/Math;->round(D)J
 
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
+    move-result-wide v3
 
-    move-result-object v0
+    add-long/2addr v3, v1
 
-    invoke-virtual {v0}, Landroidx/appcompat/app/i;->k()V
+    iput-wide v3, v0, Landroidx/appcompat/app/p;->b:J
 
-    return-void
-.end method
+    cmp-long v1, v3, p1
 
-.method public onCreate(Landroid/os/Bundle;)V
-    .locals 1
+    if-gez v1, :cond_2
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
+    .line 18
+    iget-wide v1, v0, Landroidx/appcompat/app/p;->a:J
 
-    move-result-object v0
+    cmp-long v1, v1, p1
 
-    invoke-virtual {v0}, Landroidx/appcompat/app/i;->j()V
+    if-lez v1, :cond_2
 
-    .line 2
-    invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
+    .line 19
+    iput v11, v0, Landroidx/appcompat/app/p;->c:I
 
-    .line 3
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
+    goto :goto_0
 
-    move-result-object p1
+    .line 20
+    :cond_2
+    iput v6, v0, Landroidx/appcompat/app/p;->c:I
 
-    invoke-virtual {p1}, Landroidx/appcompat/app/i;->m()V
-
-    return-void
-.end method
-
-.method public final onStop()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Dialog;->onStop()V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/i;->s()V
-
-    return-void
-.end method
-
-.method public final onSupportActionModeFinished(Lf/b;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onSupportActionModeStarted(Lf/b;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onWindowStartingSupportActionMode(Lf/b$a;)Lf/b;
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public setContentView(I)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/i;->v(I)V
-
-    return-void
-.end method
-
-.method public setContentView(Landroid/view/View;)V
-    .locals 1
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/i;->w(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/app/i;->x(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    return-void
-.end method
-
-.method public final setTitle(I)V
-    .locals 2
-
-    .line 3
-    invoke-super {p0, p1}, Landroid/app/Dialog;->setTitle(I)V
-
-    .line 4
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/i;->A(Ljava/lang/CharSequence;)V
-
-    return-void
-.end method
-
-.method public setTitle(Ljava/lang/CharSequence;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/app/Dialog;->setTitle(Ljava/lang/CharSequence;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/app/p;->a()Landroidx/appcompat/app/i;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/i;->A(Ljava/lang/CharSequence;)V
-
+    :goto_0
     return-void
 .end method

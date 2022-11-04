@@ -3,7 +3,7 @@
 .source "IdSocialAccount.java"
 
 # interfaces
-.implements Lcom/supercell/websocket/proxy/protocol/common/a;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount;",
         "Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$a;",
         ">;",
-        "Lcom/supercell/websocket/proxy/protocol/common/a;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

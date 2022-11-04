@@ -1,5 +1,5 @@
 .class public final Lcom/google/protobuf/GeneratedMessageLite$d;
-.super Lcom/google/protobuf/o;
+.super Lcom/google/protobuf/p;
 .source "GeneratedMessageLite.java"
 
 
@@ -16,18 +16,18 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ContainingType::",
-        "Lcom/google/protobuf/q0;",
+        "Lcom/google/protobuf/s0;",
         "Type:",
         "Ljava/lang/Object;",
         ">",
-        "Lcom/google/protobuf/o<",
+        "Lcom/google/protobuf/p<",
         "TContainingType;TType;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lcom/google/protobuf/q0;
+.field public final a:Lcom/google/protobuf/s0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TContainingType;"
@@ -43,18 +43,18 @@
     .end annotation
 .end field
 
-.field public final c:Lcom/google/protobuf/q0;
+.field public final c:Lcom/google/protobuf/s0;
 
 .field public final d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/q0;Ljava/lang/Object;Lcom/google/protobuf/q0;Lcom/google/protobuf/GeneratedMessageLite$c;)V
+.method public constructor <init>(Lcom/google/protobuf/s0;Ljava/lang/Object;Lcom/google/protobuf/s0;Lcom/google/protobuf/GeneratedMessageLite$c;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TContainingType;TType;",
-            "Lcom/google/protobuf/q0;",
+            "Lcom/google/protobuf/s0;",
             "Lcom/google/protobuf/GeneratedMessageLite$c;",
             "Ljava/lang/Class;",
             ")V"
@@ -62,15 +62,15 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Lcom/google/protobuf/o;-><init>()V
+    invoke-direct {p0}, Lcom/google/protobuf/p;-><init>()V
 
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
+    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/z1$b;
 
     .line 3
-    sget-object v1, Lcom/google/protobuf/w1$b;->s:Lcom/google/protobuf/w1$b$c;
+    sget-object v1, Lcom/google/protobuf/z1$b;->r:Lcom/google/protobuf/z1$b$c;
 
     if-ne v0, v1, :cond_1
 
@@ -91,13 +91,13 @@
     .line 5
     :cond_1
     :goto_0
-    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->a:Lcom/google/protobuf/q0;
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->a:Lcom/google/protobuf/s0;
 
     .line 6
     iput-object p2, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->b:Ljava/lang/Object;
 
     .line 7
-    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->c:Lcom/google/protobuf/q0;
+    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->c:Lcom/google/protobuf/s0;
 
     .line 8
     iput-object p4, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
@@ -124,18 +124,18 @@
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/z1$b;
 
     .line 3
-    iget-object v1, v1, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
+    iget-object v1, v1, Lcom/google/protobuf/z1$b;->f:Lcom/google/protobuf/z1$c;
 
     .line 4
-    sget-object v2, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v2, Lcom/google/protobuf/z1$c;->n:Lcom/google/protobuf/z1$c;
 
     if-ne v1, v2, :cond_0
 
     .line 5
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/b0$d;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -143,7 +143,7 @@
 
     move-result p1
 
-    invoke-interface {v0, p1}, Lcom/google/protobuf/a0$d;->a(I)Lcom/google/protobuf/a0$c;
+    invoke-interface {v0, p1}, Lcom/google/protobuf/b0$d;->a(I)Lcom/google/protobuf/b0$c;
 
     move-result-object p1
 
@@ -158,20 +158,20 @@
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/z1$b;
 
     .line 3
-    iget-object v0, v0, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
+    iget-object v0, v0, Lcom/google/protobuf/z1$b;->f:Lcom/google/protobuf/z1$c;
 
     .line 4
-    sget-object v1, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v1, Lcom/google/protobuf/z1$c;->n:Lcom/google/protobuf/z1$c;
 
     if-ne v0, v1, :cond_0
 
     .line 5
-    check-cast p1, Lcom/google/protobuf/a0$c;
+    check-cast p1, Lcom/google/protobuf/b0$c;
 
-    invoke-interface {p1}, Lcom/google/protobuf/a0$c;->d()I
+    invoke-interface {p1}, Lcom/google/protobuf/b0$c;->f()I
 
     move-result p1
 

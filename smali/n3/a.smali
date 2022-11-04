@@ -1,21 +1,26 @@
 .class public final Ln3/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 
 # static fields
-.field public static final a:Ljava/util/Random;
+.field public static final synthetic a:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ljava/util/Random;
+    const-class v0, Ln3/a;
 
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    sput-object v0, Ln3/a;->a:Ljava/util/Random;
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

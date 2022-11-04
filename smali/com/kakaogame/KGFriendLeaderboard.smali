@@ -116,7 +116,7 @@
     const-string v1, "KGFriendLeaderboard"
 
     .line 1
-    invoke-static {v0, p0, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     sget-object v0, Lcom/kakaogame/core/FeatureManager$Feature;->leaderboard:Lcom/kakaogame/core/FeatureManager$Feature;
@@ -341,7 +341,7 @@
     .line 24
     new-instance v3, Ljava/util/ArrayList;
 
-    invoke-interface {v5}, Ljava/util/Map;->keySet()Ljava/util/Set;
+    invoke-virtual {v5}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
     move-result-object v4
 
@@ -537,13 +537,7 @@
     invoke-static {p1, v0, v1, v2}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 45
-    goto :goto_4
-
-    :goto_3
     throw p0
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static loadFriendRankings(Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
@@ -816,13 +810,13 @@
     if-nez v3, :cond_3
 
     .line 13
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 14
     :cond_4
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result p0
 
@@ -1162,13 +1156,7 @@
     invoke-static {p2, p0, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 52
-    goto :goto_4
-
-    :goto_3
     throw p1
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public static loadPlayersRankings(Ljava/util/List;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
@@ -1223,7 +1211,7 @@
 .end method
 
 .method private static setRankings(Ljava/util/List;Z)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1269,9 +1257,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-nez v6, :cond_0
+    if-nez v2, :cond_0
 
     const/4 v2, 0x0
 
@@ -1298,9 +1286,9 @@
 
     move-result-wide v4
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-nez v6, :cond_2
+    if-nez v2, :cond_2
 
     .line 7
     invoke-virtual {v0}, Lcom/kakaogame/KGLeaderboard$KGRankingInfo;->getRank()I

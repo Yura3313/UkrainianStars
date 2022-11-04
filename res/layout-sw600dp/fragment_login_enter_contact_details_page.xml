@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView android:id="@id/loginEnterContactDetailsScrollView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:insetSystemWindow="right|bottom" style="@style/SupercellIdTheme.ScrollView"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@id/illustrationImageView" srcKey="login_email_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
-        <com.supercell.id.view.FlatTabLayout android:id="@id/tabs" android:layout_marginTop="13.0dip" style="@style/SupercellIdFlowContactDetailsTabBar" />
-        <androidx.viewpager.widget.FlowPager android:id="@id/tab_pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:transitionDuration="200" style="@style/SupercellIdTheme.ViewPager" />
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>

@@ -16,24 +16,24 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public f:Ljava/lang/String;
+
+.field public g:I
 
 .field public h:I
 
-.field public i:I
+.field public i:Z
 
 .field public j:Z
-
-.field public k:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/kd;
+    new-instance v0, Lj3/rd;
 
-    invoke-direct {v0}, Lk3/kd;-><init>()V
+    invoke-direct {v0}, Lj3/rd;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzbbg;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -98,7 +98,7 @@
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 3
-    invoke-static {v0, p5, p4}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p5, p4}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p4
 
@@ -108,19 +108,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
 
     .line 6
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
 
     .line 7
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 8
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
 
     .line 9
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     return-void
 .end method
@@ -132,24 +132,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 14
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
 
     .line 15
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
 
     .line 16
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 17
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
 
     .line 18
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     return-void
 .end method
 
-.method public static D2()Lcom/google/android/gms/internal/ads/zzbbg;
+.method public static K2()Lcom/google/android/gms/internal/ads/zzbbg;
     .locals 3
 
     new-instance v0, Lcom/google/android/gms/internal/ads/zzbbg;
@@ -171,54 +171,54 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
 
     const/4 v0, 0x2
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v0, p2, v1}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
 
     const/4 v0, 0x3
 
     const/4 v2, 0x4
 
     .line 4
-    invoke-static {p1, v0, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v0, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 5
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 7
-    invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 8
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
 
     const/4 v0, 0x5
 
     .line 10
-    invoke-static {p1, v0, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v0, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 11
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     const/4 v1, 0x6
 
@@ -227,7 +227,7 @@
     move-object v4, p1
 
     .line 13
-    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Lg1/i;->a(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

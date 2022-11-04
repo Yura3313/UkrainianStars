@@ -84,9 +84,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-gtz v6, :cond_0
+    if-gtz v2, :cond_0
 
     iget-boolean v2, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->finished:Z
 
@@ -175,16 +175,14 @@
 
     const/4 p1, 0x1
 
-    const/4 v7, 0x1
-
     goto :goto_1
 
     :cond_1
     const/4 p1, 0x0
 
-    const/4 v7, 0x0
-
     :goto_1
+    move v7, p1
+
     iget-object v8, p0, Lokhttp3/internal/http2/Http2Stream$FramingSink;->sendBuffer:Lokio/Buffer;
 
     invoke-virtual/range {v5 .. v10}, Lokhttp3/internal/http2/Http2Connection;->writeData(IZLokio/Buffer;J)V
@@ -232,13 +230,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 
@@ -378,17 +370,11 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    goto :goto_2
-
-    :goto_1
     throw v1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public flush()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -421,9 +407,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v0, :cond_0
 
     const/4 v0, 0x0
 
@@ -451,13 +437,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw v1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public timeout()Lokio/Timeout;
@@ -493,9 +473,9 @@
 
     const-wide/16 v0, 0x4000
 
-    cmp-long p3, p1, v0
+    cmp-long p1, p1, v0
 
-    if-ltz p3, :cond_0
+    if-ltz p1, :cond_0
 
     const/4 p1, 0x0
 

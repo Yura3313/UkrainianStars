@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field public final g:Landroid/os/IBinder;
+.field public final f:Landroid/os/IBinder;
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -17,32 +17,18 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->g:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->f:Landroid/os/IBinder;
 
     const-string p1, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->g:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final J0()Landroid/os/Parcel;
-    .locals 2
-
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->h:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public final S0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+.method public final L0(ILandroid/os/Parcel;)Landroid/os/Parcel;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -55,7 +41,7 @@
     move-result-object v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->g:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->f:Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -94,7 +80,21 @@
 .method public final asBinder()Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->g:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->f:Landroid/os/IBinder;
+
+    return-object v0
+.end method
+
+.method public final n0()Landroid/os/Parcel;
+    .locals 2
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads_identifier/zza;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     return-object v0
 .end method

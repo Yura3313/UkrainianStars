@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,11 +31,9 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
-
     packed-switch p1, :pswitch_data_0
 
-    return v2
+    return v1
 
     .line 1
     :pswitch_0
@@ -44,15 +42,15 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
     .line 3
-    iget-object p1, p1, Ly3/a;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lj3/tl;->f:Ljava/lang/Object;
 
-    check-cast p1, Lv3/s4;
+    check-cast p1, Lu3/u4;
 
     .line 4
-    iget-object p1, p1, Lv3/s4;->e:Ljava/lang/String;
+    iget-object p1, p1, Lu3/u4;->e:Ljava/lang/String;
 
     .line 5
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -60,7 +58,7 @@
     .line 6
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     .line 7
     :pswitch_1
@@ -69,191 +67,190 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
     .line 8
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    invoke-virtual {p1}, Ly3/a;->h()Ljava/lang/String;
+    .line 9
+    iget-object p1, p1, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p1, Lu3/u4;
+
+    invoke-virtual {p1}, Lu3/u4;->n()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 9
+    .line 10
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 10
+    .line 11
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 11
+    .line 12
     :pswitch_2
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 12
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 13
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    invoke-virtual {p1}, Ly3/a;->i()Ljava/lang/String;
+    .line 14
+    iget-object p1, p1, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p1, Lu3/u4;
+
+    invoke-virtual {p1}, Lu3/u4;->m()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 13
+    .line 15
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 14
+    .line 16
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 15
+    .line 17
     :pswitch_3
     invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->S0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->L0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p1
 
-    .line 16
+    .line 18
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    .line 17
+    .line 19
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 18
-    move-object v3, p0
-
-    check-cast v3, Lcom/google/android/gms/internal/ads/zzamj;
-
-    .line 19
-    iget-object v3, v3, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
-
-    if-eqz p1, :cond_0
-
     .line 20
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    move-object v2, p0
 
-    move-result-object p1
+    check-cast v2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    move-object v1, p1
-
-    check-cast v1, Landroid/app/Activity;
+    invoke-virtual {v2, p1, v1, p2}, Lcom/google/android/gms/internal/ads/zzamj;->q2(Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
-    :cond_0
-    invoke-virtual {v3, v1, v2, p2}, Ly3/a;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 22
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 23
+    .line 22
     :pswitch_4
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 24
+    .line 23
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
+    .line 24
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
+
     .line 25
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p2, Lu3/u4;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
+    new-instance v1, Lu3/e;
 
-    check-cast p2, Lv3/s4;
+    invoke-direct {v1, p2, p1}, Lu3/e;-><init>(Lu3/u4;Ljava/lang/String;)V
 
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p2, v1}, Lu3/u4;->f(Lu3/u4$a;)V
 
     .line 27
-    new-instance v1, Lv3/e;
-
-    invoke-direct {v1, p2, p1}, Lv3/e;-><init>(Lv3/s4;Ljava/lang/String;)V
-
-    invoke-virtual {p2, v1}, Lv3/s4;->f(Lv3/s4$a;)V
-
-    .line 28
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 29
+    .line 28
     :pswitch_5
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 30
+    .line 29
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
+    .line 30
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
+
     .line 31
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p2, Lu3/u4;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
+    new-instance v1, Lu3/d;
 
-    check-cast p2, Lv3/s4;
+    invoke-direct {v1, p2, p1}, Lu3/d;-><init>(Lu3/u4;Ljava/lang/String;)V
 
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p2, v1}, Lu3/u4;->f(Lu3/u4$a;)V
 
     .line 33
-    new-instance v1, Lv3/d;
-
-    invoke-direct {v1, p2, p1}, Lv3/d;-><init>(Lv3/s4;Ljava/lang/String;)V
-
-    invoke-virtual {p2, v1}, Lv3/s4;->f(Lv3/s4$a;)V
-
-    .line 34
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 35
+    .line 34
     :pswitch_6
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
+    .line 35
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
+
     .line 36
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object p1, p1, Lj3/tl;->f:Ljava/lang/Object;
 
-    .line 37
-    iget-object p1, p1, Ly3/a;->g:Ljava/lang/Object;
+    check-cast p1, Lu3/u4;
 
-    check-cast p1, Lv3/s4;
-
-    invoke-virtual {p1}, Lv3/s4;->l()J
+    invoke-virtual {p1}, Lu3/u4;->l()J
 
     move-result-wide p1
 
-    .line 38
+    .line 37
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 39
+    .line 38
     invoke-virtual {p3, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 40
+    .line 39
     :pswitch_7
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 41
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 40
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    invoke-virtual {p1}, Ly3/a;->j()Ljava/lang/String;
+    .line 41
+    iget-object p1, p1, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p1, Lu3/u4;
+
+    invoke-virtual {p1}, Lu3/u4;->h()Ljava/lang/String;
 
     move-result-object p1
 
@@ -263,7 +260,7 @@
     .line 43
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     .line 44
     :pswitch_8
@@ -271,7 +268,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzamj;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzamj;->H2()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzamj;->o4()Ljava/lang/String;
 
     move-result-object p1
 
@@ -281,7 +278,7 @@
     .line 46
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     .line 47
     :pswitch_9
@@ -300,321 +297,345 @@
     check-cast v1, Lcom/google/android/gms/internal/ads/zzamj;
 
     .line 50
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    invoke-virtual {v1, p1, p2}, Ly3/a;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    .line 51
+    iget-object v1, v1, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast v1, Lu3/u4;
+
+    invoke-virtual {v1, p1, p2}, Lu3/u4;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 51
+    .line 52
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 52
+    .line 53
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 53
+    .line 54
     :pswitch_a
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 54
+    .line 55
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 55
+    .line 56
     sget-object v2, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, v2}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, v2}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p2
 
     check-cast p2, Landroid/os/Bundle;
 
-    .line 56
+    .line 57
     move-object v2, p0
 
     check-cast v2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 57
-    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
-
-    invoke-virtual {v2, p1, v1, p2}, Ly3/a;->f(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-
     .line 58
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    goto/16 :goto_0
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
     .line 59
+    iget-object v2, v2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast v2, Lu3/u4;
+
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    new-instance v3, Lu3/d6;
+
+    invoke-direct {v3, v2, p1, v1, p2}, Lu3/d6;-><init>(Lu3/u4;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    invoke-virtual {v2, v3}, Lu3/u4;->f(Lu3/u4$a;)V
+
+    .line 61
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    goto/16 :goto_1
+
+    .line 62
     :pswitch_b
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    .line 60
+    .line 63
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 61
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
-
-    .line 62
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
-
-    check-cast p2, Lv3/s4;
-
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 63
-    new-instance v1, Lv3/q;
-
-    invoke-direct {v1, p2, p1}, Lv3/q;-><init>(Lv3/s4;Landroid/os/Bundle;)V
-
-    invoke-virtual {p2, v1}, Lv3/s4;->f(Lv3/s4$a;)V
-
     .line 64
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    goto/16 :goto_0
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
     .line 65
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p2, Lu3/u4;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 66
+    new-instance v1, Lu3/q;
+
+    invoke-direct {v1, p2, p1}, Lu3/q;-><init>(Lu3/u4;Landroid/os/Bundle;)V
+
+    invoke-virtual {p2, v1}, Lu3/u4;->f(Lu3/u4$a;)V
+
+    .line 67
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    goto/16 :goto_1
+
+    .line 68
     :pswitch_c
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 66
+    .line 69
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 67
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 70
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    .line 68
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
+    .line 71
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
 
-    check-cast p2, Lv3/s4;
+    check-cast p2, Lu3/u4;
 
-    invoke-virtual {p2, p1}, Lv3/s4;->j(Ljava/lang/String;)I
+    invoke-virtual {p2, p1}, Lu3/u4;->j(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 69
+    .line 72
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 70
+    .line 73
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 71
+    .line 74
     :pswitch_d
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 72
+    .line 75
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 73
-    sget-object v3, Lk3/gw0;->a:Ljava/lang/ClassLoader;
+    .line 76
+    sget-object v3, Lj3/gz0;->a:Ljava/lang/ClassLoader;
 
-    .line 74
+    .line 77
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p2
 
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_0
 
-    const/4 v2, 0x1
+    move v1, v0
 
-    .line 75
-    :cond_1
+    .line 78
+    :cond_0
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 76
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 79
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    invoke-virtual {p2, p1, v1, v2}, Ly3/a;->k(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
+    .line 80
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast p2, Lu3/u4;
+
+    invoke-virtual {p2, p1, v2, v1}, Lu3/u4;->c(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
 
     move-result-object p1
 
-    .line 77
+    .line 81
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 78
+    .line 82
     invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeMap(Ljava/util/Map;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 79
+    .line 83
     :pswitch_e
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 80
-    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 81
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object p2
-
-    invoke-static {p2}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->S0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
-
-    move-result-object p2
-
-    .line 82
-    move-object v3, p0
-
-    check-cast v3, Lcom/google/android/gms/internal/ads/zzamj;
-
-    .line 83
-    iget-object v3, v3, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
-
-    if-eqz p2, :cond_2
-
     .line 84
-    invoke-static {p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     .line 85
-    :cond_2
-    iget-object p2, v3, Ly3/a;->g:Ljava/lang/Object;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
-    check-cast p2, Lv3/s4;
+    move-result-object p2
 
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->L0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+
+    move-result-object p2
 
     .line 86
-    new-instance v3, Lv3/o;
+    move-object v2, p0
 
-    invoke-direct {v3, p2, p1, v2, v1}, Lv3/o;-><init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
-
-    invoke-virtual {p2, v3}, Lv3/s4;->f(Lv3/s4$a;)V
+    check-cast v2, Lcom/google/android/gms/internal/ads/zzamj;
 
     .line 87
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
+
+    if-eqz p2, :cond_1
+
+    .line 88
+    invoke-static {p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;->B2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+
+    move-result-object p2
 
     goto :goto_0
 
-    .line 88
+    :cond_1
+    const/4 p2, 0x0
+
+    .line 89
+    :goto_0
+    iget-object v2, v2, Lj3/tl;->f:Ljava/lang/Object;
+
+    check-cast v2, Lu3/u4;
+
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 90
+    new-instance v3, Lu3/o;
+
+    invoke-direct {v3, v2, p1, v1, p2}, Lu3/o;-><init>(Lu3/u4;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+
+    invoke-virtual {v2, v3}, Lu3/u4;->f(Lu3/u4$a;)V
+
+    .line 91
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    goto :goto_1
+
+    .line 92
     :pswitch_f
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 89
+    .line 93
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 90
+    .line 94
     sget-object v2, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, v2}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, v2}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p2
 
     check-cast p2, Landroid/os/Bundle;
 
-    .line 91
+    .line 95
     move-object v2, p0
 
     check-cast v2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 92
-    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    invoke-virtual {v2, p1, v1, p2}, Lcom/google/android/gms/internal/ads/zzamj;->X6(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
-    invoke-virtual {v2, p1, v1, p2}, Ly3/a;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-
-    .line 93
+    .line 96
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 94
+    .line 97
     :pswitch_10
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    .line 95
+    .line 98
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 96
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 99
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    .line 97
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
+    .line 100
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
 
-    check-cast p2, Lv3/s4;
+    check-cast p2, Lu3/u4;
 
-    invoke-virtual {p2, p1, v0}, Lv3/s4;->a(Landroid/os/Bundle;Z)Landroid/os/Bundle;
+    invoke-virtual {p2, p1, v0}, Lu3/u4;->a(Landroid/os/Bundle;Z)Landroid/os/Bundle;
 
     move-result-object p1
 
-    .line 98
+    .line 101
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 99
-    invoke-static {p3, p1}, Lk3/gw0;->d(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    .line 102
+    invoke-static {p3, p1}, Lj3/gz0;->d(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 100
+    .line 103
     :pswitch_11
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lk3/gw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lj3/gz0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
-    .line 101
+    .line 104
     move-object p2, p0
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzamj;
 
-    .line 102
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->g:Ly3/a;
+    .line 105
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzamj;->f:Lj3/tl;
 
-    .line 103
-    iget-object p2, p2, Ly3/a;->g:Ljava/lang/Object;
+    .line 106
+    iget-object p2, p2, Lj3/tl;->f:Ljava/lang/Object;
 
-    check-cast p2, Lv3/s4;
+    check-cast p2, Lu3/u4;
 
-    invoke-virtual {p2, p1, v2}, Lv3/s4;->a(Landroid/os/Bundle;Z)Landroid/os/Bundle;
+    invoke-virtual {p2, p1, v1}, Lu3/u4;->a(Landroid/os/Bundle;Z)Landroid/os/Bundle;
 
-    .line 104
+    .line 107
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    :goto_0
+    :goto_1
     return v0
 
     nop

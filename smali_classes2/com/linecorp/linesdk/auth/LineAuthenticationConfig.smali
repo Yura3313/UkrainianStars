@@ -114,12 +114,12 @@
 
     if-lez v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     :goto_0
     iput-boolean v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->isLineAppAuthenticationDisabled:Z
@@ -134,7 +134,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v2
 
     :goto_1
     iput-boolean v1, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->isEncryptorPreparationDisabled:Z
@@ -484,7 +484,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p2, 0x0
+    move p2, v0
 
     :goto_0
     or-int/2addr p2, v0

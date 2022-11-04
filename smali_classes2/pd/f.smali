@@ -1,27 +1,26 @@
 .class public final Lpd/f;
-.super Ljava/lang/Object;
-.source "ConnectedGamesFragment.kt"
+.super Lif/i;
+.source "ProfileImageEditorFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lvc/j;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
+        "Ljava/lang/Exception;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lpd/f;
+.field public static final f:Lpd/f;
 
 
 # direct methods
@@ -32,93 +31,89 @@
 
     invoke-direct {v0}, Lpd/f;-><init>()V
 
-    sput-object v0, Lpd/f;->g:Lpd/f;
+    sput-object v0, Lpd/f;->f:Lpd/f;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 4
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lvc/j;
+    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    check-cast p2, Lvc/j;
+    check-cast p2, Ljava/lang/Exception;
+
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-virtual {p1}, Lvc/j;->c()Z
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "profile_image_rejected"
+
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    .line 3
-    invoke-virtual {p2}, Lvc/j;->c()Z
+    const/4 v1, 0x0
 
-    move-result v1
+    if-eqz v0, :cond_1
 
     .line 4
-    iget-boolean v2, p1, Lvc/j;->a:Z
-
-    .line 5
-    iget-boolean v3, p2, Lvc/j;->a:Z
+    iget-object v0, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->h0:Lcom/supercell/id/model/MyProfileImage;
 
     if-eqz v0, :cond_0
 
-    if-nez v1, :cond_0
-
     goto :goto_0
 
+    .line 5
     :cond_0
-    if-nez v0, :cond_1
-
-    if-eqz v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz v2, :cond_2
-
-    if-nez v3, :cond_2
-
-    :goto_0
-    const/4 p1, -0x1
-
-    goto :goto_2
-
-    :cond_2
-    if-nez v2, :cond_3
-
-    if-eqz v3, :cond_3
-
-    :goto_1
-    const/4 p1, 0x1
-
-    goto :goto_2
+    sget-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
 
     .line 6
-    :cond_3
-    invoke-virtual {p1}, Lvc/j;->b()Ljava/lang/String;
+    :goto_0
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->t1(Lcom/supercell/id/model/MyProfileImage;)V
+
+    .line 7
+    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->r1(Lcom/supercell/id/model/MyProfileImage;)V
+
+    .line 8
+    :cond_1
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    invoke-virtual {p2}, Lvc/j;->b()Ljava/lang/String;
+    if-eqz p1, :cond_2
 
-    move-result-object p2
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    .line 7
-    invoke-virtual {p1, p2}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
+    .line 9
+    invoke-virtual {p1, p2, v1}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/Exception;Lhf/l;)V
 
-    move-result p1
+    .line 10
+    :cond_2
+    sget-object p1, Lye/m;->a:Lye/m;
 
-    :goto_2
-    return p1
+    return-object p1
 .end method

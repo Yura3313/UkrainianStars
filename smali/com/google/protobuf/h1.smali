@@ -1,606 +1,443 @@
-.class public interface abstract Lcom/google/protobuf/h1;
-.super Ljava/lang/Object;
-.source "Reader.java"
+.class public final Lcom/google/protobuf/h1;
+.super Lcom/google/protobuf/c;
+.source "ProtobufArrayList.java"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/protobuf/c<",
+        "TE;>;",
+        "Ljava/util/RandomAccess;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final i:Lcom/google/protobuf/h1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/h1<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public g:[Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[TE;"
+        }
+    .end annotation
+.end field
+
+.field public h:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/google/protobuf/h1;
+
+    const/4 v1, 0x0
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    invoke-direct {v0, v2, v1}, Lcom/google/protobuf/h1;-><init>([Ljava/lang/Object;I)V
+
+    sput-object v0, Lcom/google/protobuf/h1;->i:Lcom/google/protobuf/h1;
+
+    .line 2
+    iput-boolean v1, v0, Lcom/google/protobuf/c;->f:Z
+
+    return-void
+.end method
+
+.method public constructor <init>([Ljava/lang/Object;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([TE;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/protobuf/c;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    .line 3
+    iput p2, p0, Lcom/google/protobuf/h1;->h:I
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract A()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract B()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract C()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract D(Ljava/util/List;)V
+.method public final add(ILjava/lang/Object;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List<",
-            "Lcom/google/protobuf/i;",
-            ">;)V"
+            "(ITE;)V"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 8
+    invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
+
+    if-ltz p1, :cond_1
+
+    .line 9
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
+
+    if-gt p1, v0, :cond_1
+
+    .line 10
+    iget-object v1, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_0
+
+    add-int/lit8 v2, p1, 0x1
+
+    sub-int/2addr v0, p1
+
+    .line 11
+    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x3
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    .line 12
+    invoke-static {v0, v2, v3, v4}, Lj3/d30;->b(IIII)I
+
+    move-result v0
+
+    .line 13
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    .line 14
+    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 15
+    iget-object v1, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    add-int/lit8 v2, p1, 0x1
+
+    iget v3, p0, Lcom/google/protobuf/h1;->h:I
+
+    sub-int/2addr v3, p1
+
+    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 16
+    iput-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    .line 17
+    :goto_0
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    aput-object p2, v0, p1
+
+    .line 18
+    iget p1, p0, Lcom/google/protobuf/h1;->h:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Lcom/google/protobuf/h1;->h:I
+
+    .line 19
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return-void
+
+    .line 20
+    :cond_1
+    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/h1;->d(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw p2
 .end method
 
-.method public abstract E(Ljava/util/List;)V
+.method public final add(Ljava/lang/Object;)Z
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Double;",
-            ">;)V"
+            "(TE;)Z"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
+
+    .line 2
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
+
+    iget-object v1, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    array-length v2, v1
+
+    const/4 v3, 0x1
+
+    if-ne v0, v2, :cond_0
+
+    mul-int/lit8 v0, v0, 0x3
+
+    .line 3
+    div-int/lit8 v0, v0, 0x2
+
+    add-int/2addr v0, v3
+
+    .line 4
+    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    .line 6
+    :cond_0
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    iget v1, p0, Lcom/google/protobuf/h1;->h:I
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lcom/google/protobuf/h1;->h:I
+
+    aput-object p1, v0, v1
+
+    .line 7
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/2addr p1, v3
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return v3
 .end method
 
-.method public abstract F()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final c(I)V
+    .locals 1
+
+    if-ltz p1, :cond_0
+
+    .line 1
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
+
+    if-ge p1, v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/h1;->d(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
-.method public abstract G()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final d(I)Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "Index:"
+
+    const-string v1, ", Size:"
+
+    .line 1
+    invoke-static {v0, p1, v1}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    .line 2
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
-.method public abstract H(Ljava/util/List;)V
+.method public final get(I)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Long;",
-            ">;)V"
+            "(I)TE;"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/h1;->c(I)V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    aget-object p1, v0, p1
+
+    return-object p1
 .end method
 
-.method public abstract I(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
+.method public final remove(I)Ljava/lang/Object;
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/List<",
-            "TT;>;",
-            "Lcom/google/protobuf/i1<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")V"
+            "(I)TE;"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/h1;->c(I)V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    aget-object v1, v0, p1
+
+    .line 4
+    iget v2, p0, Lcom/google/protobuf/h1;->h:I
+
+    add-int/lit8 v3, v2, -0x1
+
+    if-ge p1, v3, :cond_0
+
+    add-int/lit8 v3, p1, 0x1
+
+    sub-int/2addr v2, p1
+
+    add-int/lit8 v2, v2, -0x1
+
+    .line 5
+    invoke-static {v0, v3, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 6
+    :cond_0
+    iget p1, p0, Lcom/google/protobuf/h1;->h:I
+
+    add-int/lit8 p1, p1, -0x1
+
+    iput p1, p0, Lcom/google/protobuf/h1;->h:I
+
+    .line 7
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return-object v1
 .end method
 
-.method public abstract J(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")TT;"
+            "(ITE;)TE;"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/h1;->c(I)V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
+
+    aget-object v1, v0, p1
+
+    .line 4
+    aput-object p2, v0, p1
+
+    .line 5
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return-object v1
 .end method
 
-.method public abstract K(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/List<",
-            "TT;>;",
-            "Lcom/google/protobuf/i1<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")V"
-        }
-    .end annotation
+.method public final size()I
+    .locals 1
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
+
+    return v0
 .end method
 
-.method public abstract L(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/google/protobuf/i1<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")TT;"
-        }
-    .end annotation
+.method public final v(I)Lcom/google/protobuf/b0$i;
+    .locals 2
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 1
+    iget v0, p0, Lcom/google/protobuf/h1;->h:I
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end method
+    if-lt p1, v0, :cond_0
 
-.method public abstract M(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")TT;"
-        }
-    .end annotation
+    .line 2
+    iget-object v0, p0, Lcom/google/protobuf/h1;->g:[Ljava/lang/Object;
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end method
+    move-result-object p1
 
-.method public abstract N(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/google/protobuf/i1<",
-            "TT;>;",
-            "Lcom/google/protobuf/q;",
-            ")TT;"
-        }
-    .end annotation
+    .line 3
+    new-instance v0, Lcom/google/protobuf/h1;
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
+    iget v1, p0, Lcom/google/protobuf/h1;->h:I
 
-.method public abstract O(Ljava/util/Map;Lcom/google/protobuf/j0$a;Lcom/google/protobuf/q;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<K:",
-            "Ljava/lang/Object;",
-            "V:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/Map<",
-            "TK;TV;>;",
-            "Lcom/google/protobuf/j0$a<",
-            "TK;TV;>;",
-            "Lcom/google/protobuf/q;",
-            ")V"
-        }
-    .end annotation
+    invoke-direct {v0, p1, v1}, Lcom/google/protobuf/h1;-><init>([Ljava/lang/Object;I)V
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
+    return-object v0
 
-.method public abstract a(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
+    .line 4
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-.method public abstract b()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract c()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract d(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract e(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Long;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract f(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract g()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract getTag()I
-.end method
-
-.method public abstract h()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract i()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract j(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Long;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract k()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract l(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Long;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract m(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Long;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract n(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract o(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract p()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract q(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract r()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract readDouble()D
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract readFloat()F
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract s()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract t(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Boolean;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract u()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract v()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract w(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract x(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract y()Lcom/google/protobuf/i;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract z(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Float;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    throw p1
 .end method

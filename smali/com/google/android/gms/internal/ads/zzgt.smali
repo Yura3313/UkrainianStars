@@ -65,14 +65,14 @@
 
     .line 3
     :cond_1
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/ads/zzgt;->t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/ads/zzgt;->s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

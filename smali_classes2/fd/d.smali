@@ -1,26 +1,27 @@
 .class public final Lfd/d;
-.super Lse/i;
-.source "IngameFriendRequestsFragment.kt"
+.super Ljava/lang/Object;
+.source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lfd/b;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lfd/d;
+.field public static final f:Lfd/d;
 
 
 # direct methods
@@ -31,57 +32,38 @@
 
     invoke-direct {v0}, Lfd/d;-><init>()V
 
-    sput-object v0, Lfd/d;->g:Lfd/d;
+    sput-object v0, Lfd/d;->f:Lfd/d;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
+    check-cast p1, Lfd/b;
 
-    check-cast p2, Ljava/lang/Exception;
-
-    const-string v0, "$receiver"
+    check-cast p2, Lfd/b;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p1, p1, Lfd/b;->a:Ljava/lang/String;
 
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p2, p2, Lfd/b;->a:Ljava/lang/String;
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1, p2}, Lcom/google/android/play/core/assetpacks/z1;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object p1
+    move-result p1
 
-    if-eqz p1, :cond_0
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return p1
 .end method

@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public final C(Landroid/content/Context;Z)Lcom/google/android/material/transformation/FabTransformationBehavior$b;
+.method public final B(Landroid/content/Context;Z)Lcom/google/android/material/transformation/FabTransformationBehavior$b;
     .locals 1
 
     if-eqz p2, :cond_0
@@ -63,18 +63,18 @@
     invoke-direct {v0}, Lcom/google/android/material/transformation/FabTransformationBehavior$b;-><init>()V
 
     .line 4
-    invoke-static {p1, p2}, Ld4/g;->b(Landroid/content/Context;I)Ld4/g;
+    invoke-static {p1, p2}, Lb4/g;->b(Landroid/content/Context;I)Lb4/g;
 
     move-result-object p1
 
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Ld4/g;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Lb4/g;
 
     .line 5
-    new-instance p1, Ld4/i;
+    new-instance p1, Lb4/i;
 
-    invoke-direct {p1}, Ld4/i;-><init>()V
+    invoke-direct {p1}, Lb4/i;-><init>()V
 
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Ld4/i;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Lb4/i;
 
     return-object v0
 .end method
@@ -92,7 +92,7 @@
 
     if-nez v1, :cond_0
 
-    goto :goto_3
+    goto/16 :goto_3
 
     .line 3
     :cond_0
@@ -115,7 +115,7 @@
     :cond_1
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     if-ge v3, v1, :cond_6
@@ -154,7 +154,7 @@
     goto :goto_1
 
     :cond_2
-    const/4 v5, 0x0
+    move v5, v2
 
     :goto_1
     if-eq v4, p2, :cond_5
@@ -191,11 +191,14 @@
 
     move-result v5
 
-    invoke-static {v4, v5}, Lf0/r;->I(Landroid/view/View;I)V
+    sget-object v6, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 14
+    invoke-virtual {v4, v5}, Landroid/view/View;->setImportantForAccessibility(I)V
 
     goto :goto_2
 
-    .line 14
+    .line 15
     :cond_4
     iget-object v5, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
@@ -211,8 +214,11 @@
 
     const/4 v5, 0x4
 
-    .line 15
-    invoke-static {v4, v5}, Lf0/r;->I(Landroid/view/View;I)V
+    .line 16
+    sget-object v6, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 17
+    invoke-virtual {v4, v5}, Landroid/view/View;->setImportantForAccessibility(I)V
 
     :cond_5
     :goto_2
@@ -225,10 +231,10 @@
 
     const/4 v0, 0x0
 
-    .line 16
+    .line 18
     iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
-    .line 17
+    .line 19
     :cond_7
     :goto_3
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->t(Landroid/view/View;Landroid/view/View;ZZ)V

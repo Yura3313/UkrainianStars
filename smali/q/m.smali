@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public G()V
+.method public F()V
     .locals 1
 
     .line 1
@@ -43,16 +43,16 @@
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 2
-    invoke-super {p0}, Lq/e;->G()V
+    invoke-super {p0}, Lq/e;->F()V
 
     return-void
 .end method
 
-.method public final J(Lp/c;)V
+.method public final I(Lp/c;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lq/e;->J(Lp/c;)V
+    invoke-super {p0, p1}, Lq/e;->I(Lp/c;)V
 
     .line 2
     iget-object v0, p0, Lq/m;->o0:Ljava/util/ArrayList;
@@ -76,7 +76,7 @@
     check-cast v2, Lq/e;
 
     .line 4
-    invoke-virtual {v2, p1}, Lq/e;->J(Lp/c;)V
+    invoke-virtual {v2, p1}, Lq/e;->I(Lp/c;)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -86,38 +86,7 @@
     return-void
 .end method
 
-.method public final a(Lq/e;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq/m;->o0:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 2
-    iget-object v0, p1, Lq/e;->P:Lq/e;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    check-cast v0, Lq/m;
-
-    .line 4
-    iget-object v0, v0, Lq/m;->o0:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 5
-    invoke-virtual {p1}, Lq/e;->G()V
-
-    .line 6
-    :cond_0
-    iput-object p0, p1, Lq/e;->P:Lq/e;
-
-    return-void
-.end method
-
-.method public o0()V
+.method public U()V
     .locals 4
 
     .line 1
@@ -155,7 +124,7 @@
     .line 5
     check-cast v2, Lq/m;
 
-    invoke-virtual {v2}, Lq/m;->o0()V
+    invoke-virtual {v2}, Lq/m;->U()V
 
     :cond_1
     add-int/lit8 v1, v1, 0x1
@@ -166,26 +135,43 @@
     return-void
 .end method
 
-.method public final p0(Lq/e;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq/m;->o0:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 2
-    invoke-virtual {p1}, Lq/e;->G()V
-
-    return-void
-.end method
-
-.method public final q0()V
+.method public final V()V
     .locals 1
 
     iget-object v0, p0, Lq/m;->o0:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    return-void
+.end method
+
+.method public final a(Lq/e;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lq/m;->o0:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 2
+    iget-object v0, p1, Lq/e;->P:Lq/e;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    check-cast v0, Lq/m;
+
+    .line 4
+    iget-object v0, v0, Lq/m;->o0:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 5
+    invoke-virtual {p1}, Lq/e;->F()V
+
+    .line 6
+    :cond_0
+    iput-object p0, p1, Lq/e;->P:Lq/e;
 
     return-void
 .end method

@@ -1,11 +1,11 @@
 .class public final Lm/a$a;
-.super Lm/f;
+.super Lm/g;
 .source "ArrayMap.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm/a;->l()Lm/f;
+    value = Lm/a;->l()Lm/g;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lm/f<",
+        "Lm/g<",
         "TK;TV;>;"
     }
 .end annotation
@@ -31,7 +31,7 @@
 
     iput-object p1, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-direct {p0}, Lm/f;-><init>()V
+    invoke-direct {p0}, Lm/g;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0}, Lm/g;->clear()V
+    invoke-virtual {v0}, Lm/h;->clear()V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    iget-object v0, v0, Lm/g;->h:[Ljava/lang/Object;
+    iget-object v0, v0, Lm/h;->g:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
 
@@ -84,7 +84,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    iget v0, v0, Lm/g;->i:I
+    iget v0, v0, Lm/h;->h:I
 
     return v0
 .end method
@@ -94,7 +94,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
 
     move-result p1
 
@@ -106,7 +106,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0, p1}, Lm/g;->g(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/h;->g(Ljava/lang/Object;)I
 
     move-result p1
 
@@ -123,7 +123,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0, p1, p2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -133,7 +133,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0, p1}, Lm/g;->i(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lm/h;->i(I)Ljava/lang/Object;
 
     return-void
 .end method
@@ -148,7 +148,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    invoke-virtual {v0, p1, p2}, Lm/g;->j(ILjava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lm/h;->j(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

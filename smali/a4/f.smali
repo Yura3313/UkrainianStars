@@ -1,14 +1,24 @@
 .class public interface abstract La4/f;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-tasks@@17.2.0"
 
-# interfaces
-.implements Lcom/google/android/gms/common/api/a$f;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<TResult:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public abstract l(Lcom/google/android/gms/signin/internal/zae;)V
-.end method
-
-.method public abstract n()V
+.method public abstract onSuccess(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TTResult;)V"
+        }
+    .end annotation
 .end method

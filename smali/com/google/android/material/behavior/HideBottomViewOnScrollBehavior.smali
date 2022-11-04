@@ -153,7 +153,7 @@
 
     const-wide/16 p7, 0xaf
 
-    sget-object p9, Ld4/a;->c:Lm0/a;
+    sget-object p9, Lb4/a;->c:Ll0/a;
 
     move-object p4, p0
 
@@ -196,7 +196,7 @@
     const-wide/16 p7, 0xe1
 
     .line 12
-    sget-object p9, Ld4/a;->d:Lm0/c;
+    sget-object p9, Lb4/a;->d:Ll0/c;
 
     move-object p4, p0
 

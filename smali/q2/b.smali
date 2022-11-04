@@ -1,164 +1,109 @@
-.class public abstract Lq2/b;
+.class public final Lq2/b;
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lq2/a;
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
         "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lq2/a<",
-        "TT;>;"
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/query/SortOrder;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lq2/b;->a:Ljava/lang/String;
-
-    .line 3
-    invoke-static {p1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lq2/b;->b:Ljava/util/Set;
-
-    .line 4
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/util/Collection;Ljava/util/Collection;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;I)V"
-        }
-    .end annotation
-
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    iput-object p1, p0, Lq2/b;->a:Ljava/lang/String;
-
-    .line 7
-    new-instance p1, Ljava/util/HashSet;
-
-    invoke-direct {p1, p2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lq2/b;->b:Ljava/util/Set;
-
-    .line 8
-    new-instance p1, Ljava/util/HashSet;
-
-    invoke-direct {p1, p3}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final P0(Landroid/os/Bundle;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Bundle;",
-            ")TT;"
-        }
-    .end annotation
-
-    const-string v0, "bundle"
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
 
     .line 2
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v3
+
+    if-ge v3, v0, :cond_2
 
     .line 3
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v0
+    move-result v3
 
-    if-eqz v0, :cond_0
+    const v4, 0xffff
+
+    and-int/2addr v4, v3
+
+    const/4 v5, 0x1
+
+    if-eq v4, v5, :cond_1
+
+    const/4 v5, 0x2
+
+    if-eq v4, v5, :cond_0
 
     .line 4
-    invoke-virtual {p0, p1}, Lq2/b;->a(Landroid/os/Bundle;)Ljava/lang/Object;
+    invoke-static {p1, v3}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    move-result-object p1
+    goto :goto_0
 
-    return-object p1
-
+    .line 5
     :cond_0
-    const/4 p1, 0x0
+    invoke-static {p1, v3}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v2
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    sget-object v1, Lcom/google/android/gms/drive/query/internal/zzf;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 7
+    invoke-static {p1, v3, v1}, Lc2/b;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 9
+    new-instance p1, Lcom/google/android/gms/drive/query/SortOrder;
+
+    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/drive/query/SortOrder;-><init>(Ljava/util/List;Z)V
 
     return-object p1
 .end method
 
-.method public abstract a(Landroid/os/Bundle;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Bundle;",
-            ")TT;"
-        }
-    .end annotation
-.end method
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-.method public final getName()Ljava/lang/String;
-    .locals 1
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/SortOrder;
 
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
-
-    return-object v0
+    return-object p1
 .end method

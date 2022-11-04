@@ -1,46 +1,36 @@
 .class public final Lvd/f;
-.super Lse/i;
-.source "SettingsGeneralTabFragment.kt"
+.super Lif/i;
+.source "TokenLoginFlow.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Lwc/g0;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Luc/g;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lvd/f;
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;)V
+    .locals 0
 
-    new-instance v0, Lvd/f;
+    iput-object p1, p0, Lvd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    invoke-direct {v0}, Lvd/f;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lvd/f;->g:Lvd/f;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,36 +40,49 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    check-cast p1, Lwc/g0;
+    .line 1
+    check-cast p1, Luc/g;
 
     const-string v0, "it"
 
-    .line 1
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    .line 3
+    iget-object p1, p0, Lvd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    .line 3
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
-
-    const-string v0, "Settings"
-
-    const-string v1, "click"
-
-    const/4 v2, 0x0
-
-    const/16 v3, 0x8
+    if-eqz p1, :cond_0
 
     .line 4
-    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    new-instance v0, Lcom/supercell/id/IdLoginDetails;
+
+    iget-object v1, p0, Lvd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
     .line 5
-    sget-object p1, Lie/i;->a:Lie/i;
+    iget-object v1, v1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->k0:Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2, v3}, Lcom/supercell/id/IdLoginDetails;-><init>(Ljava/lang/String;ZZ)V
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v0, v3, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
+
+    .line 7
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

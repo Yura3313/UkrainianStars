@@ -207,7 +207,7 @@
 
     int-to-float p0, p0
 
-    mul-float p0, p0, p4
+    mul-float/2addr p0, p4
 
     .line 16
     invoke-virtual {p1}, Landroidx/recyclerview/widget/v;->k()I
@@ -314,7 +314,7 @@
 
     int-to-float p0, p0
 
-    mul-float p2, p2, p0
+    mul-float/2addr p2, p0
 
     float-to-int p0, p2
 

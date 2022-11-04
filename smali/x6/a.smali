@@ -1,2526 +1,1665 @@
 .class public final Lx6/a;
 .super Ljava/lang/Object;
-.source "PDF417Reader.java"
+.source "QRCodeReader.java"
 
 # interfaces
-.implements Le6/i;
+.implements La6/l;
+
+
+# static fields
+.field public static final b:[La6/p;
+
+
+# instance fields
+.field public final a:Ly6/e;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
+
+    new-array v0, v0, [La6/p;
+
+    sput-object v0, Lx6/a;->b:[La6/p;
 
     return-void
 .end method
 
-.method public static c(Le6/l;Le6/l;)I
-    .locals 0
-
-    if-eqz p0, :cond_1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    :cond_0
-    iget p0, p0, Le6/l;->a:F
-
-    iget p1, p1, Le6/l;->a:F
-
-    sub-float/2addr p0, p1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p0}, Ljava/lang/Math;->abs(F)F
+    new-instance v0, Ly6/e;
 
-    move-result p0
+    invoke-direct {v0}, Ly6/e;-><init>()V
 
-    float-to-int p0, p0
+    iput-object v0, p0, Lx6/a;->a:Ly6/e;
 
-    return p0
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method public static d(Le6/l;Le6/l;)I
-    .locals 0
-
-    if-eqz p0, :cond_1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    .line 1
-    :cond_0
-    iget p0, p0, Le6/l;->a:F
-
-    iget p1, p1, Le6/l;->a:F
-
-    sub-float/2addr p0, p1
-
-    .line 2
-    invoke-static {p0}, Ljava/lang/Math;->abs(F)F
-
-    move-result p0
-
-    float-to-int p0, p0
-
-    return p0
-
-    :cond_1
-    :goto_0
-    const p0, 0x7fffffff
-
-    return p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final a(Le6/c;)Le6/j;
+.method public final a()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final b(La6/c;Ljava/util/Map;)La6/n;
+    .locals 28
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La6/c;",
+            "Ljava/util/Map<",
+            "La6/e;",
+            "*>;)",
+            "La6/n;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            La6/j;,
+            La6/d;,
+            La6/f;
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x3
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x5
+
+    if-eqz v1, :cond_10
+
+    .line 1
+    sget-object v7, La6/e;->g:La6/e;
+
+    invoke-interface {v1, v7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_10
+
+    .line 2
+    invoke-virtual/range {p1 .. p1}, La6/c;->a()Lh6/b;
+
+    move-result-object v4
+
+    .line 3
+    invoke-virtual {v4}, Lh6/b;->e()[I
+
+    move-result-object v7
+
+    .line 4
+    invoke-virtual {v4}, Lh6/b;->c()[I
+
+    move-result-object v8
+
+    if-eqz v7, :cond_f
+
+    if-eqz v8, :cond_f
+
+    .line 5
+    iget v9, v4, Lh6/b;->g:I
+
+    .line 6
+    iget v10, v4, Lh6/b;->f:I
+
+    .line 7
+    aget v11, v7, v3
+
+    .line 8
+    aget v12, v7, v5
+
+    move v14, v3
+
+    move v13, v5
+
+    :goto_0
+    if-ge v11, v10, :cond_1
+
+    if-ge v12, v9, :cond_1
+
+    .line 9
+    invoke-virtual {v4, v11, v12}, Lh6/b;->b(II)Z
+
+    move-result v15
+
+    if-eq v13, v15, :cond_0
+
+    add-int/lit8 v14, v14, 0x1
+
+    if-eq v14, v6, :cond_1
+
+    xor-int/lit8 v13, v13, 0x1
+
+    :cond_0
+    add-int/lit8 v11, v11, 0x1
+
+    add-int/lit8 v12, v12, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    if-eq v11, v10, :cond_e
+
+    if-eq v12, v9, :cond_e
+
+    .line 10
+    aget v6, v7, v3
+
+    sub-int/2addr v11, v6
+
+    int-to-float v6, v11
+
+    const/high16 v9, 0x40e00000    # 7.0f
+
+    div-float/2addr v6, v9
+
+    .line 11
+    aget v9, v7, v5
+
+    .line 12
+    aget v10, v8, v5
+
+    .line 13
+    aget v7, v7, v3
+
+    .line 14
+    aget v8, v8, v3
+
+    if-ge v7, v8, :cond_d
+
+    if-ge v9, v10, :cond_d
+
+    sub-int v11, v10, v9
+
+    sub-int v12, v8, v7
+
+    if-eq v11, v12, :cond_3
+
+    add-int v8, v7, v11
+
+    .line 15
+    iget v12, v4, Lh6/b;->f:I
+
+    if-ge v8, v12, :cond_2
+
+    goto :goto_1
+
+    .line 16
+    :cond_2
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 17
+    throw v1
+
+    :cond_3
+    :goto_1
+    sub-int v12, v8, v7
+
+    add-int/2addr v12, v5
+
+    int-to-float v12, v12
+
+    div-float/2addr v12, v6
+
+    .line 18
+    invoke-static {v12}, Ljava/lang/Math;->round(F)I
+
+    move-result v12
+
+    add-int/2addr v11, v5
+
+    int-to-float v11, v11
+
+    div-float/2addr v11, v6
+
+    .line 19
+    invoke-static {v11}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    if-lez v12, :cond_c
+
+    if-lez v11, :cond_c
+
+    if-ne v11, v12, :cond_b
+
+    div-float v2, v6, v2
+
+    float-to-int v2, v2
+
+    add-int/2addr v9, v2
+
+    add-int/2addr v7, v2
+
+    add-int/lit8 v13, v12, -0x1
+
+    int-to-float v13, v13
+
+    mul-float/2addr v13, v6
+
+    float-to-int v13, v13
+
+    add-int/2addr v13, v7
+
+    sub-int/2addr v13, v8
+
+    if-lez v13, :cond_5
+
+    if-gt v13, v2, :cond_4
+
+    sub-int/2addr v7, v13
+
+    goto :goto_2
+
+    .line 20
+    :cond_4
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 21
+    throw v1
+
+    :cond_5
+    :goto_2
+    add-int/lit8 v8, v11, -0x1
+
+    int-to-float v8, v8
+
+    mul-float/2addr v8, v6
+
+    float-to-int v8, v8
+
+    add-int/2addr v8, v9
+
+    sub-int/2addr v8, v10
+
+    if-lez v8, :cond_7
+
+    if-gt v8, v2, :cond_6
+
+    sub-int/2addr v9, v8
+
+    goto :goto_3
+
+    .line 22
+    :cond_6
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 23
+    throw v1
+
+    .line 24
+    :cond_7
+    :goto_3
+    new-instance v2, Lh6/b;
+
+    invoke-direct {v2, v12, v11}, Lh6/b;-><init>(II)V
+
+    move v8, v3
+
+    :goto_4
+    if-ge v8, v11, :cond_a
+
+    int-to-float v10, v8
+
+    mul-float/2addr v10, v6
+
+    float-to-int v10, v10
+
+    add-int/2addr v10, v9
+
+    move v13, v3
+
+    :goto_5
+    if-ge v13, v12, :cond_9
+
+    int-to-float v14, v13
+
+    mul-float/2addr v14, v6
+
+    float-to-int v14, v14
+
+    add-int/2addr v14, v7
+
+    .line 25
+    invoke-virtual {v4, v14, v10}, Lh6/b;->b(II)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_8
+
+    .line 26
+    invoke-virtual {v2, v13, v8}, Lh6/b;->f(II)V
+
+    :cond_8
+    add-int/lit8 v13, v13, 0x1
+
+    goto :goto_5
+
+    :cond_9
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_4
+
+    .line 27
+    :cond_a
+    iget-object v3, v0, Lx6/a;->a:Ly6/e;
+
+    invoke-virtual {v3, v2, v1}, Ly6/e;->a(Lh6/b;Ljava/util/Map;)Lh6/e;
+
+    move-result-object v1
+
+    .line 28
+    sget-object v2, Lx6/a;->b:[La6/p;
+
+    goto/16 :goto_19
+
+    .line 29
+    :cond_b
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 30
+    throw v1
+
+    .line 31
+    :cond_c
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 32
+    throw v1
+
+    .line 33
+    :cond_d
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 34
+    throw v1
+
+    .line 35
+    :cond_e
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 36
+    throw v1
+
+    .line 37
+    :cond_f
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 38
+    throw v1
+
+    .line 39
+    :cond_10
+    new-instance v2, Lz6/c;
+
+    invoke-virtual/range {p1 .. p1}, La6/c;->a()Lh6/b;
+
+    move-result-object v7
+
+    invoke-direct {v2, v7}, Lz6/c;-><init>(Lh6/b;)V
+
+    if-nez v1, :cond_11
+
+    const/4 v8, 0x0
+
+    goto :goto_6
+
+    .line 40
+    :cond_11
+    sget-object v8, La6/e;->o:La6/e;
+
+    .line 41
+    invoke-interface {v1, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, La6/q;
+
+    :goto_6
+    iput-object v8, v2, Lz6/c;->b:La6/q;
+
+    .line 42
+    new-instance v9, Lz6/e;
+
+    invoke-direct {v9, v7, v8}, Lz6/e;-><init>(Lh6/b;La6/q;)V
+
+    if-eqz v1, :cond_12
+
+    .line 43
+    sget-object v8, La6/e;->i:La6/e;
+
+    invoke-interface {v1, v8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_12
+
+    move v8, v5
+
+    goto :goto_7
+
+    :cond_12
+    move v8, v3
+
+    :goto_7
+    if-eqz v1, :cond_13
+
+    .line 44
+    sget-object v10, La6/e;->g:La6/e;
+
+    invoke-interface {v1, v10}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_13
+
+    move v10, v5
+
+    goto :goto_8
+
+    :cond_13
+    move v10, v3
+
+    .line 45
+    :goto_8
+    iget v11, v7, Lh6/b;->g:I
+
+    .line 46
+    iget v7, v7, Lh6/b;->f:I
+
+    mul-int/lit8 v12, v11, 0x3
+
+    .line 47
+    div-int/lit16 v12, v12, 0xe4
+
+    if-lt v12, v4, :cond_14
+
+    if-eqz v8, :cond_15
+
+    :cond_14
+    move v12, v4
+
+    :cond_15
+    new-array v6, v6, [I
+
+    add-int/lit8 v8, v12, -0x1
+
+    move v13, v12
+
+    move v12, v8
+
+    move v8, v5
+
+    move v5, v4
+
+    move v4, v3
+
+    :goto_9
+    const/4 v14, 0x4
+
+    if-ge v12, v11, :cond_25
+
+    if-nez v3, :cond_25
+
+    aput v4, v6, v4
+
+    aput v4, v6, v8
+
+    const/4 v15, 0x2
+
+    aput v4, v6, v15
+
+    aput v4, v6, v5
+
+    aput v4, v6, v14
+
+    move v5, v4
+
+    :goto_a
+    if-ge v4, v7, :cond_22
+
+    .line 48
+    iget-object v15, v9, Lz6/e;->a:Lh6/b;
+
+    invoke-virtual {v15, v4, v12}, Lh6/b;->b(II)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_17
+
+    and-int/lit8 v14, v5, 0x1
+
+    if-ne v14, v8, :cond_16
+
+    add-int/lit8 v5, v5, 0x1
+
+    .line 49
+    :cond_16
+    aget v14, v6, v5
+
+    add-int/2addr v14, v8
+
+    aput v14, v6, v5
+
+    goto/16 :goto_10
+
+    :cond_17
+    and-int/lit8 v15, v5, 0x1
+
+    if-nez v15, :cond_21
+
+    if-ne v5, v14, :cond_20
+
+    .line 50
+    invoke-static {v6}, Lz6/e;->b([I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1f
+
+    .line 51
+    invoke-virtual {v9, v6, v12, v4, v10}, Lz6/e;->d([IIIZ)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1e
+
+    .line 52
+    iget-boolean v5, v9, Lz6/e;->c:Z
+
+    if-eqz v5, :cond_18
+
+    .line 53
+    invoke-virtual {v9}, Lz6/e;->e()Z
+
+    move-result v3
+
+    goto :goto_e
+
+    .line 54
+    :cond_18
+    iget-object v5, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    if-gt v5, v8, :cond_19
+
+    goto :goto_c
+
+    .line 55
+    :cond_19
+    iget-object v5, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    const/4 v8, 0x0
+
+    :cond_1a
+    :goto_b
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_1c
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v13
+
+    check-cast v13, Lz6/d;
+
+    .line 56
+    iget v14, v13, Lz6/d;->d:I
+
+    const/4 v15, 0x2
+
+    if-lt v14, v15, :cond_1a
+
+    if-nez v8, :cond_1b
+
+    move-object v8, v13
+
+    goto :goto_b
+
+    :cond_1b
+    const/4 v5, 0x1
+
+    .line 57
+    iput-boolean v5, v9, Lz6/e;->c:Z
+
+    .line 58
+    iget v5, v8, La6/p;->a:F
+
+    iget v14, v13, La6/p;->a:F
+
+    sub-float/2addr v5, v14
+
+    .line 59
+    invoke-static {v5}, Ljava/lang/Math;->abs(F)F
+
+    move-result v5
+
+    .line 60
+    iget v8, v8, La6/p;->b:F
+
+    iget v13, v13, La6/p;->b:F
+
+    sub-float/2addr v8, v13
+
+    .line 61
+    invoke-static {v8}, Ljava/lang/Math;->abs(F)F
+
+    move-result v8
+
+    sub-float/2addr v5, v8
+
+    float-to-int v5, v5
+
+    const/4 v8, 0x2
+
+    div-int/2addr v5, v8
+
+    goto :goto_d
+
+    :cond_1c
+    :goto_c
+    const/4 v8, 0x2
+
+    const/4 v5, 0x0
+
+    :goto_d
+    aget v13, v6, v8
+
+    if-le v5, v13, :cond_1d
+
+    aget v4, v6, v8
+
+    sub-int/2addr v5, v4
+
+    add-int/lit8 v5, v5, -0x2
+
+    add-int/2addr v12, v5
+
+    add-int/lit8 v4, v7, -0x1
+
+    :cond_1d
+    :goto_e
+    const/4 v5, 0x0
+
+    aput v5, v6, v5
+
+    const/4 v8, 0x1
+
+    aput v5, v6, v8
+
+    const/4 v13, 0x2
+
+    aput v5, v6, v13
+
+    const/4 v14, 0x3
+
+    aput v5, v6, v14
+
+    const/4 v14, 0x4
+
+    aput v5, v6, v14
+
+    goto :goto_10
+
+    :cond_1e
+    const/4 v5, 0x0
+
+    const/4 v15, 0x3
+
+    const/16 v16, 0x2
+
+    aget v17, v6, v16
+
+    aput v17, v6, v5
+
+    aget v17, v6, v15
+
+    aput v17, v6, v8
+
+    aget v17, v6, v14
+
+    aput v17, v6, v16
+
+    aput v8, v6, v15
+
+    aput v5, v6, v14
+
+    goto :goto_f
+
+    :cond_1f
+    const/4 v5, 0x0
+
+    const/4 v15, 0x3
+
+    const/16 v16, 0x2
+
+    aget v17, v6, v16
+
+    aput v17, v6, v5
+
+    aget v17, v6, v15
+
+    aput v17, v6, v8
+
+    aget v17, v6, v14
+
+    aput v17, v6, v16
+
+    aput v8, v6, v15
+
+    aput v5, v6, v14
+
+    :goto_f
+    const/4 v5, 0x3
+
+    goto :goto_10
+
+    :cond_20
+    add-int/lit8 v5, v5, 0x1
+
+    .line 62
+    aget v14, v6, v5
+
+    add-int/2addr v14, v8
+
+    aput v14, v6, v5
+
+    goto :goto_10
+
+    .line 63
+    :cond_21
+    aget v14, v6, v5
+
+    add-int/2addr v14, v8
+
+    aput v14, v6, v5
+
+    :goto_10
+    add-int/2addr v4, v8
+
+    const/4 v14, 0x4
+
+    goto/16 :goto_a
+
+    .line 64
+    :cond_22
+    invoke-static {v6}, Lz6/e;->b([I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_24
+
+    .line 65
+    invoke-virtual {v9, v6, v12, v7, v10}, Lz6/e;->d([IIIZ)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_24
+
+    const/4 v4, 0x0
+
+    aget v4, v6, v4
+
+    .line 66
+    iget-boolean v5, v9, Lz6/e;->c:Z
+
+    if-eqz v5, :cond_23
+
+    .line 67
+    invoke-virtual {v9}, Lz6/e;->e()Z
+
+    move-result v3
+
+    :cond_23
+    move v13, v4
+
+    :cond_24
+    add-int/2addr v12, v13
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x3
+
+    const/4 v8, 0x1
+
+    goto/16 :goto_9
+
+    .line 68
+    :cond_25
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    if-lt v3, v4, :cond_39
+
+    const/4 v5, 0x0
+
+    if-le v3, v4, :cond_28
+
+    .line 69
+    iget-object v4, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    move v6, v5
+
+    move v7, v6
+
+    :goto_11
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_26
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lz6/d;
+
+    .line 70
+    iget v8, v8, Lz6/d;->c:F
+
+    add-float/2addr v6, v8
+
+    mul-float/2addr v8, v8
+
+    add-float/2addr v7, v8
+
+    goto :goto_11
+
+    :cond_26
+    int-to-float v3, v3
+
+    div-float/2addr v6, v3
+
+    div-float/2addr v7, v3
+
+    mul-float v3, v6, v6
+
+    sub-float/2addr v7, v3
+
+    float-to-double v3, v7
+
+    .line 71
+    invoke-static {v3, v4}, Ljava/lang/Math;->sqrt(D)D
+
+    move-result-wide v3
+
+    double-to-float v3, v3
+
+    .line 72
+    iget-object v4, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    new-instance v7, Lz6/e$b;
+
+    invoke-direct {v7, v6}, Lz6/e$b;-><init>(F)V
+
+    invoke-static {v4, v7}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    const v4, 0x3e4ccccd
+
+    mul-float/2addr v4, v6
+
+    .line 73
+    invoke-static {v4, v3}, Ljava/lang/Math;->max(FF)F
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    .line 74
+    :goto_12
+    iget-object v7, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
+
+    move-result v7
+
+    if-ge v4, v7, :cond_28
+
+    iget-object v7, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
+
+    move-result v7
+
+    const/4 v8, 0x3
+
+    if-le v7, v8, :cond_28
+
+    .line 75
+    iget-object v7, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v7, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lz6/d;
+
+    .line 76
+    iget v7, v7, Lz6/d;->c:F
+
+    sub-float/2addr v7, v6
+
+    .line 77
+    invoke-static {v7}, Ljava/lang/Math;->abs(F)F
+
+    move-result v7
+
+    cmpl-float v7, v7, v3
+
+    if-lez v7, :cond_27
+
+    .line 78
+    iget-object v7, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v7, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    add-int/lit8 v4, v4, -0x1
+
+    :cond_27
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_12
+
+    .line 79
+    :cond_28
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    if-le v3, v4, :cond_2a
+
+    .line 80
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :goto_13
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_29
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lz6/d;
+
+    .line 81
+    iget v4, v4, Lz6/d;->c:F
+
+    add-float/2addr v5, v4
+
+    goto :goto_13
+
+    .line 82
+    :cond_29
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    int-to-float v3, v3
+
+    div-float/2addr v5, v3
+
+    .line 83
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    new-instance v4, Lz6/e$a;
+
+    invoke-direct {v4, v5}, Lz6/e$a;-><init>(F)V
+
+    invoke-static {v3, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    .line 84
+    iget-object v3, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v4
+
+    const/4 v5, 0x3
+
+    invoke-virtual {v3, v5, v4}, Ljava/util/ArrayList;->subList(II)Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/List;->clear()V
+
+    move v4, v5
+
+    :cond_2a
+    new-array v3, v4, [Lz6/d;
+
+    .line 85
+    iget-object v4, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    const/4 v5, 0x0
+
+    .line 86
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lz6/d;
+
+    aput-object v4, v3, v5
+
+    iget-object v4, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    const/4 v6, 0x1
+
+    .line 87
+    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lz6/d;
+
+    aput-object v4, v3, v6
+
+    iget-object v4, v9, Lz6/e;->b:Ljava/util/ArrayList;
+
+    const/4 v7, 0x2
+
+    .line 88
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lz6/d;
+
+    aput-object v4, v3, v7
+
+    .line 89
+    invoke-static {v3}, La6/p;->b([La6/p;)V
+
+    aget-object v4, v3, v5
+
+    aget-object v5, v3, v6
+
+    aget-object v3, v3, v7
+
+    .line 90
+    invoke-virtual {v2, v5, v3}, Lz6/c;->a(La6/p;La6/p;)F
+
+    move-result v6
+
+    .line 91
+    invoke-virtual {v2, v5, v4}, Lz6/c;->a(La6/p;La6/p;)F
+
+    move-result v7
+
+    add-float/2addr v7, v6
+
+    const/high16 v6, 0x40000000    # 2.0f
+
+    div-float/2addr v7, v6
+
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    cmpg-float v8, v7, v6
+
+    if-ltz v8, :cond_38
+
+    .line 92
+    invoke-static {v5, v3}, La6/p;->a(La6/p;La6/p;)F
+
+    move-result v8
+
+    div-float/2addr v8, v7
+
+    invoke-static {v8}, Lj3/xs0;->i(F)I
+
+    move-result v8
+
+    .line 93
+    invoke-static {v5, v4}, La6/p;->a(La6/p;La6/p;)F
+
+    move-result v9
+
+    div-float/2addr v9, v7
+
+    invoke-static {v9}, Lj3/xs0;->i(F)I
+
+    move-result v9
+
+    add-int/2addr v9, v8
+
+    const/4 v8, 0x2
+
+    .line 94
+    div-int/2addr v9, v8
+
+    add-int/lit8 v9, v9, 0x7
+
+    and-int/lit8 v10, v9, 0x3
+
+    if-eqz v10, :cond_2d
+
+    if-eq v10, v8, :cond_2c
+
+    const/4 v8, 0x3
+
+    if-eq v10, v8, :cond_2b
+
+    goto :goto_14
+
+    .line 95
+    :cond_2b
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 96
+    throw v1
+
+    :cond_2c
+    add-int/lit8 v9, v9, -0x1
+
+    goto :goto_14
+
+    :cond_2d
+    add-int/lit8 v9, v9, 0x1
+
+    .line 97
+    :goto_14
+    sget-object v8, Ly6/j;->e:[I
+
+    .line 98
+    rem-int/lit8 v8, v9, 0x4
+
+    const/4 v10, 0x1
+
+    if-ne v8, v10, :cond_37
+
+    add-int/lit8 v8, v9, -0x11
+
+    .line 99
+    :try_start_0
+    div-int/lit8 v8, v8, 0x4
+
+    invoke-static {v8}, Ly6/j;->d(I)Ly6/j;
+
+    move-result-object v8
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 100
+    invoke-virtual {v8}, Ly6/j;->c()I
+
+    move-result v10
+
+    add-int/lit8 v10, v10, -0x7
+
+    .line 101
+    iget-object v8, v8, Ly6/j;->b:[I
+
+    .line 102
+    array-length v8, v8
+
+    const/high16 v11, 0x40400000    # 3.0f
+
+    if-lez v8, :cond_2e
+
+    .line 103
+    iget v8, v3, La6/p;->a:F
+
+    iget v12, v5, La6/p;->a:F
+
+    sub-float/2addr v8, v12
+
+    iget v13, v4, La6/p;->a:F
+
+    add-float/2addr v8, v13
+
+    .line 104
+    iget v13, v3, La6/p;->b:F
+
+    iget v14, v5, La6/p;->b:F
+
+    sub-float/2addr v13, v14
+
+    iget v15, v4, La6/p;->b:F
+
+    add-float/2addr v13, v15
+
+    int-to-float v10, v10
+
+    div-float v10, v11, v10
+
+    sub-float/2addr v6, v10
+
+    invoke-static {v8, v12, v6, v12}, Lj3/vr0;->c(FFFF)F
+
+    move-result v8
+
+    float-to-int v8, v8
+
+    invoke-static {v13, v14, v6, v14}, Lj3/vr0;->c(FFFF)F
+
+    move-result v6
+
+    float-to-int v6, v6
+
+    const/4 v10, 0x4
+
+    :goto_15
+    const/16 v12, 0x10
+
+    if-gt v10, v12, :cond_2e
+
+    int-to-float v12, v10
+
+    .line 105
+    :try_start_1
+    invoke-virtual {v2, v7, v8, v6, v12}, Lz6/c;->b(FIIF)Lz6/a;
+
+    move-result-object v6
+    :try_end_1
+    .catch La6/j; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_16
+
+    :catch_0
+    shl-int/lit8 v10, v10, 0x1
+
+    goto :goto_15
+
+    :cond_2e
+    const/4 v6, 0x0
+
+    :goto_16
+    int-to-float v7, v9
+
+    const/high16 v8, 0x40600000    # 3.5f
+
+    sub-float v19, v7, v8
+
+    if-eqz v6, :cond_2f
+
+    .line 106
+    iget v7, v6, La6/p;->a:F
+
+    .line 107
+    iget v8, v6, La6/p;->b:F
+
+    sub-float v10, v19, v11
+
+    move/from16 v24, v7
+
+    move/from16 v25, v8
+
+    move/from16 v17, v10
+
+    goto :goto_17
+
+    .line 108
+    :cond_2f
+    iget v7, v3, La6/p;->a:F
+
+    iget v8, v5, La6/p;->a:F
+
+    sub-float/2addr v7, v8
+
+    iget v8, v4, La6/p;->a:F
+
+    add-float/2addr v7, v8
+
+    .line 109
+    iget v8, v3, La6/p;->b:F
+
+    iget v10, v5, La6/p;->b:F
+
+    sub-float/2addr v8, v10
+
+    iget v10, v4, La6/p;->b:F
+
+    add-float/2addr v8, v10
+
+    move/from16 v24, v7
+
+    move/from16 v25, v8
+
+    move/from16 v17, v19
+
+    :goto_17
+    const/high16 v12, 0x40600000    # 3.5f
+
+    const/high16 v13, 0x40600000    # 3.5f
+
+    const/high16 v18, 0x40600000    # 3.5f
+
+    .line 110
+    iget v7, v5, La6/p;->a:F
+
+    .line 111
+    iget v8, v5, La6/p;->b:F
+
+    .line 112
+    iget v10, v3, La6/p;->a:F
+
+    .line 113
+    iget v11, v3, La6/p;->b:F
+
+    .line 114
+    iget v15, v4, La6/p;->a:F
+
+    .line 115
+    iget v14, v4, La6/p;->b:F
+
+    const/high16 v16, 0x40600000    # 3.5f
+
+    move/from16 v27, v14
+
+    move/from16 v14, v19
+
+    move/from16 v26, v15
+
+    move/from16 v15, v16
+
+    move/from16 v16, v17
+
+    move/from16 v20, v7
+
+    move/from16 v21, v8
+
+    move/from16 v22, v10
+
+    move/from16 v23, v11
+
+    .line 116
+    invoke-static/range {v12 .. v27}, Lh6/h;->a(FFFFFFFFFFFFFFFF)Lh6/h;
+
+    move-result-object v7
+
+    .line 117
+    iget-object v2, v2, Lz6/c;->a:Lh6/b;
+
+    .line 118
+    invoke-static {v2, v9, v9, v7}, Lh6/f;->a(Lh6/b;IILh6/h;)Lh6/b;
+
+    move-result-object v2
+
+    const/4 v7, 0x3
+
+    if-nez v6, :cond_30
+
+    new-array v6, v7, [La6/p;
+
+    const/4 v7, 0x0
+
+    aput-object v4, v6, v7
+
+    const/4 v4, 0x1
+
+    aput-object v5, v6, v4
+
+    const/4 v5, 0x2
+
+    aput-object v3, v6, v5
+
+    move v5, v4
+
+    goto :goto_18
+
+    :cond_30
+    const/4 v8, 0x0
+
+    const/4 v9, 0x1
+
+    const/4 v10, 0x2
+
+    const/4 v11, 0x4
+
+    new-array v11, v11, [La6/p;
+
+    aput-object v4, v11, v8
+
+    aput-object v5, v11, v9
+
+    aput-object v3, v11, v10
+
+    aput-object v6, v11, v7
+
+    move v5, v9
+
+    move-object v6, v11
+
+    .line 119
+    :goto_18
+    iget-object v3, v0, Lx6/a;->a:Ly6/e;
+
+    invoke-virtual {v3, v2, v1}, Ly6/e;->a(Lh6/b;Ljava/util/Map;)Lh6/e;
+
+    move-result-object v1
+
+    move-object v2, v6
+
+    .line 120
+    :goto_19
+    iget-object v3, v1, Lh6/e;->f:Ljava/lang/Object;
+
+    .line 121
+    instance-of v4, v3, Ly6/i;
+
+    if-eqz v4, :cond_32
+
+    .line 122
+    check-cast v3, Ly6/i;
+
+    .line 123
+    iget-boolean v3, v3, Ly6/i;->a:Z
+
+    if-eqz v3, :cond_32
+
+    array-length v3, v2
+
+    const/4 v4, 0x3
+
+    if-ge v3, v4, :cond_31
+
+    goto :goto_1a
+
+    :cond_31
+    const/4 v3, 0x0
+
+    .line 124
+    aget-object v4, v2, v3
+
+    const/4 v6, 0x2
+
+    .line 125
+    aget-object v7, v2, v6
+
+    aput-object v7, v2, v3
+
+    .line 126
+    aput-object v4, v2, v6
+
+    goto :goto_1b
+
+    :cond_32
+    :goto_1a
+    const/4 v3, 0x0
+
+    .line 127
+    :goto_1b
+    new-instance v4, La6/n;
+
+    .line 128
+    iget-object v6, v1, Lh6/e;->c:Ljava/lang/String;
+
+    .line 129
+    iget-object v7, v1, Lh6/e;->a:[B
+
+    .line 130
+    sget-object v8, La6/a;->q:La6/a;
+
+    invoke-direct {v4, v6, v7, v2, v8}, La6/n;-><init>(Ljava/lang/String;[B[La6/p;La6/a;)V
+
+    .line 131
+    iget-object v2, v1, Lh6/e;->d:Ljava/util/List;
+
+    if-eqz v2, :cond_33
+
+    .line 132
+    sget-object v6, La6/o;->g:La6/o;
+
+    invoke-virtual {v4, v6, v2}, La6/n;->b(La6/o;Ljava/lang/Object;)V
+
+    .line 133
+    :cond_33
+    iget-object v2, v1, Lh6/e;->e:Ljava/lang/String;
+
+    if-eqz v2, :cond_34
+
+    .line 134
+    sget-object v6, La6/o;->h:La6/o;
+
+    invoke-virtual {v4, v6, v2}, La6/n;->b(La6/o;Ljava/lang/Object;)V
+
+    .line 135
+    :cond_34
+    iget v2, v1, Lh6/e;->g:I
+
+    if-ltz v2, :cond_35
+
+    iget v2, v1, Lh6/e;->h:I
+
+    if-ltz v2, :cond_35
+
+    goto :goto_1c
+
+    :cond_35
+    move v5, v3
+
+    :goto_1c
+    if-eqz v5, :cond_36
+
+    .line 136
+    sget-object v2, La6/o;->n:La6/o;
+
+    .line 137
+    iget v3, v1, Lh6/e;->h:I
+
+    .line 138
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    .line 139
+    invoke-virtual {v4, v2, v3}, La6/n;->b(La6/o;Ljava/lang/Object;)V
+
+    .line 140
+    sget-object v2, La6/o;->o:La6/o;
+
+    .line 141
+    iget v1, v1, Lh6/e;->g:I
+
+    .line 142
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    .line 143
+    invoke-virtual {v4, v2, v1}, La6/n;->b(La6/o;Ljava/lang/Object;)V
+
+    :cond_36
+    return-object v4
+
+    .line 144
+    :catch_1
+    invoke-static {}, La6/f;->a()La6/f;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 145
+    :cond_37
+    invoke-static {}, La6/f;->a()La6/f;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 146
+    :cond_38
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 147
+    throw v1
+
+    .line 148
+    :cond_39
+    sget-object v1, La6/j;->h:La6/j;
+
+    .line 149
+    throw v1
+.end method
+
+.method public final c(La6/c;)La6/n;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/zxing/NotFoundException;,
-            Lcom/google/zxing/FormatException;,
-            Lcom/google/zxing/ChecksumException;
+            La6/j;,
+            La6/d;,
+            La6/f;
         }
     .end annotation
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0}, Lx6/a;->b(Le6/c;Ljava/util/Map;)Le6/j;
+    invoke-virtual {p0, p1, v0}, Lx6/a;->b(La6/c;Ljava/util/Map;)La6/n;
 
     move-result-object p1
 
     return-object p1
-.end method
-
-.method public final b(Le6/c;Ljava/util/Map;)Le6/j;
-    .locals 31
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Le6/c;",
-            "Ljava/util/Map<",
-            "Le6/d;",
-            "*>;)",
-            "Le6/j;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/zxing/NotFoundException;,
-            Lcom/google/zxing/FormatException;,
-            Lcom/google/zxing/ChecksumException;
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 2
-    invoke-virtual/range {p1 .. p1}, Le6/c;->a()Ll6/b;
-
-    move-result-object v1
-
-    .line 3
-    invoke-static {v1}, La7/a;->b(Ll6/b;)Ljava/util/List;
-
-    move-result-object v2
-
-    .line 4
-    move-object v3, v2
-
-    check-cast v3, Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v3
-
-    const/4 v4, 0x2
-
-    const/4 v5, 0x0
-
-    if-eqz v3, :cond_1
-
-    .line 5
-    new-instance v2, Ll6/b;
-
-    iget v3, v1, Ll6/b;->g:I
-
-    iget v6, v1, Ll6/b;->h:I
-
-    iget v7, v1, Ll6/b;->i:I
-
-    iget-object v1, v1, Ll6/b;->j:[I
-
-    invoke-virtual {v1}, [I->clone()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, [I
-
-    invoke-direct {v2, v3, v6, v7, v1}, Ll6/b;-><init>(III[I)V
-
-    .line 6
-    new-instance v1, Ll6/a;
-
-    invoke-direct {v1, v3}, Ll6/a;-><init>(I)V
-
-    .line 7
-    new-instance v7, Ll6/a;
-
-    invoke-direct {v7, v3}, Ll6/a;-><init>(I)V
-
-    const/4 v3, 0x0
-
-    :goto_0
-    add-int/lit8 v8, v6, 0x1
-
-    .line 8
-    div-int/2addr v8, v4
-
-    if-ge v3, v8, :cond_0
-
-    .line 9
-    invoke-virtual {v2, v3, v1}, Ll6/b;->d(ILl6/a;)Ll6/a;
-
-    move-result-object v1
-
-    add-int/lit8 v8, v6, -0x1
-
-    sub-int/2addr v8, v3
-
-    .line 10
-    invoke-virtual {v2, v8, v7}, Ll6/b;->d(ILl6/a;)Ll6/a;
-
-    move-result-object v7
-
-    .line 11
-    invoke-virtual {v1}, Ll6/a;->e()V
-
-    .line 12
-    invoke-virtual {v7}, Ll6/a;->e()V
-
-    .line 13
-    iget-object v9, v7, Ll6/a;->g:[I
-
-    .line 14
-    iget-object v10, v2, Ll6/b;->j:[I
-
-    iget v11, v2, Ll6/b;->i:I
-
-    mul-int v12, v3, v11
-
-    invoke-static {v9, v5, v10, v12, v11}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 15
-    iget-object v9, v1, Ll6/a;->g:[I
-
-    .line 16
-    iget-object v10, v2, Ll6/b;->j:[I
-
-    iget v11, v2, Ll6/b;->i:I
-
-    mul-int v8, v8, v11
-
-    invoke-static {v9, v5, v10, v8, v11}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    invoke-static {v2}, La7/a;->b(Ll6/b;)Ljava/util/List;
-
-    move-result-object v1
-
-    move-object/from16 v30, v2
-
-    move-object v2, v1
-
-    move-object/from16 v1, v30
-
-    .line 18
-    :cond_1
-    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5d
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, [Le6/l;
-
-    const/4 v14, 0x4
-
-    .line 19
-    aget-object v12, v3, v14
-
-    const/4 v15, 0x5
-
-    aget-object v9, v3, v15
-
-    const/16 v16, 0x6
-
-    aget-object v13, v3, v16
-
-    const/16 v17, 0x7
-
-    aget-object v11, v3, v17
-
-    .line 20
-    aget-object v6, v3, v5
-
-    aget-object v7, v3, v14
-
-    .line 21
-    invoke-static {v6, v7}, Lx6/a;->d(Le6/l;Le6/l;)I
-
-    move-result v6
-
-    aget-object v7, v3, v16
-
-    aget-object v8, v3, v4
-
-    invoke-static {v7, v8}, Lx6/a;->d(Le6/l;Le6/l;)I
-
-    move-result v7
-
-    mul-int/lit8 v7, v7, 0x11
-
-    div-int/lit8 v7, v7, 0x12
-
-    invoke-static {v6, v7}, Ljava/lang/Math;->min(II)I
-
-    move-result v6
-
-    const/4 v10, 0x1
-
-    aget-object v7, v3, v10
-
-    aget-object v8, v3, v15
-
-    .line 22
-    invoke-static {v7, v8}, Lx6/a;->d(Le6/l;Le6/l;)I
-
-    move-result v7
-
-    aget-object v8, v3, v17
-
-    const/16 v18, 0x3
-
-    aget-object v15, v3, v18
-
-    invoke-static {v8, v15}, Lx6/a;->d(Le6/l;Le6/l;)I
-
-    move-result v8
-
-    mul-int/lit8 v8, v8, 0x11
-
-    div-int/lit8 v8, v8, 0x12
-
-    invoke-static {v7, v8}, Ljava/lang/Math;->min(II)I
-
-    move-result v7
-
-    .line 23
-    invoke-static {v6, v7}, Ljava/lang/Math;->min(II)I
-
-    move-result v15
-
-    .line 24
-    aget-object v6, v3, v5
-
-    aget-object v7, v3, v14
-
-    .line 25
-    invoke-static {v6, v7}, Lx6/a;->c(Le6/l;Le6/l;)I
-
-    move-result v6
-
-    aget-object v7, v3, v16
-
-    aget-object v8, v3, v4
-
-    invoke-static {v7, v8}, Lx6/a;->c(Le6/l;Le6/l;)I
-
-    move-result v7
-
-    mul-int/lit8 v7, v7, 0x11
-
-    div-int/lit8 v7, v7, 0x12
-
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
-
-    move-result v6
-
-    aget-object v7, v3, v10
-
-    const/4 v8, 0x5
-
-    aget-object v10, v3, v8
-
-    .line 26
-    invoke-static {v7, v10}, Lx6/a;->c(Le6/l;Le6/l;)I
-
-    move-result v7
-
-    aget-object v8, v3, v17
-
-    aget-object v10, v3, v18
-
-    invoke-static {v8, v10}, Lx6/a;->c(Le6/l;Le6/l;)I
-
-    move-result v8
-
-    mul-int/lit8 v8, v8, 0x11
-
-    div-int/lit8 v8, v8, 0x12
-
-    invoke-static {v7, v8}, Ljava/lang/Math;->max(II)I
-
-    move-result v7
-
-    .line 27
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
-
-    move-result v19
-
-    .line 28
-    sget-object v6, Ly6/j;->a:Lz6/a;
-
-    .line 29
-    new-instance v20, Ly6/c;
-
-    move-object/from16 v6, v20
-
-    move-object v7, v1
-
-    move-object v8, v12
-
-    const/4 v14, 0x1
-
-    move-object v10, v13
-
-    invoke-direct/range {v6 .. v11}, Ly6/c;-><init>(Ll6/b;Le6/l;Le6/l;Le6/l;Le6/l;)V
-
-    const/4 v11, 0x0
-
-    move-object v6, v11
-
-    move-object v7, v6
-
-    move-object/from16 v10, v20
-
-    const/4 v9, 0x0
-
-    move-object/from16 v20, v7
-
-    :goto_2
-    if-ge v9, v4, :cond_11
-
-    if-eqz v12, :cond_2
-
-    const/16 v22, 0x1
-
-    move-object v6, v1
-
-    move-object v7, v10
-
-    move-object v8, v12
-
-    move/from16 v23, v9
-
-    move/from16 v9, v22
-
-    move-object/from16 p2, v10
-
-    move v10, v15
-
-    move/from16 v11, v19
-
-    .line 30
-    invoke-static/range {v6 .. v11}, Ly6/j;->d(Ll6/b;Ly6/c;Le6/l;ZII)Ly6/h;
-
-    move-result-object v6
-
-    move-object/from16 v22, v6
-
-    goto :goto_3
-
-    :cond_2
-    move/from16 v23, v9
-
-    move-object/from16 p2, v10
-
-    move-object/from16 v22, v7
-
-    :goto_3
-    if-eqz v13, :cond_3
-
-    const/4 v9, 0x0
-
-    move-object v6, v1
-
-    move-object/from16 v7, p2
-
-    move-object v8, v13
-
-    move v10, v15
-
-    move/from16 v11, v19
-
-    .line 31
-    invoke-static/range {v6 .. v11}, Ly6/j;->d(Ll6/b;Ly6/c;Le6/l;ZII)Ly6/h;
-
-    move-result-object v6
-
-    move-object/from16 v20, v6
-
-    :cond_3
-    if-nez v22, :cond_4
-
-    if-nez v20, :cond_4
-
-    goto :goto_7
-
-    :cond_4
-    if-eqz v22, :cond_7
-
-    .line 32
-    invoke-virtual/range {v22 .. v22}, Ly6/h;->b()Ly6/a;
-
-    move-result-object v11
-
-    if-nez v11, :cond_5
-
-    goto :goto_4
-
-    :cond_5
-    if-eqz v20, :cond_9
-
-    .line 33
-    invoke-virtual/range {v20 .. v20}, Ly6/h;->b()Ly6/a;
-
-    move-result-object v6
-
-    if-nez v6, :cond_6
-
-    goto :goto_6
-
-    .line 34
-    :cond_6
-    iget v7, v11, Ly6/a;->a:I
-
-    iget v8, v6, Ly6/a;->a:I
-
-    if-eq v7, v8, :cond_9
-
-    .line 35
-    iget v7, v11, Ly6/a;->b:I
-
-    iget v8, v6, Ly6/a;->b:I
-
-    if-eq v7, v8, :cond_9
-
-    .line 36
-    iget v7, v11, Ly6/a;->e:I
-
-    iget v6, v6, Ly6/a;->e:I
-
-    if-eq v7, v6, :cond_9
-
-    goto :goto_5
-
-    :cond_7
-    :goto_4
-    if-nez v20, :cond_8
-
-    :goto_5
-    const/4 v11, 0x0
-
-    goto :goto_6
-
-    .line 37
-    :cond_8
-    invoke-virtual/range {v20 .. v20}, Ly6/h;->b()Ly6/a;
-
-    move-result-object v11
-
-    :cond_9
-    :goto_6
-    if-nez v11, :cond_a
-
-    :goto_7
-    const/4 v6, 0x0
-
-    goto :goto_9
-
-    .line 38
-    :cond_a
-    invoke-static/range {v22 .. v22}, Ly6/j;->a(Ly6/h;)Ly6/c;
-
-    move-result-object v6
-
-    .line 39
-    invoke-static/range {v20 .. v20}, Ly6/j;->a(Ly6/h;)Ly6/c;
-
-    move-result-object v7
-
-    if-nez v6, :cond_b
-
-    move-object v6, v7
-
-    goto :goto_8
-
-    :cond_b
-    if-nez v7, :cond_c
-
-    goto :goto_8
-
-    .line 40
-    :cond_c
-    new-instance v8, Ly6/c;
-
-    iget-object v9, v6, Ly6/c;->a:Ll6/b;
-
-    iget-object v10, v6, Ly6/c;->b:Le6/l;
-
-    iget-object v6, v6, Ly6/c;->c:Le6/l;
-
-    iget-object v4, v7, Ly6/c;->d:Le6/l;
-
-    iget-object v7, v7, Ly6/c;->e:Le6/l;
-
-    move-object/from16 v24, v8
-
-    move-object/from16 v25, v9
-
-    move-object/from16 v26, v10
-
-    move-object/from16 v27, v6
-
-    move-object/from16 v28, v4
-
-    move-object/from16 v29, v7
-
-    invoke-direct/range {v24 .. v29}, Ly6/c;-><init>(Ll6/b;Le6/l;Le6/l;Le6/l;Le6/l;)V
-
-    move-object v6, v8
-
-    .line 41
-    :goto_8
-    new-instance v4, Ly6/f;
-
-    invoke-direct {v4, v11, v6}, Ly6/f;-><init>(Ly6/a;Ly6/c;)V
-
-    move-object v6, v4
-
-    :goto_9
-    if-eqz v6, :cond_10
-
-    if-nez v23, :cond_e
-
-    .line 42
-    iget-object v10, v6, Ly6/f;->c:Ly6/c;
-
-    if-eqz v10, :cond_e
-
-    .line 43
-    iget v4, v10, Ly6/c;->h:I
-
-    move-object/from16 v11, p2
-
-    iget v7, v11, Ly6/c;->h:I
-
-    if-lt v4, v7, :cond_d
-
-    .line 44
-    iget v4, v10, Ly6/c;->i:I
-
-    iget v7, v11, Ly6/c;->i:I
-
-    if-le v4, v7, :cond_f
-
-    :cond_d
-    add-int/lit8 v9, v23, 0x1
-
-    move-object/from16 v7, v22
-
-    const/4 v4, 0x2
-
-    const/4 v11, 0x0
-
-    goto/16 :goto_2
-
-    :cond_e
-    move-object/from16 v11, p2
-
-    .line 45
-    :cond_f
-    iput-object v11, v6, Ly6/f;->c:Ly6/c;
-
-    move-object v4, v6
-
-    move-object/from16 v7, v22
-
-    goto :goto_a
-
-    .line 46
-    :cond_10
-    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
-
-    .line 47
-    throw v0
-
-    :cond_11
-    move-object v11, v10
-
-    move-object v4, v6
-
-    .line 48
-    :goto_a
-    iget v6, v4, Ly6/f;->d:I
-
-    add-int/lit8 v13, v6, 0x1
-
-    .line 49
-    iget-object v6, v4, Ly6/f;->b:[Ly6/g;
-
-    aput-object v7, v6, v5
-
-    .line 50
-    aput-object v20, v6, v13
-
-    if-eqz v7, :cond_12
-
-    const/16 v20, 0x1
-
-    goto :goto_b
-
-    :cond_12
-    const/16 v20, 0x0
-
-    :goto_b
-    move v6, v15
-
-    const/4 v15, 0x1
-
-    :goto_c
-    if-gt v15, v13, :cond_2b
-
-    if-eqz v20, :cond_13
-
-    move v10, v15
-
-    goto :goto_d
-
-    :cond_13
-    sub-int v7, v13, v15
-
-    move v10, v7
-
-    .line 51
-    :goto_d
-    iget-object v7, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v7, v7, v10
-
-    if-nez v7, :cond_2a
-
-    if-eqz v10, :cond_15
-
-    if-ne v10, v13, :cond_14
-
-    goto :goto_f
-
-    .line 52
-    :cond_14
-    new-instance v7, Ly6/g;
-
-    invoke-direct {v7, v11}, Ly6/g;-><init>(Ly6/c;)V
-
-    :goto_e
-    move-object v9, v7
-
-    goto :goto_11
-
-    .line 53
-    :cond_15
-    :goto_f
-    new-instance v7, Ly6/h;
-
-    if-nez v10, :cond_16
-
-    const/4 v8, 0x1
-
-    goto :goto_10
-
-    :cond_16
-    const/4 v8, 0x0
-
-    :goto_10
-    invoke-direct {v7, v11, v8}, Ly6/h;-><init>(Ly6/c;Z)V
-
-    goto :goto_e
-
-    .line 54
-    :goto_11
-    iget-object v7, v4, Ly6/f;->b:[Ly6/g;
-
-    aput-object v9, v7, v10
-
-    .line 55
-    iget v7, v11, Ly6/c;->h:I
-
-    move v8, v6
-
-    move/from16 v6, v19
-
-    const/4 v5, -0x1
-
-    .line 56
-    :goto_12
-    iget v14, v11, Ly6/c;->i:I
-
-    if-gt v7, v14, :cond_29
-
-    if-eqz v20, :cond_17
-
-    const/4 v14, 0x1
-
-    goto :goto_13
-
-    :cond_17
-    const/4 v14, -0x1
-
-    :goto_13
-    sub-int v12, v10, v14
-
-    .line 57
-    invoke-static {v4, v12}, Ly6/j;->e(Ly6/f;I)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_18
-
-    move-object/from16 v24, v2
-
-    .line 58
-    iget-object v2, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v2, v2, v12
-
-    move/from16 v19, v6
-
-    .line 59
-    iget-object v6, v2, Ly6/g;->b:[Ly6/d;
-
-    .line 60
-    iget-object v2, v2, Ly6/g;->a:Ly6/c;
-
-    .line 61
-    iget v2, v2, Ly6/c;->h:I
-
-    sub-int v2, v7, v2
-
-    .line 62
-    aget-object v2, v6, v2
-
-    goto :goto_14
-
-    :cond_18
-    move-object/from16 v24, v2
-
-    move/from16 v19, v6
-
-    const/4 v2, 0x0
-
-    :goto_14
-    if-eqz v2, :cond_1a
-
-    if-eqz v20, :cond_19
-
-    .line 63
-    iget v2, v2, Ly6/d;->b:I
-
-    goto :goto_15
-
-    .line 64
-    :cond_19
-    iget v2, v2, Ly6/d;->a:I
-
-    goto :goto_15
-
-    .line 65
-    :cond_1a
-    iget-object v2, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v2, v2, v10
-
-    .line 66
-    invoke-virtual {v2, v7}, Ly6/g;->a(I)Ly6/d;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1c
-
-    if-eqz v20, :cond_1b
-
-    .line 67
-    iget v2, v2, Ly6/d;->a:I
-
-    goto :goto_15
-
-    .line 68
-    :cond_1b
-    iget v2, v2, Ly6/d;->b:I
-
-    goto :goto_15
-
-    .line 69
-    :cond_1c
-    invoke-static {v4, v12}, Ly6/j;->e(Ly6/f;I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_1d
-
-    .line 70
-    iget-object v2, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v2, v2, v12
-
-    .line 71
-    invoke-virtual {v2, v7}, Ly6/g;->a(I)Ly6/d;
-
-    move-result-object v2
-
-    :cond_1d
-    if-eqz v2, :cond_1f
-
-    if-eqz v20, :cond_1e
-
-    .line 72
-    iget v2, v2, Ly6/d;->b:I
-
-    goto :goto_15
-
-    .line 73
-    :cond_1e
-    iget v2, v2, Ly6/d;->a:I
-
-    :goto_15
-    move/from16 v26, v7
-
-    goto :goto_19
-
-    :cond_1f
-    move v6, v10
-
-    const/4 v2, 0x0
-
-    :goto_16
-    sub-int/2addr v6, v14
-
-    .line 74
-    invoke-static {v4, v6}, Ly6/j;->e(Ly6/f;I)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_23
-
-    .line 75
-    iget-object v12, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v12, v12, v6
-
-    .line 76
-    iget-object v12, v12, Ly6/g;->b:[Ly6/d;
-
-    move/from16 v25, v6
-
-    .line 77
-    array-length v6, v12
-
-    move/from16 v26, v7
-
-    const/4 v7, 0x0
-
-    :goto_17
-    if-ge v7, v6, :cond_22
-
-    move/from16 v27, v6
-
-    aget-object v6, v12, v7
-
-    if-eqz v6, :cond_21
-
-    if-eqz v20, :cond_20
-
-    .line 78
-    iget v7, v6, Ly6/d;->b:I
-
-    goto :goto_18
-
-    .line 79
-    :cond_20
-    iget v7, v6, Ly6/d;->a:I
-
-    :goto_18
-    mul-int v14, v14, v2
-
-    .line 80
-    iget v2, v6, Ly6/d;->b:I
-
-    .line 81
-    iget v6, v6, Ly6/d;->a:I
-
-    sub-int/2addr v2, v6
-
-    mul-int v2, v2, v14
-
-    add-int/2addr v2, v7
-
-    goto :goto_19
-
-    :cond_21
-    add-int/lit8 v7, v7, 0x1
-
-    move/from16 v6, v27
-
-    goto :goto_17
-
-    :cond_22
-    add-int/lit8 v2, v2, 0x1
-
-    move/from16 v6, v25
-
-    move/from16 v7, v26
-
-    goto :goto_16
-
-    :cond_23
-    move/from16 v26, v7
-
-    if-eqz v20, :cond_24
-
-    .line 82
-    iget-object v2, v4, Ly6/f;->c:Ly6/c;
-
-    .line 83
-    iget v2, v2, Ly6/c;->f:I
-
-    goto :goto_19
-
-    .line 84
-    :cond_24
-    iget-object v2, v4, Ly6/f;->c:Ly6/c;
-
-    .line 85
-    iget v2, v2, Ly6/c;->g:I
-
-    :goto_19
-    if-ltz v2, :cond_26
-
-    .line 86
-    iget v6, v11, Ly6/c;->g:I
-
-    if-le v2, v6, :cond_25
-
-    goto :goto_1a
-
-    :cond_25
-    move v14, v2
-
-    const/4 v2, -0x1
-
-    goto :goto_1b
-
-    :cond_26
-    :goto_1a
-    const/4 v2, -0x1
-
-    if-eq v5, v2, :cond_28
-
-    move v14, v5
-
-    .line 87
-    :goto_1b
-    iget v7, v11, Ly6/c;->f:I
-
-    .line 88
-    iget v12, v11, Ly6/c;->g:I
-
-    move/from16 v23, v19
-
-    move-object v6, v1
-
-    move/from16 v19, v26
-
-    move/from16 v25, v8
-
-    move v8, v12
-
-    move-object v12, v9
-
-    move/from16 v9, v20
-
-    move/from16 v26, v10
-
-    move v10, v14
-
-    move-object/from16 v27, v11
-
-    move/from16 v11, v19
-
-    move-object v2, v12
-
-    const/16 v28, -0x1
-
-    move/from16 v12, v25
-
-    move/from16 v29, v13
-
-    move/from16 v13, v23
-
-    .line 89
-    invoke-static/range {v6 .. v13}, Ly6/j;->c(Ll6/b;IIZIIII)Ly6/d;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_27
-
-    .line 90
-    iget-object v5, v2, Ly6/g;->b:[Ly6/d;
-
-    .line 91
-    iget-object v7, v2, Ly6/g;->a:Ly6/c;
-
-    .line 92
-    iget v7, v7, Ly6/c;->h:I
-
-    sub-int v7, v19, v7
-
-    .line 93
-    aput-object v6, v5, v7
-
-    .line 94
-    iget v5, v6, Ly6/d;->b:I
-
-    iget v7, v6, Ly6/d;->a:I
-
-    sub-int/2addr v5, v7
-
-    move/from16 v7, v25
-
-    .line 95
-    invoke-static {v7, v5}, Ljava/lang/Math;->min(II)I
-
-    move-result v5
-
-    .line 96
-    iget v7, v6, Ly6/d;->b:I
-
-    iget v6, v6, Ly6/d;->a:I
-
-    sub-int/2addr v7, v6
-
-    move/from16 v6, v23
-
-    .line 97
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
-
-    move-result v6
-
-    move v8, v5
-
-    move v5, v14
-
-    goto :goto_1d
-
-    :cond_27
-    move/from16 v6, v23
-
-    move/from16 v7, v25
-
-    goto :goto_1c
-
-    :cond_28
-    move v7, v8
-
-    move-object v2, v9
-
-    move-object/from16 v27, v11
-
-    move/from16 v29, v13
-
-    move/from16 v6, v19
-
-    move/from16 v19, v26
-
-    const/16 v28, -0x1
-
-    move/from16 v26, v10
-
-    :goto_1c
-    move v8, v7
-
-    :goto_1d
-    add-int/lit8 v7, v19, 0x1
-
-    move-object v9, v2
-
-    move-object/from16 v2, v24
-
-    move/from16 v10, v26
-
-    move-object/from16 v11, v27
-
-    move/from16 v13, v29
-
-    goto/16 :goto_12
-
-    :cond_29
-    move-object/from16 v24, v2
-
-    move v7, v8
-
-    move-object/from16 v27, v11
-
-    move/from16 v29, v13
-
-    move/from16 v19, v6
-
-    move v6, v7
-
-    goto :goto_1e
-
-    :cond_2a
-    move-object/from16 v24, v2
-
-    move-object/from16 v27, v11
-
-    move/from16 v29, v13
-
-    :goto_1e
-    add-int/lit8 v15, v15, 0x1
-
-    move-object/from16 v2, v24
-
-    move-object/from16 v11, v27
-
-    move/from16 v13, v29
-
-    const/4 v5, 0x0
-
-    const/4 v14, 0x1
-
-    goto/16 :goto_c
-
-    :cond_2b
-    move-object/from16 v24, v2
-
-    const/16 v28, -0x1
-
-    .line 98
-    iget-object v2, v4, Ly6/f;->a:Ly6/a;
-
-    .line 99
-    iget v2, v2, Ly6/a;->e:I
-
-    .line 100
-    iget v5, v4, Ly6/f;->d:I
-
-    const/4 v6, 0x2
-
-    add-int/2addr v5, v6
-
-    new-array v7, v6, [I
-
-    const/4 v6, 0x1
-
-    aput v5, v7, v6
-
-    const/4 v5, 0x0
-
-    aput v2, v7, v5
-
-    .line 101
-    const-class v2, Ly6/b;
-
-    invoke-static {v2, v7}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, [[Ly6/b;
-
-    const/4 v5, 0x0
-
-    .line 102
-    :goto_1f
-    array-length v6, v2
-
-    if-ge v5, v6, :cond_2d
-
-    const/4 v6, 0x0
-
-    .line 103
-    :goto_20
-    aget-object v7, v2, v5
-
-    array-length v7, v7
-
-    if-ge v6, v7, :cond_2c
-
-    .line 104
-    aget-object v7, v2, v5
-
-    new-instance v8, Ly6/b;
-
-    invoke-direct {v8}, Ly6/b;-><init>()V
-
-    aput-object v8, v7, v6
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_20
-
-    :cond_2c
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_1f
-
-    .line 105
-    :cond_2d
-    iget-object v5, v4, Ly6/f;->b:[Ly6/g;
-
-    const/4 v6, 0x0
-
-    aget-object v5, v5, v6
-
-    invoke-virtual {v4, v5}, Ly6/f;->a(Ly6/g;)V
-
-    .line 106
-    iget-object v5, v4, Ly6/f;->b:[Ly6/g;
-
-    iget v7, v4, Ly6/f;->d:I
-
-    const/4 v8, 0x1
-
-    add-int/2addr v7, v8
-
-    aget-object v5, v5, v7
-
-    invoke-virtual {v4, v5}, Ly6/f;->a(Ly6/g;)V
-
-    const/16 v7, 0x3a0
-
-    .line 107
-    :goto_21
-    iget-object v9, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v10, v9, v6
-
-    if-eqz v10, :cond_31
-
-    iget v10, v4, Ly6/f;->d:I
-
-    add-int/2addr v10, v8
-
-    aget-object v8, v9, v10
-
-    if-nez v8, :cond_2e
-
-    goto :goto_25
-
-    .line 108
-    :cond_2e
-    aget-object v8, v9, v6
-
-    .line 109
-    iget-object v6, v8, Ly6/g;->b:[Ly6/d;
-
-    .line 110
-    aget-object v8, v9, v10
-
-    .line 111
-    iget-object v8, v8, Ly6/g;->b:[Ly6/d;
-
-    const/4 v9, 0x0
-
-    .line 112
-    :goto_22
-    array-length v10, v6
-
-    if-ge v9, v10, :cond_31
-
-    .line 113
-    aget-object v10, v6, v9
-
-    if-eqz v10, :cond_30
-
-    aget-object v10, v8, v9
-
-    if-eqz v10, :cond_30
-
-    aget-object v10, v6, v9
-
-    .line 114
-    iget v10, v10, Ly6/d;->e:I
-
-    .line 115
-    aget-object v11, v8, v9
-
-    .line 116
-    iget v11, v11, Ly6/d;->e:I
-
-    if-ne v10, v11, :cond_30
-
-    const/4 v10, 0x1
-
-    .line 117
-    :goto_23
-    iget v11, v4, Ly6/f;->d:I
-
-    if-gt v10, v11, :cond_30
-
-    .line 118
-    iget-object v11, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v11, v11, v10
-
-    .line 119
-    iget-object v11, v11, Ly6/g;->b:[Ly6/d;
-
-    .line 120
-    aget-object v11, v11, v9
-
-    if-eqz v11, :cond_2f
-
-    .line 121
-    aget-object v12, v6, v9
-
-    .line 122
-    iget v12, v12, Ly6/d;->e:I
-
-    .line 123
-    iput v12, v11, Ly6/d;->e:I
-
-    .line 124
-    invoke-virtual {v11}, Ly6/d;->a()Z
-
-    move-result v11
-
-    if-nez v11, :cond_2f
-
-    .line 125
-    iget-object v11, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v11, v11, v10
-
-    .line 126
-    iget-object v11, v11, Ly6/g;->b:[Ly6/d;
-
-    const/4 v12, 0x0
-
-    .line 127
-    aput-object v12, v11, v9
-
-    goto :goto_24
-
-    :cond_2f
-    const/4 v12, 0x0
-
-    :goto_24
-    add-int/lit8 v10, v10, 0x1
-
-    goto :goto_23
-
-    :cond_30
-    const/4 v12, 0x0
-
-    add-int/lit8 v9, v9, 0x1
-
-    goto :goto_22
-
-    :cond_31
-    :goto_25
-    const/4 v12, 0x0
-
-    .line 128
-    iget-object v6, v4, Ly6/f;->b:[Ly6/g;
-
-    const/4 v8, 0x0
-
-    aget-object v9, v6, v8
-
-    if-nez v9, :cond_32
-
-    goto :goto_28
-
-    .line 129
-    :cond_32
-    aget-object v6, v6, v8
-
-    .line 130
-    iget-object v6, v6, Ly6/g;->b:[Ly6/d;
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    .line 131
-    :goto_26
-    array-length v10, v6
-
-    if-ge v8, v10, :cond_36
-
-    .line 132
-    aget-object v10, v6, v8
-
-    if-eqz v10, :cond_35
-
-    .line 133
-    aget-object v10, v6, v8
-
-    .line 134
-    iget v10, v10, Ly6/d;->e:I
-
-    move v11, v9
-
-    const/4 v9, 0x0
-
-    const/4 v13, 0x1
-
-    .line 135
-    :goto_27
-    iget v14, v4, Ly6/f;->d:I
-
-    const/4 v15, 0x1
-
-    add-int/2addr v14, v15
-
-    if-ge v13, v14, :cond_34
-
-    const/4 v14, 0x2
-
-    if-ge v9, v14, :cond_34
-
-    .line 136
-    iget-object v14, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v14, v14, v13
-
-    .line 137
-    iget-object v14, v14, Ly6/g;->b:[Ly6/d;
-
-    .line 138
-    aget-object v14, v14, v8
-
-    if-eqz v14, :cond_33
-
-    .line 139
-    invoke-static {v10, v9, v14}, Ly6/f;->b(IILy6/d;)I
-
-    move-result v9
-
-    .line 140
-    invoke-virtual {v14}, Ly6/d;->a()Z
-
-    move-result v14
-
-    if-nez v14, :cond_33
-
-    add-int/lit8 v11, v11, 0x1
-
-    :cond_33
-    add-int/lit8 v13, v13, 0x1
-
-    goto :goto_27
-
-    :cond_34
-    move v9, v11
-
-    :cond_35
-    add-int/lit8 v8, v8, 0x1
-
-    goto :goto_26
-
-    :cond_36
-    move v8, v9
-
-    .line 141
-    :goto_28
-    iget-object v6, v4, Ly6/f;->b:[Ly6/g;
-
-    iget v9, v4, Ly6/f;->d:I
-
-    const/4 v10, 0x1
-
-    add-int/2addr v9, v10
-
-    aget-object v10, v6, v9
-
-    if-nez v10, :cond_37
-
-    const/4 v10, 0x0
-
-    goto :goto_2b
-
-    .line 142
-    :cond_37
-    aget-object v6, v6, v9
-
-    .line 143
-    iget-object v6, v6, Ly6/g;->b:[Ly6/d;
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    .line 144
-    :goto_29
-    array-length v11, v6
-
-    if-ge v9, v11, :cond_3b
-
-    .line 145
-    aget-object v11, v6, v9
-
-    if-eqz v11, :cond_3a
-
-    .line 146
-    aget-object v11, v6, v9
-
-    .line 147
-    iget v11, v11, Ly6/d;->e:I
-
-    .line 148
-    iget v13, v4, Ly6/f;->d:I
-
-    const/4 v14, 0x1
-
-    add-int/2addr v13, v14
-
-    move v14, v13
-
-    move v13, v10
-
-    const/4 v10, 0x0
-
-    :goto_2a
-    if-lez v14, :cond_39
-
-    const/4 v15, 0x2
-
-    if-ge v10, v15, :cond_39
-
-    .line 149
-    iget-object v15, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v15, v15, v14
-
-    .line 150
-    iget-object v15, v15, Ly6/g;->b:[Ly6/d;
-
-    .line 151
-    aget-object v15, v15, v9
-
-    if-eqz v15, :cond_38
-
-    .line 152
-    invoke-static {v11, v10, v15}, Ly6/f;->b(IILy6/d;)I
-
-    move-result v10
-
-    .line 153
-    invoke-virtual {v15}, Ly6/d;->a()Z
-
-    move-result v15
-
-    if-nez v15, :cond_38
-
-    add-int/lit8 v13, v13, 0x1
-
-    :cond_38
-    add-int/lit8 v14, v14, -0x1
-
-    goto :goto_2a
-
-    :cond_39
-    move v10, v13
-
-    :cond_3a
-    add-int/lit8 v9, v9, 0x1
-
-    goto :goto_29
-
-    :cond_3b
-    :goto_2b
-    add-int v6, v8, v10
-
-    if-nez v6, :cond_3d
-
-    const/4 v6, 0x0
-
-    :cond_3c
-    const/16 v20, 0x5
-
-    const/16 v21, 0x4
-
-    goto/16 :goto_34
-
-    :cond_3d
-    const/4 v10, 0x1
-
-    .line 154
-    :goto_2c
-    iget v8, v4, Ly6/f;->d:I
-
-    const/4 v9, 0x1
-
-    add-int/2addr v8, v9
-
-    if-ge v10, v8, :cond_3c
-
-    .line 155
-    iget-object v8, v4, Ly6/f;->b:[Ly6/g;
-
-    aget-object v8, v8, v10
-
-    .line 156
-    iget-object v8, v8, Ly6/g;->b:[Ly6/d;
-
-    const/4 v9, 0x0
-
-    .line 157
-    :goto_2d
-    array-length v11, v8
-
-    if-ge v9, v11, :cond_48
-
-    .line 158
-    aget-object v11, v8, v9
-
-    if-eqz v11, :cond_46
-
-    .line 159
-    aget-object v11, v8, v9
-
-    invoke-virtual {v11}, Ly6/d;->a()Z
-
-    move-result v11
-
-    if-nez v11, :cond_46
-
-    .line 160
-    aget-object v11, v8, v9
-
-    .line 161
-    iget-object v13, v4, Ly6/f;->b:[Ly6/g;
-
-    add-int/lit8 v14, v10, -0x1
-
-    aget-object v14, v13, v14
-
-    .line 162
-    iget-object v14, v14, Ly6/g;->b:[Ly6/d;
-
-    add-int/lit8 v15, v10, 0x1
-
-    .line 163
-    aget-object v19, v13, v15
-
-    if-eqz v19, :cond_3e
-
-    .line 164
-    aget-object v13, v13, v15
-
-    .line 165
-    iget-object v13, v13, Ly6/g;->b:[Ly6/d;
-
-    goto :goto_2e
-
-    :cond_3e
-    move-object v13, v14
-
-    :goto_2e
-    const/16 v15, 0xe
-
-    new-array v12, v15, [Ly6/d;
-
-    .line 166
-    aget-object v19, v14, v9
-
-    const/16 v20, 0x2
-
-    aput-object v19, v12, v20
-
-    .line 167
-    aget-object v19, v13, v9
-
-    aput-object v19, v12, v18
-
-    if-lez v9, :cond_3f
-
-    add-int/lit8 v19, v9, -0x1
-
-    .line 168
-    aget-object v20, v8, v19
-
-    const/16 v23, 0x0
-
-    aput-object v20, v12, v23
-
-    .line 169
-    aget-object v20, v14, v19
-
-    const/16 v21, 0x4
-
-    aput-object v20, v12, v21
-
-    .line 170
-    aget-object v19, v13, v19
-
-    const/16 v20, 0x5
-
-    aput-object v19, v12, v20
-
-    goto :goto_2f
-
-    :cond_3f
-    const/16 v20, 0x5
-
-    const/16 v21, 0x4
-
-    :goto_2f
-    const/4 v5, 0x1
-
-    if-le v9, v5, :cond_40
-
-    const/16 v5, 0x8
-
-    add-int/lit8 v19, v9, -0x2
-
-    .line 171
-    aget-object v23, v8, v19
-
-    aput-object v23, v12, v5
-
-    const/16 v5, 0xa
-
-    .line 172
-    aget-object v23, v14, v19
-
-    aput-object v23, v12, v5
-
-    const/16 v5, 0xb
-
-    .line 173
-    aget-object v19, v13, v19
-
-    aput-object v19, v12, v5
-
-    .line 174
-    :cond_40
-    array-length v5, v8
-
-    add-int/lit8 v5, v5, -0x1
-
-    if-ge v9, v5, :cond_41
-
-    add-int/lit8 v5, v9, 0x1
-
-    .line 175
-    aget-object v19, v8, v5
-
-    const/16 v22, 0x1
-
-    aput-object v19, v12, v22
-
-    .line 176
-    aget-object v19, v14, v5
-
-    aput-object v19, v12, v16
-
-    .line 177
-    aget-object v5, v13, v5
-
-    aput-object v5, v12, v17
-
-    .line 178
-    :cond_41
-    array-length v5, v8
-
-    add-int/lit8 v5, v5, -0x2
-
-    if-ge v9, v5, :cond_42
-
-    const/16 v5, 0x9
-
-    add-int/lit8 v19, v9, 0x2
-
-    .line 179
-    aget-object v23, v8, v19
-
-    aput-object v23, v12, v5
-
-    const/16 v5, 0xc
-
-    .line 180
-    aget-object v14, v14, v19
-
-    aput-object v14, v12, v5
-
-    const/16 v5, 0xd
-
-    .line 181
-    aget-object v13, v13, v19
-
-    aput-object v13, v12, v5
-
-    :cond_42
-    const/4 v5, 0x0
-
-    :goto_30
-    if-ge v5, v15, :cond_47
-
-    .line 182
-    aget-object v13, v12, v5
-
-    if-nez v13, :cond_43
-
-    goto :goto_31
-
-    .line 183
-    :cond_43
-    invoke-virtual {v13}, Ly6/d;->a()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_44
-
-    .line 184
-    iget v14, v13, Ly6/d;->c:I
-
-    iget v15, v11, Ly6/d;->c:I
-
-    if-ne v14, v15, :cond_44
-
-    .line 185
-    iget v13, v13, Ly6/d;->e:I
-
-    .line 186
-    iput v13, v11, Ly6/d;->e:I
-
-    const/4 v13, 0x1
-
-    goto :goto_32
-
-    :cond_44
-    :goto_31
-    const/4 v13, 0x0
-
-    :goto_32
-    if-eqz v13, :cond_45
-
-    goto :goto_33
-
-    :cond_45
-    add-int/lit8 v5, v5, 0x1
-
-    const/16 v15, 0xe
-
-    goto :goto_30
-
-    :cond_46
-    const/16 v20, 0x5
-
-    const/16 v21, 0x4
-
-    :cond_47
-    :goto_33
-    add-int/lit8 v9, v9, 0x1
-
-    const/4 v12, 0x0
-
-    goto/16 :goto_2d
-
-    :cond_48
-    const/16 v20, 0x5
-
-    const/16 v21, 0x4
-
-    add-int/lit8 v10, v10, 0x1
-
-    const/4 v12, 0x0
-
-    goto/16 :goto_2c
-
-    :goto_34
-    if-lez v6, :cond_4a
-
-    if-lt v6, v7, :cond_49
-
-    goto :goto_35
-
-    :cond_49
-    move v7, v6
-
-    const/4 v6, 0x0
-
-    const/4 v8, 0x1
-
-    goto/16 :goto_21
-
-    .line 187
-    :cond_4a
-    :goto_35
-    iget-object v5, v4, Ly6/f;->b:[Ly6/g;
-
-    .line 188
-    array-length v6, v5
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    :goto_36
-    if-ge v7, v6, :cond_4d
-
-    aget-object v9, v5, v7
-
-    if-eqz v9, :cond_4c
-
-    .line 189
-    iget-object v9, v9, Ly6/g;->b:[Ly6/d;
-
-    .line 190
-    array-length v10, v9
-
-    const/4 v11, 0x0
-
-    :goto_37
-    if-ge v11, v10, :cond_4c
-
-    aget-object v12, v9, v11
-
-    if-eqz v12, :cond_4b
-
-    .line 191
-    iget v13, v12, Ly6/d;->e:I
-
-    if-ltz v13, :cond_4b
-
-    .line 192
-    array-length v14, v2
-
-    if-ge v13, v14, :cond_4b
-
-    .line 193
-    aget-object v13, v2, v13
-
-    aget-object v13, v13, v8
-
-    .line 194
-    iget v12, v12, Ly6/d;->d:I
-
-    .line 195
-    invoke-virtual {v13, v12}, Ly6/b;->b(I)V
-
-    :cond_4b
-    add-int/lit8 v11, v11, 0x1
-
-    goto :goto_37
-
-    :cond_4c
-    add-int/lit8 v8, v8, 0x1
-
-    add-int/lit8 v7, v7, 0x1
-
-    goto :goto_36
-
-    :cond_4d
-    const/4 v7, 0x0
-
-    .line 196
-    aget-object v5, v2, v7
-
-    const/4 v6, 0x1
-
-    aget-object v5, v5, v6
-
-    invoke-virtual {v5}, Ly6/b;->a()[I
-
-    move-result-object v5
-
-    .line 197
-    iget v6, v4, Ly6/f;->d:I
-
-    .line 198
-    iget-object v7, v4, Ly6/f;->a:Ly6/a;
-
-    .line 199
-    iget v8, v7, Ly6/a;->e:I
-
-    mul-int v6, v6, v8
-
-    .line 200
-    iget v7, v7, Ly6/a;->b:I
-
-    const/4 v8, 0x2
-
-    shl-int v7, v8, v7
-
-    sub-int/2addr v6, v7
-
-    .line 201
-    array-length v7, v5
-
-    if-nez v7, :cond_4f
-
-    if-lez v6, :cond_4e
-
-    const/16 v5, 0x3a0
-
-    if-gt v6, v5, :cond_4e
-
-    const/4 v7, 0x0
-
-    .line 202
-    aget-object v5, v2, v7
-
-    const/4 v9, 0x1
-
-    aget-object v5, v5, v9
-
-    invoke-virtual {v5, v6}, Ly6/b;->b(I)V
-
-    goto :goto_38
-
-    .line 203
-    :cond_4e
-    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
-
-    .line 204
-    throw v0
-
-    :cond_4f
-    const/4 v7, 0x0
-
-    const/4 v9, 0x1
-
-    .line 205
-    aget v5, v5, v7
-
-    if-eq v5, v6, :cond_50
-
-    .line 206
-    aget-object v5, v2, v7
-
-    aget-object v5, v5, v9
-
-    invoke-virtual {v5, v6}, Ly6/b;->b(I)V
-
-    .line 207
-    :cond_50
-    :goto_38
-    new-instance v5, Ljava/util/ArrayList;
-
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
-
-    .line 208
-    iget-object v6, v4, Ly6/f;->a:Ly6/a;
-
-    .line 209
-    iget v6, v6, Ly6/a;->e:I
-
-    .line 210
-    iget v7, v4, Ly6/f;->d:I
-
-    mul-int v6, v6, v7
-
-    .line 211
-    new-array v6, v6, [I
-
-    .line 212
-    new-instance v7, Ljava/util/ArrayList;
-
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
-
-    .line 213
-    new-instance v9, Ljava/util/ArrayList;
-
-    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
-
-    const/4 v10, 0x0
-
-    .line 214
-    :goto_39
-    iget-object v11, v4, Ly6/f;->a:Ly6/a;
-
-    .line 215
-    iget v11, v11, Ly6/a;->e:I
-
-    if-ge v10, v11, :cond_54
-
-    const/4 v11, 0x0
-
-    .line 216
-    :goto_3a
-    iget v12, v4, Ly6/f;->d:I
-
-    if-ge v11, v12, :cond_53
-
-    .line 217
-    aget-object v12, v2, v10
-
-    add-int/lit8 v13, v11, 0x1
-
-    aget-object v12, v12, v13
-
-    invoke-virtual {v12}, Ly6/b;->a()[I
-
-    move-result-object v12
-
-    .line 218
-    iget v14, v4, Ly6/f;->d:I
-
-    mul-int v14, v14, v10
-
-    add-int/2addr v14, v11
-
-    .line 219
-    array-length v11, v12
-
-    if-nez v11, :cond_51
-
-    .line 220
-    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v5, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_3b
-
-    .line 221
-    :cond_51
-    array-length v11, v12
-
-    const/4 v15, 0x1
-
-    if-ne v11, v15, :cond_52
-
-    const/4 v11, 0x0
-
-    .line 222
-    aget v12, v12, v11
-
-    aput v12, v6, v14
-
-    goto :goto_3b
-
-    .line 223
-    :cond_52
-    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 224
-    invoke-virtual {v7, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :goto_3b
-    move v11, v13
-
-    goto :goto_3a
-
-    :cond_53
-    add-int/lit8 v10, v10, 0x1
-
-    goto :goto_39
-
-    .line 225
-    :cond_54
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    new-array v10, v2, [[I
-
-    const/4 v11, 0x0
-
-    :goto_3c
-    if-ge v11, v2, :cond_55
-
-    .line 226
-    invoke-virtual {v7, v11}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v12
-
-    check-cast v12, [I
-
-    aput-object v12, v10, v11
-
-    add-int/lit8 v11, v11, 0x1
-
-    goto :goto_3c
-
-    .line 227
-    :cond_55
-    iget-object v2, v4, Ly6/f;->a:Ly6/a;
-
-    .line 228
-    iget v2, v2, Ly6/a;->b:I
-
-    .line 229
-    invoke-static {v5}, Lk3/u5;->e(Ljava/util/Collection;)[I
-
-    move-result-object v4
-
-    invoke-static {v9}, Lk3/u5;->e(Ljava/util/Collection;)[I
-
-    move-result-object v5
-
-    .line 230
-    array-length v7, v5
-
-    new-array v9, v7, [I
-
-    const/16 v11, 0x64
-
-    :goto_3d
-    add-int/lit8 v12, v11, -0x1
-
-    if-lez v11, :cond_5c
-
-    const/4 v11, 0x0
-
-    :goto_3e
-    if-ge v11, v7, :cond_56
-
-    .line 231
-    aget v13, v5, v11
-
-    aget-object v14, v10, v11
-
-    aget v15, v9, v11
-
-    aget v14, v14, v15
-
-    aput v14, v6, v13
-
-    add-int/lit8 v11, v11, 0x1
-
-    goto :goto_3e
-
-    .line 232
-    :cond_56
-    :try_start_0
-    invoke-static {v6, v2, v4}, Ly6/j;->b([II[I)Ll6/e;
-
-    move-result-object v2
-    :try_end_0
-    .catch Lcom/google/zxing/ChecksumException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 233
-    new-instance v4, Le6/j;
-
-    .line 234
-    iget-object v5, v2, Ll6/e;->c:Ljava/lang/String;
-
-    .line 235
-    sget-object v6, Le6/a;->q:Le6/a;
-
-    const/4 v11, 0x0
-
-    invoke-direct {v4, v5, v11, v3, v6}, Le6/j;-><init>(Ljava/lang/String;[B[Le6/l;Le6/a;)V
-
-    .line 236
-    sget-object v3, Le6/k;->i:Le6/k;
-
-    .line 237
-    iget-object v5, v2, Ll6/e;->e:Ljava/lang/String;
-
-    .line 238
-    invoke-virtual {v4, v3, v5}, Le6/j;->b(Le6/k;Ljava/lang/Object;)V
-
-    .line 239
-    iget-object v2, v2, Ll6/e;->f:Ljava/lang/Object;
-
-    .line 240
-    check-cast v2, Lx6/b;
-
-    if-eqz v2, :cond_57
-
-    .line 241
-    sget-object v3, Le6/k;->n:Le6/k;
-
-    invoke-virtual {v4, v3, v2}, Le6/j;->b(Le6/k;Ljava/lang/Object;)V
-
-    .line 242
-    :cond_57
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    move-object/from16 v2, v24
-
-    const/4 v4, 0x2
-
-    const/4 v5, 0x0
-
-    goto/16 :goto_1
-
-    :catch_0
-    const/4 v11, 0x0
-
-    if-eqz v7, :cond_5b
-
-    const/4 v13, 0x0
-
-    :goto_3f
-    if-ge v13, v7, :cond_5a
-
-    .line 243
-    aget v14, v9, v13
-
-    aget-object v15, v10, v13
-
-    array-length v15, v15
-
-    add-int/lit8 v15, v15, -0x1
-
-    if-ge v14, v15, :cond_58
-
-    .line 244
-    aget v14, v9, v13
-
-    const/4 v15, 0x1
-
-    add-int/2addr v14, v15
-
-    aput v14, v9, v13
-
-    goto :goto_40
-
-    :cond_58
-    const/4 v14, 0x0
-
-    const/4 v15, 0x1
-
-    .line 245
-    aput v14, v9, v13
-
-    add-int/lit8 v14, v7, -0x1
-
-    if-eq v13, v14, :cond_59
-
-    add-int/lit8 v13, v13, 0x1
-
-    goto :goto_3f
-
-    .line 246
-    :cond_59
-    invoke-static {}, Lcom/google/zxing/ChecksumException;->a()Lcom/google/zxing/ChecksumException;
-
-    move-result-object v0
-
-    throw v0
-
-    :cond_5a
-    const/4 v15, 0x1
-
-    :goto_40
-    move v11, v12
-
-    goto :goto_3d
-
-    .line 247
-    :cond_5b
-    invoke-static {}, Lcom/google/zxing/ChecksumException;->a()Lcom/google/zxing/ChecksumException;
-
-    move-result-object v0
-
-    throw v0
-
-    .line 248
-    :cond_5c
-    invoke-static {}, Lcom/google/zxing/ChecksumException;->a()Lcom/google/zxing/ChecksumException;
-
-    move-result-object v0
-
-    throw v0
-
-    .line 249
-    :cond_5d
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    new-array v1, v1, [Le6/j;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Le6/j;
-
-    if-eqz v0, :cond_5e
-
-    .line 250
-    array-length v1, v0
-
-    if-eqz v1, :cond_5e
-
-    const/4 v1, 0x0
-
-    aget-object v2, v0, v1
-
-    if-eqz v2, :cond_5e
-
-    .line 251
-    aget-object v0, v0, v1
-
-    return-object v0
-
-    .line 252
-    :cond_5e
-    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
-
-    .line 253
-    goto :goto_42
-
-    :goto_41
-    throw v0
-
-    :goto_42
-    goto :goto_41
-.end method
-
-.method public final reset()V
-    .locals 0
-
-    return-void
 .end method

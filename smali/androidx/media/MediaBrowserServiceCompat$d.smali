@@ -57,27 +57,7 @@
 
 
 # virtual methods
-.method public a()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->d:Landroidx/media/MediaBrowserServiceCompat;
-
-    .line 2
-    new-instance v1, Landroidx/media/j$a;
-
-    invoke-direct {v1, v0, p0}, Landroidx/media/j$a;-><init>(Landroid/content/Context;Landroidx/media/j$c;)V
-
-    .line 3
-    iput-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$d;->b:Landroidx/media/j$a;
-
-    .line 4
-    invoke-static {v1}, Landroidx/media/j;->b(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final c(Ljava/lang/String;Landroidx/media/j$b;)V
+.method public final b(Ljava/lang/String;Landroidx/media/j$b;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -97,19 +77,7 @@
     return-void
 .end method
 
-.method public final d(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 1
-
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->b:Landroidx/media/j$a;
-
-    invoke-static {v0, p1}, Landroidx/media/j;->a(Ljava/lang/Object;Landroid/content/Intent;)Landroid/os/IBinder;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final e(Ljava/lang/String;ILandroid/os/Bundle;)V
+.method public final d(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 3
 
     if-eqz p3, :cond_0
@@ -119,7 +87,7 @@
     const-string v1, "extra_client_version"
 
     .line 1
-    invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p3, v1, v0}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -133,7 +101,7 @@
 
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$k;
 
     invoke-direct {p3, v0}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 
@@ -149,7 +117,7 @@
     const-string v1, "extra_service_version"
 
     .line 5
-    invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p3, v1, v0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 6
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->c:Landroid/os/Messenger;
@@ -166,7 +134,7 @@
     .line 8
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->a:Ljava/util/ArrayList;
@@ -192,13 +160,13 @@
     if-lt v1, v2, :cond_1
 
     .line 13
-    new-instance v1, Lp0/f;
+    new-instance v1, Lo0/f;
 
-    invoke-direct {v1, p1, v0, p2}, Lp0/f;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, p1, v0, p2}, Lo0/f;-><init>(Ljava/lang/String;II)V
 
     .line 14
     :cond_1
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$d;->d:Landroidx/media/MediaBrowserServiceCompat;
@@ -208,7 +176,7 @@
     .line 16
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$d;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

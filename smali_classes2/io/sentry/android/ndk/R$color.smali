@@ -2,17 +2,6 @@
 .super Ljava/lang/Object;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lio/sentry/android/ndk/R;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = "color"
-.end annotation
-
-
 # static fields
 .field public static final androidx_core_ripple_material_light:I = 0x7f06001c
 

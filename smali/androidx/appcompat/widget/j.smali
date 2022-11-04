@@ -82,7 +82,7 @@
     move v6, p2
 
     .line 5
-    invoke-static/range {v1 .. v6}, Lf0/r;->C(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Lf0/o;->o(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 6
     sget p1, Landroidx/appcompat/R$styleable;->AppCompatSeekBar_android_thumb:I
@@ -130,7 +130,7 @@
     .line 13
     iget-object p2, p0, Landroidx/appcompat/widget/j;->d:Landroid/widget/SeekBar;
 
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {p2}, Landroid/view/View;->getLayoutDirection()I
@@ -138,7 +138,7 @@
     move-result p2
 
     .line 15
-    invoke-static {p1, p2}, Ly/a;->l(Landroid/graphics/drawable/Drawable;I)Z
+    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
 
     .line 16
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->isStateful()Z
@@ -186,7 +186,7 @@
 
     iget-object p2, p0, Landroidx/appcompat/widget/j;->g:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {p1, p2}, Landroidx/appcompat/widget/q;->d(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {p1, p2}, Landroidx/appcompat/widget/q;->c(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object p1
 
@@ -247,10 +247,6 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ly/a;->q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
     iput-object v0, p0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
     .line 3
@@ -261,22 +257,24 @@
     .line 4
     iget-object v1, p0, Landroidx/appcompat/widget/j;->f:Landroid/content/res/ColorStateList;
 
-    invoke-static {v0, v1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
-
     .line 5
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 6
     :cond_1
     iget-boolean v0, p0, Landroidx/appcompat/widget/j;->i:Z
 
     if-eqz v0, :cond_2
 
-    .line 6
+    .line 7
     iget-object v0, p0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Landroidx/appcompat/widget/j;->g:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {v0, v1}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
+    .line 8
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 7
+    .line 9
     :cond_2
     iget-object v0, p0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
@@ -286,7 +284,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 8
+    .line 10
     iget-object v0, p0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Landroidx/appcompat/widget/j;->d:Landroid/widget/SeekBar;
@@ -342,7 +340,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x1
+    move v2, v1
 
     :goto_0
     if-ltz v3, :cond_1

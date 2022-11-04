@@ -33,7 +33,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 3
-    sget-object v0, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
+    sget-object v0, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
 
     const/4 v1, 0x1
 
@@ -47,7 +47,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 5
-    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->H()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->G()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -58,7 +58,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 7
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object p2, v2
 
@@ -71,7 +71,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 9
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
 
     goto :goto_1
 
@@ -80,7 +80,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 11
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
 
     .line 12
     :goto_1
@@ -95,7 +95,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 14
-    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->J()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->I()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -106,7 +106,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 16
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object p2, v2
 
@@ -125,7 +125,7 @@
     iget-object p1, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 19
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->K()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->J()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -138,7 +138,7 @@
     iget-object p1, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 21
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     iput-object v2, p0, Landroidx/fragment/app/b$d;->e:Ljava/lang/Object;
 
@@ -166,8 +166,6 @@
     .line 1
     :cond_0
     sget-object v0, Landroidx/fragment/app/d0;->b:Landroidx/fragment/app/e0;
-
-    if-eqz v0, :cond_1
 
     .line 2
     instance-of v1, p1, Landroid/transition/Transition;

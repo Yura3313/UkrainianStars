@@ -1,266 +1,160 @@
-.class public Lz1/x;
+.class public final Lz1/x;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
-
-# annotations
-.annotation runtime Ljavax/annotation/CheckReturnValue;
-.end annotation
-
-
-# static fields
-.field public static final d:Lz1/x;
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Z
+.field public final synthetic f:Lcom/google/android/gms/common/ConnectionResult;
 
-.field public final b:Ljava/lang/String;
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-.end field
-
-.field public final c:Ljava/lang/Throwable;
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-.end field
+.field public final synthetic g:Lz1/e$c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Lz1/x;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2, v2}, Lz1/x;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
-
-    sput-object v0, Lz1/x;->d:Lz1/x;
-
-    return-void
-.end method
-
-.method public constructor <init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+.method public constructor <init>(Lz1/e$c;Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-    .param p3    # Ljava/lang/Throwable;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
 
-    .line 1
+    iput-object p1, p0, Lz1/x;->g:Lz1/e$c;
+
+    iput-object p2, p0, Lz1/x;->f:Lcom/google/android/gms/common/ConnectionResult;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-boolean p1, p0, Lz1/x;->a:Z
-
-    .line 3
-    iput-object p2, p0, Lz1/x;->b:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Lz1/x;->c:Ljava/lang/Throwable;
-
     return-void
-.end method
-
-.method public static a(Ljava/lang/String;Lz1/l;ZZ)Ljava/lang/String;
-    .locals 3
-
-    if-eqz p3, :cond_0
-
-    const-string p3, "debug cert rejected"
-
-    goto :goto_0
-
-    :cond_0
-    const-string p3, "not allowed"
-
-    :goto_0
-    const/4 v0, 0x5
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    aput-object p3, v0, v1
-
-    const/4 p3, 0x1
-
-    aput-object p0, v0, p3
-
-    const-string p0, "SHA-1"
-
-    :goto_1
-    const/4 p3, 0x2
-
-    if-ge v1, p3, :cond_2
-
-    .line 1
-    :try_start_0
-    invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
-
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz v2, :cond_1
-
-    goto :goto_2
-
-    :catch_0
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v2, 0x0
-
-    .line 2
-    :goto_2
-    invoke-static {v2}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-object p0, v2
-
-    check-cast p0, Ljava/security/MessageDigest;
-
-    invoke-virtual {p1}, Lz1/l;->S0()[B
-
-    move-result-object p0
-
-    invoke-virtual {v2, p0}, Ljava/security/MessageDigest;->digest([B)[B
-
-    move-result-object p0
-
-    .line 3
-    invoke-static {p0}, Ll2/h;->a([B)Ljava/lang/String;
-
-    move-result-object p0
-
-    aput-object p0, v0, p3
-
-    const/4 p0, 0x3
-
-    .line 4
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    aput-object p1, v0, p0
-
-    const/4 p0, 0x4
-
-    const-string p1, "12451000.false"
-
-    aput-object p1, v0, p0
-
-    const-string p0, "%s: pkg=%s, sha1=%s, atk=%s, ver=%s"
-
-    .line 5
-    invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static b(Ljava/lang/String;)Lz1/x;
-    .locals 3
-
-    new-instance v0, Lz1/x;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, p0, v2}, Lz1/x;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object v0
-.end method
-
-.method public static c(Ljava/lang/String;Ljava/lang/Throwable;)Lz1/x;
-    .locals 2
-
-    new-instance v0, Lz1/x;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, p0, p1}, Lz1/x;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object v0
-.end method
-
-.method public static d(Ljava/util/concurrent/Callable;)Lz1/x;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/concurrent/Callable<",
-            "Ljava/lang/String;",
-            ">;)",
-            "Lz1/x;"
-        }
-    .end annotation
-
-    new-instance v0, Lz1/y;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lz1/y;-><init>(Ljava/util/concurrent/Callable;Lk3/q5;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public e()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-
-    iget-object v0, p0, Lz1/x;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final f()V
-    .locals 2
+.method public final run()V
+    .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lz1/x;->a:Z
+    iget-object v0, p0, Lz1/x;->g:Lz1/e$c;
 
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x3
-
-    const-string v1, "GoogleCertificatesRslt"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    iget-object v1, v0, Lz1/e$c;->f:Lz1/e;
 
     .line 2
-    iget-object v0, p0, Lz1/x;->c:Ljava/lang/Throwable;
-
-    if-eqz v0, :cond_0
+    iget-object v1, v1, Lz1/e;->o:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 3
-    invoke-virtual {p0}, Lz1/x;->e()Ljava/lang/String;
+    iget-object v0, v0, Lz1/e$c;->b:Lz1/a;
+
+    .line 4
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz1/e$a;
+
+    if-nez v0, :cond_0
 
     return-void
 
-    .line 4
+    .line 5
     :cond_0
-    invoke-virtual {p0}, Lz1/x;->e()Ljava/lang/String;
+    iget-object v1, p0, Lz1/x;->f:Lcom/google/android/gms/common/ConnectionResult;
+
+    invoke-virtual {v1}, Lcom/google/android/gms/common/ConnectionResult;->L2()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_3
+
+    .line 6
+    iget-object v1, p0, Lz1/x;->g:Lz1/e$c;
+
+    const/4 v3, 0x1
+
+    .line 7
+    iput-boolean v3, v1, Lz1/e$c;->e:Z
+
+    .line 8
+    iget-object v1, v1, Lz1/e$c;->a:Ly1/a$f;
+
+    .line 9
+    invoke-interface {v1}, Ly1/a$f;->m()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 10
+    iget-object v0, p0, Lz1/x;->g:Lz1/e$c;
+
+    .line 11
+    iget-boolean v1, v0, Lz1/e$c;->e:Z
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v0, Lz1/e$c;->c:Lcom/google/android/gms/common/internal/IAccountAccessor;
+
+    if-eqz v1, :cond_1
+
+    .line 12
+    iget-object v2, v0, Lz1/e$c;->a:Ly1/a$f;
+
+    iget-object v0, v0, Lz1/e$c;->d:Ljava/util/Set;
+
+    invoke-interface {v2, v1, v0}, Ly1/a$f;->c(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
 
     :cond_1
+    return-void
+
+    .line 13
+    :cond_2
+    :try_start_0
+    iget-object v1, p0, Lz1/x;->g:Lz1/e$c;
+
+    .line 14
+    iget-object v1, v1, Lz1/e$c;->a:Ly1/a$f;
+
+    .line 15
+    invoke-interface {v1}, Ly1/a$f;->b()Ljava/util/Set;
+
+    move-result-object v3
+
+    .line 16
+    invoke-interface {v1, v2, v3}, Ly1/a$f;->c(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    .line 17
+    :catch_0
+    iget-object v1, p0, Lz1/x;->g:Lz1/e$c;
+
+    .line 18
+    iget-object v1, v1, Lz1/e$c;->a:Ly1/a$f;
+
+    const-string v3, "Failed to get service from broker."
+
+    .line 19
+    invoke-interface {v1, v3}, Ly1/a$f;->d(Ljava/lang/String;)V
+
+    .line 20
+    new-instance v1, Lcom/google/android/gms/common/ConnectionResult;
+
+    const/16 v3, 0xa
+
+    .line 21
+    invoke-direct {v1, v3, v2, v2}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;Ljava/lang/String;)V
+
+    .line 22
+    invoke-virtual {v0, v1, v2}, Lz1/e$a;->d(Lcom/google/android/gms/common/ConnectionResult;Ljava/lang/Exception;)V
+
+    return-void
+
+    .line 23
+    :cond_3
+    iget-object v1, p0, Lz1/x;->f:Lcom/google/android/gms/common/ConnectionResult;
+
+    .line 24
+    invoke-virtual {v0, v1, v2}, Lz1/e$a;->d(Lcom/google/android/gms/common/ConnectionResult;Ljava/lang/Exception;)V
+
     return-void
 .end method

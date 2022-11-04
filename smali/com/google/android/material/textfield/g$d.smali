@@ -31,11 +31,11 @@
 
 
 # virtual methods
-.method public final e(Landroid/view/View;Lg0/c;)V
+.method public final d(Landroid/view/View;Lg0/b;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/google/android/material/textfield/TextInputLayout$e;->e(Landroid/view/View;Lg0/c;)V
+    invoke-super {p0, p1, p2}, Lcom/google/android/material/textfield/TextInputLayout$e;->d(Landroid/view/View;Lg0/b;)V
 
     .line 2
     iget-object p1, p0, Lcom/google/android/material/textfield/g$d;->e:Lcom/google/android/material/textfield/g;
@@ -59,11 +59,11 @@
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Lg0/c;->E(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lg0/b;->C(Ljava/lang/CharSequence;)V
 
     .line 4
     :cond_0
-    invoke-virtual {p2}, Lg0/c;->u()Z
+    invoke-virtual {p2}, Lg0/b;->t()Z
 
     move-result p1
 
@@ -72,17 +72,17 @@
     const/4 p1, 0x0
 
     .line 5
-    invoke-virtual {p2, p1}, Lg0/c;->P(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lg0/b;->M(Ljava/lang/CharSequence;)V
 
     :cond_1
     return-void
 .end method
 
-.method public final f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final e(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Lf0/a;->f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->e(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 2
     iget-object p1, p0, Lcom/google/android/material/textfield/g$d;->e:Lcom/google/android/material/textfield/g;

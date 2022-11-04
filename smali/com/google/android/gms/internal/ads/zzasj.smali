@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract n1(Landroid/os/ParcelFileDescriptor;)V
+.method public abstract o5(Lcom/google/android/gms/internal/ads/zzazl;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract q3(Lcom/google/android/gms/internal/ads/zzazl;)V
+.method public abstract t1(Landroid/os/ParcelFileDescriptor;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

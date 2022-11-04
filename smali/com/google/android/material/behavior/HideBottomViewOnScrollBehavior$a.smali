@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
+.field public final synthetic f:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior$a;->g:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
+    iput-object p1, p0, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior$a;->f:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior$a;->g:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
+    iget-object p1, p0, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior$a;->f:Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
 
     const/4 v0, 0x0
 

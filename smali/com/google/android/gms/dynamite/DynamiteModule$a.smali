@@ -1,5 +1,5 @@
-.class public interface abstract Lcom/google/android/gms/dynamite/DynamiteModule$a;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/gms/dynamite/DynamiteModule$a;
+.super Ljava/lang/Exception;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
@@ -9,23 +9,26 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/android/gms/dynamite/DynamiteModule$a$a;,
-        Lcom/google/android/gms/dynamite/DynamiteModule$a$b;
-    }
-.end annotation
 
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
-# virtual methods
-.method public abstract a(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/gms/dynamite/DynamiteModule$a$b;)Lcom/google/android/gms/dynamite/DynamiteModule$a$a;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/dynamite/DynamiteModule$LoadingException;
-        }
-    .end annotation
+    .line 1
+    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
 .end method

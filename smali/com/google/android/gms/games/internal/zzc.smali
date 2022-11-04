@@ -14,7 +14,7 @@
 
 
 # virtual methods
-.method public N1()Lcom/google/android/gms/games/internal/zzbq;
+.method public x2()Lcom/google/android/gms/games/internal/zzbq;
     .locals 1
 
     const/4 v0, 0x0

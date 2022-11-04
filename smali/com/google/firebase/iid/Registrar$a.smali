@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lz5/a;
+.implements Lx5/a;
 
 
 # annotations

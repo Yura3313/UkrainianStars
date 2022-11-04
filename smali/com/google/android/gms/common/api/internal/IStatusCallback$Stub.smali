@@ -36,7 +36,7 @@
 
 
 # virtual methods
-.method public final c2(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final B2(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .param p2    # Landroid/os/Parcel;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -64,7 +64,7 @@
     :cond_0
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lp3/a;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lo3/a;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 

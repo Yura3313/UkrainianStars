@@ -4,30 +4,30 @@
 
 
 # instance fields
-.field public final h:Le1/a;
+.field public final g:Lc1/a;
 
 
 # direct methods
-.method public constructor <init>(Le1/a;)V
+.method public constructor <init>(Lc1/a;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzxf;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzvn;->h:Le1/a;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzvn;->g:Lc1/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final m(Ljava/lang/String;Ljava/lang/String;)V
+.method public final s(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvn;->h:Le1/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvn;->g:Lc1/a;
 
-    invoke-interface {v0, p1, p2}, Le1/a;->m(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2}, Lc1/a;->s(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

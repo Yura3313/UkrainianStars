@@ -23,7 +23,7 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     .line 1
     new-instance v0, Ln/c;
@@ -32,35 +32,19 @@
 
     sput-object v0, Ln/c;->b:Ln/c;
 
-    const/4 v0, 0x4
+    const-string v0, "standard"
 
-    new-array v0, v0, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const-string v2, "standard"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const-string v2, "accelerate"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
+    const-string v1, "accelerate"
 
     const-string v2, "decelerate"
 
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x3
-
-    const-string v2, "linear"
-
-    aput-object v2, v0, v1
+    const-string v3, "linear"
 
     .line 2
+    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
+
+    move-result-object v0
+
     sput-object v0, Ln/c;->c:[Ljava/lang/String;
 
     return-void

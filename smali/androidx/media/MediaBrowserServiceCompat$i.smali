@@ -1,4 +1,4 @@
-.class public final Landroidx/media/MediaBrowserServiceCompat$i;
+.class public interface abstract Landroidx/media/MediaBrowserServiceCompat$i;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
 
@@ -9,22 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
+    accessFlags = 0x609
     name = "i"
 .end annotation
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media/MediaBrowserServiceCompat;
-
-
-# direct methods
-.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
-    .locals 0
-
-    iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method

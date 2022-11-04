@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract j2(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
+.method public abstract v3(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
     .param p1    # Lcom/google/android/gms/common/internal/IGmsCallbacks;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation

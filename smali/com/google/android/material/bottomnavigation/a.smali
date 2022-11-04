@@ -43,7 +43,7 @@
 
     check-cast p2, Landroidx/appcompat/view/menu/g;
 
-    invoke-virtual {p2, v1}, Landroidx/appcompat/view/menu/g;->m(Z)V
+    invoke-virtual {p2, v1}, Landroidx/appcompat/view/menu/g;->k(Z)V
 
     .line 5
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->C()V

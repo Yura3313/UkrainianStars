@@ -89,39 +89,11 @@
 
     goto :goto_0
 
-    :cond_0
-    const/16 v1, 0x17
-
-    if-lt v0, v1, :cond_1
-
     .line 4
+    :cond_0
     new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi23;
 
     invoke-direct {v0, p1, p2, p3, p4}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi23;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;Landroid/os/Bundle;)V
-
-    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat;->mImpl:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImpl;
-
-    goto :goto_0
-
-    :cond_1
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_2
-
-    .line 5
-    new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;Landroid/os/Bundle;)V
-
-    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat;->mImpl:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImpl;
-
-    goto :goto_0
-
-    .line 6
-    :cond_2
-    new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;Landroid/os/Bundle;)V
 
     iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat;->mImpl:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImpl;
 

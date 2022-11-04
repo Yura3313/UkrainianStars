@@ -41,7 +41,7 @@
     iget-object v0, p0, Lcom/supercell/id/view/Switch$a;->a:Lcom/supercell/id/view/Switch;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/view/Switch;->U:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v0, v0, Lcom/supercell/id/view/Switch;->T:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     if-eqz v0, :cond_0
 

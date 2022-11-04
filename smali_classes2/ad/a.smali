@@ -1,38 +1,33 @@
 .class public final Lad/a;
 .super Ljava/lang/Object;
-.source "GameFragment.kt"
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lae/a2;
+.implements Ljava/util/Comparator;
 
 
-# static fields
-.field public static final a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
+    }
+.end annotation
 
-.field public static final b:Lad/a;
+
+# instance fields
+.field public final synthetic f:Ljava/util/Comparator;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lad/a;
-
-    invoke-direct {v0}, Lad/a;-><init>()V
-
-    sput-object v0, Lad/a;->b:Lad/a;
-
-    .line 2
-    sget v0, Lcom/supercell/id/R$layout;->fragment_game_list_banner:I
-
-    sput v0, Lad/a;->a:I
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+
+    iput-object p1, p0, Lad/a;->f:Ljava/util/Comparator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,34 +36,47 @@
 
 
 # virtual methods
-.method public final a(Lae/a2;)Z
-    .locals 1
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
-    const-string v0, "other"
+    .line 1
+    iget-object v0, p0, Lad/a;->f:Ljava/util/Comparator;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast p1, Lad/e;
 
-    const/4 p1, 0x1
+    .line 2
+    iget-object p1, p1, Lad/e;->c:Ljava/lang/String;
 
-    return p1
-.end method
+    const-string v1, ""
 
-.method public final c()I
-    .locals 1
+    if-eqz p1, :cond_0
 
-    sget v0, Lad/a;->a:I
+    goto :goto_0
 
-    return v0
-.end method
+    :cond_0
+    move-object p1, v1
 
-.method public final d(Lae/a2;)Z
-    .locals 1
+    .line 3
+    :goto_0
+    check-cast p2, Lad/e;
 
-    const-string v0, "other"
+    .line 4
+    iget-object p2, p2, Lad/e;->c:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz p2, :cond_1
 
-    instance-of p1, p1, Lad/a;
+    move-object v1, p2
+
+    .line 5
+    :cond_1
+    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result p1
 
     return p1
 .end method

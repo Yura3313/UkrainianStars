@@ -4,14 +4,14 @@
 
 
 # virtual methods
-.method public abstract R()V
-.end method
-
-.method public abstract a()Z
+.method public abstract b()Z
 .end method
 
 .method public abstract dismiss()V
 .end method
 
-.method public abstract i()Landroid/widget/ListView;
+.method public abstract f()Landroid/widget/ListView;
+.end method
+
+.method public abstract x()V
 .end method

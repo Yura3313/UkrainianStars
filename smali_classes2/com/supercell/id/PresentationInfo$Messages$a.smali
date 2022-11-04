@@ -50,9 +50,9 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lcom/supercell/id/PresentationInfo$Messages;->g:Lcom/supercell/id/PresentationInfo$Messages;
+    sget-object p1, Lcom/supercell/id/PresentationInfo$Messages;->f:Lcom/supercell/id/PresentationInfo$Messages;
 
     return-object p1
 .end method

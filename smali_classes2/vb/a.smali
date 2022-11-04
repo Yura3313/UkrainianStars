@@ -1,505 +1,170 @@
 .class public final Lvb/a;
-.super Ljavax/net/ssl/SSLSocketFactory;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lvb/a$a;,
-        Lvb/a$b;
-    }
-.end annotation
-
-
-# static fields
-.field public static final e:[Ljava/lang/String;
-
-
 # instance fields
-.field public final a:Ljavax/net/ssl/SSLSocketFactory;
+.field public final a:Landroid/content/pm/PackageInfo;
 
-.field public b:Z
+.field public final b:Ljava/lang/String;
 
-.field public c:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
-
-.field public d:Ljava/lang/reflect/Method;
+.field public c:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const-string v2, "RC4"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const-string v2, "DES"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
-
-    const-string v2, "PSK"
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x3
-
-    const-string v2, "_DHE_"
-
-    aput-object v2, v0, v1
-
-    sput-object v0, Lvb/a;->e:[Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljavax/net/ssl/SSLSocketFactory;)V
-    .locals 4
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljavax/net/ssl/SSLSocketFactory;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    const/4 p1, 0x1
+    move-result-object v0
 
     .line 3
-    iput-boolean p1, p0, Lvb/a;->b:Z
-
-    :try_start_0
-    const-string v0, "com.android.org.conscrypt.OpenSSLSocketImpl"
-
-    .line 4
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lvb/a;->c:Ljava/lang/Class;
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
-
-    goto :goto_0
-
-    :catch_0
-    :try_start_1
-    const-string v0, "org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl"
-
-    .line 5
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lvb/a;->c:Ljava/lang/Class;
-
-    .line 6
-    :goto_0
-    iget-object v0, p0, Lvb/a;->c:Ljava/lang/Class;
-
-    const-string v1, "setHostname"
-
-    new-array p1, p1, [Ljava/lang/Class;
-
-    const/4 v2, 0x0
-
-    const-class v3, Ljava/lang/String;
-
-    aput-object v3, p1, v2
-
-    invoke-virtual {v0, v1, p1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lvb/a;->d:Ljava/lang/reflect/Method;
-    :try_end_1
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
+    const/16 v1, 0x80
 
-    :catch_1
-    return-void
-.end method
+    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-.method public static c([Ljava/lang/String;)[Ljava/lang/String;
-    .locals 9
-
-    .line 1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    .line 2
-    array-length v1, p0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    :goto_0
-    if-ge v3, v1, :cond_2
-
-    aget-object v4, p0, v3
-
-    .line 3
-    sget-object v5, Lvb/a;->e:[Ljava/lang/String;
-
-    const/4 v6, 0x4
-
-    const/4 v7, 0x0
-
-    :goto_1
-    if-ge v7, v6, :cond_1
-
-    aget-object v8, v5, v7
+    move-result-object p1
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    invoke-virtual {v4, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_0
+    iput-object p1, p0, Lvb/a;->a:Landroid/content/pm/PackageInfo;
 
     .line 5
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    iput-object p2, p0, Lvb/a;->b:Ljava/lang/String;
 
-    :cond_0
-    add-int/lit8 v7, v7, 0x1
+    return-void
 
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
+    :catch_0
+    const/4 p1, 0x0
 
     .line 6
-    :cond_2
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result p0
-
-    new-array p0, p0, [Ljava/lang/String;
-
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, [Ljava/lang/String;
-
-    return-object p0
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/net/Socket;)Ljava/net/Socket;
-    .locals 3
+.method public final a()Ljava/lang/String;
+    .locals 4
 
     .line 1
-    instance-of v0, p1, Ljavax/net/ssl/SSLSocket;
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    check-cast p1, Ljavax/net/ssl/SSLSocket;
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const-string v1, "TLSv1.2"
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 3
-    invoke-virtual {p1, v0}, Ljavax/net/ssl/SSLSocket;->setEnabledProtocols([Ljava/lang/String;)V
-
-    .line 4
-    iget-boolean v0, p0, Lvb/a;->b:Z
+    iget-object v0, p0, Lvb/a;->c:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 5
-    invoke-virtual {p1}, Ljavax/net/ssl/SSLSocket;->getEnabledCipherSuites()[Ljava/lang/String;
+    return-object v0
 
-    move-result-object v0
-
-    invoke-static {v0}, Lvb/a;->c([Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 6
-    invoke-virtual {p1, v0}, Ljavax/net/ssl/SSLSocket;->setEnabledCipherSuites([Ljava/lang/String;)V
-
-    .line 7
+    .line 2
     :cond_0
-    new-instance v0, Lvb/a$b;
+    iget-object v0, p0, Lvb/a;->a:Landroid/content/pm/PackageInfo;
 
-    invoke-direct {v0, p1}, Lvb/a$b;-><init>(Ljavax/net/ssl/SSLSocket;)V
+    const-string v1, "UNK"
 
-    move-object p1, v0
+    if-nez v0, :cond_1
 
-    :cond_1
-    return-object p1
-.end method
-
-.method public final b(Ljava/net/Socket;Ljava/lang/String;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lvb/a;->c:Ljava/lang/Class;
-
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lvb/a;->d:Ljava/lang/reflect/Method;
-
-    if-nez v0, :cond_0
+    move-object v2, v1
 
     goto :goto_0
 
-    :cond_0
-    const/4 v1, 0x1
+    :cond_1
+    iget-object v2, v0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    :try_start_0
-    new-array v1, v1, [Ljava/lang/Object;
+    :goto_0
+    if-nez v0, :cond_2
 
-    const/4 v2, 0x0
-
-    aput-object p2, v1, v2
-
-    .line 2
-    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception p1
+    goto :goto_1
 
     .line 3
-    new-instance p2, Ljava/lang/RuntimeException;
-
-    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw p2
-
-    :catch_1
-    move-exception p1
+    :cond_2
+    iget-object v1, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
     .line 4
-    new-instance p2, Ljava/lang/RuntimeException;
-
-    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw p2
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public final createSocket()Ljava/net/Socket;
-    .locals 1
-
-    .line 12
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0}, Ljavax/net/SocketFactory;->createSocket()Ljava/net/Socket;
+    :goto_1
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
-
-    invoke-virtual {p0, v0}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final createSocket(Ljava/lang/String;I)Ljava/net/Socket;
-    .locals 1
-
-    .line 4
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0, p1, p2}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;I)Ljava/net/Socket;
-
-    move-result-object p2
 
     .line 5
-    invoke-virtual {p0, p2, p1}, Lvb/a;->b(Ljava/net/Socket;Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "/"
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " ChannelSDK/"
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lvb/a;->b:Ljava/lang/String;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " (Linux; U; Android "
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v1, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "; "
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 6
-    invoke-virtual {p0, p2}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v2
 
-    return-object p1
-.end method
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public final createSocket(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;
-    .locals 1
+    const-string v2, "-"
 
-    .line 9
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object v0
 
-    .line 10
-    invoke-virtual {p0, p2, p1}, Lvb/a;->b(Ljava/net/Socket;Ljava/lang/String;)V
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
-    invoke-virtual {p0, p2}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    return-object p1
-.end method
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public final createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
-    .locals 1
+    const-string v0, " Build/"
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v0, Landroid/os/Build;->ID:Ljava/lang/String;
+
+    const-string v1, ")"
 
     .line 7
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
+    invoke-static {v3, v0, v1}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0, p1, p2}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
-    .locals 1
+    move-result-object v0
 
     .line 8
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
-
-    move-result-object p1
-
-    .line 2
-    invoke-virtual {p0, p1, p2}, Lvb/a;->b(Ljava/net/Socket;Ljava/lang/String;)V
-
-    .line 3
-    invoke-virtual {p0, p1}, Lvb/a;->a(Ljava/net/Socket;)Ljava/net/Socket;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final getDefaultCipherSuites()[Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lvb/a;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getDefaultCipherSuites()[Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lvb/a;->c([Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getDefaultCipherSuites()[Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getSupportedCipherSuites()[Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lvb/a;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getSupportedCipherSuites()[Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lvb/a;->c([Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lvb/a;->a:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getSupportedCipherSuites()[Ljava/lang/String;
-
-    move-result-object v0
+    iput-object v0, p0, Lvb/a;->c:Ljava/lang/String;
 
     return-object v0
 .end method

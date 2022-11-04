@@ -62,14 +62,14 @@
     const/4 v1, -0x1
 
     .line 1
-    invoke-virtual {p2, v0, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p2, v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
     const-string v2, "android.media.browse.extra.PAGE_SIZE"
 
     .line 2
-    invoke-virtual {p2, v2, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p2, v2, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result p2
 

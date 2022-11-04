@@ -41,9 +41,9 @@
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$e;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->g:Landroidx/appcompat/widget/ActivityChooserView$f;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->f:Landroidx/appcompat/widget/ActivityChooserView$f;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 

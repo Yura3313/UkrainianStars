@@ -20,20 +20,6 @@
 .field public a:Landroid/app/Activity;
 
 
-# direct methods
-.method public constructor <init>(Landroid/app/Activity;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Landroidx/activity/ImmLeaksCleaner;->a:Landroid/app/Activity;
-
-    return-void
-.end method
-
-
 # virtual methods
 .method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 2
@@ -106,14 +92,9 @@
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
-    :catch_0
-    nop
-
     .line 11
+    :catch_0
     :cond_1
-    :goto_0
     sget p1, Landroidx/activity/ImmLeaksCleaner;->b:I
 
     if-ne p1, p2, :cond_5
@@ -206,7 +187,7 @@
     .line 22
     invoke-virtual {p1}, Landroid/view/inputmethod/InputMethodManager;->isActive()Z
 
-    goto :goto_2
+    goto :goto_1
 
     .line 23
     :catch_1
@@ -218,7 +199,7 @@
     :catchall_0
     move-exception p1
 
-    goto :goto_1
+    goto :goto_0
 
     .line 24
     :catch_2
@@ -233,7 +214,7 @@
     return-void
 
     .line 26
-    :goto_1
+    :goto_0
     monitor-exit p2
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
@@ -242,6 +223,6 @@
 
     :catch_4
     :cond_5
-    :goto_2
+    :goto_1
     return-void
 .end method

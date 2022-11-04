@@ -348,45 +348,45 @@
     .line 27
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->JSON_ELEMENT_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 28
     sget-object v8, Lcom/google/gson/internal/bind/ObjectTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 29
-    invoke-interface {v7, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     move-object/from16 v8, p17
 
     .line 30
-    invoke-interface {v7, v8}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 31
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->STRING_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 32
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->INTEGER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 33
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->BOOLEAN_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 34
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->BYTE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 35
     sget-object v8, Lcom/google/gson/internal/bind/TypeAdapters;->SHORT_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 36
     invoke-static/range {p11 .. p11}, Lcom/google/gson/Gson;->longAdapter(Lcom/google/gson/LongSerializationPolicy;)Lcom/google/gson/TypeAdapter;
@@ -402,7 +402,7 @@
 
     move-result-object v8
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 38
     sget-object v8, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
@@ -419,7 +419,7 @@
 
     move-result-object v8
 
-    invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 41
     sget-object v8, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
@@ -436,22 +436,22 @@
 
     move-result-object v5
 
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 44
     sget-object v5, Lcom/google/gson/internal/bind/TypeAdapters;->NUMBER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 45
     sget-object v5, Lcom/google/gson/internal/bind/TypeAdapters;->ATOMIC_INTEGER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 46
     sget-object v5, Lcom/google/gson/internal/bind/TypeAdapters;->ATOMIC_BOOLEAN_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 47
     const-class v5, Ljava/util/concurrent/atomic/AtomicLong;
@@ -464,7 +464,7 @@
 
     move-result-object v5
 
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 48
     const-class v5, Ljava/util/concurrent/atomic/AtomicLongArray;
@@ -477,27 +477,27 @@
 
     move-result-object v3
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 49
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->ATOMIC_INTEGER_ARRAY_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 50
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->CHARACTER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 51
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->STRING_BUILDER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 52
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->STRING_BUFFER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 53
     const-class v3, Ljava/math/BigDecimal;
@@ -508,7 +508,7 @@
 
     move-result-object v3
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 54
     const-class v3, Ljava/math/BigInteger;
@@ -519,91 +519,91 @@
 
     move-result-object v3
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 55
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->URL_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 56
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->URI_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 57
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->UUID_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 58
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->CURRENCY_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 59
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->LOCALE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 60
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->INET_ADDRESS_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 61
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->BIT_SET_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 62
     sget-object v3, Lcom/google/gson/internal/bind/DateTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 63
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->CALENDAR_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 64
     sget-object v3, Lcom/google/gson/internal/bind/TimeTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 65
     sget-object v3, Lcom/google/gson/internal/bind/SqlDateTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 66
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->TIMESTAMP_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 67
     sget-object v3, Lcom/google/gson/internal/bind/ArrayTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 68
     sget-object v3, Lcom/google/gson/internal/bind/TypeAdapters;->CLASS_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 69
     new-instance v3, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory;
 
     invoke-direct {v3, v6}, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory;-><init>(Lcom/google/gson/internal/ConstructorConstructor;)V
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 70
     new-instance v3, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;
 
     invoke-direct {v3, v6, v4}, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;-><init>(Lcom/google/gson/internal/ConstructorConstructor;Z)V
 
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 71
     new-instance v3, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
@@ -613,19 +613,19 @@
     iput-object v3, v0, Lcom/google/gson/Gson;->jsonAdapterFactory:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
 
     .line 72
-    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 73
     sget-object v4, Lcom/google/gson/internal/bind/TypeAdapters;->ENUM_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    invoke-interface {v7, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 74
     new-instance v4, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;
 
     invoke-direct {v4, v6, p2, p1, v3}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;-><init>(Lcom/google/gson/internal/ConstructorConstructor;Lcom/google/gson/FieldNamingStrategy;Lcom/google/gson/internal/Excluder;Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;)V
 
-    invoke-interface {v7, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 75
     invoke-static {v7}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -1449,13 +1449,7 @@
 
     .line 17
     :cond_7
-    goto :goto_2
-
-    :goto_1
     throw v2
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public getAdapter(Ljava/lang/Class;)Lcom/google/gson/TypeAdapter;
@@ -1573,13 +1567,7 @@
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public htmlSafe()Z

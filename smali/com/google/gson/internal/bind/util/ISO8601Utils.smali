@@ -103,7 +103,7 @@
 
     if-eqz p1, :cond_0
 
-    const/4 v1, 0x4
+    move v1, p0
 
     goto :goto_0
 
@@ -124,7 +124,7 @@
 
     if-nez v1, :cond_1
 
-    const/4 v1, 0x1
+    move v1, v3
 
     goto :goto_1
 
@@ -610,16 +610,14 @@
     :cond_8
     const/16 v16, 0x0
 
-    const/4 v11, 0x0
-
-    goto :goto_3
+    goto :goto_2
 
     :cond_9
     const/4 v11, 0x0
 
-    move v11, v7
+    move/from16 v16, v11
 
-    const/16 v16, 0x0
+    move v11, v7
 
     move v7, v6
 
@@ -634,7 +632,7 @@
 
     const/4 v12, 0x0
 
-    const/16 v16, 0x0
+    move/from16 v16, v12
 
     :goto_1
     const/4 v13, 0x0
@@ -649,7 +647,6 @@
     move/from16 v11, v16
 
     .line 23
-    :goto_3
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
     move-result v14
@@ -670,14 +667,14 @@
 
     add-int/2addr v12, v8
 
-    goto/16 :goto_8
+    goto/16 :goto_7
 
     :cond_b
     if-eq v14, v9, :cond_d
 
     if-ne v14, v4, :cond_c
 
-    goto :goto_4
+    goto :goto_3
 
     .line 26
     :cond_c
@@ -707,7 +704,7 @@
 
     .line 27
     :cond_d
-    :goto_4
+    :goto_3
     invoke-virtual {v1, v12}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
@@ -719,7 +716,7 @@
 
     if-lt v9, v15, :cond_e
 
-    goto :goto_5
+    goto :goto_4
 
     :cond_e
     new-instance v9, Ljava/lang/StringBuilder;
@@ -737,7 +734,7 @@
     move-result-object v4
 
     .line 29
-    :goto_5
+    :goto_4
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v9
@@ -761,7 +758,7 @@
 
     if-eqz v9, :cond_f
 
-    goto :goto_7
+    goto :goto_6
 
     .line 31
     :cond_f
@@ -812,7 +809,7 @@
 
     if-eqz v10, :cond_10
 
-    goto :goto_6
+    goto :goto_5
 
     .line 37
     :cond_10
@@ -848,18 +845,18 @@
     throw v0
 
     :cond_11
-    :goto_6
+    :goto_5
     move-object v4, v9
 
-    goto :goto_8
+    goto :goto_7
 
     .line 39
     :cond_12
-    :goto_7
+    :goto_6
     sget-object v4, Lcom/google/gson/internal/bind/util/ISO8601Utils;->TIMEZONE_UTC:Ljava/util/TimeZone;
 
     .line 40
-    :goto_8
+    :goto_7
     new-instance v9, Ljava/util/GregorianCalendar;
 
     invoke-direct {v9, v4}, Ljava/util/GregorianCalendar;-><init>(Ljava/util/TimeZone;)V
@@ -931,22 +928,22 @@
     :catch_0
     move-exception v0
 
-    goto :goto_9
+    goto :goto_8
 
     :catch_1
     move-exception v0
 
-    goto :goto_9
+    goto :goto_8
 
     :catch_2
     move-exception v0
 
-    :goto_9
+    :goto_8
     if-nez v1, :cond_14
 
     const/4 v1, 0x0
 
-    goto :goto_a
+    goto :goto_9
 
     .line 52
     :cond_14
@@ -967,7 +964,7 @@
     move-result-object v1
 
     .line 53
-    :goto_a
+    :goto_9
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
@@ -985,7 +982,7 @@
     const-string v3, "("
 
     .line 55
-    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1064,20 +1061,22 @@
 
     if-gt p1, p2, :cond_4
 
-    const-string v0, "Invalid number: "
+    const/4 v0, 0x0
 
-    const/16 v1, 0xa
+    const-string v1, "Invalid number: "
+
+    const/16 v2, 0xa
 
     if-ge p1, p2, :cond_1
 
-    add-int/lit8 v2, p1, 0x1
+    add-int/lit8 v0, p1, 0x1
 
     .line 2
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
 
-    invoke-static {v3, v1}, Ljava/lang/Character;->digit(CI)I
+    invoke-static {v3, v2}, Ljava/lang/Character;->digit(CI)I
 
     move-result v3
 
@@ -1089,80 +1088,80 @@
 
     .line 3
     :cond_0
-    new-instance v1, Ljava/lang/NumberFormatException;
+    new-instance v0, Ljava/lang/NumberFormatException;
 
     .line 4
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 5
     invoke-virtual {p0, p1, p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-direct {v1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
-    throw v1
+    throw v0
 
     :cond_1
-    const/4 v3, 0x0
+    move v3, v0
 
-    move v2, p1
+    move v0, p1
 
     :goto_0
-    if-ge v2, p2, :cond_3
+    if-ge v0, p2, :cond_3
 
-    add-int/lit8 v4, v2, 0x1
+    add-int/lit8 v4, v0, 0x1
 
     .line 6
-    invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
-    move-result v2
+    move-result v0
 
-    invoke-static {v2, v1}, Ljava/lang/Character;->digit(CI)I
+    invoke-static {v0, v2}, Ljava/lang/Character;->digit(CI)I
 
-    move-result v2
+    move-result v0
 
-    if-ltz v2, :cond_2
+    if-ltz v0, :cond_2
 
     mul-int/lit8 v3, v3, 0xa
 
-    sub-int/2addr v3, v2
+    sub-int/2addr v3, v0
 
-    move v2, v4
+    move v0, v4
 
     goto :goto_0
 
     .line 7
     :cond_2
-    new-instance v1, Ljava/lang/NumberFormatException;
+    new-instance v0, Ljava/lang/NumberFormatException;
 
     .line 8
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 9
     invoke-virtual {p0, p1, p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-direct {v1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
-    throw v1
+    throw v0
 
     :cond_3
     neg-int p0, v3
@@ -1175,11 +1174,5 @@
 
     invoke-direct {p1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method

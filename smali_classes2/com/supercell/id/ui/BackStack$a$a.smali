@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/BackStack$a$a;
-.super Lse/i;
+.super Lif/i;
 .source "BackStack.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
+        "Lif/i;",
+        "Lhf/l<",
         "Ljava/util/List<",
         "+",
         "Ljava/lang/Boolean;",
         ">;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/BackStack$a;
+.field public final synthetic f:Lcom/supercell/id/ui/BackStack$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/BackStack$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->g:Lcom/supercell/id/ui/BackStack$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->f:Lcom/supercell/id/ui/BackStack$a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,19 +58,19 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->g:Lcom/supercell/id/ui/BackStack$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->f:Lcom/supercell/id/ui/BackStack$a;
 
     .line 4
-    iget-object p1, p1, Lcom/supercell/id/ui/BackStack$a;->a:Lze/p;
+    iget-object p1, p1, Lcom/supercell/id/ui/BackStack$a;->a:Lpf/p;
 
     .line 5
-    sget-object v0, Lie/i;->a:Lie/i;
+    sget-object v0, Lye/m;->a:Lye/m;
 
     .line 6
-    invoke-virtual {p1, v0}, Lze/f1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lpf/h1;->G(Ljava/lang/Object;)Z
 
     return-object v0
 .end method

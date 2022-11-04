@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/games/internal/player/StockProfileImageRef;
-.super Lc2/d;
+.super La2/d;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final E()Landroid/net/Uri;
+.method public final C()Landroid/net/Uri;
     .locals 1
 
     new-instance v0, Ljava/lang/NoSuchMethodError;
@@ -32,7 +32,7 @@
 
     const-string v0, "image_url"
 
-    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, La2/d;->D(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

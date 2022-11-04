@@ -19,16 +19,16 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lv2/k;
+    new-instance v0, Lu2/j;
 
-    invoke-direct {v0}, Lv2/k;-><init>()V
+    invoke-direct {v0}, Lu2/j;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/zza;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,7 +42,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->f:I
 
     return-void
 .end method
@@ -58,12 +58,12 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->f:I
 
     return-void
 .end method
 
-.method public static D2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+.method public static K2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
@@ -103,13 +103,13 @@
     return v1
 .end method
 
-.method public static E2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+.method public static L2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
     .locals 2
 
     .line 1
-    new-instance v0, Ld2/f$a;
+    new-instance v0, Lb2/f$a;
 
-    invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p0}, Lb2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
     invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->v2()I
@@ -122,10 +122,10 @@
 
     const-string v1, "FriendsListVisibilityStatus"
 
-    invoke-virtual {v0, v1, p0}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
+    invoke-virtual {v0, v1, p0}, Lb2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lb2/f$a;
 
     .line 3
-    invoke-virtual {v0}, Ld2/f$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lb2/f$a;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -134,10 +134,16 @@
 
 
 # virtual methods
+.method public final bridge synthetic d2()Ljava/lang/Object;
+    .locals 0
+
+    return-object p0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->D2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->K2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -172,16 +178,10 @@
     return v0
 .end method
 
-.method public final bridge synthetic k2()Ljava/lang/Object;
-    .locals 0
-
-    return-object p0
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->E2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->L2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
 .method public final v2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/zza;->g:I
+    iget v0, p0, Lcom/google/android/gms/games/zza;->f:I
 
     return v0
 .end method
@@ -202,12 +202,12 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v5
 
     .line 2
-    iget v3, p0, Lcom/google/android/gms/games/zza;->g:I
+    iget v3, p0, Lcom/google/android/gms/games/zza;->f:I
 
     const/4 v1, 0x1
 
@@ -218,7 +218,7 @@
     move-object v4, p1
 
     .line 3
-    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Lg1/i;->a(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

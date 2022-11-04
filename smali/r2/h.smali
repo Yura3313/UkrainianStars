@@ -1,42 +1,97 @@
-.class public Lr2/h;
-.super Lq2/b;
+.class public final Lr2/h;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq2/b<",
-        "Ljava/lang/Long;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/query/internal/zzp;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0, p1}, Lq2/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/os/Bundle;)Ljava/lang/Object;
-    .locals 2
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result-wide v0
+    move-result v2
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    if-ge v2, v0, :cond_1
 
-    move-result-object p1
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    const v3, 0xffff
+
+    and-int/2addr v3, v2
+
+    const/4 v4, 0x1
+
+    if-eq v3, v4, :cond_0
+
+    .line 4
+    invoke-static {p1, v2}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object v1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    invoke-static {p1, v2, v1}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 8
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzp;
+
+    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzp;-><init>(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzp;
 
     return-object p1
 .end method

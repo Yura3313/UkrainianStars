@@ -23,11 +23,11 @@
 
 
 # instance fields
-.field public final g:Landroid/content/Intent;
+.field public final f:Landroid/content/Intent;
 
-.field public final h:I
+.field public final g:I
 
-.field public final i:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -35,9 +35,9 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lj3/d;
+    new-instance v0, Li3/d;
 
-    invoke-direct {v0}, Lj3/d;-><init>()V
+    invoke-direct {v0}, Li3/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -60,13 +60,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->f:Landroid/content/Intent;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:I
+    iput p2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -79,29 +79,29 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:Landroid/content/Intent;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->f:Landroid/content/Intent;
 
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 p2, 0x2
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:I
+    iget v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:I
 
     const/4 v2, 0x4
 
     .line 5
-    invoke-static {p1, p2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, Lc2/c;->n(Landroid/os/Parcel;II)V
 
     .line 6
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
@@ -109,13 +109,13 @@
     const/4 p2, 0x3
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:Ljava/lang/String;
 
     .line 8
-    invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, p2, v1, v3}, Lc2/c;->h(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

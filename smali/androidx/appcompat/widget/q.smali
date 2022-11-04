@@ -12,13 +12,9 @@
 
 
 # static fields
-.field public static final a:[I
+.field public static final a:Landroid/graphics/Rect;
 
-.field public static final b:[I
-
-.field public static final c:Landroid/graphics/Rect;
-
-.field public static d:Ljava/lang/Class;
+.field public static b:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -30,42 +26,24 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 3
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [I
-
-    const v1, 0x10100a0
-
-    const/4 v2, 0x0
-
-    aput v1, v0, v2
+    .locals 1
 
     .line 1
-    sput-object v0, Landroidx/appcompat/widget/q;->a:[I
-
-    new-array v0, v2, [I
-
-    .line 2
-    sput-object v0, Landroidx/appcompat/widget/q;->b:[I
-
-    .line 3
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    sput-object v0, Landroidx/appcompat/widget/q;->c:Landroid/graphics/Rect;
+    sput-object v0, Landroidx/appcompat/widget/q;->a:Landroid/graphics/Rect;
 
     :try_start_0
     const-string v0, "android.graphics.Insets"
 
-    .line 4
+    .line 2
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    sput-object v0, Landroidx/appcompat/widget/q;->d:Ljava/lang/Class;
+    sput-object v0, Landroidx/appcompat/widget/q;->b:Ljava/lang/Class;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -103,7 +81,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_4
@@ -126,15 +104,15 @@
 
     .line 7
     :cond_1
-    instance-of v0, p0, Ly/f;
+    instance-of v0, p0, Ly/d;
 
     if-eqz v0, :cond_2
 
     .line 8
-    check-cast p0, Ly/f;
+    check-cast p0, Ly/d;
 
     .line 9
-    invoke-interface {p0}, Ly/f;->b()Landroid/graphics/drawable/Drawable;
+    invoke-interface {p0}, Ly/d;->b()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
@@ -147,15 +125,15 @@
 
     .line 11
     :cond_2
-    instance-of v0, p0, Ld/c;
+    instance-of v0, p0, Ld/a;
 
     if-eqz v0, :cond_3
 
     .line 12
-    check-cast p0, Ld/c;
+    check-cast p0, Ld/a;
 
     .line 13
-    iget-object p0, p0, Ld/c;->g:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Ld/a;->f:Landroid/graphics/drawable/Drawable;
 
     .line 14
     invoke-static {p0}, Landroidx/appcompat/widget/q;->a(Landroid/graphics/drawable/Drawable;)Z
@@ -173,7 +151,7 @@
     .line 16
     check-cast p0, Landroid/graphics/drawable/ScaleDrawable;
 
-    invoke-virtual {p0}, Landroid/graphics/drawable/ScaleDrawable;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/graphics/drawable/DrawableWrapper;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
@@ -189,71 +167,7 @@
     return p0
 .end method
 
-.method public static b(Landroid/graphics/drawable/Drawable;)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ne v0, v1, :cond_2
-
-    const-string v0, "android.graphics.drawable.VectorDrawable"
-
-    .line 2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 3
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    array-length v1, v0
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    sget-object v1, Landroidx/appcompat/widget/q;->b:[I
-
-    invoke-virtual {p0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    goto :goto_1
-
-    .line 6
-    :cond_1
-    :goto_0
-    sget-object v1, Landroidx/appcompat/widget/q;->a:[I
-
-    invoke-virtual {p0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    .line 7
-    :goto_1
-    invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    :cond_2
-    return-void
-.end method
-
-.method public static c(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+.method public static b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
     .locals 12
 
     .line 1
@@ -297,13 +211,13 @@
 
     .line 8
     :cond_0
-    sget-object v0, Landroidx/appcompat/widget/q;->d:Ljava/lang/Class;
+    sget-object v0, Landroidx/appcompat/widget/q;->b:Ljava/lang/Class;
 
     if-eqz v0, :cond_7
 
     .line 9
     :try_start_0
-    invoke-static {p0}, Ly/a;->p(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p0}, Ly/a;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
@@ -338,7 +252,7 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 14
-    sget-object v1, Landroidx/appcompat/widget/q;->d:Ljava/lang/Class;
+    sget-object v1, Landroidx/appcompat/widget/q;->b:Ljava/lang/Class;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getFields()[Ljava/lang/reflect/Field;
 
@@ -346,7 +260,7 @@
 
     array-length v3, v1
 
-    const/4 v4, 0x0
+    move v4, v2
 
     :goto_0
     if-ge v4, v3, :cond_6
@@ -383,7 +297,7 @@
 
     if-eqz v6, :cond_1
 
-    const/4 v7, 0x2
+    move v7, v10
 
     goto :goto_1
 
@@ -396,7 +310,7 @@
 
     if-eqz v6, :cond_1
 
-    const/4 v7, 0x0
+    move v7, v2
 
     goto :goto_1
 
@@ -409,7 +323,7 @@
 
     if-eqz v6, :cond_1
 
-    const/4 v7, 0x1
+    move v7, v11
 
     goto :goto_1
 
@@ -422,7 +336,7 @@
 
     if-eqz v6, :cond_1
 
-    const/4 v7, 0x3
+    move v7, v9
 
     :cond_1
     :goto_1
@@ -487,7 +401,7 @@
     .line 20
     :catch_0
     :cond_7
-    sget-object p0, Landroidx/appcompat/widget/q;->c:Landroid/graphics/Rect;
+    sget-object p0, Landroidx/appcompat/widget/q;->a:Landroid/graphics/Rect;
 
     return-object p0
 
@@ -500,7 +414,7 @@
     .end sparse-switch
 .end method
 
-.method public static d(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+.method public static c(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
     .locals 1
 
     const/4 v0, 0x3

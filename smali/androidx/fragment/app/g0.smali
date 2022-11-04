@@ -40,7 +40,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     const/4 v3, 0x1
@@ -54,7 +54,7 @@
 
     if-ne v4, p1, :cond_0
 
-    const/4 v2, 0x1
+    move v2, v3
 
     goto :goto_1
 
@@ -64,7 +64,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_1
     if-eqz v2, :cond_2
@@ -105,7 +105,7 @@
 
     move-result v4
 
-    const/4 v5, 0x0
+    move v5, v1
 
     :goto_3
     if-ge v5, v4, :cond_6
@@ -115,7 +115,7 @@
 
     move-result-object v6
 
-    const/4 v7, 0x0
+    move v7, v1
 
     :goto_4
     if-ge v7, v0, :cond_4
@@ -127,7 +127,7 @@
 
     if-ne v8, v6, :cond_3
 
-    const/4 v7, 0x1
+    move v7, v3
 
     goto :goto_5
 
@@ -137,7 +137,7 @@
     goto :goto_4
 
     :cond_4
-    const/4 v7, 0x0
+    move v7, v1
 
     :goto_5
     if-nez v7, :cond_5
@@ -215,7 +215,10 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Lf0/r;->r(Landroid/view/View;)Z
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 2
+    invoke-virtual {p1}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v0
 
@@ -223,13 +226,13 @@
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    .line 3
+    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v1
@@ -246,14 +249,14 @@
 
     invoke-virtual {v0, v3, v3, v1, v2}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 4
+    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 5
+    .line 6
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result v1
@@ -268,21 +271,21 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 6
+    .line 7
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
-    .line 7
+    .line 8
     :goto_0
     instance-of v2, v1, Landroid/view/View;
 
     if-eqz v2, :cond_1
 
-    .line 8
+    .line 9
     check-cast v1, Landroid/view/View;
 
-    .line 9
+    .line 10
     invoke-virtual {v1}, Landroid/view/View;->getScrollX()I
 
     move-result v2
@@ -301,14 +304,14 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 10
+    .line 11
     invoke-virtual {v1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 11
+    .line 12
     invoke-virtual {v1}, Landroid/view/View;->getLeft()I
 
     move-result v2
@@ -323,7 +326,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 12
+    .line 13
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
@@ -335,7 +338,7 @@
 
     new-array v1, v1, [I
 
-    .line 13
+    .line 14
     invoke-virtual {p1}, Landroid/view/View;->getRootView()Landroid/view/View;
 
     move-result-object p1
@@ -354,10 +357,10 @@
 
     int-to-float v1, v1
 
-    .line 14
+    .line 15
     invoke-virtual {v0, p1, v1}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 15
+    .line 16
     iget p1, v0, Landroid/graphics/RectF;->left:F
 
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
@@ -378,12 +381,12 @@
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 16
+    .line 17
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result v0
 
-    .line 17
+    .line 18
     invoke-virtual {p2, p1, v1, v2, v0}, Landroid/graphics/Rect;->set(IIII)V
 
     return-void
@@ -432,16 +435,20 @@
     check-cast v3, Landroid/view/View;
 
     .line 4
-    invoke-static {v3}, Lf0/r;->o(Landroid/view/View;)Ljava/lang/String;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 5
+    invoke-virtual {v3}, Landroid/view/View;->getTransitionName()Ljava/lang/String;
 
     move-result-object v4
 
+    .line 6
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v4, 0x0
 
-    .line 5
-    invoke-static {v3, v4}, Lf0/r;->N(Landroid/view/View;Ljava/lang/String;)V
+    .line 7
+    invoke-virtual {v3, v4}, Landroid/view/View;->setTransitionName(Ljava/lang/String;)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -533,7 +540,7 @@
 
     const/4 v0, 0x0
 
-    const/4 v2, 0x0
+    move v2, v0
 
     :goto_0
     if-ge v2, v1, :cond_3
@@ -546,11 +553,14 @@
     check-cast v3, Landroid/view/View;
 
     .line 4
-    invoke-static {v3}, Lf0/r;->o(Landroid/view/View;)Ljava/lang/String;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 5
+    invoke-virtual {v3}, Landroid/view/View;->getTransitionName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 5
+    .line 6
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     if-nez v4, :cond_0
@@ -560,22 +570,22 @@
     :cond_0
     const/4 v6, 0x0
 
-    .line 6
-    invoke-static {v3, v6}, Lf0/r;->N(Landroid/view/View;Ljava/lang/String;)V
-
     .line 7
+    invoke-virtual {v3, v6}, Landroid/view/View;->setTransitionName(Ljava/lang/String;)V
+
+    .line 8
     invoke-interface {p5, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/String;
 
-    const/4 v6, 0x0
+    move v6, v0
 
     :goto_1
     if-ge v6, v1, :cond_2
 
-    .line 8
+    .line 9
     invoke-virtual {p4, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -586,14 +596,15 @@
 
     if-eqz v7, :cond_1
 
-    .line 9
+    .line 10
     invoke-virtual {p3, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/view/View;
 
-    invoke-static {v3, v4}, Lf0/r;->N(Landroid/view/View;Ljava/lang/String;)V
+    .line 11
+    invoke-virtual {v3, v4}, Landroid/view/View;->setTransitionName(Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -608,7 +619,7 @@
 
     goto :goto_0
 
-    .line 10
+    .line 12
     :cond_3
     new-instance p5, Landroidx/fragment/app/g0$a;
 
@@ -622,7 +633,7 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/fragment/app/g0$a;-><init>(ILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    invoke-static {p1, p5}, Lf0/o;->a(Landroid/view/View;Ljava/lang/Runnable;)Lf0/o;
+    invoke-static {p1, p5}, Lf0/n;->a(Landroid/view/View;Ljava/lang/Runnable;)Lf0/n;
 
     return-void
 .end method

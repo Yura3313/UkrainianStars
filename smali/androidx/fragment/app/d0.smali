@@ -13,7 +13,7 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     const/16 v0, 0xb
 
@@ -25,44 +25,29 @@
     sput-object v0, Landroidx/fragment/app/d0;->a:[I
 
     .line 2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x15
-
-    if-lt v0, v2, :cond_0
-
-    .line 3
     new-instance v0, Landroidx/fragment/app/e0;
 
     invoke-direct {v0}, Landroidx/fragment/app/e0;-><init>()V
 
-    goto :goto_0
-
-    :cond_0
-    move-object v0, v1
-
-    .line 4
-    :goto_0
+    .line 3
     sput-object v0, Landroidx/fragment/app/d0;->b:Landroidx/fragment/app/e0;
 
-    .line 5
+    .line 4
     :try_start_0
-    const-class v0, Landroidx/transition/c;
+    const-class v0, Landroidx/transition/b;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    new-array v3, v2, [Ljava/lang/Class;
+    new-array v2, v1, [Ljava/lang/Class;
 
-    .line 6
-    invoke-virtual {v0, v3}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    .line 5
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v0
 
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -70,11 +55,14 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v1, v0
+    goto :goto_0
 
-    .line 7
     :catch_0
-    sput-object v1, Landroidx/fragment/app/d0;->c:Landroidx/fragment/app/g0;
+    const/4 v0, 0x0
+
+    .line 6
+    :goto_0
+    sput-object v0, Landroidx/fragment/app/d0;->c:Landroidx/fragment/app/g0;
 
     return-void
 
@@ -112,13 +100,13 @@
     if-eqz p2, :cond_0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     .line 2
     :cond_0
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void
@@ -141,7 +129,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/g;->i:I
+    iget v0, p0, Lm/h;->h:I
 
     :cond_0
     :goto_0
@@ -150,21 +138,21 @@
     if-ltz v0, :cond_1
 
     .line 2
-    invoke-virtual {p0, v0}, Lm/g;->k(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lm/h;->k(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
     .line 3
-    invoke-virtual {p1, v1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Lm/h;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 4
-    invoke-virtual {p0, v0}, Lm/g;->i(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lm/h;->i(I)Ljava/lang/Object;
 
     goto :goto_0
 

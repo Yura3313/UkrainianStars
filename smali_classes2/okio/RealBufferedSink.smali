@@ -28,22 +28,15 @@
 
     iput-object v0, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
 
-    if-eqz p1, :cond_0
+    const-string v0, "sink == null"
 
     .line 3
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
     iput-object p1, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
 
     return-void
-
-    .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "sink == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
@@ -57,7 +50,7 @@
 .end method
 
 .method public close()V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -82,9 +75,9 @@
 
     const-wide/16 v4, 0x0
 
-    cmp-long v6, v2, v4
+    cmp-long v4, v2, v4
 
-    if-lez v6, :cond_1
+    if-lez v4, :cond_1
 
     .line 3
     iget-object v4, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
@@ -134,7 +127,7 @@
 .end method
 
 .method public emit()Lokio/BufferedSink;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -155,9 +148,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v2, :cond_0
 
     .line 3
     iget-object v2, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
@@ -181,7 +174,7 @@
 .end method
 
 .method public emitCompleteSegments()Lokio/BufferedSink;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -202,9 +195,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v2, :cond_0
 
     .line 3
     iget-object v2, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
@@ -228,7 +221,7 @@
 .end method
 
 .method public flush()V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -247,9 +240,9 @@
 
     const-wide/16 v3, 0x0
 
-    cmp-long v5, v1, v3
+    cmp-long v3, v1, v3
 
-    if-lez v5, :cond_0
+    if-lez v3, :cond_0
 
     .line 3
     iget-object v3, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
@@ -313,7 +306,7 @@
     const-string v0, "buffer("
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -406,7 +399,7 @@
 .end method
 
 .method public write(Lokio/Source;J)Lokio/BufferedSink;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -416,9 +409,9 @@
     :goto_0
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-lez v2, :cond_1
+    if-lez v0, :cond_1
 
     .line 21
     iget-object v0, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
@@ -429,9 +422,9 @@
 
     const-wide/16 v2, -0x1
 
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-eqz v4, :cond_0
+    if-eqz v2, :cond_0
 
     sub-long/2addr p2, v0
 
@@ -559,7 +552,7 @@
 .end method
 
 .method public writeAll(Lokio/Source;)J
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -582,9 +575,9 @@
 
     const-wide/16 v4, -0x1
 
-    cmp-long v6, v2, v4
+    cmp-long v4, v2, v4
 
-    if-eqz v6, :cond_0
+    if-eqz v4, :cond_0
 
     add-long/2addr v0, v2
 
@@ -604,13 +597,7 @@
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public writeByte(I)Lokio/BufferedSink;

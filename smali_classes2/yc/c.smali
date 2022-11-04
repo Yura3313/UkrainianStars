@@ -1,96 +1,123 @@
 .class public final Lyc/c;
-.super Lse/i;
-.source "CustomProfileImageManager.kt"
+.super Ljava/lang/Object;
+.source "FaqFragment.kt"
 
 # interfaces
-.implements Lre/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lyc/d;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic g:Lwc/r;
+.field public final synthetic f:Landroidx/core/widget/NestedScrollView;
+
+.field public final synthetic g:Landroid/view/View;
+
+.field public final synthetic h:I
+
+.field public final synthetic i:F
 
 
 # direct methods
-.method public constructor <init>(Lwc/r;)V
+.method public constructor <init>(Landroidx/core/widget/NestedScrollView;Landroid/view/View;IF)V
     .locals 0
 
-    iput-object p1, p0, Lyc/c;->g:Lwc/r;
+    iput-object p1, p0, Lyc/c;->f:Landroidx/core/widget/NestedScrollView;
 
-    const/4 p1, 0x2
+    iput-object p2, p0, Lyc/c;->g:Landroid/view/View;
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    iput p3, p0, Lyc/c;->h:I
+
+    iput p4, p0, Lyc/c;->i:F
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final run()V
+    .locals 6
 
     .line 1
-    check-cast p1, Lyc/d;
+    new-instance v0, Landroid/graphics/Rect;
 
-    check-cast p2, Ljava/lang/Exception;
+    iget-object v1, p0, Lyc/c;->g:Landroid/view/View;
 
-    const-string v0, "$receiver"
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput-object v0, p1, Lyc/d;->f:Lze/f0;
-
-    .line 4
-    iget-object v1, p0, Lyc/c;->g:Lwc/r;
+    move-result v1
 
     const/4 v2, 0x0
 
+    invoke-direct {v0, v2, v2, v2, v1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    .line 2
+    iget-object v1, p0, Lyc/c;->f:Landroidx/core/widget/NestedScrollView;
+
+    iget-object v3, p0, Lyc/c;->g:Landroid/view/View;
+
+    invoke-virtual {v1, v3, v0}, Landroid/view/ViewGroup;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
+
+    .line 3
+    iget v0, v0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p0, Lyc/c;->h:I
+
+    add-int/2addr v0, v1
+
+    .line 4
+    iget-object v1, p0, Lyc/c;->f:Landroidx/core/widget/NestedScrollView;
+
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
+
+    move-result v1
+
+    sub-int/2addr v0, v1
+
     .line 5
-    invoke-virtual {v1, v2, v2}, Landroidx/fragment/app/k;->N0(ZZ)V
+    iget-object v1, p0, Lyc/c;->f:Landroidx/core/widget/NestedScrollView;
+
+    invoke-virtual {v1}, Landroid/view/View;->getScrollY()I
+
+    move-result v1
+
+    if-le v0, v1, :cond_0
 
     .line 6
-    instance-of v1, p2, Ljava/util/concurrent/CancellationException;
+    iget-object v1, p0, Lyc/c;->f:Landroidx/core/widget/NestedScrollView;
 
-    if-nez v1, :cond_0
+    invoke-virtual {v1}, Landroid/view/View;->getScrollY()I
+
+    move-result v3
 
     .line 7
-    iget-object p1, p1, Lyc/d;->g:Landroidx/fragment/app/Fragment;
+    sget-object v4, Lrc/a;->f:Landroid/view/animation/PathInterpolator;
 
     .line 8
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    iget v5, p0, Lyc/c;->i:F
 
-    move-result-object p1
+    invoke-virtual {v4, v5}, Landroid/view/animation/PathInterpolator;->getInterpolation(F)F
 
-    if-eqz p1, :cond_0
+    move-result v4
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    int-to-float v5, v3
+
+    sub-int/2addr v0, v3
+
+    int-to-float v0, v0
+
+    mul-float/2addr v0, v4
+
+    add-float/2addr v0, v5
 
     .line 9
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-static {v0}, Le0/d;->e(F)I
+
+    move-result v0
 
     .line 10
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    invoke-virtual {v1, v2, v0}, Landroidx/core/widget/NestedScrollView;->scrollTo(II)V
 
-    return-object p1
+    :cond_0
+    return-void
 .end method

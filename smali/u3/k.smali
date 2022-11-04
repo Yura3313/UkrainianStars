@@ -1,57 +1,63 @@
 .class public final Lu3/k;
-.super Ljava/lang/Object;
+.super Lu3/u4$a;
+.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+
+
+# instance fields
+.field public final synthetic j:Lcom/google/android/gms/internal/measurement/zzk;
+
+.field public final synthetic k:Lu3/u4;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lu3/k;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lu3/u4;Lcom/google/android/gms/internal/measurement/zzk;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Lu3/k;->k:Lu3/u4;
+
+    iput-object p2, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
+
+    const/4 p2, 0x1
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Lu3/u4$a;-><init>(Lu3/u4;Z)V
 
     return-void
 .end method
 
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+
+# virtual methods
+.method public final a()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
+            Landroid/os/RemoteException;
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
+    iget-object v0, p0, Lu3/k;->k:Lu3/u4;
 
     .line 2
-    :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    iget-object v0, v0, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
 
-    move-result-object p0
+    .line 3
+    iget-object v1, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
 
-    check-cast p0, Landroid/os/Parcelable;
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/measurement/zzm;->getCurrentScreenClass(Lcom/google/android/gms/internal/measurement/zzn;)V
 
-    return-object p0
+    return-void
+.end method
+
+.method public final b()V
+    .locals 2
+
+    iget-object v0, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/measurement/zzk;->zza(Landroid/os/Bundle;)V
+
+    return-void
 .end method

@@ -1,195 +1,293 @@
 .class public final Lwc/j;
-.super Lse/i;
-.source "BaseFragment.kt"
-
-# interfaces
-.implements Lre/l;
+.super Luc/g;
+.source "ChangeEmailDialogFragment.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Lse/i;",
-        "Lre/l<",
-        "Landroid/view/View;",
-        "Lie/i;",
-        ">;"
+        Lwc/j$a;
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Landroid/view/View;
+# static fields
+.field public static final v0:Lwc/j$a;
 
-.field public final synthetic h:Lcom/supercell/id/ui/BaseFragment;
+
+# instance fields
+.field public u0:Lhf/r;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhf/r<",
+            "-",
+            "Lwc/j;",
+            "-",
+            "Luc/v;",
+            "-",
+            "Ljava/lang/String;",
+            "-",
+            "Ljava/lang/String;",
+            "Lye/m;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lwc/j$a;
+
+    invoke-direct {v0}, Lwc/j$a;-><init>()V
+
+    sput-object v0, Lwc/j;->v0:Lwc/j$a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lwc/j;->g:Landroid/view/View;
-
-    iput-object p2, p0, Lwc/j;->h:Lcom/supercell/id/ui/BaseFragment;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Luc/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final S0()V
+    .locals 0
 
-    .line 1
-    check-cast p1, Landroid/view/View;
+    return-void
+.end method
 
-    const-string v0, "it"
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string p3, "inflater"
 
-    .line 3
-    iget-object p1, p0, Lwc/j;->h:Lcom/supercell/id/ui/BaseFragment;
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
+    sget p3, Lcom/supercell/id/R$layout;->fragment_change_email_dialog:I
 
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    goto :goto_2
-
-    .line 4
-    :cond_0
-    iget-object p1, p0, Lwc/j;->g:Landroid/view/View;
-
-    .line 5
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
-
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
-
-    move-result p1
-
-    const/4 v0, 0x1
-
-    if-ne p1, v0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
     const/4 v0, 0x0
 
-    :goto_0
-    const/high16 p1, 0x3f800000    # 1.0f
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    if-eqz v0, :cond_2
+    move-result-object p1
 
-    const/high16 v0, -0x40800000    # -1.0f
+    return-object p1
+.end method
 
-    goto :goto_1
+.method public final synthetic Z()V
+    .locals 0
 
-    :cond_2
-    const/high16 v0, 0x3f800000    # 1.0f
+    invoke-super {p0}, Luc/g;->Z()V
 
-    .line 7
-    :goto_1
-    iget-object v1, p0, Lwc/j;->g:Landroid/view/View;
+    return-void
+.end method
 
-    invoke-virtual {v1}, Landroid/view/View;->getTranslationX()F
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 9
 
-    move-result v1
+    const-string p2, "view"
+
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+
+    if-eqz p2, :cond_0
+
+    const-string v0, "currentEmailKey"
+
+    .line 2
+    invoke-virtual {p2, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    sget v0, Lcom/supercell/id/R$id;->title:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    const-string v1, "view.title"
+
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lye/f;
 
     const/4 v2, 0x0
 
-    cmpg-float v1, v1, v2
+    new-instance v3, Landroid/text/SpannableStringBuilder;
 
-    if-nez v1, :cond_3
+    invoke-direct {v3}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-    iget-object v1, p0, Lwc/j;->g:Landroid/view/View;
+    .line 4
+    sget-object v4, Lzd/k;->b:Lzd/k;
 
-    const/high16 v3, -0x41000000    # -0.5f
+    invoke-static {p2}, Lzd/k;->b(Ljava/lang/String;)Ljava/lang/String;
 
-    mul-float v0, v0, v3
+    move-result-object v4
 
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
+    .line 5
+    new-instance v5, Landroid/text/style/ForegroundColorSpan;
 
-    move-result v3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->H()Landroid/content/res/Resources;
 
-    int-to-float v3, v3
+    move-result-object v6
 
-    mul-float v0, v0, v3
+    sget v7, Lcom/supercell/id/R$color;->gray40:I
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->setTranslationX(F)V
+    const/4 v8, 0x0
+
+    .line 6
+    invoke-virtual {v6, v7, v8}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
+
+    move-result v6
+
+    .line 7
+    invoke-direct {v5, v6}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    const/16 v6, 0x21
 
     .line 8
-    :cond_3
-    iget-object v0, p0, Lwc/j;->g:Landroid/view/View;
-
-    invoke-virtual {v0, p1}, Landroid/view/View;->setAlpha(F)V
+    invoke-static {v3, v4, v5, v6}, Lcom/android/billingclient/api/c0;->c(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
 
     .line 9
-    iget-object p1, p0, Lwc/j;->g:Landroid/view/View;
+    new-instance v4, Lye/f;
 
-    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+    const-string v5, "email address"
 
-    move-result-object p1
+    invoke-direct {v4, v5, v3}, Lye/f;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    const-wide/16 v0, 0x0
+    aput-object v4, v1, v2
+
+    const-string v2, "account_settings_change_email_popup_title"
 
     .line 10
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const-wide/16 v0, 0x15e
+    invoke-static {v0, v2, v1, v8}, Ltd/e0;->h(Landroid/widget/TextView;Ljava/lang/String;[Lye/f;Lhf/l;)V
 
     .line 11
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+    sget v0, Lcom/supercell/id/R$id;->negative_button:I
 
-    move-result-object p1
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    new-instance v1, Lwc/j$b;
+
+    invoke-direct {v1, p0, p1, p2}, Lwc/j$b;-><init>(Lwc/j;Landroid/view/View;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 12
-    sget-object v0, Ltc/a;->b:Landroid/view/animation/Interpolator;
+    sget v0, Lcom/supercell/id/R$id;->positive_button:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    new-instance v1, Lwc/j$c;
+
+    invoke-direct {v1, p0, p1, p2}, Lwc/j$c;-><init>(Lwc/j;Landroid/view/View;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 13
-    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+    sget p2, Lcom/supercell/id/R$id;->dialog_container:I
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
+
+    check-cast p1, Landroid/widget/LinearLayout;
+
+    const-string p2, "it"
 
     .line 14
-    invoke-virtual {p1, v2}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
+    invoke-static {p1, p2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    const p2, 0x3f4ccccd
 
-    const/4 v0, 0x0
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleX(F)V
 
     .line 15
-    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
 
     .line 16
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance p2, Lk0/c;
 
-    const/16 v2, 0x15
+    sget-object v0, Lk0/b;->k:Lk0/b$b;
 
-    if-lt v1, v2, :cond_4
+    invoke-direct {p2, p1, v0}, Lk0/c;-><init>(Ljava/lang/Object;Landroidx/fragment/app/p;)V
 
     .line 17
-    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
+    iget-object v0, p2, Lk0/c;->q:Lk0/d;
+
+    const-string v1, "spring"
 
     .line 18
-    :cond_4
-    invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const v2, 0x3e99999a
+
+    invoke-virtual {v0, v2}, Lk0/d;->a(F)Lk0/d;
 
     .line 19
-    :goto_2
-    sget-object p1, Lie/i;->a:Lie/i;
+    iget-object v0, p2, Lk0/c;->q:Lk0/d;
 
-    return-object p1
+    .line 20
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/high16 v3, 0x43c80000    # 400.0f
+
+    invoke-virtual {v0, v3}, Lk0/d;->b(F)Lk0/d;
+
+    .line 21
+    invoke-virtual {p2}, Lk0/c;->d()V
+
+    .line 22
+    new-instance p2, Lk0/c;
+
+    sget-object v0, Lk0/b;->l:Lk0/b$c;
+
+    invoke-direct {p2, p1, v0}, Lk0/c;-><init>(Ljava/lang/Object;Landroidx/fragment/app/p;)V
+
+    .line 23
+    iget-object p1, p2, Lk0/c;->q:Lk0/d;
+
+    .line 24
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1, v2}, Lk0/d;->a(F)Lk0/d;
+
+    .line 25
+    iget-object p1, p2, Lk0/c;->q:Lk0/d;
+
+    .line 26
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1, v3}, Lk0/d;->b(F)Lk0/d;
+
+    .line 27
+    invoke-virtual {p2}, Lk0/c;->d()V
+
+    :cond_0
+    return-void
 .end method

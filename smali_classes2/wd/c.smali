@@ -1,155 +1,194 @@
 .class public final Lwd/c;
-.super Lse/i;
-.source "TokenLoginConfirmPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.super Luc/r1;
+.source "TutorialPageFragment.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lwd/e;",
-        "Lvc/a0;",
-        "Lie/i;",
-        ">;"
+        Lwd/c$a;
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lwd/c;
+.field public static final c0:Lwd/c$a;
+
+
+# instance fields
+.field public b0:Ljava/util/HashMap;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lwd/c;
+    new-instance v0, Lwd/c$a;
 
-    invoke-direct {v0}, Lwd/c;-><init>()V
+    invoke-direct {v0}, Lwd/c$a;-><init>()V
 
-    sput-object v0, Lwd/c;->g:Lwd/c;
+    sput-object v0, Lwd/c;->c0:Lwd/c$a;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0}, Luc/r1;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final N0()V
+    .locals 1
+
+    iget-object v0, p0, Lwd/c;->b0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_image_page:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final Z()V
+    .locals 1
+
+    invoke-super {p0}, Luc/r1;->Z()V
+
+    iget-object v0, p0, Lwd/c;->b0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 2
+
+    const-string p2, "view"
+
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    move-object v1, p1
-
-    check-cast v1, Lwd/e;
-
-    check-cast p2, Lvc/a0;
-
-    const-string p1, "$receiver"
+    sget p1, Lcom/supercell/id/R$id;->image:I
 
     .line 2
-    invoke-static {v1, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p2, p0, Lwd/c;->b0:Ljava/util/HashMap;
 
-    const-string p1, "data"
+    if-nez p2, :cond_0
 
-    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    new-instance p2, Ljava/util/HashMap;
 
-    .line 3
-    instance-of p1, p2, Lvc/a0$c;
+    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
 
-    if-eqz p1, :cond_0
+    iput-object p2, p0, Lwd/c;->b0:Ljava/util/HashMap;
 
-    .line 4
-    iget-object p1, p2, Lvc/a0;->a:Ljava/lang/String;
+    :cond_0
+    iget-object p2, p0, Lwd/c;->b0:Ljava/util/HashMap;
 
-    .line 5
-    sget p2, Lwd/e;->d0:I
-
-    .line 6
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Lwd/g;->V0()Ljava/lang/String;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    invoke-virtual {v1}, Lwd/g;->X0()Ljava/lang/String;
+    invoke-virtual {p2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object p2
 
-    const/4 v2, 0x1
+    check-cast p2, Landroid/view/View;
 
-    invoke-virtual {p2, v0, v1, p1, v2}, Lcom/supercell/id/SupercellId;->loadAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    const/4 v0, 0x0
 
-    .line 7
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->dismiss()V
+    if-nez p2, :cond_2
+
+    .line 3
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+
+    if-nez p2, :cond_1
+
+    move-object p2, v0
 
     goto :goto_0
 
+    .line 4
+    :cond_1
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    iget-object v1, p0, Lwd/c;->b0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    :cond_2
+    :goto_0
+    check-cast p2, Landroid/widget/ImageView;
+
+    if-eqz p2, :cond_5
+
+    .line 6
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+
+    if-eqz p1, :cond_4
+
+    const-string v1, "imageKey"
+
+    .line 7
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    const/4 v0, 0x1
+
     .line 8
-    :cond_0
-    instance-of p1, p2, Lvc/a0$a;
+    invoke-static {p2, p1, v0}, Ltd/e0;->f(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
-    if-eqz p1, :cond_1
-
-    move-object p1, p2
-
-    check-cast p1, Lvc/a0$a;
+    goto :goto_1
 
     .line 9
-    iget-object v3, p1, Lvc/a0$a;->c:Ljava/lang/String;
+    :cond_3
+    invoke-static {}, Lif/h;->h()V
 
-    .line 10
-    iget-object v4, p2, Lvc/a0;->a:Ljava/lang/String;
+    throw v0
 
-    .line 11
-    sget p1, Lwd/e;->d0:I
+    :cond_4
+    invoke-static {}, Lif/h;->h()V
 
-    .line 12
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    throw v0
 
-    invoke-virtual {v1}, Lwd/g;->V0()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v1}, Lwd/g;->X0()Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x1
-
-    invoke-virtual/range {v2 .. v7}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
-
-    move-result-object v0
-
-    sget-object v2, Lwd/a;->g:Lwd/a;
-
-    .line 13
-    sget-object v3, Lwd/b;->g:Lwd/b;
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x8
-
-    .line 14
-    invoke-static/range {v0 .. v5}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
-
-    .line 15
-    :cond_1
-    :goto_0
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    :cond_5
+    :goto_1
+    return-void
 .end method

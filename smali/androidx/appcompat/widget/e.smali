@@ -54,13 +54,14 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e;->a:Landroid/widget/CompoundButton;
 
-    invoke-static {v0}, Landroidx/core/widget/c;->a(Landroid/widget/CompoundButton;)Landroid/graphics/drawable/Drawable;
+    .line 2
+    invoke-virtual {v0}, Landroid/widget/CompoundButton;->getButtonDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    .line 2
+    .line 3
     iget-boolean v1, p0, Landroidx/appcompat/widget/e;->d:Z
 
     if-nez v1, :cond_0
@@ -69,13 +70,8 @@
 
     if-eqz v1, :cond_4
 
-    .line 3
-    :cond_0
-    invoke-static {v0}, Ly/a;->q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
     .line 4
+    :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -88,20 +84,22 @@
     .line 6
     iget-object v1, p0, Landroidx/appcompat/widget/e;->b:Landroid/content/res/ColorStateList;
 
-    invoke-static {v0, v1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
-
     .line 7
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 8
     :cond_1
     iget-boolean v1, p0, Landroidx/appcompat/widget/e;->e:Z
 
     if-eqz v1, :cond_2
 
-    .line 8
+    .line 9
     iget-object v1, p0, Landroidx/appcompat/widget/e;->c:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {v0, v1}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
+    .line 10
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 9
+    .line 11
     :cond_2
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->isStateful()Z
 
@@ -109,7 +107,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 10
+    .line 12
     iget-object v1, p0, Landroidx/appcompat/widget/e;->a:Landroid/widget/CompoundButton;
 
     invoke-virtual {v1}, Landroid/view/View;->getDrawableState()[I
@@ -118,7 +116,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 11
+    .line 13
     :cond_3
     iget-object v1, p0, Landroidx/appcompat/widget/e;->a:Landroid/widget/CompoundButton;
 
@@ -160,7 +158,7 @@
     move v6, p2
 
     .line 5
-    invoke-static/range {v1 .. v6}, Lf0/r;->C(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Lf0/o;->o(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 6
     :try_start_0
@@ -192,7 +190,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, p1}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v2, p1}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -208,7 +206,7 @@
 
     :catch_0
     :cond_0
-    const/4 p1, 0x0
+    move p1, v1
 
     :goto_0
     if-nez p1, :cond_1
@@ -238,7 +236,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, p1}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, p1}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -264,7 +262,7 @@
     move-result-object p1
 
     .line 19
-    invoke-static {p2, p1}, Landroidx/core/widget/c;->c(Landroid/widget/CompoundButton;Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p2, p1}, Landroid/widget/CompoundButton;->setButtonTintList(Landroid/content/res/ColorStateList;)V
 
     .line 20
     :cond_2
@@ -289,12 +287,12 @@
     const/4 v1, 0x0
 
     .line 23
-    invoke-static {p1, v1}, Landroidx/appcompat/widget/q;->d(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {p1, v1}, Landroidx/appcompat/widget/q;->c(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object p1
 
     .line 24
-    invoke-static {p2, p1}, Landroidx/core/widget/c;->d(Landroid/widget/CompoundButton;Landroid/graphics/PorterDuff$Mode;)V
+    invoke-virtual {p2, p1}, Landroid/widget/CompoundButton;->setButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

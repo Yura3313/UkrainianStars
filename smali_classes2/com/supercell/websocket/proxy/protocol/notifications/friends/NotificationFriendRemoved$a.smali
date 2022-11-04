@@ -3,7 +3,7 @@
 .source "NotificationFriendRemoved.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/friends/NotificationFriendRemoved;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/friends/NotificationFriendRemoved$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

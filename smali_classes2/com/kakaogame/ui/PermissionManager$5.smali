@@ -41,7 +41,7 @@
 
     const/16 v1, 0xb
 
-    invoke-static {p1, v0, v1}, Lu/a;->k(Landroid/app/Activity;[Ljava/lang/String;I)V
+    invoke-static {p1, v0, v1}, Lu/a;->b(Landroid/app/Activity;[Ljava/lang/String;I)V
 
     return-void
 .end method

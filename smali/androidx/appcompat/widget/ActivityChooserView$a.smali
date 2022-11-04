@@ -40,7 +40,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$a;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->g:Landroidx/appcompat/widget/ActivityChooserView$f;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->f:Landroidx/appcompat/widget/ActivityChooserView$f;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
@@ -56,7 +56,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$a;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->g:Landroidx/appcompat/widget/ActivityChooserView$f;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->f:Landroidx/appcompat/widget/ActivityChooserView$f;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 

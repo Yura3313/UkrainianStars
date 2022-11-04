@@ -171,7 +171,7 @@
     const-string v1, "Unable to find acceptable protocols. isFallback="
 
     .line 8
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -209,13 +209,7 @@
 
     invoke-direct {v0, p1}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_3
-
-    :goto_2
     throw v0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public connectionFailed(Ljava/io/IOException;)Z
@@ -291,7 +285,7 @@
     goto :goto_0
 
     :cond_5
-    const/4 v0, 0x0
+    move v0, v2
 
     :cond_6
     :goto_0

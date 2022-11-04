@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$f;
-.super Lse/i;
+.super Lif/i;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Ljava/lang/String;",
         ">;"
     }
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$f;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$f;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$f;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$f;->f:Lcom/supercell/id/ui/game/GameFragment;
 
-    invoke-static {v0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v0}, Lb2/e0;->h(Luc/j;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
 
     goto :goto_0
 

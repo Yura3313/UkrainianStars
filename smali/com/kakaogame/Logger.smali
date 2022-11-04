@@ -300,13 +300,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public static removeLoggingEventListener(Lcom/kakaogame/Logger$LoggingEventListener;)V
@@ -361,7 +355,7 @@
     const-string v1, "Level: "
 
     .line 3
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

@@ -1,71 +1,96 @@
 .class public final Lm2/a;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.super La2/a;
 
-# interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lm2/a$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "La2/a<",
+        "Landroidx/fragment/app/p;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/util/concurrent/ThreadFactory;
-
-
-# direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lm2/a;->b:Ljava/util/concurrent/ThreadFactory;
-
-    const-string v0, "Name must not be null"
-
-    .line 3
-    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    iput-object p1, p0, Lm2/a;->a:Ljava/lang/String;
-
-    return-void
-.end method
+.field public g:Lm2/a$a;
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+.method public final get(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
 
     .line 1
-    iget-object v0, p0, Lm2/a;->b:Ljava/util/concurrent/ThreadFactory;
+    iget-object v0, p0, Lm2/a;->g:Lm2/a$a;
 
-    new-instance v1, Lm2/b;
-
-    invoke-direct {v1, p1}, Lm2/b;-><init>(Ljava/lang/Runnable;)V
-
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-
-    move-result-object p1
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm2/a;->a:Ljava/lang/String;
+    iget v1, v0, Lm2/a$a;->g:I
 
-    invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+    if-eq v1, p1, :cond_1
 
-    return-object p1
+    .line 3
+    :cond_0
+    new-instance v0, Lm2/a$a;
+
+    iget-object v1, p0, La2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
+
+    invoke-direct {v0, v1, p1}, Lm2/a$a;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
+
+    .line 4
+    iput-object v0, p0, Lm2/a;->g:Lm2/a$a;
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public final release()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, La2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget-object v1, Lp2/e;->b:Ljava/util/HashMap;
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lp2/f;
+
+    .line 3
+    invoke-interface {v2, v0}, Lp2/f;->b(Lcom/google/android/gms/common/data/DataHolder;)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    invoke-super {p0}, La2/a;->release()V
+
+    return-void
 .end method

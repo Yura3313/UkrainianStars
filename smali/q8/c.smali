@@ -1,157 +1,109 @@
-.class public final enum Lq8/c;
-.super Ljava/lang/Enum;
-.source "ActionType.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lq8/c;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum h:Lq8/c;
-
-.field public static final enum i:Lq8/c;
-
-.field public static final synthetic j:[Lq8/c;
+.class public final Lq8/c;
+.super Ll7/a;
+.source "ConversationController.java"
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public final synthetic b:Lq8/b;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(Lq8/b;)V
+    .locals 0
+
+    iput-object p1, p0, Lq8/c;->b:Lq8/b;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Ll7/a;-><init>(Lj3/pv;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final g()V
+    .locals 4
 
     .line 1
-    new-instance v0, Lq8/c;
+    iget-object v0, p0, Lq8/c;->b:Lq8/b;
 
-    const-string v1, "CALL"
+    iget-object v1, v0, Lq8/b;->e:Lb8/a;
 
-    const/4 v2, 0x0
-
-    const-string v3, "call"
-
-    invoke-direct {v0, v1, v2, v3}, Lq8/c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    sput-object v0, Lq8/c;->h:Lq8/c;
+    iget-object v0, v0, Lq8/b;->c:Le7/c;
 
     .line 2
-    new-instance v1, Lq8/c;
-
-    const-string v3, "LINK"
-
-    const/4 v4, 0x1
-
-    const-string v5, "link"
-
-    invoke-direct {v1, v3, v4, v5}, Lq8/c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    sput-object v1, Lq8/c;->i:Lq8/c;
-
-    const/4 v3, 0x2
-
-    new-array v3, v3, [Lq8/c;
-
-    aput-object v0, v3, v2
-
-    aput-object v1, v3, v4
+    iget-object v0, v0, Le7/c;->f:Ljava/lang/Long;
 
     .line 3
-    sput-object v3, Lq8/c;->j:[Lq8/c;
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
-    return-void
-.end method
+    move-result-wide v2
 
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    iput-object p3, p0, Lq8/c;->g:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public static c(Ljava/lang/String;)Lq8/c;
-    .locals 5
-
-    .line 1
-    invoke-static {}, Lq8/c;->values()[Lq8/c;
+    invoke-virtual {v1, v2, v3}, Lb8/a;->i(J)Lw7/a;
 
     move-result-object v0
 
-    array-length v1, v0
+    .line 4
+    iget-object v0, v0, Lw7/a;->b:Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    .line 5
+    check-cast v0, Ljava/util/List;
 
-    :goto_0
-    if-ge v2, v1, :cond_1
+    .line 6
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    aget-object v3, v0, v2
-
-    .line 2
-    iget-object v4, v3, Lq8/c;->g:Ljava/lang/String;
-
-    .line 3
-    invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    return-object v3
+    move-result-object v0
 
     :cond_0
-    add-int/lit8 v2, v2, 0x1
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ln8/d;
+
+    .line 7
+    iget-object v2, p0, Lq8/c;->b:Lq8/b;
+
+    iget-object v2, v2, Lq8/b;->c:Le7/c;
+
+    .line 8
+    iget-object v2, v2, Le7/c;->f:Ljava/lang/Long;
+
+    .line 9
+    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    iput-wide v2, v1, Ln8/d;->x:J
+
+    .line 10
+    iget-object v2, p0, Lq8/c;->b:Lq8/b;
+
+    iget-object v2, v2, Lq8/b;->a:Lk8/c;
+
+    invoke-virtual {v2, v1}, Lk8/c;->O(Ln8/d;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 11
+    iget-object v2, p0, Lq8/c;->b:Lq8/b;
+
+    iget-object v2, v2, Lq8/b;->a:Lk8/c;
+
+    invoke-virtual {v2, v1}, Lk8/c;->g(Ln8/d;)V
 
     goto :goto_0
 
     :cond_1
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lq8/c;
-    .locals 1
-
-    const-class v0, Lq8/c;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Lq8/c;
-
-    return-object p0
-.end method
-
-.method public static values()[Lq8/c;
-    .locals 1
-
-    sget-object v0, Lq8/c;->j:[Lq8/c;
-
-    invoke-virtual {v0}, [Lq8/c;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lq8/c;
-
-    return-object v0
+    return-void
 .end method

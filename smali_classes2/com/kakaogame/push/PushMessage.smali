@@ -274,7 +274,7 @@
 
     const-string v5, "restart"
 
-    invoke-virtual {v2, v5, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v2, v5, v4}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v2
 
@@ -371,7 +371,7 @@
 
     const-string v1, "badge"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -382,7 +382,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -429,7 +429,7 @@
 
     const-string v1, "bigImageUrl"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
 
     const-string v1, "contentText"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -469,7 +469,7 @@
 
     const-string v1, "contentTitle"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -501,37 +501,20 @@
 
     .line 1
     :try_start_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-ge v0, v1, :cond_0
-
-    .line 2
-    invoke-direct {p0}, Lcom/kakaogame/push/PushMessage;->getLargeIconId()I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return v0
-
-    .line 3
-    :cond_0
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     const-string v1, "smallIcon"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
     const-string v0, "ic_noti"
 
-    .line 4
-    :cond_1
+    .line 2
+    :cond_0
     iget-object v1, p0, Lcom/kakaogame/push/PushMessage;->context:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -550,22 +533,22 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_1
 
-    .line 5
+    .line 3
     invoke-direct {p0}, Lcom/kakaogame/push/PushMessage;->getAppIconId()I
 
     move-result v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :cond_2
+    :cond_1
     return v0
 
     :catchall_0
     move-exception v0
 
-    .line 6
+    .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     const/4 v0, 0x0
@@ -580,26 +563,16 @@
 
     .line 1
     :try_start_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-direct {p0}, Lcom/kakaogame/push/PushMessage;->getLargeIconId()I
 
-    const/16 v2, 0x15
+    move-result v1
 
-    if-ge v1, v2, :cond_0
+    if-nez v1, :cond_0
 
     return-object v0
 
     .line 2
     :cond_0
-    invoke-direct {p0}, Lcom/kakaogame/push/PushMessage;->getLargeIconId()I
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    return-object v0
-
-    .line 3
-    :cond_1
     iget-object v2, p0, Lcom/kakaogame/push/PushMessage;->context:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -617,7 +590,7 @@
     :catchall_0
     move-exception v1
 
-    .line 4
+    .line 3
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return-object v0
@@ -644,15 +617,15 @@
 
     move-result-wide v0
 
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     goto :goto_0
 
     :cond_0
-    const v1, 0xbf16cf
+    const v0, 0xbf16cf
 
     :goto_0
-    return v1
+    return v0
 .end method
 
 .method public getPushBundle()Landroid/os/Bundle;
@@ -670,7 +643,7 @@
 
     const-string v1, "pushType"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -690,7 +663,7 @@
 
     const-string v1, "requestCode"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -719,7 +692,7 @@
 
     const-string v1, "sound"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -796,7 +769,7 @@
 
     const-string v1, "targetType"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -811,7 +784,7 @@
 
     const-string v1, "theme"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -862,7 +835,7 @@
 
     const-string v1, "ticker"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -886,7 +859,7 @@
 
     const-string v1, "link"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -901,7 +874,7 @@
 
     const-string v1, "vibrate"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -965,7 +938,7 @@
 
     const-string v1, "mute"
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -974,7 +947,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -992,7 +965,7 @@
     const-string v0, "PushMessage [bundle="
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

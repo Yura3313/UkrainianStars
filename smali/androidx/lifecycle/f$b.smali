@@ -158,7 +158,7 @@
     return-void
 .end method
 
-.method public static e(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
+.method public static d(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
     .locals 1
 
     .line 1
@@ -268,25 +268,25 @@
 
     .line 3
     :pswitch_0
-    sget-object v0, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 4
     :pswitch_1
-    sget-object v0, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 5
     :pswitch_2
-    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 6
     :pswitch_3
-    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     return-object v0
 

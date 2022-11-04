@@ -96,17 +96,17 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    const/4 p1, 0x1
+    move p1, v2
 
     goto :goto_0
 
     :cond_1
-    const/4 p1, 0x0
+    move p1, v1
 
     :goto_0
     if-ne p1, v2, :cond_2
 
-    const/4 v1, 0x1
+    move v1, v2
 
     :cond_2
     return v1

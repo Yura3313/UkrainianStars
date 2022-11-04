@@ -103,23 +103,26 @@
     iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->f:Ljava/lang/ref/WeakReference;
 
     .line 3
-    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0:I
+    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
 
     .line 4
-    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->K()Landroid/view/View;
+    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->C()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-static {v0}, Lf0/r;->s(Landroid/view/View;)Z
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 6
+    invoke-virtual {v0}, Landroid/view/View;->isLaidOut()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 6
+    .line 7
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
@@ -128,60 +131,60 @@
 
     const/16 v2, 0x31
 
-    .line 7
+    .line 8
     iput v2, v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->d:I
 
-    .line 8
+    .line 9
     iget v1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     iput v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->g:I
 
-    .line 9
+    .line 10
     instance-of v1, v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     if-eqz v1, :cond_0
 
-    .line 10
+    .line 11
     check-cast v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
-    .line 11
+    .line 12
     iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 12
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
+    .line 13
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->d(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 13
+    .line 14
     new-instance v1, Lcom/google/android/material/bottomappbar/d;
 
     invoke-direct {v1, p2}, Lcom/google/android/material/bottomappbar/d;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->e(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 14
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:Lcom/google/android/material/bottomappbar/BottomAppBar$b;
-
-    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Ld4/j;)V
-
     .line 15
-    :cond_0
-    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->Q()V
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$b;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Lb4/j;)V
 
     .line 16
-    :cond_1
-    invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v(Landroid/view/View;I)V
+    :cond_0
+    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->I()V
 
     .line 17
+    :cond_1
+    invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;I)V
+
+    .line 18
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 18
+    .line 19
     invoke-virtual {p2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p2
@@ -218,12 +221,12 @@
 
     if-ne p4, p1, :cond_0
 
-    const/4 p1, 0x1
+    move p1, p2
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, p3
 
     :goto_0
     if-eqz p1, :cond_1
@@ -231,7 +234,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 p2, 0x0
+    move p2, p3
 
     :goto_1
     return p2

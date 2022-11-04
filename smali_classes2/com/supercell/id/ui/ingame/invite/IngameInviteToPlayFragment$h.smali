@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$h;
-.super Ljava/lang/Object;
+.super Lif/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lhf/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,47 +16,80 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/a<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$h;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$h;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$h;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lzd/u1;
 
-    move-result-object p1
+    move-result-object v0
 
-    if-eqz p1, :cond_0
+    const/16 v1, 0xa
 
-    new-instance v0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;
+    invoke-virtual {v0, v1}, Lzd/u1;->d(I)Ljava/util/List;
 
-    invoke-direct {v0}, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;-><init>()V
+    move-result-object v0
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    const/4 v1, 0x1
 
-    const/4 v1, 0x0
+    if-eqz v0, :cond_0
+
+    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$h;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 2
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i0:Ltc/c;
+
+    .line 3
+    iget-object v2, v2, Ltc/c;->a:Ljava/lang/String;
+
+    .line 4
+    invoke-interface {v0, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
 
     :cond_0
-    return-void
+    const/4 v1, 0x0
+
+    .line 5
+    :goto_0
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method

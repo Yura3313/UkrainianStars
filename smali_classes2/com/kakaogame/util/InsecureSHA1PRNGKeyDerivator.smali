@@ -316,7 +316,7 @@
 
     and-int v13, v3, v5
 
-    xor-int/lit8 v14, v3, -0x1
+    not-int v14, v3
 
     and-int/2addr v14, v7
 
@@ -576,16 +576,19 @@
 .method private setSeed([B)V
     .locals 5
 
-    if-eqz p1, :cond_2
+    const-string v0, "seed == null"
 
     .line 1
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 2
     iget v0, p0, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->state:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
-    .line 2
+    .line 3
     iget-object v0, p0, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->copies:[I
 
     const/4 v1, 0x0
@@ -601,29 +604,19 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 3
+    .line 4
     iput v0, p0, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->state:I
 
-    .line 4
+    .line 5
     array-length v0, p1
 
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 6
     invoke-direct {p0, p1}, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->updateSeed([B)V
 
     :cond_1
     return-void
-
-    .line 6
-    :cond_2
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "seed == null"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method private static updateHash([I[BII)V
@@ -697,7 +690,7 @@
     .line 4
     invoke-static {p0}, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->computeHash([I)V
 
-    const/4 v2, 0x0
+    move v2, v0
 
     :cond_1
     if-le p2, p3, :cond_2
@@ -713,7 +706,7 @@
 
     shr-int/2addr v3, v5
 
-    const/4 v6, 0x0
+    move v6, v0
 
     :goto_1
     if-ge v6, v3, :cond_4
@@ -767,7 +760,7 @@
     :cond_3
     invoke-static {p0}, Lcom/kakaogame/util/InsecureSHA1PRNGKeyDerivator;->computeHash([I)V
 
-    const/4 v2, 0x0
+    move v2, v0
 
     :goto_2
     add-int/lit8 v6, v6, 0x1
@@ -877,7 +870,7 @@
 
     if-nez v4, :cond_0
 
-    const/4 v4, 0x0
+    move v4, v6
 
     goto :goto_0
 
@@ -954,19 +947,19 @@
 
     ushr-long v12, v6, v8
 
-    long-to-int v13, v12
+    long-to-int v12, v12
 
     .line 7
-    aput v13, v15, v2
+    aput v12, v15, v2
 
     const/16 v2, 0xf
 
     and-long/2addr v6, v10
 
-    long-to-int v7, v6
+    long-to-int v6, v6
 
     .line 8
-    aput v7, v15, v2
+    aput v6, v15, v2
 
     move v15, v4
 
@@ -982,16 +975,16 @@
 
     ushr-long v3, v6, v8
 
-    long-to-int v4, v3
+    long-to-int v3, v3
 
-    aput v4, v2, v12
+    aput v3, v2, v12
 
     and-long v3, v6, v10
 
-    long-to-int v4, v3
+    long-to-int v3, v3
 
     .line 10
-    aput v4, v2, v14
+    aput v3, v2, v14
 
     .line 11
     :goto_2
@@ -1100,18 +1093,18 @@
 
     ushr-long v13, v6, v8
 
-    long-to-int v14, v13
+    long-to-int v13, v13
 
-    aput v14, v5, v15
+    aput v13, v5, v15
 
     add-int/lit8 v13, v15, 0x1
 
     and-long/2addr v6, v10
 
-    long-to-int v7, v6
+    long-to-int v6, v6
 
     .line 22
-    aput v7, v5, v13
+    aput v6, v5, v13
 
     add-int/lit8 v6, v15, 0x2
 
@@ -1152,9 +1145,9 @@
 
     and-long v2, v18, v2
 
-    long-to-int v3, v2
+    long-to-int v2, v2
 
-    or-int v2, v6, v3
+    or-int/2addr v2, v6
 
     aput v2, v5, v15
 
@@ -1350,7 +1343,7 @@
 
     if-ge v5, v3, :cond_c
 
-    const/16 v3, 0x14
+    move v3, v5
 
     goto :goto_9
 
@@ -1403,7 +1396,7 @@
     return-void
 
     :cond_e
-    const/16 v14, 0x14
+    move v14, v5
 
     goto/16 :goto_6
 
@@ -1438,11 +1431,5 @@
     :goto_b
     monitor-exit p0
 
-    goto :goto_d
-
-    :goto_c
     throw v0
-
-    :goto_d
-    goto :goto_c
 .end method

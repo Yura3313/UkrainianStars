@@ -115,7 +115,7 @@
 .end method
 
 .method public final onTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 7
+    .locals 8
 
     .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -152,7 +152,7 @@
 
     if-eq v2, v6, :cond_0
 
-    goto :goto_2
+    goto :goto_1
 
     .line 4
     :cond_0
@@ -180,18 +180,19 @@
 
     move v4, v2
 
-    const/4 v2, 0x0
+    move v2, v5
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_2
     :goto_0
+    move v7, v4
+
     move v4, v2
 
-    :goto_1
-    const/4 v2, 0x1
+    move v2, v7
 
-    goto :goto_3
+    goto :goto_2
 
     .line 8
     :cond_3
@@ -206,15 +207,17 @@
     .line 9
     iput-boolean v4, p0, Landroidx/appcompat/widget/SearchView$o;->f:Z
 
-    goto :goto_1
+    move v2, v4
+
+    goto :goto_2
 
     :cond_4
+    :goto_1
+    move v2, v4
+
+    move v4, v5
+
     :goto_2
-    const/4 v2, 0x1
-
-    const/4 v4, 0x0
-
-    :goto_3
     if-eqz v4, :cond_6
 
     if-eqz v2, :cond_5
@@ -253,7 +256,7 @@
     .line 13
     invoke-virtual {p1, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
 
-    goto :goto_4
+    goto :goto_3
 
     .line 14
     :cond_5
@@ -274,7 +277,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
 
     .line 15
-    :goto_4
+    :goto_3
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->a:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z

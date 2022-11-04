@@ -81,11 +81,6 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 9
-    sget-boolean p2, Lcom/google/android/material/textfield/g;->q:Z
-
-    if-eqz p2, :cond_1
-
-    .line 10
     invoke-virtual {p1, v1}, Landroid/widget/AutoCompleteTextView;->setOnDismissListener(Landroid/widget/AutoCompleteTextView$OnDismissListener;)V
 
     :cond_1

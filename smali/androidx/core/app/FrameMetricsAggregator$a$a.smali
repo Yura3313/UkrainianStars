@@ -63,7 +63,7 @@
     move-result-wide v3
 
     .line 4
-    invoke-virtual {p1, p3, v3, v4}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v3, v4}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 5
     :cond_0
@@ -88,7 +88,7 @@
     move-result-wide v4
 
     .line 8
-    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 9
     :cond_1
@@ -115,7 +115,7 @@
     move-result-wide v5
 
     .line 12
-    invoke-virtual {p1, p3, v5, v6}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v5, v6}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 13
     :cond_2
@@ -138,7 +138,7 @@
     move-result-wide v4
 
     .line 16
-    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 17
     :cond_3
@@ -163,7 +163,7 @@
     move-result-wide v5
 
     .line 20
-    invoke-virtual {p1, p3, v5, v6}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v5, v6}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 21
     :cond_4
@@ -190,7 +190,7 @@
     move-result-wide v6
 
     .line 24
-    invoke-virtual {p1, p3, v6, v7}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v6, v7}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 25
     :cond_5
@@ -213,7 +213,7 @@
     move-result-wide v4
 
     .line 28
-    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v4, v5}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 29
     :cond_6
@@ -236,7 +236,7 @@
     move-result-wide v0
 
     .line 32
-    invoke-virtual {p1, p3, v0, v1}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v0, v1}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     .line 33
     :cond_7
@@ -259,7 +259,7 @@
     move-result-wide v0
 
     .line 36
-    invoke-virtual {p1, p3, v0, v1}, Landroidx/core/app/FrameMetricsAggregator$a;->d(Landroid/util/SparseIntArray;J)V
+    invoke-virtual {p1, p3, v0, v1}, Landroidx/core/app/FrameMetricsAggregator$a;->a(Landroid/util/SparseIntArray;J)V
 
     :cond_8
     return-void

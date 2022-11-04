@@ -1,438 +1,246 @@
 .class public final Lcom/android/billingclient/api/t;
 .super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
+.source "com.android.billingclient:billing@@5.0.0"
+
+# interfaces
+.implements Landroid/content/ServiceConnection;
 
 
-# static fields
-.field public static final a:Lcom/android/billingclient/api/e;
+# instance fields
+.field public final a:Ljava/lang/Object;
 
-.field public static final b:Lcom/android/billingclient/api/e;
+.field public b:Lcom/android/billingclient/api/b;
 
-.field public static final c:Lcom/android/billingclient/api/e;
-
-.field public static final d:Lcom/android/billingclient/api/e;
-
-.field public static final e:Lcom/android/billingclient/api/e;
-
-.field public static final f:Lcom/android/billingclient/api/e;
-
-.field public static final g:Lcom/android/billingclient/api/e;
-
-.field public static final h:Lcom/android/billingclient/api/e;
-
-.field public static final i:Lcom/android/billingclient/api/e;
-
-.field public static final j:Lcom/android/billingclient/api/e;
-
-.field public static final k:Lcom/android/billingclient/api/e;
-
-.field public static final l:Lcom/android/billingclient/api/e;
-
-.field public static final m:Lcom/android/billingclient/api/e;
-
-.field public static final n:Lcom/android/billingclient/api/e;
+.field public final synthetic c:Lcom/android/billingclient/api/a;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public synthetic constructor <init>(Lcom/android/billingclient/api/a;Lcom/android/billingclient/api/b;)V
+    .locals 0
 
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    iput-object p1, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
 
-    move-result-object v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x3
+    new-instance p1, Ljava/lang/Object;
+
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/billingclient/api/t;->a:Ljava/lang/Object;
+
+    iput-object p2, p0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/android/billingclient/api/d;)V
+    .locals 2
 
     .line 1
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+    iget-object v0, p0, Lcom/android/billingclient/api/t;->a:Ljava/lang/Object;
 
-    const-string v2, "Google Play In-app Billing API version is less than 3"
+    monitor-enter v0
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/b;
+
+    if-eqz v1, :cond_0
+
+    check-cast v1, Lcom/supercell/titan/m;
+
+    invoke-virtual {v1, p1}, Lcom/supercell/titan/m;->a(Lcom/android/billingclient/api/d;)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
 
     .line 2
-    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .locals 6
+
+    const-string p1, "BillingClient"
+
+    const-string v0, "Billing service connected."
+
+    .line 1
+    invoke-static {p1, v0}, Lv3/i;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
+
+    .line 2
+    sget v0, Lcom/google/android/gms/internal/play_billing/zzd;->f:I
+
+    if-nez p2, :cond_0
+
+    const/4 p2, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "com.android.vending.billing.IInAppBillingService"
 
     .line 3
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->a:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    invoke-interface {p2, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     move-result-object v0
 
     .line 4
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+    instance-of v1, v0, Lcom/google/android/gms/internal/play_billing/zze;
 
-    const-string v2, "Google Play In-app Billing API version is less than 9"
+    if-eqz v1, :cond_1
 
     .line 5
-    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    move-object p2, v0
+
+    check-cast p2, Lcom/google/android/gms/internal/play_billing/zze;
+
+    goto :goto_0
+
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/play_billing/zzc;
+
+    invoke-direct {v0, p2}, Lcom/google/android/gms/internal/play_billing/zzc;-><init>(Landroid/os/IBinder;)V
+
+    move-object p2, v0
 
     .line 6
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
+    :goto_0
+    iput-object p2, p1, Lcom/android/billingclient/api/a;->k:Lcom/google/android/gms/internal/play_billing/zze;
 
     .line 7
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+    iget-object v0, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
 
-    const-string v2, "Billing service unavailable on device."
+    new-instance v1, Lcom/android/billingclient/api/r;
+
+    invoke-direct {v1, p0}, Lcom/android/billingclient/api/r;-><init>(Lcom/android/billingclient/api/t;)V
+
+    new-instance v4, Lcom/android/billingclient/api/s;
+
+    const/4 p1, 0x0
+
+    invoke-direct {v4, p0, p1}, Lcom/android/billingclient/api/s;-><init>(Ljava/lang/Object;I)V
 
     .line 8
-    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/billingclient/api/a;->y0()Landroid/os/Handler;
+
+    move-result-object v5
+
+    const-wide/16 v2, 0x7530
 
     .line 9
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    invoke-virtual/range {v0 .. v5}, Lcom/android/billingclient/api/a;->K0(Ljava/util/concurrent/Callable;JLjava/lang/Runnable;Landroid/os/Handler;)Ljava/util/concurrent/Future;
 
-    move-result-object v0
+    move-result-object p1
 
-    sput-object v0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v2, 0x5
+    if-nez p1, :cond_2
 
     .line 10
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client is already in the process of connecting to billing service."
+    iget-object p1, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
 
     .line 11
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/billingclient/api/a;->C0()Lcom/android/billingclient/api/d;
+
+    move-result-object p1
 
     .line 12
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    invoke-virtual {p0, p1}, Lcom/android/billingclient/api/t;->a(Lcom/android/billingclient/api/d;)V
 
-    move-result-object v0
+    :cond_2
+    return-void
+.end method
 
-    sput-object v0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/e;
+.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
+    .locals 4
 
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    .line 1
+    sget p1, Lv3/i;->a:I
 
-    move-result-object v0
+    iget-object p1, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
 
-    .line 13
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+    const/4 v0, 0x0
 
-    const-string v1, "Play Store version installed does not support cross selling products."
+    .line 2
+    iput-object v0, p1, Lcom/android/billingclient/api/a;->k:Lcom/google/android/gms/internal/play_billing/zze;
 
-    .line 14
-    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    .line 3
+    iget-object p1, p0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/a;
 
-    .line 15
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    const/4 v0, 0x0
 
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    .line 4
+    iput v0, p1, Lcom/android/billingclient/api/a;->f:I
 
-    move-result-object v0
+    .line 5
+    iget-object p1, p0, Lcom/android/billingclient/api/t;->a:Ljava/lang/Object;
 
-    .line 16
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
+    monitor-enter p1
 
-    const-string v1, "The list of SKUs can\'t be empty."
+    :try_start_0
+    iget-object v0, p0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/b;
 
-    .line 17
-    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    .line 18
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    .line 6
+    check-cast v0, Lcom/supercell/titan/m;
 
-    move-result-object v0
+    .line 7
+    iget-object v0, v0, Lcom/supercell/titan/m;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
-    sput-object v0, Lcom/android/billingclient/api/t;->d:Lcom/android/billingclient/api/e;
+    const/4 v1, 0x3
 
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    const-string v2, "onBillingServiceDisconnected"
 
-    move-result-object v0
+    .line 8
+    new-instance v3, Lcom/android/billingclient/api/d;
 
-    .line 19
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
+    invoke-direct {v3}, Lcom/android/billingclient/api/d;-><init>()V
 
-    const-string v1, "SKU type can\'t be empty."
+    .line 9
+    iput v1, v3, Lcom/android/billingclient/api/d;->a:I
 
-    .line 20
-    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+    .line 10
+    iput-object v2, v3, Lcom/android/billingclient/api/d;->b:Ljava/lang/String;
 
-    .line 21
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    .line 11
+    iput-object v3, v0, Lcom/supercell/titan/PurchaseManagerGoogle;->t:Lcom/android/billingclient/api/d;
 
-    move-result-object v0
+    goto :goto_0
 
-    sput-object v0, Lcom/android/billingclient/api/t;->e:Lcom/android/billingclient/api/e;
+    :catchall_0
+    move-exception v0
 
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+    goto :goto_1
 
-    move-result-object v0
-
-    const/4 v1, -0x2
-
-    .line 22
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client does not support extra params."
-
-    .line 23
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 24
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->f:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 25
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client does not support the feature."
-
-    .line 26
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 27
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->g:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 28
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client does not support get purchase history."
-
-    .line 29
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 30
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 31
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Invalid purchase token."
-
-    .line 32
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 33
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v3, 0x6
-
-    .line 34
-    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "An internal error occurred."
-
-    .line 35
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 36
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->h:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v3, 0x4
-
-    .line 37
-    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Item is unavailable for purchase."
-
-    .line 38
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 39
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 40
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "SKU can\'t be null."
-
-    .line 41
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 42
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 43
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "SKU type can\'t be null."
-
-    .line 44
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 45
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v3, 0x0
-
-    .line 46
-    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    .line 47
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->i:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v3, -0x1
-
-    .line 48
-    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Service connection is disconnected."
-
-    .line 49
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 50
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->j:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    const/4 v3, -0x3
-
-    .line 51
-    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Timeout communicating with service."
-
-    .line 52
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 53
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->k:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 54
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client doesn\'t support subscriptions."
-
-    .line 55
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 56
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->l:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 57
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v3, "Client doesn\'t support subscriptions update."
-
-    .line 58
-    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 59
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->m:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 60
-    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v1, "Client doesn\'t support multi-item purchases."
-
-    .line 61
-    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 62
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/billingclient/api/t;->n:Lcom/android/billingclient/api/e;
-
-    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
-
-    move-result-object v0
-
-    .line 63
-    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
-
-    const-string v1, "Unknown feature"
-
-    .line 64
-    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
-
-    .line 65
-    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+    .line 12
+    :cond_0
+    :goto_0
+    monitor-exit p1
 
     return-void
+
+    :goto_1
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

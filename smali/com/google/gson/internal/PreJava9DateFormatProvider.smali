@@ -40,7 +40,7 @@
     const-string v1, "Unknown DateFormat style: "
 
     .line 2
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -93,7 +93,7 @@
     const-string v1, "Unknown DateFormat style: "
 
     .line 2
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -146,7 +146,7 @@
     const-string v1, "Unknown DateFormat style: "
 
     .line 2
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/b;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

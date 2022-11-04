@@ -15,40 +15,40 @@
 
 
 # virtual methods
-.method public abstract a()Z
+.method public abstract b()Z
 .end method
 
-.method public abstract b()I
-.end method
-
-.method public abstract d(I)V
+.method public abstract c()I
 .end method
 
 .method public abstract dismiss()V
 .end method
 
-.method public abstract e()Ljava/lang/CharSequence;
+.method public abstract e()Landroid/graphics/drawable/Drawable;
 .end method
 
-.method public abstract g()Landroid/graphics/drawable/Drawable;
+.method public abstract g(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract h(Ljava/lang/CharSequence;)V
+.method public abstract h(Landroid/graphics/drawable/Drawable;)V
 .end method
 
-.method public abstract j(Landroid/graphics/drawable/Drawable;)V
+.method public abstract i(I)V
+.end method
+
+.method public abstract j(I)V
 .end method
 
 .method public abstract k(I)V
 .end method
 
-.method public abstract l(I)V
+.method public abstract l(II)V
 .end method
 
-.method public abstract m(II)V
+.method public abstract m()I
 .end method
 
-.method public abstract n()I
+.method public abstract n()Ljava/lang/CharSequence;
 .end method
 
 .method public abstract o(Landroid/widget/ListAdapter;)V

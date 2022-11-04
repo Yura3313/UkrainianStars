@@ -22,16 +22,16 @@
 
 
 # virtual methods
-.method public abstract D2()J
+.method public abstract K2()J
 .end method
 
-.method public abstract E2()I
+.method public abstract L2()I
 .end method
 
-.method public abstract F2()J
+.method public abstract M2()J
 .end method
 
-.method public abstract G2()Ljava/lang/String;
+.method public abstract N2()Ljava/lang/String;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end method
@@ -42,29 +42,29 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->D2()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->K2()J
 
     move-result-wide v0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->E2()I
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->L2()I
 
     move-result v2
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->F2()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->M2()J
 
     move-result-wide v3
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->G2()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->N2()Ljava/lang/String;
 
     move-result-object v5
 
     const/16 v6, 0x35
 
     .line 5
-    invoke-static {v5, v6}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v5, v6}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v6
 

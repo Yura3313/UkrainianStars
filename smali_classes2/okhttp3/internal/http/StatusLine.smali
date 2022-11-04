@@ -61,7 +61,7 @@
 .end method
 
 .method public static parse(Ljava/lang/String;)Lokhttp3/internal/http/StatusLine;
-    .locals 7
+    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -77,9 +77,11 @@
 
     const/16 v1, 0x20
 
-    const/16 v2, 0x9
+    const/4 v2, 0x4
 
-    const-string v3, "Unexpected status line: "
+    const/16 v3, 0x9
+
+    const-string v4, "Unexpected status line: "
 
     if-eqz v0, :cond_3
 
@@ -88,7 +90,7 @@
 
     move-result v0
 
-    if-lt v0, v2, :cond_2
+    if-lt v0, v3, :cond_2
 
     const/16 v0, 0x8
 
@@ -115,9 +117,9 @@
     goto :goto_0
 
     :cond_0
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    if-ne v0, v4, :cond_1
+    if-ne v0, v5, :cond_1
 
     .line 5
     sget-object v0, Lokhttp3/Protocol;->HTTP_1_1:Lokhttp3/Protocol;
@@ -129,7 +131,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 7
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -143,7 +145,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 10
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -165,48 +167,48 @@
     .line 13
     sget-object v0, Lokhttp3/Protocol;->HTTP_1_0:Lokhttp3/Protocol;
 
-    const/4 v2, 0x4
+    move v3, v2
 
     .line 14
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
-    move-result v4
+    move-result v5
 
-    add-int/lit8 v5, v2, 0x3
+    add-int/lit8 v6, v3, 0x3
 
-    if-lt v4, v5, :cond_6
+    if-lt v5, v6, :cond_6
 
     .line 15
     :try_start_0
-    invoke-virtual {p0, v2, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p0, v3, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v4
+    move-result v5
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
-    move-result v6
+    move-result v7
 
-    if-le v6, v5, :cond_5
+    if-le v7, v6, :cond_5
 
     .line 17
-    invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p0, v6}, Ljava/lang/String;->charAt(I)C
 
-    move-result v5
+    move-result v6
 
-    if-ne v5, v1, :cond_4
+    if-ne v6, v1, :cond_4
 
-    add-int/lit8 v2, v2, 0x4
+    add-int/2addr v3, v2
 
     .line 18
-    invoke-virtual {p0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -217,7 +219,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 20
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -233,7 +235,7 @@
     :goto_1
     new-instance v1, Lokhttp3/internal/http/StatusLine;
 
-    invoke-direct {v1, v0, v4, p0}, Lokhttp3/internal/http/StatusLine;-><init>(Lokhttp3/Protocol;ILjava/lang/String;)V
+    invoke-direct {v1, v0, v5, p0}, Lokhttp3/internal/http/StatusLine;-><init>(Lokhttp3/Protocol;ILjava/lang/String;)V
 
     return-object v1
 
@@ -242,7 +244,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 24
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -256,7 +258,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 27
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -270,7 +272,7 @@
     new-instance v0, Ljava/net/ProtocolException;
 
     .line 30
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

@@ -186,12 +186,12 @@
 
     if-ne v0, v8, :cond_0
 
-    const/4 v10, 0x1
+    move v10, v8
 
     goto :goto_0
 
     :cond_0
-    const/4 v10, 0x0
+    move v10, v9
 
     :goto_0
     if-eqz v10, :cond_1
@@ -433,9 +433,9 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    int-to-short v1, v2
+    int-to-short v1, v1
 
     const-string v2, "FHCRC"
 
@@ -471,11 +471,11 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    const-string v1, "CRC"
+    const-string v2, "CRC"
 
-    invoke-direct {p0, v1, v0, v2}, Lokio/GzipSource;->checkEqual(Ljava/lang/String;II)V
+    invoke-direct {p0, v2, v0, v1}, Lokio/GzipSource;->checkEqual(Ljava/lang/String;II)V
 
     .line 2
     iget-object v0, p0, Lokio/GzipSource;->source:Lokio/BufferedSource;
@@ -490,17 +490,17 @@
 
     move-result-wide v1
 
-    long-to-int v2, v1
+    long-to-int v1, v1
 
-    const-string v1, "ISIZE"
+    const-string v2, "ISIZE"
 
-    invoke-direct {p0, v1, v0, v2}, Lokio/GzipSource;->checkEqual(Ljava/lang/String;II)V
+    invoke-direct {p0, v2, v0, v1}, Lokio/GzipSource;->checkEqual(Ljava/lang/String;II)V
 
     return-void
 .end method
 
 .method private updateCrc(Lokio/Buffer;JJ)V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object p1, p1, Lokio/Buffer;->head:Lokio/Segment;
@@ -515,9 +515,9 @@
 
     int-to-long v2, v2
 
-    cmp-long v4, p2, v2
+    cmp-long v2, p2, v2
 
-    if-ltz v4, :cond_0
+    if-ltz v2, :cond_0
 
     sub-int/2addr v0, v1
 
@@ -611,8 +611,6 @@
     cmp-long v2, p2, v0
 
     if-ltz v2, :cond_6
-
-    cmp-long v2, p2, v0
 
     if-nez v2, :cond_0
 

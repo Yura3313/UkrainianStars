@@ -92,7 +92,7 @@
     const-string v1, "Expecting character, got: "
 
     .line 8
-    invoke-static {v1, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

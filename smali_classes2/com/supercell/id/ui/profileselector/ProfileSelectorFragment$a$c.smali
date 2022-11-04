@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
-.super Ljava/lang/Object;
+.super Lif/i;
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/b2$a;ILae/a2;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->m(Lzd/w1$a;ILzd/v1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,74 +16,117 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lif/i;",
+        "Lhf/p<",
+        "Landroid/widget/TextView;",
+        "Ljava/lang/String;",
+        "Landroid/text/SpannableStringBuilder;",
+        ">;"
+    }
+.end annotation
 
-# instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+
+# static fields
+.field public static final f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    new-instance v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;-><init>()V
+
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 4
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    check-cast p1, Landroid/widget/TextView;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    check-cast p2, Ljava/lang/String;
 
-    move-result-object p1
+    const-string v0, "view"
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "Saved Credentials"
+    const-string v0, "value"
 
-    const-string v1, "click"
-
-    const/4 v2, 0x0
-
-    const/16 v3, 0x18
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    invoke-virtual {v0, p2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    move-result-object p2
+
+    const-string v0, "  "
 
     .line 5
-    iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
+    invoke-virtual {p2, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    move-result-object p2
 
     .line 6
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 7
-    new-instance v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
+    invoke-static {p1}, La4/b0;->f(Landroid/content/Context;)Landroid/graphics/Bitmap;
 
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(Z)V
+    move-result-object v0
 
     .line 8
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    new-instance v1, Landroid/text/style/ImageSpan;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p1, v0, v2}, Landroid/text/style/ImageSpan;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;I)V
 
     .line 9
-    invoke-virtual {p1, v0, v2}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    .line 10
+    invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
+
+    move-result v0
+
+    const/16 v2, 0x21
+
+    .line 11
+    invoke-virtual {p2, v1, p1, v0, v2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     :cond_0
-    return-void
+    return-object p2
 .end method

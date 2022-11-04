@@ -28,7 +28,7 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 14
+    .locals 12
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -42,13 +42,13 @@
 
     sput-object v1, Lx4/a;->b:Ljava/util/HashMap;
 
-    const/4 v2, -0x1
+    const/4 v2, 0x1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    const-string v3, "The requesting app is unavailable (e.g. unpublished, nonexistent version code)."
+    const-string v3, "No error occurred; only some types of update flow are allowed, while others are forbidden."
 
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -58,7 +58,7 @@
 
     move-result-object v3
 
-    const-string v4, "The requested pack is not available."
+    const-string v4, "An unknown error occurred."
 
     invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -68,7 +68,7 @@
 
     move-result-object v4
 
-    const-string v5, "The request is invalid."
+    const-string v5, "The API is not available on this device."
 
     invoke-virtual {v0, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     move-result-object v5
 
-    const-string v6, "The requested download is not found."
+    const-string v6, "The request that was sent by the app is malformed."
 
     invoke-virtual {v0, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -88,7 +88,7 @@
 
     move-result-object v6
 
-    const-string v7, "The Asset Delivery API is not available."
+    const-string v7, "The install is unavailable to this user or device."
 
     invoke-virtual {v0, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     move-result-object v7
 
-    const-string v8, "Network error. Unable to obtain the asset pack details."
+    const-string v8, "The download/install is not allowed, due to the current device state (e.g. low battery, low disk space, ...)."
 
     invoke-virtual {v0, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -108,93 +108,75 @@
 
     move-result-object v8
 
-    const-string v9, "Download not permitted under current device circumstances (e.g. in background)."
+    const-string v9, "The install/update has not been (fully) downloaded yet."
 
     invoke-virtual {v0, v8, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/16 v9, -0xa
+    const/4 v9, -0x8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
 
-    const-string v10, "Asset pack download failed due to insufficient storage."
+    const-string v10, "The install is already in progress and there is no UI flow to resume."
 
     invoke-virtual {v0, v9, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/16 v10, -0xb
+    const/16 v10, -0x64
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v10
 
-    const-string v11, "The Play Store app is either not installed or not the official version."
+    const-string v11, "An internal error happened in the Play Store."
 
     invoke-virtual {v0, v10, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/16 v11, -0xc
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    const-string v12, "Tried to show the cellular data confirmation but no asset packs are waiting for Wi-Fi."
-
-    invoke-virtual {v0, v11, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const/16 v12, -0x64
-
-    invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v12
-
-    const-string v13, "Unknown error downloading an asset pack."
-
-    invoke-virtual {v0, v12, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v0, "APP_UNAVAILABLE"
+    const-string v0, "NO_ERROR_PARTIALLY_ALLOWED"
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "PACK_UNAVAILABLE"
+    const-string v0, "ERROR_UNKNOWN"
 
     invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "INVALID_REQUEST"
+    const-string v0, "ERROR_API_NOT_AVAILABLE"
 
     invoke-virtual {v1, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "DOWNLOAD_NOT_FOUND"
+    const-string v0, "ERROR_INVALID_REQUEST"
 
     invoke-virtual {v1, v5, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "API_NOT_AVAILABLE"
+    const-string v0, "ERROR_INSTALL_UNAVAILABLE"
 
     invoke-virtual {v1, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "NETWORK_ERROR"
+    const-string v0, "ERROR_INSTALL_NOT_ALLOWED"
 
     invoke-virtual {v1, v7, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "ACCESS_DENIED"
+    const-string v0, "ERROR_DOWNLOAD_NOT_PRESENT"
 
     invoke-virtual {v1, v8, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "INSUFFICIENT_STORAGE"
+    const-string v0, "ERROR_INSTALL_IN_PROGRESS"
 
     invoke-virtual {v1, v9, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "PLAY_STORE_NOT_FOUND"
+    const-string v0, "ERROR_INTERNAL_ERROR"
 
     invoke-virtual {v1, v10, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v0, "NETWORK_UNRESTRICTED"
+    const/16 v0, -0x9
 
-    invoke-virtual {v1, v11, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-string v0, "INTERNAL_ERROR"
+    move-result-object v0
 
-    invoke-virtual {v1, v12, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v2, "ERROR_PLAY_STORE_NOT_FOUND"
+
+    invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

@@ -3,18 +3,23 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/os/Parcelable$Creator;
 
 
-# instance fields
-.field public final synthetic g:Lb2/v;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/zat;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lb2/v;)V
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lb2/w;->g:Lb2/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,34 +28,120 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget-object v0, p0, Lb2/w;->g:Lb2/v;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    iget-object v0, v0, Lb2/v;->a:Lb2/e$a;
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    move v4, v3
+
+    move-object v2, v1
 
     .line 2
-    iget-object v0, v0, Lb2/e$a;->h:Lcom/google/android/gms/common/api/a$f;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v5
+
+    if-ge v5, v0, :cond_4
 
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v1
+    move-result v5
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const v6, 0xffff
 
-    move-result-object v1
+    and-int/2addr v6, v5
 
-    const-string v2, " disconnecting because it was signed out."
+    const/4 v7, 0x1
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    if-eq v6, v7, :cond_3
 
-    move-result-object v1
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_2
+
+    const/4 v7, 0x3
+
+    if-eq v6, v7, :cond_1
+
+    const/4 v7, 0x4
+
+    if-eq v6, v7, :cond_0
 
     .line 4
-    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/a$f;->c(Ljava/lang/String;)V
+    invoke-static {p1, v5}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    return-void
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object v2, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    invoke-static {p1, v5, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {p1, v5}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v4
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
+    sget-object v1, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 9
+    invoke-static {p1, v5, v1}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/accounts/Account;
+
+    goto :goto_0
+
+    .line 10
+    :cond_3
+    invoke-static {p1, v5}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v3
+
+    goto :goto_0
+
+    .line 11
+    :cond_4
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 12
+    new-instance p1, Lcom/google/android/gms/common/internal/zat;
+
+    invoke-direct {p1, v3, v1, v4, v2}, Lcom/google/android/gms/common/internal/zat;-><init>(ILandroid/accounts/Account;ILcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/zat;
+
+    return-object p1
 .end method

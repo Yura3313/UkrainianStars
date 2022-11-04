@@ -18,8 +18,8 @@
 .method public abstract a(IFI)V
 .end method
 
-.method public abstract c(I)V
+.method public abstract b(I)V
 .end method
 
-.method public abstract d(I)V
+.method public abstract c(I)V
 .end method

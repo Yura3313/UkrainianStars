@@ -1,98 +1,107 @@
-.class public final Lwc/n;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "BaseFragment.kt"
-
-
-# instance fields
-.field public final synthetic g:Landroid/view/View;
-
-.field public final synthetic h:Lcom/supercell/id/ui/BaseFragment;
-
-.field public final synthetic i:Lze/o;
+.class public abstract Lwc/n;
+.super Luc/z;
+.source "ChangeEmailFlow.kt"
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;Lze/o;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lwc/n;->g:Landroid/view/View;
-
-    iput-object p2, p0, Lwc/n;->h:Lcom/supercell/id/ui/BaseFragment;
-
-    iput-object p3, p0, Lwc/n;->i:Lze/o;
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Luc/z;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Lwc/n;->i:Lze/o;
-
-    new-instance v0, Ljava/util/concurrent/CancellationException;
-
-    invoke-direct {v0}, Ljava/util/concurrent/CancellationException;-><init>()V
-
-    .line 2
-    invoke-interface {p1, v0}, Lze/o;->l(Ljava/lang/Throwable;)Z
+.method public N0()V
+    .locals 0
 
     return-void
 .end method
 
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
+.method public final T0()Lcom/supercell/id/IdChangeEmailDetails;
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lwc/n;->h:Lcom/supercell/id/ui/BaseFragment;
+    invoke-virtual {p0}, Lwc/n;->U0()Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    move-result-object v0
 
-    move-result-object p1
+    const/4 v1, 0x0
 
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->k()Landroid/view/View;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    const/4 v0, 0x4
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+    if-eqz v0, :cond_1
 
     .line 2
+    iget-object v0, v0, Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;->j0:Lcom/supercell/id/IdChangeEmailDetails;
+
+    if-eqz v0, :cond_0
+
+    move-object v1, v0
+
+    goto :goto_0
+
     :cond_0
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    const-string v0, "changeEmailDetails"
 
-    const/16 v0, 0x15
+    invoke-static {v0}, Lif/h;->i(Ljava/lang/String;)V
 
-    if-lt p1, v0, :cond_1
+    throw v1
 
-    .line 3
-    iget-object p1, p0, Lwc/n;->g:Landroid/view/View;
+    :cond_1
+    :goto_0
+    return-object v1
+.end method
+
+.method public final U0()Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+
+    .line 2
+    instance-of v1, v0, Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;
+
+    if-nez v1, :cond_0
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->setElevation(F)V
+    :cond_0
+    check-cast v0, Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;
 
-    .line 4
-    :cond_1
-    :try_start_0
-    iget-object p1, p0, Lwc/n;->i:Lze/o;
+    return-object v0
+.end method
 
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+.method public final V0(Lcom/supercell/id/IdChangeEmailDetails;)V
+    .locals 1
 
-    .line 5
-    invoke-interface {p1, v0}, Lze/o;->m(Ljava/lang/Object;)Z
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    if-eqz p1, :cond_0
 
-    :catch_0
+    .line 1
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v0, p1}, Lcom/supercell/id/SupercellId;->setPendingEmailChange$supercellId_release(Lcom/supercell/id/IdChangeEmailDetails;)V
+
+    .line 2
+    invoke-virtual {p0}, Lwc/n;->U0()Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iput-object p1, v0, Lcom/supercell/id/ui/changeemail/ChangeEmailFlowFragment;->j0:Lcom/supercell/id/IdChangeEmailDetails;
+
+    :cond_0
+    return-void
+.end method
+
+.method public synthetic Z()V
+    .locals 0
+
+    invoke-super {p0}, Luc/z;->Z()V
+
+    invoke-virtual {p0}, Lwc/n;->N0()V
+
     return-void
 .end method

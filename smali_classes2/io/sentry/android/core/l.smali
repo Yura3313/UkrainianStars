@@ -3,46 +3,34 @@
 .source "R8$$SyntheticClass"
 
 # interfaces
-.implements Lio/sentry/Sentry$OptionsConfiguration;
+.implements Lhe/s1$b;
 
 
 # instance fields
-.field public final synthetic a:Landroid/content/Context;
-
-.field public final synthetic b:Lio/sentry/ILogger;
-
-.field public final synthetic c:Lio/sentry/Sentry$OptionsConfiguration;
+.field public final synthetic a:Lio/sentry/android/core/SentryAndroidOptions;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/Sentry$OptionsConfiguration;)V
+.method public synthetic constructor <init>(Lio/sentry/android/core/SentryAndroidOptions;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/android/core/l;->a:Landroid/content/Context;
-
-    iput-object p2, p0, Lio/sentry/android/core/l;->b:Lio/sentry/ILogger;
-
-    iput-object p3, p0, Lio/sentry/android/core/l;->c:Lio/sentry/Sentry$OptionsConfiguration;
+    iput-object p1, p0, Lio/sentry/android/core/l;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final configure(Lio/sentry/SentryOptions;)V
-    .locals 3
+.method public final a()Ljava/lang/String;
+    .locals 1
 
-    iget-object v0, p0, Lio/sentry/android/core/l;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/sentry/android/core/l;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
-    iget-object v1, p0, Lio/sentry/android/core/l;->b:Lio/sentry/ILogger;
+    invoke-virtual {v0}, Lhe/y2;->getOutboxPath()Ljava/lang/String;
 
-    iget-object v2, p0, Lio/sentry/android/core/l;->c:Lio/sentry/Sentry$OptionsConfiguration;
+    move-result-object v0
 
-    check-cast p1, Lio/sentry/android/core/SentryAndroidOptions;
-
-    invoke-static {v0, v1, v2, p1}, Lio/sentry/android/core/SentryAndroid;->b(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/Sentry$OptionsConfiguration;Lio/sentry/android/core/SentryAndroidOptions;)V
-
-    return-void
+    return-object v0
 .end method

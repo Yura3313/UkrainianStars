@@ -34,13 +34,13 @@
     return-void
 .end method
 
-.method public c(I)V
+.method public b(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public d(I)V
+.method public c(I)V
     .locals 0
 
     return-void

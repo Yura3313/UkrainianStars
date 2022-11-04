@@ -186,7 +186,6 @@
     <dimen name="flat_tab_icon_size">27.0dip</dimen>
     <dimen name="floating_element_thickness">2.0dip</dimen>
     <dimen name="flow_page_button_margin_top">24.0dip</dimen>
-    <dimen name="flow_page_check_mark_margin_top">12.0dip</dimen>
     <dimen name="flow_page_illustration_height">0.0dip</dimen>
     <dimen name="flow_page_illustration_margin_start">0.0dip</dimen>
     <dimen name="flow_page_illustration_margin_top">0.0dip</dimen>
@@ -355,7 +354,7 @@
     <dimen name="mtrl_calendar_navigation_bottom_padding">4.0dip</dimen>
     <dimen name="mtrl_calendar_navigation_height">48.0dip</dimen>
     <dimen name="mtrl_calendar_navigation_top_padding">4.0dip</dimen>
-    <dimen name="mtrl_calendar_pre_l_text_clip_padding">8.0dip</dimen>
+    <dimen name="mtrl_calendar_pre_l_text_clip_padding">0.0dip</dimen>
     <dimen name="mtrl_calendar_selection_baseline_to_top_fullscreen">104.0dip</dimen>
     <dimen name="mtrl_calendar_selection_text_baseline_to_bottom">20.0dip</dimen>
     <dimen name="mtrl_calendar_selection_text_baseline_to_bottom_fullscreen">24.0dip</dimen>
@@ -378,7 +377,7 @@
     <dimen name="mtrl_chip_text_size">14.0sp</dimen>
     <dimen name="mtrl_edittext_rectangle_top_offset">12.0dip</dimen>
     <dimen name="mtrl_exposed_dropdown_menu_popup_elevation">8.0dip</dimen>
-    <dimen name="mtrl_exposed_dropdown_menu_popup_vertical_offset">-8.0dip</dimen>
+    <dimen name="mtrl_exposed_dropdown_menu_popup_vertical_offset">1.0dip</dimen>
     <dimen name="mtrl_exposed_dropdown_menu_popup_vertical_padding">8.0dip</dimen>
     <dimen name="mtrl_extended_fab_bottom_padding">12.0dip</dimen>
     <dimen name="mtrl_extended_fab_corner_radius">24.0dip</dimen>
@@ -401,15 +400,15 @@
     <dimen name="mtrl_fab_min_touch_target">48.0dip</dimen>
     <dimen name="mtrl_fab_translation_z_hovered_focused">2.0dip</dimen>
     <dimen name="mtrl_fab_translation_z_pressed">6.0dip</dimen>
-    <item type="dimen" name="mtrl_high_ripple_default_alpha">0.0</item>
-    <item type="dimen" name="mtrl_high_ripple_focused_alpha">0.24</item>
-    <item type="dimen" name="mtrl_high_ripple_hovered_alpha">0.08</item>
-    <item type="dimen" name="mtrl_high_ripple_pressed_alpha">0.24</item>
+    <item type="dimen" name="mtrl_high_ripple_default_alpha">0.48</item>
+    <item type="dimen" name="mtrl_high_ripple_focused_alpha">0.48</item>
+    <item type="dimen" name="mtrl_high_ripple_hovered_alpha">0.16</item>
+    <item type="dimen" name="mtrl_high_ripple_pressed_alpha">0.48</item>
     <dimen name="mtrl_large_touch_target">100.0dip</dimen>
-    <item type="dimen" name="mtrl_low_ripple_default_alpha">0.0</item>
-    <item type="dimen" name="mtrl_low_ripple_focused_alpha">0.12</item>
-    <item type="dimen" name="mtrl_low_ripple_hovered_alpha">0.04</item>
-    <item type="dimen" name="mtrl_low_ripple_pressed_alpha">0.12</item>
+    <item type="dimen" name="mtrl_low_ripple_default_alpha">0.24</item>
+    <item type="dimen" name="mtrl_low_ripple_focused_alpha">0.24</item>
+    <item type="dimen" name="mtrl_low_ripple_hovered_alpha">0.08</item>
+    <item type="dimen" name="mtrl_low_ripple_pressed_alpha">0.24</item>
     <dimen name="mtrl_min_touch_target_size">48.0dip</dimen>
     <dimen name="mtrl_navigation_elevation">0.0dip</dimen>
     <dimen name="mtrl_navigation_item_horizontal_padding">22.0dip</dimen>
@@ -456,11 +455,11 @@
     <dimen name="notification_big_circle_margin">12.0dip</dimen>
     <dimen name="notification_button_width_max">76.0dip</dimen>
     <dimen name="notification_button_width_min">76.0dip</dimen>
-    <dimen name="notification_content_margin_start">8.0dip</dimen>
+    <dimen name="notification_content_margin_start">0.0dip</dimen>
     <dimen name="notification_large_icon_height">64.0dip</dimen>
     <dimen name="notification_large_icon_width">64.0dip</dimen>
-    <dimen name="notification_main_column_padding_top">10.0dip</dimen>
-    <item type="dimen" name="notification_media_narrow_margin">@dimen/notification_content_margin_start</item>
+    <dimen name="notification_main_column_padding_top">0.0dip</dimen>
+    <dimen name="notification_media_narrow_margin">12.0dip</dimen>
     <dimen name="notification_right_icon_size">16.0dip</dimen>
     <dimen name="notification_right_side_padding_top">4.0dip</dimen>
     <dimen name="notification_small_icon_background_padding">3.0dip</dimen>

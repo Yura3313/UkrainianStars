@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/bottomappbar/BottomAppBar;
+.field public final synthetic f:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$a;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$a;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -35,16 +35,16 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$a;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$a;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 2
-    iget v0, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->c0:I
+    iget v0, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->b0:I
 
     .line 3
-    iget-boolean v1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->i0:Z
+    iget-boolean v1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->h0:Z
 
     .line 4
-    invoke-virtual {p1, v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->O(IZ)V
+    invoke-virtual {p1, v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->G(IZ)V
 
     return-void
 .end method

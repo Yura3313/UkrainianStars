@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final J0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final n0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -34,7 +34,7 @@
     .line 1
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Ln3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lm3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -43,7 +43,7 @@
     .line 2
     sget-object p1, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Ln3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lm3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 

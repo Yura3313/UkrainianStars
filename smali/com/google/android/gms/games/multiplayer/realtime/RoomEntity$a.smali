@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity$a;
-.super Le3/b;
+.super Ld3/b;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Le3/b;-><init>()V
+    invoke-direct {p0}, Ld3/b;-><init>()V
 
     return-void
 .end method
@@ -34,29 +34,35 @@
     sget-object v1, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->E2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->L2()V
 
     .line 3
-    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->h:I
+    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->g:I
 
     .line 4
     const-class v1, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;
 
     .line 5
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->D2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->K2()V
 
     .line 6
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static/range {p1 .. p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v1
 
-    const-wide/16 v2, 0x0
+    const/4 v2, 0x0
 
-    const/4 v4, 0x0
+    const-wide/16 v3, 0x0
 
     const/4 v5, 0x0
 
-    move-wide v9, v2
+    move v11, v2
+
+    move v13, v11
+
+    move/from16 v16, v13
+
+    move-wide v9, v3
 
     move-object v7, v5
 
@@ -67,12 +73,6 @@
     move-object v14, v12
 
     move-object v15, v14
-
-    const/4 v11, 0x0
-
-    const/4 v13, 0x0
-
-    const/16 v16, 0x0
 
     .line 7
     :goto_0
@@ -94,13 +94,13 @@
     packed-switch v3, :pswitch_data_0
 
     .line 9
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {v0, v2}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 10
     :pswitch_0
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v16
 
@@ -111,7 +111,7 @@
     sget-object v3, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 12
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+    invoke-static {v0, v2, v3}, Lc2/b;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
 
     move-result-object v15
 
@@ -119,7 +119,7 @@
 
     .line 13
     :pswitch_2
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
+    invoke-static {v0, v2}, Lc2/b;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
 
     move-result-object v14
 
@@ -127,7 +127,7 @@
 
     .line 14
     :pswitch_3
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v13
 
@@ -135,7 +135,7 @@
 
     .line 15
     :pswitch_4
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -143,7 +143,7 @@
 
     .line 16
     :pswitch_5
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v11
 
@@ -151,7 +151,7 @@
 
     .line 17
     :pswitch_6
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
+    invoke-static {v0, v2}, Lc2/b;->t(Landroid/os/Parcel;I)J
 
     move-result-wide v9
 
@@ -159,7 +159,7 @@
 
     .line 18
     :pswitch_7
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v8
 
@@ -167,7 +167,7 @@
 
     .line 19
     :pswitch_8
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v7
 
@@ -175,7 +175,7 @@
 
     .line 20
     :cond_0
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {v0, v1}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 21
     new-instance v0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;

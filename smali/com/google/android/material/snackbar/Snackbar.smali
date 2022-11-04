@@ -20,13 +20,13 @@
 
 
 # static fields
-.field public static final t:[I
+.field public static final s:[I
 
 
 # instance fields
-.field public final r:Landroid/view/accessibility/AccessibilityManager;
+.field public final q:Landroid/view/accessibility/AccessibilityManager;
 
-.field public s:Z
+.field public r:Z
 
 
 # direct methods
@@ -51,16 +51,16 @@
 
     aput v0, v1, v2
 
-    sput-object v1, Lcom/google/android/material/snackbar/Snackbar;->t:[I
+    sput-object v1, Lcom/google/android/material/snackbar/Snackbar;->s:[I
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;Lt4/f;)V
+.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;Lq4/f;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Lt4/f;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Lq4/f;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -75,7 +75,7 @@
 
     check-cast p1, Landroid/view/accessibility/AccessibilityManager;
 
-    iput-object p1, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Landroid/view/accessibility/AccessibilityManager;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/Snackbar;->q:Landroid/view/accessibility/AccessibilityManager;
 
     return-void
 .end method
@@ -113,7 +113,7 @@
     if-lt v2, v3, :cond_2
 
     .line 3
-    iget-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
+    iget-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Z
 
     if-eqz v1, :cond_1
 
@@ -126,7 +126,7 @@
 
     .line 4
     :goto_0
-    iget-object v2, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v2, p0, Lcom/google/android/material/snackbar/Snackbar;->q:Landroid/view/accessibility/AccessibilityManager;
 
     or-int/lit8 v1, v1, 0x1
 
@@ -140,11 +140,11 @@
 
     .line 5
     :cond_2
-    iget-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
+    iget-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Z
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v2, p0, Lcom/google/android/material/snackbar/Snackbar;->q:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v2}, Landroid/view/accessibility/AccessibilityManager;->isTouchExplorationEnabled()Z
 
@@ -152,7 +152,7 @@
 
     if-eqz v2, :cond_3
 
-    const/4 v0, -0x2
+    move v0, v1
 
     :cond_3
     return v0
@@ -231,7 +231,7 @@
     const/4 v2, 0x1
 
     .line 6
-    iput-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
+    iput-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Z
 
     .line 7
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
@@ -240,9 +240,9 @@
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 9
-    new-instance p1, Lt4/g;
+    new-instance p1, Lq4/g;
 
-    invoke-direct {p1, p0, p2}, Lt4/g;-><init>(Lcom/google/android/material/snackbar/Snackbar;Landroid/view/View$OnClickListener;)V
+    invoke-direct {p1, p0, p2}, Lq4/g;-><init>(Lcom/google/android/material/snackbar/Snackbar;Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -260,7 +260,7 @@
     invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 12
-    iput-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
+    iput-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->r:Z
 
     :goto_0
     return-object p0

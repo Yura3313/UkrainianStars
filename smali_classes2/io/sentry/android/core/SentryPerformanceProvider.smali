@@ -12,15 +12,15 @@
 
 
 # static fields
-.field private static appStartMillis:J
+.field public static h:Ljava/util/Date;
 
-.field private static appStartTime:Ljava/util/Date;
+.field public static i:J
 
 
 # instance fields
-.field private application:Landroid/app/Application;
+.field public f:Z
 
-.field private firstActivityCreated:Z
+.field public g:Landroid/app/Application;
 
 
 # direct methods
@@ -28,18 +28,18 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
+    invoke-static {}, Lhe/g;->b()Ljava/util/Date;
 
     move-result-object v0
 
-    sput-object v0, Lio/sentry/android/core/SentryPerformanceProvider;->appStartTime:Ljava/util/Date;
+    sput-object v0, Lio/sentry/android/core/SentryPerformanceProvider;->h:Ljava/util/Date;
 
     .line 2
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    sput-wide v0, Lio/sentry/android/core/SentryPerformanceProvider;->appStartMillis:J
+    sput-wide v0, Lio/sentry/android/core/SentryPerformanceProvider;->i:J
 
     return-void
 .end method
@@ -53,37 +53,23 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryPerformanceProvider;->firstActivityCreated:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryPerformanceProvider;->f:Z
 
     .line 3
-    invoke-static {}, Lio/sentry/android/core/AppStartState;->getInstance()Lio/sentry/android/core/AppStartState;
+    sget-object v0, Lio/sentry/android/core/x;->e:Lio/sentry/android/core/x;
 
-    move-result-object v0
+    sget-wide v1, Lio/sentry/android/core/SentryPerformanceProvider;->i:J
 
-    sget-wide v1, Lio/sentry/android/core/SentryPerformanceProvider;->appStartMillis:J
+    sget-object v3, Lio/sentry/android/core/SentryPerformanceProvider;->h:Ljava/util/Date;
 
-    sget-object v3, Lio/sentry/android/core/SentryPerformanceProvider;->appStartTime:Ljava/util/Date;
-
-    invoke-virtual {v0, v1, v2, v3}, Lio/sentry/android/core/AppStartState;->setAppStartTime(JLjava/util/Date;)V
-
-    return-void
-.end method
-
-.method public static setAppStartTime(JLjava/util/Date;)V
-    .locals 0
-
-    .line 1
-    sput-wide p0, Lio/sentry/android/core/SentryPerformanceProvider;->appStartMillis:J
-
-    .line 2
-    sput-object p2, Lio/sentry/android/core/SentryPerformanceProvider;->appStartTime:Ljava/util/Date;
+    invoke-virtual {v0, v1, v2, v3}, Lio/sentry/android/core/x;->a(JLjava/util/Date;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
+.method public final attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
     .locals 2
 
     .line 1
@@ -117,7 +103,7 @@
     throw p1
 .end method
 
-.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
     const/4 p1, 0x0
@@ -125,7 +111,7 @@
     return p1
 .end method
 
-.method public getType(Landroid/net/Uri;)Ljava/lang/String;
+.method public final getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 0
 
     const/4 p1, 0x0
@@ -133,7 +119,7 @@
     return-object p1
 .end method
 
-.method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+.method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 0
 
     const/4 p1, 0x0
@@ -141,19 +127,19 @@
     return-object p1
 .end method
 
-.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 1
+.method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 2
 
     .line 1
-    iget-boolean p1, p0, Lio/sentry/android/core/SentryPerformanceProvider;->firstActivityCreated:Z
+    iget-boolean p1, p0, Lio/sentry/android/core/SentryPerformanceProvider;->f:Z
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_3
 
     const/4 p1, 0x1
 
     if-nez p2, :cond_0
 
-    const/4 p2, 0x1
+    move p2, p1
 
     goto :goto_0
 
@@ -162,65 +148,103 @@
 
     .line 2
     :goto_0
-    invoke-static {}, Lio/sentry/android/core/AppStartState;->getInstance()Lio/sentry/android/core/AppStartState;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Lio/sentry/android/core/AppStartState;->setColdStart(Z)V
+    sget-object v0, Lio/sentry/android/core/x;->e:Lio/sentry/android/core/x;
 
     .line 3
-    iget-object p2, p0, Lio/sentry/android/core/SentryPerformanceProvider;->application:Landroid/app/Application;
-
-    if-eqz p2, :cond_1
+    monitor-enter v0
 
     .line 4
-    invoke-virtual {p2, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+    :try_start_0
+    iget-object v1, v0, Lio/sentry/android/core/x;->c:Ljava/lang/Boolean;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v1, :cond_1
 
     .line 5
+    monitor-exit v0
+
+    goto :goto_1
+
+    .line 6
     :cond_1
-    iput-boolean p1, p0, Lio/sentry/android/core/SentryPerformanceProvider;->firstActivityCreated:Z
+    :try_start_1
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    move-result-object p2
+
+    iput-object p2, v0, Lio/sentry/android/core/x;->c:Ljava/lang/Boolean;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 7
+    monitor-exit v0
+
+    .line 8
+    :goto_1
+    iget-object p2, p0, Lio/sentry/android/core/SentryPerformanceProvider;->g:Landroid/app/Application;
+
+    if-eqz p2, :cond_2
+
+    .line 9
+    invoke-virtual {p2, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+
+    .line 10
     :cond_2
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryPerformanceProvider;->f:Z
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    .line 11
+    monitor-exit v0
+
+    throw p1
+
+    :cond_3
+    :goto_2
     return-void
 .end method
 
-.method public onActivityDestroyed(Landroid/app/Activity;)V
+.method public final onActivityDestroyed(Landroid/app/Activity;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onActivityPaused(Landroid/app/Activity;)V
+.method public final onActivityPaused(Landroid/app/Activity;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onActivityResumed(Landroid/app/Activity;)V
+.method public final onActivityResumed(Landroid/app/Activity;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
+.method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onActivityStarted(Landroid/app/Activity;)V
+.method public final onActivityStarted(Landroid/app/Activity;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onActivityStopped(Landroid/app/Activity;)V
+.method public final onActivityStopped(Landroid/app/Activity;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onCreate()Z
+.method public final onCreate()Z
     .locals 2
 
     .line 1
@@ -256,7 +280,7 @@
     .line 5
     check-cast v0, Landroid/app/Application;
 
-    iput-object v0, p0, Lio/sentry/android/core/SentryPerformanceProvider;->application:Landroid/app/Application;
+    iput-object v0, p0, Lio/sentry/android/core/SentryPerformanceProvider;->g:Landroid/app/Application;
 
     .line 6
     invoke-virtual {v0, p0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
@@ -267,7 +291,7 @@
     return v0
 .end method
 
-.method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+.method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 0
 
     const/4 p1, 0x0
@@ -275,7 +299,7 @@
     return-object p1
 .end method
 
-.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
     const/4 p1, 0x0

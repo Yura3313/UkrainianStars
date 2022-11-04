@@ -20,7 +20,7 @@
     new-instance v0, Lcom/google/android/material/internal/o$c;
 
     .line 2
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getPaddingStart()I
@@ -49,17 +49,17 @@
 
     invoke-direct {v1, p1, v0}, Lcom/google/android/material/internal/o$a;-><init>(Lcom/google/android/material/internal/o$b;Lcom/google/android/material/internal/o$c;)V
 
-    invoke-static {p0, v1}, Lf0/r;->K(Landroid/view/View;Lf0/n;)V
+    invoke-static {p0, v1}, Lf0/o;->r(Landroid/view/View;Lf0/m;)V
 
     .line 8
-    invoke-static {p0}, Lf0/r;->r(Landroid/view/View;)Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 9
-    invoke-static {p0}, Lf0/r;->B(Landroid/view/View;)V
+    invoke-virtual {p0}, Landroid/view/View;->requestApplyInsets()V
 
     goto :goto_0
 
@@ -160,9 +160,9 @@
 
     .line 2
     :cond_0
-    new-instance v0, Lk3/m6;
+    new-instance v0, Lcom/google/android/material/internal/k;
 
-    invoke-direct {v0, p0}, Lk3/m6;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p0}, Lcom/google/android/material/internal/k;-><init>(Landroid/view/View;)V
 
     move-object p0, v0
 
@@ -171,7 +171,7 @@
 .end method
 
 .method public static e(Landroid/view/View;)F
-    .locals 2
+    .locals 3
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -191,13 +191,16 @@
 
     check-cast v1, Landroid/view/View;
 
-    invoke-static {v1}, Lf0/r;->k(Landroid/view/View;)F
+    sget-object v2, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 4
+    invoke-virtual {v1}, Landroid/view/View;->getElevation()F
 
     move-result v1
 
     add-float/2addr v0, v1
 
-    .line 4
+    .line 5
     invoke-interface {p0}, Landroid/view/ViewParent;->getParent()Landroid/view/ViewParent;
 
     move-result-object p0
@@ -212,7 +215,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I

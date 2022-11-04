@@ -21,21 +21,21 @@
 
 .field public c:Ljava/lang/Object;
 
-.field public final d:Lcom/google/protobuf/q;
+.field public final d:Lcom/google/protobuf/r;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/q;)V
+.method public constructor <init>(Lcom/google/protobuf/r;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lcom/google/protobuf/e$a;->d:Lcom/google/protobuf/q;
+    iput-object p1, p0, Lcom/google/protobuf/e$a;->d:Lcom/google/protobuf/r;
 
     return-void
 .end method

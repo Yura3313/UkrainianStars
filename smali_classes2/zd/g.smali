@@ -1,110 +1,186 @@
 .class public final Lzd/g;
-.super Lse/i;
-.source "YoungPlayerRegisterEnterPinPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lzd/i;",
-        "Lvc/a0$a;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lzd/g;
+.super Landroid/text/style/ImageSpan;
+.source "CenteredImageSpan.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    new-instance v0, Lzd/g;
+    const-string v0, "drawable"
 
-    invoke-direct {v0}, Lzd/g;-><init>()V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput-object v0, Lzd/g;->g:Lzd/g;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Landroid/text/style/ImageSpan;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final draw(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V
+    .locals 0
+
+    const-string p3, "canvas"
+
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p3, "text"
+
+    invoke-static {p2, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p2, "paint"
+
+    invoke-static {p9, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    move-object v1, p1
-
-    check-cast v1, Lzd/i;
-
-    check-cast p2, Lvc/a0$a;
-
-    const-string p1, "$receiver"
+    invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 2
-    invoke-static {v1, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p0}, Landroid/text/style/DynamicDrawableSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
 
-    const-string p1, "data"
+    move-result-object p2
 
-    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string p3, "drawable"
+
+    invoke-static {p2, p3}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object p2
+
+    iget p2, p2, Landroid/graphics/Rect;->bottom:I
+
+    sub-int p2, p8, p2
+
+    sub-int/2addr p8, p6
+
+    invoke-virtual {p0}, Landroid/text/style/DynamicDrawableSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p4
+
+    invoke-static {p4, p3}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p4}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Landroid/graphics/Rect;->height()I
+
+    move-result p3
+
+    sub-int/2addr p8, p3
+
+    div-int/lit8 p8, p8, 0x2
+
+    sub-int/2addr p2, p8
+
+    int-to-float p2, p2
 
     .line 3
-    iget-object v3, p2, Lvc/a0$a;->c:Ljava/lang/String;
+    invoke-virtual {p1, p5, p2}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 4
-    iget-object v4, p2, Lvc/a0;->a:Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/text/style/DynamicDrawableSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p2
+
+    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 5
-    sget p1, Lzd/i;->d0:I
+    invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
+
+    return-void
+.end method
+
+.method public final getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
+    .locals 2
+
+    const-string p2, "paint"
+
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Landroid/text/style/DynamicDrawableSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p2
+
+    const-string p3, "drawable"
+
+    invoke-static {p2, p3}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object p2
+
+    const-string p4, "drawable.bounds"
+
+    invoke-static {p2, p4}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p5, :cond_0
+
+    .line 2
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
+
+    move-result-object p1
+
+    .line 3
+    invoke-virtual {p0}, Landroid/text/style/DynamicDrawableSpan;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p4
+
+    invoke-static {p4, p3}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p4}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Landroid/graphics/Rect;->height()I
+
+    move-result p3
+
+    div-int/lit8 p3, p3, 0x2
+
+    .line 4
+    iget p4, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    iget v0, p1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+
+    add-int/2addr p4, v0
+
+    div-int/lit8 p4, p4, 0x2
+
+    sub-int v1, p4, p3
+
+    .line 5
+    iput v1, p5, Landroid/graphics/Paint$FontMetricsInt;->top:I
+
+    add-int/2addr p4, p3
 
     .line 6
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Lzd/k;->U0()Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x1
-
-    invoke-virtual/range {v2 .. v7}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
-
-    move-result-object v0
-
-    sget-object v2, Lzd/e;->g:Lzd/e;
+    iput p4, p5, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
 
     .line 7
-    sget-object v3, Lzd/f;->g:Lzd/f;
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
-    const/4 v4, 0x0
+    move-result p3
 
-    const/16 v5, 0x8
+    iput p3, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
     .line 8
-    invoke-static/range {v0 .. v5}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
+    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    iget p3, p5, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
+
+    invoke-static {p1, p3}, Ljava/lang/Math;->min(II)I
+
+    move-result p1
+
+    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     .line 9
-    sget-object p1, Lie/i;->a:Lie/i;
+    :cond_0
+    iget p1, p2, Landroid/graphics/Rect;->right:I
 
-    return-object p1
+    return p1
 .end method

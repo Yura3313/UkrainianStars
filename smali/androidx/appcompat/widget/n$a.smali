@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public a(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
+.method public b(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
     .locals 2
 
     .line 1

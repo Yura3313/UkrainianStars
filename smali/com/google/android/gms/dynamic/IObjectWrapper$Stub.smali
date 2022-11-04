@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method public static S0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public static L0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
     .locals 2
     .param p0    # Landroid/os/IBinder;
         .annotation build Landroidx/annotation/RecentlyNonNull;

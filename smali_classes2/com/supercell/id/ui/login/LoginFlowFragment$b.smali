@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/login/LoginFlowFragment$b;
-.super Lse/i;
+.super Lif/i;
 .source "LoginFlow.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lmd/w;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lld/n;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/login/LoginFlowFragment$b;
+.field public static final f:Lcom/supercell/id/ui/login/LoginFlowFragment$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/login/LoginFlowFragment$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$b;->g:Lcom/supercell/id/ui/login/LoginFlowFragment$b;
+    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$b;->f:Lcom/supercell/id/ui/login/LoginFlowFragment$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,9 +58,9 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Lmd/w;
+    new-instance v0, Lld/n;
 
-    invoke-direct {v0}, Lmd/w;-><init>()V
+    invoke-direct {v0}, Lld/n;-><init>()V
 
     return-object v0
 .end method

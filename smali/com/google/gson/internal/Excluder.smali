@@ -95,7 +95,7 @@
 .end method
 
 .method private excludeClassChecks(Ljava/lang/Class;)Z
-    .locals 6
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,13 +107,13 @@
     .line 1
     iget-wide v0, p0, Lcom/google/gson/internal/Excluder;->version:D
 
-    const/4 v2, 0x1
+    const-wide/high16 v2, -0x4010000000000000L    # -1.0
 
-    const-wide/high16 v3, -0x4010000000000000L    # -1.0
+    cmpl-double v0, v0, v2
 
-    cmpl-double v5, v0, v3
+    const/4 v1, 0x1
 
-    if-eqz v5, :cond_0
+    if-eqz v0, :cond_0
 
     const-class v0, Lcom/google/gson/annotations/Since;
 
@@ -123,21 +123,21 @@
 
     check-cast v0, Lcom/google/gson/annotations/Since;
 
-    const-class v1, Lcom/google/gson/annotations/Until;
+    const-class v2, Lcom/google/gson/annotations/Until;
 
-    invoke-virtual {p1, v1}, Ljava/lang/Class;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+    invoke-virtual {p1, v2}, Ljava/lang/Class;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Lcom/google/gson/annotations/Until;
+    check-cast v2, Lcom/google/gson/annotations/Until;
 
-    invoke-direct {p0, v0, v1}, Lcom/google/gson/internal/Excluder;->isValidVersion(Lcom/google/gson/annotations/Since;Lcom/google/gson/annotations/Until;)Z
+    invoke-direct {p0, v0, v2}, Lcom/google/gson/internal/Excluder;->isValidVersion(Lcom/google/gson/annotations/Since;Lcom/google/gson/annotations/Until;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    return v2
+    return v1
 
     .line 2
     :cond_0
@@ -151,7 +151,7 @@
 
     if-eqz v0, :cond_1
 
-    return v2
+    return v1
 
     .line 3
     :cond_1
@@ -161,7 +161,7 @@
 
     if-eqz p1, :cond_2
 
-    return v2
+    return v1
 
     :cond_2
     const/4 p1, 0x0
@@ -496,13 +496,13 @@
     goto :goto_0
 
     :cond_0
-    const/4 v8, 0x0
+    move v8, v2
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    const/4 v8, 0x1
+    move v8, v3
 
     :goto_1
     if-nez v1, :cond_3
@@ -517,13 +517,13 @@
     goto :goto_2
 
     :cond_2
-    const/4 v7, 0x0
+    move v7, v2
 
     goto :goto_3
 
     :cond_3
     :goto_2
-    const/4 v7, 0x1
+    move v7, v3
 
     :goto_3
     if-nez v8, :cond_4

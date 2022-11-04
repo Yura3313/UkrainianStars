@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+.field public final synthetic f:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->g:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->f:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->g:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->f:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     .line 2
-    iget-boolean v1, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->l:Z
+    iget-boolean v1, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->k:Z
 
     if-eqz v1, :cond_0
 
@@ -64,7 +64,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
     .line 5
-    iput-boolean v2, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->l:Z
+    iput-boolean v2, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->k:Z
 
     :cond_0
     return-void

@@ -459,7 +459,7 @@
     const-string v5, "hasCustomAlertHandelr: "
 
     .line 30
-    invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -879,7 +879,7 @@
     const/16 p1, 0xfa1
 
     .line 14
-    invoke-static {p0, v0, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -887,7 +887,7 @@
 .end method
 
 .method public static showTerminateNoticeOnRefreshInfodesk(Landroid/app/Activity;Lcom/kakaogame/infodesk/InfodeskData;)Lcom/kakaogame/KGResult;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1008,9 +1008,9 @@
 
     const-wide/32 v4, 0x493e0
 
-    cmp-long v6, v2, v4
+    cmp-long v2, v2, v4
 
-    if-gez v6, :cond_3
+    if-gez v2, :cond_3
 
     const-string p0, "Pass the terminate notice, before 5min."
 
@@ -1073,7 +1073,7 @@
     const/16 p1, 0xfa1
 
     .line 19
-    invoke-static {p0, v0, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

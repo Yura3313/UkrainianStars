@@ -46,12 +46,15 @@
     check-cast p2, Landroid/view/View;
 
     .line 2
-    invoke-static {p1}, Lf0/r;->q(Landroid/view/View;)F
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getZ()F
 
     move-result p1
 
-    .line 3
-    invoke-static {p2}, Lf0/r;->q(Landroid/view/View;)F
+    .line 4
+    invoke-virtual {p2}, Landroid/view/View;->getZ()F
 
     move-result p2
 

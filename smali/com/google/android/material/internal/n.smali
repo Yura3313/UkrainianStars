@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Lf0/a0;Lcom/google/android/material/internal/o$c;)Lf0/a0;
+.method public final a(Landroid/view/View;Lf0/v;Lcom/google/android/material/internal/o$c;)Lf0/v;
     .locals 5
 
     .line 1
@@ -46,7 +46,7 @@
     .line 2
     iget v0, p3, Lcom/google/android/material/internal/o$c;->d:I
 
-    invoke-virtual {p2}, Lf0/a0;->d()I
+    invoke-virtual {p2}, Lf0/v;->b()I
 
     move-result v1
 
@@ -70,7 +70,7 @@
     .line 5
     iget v1, p3, Lcom/google/android/material/internal/o$c;->c:I
 
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/v;->c()I
 
     move-result v2
 
@@ -84,7 +84,7 @@
     :cond_1
     iget v1, p3, Lcom/google/android/material/internal/o$c;->a:I
 
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/v;->c()I
 
     move-result v2
 
@@ -104,7 +104,7 @@
     .line 8
     iget v0, p3, Lcom/google/android/material/internal/o$c;->a:I
 
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/v;->d()I
 
     move-result v1
 
@@ -118,7 +118,7 @@
     :cond_3
     iget v0, p3, Lcom/google/android/material/internal/o$c;->c:I
 
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/v;->d()I
 
     move-result v1
 
@@ -137,7 +137,7 @@
 
     iget v3, p3, Lcom/google/android/material/internal/o$c;->d:I
 
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 11
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/view/View;->setPaddingRelative(IIII)V
@@ -148,7 +148,7 @@
     if-eqz v0, :cond_5
 
     .line 13
-    invoke-interface {v0, p1, p2, p3}, Lcom/google/android/material/internal/o$b;->a(Landroid/view/View;Lf0/a0;Lcom/google/android/material/internal/o$c;)Lf0/a0;
+    invoke-interface {v0, p1, p2, p3}, Lcom/google/android/material/internal/o$b;->a(Landroid/view/View;Lf0/v;Lcom/google/android/material/internal/o$c;)Lf0/v;
 
     move-result-object p2
 

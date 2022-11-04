@@ -661,15 +661,31 @@ TID_HERO_INFO_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_ITEM_RARITY,<c<COLOR>><NAME></c>
 TID_HERO_INFO_POWER_BAR_TOOL_TIP,Kerää tehopisteitä rähinälippaista ja kaupan tarjouksista avataksesi uuden päivityksen.
 TID_HERO_INFO_STAR_POWER_CAN_DROP,Tähtivoiman voi nyt löytää rähinälippaasta.
-TID_HERO_INFO_STAR_POWER_BLOCKED,"<HERONAME> saa lisävoimia vaihdettavalla tähtivoimalla, jonka voi löytää rähinälippaasta tehotasolta <LEVEL> alkaen."
+TID_HERO_INFO_STAR_POWER_BLOCKED,"Hanki nyt erityinen tähtivoima, josta <HERONAME> saa lisätehoa! Se on ostettavissa, kun olet saavuttanut TEHOTASON <LEVEL>."
 TID_HERO_INFO_ACCESSORIES_CAN_DROP,Varusteen voi nyt löytää rähinälippaasta.
-TID_HERO_INFO_ACCESSORIES_BLOCKED,"<HERONAME> saa lisävoimia erikoisvarusteella, jonka voit löytää rähinälippaasta tehotasolta <LEVEL> alkaen."
+TID_HERO_INFO_ACCESSORIES_BLOCKED,"Hanki nyt ainutlaatuinen varuste, josta <HERONAME> saa lisätehoa! Se on ostettavissa, kun olet saavuttanut TEHOTASON <LEVEL>."
 TID_HERO_INFO_STAR_POWER_LABEL,TÄHTIVOIMA: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,VARUSTE: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Mahdollisuutesi saada kromaattinen rämäpää kasvaa jokaisella Brawl Pass -kaudella: aluksi rämäpää on legendaarinen, sen jälkeen myyttinen ja lopulta eeppinen, joten todennäköisyys sen saamiseen on aina suurempi.\n\nTällä kaudella rämäpään <BRAWLER> harvinaisuus on <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Mahdollisuutesi saada kromaattinen rämäpää kasvaa jokaisella Brawl Pass -kaudella: aluksi rämäpää on legendaarinen, sen jälkeen myyttinen ja lopulta eeppinen.\n\nSinun on saavutettava taso <TIER> kaudella <SEASON>, jotta voit saada rämäpään <BRAWLER> lippaista."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Mahdollisuutesi saada kromaattinen rämäpää kasvaa jokaisella Brawl Pass -kaudella: aluksi rämäpää on legendaarinen, sen jälkeen myyttinen ja lopulta eeppinen, joten todennäköisyys sen saamiseen on aina suurempi.\n\n<BRAWLER> saapuu kaudella <SEASON>."
+TID_HERO_INFO_BUY_ITEM,OSTA
+TID_HERO_INFO_BUY_ITEM_FREE,ILMAINEN
+TID_HERO_INFO_BUY_MISSING1,TARVITSET VIELÄ <MISSINGCOINS> KOLIKKOA
+TID_HERO_INFO_BUY_MISSING2,Haluatko hankkia puuttuvat kolikot?
+TID_HERO_INFO_BUY_MISSING_GEMS1,TARVITSET VIELÄ <MISSINGCOINS> KOLIKKOA
+TID_HERO_INFO_BUY_MISSING_GEMS2,"Hanki vielä <MISSINGGEMS> jalokiveä, niin voit ostaa puuttuvat kolikot"
+TID_HERO_INFO_SEE_OFFERS,HANKI JALOKIVIÄ
+TID_HERO_INFO_UNLOCK_GADGETS,AVAA VARUSTEET
+TID_HERO_INFO_UNLOCK_STARPOWERS,AVAA TÄHTIVOIMAT
+TID_CONFIRM_GADGET_DIRECT_PURCHASE_TITLE,VAHVISTA OSTO
+TID_CONFIRM_STAR_POWER_DIRECT_PURCHASE_TITLE,VAHVISTA OSTO
+TID_CONFIRM_GEAR_DIRECT_PURCHASE_TITLE,VAHVISTA OSTO
+TID_DIRECT_PURCHASE_GEM_PACKS_TITLE,HANKI LISÄÄ JALOKIVIÄ
+TID_DIRECT_PURCHASE_GEM_PACKS_DESC,"Hanki <cC5F724>vielä <REQUIREDGEMS> jalokiveä</c>, niin voit ostaa puuttuvat kolikot"
+TID_DIRECT_PURCHASE_GEM_PACKS_ALL_BUTTON,KAIKKI JALOKIVIPAKETIT
+TID_DIRECT_PURCHASE_GEM_PACKS_RECOMMENDED_TAG,SUOSITUKSET
 TID_MATCHMAKE_FAILED_5,Ottelunmuodostus epäonnistui: tapahtuma on päättynyt.
 TID_MATCHMAKE_FAILED_7,Ottelunmuodostus epäonnistui: joukkueen jäsenen yhteys katkesi.
 TID_MATCHMAKE_FAILED_9,Ottelunmuodostus epäonnistui: huoltokatko on alkamassa.
@@ -1737,11 +1753,11 @@ TID_CLAN_INFO_NO_DESCRIPTION,EI KUVAUSTA
 TID_EVENT_POPUP_TITLE,LÄHDETÄÄN OTTELUUN!
 TID_GOLDRUSH_8,Safiiritasangot
 TID_USE_AUTOFIRE_TUTORIAL,"Napauta <ccc0033>punaista ohjainta</c>, kun haluat ampua lähintä vastustajaa!"
-TID_BRAWL_BOX_INFO_1,"Ison lippaan palkinnot vastaavat kolmen rähinälippaan palkintoja. Tehopisteet on kuitenkin jaettu harvempien rämäpäiden kesken. Tehostinpoletit voivat olla vain yhtä polettityyppiä.\n\nArvontoja on kolme sattumanvaraista, ja palkintotodennäköisyydet ovat seuraavat:"
-TID_BRAWL_BOX_INFO_2,"Jokainen rähinälipas sisältää joko uuden rämäpään, tehopisteitä ja kolikoita, tehostinpoletteja ja osia, varusteen tai tähtivoiman. Lisäksi voit saada bonuksena poletintuplaajia.\n\nPalkintotodennäköisyydet:"
-TID_BRAWL_BOX_INFO_3,"Megalippaan palkinnot vastaavat kymmenen rähinälippaan palkintoja. Tehopisteet on kuitenkin jaettu harvempien rämäpäiden kesken. Tehostinpoletit voivat olla vain yhtä polettityyppiä.\n\nArvontoja on kymmenen sattumanvaraista, ja palkintotodennäköisyydet ovat seuraavat:"
-TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1> %\nharvinainen rämäpää: <NUM2> % <GAR_HERO_1>\nsuperharvinainen rämäpää: <NUM3> %<GAR_HERO_2>\neeppinen rämäpää: <NUM4> %<GAR_HERO_3>\nmyyttinen rämäpää: <NUM5> %<GAR_HERO_4>\nlegendaarinen rämäpää: <NUM6> %<GAR_HERO_5>\ntähtivoima: <NUM7> %<GAR_STAR_POWER>\nvaruste: <NUM8> %<GAR_ACCESSORY>\ntehostinpoletit: <NUM9> %
-TID_BRAWL_BOX_INFO_FOOTER,"\n\nLisäksi jokaisesta arvonnasta on <TOKEN_DOUBLER> %:n mahdollisuus saada poletintuplaaja. Varusteita voivat saada vain rämäpäät, jotka ovat vähintään tehotasolla 7. Tähtivoimia voivat saada vain rämäpäät, jotka ovat tehotasolla 9. Tehostinpoletteja ja osia voivat saada vain rämäpäät, jotka ovat saavuttaneet tehotason 10. <WCPP_BRAWLERS> rämäpään avaamisen jälkeen tehopisteitä annetaan <WCPP_CHANCE> %:n todennäköisyydellä mille tahansa rämäpäälle. Kun olet avannut kaikki tietynlaiset palkinnot, kuten harvinaiset rämäpäät, mahdollisuus muihin palkintoihin kasvaa. Jotta rähinälippaiden avaaminen olisi reilumpaa, käytössä on tuurisysteemi, joka vaikuttaa legendaaristen rämäpäiden todennäköisyyteen. Jokainen arvonta, josta et saa uutta rämäpäätä, kasvattaa tuurikerrointasi. Vastaavasti joka kerta, kun saat uuden rämäpään, tuurikertoimesi pienenee riippuen saamasi rämäpään harvinaisuudesta. Kun tuurikerroin on tarpeeksi korkea, sinulla on suurempi mahdollisuus saada legendaarinen rämäpää. Mahdollisuus voi olla korkeintaan <MAX_LEGENDARY> %. Vastaavasti alhaisella tuurikertoimella legendaarisen rämäpään saaminen on epätodennäköisempää. Ensimmäisten rähinälippaiden sisältö on määrätty ennalta, jotta kaikki saisivat reilun aloituksen."
+TID_BRAWL_BOX_INFO_1,"Yhden ison lippaan palkinnot vastaavat kolmen rähinälippaan palkintoja. Tehopisteet on kuitenkin jaettu harvempien rämäpäiden kesken.\n\nArvontoja on kolme sattumanvaraista, ja palkintotodennäköisyydet ovat seuraavat:"
+TID_BRAWL_BOX_INFO_2,"Jokainen rähinälipas sisältää joko uuden rämäpään, tehopisteitä ja kolikoita, varusteen tai tähtivoiman. Lisäksi voit saada bonuksena poletintuplaajia.\n\nPalkintotodennäköisyydet:"
+TID_BRAWL_BOX_INFO_3,"Yhden megalippaan palkinnot vastaavat kymmenen rähinälippaan palkintoja. Tehopisteet on kuitenkin jaettu harvempien rämäpäiden kesken.\n\nArvontoja on kymmenen sattumanvaraista, ja palkintotodennäköisyydet ovat seuraavat:"
+TID_BRAWL_BOX_INFO_CATEGORIES,\n\n<CATEGORY1>: <NUM1> %\nharvinainen rämäpää: <NUM2> % <GAR_HERO_1>\nsuperharvinainen rämäpää: <NUM3> %<GAR_HERO_2>\neeppinen rämäpää: <NUM4> %<GAR_HERO_3>\nmyyttinen rämäpää: <NUM5> %<GAR_HERO_4>\nlegendaarinen rämäpää: <NUM6> %<GAR_HERO_5>\ntähtivoima: <NUM7> %<GAR_STAR_POWER>\nvaruste: <NUM8> %<GAR_ACCESSORY>
+TID_BRAWL_BOX_INFO_FOOTER,"\n\nLisäksi jokaisesta arvonnasta on <TOKEN_DOUBLER> %:n mahdollisuus saada poletintuplaaja. Varusteita voivat saada vain rämäpäät, jotka ovat vähintään tehotasolla 7. Tähtivoimia voivat saada vain rämäpäät, jotka ovat tehotasolla 9. <WCPP_BRAWLERS> rämäpään avaamisen jälkeen tehopisteitä annetaan <WCPP_CHANCE> %:n todennäköisyydellä mille tahansa rämäpäälle. Kun olet avannut kaikki tietynlaiset palkinnot, kuten harvinaiset rämäpäät, mahdollisuus muihin palkintoihin kasvaa. Jotta rähinälippaiden avaaminen olisi reilumpaa, käytössä on tuurisysteemi, joka vaikuttaa legendaaristen rämäpäiden todennäköisyyteen. Jokainen arvonta, josta et saa uutta rämäpäätä, kasvattaa tuurikerrointasi. Vastaavasti joka kerta, kun saat uuden rämäpään, tuurikertoimesi pienenee riippuen saamasi rämäpään harvinaisuudesta. Kun tuurikerroin on tarpeeksi korkea, sinulla on suurempi mahdollisuus saada legendaarinen rämäpää. Mahdollisuus voi olla korkeintaan <MAX_LEGENDARY> %. Vastaavasti alhaisella tuurikertoimella legendaarisen rämäpään saaminen on epätodennäköisempää. Ensimmäisten rähinälippaiden sisältö on määrätty ennalta, jotta kaikki saisivat reilun aloituksen."
 TID_BRAWL_BOX_INFO_POWER_POINTS_AND_COINS,tehopisteet ja kolikot
 TID_BRAWL_BOX_INFO_POWER_POINTS_COINS_AND_SCRAP,"tehopisteitä, kolikoita ja osia"
 TID_BRAWL_BOX_INFO_COINS_AND_SCRAP,kolikoita ja osia
@@ -2762,7 +2778,6 @@ TID_SPEC_SHIELD_ULTI_DESC,"Kun Brockin supervoima on täyteen latautunut ja käy
 TID_SPEC_ABI_PET,KANANLENTO
 TID_SPEC_ABI_PET_DESC,Dynamiken lintu liittyy taistoon!
 TID_SPEC_ABI_DAMAGE_ULTI,HENKIEN MÄTKIMÄ
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Kun Genen supervoima on latautunut, hänen hyökkäyksensä aiheuttaa <c00cc00><VALUE1></c> pistettä enemmän tuhoa."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,"8-BIT on raskaan oloisesti jolkottava vanhan ajan pelikone, joka ampuu tuhoisia lasersäteitä ja lisää oman joukkueensa tuhovoimaa superillaan!"
 TID_ARCADE_SHORT_DESC,TUHOAJA
@@ -4486,7 +4501,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Kiitos, kun käytät kartantekijää. Muistat
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Kiitos, kun käytät kartantekijää. Muistathan kartantekijää käyttäessäsi noudattaa käyttäjäsopimusta ja muita sovellettavissa olevia sääntöjä. Älä luo tai levitä sopimatonta sisältöä, kuten eroottista tai siveetöntä materiaalia tai materiaalia, joka vaarantaa kansallisen yhtenäisyyden, suvereniteetin tai alueellisen koskemattomuuden, tai joka rikkoo lakeja ja muita määräyksiä."
 TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,VAHVISTUS
-TID_RUFFS_DESC,"Eversti Ruffsin käskyt saattavat kuulostaa haukkumiselta, mutta oikeasti hän on tosi hyvä poika!\n\nRuffsin vakava olemus kätkee taakseen koiramaiset piirteet, jotka paljastuvat, jos joku alkaa heittää keppiä."
+TID_RUFFS_DESC,"Eversti Ruffs saattaa joskus haukkua alaisiaan, mutta hän on silti oikein hyvä poika!\n\nYleensä hän on rauhallinen, mutta koiran vaistot ottavat vallan aina kun joku leikkii lähistöllä noutamista."
 TID_RUFFS_WEAPON,TUPLALASER
 TID_RUFFS_WEAPON_DESC,Ruffsin kaksoislaser kimpoaa muureista useita kertoja ja voi osua myös esteiden taakse piiloutuneisiin vastustajiin.
 TID_RUFFS_ULTI,AVUSTUSLÄHETYS
@@ -5150,6 +5165,8 @@ TID_KO_JUNE21_1,Kaikki sileeks
 TID_KO_JUNE21_2,Syvä pää
 TID_QUALIFIED_INFO_PARAM,Onnittelut voitostasi haasteessa <CHALLENGE>! Haastevoittopalkintosi on <REWARD>.
 TID_CHALLENGE_WIN_REWARD_POPUP_TEXT,Palkinto <WIN>. voitostasi haasteessa <CHALLENGE>: <REWARD>!
+TID_QUALIFIED_INFO_FALLBACK_PARAM,"Onneksi olkoon, voitit tämän: <CHALLENGE>! Haastevoittopalkintosi on: <REWARD>\nSe korvaa alkuperäisen palkinnon, joka sinulla jo oli."
+TID_CHALLENGE_WIN_FALLBACK_REWARD_POPUP_TEXT,"Palkintosi <WIN>. voitostasi haasteessa <CHALLENGE>: <REWARD>\nSe korvaa alkuperäisen palkinnon, joka sinulla jo oli."
 TID_CHALLENGE_TEASER_INFO_PARAM,"<CHALLENGE> alkaa pian!\n\nVoita <WIN> ottelua ja lunasta palkintona <REWARD>! Kokoa joukkue kavereistasi tai käytä Etsi joukkuetta -toimintoa, niin sinulla on paremmat mahdollisuudet voittaa.\n\nHaaste on pelattavissa vain <DURATION> tunnin ajan. Onnea matkaan, pidä hauskaa!"
 TID_CC_POPUP_QUALIFY_INFO_PARAM,"Suorita haaste, niin saat palkinnon: <REWARD>!"
 TID_GEN_JUNE21_1,Vesirieha
@@ -5262,17 +5279,6 @@ TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Avaa haasteet keräämällä yhteensä <NU
 TID_SKIN_SELECTOR_RANDOM_MODE_DISABLED,Vain valittu asu on käytössä.
 TID_SKIN_SELECTOR_RANDOM_MODE_ENABLED,Asu valitaan sattumanvaraisesti kaikkien merkittyjen joukosta.
 TID_GEAR_TOKEN_DROP_TITLE,TEHOSTINPOLETTEJA
-TID_GEAR_TOKEN_DAMAGE,Tuhovoimapoletit
-TID_GEAR_TOKEN_HEAL,Parannuspoletit
-TID_GEAR_TOKEN_RESISTANCE,Vastustuspoletit
-TID_GEAR_TOKEN_SHIELD,Suojapoletit
-TID_GEAR_TOKEN_SPEED,Nopeuspoletit
-TID_GEAR_TOKEN_TYPE_DAMAGE,TUHOVOIMA
-TID_GEAR_TOKEN_TYPE_HEAL,ELINVOIMA
-TID_GEAR_TOKEN_TYPE_VISION,NÄKYVYYS
-TID_GEAR_TOKEN_TYPE_SHIELD,SUOJA
-TID_GEAR_TOKEN_TYPE_SPEED,NOPEUS
-TID_GEAR_TOKEN,Tehostinpoletti
 TID_GEAR_SCRAP_DROP_TITLE,OSIA
 TID_GEAR_SCRAP,Palanen
 TID_GEAR_UNLOCK_SLOT,AVAA <NUM>. TEHOSTIN-\nPAIKKA
@@ -5285,21 +5291,37 @@ TID_GEAR_STANDING_HEAL_TITLE,ELINVOIMA
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,TUHOVOIMA
 TID_GEAR_VISION_TITLE,NÄKYVYYS
 TID_GEAR_SHIELD_TITLE,SUOJA
+TID_GEAR_RELOAD_SPEED_TITLE,LATAUSNOPEUS
+TID_GEAR_SUPER_CHARGE_TITLE,SUPERVOIMAN LATAUS
 TID_GEAR_FOREST_SPEED_INFO,KASVATTAA NOPEUTTA <NUM> % pensaissa liikkuessa.
 TID_GEAR_STANDING_HEAL_INFO,Palauttaa ELINVOIMAA <NUM> % nopeammin.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,"Antaa <NUM> % ENEMMÄN TUHOVOIMAA, kun elinvoimaa on alle 50 %."
 TID_GEAR_VISION_INFO,Saa vastustajat NÄKYVILLE <NUM> sekunniksi heidän vahingoittamisensa jälkeen.
 TID_GEAR_SHIELD_INFO,"Antaa <NUM> lisäpistettä ELINVOIMAA kuluvana SUOJANA. Suoja palautuu 10:ssä sekunnissa, kun elinvoima on täysi."
+TID_GEAR_RELOAD_SPEED_INFO,<NUM> % nopeampi LATAUS
+TID_GEAR_SUPER_CHARGE_INFO,Supervoima LATAUTUU <NUM> % NOPEAMMIN
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,Pensaissa liikkumisen NOPEUS KASVAA.
 TID_GEAR_STANDING_HEAL_UPGRADE_INFO,Palauttaa ELINVOIMAA nopeammin.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,"Tuhovoima kasvaa, kun elinvoimaa on alle 50 %."
 TID_GEAR_VISION_UPGRADE_INFO,Saa vastustajat NÄKYVILLE heidän vahingoittamisensa jälkeen.
 TID_GEAR_SHIELD_UPGRADE_INFO,Antaa ELINVOIMAA lisäävän SUOJAN.
+TID_GEAR_RELOAD_SPEED_UPGRADE_INFO,Nopeampi lataus
+TID_GEAR_SUPER_CHARGE_UPGRADE_INFO,Nopeampi supervoiman lataus
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,NOPEUDEN TEHOSTUS
 TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,ELINVOIMALISÄ
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,TUHOVOIMAN LISÄYS
 TID_GEAR_VISION_UPGRADE_TARGET,NÄKYVYYSSEKUNNIT
 TID_GEAR_SHIELD_UPGRADE_TARGET,SUOJAN ELINVOIMA
+TID_GEAR_RELOAD_SPEED_UPGRADE_TARGET,LATAUSNOPEUS
+TID_GEAR_SUPER_CHARGE_UPGRADE_TARGET,SUPERVOIMAN LATAUSNOPEUS
+TID_GEAR_SUPER_HEALTH_TITLE,PÄÄN ELINVOIMA
+TID_GEAR_SUPER_HEALTH_INFO,Pää saa <NUM> LISÄELINVOIMAA
+TID_GEAR_SUPER_HEALTH_UPGRADE_INFO,Pää saa lisäelinvoimaa
+TID_GEAR_SUPER_HEALTH_UPGRADE_TARGET,PÄÄN ELINVOIMA
+TID_GEAR_SUPER_RANGE_TITLE,KÄDEN KANTAMA
+TID_GEAR_SUPER_RANGE_INFO,Käsi ulottuu yhden ruudun pidemmälle
+TID_GEAR_SUPER_RANGE_UPGRADE_INFO,Käsi ulottuu pidemmälle
+TID_GEAR_SUPER_RANGE_UPGRADE_TARGET,KÄDEN KANTAMA
 TID_GEAR_UPGRADED,TEHOSTIN PÄIVITETTY!
 TID_GEAR_TITLE,TEHOSTIN
 TID_GEAR_NAME_LEVEL_TITLE,<NAME> (TASO <NUM>)
@@ -5313,6 +5335,8 @@ TID_GEAR_VALUE_PERCENT,<NUM> %
 TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00> +<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM> % <c00ff00>+<NUM> %</c>
 TID_GEAR_INFO,Tehostin: <cde9700><NAME></c>\n<DESC>
+TID_GEAR_IN_SLOT,TEHOSTIN <SLOT>
+TID_GEAR_ALREADY_SELECTED_IN_SLOT,Tämä tehostin on jo valittuna toisessa paikassa
 TID_ITEMS_TITLE,VALIKOIMA
 TID_TEAMUP_YOUR_SETTINGS_TITLE,HENKILÖKOHTAISET ASETUKSET
 TID_TRUE_SILVER_BROCK_SKIN,JALOHOPEA-BROCK
@@ -5618,7 +5642,7 @@ TID_TEAM_MEMBER_STATUS_16,<cE8004C>TÄHTIOTTELU</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,TÄHTIOTTELU
 TID_CLUB_INFO_COLUMN_TROPHIES,POKAALIT
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,TÄHTILIIGAN SIJOITUS
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,VIIMEKSI PAIKALLA
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,TILA
 TID_CLUB_INFO_COLUMN_NAME,NIMI
 TID_CLUB_INFO_COLUMN_TICKETS_USED,KÄYTETYT LIPUT
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,JENGIN POKAALIT
@@ -5633,9 +5657,6 @@ TID_CLUB_EVENT_INFO_LOSE_MATCH,HÄVIÖ
 TID_CLUB_EVENT_INFO_TEAM_UP_RANDOMS,Luo joukkue satunnaisten pelaajien kanssa
 TID_CLUB_EVENT_INFO_TEAM_UP_CLUB_MEMBERS,Luo joukkue jengin jäsenten kanssa
 TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,JENGIPOKAALIPALKINNOT
-TID_REWARD_DESC_GEAR_TOKENS,TEHOSTINPOLETIT
-TID_REWARD_DESC_GEAR_TOKEN_SINGLE,TEHOSTINPOLETTI
-TID_REWARD_DESC_GEAR_SCRAP,TEHOSTIMEN OSIA
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hei! Et ehtinyt mukaan tällä viikolla.\n\nVoit silti katsella vapaasti ympärillesi ja seurata jengisi otteluita ennen seuraavan viikon alkua!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Tule tutustumaan jengikaupan tarjontaan!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Lopulliset tulokset:
@@ -5736,9 +5757,15 @@ TID_SPEC_ABI_CROSS_BOMBER_2,X-TEKIJÄ
 TID_SPEC_ABI_CROSS_BOMBER_2_DESC,Gromin päähyökkäyksen halkeaminen aiheuttaa jopa <c00cc00><VALUE1> %</c> enemmän tuhoa maksimietäisyydellä.
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER,VARTIOTORNI
 TID_ACCESSORY_CROSS_BOMBER_WATCHTOWER_DESC,"Grom laukaisee pommistaan vartiotornin, jonka avulla kaikki liittolaiset näkevät pensaisiin suurella alueella. Vartiotornin elinvoima katoaa hitaasti ajan kuluessa."
-TID_HOMEPAGE_GUIDE_FIRST_GEAR,Valmista ensimmäinen tehostimesi.
-TID_FIRST_GEAR_TUTORIAL_COLLECT_MORE,"Kerää lisää tehostinpoletteja ja osia rähinälippaista tai jengikaupasta, niin voit valmistaa ja päivittää tehostimia."
-TID_FIRST_GEAR_TUTORIAL_TITLE,TEHOSTINPAIKKA
+TID_HOMEPAGE_GUIDE_FIRST_GEAR,Tehostinpaikka avattu!
+TID_HOMEPAGE_GUIDE_FIRST_GEAR_2,Valitse ensimmäinen tehostimesi ILMAISEKSI
+TID_ITEMS_HUB_GUIDE_GADGET,Täältä voit valita ja ostaa ainutlaatuisia tehostimia rämäpäälle <BRAWLER>
+TID_ITEMS_HUB_GUIDE_GADGET_TAB,Täältä saa nyt varusteita
+TID_ITEMS_HUB_GUIDE_STARPOWER,Täältä voit valita ja ostaa ainutlaatuisia tähtivoimia rämäpäälle <BRAWLER>
+TID_ITEMS_HUB_GUIDE_STARPOWER_TAB,Täältä saa nyt tähtivoimia
+TID_HEROSCREEN_GUIDE_FIRST_GADGET,Täältä saa nyt varusteita
+TID_HEROSCREEN_GUIDE_FIRST_STARPOWER,Täältä saa nyt tähtivoimia
+TID_FIRST_GEAR_TUTORIAL_TITLE,TEHOSTIMET
 TID_FIRST_GEAR_TUTORIAL_TITLE_DESC,avattu!
 TID_FIRST_GEAR_TUTORIAL_HEADER,Tehostimet
 TID_FIRST_GEAR_TUTORIAL_HEADER_DESC,Valmista lisäkykyjä valitsemillesi rämäpäille.
@@ -5947,21 +5974,21 @@ TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,ENINTÄÄN
 TID_FLEA,EVE
 TID_FLEA_SHORT_DESC,TUHOAJA
 TID_FLEA_DESC,Even mielestä jokainen on arvokas... erityisesti resurssina hänen lapsilleen.
-TID_FLEA_WEAPON,MUNALINKO
-TID_FLEA_WEAPON_DESC,"Eve ampuu peräkkäin kolme munaa, joista jokainen on edellistä suurempi ja aiheuttaa edellistä enemmän tuhoa."
+TID_FLEA_WEAPON,KOTILOLINKO
+TID_FLEA_WEAPON_DESC,"Eve ampuu peräkkäin kolme kotiloa, joista jokainen on edellistä suurempi ja aiheuttaa edellistä enemmän tuhoa."
 TID_FLEA_ULTI,VAUVAKUUME
-TID_FLEA_ULTI_DESC,"Eve vapauttaa suuren munan, josta kuoriutuu poikasia. Poikaset kiinnittyvät vastustajiin ja aiheuttavat pitkäkestoista tuhoa."
+TID_FLEA_ULTI_DESC,"Eve vapauttaa suuren kotilon, josta kuoriutuu poikasia. Poikaset kiinnittyvät vastustajiin ja aiheuttavat pitkäkestoista tuhoa."
 TID_SPEC_ABI_FLEA_1,LUONNOTON JÄRJESTYS
-TID_SPEC_ABI_FLEA_1_DESC,Munalingosta ammuttujen munien järjestys muuttuu päinvastaiseksi.
+TID_SPEC_ABI_FLEA_1_DESC,Kotilolingosta ammuttujen kotilojen järjestys muuttuu päinvastaiseksi.
 TID_SPEC_ABI_FLEA_2,ILOINEN YLLÄTYS
-TID_SPEC_ABI_FLEA_2_DESC,Aina <c00cc00><VALUE1></c> sekunnin välein vastustajaan osuvasta munalingon suurimmasta munasta kuoriutuu poikanen.
+TID_SPEC_ABI_FLEA_2_DESC,Aina <c00cc00><VALUE1></c> sekunnin välein vastustajaan osuvasta kotilolingon suurimmasta kotilosta kuoriutuu poikanen.
 TID_ACCESSORY_FLEA_JUMP,KIITTI MOI!
 TID_ACCESSORY_FLEA_JUMP_DESC,Eve hyppää pois ja jättää paikalleen poikasen.
 TID_ACCESSORY_FLEA_SYMBIOSIS,ÄIDINRAKKAUS
-TID_ACCESSORY_FLEA_SYMBIOSIS_DESC,Aktiivisesta isosta munasta kuoriutuneet poikaset parantavat nyt oman joukkueen rämäpäitä tuhon aiheuttamisen sijaan.
-TID_ACCESSORY_BLOCKED_MISSING_BIG_EGG,Ei voida aktivoida ilman isoa munaa!
-TID_ACCESSORY_BLOCKED_BIG_EGG_TOO_FAR,Iso muna on liian kaukana!
-TID_BIG_EGG_HEALTH,Ison munan elinvoima
+TID_ACCESSORY_FLEA_SYMBIOSIS_DESC,Aktiivisesta isosta kotilosta kuoriutuneet poikaset parantavat nyt oman joukkueen rämäpäitä tuhon aiheuttamisen sijaan.
+TID_ACCESSORY_BLOCKED_MISSING_BIG_EGG,Ei voida aktivoida ilman isoa kotiloa!
+TID_ACCESSORY_BLOCKED_BIG_EGG_TOO_FAR,Iso kotilo on liian kaukana!
+TID_BIG_EGG_HEALTH,Ison kotilon elinvoima
 TID_HATCHLING_HEALTH,Poikasen elinvoima
 TID_HATCHLING_DAMAGE,Poikasen tuhovoima
 TID_HATCHLING_COUNT,Poikasten määrä
@@ -6037,7 +6064,7 @@ TID_ACCESSORY_KNIGHT_RAGE,MÄTÄ BANAANI
 TID_ACCESSORY_KNIGHT_RAGE_DESC,Ash menettää <ccc0000><VALUE1> %</c> elinvoimaa ja saa heti <c00cc00><VALUE2> %</c> raivoa.
 TID_ACCESSORY_BLOCKED_REQUIRES_HEALTH,Tarvitaan enemmän elinvoimaa!
 TID_ACCESSORY_BLOCKED_RAGE_ALREADY_FULL,Raivo on jo täynnä!
-TID_STAT_BIG_EGG_DAMAGE,Isoimman munan tuhovoima
+TID_STAT_BIG_EGG_DAMAGE,Isoimman kotilon tuhovoima
 TID_TUTORIAL_SD_FIRST,Harjoittelusaari
 TID_OVERTIME_PAYLOAD,Jatkoaika!\nKärryt liikkuvat nopeammin.
 TID_GATCHA_SCREEN_WCPP_DROP_TITLE,TEHOPISTEITÄ MILLE TAHANSA RÄMÄPÄÄLLE
@@ -6609,35 +6636,35 @@ TID_WEAPON_THROWER,SAM
 TID_WEAPON_THROWER_SHORT_DESC,TUHOAJA
 TID_WEAPON_THROWER_DESC,"Entisenä tehdastyöntekijänä Sam Bronson janoaa kostoa kaikille roboteille.\n\nKultakäden koplassa hän edustaa raakaa voimaa ja suostuu milloin vain ryöstökeikalle, jos siellä pääsee romuttamaan robotteja!"
 TID_WEAPON_THROWER_WEAPON,KOVAT OTTEET
-TID_WEAPON_THROWER_WEAPON_DESC,"Sam jakaa ronskit lyöntinsä tuplana. Kun hanskat ovat kädessä, hän aiheuttaa paljon enemmän tuhoa."
-TID_WEAPON_THROWER_ULTI,RÄJÄHTÄVÄT RYSTYSET
-TID_WEAPON_THROWER_ULTI_DESC,"Sam heittää räjähtävät rystysensä, jotka aiheuttavat tuhoa kaikille vastustajille ennen maahan osumista. Hänen seuraava superinsa palauttaa ne hänen käteensä ja aiheuttaa tuhoa."
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam jakaa ronskit lyöntinsä tuplana. Kun raskaat hanskat ovat kädessä, hän aiheuttaa paljon enemmän tuhoa."
+TID_WEAPON_THROWER_ULTI,RASKAAT RYSTYSET
+TID_WEAPON_THROWER_ULTI_DESC,"Sam heittää painavat hanskansa, jotka aiheuttavat tuhoa kaikille vastustajille ennen maahan osumista. Hänen seuraava superinsa palauttaa ne hänen käteensä ja aiheuttaa tuhoa."
 TID_SPEC_ABI_WEAPON_THROWER_1,PIKAINEN PARANEMINEN
-TID_SPEC_ABI_WEAPON_THROWER_1_DESC,Räjähtävien rystysten palauttamisen jälkeen Sam saa heti takaisin <c00cc00><VALUE1> %</c> elinvoimaa.
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,Raskaiden rystysten palauttamisen jälkeen Sam saa heti takaisin <c00cc00><VALUE1> %</c> elinvoimaa.
 TID_SPEC_ABI_WEAPON_THROWER_2,KAUKOLATAUS
-TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Kun räjähtävät rystyset ovat maassa vastustajien lähellä, Samin supervoima latautuu."
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Kun raskaat rystyset ovat maassa vastustajien lähellä, Samin supervoima latautuu."
 TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MAGNEETTIKENTTÄ
-TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Kun räjähtävät rystyset ovat maassa, Sam voi aktivoida ne, jolloin ne vetävät vastustajia puoleensa."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Kun raskaat rystyset ovat maassa, Sam voi aktivoida ne, jolloin ne vetävät vastustajia puoleensa."
 TID_ACCESSORY_WEAPON_THROWER_GADGET_2,HYLJEKSIJÄ
-TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Kun Samin seuraavat räjähtävät rystyset osuvat maahan, ne työntävät vastustajia taaksepäin sähköpurkauksella."
-TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Räjähtävät rystyset eivät ole maassa!
-TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Räjähtävät rystyset ovat liian kaukana!
-TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Tarvitaan räjähtävät rystyset!
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Kun Samin raskaat rystyset osuvat maahan seuraavan kerran, ne työntävät vastustajia taaksepäin sähköpurkauksella."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Raskaat rystyset eivät ole maassa!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Raskaat rystyset ovat liian kaukana!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Tarvitaan raskaat rystyset!
 TID_SOUL_COLLECTOR,GUS
 TID_SOUL_COLLECTOR_SHORT_DESC,VAHVISTUS
-TID_SOUL_COLLECTOR_DESC,"Kauan sitten hylätyssä junassa majaileva Gus rakastaa ilmapalloja. Hän on mestarillinen ilmapalloeläinten tekijä - se on hyvää ajanvietettä, eikä olo ole niin yksinäinen."
+TID_SOUL_COLLECTOR_DESC,"Hylätyssä junalaitteessa asuva Gus rakastaa ilmapalloja. Tarun mukaan hän seurasi eräänä päivänä koirapalloa liian kauas, eksyi ja on ollut täällä siitä asti."
 TID_SOUL_COLLECTOR_WEAPON,HULLUT PALLOT
-TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus ampuu vastustajia ilmapalloilla. Usean osuman jälkeen ilmaantuu henki, joita kokoamalla sinulle ja joukkueellesi palautuu elinvoimaa."
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus ampuu vastustajia ilmapalloilla. Usean osuman jälkeen ilmaantuu henki, joita keräämällä Gusille ja hänen joukkuekavereilleen palautuu elinvoimaa."
 TID_SOUL_COLLECTOR_ULTI,AAVEPALLO
 TID_SOUL_COLLECTOR_ULTI_DESC,"Gusin paras kaveri on hänen itse tekemänsä ilmapallokummitus, jonka avulla hän voi luoda suojan itsensä tai yhden joukkuekaverinsa ympärille."
 TID_SPEC_ABI_SOUL_COLLECTOR_1,ELINVOIMALÄHDE
-TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hulluista palloista saatu parantuminen kasvaa <c00cc00><VALUE1> %</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hengistä saatava parannus kasvaa <c00cc00><VALUE1> %</c>.
 TID_SPEC_ABI_SOUL_COLLECTOR_2,VOIMAELÄIN
 TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Aavepallo kasvattaa joukkuekaverin aiheuttamaa tuhoa <c00cc00><VALUE1> %</c> <c00cc00><VALUE2></c> sekunnin ajan.
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,HENKIPAMAUS
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Räjäytä kaikki keräämättömät henget, niin lähellä olevat vastustajat kärsivät <c00cc00><VALUE1></c> pistettä tuhoa."
 TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,SIELUNVAIHTO
-TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus menettää <ccc0000><VALUE1> %</c> elinvoimaa ja kerryttää henkeä välittömästi <c00cc00><VALUE2> %</c>.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,"Gus menettää <ccc0000><VALUE1> %</c> elinvoimaa, mutta kerryttää henkeä välittömästi <c00cc00><VALUE2> %</c>."
 TID_ACCESSORY_BLOCKED_MISSING_SOULS,Tarvitaan enemmän henkiä!
 TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Henki on jo täynnä!
 TID_SKIN_INFO_OUTLAW,Katalan koplan asu
@@ -6651,7 +6678,7 @@ TID_EMOJI_LEON_TEAM,QLASH
 TID_EMOJI_JESSIE_TEAM,ZETA
 TID_EMOJI_EMZ_TEAM,TRIBE
 TID_EMOJI_SHELLY_TEAM,TOTEM
-TID_SKIN_INFO_MECHA,Mechan asu
+TID_SKIN_INFO_MECHA,Mecha-asu
 TID_SCID_REQUIRED_DESC,Iästäsi johtuen sinun on yhdistettävä pelisi Supercell ID:hen
 TID_SCID_REQUIRED_CONNECT,YHDISTÄ
 TID_LOGIN_CALENDAR_POPULAR,SUOSITTU
@@ -6742,7 +6769,120 @@ TID_LAST_STAND_SHUTDOWN,<ccc0000>8-BIT sammuu!</c>
 TID_EMOTE_BUNDLE_OUTLAW_PACK,Katalan koplan merkkipaketti
 TID_SHOP_OUTLAW_SKINS,Katalan koplan asu
 TID_SHOP_OUTLAW_TITLE,KATALA KOPLA
+TID_GEAR_RARITY_RARE,Harvinainen
+TID_GEAR_RARITY_SUPER_RARE,Superharvinainen
+TID_GEAR_RARITY_EPIC,Eeppinen
+TID_GEAR_RARITY_TITLE_RARE_GEAR,<GEAR> - harvinainen tehostin
+TID_GEAR_RARITY_TITLE_SUPER_RARE_GEAR,<GEAR> - superharvinainen tehostin
+TID_GEAR_RARITY_TITLE_EPIC_GEAR,<GEAR> - eeppinen tehostin
 TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Henget ovat liian kaukana!
+TID_TRY_BRAWLER_TITLE,Kokeile rämäpäätä
+TID_TRY_BRAWLER_BUTTON_PRACTICE_MATCH,HARJOITUSOTTELU
+TID_TRY_BRAWLER_BUTTON_TRAINING_GROUNDS,HARJOITTELUALUE
+TID_FIRST_GADGET_TUTORIAL_HEADER,VARUSTEET
+TID_FIRST_GADGET_TUTORIAL_HEADER_DESC,Lisäkyky rämäpäällesi.
+TID_FIRST_GADGET_TUTORIAL_1_DESC,Kaikkien rämäpäiden varustepaikka avautuu tehotasolla 7.
+TID_FIRST_GADGET_TUTORIAL_2_DESC,Ainutlaatuisia varusteita kaikille rämäpäille
+TID_FIRST_GADGET_TUTORIAL_3_DESC,Voit käyttää aktivoitua varustetta enintään kolme kertaa ottelun aikana.
+TID_FIRST_GADGET_TUTORIAL_3_x3,x3
+TID_FIRST_STARPOWER_TUTORIAL_HEADER,TÄHTIVOIMAT
+TID_FIRST_STARPOWER_TUTORIAL_HEADER_DESC,Ainutlaatuisia passiivisia kykyjä rämäpäällesi.
+TID_FIRST_STARPOWER_TUTORIAL_1_DESC,Kaikkien rämäpäiden tähtivoimapaikka avautuu tehotasolla 9.
+TID_FIRST_STARPOWER_TUTORIAL_2_DESC,Ainutlaatuisia tähtivoimia joka rämäpäälle.
+TID_FIRST_STARPOWER_TUTORIAL_3_DESC,Aktivoitu tähtivoima on koko ajan päällä.
+TID_FIRST_GEAR_TUTORIAL_1_DESC,Kaikkien rämäpäiden ensimmäinen tehostinpaikka avautuu tehotasolla 10.
+TID_FIRST_GEAR_TUTORIAL_2_DESC,Joka rämäpäälle on saatavilla useita eri tehostimia.
+TID_FIRST_GEAR_TUTORIAL_3_DESC,Aktivoitu tehostin on koko ajan päällä.
+TID_TRY_BRAWLER_SELECTING_PRACTICE_MATCH,Valitaan harjoitusottelu.
+TID_SHIELD_TANK,BUSTER
+TID_SHIELD_TANK_SHORT_DESC,TANKKI
+TID_SHIELD_TANK_DESC,"Buster on elokuvateatterin projektorin käyttäjä, ja hän osaa ulkoa kaikki suosikkitoimintaleffansa. Hän haaveilee, että jonain päivänä hänestä tulee oman hittielokuvansa toimintasankari."
+TID_SHIELD_TANK_WEAPON,LINSSIHEIJASTUS
+TID_SHIELD_TANK_WEAPON_DESC,"Buster ampuu projektoristaan valokeilan, joka tekee tuhoa kaikille kantamalla oleville vihollisille."
+TID_SHIELD_TANK_ULTI,MONTAASI
+TID_SHIELD_TANK_ULTI_DESC,"Buster heijastaa eteensä suojan, joka pysäyttää kaikki vihollisammukset ja heijastaa niiden energian takaisin vihollisia kohti."
+TID_SPEC_ABI_SHIELD_TANK_1,OHJAAJAN VERSIO
+TID_SPEC_ABI_SHIELD_TANK_1_DESC,Busterin linssiheijastus tekee <c00cc00><VALUE1> %</c> enemmän tuhoa jokaista Busterin supervoiman latausalueella olevaa liittolaista kohti.
+TID_SPEC_ABI_SHIELD_TANK_2,KEVLAR-LIIVI
+TID_SPEC_ABI_SHIELD_TANK_2_DESC,"Montaasin ollessa aktivoituna Buster kärsii <c00cc00><VALUE1> %</c> vähemmän tuhoa, eikä häntä voi työntää taaksepäin, hidastaa tai lamaannuttaa."
+TID_ACCESSORY_SHIELD_TANK_GADGET_1,TYÖKALUVYÖ
+TID_ACCESSORY_SHIELD_TANK_GADGET_1_DESC,Buster parantaa kaikkia lähellä olevia ystävällisiä hahmoja antaen <c00cc00><VALUE1></c> elinvoimaa jokaista supervoimansa latausalueella olevaa liittolaista kohti.
+TID_ACCESSORY_SHIELD_TANK_GADGET_2,TRAILERI
+TID_ACCESSORY_SHIELD_TANK_GADGET_2_DESC,Busterin linssiheijastus vetää vihollisia häntä kohti ja hidastaa heidät <c00cc00><VALUE1></c> sekunnin ajaksi.
+TID_GEAR_COMPENSATION_AMOUNTS_DESC,<TOKENS> TEHOSTINPOLETTIA\n<SCRAP> OSAA
+TID_GEAR_COMPENSATION_CLAIM,LUNASTA
+TID_FIRST_GEAR_TUTORIAL_SUBTITLE,Muokkaa rämäpäätäsi uudella passiivisella kyvyllä.
+TID_FIRST_ITEM_TUTORIAL_BUTTON_LETS_GO,MENOKSI!
+TID_INBOX_CAPTION_52,Lahja tehostimista: <TYPE> -> <NAME>
+TID_GEAR_COMPENSATION_INFO,"Ole hyvä, saat <COINS> kolikkoa tehostimistasi, tehostinpoleteistasi ja osistasi!"
+TID_INBOX_CAPTION_GEAR_COMPENSATION,Tehostimet nollattiin ja hyvitettiin <COINS> kolikolla
+TID_RECRUIT_TOKEN,Värväyspoletti
+TID_CHROMATIC_TOKEN,Kromaattinen poletti
+TID_FIRST_STARPOWER_TUTORIAL_TITLE,TÄHTIVOIMAT
+TID_FIRST_GADGET_TUTORIAL_TITLE,VARUSTEET
+TID_GEAR_TO_COINS_POPUP_TITLE,TEHOSTIMET ON UUDISTETTU!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR,Uusia tehostimia saatavilla!
+TID_GEAR_TO_COINS_POPUP_NEW_GEAR_DESCRIPTION,Tutustu rämäpäidesi uusiin tehostinvaihtoehtoihin.
+TID_GEAR_TO_COINS_POPUP_INFO,"Kaikki tehostimesi on nollattu. Tehostimia ei tarvitse enää valmistaa, eikä niiden tasoa voi nostaa. Tehostimet ovat nyt joko harvinaisia, superharvinaisia tai eeppisiä.\n\nMuutoksen hyvittämiseksi kaikki keräämäsi tehostinpoletit ja osat on hyvitetty sinulle kolikoilla. OSTA NIILLÄ UUSIA TEHOSTIMIA!"
+TID_GEAR_TO_COINS_POPUP_REIMBURSEMENT,HYVITYS:
+TID_REPORT_PLAYER_REPORT,ILMIANNA
+TID_REPORT_PLAYER_REPORTED,ILMIANNETTU
+TID_REPORT_PLAYER_POPUP_TITLE,ILMIANNETAANKO <PLAYER_NAME>?
+TID_REPORT_PLAYER_POPUP_DESCRIPTION,"Olet ilmiantamassa pelaajan <PLAYER_NAME> grieffauksesta.\n\nGrieffaus tarkoittaa tapahtuman tavoitteen vastaista ja muita pelaajia tahallisesti häiritsevää pelaamista. Tällainen negatiivinen käytös vaikuttaa sekä joukkueen että ottelun tulokseen.\n\nYleisiä esimerkkejä grieffauksesta ovat:\nRUOKKIMINEN, SOPUOTTELUT ja TOIMETTOMUUS ottelun aikana."
+TID_REPORT_PLAYER_BUTTON_REPORT,ILMIANNA
+TID_REPORT_PLAYER_BUTTON_CANCEL,PERUUTA
+TID_QUEST_FALLBACK_REWARD_DESC,"Sinulla on jo tehtävän palkinto, joten saat tämän: <REWARD>!"
+TID_QUEST_FALLBACK_REWARD_TITLE,TEHTÄVÄN PALKINTO
+TID_QUEST_FALLBACK_REWARD_BUTTON_CLAIM,LUNASTA
+TID_RECRUIT_ROAD_TAB_RECRUIT_ROAD,VÄRVÄYSTIE
+TID_RECRUIT_ROAD_TAB_CHROMATIC_SHOP,KROMAATTINEN KAUPPA
+TID_CHROMATIC_BRAWLER_UNLOCK_REQUIREMENT,Avaa <NUM> uutta kromaattista rämäpäätä
+TID_BUTTON_NAVI_RECRUIT_ROAD,Värväystie
+TID_SKIN_INFO_GHOST_TRAIN,Haamuaseman asu
+TID_SCID_PURCHASE_VERIFICATION_ERROR,Ostosi vahvistamisessa tapahtui virhe.
+TID_TRAIT_CHARGE_SUPER_FROM_ALLIES,Tämän rämäpään supervoima latautuu hänen ollessaan lähellä joukkuekavereita.
+TID_SKIN_INFO_ACTION,Toimintasankarin asu
+TID_SKIN_INFO_WF_2022,Vuoden 2022 maailmanfinaalin asu
+TID_BRAWL_PASS_SEASON_14,HAAMUASEMA
+TID_CHAINSAW_BUSTER_SKIN,MOOTTORISAHA-BUSTER
+TID_CHAINSAW_BUSTER_SKIN_SHOP,MOOTTORISAHA-\nBUSTER
+TID_GHOST_TRAIN_GROM_SKIN,FRANKENGROM
+TID_GHOST_TRAIN_GROM_SKIN_SHOP,FRANKENGROM
+TID_GHOST_TRAIN_COLETTE_SKIN,TARKASTAJA COLETTE
+TID_GHOST_TRAIN_COLETTE_SKIN_SHOP,TARKASTAJA\nCOLETTE
+TID_BRICK_OVEN_ASH_SKIN,PIZZAUUNI-ASH
+TID_BRICK_OVEN_ASH_SKIN_SHOP,PIZZAUUNI-\nASH
+TID_VETERAN_SQUEAK_SKIN,KOMMANDO-SQUEAK
+TID_VETERAN_SQUEAK_SKIN_SHOP,KOMMANDO-\nSQUEAK
+TID_ZOMBIE_BROCK_SKIN,ZOMBROCK
+TID_ZOMBIE_BROCK_SKIN_SHOP,ZOMBROCK
+TID_MEGA_MEGABOX_DARRYL_SKIN,OMEGALIPAS-DARRYL
+TID_MEGA_MEGABOX_DARRYL_SKIN_SHOP,OMEGALIPAS-\nDARRYL
+TID_GHOST_METRO_PENNY_SKIN,ROSKISPANDA-PENNY
+TID_GHOST_METRO_PENNY_SKIN_SHOP,ROSKISPANDA-\nPENNY
+TID_BSWF22_TARA_SKIN,RAGEQUIT-TARA
+TID_BSWF22_TARA_SKIN_SHOP,RAGEQUIT-\nTARA
+TID_TOPGUN_JANET_SKIN,G-VOIMA-JANET
+TID_TOPGUN_JANET_SKIN_SHOP,G-VOIMA-\nJANET
+TID_SHOP_OFFER_TITLE_40,OMEGALIPAS
+TID_PIN_OFFER_TITLE,Merkkitarjoukset
+TID_THUMBNAILS_OFFER_TITLE,Kuvaketarjoukset
+TID_PURCHASE_BRAWL_PASS_TITLE_REDEEM,BRAWL PASS
+TID_PURCHASE_BRAWL_PASS_INFO_REDEEM,"Avaa Brawl Pass -palkintoja, lisätehtäviä ja <NUM> tehtävän vaihtoa viikossa"
+TID_PURCHASE_BRAWL_PASS_BUTTON_REDEEM,LUNASTA
+TID_BRAWL_PASS_REDEEM,LUNASTA
+TID_PURCHASE_BRAWL_PASS_REDEEM_INFO,Supercell ID:lläsi on saatavilla <NUMBER> Brawl Passia. Käytetäänkö yksi tämän kauden Brawl Passin aktivoimiseen?
+TID_PURCHASE_BRAWL_PASS_REDEEM_ALREADY_IN_PROGRESS,"Hetkinen vain, lunastetaan Brawl Passia Supercell ID:ltäsi."
+TID_PURCHASE_BRAWL_PASS_BUY_FROM_SUPERCELL_STORE,Supercell ID:lläsi ei ole tarpeeksi lunastettavia Brawl Passeja. Voit ostaa lisää Supercell-kaupasta.
+TID_SUPERCELL_STORE_GEM_PACK_1_TITLE,Kourallinen jalokiviä
+TID_SUPERCELL_STORE_GEM_PACK_2_TITLE,Jalokivipussi
+TID_SUPERCELL_STORE_GEM_PACK_3_TITLE,Jalokivikassi
+TID_SUPERCELL_STORE_GEM_PACK_4_TITLE,Jalokivisanko
+TID_SUPERCELL_STORE_GEM_PACK_5_TITLE,Jalokivikirstu
+TID_SUPERCELL_STORE_GEM_PACK_6_TITLE,Jalokivisäiliö
+TID_SUPERCELL_STORE_BRAWL_PASS,Brawl Pass
+TID_SUPERCELL_STORE_BRAWL_PASS_BUNDLE,Brawl Pass -paketti
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -16,16 +16,16 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/auth/api/credentials/Credential;
+.field public final f:Lcom/google/android/gms/auth/api/credentials/Credential;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ln3/d;
+    new-instance v0, Lm3/d;
 
-    invoke-direct {v0}, Ln3/d;-><init>()V
+    invoke-direct {v0}, Lm3/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/auth-api/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth-api/zzt;->g:Lcom/google/android/gms/auth/api/credentials/Credential;
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth-api/zzt;->f:Lcom/google/android/gms/auth/api/credentials/Credential;
 
     return-void
 .end method
@@ -52,22 +52,22 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lc2/c;->m(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/auth-api/zzt;->g:Lcom/google/android/gms/auth/api/credentials/Credential;
+    iget-object v2, p0, Lcom/google/android/gms/internal/auth-api/zzt;->f:Lcom/google/android/gms/auth/api/credentials/Credential;
 
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lc2/c;->g(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 4
-    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/c;->p(Landroid/os/Parcel;I)V
 
     return-void
 .end method

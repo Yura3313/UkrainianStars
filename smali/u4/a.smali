@@ -1,147 +1,200 @@
 .class public final Lu4/a;
 .super Ljava/lang/Object;
-.source "MaterialThemeOverlay.java"
 
 
 # static fields
-.field public static final a:[I
+.field public static final a:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final b:[I
+.field public static final b:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 14
 
-    const/4 v0, 0x2
+    new-instance v0, Ljava/util/HashMap;
 
-    new-array v0, v0, [I
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    const/high16 v1, 0x1010000
+    sput-object v0, Lu4/a;->a:Ljava/util/HashMap;
 
-    const/4 v2, 0x0
+    new-instance v1, Ljava/util/HashMap;
 
-    aput v1, v0, v2
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 1
-    sget v1, Lcom/google/android/material/R$attr;->theme:I
+    sput-object v1, Lu4/a;->b:Ljava/util/HashMap;
 
-    const/4 v3, 0x1
+    const/4 v2, -0x1
 
-    aput v1, v0, v3
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    sput-object v0, Lu4/a;->a:[I
+    move-result-object v2
 
-    new-array v0, v3, [I
+    const-string v3, "The requesting app is unavailable (e.g. unpublished, nonexistent version code)."
 
-    .line 2
-    sget v1, Lcom/google/android/material/R$attr;->materialThemeOverlay:I
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput v1, v0, v2
+    const/4 v3, -0x2
 
-    sput-object v0, Lu4/a;->b:[I
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const-string v4, "The requested pack is not available."
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v4, -0x3
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const-string v5, "The request is invalid."
+
+    invoke-virtual {v0, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v5, -0x4
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    const-string v6, "The requested download is not found."
+
+    invoke-virtual {v0, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v6, -0x5
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    const-string v7, "The Asset Delivery API is not available."
+
+    invoke-virtual {v0, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v7, -0x6
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    const-string v8, "Network error. Unable to obtain the asset pack details."
+
+    invoke-virtual {v0, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v8, -0x7
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const-string v9, "Download not permitted under current device circumstances (e.g. in background)."
+
+    invoke-virtual {v0, v8, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 v9, -0xa
+
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    const-string v10, "Asset pack download failed due to insufficient storage."
+
+    invoke-virtual {v0, v9, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 v10, -0xb
+
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v10
+
+    const-string v11, "The Play Store app is either not installed or not the official version."
+
+    invoke-virtual {v0, v10, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 v11, -0xc
+
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    const-string v12, "Tried to show the cellular data confirmation but no asset packs are waiting for Wi-Fi."
+
+    invoke-virtual {v0, v11, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 v12, -0x64
+
+    invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v12
+
+    const-string v13, "Unknown error downloading an asset pack."
+
+    invoke-virtual {v0, v12, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "APP_UNAVAILABLE"
+
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "PACK_UNAVAILABLE"
+
+    invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "INVALID_REQUEST"
+
+    invoke-virtual {v1, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "DOWNLOAD_NOT_FOUND"
+
+    invoke-virtual {v1, v5, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "API_NOT_AVAILABLE"
+
+    invoke-virtual {v1, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "NETWORK_ERROR"
+
+    invoke-virtual {v1, v7, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "ACCESS_DENIED"
+
+    invoke-virtual {v1, v8, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "INSUFFICIENT_STORAGE"
+
+    invoke-virtual {v1, v9, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "PLAY_STORE_NOT_FOUND"
+
+    invoke-virtual {v1, v10, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "NETWORK_UNRESTRICTED"
+
+    invoke-virtual {v1, v11, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "INTERNAL_ERROR"
+
+    invoke-virtual {v1, v12, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
-.end method
-
-.method public static a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
-    .locals 2
-
-    .line 1
-    sget-object v0, Lu4/a;->b:[I
-
-    .line 2
-    invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
-
-    move-result-object p2
-
-    const/4 p3, 0x0
-
-    .line 3
-    invoke-virtual {p2, p3, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result v0
-
-    .line 4
-    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 5
-    instance-of p2, p0, Lf/d;
-
-    const/4 v1, 0x1
-
-    if-eqz p2, :cond_0
-
-    move-object p2, p0
-
-    check-cast p2, Lf/d;
-
-    .line 6
-    iget p2, p2, Lf/d;->a:I
-
-    if-ne p2, v0, :cond_0
-
-    const/4 p2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_4
-
-    if-eqz p2, :cond_1
-
-    goto :goto_2
-
-    .line 7
-    :cond_1
-    new-instance p2, Lf/d;
-
-    invoke-direct {p2, p0, v0}, Lf/d;-><init>(Landroid/content/Context;I)V
-
-    .line 8
-    sget-object v0, Lu4/a;->a:[I
-
-    invoke-virtual {p0, p1, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
-
-    move-result-object p0
-
-    .line 9
-    invoke-virtual {p0, p3, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result p1
-
-    .line 10
-    invoke-virtual {p0, v1, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result p3
-
-    .line 11
-    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
-
-    if-eqz p1, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    move p1, p3
-
-    :goto_1
-    if-eqz p1, :cond_3
-
-    .line 12
-    invoke-virtual {p2}, Lf/d;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
-
-    :cond_3
-    return-object p2
-
-    :cond_4
-    :goto_2
-    return-object p0
 .end method

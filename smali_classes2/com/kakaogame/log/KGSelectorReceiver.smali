@@ -213,7 +213,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v1}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -240,7 +240,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v2}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 

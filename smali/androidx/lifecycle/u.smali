@@ -345,7 +345,7 @@
     if-eqz v4, :cond_3
 
     .line 11
-    invoke-virtual {v4}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v4}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v8
 
@@ -367,7 +367,7 @@
     check-cast v9, Ljava/lang/String;
 
     .line 12
-    invoke-virtual {v4, v9}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v4, v9}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v10
 
@@ -415,7 +415,7 @@
 
     if-ne v8, v9, :cond_7
 
-    const/4 v8, 0x0
+    move v8, v6
 
     .line 17
     :goto_2
@@ -598,11 +598,5 @@
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_6
-
-    :goto_5
     throw p1
-
-    :goto_6
-    goto :goto_5
 .end method

@@ -1,83 +1,70 @@
 .class public final Lw5/h;
-.super Ljava/lang/Object;
-.source "com.google.firebase:firebase-common@@16.0.2"
+.super Lw5/i;
 
 
-# instance fields
-.field public final a:Lw5/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lw5/a<",
-            "*>;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Lw5/h;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Lw5/h;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lw5/i<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lw5/a;)V
+.method public constructor <init>(ILandroid/os/Bundle;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lw5/a<",
-            "*>;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
-    .line 2
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v0, p0, Lw5/h;->b:Ljava/util/HashSet;
-
-    .line 3
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v0, p0, Lw5/h;->c:Ljava/util/HashSet;
-
-    .line 4
-    iput-object p1, p0, Lw5/h;->a:Lw5/a;
+    invoke-direct {p0, p1, v0, p2}, Lw5/i;-><init>(IILandroid/os/Bundle;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
+.method public final c()Z
     .locals 1
 
-    iget-object v0, p0, Lw5/h;->c:Ljava/util/HashSet;
-
-    invoke-virtual {v0}, Ljava/util/HashSet;->isEmpty()Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     return v0
+.end method
+
+.method public final d(Landroid/os/Bundle;)V
+    .locals 2
+
+    const-string v0, "ack"
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lw5/i;->a(Ljava/lang/Object;)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    new-instance p1, Lw5/j;
+
+    const/4 v0, 0x4
+
+    const-string v1, "Invalid response to one way request"
+
+    invoke-direct {p1, v0, v1}, Lw5/j;-><init>(ILjava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Lw5/i;->b(Lw5/j;)V
+
+    return-void
 .end method

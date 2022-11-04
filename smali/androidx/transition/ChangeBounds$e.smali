@@ -79,7 +79,7 @@
     move-result v2
 
     .line 6
-    invoke-static {p1, v0, p2, v1, v2}, Lv0/x;->b(Landroid/view/View;IIII)V
+    invoke-static {p1, v0, p2, v1, v2}, Lt0/u;->b(Landroid/view/View;IIII)V
 
     return-void
 .end method

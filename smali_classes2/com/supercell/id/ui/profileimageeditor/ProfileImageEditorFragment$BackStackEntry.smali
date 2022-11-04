@@ -30,14 +30,14 @@
 
 
 # instance fields
-.field public final h:Z
+.field public final g:Z
 
-.field public final i:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
@@ -68,36 +68,74 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->h:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->g:Z
 
     .line 3
     const-class v0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->i:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final D(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Luc/j;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "mainActivity"
+
+    const-string v1, "mainActivity.resources"
+
+    .line 1
+    invoke-static {p1, v0, v1}, Luc/y0;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    const-class p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$a;
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    const-class p1, Luc/i0;
+
+    :goto_0
+    return-object p1
+.end method
+
+.method public final N(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 p1, 0x40
 
     int-to-float p1, p1
 
     .line 1
-    sget p2, La5/e0;->g:F
+    sget p2, Lb2/t;->g:F
 
-    mul-float p1, p1, p2
+    mul-float/2addr p1, p2
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
+    invoke-static {p1}, Le0/d;->e(F)I
 
     move-result p1
 
@@ -106,12 +144,12 @@
     return p1
 .end method
 
-.method public final K(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final O(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 1
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -124,9 +162,9 @@
     int-to-float p2, p2
 
     .line 1
-    sget p4, La5/e0;->g:F
+    sget p4, Lb2/t;->g:F
 
-    mul-float p2, p2, p4
+    mul-float/2addr p2, p4
 
     sub-float/2addr p1, p2
 
@@ -134,13 +172,13 @@
 
     int-to-float p2, p2
 
-    mul-float p2, p2, p4
+    mul-float/2addr p2, p4
 
     const/16 v0, 0x118
 
     int-to-float v0, v0
 
-    mul-float v0, v0, p4
+    mul-float/2addr v0, p4
 
     .line 2
     invoke-static {p1, p2}, Ljava/lang/Float;->compare(FF)I
@@ -165,7 +203,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
+    invoke-static {p1}, Le0/d;->e(F)I
 
     move-result p1
 
@@ -174,7 +212,7 @@
     return p1
 .end method
 
-.method public final Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public final W(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -183,7 +221,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/b1;",
+            "Luc/e1;",
             ">;"
         }
     .end annotation
@@ -193,7 +231,7 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Luc/y0;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -219,12 +257,12 @@
             "()",
             "Ljava/lang/Class<",
             "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
+            "Luc/j;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->i:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -237,15 +275,15 @@
     return v0
 .end method
 
-.method public final l()Z
+.method public final p()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;->g:Z
 
     return v0
 .end method
 
-.method public final r0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public final u0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 2
 
     const-string v0, "mainActivity"
@@ -253,7 +291,7 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Luc/y0;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -267,45 +305,7 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
-.end method
-
-.method public final x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-
-    const-string v0, "mainActivity"
-
-    const-string v1, "mainActivity.resources"
-
-    .line 1
-    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    const-class p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$a;
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    const-class p1, Lwc/f0;
-
-    :goto_0
-    return-object p1
 .end method

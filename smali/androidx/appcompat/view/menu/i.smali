@@ -12,34 +12,34 @@
 
 
 # virtual methods
-.method public abstract b(Landroidx/appcompat/view/menu/e;Z)V
+.method public abstract a(Landroidx/appcompat/view/menu/e;Z)V
 .end method
 
-.method public abstract c(Z)V
+.method public abstract c(Landroidx/appcompat/view/menu/g;)Z
 .end method
 
-.method public abstract d()Z
+.method public abstract d(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
 .end method
 
-.method public abstract e(Landroidx/appcompat/view/menu/i$a;)V
+.method public abstract e(Landroid/os/Parcelable;)V
 .end method
 
-.method public abstract f(Landroidx/appcompat/view/menu/g;)Z
-.end method
-
-.method public abstract g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
+.method public abstract g(Landroidx/appcompat/view/menu/l;)Z
 .end method
 
 .method public abstract getId()I
 .end method
 
-.method public abstract h(Landroid/os/Parcelable;)V
+.method public abstract h(Z)V
 .end method
 
-.method public abstract j(Landroidx/appcompat/view/menu/l;)Z
+.method public abstract i()Z
 .end method
 
-.method public abstract k()Landroid/os/Parcelable;
+.method public abstract j()Landroid/os/Parcelable;
+.end method
+
+.method public abstract k(Landroidx/appcompat/view/menu/i$a;)V
 .end method
 
 .method public abstract l(Landroidx/appcompat/view/menu/g;)Z

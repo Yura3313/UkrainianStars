@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private final getAdSize()Lcom/google/android/gms/ads/g;
+.method private final getAdSize()Lcom/google/android/gms/ads/e;
     .locals 1
 
     const/4 v0, 0x0
@@ -122,25 +122,20 @@
 
     move-result v1
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
     const/4 v1, 0x0
 
     .line 6
     :try_start_0
-    invoke-direct {p0}, Lcom/google/android/gms/ads/appopen/AppOpenAdView;->getAdSize()Lcom/google/android/gms/ads/g;
+    invoke-direct {p0}, Lcom/google/android/gms/ads/appopen/AppOpenAdView;->getAdSize()Lcom/google/android/gms/ads/e;
 
     move-result-object v1
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
     :catch_0
-    nop
-
-    :goto_0
     if-eqz v1, :cond_1
 
     .line 7
@@ -149,12 +144,12 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/g;->b(Landroid/content/Context;)I
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/e;->b(Landroid/content/Context;)I
 
     move-result v2
 
     .line 9
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/g;->a(Landroid/content/Context;)I
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/e;->a(Landroid/content/Context;)I
 
     move-result v0
 
@@ -162,13 +157,13 @@
 
     move v0, v2
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 10
-    :goto_1
+    :goto_0
     invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v2
@@ -201,7 +196,7 @@
     return-void
 .end method
 
-.method public final setAppOpenAd(Ld1/a;)V
+.method public final setAppOpenAd(Lb1/a;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -209,7 +204,7 @@
     throw p1
 .end method
 
-.method public final setAppOpenAdPresentationCallback(Ld1/b;)V
+.method public final setAppOpenAdPresentationCallback(Lb1/b;)V
     .locals 0
 
     return-void

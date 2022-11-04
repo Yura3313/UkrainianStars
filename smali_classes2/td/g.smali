@@ -1,116 +1,114 @@
-.class public final Ltd/g;
-.super Lse/i;
-.source "RegisterEnterEmailTabPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.class public final enum Ltd/g;
+.super Ljava/lang/Enum;
+.source "AssetCache.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Ltd/i;",
-        "Ljava/lang/Boolean;",
-        "Lie/i;",
+        "Ljava/lang/Enum<",
+        "Ltd/g;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/lang/String;
+# static fields
+.field public static final enum f:Ltd/g;
 
-.field public final synthetic h:Z
+.field public static final enum g:Ltd/g;
+
+.field public static final enum h:Ltd/g;
+
+.field public static final synthetic i:[Ltd/g;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Z)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 4
 
-    iput-object p1, p0, Ltd/g;->g:Ljava/lang/String;
+    const/4 v0, 0x3
 
-    iput-boolean p2, p0, Ltd/g;->h:Z
+    new-array v0, v0, [Ltd/g;
 
-    const/4 p1, 0x2
+    new-instance v1, Ltd/g;
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    const-string v2, "CACHE"
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v3}, Ltd/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Ltd/g;->f:Ltd/g;
+
+    aput-object v1, v0, v3
+
+    new-instance v1, Ltd/g;
+
+    const-string v2, "PERSISTENT_STORAGE"
+
+    const/4 v3, 0x1
+
+    invoke-direct {v1, v2, v3}, Ltd/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Ltd/g;->g:Ltd/g;
+
+    aput-object v1, v0, v3
+
+    new-instance v1, Ltd/g;
+
+    const-string v2, "EXTERNAL"
+
+    const/4 v3, 0x2
+
+    invoke-direct {v1, v2, v3}, Ltd/g;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Ltd/g;->h:Ltd/g;
+
+    aput-object v1, v0, v3
+
+    sput-object v0, Ltd/g;->i:[Ltd/g;
 
     return-void
 .end method
 
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-# virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 1
-    check-cast p1, Ltd/i;
+    return-void
+.end method
 
-    check-cast p2, Ljava/lang/Boolean;
+.method public static valueOf(Ljava/lang/String;)Ltd/g;
+    .locals 1
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    const-class v0, Ltd/g;
 
-    const-string p2, "$receiver"
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 2
-    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object p0
 
-    .line 3
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    check-cast p0, Ltd/g;
 
-    iget-object v0, p0, Ltd/g;->g:Ljava/lang/String;
+    return-object p0
+.end method
 
-    iget-boolean v1, p0, Ltd/g;->h:Z
+.method public static values()[Ltd/g;
+    .locals 1
 
-    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingRegistrationWithEmail$supercellId_release(Ljava/lang/String;Z)V
+    sget-object v0, Ltd/g;->i:[Ltd/g;
 
-    .line 4
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object p2
-
-    .line 5
-    iget-object p2, p2, Lae/u;->m:Lpe/a;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x18
-
-    const-string v2, "Accept marketing"
-
-    const-string v3, "Selection"
-
-    .line 6
-    invoke-static {p2, v2, v3, v0, v1}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
-
-    .line 7
-    iget-object p2, p0, Ltd/g;->g:Ljava/lang/String;
-
-    .line 8
-    invoke-virtual {p1}, Ltd/i;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    invoke-virtual {v0}, [Ltd/g;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    check-cast v0, [Ltd/g;
 
-    .line 9
-    iput-object p2, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
-
-    .line 10
-    :cond_0
-    invoke-virtual {p1}, Ltd/i;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->j1()V
-
-    .line 11
-    :cond_1
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return-object v0
 .end method

@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public g:Ljava/lang/Long;
+.field public f:Ljava/lang/Long;
 
 
 # direct methods
@@ -56,82 +56,7 @@
 
 
 # virtual methods
-.method public final C1(Landroid/content/Context;)I
-    .locals 2
-
-    .line 1
-    sget v0, Lcom/google/android/material/R$attr;->materialCalendarTheme:I
-
-    const-class v1, Lcom/google/android/material/datepicker/m;
-
-    .line 2
-    invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 3
-    invoke-static {p1, v0, v1}, Lp4/b;->b(Landroid/content/Context;ILjava/lang/String;)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final O1()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final X1()Ljava/util/Collection;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 2
-    iget-object v1, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public final Z1()Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
-
-    return-object v0
-.end method
-
-.method public final c0(Landroid/content/Context;)Ljava/lang/String;
+.method public final C0(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -140,7 +65,7 @@
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
     if-nez v0, :cond_0
 
@@ -164,7 +89,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/datepicker/d;->d(JLjava/util/Locale;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/google/android/material/datepicker/d;->c(JLjava/util/Locale;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -186,21 +111,70 @@
     return-object p1
 .end method
 
-.method public final describeContents()I
-    .locals 1
+.method public final E1()Ljava/util/Collection;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
 
-    return v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 2
+    iget-object v1, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    return-object v0
 .end method
 
-.method public final f0()Ljava/util/Collection;
+.method public final H0(Landroid/content/Context;)I
+    .locals 2
+
+    .line 1
+    sget v0, Lcom/google/android/material/R$attr;->materialCalendarTheme:I
+
+    const-class v1, Lcom/google/android/material/datepicker/m;
+
+    .line 2
+    invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 3
+    invoke-static {p1, v0, v1}, Lm4/b;->b(Landroid/content/Context;ILjava/lang/String;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final M1()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public final N0()Ljava/util/Collection;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/Collection<",
-            "Le0/c<",
+            "Le0/a<",
             "Ljava/lang/Long;",
             "Ljava/lang/Long;",
             ">;>;"
@@ -214,7 +188,15 @@
     return-object v0
 .end method
 
-.method public final o2(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Lcom/google/android/material/datepicker/CalendarConstraints;Lcom/google/android/material/datepicker/t;)Landroid/view/View;
+.method public final describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final i2(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Lcom/google/android/material/datepicker/CalendarConstraints;Lcom/google/android/material/datepicker/t;)Landroid/view/View;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -256,7 +238,7 @@
     move-result-object p2
 
     .line 4
-    invoke-static {}, Lcom/google/android/material/internal/c;->i()Z
+    invoke-static {}, Lcom/android/billingclient/api/e0;->c()Z
 
     move-result v0
 
@@ -269,7 +251,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/android/material/datepicker/b0;->e()Ljava/text/SimpleDateFormat;
+    invoke-static {}, Lcom/google/android/material/datepicker/b0;->d()Ljava/text/SimpleDateFormat;
 
     move-result-object v3
 
@@ -278,12 +260,12 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/google/android/material/datepicker/b0;->f(Landroid/content/res/Resources;Ljava/text/SimpleDateFormat;)Ljava/lang/String;
+    invoke-static {v0, v3}, Lcom/google/android/material/datepicker/b0;->e(Landroid/content/res/Resources;Ljava/text/SimpleDateFormat;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
     if-eqz v0, :cond_1
 
@@ -323,14 +305,32 @@
     return-object p1
 .end method
 
-.method public final s2(J)V
+.method public final m1()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final p2(J)V
     .locals 0
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
     return-void
 .end method
@@ -338,7 +338,7 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    iget-object p2, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 

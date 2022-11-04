@@ -18,8 +18,8 @@
 .method public abstract a(Landroid/view/MotionEvent;)V
 .end method
 
-.method public abstract b()V
+.method public abstract b(Landroid/view/MotionEvent;)Z
 .end method
 
-.method public abstract c(Landroid/view/MotionEvent;)Z
+.method public abstract c()V
 .end method

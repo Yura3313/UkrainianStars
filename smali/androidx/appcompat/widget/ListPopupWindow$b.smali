@@ -37,7 +37,7 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$b;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->a()Z
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->b()Z
 
     move-result v0
 
@@ -46,7 +46,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$b;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->R()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->x()V
 
     :cond_0
     return-void

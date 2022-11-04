@@ -3,7 +3,7 @@
 .source "AbstractMessageLite.java"
 
 # interfaces
-.implements Lcom/google/protobuf/q0;
+.implements Lcom/google/protobuf/s0;
 
 
 # annotations
@@ -21,7 +21,7 @@
         "Lcom/google/protobuf/a$a<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lcom/google/protobuf/q0;"
+        "Lcom/google/protobuf/s0;"
     }
 .end annotation
 
@@ -99,7 +99,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/protobuf/i;->j()Z
+    invoke-virtual {p0}, Lcom/google/protobuf/i;->i()Z
 
     move-result p0
 
@@ -124,7 +124,7 @@
     const-string v0, "Serializing "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
     throw v0
 .end method
 
-.method public getSerializedSize(Lcom/google/protobuf/i1;)I
+.method public getSerializedSize(Lcom/google/protobuf/k1;)I
     .locals 2
 
     .line 1
@@ -181,7 +181,7 @@
     if-ne v0, v1, :cond_0
 
     .line 2
-    invoke-interface {p1, p0}, Lcom/google/protobuf/i1;->g(Ljava/lang/Object;)I
+    invoke-interface {p1, p0}, Lcom/google/protobuf/k1;->g(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -192,12 +192,12 @@
     return v0
 .end method
 
-.method public newUninitializedMessageException()Lcom/google/protobuf/UninitializedMessageException;
+.method public newUninitializedMessageException()Lcom/google/protobuf/r1;
     .locals 1
 
-    new-instance v0, Lcom/google/protobuf/UninitializedMessageException;
+    new-instance v0, Lcom/google/protobuf/r1;
 
-    invoke-direct {v0}, Lcom/google/protobuf/UninitializedMessageException;-><init>()V
+    invoke-direct {v0}, Lcom/google/protobuf/r1;-><init>()V
 
     return-object v0
 .end method
@@ -217,27 +217,27 @@
 
     .line 1
     :try_start_0
-    invoke-interface {p0}, Lcom/google/protobuf/q0;->getSerializedSize()I
+    invoke-interface {p0}, Lcom/google/protobuf/s0;->getSerializedSize()I
 
     move-result v0
 
     new-array v1, v0, [B
 
     .line 2
-    sget-object v2, Lcom/google/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/protobuf/l;->b:Ljava/util/logging/Logger;
 
     .line 3
-    new-instance v2, Lcom/google/protobuf/CodedOutputStream$c;
+    new-instance v2, Lcom/google/protobuf/l$c;
 
-    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BI)V
+    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/l$c;-><init>([BI)V
 
     .line 4
-    invoke-interface {p0, v2}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
+    invoke-interface {p0, v2}, Lcom/google/protobuf/s0;->writeTo(Lcom/google/protobuf/l;)V
 
     .line 5
-    iget v0, v2, Lcom/google/protobuf/CodedOutputStream$c;->e:I
+    iget v0, v2, Lcom/google/protobuf/l$c;->e:I
 
-    iget v2, v2, Lcom/google/protobuf/CodedOutputStream$c;->f:I
+    iget v2, v2, Lcom/google/protobuf/l$c;->f:I
 
     sub-int/2addr v0, v2
 
@@ -279,30 +279,30 @@
 
     .line 1
     :try_start_0
-    invoke-interface {p0}, Lcom/google/protobuf/q0;->getSerializedSize()I
+    invoke-interface {p0}, Lcom/google/protobuf/s0;->getSerializedSize()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
+    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     .line 2
     new-array v1, v0, [B
 
     .line 3
-    sget-object v2, Lcom/google/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/protobuf/l;->b:Ljava/util/logging/Logger;
 
     .line 4
-    new-instance v2, Lcom/google/protobuf/CodedOutputStream$c;
+    new-instance v2, Lcom/google/protobuf/l$c;
 
-    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BI)V
+    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/l$c;-><init>([BI)V
 
     .line 5
-    invoke-interface {p0, v2}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
+    invoke-interface {p0, v2}, Lcom/google/protobuf/s0;->writeTo(Lcom/google/protobuf/l;)V
 
     .line 6
-    iget v0, v2, Lcom/google/protobuf/CodedOutputStream$c;->e:I
+    iget v0, v2, Lcom/google/protobuf/l$c;->e:I
 
-    iget v2, v2, Lcom/google/protobuf/CodedOutputStream$c;->f:I
+    iget v2, v2, Lcom/google/protobuf/l$c;->f:I
 
     sub-int/2addr v0, v2
 
@@ -353,12 +353,12 @@
     .end annotation
 
     .line 1
-    invoke-interface {p0}, Lcom/google/protobuf/q0;->getSerializedSize()I
+    invoke-interface {p0}, Lcom/google/protobuf/s0;->getSerializedSize()I
 
     move-result v0
 
     .line 2
-    invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
+    invoke-static {v0}, Lcom/google/protobuf/l;->y(I)I
 
     move-result v1
 
@@ -368,23 +368,29 @@
 
     if-le v1, v2, :cond_0
 
-    const/16 v1, 0x1000
+    move v1, v2
 
     .line 3
     :cond_0
-    invoke-static {p1, v1}, Lcom/google/protobuf/CodedOutputStream;->E(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
+    new-instance v2, Lcom/google/protobuf/l$e;
 
-    move-result-object p1
+    invoke-direct {v2, p1, v1}, Lcom/google/protobuf/l$e;-><init>(Ljava/io/OutputStream;I)V
 
     .line 4
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->Y(I)V
+    invoke-virtual {v2, v0}, Lcom/google/protobuf/l$e;->W(I)V
 
     .line 5
-    invoke-interface {p0, p1}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
+    invoke-interface {p0, v2}, Lcom/google/protobuf/s0;->writeTo(Lcom/google/protobuf/l;)V
 
     .line 6
-    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->C()V
+    iget p1, v2, Lcom/google/protobuf/l$b;->f:I
 
+    if-lez p1, :cond_1
+
+    .line 7
+    invoke-virtual {v2}, Lcom/google/protobuf/l$e;->e0()V
+
+    :cond_1
     return-void
 .end method
 
@@ -397,29 +403,35 @@
     .end annotation
 
     .line 1
-    invoke-interface {p0}, Lcom/google/protobuf/q0;->getSerializedSize()I
+    invoke-interface {p0}, Lcom/google/protobuf/s0;->getSerializedSize()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/protobuf/l;->b:Ljava/util/logging/Logger;
 
     const/16 v1, 0x1000
 
     if-le v0, v1, :cond_0
 
-    const/16 v0, 0x1000
+    move v0, v1
 
     .line 2
     :cond_0
-    invoke-static {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->E(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
+    new-instance v1, Lcom/google/protobuf/l$e;
 
-    move-result-object p1
+    invoke-direct {v1, p1, v0}, Lcom/google/protobuf/l$e;-><init>(Ljava/io/OutputStream;I)V
 
     .line 3
-    invoke-interface {p0, p1}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
+    invoke-interface {p0, v1}, Lcom/google/protobuf/s0;->writeTo(Lcom/google/protobuf/l;)V
 
     .line 4
-    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->C()V
+    iget p1, v1, Lcom/google/protobuf/l$b;->f:I
 
+    if-lez p1, :cond_1
+
+    .line 5
+    invoke-virtual {v1}, Lcom/google/protobuf/l$e;->e0()V
+
+    :cond_1
     return-void
 .end method

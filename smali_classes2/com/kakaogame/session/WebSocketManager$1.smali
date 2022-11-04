@@ -164,11 +164,5 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    goto :goto_4
-
-    :goto_3
     throw v1
-
-    :goto_4
-    goto :goto_3
 .end method

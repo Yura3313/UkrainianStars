@@ -66,112 +66,64 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 19
+    .locals 12
 
-    const/16 v0, 0xc
+    const-string v0, "connection"
 
-    new-array v0, v0, [Ljava/lang/String;
+    const-string v1, "host"
 
-    const/4 v1, 0x0
+    const-string v2, "keep-alive"
 
-    const-string v2, "connection"
+    const-string v3, "proxy-connection"
 
-    aput-object v2, v0, v1
+    const-string v4, "te"
 
-    const/4 v3, 0x1
+    const-string v5, "transfer-encoding"
 
-    const-string v4, "host"
+    const-string v6, "encoding"
 
-    aput-object v4, v0, v3
+    const-string v7, "upgrade"
 
-    const/4 v5, 0x2
+    const-string v8, ":method"
 
-    const-string v6, "keep-alive"
+    const-string v9, ":path"
 
-    aput-object v6, v0, v5
+    const-string v10, ":scheme"
 
-    const/4 v7, 0x3
-
-    const-string v8, "proxy-connection"
-
-    aput-object v8, v0, v7
-
-    const/4 v9, 0x4
-
-    const-string v10, "te"
-
-    aput-object v10, v0, v9
-
-    const/4 v11, 0x5
-
-    const-string v12, "transfer-encoding"
-
-    aput-object v12, v0, v11
-
-    const/4 v13, 0x6
-
-    const-string v14, "encoding"
-
-    aput-object v14, v0, v13
-
-    const/4 v15, 0x7
-
-    const-string v16, "upgrade"
-
-    aput-object v16, v0, v15
-
-    const-string v17, ":method"
-
-    const/16 v15, 0x8
-
-    aput-object v17, v0, v15
-
-    const/16 v17, 0x9
-
-    const-string v18, ":path"
-
-    aput-object v18, v0, v17
-
-    const/16 v17, 0xa
-
-    const-string v18, ":scheme"
-
-    aput-object v18, v0, v17
-
-    const/16 v17, 0xb
-
-    const-string v18, ":authority"
-
-    aput-object v18, v0, v17
+    const-string v11, ":authority"
 
     .line 1
+    filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
+
+    move-result-object v0
+
     invoke-static {v0}, Lokhttp3/internal/Util;->immutableList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     sput-object v0, Lokhttp3/internal/http2/Http2Codec;->HTTP_2_SKIPPED_REQUEST_HEADERS:Ljava/util/List;
 
-    new-array v0, v15, [Ljava/lang/String;
+    const-string v1, "connection"
 
-    aput-object v2, v0, v1
+    const-string v2, "host"
 
-    aput-object v4, v0, v3
+    const-string v3, "keep-alive"
 
-    aput-object v6, v0, v5
+    const-string v4, "proxy-connection"
 
-    aput-object v8, v0, v7
+    const-string v5, "te"
 
-    aput-object v10, v0, v9
+    const-string v6, "transfer-encoding"
 
-    aput-object v12, v0, v11
+    const-string v7, "encoding"
 
-    aput-object v14, v0, v13
-
-    const/4 v1, 0x7
-
-    aput-object v16, v0, v1
+    const-string v8, "upgrade"
 
     .line 2
+    filled-new-array/range {v1 .. v8}, [Ljava/lang/String;
+
+    move-result-object v0
+
     invoke-static {v0}, Lokhttp3/internal/Util;->immutableList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
@@ -506,13 +458,7 @@
 
     invoke-direct {p0, p1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method
 
 

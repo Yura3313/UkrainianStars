@@ -1,71 +1,74 @@
-.class public Lr2/j;
-.super Lq2/c;
+.class public final Lr2/j;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T::",
-        "Landroid/os/Parcelable;",
-        ">",
-        "Lq2/c<",
-        "TT;>;"
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/drive/query/internal/zzt;",
+        ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/util/Collection;Ljava/util/Collection;I)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;I)V"
-        }
-    .end annotation
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lq2/c;-><init>(Ljava/lang/String;Ljava/util/Collection;Ljava/util/Collection;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic a(Landroid/os/Bundle;)Ljava/lang/Object;
-    .locals 0
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 2
 
-    invoke-virtual {p0, p1}, Lr2/j;->b(Landroid/os/Bundle;)Ljava/util/Collection;
+    .line 1
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    move-result-object p1
+    move-result v0
+
+    .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    .line 4
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 6
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzt;
+
+    invoke-direct {p1}, Lcom/google/android/gms/drive/query/internal/zzt;-><init>()V
 
     return-object p1
 .end method
 
-.method public b(Landroid/os/Bundle;)Ljava/util/Collection;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Bundle;",
-            ")",
-            "Ljava/util/Collection<",
-            "TT;>;"
-        }
-    .end annotation
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lq2/b;->a:Ljava/lang/String;
-
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object p1
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzt;
 
     return-object p1
 .end method

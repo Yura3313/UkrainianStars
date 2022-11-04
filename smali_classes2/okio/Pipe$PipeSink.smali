@@ -45,7 +45,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -85,9 +85,9 @@
 
     const-wide/16 v3, 0x0
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-gtz v5, :cond_1
+    if-gtz v1, :cond_1
 
     goto :goto_0
 
@@ -130,7 +130,7 @@
 .end method
 
 .method public flush()V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -165,9 +165,9 @@
 
     const-wide/16 v3, 0x0
 
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
-    if-gtz v5, :cond_0
+    if-gtz v1, :cond_0
 
     goto :goto_0
 
@@ -264,9 +264,9 @@
 
     sub-long/2addr v4, v6
 
-    cmp-long v3, v4, v1
+    cmp-long v1, v4, v1
 
-    if-nez v3, :cond_0
+    if-nez v1, :cond_0
 
     .line 5
     iget-object v1, p0, Lokio/Pipe$PipeSink;->timeout:Lokio/Timeout;
@@ -337,11 +337,5 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method

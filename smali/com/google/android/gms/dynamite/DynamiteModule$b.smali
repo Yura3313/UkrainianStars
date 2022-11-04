@@ -1,4 +1,4 @@
-.class public final Lcom/google/android/gms/dynamite/DynamiteModule$b;
+.class public interface abstract Lcom/google/android/gms/dynamite/DynamiteModule$b;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
@@ -9,28 +9,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x609
     name = "b"
 .end annotation
 
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/dynamite/DynamiteModule$b$a;,
+        Lcom/google/android/gms/dynamite/DynamiteModule$b$b;
+    }
+.end annotation
 
-# instance fields
-.field public a:Landroid/database/Cursor;
 
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lu2/a;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/google/android/gms/dynamite/DynamiteModule$b;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract a(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/gms/dynamite/DynamiteModule$b$b;)Lcom/google/android/gms/dynamite/DynamiteModule$b$a;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/dynamite/DynamiteModule$a;
+        }
+    .end annotation
 .end method

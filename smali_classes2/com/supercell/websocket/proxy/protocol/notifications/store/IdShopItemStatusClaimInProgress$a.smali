@@ -3,7 +3,7 @@
 .source "IdShopItemStatusClaimInProgress.java"
 
 # interfaces
-.implements Lcom/google/protobuf/r0;
+.implements Lcom/google/protobuf/t0;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusClaimInProgress;",
         "Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatusClaimInProgress$a;",
         ">;",
-        "Lcom/google/protobuf/r0;"
+        "Lcom/google/protobuf/t0;"
     }
 .end annotation
 

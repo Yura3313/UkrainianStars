@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract C3()Landroid/content/Intent;
+.method public abstract I2(J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract V5(Landroid/os/IBinder;Landroid/os/Bundle;)V
+.method public abstract I5()Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract Y4()V
+.method public abstract J6()Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -31,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract a1(Lcom/google/android/gms/games/internal/zzbk;)V
+.method public abstract U4(Lcom/google/android/gms/games/internal/zzbk;Ljava/lang/String;Landroid/os/IBinder;Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract d3(Lcom/google/android/gms/games/internal/zzbk;Ljava/lang/String;Landroid/os/IBinder;Landroid/os/Bundle;)V
+.method public abstract W3(Landroid/os/IBinder;Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -47,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract e7()Landroid/os/Bundle;
+.method public abstract X0(Lcom/google/android/gms/games/internal/zzbk;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -55,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract n5(J)V
+.method public abstract k2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -63,7 +63,7 @@
     .end annotation
 .end method
 
-.method public abstract s4()Lcom/google/android/gms/common/data/DataHolder;
+.method public abstract r5(Lcom/google/android/gms/games/internal/zzbm;J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -71,7 +71,7 @@
     .end annotation
 .end method
 
-.method public abstract y6(Lcom/google/android/gms/games/internal/zzbm;J)V
+.method public abstract r7()Lcom/google/android/gms/common/data/DataHolder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

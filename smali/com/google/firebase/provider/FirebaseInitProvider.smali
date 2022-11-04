@@ -20,7 +20,7 @@
     const-string v0, "FirebaseInitProvider ProviderInfo cannot be null."
 
     .line 1
-    invoke-static {p2, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Lb2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget-object v0, p2, Landroid/content/pm/ProviderInfo;->authority:Ljava/lang/String;
@@ -82,24 +82,24 @@
     move-result-object v0
 
     .line 2
-    sget-object v1, Lt5/b;->o:Ljava/lang/Object;
+    sget-object v1, Lr5/b;->o:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 3
     :try_start_0
-    sget-object v2, Lt5/b;->q:Lm/a;
+    sget-object v2, Lr5/b;->q:Lm/a;
 
     const-string v3, "[DEFAULT]"
 
-    invoke-virtual {v2, v3}, Lm/g;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lm/h;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 4
-    invoke-static {}, Lt5/b;->b()Lt5/b;
+    invoke-static {}, Lr5/b;->b()Lr5/b;
 
     monitor-exit v1
 
@@ -107,7 +107,7 @@
 
     .line 5
     :cond_0
-    invoke-static {v0}, Lt5/c;->a(Landroid/content/Context;)Lt5/c;
+    invoke-static {v0}, Lr5/c;->a(Landroid/content/Context;)Lr5/c;
 
     move-result-object v2
 
@@ -120,7 +120,7 @@
 
     .line 7
     :cond_1
-    invoke-static {v0, v2}, Lt5/b;->c(Landroid/content/Context;Lt5/c;)Lt5/b;
+    invoke-static {v0, v2}, Lr5/b;->c(Landroid/content/Context;Lr5/c;)Lr5/b;
 
     monitor-exit v1
 

@@ -162,11 +162,9 @@
     if-ltz v2, :cond_7
 
     .line 1
-    iget-boolean v2, p0, Lokio/InflaterSource;->closed:Z
+    iget-boolean v3, p0, Lokio/InflaterSource;->closed:Z
 
-    if-nez v2, :cond_6
-
-    cmp-long v2, p2, v0
+    if-nez v3, :cond_6
 
     if-nez v2, :cond_0
 
@@ -198,16 +196,16 @@
 
     move-result-wide v2
 
-    long-to-int v3, v2
+    long-to-int v2, v2
 
     .line 5
-    iget-object v2, p0, Lokio/InflaterSource;->inflater:Ljava/util/zip/Inflater;
+    iget-object v3, p0, Lokio/InflaterSource;->inflater:Ljava/util/zip/Inflater;
 
     iget-object v4, v1, Lokio/Segment;->data:[B
 
     iget v5, v1, Lokio/Segment;->limit:I
 
-    invoke-virtual {v2, v4, v5, v3}, Ljava/util/zip/Inflater;->inflate([BII)I
+    invoke-virtual {v3, v4, v5, v2}, Ljava/util/zip/Inflater;->inflate([BII)I
 
     move-result v2
 
@@ -329,13 +327,7 @@
     .line 18
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public final refill()Z

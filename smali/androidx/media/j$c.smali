@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract c(Ljava/lang/String;Landroidx/media/j$b;)V
+.method public abstract b(Ljava/lang/String;Landroidx/media/j$b;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -28,5 +28,5 @@
     .end annotation
 .end method
 
-.method public abstract e(Ljava/lang/String;ILandroid/os/Bundle;)V
+.method public abstract d(Ljava/lang/String;ILandroid/os/Bundle;)V
 .end method

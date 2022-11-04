@@ -1,52 +1,91 @@
-.class public final Lz1/q;
+.class public abstract Lz1/q;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
-# static fields
-.field public static final a:[Lz1/l;
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Lz1/l;
+.method public constructor <init>(I)V
+    .locals 0
 
     .line 1
-    new-instance v1, Lz1/p;
-
-    const-string v2, "0\u0082\u0004C0\u0082\u0003+\u00a0\u0003\u0002\u0001\u0002\u0002\t\u0000\u00c2\u00e0\u0087FdJ0\u008d0"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v2}, Lz1/l;->c2(Ljava/lang/String;)[B
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lz1/p;-><init>([B)V
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lz1/r;
-
-    const-string v2, "0\u0082\u0004\u00a80\u0082\u0003\u0090\u00a0\u0003\u0002\u0001\u0002\u0002\t\u0000\u00d5\u0085\u00b8l}\u00d3N\u00f50"
-
-    .line 3
-    invoke-static {v2}, Lz1/l;->c2(Ljava/lang/String;)[B
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lz1/r;-><init>([B)V
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sput-object v0, Lz1/q;->a:[Lz1/l;
+    iput p1, p0, Lz1/q;->a:I
 
     return-void
+.end method
+
+.method public static a(Landroid/os/RemoteException;)Lcom/google/android/gms/common/api/Status;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ": "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3
+    new-instance p0, Lcom/google/android/gms/common/api/Status;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x13
+
+    invoke-direct {p0, v1, v0}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public abstract b(Lcom/google/android/gms/common/api/Status;)V
+.end method
+
+.method public abstract c(Ljava/lang/Exception;)V
+.end method
+
+.method public abstract d(Lz1/e$a;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lz1/e$a<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/DeadObjectException;
+        }
+    .end annotation
+.end method
+
+.method public abstract e(Lz1/v0;Z)V
 .end method

@@ -3,7 +3,7 @@
 .source "CollapsingToolbarLayout.java"
 
 # interfaces
-.implements Lf0/n;
+.implements Lf0/m;
 
 
 # annotations
@@ -34,16 +34,16 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+.method public final a(Landroid/view/View;Lf0/v;)Lf0/v;
     .locals 2
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$a;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -61,23 +61,24 @@
 
     .line 4
     :goto_0
-    iget-object v1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/a0;
+    iget-object v1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/v;
 
-    invoke-static {v1, v0}, Le0/b;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    invoke-static {v1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 5
-    iput-object v0, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/a0;
-
     .line 6
-    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
+    iput-object v0, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/v;
 
     .line 7
+    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
+
+    .line 8
     :cond_1
-    invoke-virtual {p2}, Lf0/a0;->c()Lf0/a0;
+    invoke-virtual {p2}, Lf0/v;->a()Lf0/v;
 
     move-result-object p1
 

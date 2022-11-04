@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -279,7 +279,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -402,7 +402,7 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_1
 
@@ -488,7 +488,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 

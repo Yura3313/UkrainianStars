@@ -262,7 +262,7 @@
     goto :goto_3
 
     :cond_3
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 15
     :goto_3
@@ -546,7 +546,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 11
     :goto_2
@@ -649,7 +649,7 @@
     goto :goto_2
 
     :cond_2
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 11
     :goto_2
@@ -770,7 +770,7 @@
     goto :goto_3
 
     :cond_3
-    const/4 p1, 0x0
+    move p1, p2
 
     .line 15
     :goto_3

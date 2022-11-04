@@ -43,6 +43,12 @@
 .end method
 
 .method public final b(Lcom/google/android/material/tabs/TabLayout$g;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 1
 
     .line 1
@@ -53,12 +59,6 @@
 
     .line 3
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/ViewPager;->setCurrentItem(I)V
-
-    return-void
-.end method
-
-.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
-    .locals 0
 
     return-void
 .end method

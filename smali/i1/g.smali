@@ -1,14 +1,18 @@
-.class public interface abstract Li1/g;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.class public final Li1/g;
+.super Li1/c;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# virtual methods
-.method public abstract b()V
-.end method
+# annotations
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.end annotation
 
-.method public abstract c()V
-.end method
 
-.method public abstract d(Landroid/view/View;)V
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZLandroid/location/Location;IILjava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Li1/c;-><init>()V
+
+    return-void
 .end method

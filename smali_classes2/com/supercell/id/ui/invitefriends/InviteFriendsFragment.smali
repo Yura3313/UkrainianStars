@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
-.super Lcom/supercell/id/ui/BaseFragment;
+.super Luc/j;
 .source "InviteFriendsFragment.kt"
 
 
@@ -12,45 +12,45 @@
 
 
 # instance fields
-.field public final i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
+.field public final h0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/l<",
-            "Lbe/w;",
-            "Lie/i;",
+            "Lhf/l<",
+            "Lae/a0;",
+            "Lye/m;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
+.field public final i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/l<",
-            "Lae/m<",
-            "Lvc/i;",
+            "Lhf/l<",
+            "Lzd/j<",
+            "Ltc/i;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/i;",
+            "Lye/m;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final k0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
+.field public final j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/l<",
-            "Lvc/a;",
-            "Lie/i;",
+            "Lhf/l<",
+            "Ltc/a;",
+            "Lye/m;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public l0:Z
+.field public k0:Z
 
-.field public m0:Ljava/util/HashMap;
+.field public l0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -58,42 +58,42 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Luc/j;-><init>()V
 
     .line 2
     new-instance v0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;-><init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
+    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->h0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
 
     .line 3
     new-instance v0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;-><init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
+    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
 
     .line 4
     new-instance v0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;-><init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->k0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
+    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
 
     return-void
 .end method
 
-.method public static final g1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lbe/w;)V
+.method public static final f1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lae/a0;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_2
 
     .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->N()Z
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->M()Z
 
     move-result p1
 
@@ -105,18 +105,18 @@
     :cond_0
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lae/u;->l()I
+    invoke-virtual {p1}, Lzd/q;->m()I
 
     move-result p1
 
     .line 4
     sget v0, Lcom/supercell/id/R$id;->invite_ingame_friends_notification:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p0
 
@@ -154,7 +154,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -164,66 +164,66 @@
     return-void
 .end method
 
-.method public final U(Landroid/content/Context;)V
+.method public final T(Landroid/content/Context;)V
     .locals 2
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->U(Landroid/content/Context;)V
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->T(Landroid/content/Context;)V
 
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->i()Lbe/y;
+    invoke-virtual {v0}, Lzd/q;->j()Lae/c0;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->h0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
 
-    invoke-virtual {v0, v1}, Lbe/x0;->b(Lre/l;)V
+    invoke-virtual {v0, v1}, Lae/b1;->b(Lhf/l;)V
 
     .line 3
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->b()Lbe/b;
+    invoke-virtual {v0}, Lzd/q;->c()Lae/b;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->k0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
 
-    invoke-virtual {v0, v1}, Lbe/x0;->b(Lre/l;)V
+    invoke-virtual {v0, v1}, Lae/b1;->b(Lhf/l;)V
 
     .line 4
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lae/u;->d()Lbe/h;
+    invoke-virtual {p1}, Lzd/q;->e()Lae/i;
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
 
-    invoke-virtual {p1, v0}, Lbe/x0;->b(Lre/l;)V
+    invoke-virtual {p1, v0}, Lae/b1;->b(Lhf/l;)V
 
     return-void
 .end method
 
-.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_invite_friends:I
 
@@ -236,12 +236,12 @@
     return-object p1
 .end method
 
-.method public final a0()V
+.method public final Z()V
     .locals 1
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Luc/j;->Z()V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -251,62 +251,62 @@
     return-void
 .end method
 
-.method public final b0()V
+.method public final a0()V
     .locals 3
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->i()Lbe/y;
+    invoke-virtual {v1}, Lzd/q;->j()Lae/c0;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
+    iget-object v2, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->h0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
 
-    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lae/b1;->e(Lhf/l;)V
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->b()Lbe/b;
+    invoke-virtual {v1}, Lzd/q;->c()Lae/b;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->k0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
+    iget-object v2, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$a;
 
-    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lae/b1;->e(Lhf/l;)V
 
     .line 3
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->d()Lbe/h;
+    invoke-virtual {v0}, Lzd/q;->e()Lae/i;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
 
-    invoke-virtual {v0, v1}, Lbe/x0;->e(Lre/l;)V
+    invoke-virtual {v0, v1}, Lae/b1;->e(Lhf/l;)V
 
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     return-void
 .end method
 
-.method public final f1(I)Landroid/view/View;
+.method public final e1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -314,10 +314,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -332,7 +332,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -346,7 +346,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -358,49 +358,49 @@
     return-object v0
 .end method
 
-.method public final g0()V
+.method public final f0()V
     .locals 1
 
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->k0:Z
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->m:Lpe/a;
+    iget-object v0, v0, Lzd/q;->m:Lgc/a;
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final j0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Luc/j;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     sget p2, Lcom/supercell/id/R$id;->toolbar_tabs:I
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p2
 
@@ -408,11 +408,11 @@
 
     const/4 v0, 0x0
 
-    new-array v0, v0, [Lie/d;
+    new-array v0, v0, [Lye/f;
 
     const-string v1, "account_invite_friends_title"
 
-    invoke-static {p2, v1, v0}, Lae/q2;->b(Landroid/view/View;Ljava/lang/String;[Lie/d;)V
+    invoke-static {p2, v1, v0}, Lzd/m2;->b(Landroid/view/View;Ljava/lang/String;[Lye/f;)V
 
     .line 3
     new-instance p2, Ljava/lang/ref/WeakReference;
@@ -422,24 +422,24 @@
     .line 4
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v1
 
     .line 5
-    iget-object v1, v1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v1, v1, Lzd/q;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 6
     new-instance v2, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;
 
     invoke-direct {v2, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;-><init>(Ljava/lang/ref/WeakReference;)V
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/IdConfiguration;->gameLocalizedName(Lre/l;)V
+    invoke-virtual {v1, v2}, Lcom/supercell/id/IdConfiguration;->gameLocalizedName(Lhf/l;)V
 
     .line 7
     sget p2, Lcom/supercell/id/R$id;->my_code_info_button:I
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p2
 
@@ -461,12 +461,12 @@
 
     const-string p2, "view.context"
 
-    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p2, "android.hardware.camera"
 
     .line 9
-    invoke-static {p1, p2}, Lk3/gj;->a(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p1, p2}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -477,7 +477,7 @@
     .line 10
     sget p1, Lcom/supercell/id/R$id;->scan_friends_code:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -495,7 +495,7 @@
     :cond_1
     sget p1, Lcom/supercell/id/R$id;->scan_friends_code:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -503,7 +503,7 @@
 
     const-string v1, "scan_friends_code"
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
@@ -511,7 +511,7 @@
     :goto_0
     sget p1, Lcom/supercell/id/R$id;->share_invite:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -533,7 +533,7 @@
     .line 14
     sget p1, Lcom/supercell/id/R$id;->invite_ingame_friends:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -551,7 +551,7 @@
     :cond_2
     sget p1, Lcom/supercell/id/R$id;->invite_ingame_friends:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -559,41 +559,41 @@
 
     const-string v1, "invite_ingame_friends"
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 16
     :goto_1
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->h0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lae/u;->i()Lbe/y;
+    invoke-virtual {p2}, Lzd/q;->j()Lae/c0;
 
     move-result-object p2
 
     .line 17
-    iget-object p2, p2, Lbe/x0;->a:Ljava/lang/Object;
+    iget-object p2, p2, Lae/b1;->a:Ljava/lang/Object;
 
     .line 18
     invoke-virtual {p1, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->j0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->i0:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lae/u;->d()Lbe/h;
+    invoke-virtual {p2}, Lzd/q;->e()Lae/i;
 
     move-result-object p2
 
     .line 20
-    iget-object p2, p2, Lbe/x0;->a:Ljava/lang/Object;
+    iget-object p2, p2, Lae/b1;->a:Ljava/lang/Object;
 
     .line 21
     invoke-virtual {p1, p2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;->invoke(Ljava/lang/Object;)Ljava/lang/Object;

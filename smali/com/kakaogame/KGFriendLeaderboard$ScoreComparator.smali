@@ -46,28 +46,28 @@
 
 # virtual methods
 .method public compare(Lcom/kakaogame/KGLeaderboard$KGRankingInfo;Lcom/kakaogame/KGLeaderboard$KGRankingInfo;)I
-    .locals 6
+    .locals 5
 
     .line 2
     invoke-virtual {p2}, Lcom/kakaogame/KGLeaderboard$KGRankingInfo;->getScore()J
 
     move-result-wide v0
 
-    const/4 v2, -0x1
+    const-wide/16 v2, 0x0
 
-    const-wide/16 v3, 0x0
+    cmp-long v0, v0, v2
 
-    cmp-long v5, v0, v3
+    const/4 v1, -0x1
 
-    if-nez v5, :cond_0
+    if-nez v0, :cond_0
 
-    return v2
+    return v1
 
     .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/kakaogame/KGFriendLeaderboard$ScoreComparator;->ascending:Z
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_2
 
@@ -80,14 +80,14 @@
 
     move-result-wide p1
 
-    cmp-long v0, v3, p1
+    cmp-long p1, v3, p1
 
-    if-gez v0, :cond_1
+    if-gez p1, :cond_1
 
-    return v2
+    return v1
 
     :cond_1
-    return v1
+    return v2
 
     .line 5
     :cond_2
@@ -99,14 +99,14 @@
 
     move-result-wide p1
 
-    cmp-long v0, v3, p1
+    cmp-long p1, v3, p1
 
-    if-lez v0, :cond_3
+    if-lez p1, :cond_3
 
-    return v2
+    return v1
 
     :cond_3
-    return v1
+    return v2
 .end method
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I

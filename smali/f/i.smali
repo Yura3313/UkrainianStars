@@ -1,228 +1,332 @@
-.class public final Lf/i;
+.class public Lf/i;
 .super Ljava/lang/Object;
-.source "ViewPropertyAnimatorCompatSet.java"
+.source "WindowCallbackWrapper.java"
+
+# interfaces
+.implements Landroid/view/Window$Callback;
 
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Lf0/x;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public b:J
-
-.field public c:Landroid/view/animation/Interpolator;
-
-.field public d:Lf0/y;
-
-.field public e:Z
-
-.field public final f:Lf/i$a;
+.field public final f:Landroid/view/Window$Callback;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Landroid/view/Window$Callback;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-wide/16 v0, -0x1
+    if-eqz p1, :cond_0
 
     .line 2
-    iput-wide v0, p0, Lf/i;->b:J
-
-    .line 3
-    new-instance v0, Lf/i$a;
-
-    invoke-direct {v0, p0}, Lf/i$a;-><init>(Lf/i;)V
-
-    iput-object v0, p0, Lf/i;->f:Lf/i$a;
-
-    .line 4
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lf/i;->a:Ljava/util/ArrayList;
+    iput-object p1, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
     return-void
+
+    .line 3
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Window callback may not be null"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
+.method public final dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
 
-    .line 1
-    iget-boolean v0, p0, Lf/i;->e:Z
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    if-nez v0, :cond_0
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
 
-    return-void
+    move-result p1
 
-    .line 2
-    :cond_0
-    iget-object v0, p0, Lf/i;->a:Ljava/util/ArrayList;
+    return p1
+.end method
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+.method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .locals 1
 
-    move-result-object v0
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
-    move-result v1
+    move-result p1
 
-    if-eqz v1, :cond_1
+    return p1
+.end method
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+.method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+    .locals 1
 
-    move-result-object v1
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    check-cast v1, Lf0/x;
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
 
-    .line 3
-    invoke-virtual {v1}, Lf0/x;->b()V
+    move-result p1
 
-    goto :goto_0
+    return p1
+.end method
 
-    :cond_1
-    const/4 v0, 0x0
+.method public final dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+    .locals 1
 
-    .line 4
-    iput-boolean v0, p0, Lf/i;->e:Z
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final onActionModeFinished(Landroid/view/ActionMode;)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onActionModeFinished(Landroid/view/ActionMode;)V
 
     return-void
 .end method
 
-.method public final b(Lf0/x;)Lf/i;
+.method public final onActionModeStarted(Landroid/view/ActionMode;)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onActionModeStarted(Landroid/view/ActionMode;)V
+
+    return-void
+.end method
+
+.method public final onAttachedToWindow()V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0}, Landroid/view/Window$Callback;->onAttachedToWindow()V
+
+    return-void
+.end method
+
+.method public onContentChanged()V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0}, Landroid/view/Window$Callback;->onContentChanged()V
+
+    return-void
+.end method
+
+.method public onCreatePanelMenu(ILandroid/view/Menu;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onCreatePanelMenu(ILandroid/view/Menu;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onCreatePanelView(I)Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onCreatePanelView(I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final onDetachedFromWindow()V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0}, Landroid/view/Window$Callback;->onDetachedFromWindow()V
+
+    return-void
+.end method
+
+.method public final onMenuItemSelected(ILandroid/view/MenuItem;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onMenuOpened(ILandroid/view/Menu;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onPanelClosed(ILandroid/view/Menu;)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onPanelClosed(ILandroid/view/Menu;)V
+
+    return-void
+.end method
+
+.method public final onPointerCaptureChanged(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onPointerCaptureChanged(Z)V
+
+    return-void
+.end method
+
+.method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2, p3}, Landroid/view/Window$Callback;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/KeyboardShortcutGroup;",
+            ">;",
+            "Landroid/view/Menu;",
+            "I)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1, p2, p3}, Landroid/view/Window$Callback;->onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
+
+    return-void
+.end method
+
+.method public final onSearchRequested()Z
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0}, Landroid/view/Window$Callback;->onSearchRequested()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final onSearchRequested(Landroid/view/SearchEvent;)Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lf/i;->e:Z
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    if-nez v0, :cond_0
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onSearchRequested(Landroid/view/SearchEvent;)Z
 
-    .line 2
-    iget-object v0, p0, Lf/i;->a:Ljava/util/ArrayList;
+    move-result p1
 
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    return-object p0
+    return p1
 .end method
 
-.method public final c()V
-    .locals 7
+.method public final onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
+
+    return-void
+.end method
+
+.method public final onWindowFocusChanged(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
+
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowFocusChanged(Z)V
+
+    return-void
+.end method
+
+.method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+    .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lf/i;->e:Z
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    if-eqz v0, :cond_0
+    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
 
-    return-void
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+    .locals 1
 
     .line 2
-    :cond_0
-    iget-object v0, p0, Lf/i;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lf/i;->f:Landroid/view/Window$Callback;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
 
-    move-result-object v0
+    move-result-object p1
 
-    :cond_1
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lf0/x;
-
-    .line 3
-    iget-wide v2, p0, Lf/i;->b:J
-
-    const-wide/16 v4, 0x0
-
-    cmp-long v6, v2, v4
-
-    if-ltz v6, :cond_2
-
-    .line 4
-    invoke-virtual {v1, v2, v3}, Lf0/x;->c(J)Lf0/x;
-
-    .line 5
-    :cond_2
-    iget-object v2, p0, Lf/i;->c:Landroid/view/animation/Interpolator;
-
-    if-eqz v2, :cond_3
-
-    .line 6
-    iget-object v3, v1, Lf0/x;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/view/View;
-
-    if-eqz v3, :cond_3
-
-    .line 7
-    invoke-virtual {v3}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
-
-    .line 8
-    :cond_3
-    iget-object v2, p0, Lf/i;->d:Lf0/y;
-
-    if-eqz v2, :cond_4
-
-    .line 9
-    iget-object v2, p0, Lf/i;->f:Lf/i$a;
-
-    invoke-virtual {v1, v2}, Lf0/x;->d(Lf0/y;)Lf0/x;
-
-    .line 10
-    :cond_4
-    iget-object v1, v1, Lf0/x;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/view/View;
-
-    if-eqz v1, :cond_1
-
-    .line 11
-    invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    goto :goto_0
-
-    :cond_5
-    const/4 v0, 0x1
-
-    .line 12
-    iput-boolean v0, p0, Lf/i;->e:Z
-
-    return-void
+    return-object p1
 .end method

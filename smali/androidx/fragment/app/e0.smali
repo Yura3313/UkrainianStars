@@ -481,7 +481,7 @@
     check-cast p1, Landroid/transition/TransitionSet;
 
     .line 2
-    invoke-virtual {p1}, Landroid/transition/TransitionSet;->getTargets()Ljava/util/List;
+    invoke-virtual {p1}, Landroid/transition/Transition;->getTargets()Ljava/util/List;
 
     move-result-object v0
 
@@ -546,14 +546,14 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Landroid/transition/TransitionSet;->getTargets()Ljava/util/List;
+    invoke-virtual {p1}, Landroid/transition/Transition;->getTargets()Ljava/util/List;
 
     move-result-object v0
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 3
-    invoke-virtual {p1}, Landroid/transition/TransitionSet;->getTargets()Ljava/util/List;
+    invoke-virtual {p1}, Landroid/transition/Transition;->getTargets()Ljava/util/List;
 
     move-result-object v0
 
@@ -672,7 +672,7 @@
 
     if-nez p3, :cond_1
 
-    const/4 v0, 0x0
+    move v0, v1
 
     goto :goto_1
 

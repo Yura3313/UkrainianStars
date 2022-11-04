@@ -1,5 +1,5 @@
 .class public final Landroidx/fragment/app/m;
-.super Landroidx/fragment/app/Fragment$d;
+.super Landroidx/fragment/app/Fragment$e;
 .source "Fragment.java"
 
 
@@ -31,7 +31,7 @@
     iput-object p5, p0, Landroidx/fragment/app/m;->d:Landroidx/activity/result/a;
 
     .line 2
-    invoke-direct {p0}, Landroidx/fragment/app/Fragment$d;-><init>()V
+    invoke-direct {p0}, Landroidx/fragment/app/Fragment$e;-><init>()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/m;->e:Landroidx/fragment/app/Fragment;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     new-instance v1, Ljava/lang/StringBuilder;
@@ -55,7 +55,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
+    iget-object v2, v0, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -63,7 +63,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->Y:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->X:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -80,12 +80,12 @@
 
     check-cast v1, Landroidx/fragment/app/Fragment$b;
 
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     iget-object v1, v1, Landroidx/fragment/app/Fragment$b;->a:Landroidx/fragment/app/Fragment;
 
-    iget-object v2, v1, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/s;
+    iget-object v2, v1, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/s;
 
     instance-of v3, v2, Landroidx/activity/result/c;
 
@@ -120,7 +120,7 @@
 
     iget-object v5, p0, Landroidx/fragment/app/m;->d:Landroidx/activity/result/a;
 
-    invoke-virtual {v1, v0, v3, v4, v5}, Landroidx/activity/result/ActivityResultRegistry;->c(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
+    invoke-virtual {v1, v0, v3, v4, v5}, Landroidx/activity/result/ActivityResultRegistry;->d(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
 
     move-result-object v0
 

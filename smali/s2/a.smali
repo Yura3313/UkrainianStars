@@ -1,188 +1,194 @@
-.class public final Ls2/a;
+.class public abstract Ls2/a;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls2/a$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/query/Query;",
-        ">;"
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# instance fields
+.field public final a:Ljava/lang/String;
 
+.field public b:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Ls2/a;->a:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 11
+.method public abstract a(Landroid/os/IBinder;)Ljava/lang/Object;
+    .param p1    # Landroid/os/IBinder;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v4, v2
-
-    move-object v5, v4
-
-    move-object v6, v5
-
-    move-object v7, v6
-
-    move-object v9, v7
-
-    const/4 v8, 0x0
-
-    const/4 v10, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v1
-
-    if-ge v1, v0, :cond_0
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v1
-
-    const v2, 0xffff
-
-    and-int/2addr v2, v1
-
-    packed-switch v2, :pswitch_data_0
-
-    .line 4
-    :pswitch_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :pswitch_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v10
-
-    goto :goto_0
-
-    .line 6
-    :pswitch_2
-    sget-object v2, Lcom/google/android/gms/drive/DriveSpace;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 7
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v9
-
-    goto :goto_0
-
-    .line 8
-    :pswitch_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v8
-
-    goto :goto_0
-
-    .line 9
-    :pswitch_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
-
-    move-result-object v7
-
-    goto :goto_0
-
-    .line 10
-    :pswitch_5
-    sget-object v2, Lcom/google/android/gms/drive/query/SortOrder;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 11
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v6, v1
-
-    check-cast v6, Lcom/google/android/gms/drive/query/SortOrder;
-
-    goto :goto_0
-
-    .line 12
-    :pswitch_6
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v5
-
-    goto :goto_0
-
-    .line 13
-    :pswitch_7
-    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzr;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 14
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v4, v1
-
-    check-cast v4, Lcom/google/android/gms/drive/query/internal/zzr;
-
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 16
-    new-instance p1, Lcom/google/android/gms/drive/query/Query;
-
-    move-object v3, p1
-
-    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/drive/query/Query;-><init>(Lcom/google/android/gms/drive/query/internal/zzr;Ljava/lang/String;Lcom/google/android/gms/drive/query/SortOrder;Ljava/util/List;ZLjava/util/List;Z)V
-
-    return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_7
-        :pswitch_0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/os/IBinder;",
+            ")TT;"
+        }
+    .end annotation
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public final b(Landroid/content/Context;)Ljava/lang/Object;
+    .locals 2
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    new-array p1, p1, [Lcom/google/android/gms/drive/query/Query;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ls2/a$a;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Ls2/a;->b:Ljava/lang/Object;
+
+    if-nez v0, :cond_1
+
+    const-string v0, "null reference"
+
+    .line 2
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 3
+    invoke-static {p1}, Lx1/h;->a(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    invoke-virtual {p1}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object p1
+
+    .line 5
+    :try_start_0
+    iget-object v0, p0, Ls2/a;->a:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object p1
+
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/IBinder;
+
+    .line 7
+    invoke-virtual {p0, p1}, Ls2/a;->a(Landroid/os/IBinder;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ls2/a;->b:Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    .line 8
+    new-instance v0, Ls2/a$a;
+
+    const-string v1, "Could not access creator."
+
+    invoke-direct {v0, v1, p1}, Ls2/a$a;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :catch_1
+    move-exception p1
+
+    .line 9
+    new-instance v0, Ls2/a$a;
+
+    const-string v1, "Could not instantiate creator."
+
+    invoke-direct {v0, v1, p1}, Ls2/a$a;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :catch_2
+    move-exception p1
+
+    .line 10
+    new-instance v0, Ls2/a$a;
+
+    const-string v1, "Could not load creator class."
+
+    invoke-direct {v0, v1, p1}, Ls2/a$a;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    .line 11
+    :cond_0
+    new-instance p1, Ls2/a$a;
+
+    invoke-direct {p1}, Ls2/a$a;-><init>()V
+
+    throw p1
+
+    .line 12
+    :cond_1
+    :goto_0
+    iget-object p1, p0, Ls2/a;->b:Ljava/lang/Object;
 
     return-object p1
 .end method

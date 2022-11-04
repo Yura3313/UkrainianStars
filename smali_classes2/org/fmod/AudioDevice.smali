@@ -106,11 +106,11 @@
 
     move-result v1
 
-    mul-int p3, p3, p4
+    mul-int/2addr p3, p4
 
-    mul-int p3, p3, p1
+    mul-int/2addr p3, p1
 
-    mul-int/lit8 p3, p3, 0x2
+    mul-int/2addr p3, v0
 
     if-le p3, v1, :cond_0
 
@@ -169,14 +169,14 @@
     return p1
 .end method
 
-.method public write([BI)V
+.method public write([SI)V
     .locals 2
 
     iget-object v0, p0, Lorg/fmod/AudioDevice;->mTrack:Landroid/media/AudioTrack;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p1, v1, p2}, Landroid/media/AudioTrack;->write([BII)I
+    invoke-virtual {v0, p1, v1, p2}, Landroid/media/AudioTrack;->write([SII)I
 
     return-void
 .end method

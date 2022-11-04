@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profile/ProfileFragment$e;->d(I)V
+    value = Lcom/supercell/id/ui/profile/ProfileFragment$e;->c(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public final synthetic h:Lcom/supercell/id/ui/profile/ProfileFragment$e;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment$e;
 
-.field public final synthetic i:I
+.field public final synthetic h:I
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment$e;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->h:Lcom/supercell/id/ui/profile/ProfileFragment$e;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->g:Lcom/supercell/id/ui/profile/ProfileFragment$e;
 
-    iput p2, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->i:I
+    iput p2, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->h:I
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -42,7 +42,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->f:Z
 
     return-void
 .end method
@@ -52,19 +52,19 @@
 
     const-string v0, "animation"
 
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->g:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->f:Z
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->h:Lcom/supercell/id/ui/profile/ProfileFragment$e;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->g:Lcom/supercell/id/ui/profile/ProfileFragment$e;
 
     iget-object v0, v0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
     const-string v1, "add_friends_button"
 
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x1
 
@@ -73,16 +73,16 @@
     if-nez p1, :cond_0
 
     .line 3
-    iget p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->i:I
+    iget p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->h:I
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->h:Lcom/supercell/id/ui/profile/ProfileFragment$e;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;->g:Lcom/supercell/id/ui/profile/ProfileFragment$e;
 
     iget-object p1, p1, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
-    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x8
 

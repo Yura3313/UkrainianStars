@@ -1,87 +1,69 @@
 .class public final Lbd/c;
-.super Lse/i;
-.source "DonateFragment.kt"
+.super Lif/i;
+.source "IngameAddFriendsFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lcom/supercell/id/ui/game/donate/DonateFragment;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
+        "Lif/i;",
+        "Lhf/l<",
+        "Lcom/supercell/id/view/WidthAdjustingMultilineTextView;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lbd/c;
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+
+.field public final synthetic g:Landroid/graphics/drawable/BitmapDrawable;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
+    .locals 0
 
-    new-instance v0, Lbd/c;
+    iput-object p1, p0, Lbd/c;->f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    invoke-direct {v0}, Lbd/c;-><init>()V
+    iput-object p2, p0, Lbd/c;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    sput-object v0, Lbd/c;->g:Lbd/c;
+    const/4 p1, 0x1
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/game/donate/DonateFragment;
-
-    check-cast p2, Ljava/lang/Exception;
-
-    const-string v0, "$receiver"
-
-    .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lbd/c;->f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    move-result-object p1
+    iget-object v0, p0, Lbd/c;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    if-eqz p1, :cond_0
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    invoke-virtual {p1, v0, v1, v1, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

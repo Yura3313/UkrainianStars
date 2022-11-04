@@ -540,7 +540,7 @@
 
     move-result v0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_b
@@ -605,8 +605,6 @@
 
     if-eqz v10, :cond_2
 
-    move v9, v6
-
     goto :goto_1
 
     .line 14
@@ -629,21 +627,22 @@
 
     move v6, v12
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_3
     move v9, v6
 
-    const/4 v6, -0x1
+    move v6, v7
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_4
-    const/4 v6, -0x1
-
-    const/4 v9, -0x1
+    move v6, v7
 
     :goto_1
+    move v9, v6
+
+    :goto_2
     if-ne v6, v7, :cond_7
 
     .line 15
@@ -655,7 +654,7 @@
 
     array-length v8, v8
 
-    :goto_2
+    :goto_3
     if-ge v10, v8, :cond_7
 
     .line 16
@@ -695,7 +694,7 @@
 
     add-int/2addr v6, v10
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_5
     if-ne v9, v7, :cond_6
@@ -714,10 +713,10 @@
     :cond_6
     add-int/lit8 v10, v10, 0x1
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_7
-    :goto_3
+    :goto_4
     if-eq v6, v7, :cond_8
 
     const/16 v3, 0x7f
@@ -727,7 +726,7 @@
     .line 20
     invoke-virtual {p0, v6, v3, v4}, Lokhttp3/internal/http2/Hpack$Writer;->writeInt(III)V
 
-    goto :goto_4
+    goto :goto_5
 
     :cond_8
     const/16 v6, 0x40
@@ -748,7 +747,7 @@
     .line 24
     invoke-direct {p0, v3}, Lokhttp3/internal/http2/Hpack$Writer;->insertIntoDynamicTable(Lokhttp3/internal/http2/Header;)V
 
-    goto :goto_4
+    goto :goto_5
 
     .line 25
     :cond_9
@@ -776,7 +775,7 @@
     .line 27
     invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Lokio/ByteString;)V
 
-    goto :goto_4
+    goto :goto_5
 
     :cond_a
     const/16 v4, 0x3f
@@ -790,7 +789,7 @@
     .line 30
     invoke-direct {p0, v3}, Lokhttp3/internal/http2/Hpack$Writer;->insertIntoDynamicTable(Lokhttp3/internal/http2/Header;)V
 
-    :goto_4
+    :goto_5
     add-int/lit8 v2, v2, 0x1
 
     goto/16 :goto_0

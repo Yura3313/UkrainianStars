@@ -409,12 +409,12 @@
     :goto_0
     if-eqz p3, :cond_1
 
-    const/4 p2, 0x1
+    move p2, p1
 
     goto :goto_1
 
     :cond_1
-    const/4 p2, 0x0
+    move p2, v2
 
     .line 8
     :goto_1

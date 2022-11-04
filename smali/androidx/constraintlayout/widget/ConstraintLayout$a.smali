@@ -52,31 +52,7 @@
 
 
 # virtual methods
-.method public final a(IIIIII)V
-    .locals 0
-
-    .line 1
-    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->b:I
-
-    .line 2
-    iput p4, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->c:I
-
-    .line 3
-    iput p5, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->d:I
-
-    .line 4
-    iput p6, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->e:I
-
-    .line 5
-    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->f:I
-
-    .line 6
-    iput p2, p0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->g:I
-
-    return-void
-.end method
-
-.method public final b(III)Z
+.method public final a(III)Z
     .locals 3
 
     const/4 v0, 0x1
@@ -125,7 +101,7 @@
     return p1
 .end method
 
-.method public final c(Lq/e;Lr/b$a;)V
+.method public final b(Lq/e;Lr/b$a;)V
     .locals 17
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -140,7 +116,7 @@
     move-object/from16 v2, p2
 
     .line 1
-    sget-object v3, Lq/e$a;->g:Lq/e$a;
+    sget-object v3, Lq/e$a;->f:Lq/e$a;
 
     if-nez v1, :cond_0
 
@@ -228,7 +204,8 @@
 
     if-eq v12, v13, :cond_3
 
-    const/4 v7, 0x0
+    :goto_0
+    move v7, v6
 
     goto/16 :goto_7
 
@@ -246,13 +223,13 @@
 
     add-int/2addr v12, v6
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_4
-    const/4 v12, 0x0
+    move v12, v6
 
     .line 20
-    :goto_0
+    :goto_1
     iget-object v6, v1, Lq/e;->F:Lq/d;
 
     if-eqz v6, :cond_5
@@ -272,7 +249,7 @@
 
     move-result v7
 
-    goto :goto_7
+    goto/16 :goto_7
 
     .line 23
     :cond_6
@@ -289,50 +266,50 @@
 
     if-ne v7, v14, :cond_7
 
-    const/4 v7, 0x1
+    move v7, v14
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_7
     const/4 v7, 0x0
 
     .line 25
-    :goto_1
+    :goto_2
     iget v10, v2, Lr/b$a;->j:I
 
     if-eq v10, v14, :cond_9
 
     if-ne v10, v15, :cond_8
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_8
     const/high16 v12, 0x40000000    # 2.0f
 
-    goto :goto_6
+    goto :goto_0
 
     .line 26
     :cond_9
-    :goto_2
+    :goto_3
     invoke-virtual {v11}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v10
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->q()I
 
     move-result v12
 
     if-ne v10, v12, :cond_a
 
-    const/4 v10, 0x1
+    move v10, v14
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_a
     const/4 v10, 0x0
 
     .line 27
-    :goto_3
+    :goto_4
     iget v12, v2, Lr/b$a;->j:I
 
     if-eq v12, v15, :cond_d
@@ -349,28 +326,28 @@
     if-nez v7, :cond_d
 
     .line 28
-    invoke-virtual/range {p1 .. p1}, Lq/e;->E()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->D()Z
 
     move-result v7
 
     if-eqz v7, :cond_c
 
-    goto :goto_4
+    goto :goto_5
 
     :cond_c
     const/4 v7, 0x0
 
-    goto :goto_5
+    goto :goto_6
 
     :cond_d
-    :goto_4
-    const/4 v7, 0x1
-
     :goto_5
+    move v7, v14
+
+    :goto_6
     if-eqz v7, :cond_8
 
     .line 29
-    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->u()I
 
     move-result v6
 
@@ -380,7 +357,7 @@
 
     move-result v6
 
-    goto :goto_6
+    goto :goto_0
 
     :cond_e
     const/high16 v12, 0x40000000    # 2.0f
@@ -394,7 +371,7 @@
 
     move-result v6
 
-    goto :goto_6
+    goto :goto_0
 
     :cond_f
     const/high16 v12, 0x40000000    # 2.0f
@@ -404,8 +381,7 @@
 
     move-result v6
 
-    :goto_6
-    move v7, v6
+    goto :goto_0
 
     .line 32
     :goto_7
@@ -488,7 +464,7 @@
 
     if-ne v8, v14, :cond_14
 
-    const/4 v8, 0x1
+    move v8, v14
 
     goto :goto_9
 
@@ -517,13 +493,13 @@
 
     move-result v9
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->u()I
 
     move-result v10
 
     if-ne v9, v10, :cond_17
 
-    const/4 v9, 0x1
+    move v9, v14
 
     goto :goto_b
 
@@ -548,7 +524,7 @@
     if-nez v8, :cond_1a
 
     .line 44
-    invoke-virtual/range {p1 .. p1}, Lq/e;->F()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->E()Z
 
     move-result v8
 
@@ -563,13 +539,13 @@
 
     :cond_1a
     :goto_c
-    const/4 v8, 0x1
+    move v8, v14
 
     :goto_d
     if-eqz v8, :cond_15
 
     .line 45
-    invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->q()I
 
     move-result v6
 
@@ -619,7 +595,7 @@
     iget-object v8, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->h:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 51
-    iget v8, v8, Landroidx/constraintlayout/widget/ConstraintLayout;->o:I
+    iget v8, v8, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
 
     const/16 v9, 0x100
 
@@ -635,7 +611,7 @@
 
     move-result v8
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->u()I
 
     move-result v9
 
@@ -646,7 +622,7 @@
 
     move-result v8
 
-    invoke-virtual {v6}, Lq/e;->v()I
+    invoke-virtual {v6}, Lq/e;->u()I
 
     move-result v9
 
@@ -657,7 +633,7 @@
 
     move-result v8
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->q()I
 
     move-result v9
 
@@ -668,7 +644,7 @@
 
     move-result v8
 
-    invoke-virtual {v6}, Lq/e;->r()I
+    invoke-virtual {v6}, Lq/e;->q()I
 
     move-result v6
 
@@ -685,7 +661,7 @@
     if-ne v6, v8, :cond_1e
 
     .line 59
-    invoke-virtual/range {p1 .. p1}, Lq/e;->D()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->C()Z
 
     move-result v6
 
@@ -695,11 +671,11 @@
     iget v6, v1, Lq/e;->B:I
 
     .line 61
-    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->u()I
 
     move-result v8
 
-    invoke-virtual {v0, v6, v7, v8}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->b(III)Z
+    invoke-virtual {v0, v6, v7, v8}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a(III)Z
 
     move-result v6
 
@@ -709,17 +685,17 @@
     iget v6, v1, Lq/e;->C:I
 
     .line 63
-    invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->q()I
 
     move-result v8
 
-    invoke-virtual {v0, v6, v10, v8}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->b(III)Z
+    invoke-virtual {v0, v6, v10, v8}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a(III)Z
 
     move-result v6
 
     if-eqz v6, :cond_1d
 
-    const/4 v6, 0x1
+    move v6, v14
 
     goto :goto_10
 
@@ -730,14 +706,14 @@
     if-eqz v6, :cond_1e
 
     .line 64
-    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->u()I
 
     move-result v3
 
     iput v3, v2, Lr/b$a;->e:I
 
     .line 65
-    invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->q()I
 
     move-result v3
 
@@ -753,11 +729,11 @@
 
     .line 68
     :cond_1e
-    sget-object v6, Lq/e$a;->i:Lq/e$a;
+    sget-object v6, Lq/e$a;->h:Lq/e$a;
 
     if-ne v4, v6, :cond_1f
 
-    const/4 v8, 0x1
+    move v8, v14
 
     goto :goto_11
 
@@ -767,7 +743,7 @@
     :goto_11
     if-ne v5, v6, :cond_20
 
-    const/4 v6, 0x1
+    move v6, v14
 
     goto :goto_12
 
@@ -776,7 +752,7 @@
 
     .line 69
     :goto_12
-    sget-object v9, Lq/e$a;->j:Lq/e$a;
+    sget-object v9, Lq/e$a;->i:Lq/e$a;
 
     if-eq v5, v9, :cond_22
 
@@ -791,7 +767,7 @@
 
     :cond_22
     :goto_13
-    const/4 v5, 0x1
+    move v5, v14
 
     :goto_14
     if-eq v4, v9, :cond_24
@@ -807,7 +783,7 @@
 
     :cond_24
     :goto_15
-    const/4 v3, 0x1
+    move v3, v14
 
     :goto_16
     const/4 v4, 0x0
@@ -821,7 +797,7 @@
 
     if-lez v9, :cond_25
 
-    const/4 v9, 0x1
+    move v9, v14
 
     goto :goto_17
 
@@ -838,7 +814,7 @@
 
     if-lez v4, :cond_26
 
-    const/4 v4, 0x1
+    move v4, v14
 
     goto :goto_18
 
@@ -913,7 +889,7 @@
 
     check-cast v8, Landroidx/constraintlayout/widget/VirtualLayout;
 
-    invoke-virtual {v8, v6, v7, v10}, Landroidx/constraintlayout/widget/VirtualLayout;->s(Lq/l;II)V
+    invoke-virtual {v8, v6, v7, v10}, Landroidx/constraintlayout/widget/VirtualLayout;->r(Lq/l;II)V
 
     goto :goto_1a
 
@@ -1010,7 +986,7 @@
     iget-object v7, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->h:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 93
-    iget v7, v7, Landroidx/constraintlayout/widget/ConstraintLayout;->o:I
+    iget v7, v7, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
 
     const/4 v0, 0x1
 
@@ -1032,7 +1008,7 @@
 
     int-to-float v4, v14
 
-    mul-float v4, v4, v3
+    mul-float/2addr v4, v3
 
     add-float/2addr v4, v0
 
@@ -1145,7 +1121,7 @@
     goto :goto_21
 
     :cond_35
-    const/4 v0, 0x0
+    move v0, v10
 
     .line 106
     :goto_21
@@ -1160,7 +1136,7 @@
     goto :goto_22
 
     :cond_36
-    const/4 v6, 0x0
+    move v6, v10
 
     goto :goto_23
 

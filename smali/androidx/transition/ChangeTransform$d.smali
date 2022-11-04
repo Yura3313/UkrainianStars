@@ -104,9 +104,9 @@
     iget-object v1, p0, Landroidx/transition/ChangeTransform$d;->a:Landroid/graphics/Matrix;
 
     .line 5
-    sget-object v2, Lv0/x;->a:Lv0/d0;
+    sget-object v2, Lt0/u;->a:Lt0/y;
 
-    invoke-virtual {v2, v0, v1}, Lv0/d0;->d(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-virtual {v2, v0, v1}, Lt0/w;->m(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     return-void
 .end method

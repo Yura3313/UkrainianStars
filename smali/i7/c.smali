@@ -1,137 +1,73 @@
 .class public final Li7/c;
-.super Ljava/util/Observable;
-.source "UserDM.java"
+.super Ljava/lang/Object;
+.source "DownloadManager.java"
 
 # interfaces
-.implements Lf7/b;
+.implements Lj7/c;
 
 
 # instance fields
-.field public g:Ljava/lang/Long;
-
-.field public h:Ljava/lang/String;
-
-.field public i:Ljava/lang/String;
-
-.field public j:Ljava/lang/String;
-
-.field public k:Ljava/lang/String;
-
-.field public l:Z
-
-.field public m:Z
-
-.field public n:Z
-
-.field public o:Ljava/lang/String;
-
-.field public p:Z
-
-.field public q:Li7/i;
+.field public final synthetic a:Li7/d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;ZLi7/i;)V
+.method public constructor <init>(Li7/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/Observable;-><init>()V
+    iput-object p1, p0, Li7/c;->a:Li7/d;
 
-    .line 2
-    iput-object p1, p0, Li7/c;->g:Ljava/lang/Long;
-
-    .line 3
-    iput-object p2, p0, Li7/c;->h:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Li7/c;->i:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Li7/c;->j:Ljava/lang/String;
-
-    .line 6
-    iput-object p5, p0, Li7/c;->k:Ljava/lang/String;
-
-    .line 7
-    iput-boolean p6, p0, Li7/c;->l:Z
-
-    .line 8
-    iput-boolean p7, p0, Li7/c;->m:Z
-
-    .line 9
-    iput-boolean p8, p0, Li7/c;->n:Z
-
-    .line 10
-    iput-object p9, p0, Li7/c;->o:Ljava/lang/String;
-
-    .line 11
-    iput-boolean p10, p0, Li7/c;->p:Z
-
-    .line 12
-    iput-object p11, p0, Li7/c;->q:Li7/i;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Li7/c;Li7/c;)V
-    .locals 0
+.method public final a(Ljava/lang/String;I)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    iget-object v0, p0, Li7/c;->a:Li7/d;
 
-    move-result p1
-
-    if-eqz p1, :cond_0
+    iget-object v0, v0, Li7/d;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
-    iget-boolean p1, p2, Li7/c;->p:Z
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    if-eqz v0, :cond_1
 
     .line 3
-    iput-boolean p1, p0, Li7/c;->p:Z
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
 
     .line 4
-    iget-object p1, p2, Li7/c;->o:Ljava/lang/String;
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
 
     .line 5
-    iput-object p1, p0, Li7/c;->o:Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lj7/c;
+
+    if-eqz v1, :cond_0
 
     .line 6
-    iget-object p1, p2, Li7/c;->j:Ljava/lang/String;
+    invoke-interface {v1, p1, p2}, Lj7/c;->a(Ljava/lang/String;I)V
 
-    .line 7
-    iput-object p1, p0, Li7/c;->j:Ljava/lang/String;
+    goto :goto_0
 
-    .line 8
-    iget-object p1, p2, Li7/c;->i:Ljava/lang/String;
-
-    .line 9
-    iput-object p1, p0, Li7/c;->i:Ljava/lang/String;
-
-    .line 10
-    iget-object p1, p2, Li7/c;->q:Li7/i;
-
-    .line 11
-    iput-object p1, p0, Li7/c;->q:Li7/i;
-
-    .line 12
-    iget-boolean p1, p2, Li7/c;->l:Z
-
-    .line 13
-    iput-boolean p1, p0, Li7/c;->l:Z
-
-    .line 14
-    iget-boolean p1, p2, Li7/c;->n:Z
-
-    iput-boolean p1, p0, Li7/c;->n:Z
-
-    .line 15
-    invoke-virtual {p0}, Ljava/util/Observable;->setChanged()V
-
-    .line 16
-    invoke-virtual {p0}, Ljava/util/Observable;->notifyObservers()V
-
-    :cond_0
+    :cond_1
     return-void
 .end method

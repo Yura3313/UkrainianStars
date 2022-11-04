@@ -41,13 +41,13 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/a/a;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/a/a;->g:Ljava/lang/String;
 
     .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 3
-    sget v1, Lc1/a;->a:I
+    sget v1, La1/a;->a:I
 
     const/4 v1, 0x1
 
@@ -65,7 +65,7 @@
     move-result-object p1
 
     :try_start_0
-    iget-object v3, p0, Lcom/google/android/a/a;->g:Landroid/os/IBinder;
+    iget-object v3, p0, Lcom/google/android/a/a;->f:Landroid/os/IBinder;
 
     .line 7
     invoke-interface {v3, v1, v0, p1, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z

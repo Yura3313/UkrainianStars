@@ -4,30 +4,30 @@
 
 
 # virtual methods
-.method public final I6(I)V
-    .locals 0
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final Z2(Lcom/google/android/gms/internal/ads/zzuw;)V
-    .locals 0
-
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzuw;->D2()Lcom/google/android/gms/ads/k;
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final q2(Lcom/google/android/gms/internal/ads/zzait;)V
+.method public final G3(Lcom/google/android/gms/internal/ads/zzait;)V
     .locals 1
 
-    new-instance v0, Lk3/w3;
+    new-instance v0, Lj3/w3;
 
-    invoke-direct {v0, p1}, Lk3/w3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
+    invoke-direct {v0, p1}, Lj3/w3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final K4(Lcom/google/android/gms/internal/ads/zzuw;)V
+    .locals 0
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzuw;->K2()Lcom/google/android/gms/ads/i;
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final Q5(I)V
+    .locals 0
 
     const/4 p1, 0x0
 

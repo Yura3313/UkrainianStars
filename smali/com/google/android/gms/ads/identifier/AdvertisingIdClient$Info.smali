@@ -60,7 +60,7 @@
     const/4 v2, 0x7
 
     .line 1
-    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, Lj3/pv;->b(Ljava/lang/String;I)I
 
     move-result v2
 

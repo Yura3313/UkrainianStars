@@ -1,306 +1,171 @@
 .class public final Lt3/m;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-games@@20.0.1"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/instantapps/zzh;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static varargs a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-    .locals 11
-    .param p0    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .param p1    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+.method public constructor <init>()V
+    .locals 0
 
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 11
+
+    .line 1
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
 
     const/4 v1, 0x0
 
-    .line 1
-    :goto_0
-    array-length v2, p1
+    const/4 v2, 0x0
 
-    if-ge v1, v2, :cond_2
+    move v8, v1
 
-    .line 2
-    aget-object v2, p1, v1
+    move v10, v8
 
-    if-nez v2, :cond_0
+    move-object v4, v2
 
-    const-string v2, "null"
+    move-object v5, v4
 
-    goto/16 :goto_2
-
-    .line 3
-    :cond_0
-    :try_start_0
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto/16 :goto_2
-
-    :catch_0
-    move-exception v9
-
-    .line 4
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    add-int/lit8 v4, v4, 0x1
-
-    .line 5
-    invoke-static {v2, v4}, La1/e;->b(Ljava/lang/String;I)I
-
-    move-result v4
-
-    .line 6
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 v3, 0x40
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "com.google.common.base.Strings"
-
-    .line 7
-    invoke-static {v3}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v3
-
-    sget-object v4, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
-
-    const-string v5, "Exception during lenientFormat for "
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/String;->length()I
-
-    move-result v7
-
-    if-eqz v7, :cond_1
-
-    invoke-virtual {v5, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object v7, v5
-
-    goto :goto_1
-
-    :cond_1
-    new-instance v6, Ljava/lang/String;
-
-    invoke-direct {v6, v5}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    move-object v6, v5
 
     move-object v7, v6
 
-    :goto_1
-    const-string v5, "com.google.common.base.Strings"
+    move-object v9, v7
 
-    const-string v6, "lenientToString"
+    .line 2
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-object v8, v9
+    move-result v1
+
+    if-ge v1, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    const v2, 0xffff
+
+    and-int/2addr v2, v1
+
+    packed-switch v2, :pswitch_data_0
+
+    .line 4
+    :pswitch_0
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_1
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v10
+
+    goto :goto_0
+
+    .line 6
+    :pswitch_2
+    invoke-static {p1, v1}, Lc2/b;->f(Landroid/os/Parcel;I)[I
+
+    move-result-object v7
+
+    goto :goto_0
+
+    .line 7
+    :pswitch_3
+    invoke-static {p1, v1}, Lc2/b;->e(Landroid/os/Parcel;I)[B
+
+    move-result-object v9
+
+    goto :goto_0
 
     .line 8
-    invoke-virtual/range {v3 .. v8}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    :pswitch_4
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v8
+
+    goto :goto_0
 
     .line 9
-    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :pswitch_5
+    invoke-static {p1, v1}, Lc2/b;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v6
 
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/16 v4, 0x9
+    goto :goto_0
 
     .line 10
-    invoke-static {v2, v4}, La1/e;->b(Ljava/lang/String;I)I
+    :pswitch_6
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v4
+    move-result-object v5
+
+    goto :goto_0
 
     .line 11
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    :pswitch_7
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v5
+    move-result-object v4
 
-    add-int/2addr v5, v4
-
-    const-string v4, "<"
-
-    const-string v6, " threw "
+    goto :goto_0
 
     .line 12
-    invoke-static {v5, v4, v2, v6, v3}, Lcom/kakaogame/b;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, ">"
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 13
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzh;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-object v3, p1
 
-    move-result-object v2
+    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/internal/instantapps/zzh;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[II[BZ)V
 
-    .line 14
-    :goto_2
-    aput-object v2, p1, v1
+    return-object p1
 
-    add-int/lit8 v1, v1, 0x1
+    nop
 
-    goto/16 :goto_0
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_7
+        :pswitch_0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
+.end method
 
-    .line 15
-    :cond_2
-    new-instance v1, Ljava/lang/StringBuilder;
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzh;
 
-    move-result v2
-
-    array-length v3, p1
-
-    mul-int/lit8 v3, v3, 0x10
-
-    add-int/2addr v3, v2
-
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const/4 v2, 0x0
-
-    .line 16
-    :goto_3
-    array-length v3, p1
-
-    if-ge v0, v3, :cond_3
-
-    const-string v3, "%s"
-
-    .line 17
-    invoke-virtual {p0, v3, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;I)I
-
-    move-result v3
-
-    const/4 v4, -0x1
-
-    if-eq v3, v4, :cond_3
-
-    .line 18
-    invoke-virtual {v1, p0, v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v2, v0, 0x1
-
-    .line 19
-    aget-object v0, p1, v0
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v0, v3, 0x2
-
-    move v10, v2
-
-    move v2, v0
-
-    move v0, v10
-
-    goto :goto_3
-
-    .line 20
-    :cond_3
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    invoke-virtual {v1, p0, v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
-
-    .line 21
-    array-length p0, p1
-
-    if-ge v0, p0, :cond_5
-
-    const-string p0, " ["
-
-    .line 22
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 p0, v0, 0x1
-
-    .line 23
-    aget-object v0, p1, v0
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 24
-    :goto_4
-    array-length v0, p1
-
-    if-ge p0, v0, :cond_4
-
-    const-string v0, ", "
-
-    .line 25
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v0, p0, 0x1
-
-    .line 26
-    aget-object p0, p1, p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move p0, v0
-
-    goto :goto_4
-
-    :cond_4
-    const/16 p0, 0x5d
-
-    .line 27
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 28
-    :cond_5
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
+    return-object p1
 .end method

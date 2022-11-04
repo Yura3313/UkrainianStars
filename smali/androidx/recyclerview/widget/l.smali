@@ -180,10 +180,10 @@
     goto :goto_1
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v8
 
     :goto_1
-    const/4 v15, 0x0
+    move v15, v8
 
     :goto_2
     if-gt v15, v14, :cond_10
@@ -239,7 +239,7 @@
 
     add-int/lit8 v6, v6, 0x1
 
-    const/4 v7, 0x1
+    move/from16 v7, v16
 
     goto :goto_5
 
@@ -455,7 +455,7 @@
     .line 31
     aget v10, v2, v10
 
-    const/4 v12, 0x0
+    move v12, v3
 
     :goto_9
     sub-int v14, v10, v7

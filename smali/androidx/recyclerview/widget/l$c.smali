@@ -232,7 +232,7 @@
     goto :goto_4
 
     :cond_6
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 29
     :goto_6
@@ -260,7 +260,7 @@
 
     if-eqz v3, :cond_7
 
-    const/4 v3, 0x1
+    move v3, p4
 
     goto :goto_7
 
@@ -367,7 +367,7 @@
 
     if-eqz p2, :cond_0
 
-    const/4 v4, 0x1
+    move v4, v1
 
     goto :goto_2
 
@@ -491,7 +491,7 @@
     if-nez v13, :cond_1
 
     .line 14
-    invoke-virtual {v1, v8, v3}, Landroidx/recyclerview/widget/c;->c(II)V
+    invoke-virtual {v1, v8, v3}, Landroidx/recyclerview/widget/c;->a(II)V
 
     goto/16 :goto_5
 
@@ -540,7 +540,7 @@
     new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 18
-    invoke-static {v11, v14, v10}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v14, v10}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -583,7 +583,7 @@
 
     sub-int/2addr v13, v7
 
-    invoke-virtual {v1, v14, v13}, Landroidx/recyclerview/widget/c;->a(II)V
+    invoke-virtual {v1, v14, v13}, Landroidx/recyclerview/widget/c;->b(II)V
 
     const/4 v13, 0x4
 
@@ -597,7 +597,7 @@
     iget-object v13, v0, Landroidx/recyclerview/widget/l$c;->d:Landroidx/recyclerview/widget/l$b;
 
     .line 24
-    invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v13}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v13, 0x0
 
@@ -612,7 +612,7 @@
     const/4 v7, 0x1
 
     .line 26
-    invoke-virtual {v1, v14, v7}, Landroidx/recyclerview/widget/c;->c(II)V
+    invoke-virtual {v1, v14, v7}, Landroidx/recyclerview/widget/c;->a(II)V
 
     .line 27
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -667,7 +667,7 @@
     if-nez v3, :cond_7
 
     .line 30
-    invoke-virtual {v1, v8, v4}, Landroidx/recyclerview/widget/c;->b(II)V
+    invoke-virtual {v1, v8, v4}, Landroidx/recyclerview/widget/c;->c(II)V
 
     goto :goto_8
 
@@ -716,7 +716,7 @@
     new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 34
-    invoke-static {v11, v7, v10}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v7, v10}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -753,7 +753,7 @@
     .line 38
     iget v3, v3, Landroidx/recyclerview/widget/l$d;->b:I
 
-    invoke-virtual {v1, v3, v8}, Landroidx/recyclerview/widget/c;->a(II)V
+    invoke-virtual {v1, v3, v8}, Landroidx/recyclerview/widget/c;->b(II)V
 
     const/4 v3, 0x4
 
@@ -763,7 +763,7 @@
     iget-object v3, v0, Landroidx/recyclerview/widget/l$c;->d:Landroidx/recyclerview/widget/l$b;
 
     .line 40
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -776,7 +776,7 @@
     const/4 v3, 0x1
 
     .line 42
-    invoke-virtual {v1, v8, v3}, Landroidx/recyclerview/widget/c;->b(II)V
+    invoke-virtual {v1, v8, v3}, Landroidx/recyclerview/widget/c;->c(II)V
 
     .line 43
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -836,7 +836,7 @@
     iget-object v3, v0, Landroidx/recyclerview/widget/l$c;->d:Landroidx/recyclerview/widget/l$b;
 
     .line 47
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -941,7 +941,7 @@
     goto :goto_2
 
     :cond_1
-    const/4 v4, 0x4
+    move v4, v6
 
     .line 6
     :goto_2
@@ -996,7 +996,7 @@
     goto :goto_4
 
     :cond_4
-    const/4 v4, 0x4
+    move v4, v6
 
     .line 10
     :goto_4

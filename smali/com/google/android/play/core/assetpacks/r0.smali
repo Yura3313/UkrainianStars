@@ -1,100 +1,118 @@
-.class public final Lcom/google/android/play/core/assetpacks/r0;
+.class public final synthetic Lcom/google/android/play/core/assetpacks/r0;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/play/core/assetpacks/y0;
 
 
 # instance fields
-.field public final a:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Double;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final f:Lcom/google/android/play/core/assetpacks/z0;
+
+.field public final g:Landroid/os/Bundle;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lcom/google/android/play/core/assetpacks/z0;Landroid/os/Bundle;)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/r0;->f:Lcom/google/android/play/core/assetpacks/z0;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/r0;->a:Ljava/util/HashMap;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/r0;->g:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a(Ljava/lang/String;Lcom/google/android/play/core/assetpacks/e1;)D
-    .locals 5
+.method public final e()Ljava/lang/Object;
+    .locals 4
 
-    monitor-enter p0
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/r0;->f:Lcom/google/android/play/core/assetpacks/z0;
 
-    :try_start_0
-    instance-of v0, p2, Lcom/google/android/play/core/assetpacks/l0;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/r0;->g:Landroid/os/Bundle;
 
-    const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v0, :cond_0
+    const-string v2, "session_id"
 
-    move-object v0, p2
+    invoke-virtual {v1, v2}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/l0;
+    move-result v2
 
-    iget v0, v0, Lcom/google/android/play/core/assetpacks/l0;->g:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-nez v2, :cond_0
 
-    int-to-double v3, v0
-
-    invoke-static {v3, v4}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v3, v4}, Ljava/lang/Double;->isNaN(D)Z
-
-    add-double/2addr v3, v1
-
-    :try_start_1
-    check-cast p2, Lcom/google/android/play/core/assetpacks/l0;
-
-    iget p2, p2, Lcom/google/android/play/core/assetpacks/l0;->h:I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    int-to-double v0, p2
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
-
-    div-double v1, v3, v0
+    goto :goto_0
 
     :cond_0
-    :try_start_2
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/r0;->a:Ljava/util/HashMap;
+    iget-object v3, v0, Lcom/google/android/play/core/assetpacks/z0;->e:Ljava/util/HashMap;
 
-    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    :goto_0
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    goto :goto_1
+
+    :cond_1
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/z0;->e:Ljava/util/HashMap;
+
+    invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-interface {p2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    check-cast v0, Lcom/google/android/play/core/assetpacks/w0;
 
-    monitor-exit p0
+    iget-object v2, v0, Lcom/google/android/play/core/assetpacks/w0;->c:Lcom/google/android/play/core/assetpacks/v0;
 
-    return-wide v1
+    iget v2, v2, Lcom/google/android/play/core/assetpacks/v0;->c:I
 
-    :catchall_0
-    move-exception p1
+    const/4 v3, 0x6
 
-    monitor-exit p0
+    if-ne v2, v3, :cond_2
 
-    throw p1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/z0;->e(Landroid/os/Bundle;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "status"
+
+    invoke-static {v3, v2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/w0;->c:Lcom/google/android/play/core/assetpacks/v0;
+
+    iget v0, v0, Lcom/google/android/play/core/assetpacks/v0;->c:I
+
+    invoke-static {v0, v1}, Lcom/google/android/play/core/assetpacks/i1;->c(II)Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    :goto_1
+    return-object v0
 .end method

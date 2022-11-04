@@ -1,5 +1,6 @@
 .class public final Lt1/e;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -10,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;",
+        "Lcom/google/android/gms/auth/api/identity/SignInCredential;",
         ">;"
     }
 .end annotation
@@ -31,21 +32,25 @@
     .locals 10
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    const-wide/16 v2, 0x0
+    move-object v3, v1
 
-    move-wide v7, v2
+    move-object v4, v3
 
-    const/4 v5, 0x0
+    move-object v5, v4
 
-    const/4 v6, 0x0
+    move-object v6, v5
 
-    const/4 v9, 0x0
+    move-object v7, v6
+
+    move-object v8, v7
+
+    move-object v9, v8
 
     .line 2
     :goto_0
@@ -53,7 +58,7 @@
 
     move-result v1
 
-    if-ge v1, v0, :cond_4
+    if-ge v1, v0, :cond_0
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -64,77 +69,107 @@
 
     and-int/2addr v2, v1
 
-    const/4 v3, 0x1
-
-    if-eq v2, v3, :cond_3
-
-    const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_2
-
-    const/4 v3, 0x3
-
-    if-eq v2, v3, :cond_1
-
-    const/4 v3, 0x4
-
-    if-eq v2, v3, :cond_0
+    packed-switch v2, :pswitch_data_0
 
     .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
-    :cond_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    :pswitch_0
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v9
+    move-result-object v9
 
     goto :goto_0
 
     .line 6
-    :cond_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
+    :pswitch_1
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-wide v7
+    move-result-object v8
 
     goto :goto_0
 
     .line 7
-    :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v6
-
-    goto :goto_0
+    :pswitch_2
+    sget-object v2, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
-    :cond_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    move-result v5
+    move-result-object v1
+
+    move-object v7, v1
+
+    check-cast v7, Landroid/net/Uri;
 
     goto :goto_0
 
     .line 9
-    :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    :pswitch_3
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_0
 
     .line 10
-    new-instance p1, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
+    :pswitch_4
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-object v4, p1
+    move-result-object v5
 
-    invoke-direct/range {v4 .. v9}, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;-><init>(IZJZ)V
+    goto :goto_0
+
+    .line 11
+    :pswitch_5
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    .line 12
+    :pswitch_6
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 14
+    new-instance p1, Lcom/google/android/gms/auth/api/identity/SignInCredential;
+
+    move-object v2, p1
+
+    invoke-direct/range {v2 .. v9}, Lcom/google/android/gms/auth/api/identity/SignInCredential;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/identity/SignInCredential;
 
     return-object p1
 .end method

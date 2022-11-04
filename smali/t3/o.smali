@@ -1,191 +1,170 @@
-.class public Lt3/o;
-.super Lb2/z;
-.source "com.google.android.gms:play-services-games@@20.0.1"
+.class public final Lt3/o;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
         "Ljava/lang/Object;",
-        ">",
-        "Lb2/z;"
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/instantapps/zzn;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public g:[Ljava/lang/Object;
-
-.field public h:I
-
-.field public i:Z
-
-
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lb2/z;-><init>()V
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 2
-    iput-object v0, p0, Lt3/o;->g:[Ljava/lang/Object;
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput v0, p0, Lt3/o;->h:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G(I)V
-    .locals 4
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    iget-object v0, p0, Lt3/o;->g:[Ljava/lang/Object;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
-    array-length v1, v0
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    if-ge v1, p1, :cond_3
+    const-wide/16 v3, 0x0
+
+    move-object v10, v1
+
+    move-object v11, v10
+
+    move v6, v2
+
+    move v9, v6
+
+    move-wide v7, v3
 
     .line 2
-    array-length v1, v0
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    if-ltz p1, :cond_2
+    move-result v1
 
-    shr-int/lit8 v3, v1, 0x1
-
-    add-int/2addr v1, v3
-
-    add-int/lit8 v1, v1, 0x1
-
-    if-ge v1, p1, :cond_0
-
-    add-int/lit8 p1, p1, -0x1
+    if-ge v1, v0, :cond_5
 
     .line 3
-    invoke-static {p1}, Ljava/lang/Integer;->highestOneBit(I)I
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result p1
+    move-result v1
 
-    shl-int/lit8 v1, p1, 0x1
+    const v2, 0xffff
 
-    :cond_0
-    if-gez v1, :cond_1
+    and-int/2addr v2, v1
 
-    const v1, 0x7fffffff
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_4
+
+    const/4 v3, 0x3
+
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x4
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_1
+
+    const/4 v3, 0x6
+
+    if-eq v2, v3, :cond_0
 
     .line 4
-    :cond_1
-    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
-    move-result-object p1
-
-    iput-object p1, p0, Lt3/o;->g:[Ljava/lang/Object;
+    goto :goto_0
 
     .line 5
-    iput-boolean v2, p0, Lt3/o;->i:Z
-
-    return-void
+    :cond_0
+    sget-object v2, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 6
-    :cond_2
-    new-instance p1, Ljava/lang/AssertionError;
+    invoke-static {p1, v1, v2}, Lc2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
 
-    const-string v0, "cannot store more than MAX_VALUE elements"
+    move-result-object v1
 
-    invoke-direct {p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    move-object v11, v1
 
-    throw p1
+    check-cast v11, [Landroid/accounts/Account;
+
+    goto :goto_0
 
     .line 7
-    :cond_3
-    iget-boolean p1, p0, Lt3/o;->i:Z
-
-    if-eqz p1, :cond_4
+    :cond_1
+    sget-object v2, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-static {p1, v1, v2}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    move-result-object p1
+    move-result-object v1
 
-    check-cast p1, [Ljava/lang/Object;
+    move-object v10, v1
 
-    iput-object p1, p0, Lt3/o;->g:[Ljava/lang/Object;
+    check-cast v10, Landroid/accounts/Account;
+
+    goto :goto_0
 
     .line 9
-    iput-boolean v2, p0, Lt3/o;->i:Z
+    :cond_2
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
+    move-result v9
+
+    goto :goto_0
+
+    .line 10
+    :cond_3
+    invoke-static {p1, v1}, Lc2/b;->t(Landroid/os/Parcel;I)J
+
+    move-result-wide v7
+
+    goto :goto_0
+
+    .line 11
     :cond_4
-    return-void
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v6
+
+    goto :goto_0
+
+    .line 12
+    :cond_5
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
+
+    .line 13
+    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzn;
+
+    move-object v5, p1
+
+    invoke-direct/range {v5 .. v11}, Lcom/google/android/gms/internal/instantapps/zzn;-><init>(IJILandroid/accounts/Account;[Landroid/accounts/Account;)V
+
+    return-object p1
 .end method
 
-.method public q(Ljava/lang/Iterable;)Lb2/z;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Iterable<",
-            "+TE;>;)",
-            "Lb2/z;"
-        }
-    .end annotation
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 1
-    instance-of v0, p1, Ljava/util/Collection;
+    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzn;
 
-    if-eqz v0, :cond_0
-
-    .line 2
-    move-object v0, p1
-
-    check-cast v0, Ljava/util/Collection;
-
-    .line 3
-    iget v1, p0, Lt3/o;->h:I
-
-    invoke-interface {v0}, Ljava/util/Collection;->size()I
-
-    move-result v2
-
-    add-int/2addr v2, v1
-
-    invoke-virtual {p0, v2}, Lt3/o;->G(I)V
-
-    .line 4
-    instance-of v1, v0, Lt3/q;
-
-    if-eqz v1, :cond_0
-
-    .line 5
-    check-cast v0, Lt3/q;
-
-    .line 6
-    iget-object p1, p0, Lt3/o;->g:[Ljava/lang/Object;
-
-    iget v1, p0, Lt3/o;->h:I
-
-    invoke-virtual {v0, p1, v1}, Lt3/q;->b([Ljava/lang/Object;I)I
-
-    move-result p1
-
-    iput p1, p0, Lt3/o;->h:I
-
-    return-object p0
-
-    .line 7
-    :cond_0
-    invoke-super {p0, p1}, Lb2/z;->q(Ljava/lang/Iterable;)Lb2/z;
-
-    return-object p0
+    return-object p1
 .end method

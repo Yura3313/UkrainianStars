@@ -343,7 +343,7 @@
     iget v4, v1, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mLocalStream:I
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v1, 0x2
 
@@ -762,7 +762,7 @@
 
     .line 3
     :cond_0
-    new-instance v0, Lp0/d;
+    new-instance v0, Lo0/d;
 
     .line 4
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
@@ -775,7 +775,7 @@
 
     const-string v3, "android.media.session.MediaController"
 
-    invoke-direct {v0, v3, v1, v2}, Lp0/d;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v1, v2}, Lo0/d;-><init>(Ljava/lang/String;II)V
 
     .line 5
     iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$MediaSessionStub;->this$0:Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;

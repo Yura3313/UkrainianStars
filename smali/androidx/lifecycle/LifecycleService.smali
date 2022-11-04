@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final g:Landroidx/lifecycle/v;
+.field public final f:Landroidx/lifecycle/v;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/v;-><init>(Landroidx/lifecycle/j;)V
 
-    iput-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iput-object v0, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     .line 2
     iget-object v0, v0, Landroidx/lifecycle/v;->a:Landroidx/lifecycle/k;
@@ -45,7 +45,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iget-object p1, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     .line 2
     sget-object v0, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
@@ -61,7 +61,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
@@ -78,7 +78,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
@@ -100,7 +100,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/v;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->f:Landroidx/lifecycle/v;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;

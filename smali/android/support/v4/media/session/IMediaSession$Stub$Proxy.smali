@@ -2975,7 +2975,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v2, 0x0
+    move v2, v3
 
     .line 10
     :goto_1
@@ -3031,7 +3031,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 4
     :goto_0
@@ -3224,7 +3224,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 4
     :goto_0

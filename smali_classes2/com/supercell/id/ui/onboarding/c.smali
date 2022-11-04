@@ -1,24 +1,24 @@
 .class public final Lcom/supercell/id/ui/onboarding/c;
-.super Lse/i;
+.super Lif/i;
 .source "OnboardingFlow.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
-        "Lod/p;",
+        "Lif/i;",
+        "Lhf/a<",
+        "Lnd/o;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/onboarding/c;
+.field public static final f:Lcom/supercell/id/ui/onboarding/c;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/onboarding/c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/onboarding/c;->g:Lcom/supercell/id/ui/onboarding/c;
+    sput-object v0, Lcom/supercell/id/ui/onboarding/c;->f:Lcom/supercell/id/ui/onboarding/c;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Lod/p;
+    new-instance v0, Lnd/o;
 
-    invoke-direct {v0}, Lod/p;-><init>()V
+    invoke-direct {v0}, Lnd/o;-><init>()V
 
     return-object v0
 .end method

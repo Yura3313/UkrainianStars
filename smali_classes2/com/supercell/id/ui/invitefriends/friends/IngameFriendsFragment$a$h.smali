@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/b2$a;
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->n(Landroid/view/ViewGroup;I)Lzd/w1$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lae/b2$a;
+.field public final synthetic a:Lzd/w1$a;
 
 
 # direct methods
-.method public constructor <init>(Lae/b2$a;)V
+.method public constructor <init>(Lzd/w1$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lae/b2$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lzd/w1$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

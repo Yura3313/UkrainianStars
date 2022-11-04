@@ -17,45 +17,45 @@
 
 
 # instance fields
+.field public f:I
+
 .field public g:I
 
-.field public h:I
+.field public h:Landroid/graphics/drawable/Drawable;
 
 .field public i:Landroid/graphics/drawable/Drawable;
 
-.field public j:Landroid/graphics/drawable/Drawable;
+.field public final j:I
 
-.field public final k:I
+.field public k:Z
 
-.field public l:Z
+.field public l:Landroid/view/View;
 
-.field public m:Landroid/view/View;
+.field public m:F
 
 .field public n:F
 
-.field public o:F
+.field public o:I
 
-.field public p:I
+.field public p:Z
 
-.field public q:Z
+.field public q:I
 
-.field public r:I
+.field public r:F
 
 .field public s:F
 
-.field public t:F
+.field public t:Landroidx/slidingpanelayout/widget/SlidingPaneLayout$d;
 
-.field public u:Landroidx/slidingpanelayout/widget/SlidingPaneLayout$d;
+.field public final u:Li0/c;
 
-.field public final v:Lj0/c;
+.field public v:Z
 
 .field public w:Z
 
-.field public x:Z
+.field public final x:Landroid/graphics/Rect;
 
-.field public final y:Landroid/graphics/Rect;
-
-.field public final z:Ljava/util/ArrayList;
+.field public final y:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -87,26 +87,26 @@
     const p2, -0x33333334
 
     .line 3
-    iput p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
+    iput p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->f:I
 
     const/4 p2, 0x1
 
     .line 4
-    iput-boolean p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iput-boolean p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     .line 5
     new-instance p3, Landroid/graphics/Rect;
 
     invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Landroid/graphics/Rect;
+    iput-object p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Landroid/graphics/Rect;
 
     .line 6
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->z:Ljava/util/ArrayList;
+    iput-object p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Ljava/util/ArrayList;
 
     .line 7
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -121,7 +121,7 @@
 
     const/high16 p3, 0x42000000    # 32.0f
 
-    mul-float p3, p3, p1
+    mul-float/2addr p3, p1
 
     const/high16 v0, 0x3f000000    # 0.5f
 
@@ -130,7 +130,7 @@
     float-to-int p3, p3
 
     .line 8
-    iput p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:I
+    iput p3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->j:I
 
     const/4 p3, 0x0
 
@@ -142,28 +142,28 @@
 
     invoke-direct {p3, p0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;-><init>(Landroidx/slidingpanelayout/widget/SlidingPaneLayout;)V
 
-    invoke-static {p0, p3}, Lf0/r;->D(Landroid/view/View;Lf0/a;)V
+    invoke-static {p0, p3}, Lf0/o;->p(Landroid/view/View;Lf0/a;)V
 
     .line 11
-    invoke-static {p0, p2}, Lf0/r;->I(Landroid/view/View;I)V
+    invoke-virtual {p0, p2}, Landroid/view/View;->setImportantForAccessibility(I)V
 
     .line 12
     new-instance p2, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$c;
 
     invoke-direct {p2, p0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$c;-><init>(Landroidx/slidingpanelayout/widget/SlidingPaneLayout;)V
 
-    invoke-static {p0, v0, p2}, Lj0/c;->j(Landroid/view/ViewGroup;FLj0/c$c;)Lj0/c;
+    invoke-static {p0, v0, p2}, Li0/c;->j(Landroid/view/ViewGroup;FLi0/c$c;)Li0/c;
 
     move-result-object p2
 
-    iput-object p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iput-object p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     const/high16 p3, 0x43c80000    # 400.0f
 
-    mul-float p1, p1, p3
+    mul-float/2addr p1, p3
 
     .line 13
-    iput p1, p2, Lj0/c;->n:F
+    iput p1, p2, Li0/c;->n:F
 
     return-void
 .end method
@@ -196,7 +196,7 @@
 
     int-to-float v1, v1
 
-    mul-float v1, v1, p2
+    mul-float/2addr v1, p2
 
     float-to-int p2, v1
 
@@ -256,7 +256,7 @@
 
     iget-object p2, p2, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams;->d:Landroid/graphics/Paint;
 
-    sget-object p3, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p3, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 8
     invoke-virtual {p1, p2}, Landroid/view/View;->setLayerPaint(Landroid/graphics/Paint;)V
@@ -288,12 +288,12 @@
     invoke-direct {p2, p0, p1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$b;-><init>(Landroidx/slidingpanelayout/widget/SlidingPaneLayout;Landroid/view/View;)V
 
     .line 13
-    iget-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->z:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 14
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 15
     invoke-virtual {p0, p2}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
@@ -321,7 +321,7 @@
     check-cast p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams;
 
     .line 2
-    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v1, :cond_1
 
@@ -329,7 +329,7 @@
 
     if-eqz p1, :cond_1
 
-    iget p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     const/4 v1, 0x0
 
@@ -347,7 +347,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -395,29 +395,29 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {v0}, Lj0/c;->i()Z
+    invoke-virtual {v0}, Li0/c;->i()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {v0}, Lj0/c;->a()V
+    invoke-virtual {v0}, Li0/c;->a()V
 
     return-void
 
     .line 4
     :cond_0
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {p0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -435,7 +435,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -467,7 +467,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 4
     :goto_1
@@ -484,7 +484,7 @@
     move-result-object v4
 
     .line 6
-    iget-object v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     if-ne v4, v5, :cond_2
 
@@ -492,28 +492,28 @@
 
     .line 7
     :cond_2
-    iget v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:F
+    iget v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
 
     const/high16 v6, 0x3f800000    # 1.0f
 
     sub-float v5, v6, v5
 
-    iget v7, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:I
+    iget v7, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:I
 
     int-to-float v8, v7
 
-    mul-float v5, v5, v8
+    mul-float/2addr v5, v8
 
     float-to-int v5, v5
 
     .line 8
-    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:F
+    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
 
     sub-float v8, v6, p1
 
     int-to-float v7, v7
 
-    mul-float v8, v8, v7
+    mul-float/2addr v8, v7
 
     float-to-int v7, v8
 
@@ -530,7 +530,7 @@
     if-eqz v1, :cond_5
 
     .line 10
-    iget v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:F
+    iget v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
 
     if-eqz v0, :cond_4
 
@@ -542,7 +542,7 @@
     sub-float v5, v6, v5
 
     :goto_3
-    iget v6, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->h:I
+    iget v6, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
 
     invoke-virtual {p0, v4, v5, v6}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->a(Landroid/view/View;FI)V
 
@@ -570,13 +570,13 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->j:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->i:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->i:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->h:Landroid/graphics/drawable/Drawable;
 
     .line 5
     :goto_0
@@ -678,7 +678,7 @@
     move-result v1
 
     .line 3
-    iget-boolean v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v2, :cond_1
 
@@ -686,12 +686,12 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
@@ -703,11 +703,11 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
-    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getRight()I
 
@@ -723,11 +723,11 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->right:I
 
-    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getLeft()I
 
@@ -741,7 +741,7 @@
 
     .line 8
     :goto_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;)Z
 
@@ -767,7 +767,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_1
@@ -802,7 +802,7 @@
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     const/4 v1, 0x0
 
@@ -817,7 +817,7 @@
     move-result v0
 
     .line 3
-    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -837,7 +837,7 @@
     add-int/2addr v0, v2
 
     .line 5
-    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
@@ -852,11 +852,11 @@
 
     int-to-float v0, v0
 
-    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:I
+    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:I
 
     int-to-float v4, v4
 
-    mul-float p1, p1, v4
+    mul-float/2addr p1, v4
 
     add-float/2addr p1, v0
 
@@ -883,11 +883,11 @@
     int-to-float v0, v0
 
     .line 8
-    iget v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:I
+    iget v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:I
 
     int-to-float v2, v2
 
-    mul-float p1, p1, v2
+    mul-float/2addr p1, v2
 
     add-float/2addr p1, v0
 
@@ -895,15 +895,15 @@
 
     .line 9
     :goto_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getTop()I
 
     move-result v3
 
-    invoke-virtual {v0, v2, p1, v3}, Lj0/c;->z(Landroid/view/View;II)Z
+    invoke-virtual {v0, v2, p1, v3}, Li0/c;->y(Landroid/view/View;II)Z
 
     move-result p1
 
@@ -913,7 +913,7 @@
     invoke-virtual {p0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->e()V
 
     .line 11
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 12
     invoke-virtual {p0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -1217,7 +1217,7 @@
 .method public getCoveredFadeColor()I
     .locals 1
 
-    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->h:I
+    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
 
     return v0
 .end method
@@ -1225,7 +1225,7 @@
 .method public getParallaxDistance()I
     .locals 1
 
-    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:I
+    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:I
 
     return v0
 .end method
@@ -1233,7 +1233,7 @@
 .method public getSliderFadeColor()I
     .locals 1
 
-    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
+    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->f:I
 
     return v0
 .end method
@@ -1247,7 +1247,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     return-void
 .end method
@@ -1261,10 +1261,10 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     .line 3
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->z:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1276,7 +1276,7 @@
     if-ge v1, v0, :cond_0
 
     .line 4
-    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->z:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1293,7 +1293,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->z:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->y:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1309,7 +1309,7 @@
     move-result v0
 
     .line 2
-    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     const/4 v2, 0x1
 
@@ -1331,7 +1331,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     .line 5
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -1347,21 +1347,21 @@
     float-to-int v5, v5
 
     .line 6
-    invoke-virtual {v3, v1, v4, v5}, Lj0/c;->q(Landroid/view/View;II)Z
+    invoke-virtual {v3, v1, v4, v5}, Li0/c;->p(Landroid/view/View;II)Z
 
     move-result v1
 
     xor-int/2addr v1, v2
 
-    iput-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     .line 7
     :cond_0
-    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v1, :cond_9
 
-    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:Z
+    iget-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:Z
 
     if-eqz v1, :cond_1
 
@@ -1401,7 +1401,7 @@
     move-result v1
 
     .line 10
-    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
+    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:F
 
     sub-float/2addr v0, v4
 
@@ -1410,7 +1410,7 @@
     move-result v0
 
     .line 11
-    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->t:F
+    iget v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
 
     sub-float/2addr v1, v4
 
@@ -1419,10 +1419,10 @@
     move-result v1
 
     .line 12
-    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     .line 13
-    iget v5, v4, Lj0/c;->b:I
+    iget v5, v4, Li0/c;->b:I
 
     int-to-float v5, v5
 
@@ -1435,16 +1435,16 @@
     if-lez v0, :cond_5
 
     .line 14
-    invoke-virtual {v4}, Lj0/c;->b()V
+    invoke-virtual {v4}, Li0/c;->b()V
 
     .line 15
-    iput-boolean v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:Z
+    iput-boolean v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:Z
 
     return v3
 
     .line 16
     :cond_4
-    iput-boolean v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:Z
+    iput-boolean v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:Z
 
     .line 17
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -1457,27 +1457,27 @@
     move-result v1
 
     .line 19
-    iput v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
+    iput v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:F
 
     .line 20
-    iput v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->t:F
+    iput v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
 
     .line 21
-    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    iget-object v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v5, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     float-to-int v0, v0
 
     float-to-int v1, v1
 
-    invoke-virtual {v4, v5, v0, v1}, Lj0/c;->q(Landroid/view/View;II)Z
+    invoke-virtual {v4, v5, v0, v1}, Li0/c;->p(Landroid/view/View;II)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     .line 22
     invoke-virtual {p0, v0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->b(Landroid/view/View;)Z
@@ -1486,19 +1486,19 @@
 
     if-eqz v0, :cond_5
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_1
 
     :cond_5
     :goto_0
-    const/4 v0, 0x0
+    move v0, v3
 
     .line 23
     :goto_1
-    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {v1, p1}, Lj0/c;->y(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v1, p1}, Li0/c;->x(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
@@ -1509,7 +1509,7 @@
     goto :goto_2
 
     :cond_6
-    const/4 v2, 0x0
+    move v2, v3
 
     :cond_7
     :goto_2
@@ -1518,18 +1518,18 @@
     .line 24
     :cond_8
     :goto_3
-    iget-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {p1}, Lj0/c;->b()V
+    invoke-virtual {p1}, Li0/c;->b()V
 
     return v3
 
     .line 25
     :cond_9
     :goto_4
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {v0}, Lj0/c;->b()V
+    invoke-virtual {v0}, Li0/c;->b()V
 
     .line 26
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -1554,21 +1554,21 @@
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     const/4 v4, 0x2
 
     .line 3
-    iput v4, v3, Lj0/c;->p:I
+    iput v4, v3, Li0/c;->p:I
 
     goto :goto_0
 
     .line 4
     :cond_0
-    iget-object v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     .line 5
-    iput v2, v3, Lj0/c;->p:I
+    iput v2, v3, Li0/c;->p:I
 
     :goto_0
     sub-int v3, p4, p2
@@ -1614,16 +1614,16 @@
     move-result v7
 
     .line 10
-    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     if-eqz v8, :cond_4
 
     .line 11
-    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v8, :cond_3
 
-    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iget-boolean v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     if-eqz v8, :cond_3
 
@@ -1635,7 +1635,7 @@
     const/4 v8, 0x0
 
     :goto_3
-    iput v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iput v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     :cond_4
     move v11, v4
@@ -1691,7 +1691,7 @@
     sub-int v8, v3, v5
 
     .line 18
-    iget v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:I
+    iget v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->j:I
 
     sub-int v10, v8, v10
 
@@ -1704,7 +1704,7 @@
     sub-int/2addr v10, v2
 
     .line 19
-    iput v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->p:I
+    iput v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->o:I
 
     if-eqz v1, :cond_6
 
@@ -1741,9 +1741,9 @@
     int-to-float v8, v10
 
     .line 22
-    iget v9, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget v9, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
-    mul-float v9, v9, v8
+    mul-float/2addr v9, v8
 
     float-to-int v9, v9
 
@@ -1756,7 +1756,7 @@
     div-float/2addr v9, v8
 
     .line 23
-    iput v9, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iput v9, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     const/4 v8, 0x0
 
@@ -1766,16 +1766,16 @@
 
     .line 24
     :cond_8
-    iget-boolean v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v2, :cond_9
 
-    iget v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:I
+    iget v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:I
 
     if-eqz v2, :cond_9
 
     .line 25
-    iget v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget v8, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     const/high16 v9, 0x3f800000    # 1.0f
 
@@ -1783,7 +1783,7 @@
 
     int-to-float v2, v2
 
-    mul-float v8, v8, v2
+    mul-float/2addr v8, v2
 
     float-to-int v2, v8
 
@@ -1847,28 +1847,28 @@
 
     .line 29
     :cond_b
-    iget-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iget-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     if-eqz v1, :cond_f
 
     .line 30
-    iget-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v1, :cond_d
 
     .line 31
-    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:I
+    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:I
 
     if-eqz v1, :cond_c
 
     .line 32
-    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     invoke-virtual {v0, v1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->d(F)V
 
     .line 33
     :cond_c
-    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1881,11 +1881,11 @@
     if-eqz v1, :cond_e
 
     .line 34
-    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
-    iget v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget v2, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
-    iget v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
+    iget v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->f:I
 
     invoke-virtual {v0, v1, v2, v3}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->a(Landroid/view/View;FI)V
 
@@ -1902,7 +1902,7 @@
 
     move-result-object v2
 
-    iget v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
+    iget v3, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->f:I
 
     const/4 v4, 0x0
 
@@ -1915,7 +1915,7 @@
     .line 36
     :cond_e
     :goto_b
-    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g(Landroid/view/View;)V
 
@@ -1923,7 +1923,7 @@
     const/4 v1, 0x0
 
     .line 37
-    iput-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iput-boolean v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     return-void
 .end method
@@ -1975,7 +1975,7 @@
     :cond_0
     if-nez v1, :cond_4
 
-    const/16 v2, 0x12c
+    move v2, v5
 
     goto :goto_0
 
@@ -2001,9 +2001,9 @@
 
     if-nez v3, :cond_4
 
-    const/high16 v3, -0x80000000
+    move v4, v5
 
-    const/16 v4, 0x12c
+    move v3, v6
 
     goto :goto_0
 
@@ -2025,11 +2025,12 @@
 
     if-eq v3, v7, :cond_5
 
-    const/4 v4, 0x0
+    move v4, v1
 
-    const/4 v5, 0x0
+    :goto_1
+    move v5, v4
 
-    goto :goto_1
+    goto :goto_2
 
     .line 9
     :cond_5
@@ -2044,8 +2045,6 @@
     move-result v5
 
     sub-int/2addr v4, v5
-
-    move v5, v4
 
     goto :goto_1
 
@@ -2065,10 +2064,10 @@
 
     move v5, v4
 
-    const/4 v4, 0x0
+    move v4, v1
 
     .line 11
-    :goto_1
+    :goto_2
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v8
@@ -2089,17 +2088,17 @@
     const/4 v10, 0x0
 
     .line 13
-    iput-object v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iput-object v10, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
+
+    move v11, v1
+
+    move v12, v11
 
     move v14, v8
 
-    const/4 v11, 0x0
-
-    const/4 v12, 0x0
-
     const/4 v13, 0x0
 
-    :goto_2
+    :goto_3
     const/16 v15, 0x8
 
     const/16 v16, 0x1
@@ -2130,7 +2129,7 @@
     .line 17
     iput-boolean v1, v7, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams;->c:Z
 
-    goto/16 :goto_7
+    goto/16 :goto_9
 
     .line 18
     :cond_7
@@ -2149,7 +2148,7 @@
 
     if-nez v10, :cond_8
 
-    goto/16 :goto_7
+    goto/16 :goto_9
 
     .line 20
     :cond_8
@@ -2175,15 +2174,16 @@
 
     move-result v10
 
-    move v15, v10
-
     move/from16 p2, v13
+
+    move v13, v15
 
     const/4 v1, -0x1
 
-    const/high16 v13, -0x80000000
+    :goto_4
+    move v15, v10
 
-    goto :goto_3
+    goto :goto_5
 
     :cond_9
     move/from16 p2, v13
@@ -2203,9 +2203,7 @@
 
     move-result v10
 
-    move v15, v10
-
-    goto :goto_3
+    goto :goto_4
 
     :cond_a
     const/high16 v10, 0x40000000    # 2.0f
@@ -2216,7 +2214,7 @@
     move-result v15
 
     .line 25
-    :goto_3
+    :goto_5
     iget v10, v7, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
 
     const/4 v1, -0x2
@@ -2228,7 +2226,7 @@
 
     move-result v1
 
-    goto :goto_5
+    goto :goto_7
 
     :cond_b
     const/4 v1, -0x1
@@ -2242,7 +2240,7 @@
 
     move-result v10
 
-    goto :goto_4
+    goto :goto_6
 
     :cond_c
     const/high16 v1, 0x40000000    # 2.0f
@@ -2252,11 +2250,11 @@
 
     move-result v10
 
-    :goto_4
+    :goto_6
     move v1, v10
 
     .line 29
-    :goto_5
+    :goto_7
     invoke-virtual {v6, v15, v1}, Landroid/view/View;->measure(II)V
 
     .line 30
@@ -2283,15 +2281,15 @@
 
     if-gez v14, :cond_e
 
-    const/4 v1, 0x1
+    move/from16 v1, v16
 
-    goto :goto_6
+    goto :goto_8
 
     :cond_e
     const/4 v1, 0x0
 
     .line 33
-    :goto_6
+    :goto_8
     iput-boolean v1, v7, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams;->b:Z
 
     or-int/2addr v12, v1
@@ -2299,12 +2297,12 @@
     if-eqz v1, :cond_f
 
     .line 34
-    iput-object v6, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iput-object v6, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     :cond_f
     move/from16 v13, p2
 
-    :goto_7
+    :goto_9
     add-int/lit8 v11, v11, 0x1
 
     const/4 v1, 0x0
@@ -2313,7 +2311,7 @@
 
     const/high16 v7, 0x40000000    # 2.0f
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :cond_10
     if-nez v12, :cond_11
@@ -2326,13 +2324,13 @@
 
     .line 35
     :cond_11
-    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:I
+    iget v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->j:I
 
     sub-int v1, v8, v1
 
     const/4 v3, 0x0
 
-    :goto_8
+    :goto_a
     if-ge v3, v9, :cond_21
 
     .line 36
@@ -2348,16 +2346,16 @@
     if-ne v7, v15, :cond_14
 
     :cond_12
-    :goto_9
+    :goto_b
     move/from16 v19, v1
 
     :cond_13
-    :goto_a
+    :goto_c
     const/4 v1, 0x0
 
     const/high16 v7, 0x40000000    # 2.0f
 
-    goto/16 :goto_f
+    goto/16 :goto_11
 
     .line 38
     :cond_14
@@ -2374,7 +2372,7 @@
 
     if-ne v10, v15, :cond_15
 
-    goto :goto_9
+    goto :goto_b
 
     .line 40
     :cond_15
@@ -2390,19 +2388,19 @@
 
     if-lez v10, :cond_16
 
-    const/4 v10, 0x1
+    move/from16 v10, v16
 
-    goto :goto_b
+    goto :goto_d
 
     :cond_16
     const/4 v10, 0x0
 
-    :goto_b
+    :goto_d
     if-eqz v10, :cond_17
 
     const/4 v11, 0x0
 
-    goto :goto_c
+    goto :goto_e
 
     .line 41
     :cond_17
@@ -2410,11 +2408,11 @@
 
     move-result v11
 
-    :goto_c
+    :goto_e
     if-eqz v12, :cond_1c
 
     .line 42
-    iget-object v15, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v15, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     if-eq v6, v15, :cond_1c
 
@@ -2452,7 +2450,7 @@
 
     const/high16 v10, 0x40000000    # 2.0f
 
-    goto :goto_d
+    goto :goto_f
 
     :cond_19
     const/4 v10, -0x1
@@ -2466,7 +2464,7 @@
 
     move-result v7
 
-    goto :goto_d
+    goto :goto_f
 
     :cond_1a
     const/high16 v10, 0x40000000    # 2.0f
@@ -2476,7 +2474,7 @@
 
     move-result v7
 
-    goto :goto_d
+    goto :goto_f
 
     :cond_1b
     const/high16 v10, 0x40000000    # 2.0f
@@ -2492,7 +2490,7 @@
     move-result v7
 
     .line 50
-    :goto_d
+    :goto_f
     invoke-static {v1, v10}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v11
@@ -2500,7 +2498,7 @@
     .line 51
     invoke-virtual {v6, v11, v7}, Landroid/view/View;->measure(II)V
 
-    goto :goto_9
+    goto :goto_b
 
     .line 52
     :cond_1c
@@ -2533,7 +2531,7 @@
 
     const/high16 v15, 0x40000000    # 2.0f
 
-    goto :goto_e
+    goto :goto_10
 
     :cond_1d
     const/4 v15, -0x1
@@ -2547,7 +2545,7 @@
 
     move-result v10
 
-    goto :goto_e
+    goto :goto_10
 
     :cond_1e
     const/high16 v15, 0x40000000    # 2.0f
@@ -2557,7 +2555,7 @@
 
     move-result v10
 
-    goto :goto_e
+    goto :goto_10
 
     :cond_1f
     const/high16 v15, 0x40000000    # 2.0f
@@ -2572,7 +2570,7 @@
 
     move-result v10
 
-    :goto_e
+    :goto_10
     if-eqz v12, :cond_20
 
     .line 60
@@ -2598,7 +2596,7 @@
     .line 62
     invoke-virtual {v6, v1, v10}, Landroid/view/View;->measure(II)V
 
-    goto/16 :goto_a
+    goto/16 :goto_c
 
     :cond_20
     move/from16 v19, v1
@@ -2615,7 +2613,7 @@
 
     int-to-float v15, v15
 
-    mul-float v7, v7, v15
+    mul-float/2addr v7, v15
 
     div-float/2addr v7, v13
 
@@ -2633,14 +2631,14 @@
     .line 66
     invoke-virtual {v6, v11, v10}, Landroid/view/View;->measure(II)V
 
-    :goto_f
+    :goto_11
     add-int/lit8 v3, v3, 0x1
 
     move/from16 v1, v19
 
     const/16 v15, 0x8
 
-    goto/16 :goto_8
+    goto/16 :goto_a
 
     .line 67
     :cond_21
@@ -2660,20 +2658,20 @@
     invoke-virtual {v0, v2, v3}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 69
-    iput-boolean v12, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iput-boolean v12, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     .line 70
-    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v1, v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     .line 71
-    iget v2, v1, Lj0/c;->a:I
+    iget v2, v1, Li0/c;->a:I
 
     if-eqz v2, :cond_22
 
     if-nez v12, :cond_22
 
     .line 72
-    invoke-virtual {v1}, Lj0/c;->a()V
+    invoke-virtual {v1}, Li0/c;->a()V
 
     :cond_22
     return-void
@@ -2697,20 +2695,20 @@
     check-cast p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;
 
     .line 4
-    iget-object v0, p1, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p1, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     .line 5
     invoke-super {p0, v0}, Landroid/view/View;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 6
-    iget-boolean v0, p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->i:Z
+    iget-boolean v0, p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->h:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_2
 
     .line 7
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     if-nez v0, :cond_1
 
@@ -2726,13 +2724,13 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     goto :goto_0
 
     .line 9
     :cond_2
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     if-nez v0, :cond_3
 
@@ -2746,14 +2744,14 @@
 
     .line 10
     :cond_3
-    iput-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     .line 11
     :cond_4
     :goto_0
-    iget-boolean p1, p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->i:Z
+    iget-boolean p1, p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->h:Z
 
-    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     return-void
 .end method
@@ -2772,14 +2770,14 @@
     invoke-direct {v1, v0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 3
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-eqz v0, :cond_2
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->n:F
+    iget v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:F
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -2802,10 +2800,10 @@
 
     .line 5
     :cond_2
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     :goto_1
-    iput-boolean v0, v1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->i:Z
+    iput-boolean v0, v1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->h:Z
 
     return-object v1
 .end method
@@ -2821,7 +2819,7 @@
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     :cond_0
     return-void
@@ -2831,7 +2829,7 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-nez v0, :cond_0
 
@@ -2844,9 +2842,9 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
-    invoke-virtual {v0, p1}, Lj0/c;->r(Landroid/view/MotionEvent;)V
+    invoke-virtual {v0, p1}, Li0/c;->q(Landroid/view/MotionEvent;)V
 
     .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -2863,7 +2861,7 @@
 
     .line 5
     :cond_1
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     invoke-virtual {p0, v0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->b(Landroid/view/View;)Z
 
@@ -2882,28 +2880,28 @@
     move-result p1
 
     .line 8
-    iget v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
+    iget v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:F
 
     sub-float v2, v0, v2
 
     .line 9
-    iget v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->t:F
+    iget v3, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
 
     sub-float v3, p1, v3
 
     .line 10
-    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Lj0/c;
+    iget-object v4, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Li0/c;
 
     .line 11
-    iget v5, v4, Lj0/c;->b:I
+    iget v5, v4, Li0/c;->b:I
 
-    mul-float v2, v2, v2
+    mul-float/2addr v2, v2
 
-    mul-float v3, v3, v3
+    mul-float/2addr v3, v3
 
     add-float/2addr v3, v2
 
-    mul-int v5, v5, v5
+    mul-int/2addr v5, v5
 
     int-to-float v2, v5
 
@@ -2912,21 +2910,21 @@
     if-gez v2, :cond_4
 
     .line 12
-    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     float-to-int v0, v0
 
     float-to-int p1, p1
 
     .line 13
-    invoke-virtual {v4, v2, v0, p1}, Lj0/c;->q(Landroid/view/View;II)Z
+    invoke-virtual {v4, v2, v0, p1}, Li0/c;->p(Landroid/view/View;II)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
     .line 14
-    iget-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->x:Z
+    iget-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
 
     const/4 v0, 0x0
 
@@ -2942,7 +2940,7 @@
 
     .line 15
     :cond_2
-    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     goto :goto_0
 
@@ -2958,10 +2956,10 @@
     move-result p1
 
     .line 18
-    iput v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
+    iput v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:F
 
     .line 19
-    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->t:F
+    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->s:F
 
     :cond_4
     :goto_0
@@ -2981,12 +2979,12 @@
 
     if-nez p2, :cond_1
 
-    iget-boolean p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Z
+    iget-boolean p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->k:Z
 
     if-nez p2, :cond_1
 
     .line 3
-    iget-object p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->m:Landroid/view/View;
+    iget-object p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->l:Landroid/view/View;
 
     if-ne p1, p2, :cond_0
 
@@ -2998,7 +2996,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->w:Z
+    iput-boolean p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->v:Z
 
     :cond_1
     return-void
@@ -3007,7 +3005,7 @@
 .method public setCoveredFadeColor(I)V
     .locals 0
 
-    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->h:I
+    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
 
     return-void
 .end method
@@ -3015,7 +3013,7 @@
 .method public setPanelSlideListener(Landroidx/slidingpanelayout/widget/SlidingPaneLayout$d;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->u:Landroidx/slidingpanelayout/widget/SlidingPaneLayout$d;
+    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->t:Landroidx/slidingpanelayout/widget/SlidingPaneLayout$d;
 
     return-void
 .end method
@@ -3024,7 +3022,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->r:I
+    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->q:I
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
@@ -3045,7 +3043,7 @@
 .method public setShadowDrawableLeft(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->i:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->h:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -3053,7 +3051,7 @@
 .method public setShadowDrawableRight(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->j:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->i:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -3077,32 +3075,42 @@
 .end method
 
 .method public setShadowResourceLeft(I)V
-    .locals 1
+    .locals 2
 
+    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lv/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    sget-object v1, Lv/a;->a:Ljava/lang/Object;
+
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->setShadowDrawableLeft(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
 
 .method public setShadowResourceRight(I)V
-    .locals 1
+    .locals 2
 
+    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lv/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    sget-object v1, Lv/a;->a:Ljava/lang/Object;
+
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->setShadowDrawableRight(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -3111,7 +3119,7 @@
 .method public setSliderFadeColor(I)V
     .locals 0
 
-    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->g:I
+    iput p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->f:I
 
     return-void
 .end method

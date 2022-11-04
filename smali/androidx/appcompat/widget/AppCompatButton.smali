@@ -3,15 +3,13 @@
 .source "AppCompatButton.java"
 
 # interfaces
-.implements Lf0/q;
 .implements Landroidx/core/widget/b;
-.implements Landroidx/core/widget/k;
 
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/d;
+.field public final f:Landroidx/appcompat/widget/d;
 
-.field public final h:Landroidx/appcompat/widget/m;
+.field public final g:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -32,8 +30,6 @@
     .line 2
     invoke-static {p1}, Landroidx/appcompat/widget/e0;->a(Landroid/content/Context;)Landroid/content/Context;
 
-    move-result-object p1
-
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
@@ -48,7 +44,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/d;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/d;->d(Landroid/util/AttributeSet;I)V
@@ -58,7 +54,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     .line 7
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
@@ -75,10 +71,10 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/view/View;->drawableStateChanged()V
+    invoke-super {p0}, Landroid/widget/TextView;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -87,7 +83,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -102,12 +98,12 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0}, Landroid/widget/Button;->getAutoSizeMaxTextSize()I
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMaxTextSize()I
 
     move-result v0
 
@@ -115,7 +111,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -141,12 +137,12 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0}, Landroid/widget/Button;->getAutoSizeMinTextSize()I
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeMinTextSize()I
 
     move-result v0
 
@@ -154,7 +150,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -180,12 +176,12 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0}, Landroid/widget/Button;->getAutoSizeStepGranularity()I
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeStepGranularity()I
 
     move-result v0
 
@@ -193,7 +189,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -219,12 +215,12 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0}, Landroid/widget/Button;->getAutoSizeTextAvailableSizes()[I
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextAvailableSizes()[I
 
     move-result-object v0
 
@@ -232,7 +228,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -261,14 +257,14 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-super {p0}, Landroid/widget/Button;->getAutoSizeTextType()I
+    invoke-super {p0}, Landroid/widget/TextView;->getAutoSizeTextType()I
 
     move-result v0
 
@@ -276,14 +272,14 @@
 
     if-ne v0, v2, :cond_0
 
-    const/4 v1, 0x1
+    move v1, v2
 
     :cond_0
     return v1
 
     .line 3
     :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_2
 
@@ -303,7 +299,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -325,7 +321,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -347,7 +343,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     .line 2
     iget-object v0, v0, Landroidx/appcompat/widget/m;->h:Landroidx/appcompat/widget/f0;
@@ -369,7 +365,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     .line 2
     iget-object v0, v0, Landroidx/appcompat/widget/m;->h:Landroidx/appcompat/widget/f0;
@@ -427,18 +423,18 @@
     .locals 0
 
     .line 1
-    invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
+    invoke-super/range {p0 .. p5}, Landroid/widget/TextView;->onLayout(ZIIII)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    sget-boolean p2, Landroidx/core/widget/b;->a:Z
+    sget-boolean p2, Landroidx/core/widget/b;->b:Z
 
     if-nez p2, :cond_0
 
@@ -456,11 +452,11 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onTextChanged(Ljava/lang/CharSequence;III)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz p1, :cond_0
 
-    sget-boolean p2, Landroidx/core/widget/b;->a:Z
+    sget-boolean p2, Landroidx/core/widget/b;->b:Z
 
     if-nez p2, :cond_0
 
@@ -471,7 +467,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/m;->c()V
 
@@ -488,18 +484,18 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/Button;->setAutoSizeTextTypeUniformWithConfiguration(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithConfiguration(IIII)V
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -520,18 +516,18 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0, p1, p2}, Landroid/widget/Button;->setAutoSizeTextTypeUniformWithPresetSizes([II)V
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setAutoSizeTextTypeUniformWithPresetSizes([II)V
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -547,18 +543,18 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0, p1}, Landroid/widget/Button;->setAutoSizeTextTypeWithDefaults(I)V
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setAutoSizeTextTypeWithDefaults(I)V
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -577,7 +573,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz p1, :cond_0
 
@@ -595,7 +591,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -610,7 +606,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/core/widget/i;->h(Landroid/widget/TextView;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
+    invoke-static {p0, p1}, Landroidx/core/widget/d;->f(Landroid/widget/TextView;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
 
     move-result-object p1
 
@@ -624,7 +620,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_0
 
@@ -639,7 +635,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -654,7 +650,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->f:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -669,12 +665,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/m;->l(Landroid/content/res/ColorStateList;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/m;->b()V
 
@@ -685,12 +681,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/m;->m(Landroid/graphics/PorterDuff$Mode;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/m;->b()V
 
@@ -704,7 +700,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_0
 
@@ -719,7 +715,7 @@
     .locals 2
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->a:Z
+    sget-boolean v0, Landroidx/core/widget/b;->b:Z
 
     if-eqz v0, :cond_0
 
@@ -730,12 +726,12 @@
 
     .line 3
     :cond_0
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatButton;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v1, :cond_1
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez v0, :cond_1
 

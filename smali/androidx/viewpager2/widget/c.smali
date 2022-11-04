@@ -78,13 +78,7 @@
 
     const/4 p1, 0x0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public final b(IFI)V
@@ -129,13 +123,7 @@
 
     const/4 p1, 0x0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public final c(I)V
@@ -180,13 +168,7 @@
 
     const/4 p1, 0x0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public final d(Landroidx/viewpager2/widget/ViewPager2$g;)V

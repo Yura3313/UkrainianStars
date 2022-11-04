@@ -141,15 +141,14 @@
 
     .line 10
     :cond_3
-    invoke-interface {p0, v1, v0}, Lcom/google/android/gms/common/internal/IGmsServiceBroker;->j2(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
+    invoke-interface {p0, v1, v0}, Lcom/google/android/gms/common/internal/IGmsServiceBroker;->v3(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
+
+    const-string p1, "null reference"
 
     .line 11
-    invoke-static {p3}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3, p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-object p1, p3
-
-    check-cast p1, Landroid/os/Parcel;
-
+    .line 12
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     return v2
@@ -159,14 +158,14 @@
 
     if-ne p1, p3, :cond_6
 
-    .line 12
+    .line 13
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    .line 13
+    .line 14
     sget-object p1, Lcom/google/android/gms/common/internal/zzw;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -175,7 +174,7 @@
 
     check-cast p1, Lcom/google/android/gms/common/internal/zzw;
 
-    .line 14
+    .line 15
     :cond_5
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -183,7 +182,7 @@
 
     throw p1
 
-    .line 15
+    .line 16
     :cond_6
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
@@ -191,7 +190,7 @@
 
     if-eq p1, p3, :cond_7
 
-    .line 16
+    .line 17
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     :cond_7
@@ -241,18 +240,18 @@
 
     goto/16 :goto_1
 
-    .line 17
+    .line 18
     :pswitch_0
     invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
-    .line 18
+    .line 19
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 19
+    .line 20
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -263,39 +262,39 @@
 
     goto :goto_1
 
-    .line 20
+    .line 21
     :pswitch_1
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 21
+    .line 22
     invoke-virtual {p2}, Landroid/os/Parcel;->createStringArray()[Ljava/lang/String;
 
     goto :goto_1
 
-    .line 22
+    .line 23
     :pswitch_2
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 23
+    .line 24
     invoke-virtual {p2}, Landroid/os/Parcel;->createStringArray()[Ljava/lang/String;
 
-    .line 24
-    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 25
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 26
-    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     .line 27
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 28
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 28
+    .line 29
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -306,28 +305,28 @@
 
     goto :goto_1
 
-    .line 29
+    .line 30
     :cond_8
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     goto :goto_1
 
-    .line 30
+    .line 31
     :cond_9
     :pswitch_3
     invoke-virtual {p2}, Landroid/os/Parcel;->createStringArray()[Ljava/lang/String;
 
-    .line 31
+    .line 32
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 32
+    .line 33
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 33
+    .line 34
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -338,7 +337,7 @@
 
     goto :goto_1
 
-    .line 34
+    .line 35
     :cond_a
     :pswitch_4
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
@@ -347,7 +346,7 @@
 
     if-eqz p1, :cond_c
 
-    .line 35
+    .line 36
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -358,24 +357,24 @@
 
     goto :goto_1
 
-    .line 36
+    .line 37
     :cond_b
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 37
+    .line 38
     invoke-virtual {p2}, Landroid/os/Parcel;->createStringArray()[Ljava/lang/String;
 
-    .line 38
+    .line 39
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 39
+    .line 40
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 40
+    .line 41
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {p1, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -384,7 +383,7 @@
 
     check-cast p1, Landroid/os/Bundle;
 
-    .line 41
+    .line 42
     :cond_c
     :goto_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
@@ -392,6 +391,8 @@
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x5

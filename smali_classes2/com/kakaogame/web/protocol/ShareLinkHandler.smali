@@ -105,13 +105,6 @@
     move-result-object v1
 
     .line 10
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x16
-
-    if-lt v2, v3, :cond_0
-
-    .line 11
     invoke-virtual {p2}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
 
     move-result-object p2
@@ -120,28 +113,13 @@
 
     move-result-object p2
 
-    .line 12
+    .line 11
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-static {v0, v1}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
-    :goto_0
     const/4 p1, 0x0
 
     return-object p1

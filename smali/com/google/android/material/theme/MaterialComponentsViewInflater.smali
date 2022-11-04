@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/theme/MaterialComponentsViewInflater;
-.super Landroidx/appcompat/app/r;
+.super Landroidx/appcompat/app/m;
 .source "MaterialComponentsViewInflater.java"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Landroidx/appcompat/app/r;-><init>()V
+    invoke-direct {p0}, Landroidx/appcompat/app/m;-><init>()V
 
     return-void
 .end method

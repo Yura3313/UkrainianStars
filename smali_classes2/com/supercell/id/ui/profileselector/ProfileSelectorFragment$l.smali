@@ -1,91 +1,194 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
 .super Ljava/lang/Object;
-.source "Comparisons.kt"
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lzd/v1;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
+    name = "l"
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+.field public final a:I
+
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Ljava/util/Comparator;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->list_item_section_header:I
+
+    iput p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final b(Lzd/v1;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Ljava/util/Comparator;
+    instance-of v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
 
-    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->h:Ljava/lang/String;
+    :cond_0
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
 
-    const-string v1, ""
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
+
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final d()I
+    .locals 1
+
+    iget v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->a:I
+
+    return v0
+.end method
+
+.method public final e(Lzd/v1;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    instance-of v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
+
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    invoke-static {p1, v0}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
+
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    invoke-static {v0, p1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
 
     if-eqz p1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    move-object p1, v1
-
-    .line 3
-    :goto_0
-    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
-
-    .line 4
-    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->h:Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    move-object v1, p2
-
-    .line 5
-    :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result p1
+    const/4 p1, 0x0
 
     return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "SectionHeaderRow(titleKey="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->b:Ljava/lang/String;
+
+    const-string v2, ")"
+
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

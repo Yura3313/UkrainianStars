@@ -1,31 +1,22 @@
 .class public final Lzd/d$a;
 .super Ljava/lang/Object;
-.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+.source "ProfileUtil.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lzd/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
+    name = "a"
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lzd/d;
-
-
 # direct methods
-.method public constructor <init>(Lzd/d;)V
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lzd/d$a;->g:Lzd/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,35 +25,106 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
+.method public final a(Ljava/lang/String;)Lzd/d;
+    .locals 5
+
+    const-string v0, "avatarString"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, ","
 
     .line 1
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x6
+
+    invoke-static {p1, v0, v1, v2}, Lof/r;->E(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->w:Lsc/a;
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    move-result v0
+
+    const/4 v2, 0x4
+
+    if-ne v0, v2, :cond_1
+
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    const-string v1, "0"
+
+    invoke-static {v0, v1}, Lif/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
 
     .line 3
-    sget-object v0, Lsc/a$a;->h:Lsc/a$a;
+    :cond_0
+    new-instance v0, Lzd/d;
 
-    invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    new-instance v2, Lzd/c;
+
+    const/4 v3, 0x2
 
     .line 4
-    iget-object p1, p0, Lzd/d$a;->g:Lzd/d;
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    .line 5
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    check-cast p1, Ljava/lang/String;
 
-    invoke-static {p1}, Lcom/supercell/id/ui/MainActivity;->I(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
-    :cond_0
-    return-void
+    move-result p1
+
+    .line 6
+    invoke-direct {v2, v3, p1}, Lzd/c;-><init>(II)V
+
+    invoke-direct {v0, v1, v2}, Lzd/d;-><init>(Ljava/lang/String;Lzd/c;)V
+
+    return-object v0
+
+    .line 7
+    :cond_1
+    :goto_0
+    sget-object p1, Lzd/d;->d:Lzd/d;
+
+    return-object p1
 .end method

@@ -11,29 +11,3 @@
 
     return-void
 .end method
-
-.method public static native nativeClearModuleList()V
-.end method
-
-.method public static native nativeLoadModuleList()[Lio/sentry/protocol/DebugImage;
-.end method
-
-
-# virtual methods
-.method public clearModuleList()V
-    .locals 0
-
-    invoke-static {}, Lio/sentry/android/ndk/NativeModuleListLoader;->nativeClearModuleList()V
-
-    return-void
-.end method
-
-.method public loadModuleList()[Lio/sentry/protocol/DebugImage;
-    .locals 1
-
-    invoke-static {}, Lio/sentry/android/ndk/NativeModuleListLoader;->nativeLoadModuleList()[Lio/sentry/protocol/DebugImage;
-
-    move-result-object v0
-
-    return-object v0
-.end method

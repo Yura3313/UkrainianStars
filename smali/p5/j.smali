@@ -1,123 +1,92 @@
 .class public final Lp5/j;
-.super Lf5/i;
-.source "RsaSsaPssVerifyKeyManager.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lf5/i<",
-        "Ln5/o1;",
-        ">;"
-    }
-.end annotation
+.super Lp5/k;
+.source "ChaCha20.java"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public constructor <init>([BI)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidKeyException;
+        }
+    .end annotation
 
-    const-class v0, Ln5/o1;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Lf5/i$b;
-
-    new-instance v2, Lp5/j$a;
-
-    invoke-direct {v2}, Lp5/j$a;-><init>()V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Lf5/i;-><init>(Ljava/lang/Class;[Lf5/i$b;)V
+    invoke-direct {p0, p1, p2}, Lp5/k;-><init>([BI)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.RsaSsaPssPublicKey"
-
-    return-object v0
-.end method
-
-.method public final d()Ln5/v0$b;
-    .locals 1
-
-    sget-object v0, Ln5/v0$b;->k:Ln5/v0$b;
-
-    return-object v0
-.end method
-
-.method public final e(Lo5/d;)Lcom/google/crypto/tink/shaded/protobuf/x;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
-
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Ln5/o1;->B(Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Ln5/o1;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final g(Lcom/google/crypto/tink/shaded/protobuf/x;)V
+.method public final d([II)[I
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
 
     .line 1
-    check-cast p1, Ln5/o1;
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x3
+
+    if-ne v0, v2, :cond_0
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [I
 
     .line 2
-    invoke-virtual {p1}, Ln5/o1;->z()I
+    iget-object v2, p0, Lp5/k;->a:[I
 
-    move-result v0
+    invoke-static {v0, v2}, Lp5/k;->j([I[I)V
 
-    invoke-static {v0}, Lr5/l0;->e(I)V
+    const/16 v2, 0xc
+
+    aput p2, v0, v2
+
+    const/16 p2, 0xd
 
     .line 3
-    new-instance v0, Ljava/math/BigInteger;
+    array-length v2, p1
 
-    invoke-virtual {p1}, Ln5/o1;->x()Lo5/d;
+    invoke-static {p1, v1, v0, p2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Lo5/d;->n()[B
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v2, v1}, Ljava/math/BigInteger;-><init>(I[B)V
-
-    invoke-virtual {v0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result v0
-
-    invoke-static {v0}, Lr5/l0;->c(I)V
+    return-object v0
 
     .line 4
-    invoke-virtual {p1}, Ln5/o1;->y()Ln5/m1;
+    :cond_0
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    array-length p1, p1
+
+    mul-int/lit8 p1, p1, 0x20
+
+    .line 5
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-static {p1}, Lp5/k;->f(Ln5/m1;)V
+    aput-object p1, v0, v1
 
-    return-void
+    const-string p1, "ChaCha20 uses 96-bit nonces, but got a %d-bit nonce"
+
+    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
+.method public final g()I
+    .locals 1
+
+    const/16 v0, 0xc
+
+    return v0
 .end method

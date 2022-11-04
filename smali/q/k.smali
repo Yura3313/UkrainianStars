@@ -24,7 +24,7 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lq/e$a;->j:Lq/e$a;
+    sget-object v0, Lq/e$a;->i:Lq/e$a;
 
     const/4 v1, -0x1
 
@@ -40,7 +40,7 @@
 
     aget-object v1, v1, v2
 
-    sget-object v3, Lq/e$a;->h:Lq/e$a;
+    sget-object v3, Lq/e$a;->g:Lq/e$a;
 
     const/4 v4, 0x2
 
@@ -58,7 +58,7 @@
     iget v1, v1, Lq/d;->g:I
 
     .line 5
-    invoke-virtual {p0}, Lq/e;->v()I
+    invoke-virtual {p0}, Lq/e;->u()I
 
     move-result v2
 
@@ -141,7 +141,7 @@
     iget v0, v0, Lq/d;->g:I
 
     .line 17
-    invoke-virtual {p0}, Lq/e;->r()I
+    invoke-virtual {p0}, Lq/e;->q()I
 
     move-result p0
 

@@ -15,8 +15,5 @@
 
 
 # virtual methods
-.method public abstract a()V
-.end method
-
-.method public abstract d(Landroid/content/Intent;)Landroid/os/IBinder;
+.method public abstract c()V
 .end method

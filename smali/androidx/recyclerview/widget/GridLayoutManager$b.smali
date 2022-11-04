@@ -51,11 +51,11 @@
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    move v1, v0
 
-    const/4 v2, 0x0
+    move v2, v1
 
-    const/4 v3, 0x0
+    move v3, v2
 
     :goto_0
     const/4 v4, 0x1
@@ -68,7 +68,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    const/4 v2, 0x0
+    move v2, v0
 
     goto :goto_1
 
@@ -77,7 +77,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    const/4 v2, 0x1
+    move v2, v4
 
     :cond_1
     :goto_1

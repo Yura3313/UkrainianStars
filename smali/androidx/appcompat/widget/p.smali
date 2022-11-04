@@ -40,28 +40,28 @@
 .method public abstract i()V
 .end method
 
-.method public abstract j()Z
+.method public abstract j()Landroid/view/ViewGroup;
 .end method
 
-.method public abstract k(I)V
+.method public abstract k()Z
 .end method
 
-.method public abstract l()V
+.method public abstract l(I)V
 .end method
 
-.method public abstract m(I)V
+.method public abstract m()V
 .end method
 
-.method public abstract n()V
+.method public abstract n()I
 .end method
 
-.method public abstract o(IJ)Lf0/x;
+.method public abstract o(I)V
 .end method
 
-.method public abstract p()Landroid/view/ViewGroup;
+.method public abstract p()V
 .end method
 
-.method public abstract q()I
+.method public abstract q(IJ)Lf0/r;
 .end method
 
 .method public abstract r()V

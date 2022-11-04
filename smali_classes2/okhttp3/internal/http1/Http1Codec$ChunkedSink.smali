@@ -174,7 +174,7 @@
 .end method
 
 .method public write(Lokio/Buffer;J)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -188,9 +188,9 @@
 
     const-wide/16 v0, 0x0
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     return-void
 

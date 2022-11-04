@@ -1,65 +1,75 @@
 .class public final Lnd/g;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
-
-# interfaces
-.implements Ljava/util/Comparator;
+.super Landroidx/recyclerview/widget/RecyclerView$q;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic a:Landroid/view/View;
+
+.field public final synthetic b:Landroid/view/View;
+
+.field public final synthetic c:Landroid/widget/FrameLayout;
+
+.field public final synthetic d:Lnd/r;
+
+.field public final synthetic e:Lnd/c;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lnd/r;Lnd/c;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lnd/g;->a:Landroid/view/View;
+
+    iput-object p2, p0, Lnd/g;->b:Landroid/view/View;
+
+    iput-object p3, p0, Lnd/g;->c:Landroid/widget/FrameLayout;
+
+    iput-object p4, p0, Lnd/g;->d:Lnd/r;
+
+    iput-object p5, p0, Lnd/g;->e:Lnd/c;
+
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
+    .locals 7
 
-    .line 1
-    check-cast p2, Lnd/a;
+    const-string p2, "recyclerView"
 
-    .line 2
-    iget-object p2, p2, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    invoke-static {p1, p2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
+    iget-object v0, p0, Lnd/g;->e:Lnd/c;
 
-    .line 4
-    check-cast p1, Lnd/a;
+    iget-object v1, p0, Lnd/g;->a:Landroid/view/View;
 
-    .line 5
-    iget-object p1, p1, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    const-string p2, "this@apply"
 
-    .line 6
-    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
+    invoke-static {v1, p2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 7
-    invoke-static {p2, p1}, Lae/a1;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    iget-object v2, p0, Lnd/g;->b:Landroid/view/View;
 
-    move-result p1
+    const-string p2, "selectAllBackground"
 
-    return p1
+    invoke-static {v2, p2}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v3, p0, Lnd/g;->c:Landroid/widget/FrameLayout;
+
+    iget-object v4, p0, Lnd/g;->d:Lnd/r;
+
+    const/4 p2, 0x0
+
+    invoke-static {p1, p2}, Lzd/t1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+
+    move-result v5
+
+    move v6, p3
+
+    invoke-static/range {v0 .. v6}, Lnd/c;->V0(Lnd/c;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lnd/r;II)V
+
+    return-void
 .end method

@@ -296,7 +296,7 @@
     invoke-direct {v3, v2, v4}, Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskAlarm;-><init>(Ljava/util/Map;Lcom/kakaogame/infodesk/InfodeskData$1;)V
 
     .line 5
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -357,7 +357,7 @@
     invoke-direct {v3, v2, v4}, Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice;-><init>(Ljava/util/Map;Lcom/kakaogame/infodesk/InfodeskData$1;)V
 
     .line 5
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -465,9 +465,9 @@
 
     add-long/2addr v1, v5
 
-    cmp-long v5, v3, v1
+    cmp-long v1, v3, v1
 
-    if-ltz v5, :cond_0
+    if-ltz v1, :cond_0
 
     return v0
 
@@ -512,7 +512,7 @@
 .end method
 
 .method public setServerTimeStamp(J)V
-    .locals 7
+    .locals 6
 
     const-wide/16 v0, 0x0
 
@@ -534,9 +534,9 @@
 
     const-wide/16 v4, 0x4e20
 
-    cmp-long v6, p1, v4
+    cmp-long p1, p1, v4
 
-    if-ltz v6, :cond_0
+    if-ltz p1, :cond_0
 
     .line 3
     iput-wide v2, p0, Lcom/kakaogame/infodesk/InfodeskData;->serverTimeDiffer:J

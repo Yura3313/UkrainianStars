@@ -1,87 +1,107 @@
 .class public final Lzd/c;
-.super Lse/i;
-.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
+.super Ljava/lang/Object;
+.source "ProfileUtil.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lzd/d;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:I
 
-
-# static fields
-.field public static final g:Lzd/c;
+.field public final b:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(II)V
+    .locals 0
 
-    new-instance v0, Lzd/c;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Lzd/c;-><init>()V
+    iput p1, p0, Lzd/c;->a:I
 
-    sput-object v0, Lzd/c;->g:Lzd/c;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    iput p2, p0, Lzd/c;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lzd/c;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lzd/c;
+
+    iget v0, p0, Lzd/c;->a:I
+
+    iget v1, p1, Lzd/c;->a:I
+
+    if-ne v0, v1, :cond_0
+
+    iget v0, p0, Lzd/c;->b:I
+
+    iget p1, p1, Lzd/c;->b:I
+
+    if-ne v0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget v0, p0, Lzd/c;->a:I
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, Lzd/c;->b:I
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "AvatarBackground(startColor="
 
     .line 1
-    check-cast p1, Lzd/d;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    check-cast p2, Ljava/lang/Exception;
-
-    const-string v0, "$receiver"
+    move-result-object v0
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget v1, p0, Lzd/c;->a:I
 
-    const-string v0, "it"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, ", endColor="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lzd/c;->b:I
+
+    const-string v2, ")"
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/c;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    if-eqz p1, :cond_0
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return-object v0
 .end method

@@ -125,11 +125,5 @@
     invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
 
     :cond_1
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

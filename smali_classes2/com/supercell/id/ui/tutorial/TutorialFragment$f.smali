@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/tutorial/TutorialFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,7 +44,7 @@
 
     sget v0, Lcom/supercell/id/R$id;->imagePager:I
 
-    invoke-virtual {p3, v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
+    invoke-virtual {p3, v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->e1(I)Landroid/view/View;
 
     move-result-object p3
 
@@ -59,12 +59,12 @@
     int-to-float v1, v1
 
     .line 2
-    sget v2, La5/e0;->g:F
+    sget v2, Lb2/t;->g:F
 
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
     .line 3
-    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/o;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {p3}, Landroid/view/View;->getLayoutDirection()I
@@ -77,12 +77,12 @@
 
     if-ne v2, v4, :cond_0
 
-    const/4 v2, 0x1
+    move v2, v4
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    move v2, v3
 
     :goto_0
     if-eqz v2, :cond_1
@@ -96,7 +96,7 @@
 
     add-float/2addr p2, p1
 
-    mul-float p2, p2, v2
+    mul-float/2addr p2, v2
 
     float-to-double v4, p2
 
@@ -122,7 +122,7 @@
 
     const v5, 0x3e99999a
 
-    mul-float v5, v5, v2
+    mul-float/2addr v5, v2
 
     sub-float/2addr v4, v5
 
@@ -133,7 +133,7 @@
 
     int-to-float v5, v5
 
-    mul-float v5, v5, p2
+    mul-float/2addr v5, p2
 
     float-to-int p2, v5
 
@@ -164,7 +164,7 @@
     if-ne v3, v6, :cond_4
 
     .line 11
-    invoke-static {v5, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 
@@ -208,7 +208,7 @@
 
     .line 14
     :cond_4
-    invoke-static {v5, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 

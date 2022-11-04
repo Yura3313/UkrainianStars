@@ -276,13 +276,7 @@
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :goto_1
     throw p0
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method private static copyOfRange([BII)[B
@@ -627,7 +621,7 @@
     const-string v1, "Got pong! "
 
     .line 30
-    invoke-static {v1, v0, v6}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v6}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_c
     :goto_2
@@ -729,12 +723,12 @@
 
     if-lez v3, :cond_2
 
-    const/4 v6, 0x2
+    move v6, v4
 
     goto :goto_1
 
     :cond_2
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 8
     :goto_1
@@ -748,7 +742,7 @@
 
     if-gt v7, v9, :cond_3
 
-    const/4 v11, 0x2
+    move v11, v4
 
     goto :goto_2
 
@@ -773,7 +767,7 @@
     goto :goto_3
 
     :cond_5
-    const/4 v13, 0x0
+    move v13, v5
 
     :goto_3
     add-int/2addr v13, v11
@@ -785,7 +779,7 @@
     goto :goto_4
 
     :cond_6
-    const/4 v12, 0x0
+    move v12, v5
 
     :goto_4
     add-int v14, v7, v13
@@ -881,8 +875,6 @@
 
     move-result-wide v5
 
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double v5, v8, v5
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
@@ -904,8 +896,6 @@
 
     move-result-wide v5
 
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double v5, v8, v5
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
@@ -926,8 +916,6 @@
     invoke-static {v10, v11, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
-
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double v5, v8, v5
 
@@ -954,8 +942,6 @@
 
     move-result-wide v2
 
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double v2, v8, v2
 
     invoke-static {v2, v3}, Ljava/lang/Math;->floor(D)D
@@ -978,8 +964,6 @@
     invoke-static {v10, v11, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
-
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double v5, v8, v5
 
@@ -1004,8 +988,6 @@
 
     move-result-wide v5
 
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
-
     div-double v5, v8, v5
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
@@ -1028,8 +1010,6 @@
     invoke-static {v10, v11, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
-
-    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
 
     div-double/2addr v8, v5
 
@@ -1111,7 +1091,7 @@
 
     const-wide/high16 v7, 0x4070000000000000L    # 256.0
 
-    mul-double v5, v5, v7
+    mul-double/2addr v5, v7
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
 
@@ -1127,7 +1107,7 @@
 
     move-result-wide v5
 
-    mul-double v5, v5, v7
+    mul-double/2addr v5, v7
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
 
@@ -1144,7 +1124,7 @@
 
     move-result-wide v5
 
-    mul-double v5, v5, v7
+    mul-double/2addr v5, v7
 
     invoke-static {v5, v6}, Ljava/lang/Math;->floor(D)D
 
@@ -1160,7 +1140,7 @@
 
     move-result-wide v3
 
-    mul-double v3, v3, v7
+    mul-double/2addr v3, v7
 
     invoke-static {v3, v4}, Ljava/lang/Math;->floor(D)D
 
@@ -1392,7 +1372,7 @@
 
     if-ne p1, v0, :cond_3
 
-    const/4 p1, 0x2
+    move p1, v1
 
     goto :goto_2
 
@@ -1428,12 +1408,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_0
     and-int/lit8 v1, p1, 0x20
@@ -1442,12 +1422,12 @@
 
     if-ne v1, v4, :cond_1
 
-    const/4 v1, 0x1
+    move v1, v2
 
     goto :goto_1
 
     :cond_1
-    const/4 v1, 0x0
+    move v1, v3
 
     :goto_1
     and-int/lit8 v4, p1, 0x10
@@ -1456,12 +1436,12 @@
 
     if-ne v4, v5, :cond_2
 
-    const/4 v4, 0x1
+    move v4, v2
 
     goto :goto_2
 
     :cond_2
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_2
     if-nez v0, :cond_7
@@ -1476,12 +1456,12 @@
 
     if-ne v0, v1, :cond_3
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_3
 
     :cond_3
-    const/4 v0, 0x0
+    move v0, v3
 
     .line 1
     :goto_3

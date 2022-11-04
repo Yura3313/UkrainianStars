@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k1(Lsd/m;)V
+    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->m1(Lrd/i;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,22 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-.field public final synthetic h:Lsd/m;
+.field public final synthetic g:Lrd/i;
+
+.field public final synthetic h:Landroid/widget/TextView;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;Lsd/m;)V
+.method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;Lrd/i;Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Lsd/m;
+    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    iput-object p3, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,16 +43,22 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 6
+    .locals 10
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Lsd/m;
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lsd/m;->i()Lcom/supercell/id/model/IdRelationshipStatus;
+    invoke-virtual {p1}, Lrd/i;->a()Lcom/supercell/id/model/IdSocialAccount;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->f()Ljava/lang/String;
 
     move-result-object p1
 
@@ -57,204 +67,209 @@
     :cond_0
     move-object p1, v0
 
-    .line 2
     :goto_0
-    instance-of v1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    if-eqz p1, :cond_1
 
-    const-string v2, "click"
+    .line 2
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
 
-    const-string v3, "Public Profile"
+    invoke-virtual {p1}, Lrd/i;->d()Ljava/lang/String;
 
-    const/16 v4, 0x18
+    move-result-object p1
 
-    if-eqz v1, :cond_1
+    if-nez p1, :cond_4
+
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {p1}, Lrd/i;->c()Lcom/supercell/id/model/ProfileImage;
+
+    move-result-object p1
+
+    instance-of p1, p1, Lcom/supercell/id/model/ProfileImage$Image;
+
+    if-nez p1, :cond_4
+
+    :cond_1
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p1}, Lrd/i;->f()Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_2
+    move-object p1, v0
+
+    :goto_1
+    if-nez p1, :cond_4
+
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Lrd/i;->i()Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_2
+
+    :cond_3
+    move-object p1, v0
+
+    :goto_2
+    if-eqz p1, :cond_8
 
     .line 3
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    :cond_4
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
+
+    if-eqz p1, :cond_8
+
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Landroid/widget/TextView;
+
+    iget-object v3, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {v3}, Lrd/i;->a()Lcom/supercell/id/model/IdSocialAccount;
+
+    move-result-object v3
+
+    iget-object v4, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {v4}, Lrd/i;->d()Ljava/lang/String;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {v5}, Lrd/i;->c()Lcom/supercell/id/model/ProfileImage;
+
+    move-result-object v5
+
+    instance-of v6, v5, Lcom/supercell/id/model/ProfileImage$Image;
+
+    if-nez v6, :cond_5
+
+    move-object v5, v0
+
+    :cond_5
+    check-cast v5, Lcom/supercell/id/model/ProfileImage$Image;
+
+    if-eqz v5, :cond_6
 
     .line 4
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
+    iget-object v0, v5, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, v3, v2, v0, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    :cond_6
+    iget-object v5, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {v5}, Lrd/i;->f()Ljava/lang/String;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lrd/i;
+
+    invoke-virtual {v6}, Lrd/i;->i()Ljava/lang/String;
+
+    move-result-object v6
 
     .line 6
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    invoke-static {p1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->g1(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
-
-    goto/16 :goto_1
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    :cond_1
-    instance-of v1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$RequestSent;
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const-string v5, "popupDialog"
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
-    if-eqz v1, :cond_2
+    move-result-object v1
 
     .line 8
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object v1, v1, Lzd/q;->m:Lgc/a;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    const-string v7, "Public Profile"
 
-    move-result-object p1
+    const-string v8, "click"
 
     .line 9
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
+    invoke-static {v1, v7, v8}, Lgc/a;->b(Lgc/a;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
-    invoke-static {p1, v3, v2, v0, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v2}, Lzd/v2;->b(Landroid/view/View;)Landroid/graphics/Rect;
+
+    move-result-object v1
+
+    const-string v2, "account"
 
     .line 11
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    invoke-static {v3, v2}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v7, Lrd/j;
+
+    invoke-direct {v7}, Lrd/j;-><init>()V
 
     .line 13
-    new-instance v1, Lwc/q$a;
+    iget-object v8, v7, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
 
-    const-string v2, "account_friend_profile_dialog_pending_sent_heading"
+    if-eqz v8, :cond_7
 
-    const-string v3, "account_friend_profile_dialog_pending_sent_ok"
-
-    const-string v4, "account_friend_profile_dialog_pending_sent_cancel"
-
-    invoke-direct {v1, v2, v3, v4}, Lwc/q$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    goto :goto_3
 
     .line 14
-    invoke-virtual {v1}, Lwc/q$a;->a()Lwc/q;
+    :cond_7
+    new-instance v8, Landroid/os/Bundle;
 
-    move-result-object v1
+    invoke-direct {v8}, Landroid/os/Bundle;-><init>()V
+
+    :goto_3
+    const-string v9, "rect"
 
     .line 15
-    new-instance v2, Lsd/r;
-
-    invoke-direct {v2, v0}, Lsd/r;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
+    invoke-virtual {v8, v9, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 16
-    iput-object v2, v1, Lwc/q;->x0:Lre/l;
+    invoke-virtual {v8, v2, v3}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    const-string v1, "name"
 
     .line 17
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    invoke-virtual {v8, v1, v4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "imageUrl"
 
     .line 18
-    invoke-virtual {p1, v1, v5}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
+    invoke-virtual {v8, v1, v0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_1
+    const-string v0, "qrCodeUrl"
 
     .line 19
-    :cond_2
-    instance-of v1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$Friends;
+    invoke-virtual {v8, v0, v5}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v1, :cond_3
+    const-string v0, "universalLink"
 
     .line 20
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object p1
+    invoke-virtual {v8, v0, v6}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
+    invoke-virtual {v7, v8}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 22
-    invoke-static {p1, v3, v2, v0, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const-string v0, "popupDialog"
 
     .line 23
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    invoke-virtual {p1, v7, v0}, Lcom/supercell/id/ui/MainActivity;->K(Luc/g;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    .line 24
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 25
-    new-instance v1, Lwc/q$a;
-
-    const-string v2, "account_friend_profile_dialog_remove_heading"
-
-    const-string v3, "account_friend_profile_dialog_remove_ok"
-
-    const-string v4, "account_friend_profile_dialog_remove_cancel"
-
-    invoke-direct {v1, v2, v3, v4}, Lwc/q$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 26
-    invoke-virtual {v1}, Lwc/q$a;->a()Lwc/q;
-
-    move-result-object v1
-
-    .line 27
-    new-instance v2, Lsd/s;
-
-    invoke-direct {v2, v0}, Lsd/s;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
-
-    .line 28
-    iput-object v2, v1, Lwc/q;->x0:Lre/l;
-
-    .line 29
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    .line 30
-    invoke-virtual {p1, v1, v5}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 31
-    :cond_3
-    instance-of p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$RequestReceived;
-
-    if-eqz p1, :cond_4
-
-    .line 32
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object p1
-
-    .line 33
-    iget-object p1, p1, Lae/u;->m:Lpe/a;
-
-    .line 34
-    invoke-static {p1, v3, v2, v0, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
-
-    .line 35
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    .line 36
-    invoke-virtual {v0, p1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->j1(Lcom/supercell/id/ui/MainActivity;)V
-
-    :cond_4
-    :goto_1
+    :cond_8
     return-void
 .end method

@@ -87,7 +87,7 @@
     sget v2, Lcom/google/android/material/R$drawable;->design_password_eye:I
 
     .line 2
-    invoke-static {v1, v2}, Lc/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, v2}, Lc/a;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 

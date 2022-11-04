@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final V:I
+.field public static final U:I
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_Toolbar:I
 
-    sput v0, Lcom/google/android/material/appbar/MaterialToolbar;->V:I
+    sput v0, Lcom/google/android/material/appbar/MaterialToolbar;->U:I
 
     return-void
 .end method
@@ -33,9 +33,9 @@
     .locals 1
 
     .line 2
-    sget v0, Lcom/google/android/material/appbar/MaterialToolbar;->V:I
+    sget v0, Lcom/google/android/material/appbar/MaterialToolbar;->U:I
 
-    invoke-static {p1, p2, p3, v0}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v0}, Lr4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
@@ -62,9 +62,9 @@
 
     .line 6
     :cond_0
-    new-instance p3, Ls4/g;
+    new-instance p3, Lp4/g;
 
-    invoke-direct {p3}, Ls4/g;-><init>()V
+    invoke-direct {p3}, Lp4/g;-><init>()V
 
     if-eqz p2, :cond_1
 
@@ -87,19 +87,23 @@
 
     move-result-object p2
 
-    invoke-virtual {p3, p2}, Ls4/g;->o(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p3, p2}, Lp4/g;->n(Landroid/content/res/ColorStateList;)V
 
     .line 10
-    invoke-virtual {p3, p1}, Ls4/g;->l(Landroid/content/Context;)V
+    invoke-virtual {p3, p1}, Lp4/g;->k(Landroid/content/Context;)V
 
     .line 11
-    invoke-static {p0}, Lf0/r;->k(Landroid/view/View;)F
+    sget-object p1, Lf0/o;->a:Ljava/util/WeakHashMap;
+
+    .line 12
+    invoke-virtual {p0}, Landroid/view/View;->getElevation()F
 
     move-result p1
 
-    invoke-virtual {p3, p1}, Ls4/g;->n(F)V
+    .line 13
+    invoke-virtual {p3, p1}, Lp4/g;->m(F)V
 
-    .line 12
+    .line 14
     invoke-virtual {p0, p3}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     :goto_1
@@ -115,7 +119,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    invoke-static {p0}, Ls4/e;->o(Landroid/view/View;)V
+    invoke-static {p0}, Lj3/rt;->e(Landroid/view/View;)V
 
     return-void
 .end method
@@ -127,7 +131,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setElevation(F)V
 
     .line 2
-    invoke-static {p0, p1}, Ls4/e;->n(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Lj3/rt;->d(Landroid/view/View;F)V
 
     return-void
 .end method

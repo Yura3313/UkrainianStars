@@ -11,50 +11,50 @@
     return-void
 .end method
 
-.method public static a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/v;)Lcom/google/android/play/core/assetpacks/AssetPackState;
+.method public static a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/o0;Lcom/google/android/play/core/assetpacks/t;)Lcom/google/android/play/core/assetpacks/AssetPackState;
     .locals 10
 
     const-string v0, "status"
 
-    invoke-static {v0, p1}, La5/x0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
-    invoke-interface {p3, v0}, Lcom/google/android/play/core/assetpacks/v;->K(I)I
+    invoke-interface {p3, v0}, Lcom/google/android/play/core/assetpacks/t;->X(I)I
 
     move-result v2
 
     const-string p3, "error_code"
 
-    invoke-static {p3, p1}, La5/x0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
-    invoke-virtual {p0, p3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p0, p3}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result v3
 
     const-string p3, "bytes_downloaded"
 
-    invoke-static {p3, p1}, La5/x0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
-    invoke-virtual {p0, p3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {p0, p3}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v4
 
     const-string p3, "total_bytes_to_download"
 
-    invoke-static {p3, p1}, La5/x0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
-    invoke-virtual {p0, p3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {p0, p3}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v6
 
@@ -62,7 +62,7 @@
     monitor-enter p2
 
     :try_start_0
-    iget-object p0, p2, Lcom/google/android/play/core/assetpacks/r0;->a:Ljava/util/HashMap;
+    iget-object p0, p2, Lcom/google/android/play/core/assetpacks/o0;->a:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -109,7 +109,7 @@
 .method public static b(Ljava/lang/String;IIJJD)Lcom/google/android/play/core/assetpacks/AssetPackState;
     .locals 10
 
-    new-instance v9, Lcom/google/android/play/core/assetpacks/d0;
+    new-instance v9, Lcom/google/android/play/core/assetpacks/a0;
 
     const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
@@ -133,7 +133,7 @@
 
     move-wide v6, p5
 
-    invoke-direct/range {v0 .. v8}, Lcom/google/android/play/core/assetpacks/d0;-><init>(Ljava/lang/String;IIJJI)V
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/play/core/assetpacks/a0;-><init>(Ljava/lang/String;IIJJI)V
 
     return-object v9
 .end method

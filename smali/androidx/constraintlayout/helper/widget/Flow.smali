@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public q:Lq/g;
+.field public p:Lq/g;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lq/g;-><init>()V
 
-    iput-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iput-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     if-eqz p1, :cond_1b
 
@@ -61,7 +61,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v2, v0, :cond_1a
@@ -77,7 +77,7 @@
     if-ne v3, v4, :cond_0
 
     .line 7
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -95,7 +95,7 @@
     if-ne v3, v4, :cond_1
 
     .line 10
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -122,7 +122,7 @@
     if-ne v3, v4, :cond_2
 
     .line 16
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -146,7 +146,7 @@
     if-ne v3, v4, :cond_3
 
     .line 21
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -164,7 +164,7 @@
     if-ne v3, v4, :cond_4
 
     .line 24
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -182,7 +182,7 @@
     if-ne v3, v4, :cond_5
 
     .line 27
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -200,7 +200,7 @@
     if-ne v3, v4, :cond_6
 
     .line 30
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -218,7 +218,7 @@
     if-ne v3, v4, :cond_7
 
     .line 33
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -236,7 +236,7 @@
     if-ne v3, v4, :cond_8
 
     .line 36
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -254,7 +254,7 @@
     if-ne v3, v4, :cond_9
 
     .line 39
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -272,7 +272,7 @@
     if-ne v3, v4, :cond_a
 
     .line 42
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -290,7 +290,7 @@
     if-ne v3, v4, :cond_b
 
     .line 45
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -308,7 +308,7 @@
     if-ne v3, v4, :cond_c
 
     .line 48
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -326,7 +326,7 @@
     if-ne v3, v4, :cond_d
 
     .line 51
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -344,7 +344,7 @@
     if-ne v3, v4, :cond_e
 
     .line 54
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -364,7 +364,7 @@
     if-ne v3, v4, :cond_f
 
     .line 57
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -382,7 +382,7 @@
     if-ne v3, v4, :cond_10
 
     .line 60
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -400,7 +400,7 @@
     if-ne v3, v4, :cond_11
 
     .line 63
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -418,7 +418,7 @@
     if-ne v3, v4, :cond_12
 
     .line 66
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -436,7 +436,7 @@
     if-ne v3, v4, :cond_13
 
     .line 69
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -454,7 +454,7 @@
     if-ne v3, v4, :cond_14
 
     .line 72
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -474,7 +474,7 @@
     if-ne v3, v4, :cond_15
 
     .line 75
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -492,7 +492,7 @@
     if-ne v3, v4, :cond_16
 
     .line 78
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v5}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -510,7 +510,7 @@
     if-ne v3, v4, :cond_17
 
     .line 81
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -528,7 +528,7 @@
     if-ne v3, v4, :cond_18
 
     .line 84
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -546,7 +546,7 @@
     if-ne v3, v4, :cond_19
 
     .line 87
-    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v4, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     const/4 v5, -0x1
 
@@ -569,12 +569,12 @@
 
     .line 90
     :cond_1b
-    iget-object p1, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object p1, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
-    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->j:Lq/j;
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->i:Lq/j;
 
     .line 91
-    invoke-virtual {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->r()V
+    invoke-virtual {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->q()V
 
     return-void
 .end method
@@ -622,7 +622,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object p1, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iget v0, p1, Lq/l;->s0:I
@@ -668,14 +668,14 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
-    invoke-virtual {p0, v0, p1, p2}, Landroidx/constraintlayout/helper/widget/Flow;->s(Lq/l;II)V
+    invoke-virtual {p0, v0, p1, p2}, Landroidx/constraintlayout/helper/widget/Flow;->r(Lq/l;II)V
 
     return-void
 .end method
 
-.method public final s(Lq/l;II)V
+.method public final r(Lq/l;II)V
     .locals 2
 
     .line 1
@@ -701,7 +701,7 @@
     if-eqz p1, :cond_0
 
     .line 5
-    invoke-virtual {p1, v0, p2, v1, p3}, Lq/l;->p0(IIII)V
+    invoke-virtual {p1, v0, p2, v1, p3}, Lq/l;->V(IIII)V
 
     .line 6
     iget p2, p1, Lq/l;->x0:I
@@ -728,7 +728,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->J0:F
@@ -743,7 +743,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->D0:I
@@ -758,7 +758,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->K0:F
@@ -773,7 +773,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->E0:I
@@ -788,7 +788,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->P0:I
@@ -803,7 +803,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->H0:F
@@ -818,7 +818,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->N0:I
@@ -833,7 +833,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->B0:I
@@ -848,7 +848,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->S0:I
@@ -863,7 +863,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->T0:I
@@ -878,7 +878,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/l;->q0:I
@@ -902,7 +902,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/l;->r0:I
@@ -917,7 +917,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/l;->u0:I
@@ -932,7 +932,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/l;->v0:I
@@ -947,7 +947,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/l;->q0:I
@@ -962,7 +962,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->Q0:I
@@ -977,7 +977,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->I0:F
@@ -992,7 +992,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->O0:I
@@ -1007,7 +1007,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->C0:I
@@ -1022,7 +1022,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->q:Lq/g;
+    iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Flow;->p:Lq/g;
 
     .line 2
     iput p1, v0, Lq/g;->R0:I

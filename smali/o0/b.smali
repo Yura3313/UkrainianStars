@@ -1,160 +1,96 @@
-.class public Lo0/b;
+.class public final Lo0/b;
 .super Ljava/lang/Object;
-.source "Loader.java"
+.source "AudioAttributesImplApi21.java"
+
+# interfaces
+.implements Lo0/a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lo0/b$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<D:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x15
 .end annotation
 
 
 # instance fields
-.field public a:I
+.field public a:Landroid/media/AudioAttributes;
 
-.field public b:Lo0/b$a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lo0/b$a<",
-            "TD;>;"
-        }
-    .end annotation
-.end field
-
-.field public c:Z
-
-.field public d:Z
-
-.field public e:Z
-
-.field public f:Z
+.field public b:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    const/4 v0, -0x1
 
     .line 2
-    iput-boolean v0, p0, Lo0/b;->c:Z
-
-    .line 3
-    iput-boolean v0, p0, Lo0/b;->d:Z
-
-    const/4 v1, 0x1
-
-    .line 4
-    iput-boolean v1, p0, Lo0/b;->e:Z
-
-    .line 5
-    iput-boolean v0, p0, Lo0/b;->f:Z
-
-    .line 6
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    iput v0, p0, Lo0/b;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/String;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TD;)",
-            "Ljava/lang/String;"
-        }
-    .end annotation
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    instance-of v0, p1, Lo0/b;
 
-    const/16 v1, 0x40
+    if-nez v0, :cond_0
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    const/4 p1, 0x0
+
+    return p1
 
     .line 2
-    invoke-static {p1, v0}, Le0/a;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
-
-    const-string p1, "}"
+    :cond_0
+    check-cast p1, Lo0/b;
 
     .line 3
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lo0/b;->a:Landroid/media/AudioAttributes;
 
-    .line 4
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object p1, p1, Lo0/b;->a:Landroid/media/AudioAttributes;
 
-    move-result-object p1
+    invoke-virtual {v0, p1}, Landroid/media/AudioAttributes;->equals(Ljava/lang/Object;)Z
 
-    return-object p1
+    move-result p1
+
+    return p1
 .end method
 
-.method public b(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+.method public final hashCode()I
+    .locals 1
 
-    const/4 p0, 0x0
+    iget-object v0, p0, Lo0/b;->a:Landroid/media/AudioAttributes;
 
-    throw p0
-.end method
+    invoke-virtual {v0}, Landroid/media/AudioAttributes;->hashCode()I
 
-.method public c()Z
-    .locals 0
+    move-result v0
 
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public d()V
-    .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
+
+    const-string v0, "AudioAttributesCompat: audioattributes="
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x40
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    move-result-object v0
 
     .line 2
-    invoke-static {p0, v0}, Le0/a;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
+    iget-object v1, p0, Lo0/b;->a:Landroid/media/AudioAttributes;
 
-    const-string v1, " id="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 4
-    iget v1, p0, Lo0/b;->a:I
-
-    const-string v2, "}"
-
-    .line 5
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

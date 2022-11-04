@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final k2()V
+.method public final w3()V
     .locals 1
 
     const/4 v0, 0x0

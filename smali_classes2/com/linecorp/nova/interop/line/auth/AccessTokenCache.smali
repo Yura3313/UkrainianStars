@@ -55,7 +55,7 @@
     const-string p1, "com.linecorp.linesdk.accesstoken."
 
     .line 4
-    invoke-static {p1, p2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lf/f;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -257,9 +257,9 @@
 
     if-eqz v9, :cond_2
 
-    cmp-long v9, v7, v2
+    cmp-long v2, v7, v2
 
-    if-nez v9, :cond_0
+    if-nez v2, :cond_0
 
     goto :goto_0
 

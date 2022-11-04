@@ -82,7 +82,7 @@
     iput v2, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->d:I
 
     .line 3
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->R(I)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->Q(I)V
 
     .line 4
     iput-boolean v1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->f:Z
@@ -126,7 +126,7 @@
     if-lt v3, v2, :cond_3
 
     .line 9
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->j0:Landroidx/recyclerview/widget/RecyclerView$y;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->i0:Landroidx/recyclerview/widget/RecyclerView$y;
 
     iget v2, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->a:I
 

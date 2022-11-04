@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/activity/result/ActivityResultRegistry;->c(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
+    value = Landroidx/activity/result/ActivityResultRegistry;->d(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -76,7 +76,7 @@
 
     iget-object v2, p0, Landroidx/activity/result/ActivityResultRegistry$a;->c:Lb/a;
 
-    invoke-virtual {v0, v1, v2, p1}, Landroidx/activity/result/ActivityResultRegistry;->b(ILb/a;Ljava/lang/Object;)V
+    invoke-virtual {v0, v1, v2, p1}, Landroidx/activity/result/ActivityResultRegistry;->c(ILb/a;Ljava/lang/Object;)V
 
     return-void
 .end method

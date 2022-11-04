@@ -69,19 +69,19 @@
     move-result-wide v1
 
     .line 4
-    iget-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz v3, :cond_0
 
     .line 5
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->m()V
 
     .line 6
-    iput-boolean v4, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v4, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 7
     :cond_0
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/a0;
 

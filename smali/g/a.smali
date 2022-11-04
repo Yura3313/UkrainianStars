@@ -123,10 +123,6 @@
 
     .line 2
     :cond_0
-    invoke-static {v0}, Ly/a;->q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
     iput-object v0, p0, Lg/a;->h:Landroid/graphics/drawable/Drawable;
 
     .line 3
@@ -144,20 +140,22 @@
     .line 5
     iget-object v1, p0, Lg/a;->l:Landroid/content/res/ColorStateList;
 
-    invoke-static {v0, v1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
-
     .line 6
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 7
     :cond_1
     iget-boolean v0, p0, Lg/a;->o:Z
 
     if-eqz v0, :cond_2
 
-    .line 7
+    .line 8
     iget-object v0, p0, Lg/a;->h:Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Lg/a;->m:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {v0, v1}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_2
     return-void
@@ -583,18 +581,22 @@
 .end method
 
 .method public final setIcon(I)Landroid/view/MenuItem;
-    .locals 1
+    .locals 2
 
     .line 3
     iget-object v0, p0, Lg/a;->i:Landroid/content/Context;
 
-    invoke-static {v0, p1}, Lv/a;->d(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    sget-object v1, Lv/a;->a:Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
+    .line 5
     iput-object p1, p0, Lg/a;->h:Landroid/graphics/drawable/Drawable;
 
-    .line 4
+    .line 6
     invoke-virtual {p0}, Lg/a;->c()V
 
     return-object p0

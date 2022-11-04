@@ -189,7 +189,7 @@
 .end method
 
 .method public read(Lokio/Buffer;J)J
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -203,9 +203,9 @@
 
     const-wide/16 v0, -0x1
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-eqz v2, :cond_2
+    if-eqz v0, :cond_2
 
     .line 2
     iget-wide v0, p1, Lokio/Buffer;->size:J
@@ -241,9 +241,9 @@
     :goto_1
     iget-wide v5, p1, Lokio/Buffer;->size:J
 
-    cmp-long v7, v0, v5
+    cmp-long v5, v0, v5
 
-    if-gez v7, :cond_2
+    if-gez v5, :cond_2
 
     .line 7
     iget v5, v4, Lokio/Segment;->pos:I

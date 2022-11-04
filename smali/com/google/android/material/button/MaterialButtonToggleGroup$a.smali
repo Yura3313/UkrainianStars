@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/button/MaterialButtonToggleGroup;
+.field public final synthetic f:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->g:Lcom/google/android/material/button/MaterialButtonToggleGroup;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->f:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +104,7 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->g:Lcom/google/android/material/button/MaterialButtonToggleGroup;
+    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->f:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -114,7 +114,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->g:Lcom/google/android/material/button/MaterialButtonToggleGroup;
+    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->f:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-virtual {v0, p2}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 

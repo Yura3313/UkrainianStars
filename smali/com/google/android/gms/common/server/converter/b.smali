@@ -32,7 +32,7 @@
     .locals 6
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -66,7 +66,7 @@
     if-eq v4, v5, :cond_0
 
     .line 4
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v3}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
@@ -75,7 +75,7 @@
     sget-object v2, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 6
-    invoke-static {p1, v3, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+    invoke-static {p1, v3, v2}, Lc2/b;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -83,7 +83,7 @@
 
     .line 7
     :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v3}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v1
 
@@ -91,7 +91,7 @@
 
     .line 8
     :cond_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 9
     new-instance p1, Lcom/google/android/gms/common/server/converter/StringToIntConverter;

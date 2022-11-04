@@ -1,30 +1,45 @@
-.class public final Lcom/google/android/play/core/assetpacks/d2;
-.super Lcom/google/android/play/core/assetpacks/e1;
+.class public final synthetic Lcom/google/android/play/core/assetpacks/d2;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
 
 
-# instance fields
-.field public final c:I
-
-.field public final d:J
-
-.field public final e:Ljava/lang/String;
-
-.field public final f:Ljava/lang/String;
+# static fields
+.field public static final a:Lcom/google/android/play/core/assetpacks/d2;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;IJLjava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/e1;-><init>(ILjava/lang/String;)V
+    new-instance v0, Lcom/google/android/play/core/assetpacks/d2;
 
-    iput p3, p0, Lcom/google/android/play/core/assetpacks/d2;->c:I
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/d2;-><init>()V
 
-    iput-wide p4, p0, Lcom/google/android/play/core/assetpacks/d2;->d:J
-
-    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/d2;->e:Ljava/lang/String;
-
-    iput-object p7, p0, Lcom/google/android/play/core/assetpacks/d2;->f:Ljava/lang/String;
+    sput-object v0, Lcom/google/android/play/core/assetpacks/d2;->a:Lcom/google/android/play/core/assetpacks/d2;
 
     return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 2
+
+    new-instance v0, Ljava/lang/Thread;
+
+    const-string v1, "UpdateListenerExecutor"
+
+    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    return-object v0
 .end method

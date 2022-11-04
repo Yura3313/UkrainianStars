@@ -43,7 +43,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager$3;->this$0:Lcom/kakaogame/core/CoreManager;
@@ -54,9 +54,9 @@
 
     iget-wide v2, p0, Lcom/kakaogame/core/CoreManager$3;->val$endTime:J
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-lez v4, :cond_0
+    if-lez v0, :cond_0
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager$3;->this$0:Lcom/kakaogame/core/CoreManager;

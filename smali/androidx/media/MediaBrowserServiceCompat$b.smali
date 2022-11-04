@@ -20,7 +20,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Landroidx/media/MediaBrowserServiceCompat$j;
+.field public final b:Landroidx/media/MediaBrowserServiceCompat$i;
 
 .field public final c:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -28,7 +28,7 @@
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Le0/c<",
+            "Le0/a<",
             "Landroid/os/IBinder;",
             "Landroid/os/Bundle;",
             ">;>;>;"
@@ -40,7 +40,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/String;IILandroidx/media/MediaBrowserServiceCompat$j;)V
+.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/String;IILandroidx/media/MediaBrowserServiceCompat$i;)V
     .locals 1
 
     .line 1
@@ -66,13 +66,13 @@
     if-lt p1, v0, :cond_0
 
     .line 5
-    new-instance p1, Lp0/f;
+    new-instance p1, Lo0/f;
 
-    invoke-direct {p1, p2, p3, p4}, Lp0/f;-><init>(Ljava/lang/String;II)V
+    invoke-direct {p1, p2, p3, p4}, Lo0/f;-><init>(Ljava/lang/String;II)V
 
     .line 6
     :cond_0
-    iput-object p5, p0, Landroidx/media/MediaBrowserServiceCompat$b;->b:Landroidx/media/MediaBrowserServiceCompat$j;
+    iput-object p5, p0, Landroidx/media/MediaBrowserServiceCompat$b;->b:Landroidx/media/MediaBrowserServiceCompat$i;
 
     return-void
 .end method
@@ -84,7 +84,7 @@
 
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$b;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$k;
 
     new-instance v1, Landroidx/media/MediaBrowserServiceCompat$b$a;
 

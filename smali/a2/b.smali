@@ -1,25 +1,39 @@
-.class public abstract La2/b;
-.super La2/c;
+.class public interface abstract La2/b;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
+
+# interfaces
+.implements Ly1/i;
+.implements Ljava/io/Closeable;
+.implements Ljava/lang/Iterable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<R::",
-        "La2/g;",
+        "<T:",
+        "Ljava/lang/Object;",
         ">",
-        "La2/c<",
-        "TR;>;"
+        "Ljava/lang/Object;",
+        "Ly1/i;",
+        "Ljava/io/Closeable;",
+        "Ljava/lang/Iterable<",
+        "TT;>;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# virtual methods
+.method public abstract get(I)Ljava/lang/Object;
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    invoke-direct {p0}, La2/c;-><init>()V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TT;"
+        }
+    .end annotation
+.end method
 
-    return-void
+.method public abstract getCount()I
 .end method

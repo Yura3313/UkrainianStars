@@ -34,7 +34,21 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final a(Ljava/lang/String;Landroidx/media/m$b;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$f;->f:Landroidx/media/MediaBrowserServiceCompat;
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    invoke-virtual {p1}, Landroidx/media/MediaBrowserServiceCompat;->b()V
+
+    return-void
+.end method
+
+.method public final c()V
     .locals 2
 
     .line 1
@@ -51,21 +65,7 @@
     iput-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$d;->b:Landroidx/media/j$a;
 
     .line 4
-    invoke-static {v1}, Landroidx/media/j;->b(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final b(Ljava/lang/String;Landroidx/media/m$b;)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$f;->f:Landroidx/media/MediaBrowserServiceCompat;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {p1}, Landroidx/media/MediaBrowserServiceCompat;->b()V
+    invoke-static {v1}, Landroidx/media/j;->a(Ljava/lang/Object;)V
 
     return-void
 .end method

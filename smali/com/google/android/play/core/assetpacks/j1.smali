@@ -1,43 +1,26 @@
-.class public final synthetic Lcom/google/android/play/core/assetpacks/j1;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.class public final Lcom/google/android/play/core/assetpacks/j1;
+.super Lcom/google/android/play/core/assetpacks/b1;
 
 
 # instance fields
-.field public final g:Lcom/google/android/play/core/assetpacks/k1;
+.field public final c:I
 
-.field public final h:Landroid/content/Intent;
+.field public final d:J
+
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/k1;Landroid/content/Intent;)V
+.method public constructor <init>(ILjava/lang/String;IJLjava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/b1;-><init>(ILjava/lang/String;)V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j1;->g:Lcom/google/android/play/core/assetpacks/k1;
+    iput p3, p0, Lcom/google/android/play/core/assetpacks/j1;->c:I
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j1;->h:Landroid/content/Intent;
+    iput-wide p4, p0, Lcom/google/android/play/core/assetpacks/j1;->d:J
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j1;->g:Lcom/google/android/play/core/assetpacks/k1;
-
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/j1;->h:Landroid/content/Intent;
-
-    iget-object v2, v0, Lcom/google/android/play/core/assetpacks/k1;->b:Lcom/google/android/play/core/assetpacks/t;
-
-    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/k1;->c:Landroid/content/Context;
-
-    invoke-virtual {v2, v0, v1}, Lcom/google/android/play/core/assetpacks/t;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/j1;->e:Ljava/lang/String;
 
     return-void
 .end method

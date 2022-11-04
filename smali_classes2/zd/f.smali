@@ -1,87 +1,53 @@
 .class public final Lzd/f;
-.super Lse/i;
-.source "YoungPlayerRegisterEnterPinPageFragment.kt"
-
-# interfaces
-.implements Lre/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/i;",
-        "Lre/p<",
-        "Lzd/i;",
-        "Ljava/lang/Exception;",
-        "Lie/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lzd/f;
+.super Landroidx/recyclerview/widget/p;
+.source "RecyclerViewUtil.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    new-instance v0, Lzd/f;
-
-    invoke-direct {v0}, Lzd/f;-><init>()V
-
-    sput-object v0, Lzd/f;->g:Lzd/f;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/p;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final f(IIIII)I
+    .locals 0
+
+    sub-int/2addr p4, p3
+
+    div-int/lit8 p4, p4, 0x2
+
+    add-int/2addr p4, p3
+
+    sub-int/2addr p2, p1
+
+    div-int/lit8 p2, p2, 0x2
+
+    add-int/2addr p2, p1
+
+    sub-int/2addr p4, p2
+
+    return p4
+.end method
+
+.method public final g(Landroid/util/DisplayMetrics;)F
     .locals 1
 
-    .line 1
-    check-cast p1, Lzd/i;
+    const-string v0, "displayMetrics"
 
-    check-cast p2, Ljava/lang/Exception;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "$receiver"
+    iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    int-to-float p1, p1
 
-    const-string v0, "it"
+    const/high16 v0, 0x41200000    # 10.0f
 
-    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    div-float/2addr v0, p1
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
-
-    .line 5
-    :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
-
-    return-object p1
+    return v0
 .end method

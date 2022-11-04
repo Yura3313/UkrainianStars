@@ -1,73 +1,52 @@
 .class public final Lcom/google/android/play/core/assetpacks/l0;
-.super Lcom/google/android/play/core/assetpacks/e1;
+.super Ljava/lang/RuntimeException;
 
 
 # instance fields
-.field public final c:I
-
-.field public final d:J
-
-.field public final e:Ljava/lang/String;
-
 .field public final f:I
-
-.field public final g:I
-
-.field public final h:I
-
-.field public final i:J
-
-.field public final j:I
-
-.field public final k:Ljava/io/InputStream;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;IJLjava/lang/String;IIIJILjava/io/InputStream;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/e1;-><init>(ILjava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    iput p3, p0, Lcom/google/android/play/core/assetpacks/l0;->c:I
+    const/4 p1, -0x1
 
-    iput-wide p4, p0, Lcom/google/android/play/core/assetpacks/l0;->d:J
-
-    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/l0;->e:Ljava/lang/String;
-
-    iput p7, p0, Lcom/google/android/play/core/assetpacks/l0;->f:I
-
-    iput p8, p0, Lcom/google/android/play/core/assetpacks/l0;->g:I
-
-    iput p9, p0, Lcom/google/android/play/core/assetpacks/l0;->h:I
-
-    iput-wide p10, p0, Lcom/google/android/play/core/assetpacks/l0;->i:J
-
-    iput p12, p0, Lcom/google/android/play/core/assetpacks/l0;->j:I
-
-    iput-object p13, p0, Lcom/google/android/play/core/assetpacks/l0;->k:Ljava/io/InputStream;
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/l0;->f:I
 
     return-void
 .end method
 
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
 
-# virtual methods
-.method public final a()Z
-    .locals 3
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    iget v0, p0, Lcom/google/android/play/core/assetpacks/l0;->g:I
+    iput p2, p0, Lcom/google/android/play/core/assetpacks/l0;->f:I
 
-    const/4 v1, 0x1
+    return-void
+.end method
 
-    add-int/2addr v0, v1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;)V
+    .locals 0
 
-    iget v2, p0, Lcom/google/android/play/core/assetpacks/l0;->h:I
+    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    if-eq v0, v2, :cond_0
+    const/4 p1, -0x1
 
-    const/4 v0, 0x0
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/l0;->f:I
 
-    return v0
+    return-void
+.end method
 
-    :cond_0
-    return v1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    iput p3, p0, Lcom/google/android/play/core/assetpacks/l0;->f:I
+
+    return-void
 .end method

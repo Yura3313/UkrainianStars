@@ -1,14 +1,11 @@
 .class public final Lf0/r$a;
-.super Ljava/lang/Object;
-.source "ViewCompat.java"
-
-# interfaces
-.implements Landroid/view/View$OnApplyWindowInsetsListener;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "ViewPropertyAnimatorCompat.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lf0/r;->K(Landroid/view/View;Lf0/n;)V
+    value = Lf0/r;->e(Landroid/view/View;Lf0/s;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,41 +15,54 @@
 
 
 # instance fields
-.field public final synthetic a:Lf0/n;
+.field public final synthetic f:Lf0/s;
+
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lf0/n;)V
+.method public constructor <init>(Lf0/s;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lf0/r$a;->a:Lf0/n;
+    iput-object p1, p0, Lf0/r$a;->f:Lf0/s;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lf0/r$a;->g:Landroid/view/View;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
-    invoke-static {p2}, Lf0/a0;->n(Landroid/view/WindowInsets;)Lf0/a0;
+    iget-object p1, p0, Lf0/r$a;->f:Lf0/s;
 
-    move-result-object p2
+    iget-object v0, p0, Lf0/r$a;->g:Landroid/view/View;
 
-    .line 2
-    iget-object v0, p0, Lf0/r$a;->a:Lf0/n;
+    invoke-interface {p1, v0}, Lf0/s;->b(Landroid/view/View;)V
 
-    invoke-interface {v0, p1, p2}, Lf0/n;->a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+    return-void
+.end method
 
-    move-result-object p1
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 0
 
-    .line 3
-    invoke-virtual {p1}, Lf0/a0;->m()Landroid/view/WindowInsets;
+    iget-object p1, p0, Lf0/r$a;->f:Lf0/s;
 
-    move-result-object p1
+    invoke-interface {p1}, Lf0/s;->a()V
 
-    return-object p1
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    iget-object p1, p0, Lf0/r$a;->f:Lf0/s;
+
+    invoke-interface {p1}, Lf0/s;->c()V
+
+    return-void
 .end method

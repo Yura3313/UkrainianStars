@@ -460,13 +460,7 @@
     invoke-static {v0, v3, v1, v2}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 19
-    goto :goto_5
-
-    :goto_4
     throw p1
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method private static setAgreement(Ljava/util/Map;)Lcom/kakaogame/KGResult;
@@ -1035,13 +1029,7 @@
     invoke-static {p2, v2, v0, v1}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     .line 17
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public saveCustomProperty(Ljava/lang/String;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V

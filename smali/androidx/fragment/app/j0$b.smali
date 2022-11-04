@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/fragment/app/j0$c;
+.field public final synthetic f:Landroidx/fragment/app/j0$c;
 
-.field public final synthetic h:Landroidx/fragment/app/j0;
+.field public final synthetic g:Landroidx/fragment/app/j0;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/j0;Landroidx/fragment/app/j0$c;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/j0$b;->h:Landroidx/fragment/app/j0;
+    iput-object p1, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0;
 
-    iput-object p2, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0$c;
+    iput-object p2, p0, Landroidx/fragment/app/j0$b;->f:Landroidx/fragment/app/j0$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,20 +42,20 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/j0$b;->h:Landroidx/fragment/app/j0;
+    iget-object v0, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0;
 
     iget-object v0, v0, Landroidx/fragment/app/j0;->b:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0$c;
+    iget-object v1, p0, Landroidx/fragment/app/j0$b;->f:Landroidx/fragment/app/j0$c;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/j0$b;->h:Landroidx/fragment/app/j0;
+    iget-object v0, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0;
 
     iget-object v0, v0, Landroidx/fragment/app/j0;->c:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroidx/fragment/app/j0$b;->g:Landroidx/fragment/app/j0$c;
+    iget-object v1, p0, Landroidx/fragment/app/j0$b;->f:Landroidx/fragment/app/j0$c;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 

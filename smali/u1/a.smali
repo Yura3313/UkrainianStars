@@ -1,6 +1,5 @@
 .class public final Lu1/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -11,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/credentials/Credential;",
+        "Lcom/google/android/gms/auth/api/proxy/ProxyRequest;",
         ">;"
     }
 .end annotation
@@ -29,30 +28,30 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 11
+    .locals 13
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    move-object v3, v1
+    const/4 v2, 0x0
 
-    move-object v4, v3
+    const-wide/16 v3, 0x0
 
-    move-object v5, v4
+    move v6, v1
 
-    move-object v6, v5
+    move v8, v6
 
-    move-object v7, v6
+    move-object v7, v2
 
-    move-object v8, v7
+    move-object v11, v7
 
-    move-object v9, v8
+    move-object v12, v11
 
-    move-object v10, v9
+    move-wide v9, v3
 
     .line 2
     :goto_0
@@ -60,7 +59,7 @@
 
     move-result v1
 
-    if-ge v1, v0, :cond_0
+    if-ge v1, v0, :cond_6
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -71,122 +70,101 @@
 
     and-int/2addr v2, v1
 
-    packed-switch v2, :pswitch_data_0
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_5
+
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_4
+
+    const/4 v3, 0x3
+
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x4
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_1
+
+    const/16 v3, 0x3e8
+
+    if-eq v2, v3, :cond_0
 
     .line 4
-    :pswitch_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
-    :pswitch_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    :cond_0
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
-    move-result-object v10
+    move-result v6
 
     goto :goto_0
 
     .line 6
-    :pswitch_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    :cond_1
+    invoke-static {p1, v1}, Lc2/b;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
 
-    move-result-object v9
+    move-result-object v12
 
     goto :goto_0
 
     .line 7
-    :pswitch_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    :cond_2
+    invoke-static {p1, v1}, Lc2/b;->e(Landroid/os/Parcel;I)[B
 
-    move-result-object v8
+    move-result-object v11
 
     goto :goto_0
 
     .line 8
-    :pswitch_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    :cond_3
+    invoke-static {p1, v1}, Lc2/b;->t(Landroid/os/Parcel;I)J
+
+    move-result-wide v9
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v8
+
+    goto :goto_0
+
+    .line 10
+    :cond_5
+    invoke-static {p1, v1}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v7
 
     goto :goto_0
 
-    .line 9
-    :pswitch_5
-    sget-object v2, Lcom/google/android/gms/auth/api/credentials/IdToken;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 10
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v6
-
-    goto :goto_0
-
     .line 11
-    :pswitch_6
-    sget-object v2, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
+    :cond_6
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 12
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    new-instance p1, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
 
-    move-result-object v1
+    move-object v5, p1
 
-    move-object v5, v1
-
-    check-cast v5, Landroid/net/Uri;
-
-    goto :goto_0
-
-    .line 13
-    :pswitch_7
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v4
-
-    goto :goto_0
-
-    .line 14
-    :pswitch_8
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 16
-    new-instance p1, Lcom/google/android/gms/auth/api/credentials/Credential;
-
-    move-object v2, p1
-
-    invoke-direct/range {v2 .. v10}, Lcom/google/android/gms/auth/api/credentials/Credential;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v5 .. v12}, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;-><init>(ILjava/lang/String;IJ[BLandroid/os/Bundle;)V
 
     return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_0
-        :pswitch_0
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
 .end method
 
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/credentials/Credential;
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
 
     return-object p1
 .end method

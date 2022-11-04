@@ -12,11 +12,11 @@
 
 
 # direct methods
-.method public static a(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Le7/b;)V
+.method public static a(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;La7/b;)V
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/helpshift/exceptions/InstallException;
+            Lt9/b;
         }
     .end annotation
 
@@ -31,7 +31,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 3
-    iget-boolean v1, p4, Le7/b;->a:Z
+    iget-boolean v1, p4, La7/b;->a:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -39,10 +39,10 @@
 
     const-string v2, "enableInAppNotification"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget v1, p4, Le7/b;->b:I
+    iget v1, p4, La7/b;->b:I
 
     if-eqz v1, :cond_0
 
@@ -53,7 +53,7 @@
 
     const-string v2, "notificationIcon"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     :cond_0
@@ -61,15 +61,15 @@
 
     const-string v2, "enableDefaultFallbackLanguage"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "enableInboxPolling"
 
     .line 7
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    iget-boolean v1, p4, Le7/b;->c:Z
+    iget-boolean v1, p4, La7/b;->c:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -77,21 +77,21 @@
 
     const-string v2, "enableLogging"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     const-string v2, "disableErrorReporting"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v1, 0x0
 
     const-string v2, "font"
 
     .line 10
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v2, -0x1
 
@@ -102,10 +102,10 @@
 
     const-string v3, "screenOrientation"
 
-    invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
-    iget-object v2, p4, Le7/b;->d:Ljava/util/Map;
+    iget-object v2, p4, La7/b;->d:Ljava/util/Map;
 
     if-eqz v2, :cond_2
 
@@ -133,7 +133,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 14
-    iget-object v4, p4, Le7/b;->d:Ljava/util/Map;
+    iget-object v4, p4, La7/b;->d:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,13 +142,13 @@
     if-eqz v4, :cond_1
 
     .line 15
-    iget-object v4, p4, Le7/b;->d:Ljava/util/Map;
+    iget-object v4, p4, La7/b;->d:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -156,7 +156,7 @@
     const-string p4, "sdkType"
 
     .line 16
-    invoke-interface {v0, p4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -165,16 +165,16 @@
     const-string v2, "android"
 
     .line 17
-    invoke-interface {v0, p4, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_3
     const-string p4, "supportNotificationChannelId"
 
     .line 18
-    invoke-interface {v0, p4, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p4, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
-    invoke-interface {v6, v0}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+    invoke-virtual {v6, v0}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     .line 20
     sget-object p4, Lcom/helpshift/CoreInternal;->a:Lcom/helpshift/a$a;
@@ -182,7 +182,7 @@
     if-eqz p4, :cond_a
 
     .line 21
-    invoke-static {p1}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, La4/b0;->g(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -194,7 +194,7 @@
 
     .line 22
     :cond_4
-    invoke-static {p2}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
+    invoke-static {p2}, La4/b0;->g(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -211,7 +211,7 @@
 
     .line 23
     :goto_1
-    invoke-static {p3}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
+    invoke-static {p3}, La4/b0;->g(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -223,7 +223,7 @@
 
     .line 24
     :cond_6
-    invoke-static {p1}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, La4/b0;->g(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_9
 
     .line 25
-    invoke-static {p4}, La5/b0;->d(Ljava/lang/String;)Z
+    invoke-static {p4}, Lcom/android/billingclient/api/c0;->h(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -243,14 +243,14 @@
     if-eqz v0, :cond_8
 
     .line 26
-    invoke-static {p3}, La5/a0;->d(Ljava/lang/String;)Z
+    invoke-static {p3}, Lcom/helpshift/util/a0;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 27
-    sget-object v8, Lmb/a;->a:Lmb/b;
+    sget-object v8, Llb/a;->a:Llb/b;
 
     .line 28
     new-instance v9, Lcom/helpshift/b;
@@ -269,7 +269,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/helpshift/b;-><init>(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
-    invoke-virtual {v8, v9}, Lmb/b;->c(Ljava/lang/Runnable;)V
+    invoke-virtual {v8, v9}, Llb/b;->c(Ljava/lang/Runnable;)V
 
     .line 29
     new-instance v9, Lcom/helpshift/c;
@@ -288,7 +288,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/helpshift/c;-><init>(Landroid/app/Application;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v8, v9}, Lmb/b;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {v8, v9}, Llb/b;->a(Ljava/lang/Runnable;)V
 
     .line 30
     sget-object p0, Lcom/helpshift/util/t;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -301,47 +301,41 @@
 
     .line 31
     :cond_7
-    new-instance p0, Lcom/helpshift/exceptions/InstallException;
+    new-instance p0, Lt9/b;
 
     const-string p1, "The app id used in the Core.install(application, apiKey, domain, appId) is not valid!"
 
-    invoke-direct {p0, p1}, Lcom/helpshift/exceptions/InstallException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lt9/b;-><init>(Ljava/lang/String;)V
 
     throw p0
 
     .line 32
     :cond_8
-    new-instance p0, Lcom/helpshift/exceptions/InstallException;
+    new-instance p0, Lt9/b;
 
     const-string p1, "The domain name used in the Core.install(application, apiKey, domain, appId) is not valid!"
 
-    invoke-direct {p0, p1}, Lcom/helpshift/exceptions/InstallException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lt9/b;-><init>(Ljava/lang/String;)V
 
     throw p0
 
     .line 33
     :cond_9
-    new-instance p0, Lcom/helpshift/exceptions/InstallException;
+    new-instance p0, Lt9/b;
 
     const-string p1, "The api key used in the Core.install(application, apiKey, domain, appId) is not valid!"
 
-    invoke-direct {p0, p1}, Lcom/helpshift/exceptions/InstallException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lt9/b;-><init>(Ljava/lang/String;)V
 
     throw p0
 
     .line 34
     :cond_a
-    new-instance p0, Lcom/helpshift/exceptions/HelpshiftInitializationException;
+    new-instance p0, Lt9/a;
 
     const-string p1, "com.helpshift.Core.init() method not called with valid arguments"
 
-    invoke-direct {p0, p1}, Lcom/helpshift/exceptions/HelpshiftInitializationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lt9/a;-><init>(Ljava/lang/String;)V
 
-    goto :goto_3
-
-    :goto_2
     throw p0
-
-    :goto_3
-    goto :goto_2
 .end method

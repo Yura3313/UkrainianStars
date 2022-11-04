@@ -3,7 +3,7 @@
 .source "ViewPager2.java"
 
 # interfaces
-.implements Lg0/e;
+.implements Lg0/d;
 
 
 # annotations

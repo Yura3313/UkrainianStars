@@ -16,13 +16,13 @@
 # instance fields
 .field public final a:Z
 
-.field public final b:Lx5/d;
+.field public final b:Lv5/d;
 
-.field public c:Ly5/h0;
+.field public c:Lw5/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lx5/b<",
-            "Lt5/a;",
+            "Lv5/b<",
+            "Lr5/a;",
             ">;"
         }
     .end annotation
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Lx5/d;)V
+.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Lv5/d;)V
     .locals 5
 
     .line 1
@@ -51,13 +51,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Lx5/d;
+    iput-object p2, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->b:Lv5/d;
 
     const/4 p1, 0x0
 
     .line 3
     :try_start_0
-    sget v0, Lb6/a;->a:I
+    sget v0, Lz5/a;->a:I
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -68,13 +68,13 @@
     iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->e:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 5
-    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lt5/b;
+    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 6
-    invoke-virtual {v0}, Lt5/b;->f()V
+    invoke-virtual {v0}, Lr5/b;->f()V
 
     .line 7
-    iget-object v0, v0, Lt5/b;->a:Landroid/content/Context;
+    iget-object v0, v0, Lr5/b;->a:Landroid/content/Context;
 
     .line 8
     new-instance v1, Landroid/content/Intent;
@@ -112,7 +112,7 @@
     goto :goto_1
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, p1
 
     .line 12
     :goto_1
@@ -124,13 +124,13 @@
     iget-object v1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->e:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 14
-    iget-object v1, v1, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lt5/b;
+    iget-object v1, v1, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 15
-    invoke-virtual {v1}, Lt5/b;->f()V
+    invoke-virtual {v1}, Lr5/b;->f()V
 
     .line 16
-    iget-object v1, v1, Lt5/b;->a:Landroid/content/Context;
+    iget-object v1, v1, Lr5/b;->a:Landroid/content/Context;
 
     const-string v2, "com.google.firebase.messaging"
 
@@ -188,7 +188,7 @@
     if-eqz v1, :cond_2
 
     .line 24
-    invoke-virtual {v1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {v1, v0}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -197,7 +197,7 @@
     .line 25
     iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -225,14 +225,14 @@
     if-eqz p1, :cond_3
 
     .line 28
-    new-instance p1, Ly5/h0;
+    new-instance p1, Lw5/f0;
 
-    invoke-direct {p1, p0}, Ly5/h0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
+    invoke-direct {p1, p0}, Lw5/f0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
 
-    iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->c:Ly5/h0;
+    iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->c:Lw5/f0;
 
     .line 29
-    invoke-interface {p2, p1}, Lx5/d;->b(Lx5/b;)V
+    invoke-interface {p2, p1}, Lv5/d;->b(Lv5/b;)V
 
     :cond_3
     return-void
@@ -272,13 +272,13 @@
     iget-object v0, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->e:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 4
-    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lt5/b;
+    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 5
-    invoke-virtual {v0}, Lt5/b;->f()V
+    invoke-virtual {v0}, Lr5/b;->f()V
 
     .line 6
-    iget-object v0, v0, Lt5/b;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, Lr5/b;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 

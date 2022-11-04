@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
 # interfaces
-.implements Lcom/google/android/gms/dynamite/DynamiteModule$a$b;
+.implements Lcom/google/android/gms/dynamite/DynamiteModule$b$b;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/android/gms/dynamite/DynamiteModule$LoadingException;
+            Lcom/google/android/gms/dynamite/DynamiteModule$a;
         }
     .end annotation
 

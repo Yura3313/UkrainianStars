@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    iget-object p1, p1, Li/b$c;->i:Li/b$c;
+    iget-object p1, p1, Li/b$c;->h:Li/b$c;
 
     return-object p1
 .end method
@@ -75,7 +75,7 @@
         }
     .end annotation
 
-    iget-object p1, p1, Li/b$c;->j:Li/b$c;
+    iget-object p1, p1, Li/b$c;->i:Li/b$c;
 
     return-object p1
 .end method

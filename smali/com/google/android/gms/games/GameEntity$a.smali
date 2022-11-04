@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/GameEntity$a;
-.super Lv2/l;
+.super Lu2/k;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lv2/l;-><init>()V
+    invoke-direct {p0}, Lu2/k;-><init>()V
 
     return-void
 .end method
@@ -34,25 +34,47 @@
     sget-object v1, Lcom/google/android/gms/games/GameEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->E2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->L2()V
 
     .line 3
-    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->h:I
+    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->g:I
 
     .line 4
     const-class v1, Lcom/google/android/gms/games/GameEntity;
 
     .line 5
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->D2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->K2()V
 
     .line 6
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static/range {p1 .. p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v1
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
+
+    move v14, v2
+
+    move v15, v14
+
+    move/from16 v17, v15
+
+    move/from16 v18, v17
+
+    move/from16 v19, v18
+
+    move/from16 v20, v19
+
+    move/from16 v21, v20
+
+    move/from16 v25, v21
+
+    move/from16 v26, v25
+
+    move/from16 v27, v26
+
+    move/from16 v29, v27
 
     move-object v5, v3
 
@@ -82,28 +104,6 @@
 
     move-object/from16 v28, v24
 
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x0
-
-    const/16 v20, 0x0
-
-    const/16 v21, 0x0
-
-    const/16 v25, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x0
-
-    const/16 v29, 0x0
-
     .line 7
     :goto_0
     invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->dataPosition()I
@@ -124,13 +124,13 @@
     packed-switch v3, :pswitch_data_0
 
     .line 9
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {v0, v2}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 10
     :pswitch_0
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v29
 
@@ -138,7 +138,7 @@
 
     .line 11
     :pswitch_1
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v28
 
@@ -146,7 +146,7 @@
 
     .line 12
     :pswitch_2
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v27
 
@@ -154,7 +154,7 @@
 
     .line 13
     :pswitch_3
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v26
 
@@ -162,7 +162,7 @@
 
     .line 14
     :pswitch_4
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v25
 
@@ -170,7 +170,7 @@
 
     .line 15
     :pswitch_5
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v24
 
@@ -178,7 +178,7 @@
 
     .line 16
     :pswitch_6
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v23
 
@@ -186,7 +186,7 @@
 
     .line 17
     :pswitch_7
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v22
 
@@ -194,7 +194,7 @@
 
     .line 18
     :pswitch_8
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v21
 
@@ -202,7 +202,7 @@
 
     .line 19
     :pswitch_9
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v20
 
@@ -210,7 +210,7 @@
 
     .line 20
     :pswitch_a
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v19
 
@@ -218,7 +218,7 @@
 
     .line 21
     :pswitch_b
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v18
 
@@ -226,7 +226,7 @@
 
     .line 22
     :pswitch_c
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {v0, v2}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v17
 
@@ -234,7 +234,7 @@
 
     .line 23
     :pswitch_d
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v16
 
@@ -242,7 +242,7 @@
 
     .line 24
     :pswitch_e
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v15
 
@@ -250,7 +250,7 @@
 
     .line 25
     :pswitch_f
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {v0, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v14
 
@@ -261,7 +261,7 @@
     sget-object v3, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 27
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {v0, v2, v3}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v2
 
@@ -276,7 +276,7 @@
     sget-object v3, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 29
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {v0, v2, v3}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v2
 
@@ -291,7 +291,7 @@
     sget-object v3, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 31
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {v0, v2, v3}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v2
 
@@ -303,7 +303,7 @@
 
     .line 32
     :pswitch_13
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v10
 
@@ -311,7 +311,7 @@
 
     .line 33
     :pswitch_14
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -319,7 +319,7 @@
 
     .line 34
     :pswitch_15
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v8
 
@@ -327,7 +327,7 @@
 
     .line 35
     :pswitch_16
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v7
 
@@ -335,7 +335,7 @@
 
     .line 36
     :pswitch_17
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -343,7 +343,7 @@
 
     .line 37
     :pswitch_18
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {v0, v2}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -351,7 +351,7 @@
 
     .line 38
     :cond_0
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {v0, v1}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 39
     new-instance v0, Lcom/google/android/gms/games/GameEntity;

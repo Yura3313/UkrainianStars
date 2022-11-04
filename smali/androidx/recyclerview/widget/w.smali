@@ -165,28 +165,28 @@
 
     return v1
 
-    .line 6
     :cond_3
+    const/high16 v4, -0x80000000
+
+    const v5, 0x7fffffff
+
+    .line 6
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$m;->x()I
 
-    move-result v4
-
-    const/high16 v5, -0x80000000
-
-    const v6, 0x7fffffff
+    move-result v6
 
     const/4 v7, 0x0
 
-    move-object v5, v3
+    move v8, v5
 
-    const/high16 v6, -0x80000000
+    move v9, v7
 
-    const v8, 0x7fffffff
+    move v5, v4
 
-    const/4 v9, 0x0
+    move-object v4, v3
 
     :goto_1
-    if-ge v9, v4, :cond_7
+    if-ge v9, v6, :cond_7
 
     .line 7
     invoke-virtual {p1, v9}, Landroidx/recyclerview/widget/RecyclerView$m;->w(I)Landroid/view/View;
@@ -205,11 +205,11 @@
 
     if-gtz v11, :cond_5
 
-    if-le v11, v6, :cond_5
+    if-le v11, v5, :cond_5
 
-    move-object v5, v10
+    move-object v4, v10
 
-    move v6, v11
+    move v5, v11
 
     :cond_5
     if-ltz v11, :cond_6
@@ -232,7 +232,7 @@
 
     move-result v2
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
     if-eqz v2, :cond_8
 
@@ -244,12 +244,12 @@
     if-lez p3, :cond_9
 
     :goto_3
-    const/4 p2, 0x1
+    move p2, v5
 
     goto :goto_4
 
     :cond_9
-    const/4 p2, 0x0
+    move p2, v7
 
     :goto_4
     if-eqz p2, :cond_a
@@ -266,10 +266,10 @@
     :cond_a
     if-nez p2, :cond_b
 
-    if-eqz v5, :cond_b
+    if-eqz v4, :cond_b
 
     .line 11
-    invoke-virtual {p1, v5}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
+    invoke-virtual {p1, v4}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p1
 
@@ -278,7 +278,7 @@
     :cond_b
     if-eqz p2, :cond_c
 
-    move-object v3, v5
+    move-object v3, v4
 
     :cond_c
     if-nez v3, :cond_d
@@ -304,7 +304,7 @@
     .line 15
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView$v$b;
 
-    sub-int/2addr v2, v4
+    sub-int/2addr v2, v5
 
     .line 16
     invoke-interface {p1, v2}, Landroidx/recyclerview/widget/RecyclerView$v$b;->a(I)Landroid/graphics/PointF;
@@ -329,15 +329,15 @@
     if-gez p1, :cond_f
 
     :cond_e
-    const/4 v7, 0x1
+    move v7, v5
 
     :cond_f
     if-ne v7, p2, :cond_10
 
-    const/4 v4, -0x1
+    move v5, v1
 
     :cond_10
-    add-int/2addr p3, v4
+    add-int/2addr p3, v5
 
     if-ltz p3, :cond_12
 

@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/cs0;
+.implements Lj3/yu0;
 
 
 # static fields
@@ -44,7 +44,7 @@
 
     if-eq p1, v0, :cond_0
 
-    const/4 p1, 0x0
+    move p1, v1
 
     goto :goto_0
 
@@ -54,7 +54,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 p1, 0x1
+    move p1, v0
 
     :goto_0
     if-eqz p1, :cond_2

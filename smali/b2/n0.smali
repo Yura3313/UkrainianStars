@@ -1,219 +1,153 @@
 .class public final Lb2/n0;
-.super Lb2/f0;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@17.5.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lb2/f0<",
-        "Ljava/lang/Boolean;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final c:Lb2/i;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lb2/i<",
-            "*>;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(Lb2/i;Lc4/g;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/i<",
-            "*>;",
-            "Lc4/g<",
-            "Ljava/lang/Boolean;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0, p2}, Lb2/f0;-><init>(Lc4/g;)V
-
-    .line 2
-    iput-object p1, p0, Lb2/n0;->c:Lb2/i;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic c(Lb2/v0;Z)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final f(Lb2/e$a;)[Lcom/google/android/gms/common/Feature;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)[",
-            "Lcom/google/android/gms/common/Feature;"
-        }
-    .end annotation
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move v3, v1
+
+    move v4, v3
+
+    move v5, v4
+
+    move v6, v5
+
+    move v7, v6
 
     .line 2
-    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v1
 
-    move-result-object p1
-
-    check-cast p1, Lb2/e0;
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    return-object v0
+    if-ge v1, v0, :cond_5
 
     .line 3
-    :cond_0
-    throw v0
-.end method
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-.method public final g(Lb2/e$a;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)Z"
-        }
-    .end annotation
+    move-result v1
 
-    .line 1
-    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
+    const v2, 0xffff
 
-    .line 2
-    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
+    and-int/2addr v2, v1
 
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v8, 0x1
 
-    move-result-object p1
+    if-eq v2, v8, :cond_4
 
-    check-cast p1, Lb2/e0;
+    const/4 v8, 0x2
 
-    if-nez p1, :cond_0
+    if-eq v2, v8, :cond_3
 
-    const/4 p1, 0x0
+    const/4 v8, 0x3
 
-    return p1
+    if-eq v2, v8, :cond_2
 
-    :cond_0
-    const/4 p1, 0x0
+    const/4 v8, 0x4
 
-    .line 3
-    throw p1
-.end method
+    if-eq v2, v8, :cond_1
 
-.method public final h(Lb2/e$a;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/e$a<",
-            "*>;)V"
-        }
-    .end annotation
+    const/4 v8, 0x5
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
-
-    .line 2
-    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lb2/e0;
-
-    if-nez p1, :cond_1
-
-    .line 3
-    iget-object p1, p0, Lb2/f0;->b:Lc4/g;
-
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    if-eq v2, v8, :cond_0
 
     .line 4
-    iget-object p1, p1, Lc4/g;->a:Lc4/y;
-
-    .line 5
-    iget-object v1, p1, Lc4/y;->a:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 6
-    :try_start_0
-    iget-boolean v2, p1, Lc4/y;->c:Z
-
-    if-eqz v2, :cond_0
-
-    .line 7
-    monitor-exit v1
+    invoke-static {p1, v1}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
+    .line 5
     :cond_0
-    const/4 v2, 0x1
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v7
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v6
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v5
+
+    goto :goto_0
 
     .line 8
-    iput-boolean v2, p1, Lc4/y;->c:Z
+    :cond_3
+    invoke-static {p1, v1}, Lc2/b;->o(Landroid/os/Parcel;I)Z
+
+    move-result v4
+
+    goto :goto_0
 
     .line 9
-    iput-object v0, p1, Lc4/y;->e:Ljava/lang/Object;
+    :cond_4
+    invoke-static {p1, v1}, Lc2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v3
+
+    goto :goto_0
 
     .line 10
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_5
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 11
-    iget-object v0, p1, Lc4/y;->b:Lc4/v;
+    new-instance p1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
 
-    invoke-virtual {v0, p1}, Lc4/v;->a(Lc4/f;)V
+    move-object v2, p1
 
-    :goto_0
-    return-void
+    invoke-direct/range {v2 .. v7}, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;-><init>(IZZII)V
 
-    :catchall_0
-    move-exception p1
+    return-object p1
+.end method
 
-    .line 12
-    :try_start_1
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    throw p1
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
 
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 13
-    throw p1
+    return-object p1
 .end method

@@ -78,7 +78,7 @@
 .end method
 
 .method private writeContinuationFrames(IJ)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -101,17 +101,17 @@
 
     move-result-wide v2
 
-    long-to-int v3, v2
+    long-to-int v2, v2
 
-    int-to-long v4, v3
+    int-to-long v3, v2
 
-    sub-long/2addr p2, v4
+    sub-long/2addr p2, v3
 
-    const/16 v2, 0x9
+    const/16 v5, 0x9
 
-    cmp-long v6, p2, v0
+    cmp-long v0, p2, v0
 
-    if-nez v6, :cond_0
+    if-nez v0, :cond_0
 
     const/4 v0, 0x4
 
@@ -122,14 +122,14 @@
 
     .line 2
     :goto_1
-    invoke-virtual {p0, p1, v3, v2, v0}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
+    invoke-virtual {p0, p1, v2, v5, v0}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
 
     .line 3
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Writer;->sink:Lokio/BufferedSink;
 
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Writer;->hpackBuffer:Lokio/Buffer;
 
-    invoke-interface {v0, v1, v4, v5}, Lokio/Sink;->write(Lokio/Buffer;J)V
+    invoke-interface {v0, v1, v3, v4}, Lokio/Sink;->write(Lokio/Buffer;J)V
 
     goto :goto_0
 
@@ -808,7 +808,7 @@
 .end method
 
 .method public headers(ZILjava/util/List;)V
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZI",
@@ -858,25 +858,25 @@
 
     if-nez v4, :cond_0
 
-    const/4 v4, 0x4
+    const/4 v5, 0x4
 
     goto :goto_0
 
     :cond_0
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     :goto_0
     if-eqz p1, :cond_1
 
-    or-int/lit8 p1, v4, 0x1
+    or-int/lit8 p1, v5, 0x1
 
-    int-to-byte v4, p1
+    int-to-byte v5, p1
 
     :cond_1
     const/4 p1, 0x1
 
     .line 9
-    invoke-virtual {p0, p2, p3, p1, v4}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
+    invoke-virtual {p0, p2, p3, p1, v5}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
 
     .line 10
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Writer;->sink:Lokio/BufferedSink;
@@ -885,9 +885,7 @@
 
     invoke-interface {p1, p3, v2, v3}, Lokio/Sink;->write(Lokio/Buffer;J)V
 
-    cmp-long p1, v0, v2
-
-    if-lez p1, :cond_2
+    if-lez v4, :cond_2
 
     sub-long/2addr v0, v2
 
@@ -945,7 +943,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    move p1, v2
 
     .line 2
     :goto_0
@@ -995,7 +993,7 @@
 .end method
 
 .method public declared-synchronized pushPromise(IILjava/util/List;)V
-    .locals 7
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1054,18 +1052,18 @@
 
     if-nez v6, :cond_0
 
-    const/4 v6, 0x4
+    move v7, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     :goto_0
     add-int/2addr p3, v2
 
     .line 5
-    invoke-virtual {p0, p1, p3, v3, v6}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
+    invoke-virtual {p0, p1, p3, v3, v7}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
 
     .line 6
     iget-object p3, p0, Lokhttp3/internal/http2/Http2Writer;->sink:Lokio/BufferedSink;
@@ -1083,9 +1081,7 @@
 
     invoke-interface {p2, p3, v4, v5}, Lokio/Sink;->write(Lokio/Buffer;J)V
 
-    cmp-long p2, v0, v4
-
-    if-lez p2, :cond_1
+    if-lez v6, :cond_1
 
     sub-long/2addr v0, v4
 
@@ -1257,7 +1253,7 @@
 
     if-ne v1, v0, :cond_2
 
-    const/4 v0, 0x4
+    move v0, v2
 
     goto :goto_1
 
@@ -1315,13 +1311,7 @@
 
     monitor-exit p0
 
-    goto :goto_4
-
-    :goto_3
     throw p1
-
-    :goto_4
-    goto :goto_3
 .end method
 
 .method public declared-synchronized synReply(ZILjava/util/List;)V
@@ -1454,31 +1444,31 @@
 
     const-wide/16 v0, 0x0
 
-    const/4 v2, 0x0
+    cmp-long v0, p2, v0
 
-    cmp-long v3, p2, v0
+    const/4 v1, 0x0
 
-    if-eqz v3, :cond_0
+    if-eqz v0, :cond_0
 
-    const-wide/32 v0, 0x7fffffff
+    const-wide/32 v2, 0x7fffffff
 
-    cmp-long v3, p2, v0
+    cmp-long v0, p2, v2
 
-    if-gtz v3, :cond_0
+    if-gtz v0, :cond_0
 
     const/4 v0, 0x4
 
-    const/16 v1, 0x8
+    const/16 v2, 0x8
 
     .line 2
-    invoke-virtual {p0, p1, v0, v1, v2}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
+    invoke-virtual {p0, p1, v0, v2, v1}, Lokhttp3/internal/http2/Http2Writer;->frameHeader(IIBB)V
 
     .line 3
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Writer;->sink:Lokio/BufferedSink;
 
-    long-to-int p3, p2
+    long-to-int p2, p2
 
-    invoke-interface {p1, p3}, Lokio/BufferedSink;->writeInt(I)Lokio/BufferedSink;
+    invoke-interface {p1, p2}, Lokio/BufferedSink;->writeInt(I)Lokio/BufferedSink;
 
     .line 4
     iget-object p1, p0, Lokhttp3/internal/http2/Http2Writer;->sink:Lokio/BufferedSink;
@@ -1505,7 +1495,7 @@
 
     move-result-object p2
 
-    aput-object p2, v0, v2
+    aput-object p2, v0, v1
 
     .line 7
     invoke-static {p1, v0}, Lokhttp3/internal/http2/Http2;->illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;

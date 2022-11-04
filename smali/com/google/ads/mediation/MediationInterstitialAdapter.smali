@@ -3,19 +3,19 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements La1/b;
+.implements Ly0/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ADDITIONA",
-        "L_PARAMETERS::La1/f;",
+        "L_PARAMETERS::Ly0/f;",
         "SERVER_PARAMETERS:",
-        "Lcom/google/ads/mediation/MediationServerParameters;",
+        "Ly0/e;",
         ">",
         "Ljava/lang/Object;",
-        "La1/b<",
+        "Ly0/b<",
         "TADDITIONA",
         "L_PARAMETERS;",
         "TSERVER_PARAMETERS;>;"
@@ -52,14 +52,14 @@
     .end annotation
 .end method
 
-.method public abstract requestInterstitialAd(La1/d;Landroid/app/Activity;Lcom/google/ads/mediation/MediationServerParameters;La1/a;La1/f;)V
+.method public abstract requestInterstitialAd(Ly0/d;Landroid/app/Activity;Ly0/e;Ly0/a;Ly0/f;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La1/d;",
+            "Ly0/d;",
             "Landroid/app/Activity;",
             "TSERVER_PARAMETERS;",
-            "La1/a;",
+            "Ly0/a;",
             "TADDITIONA",
             "L_PARAMETERS;",
             ")V"

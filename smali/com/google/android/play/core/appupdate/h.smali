@@ -1,112 +1,103 @@
-.class public Lcom/google/android/play/core/appupdate/h;
-.super Lcom/google/android/play/core/internal/o;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lcom/google/android/play/core/internal/o;"
-    }
-.end annotation
+.class public final Lcom/google/android/play/core/appupdate/h;
+.super Ly4/b;
 
 
 # instance fields
-.field public final g:La5/b;
+.field public final synthetic g:Lcom/google/android/play/core/tasks/i;
 
-.field public final h:Lcom/google/android/play/core/tasks/i;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/play/core/tasks/i<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic i:Lcom/google/android/play/core/appupdate/k;
+.field public final synthetic i:Lcom/google/android/play/core/appupdate/l;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/appupdate/k;La5/b;Lcom/google/android/play/core/tasks/i;)V
+.method public constructor <init>(Lcom/google/android/play/core/appupdate/l;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "La5/b;",
-            "Lcom/google/android/play/core/tasks/i<",
-            "TT;>;)V"
-        }
-    .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/k;
+    iput-object p1, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/l;
 
-    invoke-direct {p0}, Lcom/google/android/play/core/internal/o;-><init>()V
+    iput-object p3, p0, Lcom/google/android/play/core/appupdate/h;->g:Lcom/google/android/play/core/tasks/i;
 
-    iput-object p2, p0, Lcom/google/android/play/core/appupdate/h;->g:La5/b;
+    iput-object p4, p0, Lcom/google/android/play/core/appupdate/h;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/google/android/play/core/appupdate/h;->h:Lcom/google/android/play/core/tasks/i;
+    invoke-direct {p0, p2}, Ly4/b;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public M(Landroid/os/Bundle;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final a()V
+    .locals 6
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/k;
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/l;
 
-    iget-object p1, p1, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
+    iget-object v1, v0, Lcom/google/android/play/core/appupdate/l;->a:Ly4/k;
 
-    invoke-virtual {p1}, La5/l;->a()V
+    .line 1
+    iget-object v1, v1, Ly4/k;->k:Landroid/os/IInterface;
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/h;->g:La5/b;
+    .line 2
+    check-cast v1, Lcom/google/android/play/core/internal/n;
 
-    const/4 v0, 0x0
+    .line 3
+    iget-object v0, v0, Lcom/google/android/play/core/appupdate/l;->b:Ljava/lang/String;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    .line 4
+    new-instance v2, Landroid/os/Bundle;
 
-    const/4 v1, 0x4
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    const-string v2, "onCompleteUpdate"
+    const/16 v3, 0x29ce
 
-    invoke-virtual {p1, v1, v2, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    const-string v4, "playcore.version.code"
+
+    invoke-virtual {v2, v4, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 5
+    new-instance v3, Lcom/google/android/play/core/appupdate/j;
+
+    iget-object v4, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/l;
+
+    iget-object v5, p0, Lcom/google/android/play/core/appupdate/h;->g:Lcom/google/android/play/core/tasks/i;
+
+    invoke-direct {v3, v4, v5}, Lcom/google/android/play/core/appupdate/j;-><init>(Lcom/google/android/play/core/appupdate/l;Lcom/google/android/play/core/tasks/i;)V
+
+    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/play/core/internal/n;->l6(Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/play/core/internal/p;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
-.end method
 
-.method public c(Landroid/os/Bundle;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+    :catch_0
+    move-exception v0
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/h;->i:Lcom/google/android/play/core/appupdate/k;
+    .line 6
+    sget-object v1, Lcom/google/android/play/core/appupdate/l;->e:Lx3/g3;
 
-    iget-object p1, p1, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
+    const/4 v2, 0x1
 
-    invoke-virtual {p1}, La5/l;->a()V
+    new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/h;->g:La5/b;
+    const/4 v3, 0x0
 
-    const/4 v0, 0x0
+    .line 7
+    iget-object v4, p0, Lcom/google/android/play/core/appupdate/h;->h:Ljava/lang/String;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    aput-object v4, v2, v3
 
-    const/4 v1, 0x4
+    const-string v3, "completeUpdate(%s)"
 
-    const-string v2, "onRequestInfo"
+    invoke-virtual {v1, v3, v2}, Lx3/g3;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    invoke-virtual {p1, v1, v2, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    iget-object v1, p0, Lcom/google/android/play/core/appupdate/h;->g:Lcom/google/android/play/core/tasks/i;
+
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    invoke-direct {v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    invoke-virtual {v1, v2}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Exception;)V
 
     return-void
 .end method

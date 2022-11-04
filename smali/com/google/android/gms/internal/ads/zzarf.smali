@@ -17,7 +17,7 @@
     return-void
 .end method
 
-.method public static u7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzarc;
+.method public static t7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzarc;
     .locals 2
 
     if-nez p0, :cond_0
@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final s7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -95,7 +95,7 @@
     move-result-object p1
 
     .line 4
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->j4(Ljava/util/List;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->V6(Ljava/util/List;)V
 
     .line 5
     :goto_0

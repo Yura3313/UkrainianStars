@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public o:Z
+.field public n:Z
 
-.field public p:Z
+.field public o:Z
 
 
 # direct methods
@@ -72,7 +72,7 @@
     if-ne v2, v3, :cond_0
 
     .line 6
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
     goto :goto_1
 
@@ -83,7 +83,7 @@
     if-ne v2, v3, :cond_1
 
     .line 8
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
 
     :cond_1
     :goto_1
@@ -100,19 +100,19 @@
 .end method
 
 .method public final onAttachedToWindow()V
-    .locals 8
+    .locals 6
 
     .line 1
     invoke-super {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
     .line 3
     :cond_0
@@ -120,12 +120,12 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
     .line 4
     instance-of v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_3
 
     .line 5
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
@@ -136,87 +136,69 @@
     move-result v1
 
     .line 7
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x15
-
-    const/4 v4, 0x0
-
-    if-lt v2, v3, :cond_1
-
-    .line 8
     invoke-virtual {p0}, Landroid/view/View;->getElevation()F
 
     move-result v2
 
-    goto :goto_0
+    const/4 v3, 0x0
 
-    :cond_1
-    const/4 v2, 0x0
-
+    .line 8
     :goto_0
-    const/4 v5, 0x0
+    iget v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:I
+
+    if-ge v3, v4, :cond_3
 
     .line 9
-    :goto_1
-    iget v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->h:I
+    iget-object v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->f:[I
 
-    if-ge v5, v6, :cond_4
+    aget v4, v4, v3
 
     .line 10
-    iget-object v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:[I
+    invoke-virtual {v0, v4}, Landroidx/constraintlayout/widget/ConstraintLayout;->d(I)Landroid/view/View;
 
-    aget v6, v6, v5
+    move-result-object v4
+
+    if-eqz v4, :cond_2
 
     .line 11
-    invoke-virtual {v0, v6}, Landroidx/constraintlayout/widget/ConstraintLayout;->d(I)Landroid/view/View;
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
-    move-result-object v6
-
-    if-eqz v6, :cond_3
+    if-eqz v5, :cond_1
 
     .line 12
-    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
-
-    if-eqz v7, :cond_2
+    invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 13
-    invoke-virtual {v6, v1}, Landroid/view/View;->setVisibility(I)V
+    :cond_1
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+
+    if-eqz v5, :cond_2
+
+    const/4 v5, 0x0
+
+    cmpl-float v5, v2, v5
+
+    if-lez v5, :cond_2
 
     .line 14
+    invoke-virtual {v4}, Landroid/view/View;->getTranslationZ()F
+
+    move-result v5
+
+    add-float/2addr v5, v2
+
+    invoke-virtual {v4, v5}, Landroid/view/View;->setTranslationZ(F)V
+
     :cond_2
-    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    add-int/lit8 v3, v3, 0x1
 
-    if-eqz v7, :cond_3
-
-    cmpl-float v7, v2, v4
-
-    if-lez v7, :cond_3
-
-    .line 15
-    sget v7, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-lt v7, v3, :cond_3
-
-    .line 16
-    invoke-virtual {v6}, Landroid/view/View;->getTranslationZ()F
-
-    move-result v7
-
-    add-float/2addr v7, v2
-
-    invoke-virtual {v6, v7}, Landroid/view/View;->setTranslationZ(F)V
+    goto :goto_0
 
     :cond_3
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_1
-
-    :cond_4
     return-void
 .end method
 
-.method public s(Lq/l;II)V
+.method public r(Lq/l;II)V
     .locals 0
 
     return-void

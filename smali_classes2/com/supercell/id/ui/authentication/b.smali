@@ -1,40 +1,40 @@
 .class public final Lcom/supercell/id/ui/authentication/b;
-.super Lse/i;
+.super Lif/i;
 .source "AuthenticationFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lhf/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/l<",
+        "Lif/i;",
+        "Lhf/l<",
         "Ljava/lang/String;",
-        "Lie/i;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+.field public final synthetic f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-.field public final synthetic h:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->g:Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,12 +50,12 @@
     const-string v0, "buttonText"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iget-object v0, p0, Lcom/supercell/id/ui/authentication/b;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
     invoke-direct {v2}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 6
-    iget-object v3, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/id/ui/authentication/b;->g:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -102,7 +102,7 @@
 
     const-string v5, "(this as java.lang.Strin\u2026replace(oldChar, newChar)"
 
-    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lif/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {v2, v4}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
@@ -123,13 +123,17 @@
 
     sget v5, Lcom/supercell/id/R$color;->text_blue:I
 
-    invoke-static {v4, v5}, Lw/e;->a(Landroid/content/res/Resources;I)I
+    const/4 v6, 0x0
+
+    .line 12
+    invoke-virtual {v4, v5, v6}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
     move-result v4
 
+    .line 13
     invoke-direct {v3, v4}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
-    .line 12
+    .line 14
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v4
@@ -142,49 +146,49 @@
 
     sub-int/2addr v4, v5
 
-    .line 13
+    .line 15
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v5
 
     const/16 v6, 0x21
 
-    .line 14
+    .line 16
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 15
-    invoke-static {v1}, Lae/l;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
+    .line 17
+    invoke-static {v1}, La4/b0;->f(Landroid/content/Context;)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
-    .line 16
+    .line 18
     new-instance v4, Landroid/text/style/ImageSpan;
 
     const/4 v5, 0x0
 
     invoke-direct {v4, v1, v3, v5}, Landroid/text/style/ImageSpan;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;I)V
 
-    .line 17
+    .line 19
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v1
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 18
+    .line 20
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v3
 
-    .line 19
+    .line 21
     invoke-virtual {v2, v4, v1, v3, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 20
+    .line 22
     new-instance v1, Lcom/supercell/id/ui/authentication/a;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/authentication/a;-><init>(Lcom/supercell/id/ui/authentication/b;)V
 
-    .line 21
+    .line 23
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v3
@@ -197,20 +201,20 @@
 
     sub-int/2addr v3, p1
 
-    .line 22
+    .line 24
     invoke-virtual {v2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
 
-    .line 23
+    .line 25
     invoke-virtual {v2, v1, v3, p1, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 24
+    .line 26
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 25
+    .line 27
     :cond_0
-    sget-object p1, Lie/i;->a:Lie/i;
+    sget-object p1, Lye/m;->a:Lye/m;
 
     return-object p1
 .end method

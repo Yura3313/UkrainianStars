@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$i;
-.super Lse/i;
+.super Lif/i;
 .source "ProfileFragment.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lhf/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profile/ProfileFragment;->S(Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/profile/ProfileFragment;->R(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/i;",
-        "Lre/a<",
+        "Lif/i;",
+        "Lhf/a<",
         "Ljava/util/List<",
         "+",
-        "Lae/o2;",
+        "Lzd/k2;",
         ">;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/profile/ProfileFragment$i;
+.field public static final f:Lcom/supercell/id/ui/profile/ProfileFragment$i;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profile/ProfileFragment$i;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->g:Lcom/supercell/id/ui/profile/ProfileFragment$i;
+    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->f:Lcom/supercell/id/ui/profile/ProfileFragment$i;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
@@ -61,10 +61,10 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->p0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
 
     return-object v0
 .end method

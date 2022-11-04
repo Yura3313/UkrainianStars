@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/recyclerview/widget/m;
+.field public final synthetic f:Landroidx/recyclerview/widget/m;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/m;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/m$a;->g:Landroidx/recyclerview/widget/m;
+    iput-object p1, p0, Landroidx/recyclerview/widget/m$a;->f:Landroidx/recyclerview/widget/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/m$a;->g:Landroidx/recyclerview/widget/m;
+    iget-object v0, p0, Landroidx/recyclerview/widget/m$a;->f:Landroidx/recyclerview/widget/m;
 
     .line 2
     iget v1, v0, Landroidx/recyclerview/widget/m;->A:I

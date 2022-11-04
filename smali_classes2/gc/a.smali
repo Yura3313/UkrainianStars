@@ -1,129 +1,114 @@
 .class public final Lgc/a;
-.super Lgc/b;
-.source "LIFOLinkedBlockingDeque.java"
+.super Ljava/lang/Object;
+.source "SimpleBitmapDisplayer.java"
+
+# interfaces
+.implements Lu3/y1;
+.implements Lj3/qt;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lgc/b<",
-        "TT;>;"
-    }
-.end annotation
+# static fields
+.field public static final f:Lcom/google/android/gms/internal/ads/i;
+
+.field public static final g:Lgc/a;
+
+.field public static final h:Lj3/m10;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/i;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/i;-><init>()V
+
+    sput-object v0, Lgc/a;->f:Lcom/google/android/gms/internal/ads/i;
+
+    .line 2
+    new-instance v0, Lgc/a;
+
+    invoke-direct {v0}, Lgc/a;-><init>()V
+
+    sput-object v0, Lgc/a;->g:Lgc/a;
+
+    .line 3
+    new-instance v0, Lj3/m10;
+
+    invoke-direct {v0}, Lj3/m10;-><init>()V
+
+    sput-object v0, Lgc/a;->h:Lj3/m10;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lgc/b;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lu3/x1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static b(Lgc/a;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string p0, "category"
+
+    .line 2
+    invoke-static {p1, p0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final offer(Ljava/lang/Object;)Z
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)Z"
-        }
-    .end annotation
+.method public a([BII)[B
+    .locals 2
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-array v0, p3, [B
+
+    const/4 v1, 0x0
 
     .line 2
-    new-instance v0, Lgc/b$c;
-
-    invoke-direct {v0, p1}, Lgc/b$c;-><init>(Ljava/lang/Object;)V
-
-    .line 3
-    iget-object p1, p0, Lgc/b;->k:Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 4
-    invoke-virtual {p1}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
-
-    .line 5
-    :try_start_0
-    iget v1, p0, Lgc/b;->i:I
-
-    iget v2, p0, Lgc/b;->j:I
-
-    if-lt v1, v2, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    .line 6
-    :cond_0
-    iget-object v2, p0, Lgc/b;->g:Lgc/b$c;
-
-    .line 7
-    iput-object v2, v0, Lgc/b$c;->c:Lgc/b$c;
-
-    .line 8
-    iput-object v0, p0, Lgc/b;->g:Lgc/b$c;
-
-    .line 9
-    iget-object v3, p0, Lgc/b;->h:Lgc/b$c;
-
-    if-nez v3, :cond_1
-
-    .line 10
-    iput-object v0, p0, Lgc/b;->h:Lgc/b$c;
-
-    goto :goto_0
-
-    .line 11
-    :cond_1
-    iput-object v0, v2, Lgc/b$c;->b:Lgc/b$c;
-
-    :goto_0
-    const/4 v0, 0x1
-
-    add-int/2addr v1, v0
-
-    .line 12
-    iput v1, p0, Lgc/b;->i:I
-
-    .line 13
-    iget-object v1, p0, Lgc/b;->l:Ljava/util/concurrent/locks/Condition;
-
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Condition;->signal()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 14
-    :goto_1
-    invoke-virtual {p1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    invoke-virtual {p1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
-
-    throw v0
-.end method
-
-.method public final remove()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lgc/b;->removeFirst()Ljava/lang/Object;
-
-    move-result-object v0
+    invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
+.end method
+
+.method public c(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "name"
+
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lj3/g3;
+
+    .line 2
+    invoke-interface {p1}, Lj3/g3;->X()V
+
+    return-void
 .end method

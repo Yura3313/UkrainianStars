@@ -14,11 +14,11 @@
 
 .field public final e:I
 
-.field public final f:Ls4/k;
+.field public final f:Lp4/k;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;ILs4/k;Landroid/graphics/Rect;)V
+.method public constructor <init>(Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;ILp4/k;Landroid/graphics/Rect;)V
     .locals 1
 
     .line 1
@@ -27,22 +27,22 @@
     .line 2
     iget v0, p6, Landroid/graphics/Rect;->left:I
 
-    invoke-static {v0}, Le0/f;->c(I)I
+    invoke-static {v0}, Le0/d;->a(I)I
 
     .line 3
     iget v0, p6, Landroid/graphics/Rect;->top:I
 
-    invoke-static {v0}, Le0/f;->c(I)I
+    invoke-static {v0}, Le0/d;->a(I)I
 
     .line 4
     iget v0, p6, Landroid/graphics/Rect;->right:I
 
-    invoke-static {v0}, Le0/f;->c(I)I
+    invoke-static {v0}, Le0/d;->a(I)I
 
     .line 5
     iget v0, p6, Landroid/graphics/Rect;->bottom:I
 
-    invoke-static {v0}, Le0/f;->c(I)I
+    invoke-static {v0}, Le0/d;->a(I)I
 
     .line 6
     iput-object p6, p0, Lcom/google/android/material/datepicker/a;->a:Landroid/graphics/Rect;
@@ -60,7 +60,7 @@
     iput p4, p0, Lcom/google/android/material/datepicker/a;->e:I
 
     .line 11
-    iput-object p5, p0, Lcom/google/android/material/datepicker/a;->f:Ls4/k;
+    iput-object p5, p0, Lcom/google/android/material/datepicker/a;->f:Lp4/k;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    move v1, v0
 
     :goto_0
     if-eqz v1, :cond_1
@@ -131,7 +131,7 @@
     sget v1, Lcom/google/android/material/R$styleable;->MaterialCalendarItem_itemFillColor:I
 
     .line 13
-    invoke-static {p0, p1, v1}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p0, p1, v1}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v6
 
@@ -139,7 +139,7 @@
     sget v1, Lcom/google/android/material/R$styleable;->MaterialCalendarItem_itemTextColor:I
 
     .line 15
-    invoke-static {p0, p1, v1}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p0, p1, v1}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v7
 
@@ -147,7 +147,7 @@
     sget v1, Lcom/google/android/material/R$styleable;->MaterialCalendarItem_itemStrokeColor:I
 
     .line 17
-    invoke-static {p0, p1, v1}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p0, p1, v1}, Lm4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v8
 
@@ -176,18 +176,18 @@
     move-result v2
 
     .line 24
-    new-instance v3, Ls4/a;
+    new-instance v3, Lp4/a;
 
     int-to-float v0, v0
 
-    invoke-direct {v3, v0}, Ls4/a;-><init>(F)V
+    invoke-direct {v3, v0}, Lp4/a;-><init>(F)V
 
-    invoke-static {p0, v1, v2, v3}, Ls4/k;->a(Landroid/content/Context;IILs4/c;)Ls4/k$a;
+    invoke-static {p0, v1, v2, v3}, Lp4/k;->a(Landroid/content/Context;IILp4/c;)Lp4/k$a;
 
     move-result-object p0
 
     .line 25
-    invoke-virtual {p0}, Ls4/k$a;->a()Ls4/k;
+    invoke-virtual {p0}, Lp4/k$a;->a()Lp4/k;
 
     move-result-object v10
 
@@ -199,7 +199,7 @@
 
     move-object v5, p0
 
-    invoke-direct/range {v5 .. v11}, Lcom/google/android/material/datepicker/a;-><init>(Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;ILs4/k;Landroid/graphics/Rect;)V
+    invoke-direct/range {v5 .. v11}, Lcom/google/android/material/datepicker/a;-><init>(Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;ILp4/k;Landroid/graphics/Rect;)V
 
     return-object p0
 
@@ -217,32 +217,32 @@
 
 # virtual methods
 .method public final b(Landroid/widget/TextView;)V
-    .locals 10
+    .locals 9
 
     .line 1
-    new-instance v0, Ls4/g;
+    new-instance v0, Lp4/g;
 
-    invoke-direct {v0}, Ls4/g;-><init>()V
+    invoke-direct {v0}, Lp4/g;-><init>()V
 
     .line 2
-    new-instance v1, Ls4/g;
+    new-instance v1, Lp4/g;
 
-    invoke-direct {v1}, Ls4/g;-><init>()V
+    invoke-direct {v1}, Lp4/g;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/material/datepicker/a;->f:Ls4/k;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/a;->f:Lp4/k;
 
-    invoke-virtual {v0, v2}, Ls4/g;->setShapeAppearanceModel(Ls4/k;)V
+    invoke-virtual {v0, v2}, Lp4/g;->setShapeAppearanceModel(Lp4/k;)V
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/material/datepicker/a;->f:Ls4/k;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/a;->f:Lp4/k;
 
-    invoke-virtual {v1, v2}, Ls4/g;->setShapeAppearanceModel(Ls4/k;)V
+    invoke-virtual {v1, v2}, Lp4/g;->setShapeAppearanceModel(Lp4/k;)V
 
     .line 5
     iget-object v2, p0, Lcom/google/android/material/datepicker/a;->c:Landroid/content/res/ColorStateList;
 
-    invoke-virtual {v0, v2}, Ls4/g;->o(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, v2}, Lp4/g;->n(Landroid/content/res/ColorStateList;)V
 
     .line 6
     iget v2, p0, Lcom/google/android/material/datepicker/a;->e:I
@@ -251,7 +251,7 @@
 
     iget-object v3, p0, Lcom/google/android/material/datepicker/a;->d:Landroid/content/res/ColorStateList;
 
-    invoke-virtual {v0, v2, v3}, Ls4/g;->v(FLandroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, v2, v3}, Lp4/g;->t(FLandroid/content/res/ColorStateList;)V
 
     .line 7
     iget-object v2, p0, Lcom/google/android/material/datepicker/a;->b:Landroid/content/res/ColorStateList;
@@ -259,53 +259,38 @@
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 8
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance v4, Landroid/graphics/drawable/RippleDrawable;
 
-    const/16 v3, 0x15
+    iget-object v2, p0, Lcom/google/android/material/datepicker/a;->b:Landroid/content/res/ColorStateList;
 
-    if-lt v2, v3, :cond_0
+    const/16 v3, 0x1e
+
+    invoke-virtual {v2, v3}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v2
+
+    invoke-direct {v4, v2, v0, v1}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 9
-    new-instance v2, Landroid/graphics/drawable/RippleDrawable;
-
-    iget-object v3, p0, Lcom/google/android/material/datepicker/a;->b:Landroid/content/res/ColorStateList;
-
-    const/16 v4, 0x1e
-
-    invoke-virtual {v3, v4}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
-
-    move-result-object v3
-
-    invoke-direct {v2, v3, v0, v1}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    move-object v5, v2
-
-    goto :goto_0
-
-    :cond_0
-    move-object v5, v0
-
-    .line 10
-    :goto_0
     new-instance v0, Landroid/graphics/drawable/InsetDrawable;
 
     iget-object v1, p0, Lcom/google/android/material/datepicker/a;->a:Landroid/graphics/Rect;
 
-    iget v6, v1, Landroid/graphics/Rect;->left:I
+    iget v5, v1, Landroid/graphics/Rect;->left:I
 
-    iget v7, v1, Landroid/graphics/Rect;->top:I
+    iget v6, v1, Landroid/graphics/Rect;->top:I
 
-    iget v8, v1, Landroid/graphics/Rect;->right:I
+    iget v7, v1, Landroid/graphics/Rect;->right:I
 
-    iget v9, v1, Landroid/graphics/Rect;->bottom:I
+    iget v8, v1, Landroid/graphics/Rect;->bottom:I
 
-    move-object v4, v0
+    move-object v3, v0
 
-    invoke-direct/range {v4 .. v9}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
+    invoke-direct/range {v3 .. v8}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
 
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/o;->a:Ljava/util/WeakHashMap;
 
-    .line 11
+    .line 10
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     return-void

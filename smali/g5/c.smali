@@ -1,136 +1,88 @@
 .class public final Lg5/c;
-.super Lf5/i;
-.source "AesCtrHmacAeadKeyManager.java"
+.super Ljava/lang/Object;
+.source "DeterministicAeadWrapper.java"
+
+# interfaces
+.implements Ld5/p;
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lg5/c$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lf5/i<",
-        "Ln5/d;",
+        "Ljava/lang/Object;",
+        "Ld5/p<",
+        "Ld5/c;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static final a:Ljava/util/logging/Logger;
+
+
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lg5/c;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    move-result-object v0
+
+    sput-object v0, Lg5/c;->a:Ljava/util/logging/Logger;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
-    .locals 4
+    .locals 0
 
-    const-class v0, Ln5/d;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Lf5/i$b;
-
-    new-instance v2, Lg5/c$a;
-
-    invoke-direct {v2}, Lg5/c$a;-><init>()V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Lf5/i;-><init>(Ljava/lang/Class;[Lf5/i$b;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final a(Ld5/o;)Ljava/lang/Object;
     .locals 1
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey"
-
-    return-object v0
-.end method
-
-.method public final c()Lf5/i$a;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lf5/i$a<",
-            "Ln5/e;",
-            "Ln5/d;",
-            ">;"
-        }
-    .end annotation
-
-    new-instance v0, Lg5/c$b;
-
-    invoke-direct {v0, p0}, Lg5/c$b;-><init>(Lg5/c;)V
-
-    return-object v0
-.end method
-
-.method public final d()Ln5/v0$b;
-    .locals 1
-
-    sget-object v0, Ln5/v0$b;->i:Ln5/v0$b;
-
-    return-object v0
-.end method
-
-.method public final e(Lo5/d;)Lcom/google/crypto/tink/shaded/protobuf/x;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
-
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Ln5/d;->y(Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Ln5/d;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final g(Lcom/google/crypto/tink/shaded/protobuf/x;)V
-    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
         }
     .end annotation
 
-    .line 1
-    check-cast p1, Ln5/d;
+    new-instance v0, Lg5/c$a;
 
-    .line 2
-    invoke-virtual {p1}, Ln5/d;->w()I
+    invoke-direct {v0, p1}, Lg5/c$a;-><init>(Ld5/o;)V
 
-    move-result v0
+    return-object v0
+.end method
 
-    invoke-static {v0}, Lr5/l0;->e(I)V
+.method public final b()Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "Ld5/c;",
+            ">;"
+        }
+    .end annotation
 
-    .line 3
-    new-instance v0, Lg5/d;
+    const-class v0, Ld5/c;
 
-    invoke-direct {v0}, Lg5/d;-><init>()V
-
-    invoke-virtual {p1}, Ln5/d;->u()Ln5/i;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lg5/d;->h(Ln5/i;)V
-
-    .line 4
-    new-instance v0, Ll5/b;
-
-    invoke-direct {v0}, Ll5/b;-><init>()V
-
-    invoke-virtual {p1}, Ln5/d;->v()Ln5/s0;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ll5/b;->h(Ln5/s0;)V
-
-    return-void
+    return-object v0
 .end method

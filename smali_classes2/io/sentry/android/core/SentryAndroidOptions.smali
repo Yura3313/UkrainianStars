@@ -1,5 +1,5 @@
 .class public final Lio/sentry/android/core/SentryAndroidOptions;
-.super Lio/sentry/SentryOptions;
+.super Lhe/y2;
 .source "SentryAndroidOptions.java"
 
 
@@ -10,7 +10,11 @@
 
 .field private anrTimeoutIntervalMillis:J
 
-.field private debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
+.field private attachScreenshot:Z
+
+.field private collectAdditionalContext:Z
+
+.field private debugImagesLoader:Lio/sentry/android/core/f0;
 
 .field private enableActivityLifecycleBreadcrumbs:Z
 
@@ -26,13 +30,17 @@
 
 .field private enableUserInteractionBreadcrumbs:Z
 
+.field private enableUserInteractionTracing:Z
+
+.field private profilingTracesHz:I
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lio/sentry/SentryOptions;-><init>()V
+    invoke-direct {p0}, Lhe/y2;-><init>()V
 
     const/4 v0, 0x1
 
@@ -70,52 +78,76 @@
     .line 11
     iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
 
+    const/16 v2, 0x65
+
     .line 12
-    invoke-static {}, Lio/sentry/android/core/NoOpDebugImagesLoader;->getInstance()Lio/sentry/android/core/NoOpDebugImagesLoader;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
-
-    const-string v0, "sentry.java.android/5.7.3"
+    iput v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->profilingTracesHz:I
 
     .line 13
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionTracing:Z
 
     .line 14
-    invoke-direct {p0}, Lio/sentry/android/core/SentryAndroidOptions;->createSdkVersion()Lio/sentry/protocol/SdkVersion;
+    sget-object v2, Lio/sentry/android/core/k0;->f:Lio/sentry/android/core/k0;
 
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSdkVersion(Lio/sentry/protocol/SdkVersion;)V
+    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/f0;
 
     .line 15
-    invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->setAttachServerName(Z)V
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
+
+    const-string v2, "sentry.java.android/6.5.0"
+
+    .line 16
+    invoke-virtual {p0, v2}, Lhe/y2;->setSentryClientName(Ljava/lang/String;)V
+
+    .line 17
+    invoke-direct {p0}, Lio/sentry/android/core/SentryAndroidOptions;->createSdkVersion()Lse/k;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2}, Lhe/y2;->setSdkVersion(Lse/k;)V
+
+    .line 18
+    invoke-virtual {p0, v1}, Lhe/y2;->setAttachServerName(Z)V
+
+    .line 19
+    invoke-virtual {p0, v0}, Lhe/y2;->setEnableScopeSync(Z)V
 
     return-void
 .end method
 
-.method private createSdkVersion()Lio/sentry/protocol/SdkVersion;
+.method private createSdkVersion()Lse/k;
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lio/sentry/SentryOptions;->getSdkVersion()Lio/sentry/protocol/SdkVersion;
+    invoke-virtual {p0}, Lhe/y2;->getSdkVersion()Lse/k;
 
     move-result-object v0
 
-    const-string v1, "sentry.java.android"
+    const-string v1, "6.5.0"
 
-    const-string v2, "5.7.3"
+    const-string v2, "sentry.java.android"
+
+    if-nez v0, :cond_0
 
     .line 2
-    invoke-static {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;->updateSdkVersion(Lio/sentry/protocol/SdkVersion;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/protocol/SdkVersion;
+    new-instance v0, Lse/k;
 
-    move-result-object v0
+    invoke-direct {v0, v2, v1}, Lse/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v1, "maven:io.sentry:sentry-android-core"
+    goto :goto_0
 
     .line 3
-    invoke-virtual {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;->addPackage(Ljava/lang/String;Ljava/lang/String;)V
+    :cond_0
+    iput-object v2, v0, Lse/k;->f:Ljava/lang/String;
+
+    .line 4
+    invoke-virtual {v0, v1}, Lse/k;->b(Ljava/lang/String;)V
+
+    :goto_0
+    const-string v1, "maven:io.sentry:sentry-android-core"
+
+    .line 5
+    invoke-virtual {v0, v1}, Lse/k;->a(Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -151,12 +183,32 @@
     return-wide v0
 .end method
 
-.method public getDebugImagesLoader()Lio/sentry/android/core/IDebugImagesLoader;
+.method public getDebugImagesLoader()Lio/sentry/android/core/f0;
     .locals 1
 
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
+    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/f0;
 
     return-object v0
+.end method
+
+.method public getProfilingTracesHz()I
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
+
+    iget v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->profilingTracesHz:I
+
+    return v0
+.end method
+
+.method public getProfilingTracesIntervalMillis()I
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public isAnrEnabled()Z
@@ -171,6 +223,22 @@
     .locals 1
 
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrReportInDebug:Z
+
+    return v0
+.end method
+
+.method public isAttachScreenshot()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachScreenshot:Z
+
+    return v0
+.end method
+
+.method public isCollectAdditionalContext()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
 
     return v0
 .end method
@@ -231,6 +299,14 @@
     return v0
 .end method
 
+.method public isEnableUserInteractionTracing()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionTracing:Z
+
+    return v0
+.end method
+
 .method public setAnrEnabled(Z)V
     .locals 0
 
@@ -255,7 +331,23 @@
     return-void
 .end method
 
-.method public setDebugImagesLoader(Lio/sentry/android/core/IDebugImagesLoader;)V
+.method public setAttachScreenshot(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachScreenshot:Z
+
+    return-void
+.end method
+
+.method public setCollectAdditionalContext(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
+
+    return-void
+.end method
+
+.method public setDebugImagesLoader(Lio/sentry/android/core/f0;)V
     .locals 0
 
     if-eqz p1, :cond_0
@@ -263,12 +355,10 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lio/sentry/android/core/NoOpDebugImagesLoader;->getInstance()Lio/sentry/android/core/NoOpDebugImagesLoader;
-
-    move-result-object p1
+    sget-object p1, Lio/sentry/android/core/k0;->f:Lio/sentry/android/core/k0;
 
     :goto_0
-    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
+    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/f0;
 
     return-void
 .end method
@@ -325,6 +415,32 @@
     .locals 0
 
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
+
+    return-void
+.end method
+
+.method public setEnableUserInteractionTracing(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionTracing:Z
+
+    return-void
+.end method
+
+.method public setProfilingTracesHz(I)V
+    .locals 0
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
+
+    iput p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->profilingTracesHz:I
+
+    return-void
+.end method
+
+.method public setProfilingTracesIntervalMillis(I)V
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     return-void
 .end method

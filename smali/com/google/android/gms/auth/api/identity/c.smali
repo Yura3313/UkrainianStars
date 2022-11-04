@@ -32,7 +32,7 @@
     .locals 5
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -60,13 +60,13 @@
     if-eq v3, v4, :cond_0
 
     .line 4
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v2}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    invoke-static {p1, v2}, Lc2/b;->o(Landroid/os/Parcel;I)Z
 
     move-result v1
 
@@ -74,7 +74,7 @@
 
     .line 6
     :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 7
     new-instance p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;

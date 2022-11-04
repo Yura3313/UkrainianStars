@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/internal/game/GameBadgeEntity$a;
-.super Lb3/a;
+.super La3/a;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lb3/a;-><init>()V
+    invoke-direct {p0}, La3/a;-><init>()V
 
     return-void
 .end method
@@ -32,19 +32,19 @@
     sget-object v0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->E2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->L2()V
 
     .line 3
-    sget v0, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->h:I
+    sget v0, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->g:I
 
     .line 4
     const-class v0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;
 
     .line 5
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->D2()V
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->K2()V
 
     .line 6
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lc2/b;->x(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -90,7 +90,7 @@
     if-eq v6, v7, :cond_0
 
     .line 9
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v5}, Lc2/b;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
@@ -99,7 +99,7 @@
     sget-object v4, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 11
-    invoke-static {p1, v5, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v5, v4}, Lc2/b;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v4
 
@@ -109,7 +109,7 @@
 
     .line 12
     :cond_1
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {p1, v5}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -117,7 +117,7 @@
 
     .line 13
     :cond_2
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {p1, v5}, Lc2/b;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -125,7 +125,7 @@
 
     .line 14
     :cond_3
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v5}, Lc2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v1
 
@@ -133,7 +133,7 @@
 
     .line 15
     :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lc2/b;->n(Landroid/os/Parcel;I)V
 
     .line 16
     new-instance p1, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;

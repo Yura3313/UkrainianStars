@@ -1,27 +1,26 @@
 .class public final Lbd/b;
-.super Ljava/lang/Object;
-.source "DonateFragment.kt"
+.super Lif/i;
+.source "IngameAddFriendsFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lhf/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lbd/e;",
+        "Lif/i;",
+        "Lhf/p<",
+        "Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;",
+        "Landroid/graphics/Bitmap;",
+        "Lye/m;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lbd/b;
+.field public static final f:Lbd/b;
 
 
 # direct methods
@@ -32,38 +31,56 @@
 
     invoke-direct {v0}, Lbd/b;-><init>()V
 
-    sput-object v0, Lbd/b;->g:Lbd/b;
+    sput-object v0, Lbd/b;->f:Lbd/b;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lif/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Lbd/e;
+    check-cast p1, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
-    check-cast p2, Lbd/e;
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    const-string v0, "$receiver"
 
     .line 2
-    iget-object p1, p1, Lbd/e;->c:Ljava/lang/String;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p2, p2, Lbd/e;->c:Ljava/lang/String;
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
+    sget v0, Lcom/supercell/id/R$id;->qr_code:I
 
-    move-result p1
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;->e1(I)Landroid/view/View;
 
-    return p1
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ImageView;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    .line 4
+    :cond_0
+    sget-object p1, Lye/m;->a:Lye/m;
+
+    return-object p1
 .end method

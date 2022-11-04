@@ -1,138 +1,168 @@
 .class public final Lz1/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
-# interfaces
-.implements Landroid/content/ServiceConnection;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<O::",
+        "Ly1/a$d;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # instance fields
-.field public a:Z
+.field public final a:I
 
-.field public final b:Ljava/util/concurrent/LinkedBlockingQueue;
+.field public final b:Ly1/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/concurrent/BlockingQueue<",
-            "Landroid/os/IBinder;",
-            ">;"
+            "Ly1/a<",
+            "TO;>;"
         }
     .end annotation
 .end field
 
+.field public final c:Ly1/a$d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TO;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ly1/a;Ly1/a$d;Ljava/lang/String;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ly1/a<",
+            "TO;>;TO;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-boolean v0, p0, Lz1/a;->a:Z
+    iput-object p1, p0, Lz1/a;->b:Ly1/a;
 
     .line 3
-    new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
+    iput-object p2, p0, Lz1/a;->c:Ly1/a$d;
 
-    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
+    .line 4
+    iput-object p3, p0, Lz1/a;->d:Ljava/lang/String;
 
-    iput-object v0, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aput-object p1, v0, v1
+
+    const/4 p1, 0x1
+
+    aput-object p2, v0, p1
+
+    const/4 p1, 0x2
+
+    aput-object p3, v0, p1
+
+    .line 5
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p1
+
+    .line 6
+    iput p1, p0, Lz1/a;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/os/IBinder;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/InterruptedException;,
-            Ljava/util/concurrent/TimeoutException;
-        }
-    .end annotation
+    const/4 v0, 0x0
 
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    if-nez p1, :cond_0
 
-    const-string v1, "BlockingServiceConnection.getServiceWithTimeout() called on main thread"
+    return v0
 
-    .line 1
-    invoke-static {v1}, Ld2/h;->g(Ljava/lang/String;)V
-
-    .line 2
-    iget-boolean v1, p0, Lz1/a;->a:Z
-
-    if-nez v1, :cond_1
-
+    :cond_0
     const/4 v1, 0x1
 
+    if-ne p1, p0, :cond_1
+
+    return v1
+
+    .line 1
+    :cond_1
+    instance-of v2, p1, Lz1/a;
+
+    if-nez v2, :cond_2
+
+    return v0
+
+    .line 2
+    :cond_2
+    check-cast p1, Lz1/a;
+
     .line 3
-    iput-boolean v1, p0, Lz1/a;->a:Z
+    iget-object v2, p0, Lz1/a;->b:Ly1/a;
+
+    iget-object v3, p1, Lz1/a;->b:Ly1/a;
 
     .line 4
-    iget-object v1, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    invoke-static {v2, v3}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const-wide/16 v2, 0x2710
+    move-result v2
 
-    invoke-interface {v1, v2, v3, v0}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    if-eqz v2, :cond_3
 
-    move-result-object v0
+    iget-object v2, p0, Lz1/a;->c:Ly1/a$d;
 
-    check-cast v0, Landroid/os/IBinder;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
+    iget-object v3, p1, Lz1/a;->c:Ly1/a$d;
 
     .line 5
-    :cond_0
-    new-instance v0, Ljava/util/concurrent/TimeoutException;
+    invoke-static {v2, v3}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const-string v1, "Timed out waiting for the service connection"
+    move-result v2
 
-    invoke-direct {v0, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+    if-eqz v2, :cond_3
 
-    throw v0
+    iget-object v2, p0, Lz1/a;->d:Ljava/lang/String;
+
+    iget-object p1, p1, Lz1/a;->d:Ljava/lang/String;
 
     .line 6
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    invoke-static {v2, p1}, Lb2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const-string v1, "Cannot call get on this connection more than once"
+    move-result p1
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-eqz p1, :cond_3
 
-    throw v0
+    return v1
+
+    :cond_3
+    return v0
 .end method
 
-.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Landroid/os/IBinder;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+.method public final hashCode()I
+    .locals 1
 
-    iget-object p1, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget v0, p0, Lz1/a;->a:I
 
-    invoke-interface {p1, p2}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    return-void
+    return v0
 .end method

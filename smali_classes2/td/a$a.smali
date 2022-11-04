@@ -1,31 +1,22 @@
 .class public final Ltd/a$a;
 .super Ljava/lang/Object;
-.source "RegisterDonePageFragment.kt"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+.source "AssetCache.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ltd/a;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ltd/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
+    name = "a"
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ltd/a;
-
-
 # direct methods
-.method public constructor <init>(Ltd/a;)V
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Ltd/a$a;->g:Ltd/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,40 +25,35 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final a(Landroid/content/Context;)Ljava/io/File;
     .locals 2
 
-    .line 1
-    iget-object p1, p0, Ltd/a$a;->g:Ltd/a;
+    const-string v0, "context"
 
-    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object v0, Lv/a;->a:Ljava/lang/Object;
+
+    .line 2
+    invoke-virtual {p1}, Landroid/content/Context;->getNoBackupFilesDir()Ljava/io/File;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 2
-    sget v0, Lcom/supercell/id/R$id;->okButton:I
-
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/Button;
-
-    const-string v1, "okButton"
-
-    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
-
     .line 3
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    new-instance v0, Ljava/io/File;
 
-    invoke-virtual {v0, p1}, Lcom/supercell/id/SupercellId;->enterProfileState$supercellId_release(Lcom/supercell/id/ui/MainActivity;)V
+    const-string v1, "supercellid"
+
+    invoke-direct {v0, p1, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    goto :goto_0
 
     :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
 .end method

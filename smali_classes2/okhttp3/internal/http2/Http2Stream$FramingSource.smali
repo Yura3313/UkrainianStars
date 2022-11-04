@@ -233,13 +233,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_3
-
-    :goto_2
     throw v1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public read(Lokio/Buffer;J)J
@@ -558,17 +552,11 @@
     .line 27
     invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_5
-
-    :goto_4
     throw v0
-
-    :goto_5
-    goto :goto_4
 .end method
 
 .method public receive(Lokio/BufferedSource;J)V
-    .locals 11
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -603,20 +591,20 @@
 
     iget-wide v6, p0, Lokhttp3/internal/http2/Http2Stream$FramingSource;->maxByteCount:J
 
-    const/4 v8, 0x1
+    cmp-long v4, v4, v6
 
-    const/4 v9, 0x0
+    const/4 v5, 0x1
 
-    cmp-long v10, v4, v6
+    const/4 v6, 0x0
 
-    if-lez v10, :cond_1
+    if-lez v4, :cond_1
 
-    const/4 v4, 0x1
+    move v4, v5
 
     goto :goto_1
 
     :cond_1
-    const/4 v4, 0x0
+    move v4, v6
 
     .line 4
     :goto_1
@@ -654,11 +642,11 @@
 
     move-result-wide v2
 
-    const-wide/16 v4, -0x1
+    const-wide/16 v7, -0x1
 
-    cmp-long v6, v2, v4
+    cmp-long v4, v2, v7
 
-    if-eqz v6, :cond_7
+    if-eqz v4, :cond_7
 
     sub-long/2addr p2, v2
 
@@ -695,14 +683,14 @@
 
     move-result-wide v3
 
-    cmp-long v5, v3, v0
+    cmp-long v3, v3, v0
 
-    if-nez v5, :cond_5
+    if-nez v3, :cond_5
 
     goto :goto_2
 
     :cond_5
-    const/4 v8, 0x0
+    move v5, v6
 
     .line 14
     :goto_2
@@ -712,7 +700,7 @@
 
     invoke-virtual {v3, v4}, Lokio/Buffer;->writeAll(Lokio/Source;)J
 
-    if-eqz v8, :cond_6
+    if-eqz v5, :cond_6
 
     .line 15
     iget-object v3, p0, Lokhttp3/internal/http2/Http2Stream$FramingSource;->this$0:Lokhttp3/internal/http2/Http2Stream;
@@ -728,9 +716,9 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    cmp-long v2, v3, v0
+    cmp-long v0, v3, v0
 
-    if-lez v2, :cond_0
+    if-lez v0, :cond_0
 
     .line 17
     invoke-direct {p0, v3, v4}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->updateConnectionFlowControl(J)V

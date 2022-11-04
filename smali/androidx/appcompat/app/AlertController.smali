@@ -41,7 +41,7 @@
 
 .field public final a:Landroid/content/Context;
 
-.field public final b:Landroidx/appcompat/app/p;
+.field public final b:Landroidx/appcompat/app/k;
 
 .field public final c:Landroid/view/Window;
 
@@ -93,7 +93,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/app/p;Landroid/view/Window;)V
+.method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/app/k;Landroid/view/Window;)V
     .locals 3
 
     .line 1
@@ -123,7 +123,7 @@
     iput-object p1, p0, Landroidx/appcompat/app/AlertController;->a:Landroid/content/Context;
 
     .line 7
-    iput-object p2, p0, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/p;
+    iput-object p2, p0, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/k;
 
     .line 8
     iput-object p3, p0, Landroidx/appcompat/app/AlertController;->c:Landroid/view/Window;
@@ -225,62 +225,8 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 21
-    invoke-virtual {p2, v1}, Landroidx/appcompat/app/p;->c(I)Z
+    invoke-virtual {p2, v1}, Landroidx/appcompat/app/k;->c(I)Z
 
-    return-void
-.end method
-
-.method public static b(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x4
-
-    if-eqz p1, :cond_1
-
-    const/4 v2, -0x1
-
-    .line 1
-    invoke-virtual {p0, v2}, Landroid/view/View;->canScrollVertically(I)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    const/4 v2, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x4
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
-
-    :cond_1
-    if-eqz p2, :cond_3
-
-    const/4 p1, 0x1
-
-    .line 3
-    invoke-virtual {p0, p1}, Landroid/view/View;->canScrollVertically(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x4
-
-    .line 4
-    :goto_1
-    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
-
-    :cond_3
     return-void
 .end method
 
@@ -312,7 +258,7 @@
     return-void
 .end method
 
-.method public final c(Landroid/view/View;Landroid/view/View;)Landroid/view/ViewGroup;
+.method public final b(Landroid/view/View;Landroid/view/View;)Landroid/view/ViewGroup;
     .locals 2
 
     if-nez p1, :cond_1
@@ -373,7 +319,7 @@
     return-object p1
 .end method
 
-.method public final d(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+.method public final c(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 2
 
     .line 1

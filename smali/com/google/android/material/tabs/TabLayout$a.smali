@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/tabs/TabLayout;
+.field public final synthetic f:Lcom/google/android/material/tabs/TabLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$a;->g:Lcom/google/android/material/tabs/TabLayout;
+    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$a;->f:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$a;->g:Lcom/google/android/material/tabs/TabLayout;
+    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$a;->f:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

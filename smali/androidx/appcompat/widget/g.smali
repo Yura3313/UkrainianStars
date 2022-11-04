@@ -2,65 +2,115 @@
 .super Ljava/lang/Object;
 .source "AppCompatHintHelper.java"
 
+# interfaces
+.implements Ly4/t;
+
+
+# static fields
+.field public static final a:Lj3/qj;
+
 
 # direct methods
-.method public static final a(Landroidx/fragment/app/Fragment;Ljava/lang/String;Landroid/os/Parcelable;)Landroidx/fragment/app/Fragment;
-    .locals 1
+.method static synthetic constructor <clinit>()V
+    .locals 2
 
-    const-string v0, "$this$addArgument"
+    new-instance v0, Lj3/qj;
 
-    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lj3/qj;-><init>(I)V
+
+    sput-object v0, Landroidx/appcompat/widget/g;->a:Lj3/qj;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final b(JLaf/d;)Ljava/lang/Object;
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v0, p0, v0
+
+    if-gtz v0, :cond_0
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    sget-object p0, Lye/m;->a:Lye/m;
 
-    if-eqz v0, :cond_0
-
-    goto :goto_0
+    return-object p0
 
     .line 2
     :cond_0
-    new-instance v0, Landroid/os/Bundle;
+    new-instance v0, Lpf/g;
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    invoke-static {p2}, Lcom/android/billingclient/api/j0;->g(Laf/d;)Laf/d;
+
+    move-result-object p2
+
+    invoke-direct {v0, p2}, Lpf/g;-><init>(Laf/d;)V
 
     .line 3
-    :goto_0
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+    iget-object p2, v0, Lpf/g;->i:Laf/f;
 
     .line 4
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
+    invoke-static {p2}, Landroidx/appcompat/widget/g;->c(Laf/f;)Lpf/i0;
+
+    move-result-object p2
+
+    invoke-interface {p2, p0, p1, v0}, Lpf/i0;->scheduleResumeAfterDelay(JLpf/f;)V
+
+    .line 5
+    invoke-virtual {v0}, Lpf/g;->n()Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(Landroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+.method public static final c(Laf/f;)Lpf/i0;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    const-string v0, "$this$delay"
 
-    if-eqz v0, :cond_0
+    invoke-static {p0, v0}, Lif/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object v0, Laf/e$a;->a:Laf/e$a;
+
+    invoke-interface {p0, v0}, Laf/f;->get(Laf/f$b;)Laf/f$a;
+
+    move-result-object p0
+
+    instance-of v0, p0, Lpf/i0;
+
+    if-nez v0, :cond_0
+
+    const/4 p0, 0x0
+
+    :cond_0
+    check-cast p0, Lpf/i0;
+
+    if-eqz p0, :cond_1
 
     goto :goto_0
 
     .line 2
-    :cond_0
-    new-instance v0, Landroid/os/Bundle;
+    :cond_1
+    sget-object p0, Lpf/f0;->a:Lpf/e0;
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 3
     :goto_0
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
-
     return-object p0
 .end method
 
-.method public static c(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/view/View;)Landroid/view/inputmethod/InputConnection;
+.method public static d(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/view/View;)Landroid/view/inputmethod/InputConnection;
     .locals 1
 
     if-eqz p0, :cond_1
@@ -110,101 +160,22 @@
     return-object p0
 .end method
 
-.method public static final d(Landroid/os/Parcel;)Lcom/supercell/id/model/IdSocialAccount;
-    .locals 3
 
-    const-string v0, "$this$readAccount"
-
-    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const/4 v1, 0x0
-
-    if-eqz p0, :cond_0
-
-    sget-object v2, Lvc/d;->c:Lvc/d$a;
-
-    invoke-virtual {v2, p0}, Lvc/d$a;->a(Ljava/lang/String;)Lvc/d;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    move-object p0, v1
-
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 3
-    new-instance p0, Lcom/supercell/id/model/IdSocialAccount$Scid;
-
-    invoke-direct {p0, v0}, Lcom/supercell/id/model/IdSocialAccount$Scid;-><init>(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz p0, :cond_2
-
-    new-instance v1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
-
-    invoke-direct {v1, p0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
-
-    :cond_2
-    move-object p0, v1
-
-    :goto_1
-    return-object p0
-.end method
-
-.method public static final e(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
+# virtual methods
+.method public a(Ljava/lang/Object;Ljava/util/List;Ljava/util/List;)[Ljava/lang/Object;
     .locals 2
 
-    const-string v0, "$this$writeAccount"
+    const-class p3, [Ljava/lang/Object;
 
-    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const-class v0, Ljava/util/List;
 
-    const/4 v0, 0x0
+    const-string v1, "makePathElements"
 
-    if-eqz p1, :cond_0
-
-    .line 1
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_0
-    move-object v1, v0
-
-    :goto_0
-    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    if-eqz p1, :cond_1
-
-    .line 2
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
+    invoke-static {p1, v1, p3, v0, p2}, Lcom/android/billingclient/api/a0;->d(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    check-cast p1, [Ljava/lang/Object;
 
-    invoke-virtual {p1}, Lvc/d;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_1
-    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    return-void
+    return-object p1
 .end method

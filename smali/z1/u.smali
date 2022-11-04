@@ -1,45 +1,36 @@
-.class public final synthetic Lz1/u;
+.class public final Lz1/u;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f:Lz1/e$a;
 
 
 # direct methods
-.method public static a(I)I
-    .locals 5
+.method public constructor <init>(Lz1/e$a;)V
+    .locals 0
 
-    const/4 v0, 0x5
+    iput-object p1, p0, Lz1/u;->f:Lz1/e$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
 
     .line 1
-    invoke-static {v0}, Lp/g;->c(I)[I
-
-    move-result-object v0
+    iget-object v0, p0, Lz1/u;->f:Lz1/e$a;
 
     .line 2
-    array-length v1, v0
+    invoke-virtual {v0}, Lz1/e$a;->q()V
 
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_1
-
-    aget v3, v0, v2
-
-    .line 3
-    invoke-static {v3}, Lp/g;->b(I)I
-
-    move-result v4
-
-    if-ne v4, p0, :cond_0
-
-    return v3
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x1
-
-    return p0
+    return-void
 .end method

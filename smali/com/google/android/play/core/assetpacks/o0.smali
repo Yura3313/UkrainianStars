@@ -1,52 +1,31 @@
 .class public final Lcom/google/android/play/core/assetpacks/o0;
-.super Ljava/lang/RuntimeException;
+.super Ljava/lang/Object;
 
 
 # instance fields
-.field public final g:I
+.field public final a:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, -0x1
+    new-instance v0, Ljava/util/HashMap;
 
-    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    iput p2, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    const/4 p1, -0x1
-
-    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;I)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    iput p3, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/o0;->a:Ljava/util/HashMap;
 
     return-void
 .end method

@@ -58,7 +58,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -83,9 +83,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-gtz v4, :cond_1
+    if-gtz v0, :cond_1
 
     .line 4
     iget-object v0, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSink;->this$0:Lokhttp3/internal/http1/Http1Codec;
@@ -175,9 +175,9 @@
     .line 3
     iget-wide v0, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSink;->bytesRemaining:J
 
-    cmp-long v2, p2, v0
+    cmp-long v0, p2, v0
 
-    if-gtz v2, :cond_0
+    if-gtz v0, :cond_0
 
     .line 4
     iget-object v0, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSink;->this$0:Lokhttp3/internal/http1/Http1Codec;
@@ -202,7 +202,7 @@
     const-string v0, "expected "
 
     .line 7
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

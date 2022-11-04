@@ -1,48 +1,211 @@
-.class public final Landroidx/appcompat/app/e;
+.class public abstract Landroidx/appcompat/app/e;
 .super Ljava/lang/Object;
-.source "AlertController.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "AppCompatDelegate.java"
 
 
-# instance fields
-.field public final synthetic g:Landroid/view/View;
+# static fields
+.field public static final f:Lm/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lm/c<",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroidx/appcompat/app/e;",
+            ">;>;"
+        }
+    .end annotation
+.end field
 
-.field public final synthetic h:Landroid/view/View;
-
-.field public final synthetic i:Landroidx/appcompat/app/AlertController;
+.field public static final g:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lm/c;
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-direct {v0, v1}, Lm/c;-><init>(I)V
+
+    .line 3
+    sput-object v0, Landroidx/appcompat/app/e;->f:Lm/c;
+
+    .line 4
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Landroidx/appcompat/app/e;->g:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Landroidx/appcompat/app/e;->i:Landroidx/appcompat/app/AlertController;
-
-    iput-object p2, p0, Landroidx/appcompat/app/e;->g:Landroid/view/View;
-
-    iput-object p3, p0, Landroidx/appcompat/app/e;->h:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
+.method public static t(Landroidx/appcompat/app/e;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/appcompat/app/e;->i:Landroidx/appcompat/app/AlertController;
+    .line 1
+    sget-object v0, Landroidx/appcompat/app/e;->g:Ljava/lang/Object;
 
-    iget-object v0, v0, Landroidx/appcompat/app/AlertController;->g:Landroidx/appcompat/app/AlertController$RecycleListView;
+    monitor-enter v0
 
-    iget-object v1, p0, Landroidx/appcompat/app/e;->g:Landroid/view/View;
+    .line 2
+    :try_start_0
+    sget-object v1, Landroidx/appcompat/app/e;->f:Lm/c;
 
-    iget-object v2, p0, Landroidx/appcompat/app/e;->h:Landroid/view/View;
+    invoke-virtual {v1}, Lm/c;->iterator()Ljava/util/Iterator;
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/AlertController;->b(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
+    move-result-object v1
+
+    .line 3
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 4
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/appcompat/app/e;
+
+    if-eq v2, p0, :cond_1
+
+    if-nez v2, :cond_0
+
+    .line 5
+    :cond_1
+    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
+
+    goto :goto_0
+
+    .line 6
+    :cond_2
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public abstract A(Ljava/lang/CharSequence;)V
+.end method
+
+.method public abstract B(Lf/a$a;)Lf/a;
+.end method
+
+.method public abstract c(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+.end method
+
+.method public d(Landroid/content/Context;)Landroid/content/Context;
+    .locals 0
+
+    return-object p1
+.end method
+
+.method public abstract e(I)Landroid/view/View;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Landroid/view/View;",
+            ">(I)TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract f()Landroidx/appcompat/app/a;
+.end method
+
+.method public g()I
+    .locals 1
+
+    const/16 v0, -0x64
+
+    return v0
+.end method
+
+.method public abstract h()Landroid/view/MenuInflater;
+.end method
+
+.method public abstract i()Landroidx/appcompat/app/ActionBar;
+.end method
+
+.method public abstract j()V
+.end method
+
+.method public abstract k()V
+.end method
+
+.method public abstract l(Landroid/content/res/Configuration;)V
+.end method
+
+.method public abstract m()V
+.end method
+
+.method public abstract n()V
+.end method
+
+.method public abstract o()V
+.end method
+
+.method public abstract p()V
+.end method
+
+.method public abstract q()V
+.end method
+
+.method public abstract r()V
+.end method
+
+.method public abstract s()V
+.end method
+
+.method public abstract u(I)Z
+.end method
+
+.method public abstract v(I)V
+.end method
+
+.method public abstract w(Landroid/view/View;)V
+.end method
+
+.method public abstract x(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+.end method
+
+.method public abstract y(Landroidx/appcompat/widget/Toolbar;)V
+.end method
+
+.method public z(I)V
+    .locals 0
 
     return-void
 .end method

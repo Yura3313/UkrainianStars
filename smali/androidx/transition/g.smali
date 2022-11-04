@@ -1,190 +1,193 @@
 .class public final Landroidx/transition/g;
-.super Ljava/lang/Object;
-.source "TranslationAnimationCreator.java"
+.super Landroidx/transition/c;
+.source "Visibility.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/transition/g$a;
-    }
-.end annotation
+# instance fields
+.field public final synthetic f:Landroid/view/ViewGroup;
+
+.field public final synthetic g:Landroid/view/View;
+
+.field public final synthetic h:Landroid/view/View;
+
+.field public final synthetic i:Landroidx/transition/Visibility;
 
 
 # direct methods
-.method public static a(Landroid/view/View;Lv0/s;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/transition/Transition;)Landroid/animation/Animator;
-    .locals 14
+.method public constructor <init>(Landroidx/transition/Visibility;Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;)V
+    .locals 0
 
-    move-object v0, p0
+    iput-object p1, p0, Landroidx/transition/g;->i:Landroidx/transition/Visibility;
 
-    move-object v1, p1
+    iput-object p2, p0, Landroidx/transition/g;->f:Landroid/view/ViewGroup;
+
+    iput-object p3, p0, Landroidx/transition/g;->g:Landroid/view/View;
+
+    iput-object p4, p0, Landroidx/transition/g;->h:Landroid/view/View;
+
+    invoke-direct {p0}, Landroidx/transition/c;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getTranslationX()F
-
-    move-result v2
+    iget-object v0, p0, Landroidx/transition/g;->f:Landroid/view/ViewGroup;
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/View;->getTranslationY()F
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
-    move-result v3
+    move-result-object v0
 
     .line 3
-    iget-object v4, v1, Lv0/s;->b:Landroid/view/View;
-
-    sget v5, Landroidx/transition/R$id;->transition_position:I
-
-    invoke-virtual {v4, v5}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, [I
-
-    const/4 v5, 0x1
-
-    const/4 v6, 0x0
-
-    if-eqz v4, :cond_0
+    iget-object v1, p0, Landroidx/transition/g;->g:Landroid/view/View;
 
     .line 4
-    aget v7, v4, v6
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
 
-    sub-int v7, v7, p2
+    return-void
+.end method
 
-    int-to-float v7, v7
+.method public final c()V
+    .locals 4
 
-    add-float/2addr v7, v2
+    .line 1
+    iget-object v0, p0, Landroidx/transition/g;->g:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Landroidx/transition/g;->f:Landroid/view/ViewGroup;
+
+    .line 3
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
+
+    move-result-object v0
+
+    .line 4
+    iget-object v1, p0, Landroidx/transition/g;->g:Landroid/view/View;
 
     .line 5
-    aget v4, v4, v5
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
 
-    sub-int v4, v4, p3
+    goto :goto_2
 
-    int-to-float v4, v4
+    .line 6
+    :cond_0
+    iget-object v0, p0, Landroidx/transition/g;->i:Landroidx/transition/Visibility;
 
-    add-float/2addr v4, v3
+    .line 7
+    iget-object v1, v0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    :goto_0
+    add-int/lit8 v1, v1, -0x1
+
+    if-ltz v1, :cond_1
+
+    .line 8
+    iget-object v2, v0, Landroidx/transition/Transition;->r:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/animation/Animator;
+
+    .line 9
+    invoke-virtual {v2}, Landroid/animation/Animator;->cancel()V
 
     goto :goto_0
 
-    :cond_0
-    move/from16 v7, p4
-
-    move/from16 v4, p5
-
-    :goto_0
-    sub-float v8, v7, v2
-
-    .line 6
-    invoke-static {v8}, Ljava/lang/Math;->round(F)I
-
-    move-result v8
-
-    add-int v8, v8, p2
-
-    sub-float v9, v4, v3
-
-    .line 7
-    invoke-static {v9}, Ljava/lang/Math;->round(F)I
-
-    move-result v9
-
-    add-int v9, v9, p3
-
-    .line 8
-    invoke-virtual {p0, v7}, Landroid/view/View;->setTranslationX(F)V
-
-    .line 9
-    invoke-virtual {p0, v4}, Landroid/view/View;->setTranslationY(F)V
-
-    cmpl-float v10, v7, p6
-
-    if-nez v10, :cond_1
-
-    cmpl-float v10, v4, p7
-
-    if-nez v10, :cond_1
-
-    const/4 v0, 0x0
-
-    return-object v0
-
-    :cond_1
-    const/4 v10, 0x2
-
-    new-array v11, v10, [Landroid/animation/PropertyValuesHolder;
-
     .line 10
-    sget-object v12, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+    :cond_1
+    iget-object v1, v0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
-    new-array v13, v10, [F
+    if-eqz v1, :cond_2
 
-    aput v7, v13, v6
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    aput p6, v13, v5
+    move-result v1
+
+    if-lez v1, :cond_2
 
     .line 11
-    invoke-static {v12, v13}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
-
-    move-result-object v7
-
-    aput-object v7, v11, v6
-
-    sget-object v7, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
-
-    new-array v10, v10, [F
-
-    aput v4, v10, v6
-
-    aput p7, v10, v5
+    iget-object v0, v0, Landroidx/transition/Transition;->v:Ljava/util/ArrayList;
 
     .line 12
-    invoke-static {v7, v10}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v0
 
-    aput-object v4, v11, v5
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 13
-    invoke-static {p0, v11}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    move-result-object v4
+    move-result v1
+
+    const/4 v2, 0x0
+
+    :goto_1
+    if-ge v2, v1, :cond_2
 
     .line 14
-    new-instance v5, Landroidx/transition/g$a;
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    iget-object v1, v1, Lv0/s;->b:Landroid/view/View;
+    move-result-object v3
 
-    move-object p1, v5
+    check-cast v3, Landroidx/transition/Transition$d;
 
-    move-object/from16 p2, p0
+    invoke-interface {v3}, Landroidx/transition/Transition$d;->d()V
 
-    move-object/from16 p3, v1
+    add-int/lit8 v2, v2, 0x1
 
-    move/from16 p4, v8
+    goto :goto_1
 
-    move/from16 p5, v9
+    :cond_2
+    :goto_2
+    return-void
+.end method
 
-    move/from16 p6, v2
+.method public final e(Landroidx/transition/Transition;)V
+    .locals 3
 
-    move/from16 p7, v3
+    .line 1
+    iget-object v0, p0, Landroidx/transition/g;->h:Landroid/view/View;
 
-    invoke-direct/range {p1 .. p7}, Landroidx/transition/g$a;-><init>(Landroid/view/View;Landroid/view/View;IIFF)V
+    sget v1, Landroidx/transition/R$id;->save_overlay_view:I
 
-    move-object/from16 v0, p9
+    const/4 v2, 0x0
 
-    .line 15
-    invoke-virtual {v0, v5}, Landroidx/transition/Transition;->a(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 16
-    invoke-virtual {v4, v5}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    .line 2
+    iget-object v0, p0, Landroidx/transition/g;->f:Landroid/view/ViewGroup;
 
-    .line 17
-    invoke-static {v4, v5}, Landroidx/transition/a;->a(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
+    .line 3
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
-    move-object/from16 v0, p8
+    move-result-object v0
 
-    .line 18
-    invoke-virtual {v4, v0}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    .line 4
+    iget-object v1, p0, Landroidx/transition/g;->g:Landroid/view/View;
 
-    return-object v4
+    .line 5
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
+
+    .line 6
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+
+    return-void
 .end method

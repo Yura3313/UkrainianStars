@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract C6()F
+.method public abstract A5()F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract E5()Lcom/google/android/gms/internal/ads/zzyl;
+.method public abstract C4(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract G2(Lcom/google/android/gms/internal/ads/zzyl;)V
+.method public abstract K1()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -31,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract S2(Z)V
+.method public abstract M1()F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -39,7 +39,15 @@
     .end annotation
 .end method
 
-.method public abstract T5()Z
+.method public abstract R3()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract f1()F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -55,7 +63,15 @@
     .end annotation
 .end method
 
-.method public abstract m0()Z
+.method public abstract h3()Lcom/google/android/gms/internal/ads/zzyl;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract m4(Lcom/google/android/gms/internal/ads/zzyl;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -79,31 +95,15 @@
     .end annotation
 .end method
 
+.method public abstract s0()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract stop()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract u1()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract v1()F
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract y4()F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

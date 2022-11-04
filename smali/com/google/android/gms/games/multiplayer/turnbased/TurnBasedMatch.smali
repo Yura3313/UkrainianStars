@@ -4,8 +4,8 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lc2/e;
-.implements Ld3/a;
+.implements La2/e;
+.implements Lc3/a;
 
 
 # annotations
@@ -13,71 +13,71 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lc2/e<",
+        "La2/e<",
         "Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;",
         ">;",
-        "Ld3/a;"
+        "Lc3/a;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract D()J
+.method public abstract B()J
 .end method
 
-.method public abstract E1()Ljava/lang/String;
+.method public abstract O1()I
 .end method
 
-.method public abstract F1()[B
+.method public abstract Q0()I
 .end method
 
-.method public abstract I1()Ljava/lang/String;
+.method public abstract S0()I
 .end method
 
-.method public abstract U0()I
+.method public abstract T0()Ljava/lang/String;
+.end method
+
+.method public abstract V0()[B
 .end method
 
 .method public abstract W0()Ljava/lang/String;
 .end method
 
-.method public abstract X0()Ljava/lang/String;
+.method public abstract W1()Ljava/lang/String;
 .end method
 
-.method public abstract Z0()Ljava/lang/String;
+.method public abstract Z1()Z
 .end method
 
-.method public abstract b2()I
+.method public abstract c1()Ljava/lang/String;
 .end method
 
-.method public abstract c1()[B
+.method public abstract e()I
 .end method
 
-.method public abstract e()Lcom/google/android/gms/games/Game;
+.method public abstract e1()Ljava/lang/String;
 .end method
 
-.method public abstract f()J
-.end method
-
-.method public abstract g()I
+.method public abstract g()Lcom/google/android/gms/games/Game;
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
 .end method
 
-.method public abstract getStatus()I
+.method public abstract j()J
 .end method
 
-.method public abstract h2()Z
+.method public abstract k()I
 .end method
 
-.method public abstract p()Ljava/lang/String;
+.method public abstract m()Landroid/os/Bundle;
 .end method
 
-.method public abstract y()Landroid/os/Bundle;
+.method public abstract n()I
 .end method
 
-.method public abstract z()I
+.method public abstract t()Ljava/lang/String;
 .end method
 
-.method public abstract z1()I
+.method public abstract x2()[B
 .end method

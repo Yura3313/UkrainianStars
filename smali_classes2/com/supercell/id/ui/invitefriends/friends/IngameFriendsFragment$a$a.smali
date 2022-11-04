@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->n(Lae/b2$a;ILae/a2;)V
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->m(Lzd/w1$a;ILzd/v1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,44 +40,40 @@
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:Lpe/a;
+    iget-object v0, v0, Lzd/q;->m:Lgc/a;
 
     const-string v1, "In-game Friends"
 
     const-string v2, "click"
 
-    const/4 v3, 0x0
-
-    const/16 v4, 0x18
-
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2}, Lgc/a;->b(Lgc/a;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
 
     .line 5
-    iget-object v0, v0, Lae/s;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Lzd/p;->f:Landroidx/fragment/app/Fragment;
 
     .line 6
-    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/v;->j(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;
 
     .line 7
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    new-instance v2, Lwc/q$a;
+    new-instance v2, Luc/t$a;
 
     const-string v3, "account_ingame_friend_dialog_add_all_heading"
 
@@ -85,15 +81,15 @@
 
     const-string v5, "account_ingame_friend_dialog_add_all_cancel"
 
-    invoke-direct {v2, v3, v4, v5}, Lwc/q$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v3, v4, v5}, Luc/t$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lzd/q;
 
     move-result-object p1
 
     .line 10
-    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lzd/q;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 11
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getInstantGameLocalizedName()Ljava/lang/String;
@@ -101,35 +97,35 @@
     move-result-object p1
 
     .line 12
-    new-instance v3, Lie/d;
+    new-instance v3, Lye/f;
 
     const-string v4, "game"
 
-    invoke-direct {v3, v4, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, p1}, Lye/f;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 13
-    iput-object v3, v2, Lwc/q$a;->b:Lie/d;
+    iput-object v3, v2, Luc/t$a;->b:Lye/f;
 
     .line 14
-    invoke-virtual {v2}, Lwc/q$a;->a()Lwc/q;
+    invoke-virtual {v2}, Luc/t$a;->a()Luc/t;
 
     move-result-object p1
 
     .line 15
-    new-instance v2, Lld/d;
+    new-instance v2, Lkd/d;
 
-    invoke-direct {v2, v1}, Lld/d;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;)V
+    invoke-direct {v2, v1}, Lkd/d;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;)V
 
     .line 16
-    iput-object v2, p1, Lwc/q;->x0:Lre/l;
+    iput-object v2, p1, Luc/t;->w0:Lhf/l;
 
     .line 17
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 
     .line 18
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->K(Luc/g;Ljava/lang/String;)V
 
     :cond_0
     return-void

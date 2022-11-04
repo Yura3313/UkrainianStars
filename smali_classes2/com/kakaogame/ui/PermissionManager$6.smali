@@ -3,7 +3,7 @@
 .source "PermissionManager.java"
 
 # interfaces
-.implements Lu/a$c;
+.implements Lu/a$a;
 
 
 # annotations
@@ -42,7 +42,7 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, Lu/d;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
     const-string p1, "permissions: "
 
     .line 3
-    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 

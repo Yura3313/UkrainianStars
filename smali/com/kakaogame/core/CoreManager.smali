@@ -1269,13 +1269,7 @@
 
     monitor-exit p0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method private declared-synchronized onLoginFailed(Lcom/kakaogame/KGResult;Lcom/kakaogame/idp/IdpAccount;)V
@@ -1499,13 +1493,7 @@
 
     monitor-exit p0
 
-    goto :goto_2
-
-    :goto_1
     throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method private pauseInternal()V
@@ -1876,7 +1864,7 @@
     invoke-static {p1, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_7
-    const/4 v2, 0x1
+    move v2, v6
 
     goto/16 :goto_3
 
@@ -2028,7 +2016,7 @@
     :cond_d
     move-object v4, v1
 
-    const/4 v2, 0x1
+    move v2, v6
 
     goto :goto_4
 
@@ -2114,7 +2102,7 @@
 
     move-object v3, v0
 
-    const/4 p1, 0x1
+    move p1, v6
 
     goto :goto_5
 
@@ -2499,13 +2487,7 @@
 
     monitor-exit p0
 
-    goto :goto_9
-
-    :goto_8
     throw p1
-
-    :goto_9
-    goto :goto_8
 .end method
 
 .method private requestInfodesk()V
@@ -2819,7 +2801,7 @@
     const-string p2, "addTraceMetric Failed: "
 
     .line 3
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -2980,7 +2962,7 @@
     const/16 v1, 0xfa1
 
     .line 13
-    invoke-static {p2, v0, p2, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p2, v0, p2, v1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p2
 
@@ -3096,7 +3078,7 @@
     const/16 p2, 0xfa1
 
     .line 9
-    invoke-static {p1, v0, p1, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -3534,7 +3516,7 @@
     const/16 v0, 0xfa1
 
     .line 18
-    invoke-static {p1, p2, p1, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, p2, p1, v0}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -3836,7 +3818,7 @@
     const-string v2, "_"
 
     .line 4
-    invoke-static {v1, v2, v0}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, La0/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4300,7 +4282,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-static {p1, v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -4336,7 +4318,7 @@
 .end method
 
 .method public init(Landroid/app/Activity;Lcom/kakaogame/config/Configuration;)Lcom/kakaogame/KGResult;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4482,29 +4464,23 @@
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v3
+    move-result v2
 
-    if-ge p2, v3, :cond_6
+    if-ge p2, v2, :cond_6
 
     .line 18
     iput-object v1, p0, Lcom/kakaogame/core/CoreManager;->coreState:Lcom/kakaogame/core/CoreManager$CoreState;
 
     :cond_6
-    new-array p2, v2, [Ljava/lang/String;
+    const-string p2, "android.permission.INTERNET"
 
-    const/4 v1, 0x0
-
-    const-string v2, "android.permission.INTERNET"
-
-    aput-object v2, p2, v1
-
-    const/4 v1, 0x1
-
-    const-string v2, "android.permission.ACCESS_NETWORK_STATE"
-
-    aput-object v2, p2, v1
+    const-string v1, "android.permission.ACCESS_NETWORK_STATE"
 
     .line 19
+    filled-new-array {p2, v1}, [Ljava/lang/String;
+
+    move-result-object p2
+
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2
@@ -4541,7 +4517,7 @@
     const/16 p2, 0xfa1
 
     .line 23
-    invoke-static {p1, v0, p1, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -4911,7 +4887,7 @@
     const/16 v1, 0xfa1
 
     .line 17
-    invoke-static {p1, v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -5042,7 +5018,7 @@
     const/16 v2, 0xfa1
 
     .line 13
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5112,74 +5088,34 @@
     invoke-static {v1}, Lcom/kakaogame/auth/AuthDataManager;->clearAuthData(Landroid/content/Context;)V
 
     .line 6
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
-    const/16 v2, 0x15
-
-    if-ge v1, v2, :cond_1
+    move-result-object v1
 
     .line 7
-    invoke-virtual {p0}, Lcom/kakaogame/core/CoreManager;->getActivity()Landroid/app/Activity;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
-
-    move-result-object v0
-
-    .line 8
-    invoke-virtual {v0}, Landroid/webkit/CookieSyncManager;->startSync()V
-
-    .line 9
-    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
-
-    move-result-object v1
-
-    .line 10
-    invoke-virtual {v1}, Landroid/webkit/CookieManager;->removeAllCookie()V
-
-    .line 11
-    invoke-virtual {v1}, Landroid/webkit/CookieManager;->removeSessionCookie()V
-
-    .line 12
-    invoke-virtual {v0}, Landroid/webkit/CookieSyncManager;->stopSync()V
-
-    .line 13
-    invoke-virtual {v0}, Landroid/webkit/CookieSyncManager;->sync()V
-
-    goto :goto_0
-
-    .line 14
-    :cond_1
-    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
-
-    move-result-object v1
-
-    .line 15
     invoke-virtual {v1, v0}, Landroid/webkit/CookieManager;->removeAllCookies(Landroid/webkit/ValueCallback;)V
 
-    .line 16
+    .line 8
     invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/webkit/CookieManager;->flush()V
 
-    .line 17
-    :goto_0
+    .line 9
     invoke-static {}, Lcom/kakaogame/server/ServerService;->disconnect()V
 
-    .line 18
+    .line 10
     invoke-direct {p0}, Lcom/kakaogame/core/CoreManager;->stopInfodeskTimer()V
 
-    .line 19
+    .line 11
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->coreStateListeners:Ljava/util/Set;
 
     monitor-enter v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 20
+    .line 12
     :try_start_1
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->coreStateListeners:Ljava/util/Set;
 
@@ -5187,12 +5123,12 @@
 
     move-result-object v1
 
-    :goto_1
+    :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -5200,22 +5136,22 @@
 
     check-cast v2, Lcom/kakaogame/core/CoreManager$CoreStateListener;
 
-    .line 21
+    .line 13
     new-instance v3, Lcom/kakaogame/core/CoreManager$7;
 
     invoke-direct {v3, p0, v2, p1}, Lcom/kakaogame/core/CoreManager$7;-><init>(Lcom/kakaogame/core/CoreManager;Lcom/kakaogame/core/CoreManager$CoreStateListener;Ljava/lang/String;)V
 
     invoke-static {v3}, Lcom/kakaogame/core/UiThreadManager;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 22
-    :cond_2
+    .line 14
+    :cond_1
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 23
+    .line 15
     monitor-exit p0
 
     return-void
@@ -5223,7 +5159,7 @@
     :catchall_0
     move-exception p1
 
-    .line 24
+    .line 16
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -5239,13 +5175,7 @@
 
     monitor-exit p0
 
-    goto :goto_3
-
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 .method public pause()Lcom/kakaogame/KGResult;
@@ -5291,7 +5221,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5438,7 +5368,7 @@
     const/16 v2, 0xfa1
 
     .line 8
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5632,7 +5562,7 @@
     const/16 p2, 0xfa1
 
     .line 10
-    invoke-static {p1, v0, p1, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -5865,7 +5795,7 @@
     const/16 v2, 0xfa1
 
     .line 20
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5925,7 +5855,7 @@
     const/16 v2, 0xfa1
 
     .line 4
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5940,9 +5870,9 @@
 
     const-wide/16 v2, 0x0
 
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     return-void
 
@@ -5967,14 +5897,14 @@
 
     move-result-wide v8
 
-    mul-long v4, v4, v6
+    mul-long/2addr v4, v6
 
     .line 6
     iget-wide v6, p0, Lcom/kakaogame/core/CoreManager;->waitCount:J
 
-    mul-long v4, v4, v6
+    mul-long/2addr v4, v6
 
-    mul-long v8, v8, v6
+    mul-long/2addr v8, v6
 
     add-long/2addr v8, v4
 
@@ -5988,9 +5918,9 @@
     move-wide v0, v8
 
     :goto_0
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-nez v4, :cond_2
+    if-nez v2, :cond_2
 
     return-void
 
@@ -6123,7 +6053,7 @@
 
     move-result-object p1
 
-    invoke-interface {p3, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p3, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     iget-object p1, p0, Lcom/kakaogame/core/CoreManager;->firebaseInterface:Lcom/kakaogame/log/IFirebase;
@@ -6171,7 +6101,7 @@
 
     move-result-object p1
 
-    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     iget-object p1, p0, Lcom/kakaogame/core/CoreManager;->firebaseInterface:Lcom/kakaogame/log/IFirebase;
@@ -6190,7 +6120,7 @@
     const-string p2, "SendFirebaseLog Failed: "
 
     .line 9
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -6259,7 +6189,7 @@
     const-string v0, "market_referrer"
 
     .line 1
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -6268,7 +6198,7 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -6277,7 +6207,7 @@
     const-string v1, "CoreManager"
 
     .line 3
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-nez p1, :cond_1
 
@@ -6384,7 +6314,7 @@
     const-string v0, "startFirebaseTrace Failed: "
 
     .line 4
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -6445,7 +6375,7 @@
     const-string p2, "startFirebaseTrace Failed: "
 
     .line 3
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -6480,7 +6410,7 @@
     const-string v3, ", interval: "
 
     .line 1
-    invoke-static {v1, p1, v2, p2, v3}, Lcom/supercell/titan/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p1, v2, p2, v3}, Lcom/android/billingclient/api/f;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -6559,7 +6489,9 @@
 
     if-lez p1, :cond_2
 
-    sub-long v3, p5, p7
+    sub-long/2addr p5, p7
+
+    move-wide v3, p5
 
     goto :goto_0
 
@@ -6567,8 +6499,6 @@
     move-wide v3, p3
 
     :goto_0
-    cmp-long p1, p5, p7
-
     if-gez p1, :cond_3
 
     .line 12
@@ -6676,7 +6606,7 @@
 
     move-result-object p2
 
-    invoke-interface {v0, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -6701,7 +6631,7 @@
 
     move-result-object p2
 
-    invoke-interface {v0, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -6731,7 +6661,7 @@
 
     move-result-object p2
 
-    invoke-interface {v0, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     :goto_0
@@ -6749,7 +6679,7 @@
     const-string p2, "stopFirebaseTrace Failed: "
 
     .line 9
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -6806,7 +6736,7 @@
     const-string p2, "stopFirebaseTrace Failed: "
 
     .line 3
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/d;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -6838,7 +6768,7 @@
     const-string v1, "stopOnlineAlarmTimer: "
 
     .line 1
-    invoke-static {v1, p1, v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v0}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->onlineAlarmLock:Ljava/lang/Object;
@@ -7088,7 +7018,7 @@
     const/16 v2, 0xfa1
 
     .line 7
-    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -7214,7 +7144,7 @@
     const/16 v1, 0xfa1
 
     .line 21
-    invoke-static {p1, v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
